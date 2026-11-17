@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the Statisticians Workbench — Open Source Edition</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --accent-light: #eff6ff;
+    --border: #e2e8f0;
+    --radius: 8px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  nav {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: 56px;
+    overflow-x: auto;
+  }
+  nav .brand { font-weight: 700; font-size: 1.05rem; color: var(--accent); white-space: nowrap; text-decoration: none; }
+  nav a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; white-space: nowrap; padding: 0.4rem 0; border-bottom: 2px solid transparent; transition: color .15s, border-color .15s; }
+  nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .hero {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #6366f1 100%);
+    color: #fff; padding: 4rem 1.5rem 3rem; text-align: center;
+  }
+  .hero h1 { font-size: 2.2rem; margin-bottom: 0.75rem; }
+  .hero p { font-size: 1.1rem; font-weight: 500; color: #fff; max-width: 1070px; margin: 0 auto; }
+  .hero .meta { font-weight: 400; font-size: 0.85rem; opacity: 0.9; margin-top: 1.1rem; }
+  .hero .meta + .meta { margin-top: 0.15rem; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 2rem 1.5rem; }
+  h2 { color: var(--accent); margin: 2.6rem 0 0.75rem; font-size: 1.35rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--accent-light); }
+  h3 { color: var(--text); margin: 1.7rem 0 0.5rem; font-size: 1.06rem; }
+  p { color: var(--text-muted); margin-bottom: 0.85rem; font-size: 0.95rem; }
+  p strong, li strong, td strong { color: var(--text); }
+  ul, ol { color: var(--text-muted); margin: 0.4rem 0 1rem 1.5rem; font-size: 0.95rem; }
+  li { margin-bottom: 0.35rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: var(--accent-light); color: var(--accent);
+    padding: 0.1rem 0.35rem; border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.86em;
+  }
+  pre {
+    background: #0f172a; color: #e2e8f0; padding: 1rem 1.15rem;
+    border-radius: var(--radius); overflow-x: auto;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.82rem; line-height: 1.5; margin: 0.8rem 0 1.3rem;
+  }
+  pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.6rem; font-size: 0.9rem; background: var(--card-bg); box-shadow: var(--shadow); border-radius: var(--radius); overflow: hidden; }
+  table th { text-align: left; padding: 0.6rem 0.75rem; background: var(--accent-light); color: var(--accent); font-weight: 600; border-bottom: 2px solid var(--accent); }
+  table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--text-muted); }
+  table tr:last-child td { border-bottom: none; }
+  .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 0.85rem; }
+  .callout { background: var(--accent-light); border-left: 3px solid var(--accent); border-radius: 6px; padding: 0.9rem 1.1rem; margin: 1rem 0 1.4rem; font-size: 0.92rem; }
+  .callout p { margin-bottom: 0.45rem; color: var(--text); }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout.warn { background: #fef2f2; border-left-color: #dc2626; }
+  .callout.warn p { color: #7f1d1d; }
+  .callout.ok { background: #f0fdf4; border-left-color: #16a34a; }
+  .callout.ok p { color: #14532d; }
+  .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: .02em; padding: 0.14rem 0.55rem; border-radius: 20px; white-space: nowrap; text-transform: uppercase; }
+  .badge.pass { background: #22c55e; color: #052e16; }
+  .badge.fail { background: #ef4444; color: #7f1d1d; }
+  .badge.untested { background: #e2e8f0; color: #334155; }
+  .badge.yes { background: #bbf7d0; color: #14532d; }
+  .badge.no { background: #fecaca; color: #7f1d1d; }
+  .gate { display: inline-block; background: var(--accent-light); color: var(--accent); border: 1px solid var(--border); border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 0.74rem; font-weight: 600; margin-right: 0.3rem; white-space: nowrap; }
+  footer { text-align: center; padding: 2rem 1.5rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+  @media (max-width: 780px) {
+    nav { flex-wrap: wrap; min-height: 56px; height: auto; gap: 0.8rem; padding: 0.5rem 1rem; }
+    .hero { padding: 2rem 1.2rem 1.5rem; }
+    .hero h1 { font-size: 1.7rem; }
+    table { display: block; overflow-x: auto; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#top" class="brand">&#128208; Statisticians Workbench</a>
+  <a href="#two-models">Two models</a>
+  <a href="#commercial">Commercial</a>
+  <a href="#open-source">Open source</a>
+  <a href="#safety-net">Safety net</a>
+  <a href="#development">Development</a>
+  <a href="#commercial-side">Commercial side</a>
+  <a href="#platform">Platform</a>
+</nav>
+
+<section class="hero" id="top">
+  <h1>About the Statisticians Workbench</h1>
+  <p>The open source edition of a commercial data-analysis product &mdash; why both exist, who each is for, and how the two support one another.</p>
+  <div class="meta">Date created - 2026-11-18</div>
+  <div class="meta">Last updated - 2026-11-18 04:30</div>
+</section>
+
+<div class="container">
+
+<p>This repository is the <strong>open source edition</strong> of the Statisticians Workbench, an application for working with datasets, building analysis recipes, managing databases, and &mdash; increasingly &mdash; using AI assistance across that work.</p>
+
+<p>The Workbench is also a <strong>commercial product</strong>. Its code is published here, in this repository, as open source. The commercial product and this repository are two halves of one project, and they are designed to coexist rather than compete.</p>
+
+<h2 id="two-models">Two models, one product</h2>
+
+<p>At first glance there is an apparent conflict: a piece of software that is sold commercially <em>and</em> published as open source. If the source is freely available, why would anyone pay for the commercial version?</p>
+
+<p>The conflict is not a real one. The two approaches serve <strong>different audiences</strong>, and each one makes the other stronger.</p>
+
+<h2 id="commercial">Who the commercial version is for</h2>
+
+<p>The commercial version exists for people who do <strong>not</strong> want to be their own system administrator, release manager, or support team. It is the packaged, supported product: installed from an installer, upgraded through a managed path, and backed by someone to call when things go wrong.</p>
+
+<p>For a person or organisation without a strong technical IT and statistics skill set, the commercial version removes a whole class of concerns &mdash; installation, configuration, database management, upgrade testing, and keeping the deployment healthy. They get a product they can use, and support when it misbehaves.</p>
+
+<h2 id="open-source">Who the open source version is for</h2>
+
+<p>The open source version exists for the technically adept: the people who are comfortable reading, building, running, and changing the code. For them, open source is not a cheaper copy of the product &mdash; it is the point of the product. They can:</p>
+
+<ul>
+  <li>read exactly what the software does,</li>
+  <li>run it on their own infrastructure,</li>
+  <li>adapt it to their own needs, and</li>
+  <li>contribute improvements back to the project.</li>
+</ul>
+
+<p>They can use the code, and they can influence it.</p>
+
+<h2 id="safety-net">The safety net runs in both directions</h2>
+
+<p>The open source code also protects the commercial side in a way that matters more than any licensing argument.</p>
+
+<p>If the commercial side of the project ever hit business trouble &mdash; if it slowed, changed direction, or disappeared &mdash; the open source code would still be here. The software could still be built, run, and maintained by anyone who needed it. That is the safety net the open source code gives to every commercial user: <strong>the risk of business problems on the commercial side is countered by the fact that the code is not trapped behind that business.</strong></p>
+
+<p>In short: the commercial product gives non-technical users a dependable, supported package, and the open source code gives everyone &mdash; commercial users included &mdash; the guarantee that the software itself cannot be taken away.</p>
+
+<h2 id="development">How the code is developed</h2>
+
+<p>The code is developed in <strong>Python</strong> and <strong>React</strong> &mdash; a Python backend and a React frontend.</p>
+
+<p>This repository is a <strong>replica</strong> of our internal development repository. The two are kept in step by our own internal processes: the replica is maintained and verified to match the development tree, so what you see here is the real, working source &mdash; not a stale or simplified copy of it.</p>
+
+<p>This repository is also where we do our <strong>issue tracking</strong>. The issues management tools here are the ones we rely on for problem tracking and enhancement requests. If you have found a bug, or have an idea for an improvement, this is where it belongs.</p>
+
+<h2 id="commercial-side">What the commercial side adds</h2>
+
+<p>The commercial side of the project is everything that turns the development work into a product people can install and upgrade safely. Concretely, the commercial side:</p>
+
+<ul>
+  <li>converts the development and support work into the code changes you see in this repository,</li>
+  <li>packages that code into an easily deployed product,</li>
+  <li>applies version management, and</li>
+  <li>runs the full testing needed for deployment and upgrade across the target environments &mdash; <strong>Linux, Windows, and macOS</strong>.</li>
+</ul>
+
+<p>That packaging, versioning, and cross-platform testing is the gap between &ldquo;the source code builds&rdquo; and &ldquo;a customer can install and upgrade it with confidence&rdquo;. The open source repository gives you the first; the commercial side does the second.</p>
+
+<h2 id="platform">Platform support</h2>
+
+<p>One deliberate difference to be clear about: <strong>this open source repository is Linux only.</strong></p>
+
+<p>The commercial product targets Linux, Windows, and macOS. The open source side of things &mdash; this repository &mdash; is scoped to Linux. If you need the product on Windows or macOS, that is what the commercial side is for.</p>
+
+<p>For more details, browse the organisation website: <a href="https://www.sentuny.com/">www.sentuny.com</a></p>
+
+</div>
+
+<footer>
+  &copy; 2026 Ron O'Hara. All rights reserved.
+</footer>
+
+</body>
+</html>
