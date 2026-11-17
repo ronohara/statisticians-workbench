@@ -1,0 +1,167 @@
+{
+  "languages": ["en", "zh", "th", "de", "ar", "fa", "bn", "pa", "es", "ja", "fr", "pt", "it", "ko", "ru", "hi", "nl", "tr", "id", "ur"],
+  "autonyms": {
+    "en": "English",
+    "zh": "中文",
+    "th": "ไทย",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "fa": "فارسی",
+    "bn": "বাংলা",
+    "pa": "ਪੰਜਾਬੀ",
+    "es": "Español",
+    "ja": "日本語",
+    "fr": "Français",
+    "pt": "Português",
+    "it": "Italiano",
+    "ko": "한국어",
+    "ru": "Русский",
+    "hi": "हिन्दी",
+    "nl": "Nederlands",
+    "tr": "Türkçe",
+    "id": "Bahasa Indonesia",
+    "ur": "اردو"
+  },
+  "localized": {
+    "en": {
+      "zh": "Chinese", "th": "Thai", "de": "German", "ar": "Arabic",
+      "fa": "Farsi", "bn": "Bengali", "pa": "Punjabi",
+      "es": "Spanish", "ja": "Japanese", "fr": "French", "pt": "Portuguese",
+      "it": "Italian", "ko": "Korean", "ru": "Russian", "hi": "Hindi",
+      "nl": "Dutch", "tr": "Turkish", "id": "Indonesian", "ur": "Urdu"
+    },
+    "zh": {
+      "en": "英语", "th": "泰语", "de": "德语", "ar": "阿拉伯语",
+      "fa": "波斯语", "bn": "孟加拉语", "pa": "旁遮普语",
+      "es": "西班牙语", "ja": "日语", "fr": "法语", "pt": "葡萄牙语",
+      "it": "意大利语", "ko": "韩语", "ru": "俄语", "hi": "印地语",
+      "nl": "荷兰语", "tr": "土耳其语", "id": "印度尼西亚语", "ur": "乌尔都语"
+    },
+    "th": {
+      "en": "อังกฤษ", "zh": "จีน", "de": "เยอรมัน", "ar": "อาหรับ",
+      "fa": "เปอร์เซีย", "bn": "เบงกาลี", "pa": "ปัญจาบ",
+      "es": "สเปน", "ja": "ญี่ปุ่น", "fr": "ฝรั่งเศส", "pt": "โปรตุเกส",
+      "it": "อิตาลี", "ko": "เกาหลี", "ru": "รัสเซีย", "hi": "ฮินดี",
+      "nl": "ดัตช์", "tr": "ตุรกี", "id": "อินโดนีเซีย", "ur": "อูรดู"
+    },
+    "de": {
+      "en": "Englisch", "zh": "Chinesisch", "th": "Thailändisch", "ar": "Arabisch",
+      "fa": "Persisch", "bn": "Bengalisch", "pa": "Pandschabi",
+      "es": "Spanisch", "ja": "Japanisch", "fr": "Französisch", "pt": "Portugiesisch",
+      "it": "Italienisch", "ko": "Koreanisch", "ru": "Russisch", "hi": "Hindi",
+      "nl": "Niederländisch", "tr": "Türkisch", "id": "Indonesisch", "ur": "Urdu"
+    },
+    "ar": {
+      "en": "الإنجليزية", "zh": "الصينية", "th": "التايلاندية", "de": "الألمانية",
+      "fa": "الفارسية", "bn": "البنغالية", "pa": "البنجابية",
+      "es": "الإسبانية", "ja": "اليابانية", "fr": "الفرنسية", "pt": "البرتغالية",
+      "it": "الإيطالية", "ko": "الكورية", "ru": "الروسية", "hi": "الهندية",
+      "nl": "الهولندية", "tr": "التركية", "id": "الإندونيسية", "ur": "الأردية"
+    },
+    "fa": {
+      "en": "انگلیسی", "zh": "چینی", "th": "تایلندی", "de": "آلمانی",
+      "ar": "عربی", "bn": "بنگالی", "pa": "پنجابی",
+      "es": "اسپانیایی", "ja": "ژاپنی", "fr": "فرانسوی", "pt": "پرتغالی",
+      "it": "ایتالیایی", "ko": "کرهای", "ru": "روسی", "hi": "هندی",
+      "nl": "هلندی", "tr": "ترکی", "id": "اندونزیایی", "ur": "اردو"
+    },
+    "bn": {
+      "en": "ইংরেজি", "zh": "চীনা", "th": "থাই", "de": "জার্মান",
+      "ar": "আরবি", "fa": "ফার্সি", "pa": "পাঞ্জাবি",
+      "es": "স্প্যানিশ", "ja": "জাপানি", "fr": "ফরাসি", "pt": "পর্তুগিজ",
+      "it": "ইতালীয়", "ko": "কোরীয়", "ru": "রুশ", "hi": "হিন্দি",
+      "nl": "ওলন্দাজ", "tr": "তুর্কি", "id": "ইন্দোনেশীয়", "ur": "উর্দু"
+    },
+    "pa": {
+      "en": "ਅੰਗਰੇਜ਼ੀ", "zh": "ਚੀਨੀ", "th": "ਥਾਈ", "de": "ਜਰਮਨ",
+      "ar": "ਅਰਬੀ", "fa": "ਫ਼ਾਰਸੀ", "bn": "ਬੰਗਾਲੀ",
+      "es": "ਸਪੈਨਿਸ਼", "ja": "ਜਾਪਾਨੀ", "fr": "ਫਰਾਂਸੀਸੀ", "pt": "ਪੁਰਤਗਾਲੀ",
+      "it": "ਇਤਾਲਵੀ", "ko": "ਕੋਰੀਆਈ", "ru": "ਰੂਸੀ", "hi": "ਹਿੰਦੀ",
+      "nl": "ਡੱਚ", "tr": "ਤੁਰਕੀ", "id": "ਇੰਡੋਨੇਸ਼ੀਆਈ", "ur": "ਉਰਦੂ"
+    },
+    "es": {
+      "en": "Inglés", "zh": "Chino", "th": "Tailandés", "de": "Alemán",
+      "ar": "Árabe", "fa": "Persa", "bn": "Bengalí", "pa": "Panyabí",
+      "ja": "Japonés", "fr": "Francés", "pt": "Portugués",
+      "it": "Italiano", "ko": "Coreano", "ru": "Ruso", "hi": "Hindi",
+      "nl": "Neerlandés", "tr": "Turco", "id": "Indonesio", "ur": "Urdu"
+    },
+    "ja": {
+      "en": "英語", "zh": "中国語", "th": "タイ語", "de": "ドイツ語",
+      "ar": "アラビア語", "fa": "ペルシア語", "bn": "ベンガル語", "pa": "パンジャブ語",
+      "es": "スペイン語", "fr": "フランス語", "pt": "ポルトガル語",
+      "it": "イタリア語", "ko": "韓国語", "ru": "ロシア語", "hi": "ヒンディー語",
+      "nl": "オランダ語", "tr": "トルコ語", "id": "インドネシア語", "ur": "ウルドゥー語"
+    },
+    "fr": {
+      "en": "Anglais", "zh": "Chinois", "th": "Thaï", "de": "Allemand",
+      "ar": "Arabe", "fa": "Persan", "bn": "Bengali", "pa": "Pendjabi",
+      "es": "Espagnol", "ja": "Japonais", "pt": "Portugais",
+      "it": "Italien", "ko": "Coréen", "ru": "Russe", "hi": "Hindi",
+      "nl": "Néerlandais", "tr": "Turc", "id": "Indonésien", "ur": "Ourdou"
+    },
+    "pt": {
+      "en": "Inglês", "zh": "Chinês", "th": "Tailandês", "de": "Alemão",
+      "ar": "Árabe", "fa": "Persa", "bn": "Bengali", "pa": "Punjabi",
+      "es": "Espanhol", "ja": "Japonês", "fr": "Francês",
+      "it": "Italiano", "ko": "Coreano", "ru": "Russo", "hi": "Hindi",
+      "nl": "Holandês", "tr": "Turco", "id": "Indonésio", "ur": "Urdu"
+    },
+    "it": {
+      "en": "Inglese", "zh": "Cinese", "th": "Thailandese", "de": "Tedesco",
+      "ar": "Arabo", "fa": "Persiano", "bn": "Bengalese", "pa": "Punjabi",
+      "es": "Spagnolo", "ja": "Giapponese", "fr": "Francese", "pt": "Portoghese",
+      "ko": "Coreano", "ru": "Russo", "hi": "Hindi",
+      "nl": "Olandese", "tr": "Turco", "id": "Indonesiano", "ur": "Urdu"
+    },
+    "ko": {
+      "en": "영어", "zh": "중국어", "th": "태국어", "de": "독일어",
+      "ar": "아랍어", "fa": "페르시아어", "bn": "벵골어", "pa": "펀자브어",
+      "es": "스페인어", "ja": "일본어", "fr": "프랑스어", "pt": "포르투갈어",
+      "it": "이탈리아어", "ru": "러시아어", "hi": "힌디어",
+      "nl": "네덜란드어", "tr": "튀르키예어", "id": "인도네시아어", "ur": "우르두어"
+    },
+    "ru": {
+      "en": "Английский", "zh": "Китайский", "th": "Тайский", "de": "Немецкий",
+      "ar": "Арабский", "fa": "Персидский", "bn": "Бенгальский", "pa": "Панджаби",
+      "es": "Испанский", "ja": "Японский", "fr": "Французский", "pt": "Португальский",
+      "it": "Итальянский", "ko": "Корейский", "hi": "Хинди",
+      "nl": "Нидерландский", "tr": "Турецкий", "id": "Индонезийский", "ur": "Урду"
+    },
+    "hi": {
+      "en": "अंग्रेज़ी", "zh": "चीनी", "th": "थाई", "de": "जर्मन",
+      "ar": "अरबी", "fa": "फ़ारसी", "bn": "बांग्ला", "pa": "पंजाबी",
+      "es": "स्पेनी", "ja": "जापानी", "fr": "फ़्रांसीसी", "pt": "पुर्तगाली",
+      "it": "इतालवी", "ko": "कोरियाई", "ru": "रूसी",
+      "nl": "डच", "tr": "तुर्की", "id": "इंडोनेशियाई", "ur": "उर्दू"
+    },
+    "nl": {
+      "en": "Engels", "zh": "Chinees", "th": "Thais", "de": "Duits",
+      "ar": "Arabisch", "fa": "Perzisch", "bn": "Bengaals", "pa": "Punjabi",
+      "es": "Spaans", "ja": "Japans", "fr": "Frans", "pt": "Portugees",
+      "it": "Italiaans", "ko": "Koreaans", "ru": "Russisch", "hi": "Hindi",
+      "tr": "Turks", "id": "Indonesisch", "ur": "Urdu"
+    },
+    "tr": {
+      "en": "İngilizce", "zh": "Çince", "th": "Tayca", "de": "Almanca",
+      "ar": "Arapça", "fa": "Farsça", "bn": "Bengalce", "pa": "Pencapça",
+      "es": "İspanyolca", "ja": "Japonca", "fr": "Fransızca", "pt": "Portekizce",
+      "it": "İtalyanca", "ko": "Korece", "ru": "Rusça", "hi": "Hintçe",
+      "nl": "Felemenkçe", "id": "Endonezce", "ur": "Urduca"
+    },
+    "id": {
+      "en": "Inggris", "zh": "Tionghoa", "th": "Thai", "de": "Jerman",
+      "ar": "Arab", "fa": "Persia", "bn": "Bengali", "pa": "Punjabi",
+      "es": "Spanyol", "ja": "Jepang", "fr": "Prancis", "pt": "Portugis",
+      "it": "Italia", "ko": "Korea", "ru": "Rusia", "hi": "Hindi",
+      "nl": "Belanda", "tr": "Turki", "ur": "Urdu"
+    },
+    "ur": {
+      "en": "انگریزی", "zh": "چینی", "th": "تھائی", "de": "جرمن",
+      "ar": "عربی", "fa": "فارسی", "bn": "بنگالی", "pa": "پنجابی",
+      "es": "ہسپانوی", "ja": "جاپانی", "fr": "فرانسیسی", "pt": "پرتگالی",
+      "it": "اطالوی", "ko": "کورین", "ru": "روسی", "hi": "ہندی",
+      "nl": "ولندیزی", "tr": "ترکی", "id": "انڈونیشیائی"
+    }
+  }
+}

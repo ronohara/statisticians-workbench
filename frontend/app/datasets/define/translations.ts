@@ -1,0 +1,56 @@
+// app/datasets/define/translations.ts
+// ============================================================
+// DEFINE DATASET MODULE TRANSLATIONS
+// All translation keys used by the define dataset page.
+// ============================================================
+
+import type { TranslationKey } from "@/lib/translation-helpers";
+
+export const DEFINE = {
+    title: { key: "define.title", fallback: "Connect Database" },
+    no_connections_message: { key: "define.no_connections_message", fallback: "You need to define at least one database connection before you can connect a database." },
+    go_to_db_settings: { key: "define.go_to_db_settings", fallback: "Go to Database Settings" },
+    load_connections_error: { key: "define.load_connections_error", fallback: "Failed to load connections" },
+    step_connection: { key: "define.step_connection", fallback: "Connection" },
+    step_source: { key: "define.step_source", fallback: "Source" },
+    step_verify: { key: "define.step_verify", fallback: "Verify" },
+    step_save: { key: "define.step_save", fallback: "Save" },
+    step1_title: { key: "define.step1_title", fallback: "Select Database Connection" },
+    step1_description: { key: "define.step1_description", fallback: "Choose a database connection to connect a dataset from." },
+    connection_label: { key: "define.connection_label", fallback: "Database Connection" },
+    select_connection: { key: "define.select_connection", fallback: "Select a connection" },
+    step2_title: { key: "define.step2_title", fallback: "Select Source" },
+    step2_description: { key: "define.step2_description", fallback: "Choose whether to use a table or view, then select the source." },
+    source_type_label: { key: "define.source_type_label", fallback: "Source Type" },
+    table: { key: "define.table", fallback: "Table" },
+    view: { key: "define.view", fallback: "View" },
+    source_label: { key: "define.source_label", fallback: "Source" },
+    no_sources: { key: "define.no_sources", fallback: "No tables or views found in this database." },
+    select_source: { key: "define.select_source", fallback: "Select a source" },
+    verify_button: { key: "define.verify_button", fallback: "Verify Source" },
+    select_source_first: { key: "define.select_source_first", fallback: "Please select a table or view first" },
+    verify_error: { key: "define.verify_error", fallback: "Failed to verify table/view" },
+    verify_success: { key: "define.verify_success", fallback: "Table/view verified successfully" },
+    step3_title: { key: "define.step3_title", fallback: "Verify Source" },
+    step3_description: { key: "define.step3_description", fallback: "Review the columns and preview data from the selected source." },
+    schema_label: { key: "define.schema_label", fallback: "Schema" },
+    column_name: { key: "define.column_name", fallback: "Column" },
+    column_type: { key: "define.column_type", fallback: "Type" },
+    nullable: { key: "define.nullable", fallback: "Nullable" },
+    preview_label: { key: "define.preview_label", fallback: "Preview Data (first 10 rows)" },
+    step4_title: { key: "define.step4_title", fallback: "Name and Save" },
+    step4_description: { key: "define.step4_description", fallback: "Give your dataset a name and description, then save it." },
+    dataset_name: { key: "define.dataset_name", fallback: "Dataset Name" },
+    dataset_name_placeholder: { key: "define.dataset_name_placeholder", fallback: "e.g., Customer Data" },
+    description_label: { key: "define.description_label", fallback: "Description (optional)" },
+    description_placeholder: { key: "define.description_placeholder", fallback: "Brief description of this dataset" },
+    shared_label: { key: "define.shared_label", fallback: "Share with group" },
+    shared_description: { key: "define.shared_description", fallback: "Make this dataset available to other users in your group." },
+    name_required: { key: "define.name_required", fallback: "Dataset name is required" },
+    save_error: { key: "define.save_error", fallback: "Failed to create dataset" },
+    save_success: { key: "define.save_success", fallback: "Dataset created successfully" },
+    save_button: { key: "define.save_button", fallback: "Save Dataset" },
+    load_sources_error: { key: "define.load_sources_error", fallback: "Failed to load sources" },
+    existing_title: { key: "define.existing_title", fallback: "Existing" },
+    existing_none: { key: "define.existing_none", fallback: "None" },
+} as const;

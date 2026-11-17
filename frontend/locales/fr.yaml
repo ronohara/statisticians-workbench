@@ -1,0 +1,2256 @@
+about:
+  description: Créez des expériences exceptionnelles avec shadcn/ui et Next.js. Design épuré, performances rapides.
+  fast_desc: Construit avec Next.js App Router pour des performances optimales.
+  fast_title: Rapide
+  get_started: Commencer
+  modern_desc: Composants accessibles de shadcn/ui, stylisés avec Tailwind CSS.
+  modern_title: Interface moderne
+  secure_desc: Typage sécurisé et personnalisable – vous possédez le code du composant.
+  secure_title: Sécurisé
+  title: À propos de Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: Retour à l'administration
+    cannot_modify_self: Impossible de modifier votre propre compte
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer {name} ? Cet utilisateur sera supprimé de manière réversible et pourra être restauré par un administrateur complet.
+    delete_error: Échec de la suppression de l'utilisateur
+    delete_title: Supprimer l'utilisateur
+    demote: Rétrograder
+    demote_error: Échec de la rétrogradation de l'utilisateur
+    demote_success: Utilisateur rétrogradé du rôle d'administrateur de groupe
+    description_placeholder: Saisissez une description
+    description_required: La description ne peut pas être vide
+    group_description: Description du groupe
+    group_users_load_error: Échec du chargement des utilisateurs du groupe
+    load_error: Échec du chargement des groupes
+    load_success: Groupes chargés avec succès
+    no_users: Aucun utilisateur trouvé dans ce groupe.
+    promote: Promouvoir
+    promote_error: Échec de la promotion de l'utilisateur
+    promote_success: Utilisateur promu administrateur de groupe
+    readonly_badge: (lecture seule)
+    readonly_message: Vous consultez cette page en mode lecture seule. Les utilisateurs d'exemple ne peuvent pas effectuer de modifications.
+    readonly_title: Gestion des groupes (lecture seule)
+    select_group: Sélectionner un groupe
+    select_group_placeholder: Sélectionnez un groupe
+    title: Gestion des groupes
+    update_error: Échec de la mise à jour du groupe
+    update_success: Description du groupe mise à jour
+    users_in_group: Utilisateurs du groupe
+  models:
+    comment_placeholder: Saisissez un commentaire
+    description: Chaque modèle connu de l’espace de travail. Activer un modèle affecte toutes les connexions qui y donnent accès ; la colonne des serveurs indique lesquels peuvent l’atteindre.
+    disabled: Désactivé
+    edit_comment: Modifier le commentaire
+    enabled: Activé
+    load_models_error: Échec du chargement des modèles
+    no_comment: —
+    no_models: Pas encore de modèles. La découverte les crée à partir d’une connexion.
+    not_preferred: Non préféré
+    preferred: Préféré
+    toggle_error: Échec de la mise à jour du modèle
+    update_error: Échec de la mise à jour du commentaire
+    update_success: Modèle mis à jour
+    fetch_auth_required: Ce fournisseur nécessite une clé API pour répertorier les modèles. Actualisez plutôt depuis Paramètres → Connexions IA.
+    fetch_non_standard: Ce fournisseur n'expose pas d'API standard de liste de modèles. Ajoutez les modèles manuellement dans le panneau d'administration.
+    tuning_title: Paramètres IA pour ce serveur
+    tuning_saved: Paramètres IA enregistrés
+    tuning_hint: Ces valeurs s'appliquent partout où ce modèle est utilisé sur cette connexion. Un champ vide signifie qu'il hérite de la valeur par défaut du Workbench.
+    filter_state: État
+    no_servers: Aucune connexion ne dessert encore ce modèle
+    filter_test: Test de capacité
+    tuning_save_error: Impossible d'enregistrer les paramètres IA
+    tuning_load_error: Impossible de charger les paramètres IA
+    filter_result: Résultat
+    filter_any: N'importe quel état
+    tuning_timeout_hint: Durée en secondes pendant laquelle une requête IA peut s'exécuter. Un modèle local sur CPU peut nécessiter plusieurs minutes.
+    model_count: '{count} modèles'
+    tuning_temperature_hint: Des valeurs plus basses donnent des réponses plus reproductibles ; des valeurs plus élevées donnent des réponses plus variées.
+    no_matches: Aucun modèle ne correspond à ces filtres.
+    filter_clear: Effacer les filtres
+    tuning_inherited_title: Un champ vide hérite de la valeur par défaut de l’espace de travail
+    tuning_loading: Chargement des paramètres de l’IA…
+    servers_title: Accessible depuis
+    search_placeholder: Rechercher un nom de modèle
+    tuning_inherited: hérité
+  providers:
+    code_label: Code
+    delete_button: Supprimer
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer le fournisseur "{name}" ? Cela supprimera également tous les modèles associés et cette action est irréversible.
+    delete_error: Échec de la suppression du fournisseur
+    delete_provider: Supprimer le fournisseur
+    delete_success: Fournisseur supprimé
+    delete_title: Supprimer le fournisseur
+    description: Activez ou désactivez les fournisseurs d'IA. Les fournisseurs désactivés n'apparaîtront pas dans les formulaires de connexion des utilisateurs.
+    disabled: Désactivé
+    enabled: Activé
+    fetch_error: Échec du chargement des fournisseurs
+    list_title: Tous les fournisseurs
+    local: Local
+    no_api_key: aucune clé API requise
+    requires_api_key: nécessite une clé API
+    title: Fournisseurs d'IA
+    toggle_error: Échec de la mise à jour du fournisseur
+    update_success: Fournisseur mis à jour
+  title: Panneau d'administration
+  user_details:
+    dark_mode_description: Basculer entre les thèmes clair et sombre.
+    dark_mode_label: Mode sombre
+    email_label: E-mail
+    email_notifications_description: Recevoir des mises à jour par e-mail concernant votre compte.
+    email_notifications_label: Notifications par e-mail
+    full_admin_note: Les administrateurs complets disposent par défaut de toutes les permissions d'administrateur de groupe.
+    group_admin_description: L'utilisateur peut gérer d'autres utilisateurs au sein de son groupe.
+    group_admin_label: Administrateur de groupe
+    group_hint: Le groupe de l'utilisateur détermine les ressources partagées auxquelles il peut accéder.
+    language_label: Langue
+    language_select_placeholder: Sélectionnez la langue
+    load_error: Échec du chargement des détails de l'utilisateur
+    max_upload_count_hint: Nombre maximal de jeux de données par utilisateur (0 = illimité).
+    max_upload_count_label: Nombre maximal de téléversements
+    max_upload_count_placeholder: Sélectionnez le nombre
+    max_upload_size_hint: Stockage total maximal par utilisateur (0 = illimité).
+    max_upload_size_label: Taille maximale de téléversement
+    max_upload_size_placeholder: Sélectionnez la taille
+    name_label: Nom
+    not_found: Utilisateur introuvable
+    save_error: Échec de la mise à jour de l'utilisateur
+    save_success: Détails de l'utilisateur mis à jour
+    select_group: Sélectionnez un groupe
+    title: Administrer l'utilisateur
+    unnamed: Utilisateur sans nom
+    user_group: Groupe de l'utilisateur
+  users:
+    active_users: Utilisateurs actifs
+    admin_badge: Administrateur
+    bcc_label: Inscriptions BCC
+    bcc_updated: Paramètre d'inscription BCC mis à jour
+    created_label: Créé
+    current_user_badge: Vous
+    delete_button: Supprimer
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer définitivement « {name} » ? Cette action est IRRÉVERSIBLE.
+    delete_error: Échec de la suppression de l'utilisateur
+    delete_self_error: Vous ne pouvez pas supprimer votre propre compte
+    delete_success: Utilisateur supprimé définitivement
+    delete_title: Supprimer l'utilisateur
+    deleted_badge: Supprimé logiquement
+    deleted_label: Supprimé
+    example_user_badge: Utilisateur exemple
+    forbidden: Interdit
+    group_admin_badge: Administrateur du groupe
+    hard_delete_button: Suppression définitive
+    hard_delete_confirmation: Êtes-vous sûr de vouloir supprimer définitivement « {name} » ? Cette action est IRRÉVERSIBLE.
+    hard_delete_error: Échec de la suppression définitive de l'utilisateur
+    hard_delete_success: Utilisateur supprimé définitivement
+    hard_delete_title: Supprimer définitivement l'utilisateur
+    load_error: Échec du chargement des utilisateurs
+    make_admin: Passer administrateur
+    more_button: Plus…
+    no_name: Sans nom
+    remove_admin: Retirer le rôle d'administrateur
+    resend_button: Renvoyer l'e-mail
+    resend_error: Échec de l'envoi de l'e-mail de vérification
+    resend_success: E-mail de vérification envoyé à {email}
+    restore_button: Restaurer
+    restore_error: Échec de la restauration de l'utilisateur
+    restore_success: Utilisateur restauré
+    soft_deleted_users: Utilisateurs supprimés logiquement
+    title: Gestion des utilisateurs
+    unauthorized: Non autorisé
+    unverified_badge: Non vérifié
+    update_error: Échec de la mise à jour de l'utilisateur
+    update_success: Utilisateur mis à jour
+    user_not_found: Utilisateur introuvable
+    verified_badge: Vérifié
+    verify_button: Vérifier
+    verify_error: Échec de la vérification de l'utilisateur
+    verify_success: Utilisateur marqué comme vérifié
+    add_user: Ajouter un utilisateur
+  visualization_types:
+    add_button: Ajouter un nouveau type
+    add_title: Ajouter un type de visualisation
+    create_success: Type de visualisation créé
+    default_parameters: Paramètres par défaut (JSON)
+    delete: Supprimer
+    delete_button: Supprimer
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer le type « {name} » ? Cela supprimera également toutes les instances associées et cette action est irréversible.
+    delete_error: Échec de la suppression
+    delete_success: Type de visualisation supprimé
+    delete_title: Supprimer le type de visualisation
+    description: Description
+    disabled: Désactivé
+    edit: Modifier
+    edit_title: Modifier le type de visualisation
+    enabled: Activé
+    fetch_error: Échec du chargement des types de visualisation
+    input_schema: Schéma d'entrée (JSON)
+    invalid_json: JSON invalide dans l'un des champs de schéma
+    list_title: Tous les types de visualisation
+    name: Nom
+    no_types: Aucun type de visualisation défini pour l'instant.
+    parameter_schema: Schéma de paramètres (JSON)
+    renderer: Rendu
+    renderer_client: Client
+    renderer_label: Rendu
+    renderer_server: Serveur
+    save_error: Échec de l'enregistrement
+    slug: Slug
+    slug_label: Slug
+    title: Types de visualisation
+    toggle_error: Échec de la mise à jour
+    update_success: Type de visualisation mis à jour
+  adduser:
+    password: Mot de passe
+    confirm_password: Confirmer le mot de passe
+    title: Ajouter un utilisateur
+    failed: Échec de la création de l'utilisateur
+    back_to_admin: Retour à l'administration
+    language_description: Choisissez la langue préférée de l'utilisateur pour l'interface.
+    email: E-mail
+    creating: Création de l'utilisateur...
+    success: Compte créé et vérifié. Le nouvel utilisateur peut maintenant se connecter.
+    name: Nom
+    not_admin: Vous n'êtes pas autorisé à accéder à cette page.
+    password_mismatch: Les mots de passe ne correspondent pas
+    description: Créer un nouveau compte utilisateur. Le compte est vérifié immédiatement.
+    submit: Créer l'utilisateur
+  set_password:
+    success: Mot de passe défini avec succès
+    failed: Échec de la définition du mot de passe
+    admin_password: Mot de passe administrateur
+    title: Définir le mot de passe
+    admin_password_required: Le mot de passe administrateur est requis
+    description: Définissez un nouveau mot de passe pour cet utilisateur. Votre propre mot de passe administrateur est requis pour confirmer la modification.
+ai:
+  connection:
+    add_first: Ajouter votre première connexion IA
+    add_new: Ajouter une nouvelle connexion IA
+    add_success: Connexion IA ajoutée avec succès
+    add_title: Ajouter une nouvelle connexion IA
+    api_key_hint: Votre clé API est chiffrée avant stockage.
+    api_key_label: Clé API
+    by_label: par
+    clear_default: Effacer la valeur par défaut
+    currently_not_shared: ❌ Actuellement non partagé
+    currently_shared: ✅ Actuellement partagé avec le groupe
+    default_badge: Par défaut
+    default_cleared: Connexion IA par défaut effacée
+    default_set: Connexion IA par défaut mise à jour
+    delete_button: Supprimer
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer la connexion ?
+    delete_error: Échec de la suppression de la connexion IA
+    delete_title: Supprimer la connexion IA
+    deleted: Connexion IA supprimée
+    edit_title: Modifier la connexion IA
+    endpoint_hint: Remplacer le point de terminaison API par défaut si nécessaire.
+    endpoint_label: URL du point de terminaison
+    form_description: Configurer une connexion à un fournisseur d'IA.
+    group_label: Groupe
+    load_error: Échec du chargement des connexions
+    load_providers_error: Échec du chargement des fournisseurs
+    metadata_load_error: Échec du chargement des métadonnées du fournisseur
+    metadata_loading: Les informations du fournisseur sont encore en cours de chargement. Veuillez patienter.
+    models: Modèles disponibles
+    models_disabled: Désactivé
+    models_load_error: Échec du chargement des modèles
+    models_sync_error: Échec de la synchronisation des modèles
+    models_synced: Modèles synchronisés avec succès
+    name_label: Nom de la connexion
+    name_placeholder: p. ex., Ma connexion IA
+    no_connections: Aucune connexion IA enregistrée pour le moment.
+    not_found: Connexion introuvable
+    provider_label: Fournisseur
+    provider_not_found: Fournisseur introuvable
+    save_error: Échec de l'enregistrement de la connexion IA
+    select_provider: Choisissez le fournisseur d'IA
+    select_provider_first: Veuillez d'abord sélectionner un fournisseur
+    set_default: Définir par défaut
+    shared_badge: Partagé
+    shared_description: Rendre cette connexion disponible aux autres utilisateurs de votre groupe.
+    shared_label: Partager avec le groupe
+    shared_readonly: Partagé
+    shared_readonly_message: Cette connexion est partagée avec vous. Vous pouvez la consulter, mais la modification est réservée au propriétaire.
+    test_button: Tester la connexion
+    test_error: Échec de la connexion.
+    test_success: Connexion réussie !
+    unknown_user: Inconnu
+    update_success: Connexion IA mise à jour avec succès
+    models_none: Aucun modèle synchronisé pour le moment. Cliquez sur Actualiser pour récupérer les modèles auprès du fournisseur.
+    models_refresh: Actualiser les modèles
+    probe_timeout_hint: Durée maximale d'exécution d'un test de pertinence ici. Un modèle hébergé sur CPU prend des minutes.
+    invalid_probe_timeout: Le délai maximal du test de modèle doit être un nombre entier de secondes, entre 1 et 1200.
+    connect_timeout_hint: Durée maximale pendant laquelle le réseau peut accepter une connexion. Une valeur inférieure aux besoins de ce réseau transforme un point de terminaison fonctionnel en point injoignable.
+    models_discovered: 'Découvert {seen} modèle(s) sur cette connexion : {created} nouveau(x), {refreshed} déjà connu(s), {pruned} plus desservi(s)'
+    timeouts_section_label: Délais de connexion
+    invalid_connect_timeout: Le délai de connexion doit être un nombre entier de secondes, entre 1 et 60.
+    timeouts_section_hint: Laissez un champ vide pour utiliser la valeur par défaut de l’espace de travail.
+    connect_exceeds_probe: Le délai d’expiration de la connexion ne peut pas dépasser le délai d’expiration du test du modèle — une connexion ne peut pas être autorisée à mettre plus de temps à s’établir
+      que la durée totale du test.
+  database:
+    add_connection: Ajouter une connexion de base de données
+    all_issues: Tous les problèmes
+    analysis_report: Rapport d'analyse
+    analysis_summary: '{tables} tables, {columns} colonnes, {issues} problèmes trouvés'
+    analyze: Analyser le schéma
+    analyzing: Analyse en cours...
+    business_value: Valeur métier
+    categories: Catégories
+    code_systems_detected: Systèmes de codes détectés
+    cols_rows_format: '{cols} col., {rows} lignes'
+    columns_label: Colonnes
+    confidence: Confiance
+    description: Analysez la conception de votre base de données pour détecter les problèmes d'indexation, de normalisation, de relations, de types de données et de nommage.
+    download_pdf: Télécharger le PDF
+    email_body_attachment: Veuillez trouver le rapport d'analyse ci-joint.
+    email_body_connection: 'Connexion : {conn_name}'
+    email_body_database: 'Base de données : {db_name}'
+    email_body_id: 'ID de connexion : {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Rapport d'analyse de la conception de la base de données
+    email_body_type: 'Type de base de données : {db_type}'
+    email_error: Échec de l'envoi du rapport par e-mail
+    email_pdf: Envoyer le PDF par e-mail
+    email_sent: Rapport envoyé par e-mail avec succès
+    email_subject: Analyse de la conception de la base de données — {db_name} ({db_type}) [Connexion {conn_id}]
+    empty_state: Sélectionnez une connexion de base de données et cliquez sur Analyser pour commencer.
+    enter_question: Veuillez saisir une question.
+    foreign_keys: Clés étrangères
+    high_risk: Élevé
+    indexes_label: Index
+    issues_label: Problèmes
+    low_risk: Faible
+    medium_risk: Moyen
+    no_issues: Aucun problème trouvé. La conception de votre base de données semble bonne !
+    no_semi_structured: Aucun motif de données semi-structurées détecté dans les colonnes de texte.
+    normalisation_suggestions: Suggestions de normalisation
+    normalisation_suggestions_desc: Tables de référence proposées basées sur les mots-clés trouvés dans les colonnes de texte semi-structuré.
+    normalisation_warning: Ce sont des suggestions générées par l'IA. Les remaniements de base de données nécessitent un examen minutieux. Testez d'abord les modifications sur une réplique.
+    pdf_downloaded: PDF téléchargé avec succès
+    pdf_error: Échec de la génération du PDF
+    pk_prefix: PK –
+    placeholder: Bientôt disponible. Cette fonctionnalité vous aidera à concevoir des schémas de base de données à l'aide de l'IA.
+    proposed_reference_table: Table de référence proposée
+    rag_ask: Demander
+    rag_chat: Chat RAG — Posez des questions sur vos données
+    rag_chat_desc: Posez des questions en langage naturel. Le système recherche dans les colonnes de texte et renvoie des réponses générées par l'IA avec des citations.
+    rag_error: Échec de la requête RAG
+    rag_placeholder: par exemple, Quels sont les diagnostics courants ?
+    rag_sources: Sources
+    risk_breakdown: Répartition des risques
+    rows_label: Lignes
+    schema_error: Échec de l'analyse du schéma de la base de données
+    select_connection: Sélectionner une connexion de base de données
+    select_connection_first: Veuillez d'abord sélectionner une connexion de base de données.
+    select_connection_placeholder: Choisissez une connexion de base de données...
+    semi_structured: Analyse des données semi-structurées
+    semi_structured_desc: Colonnes de texte analysées pour les codes intégrés, les mots-clés et les motifs.
+    tables_explorer: Explorateur de tables
+    tables_label: Tables
+    title: Assistant de conception de base de données
+    top_recommendations: Principales recommandations
+    ai_fallback: Analyse de base
+    implicit_relationships: Relations implicites
+    missing_dimensions: Dimensions manquantes
+    ai_fallback_desc: Augmentation IA indisponible. Affichage de l'analyse structurelle uniquement. Sélectionnez une connexion IA pour des informations plus approfondies.
+    column_meanings: Significations des colonnes
+    timeout_log: L'analyse a expiré après 15 minutes.
+    ai_augmented: Analyse augmentée par l'IA
+    table_purposes: Objectifs des tables
+    timeout_error: L'analyse a expiré. La base de données est peut-être trop volumineuse ou le service d'IA est indisponible.
+    isic_domains: Classifications des domaines ISIC
+    semantic_analysis: Analyse sémantique
+    integration_analysis_desc: Relations implicites, capacités de recherche et dimensions manquantes détectées par l'IA d'intégration.
+    integration_analysis: Analyse d'intégration
+    research_capabilities: Capacités de recherche
+    priority_actions: Actions prioritaires
+    ai_unavailable: Analyse IA indisponible. Connectez un fournisseur IA pour activer l'analyse avancée.
+    ai_augmented_desc: Schema AI, Semantic AI et Integration AI ont analysé cette base de données.
+    semantic_analysis_desc: Significations des colonnes déduites par l'IA, classifications de domaines ISIC et détections de systèmes de codes.
+    ai_health_score: AI Health Score
+    peer_tables: 'Tables homologues :'
+    is_missing: est manquant
+    health_score_desc: Santé globale de la base de données évaluée par Schema AI. 0 = problèmes structurels critiques, 100 = prêt pour la production.
+  dataclean:
+    chat_error: Échec de l'obtention de la réponse
+    chat_placeholder: Demandez à propos du nettoyage ou de la préparation de ce jeu de données...
+    column_tooltip: '{type} — {null_count} valeurs nulles, {unique_count} uniques'
+    column_type:
+      category: Catégorie
+      datetime: Date/Heure
+      number: Nombre
+      text: Texte
+    description: Nettoyage et préparation de jeux de données assistés par l'IA.
+    empty_chat: Sélectionnez un jeu de données et commencez à poser des questions sur la façon de le nettoyer et de le préparer.
+    enter_message: Veuillez saisir un message.
+    loading_schema: Chargement du schéma...
+    no_connection: Veuillez configurer une connexion IA par défaut dans Paramètres > IA.
+    no_datasets: Aucun ensemble de données disponible. Téléversez ou définissez d'abord un ensemble de données.
+    placeholder: Bientôt disponible. Cette fonctionnalité vous aidera à nettoyer et préparer les ensembles de données à l'aide de l'IA.
+    schema_summary: '{rows} lignes, {cols} colonnes'
+    select_dataset: Sélectionner un ensemble de données
+    select_dataset_first: Veuillez d'abord sélectionner un ensemble de données.
+    select_dataset_placeholder: Choisir un ensemble de données...
+    send: Envoyer
+    shared_badge: (partagé)
+    title: Assistant de nettoyage des ensembles de données
+    schema_error: Échec du chargement du schéma du jeu de données
+    clean_no_rules: Aucune règle de nettoyage à appliquer pour l’instant.
+    preview_title: Aperçu des données
+    clean_copy: Copie nettoyée
+    clean_copy_success: Création d’un nouveau jeu de données '{name}' — l’original est inchangé.
+    clean_in_place: Nettoyer sur place
+    clean_name_label: Nom de la copie nettoyée
+    no_dataset_selected: Aucun jeu de données sélectionné
+    rules_title: Règles de préparation
+    clean_in_place_success: Jeu de données '{name}' mis à jour.
+    operations_count: '{count} opérations'
+    no_rules: Aucune règle pour l’instant
+  default_hint: La connexion par défaut est utilisée comme solution de repli lorsqu'une recette d'analyse ne spécifie pas de fournisseur d'IA.
+  new_session: Nouvelle session
+  no_ai_connections: Aucune connexion IA configurée. Ajoutez-en une dans Paramètres > IA.
+  recipe:
+    chat_error: Échec de la récupération de la réponse
+    chat_placeholder: Posez une question sur l'analyse statistique ou la configuration de la recette...
+    description: Génération de recettes et de règles d'analyse assistée par l'IA.
+    empty_chat: Sélectionnez un ensemble de données et demandez quelles techniques statistiques utiliser.
+    enter_message: Veuillez saisir un message.
+    loading_schema: Chargement du schéma...
+    no_datasets: Aucun ensemble de données disponible. Téléversez ou définissez d'abord un ensemble de données.
+    placeholder: Bientôt disponible. Cette fonctionnalité vous aidera à créer des recettes d'analyse à l'aide de l'IA.
+    schema_summary: '{rows} lignes, {cols} colonnes'
+    select_dataset: Sélectionner un ensemble de données
+    select_dataset_first: Veuillez d'abord sélectionner un ensemble de données.
+    select_dataset_placeholder: Choisir un ensemble de données...
+    send: Envoyer
+    title: Assistant de règles d'analyse
+  select_ai_connection: Connexion IA
+  select_ai_connection_placeholder: Choisir une connexion IA...
+  select_model: Modèle
+  select_model_placeholder: Choisir un modèle...
+  test_error: Échec de la connexion.
+  test_success: Connexion réussie !
+  title: Paramètres IA
+  recipe_concierge:
+    status_draft: Brouillon
+    stage_columns: Sélectionner les colonnes
+    stage_technique: Choisir la technique
+    stage_visualisation: Visualisation
+    toggle_panel: Basculer le panneau de recette
+    create_prompt: Créez une nouvelle session pour commencer.
+    manual_label: Recette manuelle
+    saved: Recette enregistrée !
+    title: Concierge de recettes IA
+    input_placeholder: Posez des questions sur vos données... ou dites simplement « bonjour »
+    welcome: Dites-moi ce que vous voulez découvrir dans vos données, et je vous aiderai à élaborer une recette d'analyse complète.
+    tab_draft: Brouillon
+    draft_title: Brouillon de recette
+    draft_empty: Démarrez une conversation pour élaborer votre recette. Le brouillon apparaîtra ici au fur et à mesure de vos décisions.
+    stage_complete: Recette prête
+    saving: Enregistrement...
+    status_ready: Prêt
+    select_dataset: Sélectionner un jeu de données...
+    open: Ouvrir dans l'éditeur
+    chat_error: Impossible d'obtenir une réponse
+    tab_chat: Chat
+    stage_transforms: Préparation des données
+    delete_session: Supprimer la session
+    no_session: Aucune session sélectionnée
+    stage_review: Examiner la recette
+    stage_goal: Question de recherche
+    no_sessions: Aucune session pour le moment
+    new_session: Nouvelle session
+    stage_greeting: Bienvenue
+    tab_sessions: Sessions
+    save: Enregistrer la recette
+    schema_changes: 'Modifications de schéma détectées :'
+    warnings_heading: Avertissements
+    draft_no_visualisation: Résultats numériques
+    errors_heading: Impossible d’enregistrer pour l’instant
+    draft_dataset: Jeu de données
+    draft_output: Sortie
+    draft_algorithm: Algorithme
+    progress_decided: '{count} sur {total} décidé(s)'
+    done: Terminé
+    chip_withheld: +{count} de plus
+    progress_next: '{progress} · {next}'
+    unread_sources: Certaines sources n'ont pas pu être lues, la liste des colonnes est donc peut-être incomplète.
+    chip_superseded: Remplacé par une offre plus récente.
+    chip_expand: Afficher {count} de plus
+    chip_collapse: Afficher moins
+  thinking: Réflexion...
+  testing:
+    state_fail: Échec
+    connection_label: Connexion IA
+    cost_warning: Ceci exécute {count} test(s), et le test de tour prend des minutes par modèle sur CPU. Appuyez à nouveau pour démarrer.
+    run_all_for_model: Tout exécuter pour ce modèle
+    run_failed: 'Le test n''a pas pu s''exécuter : {detail}'
+    no_connections_body: Tester un modèle nécessite une connexion IA. Ajoutez-en une, puis revenez à cette page.
+    slow_limit_unavailable: Vos paramètres ne comportent pas de limite pour les modèles lents, donc aucun modèle n'est signalé comme trop lent.
+    test_tools: Utilise les outils
+    discover_result: 'Le serveur a répertorié {seen} modèle(s) : {created} nouveau(x), {refreshed} déjà connu(s), {pruned} plus desservi(s)'
+    elsewhere_note: Un modèle peut conserver un résultat de capacité provenant d'une autre connexion. La durée à côté de chaque état est la mesure propre à cette connexion, si bien qu'un modèle peut afficher
+      un état ici sans durée.
+    running: En cours…
+    run_test: Exécuter le test
+    state_pass: Réussite
+    test_turn: Complexité
+    no_connections_heading: Aucune connexion IA pour l'instant
+    cost_confirm: Démarrer l'exécution
+    column_enabled: Activé
+    no_connections_link: Aller aux connexions IA
+    column_model: Modèle
+    explanation: Les concierges IA de Workbench sont conçus pour des modèles qui agissent. Un modèle qui ne fait que parler — aussi poliment, aussi grand soit-il — laissera l'éditeur de recettes répondre
+      sans rien faire. La solution vient du modèle, pas du code. L'outil de cette page vous permet de tester si un modèle est adapté.
+    discover_failed: 'Impossible de découvrir les modèles : {detail}'
+    failure_reason: 'Raison : {reason}'
+    discover_running: Demande au serveur…
+    enabled_yes: Modèle activé
+    discover_models: Découvrir les modèles
+    title: Tests IA
+    test_competence: Compétence
+    column_actions: Test
+    no_models: Aucun modèle n'a encore été découvert sur cette connexion.
+    too_slow: Au-delà de votre limite de {seconds} s
+    slow_limit_session_reset: Utiliser ma limite enregistrée
+    no_duration_here: Non exécuté sur cette connexion
+    slow_limit_session_link: Définissez-la de manière permanente dans votre profil
+    run_all_untested: Exécuter tous les tests sur les modèles non testés
+    slow_limit_session_hint: S'applique uniquement à cette page — non enregistré.
+    duration_seconds: '{seconds} s'
+    slow_limit_failed: Impossible de lire votre limite des modèles lents, donc aucun modèle n'est signalé comme trop lent. {detail}
+    load_error: Impossible de charger vos connexions d’IA. {detail}
+    duration_ms: '{ms} ms'
+    slow_limit_session_label: Limite des modèles lents
+    models_heading: Modèles
+    enabled_no: Modèle désactivé
+    cancelled: Arrêté. Les résultats déjà enregistrés ont été conservés.
+api:
+  admin:
+    already_full_admin: L'utilisateur est déjà administrateur complet
+    already_group_admin: L'utilisateur est déjà administrateur de groupe
+    cannot_delete_self: Vous ne pouvez pas supprimer votre propre compte
+    cannot_demote_full_admin: Impossible de rétrograder un administrateur complet
+    cannot_demote_self: Vous ne pouvez pas vous rétrograder vous-même
+    cannot_promote_example: Impossible de promouvoir un utilisateur exemple
+    delete_error: Échec de la suppression de l'utilisateur
+    demote_error: Échec de la rétrogradation de l'utilisateur
+    description_required: La description ne peut pas être vide
+    example_blocked: Les utilisateurs exemples ne peuvent pas effectuer d'actions administratives
+    group_not_found: Groupe non trouvé
+    group_users_load_error: Échec du chargement des utilisateurs du groupe
+    groups_load_error: Échec du chargement des groupes
+    groups_stats_error: Échec du chargement des statistiques du groupe
+    instance_exists: Impossible de supprimer le type car il possède {count} instance(s) associée(s).
+    insufficient_permissions: Autorisations insuffisantes pour cette action
+    invalid_group_id: group_id non valide. Doit être compris entre 00 et 99
+    invalid_id: ID non valide
+    invalid_upload_count: maxUploadCount doit être un entier non négatif (0 pour illimité).
+    invalid_upload_size: maxUploadSizeMB doit être un entier non négatif (0 pour illimité).
+    missing_fields: Champs obligatoires manquants
+    missing_group_id: ID de groupe manquant
+    missing_id: ID manquant
+    missing_model_id: ID du modèle manquant
+    missing_provider_code: Paramètre providerCode manquant
+    missing_user_id: userId manquant
+    model_update_error: Échec de la mise à jour du modèle
+    models_load_error: Échec du chargement des modèles
+    no_fields: Aucun champ valide à mettre à jour
+    no_group: L'utilisateur n'a aucun groupe attribué
+    not_group_admin: L'utilisateur n'est pas administrateur de groupe
+    only_full_admin: Seuls les administrateurs complets peuvent effectuer cette action
+    promote_error: Échec de la promotion de l'utilisateur
+    provider_delete_error: Échec de la suppression du fournisseur
+    provider_not_found: Fournisseur non trouvé
+    provider_update_error: Échec de la mise à jour du fournisseur
+    providers_load_error: Échec du chargement des fournisseurs
+    slug_exists: Le slug existe déjà
+    update_error: Échec de la mise à jour de l'utilisateur
+    user_load_error: Échec du chargement de l'utilisateur
+    user_not_found: Utilisateur non trouvé
+    users_load_error: Échec du chargement des utilisateurs
+    viz_type_create_error: Échec de la création du type de visualisation
+    viz_type_delete_error: Échec de la suppression du type de visualisation
+    viz_type_update_error: Échec de la mise à jour du type de visualisation
+    viz_types_load_error: Échec du chargement des types de visualisation
+    settings_invalid_max_registrations: Le nombre maximal d’inscriptions doit être un nombre positif ou illimité.
+    settings_invalid_email_timeout: Le délai d’expiration de la vérification de l’e-mail doit être un nombre positif (heures).
+    settings_invalid_email_sender: Format d’adresse e-mail de l’expéditeur invalide.
+    settings_load_error: Échec du chargement des paramètres globaux.
+    settings_invalid_grace_period: Le délai de grâce d’inscription doit être un nombre positif (heures).
+    settings_modify_forbidden: Seuls les administrateurs complets peuvent modifier les paramètres globaux.
+    settings_invalid_upload_size: La taille maximale de téléversement par défaut doit être un entier non négatif (0 pour illimité).
+    settings_save_error: Échec de l’enregistrement des paramètres globaux.
+    settings_view_forbidden: Seuls les administrateurs complets peuvent consulter les paramètres globaux.
+    settings_invalid_upload_count: Le nombre maximal de téléversements par défaut doit être un entier non négatif (0 pour illimité).
+    settings_invalid_public_url: Format de l’URL publique invalide.
+  auth:
+    account_deleted: Ce compte a été supprimé.
+    email_not_verified: E-mail non vérifié. Veuillez vérifier votre boîte de réception et votre dossier SPAM.
+    example_user_blocked: Les modifications de mot de passe sont désactivées pour les utilisateurs d'exemple.
+    example_user_forgot_blocked: La réinitialisation du mot de passe est désactivée pour les utilisateurs exemples
+    example_user_register_blocked: Les utilisateurs exemples ne peuvent pas créer de nouveaux comptes
+    example_user_reset_blocked: La réinitialisation du mot de passe est désactivée pour les utilisateurs exemples
+    internal_error: Erreur interne du serveur
+    invalid_credentials: Identifiants invalides
+    invalid_current_password: Le mot de passe actuel est incorrect
+    invalid_token: Jeton invalide ou expiré
+    missing_email: E-mail requis
+    missing_fields: Champs manquants
+    password_validation_failed: Échec de la validation du mot de passe
+    token_expired: Le jeton a expiré
+    unauthorized: Non autorisé
+    user_not_found: Utilisateur non trouvé
+  datasets:
+    delete_blocked: Les utilisateurs exemples ne peuvent pas supprimer des ensembles de données
+    example_blocked: Les utilisateurs exemples ne peuvent pas créer d'ensembles de données
+    proxy_error: Erreur interne du serveur
+    update_blocked: Les utilisateurs d’exemple ne peuvent pas mettre à jour les jeux de données
+  profile:
+    name_required: Le nom est requis
+    update_failed: Échec de la mise à jour du profil
+  recipes:
+    create_error: Échec de la création de la recette
+    dataset_not_found: Jeu de données introuvable
+    dataset_required: datasetId est requis
+    delete_error: Échec de la suppression de la recette
+    execute_error: Échec de l’exécution de la recette
+    execution_load_error: Échec du chargement de l’exécution
+    execution_not_found: Exécution introuvable
+    executions_load_error: Échec du chargement des exécutions
+    load_error: Échec du chargement des recettes
+    missing_id: L’ID de la recette est requis
+    name_required: Le nom et les étapes sont requis
+    not_found: Recette introuvable
+    not_owned: Recette introuvable ou non possédée
+    update_error: Échec de la mise à jour de la recette
+  register:
+    email_exists: Cet email existe déjà
+    internal_error: Erreur interne du serveur
+    invalid_email: Format d’email invalide
+    limit_reached: Limite d'inscription atteinte (maximum {max_reg} utilisateurs).
+    missing_fields: Champs manquants
+    password_validation_failed: Échec de la validation du mot de passe
+    settings_not_found: Paramètres globaux introuvables
+  settings:
+    load_failed: Échec du chargement des paramètres
+    save_failed: Échec de l’enregistrement des paramètres
+    user_not_found: Utilisateur introuvable
+  user:
+    api_key_required: Une clé API est requise pour ce fournisseur
+    connection_name_exists: Une connexion avec ce nom existe déjà
+    connection_not_found: Connexion introuvable
+    example_blocked: Les utilisateurs d’exemple ne peuvent pas effectuer cette action
+    internal_error: Erreur interne du serveur
+    missing_fields: Champs obligatoires manquants
+    provider_not_found: Fournisseur « {provider} » introuvable.
+    user_not_found: Utilisateur introuvable
+  global_settings_load_error: Erreur interne du serveur.
+app:
+  name: Statisticiens Workbench
+  version: Version
+chat:
+  connection_not_found: Connexion IA introuvable ou inaccessible.
+  connections_load_error: Échec du chargement des connexions
+  delete: Supprimer
+  delete_confirm: Êtes-vous sûr de vouloir supprimer cette discussion ?
+  delete_error: Échec de la suppression de la discussion
+  delete_success: Discussion supprimée
+  empty_state: Envoyez un message pour démarrer une conversation.
+  go_to_ai_settings: Aller aux paramètres d’IA
+  history: Historique des discussions
+  input_placeholder: Saisissez votre message…
+  load_error: Échec du chargement des discussions
+  models_load_error: Échec du chargement des modèles
+  new_chat: Nouvelle discussion
+  no_chat_selected: Aucune discussion active
+  no_chats: Aucune discussion pour l’instant
+  no_connections_message: Vous devez définir au moins une connexion IA avant de pouvoir utiliser la messagerie.
+  no_models: Aucun modèle disponible pour cette connexion
+  rename: Renommer
+  rename_empty: Le titre ne peut pas être vide
+  rename_error: Échec du renommage de la discussion
+  rename_success: Discussion renommée
+  select_connection: Connexion IA
+  select_connection_first: Veuillez d’abord sélectionner une connexion IA.
+  select_connection_placeholder: Sélectionner une connexion IA
+  select_model: Modèle
+  select_model_placeholder: Sélectionner un modèle
+  send_error: Échec de l’envoi du message
+  title: Discussion
+common:
+  audio_settings: Paramètres audio
+  back: Retour
+  cancel: Annuler
+  cannot_undo: Cette action est irréversible.
+  clear: Effacer
+  close: Fermer
+  close_navigation: Fermer la navigation
+  copied: Copié !
+  copy: Copier
+  copy_to_clipboard: Copier dans le presse-papier
+  delete: Supprimer
+  delete_chat: Supprimer la discussion
+  deleting: Suppression…
+  dismiss: Ignorer
+  dismiss_error: Ignorer l’erreur
+  dismiss_success: Ignorer le succès
+  edit: Modifier
+  error_label: Erreur
+  false_label: Faux
+  generating: Génération en cours…
+  has_more_information: a plus d’informations
+  loading: Chargement…
+  microphone_off: Microphone désactivé
+  microphone_on: Microphone activé
+  next: Suivant
+  no_answer: Aucune réponse renvoyée
+  no_permission: Vous n’avez pas l’autorisation d’afficher cette page.
+  open_navigation: Ouvrir la navigation
+  reset_to_defaults: Réinitialiser aux valeurs par défaut
+  restoring: Restauration en cours…
+  save: Enregistrer
+  saving: Enregistrement…
+  select_language: Sélectionner la langue
+  sending: Envoi en cours…
+  speaker_off: Haut-parleur désactivé
+  speaker_on: Haut-parleur activé
+  speech_input_unsupported: 'La saisie vocale n''est pas prise en charge par votre navigateur. Navigateurs compatibles : Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: L'accès au microphone a été refusé. Veuillez autoriser l'accès au microphone dans les paramètres de votre navigateur.
+  speech_mic_failed: 'Impossible de démarrer le microphone : {error}.'
+  speech_network_error: Erreur réseau de reconnaissance vocale — vérifiez votre connexion internet et réessayez.
+  speech_output_unsupported: 'La synthèse vocale n''est pas prise en charge par votre navigateur. Navigateurs compatibles : Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Erreur de reconnaissance vocale : {error}. Réessayez.'
+  success_label: Succès
+  system_default: Système par défaut
+  testing: Test en cours...
+  true_label: Vrai
+  unknown: Inconnu
+  untitled: Sans titre
+  uploading: Téléversement en cours...
+  verifying: Vérification en cours...
+  view: Voir
+  view_dataset: Voir le jeu de données
+  voice: Voix
+  unknown_error: Erreur inconnue
+  access_denied_admin: Accès refusé — administrateur uniquement.
+  audio_resume: Reprendre
+  audio_pause: Pause
+  audio_stop: Arrêter
+  email_features_unavailable: Les fonctionnalités de compte basées sur l'e-mail ne sont pas disponibles.
+  probe_timeout_label: Délai maximal du test de modèle (secondes)
+  ai_temperature_label: Température
+  connect_timeout_label: Délai de connexion (secondes)
+  ai_max_tokens_label: Nombre maximal de jetons de sortie
+  ai_models: Modèles d'IA
+  ai_timeout_label: Temps d'IA maximum
+components:
+  audio_settings_dialog:
+    close: Fermer
+    pitch_label: 'Tonalité : {0}'
+    reset_to_defaults: Réinitialiser les valeurs par défaut
+    speed_label: 'Vitesse : {0}x'
+    system_default: Système par défaut
+    title: Paramètres audio
+    voice: Voix
+  example_user_badge: Utilisateur exemple
+  example_user_badge_tooltip: Inscrivez-vous pour un accès complet
+  example_user_banner:
+    message: Vous consultez le système en mode lecture seule. Inscrivez-vous pour un accès complet afin de créer et modifier des ressources.
+    message_short: Mode lecture seule - Inscrivez-vous pour un accès complet
+    register_button: S'inscrire pour un accès complet
+    register_short: S'inscrire
+    title: MODE UTILISATEUR EXEMPLE
+  group_admin_badge: Administrateur du groupe
+  preparation_preview:
+    more_columns: +{0} de plus
+    null_value: Nul
+    rows_removed: '{0} supprimé'
+  readonly_wrapper:
+    message: Mode lecture seule - Inscrivez-vous pour un accès complet afin de modifier ce contenu
+  feature_gate:
+    upgrade_message: Cette fonctionnalité nécessite une licence d'entreprise. Contactez Sentuny pour les options de mise à niveau.
+    upgrade_title: Fonctionnalité Entreprise
+  active_checkmark: ✓
+  return_banner:
+    link: Revenir à votre session
+    text: Vous travailliez sur une recette IA.
+    recipe_text: Vous travailliez sur une recette.
+    recipe_link: Revenir à votre recette
+    fallback_link: Retour
+  data_value:
+    some_content_not_shown: Certains contenus ne sont pas affichés
+database:
+  connection:
+    add_first: Ajoutez votre première connexion
+    add_new: Ajouter une nouvelle connexion
+    add_success: Connexion ajoutée avec succès
+    add_title: Ajouter une nouvelle connexion
+    by_label: par
+    clear_default: Effacer le défaut
+    currently_not_shared: ❌ Actuellement non partagée
+    currently_shared: ✅ Actuellement partagée avec le groupe
+    database_label: Nom de la base de données
+    db_create_badge: Créer la base de données
+    default_badge: Par défaut
+    default_cleared: Connexion par défaut effacée
+    default_set: Connexion par défaut mise à jour
+    delete_button: Supprimer
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer la connexion ?
+    delete_error: Échec de la suppression de la connexion
+    delete_title: Supprimer la connexion
+    deleted: Connexion supprimée
+    edit_title: Modifier la connexion
+    form_description: Saisissez les détails de votre connexion à la base de données.
+    group_label: Groupe
+    host_label: Hôte
+    load_error: Échec du chargement des connexions
+    name_label: Nom de la connexion
+    name_placeholder: par exemple, Base de production
+    no_connections: Aucune connexion de base de données enregistrée pour le moment.
+    not_found: Connexion introuvable
+    password_label: Mot de passe
+    port_label: Port
+    save_error: Échec de l'enregistrement de la connexion
+    select_type: Sélectionner le type
+    set_default: Définir par défaut
+    shared_badge: Partagée
+    shared_description: Rendre cette connexion disponible aux autres utilisateurs de votre groupe.
+    shared_label: Partager avec le groupe
+    shared_readonly: Partagée
+    shared_readonly_message: Cette connexion est partagée avec vous. Vous pouvez la consulter, mais la modification est réservée au propriétaire.
+    tables_badge: Tables
+    test_button: Tester la connexion
+    test_failed: Échec de la connexion
+    test_incomplete: Veuillez remplir tous les champs avant de tester
+    test_network_error: Erreur réseau lors du test de la connexion.
+    test_success: Connexion réussie !
+    type_label: Type de base de données
+    unknown_user: Inconnu
+    update_success: Connexion mise à jour avec succès
+    username_label: Nom d'utilisateur
+    auto_create_tables: Création automatique de jeux de données de table
+    auto_create_views: Création automatique de jeux de données de vue
+    browse_tables: Parcourir les tables
+    auto_create_title: Création automatique de jeux de données
+    jet_host_label: Hôte du serveur Jet
+    file_path_label: Chemin du fichier
+    datasets_created: '{n} jeux de données créés'
+    auto_create_warnings_title: 'Connexion enregistrée, mais la création automatique du jeu de données a généré des avertissements :'
+    jet_port_label: Port du serveur Jet
+    probe_state:
+      incomplete: Configuration incomplète
+      reachable: Accessible
+      unreachable: Inaccessible
+      no_database: Aucune base de données
+      no_permission: Aucune autorisation
+      schema_error: Schéma illisible
+      auth_failed: Échec de l’authentification
+      unknown: Non vérifié
+    probe_check_failed: Impossible de vérifier la connexion à l’instant.
+    probe_no_success: Aucun test réussi enregistré
+    probe_never: Jamais
+    probe_minute_ago: il y a 1 minute
+    probe_minutes_ago: il y a {count} minutes
+    probe_hour_ago: il y a 1 heure
+    probe_check_now: Vérifier maintenant
+    probe_auto_hint: Mis à jour automatiquement au chargement de la liste des connexions.
+    probe_unsaved_hint: Une connexion est testée dès qu’elle est enregistrée.
+    probe_just_now: à l’instant
+    probe_title: Dernière vérification
+    probe_hours_ago: il y a {count} heures
+    probe_checked: Vérifié
+    probe_last_succeeded: Dernier succès
+  default_hint: La connexion par défaut est utilisée comme solution de repli lorsqu'une recette d'analyse ne spécifie pas de connexion.
+  title: Paramètres de la base de données
+datasets:
+  all_datasets: Toutes les données
+  by_label: par
+  created_label: Créé
+  define_button: Connecter une base de données
+  define_first: Connecter une base de données
+  delete:
+    confirm: Supprimer ce jeu de données ?
+    error: Échec de la suppression du jeu de données
+    success: Jeu de données « {id} » supprimé avec succès.
+    title: Supprimer
+  description:
+    empty: La description générée est vide. Veuillez vérifier la configuration du fournisseur d'IA.
+    error: Échec de la génération de la description.
+    generated: Description générée avec succès.
+    title: Description générée
+  detail:
+    created: Créé
+    descriptions: Descriptions IA
+    generated: Généré
+    load_error: Échec du chargement du jeu de données
+    model: Modèle
+    no_description: Aucune description
+    not_found: Jeu de données introuvable
+    not_found_message: Le jeu de données que vous recherchez est introuvable.
+    overview: Aperçu
+    rows: Lignes
+    rows_not_computed: Non calculé
+    storage_live: Vue en direct
+    materialize_failed: 'La table enregistrée n''a pas pu être construite :'
+    rows_not_computed_hint: La jointure n'a pas été exécutée, il n'y a donc pas encore de nombre de lignes.
+    storage_table: Table enregistrée
+  list_error: Échec du chargement des jeux de données
+  no_datasets: Aucune donnée disponible.
+  no_uploaded: Aucun jeu de données téléchargé pour l'instant.
+  preparation:
+    add_operation: Ajouter une opération
+    add_rule: Ajouter une règle
+    column_required: L'opération nécessite une colonne
+    columns_required: L'opération nécessite au moins une colonne
+    delete_confirmation: Êtes-vous sûr de vouloir supprimer la règle de transformation "{name}" ? Cela la supprimera également des recettes qui l'utilisent.
+    delete_error: Échec de la suppression de la règle de transformation
+    delete_title: Supprimer la règle de transformation
+    edit_rule: Modifier la règle
+    encode:
+      label: Étiquette
+      one_hot: One-Hot
+    fill:
+      constant: Constante
+      drop: Supprimer
+      mean: Moyenne
+      median: Médiane
+      mode: Mode
+    filter_invalid: L'opération de filtre nécessite une colonne et une valeur
+    link:
+      description: Nettoyer et transformer ce jeu de données
+      title: Règles de préparation
+    name_required: Le nom de la règle est requis
+    new_name_required: L'opération de renommage nécessite un nouveau nom
+    new_rule: Nouvelle règle
+    no_rules: Aucune règle de transformation définie pour ce jeu de données.
+    operation:
+      convert_type: Convertir le type
+      drop_columns: Supprimer les colonnes
+      encode: Encoder
+      fill_missing: Remplir les manquants
+      filter: Filtrer
+      normalize: Normaliser
+      rename_column: Renommer la colonne
+      standardize: Standardiser
+    operations: Opérations
+    operations_count: opération(s)
+    operator:
+      after: Après (>)
+      before: Avant (<)
+      contains: Contient
+      ends_with: Se termine par
+      equal_to: Égal à (=)
+      greater_than: Supérieur à (>)
+      greater_than_or_equal: Supérieur ou égal à (>=)
+      less_than: Inférieur à (<)
+      less_than_or_equal: Inférieur ou égal à (<=)
+      not_contains: Ne contient pas
+      not_equal: Différent de (!=)
+      on_or_after: Après ou égal à (>=)
+      on_or_before: Avant ou égal à (<=)
+      starts_with: Commence par
+    original_data: Données d'origine
+    placeholder:
+      boolean: vrai / faux
+      datetime: AAAA-MM-JJ ou horodatage...
+      number: Entrez un nombre...
+      value: Entrez une valeur...
+    preview: Aperçu
+    preview_error: Échec de l'aperçu de la règle
+    preview_title: Aperçu
+    rows_after: Après
+    rows_before: Avant
+    rows_removed: Supprimé
+    rule_created: Règle de préparation « {name} » créée avec succès.
+    rule_deleted: Règle de préparation supprimée avec succès.
+    rule_description: Description (facultatif)
+    rule_description_placeholder: Brève description
+    rule_name: Nom de la règle
+    rule_name_placeholder: par ex., Nettoyer pour l'analyse
+    rule_updated: Règle de préparation mise à jour avec succès.
+    rules_title: Règles de transformation
+    save_error: Échec de l'enregistrement de la règle de transformation
+    shared: Partager avec le groupe
+    transformed_data: Données transformées
+    type:
+      boolean: Booléen
+      datetime: DateHeure
+      numeric: Numérique
+      string: Chaîne
+    ui:
+      column: colonne
+      columns: colonnes (séparées par des virgules)
+      encoding: encodage
+      method: méthode
+      new_name: nouveau nom
+      operator: opérateur
+      target_type: type cible
+      type: Type
+      value: valeur
+  rules_button: Règles
+  schema:
+    column_name: Colonne
+    column_type: Type
+    columns: Colonnes
+    load_error: 'Impossible de charger le schéma : {error}'
+    no_sample_data: Aucun échantillon de données disponible
+    null_count: Nuls
+    sample_data: Échantillon de données (5 premières lignes)
+    title: Aperçu du schéma
+    total_columns: Colonnes totales
+    total_rows: Lignes totales
+    unique_count: Uniques
+  share: Partager
+  share_error: Échec de la mise à jour du partage
+  shared: Jeu de données partagé
+  shared_badge: Partagé
+  source:
+    unknown_file: Fichier inconnu
+  title: Mes données
+  transform_button: Transformer
+  type:
+    table: Table
+    upload: Téléchargé
+    view: Vue
+    virtual: Virtuel
+    postgresql: PostgreSQL
+    notebook: Notebook
+    mysql: MySQL
+    mssql: MS SQL
+    access: MS Access
+    cleaned_copy: Copie nettoyée
+  unknown_user: Inconnu
+  unshare: Annuler le partage
+  unshared: Jeu de données non partagé
+  upload:
+    card_title: Télécharger et décrire
+    connection_not_found: Connexion introuvable. Veuillez sélectionner une connexion IA valide.
+    description_label: Description (facultatif)
+    description_placeholder: Brève description de ces données
+    error: Échec du téléversement du jeu de données.
+    file_label: Fichier
+    file_selected: Fichier sélectionné
+    file_too_large: Le fichier dépasse la taille maximale de téléchargement de {max} Mo. Le téléchargement n'est pas autorisé.
+    generate_description: Générer une description
+    history: Historique des téléchargements
+    limit_reached: Limite atteinte
+    limit_reached_message: Vous avez atteint le nombre maximum de jeux de données autorisé ({count}).
+    name_label: Nom des données
+    name_placeholder: Mes données
+    no_connections: Vous devez définir au moins une connexion IA pour générer des descriptions.
+    no_datasets: Aucun jeu de données pour le moment
+    no_file: Veuillez d'abord sélectionner un fichier.
+    no_name: Veuillez entrer un nom de jeu de données.
+    select_dataset: Veuillez d'abord télécharger ou sélectionner un jeu de données.
+    shared_description: Rendre ces données disponibles aux autres utilisateurs de votre groupe.
+    shared_group_hint: 'Groupe : {group} - {description}'
+    shared_label: Partager avec le groupe
+    success: Jeu de données '{name}' téléversé avec succès.
+    title: Télécharger des données
+    upload_button: Télécharger
+    escalation_label: Réessayer avec (secondes)
+    escalation_hint: Seule cette tentative l'utilise. Si ce modèle nécessite normalement plus de temps, ajustez les paramètres du modèle de la connexion au lieu d'augmenter cette valeur à chaque fois.
+    escalation_invalid: Saisissez un nombre entier de secondes entre 1 et {max}
+    escalation_retry: Réessayer
+    escalation_failed_at: La description a expiré après {seconds} secondes.
+  upload_button: Télécharger des données
+  upload_count: '{count} téléchargement{plural}'
+  upload_first: Téléchargez votre premier fichier de données
+  upload_first_file: Téléchargez votre premier fichier
+  upload_new: Télécharger un nouveau fichier
+  uploaded_title: Données téléchargées
+  view_dataset_title: Afficher le jeu de données
+  view_schema: Afficher le schéma
+  browse:
+    nullable: Nullable
+    tables: Tables
+    type: Type
+    preview: Aperçu
+    preview_hint: Cliquez sur « Charger l'aperçu » pour voir des lignes d'exemple.
+    browse_tables: Parcourir les tables
+    load_tables_error: Échec du chargement des tables
+    back: Retour
+    tables_count: '{count} tables'
+    connections: Connexions
+    load_preview_error: Échec du chargement de l'aperçu
+    columns_title: Colonnes — {table}
+    column: Colonne
+    load_preview: Charger l'aperçu
+    select_table_hint: Sélectionnez une table pour afficher ses colonnes et prévisualiser les données.
+    load_columns_error: Échec du chargement des colonnes
+  transforms:
+    creating: Création…
+    delete_confirm: Supprimer cette transformation ?
+    load_error: Échec du chargement des transformations
+    name_label: Nom
+    delete_error: Échec de la suppression de la transformation
+    for: Transformations pour {name}
+    back: Retour à Mes données
+    no_transforms: Aucune transformation définie pour ce jeu de données.
+    description_label: Description (facultatif)
+    title: Transformations
+    created_label: Créé
+    create_new: Nouvelle transformation
+    operations_label: '{count} opération(s)'
+    create_button: Créer
+    create_error: Échec de la création de la transformation
+  database_label: BD
+  filter:
+    postgresql: PostgreSQL
+    notebooks: Notebooks
+    virtual: Virtuel
+    mysql: MySQL
+    not_shared: Non partagé
+    uploads: Téléversements
+    access: MS Access
+    no_match: Aucun jeu de données ne correspond à ce filtre.
+    label: Filtrer
+    mssql: MS SQL
+    cleaned: Nettoyé
+    shared: Partagé
+    all: Tous
+  source_unavailable: source indisponible
+  cleaned_badge: Nettoyé
+  created_from: Créé à partir de {name}
+  table_not_built: Table non construite
+define:
+  column_name: Colonne
+  column_type: Type
+  connection_label: Connexion à la base de données
+  dataset_name: Nom du jeu de données
+  dataset_name_placeholder: p. ex., Données clients
+  description_label: Description (facultatif)
+  description_placeholder: Brève description de ce jeu de données
+  existing_none: Aucun
+  existing_title: Existant
+  go_to_db_settings: Accéder aux paramètres de la base de données
+  load_connections_error: Échec du chargement des connexions
+  load_sources_error: Échec du chargement des sources
+  name_required: Le nom du jeu de données est requis
+  no_connections_message: Vous devez définir au moins une connexion de base de données avant de pouvoir connecter une base de données.
+  no_sources: Aucune table ou vue trouvée dans cette base de données.
+  nullable: Nullable
+  preview_label: Aperçu des données (10 premières lignes)
+  save_button: Enregistrer le jeu de données
+  save_error: Échec de la création du jeu de données
+  save_success: Jeu de données créé avec succès
+  schema_label: Schéma
+  select_connection: Sélectionner une connexion
+  select_source: Sélectionner une source
+  select_source_first: Veuillez d'abord sélectionner une table ou une vue.
+  shared_description: Rendre ce jeu de données disponible aux autres utilisateurs de votre groupe.
+  shared_label: Partager avec le groupe
+  source_label: Source
+  source_type_label: Type de source
+  step1_description: Choisissez une connexion de base de données pour connecter un jeu de données.
+  step1_title: Sélectionner une connexion de base de données
+  step2_description: Choisissez d'utiliser une table ou une vue, puis sélectionnez la source.
+  step2_title: Sélectionner la source
+  step3_description: Examinez les colonnes et affichez un aperçu des données de la source sélectionnée.
+  step3_title: Vérifier la source
+  step4_description: Donnez un nom et une description à votre jeu de données, puis enregistrez-le.
+  step4_title: Nommer et enregistrer
+  step_connection: Connexion
+  step_save: Enregistrer
+  step_source: Source
+  step_verify: Vérifier
+  table: Table
+  title: Connecter une base de données
+  verify_button: Vérifier la source
+  verify_error: Échec de la vérification de la table/vue
+  verify_success: Table/vue vérifiée avec succès
+  view: Vue
+demo:
+  badge: DÉMO
+  banner:
+    message: Ceci est un système de démonstration. Les données peuvent être réinitialisées périodiquement.
+    title: ⚠️ MODE DÉMO
+forgot_password:
+  back_to_login: Retour à la connexion
+  check_spam: Veuillez vérifier votre dossier spam si vous ne recevez pas l'e-mail d'ici quelques minutes.
+  description: Saisissez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.
+  error: Échec de l'envoi de l'e-mail de réinitialisation
+  sent: Si un compte existe avec cet e-mail, vous recevrez un lien de réinitialisation de mot de passe.
+  sent_description: Si un compte existe avec cet e-mail, vous recevrez un lien de réinitialisation de mot de passe.
+  sent_title: E-mail envoyé
+  submit: Envoyer le lien de réinitialisation
+  title: Mot de passe oublié
+global:
+  demo_mode:
+    description: Lorsqu'elle est activée, le système fonctionne en mode démo.
+    label: Mode démo
+  email_sender:
+    hint: L'adresse e-mail à partir de laquelle les e-mails de vérification sembleront provenir.
+    label: Adresse e-mail de l'expéditeur
+  email_timeout:
+    hint: Nombre d'heures de validité du lien de vérification d'e-mail.
+    label: Délai d'expiration de la vérification d'e-mail (heures)
+  grace_period:
+    hint: Heures avant que les comptes supprimés logiquement soient définitivement effacés.
+    label: Délai de suppression (heures)
+  invalid_grace_period: Veuillez saisir un nombre positif valide pour le délai de suppression (heures)
+  invalid_number: Veuillez saisir un nombre positif valide pour le nombre maximal d'inscriptions
+  invalid_timeout: Veuillez saisir un nombre positif valide pour le délai d'expiration de la vérification (heures)
+  load_error: Échec du chargement des paramètres globaux
+  max_registrations:
+    custom: Personnalisé (saisir ci-dessous)
+    custom_placeholder: Saisissez un nombre positif
+    hint: Définir une limite du nombre d'utilisateurs pouvant s'inscrire.
+    label: Nombre maximal d'inscriptions d'utilisateurs
+    placeholder: Sélectionner une limite
+    unlimited: Illimité
+    users: utilisateurs
+  password_policy:
+    custom: Personnalisé
+    high: Élevé (min 10, majuscule, minuscule, chiffre, spécial)
+    hint: Choisissez les exigences de complexité du mot de passe pour l'inscription des utilisateurs et les changements de mot de passe.
+    label: Politique de mot de passe
+    low: Faible (min 6 caractères)
+    medium: Moyen (min 8, majuscule, minuscule, chiffre)
+    min_length: Longueur minimale
+    min_strength: Solidité minimale (score zxcvbn 0-4)
+    require_digit: Exiger un chiffre
+    require_lowercase: Exiger une minuscule
+    require_special: Exiger un caractère spécial
+    require_uppercase: Exiger une majuscule
+    select: Sélectionner une politique
+  public_url:
+    hint: L'URL de base utilisée dans les liens de vérification d'e-mail (par exemple, https://workbench.example.com).
+    label: URL publique
+  save_button: Enregistrer les paramètres globaux
+  save_success: Paramètres globaux enregistrés
+  system:
+    description: Gérer les paramètres globaux qui s'appliquent à tous les utilisateurs (admin uniquement).
+    title: Configuration du système
+  title: Paramètres globaux
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Nombre maximal de jeux de données par utilisateur (0 = illimité). S'applique aux nouveaux utilisateurs.
+    count_unlimited: Illimité
+    default_count_label: Nombre maximal de téléversements par défaut par utilisateur
+    default_size_label: Taille maximale de téléversement par défaut par utilisateur (Mo)
+    select_count: Sélectionner une limite
+    select_size: Sélectionner une limite
+    size_100_mb: 100 Mo
+    size_10_mb: 10 Mo
+    size_1_gb: 1 Go
+    size_1_mb: 1 Mo
+    size_250_mb: 250 Mo
+    size_25_mb: 25 Mo
+    size_500_mb: 500 Mo
+    size_50_mb: 50 Mo
+    size_5_mb: 5 Mo
+    size_hint: Stockage total maximal par utilisateur (0 = illimité). S'applique aux nouveaux utilisateurs.
+    size_unlimited: Illimité
+  welcome:
+    hint: Ce message apparaîtra sur la page de connexion. Laissez vide pour le masquer.
+    label: Message de bienvenue
+    placeholder: Saisissez un message de bienvenue à afficher sur la page de connexion.
+home:
+  welcome_placeholder: Bienvenue dans le Workbench des statisticiens
+login:
+  account_deleted: Ce compte a été supprimé.
+  description: Connectez-vous à votre compte
+  docs_more_info: contient plus d'informations
+  email: Email
+  email_not_verified: E-mail non vérifié. Veuillez vérifier votre boîte de réception et votre dossier SPAM.
+  email_verified: E-mail vérifié avec succès ! Vous pouvez maintenant vous connecter.
+  forgot_password: Mot de passe oublié ?
+  invalid_credentials: Email ou mot de passe invalide.
+  invalid_token: Lien de vérification invalide. Veuillez en demander un nouveau.
+  missing_token: Aucun jeton de vérification fourni.
+  no_account: Vous n'avez pas de compte ?
+  password: Mot de passe
+  register_link: S'inscrire
+  resend_link: Renvoyer l'e-mail de vérification ?
+  signing_in: Connexion en cours...
+  submit: Connexion
+  success: Connecté avec succès
+  title: Connexion
+  token_expired: Le lien de vérification a expiré. Veuillez en demander un nouveau.
+nav:
+  about: À propos
+  admin: Admin
+  admin_groups: Descriptions des groupes
+  admin_panel: Gestion des utilisateurs
+  admin_providers: Fournisseurs d'IA
+  admin_visualization_types: Types de visualisation
+  ai_analysis_rules: Règles d'analyse
+  ai_chat: Outils d'IA
+  ai_database_design: Conception de base de données
+  ai_dataset_cleaning: Nettoyage de jeu de données
+  ai_general: Général
+  ai_virtual_datasets: Jeux de données virtuels
+  home: Accueil
+  logout: Déconnexion
+  user: Utilisateur
+  admin_setup_options: Options
+  admin_setup_internal: Interne
+  admin_setup: Configuration
+  admin_licence: Licence
+  admin_setup_limits: Limites
+  admin_setup_tuning: Réglage
+  ai_testing: Test de l’IA
+notebooks:
+  and_more: +{count} de plus
+  cant_create_tables: Cette connexion ne peut pas créer de tables — importation refusée
+  cells_label: 'Cellules :'
+  connection_create_db_badge: Créer une base de données
+  connection_form_label: Connexion
+  connection_tables_badge: Tables
+  connection_unavailable: Connexion à la base de données introuvable ou inaccessible
+  create_dataset: Créer automatiquement le jeu de données
+  create_new_database: Créer une nouvelle base de données
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrames :'
+  dataset_created: Jeu de données créé
+  delete_confirm: Supprimer l'importation "{name}" et toutes ses tables ?
+  delete_failed: Échec de la suppression de l'importation
+  delete_title: Supprimer l'importation
+  detected_dataframes: 'DataFrames détectés :'
+  doc_preview: 'Aperçu de la documentation :'
+  example_banner: Vous consultez en tant qu'utilisateur d'exemple. Inscrivez-vous pour importer et gérer des notebooks.
+  example_blocked: Les utilisateurs d'exemple ne peuvent pas importer de notebooks.
+  example_register: S'inscrire
+  fetch_error: Échec de la récupération des importations
+  import_button: Importer un notebook
+  import_complete: Importation terminée
+  import_deleted: Importation supprimée
+  import_failed: 'Échec de l''importation du notebook : {error}'
+  import_success: Importé {count} table(s) avec succès
+  import_title: Importation de notebook Jupyter
+  imported_at_label: 'Importé le :'
+  importing: Importation en cours...
+  kb_unit: Ko
+  kernel_label: 'Noyau :'
+  list_title: Importations de notebooks
+  no_dataframes: Aucun DataFrame trouvé dans ce notebook
+  no_imports: Aucune importation de notebook pour le moment.
+  notebook_label: 'Notebook :'
+  parse_error: Échec de l'analyse du notebook
+  parsing: Analyse en cours...
+  preview_button: Aperçu
+  rows_cols_format: '{rows} lignes × {cols} colonnes'
+  run_preview_first: Exécutez l'aperçu pour voir ce qui sera importé
+  sanitised_notice: Les cellules de code ont été supprimées pour des raisons de sécurité. Seules les sorties de données et le markdown sont conservés.
+  select_connection: Sélectionnez une connexion à la base de données
+  select_connection_placeholder: Sélectionnez une connexion...
+  select_file_first: Veuillez sélectionner un fichier .ipynb
+  share_error: Seul le propriétaire peut modifier les paramètres de partage.
+  share_label: Partager avec le groupe
+  shared: Notebook partagé avec le groupe
+  shared_badge: Partagé
+  size_label: 'Taille :'
+  step1_title: 'Étape 1 : Sélectionner le fichier'
+  step2_title: 'Étape 2 : Aperçu'
+  storage_form_label: Stockage
+  storage_label: 'Stockage :'
+  table_count: '{count} table{plural}'
+  tables_created_label: 'Tables créées :'
+  title_label: 'Titre :'
+  unshared: Notebook non partagé
+  table_name: 'Table : {name}'
+password:
+  strength:
+    fair: Passable
+    good: Bon
+    strong: Fort
+    weak: Faible
+preparation:
+  add_operation: Ajouter une opération
+  after: Après
+  back_to_list: Retour aux règles
+  before: Avant
+  cancel: Annuler
+  col:
+    categorical: catégoriel
+    datetime: date/heure
+    nulls: '{percent} % null'
+    numeric: numérique
+  cols: colonnes
+  column_label: Colonne
+  constant_value_label: Valeur constante
+  create_first: Créez votre première règle de préparation pour nettoyer et transformer ce jeu de données avant l'analyse.
+  delete: Supprimer
+  delete_confirm: Supprimer la règle "{name}" ? Cette action est irréversible.
+  description_label: Description (facultatif)
+  duplicate: Dupliquer
+  duplicate_suffix: (copie)
+  edit: Modifier
+  edit_title: 'Modifier la règle : {name}'
+  encoding:
+    label: Libellé
+    onehot: One-Hot
+  encoding_param_label: Encodage
+  live_preview: Aperçu en direct
+  load_error: Échec du chargement des données
+  method:
+    minmax: Min-Max
+    zscore: Score Z
+  method_label: Méthode
+  name_label: Nom
+  name_required: Le nom de la règle est requis
+  new_name_label: Nouveau nom
+  new_rule: Nouvelle règle
+  new_title: Nouvelle règle de préparation
+  no_rules: Aucune règle de préparation pour le moment
+  nulls: Nulls
+  op:
+    convert_type: Convertir le type
+    drop_column: Supprimer la colonne
+    drop_duplicates: Supprimer les doublons
+    encode_category: Encoder la catégorie
+    fill_missing: Remplir les valeurs manquantes
+    filter: Filtrer
+    rename_column: Renommer la colonne
+    normalize: Normaliser
+    standardize: Standardiser
+  operations_count: '{count} opération{itemize}'
+  operations_label: Opérations
+  operator_label: Opérateur
+  ops_required: Au moins une opération est requise
+  preview: Aperçu
+  preview_error: Échec de l'aperçu
+  preview_loading: Aperçu en cours…
+  preview_no_ops: Ajoutez des opérations pour voir l'aperçu
+  row_impact: '{before} → {after} lignes'
+  rows: lignes
+  rule_deleted: Règle supprimée
+  rule_duplicated: Règle dupliquée
+  rule_saved: Règle enregistrée
+  rules_for: Règles pour {dataset}
+  sample_data: Données d'échantillon
+  save: Enregistrer la règle
+  save_error: Échec de l'enregistrement de la règle
+  saving: Enregistrement en cours…
+  schema_error: Échec du chargement du schéma du jeu de données
+  select_column: -- Sélectionner une colonne --
+  select_type: -- Sélectionner une opération --
+  strategy:
+    constant: Constante
+    drop_row: Supprimer la ligne
+    mean: Moyenne
+    median: Médiane
+    mode: Mode
+  strategy_label: Stratégie
+  target_type_label: Type de cible
+  title: Règles de préparation — {dataset}
+  type_label: Opération
+  value_label: Valeur
+profile:
+  change_password:
+    description: Mettez à jour votre mot de passe.
+    title: Changer le mot de passe
+  change_password_button: Changer le mot de passe
+  confirm_password: Confirmer le nouveau mot de passe
+  current_password: Mot de passe actuel
+  current_password_required: Le mot de passe actuel est requis
+  dark_mode_description: Basculer entre le thème clair et le thème sombre.
+  dark_mode_label: Mode sombre
+  email_label: E-mail
+  email_notifications_description: Recevoir des mises à jour par e-mail concernant votre compte.
+  email_notifications_label: Notifications par e-mail
+  email_unchangeable: L'adresse e-mail ne peut pas être modifiée
+  example_user_language_hint: Inscrivez-vous pour accéder pleinement au changement de votre préférence linguistique.
+  example_user_name_hint: Inscrivez-vous pour accéder pleinement au changement de votre nom.
+  example_user_notifications_hint: Inscrivez-vous pour accéder pleinement au changement des paramètres de notification.
+  example_user_save_hint: Inscrivez-vous pour accéder pleinement à l'enregistrement des modifications.
+  example_user_theme_hint: Inscrivez-vous pour accéder pleinement au changement des préférences de thème.
+  group_description: Description
+  group_id: ID du groupe
+  group_info_title: Informations sur le groupe
+  group_load_error: Échec du chargement des informations du groupe
+  group_readonly_hint: Votre groupe est attribué par un administrateur et ne peut pas être modifié ici.
+  language_description: Choisissez votre langue préférée pour l'interface.
+  language_label: Langue
+  language_select_placeholder: Sélectionner la langue
+  languages_load_error: Échec du chargement des langues
+  load_error: Échec du chargement des paramètres
+  name_label: Nom
+  name_placeholder: Votre nom
+  new_password: Nouveau mot de passe
+  password_change_failed: Échec du changement de mot de passe
+  password_changed: Mot de passe modifié avec succès
+  password_disabled: Les changements de mot de passe sont désactivés pour les utilisateurs d'exemple
+  password_disabled_message: Vous êtes connecté en tant qu'utilisateur d'exemple. Les fonctions de mot de passe sont désactivées.
+  password_mismatch: Les nouveaux mots de passe ne correspondent pas
+  personal:
+    description: Mettez à jour vos informations personnelles et vos préférences d'application.
+    title: Profil et préférences
+  save_button: Enregistrer les modifications
+  save_error: Échec de l'enregistrement du profil
+  save_success: Profil enregistré
+  title: Paramètres du profil
+  update_error: Échec de la mise à jour du profil
+  slow_threshold:
+    description: Un test de modèle prenant plus longtemps que cette durée est signalé comme trop lent. Laissez vide pour utiliser la valeur par défaut du site.
+    title: Seuil des modèles lents
+    effective: 'Actuellement en vigueur :'
+    invalid: La limite doit être un nombre entier de secondes, au moins 1
+    placeholder: Utiliser la valeur par défaut du site
+    save: Enregistrer la limite
+    seconds: secondes
+    label: Ma limite
+    saved: Limite des modèles lents enregistrée
+recipes:
+  add_rule: Ajouter une règle
+  back_to_recipe: Retour à la recette
+  by_label: par
+  cancel_button: Arrêter
+  cancel_error: Échec de l'annulation de l'exécution
+  cancel_success: Exécution annulée
+  chart:
+    category: Catégorie
+    count: Nombre
+    value: Valeur
+    x_axis: X
+    y_axis: Y
+  clone: Cloner
+  clone_button: Cloner
+  clone_error: Échec du clonage de la recette
+  clone_success: Recette clonée avec succès
+  clone_suffix: (Copie)
+  column_type:
+    category: Catégorie
+    datetime: Date/Heure
+    number: Nombre
+    text: Texte
+  columns_after: Colonnes
+  columns_before: Colonnes
+  columns_label: Colonnes
+  columns_label_short: Colonnes
+  columns_required: Veuillez sélectionner au moins une colonne
+  create_error: Échec de la création de la recette
+  create_success: Recette « {name} » créée avec succès.
+  dataset_label: Jeu de données
+  dataset_required: Veuillez sélectionner un jeu de données
+  delete: Supprimer
+  delete_button: Supprimer
+  delete_confirmation: Êtes-vous sûr de vouloir supprimer la recette "{name}" ? Cette action est irréversible.
+  delete_title: Supprimer la recette
+  description_label: Description (facultatif)
+  description_placeholder: Description de cette recette
+  edit: Modifier
+  execute: Exécuter
+  execute_button: Exécuter
+  execute_error: 'Échec de l''exécution de la recette : {error}'
+  execute_success: Recette exécutée avec succès
+  execution_error: Erreur
+  execution_load_error: 'Échec du chargement de l''exécution : {error}'
+  execution_not_found: Exécution « {id} » introuvable.
+  execution_progress: Progression
+  execution_stage_results: Résultats de l'étape
+  execution_started: Démarré
+  execution_status: Statut
+  execution_title: Résultats de l'exécution
+  executions_title: Exécutions récentes
+  export_results: Exporter les résultats
+  go_define: Aller à Définir
+  go_upload: Aller à Téléverser
+  group_by_hint: Regrouper par une colonne catégorielle pour comparer les statistiques entre les groupes
+  group_by_label: Regrouper par (facultatif)
+  list_load_error: Échec du chargement des recettes
+  load_datasets_error: 'Échec du chargement des jeux de données : {error}'
+  load_error: 'Échec du chargement des recettes : {error}'
+  load_rules_error: Échec du chargement des règles de préparation
+  loading_schema: Chargement des colonnes...
+  move_down: Descendre
+  move_up: Monter
+  my_recipes: Mes recettes
+  name_label: Nom de la recette
+  name_placeholder: ex., Analyse des ventes
+  name_required: Le nom de la recette est requis
+  new_button: Nouvelle recette
+  new_title: Nouvelle recette
+  no_datasets: Aucun jeu de données trouvé. Veuillez d'abord téléverser ou définir un jeu de données.
+  no_datasets_available: Aucun jeu de données disponible. Veuillez d'abord téléverser un jeu de données.
+  no_datasets_found: Aucun jeu de données disponible. Téléversez d'abord un jeu de données.
+  no_group: Aucun
+  no_group_options: Aucune colonne catégorielle disponible pour le regroupement
+  no_preparation_rules: Aucune règle de préparation disponible pour ce jeu de données.
+  no_recipes: Vous n'avez pas encore créé de recettes.
+  no_schema: Aucun schéma disponible pour ce jeu de données
+  no_stages: La recette doit comporter au moins une étape.
+  no_visualisation: Aucun
+  no_visualisation_data: Aucune donnée de visualisation disponible
+  none: Aucun
+  preparation_rules: Règles de préparation (facultatif)
+  preparation_rules_applied: Règles de préparation appliquées
+  preparation_rules_applied_description: Les règles ont été appliquées dans l'ordre indiqué ci-dessous avant les étapes d'analyse.
+  preparation_rules_applied_title: Règles de préparation appliquées
+  preparation_rules_description: Sélectionnez les règles à appliquer dans l'ordre. Les règles sont appliquées séquentiellement.
+  recipe_label: Recette
+  remove_rule: Supprimer la règle
+  rows_after: Lignes après
+  rows_before: Lignes
+  rows_label: Lignes
+  rules_applied_label: '{count} règles appliquées :'
+  save_button: Enregistrer la recette
+  schema_error: 'Échec du chargement du schéma de colonne : {error}'
+  schema_loaded: 'Schéma chargé : {count} colonnes trouvées'
+  select_dataset: Sélectionner un jeu de données
+  select_group: Sélectionner une colonne pour le regroupement
+  select_rule: Sélectionner une règle à ajouter
+  select_rule_placeholder: Choisir une règle
+  select_technique: Sélectionner une technique
+  select_visualisation: Sélectionner une visualisation
+  selected: sélectionné
+  shared: partagé
+  shared_badge: Partagé
+  shared_description: Rendre cette recette accessible aux autres utilisateurs de votre groupe.
+  shared_group_hint: 'Groupe : {group} - {description}'
+  shared_label: Partager avec le groupe
+  shared_with_group: Partagé avec votre groupe
+  stage_data_selection: Sélection des données
+  stage_number: Étape {number}
+  stage_preparation: Préparation des données
+  stage_statistics: Statistiques
+  stage_visualisation: Visualisation
+  stages_title: Étapes
+  status:
+    cancelled: Annulé
+    completed: Terminé
+    failed: Échoué
+    pending: En attente
+    running: En cours
+  step1_description: Donnez un nom et une description à votre recette.
+  step1_title: Nommez votre recette
+  step2_description: Choisissez un jeu de données et sélectionnez les colonnes à analyser.
+  step2_title: Sélectionner les données
+  step3_description: Sélectionnez la technique statistique à appliquer.
+  step3_title: Choisir une analyse
+  step4_description: Ajouter une visualisation à votre recette.
+  step4_title: Visualisation (facultative)
+  step_analysis: Analyse
+  step_complete: Étape {step} terminée
+  step_data: Données
+  step_name: Nom
+  step_visualise: Visualiser
+  technique_anova_one_way: ANOVA à un facteur
+  technique_anova_two_way: ANOVA à deux facteurs
+  technique_chi_square: Test du khi-deux
+  technique_correlation: Matrice de corrélation
+  technique_descriptive: Statistiques descriptives
+  technique_hint: Les statistiques descriptives montrent des mesures de synthèse comme la moyenne, la médiane et l’écart type.
+  technique_label: Technique
+  technique_linear_regression: Régression linéaire
+  technique_t_test_independent: Test t pour échantillons indépendants
+  technique_t_test_paired: Test t pour échantillons appariés
+  title: Recettes statistiques
+  total_rules_applied: Total des règles appliquées
+  unknown_user: Inconnu
+  update_error: 'Échec de la mise à jour de la recette : {error}'
+  update_success: Recette « {id} » mise à jour avec succès.
+  updated_label: Mis à jour
+  visualisation:
+    columns_label: Colonnes
+    data_points: Points de données
+    distribution: Distribution
+    trend: Tendance
+    type_label: Type
+  visualisation_bar: Graphique à barres
+  visualisation_hint: Le graphique sera généré à l’aide des colonnes de données sélectionnées.
+  visualisation_label: Type de visualisation
+  visualisation_line: Graphique en courbes
+  visualisation_pie: Graphique circulaire
+  visualisation_raw_data: 'Données de visualisation :'
+  visualisation_scatter: Nuage de points
+  editor:
+    save: Enregistrer la recette
+    component_algorithm: Algorithme
+    placeholder: Ceci est l'éditeur manuel de Recette Statistique — Les recettes sont au cœur de l'établi.
+    name_required: Un nom de recette est requis.
+    new_recipe_name: Nouvelle recette
+    run: Exécuter
+    loading: Chargement de la recette...
+    save_error: Échec de l'enregistrement de la recette
+    create_mode: Créez une nouvelle recette — l'éditeur arrivera en Phase 3.
+    save_success: Recette enregistrée
+    component_dataset: Ensemble de données / Transformation
+    name_hint: Un nom est requis avant de pouvoir enregistrer la recette.
+    name_placeholder: Nom de la recette
+    component_output: Sortie
+  output:
+    category_column: Colonne de catégorie
+    placeholder: Sélectionner le type de sortie
+    x_column: Colonne de l'axe X
+    y_column: Colonne de l'axe Y
+  panel:
+    incomplete: Incomplet
+    updated: Mis à jour
+    shared_recipes: Partagé
+    complete: Prêt
+    no_recipes: Aucune recette pour le moment
+    no_results: Aucune recette ne correspond à votre recherche
+    search: Rechercher des recettes...
+    my_recipes: Mes recettes
+    new_button: Nouvelle recette
+  share:
+    button: Partager
+    group_info: Groupe {group} — {desc}
+    shared_badge: Partagé
+    read_only: Partagé par {owner} — lecture seule
+    unshare: Ne plus partager
+  execution:
+    results_label: 'Résultats :'
+    failed_start: Échec du démarrage de l'exécution
+    rules_count: '{count} règle(s) de préparation appliquée(s).'
+    running: Exécution de la recette…
+    request_failed: Échec de l'exécution
+    errors_label: 'Erreurs :'
+    showing_rows: Affichage de {count} lignes sur {total}
+  dataset:
+    no_datasets: Aucun jeu de données disponible
+    loading: Chargement des jeux de données...
+    rows_label: lignes
+    placeholder: Sélectionnez un jeu de données
+    load_error: Échec du chargement des jeux de données
+    columns_label: Colonnes
+  require:
+    second_response: Sélectionnez la deuxième colonne de réponse
+    first_response: Sélectionnez la première colonne de réponse
+    factorColumn: Sélectionnez la colonne de facteur pour {algo}
+    dependentColumn: Sélectionnez la colonne dépendante
+    independentColumns: Sélectionnez les colonnes indépendantes
+    responseColumn: Sélectionnez la colonne de réponse pour {algo}
+    dataset: Sélectionnez un jeu de données
+    algorithm: Choisir une analyse
+    xColumn: Sélectionnez la colonne X pour {out}
+    yColumn: Sélectionnez la colonne Y pour {out}
+    categoryColumn: Sélectionner la colonne de catégorie pour {out}
+  algorithm:
+    placeholder: Sélectionnez le type d'analyse
+    response_column: Réponse (numérique)
+    group_by: Regrouper par
+    dependent_column: Variable dépendante
+    independent_columns: Variables indépendantes
+    factor_column: Facteur (catégoriel)
+  needs_other_columns: (nécessite d'autres colonnes)
+  transforms:
+    remove: Supprimer
+    label: Transformations
+    no_transforms: Aucune transformation appliquée
+    manage_button: Gérer les transformations
+    add: Ajouter une transformation
+  visualisation_table: Table
+  visualisation_hbar: Barres horizontales
+  visualisation_donut: Graphique en anneau
+  visualisation_area: Graphique en aires
+  ui:
+    delete_error: Échec de la suppression de la recette
+    delete_success: Recette supprimée
+  visualisation_histogram: Histogramme
+register:
+  confirm_password: Confirmer le mot de passe
+  creating: Création du compte...
+  description: Créer un nouveau compte
+  email: E-mail
+  failed: Échec de l’inscription
+  have_account: Vous avez déjà un compte ?
+  language_description: Choisissez votre langue préférée pour l’interface.
+  login_link: Connexion
+  name: Nom
+  password: Mot de passe
+  password_mismatch: Les mots de passe ne correspondent pas.
+  submit: S’inscrire
+  success_with_verification: Votre compte a été créé. Consultez votre e-mail pour trouver le lien de vérification afin d'activer votre compte.
+  title: S’inscrire
+  email_failed_use_resend: Inscription réussie, mais l'e-mail de vérification n'a pas pu être envoyé. Veuillez le renvoyer depuis la page de connexion.
+  success_pending_approval: Votre compte a été créé et est en attente d'approbation par un administrateur. Vous pourrez vous connecter une fois qu'il aura été approuvé.
+  success_auto_verified: Votre compte a été créé et est prêt à être utilisé. Vous pouvez maintenant vous connecter.
+  registration_disabled: L'auto-inscription est désactivée. Veuillez contacter un administrateur.
+resend_verification:
+  back_to_login: Retour à la connexion
+  check_spam: Veuillez vérifier votre dossier spam si vous ne voyez pas l’e-mail d’ici quelques minutes.
+  description: Saisissez votre adresse e-mail pour recevoir un nouveau lien de vérification.
+  error: Échec de l’envoi de l’e-mail de vérification.
+  send_button: Envoyer l’e-mail de vérification
+  sent: E-mail de vérification envoyé. Veuillez vérifier votre boîte de réception (et votre dossier spam).
+  sent_description: Si un compte existe avec cette adresse e-mail, vous recevrez un lien de vérification.
+  sent_title: E-mail envoyé
+  title: Renvoyer l’e-mail de vérification
+reset_password:
+  confirm_password: Confirmer le nouveau mot de passe
+  description: Saisissez votre nouveau mot de passe ci-dessous.
+  failed: Échec de la réinitialisation du mot de passe
+  login_button: Aller à la connexion
+  missing_token: Aucun jeton de réinitialisation fourni
+  new_password: Nouveau mot de passe
+  password_mismatch: Les mots de passe ne correspondent pas
+  submit: Réinitialiser le mot de passe
+  success: Mot de passe réinitialisé avec succès
+  success_description: Votre mot de passe a été réinitialisé. Redirection vers la connexion...
+  success_title: Réinitialisation du mot de passe
+  title: Réinitialiser le mot de passe
+settings:
+  ai:
+    title: Connexions IA
+  database:
+    title: Connexions aux bases de données
+  profile:
+    title: Préférences
+  title: Paramètres
+tools:
+  all_datasets: Tous les jeux de données
+  connect_database: Connecter une base de données
+  description: Des utilitaires et outils d’analyse supplémentaires apparaîtront ici.
+  import_notebook: Importer un notebook
+  manage_data: Collecter des données
+  my_data: Mes données
+  notebooks: Notebooks
+  placeholder: La page des outils arrive bientôt.
+  title: Autres outils
+  upload_csv_excel: Importer CSV / Excel
+  upload_data: Importer des données
+  uploads_list: Imports (csv, Excel)
+  visualize: Bac à sable de visualisation
+validation:
+  api_key_required: Une clé API est requise pour ce fournisseur
+  database_required: Le nom de la base de données est requis
+  host_required: L’hôte est requis
+  name_required: Le nom de la connexion est requis
+  password:
+    min_length: Le mot de passe doit comporter au moins {min} caractères.
+    require_digit: Le mot de passe doit contenir au moins un chiffre.
+    require_lowercase: Le mot de passe doit contenir au moins une lettre minuscule.
+    require_special: Le mot de passe doit contenir au moins un caractère spécial.
+    require_uppercase: Le mot de passe doit contenir au moins une lettre majuscule.
+    too_weak: Le mot de passe est trop faible. Veuillez choisir un mot de passe plus robuste.
+  password_required: Le mot de passe est requis
+  port_invalid: Le port doit être compris entre 1 et 65535
+  provider_required: Veuillez sélectionner un fournisseur
+  username_required: Le nom d’utilisateur est requis
+  type_required: Veuillez sélectionner un type de base de données
+verify_email:
+  error_description: Quelque chose s’est mal passé.
+  error_title: Échec de la vérification
+  expired_description: Le lien de vérification a expiré.
+  expired_message: Vous pouvez demander un nouvel e-mail de vérification ci-dessous.
+  expired_title: Lien expiré
+  invalid_token: Lien de vérification invalide.
+  login_button: Accéder à la connexion
+  missing_description: Aucun jeton de vérification fourni.
+  missing_title: Aucun jeton de vérification
+  network_error: Erreur réseau. Veuillez réessayer.
+  resend_button: Renvoyer l’e-mail de vérification
+  success_description: Votre adresse e-mail a bien été vérifiée. Redirection vers la connexion...
+  success_title: E-mail vérifié
+  unknown_error: Quelque chose s’est mal passé.
+virtual:
+  clone: Cloner
+  deleted: Jeu de données supprimé
+  draft_badge: Brouillon
+  edit: Modifier
+  error: Une erreur s’est produite
+  existing_none: Aucun
+  existing_title: Jeux de données existants
+  loading: Chargement...
+  more: plus
+  new_chat: Nouveau jeu de données virtuel
+  placeholder: Décrivez ce que vous voulez faire...
+  ready_badge: Prêt
+  recent_chats: Discussions récentes
+  send: Envoyer
+  stage: Étape
+  title: Jeux de données virtuels
+  verbose: Verbeux
+  welcome: Bienvenue dans l’assistant Jeux de données virtuels. Si vous découvrez cet outil, voici comment commencer.
+  preview_columns: Colonnes de sortie
+  preview_name: Nom
+  preview_title: Aperçu du jeu de données
+  preview_joins: Jointures
+  preview_sources: Sources
+  manual:
+    preview_error: La jointure n’a pas pu être exécutée.
+    title: Éditeur de jeu de données virtuel
+    update_dataset: Mettre à jour ce jeu de données
+    move_up: Monter cette colonne d’une position
+    validate_ok: La définition est structurellement valide.
+    need_columns: Cochez au moins une colonne à inclure.
+    save_error: Le jeu de données virtuel n’a pas pu être enregistré.
+    bridge_no_columns: colonnes pas encore lues — développez la source ou ajoutez la jointure et sélectionnez-les
+    save_success: Jeu de données virtuel enregistré.
+    incomplete_join: Terminez ou supprimez la jointure pour laquelle aucune colonne n’est encore choisie.
+    need_join: Deux sources sont sélectionnées, mais rien ne les relie.
+    open_none: Il n’y a pas encore de jeu de données virtuel à ouvrir.
+    preview_empty: La jointure n’a renvoyé aucune ligne.
+    loaded_note: Définition existante ouverte — l’enregistrement la met à jour.
+    joins_hint: Deux sources ou plus doivent être reliées par une jointure. Une seule source n’en a pas besoin.
+    alias_label: Alias
+    intro: Créez un jeu de données virtuel à partir des colonnes que vous choisissez, ou ouvrez-en un existant pour le modifier.
+    bridge: Pont
+    move_down: Descendre cette colonne d’une position
+    new_dataset: Commencer un nouveau jeu de données
+    bridge_choose_columns: aucune colonne correspondante trouvée — ajoutez la jointure et sélectionnez-les
+    output_title: Ce que le jeu de données expose
+    add_join: Ajouter une jointure
+    sources_title: Provenance des données
+    unattached_sources: 'Non reliées au reste : {sources}. Ajoutez une jointure pour les relier.'
+    test_pulls_every_source: Le test de la jointure lit chaque source en entier, ce qui peut être lent.
+    sources_hint: Développez une connexion ou un jeu de données, puis cochez les colonnes à inclure.
+    need_name: Donnez un nom au jeu de données avant de l’enregistrer.
+    tables_error: Les tables n’ont pas pu être lues.
+    materialized_hint: Écrit une table au lieu d’une jointure en direct. Laissez cette option désactivée pendant le prototypage.
+    aggregation_note: Une agrégation portée par une ancienne définition est conservée telle quelle, mais la jointure ne l’applique pas.
+    validate_errors: 'La définition présente des problèmes :'
+    columns_error: Les colonnes n’ont pas pu être lues.
+    open_label: Ouvrir un jeu de données existant
+    validate: Valider la définition
+    load_error: La définition de ce jeu de données n’a pas pu être chargée.
+    preview_rows: '{count} ligne(s) renvoyée(s)'
+    remove_join: Supprimer cette jointure
+    alias_taken: Cet alias est déjà utilisé par une autre source.
+    no_match: Rien ici ne correspond au filtre.
+    select_none: Ne rien sélectionner
+    materialized_label: Matérialiser le résultat
+    name_label: Nom du jeu de données
+    no_sources: Aucune connexion ni aucun jeu de données n’est disponible.
+    description_label: Description du jeu de données
+    test_join: Tester la jointure
+    select_all: Tout sélectionner
+    loading_columns: Lecture des colonnes…
+    output_hint: Les colonnes que ce jeu de données exposera, dans l’ordre.
+    column_placeholder: Choisir une colonne
+    joins_title: Comment les sources sont jointes
+    complete_join: Compléter la jointure inachevée
+    remove: Retirer cette colonne de la sortie
+    suggested: Suggérées
+    loaded_note_shared: Ouverture d'une définition partagée existante — lecture seule - aucune mise à jour autorisée
+    materialize_done: Table construite.
+    materialize_failed: 'Enregistré, mais la table n’a pas pu être construite :'
+    materialize_retry: Réessayer
+  progress_decided: '{decided} sur {total} décidé(s)'
+  chip_load_error: Les choix n’ont pas pu être actualisés ; ils sont donc peut-être obsolètes.
+  panel_fold_error: L’état replié du panneau n’a pas pu être enregistré ; il sera donc de nouveau ouvert la prochaine fois.
+  panel_tick_no_session: Envoyez d’abord un message — l’arborescence enregistre vos coches dans la session.
+  panel_tick_error: Cette colonne n’a pas pu être cochée.
+  panel_columns: '{count} col.'
+  panel:
+    collapse: Replier le panneau source
+    expand: Afficher le panneau source
+  chip_error: Ce choix n’a pas pu être appliqué.
+  heading_materialised: Live ou matérialisée ?
+  heading_choose_table: Choisir une table
+  heading_match_columns: Associer ces colonnes
+  heading_choose_columns: Choisir des colonnes
+  selection_hint: Décochez tout ce que vous ne voulez pas, puis utilisez-les ensemble.
+  act:
+    named: Nommé « {name} »
+    sources_short: 'Accepté {count} tables : {tables}'
+    applied: Appliqué {piece}
+    sources: Accepté {count} tables
+    join: Joint {pair}
+  confirm_selection: Utilisez-les
+  suggestion_applied: Appliqué
+  joins_unsaved: Ces lignes diffèrent du jeu de données. Appliquez-les ou corrigez d’abord la ligne vide.
+  joins_coverage: '{connected} tables connectées sur {total}'
+  joins_hint: Modifiez une colonne ou un type de jointure, puis continuez.
+  join_type_label: Type de jointure
+  joins_apply: Appliquer
+  joins_unjoined: 'Non jointes : {tables}'
+  act_joins: '{count} paires jointes'
+  name_suggestion_heading: Nom suggéré — modifiez-le si vous le souhaitez
+  name_suggestion_accept: Utiliser ce nom
+visualize:
+  config: Configuration
+  data: Données (JSON)
+  data_placeholder: Collez ici des données JSON ou générez un échantillon
+  description: Sélectionnez un type de visualisation, générez des données d’échantillon, ajustez les paramètres et prévisualisez.
+  download_error: Échec du téléchargement du tableau
+  download_png: Télécharger en PNG
+  download_success: Tableau téléchargé en PNG
+  generate_sample: Générer un échantillon
+  invalid_data: Données invalides pour le tableau de texte. Colonnes et lignes attendues.
+  load_error: Échec du chargement des types de visualisation
+  no_data: Aucune donnée à visualiser. Générez des données d’échantillon ou collez du JSON.
+  no_types: Aucun type de visualisation défini. Veuillez contacter un administrateur.
+  parameters: Paramètres
+  preview: Aperçu
+  sample_expenses: Dépenses
+  sample_generated: Données d’échantillon générées
+  sample_item: Article
+  sample_sales: Ventes
+  sample_value: Valeur
+  save_error: Échec de l’enregistrement
+  save_instance: Enregistrer l’instance
+  save_no_data: Aucune donnée à enregistrer. Veuillez générer ou coller des données.
+  save_success: Visualisation enregistrée avec succès
+  select_type: Sélectionner le type
+  title: Bac à sable de visualisation
+  type: Type de visualisation
+  unsupported: Type de visualisation pas encore implémenté
+  unsupported_parameter: Type non pris en charge
+setup:
+  options:
+    password_policy:
+      select: Sélectionner une politique
+      require_digit: Exiger un chiffre
+      label: Politique de mot de passe
+      medium: Moyen (min 8, majuscule, minuscule, chiffre)
+      require_lowercase: Exiger une minuscule
+      require_special: Exiger un caractère spécial
+      min_length: Longueur minimale
+      hint: Choisissez les exigences de complexité du mot de passe pour l'inscription des utilisateurs et les changements de mot de passe.
+      custom: Personnalisé
+      min_strength: Force minimale (score zxcvbn de 0 à 4)
+      require_uppercase: Exiger une majuscule
+      high: Élevé (min 10, majuscule, minuscule, chiffre, spécial)
+      low: Faible (min 6 caractères)
+    save_button: Enregistrer les options
+    public_url:
+      hint: L'URL de base utilisée dans les liens de vérification des e-mails (par exemple, https://workbench.example.com).
+      label: URL publique
+    title: Options
+    welcome:
+      placeholder: Saisissez un message de bienvenue à afficher sur la page de connexion.
+      label: Message d'accueil
+      hint: Ce message apparaîtra sur la page de connexion. Laissez vide pour le masquer.
+    load_error: Échec du chargement des paramètres d'options
+    save_error: Échec de l'enregistrement des paramètres d'options
+    save_success: Paramètres d'options enregistrés
+    description: Paramètres définis lors de l'installation qui définissent l'identité et le comportement de ce déploiement. Modifiez avec précaution — ils affectent tous les utilisateurs.
+    email_sender:
+      hint: L'adresse e-mail qui apparaîtra comme expéditeur des e-mails de vérification.
+      label: Adresse de l'expéditeur des e-mails
+    registration_mode:
+      mode_4: Auto-inscription avec vérification par e-mail
+      mode_2: Auto-inscription et vérification par l'administrateur
+      select: Sélectionnez le mode d'inscription
+      label: Mode d'inscription
+      mode_1: L'administrateur crée des utilisateurs vérifiés
+      hint: Choisissez comment les nouveaux comptes utilisateur sont créés et vérifiés.
+      mode_0: Auto-inscription automatiquement vérifiée
+  limits:
+    invalid_registration_max: Veuillez entrer un nombre positif valide pour le nombre maximum d'inscriptions
+    save_button: Enregistrer les limites
+    upload:
+      count_1: '1'
+      count_100: '100'
+      count_hint: Nombre maximal de jeux de données par utilisateur (0 = illimité). Appliqué aux nouveaux utilisateurs.
+      select_size: Sélectionner une limite
+      count_25: '25'
+      size_10_mb: 10 Mo
+      count_unlimited: Illimité
+      count_10: '10'
+      size_1_mb: 1 Mo
+      size_250_mb: 250 Mo
+      count_5: '5'
+      size_5_mb: 5 Mo
+      count_1000: '1000'
+      size_25_mb: 25 Mo
+      size_hint: Stockage total maximal par utilisateur (0 = illimité). Appliqué aux nouveaux utilisateurs.
+      count_250: '250'
+      size_1_gb: 1 Go
+      count_50: '50'
+      size_50_mb: 50 Mo
+      default_count_label: Nombre max. de téléchargements par défaut par utilisateur
+      default_size_label: Taille max. de téléchargement par défaut par utilisateur (Mo)
+      size_500_mb: 500 Mo
+      size_100_mb: 100 Mo
+      size_unlimited: Illimité
+      count_500: '500'
+      select_count: Sélectionner la limite
+    load_error: Échec du chargement des paramètres de limites
+    demo_mode:
+      description: 'Lorsque activé, le système fonctionne en mode démo : les actions destructrices sont bloquées et des indicateurs sont affichés dans l''interface utilisateur.'
+      label: Mode démo
+    save_error: Échec de l'enregistrement des paramètres de limites
+    grace_period:
+      hint: Heures avant que les comptes supprimés de manière réversible ne soient définitivement effacés.
+      label: Délai de suppression (heures)
+    email_timeout:
+      label: Délai d'expiration de la vérification des e-mails (heures)
+      hint: Nombre d'heures pendant lesquelles le lien de vérification par e-mail reste valide.
+    max_registrations:
+      users: utilisateurs
+      unlimited: Illimité
+      label: Nombre maximal d'inscriptions d'utilisateurs
+      placeholder: Sélectionner la limite
+      hint: Définir une limite sur le nombre d'utilisateurs pouvant s'inscrire.
+    title: Limites
+    invalid_timeout: Veuillez entrer un nombre positif valide pour le délai d'expiration de vérification (heures)
+    description: Contrôles opérationnels pour les limites de ressources, les délais d'expiration et le comportement du système. Sans danger à ajuster à tout moment.
+    save_success: Paramètres de limites enregistrés
+    invalid_grace_period: Veuillez entrer un nombre positif valide pour le délai de suppression (heures)
+  internal:
+    system_status:
+      initialized: Initialisé
+      db_pool: Pool de base de données
+      title: État du système
+      not_initialized: Non initialisé
+      version: Version
+      available: Disponible
+      healthy: En bonne santé
+      unavailable: Indisponible
+      shared_memory: Mémoire partagée
+      overall_health: Santé globale
+      description: Indicateurs de santé en temps réel pour les services backend.
+      not_required: Non requis
+      unhealthy: Malsain
+      db_cluster: Cluster de base de données
+    description: Diagnostics système et configuration interne. Indicateurs d'état en lecture seule.
+    future:
+      cache_config: Configuration du cache / de la session
+      debug_logging: Bascule débogage / journalisation détaillée
+      email_transport: Statut du transport d'e-mail
+      title: Prochainement
+      pool_stats: Statistiques du pool de base de données
+      description: Des diagnostics supplémentaires seront ajoutés dans les prochaines versions.
+    licence:
+      issued_to: Délivré à
+      tier: Niveau de licence
+      expiry: Expiration
+      title: Licence et fonctionnalités
+      description: Niveau de licence actuel et fonctionnalités activées.
+      features: Fonctionnalités activées
+    load_error: Échec du chargement des diagnostics système
+    title: Interne
+  tuning:
+    ai_section_hint: Valeurs par défaut pour chaque requête IA. Une connexion et un modèle particuliers peuvent les remplacer lorsque le réglage est propre à cette paire.
+    load_error: Impossible de charger les paramètres de réglage
+    description: 'Valeurs par défaut pour le comportement de l''IA et les limites de temps. Elles conviennent généralement telles quelles : un paramètre par utilisateur ou par connexion peut différer, et
+      la valeur indiquée ici est celle qui s''applique lorsque ni l''un ni l''autre n''existe.'
+    save: Enregistrer les paramètres
+    reset_confirm_title: Réinitialiser ces six valeurs à leurs valeurs par défaut ?
+    reset_confirm_body: Chaque valeur de cette page revient à sa valeur par défaut d'origine. Les remplacements par connexion ne sont pas affectés. Cette action est irréversible et vous devrez saisir à
+      nouveau toute valeur modifiée.
+    ai_temperature_hint: 'Degré de variation des réponses : 0 correspond à la répétabilité maximale que le modèle permet, 2 à la variation maximale. Les valeurs en dehors de 0 à 2 sont rejetées par le fournisseur,
+      pas par ce système.'
+    invalid_model_test_seconds: Veuillez saisir un nombre entier de secondes, au moins 1
+    invalid_ai_timeout: La limite de temps IA doit être un nombre entier de secondes, au moins 1
+    slow_threshold_hint: Un test de modèle prenant plus longtemps que cette durée est signalé comme trop lent. Les utilisateurs peuvent augmenter leur propre limite ; personne ne peut abaisser la sienne
+      en dessous de 1.
+    ai_timeout_hint: Durée maximale d'exécution d'une requête IA avant son abandon. Trop courte, la discussion échoue en silence ; trop longue, un modèle bloqué occupe un travailleur. Les modèles locaux
+      sur CPU peuvent nécessiter plusieurs minutes.
+    connect_timeout_hint: Durée maximale pendant laquelle le réseau peut accepter une connexion avant que le point de terminaison ne soit considéré comme injoignable. Une valeur inférieure aux besoins du
+      réseau transforme un point de terminaison fonctionnel en point mort.
+    forbidden: Seul un administrateur global peut modifier ces paramètres.
+    ai_max_tokens_hint: La réponse la plus longue qu'une seule requête peut produire. Une description nécessite environ 500 jetons ; 4000 laissent une marge confortable.
+    saved: Paramètres de réglage enregistrés
+    reset_confirm_action: Réinitialiser
+    probe_timeout_hint: Durée maximale d'exécution d'un test de pertinence. Un modèle hébergé sur CPU prend des minutes ; une limite courte ici enregistre un faux échec au lieu de gagner du temps.
+    invalid_probe_timeout: Le délai maximal du test doit être un nombre entier de secondes, entre 1 et 1200
+    reset_done: Paramètres de réglage réinitialisés à leurs valeurs par défaut
+    reset_error: Impossible de réinitialiser les paramètres de réglage
+    ai_tokens: jetons
+    invalid_max_tokens: Veuillez saisir un nombre entier de jetons, au moins 1
+    invalid_connect_timeout: Le délai de connexion doit être un nombre entier de secondes, entre 1 et 60
+    save_error: Impossible d’enregistrer les paramètres de réglage
+    invalid_temperature: La température doit être un nombre compris entre 0 et 2
+    resetting: Réinitialisation…
+    saving: Enregistrement…
+    seconds: secondes
+    ai_section_label: Génération par IA
+    slow_threshold_label: Seuil des modèles lents
+    preamble_detail: Chaque requête d’IA utilise ces paramètres, sauf si une connexion les remplace. Modifier l’un d’eux affecte tous les modèles qui n’ont pas de paramètre propre ; cela ne modifie pas
+      une connexion que vous avez déjà réglée.
+transforms:
+  filter:
+    op_eq: '='
+    op_gt: '>'
+    op_neq: '!='
+    op_contains: contient
+    op_is_not_null: n'est pas nul
+    op_lt: <
+    op_is_null: est null
+  op:
+    type:
+      filter: Filtrer les lignes
+      drop_duplicates: Supprimer les doublons
+      convert_type: Convertir le type
+      rename_column: Renommer la colonne
+      fill_missing: Remplir les valeurs manquantes
+      encode_category: Encoder la catégorie
+      drop_column: Supprimer la colonne
+      standardize: Standardiser
+      normalize: Normaliser
+    operations_label: Opérations
+    target_datetime: Date et heure
+    empty_hint: Ajoutez une opération pour commencer à construire votre transformation.
+    encoding_onehot: One-hot
+    target_numeric: Numérique
+    add: Ajouter une opération
+    target_string: Chaîne
+    encoding_placeholder: Encodage
+    remove: Supprimer
+    value_placeholder: Valeur
+    target_type_placeholder: Type de cible
+    column_placeholder: Sélectionner une colonne
+    type_placeholder: Type d'opération
+    operator_placeholder: Opérateur
+    target_boolean: Booléen
+    encoding_label: Étiquette
+    method_placeholder: Méthode
+    new_name_placeholder: Nouveau nom
+  name_required: Le nom de la transformation est requis.
+  disconnect_transform: Déconnecter de la recette
+  fill:
+    constant: Constante
+    drop_rows: Supprimer des lignes
+    mode: Mode
+    mean: Moyenne
+    median: Médiane
+  save_success: Transformation enregistrée.
+  save_button: Enregistrer
+  connect_transform: Connecter à la recette
+  search_placeholder: Rechercher des transformations…
+  delete_button: Supprimer
+  empty_hint: Les opérations sont appliquées dans l'ordre de la liste lors de l'exécution de la transformation.
+  description_label: Description
+  delete_success: Transformation supprimée.
+  new_transform: Nouvelle transformation
+  empty_title: Sélectionnez une transformation dans la liste ou créez-en une nouvelle.
+  for_recipe: 'Recette : {name}'
+  connected_count: '{count} connecté(s)'
+  empty_state: Ajoutez une opération pour commencer à créer votre transformation.
+  connect_error: Échec de connexion de la transformation
+  disconnect_error: Échec de déconnexion de la transformation
+  description_placeholder: Description (facultatif)
+  back_to_data: Retour à Mes Données
+  no_transforms: Aucune transformation définie pour ce jeu de données.
+  operations_heading: Opérations
+  operations_count: '{count} opérations'
+  no_search_results: Aucune transformation ne correspond à votre recherche
+  connected_to_recipe: 'Connecté à : {name}'
+  delete_confirm: Supprimer cette transformation ?
+  name_label: Nom
+  back_to_recipe: 'Retour à la recette : {name}'
+  load_error: Échec du chargement de la transformation
+  name_placeholder: Score de santé de l'IA
+licence:
+  issued_at_label: Émis
+  install_button: Installer la licence
+  install_no_file: Aucun fichier sélectionné.
+  admin_required: Vous devez être administrateur pour afficher les informations de licence.
+  delete_success: Licence supprimée. Fonctionne en mode open-source.
+  details_label: Détails de la licence
+  load_error: Échec du chargement des informations de licence.
+  expires_at_label: Expire
+  upload_title: Télécharger le fichier de licence
+  open_source_message: Cette installation fonctionne en mode open-source. Contactez Sentuny pour passer à une licence d'entreprise.
+  description: Informations sur la licence de fonctionnalité actuelle et le niveau.
+  features_label: Fonctionnalités activées
+  no_features: Aucune fonctionnalité restreinte n'est actuellement activée.
+  install_success: Licence installée avec succès.
+  delete_no: Annuler
+  install_error: Échec de l'installation de la licence.
+  tier_label: Niveau
+  delete_title: Supprimer la licence
+  title: Statut de la licence
+  preview_error: Échec de la validation du fichier de licence.
+  delete_confirm: Cela ramènera le système en mode open source. Toutes les fonctionnalités restreintes seront désactivées. Vous pourrez les restaurer en installant une nouvelle licence.
+  issued_to_label: Délivrée à
+  preview_invalid: Fichier de licence invalide.
+  delete_yes: Oui, supprimer la licence
+  preview_title: Aperçu de la licence
+  delete_error: Échec de la suppression de la licence.
+  max_users_label: Utilisateurs sous licence
+  delete_button: Supprimer la licence

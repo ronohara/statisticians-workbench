@@ -1,0 +1,9 @@
+packages: []
+
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
+  msw: false
+  sqlite3: true
+  es5-ext: true
+  node-package-builder: true

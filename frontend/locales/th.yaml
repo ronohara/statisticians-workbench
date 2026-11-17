@@ -1,0 +1,2248 @@
+about:
+  description: สร้างประสบการณ์ที่น่าทึ่งด้วย shadcn/ui และ Next.js ดีไซน์สะอาด ประสิทธิภาพรวดเร็ว
+  fast_desc: สร้างบน Next.js App Router เพื่อประสิทธิภาพสูงสุด
+  fast_title: รวดเร็ว
+  get_started: เริ่มต้นใช้งาน
+  modern_desc: คอมโพเนนต์ที่เข้าถึงได้จาก shadcn/ui จัดสไตล์ด้วย Tailwind CSS
+  modern_title: UI ที่ทันสมัย
+  secure_desc: ปลอดภัยด้านประเภทและปรับแต่งได้ – คุณเป็นเจ้าของโค้ดคอมโพเนนต์
+  secure_title: ปลอดภัย
+  title: เกี่ยวกับ Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: กลับไปยังผู้ดูแลระบบ
+    cannot_modify_self: ไม่สามารถแก้ไขบัญชีของคุณเองได้
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ {name}? ผู้ใช้นี้จะถูกลบแบบซอฟต์และสามารถกู้คืนได้โดยผู้ดูแลระบบเต็มรูปแบบ
+    delete_error: ลบผู้ใช้ไม่สำเร็จ
+    delete_title: ลบผู้ใช้
+    demote: ลดระดับ
+    demote_error: ลดระดับผู้ใช้ไม่สำเร็จ
+    demote_success: ผู้ใช้ถูกลดระดับจากผู้ดูแลระบบกลุ่ม
+    description_placeholder: ป้อนคำอธิบาย
+    description_required: คำอธิบายต้องไม่ว่างเปล่า
+    group_description: คำอธิบายกลุ่ม
+    group_users_load_error: โหลดผู้ใช้กลุ่มไม่สำเร็จ
+    load_error: โหลดกลุ่มไม่สำเร็จ
+    load_success: โหลดกลุ่มสำเร็จ
+    no_users: ไม่พบผู้ใช้ในกลุ่มนี้
+    promote: เลื่อนระดับ
+    promote_error: เลื่อนระดับผู้ใช้ไม่สำเร็จ
+    promote_success: ผู้ใช้ได้เลื่อนระดับเป็นผู้ดูแลระบบกลุ่ม
+    readonly_badge: (อ่านอย่างเดียว)
+    readonly_message: คุณกำลังดูหน้านี้ในโหมดอ่านอย่างเดียว ผู้ใช้ตัวอย่างไม่สามารถทำการเปลี่ยนแปลงได้
+    readonly_title: การจัดการกลุ่ม (อ่านอย่างเดียว)
+    select_group: เลือกกลุ่ม
+    select_group_placeholder: เลือกกลุ่ม
+    title: การจัดการกลุ่ม
+    update_error: อัปเดตกลุ่มไม่สำเร็จ
+    update_success: อัปเดตคำอธิบายกลุ่มแล้ว
+    users_in_group: ผู้ใช้ในกลุ่ม
+  models:
+    comment_placeholder: ป้อนความคิดเห็น
+    description: โมเดลทุกตัวที่เวิร์กเบนช์รู้จัก การเปิดใช้งานโมเดลจะส่งผลต่อทุกการเชื่อมต่อที่ให้บริการโมเดลนั้น คอลัมน์เซิร์ฟเวอร์จะแสดงว่ามีเซิร์ฟเวอร์ใดบ้างที่เข้าถึงโมเดลนั้นได้
+    disabled: ปิดใช้งาน
+    edit_comment: แก้ไขความคิดเห็น
+    enabled: เปิดใช้งาน
+    load_models_error: โหลดโมเดลไม่สำเร็จ
+    no_comment: —
+    no_models: ยังไม่มีโมเดล การค้นพบจะสร้างโมเดลจากการเชื่อมต่อ
+    not_preferred: ไม่ใช่ที่ต้องการ
+    preferred: ที่ต้องการ
+    toggle_error: อัปเดตโมเดลไม่สำเร็จ
+    update_error: อัปเดตความคิดเห็นไม่สำเร็จ
+    update_success: อัปเดตโมเดลแล้ว
+    fetch_non_standard: ผู้ให้บริการนี้ไม่เปิดเผย API รายการโมเดลมาตรฐาน เพิ่มโมเดลด้วยตนเองในแผงผู้ดูแล
+    fetch_auth_required: ผู้ให้บริการนี้ต้องใช้คีย์ API เพื่อแสดงรายการโมเดล ให้รีเฟรชจาก การตั้งค่า → การเชื่อมต่อ AI แทน
+    tuning_title: การตั้งค่า AI สำหรับเซิร์ฟเวอร์นี้
+    model_count: โมเดล {count} รายการ
+    tuning_temperature_hint: ค่าต่ำให้คำตอบที่ทำซ้ำได้มากกว่า ค่าสูงให้คำตอบที่หลากหลายมากกว่า
+    tuning_loading: กำลังโหลดการตั้งค่า AI…
+    tuning_inherited: สืบทอด
+    search_placeholder: ค้นหาชื่อโมเดล
+    tuning_load_error: ไม่สามารถโหลดการตั้งค่า AI ได้
+    filter_any: สถานะใดก็ได้
+    tuning_hint: ค่าเหล่านี้มีผลกับทุกที่ที่ใช้โมเดลนี้บนการเชื่อมต่อนี้ การเว้นว่างหมายความว่าจะสืบทอดค่าเริ่มต้นของเวิร์กเบนช์
+    tuning_timeout_hint: จำนวนวินาทีที่คำขอ AI หนึ่งคำขอจะทำงานได้ โมเดล CPU ในเครื่องอาจต้องใช้เวลาหลายนาที
+    filter_result: ผลลัพธ์
+    servers_title: เข้าถึงได้จาก
+    filter_clear: ล้างตัวกรอง
+    tuning_save_error: ไม่สามารถบันทึกการตั้งค่า AI ได้
+    filter_test: การทดสอบความสามารถ
+    no_servers: ยังไม่มีการเชื่อมต่อใดให้บริการโมเดลนี้
+    tuning_saved: บันทึกการตั้งค่า AI แล้ว
+    tuning_inherited_title: ช่องว่างจะสืบทอดค่าเริ่มต้นของเวิร์กเบนช์
+    no_matches: ไม่มีโมเดลที่ตรงกับตัวกรองเหล่านี้
+    filter_state: สถานะ
+  providers:
+    code_label: โค้ด
+    delete_button: ลบ
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบผู้ให้บริการ "{name}"? การดำเนินการนี้จะลบโมเดลที่เกี่ยวข้องทั้งหมดและไม่สามารถย้อนกลับได้
+    delete_error: ลบผู้ให้บริการไม่สำเร็จ
+    delete_provider: ลบผู้ให้บริการ
+    delete_success: ผู้ให้บริการถูกลบแล้ว
+    delete_title: ลบผู้ให้บริการ
+    description: เปิดหรือปิดใช้งานผู้ให้บริการ AI ผู้ให้บริการที่ปิดใช้งานจะไม่ปรากฏในแบบฟอร์มการเชื่อมต่อผู้ใช้
+    disabled: ปิดใช้งาน
+    enabled: เปิดใช้งาน
+    fetch_error: โหลดผู้ให้บริการไม่สำเร็จ
+    list_title: ผู้ให้บริการทั้งหมด
+    local: ภายในเครื่อง
+    no_api_key: ไม่ต้องใช้คีย์ API
+    requires_api_key: ต้องใช้คีย์ API
+    title: ผู้ให้บริการ AI
+    toggle_error: อัปเดตผู้ให้บริการไม่สำเร็จ
+    update_success: อัปเดตผู้ให้บริการแล้ว
+  title: แผงควบคุมผู้ดูแล
+  user_details:
+    dark_mode_description: สลับระหว่างธีมสว่างและมืด
+    dark_mode_label: โหมดมืด
+    email_label: อีเมล
+    email_notifications_description: รับการอัปเดตทางอีเมลเกี่ยวกับบัญชีของคุณ
+    email_notifications_label: การแจ้งเตือนทางอีเมล
+    full_admin_note: ผู้ดูแลระบบเต็มรูปแบบมีสิทธิ์ทั้งหมดของผู้ดูแลระบบกลุ่มตามค่าเริ่มต้น
+    group_admin_description: ผู้ใช้สามารถจัดการผู้ใช้อื่นภายในกลุ่มของตน
+    group_admin_label: ผู้ดูแลระบบกลุ่ม
+    group_hint: กลุ่มของผู้ใช้กำหนดทรัพยากรที่ใช้ร่วมกันที่พวกเขาสามารถเข้าถึงได้
+    language_label: ภาษา
+    language_select_placeholder: เลือกภาษา
+    load_error: โหลดรายละเอียดผู้ใช้ไม่สำเร็จ
+    max_upload_count_hint: จำนวนชุดข้อมูลสูงสุดต่อผู้ใช้ (0 = ไม่จำกัด)
+    max_upload_count_label: จำนวนอัปโหลดสูงสุด
+    max_upload_count_placeholder: เลือกจำนวน
+    max_upload_size_hint: พื้นที่จัดเก็บรวมสูงสุดต่อผู้ใช้ (0 = ไม่จำกัด)
+    max_upload_size_label: ขนาดอัปโหลดสูงสุด
+    max_upload_size_placeholder: เลือกขนาด
+    name_label: ชื่อ
+    not_found: ไม่พบผู้ใช้
+    save_error: อัปเดตผู้ใช้ไม่สำเร็จ
+    save_success: อัปเดตรายละเอียดผู้ใช้แล้ว
+    select_group: เลือกกลุ่ม
+    title: จัดการผู้ใช้
+    unnamed: ผู้ใช้ไม่มีชื่อ
+    user_group: กลุ่มผู้ใช้
+  users:
+    active_users: ผู้ใช้ที่ใช้งาน
+    admin_badge: ผู้ดูแลระบบ
+    bcc_label: การลงทะเบียน BCC
+    bcc_updated: อัปเดตการตั้งค่าการลงทะเบียน BCC แล้ว
+    created_label: สร้างแล้ว
+    current_user_badge: คุณ
+    delete_button: ลบ
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ "{name}" อย่างถาวร การดำเนินการนี้ไม่สามารถย้อนกลับได้
+    delete_error: ไม่สามารถลบผู้ใช้ได้
+    delete_self_error: ไม่สามารถลบบัญชีของตัวเองได้
+    delete_success: ผู้ใช้ถูกลบอย่างถาวร
+    delete_title: ลบผู้ใช้
+    deleted_badge: ถูกลบแบบซอฟต์
+    deleted_label: ถูกลบแล้ว
+    example_user_badge: ผู้ใช้ตัวอย่าง
+    forbidden: ถูกปฏิเสธการเข้าถึง
+    group_admin_badge: ผู้ดูแลกลุ่ม
+    hard_delete_button: ลบถาวร
+    hard_delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบ "{name}" อย่างถาวร การดำเนินการนี้ไม่สามารถย้อนกลับได้
+    hard_delete_error: ไม่สามารถลบผู้ใช้อย่างถาวรได้
+    hard_delete_success: ผู้ใช้ถูกลบอย่างถาวร
+    hard_delete_title: ลบผู้ใช้อย่างถาวร
+    load_error: ไม่สามารถโหลดผู้ใช้ได้
+    make_admin: แต่งตั้งเป็นผู้ดูแล
+    more_button: เพิ่มเติม...
+    no_name: ไม่มีชื่อ
+    remove_admin: ถอดผู้ดูแล
+    resend_button: ส่งอีเมลอีกครั้ง
+    resend_error: ไม่สามารถส่งอีเมลยืนยันได้
+    resend_success: อีเมลยืนยันถูกส่งไปที่ {email}
+    restore_button: กู้คืน
+    restore_error: ไม่สามารถกู้คืนผู้ใช้ได้
+    restore_success: ผู้ใช้ถูกกู้คืนแล้ว
+    soft_deleted_users: ผู้ใช้ที่ถูกลบแบบซอฟต์
+    title: การจัดการผู้ใช้
+    unauthorized: ไม่ได้รับอนุญาต
+    unverified_badge: ไม่ยืนยัน
+    update_error: ไม่สามารถอัปเดตผู้ใช้ได้
+    update_success: อัปเดตผู้ใช้แล้ว
+    user_not_found: ไม่พบผู้ใช้
+    verified_badge: ยืนยันแล้ว
+    verify_button: ยืนยัน
+    verify_error: ไม่สามารถยืนยันผู้ใช้ได้
+    verify_success: ผู้ใช้ถูกทำเครื่องหมายว่ายืนยันแล้ว
+    add_user: เพิ่มผู้ใช้
+  visualization_types:
+    add_button: เพิ่มประเภทใหม่
+    add_title: เพิ่มประเภทการแสดงผล
+    create_success: ประเภทการแสดงผลถูกสร้างแล้ว
+    default_parameters: พารามิเตอร์เริ่มต้น (JSON)
+    delete: ลบ
+    delete_button: ลบ
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบประเภท "{name}" การดำเนินการนี้จะลบอินสแตนซ์ที่เกี่ยวข้องทั้งหมดและไม่สามารถย้อนกลับได้
+    delete_error: ไม่สามารถลบได้
+    delete_success: ประเภทการแสดงผลถูกลบแล้ว
+    delete_title: ลบประเภทการแสดงผล
+    description: คำอธิบาย
+    disabled: ปิดใช้งาน
+    edit: แก้ไข
+    edit_title: แก้ไขประเภทการแสดงผล
+    enabled: เปิดใช้งาน
+    fetch_error: ไม่สามารถโหลดประเภทการแสดงผลได้
+    input_schema: สกีมานำเข้า (JSON)
+    invalid_json: JSON ไม่ถูกต้องในหนึ่งในฟิลด์สกีมา
+    list_title: ประเภทการแสดงผลทั้งหมด
+    name: ชื่อ
+    no_types: ยังไม่ได้กำหนดประเภทการแสดงผล
+    parameter_schema: สกีมาพารามิเตอร์ (JSON)
+    renderer: ตัวเรนเดอร์
+    renderer_client: ฝั่งไคลเอนต์
+    renderer_label: ตัวเรนเดอร์
+    renderer_server: ฝั่งเซิร์ฟเวอร์
+    save_error: ไม่สามารถบันทึกได้
+    slug: สลัก
+    slug_label: สลัก
+    title: ประเภทการแสดงผล
+    toggle_error: ไม่สามารถอัปเดตได้
+    update_success: อัปเดตประเภทการแสดงผลแล้ว
+  adduser:
+    confirm_password: ยืนยันรหัสผ่าน
+    submit: สร้างผู้ใช้
+    password: รหัสผ่าน
+    password_mismatch: รหัสผ่านไม่ตรงกัน
+    language_description: เลือกภาษาที่ผู้ใช้ต้องการสำหรับอินเทอร์เฟซ
+    back_to_admin: กลับไปยังหน้าผู้ดูแลระบบ
+    success: บัญชีถูกสร้างและยืนยันแล้ว ผู้ใช้ใหม่สามารถเข้าสู่ระบบได้แล้ว
+    description: สร้างบัญชีผู้ใช้ใหม่ บัญชีจะได้รับการยืนยันทันที
+    name: ชื่อ
+    title: เพิ่มผู้ใช้
+    creating: กำลังสร้างผู้ใช้...
+    not_admin: คุณไม่มีสิทธิ์เข้าถึงหน้านี้
+    failed: ไม่สามารถสร้างผู้ใช้ได้
+    email: อีเมล
+  set_password:
+    admin_password: รหัสผ่านผู้ดูแลระบบ
+    failed: ไม่สามารถตั้งรหัสผ่านได้
+    success: ตั้งรหัสผ่านสำเร็จ
+    admin_password_required: จำเป็นต้องใช้รหัสผ่านผู้ดูแลระบบ
+    description: ตั้งรหัสผ่านใหม่สำหรับผู้ใช้รายนี้ ต้องใช้รหัสผ่านผู้ดูแลระบบของคุณเองเพื่อยืนยันการเปลี่ยนแปลง
+    title: ตั้งรหัสผ่าน
+ai:
+  connection:
+    add_first: เพิ่มการเชื่อมต่อ AI แรกของคุณ
+    add_new: เพิ่มการเชื่อมต่อ AI ใหม่
+    add_success: เพิ่มการเชื่อมต่อ AI สำเร็จแล้ว
+    add_title: เพิ่มการเชื่อมต่อ AI ใหม่
+    api_key_hint: คีย์ API ของคุณจะถูกเข้ารหัสก่อนจัดเก็บ
+    api_key_label: คีย์ API
+    by_label: โดย
+    clear_default: ล้างค่าเริ่มต้น
+    currently_not_shared: ❌ ขณะนี้ยังไม่ได้แชร์
+    currently_shared: ✅ ขณะนี้แชร์กับกลุ่มแล้ว
+    default_badge: ค่าเริ่มต้น
+    default_cleared: ล้างการเชื่อมต่อ AI เริ่มต้นแล้ว
+    default_set: อัปเดตการเชื่อมต่อ AI เริ่มต้นแล้ว
+    delete_button: ลบ
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบการเชื่อมต่อ
+    delete_error: ไม่สามารถลบการเชื่อมต่อ AI ได้
+    delete_title: ลบการเชื่อมต่อ AI
+    deleted: การเชื่อมต่อ AI ถูกลบแล้ว
+    edit_title: แก้ไขการเชื่อมต่อ AI
+    endpoint_hint: เขียนทับ URL ปลายทาง API เริ่มต้นหากจำเป็น
+    endpoint_label: URL ปลายทาง
+    form_description: กำหนดค่าการเชื่อมต่อผู้ให้บริการ AI
+    group_label: กลุ่ม
+    load_error: ไม่สามารถโหลดการเชื่อมต่อได้
+    load_providers_error: ไม่สามารถโหลดผู้ให้บริการได้
+    metadata_load_error: ไม่สามารถโหลดข้อมูลเมทาดาต้าของผู้ให้บริการได้
+    metadata_loading: ข้อมูลผู้ให้บริการกำลังโหลด กรุณารอสักครู่
+    models: โมเดลที่พร้อมใช้งาน
+    models_disabled: ปิดใช้งาน
+    models_load_error: ไม่สามารถโหลดโมเดลได้
+    models_sync_error: ไม่สามารถซิงค์โมเดลได้
+    models_synced: ซิงค์โมเดลสำเร็จ
+    name_label: ชื่อการเชื่อมต่อ
+    name_placeholder: เช่น การเชื่อมต่อ AI ของฉัน
+    no_connections: ยังไม่มีการเชื่อมต่อ AI ที่บันทึกไว้
+    not_found: ไม่พบการเชื่อมต่อ
+    provider_label: ผู้ให้บริการ
+    provider_not_found: ไม่พบผู้ให้บริการ
+    save_error: ไม่สามารถบันทึกการเชื่อมต่อ AI ได้
+    select_provider: เลือกผู้ให้บริการ AI
+    select_provider_first: กรุณาเลือกผู้ให้บริการก่อน
+    set_default: ตั้งเป็นค่าเริ่มต้น
+    shared_badge: แชร์แล้ว
+    shared_description: ทำให้การเชื่อมต่อนี้พร้อมใช้งานสำหรับผู้ใช้คนอื่นในกลุ่มของคุณ
+    shared_label: แชร์กับกลุ่ม
+    shared_readonly: แชร์แล้ว
+    shared_readonly_message: การเชื่อมต่อนี้ถูกแชร์กับคุณ คุณสามารถดูได้ แต่การแก้ไขถูกจำกัดเฉพาะเจ้าของ
+    test_button: ทดสอบการเชื่อมต่อ
+    test_error: การเชื่อมต่อล้มเหลว
+    test_success: การเชื่อมต่อสำเร็จ!
+    unknown_user: ไม่ทราบ
+    update_success: อัปเดตการเชื่อมต่อ AI สำเร็จ
+    models_none: ยังไม่มีโมเดลที่ซิงค์ไว้ คลิก รีเฟรช เพื่อดึงโมเดลจากผู้ให้บริการ
+    models_refresh: รีเฟรชโมเดล
+    invalid_connect_timeout: ระยะหมดเวลาการเชื่อมต่อต้องเป็นจำนวนเต็มวินาที อย่างน้อย 1 และไม่เกิน 60
+    connect_timeout_hint: ระยะเวลาที่เครือข่ายอาจใช้ในการยอมรับการเชื่อมต่อ ค่าที่ต่ำกว่าที่เครือข่ายนี้ต้องการจะทำให้ปลายทางที่ใช้ได้กลายเป็นปลายทางที่ไม่สามารถเข้าถึงได้
+    timeouts_section_label: ระยะหมดเวลาการเชื่อมต่อ
+    probe_timeout_hint: ระยะเวลาที่การทดสอบความเหมาะสมหนึ่งครั้งอาจทำงานที่นี่ โมเดลที่โฮสต์บน CPU ใช้เวลาหลายนาที
+    models_discovered: 'ค้นพบโมเดลบนการเชื่อมต่อนี้ {seen} รายการ: ใหม่ {created} รายการ รู้จักอยู่แล้ว {refreshed} รายการ เลิกให้บริการแล้ว {pruned} รายการ'
+    invalid_probe_timeout: ระยะหมดเวลาการทดสอบโมเดลต้องเป็นจำนวนเต็มวินาที อย่างน้อย 1 และไม่เกิน 1200
+    timeouts_section_hint: เว้นช่องว่างไว้เพื่อใช้ค่าเริ่มต้นของเวิร์กเบนช์
+    connect_exceeds_probe: ระยะหมดเวลาการเชื่อมต่อต้องไม่นานกว่าระยะหมดเวลาการทดสอบโมเดล — ไม่อนุญาตให้การเชื่อมต่อใช้เวลาสร้างนานกว่าที่การทดสอบทั้งรอบจะทำงานได้
+  database:
+    add_connection: เพิ่มการเชื่อมต่อฐานข้อมูล
+    all_issues: ปัญหาทั้งหมด
+    analysis_report: รายงานการวิเคราะห์
+    analysis_summary: พบ {tables} ตาราง, {columns} คอลัมน์, {issues} ปัญหา
+    analyze: วิเคราะห์สคีมา
+    analyzing: กำลังวิเคราะห์...
+    business_value: มูลค่าทางธุรกิจ
+    categories: หมวดหมู่
+    code_systems_detected: พบระบบโค้ด
+    cols_rows_format: '{cols} คอลัมน์, {rows} แถว'
+    columns_label: คอลัมน์
+    confidence: ความเชื่อมั่น
+    description: วิเคราะห์การออกแบบฐานข้อมูลของคุณสำหรับปัญหาด้านดัชนี, การทำให้เป็นบรรทัดฐาน, ความสัมพันธ์, ชนิดข้อมูล และการตั้งชื่อ
+    download_pdf: ดาวน์โหลด PDF
+    email_body_attachment: กรุณาดูรายงานการวิเคราะห์ที่แนบมานี้
+    email_body_connection: 'การเชื่อมต่อ: {conn_name}'
+    email_body_database: 'ฐานข้อมูล: {db_name}'
+    email_body_id: 'รหัสการเชื่อมต่อ: {conn_id}'
+    email_body_signature: — สถานีงานนักสถิติ
+    email_body_title: รายงานการวิเคราะห์การออกแบบฐานข้อมูล
+    email_body_type: 'ชนิดฐานข้อมูล: {db_type}'
+    email_error: ไม่สามารถส่งอีเมลรายงานได้
+    email_pdf: ส่ง PDF ทางอีเมล
+    email_sent: ส่งรายงานทางอีเมลสำเร็จ
+    email_subject: การวิเคราะห์การออกแบบฐานข้อมูล — {db_name} ({db_type}) [การเชื่อมต่อ {conn_id}]
+    empty_state: เลือกการเชื่อมต่อฐานข้อมูลแล้วคลิก วิเคราะห์ เพื่อเริ่มต้น
+    enter_question: กรุณาป้อนคำถาม
+    foreign_keys: คีย์นอก
+    high_risk: สูง
+    indexes_label: ดัชนี
+    issues_label: ปัญหา
+    low_risk: ต่ำ
+    medium_risk: ปานกลาง
+    no_issues: ไม่พบปัญหา การออกแบบฐานข้อมูลของคุณดูดี!
+    no_semi_structured: ไม่พบรูปแบบข้อมูลกึ่งโครงสร้างในคอลัมน์ข้อความ
+    normalisation_suggestions: ข้อเสนอแนะการทำให้เป็นบรรทัดฐาน
+    normalisation_suggestions_desc: ตารางอ้างอิงที่เสนอตามคำสำคัญที่พบในคอลัมน์ข้อความกึ่งโครงสร้าง
+    normalisation_warning: นี่เป็นข้อเสนอแนะที่สร้างโดย AI การออกแบบฐานข้อมูลใหม่ต้องมีการตรวจสอบอย่างรอบคอบ ทดสอบการเปลี่ยนแปลงบนตัวจำลองก่อน
+    pdf_downloaded: ดาวน์โหลด PDF สำเร็จ
+    pdf_error: ไม่สามารถสร้าง PDF ได้
+    pk_prefix: PK –
+    placeholder: เร็ว ๆ นี้ ฟีเจอร์นี้จะช่วยคุณออกแบบสคีมาฐานข้อมูลโดยใช้ AI
+    proposed_reference_table: ตารางอ้างอิงที่เสนอ
+    rag_ask: ถาม
+    rag_chat: แชท RAG — ถามคำถามเกี่ยวกับข้อมูลของคุณ
+    rag_chat_desc: ถามคำถามด้วยภาษาธรรมชาติ ระบบจะค้นหาคอลัมน์ข้อความและส่งคืนคำตอบที่สร้างโดย AI พร้อมการอ้างอิง
+    rag_error: การค้นหา RAG ล้มเหลว
+    rag_placeholder: เช่น การวินิจฉัยที่พบบ่อยคืออะไร?
+    rag_sources: แหล่งที่มา
+    risk_breakdown: การแบ่งระดับความเสี่ยง
+    rows_label: แถว
+    schema_error: ไม่สามารถวิเคราะห์สคีมาฐานข้อมูลได้
+    select_connection: เลือกการเชื่อมต่อฐานข้อมูล
+    select_connection_first: กรุณาเลือกการเชื่อมต่อฐานข้อมูลก่อน
+    select_connection_placeholder: เลือกการเชื่อมต่อฐานข้อมูล...
+    semi_structured: การวิเคราะห์ข้อมูลกึ่งโครงสร้าง
+    semi_structured_desc: คอลัมน์ข้อความถูกวิเคราะห์เพื่อหาโค้ดฝังตัว คำสำคัญ และรูปแบบ
+    tables_explorer: ตัวสำรวจตาราง
+    tables_label: ตาราง
+    title: ผู้ช่วยออกแบบฐานข้อมูล
+    top_recommendations: คำแนะนำยอดนิยม
+    ai_fallback_desc: ไม่สามารถใช้การเสริมด้วย AI ได้ แสดงเฉพาะการวิเคราะห์โครงสร้าง เลือกการเชื่อมต่อ AI เพื่อรับข้อมูลเชิงลึก
+    column_meanings: ความหมายของคอลัมน์
+    timeout_log: การวิเคราะห์หมดเวลาหลังจาก 15 นาที
+    semantic_analysis_desc: ความหมายของคอลัมน์ที่อนุมานโดย AI, การจัดประเภทโดเมน ISIC, และการตรวจจับระบบรหัส
+    priority_actions: การดำเนินการสำคัญสูงสุด
+    ai_unavailable: การวิเคราะห์ AI ไม่พร้อมใช้งาน เชื่อมต่อผู้ให้บริการ AI เพื่อเปิดใช้การวิเคราะห์ขั้นสูง
+    integration_analysis: การวิเคราะห์การรวมระบบ
+    semantic_analysis: การวิเคราะห์เชิงความหมาย
+    research_capabilities: ความสามารถในการวิจัย
+    ai_augmented: การวิเคราะห์เสริมด้วย AI
+    ai_fallback: การวิเคราะห์พื้นฐาน
+    isic_domains: การจัดประเภทโดเมน ISIC
+    table_purposes: วัตถุประสงค์ของตาราง
+    ai_health_score: คะแนนความสมบูรณ์ AI
+    missing_dimensions: มิติที่ขาดหายไป
+    ai_augmented_desc: Schema AI, Semantic AI และ Integration AI ได้วิเคราะห์ฐานข้อมูลนี้แล้ว
+    timeout_error: การวิเคราะห์หมดเวลา ฐานข้อมูลอาจมีขนาดใหญ่เกินไปหรือบริการ AI ไม่พร้อมใช้งาน
+    implicit_relationships: ความสัมพันธ์โดยนัย
+    integration_analysis_desc: ความสัมพันธ์โดยนัย ความสามารถในการวิจัย และมิติที่ขาดหายไปที่ตรวจพบโดย Integration AI
+    peer_tables: 'ตารางเพียร์:'
+    health_score_desc: สุขภาพโดยรวมของฐานข้อมูลประเมินโดย Schema AI 0 = ปัญหาโครงสร้างขั้นวิกฤต, 100 = พร้อมสำหรับการใช้งานจริง
+    is_missing: ขาดหายไป
+  dataclean:
+    chat_error: ไม่สามารถรับการตอบกลับได้
+    chat_placeholder: ถามเกี่ยวกับการทำความสะอาดหรือเตรียมชุดข้อมูลนี้...
+    column_tooltip: '{type} — {null_count} ค่าว่าง, {unique_count} ค่าไม่ซ้ำ'
+    column_type:
+      category: หมวดหมู่
+      datetime: วันที่/เวลา
+      number: ตัวเลข
+      text: ข้อความ
+    description: การทำความสะอาดและเตรียมชุดข้อมูลด้วย AI
+    empty_chat: เลือกชุดข้อมูลแล้วเริ่มถามคำถามเกี่ยวกับวิธีการทำความสะอาดและเตรียมข้อมูล
+    enter_message: กรุณาป้อนข้อความ
+    loading_schema: กำลังโหลดสคีมา...
+    no_connection: กรุณาตั้งค่าการเชื่อมต่อ AI เริ่มต้นใน การตั้งค่า > AI
+    no_datasets: ไม่มีชุดข้อมูลพร้อมใช้งาน อัปโหลดหรือกำหนดชุดข้อมูลก่อน
+    placeholder: เร็วๆ นี้ ฟีเจอร์นี้จะช่วยคุณทำความสะอาดและเตรียมชุดข้อมูลโดยใช้ AI
+    schema_summary: '{rows} แถว, {cols} คอลัมน์'
+    select_dataset: เลือกชุดข้อมูล
+    select_dataset_first: กรุณาเลือกชุดข้อมูลก่อน
+    select_dataset_placeholder: เลือกชุดข้อมูล...
+    send: ส่ง
+    shared_badge: (แชร์)
+    title: ผู้ช่วยทำความสะอาดชุดข้อมูล
+    schema_error: ไม่สามารถโหลดโครงสร้างชุดข้อมูลได้
+    clean_in_place_success: อัปเดตชุดข้อมูล '{name}' แล้ว
+    clean_in_place: ทำความสะอาดข้อมูลในชุดเดิม
+    rules_title: กฎการเตรียมข้อมูล
+    no_rules: ยังไม่มีกฎ
+    clean_copy: สำเนาที่ทำความสะอาดแล้ว
+    clean_name_label: ชื่อสำหรับสำเนาที่ทำความสะอาดแล้ว
+    clean_copy_success: สร้างชุดข้อมูลใหม่ '{name}' แล้ว — ต้นฉบับไม่มีการเปลี่ยนแปลง
+    no_dataset_selected: ยังไม่ได้เลือกชุดข้อมูล
+    preview_title: ตัวอย่างข้อมูล
+    operations_count: '{count} การดำเนินการ'
+    clean_no_rules: ยังไม่มีกฎการทำความสะอาดที่จะใช้
+  default_hint: การเชื่อมต่อเริ่มต้นจะใช้เป็นทางเลือกสำรองเมื่อสูตรการวิเคราะห์ไม่ได้ระบุผู้ให้บริการ AI
+  new_session: เซสชันใหม่
+  no_ai_connections: ไม่มีการเชื่อมต่อ AI ที่ตั้งค่าไว้ เพิ่มใน การตั้งค่า > AI
+  recipe:
+    chat_error: ไม่สามารถรับการตอบสนอง
+    chat_placeholder: ถามเกี่ยวกับการวิเคราะห์ทางสถิติหรือการกำหนดค่าสูตร...
+    description: การสร้างสูตรและกฎการวิเคราะห์ด้วย AI
+    empty_chat: เลือกชุดข้อมูลแล้วถามว่าควรใช้เทคนิคทางสถิติใด
+    enter_message: กรุณากรอกข้อความ
+    loading_schema: กำลังโหลดโครงสร้าง...
+    no_datasets: ไม่มีชุดข้อมูลพร้อมใช้งาน อัปโหลดหรือกำหนดชุดข้อมูลก่อน
+    placeholder: เร็วๆ นี้ ฟีเจอร์นี้จะช่วยคุณสร้างสูตรการวิเคราะห์โดยใช้ AI
+    schema_summary: '{rows} แถว, {cols} คอลัมน์'
+    select_dataset: เลือกชุดข้อมูล
+    select_dataset_first: กรุณาเลือกชุดข้อมูลก่อน
+    select_dataset_placeholder: เลือกชุดข้อมูล...
+    send: ส่ง
+    title: ผู้ช่วยกฎการวิเคราะห์
+  select_ai_connection: การเชื่อมต่อ AI
+  select_ai_connection_placeholder: เลือกการเชื่อมต่อ AI...
+  select_model: โมเดล
+  select_model_placeholder: เลือกโมเดล...
+  test_error: การเชื่อมต่อล้มเหลว
+  test_success: การเชื่อมต่อสำเร็จ!
+  title: การตั้งค่า AI
+  recipe_concierge:
+    stage_technique: เลือกเทคนิค
+    stage_review: ทบทวนสูตร
+    no_sessions: ยังไม่มีเซสชัน
+    stage_goal: คำถามวิจัย
+    stage_complete: สูตรพร้อมแล้ว
+    stage_visualisation: การแสดงภาพ
+    stage_columns: เลือกคอลัมน์
+    stage_transforms: การเตรียมข้อมูล
+    no_session: ไม่ได้เลือกเซสชัน
+    draft_title: ร่างสูตร
+    select_dataset: เลือกชุดข้อมูล...
+    open: เปิดในตัวแก้ไข
+    save: บันทึกสูตร
+    input_placeholder: ถามเกี่ยวกับข้อมูลของคุณ... หรือทักทายว่า "hi"
+    status_draft: ร่าง
+    create_prompt: สร้างเซสชันใหม่เพื่อเริ่มต้น
+    new_session: เซสชันใหม่
+    title: ผู้ช่วยสูตร AI
+    toggle_panel: เปิด/ปิดแผงสูตร
+    manual_label: สูตรกำหนดเอง
+    tab_chat: แชท
+    chat_error: ไม่สามารถรับการตอบกลับได้
+    status_ready: พร้อม
+    tab_sessions: เซสชัน
+    draft_empty: เริ่มการสนทนาเพื่อสร้างสูตรของคุณ ร่างจะปรากฏที่นี่เมื่อคุณตัดสินใจ
+    saving: กำลังบันทึก...
+    welcome: บอกฉันว่าคุณต้องการค้นพบอะไรในข้อมูลของคุณ แล้วฉันจะช่วยคุณสร้างสูตรการวิเคราะห์ที่สมบูรณ์
+    delete_session: ลบเซสชัน
+    saved: บันทึกสูตรแล้ว!
+    stage_greeting: ยินดีต้อนรับ
+    tab_draft: ร่าง
+    schema_changes: 'ตรวจพบการเปลี่ยนแปลงสคีมา:'
+    draft_algorithm: อัลกอริทึม
+    errors_heading: ยังไม่สามารถบันทึกได้
+    draft_no_visualisation: ผลลัพธ์เชิงตัวเลข
+    draft_output: ผลลัพธ์
+    warnings_heading: คำเตือน
+    draft_dataset: ชุดข้อมูล
+    progress_decided: '{count} จาก {total} ตัดสินใจแล้ว'
+    done: เสร็จสิ้น
+    chip_withheld: +อีก {count}
+    progress_next: '{progress} · {next}'
+    chip_superseded: ถูกแทนที่ด้วยข้อเสนอที่ใหม่กว่า
+    unread_sources: ไม่สามารถอ่านบางแหล่งข้อมูลได้ ดังนั้นรายการคอลัมน์อาจไม่สมบูรณ์
+    chip_expand: แสดงเพิ่มอีก {count} รายการ
+    chip_collapse: แสดงน้อยลง
+  thinking: กำลังคิด...
+  testing:
+    slow_limit_failed: ไม่สามารถอ่านค่าขีดจำกัดโมเดลช้าของคุณได้ จึงไม่มีโมเดลใดถูกทำเครื่องหมายว่าช้าเกินไป {detail}
+    run_failed: 'ไม่สามารถทำการทดสอบได้: {detail}'
+    models_heading: โมเดล
+    enabled_no: ปิดใช้งานโมเดล
+    discover_failed: 'ไม่สามารถค้นพบโมเดลได้: {detail}'
+    enabled_yes: เปิดใช้งานโมเดล
+    slow_limit_unavailable: การตั้งค่าของคุณไม่มีขีดจำกัดโมเดลช้า จึงไม่มีโมเดลใดถูกทำเครื่องหมายว่าช้าเกินไป
+    test_tools: ใช้เครื่องมือ
+    run_all_untested: เรียกใช้ทุกการทดสอบกับโมเดลที่ยังไม่ได้ทดสอบ
+    explanation: ผู้ช่วย AI ของ Workbench ถูกสร้างมาสำหรับโมเดลที่ลงมือทำ โมเดลที่เพียงแต่พูดคุย ไม่ว่าจะสุภาพเพียงใดหรือใหญ่เพียงใด จะทำให้ตัวแก้ไขสูตรตอบสนองแต่ไม่ทำอะไรเลย ทางแก้คือตัวโมเดล ไม่ใช่โค้ด
+      เครื่องมือในหน้านี้ช่วยให้คุณทดสอบว่าโมเดลเหมาะสมหรือไม่
+    state_fail: ไม่ผ่าน
+    cancelled: หยุดแล้ว ผลที่บันทึกไว้แล้วจะถูกเก็บไว้
+    cost_confirm: เริ่มการทำงาน
+    load_error: ไม่สามารถโหลดการเชื่อมต่อ AI ของคุณได้ {detail}
+    elsewhere_note: โมเดลสามารถเก็บผลความสามารถจากการเชื่อมต่ออื่นได้ ระยะเวลาที่แสดงข้างแต่ละสถานะคือการวัดของการเชื่อมต่อนี้เอง ดังนั้นโมเดลอาจแสดงสถานะที่นี่โดยไม่มีระยะเวลา
+    no_connections_body: การทดสอบโมเดลต้องมีการเชื่อมต่อ AI เพิ่มหนึ่งรายการ แล้วกลับมาที่หน้านี้
+    run_all_for_model: เรียกใช้ทั้งหมดสำหรับโมเดลนี้
+    failure_reason: 'เหตุผล: {reason}'
+    connection_label: การเชื่อมต่อ AI
+    slow_limit_session_reset: ใช้ขีดจำกัดที่บันทึกไว้ของฉัน
+    too_slow: เกินขีดจำกัด {seconds} วินาทีของคุณ
+    column_model: โมเดล
+    test_competence: ความสามารถ
+    duration_ms: '{ms} มิลลิวินาที'
+    title: การทดสอบ AI
+    test_turn: ความซับซ้อน
+    duration_seconds: '{seconds} วินาที'
+    discover_running: กำลังสอบถามเซิร์ฟเวอร์…
+    state_pass: ผ่าน
+    no_duration_here: ไม่ได้ทำงานบนการเชื่อมต่อนี้
+    slow_limit_session_hint: มีผลเฉพาะหน้านี้เท่านั้น — ไม่ถูกบันทึก
+    column_enabled: เปิดใช้งาน
+    run_test: เรียกใช้การทดสอบ
+    column_actions: ทดสอบ
+    no_connections_heading: ยังไม่มีการเชื่อมต่อ AI
+    discover_models: ค้นพบโมเดล
+    no_models: ยังไม่มีการค้นพบโมเดลในการเชื่อมต่อนี้
+    slow_limit_session_label: ขีดจำกัดโมเดลช้า
+    no_connections_link: ไปที่การเชื่อมต่อ AI
+    slow_limit_session_link: ตั้งค่านี้แบบถาวรในโปรไฟล์ของคุณ
+    running: กำลังทำงาน…
+    discover_result: 'เซิร์ฟเวอร์แสดงโมเดล {seen} รายการ: ใหม่ {created} รายการ, รู้จักแล้ว {refreshed} รายการ, เลิกให้บริการแล้ว {pruned} รายการ'
+    cost_warning: การดำเนินการนี้จะรันการทดสอบ {count} ครั้ง และการทดสอบเทิร์นใช้เวลาหลายนาทีต่อโมเดลบนซีพียู กดอีกครั้งเพื่อเริ่ม
+api:
+  admin:
+    already_full_admin: ผู้ใช้เป็นผู้ดูแลระบบเต็มรูปแบบแล้ว
+    already_group_admin: ผู้ใช้เป็นผู้ดูแลกลุ่มแล้ว
+    cannot_delete_self: ไม่สามารถลบบัญชีของตนเองได้
+    cannot_demote_full_admin: ไม่สามารถลดระดับผู้ดูแลระบบเต็มรูปแบบได้
+    cannot_demote_self: คุณไม่สามารถลดระดับตนเองได้
+    cannot_promote_example: ไม่สามารถเลื่อนระดับผู้ใช้ตัวอย่างได้
+    delete_error: ลบผู้ใช้ไม่สำเร็จ
+    demote_error: ลดระดับผู้ใช้ไม่สำเร็จ
+    description_required: คำอธิบายต้องไม่ว่างเปล่า
+    example_blocked: ผู้ใช้ตัวอย่างไม่สามารถดำเนินการผู้ดูแลระบบได้
+    group_not_found: ไม่พบกลุ่ม
+    group_users_load_error: โหลดผู้ใช้กลุ่มไม่สำเร็จ
+    groups_load_error: โหลดกลุ่มไม่สำเร็จ
+    groups_stats_error: โหลดสถิติกลุ่มไม่สำเร็จ
+    instance_exists: ไม่สามารถลบประเภทได้เนื่องจากมีอินสแตนซ์ที่เกี่ยวข้อง {count} รายการ
+    insufficient_permissions: สิทธิ์ไม่เพียงพอสำหรับการดำเนินการนี้
+    invalid_group_id: group_id ไม่ถูกต้อง ต้องเป็น 00-99
+    invalid_id: id ไม่ถูกต้อง
+    invalid_upload_count: maxUploadCount ต้องเป็นจำนวนเต็มไม่ติดลบ (0 หมายถึงไม่จำกัด)
+    invalid_upload_size: maxUploadSizeMB ต้องเป็นจำนวนเต็มไม่ติดลบ (0 หมายถึงไม่จำกัด)
+    missing_fields: ขาดฟิลด์ที่จำเป็น
+    missing_group_id: ขาดรหัสกลุ่ม
+    missing_id: ขาด id
+    missing_model_id: ขาดรหัสโมเดล
+    missing_provider_code: ขาดพารามิเตอร์ providerCode
+    missing_user_id: ขาด userId
+    model_update_error: อัปเดตโมเดลไม่สำเร็จ
+    models_load_error: โหลดโมเดลไม่สำเร็จ
+    no_fields: ไม่มีฟิลด์ที่ถูกต้องให้อัปเดต
+    no_group: ผู้ใช้ไม่มีกลุ่มที่ได้รับมอบหมาย
+    not_group_admin: ผู้ใช้ไม่ใช่ผู้ดูแลกลุ่ม
+    only_full_admin: เฉพาะผู้ดูแลระบบเต็มรูปแบบเท่านั้นที่ดำเนินการนี้ได้
+    promote_error: เลื่อนระดับผู้ใช้ไม่สำเร็จ
+    provider_delete_error: ลบผู้ให้บริการไม่สำเร็จ
+    provider_not_found: ไม่พบผู้ให้บริการ
+    provider_update_error: อัปเดตผู้ให้บริการไม่สำเร็จ
+    providers_load_error: โหลดผู้ให้บริการไม่สำเร็จ
+    slug_exists: slug นี้มีอยู่แล้ว
+    update_error: อัปเดตผู้ใช้ไม่สำเร็จ
+    user_load_error: โหลดผู้ใช้ไม่สำเร็จ
+    user_not_found: ไม่พบผู้ใช้
+    users_load_error: โหลดผู้ใช้ไม่สำเร็จ
+    viz_type_create_error: สร้างประเภทการแสดงภาพไม่สำเร็จ
+    viz_type_delete_error: ลบประเภทการแสดงภาพไม่สำเร็จ
+    viz_type_update_error: อัปเดตประเภทการแสดงภาพไม่สำเร็จ
+    viz_types_load_error: โหลดประเภทการแสดงภาพไม่สำเร็จ
+    settings_invalid_max_registrations: จำนวนการลงทะเบียนสูงสุดต้องเป็นจำนวนบวกหรือไม่จำกัด
+    settings_invalid_upload_size: ขนาดอัปโหลดสูงสุดเริ่มต้นต้องเป็นจำนวนเต็มที่ไม่ติดลบ (0 หมายถึงไม่จำกัด)
+    settings_modify_forbidden: เฉพาะผู้ดูแลระบบแบบเต็มรูปแบบเท่านั้นที่สามารถแก้ไขการตั้งค่าส่วนกลางได้
+    settings_invalid_email_sender: รูปแบบที่อยู่อีเมลผู้ส่งไม่ถูกต้อง
+    settings_save_error: ไม่สามารถบันทึกการตั้งค่าส่วนกลางได้
+    settings_invalid_public_url: รูปแบบ URL สาธารณะไม่ถูกต้อง
+    settings_load_error: ไม่สามารถโหลดการตั้งค่าส่วนกลางได้
+    settings_view_forbidden: เฉพาะผู้ดูแลระบบแบบเต็มรูปแบบเท่านั้นที่สามารถดูการตั้งค่าส่วนกลางได้
+    settings_invalid_grace_period: ระยะเวลาผ่อนผันการลงทะเบียนต้องเป็นจำนวนบวก (ชั่วโมง)
+    settings_invalid_upload_count: จำนวนอัปโหลดสูงสุดเริ่มต้นต้องเป็นจำนวนเต็มที่ไม่ติดลบ (0 หมายถึงไม่จำกัด)
+    settings_invalid_email_timeout: ระยะหมดเวลาการยืนยันอีเมลต้องเป็นจำนวนบวก (ชั่วโมง)
+  auth:
+    account_deleted: บัญชีนี้ถูกลบแล้ว
+    email_not_verified: อีเมลยังไม่ได้รับการยืนยัน กรุณาตรวจสอบกล่องจดหมายและโฟลเดอร์สแปม
+    example_user_blocked: การเปลี่ยนรหัสผ่านถูกปิดใช้งานสำหรับผู้ใช้ตัวอย่าง
+    example_user_forgot_blocked: การรีเซ็ตรหัสผ่านถูกปิดใช้งานสำหรับผู้ใช้ตัวอย่าง
+    example_user_register_blocked: ผู้ใช้ตัวอย่างไม่สามารถสร้างบัญชีใหม่ได้
+    example_user_reset_blocked: การรีเซ็ตรหัสผ่านถูกปิดใช้งานสำหรับผู้ใช้ตัวอย่าง
+    internal_error: ข้อผิดพลาดภายในเซิร์ฟเวอร์
+    invalid_credentials: ข้อมูลประจำตัวไม่ถูกต้อง
+    invalid_current_password: รหัสผ่านปัจจุบันไม่ถูกต้อง
+    invalid_token: โทเค็นไม่ถูกต้องหรือหมดอายุ
+    missing_email: ต้องระบุอีเมล
+    missing_fields: ฟิลด์ที่ขาดหายไป
+    password_validation_failed: การตรวจสอบรหัสผ่านล้มเหลว
+    token_expired: โทเค็นหมดอายุแล้ว
+    unauthorized: ไม่ได้รับอนุญาต
+    user_not_found: ไม่พบผู้ใช้
+  datasets:
+    delete_blocked: ผู้ใช้ตัวอย่างไม่สามารถลบชุดข้อมูลได้
+    example_blocked: ผู้ใช้ตัวอย่างไม่สามารถสร้างชุดข้อมูลได้
+    proxy_error: ข้อผิดพลาดภายในเซิร์ฟเวอร์
+    update_blocked: ผู้ใช้ตัวอย่างไม่สามารถอัปเดตชุดข้อมูลได้
+  profile:
+    name_required: ต้องระบุชื่อ
+    update_failed: การอัปเดตโปรไฟล์ล้มเหลว
+  recipes:
+    create_error: การสร้างสูตรล้มเหลว
+    dataset_not_found: ไม่พบชุดข้อมูล
+    dataset_required: ต้องระบุ datasetId
+    delete_error: การลบสูตรล้มเหลว
+    execute_error: การเรียกใช้สูตรล้มเหลว
+    execution_load_error: การโหลดการดำเนินการล้มเหลว
+    execution_not_found: ไม่พบการดำเนินการ
+    executions_load_error: การโหลดรายการดำเนินการล้มเหลว
+    load_error: การโหลดสูตรล้มเหลว
+    missing_id: ต้องระบุรหัสสูตร
+    name_required: ต้องระบุชื่อและขั้นตอน
+    not_found: ไม่พบสูตร
+    not_owned: ไม่พบสูตรหรือไม่ได้เป็นเจ้าของ
+    update_error: การอัปเดตสูตรล้มเหลว
+  register:
+    email_exists: อีเมลนี้มีอยู่แล้ว
+    internal_error: ข้อผิดพลาดภายในเซิร์ฟเวอร์
+    invalid_email: รูปแบบอีเมลไม่ถูกต้อง
+    limit_reached: ถึงขีดจำกัดการลงทะเบียนแล้ว (สูงสุด {max_reg} ผู้ใช้)
+    missing_fields: ฟิลด์ที่จำเป็นขาดหาย
+    password_validation_failed: การตรวจสอบรหัสผ่านล้มเหลว
+    settings_not_found: ไม่พบการตั้งค่าส่วนกลาง
+  settings:
+    load_failed: การโหลดการตั้งค่าล้มเหลว
+    save_failed: การบันทึกการตั้งค่าล้มเหลว
+    user_not_found: ไม่พบผู้ใช้
+  user:
+    api_key_required: ต้องใช้คีย์ API สำหรับผู้ให้บริการนี้
+    connection_name_exists: มีการเชื่อมต่อที่ใช้ชื่อนี้อยู่แล้ว
+    connection_not_found: ไม่พบการเชื่อมต่อ
+    example_blocked: ผู้ใช้ตัวอย่างไม่สามารถดำเนินการนี้ได้
+    internal_error: ข้อผิดพลาดภายในเซิร์ฟเวอร์
+    missing_fields: ฟิลด์ที่จำเป็นหายไป
+    provider_not_found: ไม่พบผู้ให้บริการ "{provider}"
+    user_not_found: ไม่พบผู้ใช้
+  global_settings_load_error: ข้อผิดพลาดภายในเซิร์ฟเวอร์
+app:
+  name: Statisticians Workbench
+  version: เวอร์ชัน
+chat:
+  connection_not_found: ไม่พบการเชื่อมต่อ AI หรือไม่สามารถเข้าถึงได้
+  connections_load_error: การโหลดการเชื่อมต่อล้มเหลว
+  delete: ลบ
+  delete_confirm: คุณแน่ใจหรือไม่ว่าต้องการลบการสนทนานี้
+  delete_error: การลบการสนทนาล้มเหลว
+  delete_success: ลบการสนทนาแล้ว
+  empty_state: ส่งข้อความเพื่อเริ่มการสนทนา
+  go_to_ai_settings: ไปที่การตั้งค่า AI
+  history: ประวัติการสนทนา
+  input_placeholder: พิมพ์ข้อความของคุณ...
+  load_error: การโหลดการสนทนาล้มเหลว
+  models_load_error: การโหลดโมเดลล้มเหลว
+  new_chat: การสนทนาใหม่
+  no_chat_selected: ไม่มีการสนทนาที่ใช้งานอยู่
+  no_chats: ยังไม่มีการสนทนา
+  no_connections_message: คุณต้องกำหนดการเชื่อมต่อ AI อย่างน้อยหนึ่งรายการก่อนจึงจะสามารถใช้การสนทนาได้
+  no_models: ไม่มีโมเดลสำหรับการเชื่อมต่อนี้
+  rename: เปลี่ยนชื่อ
+  rename_empty: ชื่อต้องไม่ว่างเปล่า
+  rename_error: การเปลี่ยนชื่อการสนทนาล้มเหลว
+  rename_success: เปลี่ยนชื่อการสนทนาแล้ว
+  select_connection: การเชื่อมต่อ AI
+  select_connection_first: กรุณาเลือกการเชื่อมต่อ AI ก่อน
+  select_connection_placeholder: เลือกการเชื่อมต่อ AI
+  select_model: โมเดล
+  select_model_placeholder: เลือกโมเดล
+  send_error: การส่งข้อความล้มเหลว
+  title: การสนทนา
+common:
+  audio_settings: การตั้งค่าเสียง
+  back: กลับ
+  cancel: ยกเลิก
+  cannot_undo: การดำเนินการนี้ไม่สามารถย้อนกลับได้
+  clear: ล้าง
+  close: ปิด
+  close_navigation: ปิดการนำทาง
+  copied: คัดลอกแล้ว!
+  copy: คัดลอก
+  copy_to_clipboard: คัดลอกไปยังคลิปบอร์ด
+  delete: ลบ
+  delete_chat: ลบการสนทนา
+  deleting: กำลังลบ...
+  dismiss: ปิด
+  dismiss_error: ปิดข้อผิดพลาด
+  dismiss_success: ปิดข้อความสำเร็จ
+  edit: แก้ไข
+  error_label: ข้อผิดพลาด
+  false_label: เท็จ
+  generating: กำลังสร้าง...
+  has_more_information: มีข้อมูลเพิ่มเติม
+  loading: กำลังโหลด...
+  microphone_off: ปิดไมโครโฟน
+  microphone_on: เปิดไมโครโฟน
+  next: ถัดไป
+  no_answer: ไม่ได้รับคำตอบ
+  no_permission: คุณไม่มีสิทธิ์ดูหน้านี้
+  open_navigation: เปิดการนำทาง
+  reset_to_defaults: รีเซ็ตเป็นค่าเริ่มต้น
+  restoring: กำลังกู้คืน...
+  save: บันทึก
+  saving: กำลังบันทึก...
+  select_language: เลือกภาษา
+  sending: กำลังส่ง...
+  speaker_off: ปิดลำโพง
+  speaker_on: เปิดลำโพง
+  speech_input_unsupported: 'อินพุตเสียงไม่รองรับในเบราว์เซอร์ของคุณ เบราว์เซอร์ที่รองรับ: Google Chrome, Microsoft Edge, Opera, Samsung Internet'
+  speech_mic_denied: การเข้าถึงไมโครโฟนถูกปฏิเสธ กรุณาอนุญาตการเข้าถึงไมโครโฟนในการตั้งค่าเบราว์เซอร์ของคุณ
+  speech_mic_failed: 'ไม่สามารถเริ่มไมโครโฟนได้: {error}'
+  speech_network_error: ข้อผิดพลาดเครือข่ายการรู้จำเสียง — ตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณแล้วลองอีกครั้ง
+  speech_output_unsupported: 'เอาต์พุตเสียงไม่รองรับในเบราว์เซอร์ของคุณ เบราว์เซอร์ที่รองรับ: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet'
+  speech_recognition_error: 'ข้อผิดพลาดในการรู้จำเสียง: {error} ลองอีกครั้ง'
+  success_label: สำเร็จ
+  system_default: ค่าเริ่มต้นของระบบ
+  testing: กำลังทดสอบ...
+  true_label: จริง
+  unknown: ไม่ทราบ
+  untitled: ไม่มีชื่อ
+  uploading: กำลังอัปโหลด...
+  verifying: กำลังตรวจสอบ...
+  view: ดู
+  view_dataset: ดูชุดข้อมูล
+  voice: เสียง
+  access_denied_admin: การเข้าถึงถูกปฏิเสธ — สำหรับผู้ดูแลระบบเท่านั้น
+  unknown_error: ข้อผิดพลาดที่ไม่รู้จัก
+  audio_resume: ดำเนินการต่อ
+  audio_pause: หยุดชั่วคราว
+  audio_stop: หยุด
+  email_features_unavailable: ฟีเจอร์บัญชีที่เกี่ยวข้องกับอีเมลไม่สามารถใช้งานได้
+  ai_temperature_label: อุณหภูมิ
+  ai_max_tokens_label: โทเค็นผลลัพธ์สูงสุด
+  ai_models: โมเดล AI
+  connect_timeout_label: ระยะหมดเวลาการเชื่อมต่อ (วินาที)
+  probe_timeout_label: ระยะหมดเวลาการทดสอบโมเดล (วินาที)
+  ai_timeout_label: เวลา AI สูงสุด
+components:
+  audio_settings_dialog:
+    close: ปิด
+    pitch_label: 'ระดับเสียง: {0}'
+    reset_to_defaults: รีเซ็ตเป็นค่าเริ่มต้น
+    speed_label: 'ความเร็ว: {0}x'
+    system_default: ค่าเริ่มต้นของระบบ
+    title: การตั้งค่าเสียง
+    voice: เสียง
+  example_user_badge: ผู้ใช้ตัวอย่าง
+  example_user_badge_tooltip: ลงทะเบียนเพื่อเข้าถึงเต็มรูปแบบ
+  example_user_banner:
+    message: คุณกำลังดูระบบในโหมดอ่านอย่างเดียว ลงทะเบียนเพื่อเข้าถึงเต็มรูปแบบเพื่อสร้างและแก้ไขทรัพยากร
+    message_short: โหมดอ่านอย่างเดียว - ลงทะเบียนเพื่อเข้าถึงเต็มรูปแบบ
+    register_button: ลงทะเบียนเพื่อเข้าถึงเต็มรูปแบบ
+    register_short: ลงทะเบียน
+    title: โหมดผู้ใช้ตัวอย่าง
+  group_admin_badge: ผู้ดูแลกลุ่ม
+  preparation_preview:
+    more_columns: +{0} เพิ่มเติม
+    null_value: 'null'
+    rows_removed: '{0} ถูกลบออกแล้ว'
+  readonly_wrapper:
+    message: โหมดอ่านอย่างเดียว - ลงทะเบียนเพื่อเข้าถึงเต็มรูปแบบเพื่อแก้ไขเนื้อหานี้
+  feature_gate:
+    upgrade_title: คุณลักษณะสำหรับองค์กร
+    upgrade_message: คุณลักษณะนี้ต้องใช้ใบอนุญาตนิติบุคคล ติดต่อ Sentuny เพื่อตัวเลือกการอัปเกรด
+  active_checkmark: ✓
+  return_banner:
+    text: คุณกำลังทำงานกับสูตร AI
+    link: กลับไปยังเซสชันของคุณ
+    recipe_text: คุณกำลังทำงานกับสูตรอยู่
+    fallback_link: กลับ
+    recipe_link: กลับไปยังสูตรของคุณ
+  data_value:
+    some_content_not_shown: เนื้อหาบางส่วนไม่แสดง
+database:
+  connection:
+    add_first: เพิ่มการเชื่อมต่อแรกของคุณ
+    add_new: เพิ่มการเชื่อมต่อใหม่
+    add_success: เพิ่มการเชื่อมต่อสำเร็จแล้ว
+    add_title: เพิ่มการเชื่อมต่อใหม่
+    by_label: โดย
+    clear_default: ล้างค่าเริ่มต้น
+    currently_not_shared: ❌ ขณะนี้ไม่ได้แชร์
+    currently_shared: ✅ ขณะนี้แชร์กับกลุ่ม
+    database_label: ชื่อฐานข้อมูล
+    db_create_badge: สร้างฐานข้อมูล
+    default_badge: ค่าเริ่มต้น
+    default_cleared: ล้างการเชื่อมต่อเริ่มต้นแล้ว
+    default_set: อัปเดตการเชื่อมต่อเริ่มต้นแล้ว
+    delete_button: ลบ
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบการเชื่อมต่อนี้
+    delete_error: ไม่สามารถลบการเชื่อมต่อได้
+    delete_title: ลบการเชื่อมต่อ
+    deleted: การเชื่อมต่อถูกลบแล้ว
+    edit_title: แก้ไขการเชื่อมต่อ
+    form_description: ป้อนรายละเอียดการเชื่อมต่อฐานข้อมูลของคุณ
+    group_label: กลุ่ม
+    host_label: โฮสต์
+    load_error: ไม่สามารถโหลดการเชื่อมต่อได้
+    name_label: ชื่อการเชื่อมต่อ
+    name_placeholder: เช่น ฐานข้อมูลโปรดักชัน
+    no_connections: ยังไม่มีการบันทึกการเชื่อมต่อฐานข้อมูล
+    not_found: ไม่พบการเชื่อมต่อ
+    password_label: รหัสผ่าน
+    port_label: พอร์ต
+    save_error: ไม่สามารถบันทึกการเชื่อมต่อได้
+    select_type: เลือกประเภท
+    set_default: ตั้งเป็นค่าเริ่มต้น
+    shared_badge: แชร์แล้ว
+    shared_description: ทำให้การเชื่อมต่อนี้พร้อมใช้งานสำหรับผู้ใช้รายอื่นในกลุ่มของคุณ
+    shared_label: แชร์กับกลุ่ม
+    shared_readonly: แชร์แล้ว
+    shared_readonly_message: การเชื่อมต่อนี้ถูกแชร์กับคุณ คุณสามารถดูได้แต่การแก้ไขถูกจำกัดไว้เฉพาะเจ้าของ
+    tables_badge: ตาราง
+    test_button: ทดสอบการเชื่อมต่อ
+    test_failed: การเชื่อมต่อล้มเหลว
+    test_incomplete: กรุณากรอกข้อมูลให้ครบทุกฟิลด์ก่อนทำการทดสอบ
+    test_network_error: ข้อผิดพลาดเครือข่ายขณะทดสอบการเชื่อมต่อ
+    test_success: การเชื่อมต่อสำเร็จ!
+    type_label: ประเภทฐานข้อมูล
+    unknown_user: ไม่ทราบ
+    update_success: อัปเดตการเชื่อมต่อสำเร็จแล้ว
+    username_label: ชื่อผู้ใช้
+    auto_create_tables: สร้างชุดข้อมูลตารางโดยอัตโนมัติ
+    browse_tables: เรียกดูตาราง
+    jet_port_label: พอร์ตเซิร์ฟเวอร์ Jet
+    jet_host_label: โฮสต์ Jet Server
+    auto_create_title: สร้างชุดข้อมูลอัตโนมัติ
+    auto_create_views: สร้างชุดข้อมูลมุมมองอัตโนมัติ
+    auto_create_warnings_title: 'บันทึกการเชื่อมต่อแล้ว แต่การสร้างชุดข้อมูลอัตโนมัติมีคำเตือน:'
+    datasets_created: สร้างชุดข้อมูลแล้ว {n} ชุด
+    file_path_label: เส้นทางไฟล์
+    probe_check_now: ตรวจสอบทันที
+    probe_unsaved_hint: การเชื่อมต่อจะถูกทดสอบเมื่อบันทึกแล้ว
+    probe_no_success: ไม่มีการบันทึกการทดสอบที่สำเร็จ
+    probe_state:
+      unknown: ยังไม่ได้ตรวจสอบ
+      reachable: เข้าถึงได้
+      incomplete: การตั้งค่าไม่สมบูรณ์
+      auth_failed: การยืนยันตัวตนล้มเหลว
+      no_database: ไม่มีฐานข้อมูล
+      schema_error: ไม่สามารถอ่าน schema ได้
+      unreachable: ไม่สามารถเข้าถึงได้
+      no_permission: ไม่มีสิทธิ์
+    probe_minutes_ago: '{count} นาทีที่แล้ว'
+    probe_minute_ago: 1 นาทีที่แล้ว
+    probe_hours_ago: '{count} ชั่วโมงที่แล้ว'
+    probe_check_failed: ไม่สามารถตรวจสอบการเชื่อมต่อได้ในขณะนี้
+    probe_never: ไม่เคย
+    probe_hour_ago: 1 ชั่วโมงที่แล้ว
+    probe_title: ตรวจสอบล่าสุด
+    probe_just_now: เมื่อสักครู่
+    probe_auto_hint: อัปเดตอัตโนมัติเมื่อโหลดรายการการเชื่อมต่อ
+    probe_checked: ตรวจสอบแล้ว
+    probe_last_succeeded: สำเร็จล่าสุด
+  default_hint: การเชื่อมต่อเริ่มต้นถูกใช้เป็นข้อมูลสำรองเมื่อสูตรการวิเคราะห์ไม่ได้ระบุการเชื่อมต่อ
+  title: การตั้งค่าฐานข้อมูล
+datasets:
+  all_datasets: ข้อมูลทั้งหมด
+  by_label: โดย
+  created_label: สร้างขึ้น
+  define_button: เชื่อมต่อฐานข้อมูล
+  define_first: เชื่อมต่อฐานข้อมูล
+  delete:
+    confirm: ลบชุดข้อมูลนี้หรือไม่?
+    error: ไม่สามารถลบชุดข้อมูลได้
+    success: ลบชุดข้อมูล '{id}' เรียบร้อยแล้ว
+    title: ลบ
+  description:
+    empty: คำอธิบายที่สร้างขึ้นว่างเปล่า กรุณาตรวจสอบการกำหนดค่าผู้ให้บริการ AI
+    error: ไม่สามารถสร้างคำอธิบายได้
+    generated: สร้างคำอธิบายสำเร็จแล้ว
+    title: คำอธิบายที่สร้างขึ้น
+  detail:
+    created: สร้างแล้ว
+    descriptions: คำอธิบายจาก AI
+    generated: สร้างขึ้น
+    load_error: ไม่สามารถโหลดชุดข้อมูลได้
+    model: โมเดล
+    no_description: ไม่มีคำอธิบาย
+    not_found: ไม่พบชุดข้อมูล
+    not_found_message: ไม่พบชุดข้อมูลที่คุณค้นหา
+    overview: ภาพรวม
+    rows: แถว
+    rows_not_computed_hint: ยังไม่ได้รันการ join ดังนั้นจึงยังไม่มีจำนวนแถว
+    storage_live: มุมมองสด
+    materialize_failed: 'ไม่สามารถสร้างตารางที่บันทึกไว้ได้:'
+    storage_table: ตารางที่บันทึกไว้
+    rows_not_computed: ยังไม่คำนวณ
+  list_error: ไม่สามารถโหลดชุดข้อมูลได้
+  no_datasets: ไม่มีข้อมูล
+  no_uploaded: ยังไม่มีชุดข้อมูลที่อัปโหลด
+  preparation:
+    add_operation: เพิ่มการดำเนินการ
+    add_rule: เพิ่มกฎ
+    column_required: การดำเนินการต้องมีคอลัมน์
+    columns_required: การดำเนินการต้องมีอย่างน้อยหนึ่งคอลัมน์
+    delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบกฎการแปลง "{name}"? นี่จะลบกฎนี้ออกจากสูตรใด ๆ ที่ใช้งานด้วย
+    delete_error: ไม่สามารถลบกฎการแปลงได้
+    delete_title: ลบกฎการแปลง
+    edit_rule: แก้ไขกฎ
+    encode:
+      label: เข้ารหัส Label
+      one_hot: เข้ารหัส One-Hot
+    fill:
+      constant: ค่าคงที่
+      drop: ลบ
+      mean: ค่าเฉลี่ย
+      median: มัธยฐาน
+      mode: ฐานนิยม
+    filter_invalid: การดำเนินการกรองต้องระบุคอลัมน์และค่า
+    link:
+      description: ทำความสะอาดและแปลงชุดข้อมูลนี้
+      title: กฎการเตรียมข้อมูล
+    name_required: ต้องระบุชื่อกฎ
+    new_name_required: การเปลี่ยนชื่อต้องระบุชื่อใหม่
+    new_rule: กฎใหม่
+    no_rules: ยังไม่ได้กำหนดกฎการแปลงสำหรับชุดข้อมูลนี้
+    operation:
+      convert_type: แปลงประเภท
+      drop_columns: ลบคอลัมน์
+      encode: เข้ารหัส
+      fill_missing: เติมค่าที่ขาดหาย
+      filter: กรอง
+      normalize: ทำให้เป็นปกติ
+      rename_column: เปลี่ยนชื่อคอลัมน์
+      standardize: มาตรฐาน
+    operations: การดำเนินการ
+    operations_count: การดำเนินการ
+    operator:
+      after: หลังจาก (>)
+      before: ก่อนหน้า (<)
+      contains: ประกอบด้วย
+      ends_with: ลงท้ายด้วย
+      equal_to: เท่ากับ (=)
+      greater_than: มากกว่า (>)
+      greater_than_or_equal: มากกว่าหรือเท่ากับ (>=)
+      less_than: น้อยกว่า (<)
+      less_than_or_equal: น้อยกว่าหรือเท่ากับ (<=)
+      not_contains: ไม่มี
+      not_equal: ไม่เท่ากับ (!=)
+      on_or_after: ตั้งแต่วันที่ (>=)
+      on_or_before: จนถึงวันที่ (<=)
+      starts_with: ขึ้นต้นด้วย
+    original_data: ข้อมูลต้นฉบับ
+    placeholder:
+      boolean: จริง / เท็จ
+      datetime: ปปปป-ดด-วว หรือ timestamp...
+      number: ป้อนตัวเลข...
+      value: ป้อนค่า...
+    preview: ตัวอย่าง
+    preview_error: ไม่สามารถแสดงตัวอย่างกฎได้
+    preview_title: ตัวอย่าง
+    rows_after: หลัง
+    rows_before: ก่อน
+    rows_removed: ลบแล้ว
+    rule_created: สร้างกฎการเตรียมข้อมูล '{name}' เรียบร้อยแล้ว
+    rule_deleted: ลบกฎการเตรียมข้อมูลเรียบร้อยแล้ว
+    rule_description: คำอธิบาย (ไม่บังคับ)
+    rule_description_placeholder: คำอธิบายโดยย่อ
+    rule_name: ชื่อกฎ
+    rule_name_placeholder: เช่น, ทำความสะอาดเพื่อการวิเคราะห์
+    rule_updated: อัปเดตกฎการเตรียมข้อมูลเรียบร้อยแล้ว
+    rules_title: กฎการแปลง
+    save_error: ไม่สามารถบันทึกกฎการแปลงได้
+    shared: แชร์กับกลุ่ม
+    transformed_data: ข้อมูลที่ผ่านการแปลง
+    type:
+      boolean: บูลีน
+      datetime: วันที่และเวลา
+      numeric: ตัวเลข
+      string: ข้อความ
+    ui:
+      column: คอลัมน์
+      columns: คอลัมน์ (คั่นด้วยเครื่องหมายจุลภาค)
+      encoding: การเข้ารหัส
+      method: วิธีการ
+      new_name: ชื่อใหม่
+      operator: ตัวดำเนินการ
+      target_type: ประเภทเป้าหมาย
+      type: ประเภท
+      value: ค่า
+  rules_button: กฎ
+  schema:
+    column_name: คอลัมน์
+    column_type: ประเภท
+    columns: คอลัมน์
+    load_error: 'ไม่สามารถโหลด schema ได้: {error}'
+    no_sample_data: ไม่มีข้อมูลตัวอย่าง
+    null_count: ค่าว่าง
+    sample_data: ข้อมูลตัวอย่าง (5 แถวแรก)
+    title: ตัวอย่างสคีมา
+    total_columns: จำนวนคอลัมน์ทั้งหมด
+    total_rows: จำนวนแถวทั้งหมด
+    unique_count: เฉพาะ
+  share: แชร์
+  share_error: ไม่สามารถอัปเดตการแชร์ได้
+  shared: แชร์ชุดข้อมูลแล้ว
+  shared_badge: แชร์แล้ว
+  source:
+    unknown_file: ไฟล์ที่ไม่รู้จัก
+  title: ข้อมูลของฉัน
+  transform_button: แปลงข้อมูล
+  type:
+    table: ตาราง
+    upload: อัปโหลดแล้ว
+    view: มุมมอง
+    virtual: เสมือน
+    mysql: MySQL
+    mssql: MS SQL
+    notebook: โน้ตบุ๊ก
+    postgresql: PostgreSQL
+    access: MS Access
+    cleaned_copy: ต้นฉบับที่ชำระแล้ว
+  unknown_user: ไม่รู้จัก
+  unshare: ยกเลิกการแชร์
+  unshared: ยกเลิกการแชร์ชุดข้อมูลแล้ว
+  upload:
+    card_title: อัปโหลดและบรรยาย
+    connection_not_found: ไม่พบการเชื่อมต่อ โปรดเลือกการเชื่อมต่อ AI ที่ถูกต้อง
+    description_label: คำอธิบาย (ไม่บังคับ)
+    description_placeholder: คำอธิบายสั้น ๆ ของข้อมูลนี้
+    error: ไม่สามารถอัปโหลดชุดข้อมูลได้
+    file_label: ไฟล์
+    file_selected: ไฟล์ที่เลือก
+    file_too_large: ไฟล์มีขนาดเกินขีดจำกัดสูงสุด {max}MB ไม่อนุญาตให้อัปโหลด
+    generate_description: สร้างคำอธิบาย
+    history: ประวัติการอัปโหลด
+    limit_reached: ถึงขีดจำกัดแล้ว
+    limit_reached_message: คุณถึงจำนวนชุดข้อมูลที่อนุญาตสูงสุดแล้ว ({count})
+    name_label: ชื่อข้อมูล
+    name_placeholder: ข้อมูลของฉัน
+    no_connections: คุณต้องกำหนดค่าการเชื่อมต่อ AI อย่างน้อยหนึ่งรายการเพื่อสร้างคำอธิบาย
+    no_datasets: ยังไม่มีชุดข้อมูล
+    no_file: โปรดเลือกไฟล์ก่อน
+    no_name: โปรดป้อนชื่อชุดข้อมูล
+    select_dataset: โปรดอัปโหลดหรือเลือกชุดข้อมูลก่อน
+    shared_description: ทำให้ข้อมูลนี้พร้อมใช้งานสำหรับผู้ใช้รายอื่นในกลุ่มของคุณ
+    shared_group_hint: 'กลุ่ม: {group} - {description}'
+    shared_label: แชร์กับกลุ่ม
+    success: อัปโหลดชุดข้อมูล '{name}' สำเร็จแล้ว
+    title: อัปโหลดข้อมูล
+    upload_button: อัปโหลด
+    escalation_retry: ลองอีกครั้ง
+    escalation_hint: การลองครั้งนี้เท่านั้นที่ใช้ค่านี้ หากโมเดลนี้มักต้องใช้เวลานานกว่านั้น ให้ปรับการตั้งค่าโมเดลของการเชื่อมต่อแทนการเพิ่มค่านี้ทุกครั้ง
+    escalation_failed_at: คำอธิบายหมดเวลาหลังจาก {seconds} วินาที
+    escalation_label: ลองอีกครั้งด้วย (วินาที)
+    escalation_invalid: ป้อนจำนวนเต็มวินาทีระหว่าง 1 ถึง {max}
+  upload_button: อัปโหลดข้อมูล
+  upload_count: '{count} การอัปโหลด'
+  upload_first: อัปโหลดไฟล์ข้อมูลแรกของคุณ
+  upload_first_file: อัปโหลดไฟล์แรกของคุณ
+  upload_new: อัปโหลดไฟล์ใหม่
+  uploaded_title: ข้อมูลที่อัปโหลดแล้ว
+  view_dataset_title: ดูชุดข้อมูล
+  view_schema: ดูสคีมา
+  transforms:
+    create_button: สร้าง
+    back: กลับไปยังข้อมูลของฉัน
+    creating: กำลังสร้าง...
+    no_transforms: ไม่มีการแปลงที่กำหนดไว้สำหรับชุดข้อมูลนี้
+    create_error: สร้างการแปลงไม่สำเร็จ
+    delete_error: ลบการแปลงไม่สำเร็จ
+    description_label: คำอธิบาย (ไม่บังคับ)
+    load_error: ไม่สามารถโหลดการแปลง
+    created_label: สร้างแล้ว
+    title: การแปลง
+    delete_confirm: ลบการแปลงนี้หรือไม่?
+    for: การแปลงสำหรับ {name}
+    create_new: การแปลงใหม่
+    name_label: ชื่อ
+    operations_label: '{count} การดำเนินการ'
+  browse:
+    back: ย้อนกลับ
+    nullable: เป็นค่าว่างได้
+    select_table_hint: เลือกตารางเพื่อดูคอลัมน์และแสดงตัวอย่างข้อมูล
+    load_columns_error: โหลดคอลัมน์ไม่สำเร็จ
+    load_preview_error: โหลดตัวอย่างไม่สำเร็จ
+    preview_hint: คลิก "โหลดตัวอย่าง" เพื่อดูแถวตัวอย่าง
+    load_preview: โหลดตัวอย่าง
+    preview: ตัวอย่าง
+    type: ชนิด
+    load_tables_error: ไม่สามารถโหลดตาราง
+    browse_tables: เรียกดูตาราง
+    tables: ตาราง
+    column: คอลัมน์
+    tables_count: '{count} ตาราง'
+    connections: การเชื่อมต่อ
+    columns_title: คอลัมน์ — {table}
+  database_label: ฐานข้อมูล
+  filter:
+    label: ตัวกรอง
+    virtual: เสมือน
+    not_shared: ไม่ได้แชร์
+    postgresql: PostgreSQL
+    access: MS Access
+    mysql: MySQL
+    no_match: ไม่มีชุดข้อมูลที่ตรงกับตัวกรองนี้
+    notebooks: โน้ตบุ๊ก
+    all: ทั้งหมด
+    uploads: การอัปโหลด
+    mssql: MS SQL
+    cleaned: ทำความสะอาดแล้ว
+    shared: แชร์แล้ว
+  created_from: สร้างจาก {name}
+  source_unavailable: แหล่งข้อมูลไม่พร้อมใช้งาน
+  cleaned_badge: ทำความสะอาดแล้ว
+  table_not_built: ยังไม่ได้สร้างตาราง
+define:
+  column_name: คอลัมน์
+  column_type: ประเภท
+  connection_label: การเชื่อมต่อฐานข้อมูล
+  dataset_name: ชื่อชุดข้อมูล
+  dataset_name_placeholder: เช่น ข้อมูลลูกค้า
+  description_label: คำอธิบาย (ไม่บังคับ)
+  description_placeholder: คำอธิบายสั้น ๆ ของชุดข้อมูลนี้
+  existing_none: ไม่มี
+  existing_title: ที่มีอยู่แล้ว
+  go_to_db_settings: ไปที่การตั้งค่าฐานข้อมูล
+  load_connections_error: ไม่สามารถโหลดการเชื่อมต่อได้
+  load_sources_error: ไม่สามารถโหลดแหล่งข้อมูลได้
+  name_required: ต้องระบุชื่อชุดข้อมูล
+  no_connections_message: คุณต้องกำหนดค่าการเชื่อมต่อฐานข้อมูลอย่างน้อยหนึ่งรายการก่อนจึงจะเชื่อมต่อฐานข้อมูลได้
+  no_sources: ไม่พบตารางหรือมุมมองในฐานข้อมูลนี้
+  nullable: อนุญาตให้เป็นค่าว่างได้
+  preview_label: ตัวอย่างข้อมูล (10 แถวแรก)
+  save_button: บันทึกชุดข้อมูล
+  save_error: ไม่สามารถสร้างชุดข้อมูลได้
+  save_success: สร้างชุดข้อมูลสำเร็จ
+  schema_label: สคีมา
+  select_connection: เลือกการเชื่อมต่อ
+  select_source: เลือกแหล่งข้อมูล
+  select_source_first: โปรดเลือกตารางหรือมุมมองก่อน
+  shared_description: ทำให้ชุดข้อมูลนี้พร้อมใช้งานสำหรับผู้ใช้รายอื่นในกลุ่มของคุณ
+  shared_label: แชร์กับกลุ่ม
+  source_label: แหล่งข้อมูล
+  source_type_label: ประเภทแหล่งข้อมูล
+  step1_description: เลือกการเชื่อมต่อฐานข้อมูลเพื่อเชื่อมต่อชุดข้อมูล
+  step1_title: เลือกการเชื่อมต่อฐานข้อมูล
+  step2_description: เลือกว่าจะใช้ตารางหรือมุมมอง จากนั้นเลือกแหล่งข้อมูล
+  step2_title: เลือกแหล่งข้อมูล
+  step3_description: ตรวจสอบคอลัมน์และตัวอย่างข้อมูลจากแหล่งข้อมูลที่เลือก
+  step3_title: ตรวจสอบแหล่งข้อมูล
+  step4_description: ตั้งชื่อและคำอธิบายให้ชุดข้อมูล จากนั้นบันทึก
+  step4_title: ตั้งชื่อและบันทึก
+  step_connection: การเชื่อมต่อ
+  step_save: บันทึก
+  step_source: แหล่งข้อมูล
+  step_verify: ตรวจสอบ
+  table: ตาราง
+  title: เชื่อมต่อฐานข้อมูล
+  verify_button: ตรวจสอบแหล่งข้อมูล
+  verify_error: ไม่สามารถตรวจสอบตาราง/มุมมองได้
+  verify_success: ตรวจสอบตาราง/มุมมองสำเร็จ
+  view: มุมมอง
+demo:
+  badge: DEMO
+  banner:
+    message: นี่คือระบบสาธิต ข้อมูลอาจถูกรีเซ็ตเป็นระยะ
+    title: ⚠️ โหมดสาธิต
+forgot_password:
+  back_to_login: กลับไปยังหน้าเข้าสู่ระบบ
+  check_spam: หากไม่เห็นอีเมลภายในไม่กี่นาที กรุณาตรวจสอบโฟลเดอร์สแปม
+  description: ป้อนที่อยู่อีเมลของคุณ แล้วเราจะส่งลิงก์เพื่อรีเซ็ตรหัสผ่านให้
+  error: ไม่สามารถส่งอีเมลรีเซ็ตได้
+  sent: หากมีบัญชีที่ใช้อีเมลนี้ คุณจะได้รับลิงก์รีเซ็ตรหัสผ่าน
+  sent_description: หากมีบัญชีที่ใช้อีเมลนี้ คุณจะได้รับลิงก์รีเซ็ตรหัสผ่าน
+  sent_title: ส่งอีเมลแล้ว
+  submit: ส่งลิงก์รีเซ็ต
+  title: ลืมรหัสผ่าน
+global:
+  demo_mode:
+    description: เมื่อเปิดใช้งาน ระบบจะทำงานในโหมดสาธิต
+    label: โหมดสาธิต
+  email_sender:
+    hint: ที่อยู่อีเมลที่อีเมลยืนยันจะปรากฏว่ามาจาก
+    label: ที่อยู่ผู้ส่งอีเมล
+  email_timeout:
+    hint: จำนวนชั่วโมงที่ลิงก์ยืนยันอีเมลยังคงใช้ได้
+    label: ระยะเวลาหมดอายุการยืนยันอีเมล (ชั่วโมง)
+  grace_period:
+    hint: จำนวนชั่วโมงก่อนที่บัญชีที่ถูกลบแบบชั่วคราวจะถูกลบถาวร
+    label: ความล่าช้าในการลบ (ชั่วโมง)
+  invalid_grace_period: โปรดป้อนจำนวนบวกที่ถูกต้องสำหรับความล่าช้าในการลบ (ชั่วโมง)
+  invalid_number: โปรดป้อนจำนวนบวกที่ถูกต้องสำหรับจำนวนการลงทะเบียนสูงสุด
+  invalid_timeout: โปรดป้อนจำนวนบวกที่ถูกต้องสำหรับระยะหมดอายุการยืนยัน (ชั่วโมง)
+  load_error: ไม่สามารถโหลดการตั้งค่ารวมได้
+  max_registrations:
+    custom: กำหนดเอง (ป้อนด้านล่าง)
+    custom_placeholder: ป้อนจำนวนบวก
+    hint: กำหนดขีดจำกัดจำนวนผู้ใช้ที่สามารถลงทะเบียนได้
+    label: จำนวนการลงทะเบียนผู้ใช้สูงสุด
+    placeholder: เลือกขีดจำกัด
+    unlimited: ไม่จำกัด
+    users: ผู้ใช้
+  password_policy:
+    custom: กำหนดเอง
+    high: สูง (ขั้นต่ำ 10 ตัว, ประกอบด้วยตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก, ตัวเลข, อักขระพิเศษ)
+    hint: เลือกข้อกำหนดความซับซ้อนของรหัสผ่านสำหรับการลงทะเบียนผู้ใช้และการเปลี่ยนรหัสผ่าน
+    label: นโยบายรหัสผ่าน
+    low: ต่ำ (ขั้นต่ำ 6 ตัวอักษร)
+    medium: ปานกลาง (ขั้นต่ำ 8 ตัว, ประกอบด้วยตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก, ตัวเลข)
+    min_length: ความยาวขั้นต่ำ
+    min_strength: ความแข็งแกร่งขั้นต่ำ (คะแนน zxcvbn 0-4)
+    require_digit: ต้องการตัวเลข
+    require_lowercase: ต้องการตัวพิมพ์เล็ก
+    require_special: ต้องการอักขระพิเศษ
+    require_uppercase: ต้องการตัวพิมพ์ใหญ่
+    select: เลือกนโยบาย
+  public_url:
+    hint: URL ฐานที่ใช้ในลิงก์ยืนยันอีเมล (เช่น https://workbench.example.com)
+    label: URL สาธารณะ
+  save_button: บันทึกการตั้งค่ารวม
+  save_success: บันทึกการตั้งค่ารวมแล้ว
+  system:
+    description: จัดการการตั้งค่ารวมที่ใช้กับผู้ใช้ทั้งหมด (สำหรับผู้ดูแลระบบเท่านั้น)
+    title: การกำหนดค่าระบบ
+  title: การตั้งค่ารวม
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: จำนวนชุดข้อมูลสูงสุดต่อผู้ใช้ (0 = ไม่จำกัด) ใช้กับผู้ใช้ใหม่
+    count_unlimited: ไม่จำกัด
+    default_count_label: จำนวนอัปโหลดสูงสุดเริ่มต้นต่อผู้ใช้
+    default_size_label: ขนาดอัปโหลดสูงสุดเริ่มต้นต่อผู้ใช้ (MB)
+    select_count: เลือกขีดจำกัด
+    select_size: เลือกขีดจำกัด
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: พื้นที่จัดเก็บรวมสูงสุดต่อผู้ใช้ (0 = ไม่จำกัด) ใช้กับผู้ใช้ใหม่
+    size_unlimited: ไม่จำกัด
+  welcome:
+    hint: ข้อความนี้จะปรากฏบนหน้าเข้าสู่ระบบ เว้นว่างไว้เพื่อซ่อน
+    label: ข้อความต้อนรับ
+    placeholder: ป้อนข้อความต้อนรับที่จะแสดงบนหน้าเข้าสู่ระบบ
+home:
+  welcome_placeholder: ยินดีต้อนรับสู่ Statisticians Workbench
+login:
+  account_deleted: บัญชีนี้ถูกลบแล้ว
+  description: เข้าสู่ระบบบัญชีของคุณ
+  docs_more_info: มีข้อมูลเพิ่มเติม
+  email: อีเมล
+  email_not_verified: ยังไม่ได้ยืนยันอีเมล กรุณาตรวจสอบกล่องขาเข้าและโฟลเดอร์สแปม
+  email_verified: ยืนยันอีเมลสำเร็จแล้ว! คุณสามารถเข้าสู่ระบบได้แล้ว
+  forgot_password: ลืมรหัสผ่าน?
+  invalid_credentials: อีเมลหรือรหัสผ่านไม่ถูกต้อง
+  invalid_token: ลิงก์ยืนยันไม่ถูกต้อง โปรดขอใหม่
+  missing_token: ไม่มีโทเค็นยืนยัน
+  no_account: ยังไม่มีบัญชี?
+  password: รหัสผ่าน
+  register_link: ลงทะเบียน
+  resend_link: ส่งอีเมลยืนยันอีกครั้ง?
+  signing_in: กำลังเข้าสู่ระบบ...
+  submit: เข้าสู่ระบบ
+  success: เข้าสู่ระบบสำเร็จ
+  title: เข้าสู่ระบบ
+  token_expired: ลิงก์ยืนยันหมดอายุแล้ว กรุณาขอลิงก์ใหม่
+nav:
+  about: เกี่ยวกับ
+  admin: ผู้ดูแลระบบ
+  admin_groups: คำอธิบายกลุ่ม
+  admin_panel: การจัดการผู้ใช้
+  admin_providers: ผู้ให้บริการ AI
+  admin_visualization_types: ประเภทการแสดงผลข้อมูล
+  ai_analysis_rules: กฎการวิเคราะห์
+  ai_chat: เครื่องมือ AI
+  ai_database_design: การออกแบบฐานข้อมูล
+  ai_dataset_cleaning: การทำความสะอาดชุดข้อมูล
+  ai_general: ทั่วไป
+  ai_virtual_datasets: ชุดข้อมูลเสมือน
+  home: หน้าแรก
+  logout: ออกจากระบบ
+  user: ผู้ใช้
+  admin_licence: ใบอนุญาต
+  admin_setup_internal: ภายใน
+  admin_setup_limits: ขีดจำกัด
+  admin_setup_options: ตัวเลือก
+  admin_setup: ตั้งค่า
+  admin_setup_tuning: การปรับแต่ง
+  ai_testing: การทดสอบ AI
+notebooks:
+  and_more: +{count} รายการ
+  cant_create_tables: การเชื่อมต่อนี้ไม่สามารถสร้างตารางได้ — การนำเข้าถูกปฏิเสธ
+  cells_label: 'เซลล์:'
+  connection_create_db_badge: สร้างฐานข้อมูล
+  connection_form_label: การเชื่อมต่อ
+  connection_tables_badge: ตาราง
+  connection_unavailable: ไม่พบการเชื่อมต่อฐานข้อมูลหรือไม่สามารถเข้าถึงได้
+  create_dataset: สร้างชุดข้อมูลโดยอัตโนมัติ
+  create_new_database: สร้างฐานข้อมูลใหม่
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrames:'
+  dataset_created: สร้างชุดข้อมูลแล้ว
+  delete_confirm: ลบการนำเข้า "{name}" และตารางทั้งหมดของมันหรือไม่?
+  delete_failed: ลบการนำเข้าล้มเหลว
+  delete_title: ลบการนำเข้า
+  detected_dataframes: 'DataFrames ที่ตรวจพบ:'
+  doc_preview: 'ตัวอย่างเอกสาร:'
+  example_banner: คุณกำลังดูในฐานะผู้ใช้ตัวอย่าง ลงทะเบียนเพื่อนำเข้าและจัดการโน้ตบุ๊ก
+  example_blocked: ผู้ใช้ตัวอย่างไม่สามารถนำเข้าโน้ตบุ๊กได้
+  example_register: ลงทะเบียน
+  fetch_error: ดึงข้อมูลการนำเข้าล้มเหลว
+  import_button: นำเข้าโน้ตบุ๊ก
+  import_complete: การนำเข้าเสร็จสมบูรณ์
+  import_deleted: การนำเข้าถูกลบแล้ว
+  import_failed: 'การนำเข้า Notebook ล้มเหลว: {error}'
+  import_success: นำเข้า {count} ตารางสำเร็จ
+  import_title: การนำเข้าโน้ตบุ๊ก Jupyter
+  imported_at_label: 'นำเข้าเมื่อ:'
+  importing: กำลังนำเข้า...
+  kb_unit: KB
+  kernel_label: 'เคอร์เนล:'
+  list_title: การนำเข้าโน้ตบุ๊ก
+  no_dataframes: ไม่พบ DataFrame ในโน้ตบุ๊กนี้
+  no_imports: ยังไม่มีการนำเข้าโน้ตบุ๊ก
+  notebook_label: 'โน้ตบุ๊ก:'
+  parse_error: การแยกวิเคราะห์โน้ตบุ๊กล้มเหลว
+  parsing: กำลังแยกวิเคราะห์...
+  preview_button: ดูตัวอย่าง
+  rows_cols_format: '{rows} แถว × {cols} คอลัมน์'
+  run_preview_first: เรียกใช้การดูตัวอย่างเพื่อดูสิ่งที่จะถูกนำเข้า
+  sanitised_notice: เซลล์โค้ดถูกลบออกเพื่อความปลอดภัย เหลือเพียงผลลัพธ์ข้อมูลและมาร์กดาวน์
+  select_connection: เลือกการเชื่อมต่อฐานข้อมูล
+  select_connection_placeholder: เลือกการเชื่อมต่อ...
+  select_file_first: กรุณาเลือกไฟล์ .ipynb
+  share_error: เจ้าของเท่านั้นที่สามารถเปลี่ยนการตั้งค่าการแชร์ได้
+  share_label: แชร์กับกลุ่ม
+  shared: โน้ตบุ๊กถูกแชร์กับกลุ่มแล้ว
+  shared_badge: แชร์แล้ว
+  size_label: 'ขนาด:'
+  step1_title: 'ขั้นตอนที่ 1: เลือกไฟล์'
+  step2_title: 'ขั้นตอนที่ 2: ดูตัวอย่าง'
+  storage_form_label: พื้นที่จัดเก็บข้อมูล
+  storage_label: 'พื้นที่จัดเก็บข้อมูล:'
+  table_count: '{count} ตาราง'
+  tables_created_label: 'ตารางที่สร้าง:'
+  title_label: 'ชื่อเรื่อง:'
+  unshared: ยกเลิกการแชร์โน้ตบุ๊กแล้ว
+  table_name: 'ตาราง: {name}'
+password:
+  strength:
+    fair: ปานกลาง
+    good: ดี
+    strong: แข็งแกร่ง
+    weak: อ่อนแอ
+preparation:
+  add_operation: เพิ่มการดำเนินการ
+  after: หลังจาก
+  back_to_list: กลับไปยังกฎ
+  before: ก่อน
+  cancel: ยกเลิก
+  col:
+    categorical: หมวดหมู่
+    datetime: วันเวลา
+    nulls: '{percent}% ค่าว่าง'
+    numeric: ตัวเลข
+  cols: คอลัมน์
+  column_label: คอลัมน์
+  constant_value_label: ค่าคงที่
+  create_first: สร้างกฎการเตรียมข้อมูลแรกของคุณเพื่อทำความสะอาดและแปลงชุดข้อมูลนี้ก่อนการวิเคราะห์
+  delete: ลบ
+  delete_confirm: ลบกฎ "{name}"? การดำเนินการนี้ไม่สามารถยกเลิกได้
+  description_label: คำอธิบาย (ไม่บังคับ)
+  duplicate: ทำซ้ำ
+  duplicate_suffix: (สำเนา)
+  edit: แก้ไข
+  edit_title: 'แก้ไขกฎ: {name}'
+  encoding:
+    label: ป้ายกำกับ
+    onehot: วันฮอต
+  encoding_param_label: การเข้ารหัส
+  live_preview: พรีวิวสด
+  load_error: ไม่สามารถโหลดข้อมูลได้
+  method:
+    minmax: มิน-แมกซ์
+    zscore: ซี-สกอร์
+  method_label: วิธีการ
+  name_label: ชื่อ
+  name_required: ต้องระบุชื่อกฎ
+  new_name_label: ชื่อใหม่
+  new_rule: กฎใหม่
+  new_title: กฎการเตรียมข้อมูลใหม่
+  no_rules: ยังไม่มีกฎการเตรียมข้อมูล
+  nulls: ค่าว่าง
+  op:
+    convert_type: แปลงประเภทข้อมูล
+    drop_column: ลบคอลัมน์
+    drop_duplicates: ลบรายการซ้ำ
+    encode_category: เข้ารหัสหมวดหมู่
+    fill_missing: เติมค่าที่ขาดหายไป
+    filter: ตัวกรอง
+    rename_column: เปลี่ยนชื่อคอลัมน์
+    standardize: ทำให้เป็นมาตรฐาน
+    normalize: นอร์มัลไลซ์
+  operations_count: '{count} การดำเนินการ{itemize}'
+  operations_label: การดำเนินการ
+  operator_label: ตัวดำเนินการ
+  ops_required: จำเป็นต้องมีการดำเนินการอย่างน้อยหนึ่งรายการ
+  preview: พรีวิว
+  preview_error: การแสดงตัวอย่างล้มเหลว
+  preview_loading: กำลังแสดงตัวอย่าง...
+  preview_no_ops: เพิ่มการดำเนินการเพื่อดูตัวอย่าง
+  row_impact: '{before} → {after} แถว'
+  rows: แถว
+  rule_deleted: ลบกฎแล้ว
+  rule_duplicated: ทำซ้ำกฎแล้ว
+  rule_saved: บันทึกกฎแล้ว
+  rules_for: กฎสำหรับ {dataset}
+  sample_data: ข้อมูลตัวอย่าง
+  save: บันทึกกฎ
+  save_error: ไม่สามารถบันทึกกฎได้
+  saving: กำลังบันทึก...
+  schema_error: ไม่สามารถโหลดโครงสร้างชุดข้อมูลได้
+  select_column: -- เลือกคอลัมน์ --
+  select_type: -- เลือกการดำเนินการ --
+  strategy:
+    constant: ค่าคงที่
+    drop_row: ลบแถว
+    mean: ค่าเฉลี่ย
+    median: ค่ามัธยฐาน
+    mode: ค่าฐานนิยม
+  strategy_label: กลยุทธ์
+  target_type_label: ประเภทเป้าหมาย
+  title: กฎการเตรียมข้อมูล — {dataset}
+  type_label: การดำเนินการ
+  value_label: ค่า
+profile:
+  change_password:
+    description: อัปเดตรหัสผ่านของคุณ
+    title: เปลี่ยนรหัสผ่าน
+  change_password_button: เปลี่ยนรหัสผ่าน
+  confirm_password: ยืนยันรหัสผ่านใหม่
+  current_password: รหัสผ่านปัจจุบัน
+  current_password_required: ต้องระบุรหัสผ่านปัจจุบัน
+  dark_mode_description: สลับระหว่างธีมสว่างและธีมมืด
+  dark_mode_label: โหมดมืด
+  email_label: อีเมล
+  email_notifications_description: รับอัปเดตทางอีเมลเกี่ยวกับบัญชีของคุณ
+  email_notifications_label: การแจ้งเตือนทางอีเมล
+  email_unchangeable: ไม่สามารถเปลี่ยนอีเมลได้
+  example_user_language_hint: ลงทะเบียนเพื่อเข้าถึงแบบเต็มเพื่อเปลี่ยนการตั้งค่าภาษา
+  example_user_name_hint: ลงทะเบียนเพื่อเข้าถึงแบบเต็มเพื่อเปลี่ยนชื่อของคุณ
+  example_user_notifications_hint: ลงทะเบียนเพื่อเข้าถึงแบบเต็มเพื่อเปลี่ยนการตั้งค่าการแจ้งเตือน
+  example_user_save_hint: ลงทะเบียนเพื่อเข้าถึงแบบเต็มเพื่อบันทึกการเปลี่ยนแปลง
+  example_user_theme_hint: ลงทะเบียนเพื่อเข้าถึงแบบเต็มเพื่อเปลี่ยนการตั้งค่าธีม
+  group_description: คำอธิบาย
+  group_id: รหัสกลุ่ม
+  group_info_title: ข้อมูลกลุ่ม
+  group_load_error: ไม่สามารถโหลดข้อมูลกลุ่มได้
+  group_readonly_hint: กลุ่มของคุณถูกกำหนดโดยผู้ดูแลระบบและไม่สามารถเปลี่ยนแปลงได้ที่นี่
+  language_description: เลือกภาษาที่ต้องการสำหรับอินเทอร์เฟซ
+  language_label: ภาษา
+  language_select_placeholder: เลือกภาษา
+  languages_load_error: ไม่สามารถโหลดภาษาได้
+  load_error: ไม่สามารถโหลดการตั้งค่าได้
+  name_label: ชื่อ
+  name_placeholder: ชื่อของคุณ
+  new_password: รหัสผ่านใหม่
+  password_change_failed: ไม่สามารถเปลี่ยนรหัสผ่านได้
+  password_changed: เปลี่ยนรหัสผ่านสำเร็จ
+  password_disabled: การเปลี่ยนรหัสผ่านถูกปิดใช้งานสำหรับผู้ใช้ตัวอย่าง
+  password_disabled_message: คุณเข้าสู่ระบบในฐานะผู้ใช้ตัวอย่าง ฟังก์ชันรหัสผ่านถูกปิดใช้งาน
+  password_mismatch: รหัสผ่านใหม่ไม่ตรงกัน
+  personal:
+    description: อัปเดตข้อมูลส่วนตัวและการตั้งค่าแอปของคุณ
+    title: โปรไฟล์และการตั้งค่า
+  save_button: บันทึกการเปลี่ยนแปลง
+  save_error: ไม่สามารถบันทึกโปรไฟล์ได้
+  save_success: บันทึกโปรไฟล์แล้ว
+  title: การตั้งค่าโปรไฟล์
+  update_error: ไม่สามารถอัปเดตโปรไฟล์ได้
+  slow_threshold:
+    saved: บันทึกขีดจำกัดโมเดลช้าแล้ว
+    seconds: วินาที
+    description: การทดสอบโมเดลที่ใช้เวลานานกว่านี้จะถูกรายงานว่าช้าเกินไป ปล่อยว่างไว้เพื่อใช้ค่าเริ่มต้นของไซต์
+    invalid: ขีดจำกัดต้องเป็นจำนวนเต็มวินาที อย่างน้อย 1
+    effective: 'มีผลอยู่ในขณะนี้:'
+    placeholder: ใช้ค่าเริ่มต้นของไซต์
+    save: บันทึกขีดจำกัด
+    label: ขีดจำกัดของฉัน
+    title: เกณฑ์โมเดลช้า
+recipes:
+  add_rule: เพิ่มกฎ
+  back_to_recipe: กลับไปที่สูตร
+  by_label: โดย
+  cancel_button: หยุด
+  cancel_error: ไม่สามารถยกเลิกการดำเนินการได้
+  cancel_success: การดำเนินการถูกยกเลิก
+  chart:
+    category: หมวดหมู่
+    count: จำนวน
+    value: ค่า
+    x_axis: X
+    y_axis: Y
+  clone: คัดลอก
+  clone_button: คัดลอก
+  clone_error: ไม่สามารถคัดลอกสูตรได้
+  clone_success: คัดลอกสูตรสำเร็จ
+  clone_suffix: (สำเนา)
+  column_type:
+    category: หมวดหมู่
+    datetime: วันที่/เวลา
+    number: ตัวเลข
+    text: ข้อความ
+  columns_after: คอลัมน์
+  columns_before: คอลัมน์
+  columns_label: คอลัมน์
+  columns_label_short: คอลัมน์
+  columns_required: กรุณาเลือกอย่างน้อยหนึ่งคอลัมน์
+  create_error: ไม่สามารถสร้างสูตรได้
+  create_success: สร้างสูตร '{name}' เรียบร้อยแล้ว
+  dataset_label: ชุดข้อมูล
+  dataset_required: กรุณาเลือกชุดข้อมูล
+  delete: ลบ
+  delete_button: ลบ
+  delete_confirmation: คุณแน่ใจหรือไม่ว่าต้องการลบสูตร "{name}"? การดำเนินการนี้ไม่สามารถย้อนกลับได้
+  delete_title: ลบสูตร
+  description_label: คำอธิบาย (ไม่บังคับ)
+  description_placeholder: คำอธิบายของสูตรนี้
+  edit: แก้ไข
+  execute: ดำเนินการ
+  execute_button: ดำเนินการ
+  execute_error: 'ไม่สามารถดำเนินการสูตรได้: {error}'
+  execute_success: ดำเนินการสูตรสำเร็จ
+  execution_error: ข้อผิดพลาด
+  execution_load_error: 'ไม่สามารถโหลดการดำเนินการได้: {error}'
+  execution_not_found: ไม่พบการดำเนินการ '{id}'
+  execution_progress: ความคืบหน้า
+  execution_stage_results: ผลลัพธ์ของขั้นตอน
+  execution_started: เริ่มต้นแล้ว
+  execution_status: สถานะ
+  execution_title: ผลลัพธ์การดำเนินการ
+  executions_title: การดำเนินการล่าสุด
+  export_results: ส่งออกผลลัพธ์
+  go_define: ไปที่การกำหนด
+  go_upload: ไปที่อัปโหลด
+  group_by_hint: จัดกลุ่มตามคอลัมน์เชิงกลุ่มเพื่อเปรียบเทียบสถิติระหว่างกลุ่ม
+  group_by_label: จัดกลุ่มตาม (ไม่บังคับ)
+  list_load_error: ไม่สามารถโหลดสูตรได้
+  load_datasets_error: 'ไม่สามารถโหลดชุดข้อมูลได้: {error}'
+  load_error: 'ไม่สามารถโหลดสูตรได้: {error}'
+  load_rules_error: ไม่สามารถโหลดกฎการเตรียมข้อมูลได้
+  loading_schema: กำลังโหลดคอลัมน์...
+  move_down: เลื่อนลง
+  move_up: เลื่อนขึ้น
+  my_recipes: สูตรของฉัน
+  name_label: ชื่อสูตร
+  name_placeholder: เช่น การวิเคราะห์ยอดขาย
+  name_required: ต้องระบุชื่อสูตร
+  new_button: สูตรใหม่
+  new_title: สูตรใหม่
+  no_datasets: ไม่พบชุดข้อมูล กรุณาอัปโหลดหรือกำหนดชุดข้อมูลก่อน
+  no_datasets_available: ไม่มีชุดข้อมูลที่พร้อมใช้งาน กรุณาอัปโหลดชุดข้อมูลก่อน
+  no_datasets_found: ไม่มีชุดข้อมูลที่พร้อมใช้งาน อัปโหลดชุดข้อมูลก่อน
+  no_group: ไม่มี
+  no_group_options: ไม่มีคอลัมน์เชิงกลุ่มที่สามารถใช้จัดกลุ่มได้
+  no_preparation_rules: ไม่มีกฎการเตรียมข้อมูลสำหรับชุดข้อมูลนี้
+  no_recipes: คุณยังไม่ได้สร้างสูตรใดๆ
+  no_schema: ไม่มีโครงสร้างข้อมูลสำหรับชุดข้อมูลนี้
+  no_stages: สูตรต้องมีอย่างน้อยหนึ่งขั้นตอน
+  no_visualisation: ไม่มี
+  no_visualisation_data: ไม่มีข้อมูลสำหรับการแสดงภาพ
+  none: ไม่มี
+  preparation_rules: กฎการเตรียมข้อมูล (ไม่บังคับ)
+  preparation_rules_applied: ใช้กฎการเตรียมข้อมูลแล้ว
+  preparation_rules_applied_description: กฎถูกใช้ตามลำดับที่แสดงด้านล่างก่อนขั้นตอนการวิเคราะห์
+  preparation_rules_applied_title: ใช้กฎการเตรียมข้อมูลแล้ว
+  preparation_rules_description: เลือกกฎเพื่อดำเนินการตามลำดับ กฎจะถูกใช้ตามลำดับ
+  recipe_label: สูตร
+  remove_rule: ลบกฎ
+  rows_after: แถวหลัง
+  rows_before: แถว
+  rows_label: แถว
+  rules_applied_label: 'ใช้กฎ {count} ข้อ:'
+  save_button: บันทึกสูตร
+  schema_error: 'ไม่สามารถโหลด schema ของคอลัมน์ได้: {error}'
+  schema_loaded: 'โหลด schema แล้ว: พบคอลัมน์ {count} คอลัมน์'
+  select_dataset: เลือกชุดข้อมูล
+  select_group: เลือกคอลัมน์เพื่อจัดกลุ่ม
+  select_rule: เลือกกฎเพื่อเพิ่ม
+  select_rule_placeholder: เลือกกฎ
+  select_technique: เลือกเทคนิค
+  select_visualisation: เลือกการแสดงภาพ
+  selected: ที่เลือกแล้ว
+  shared: แชร์แล้ว
+  shared_badge: แชร์แล้ว
+  shared_description: ทำให้สูตรนี้พร้อมใช้งานสำหรับผู้ใช้คนอื่นในกลุ่มของคุณ
+  shared_group_hint: 'กลุ่ม: {group} - {description}'
+  shared_label: แชร์กับกลุ่ม
+  shared_with_group: แชร์กับกลุ่มของคุณแล้ว
+  stage_data_selection: การเลือกข้อมูล
+  stage_number: ขั้นตอนที่ {number}
+  stage_preparation: การเตรียมข้อมูล
+  stage_statistics: สถิติ
+  stage_visualisation: การแสดงภาพ
+  stages_title: ขั้นตอนต่างๆ
+  status:
+    cancelled: ยกเลิกแล้ว
+    completed: เสร็จสมบูรณ์
+    failed: ล้มเหลว
+    pending: รอดำเนินการ
+    running: กำลังทำงาน
+  step1_description: ตั้งชื่อและคำอธิบายให้กับสูตรของคุณ
+  step1_title: ตั้งชื่อสูตรของคุณ
+  step2_description: เลือกชุดข้อมูลและเลือกคอลัมน์ที่จะวิเคราะห์
+  step2_title: เลือกข้อมูล
+  step3_description: เลือกเทคนิคทางสถิติที่จะใช้
+  step3_title: เลือกการวิเคราะห์
+  step4_description: เพิ่มการแสดงภาพลงในสูตรของคุณ
+  step4_title: การแสดงภาพ (ไม่จำเป็น)
+  step_analysis: การวิเคราะห์
+  step_complete: ขั้นตอนที่ {step} เสร็จสมบูรณ์
+  step_data: ข้อมูล
+  step_name: ชื่อ
+  step_visualise: แสดงภาพ
+  technique_anova_one_way: การวิเคราะห์ความแปรปรวนทางเดียว (One-way ANOVA)
+  technique_anova_two_way: การวิเคราะห์ความแปรปรวนสองทาง (Two-way ANOVA)
+  technique_chi_square: การทดสอบไคสแควร์ (Chi-square Test)
+  technique_correlation: เมทริกซ์สหสัมพันธ์
+  technique_descriptive: สถิติเชิงพรรณนา
+  technique_hint: สถิติเชิงพรรณนาแสดงค่าสรุป เช่น ค่าเฉลี่ย มัธยฐาน และส่วนเบี่ยงเบนมาตรฐาน
+  technique_label: เทคนิค
+  technique_linear_regression: การถดถอยเชิงเส้น
+  technique_t_test_independent: การทดสอบทีแบบอิสระ (Independent t-test)
+  technique_t_test_paired: การทดสอบทีแบบจับคู่ (Paired t-test)
+  title: สูตรทางสถิติ
+  total_rules_applied: จำนวนกฎที่ใช้ทั้งหมด
+  unknown_user: ไม่ทราบ
+  update_error: 'ไม่สามารถอัปเดตสูตรได้: {error}'
+  update_success: อัปเดตสูตร '{id}' เรียบร้อยแล้ว
+  updated_label: อัปเดตแล้ว
+  visualisation:
+    columns_label: คอลัมน์
+    data_points: จุดข้อมูล
+    distribution: การกระจายตัว
+    trend: แนวโน้ม
+    type_label: ประเภท
+  visualisation_bar: แผนภูมิแท่ง
+  visualisation_hint: แผนภูมิจะถูกสร้างโดยใช้คอลัมน์ข้อมูลที่เลือก
+  visualisation_label: ประเภทการแสดงภาพ
+  visualisation_line: แผนภูมิเส้น
+  visualisation_pie: แผนภูมิวงกลม
+  visualisation_raw_data: 'ข้อมูลการแสดงภาพ:'
+  visualisation_scatter: แผนภาพกระจาย
+  dataset:
+    rows_label: แถว
+    columns_label: คอลัมน์
+    no_datasets: ไม่มีชุดข้อมูลที่พร้อมใช้งาน
+    placeholder: เลือกชุดข้อมูล
+    load_error: ไม่สามารถโหลดชุดข้อมูล
+    loading: กำลังโหลดชุดข้อมูล...
+  transforms:
+    remove: ลบ
+    manage_button: จัดการการแปลง
+    label: การแปลง
+    no_transforms: ไม่มีการแปลงที่ใช้
+    add: เพิ่มการแปลง
+  editor:
+    new_recipe_name: สูตรใหม่
+    loading: กำลังโหลดสูตร...
+    save_success: บันทึกสูตรแล้ว
+    component_algorithm: อัลกอริทึม
+    placeholder: นี่คือตัวแก้ไขสูตรสถิติแบบแมนนวล — สูตรคือหัวใจของ Workbench อินเทอร์เฟซแบบแมนนวลเร็วกว่าอินเทอร์เฟซ AI แต่ถ้าคุณไม่แน่ใจว่าควรทำอะไร คุณอาจต้องการตัวแก้ไขสูตร AI นอกจากนี้ยังเป็นครูสอนสถิติ...
+      แต่คุณต้องตั้งค่าการเชื่อมต่อ AI ที่ใช้งานได้ในส่วนการตั้งค่า หากต้องการใช้งาน เลือกสูตรหรือสร้างใหม่
+    save: บันทึกสูตร
+    create_mode: สร้างสูตรใหม่ — ตัวแก้ไขจะมาในระยะที่ 3
+    save_error: ไม่สามารถบันทึกสูตร
+    name_placeholder: ชื่อสูตร
+    component_output: ผลลัพธ์
+    name_required: ต้องระบุชื่อสูตร
+    run: ทำงาน
+    component_dataset: ชุดข้อมูล / การแปลง
+    name_hint: จำเป็นต้องระบุชื่อก่อนจึงจะบันทึกสูตรได้
+  algorithm:
+    placeholder: เลือกประเภทการวิเคราะห์
+    response_column: การตอบสนอง (ตัวเลข)
+    independent_columns: ตัวแปรอิสระ
+    factor_column: ปัจจัย (เชิงหมวดหมู่)
+    dependent_column: ตัวแปรตาม
+    group_by: จัดกลุ่มตาม
+  output:
+    y_column: คอลัมน์แกน Y
+    placeholder: เลือกชนิดผลลัพธ์
+    category_column: คอลัมน์หมวดหมู่
+    x_column: คอลัมน์แกน X
+  panel:
+    incomplete: ไม่สมบูรณ์
+    no_results: ไม่มีสูตรที่ตรงกับการค้นหาของคุณ
+    search: ค้นหาสูตร...
+    updated: อัปเดตแล้ว
+    shared_recipes: แชร์แล้ว
+    my_recipes: สูตรของฉัน
+    complete: พร้อม
+    new_button: สูตรใหม่
+    no_recipes: ยังไม่มีสูตร
+  execution:
+    running: กำลังเรียกใช้สูตร...
+    errors_label: 'ข้อผิดพลาด:'
+    request_failed: การดำเนินการล้มเหลว
+    rules_count: ใช้กฎการเตรียมข้อมูล {count} ข้อแล้ว
+    failed_start: ไม่สามารถเริ่มการดำเนินการได้
+    results_label: 'ผลลัพธ์:'
+    showing_rows: กำลังแสดง {count} จาก {total} แถว
+  require:
+    categoryColumn: เลือกคอลัมน์หมวดหมู่สำหรับ {out}
+    yColumn: เลือกคอลัมน์ Y สำหรับ {out}
+    second_response: เลือกคอลัมน์คำตอบที่สอง
+    responseColumn: เลือกคอลัมน์การตอบสนองสำหรับ {algo}
+    dataset: เลือกชุดข้อมูล
+    independentColumns: เลือกคอลัมน์อิสระ
+    xColumn: เลือกคอลัมน์ X สำหรับ {out}
+    dependentColumn: เลือกคอลัมน์ตาม
+    algorithm: เลือกการวิเคราะห์
+    factorColumn: เลือกคอลัมน์ปัจจัยสำหรับ {algo}
+    first_response: เลือกคอลัมน์การตอบสนองแรก
+  share:
+    unshare: ยกเลิกการแชร์
+    button: แชร์
+    shared_badge: แชร์แล้ว
+    group_info: กลุ่ม {group} — {desc}
+    read_only: แชร์โดย {owner} — อ่านอย่างเดียว
+  needs_other_columns: (ต้องการคอลัมน์อื่น)
+  visualisation_table: ตาราง
+  visualisation_area: แผนภูมิพื้นที่
+  visualisation_hbar: แผนภูมิแท่งแนวนอน
+  visualisation_donut: แผนภูมิโดนัท
+  ui:
+    delete_success: ลบสูตรแล้ว
+    delete_error: ลบสูตรไม่สำเร็จ
+  visualisation_histogram: ฮิสโตแกรม
+register:
+  confirm_password: ยืนยันรหัสผ่าน
+  creating: กำลังสร้างบัญชี...
+  description: สร้างบัญชีใหม่
+  email: อีเมล
+  failed: การลงทะเบียนล้มเหลว
+  have_account: มีบัญชีอยู่แล้วใช่หรือไม่?
+  language_description: เลือกภาษาที่ต้องการสำหรับอินเทอร์เฟซ
+  login_link: เข้าสู่ระบบ
+  name: ชื่อ
+  password: รหัสผ่าน
+  password_mismatch: รหัสผ่านไม่ตรงกัน
+  submit: ลงทะเบียน
+  success_with_verification: บัญชีของคุณถูกสร้างแล้ว ตรวจสอบอีเมลของคุณเพื่อคลิกลิงก์ยืนยันเพื่อเปิดใช้งานบัญชี
+  title: ลงทะเบียน
+  email_failed_use_resend: ลงทะเบียนสำเร็จ แต่ไม่สามารถส่งอีเมลยืนยันได้ โปรดส่งอีเมลยืนยันอีกครั้งจากหน้าเข้าสู่ระบบ
+  registration_disabled: การลงทะเบียนด้วยตนเองถูกปิดใช้งาน กรุณาติดต่อผู้ดูแลระบบ
+  success_auto_verified: บัญชีของคุณถูกสร้างและพร้อมใช้งานแล้ว คุณสามารถเข้าสู่ระบบได้แล้ว
+  success_pending_approval: บัญชีของคุณถูกสร้างแล้วและกำลังรอการอนุมัติจากผู้ดูแลระบบ คุณจะสามารถเข้าสู่ระบบได้เมื่อได้รับการอนุมัติแล้ว
+resend_verification:
+  back_to_login: กลับไปยังหน้าเข้าสู่ระบบ
+  check_spam: โปรดตรวจสอบโฟลเดอร์สแปมหากไม่เห็นอีเมลภายในไม่กี่นาที
+  description: ป้อนที่อยู่อีเมลของคุณเพื่อรับลิงก์ยืนยันใหม่
+  error: ไม่สามารถส่งอีเมลยืนยันได้
+  send_button: ส่งอีเมลยืนยัน
+  sent: ส่งอีเมลยืนยันแล้ว โปรดตรวจสอบกล่องขาเข้า (และโฟลเดอร์สแปม)
+  sent_description: หากมีบัญชีที่ใช้อีเมลนี้อยู่ คุณจะได้รับลิงก์ยืนยัน
+  sent_title: ส่งอีเมลแล้ว
+  title: ส่งอีเมลยืนยันอีกครั้ง
+reset_password:
+  confirm_password: ยืนยันรหัสผ่านใหม่
+  description: ป้อนรหัสผ่านใหม่ของคุณด้านล่าง
+  failed: ไม่สามารถรีเซ็ตรหัสผ่านได้
+  login_button: ไปยังหน้าเข้าสู่ระบบ
+  missing_token: ไม่มีโทเค็นรีเซ็ตให้มา
+  new_password: รหัสผ่านใหม่
+  password_mismatch: รหัสผ่านไม่ตรงกัน
+  submit: รีเซ็ตรหัสผ่าน
+  success: รีเซ็ตรหัสผ่านสำเร็จแล้ว
+  success_description: รหัสผ่านของคุณถูกรีเซ็ตแล้ว กำลังเปลี่ยนเส้นทางไปยังหน้าเข้าสู่ระบบ...
+  success_title: การรีเซ็ตรหัสผ่าน
+  title: รีเซ็ตรหัสผ่าน
+settings:
+  ai:
+    title: การเชื่อมต่อ AI
+  database:
+    title: การเชื่อมต่อฐานข้อมูล
+  profile:
+    title: การกำหนดลักษณะ
+  title: การตั้งค่า
+tools:
+  all_datasets: ชุดข้อมูลทั้งหมด
+  connect_database: เชื่อมต่อฐานข้อมูล
+  description: ยูทิลิตี้และเครื่องมือวิเคราะห์เพิ่มเติมจะปรากฏที่นี่
+  import_notebook: นำเข้า Notebook
+  manage_data: รวบรวมข้อมูล
+  my_data: ข้อมูลของฉัน
+  notebooks: Notebooks
+  placeholder: หน้าเครื่องมือจะมาเร็วๆ นี้
+  title: เครื่องมืออื่นๆ
+  upload_csv_excel: อัปโหลด CSV / Excel
+  upload_data: อัปโหลดข้อมูล
+  uploads_list: อัปโหลด (csv, Excel)
+  visualize: แซนด์บ็อกซ์การแสดงภาพ
+validation:
+  api_key_required: ต้องใช้ API key สำหรับผู้ให้บริการนี้
+  database_required: ต้องระบุชื่อฐานข้อมูล
+  host_required: ต้องระบุโฮสต์
+  name_required: ต้องระบุชื่อการเชื่อมต่อ
+  password:
+    min_length: รหัสผ่านต้องมีความยาวอย่างน้อย {min} ตัวอักษร
+    require_digit: รหัสผ่านต้องมีตัวเลขอย่างน้อยหนึ่งตัว
+    require_lowercase: รหัสผ่านต้องมีตัวอักษรพิมพ์เล็กอย่างน้อยหนึ่งตัว
+    require_special: รหัสผ่านต้องมีอักขระพิเศษอย่างน้อยหนึ่งตัว
+    require_uppercase: รหัสผ่านต้องมีตัวอักษรพิมพ์ใหญ่อย่างน้อยหนึ่งตัว
+    too_weak: รหัสผ่านอ่อนเกินไป โปรดเลือกรหัสผ่านที่แข็งแรงกว่านี้
+  password_required: ต้องระบุรหัสผ่าน
+  port_invalid: พอร์ตต้องอยู่ระหว่าง 1 ถึง 65535
+  provider_required: โปรดเลือกผู้ให้บริการ
+  username_required: ต้องระบุชื่อผู้ใช้
+  type_required: กรุณาเลือกประเภทฐานข้อมูล
+verify_email:
+  error_description: เกิดข้อผิดพลาดบางอย่าง
+  error_title: การยืนยันล้มเหลว
+  expired_description: ลิงก์ยืนยันหมดอายุแล้ว
+  expired_message: คุณสามารถขออีเมลยืนยันใหม่ได้ที่ด้านล่าง
+  expired_title: ลิงก์หมดอายุ
+  invalid_token: ลิงก์ยืนยันไม่ถูกต้อง
+  login_button: ดำเนินการไปยังหน้าเข้าสู่ระบบ
+  missing_description: ไม่มีโทเค็นการยืนยันถูกส่งมา
+  missing_title: ไม่มีโทเค็นการยืนยัน
+  network_error: ข้อผิดพลาดเครือข่าย โปรดลองอีกครั้ง
+  resend_button: ส่งอีเมลยืนยันอีกครั้ง
+  success_description: อีเมลของคุณได้รับการยืนยันเรียบร้อยแล้ว กำลังเปลี่ยนเส้นทางไปยังหน้าเข้าสู่ระบบ...
+  success_title: ยืนยันอีเมลแล้ว
+  unknown_error: เกิดข้อผิดพลาดบางอย่าง
+virtual:
+  clone: โคลน
+  deleted: ชุดข้อมูลถูกลบแล้ว
+  draft_badge: ฉบับร่าง
+  edit: แก้ไข
+  error: เกิดข้อผิดพลาด
+  existing_none: ไม่มี
+  existing_title: ชุดข้อมูลที่มีอยู่
+  loading: กำลังโหลด...
+  more: เพิ่มเติม
+  new_chat: ชุดข้อมูลเสมือนใหม่
+  placeholder: อธิบายสิ่งที่คุณต้องการทำ...
+  ready_badge: พร้อม
+  recent_chats: แชทล่าสุด
+  send: ส่ง
+  stage: ขั้นตอน
+  title: ชุดข้อมูลเสมือน
+  verbose: รายละเอียด
+  welcome: ยินดีต้อนรับสู่ผู้ช่วยชุดข้อมูลเสมือน หากคุณยังใหม่ คุณอาจต้องการทราบวิธีเริ่มต้น
+  preview_joins: การเชื่อมตาราง
+  preview_columns: คอลัมน์ผลลัพธ์
+  preview_name: ชื่อ
+  preview_title: ตัวอย่างชุดข้อมูล
+  preview_sources: แหล่งข้อมูล
+  manual:
+    joins_title: วิธีการเชื่อมแหล่งข้อมูลเข้าด้วยกัน
+    joins_hint: แหล่งข้อมูลตั้งแต่สองรายการขึ้นไปต้องมีการเชื่อมระหว่างกัน หากมีแหล่งเดียวไม่จำเป็นต้องเชื่อม
+    move_up: ย้ายคอลัมน์นี้ขึ้นหนึ่งตำแหน่ง
+    tables_error: ไม่สามารถอ่านตารางได้
+    no_sources: ไม่มีการเชื่อมต่อหรือชุดข้อมูลที่ใช้งานได้
+    name_label: ชื่อชุดข้อมูล
+    remove_join: ลบการเชื่อมนี้ออก
+    bridge: บริดจ์
+    sources_hint: ขยายการเชื่อมต่อหรือชุดข้อมูล จากนั้นเลือกคอลัมน์ที่ต้องการรวม
+    materialized_label: สร้างผลลัพธ์เป็นตารางจริง
+    test_pulls_every_source: การทดสอบการเชื่อมจะอ่านทุกแหล่งข้อมูลทั้งหมด จึงอาจใช้เวลานาน
+    validate_ok: นิยามมีโครงสร้างที่ถูกต้อง
+    bridge_choose_columns: ไม่พบคอลัมน์ที่ตรงกัน — เพิ่มการเชื่อมแล้วเลือกคอลัมน์
+    suggested: แนะนำ
+    column_placeholder: เลือกคอลัมน์
+    open_label: เปิดชุดข้อมูลที่มีอยู่
+    move_down: ย้ายคอลัมน์นี้ลงหนึ่งตำแหน่ง
+    bridge_no_columns: คอลัมน์ที่ยังไม่ได้อ่าน — ขยายแหล่งข้อมูล หรือเพิ่มการเชื่อมแล้วเลือกคอลัมน์
+    add_join: เพิ่มการเชื่อม
+    alias_taken: นามแฝงนี้ถูกใช้โดยแหล่งข้อมูลอื่นแล้ว
+    save_success: บันทึกชุดข้อมูลเสมือนแล้ว
+    test_join: ทดสอบการเชื่อม
+    load_error: ไม่สามารถโหลดนิยามของชุดข้อมูลนั้นได้
+    intro: สร้างชุดข้อมูลเสมือนจากคอลัมน์ที่คุณเลือก หรือเปิดชุดข้อมูลที่มีอยู่แล้วเพื่อแก้ไข
+    need_columns: เลือกอย่างน้อยหนึ่งคอลัมน์ที่จะรวม
+    remove: นำคอลัมน์นี้ออกจากเอาต์พุต
+    preview_empty: การเชื่อมไม่ส่งกลับแถวใดเลย
+    new_dataset: เริ่มชุดข้อมูลใหม่
+    description_label: คำอธิบายชุดข้อมูล
+    preview_error: ไม่สามารถประมวลผลการเชื่อมได้
+    validate_errors: 'นิยามมีปัญหา:'
+    alias_label: นามแฝง
+    output_title: สิ่งที่ชุดข้อมูลแสดง
+    loading_columns: กำลังอ่านคอลัมน์…
+    output_hint: คอลัมน์ที่ชุดข้อมูลนี้จะแสดง ตามลำดับ
+    incomplete_join: เสร็จสิ้นหรือลบการเชื่อมที่ยังไม่ได้เลือกคอลัมน์
+    loaded_note: เปิดนิยามที่มีอยู่แล้ว — การบันทึกจะอัปเดตนิยามนั้น
+    columns_error: ไม่สามารถอ่านคอลัมน์ได้
+    validate: ตรวจสอบนิยาม
+    unattached_sources: 'ยังไม่ได้เชื่อมกับส่วนที่เหลือ: {sources} เพิ่มการเชื่อมที่เชื่อมแหล่งข้อมูลเหล่านั้น'
+    select_none: ไม่เลือกรายการใด
+    update_dataset: อัปเดตชุดข้อมูลนี้
+    preview_rows: ส่งกลับ {count} แถว
+    materialized_hint: เขียนผลลัพธ์เป็นตารางแทนการเชื่อมแบบสด ปิดไว้ก่อนระหว่างการสร้างต้นแบบ
+    complete_join: เติมข้อมูลการเชื่อมที่ยังไม่เสร็จให้สมบูรณ์
+    no_match: ไม่มีรายการใดตรงกับตัวกรอง
+    need_join: เลือกแหล่งข้อมูลสองรายการ แต่ไม่มีสิ่งใดเชื่อมระหว่างกัน
+    open_none: ยังไม่มีชุดข้อมูลเสมือนให้เปิด
+    need_name: ตั้งชื่อชุดข้อมูลก่อนบันทึก
+    aggregation_note: การรวมกลุ่มที่มาจากนิยามเดิมจะคงไว้ตามเดิม แต่การเชื่อมจะไม่นำมาใช้
+    save_error: ไม่สามารถบันทึกชุดข้อมูลเสมือนได้
+    select_all: เลือกทั้งหมด
+    sources_title: ที่มาของข้อมูล
+    title: ตัวแก้ไขชุดข้อมูลเสมือน
+    loaded_note_shared: เปิดคำจำกัดความที่ใช้ร่วมกันที่มีอยู่แล้ว — อ่านอย่างเดียว - ไม่อนุญาตให้อัปเดต
+    materialize_done: สร้างตารางแล้ว
+    materialize_failed: 'บันทึกแล้ว แต่ไม่สามารถสร้างตารางได้:'
+    materialize_retry: ลองใหม่
+  panel_tick_error: ไม่สามารถติ๊กคอลัมน์นั้นได้
+  panel_tick_no_session: ส่งข้อความก่อน — ทรีจะบันทึกการติ๊กของคุณในเซสชันนี้
+  chip_error: ไม่สามารถใช้ตัวเลือกนั้นได้
+  panel:
+    expand: แสดงแผงแหล่งที่มา
+    collapse: พับแผงแหล่งที่มา
+  progress_decided: ตัดสินใจแล้ว {decided} จาก {total}
+  chip_load_error: ไม่สามารถรีเฟรชตัวเลือกได้ ดังนั้นตัวเลือกเหล่านี้อาจไม่เป็นปัจจุบัน
+  panel_fold_error: ไม่สามารถบันทึกสถานะการพับของแผงได้ ดังนั้นครั้งถัดไปแผงจะเปิดอีกครั้ง
+  panel_columns: '{count} คอลัมน์'
+  heading_match_columns: จับคู่คอลัมน์เหล่านี้
+  heading_choose_table: เลือกตาราง
+  heading_choose_columns: เลือกคอลัมน์
+  heading_materialised: แบบสดหรือแบบ materialized?
+  confirm_selection: ใช้สิ่งเหล่านี้
+  act:
+    sources_short: 'ยอมรับ {count} ตารางแล้ว: {tables}'
+    named: ตั้งชื่อว่า “{name}”
+    applied: ใช้ {piece} แล้ว
+    join: เชื่อม {pair} แล้ว
+    sources: ยอมรับ {count} ตารางแล้ว
+  selection_hint: ยกเลิกการติ๊กสิ่งที่คุณไม่ต้องการ แล้วใช้ร่วมกัน
+  suggestion_applied: ใช้แล้ว
+  joins_coverage: เชื่อมต่อแล้ว {connected} จาก {total} ตาราง
+  joins_hint: เปลี่ยนคอลัมน์หรือประเภทการเชื่อมตารางใดก็ได้ แล้วดำเนินการต่อ
+  joins_unjoined: 'ยังไม่ได้เชื่อมตาราง: {tables}'
+  act_joins: เชื่อมตารางแล้ว {count} คู่
+  join_type_label: ประเภทการเชื่อมตาราง
+  joins_unsaved: แถวเหล่านี้แตกต่างจากชุดข้อมูล นำไปใช้ หรือแก้ไขแถวว่างก่อน
+  joins_apply: นำไปใช้
+  name_suggestion_accept: ใช้ชื่อนี้
+  name_suggestion_heading: ชื่อที่แนะนำ — เปลี่ยนได้หากต้องการ
+visualize:
+  config: การกำหนดค่า
+  data: ข้อมูล (JSON)
+  data_placeholder: วางข้อมูล JSON ที่นี่หรือสร้างตัวอย่าง
+  description: เลือกประเภทการแสดงภาพ สร้างข้อมูลตัวอย่าง ปรับพารามิเตอร์ และดูตัวอย่าง
+  download_error: ดาวน์โหลดตารางไม่สำเร็จ
+  download_png: ดาวน์โหลดเป็น PNG
+  download_success: ดาวน์โหลดตารางเป็น PNG แล้ว
+  generate_sample: สร้างตัวอย่าง
+  invalid_data: ข้อมูลไม่ถูกต้องสำหรับตารางข้อความ ต้องการคอลัมน์และแถว
+  load_error: โหลดประเภทการแสดงภาพไม่สำเร็จ
+  no_data: ไม่มีข้อมูลที่จะแสดงภาพ สร้างข้อมูลตัวอย่างหรือวาง JSON
+  no_types: ไม่ได้กำหนดประเภทการแสดงภาพ โปรดติดต่อผู้ดูแลระบบ
+  parameters: พารามิเตอร์
+  preview: ดูตัวอย่าง
+  sample_expenses: ค่าใช้จ่าย
+  sample_generated: สร้างข้อมูลตัวอย่างแล้ว
+  sample_item: รายการ
+  sample_sales: ยอดขาย
+  sample_value: มูลค่า
+  save_error: บันทึกไม่สำเร็จ
+  save_instance: บันทึกอินสแตนซ์
+  save_no_data: ไม่มีข้อมูลที่จะบันทึก โปรดสร้างหรือวางข้อมูล
+  save_success: บันทึกการแสดงภาพเรียบร้อยแล้ว
+  select_type: เลือกประเภท
+  title: แซนด์บ็อกซ์การแสดงภาพ
+  type: ประเภทการแสดงภาพ
+  unsupported: ประเภทการแสดงภาพยังไม่ได้ดำเนินการ
+  unsupported_parameter: ประเภทที่ไม่รองรับ
+licence:
+  features_label: คุณสมบัติที่เปิดใช้งาน
+  preview_error: ไม่สามารถตรวจสอบไฟล์ใบอนุญาต
+  delete_yes: ใช่ ลบใบอนุญาต
+  install_error: การติดตั้งใบอนุญาตไม่สำเร็จ
+  admin_required: คุณต้องเป็นผู้ดูแลระบบจึงจะดูข้อมูลใบอนุญาตได้
+  open_source_message: การติดตั้งนี้ทำงานในโหมดโอเพนซอร์ส ติดต่อ Sentuny เพื่ออัปเกรดเป็นใบอนุญาตองค์กร
+  delete_error: ลบใบอนุญาตไม่สำเร็จ
+  issued_to_label: ออกให้แก่
+  preview_title: ดูตัวอย่างใบอนุญาต
+  install_no_file: ไม่ได้เลือกไฟล์
+  title: สถานะใบอนุญาต
+  delete_button: ลบใบอนุญาต
+  preview_invalid: ไฟล์ใบอนุญาตไม่ถูกต้อง
+  expires_at_label: หมดอายุ
+  install_success: ติดตั้งใบอนุญาตสำเร็จแล้ว
+  delete_confirm: การดำเนินการนี้จะเปลี่ยนระบบกลับเป็นโหมดโอเพนซอร์ส คุณลักษณะที่มีการจำกัดทั้งหมดจะถูกปิดใช้งาน คุณสามารถกู้คืนได้โดยการติดตั้งใบอนุญาตใหม่
+  load_error: ไม่สามารถโหลดข้อมูลใบอนุญาต
+  issued_at_label: ออกให้แล้ว
+  max_users_label: ผู้ใช้ที่ได้รับอนุญาต
+  description: ข้อมูลสิทธิ์การใช้งานฟีเจอร์และระดับปัจจุบัน
+  tier_label: ระดับ
+  delete_no: ยกเลิก
+  delete_title: ลบใบอนุญาต
+  install_button: ติดตั้งใบอนุญาต
+  delete_success: ลบใบอนุญาตแล้ว กำลังทำงานในโหมดโอเพนซอร์ส
+  upload_title: อัปโหลดไฟล์ใบอนุญาต
+  no_features: ไม่มีฟีเจอร์แบบจำกัดที่เปิดใช้งานในขณะนี้
+  details_label: รายละเอียดใบอนุญาต
+setup:
+  limits:
+    upload:
+      size_10_mb: 10 MB
+      count_hint: จำนวนชุดข้อมูลสูงสุดต่อผู้ใช้ (0 = ไม่จำกัด) นำไปใช้กับผู้ใช้ใหม่
+      size_250_mb: 250 MB
+      count_50: '50'
+      count_unlimited: ไม่จำกัด
+      count_500: '500'
+      default_count_label: จำนวนสูงสุดที่อัปโหลดต่อผู้ใช้ตามค่าเริ่มต้น
+      size_500_mb: 500 MB
+      select_count: เลือกขีดจำกัด
+      default_size_label: ขนาดอัปโหลดสูงสุดเริ่มต้นต่อผู้ใช้ (MB)
+      size_100_mb: 100 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_unlimited: ไม่จำกัด
+      size_hint: พื้นที่จัดเก็บรวมสูงสุดต่อผู้ใช้ (0 = ไม่จำกัด) นำไปใช้กับผู้ใช้ใหม่
+      count_5: '5'
+      count_1000: '1000'
+      count_250: '250'
+      select_size: เลือกขีดจำกัด
+      count_100: '100'
+      count_10: '10'
+      size_50_mb: 50 MB
+      size_25_mb: 25 MB
+      size_5_mb: 5 MB
+      count_25: '25'
+      count_1: '1'
+    invalid_timeout: กรุณาป้อนจำนวนบวกที่ถูกต้องสำหรับระยะหมดเวลาการยืนยัน (ชั่วโมง)
+    max_registrations:
+      placeholder: เลือกขีดจำกัด
+      unlimited: ไม่จำกัด
+      users: ผู้ใช้
+      hint: กำหนดขีดจำกัดจำนวนผู้ใช้ที่สามารถลงทะเบียนได้
+      label: จำนวนการลงทะเบียนผู้ใช้สูงสุด
+    description: การควบคุมการดำเนินงานสำหรับขีดจำกัดทรัพยากร ระยะหมดเวลา และลักษณะการทำงานของระบบ ปรับเปลี่ยนได้อย่างปลอดภัยทุกเมื่อ
+    save_success: บันทึกการตั้งค่าขีดจำกัดแล้ว
+    grace_period:
+      hint: จำนวนชั่วโมงก่อนบัญชีที่ถูกลบแบบชั่วคราวจะถูกลบอย่างถาวร
+      label: การหน่วงเวลาลบ (ชั่วโมง)
+    email_timeout:
+      hint: จำนวนชั่วโมงที่ลิงก์ยืนยันอีเมลยังคงใช้ได้
+      label: การหมดเวลายืนยันอีเมล (ชั่วโมง)
+    load_error: ไม่สามารถโหลดการตั้งค่าขีดจำกัด
+    save_error: ไม่สามารถบันทึกการตั้งค่าขีดจำกัด
+    save_button: บันทึกขีดจำกัด
+    invalid_registration_max: โปรดป้อนจำนวนบวกที่ถูกต้องสำหรับการลงทะเบียนสูงสุด
+    demo_mode:
+      description: เมื่อเปิดใช้งาน ระบบจะทำงานในโหมดสาธิต — การกระทำที่สร้างความเสียหายจะถูกบล็อก และจะแสดงตัวบ่งชี้ใน UI
+      label: โหมดสาธิต
+    title: ขีดจำกัด
+    invalid_grace_period: กรุณากรอกจำนวนบวกที่ถูกต้องสำหรับระยะเวลาหน่วงการลบ (ชั่วโมง)
+  internal:
+    system_status:
+      healthy: ปกติ
+      available: พร้อมใช้งาน
+      version: เวอร์ชัน
+      initialized: เริ่มต้นแล้ว
+      not_required: ไม่จำเป็น
+      db_pool: พูลฐานข้อมูล
+      not_initialized: ยังไม่ได้เริ่มต้น
+      unhealthy: ไม่สมบูรณ์
+      unavailable: ไม่พร้อมใช้งาน
+      shared_memory: หน่วยความจำร่วม
+      description: ตัวบ่งชี้สถานะแบบเรียลไทม์สำหรับบริการแบ็กเอนด์
+      overall_health: สถานภาพโดยรวม
+      title: สถานะระบบ
+      db_cluster: คลัสเตอร์ฐานข้อมูล
+    licence:
+      features: คุณสมบัติที่เปิดใช้งาน
+      expiry: วันหมดอายุ
+      title: ใบอนุญาตและคุณสมบัติ
+      tier: ระดับใบอนุญาต
+      description: ระดับสิทธิ์การใช้งานปัจจุบันและฟีเจอร์ที่เปิดใช้งาน
+      issued_to: ออกให้แก่
+    future:
+      cache_config: การกำหนดค่าแคช / เซสชัน
+      email_transport: สถานะการขนส่งอีเมล
+      pool_stats: สถิติพูลฐานข้อมูล
+      description: การวินิจฉัยเพิ่มเติมจะถูกเพิ่มในรุ่นถัดไป
+      debug_logging: การสลับบันทึกการดีบัก / แบบละเอียด
+      title: เร็ว ๆ นี้
+    load_error: ไม่สามารถโหลดการวินิจฉัยระบบ
+    description: การวินิจฉัยระบบและการกำหนดค่าภายใน ตัวบ่งชี้สถานะแบบอ่านอย่างเดียว
+    title: ภายใน
+  options:
+    welcome:
+      hint: ข้อความนี้จะปรากฏบนหน้าเข้าสู่ระบบ เว้นว่างเพื่อซ่อน
+      label: ข้อความต้อนรับ
+      placeholder: ป้อนข้อความต้อนรับเพื่อแสดงบนหน้าเข้าสู่ระบบ
+    save_success: บันทึกการตั้งค่าตัวเลือกแล้ว
+    password_policy:
+      require_special: ต้องมีอักขระพิเศษ
+      custom: กำหนดเอง
+      select: เลือกนโยบาย
+      min_strength: ความแข็งแกร่งขั้นต่ำ (คะแนน zxcvbn 0-4)
+      label: นโยบายรหัสผ่าน
+      require_digit: ต้องมีตัวเลข
+      require_lowercase: ต้องมีตัวพิมพ์เล็ก
+      medium: ปานกลาง (ขั้นต่ำ 8 ตัว, มีตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก, ตัวเลข)
+      require_uppercase: ต้องมีตัวพิมพ์ใหญ่
+      high: สูง (ขั้นต่ำ 10 ตัว, มีตัวพิมพ์ใหญ่, ตัวพิมพ์เล็ก, ตัวเลข, อักขระพิเศษ)
+      low: ต่ำ (ขั้นต่ำ 6 ตัวอักษร)
+      hint: เลือกข้อกำหนดความซับซ้อนของรหัสผ่านสำหรับการลงทะเบียนผู้ใช้และการเปลี่ยนรหัสผ่าน
+      min_length: ความยาวขั้นต่ำ
+    public_url:
+      hint: URL ฐานที่ใช้ในลิงก์ยืนยันอีเมล (เช่น https://workbench.example.com)
+      label: URL สาธารณะ
+    email_sender:
+      label: ที่อยู่อีเมลผู้ส่ง
+      hint: ที่อยู่อีเมลที่อีเมลยืนยันจะดูเหมือนมาจาก
+    save_error: ไม่สามารถบันทึกการตั้งค่าตัวเลือก
+    save_button: ตัวเลือกการบันทึก
+    title: ตัวเลือก
+    description: การตั้งค่า ณ เวลาติดตั้งที่กำหนดเอกลักษณ์และลักษณะการทำงานของการปรับใช้นี้ เปลี่ยนอย่างระมัดระวัง — การตั้งค่านี้มีผลต่อผู้ใช้ทั้งหมด
+    load_error: ไม่สามารถโหลดการตั้งค่าตัวเลือกได้
+    registration_mode:
+      mode_1: ผู้ดูแลระบบสร้างผู้ใช้ที่ผ่านการยืนยันแล้ว
+      label: โหมดการลงทะเบียน
+      hint: เลือกวิธีการสร้างและยืนยันบัญชีผู้ใช้ใหม่
+      mode_4: การลงทะเบียนด้วยตนเองพร้อมการยืนยันทางอีเมล
+      mode_2: การลงทะเบียนด้วยตนเองและยืนยันโดยผู้ดูแลระบบ
+      select: เลือกโหมดการลงทะเบียน
+      mode_0: การลงทะเบียนด้วยตนเองยืนยันอัตโนมัติ
+  tuning:
+    ai_max_tokens_hint: ความยาวสูงสุดของคำตอบที่คำขอเดียวจะสร้างได้ คำอธิบายหนึ่งรายการต้องใช้ประมาณ 500 โทเค็น 4000 จึงเหลือพื้นที่เพียงพอ
+    saved: บันทึกการตั้งค่าการปรับแต่งแล้ว
+    reset_confirm_body: ทุกค่าในหน้านี้จะกลับไปเป็นค่าเริ่มต้นที่มาพร้อมระบบ การตั้งค่าแทนที่รายการเชื่อมต่อจะไม่ได้รับผลกระทบ การดำเนินการนี้ไม่สามารถย้อนกลับได้ และคุณจะต้องตั้งค่าใดก็ตามที่เคยเปลี่ยนไว้อีกครั้ง
+    invalid_probe_timeout: ระยะหมดเวลาการทดสอบต้องเป็นจำนวนเต็มวินาที อย่างน้อย 1 และไม่เกิน 1200
+    ai_tokens: โทเค็น
+    probe_timeout_hint: ระยะเวลาที่การทดสอบความเหมาะสมหนึ่งครั้งจะทำงานได้ โมเดลที่โฮสต์บน CPU ใช้เวลาหลายนาที ดังนั้นขีดจำกัดที่สั้นเกินไปจะบันทึกความล้มเหลวที่ผิดพลาดแทนที่จะประหยัดเวลา
+    preamble_detail: คำขอ AI ทุกรายการใช้ค่าเหล่านี้ เว้นแต่การเชื่อมต่อจะแทนที่ค่าเหล่านี้ การเปลี่ยนค่าใดค่าหนึ่งจะส่งผลต่อทุกโมเดลที่ไม่มีการตั้งค่าของตัวเอง แต่จะไม่เปลี่ยนการเชื่อมต่อที่คุณปรับแต่งไว้แล้ว
+    connect_timeout_hint: ระยะเวลาที่เครือข่ายอาจใช้ในการยอมรับการเชื่อมต่อก่อนที่ปลายทางจะถูกถือว่าไม่สามารถเข้าถึงได้ ค่าที่ต่ำกว่าที่เครือข่ายต้องใช้จะทำให้ปลายทางที่ใช้งานได้กลายเป็นปลายทางที่ใช้ไม่ได้
+    reset_error: ไม่สามารถรีเซ็ตการตั้งค่าการปรับแต่งได้
+    reset_confirm_action: รีเซ็ต
+    invalid_max_tokens: โปรดป้อนจำนวนโทเค็นเป็นจำนวนเต็ม อย่างน้อย 1
+    invalid_connect_timeout: ระยะหมดเวลาการเชื่อมต่อต้องเป็นจำนวนเต็มวินาที อย่างน้อย 1 และไม่เกิน 60
+    ai_section_hint: ค่าเริ่มต้นสำหรับคำขอ AI ทุกคำขอ การเชื่อมต่อและโมเดลคู่ใดคู่หนึ่งอาจแทนที่ค่าเหล่านี้ได้เมื่อการปรับแต่งนั้นเฉพาะกับคู่นั้น
+    save_error: ไม่สามารถบันทึกการตั้งค่าการปรับแต่งได้
+    reset_done: รีเซ็ตการตั้งค่าการปรับแต่งเป็นค่าเริ่มต้นแล้ว
+    forbidden: เฉพาะผู้ดูแลระบบเต็มรูปแบบเท่านั้นที่สามารถเปลี่ยนแปลงการตั้งค่าเหล่านี้ได้
+    save: บันทึกการตั้งค่า
+    load_error: ไม่สามารถโหลดการตั้งค่าการปรับแต่งได้
+    saving: กำลังบันทึก…
+    invalid_model_test_seconds: โปรดป้อนจำนวนเต็มวินาที อย่างน้อย 1
+    slow_threshold_label: เกณฑ์โมเดลช้า
+    description: ค่าเริ่มต้นสำหรับพฤติกรรม AI และขีดจำกัดเวลา ค่าเหล่านี้มักเหมาะสมอยู่แล้ว — การตั้งค่าต่อผู้ใช้หรือต่อการเชื่อมต่ออาจแตกต่างได้ และค่าที่นี่คือค่าที่ใช้เมื่อไม่มีการตั้งค่าใดในสองอย่างนั้น
+    ai_temperature_hint: 'ความหลากหลายของคำตอบ: 0 หมายถึงทำซ้ำได้มากที่สุดเท่าที่โมเดลอนุญาต 2 หมายถึงหลากหลายที่สุด ค่าที่อยู่นอกช่วง 0 ถึง 2 จะถูกปฏิเสธโดยผู้ให้บริการ ไม่ใช่โดยระบบนี้'
+    ai_section_label: การสร้าง AI
+    ai_timeout_hint: ระยะเวลาที่คำขอ AI หนึ่งคำขออาจทำงานก่อนถูกยกเลิก ต่ำเกินไปจะทำให้แชตล้มเหลวอย่างเงียบ ๆ สูงเกินไปจะทำให้โมเดลที่ค้างยึดเวิร์กเกอร์ไว้ โมเดลในเครื่องบน CPU อาจต้องใช้เวลาหลายนาที
+    slow_threshold_hint: การทดสอบโมเดลที่ใช้เวลานานกว่านี้จะถูกรายงานว่าช้าเกินไป ผู้ใช้สามารถเพิ่มขีดจำกัดของตนเองได้ แต่ไม่มีผู้ใช้ใดลดค่าของตนให้ต่ำกว่า 1 ได้
+    invalid_temperature: อุณหภูมิต้องเป็นตัวเลขตั้งแต่ 0 ถึง 2
+    seconds: วินาที
+    invalid_ai_timeout: ขีดจำกัดเวลา AI ต้องเป็นจำนวนเต็มวินาที อย่างน้อย 1
+    reset_confirm_title: รีเซ็ตค่าทั้งหกนี้เป็นค่าเริ่มต้นหรือไม่
+    resetting: กำลังรีเซ็ต…
+transforms:
+  op:
+    operator_placeholder: ตัวดำเนินการ
+    target_datetime: วันที่และเวลา
+    empty_hint: เพิ่มการดำเนินการเพื่อเริ่มสร้างการแปลงของคุณ
+    new_name_placeholder: ชื่อใหม่
+    type_placeholder: ประเภทการดำเนินการ
+    type:
+      encode_category: เข้ารหัสหมวดหมู่
+      rename_column: เปลี่ยนชื่อคอลัมน์
+      filter: กรองแถว
+      convert_type: แปลงชนิด
+      drop_column: ลบคอลัมน์
+      fill_missing: เติมค่าที่ขาดหายไป
+      drop_duplicates: ลบรายการซ้ำ
+      normalize: นอร์มัลไลซ์
+      standardize: ทำให้เป็นมาตรฐาน
+    method_placeholder: วิธีการ
+    encoding_label: ป้ายกำกับ
+    encoding_placeholder: การเข้ารหัส
+    target_boolean: บูลีน
+    add: เพิ่มการดำเนินการ
+    remove: ลบออก
+    value_placeholder: ค่า
+    column_placeholder: เลือกคอลัมน์
+    target_type_placeholder: ชนิดเป้าหมาย
+    target_string: สตริง
+    target_numeric: ตัวเลข
+    encoding_onehot: One-hot
+    operations_label: การดำเนินการ
+  fill:
+    constant: ค่าคงที่
+    mean: ค่าเฉลี่ย
+    mode: โหมด
+    drop_rows: ลบแถว
+    median: มัธยฐาน
+  name_required: ต้องระบุชื่อการแปลง
+  new_transform: การแปลงใหม่
+  load_error: โหลดการแปลงไม่สำเร็จ
+  search_placeholder: ค้นหาการแปลง...
+  name_placeholder: ชื่อการแปลง
+  connect_error: เชื่อมต่อการแปลงไม่สำเร็จ
+  delete_success: ลบการแปลงแล้ว
+  filter:
+    op_is_not_null: ไม่เป็นค่าว่าง
+    op_eq: เท่ากับ
+    op_contains: มี
+    op_is_null: เป็น null
+    op_lt: <
+    op_neq: '!='
+    op_gt: '>'
+  no_transforms: ไม่มีการแปลงที่กำหนดไว้สำหรับชุดข้อมูลนี้
+  back_to_data: กลับไปยังข้อมูลของฉัน
+  description_placeholder: คำอธิบาย (ไม่บังคับ)
+  connected_count: '{count} รายการที่เชื่อมต่อ'
+  for_recipe: 'สูตร: {name}'
+  delete_button: ลบ
+  connected_to_recipe: 'เชื่อมต่อกับ: {name}'
+  save_success: การแปลงถูกบันทึกแล้ว
+  operations_count: '{count} การดำเนินการ'
+  disconnect_error: ไม่สามารถตัดการเชื่อมต่อการแปลง
+  connect_transform: เชื่อมต่อกับสูตร
+  empty_state: เพิ่มการดำเนินการเพื่อเริ่มสร้างการแปลงของคุณ
+  empty_hint: การดำเนินการจะถูกใช้ตามลำดับรายการเมื่อการแปลงทำงาน
+  save_button: บันทึก
+  operations_heading: การดำเนินการ
+  name_label: ชื่อ
+  disconnect_transform: ตัดการเชื่อมต่อจากสูตร
+  no_search_results: ไม่มีการแปลงที่ตรงกับการค้นหาของคุณ
+  back_to_recipe: 'กลับไปสูตร: {name}'
+  empty_title: เลือกการแปลงจากรายการหรือสร้างใหม่
+  delete_confirm: ลบการแปลงนี้หรือไม่
+  description_label: คำอธิบาย

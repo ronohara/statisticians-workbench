@@ -1,0 +1,2259 @@
+about:
+  description: Bouw geweldige ervaringen met shadcn/ui en Next.js. Strak ontwerp, snelle prestaties.
+  fast_desc: Gebouwd op Next.js App Router voor optimale prestaties.
+  fast_title: Snel
+  get_started: Aan de slag
+  modern_desc: Toegankelijke componenten van shadcn/ui, gestyled met Tailwind CSS.
+  modern_title: Moderne UI
+  secure_desc: Type‑safe en aanpasbaar – je bent eigenaar van de componentcode.
+  secure_title: Veilig
+  title: Over Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: Terug naar Admin
+    cannot_modify_self: Kan je eigen account niet wijzigen
+    delete_confirmation: Weet je zeker dat je {name} wilt verwijderen? Deze gebruiker wordt soft-deleted en kan worden hersteld door een Full Admin.
+    delete_error: Verwijderen van gebruiker mislukt
+    delete_title: Gebruiker verwijderen
+    demote: Degraderen
+    demote_error: Degraderen van gebruiker mislukt
+    demote_success: Gebruiker gedegradeerd van Groepsbeheerder
+    description_placeholder: Voer beschrijving in
+    description_required: Beschrijving mag niet leeg zijn
+    group_description: Groepsbeschrijving
+    group_users_load_error: Laden van groepsgebruikers mislukt
+    load_error: Laden van groepen mislukt
+    load_success: Groepen succesvol geladen
+    no_users: Geen gebruikers gevonden in deze groep.
+    promote: Promoveren
+    promote_error: Promoveren van gebruiker mislukt
+    promote_success: Gebruiker gepromoveerd tot Groepsbeheerder
+    readonly_badge: (alleen-lezen)
+    readonly_message: Je bekijkt deze pagina in alleen-lezen modus. Voorbeeldgebruikers kunnen geen wijzigingen aanbrengen.
+    readonly_title: Groepsbeheer (Alleen-lezen)
+    select_group: Selecteer groep
+    select_group_placeholder: Selecteer een groep
+    title: Groepsbeheer
+    update_error: Bijwerken van groep mislukt
+    update_success: Groepsbeschrijving bijgewerkt
+    users_in_group: Gebruikers in groep
+  models:
+    comment_placeholder: Voer opmerking in
+    description: Elk model dat de workbench kent. Het inschakelen van een model beïnvloedt elke verbinding die het aanbiedt; in de kolom Servers zie je welke het kunnen bereiken.
+    disabled: Uitgeschakeld
+    edit_comment: Opmerking bewerken
+    enabled: Ingeschakeld
+    load_models_error: Laden van modellen mislukt
+    no_comment: —
+    no_models: Nog geen modellen. Met detectie worden ze op basis van een verbinding aangemaakt.
+    not_preferred: Niet voorkeur
+    preferred: Voorkeur
+    toggle_error: Bijwerken van model mislukt
+    update_error: Bijwerken van opmerking mislukt
+    update_success: Model bijgewerkt
+    fetch_auth_required: Deze provider vereist een API-sleutel om modellen op te sommen. Vernieuw in plaats daarvan via Instellingen → AI-verbindingen.
+    fetch_non_standard: Deze provider biedt geen standaard API voor het opvragen van modellen. Voeg modellen handmatig toe in het beheerpaneel.
+    tuning_hint: Deze waarden zijn overal van toepassing waar dit model op deze verbinding wordt gebruikt. Leeg betekent dat de Workbench-standaard wordt overgenomen.
+    servers_title: Bereikbaar vanaf
+    tuning_temperature_hint: Lagere waarden geven beter reproduceerbare antwoorden; hogere waarden geven meer gevarieerde antwoorden.
+    model_count: '{count} modellen'
+    no_servers: Nog geen verbinding biedt dit model aan.
+    filter_any: Elke status
+    tuning_saved: AI-instellingen opgeslagen.
+    tuning_loading: AI-instellingen laden…
+    filter_test: Capaciteitstest
+    filter_result: Resultaat
+    tuning_inherited_title: Leeg neemt de Workbench-standaard over.
+    search_placeholder: Modelnaam zoeken
+    filter_clear: Filters wissen
+    tuning_save_error: Kon de AI-instellingen niet opslaan.
+    filter_state: Status
+    tuning_title: AI-instellingen voor deze server
+    tuning_inherited: Geërfd
+    no_matches: Geen modellen voldoen aan deze filters.
+    tuning_timeout_hint: Aantal seconden dat één AI-verzoek mag duren. Een lokaal CPU-model kan enkele minuten nodig hebben.
+    tuning_load_error: Kon de AI-instellingen niet laden
+  providers:
+    code_label: Code
+    delete_button: Verwijderen
+    delete_confirmation: Weet je zeker dat je de provider "{name}" wilt verwijderen? Dit verwijdert ook alle bijbehorende modellen en kan niet ongedaan worden gemaakt.
+    delete_error: Verwijderen van provider mislukt
+    delete_provider: Provider verwijderen
+    delete_success: Provider verwijderd
+    delete_title: Provider verwijderen
+    description: Schakel AI-providers in of uit. Uitgeschakelde providers verschijnen niet in gebruikersverbindingsformulieren.
+    disabled: Uitgeschakeld
+    enabled: Ingeschakeld
+    fetch_error: Laden van providers mislukt
+    list_title: Alle providers
+    local: Lokaal
+    no_api_key: geen API-sleutel vereist
+    requires_api_key: vereist API-sleutel
+    title: AI-providers
+    toggle_error: Bijwerken van provider mislukt
+    update_success: Provider bijgewerkt
+  title: Adminpaneel
+  user_details:
+    dark_mode_description: Schakel tussen licht en donker thema.
+    dark_mode_label: Donkere modus
+    email_label: E-mail
+    email_notifications_description: Ontvang e-mailupdates over je account.
+    email_notifications_label: E-mailmeldingen
+    full_admin_note: Volledige beheerders hebben standaard alle Groepsbeheerderrechten.
+    group_admin_description: Gebruiker kan andere gebruikers binnen hun groep beheren.
+    group_admin_label: Groepsbeheerder
+    group_hint: De groep van de gebruiker bepaalt tot welke gedeelde bronnen ze toegang hebben.
+    language_label: Taal
+    language_select_placeholder: Selecteer taal
+    load_error: Laden van gebruikersgegevens mislukt
+    max_upload_count_hint: Maximaal aantal datasets per gebruiker (0 = onbeperkt).
+    max_upload_count_label: Max. uploadaantal
+    max_upload_count_placeholder: Selecteer aantal
+    max_upload_size_hint: Maximale totale opslag per gebruiker (0 = onbeperkt).
+    max_upload_size_label: Max. uploadgrootte
+    max_upload_size_placeholder: Selecteer grootte
+    name_label: Naam
+    not_found: Gebruiker niet gevonden
+    save_error: Bijwerken van gebruiker mislukt
+    save_success: Gebruikersgegevens bijgewerkt
+    select_group: Selecteer groep
+    title: Gebruiker beheren
+    unnamed: Naamloze gebruiker
+    user_group: Gebruikersgroep
+  users:
+    active_users: Actieve gebruikers
+    admin_badge: Beheerder
+    bcc_label: BCC-registraties
+    bcc_updated: BCC-registratie-instelling bijgewerkt
+    created_label: Aangemaakt
+    current_user_badge: Je
+    delete_button: Verwijderen
+    delete_confirmation: Weet je zeker dat je "{name}" permanent wilt verwijderen? Deze actie kan NIET ongedaan worden gemaakt.
+    delete_error: Gebruiker verwijderen mislukt
+    delete_self_error: Je kunt je eigen account niet verwijderen
+    delete_success: Gebruiker permanent verwijderd
+    delete_title: Gebruiker verwijderen
+    deleted_badge: Soft-verwijderd
+    deleted_label: Verwijderd
+    example_user_badge: Voorbeeldgebruiker
+    forbidden: Verboden
+    group_admin_badge: Groepsbeheerder
+    hard_delete_button: Permanent verwijderen
+    hard_delete_confirmation: Weet je zeker dat je "{name}" permanent wilt verwijderen? Deze actie kan NIET ongedaan worden gemaakt.
+    hard_delete_error: Gebruiker permanent verwijderen mislukt
+    hard_delete_success: Gebruiker permanent verwijderd
+    hard_delete_title: Gebruiker permanent verwijderen
+    load_error: Gebruikers laden mislukt
+    make_admin: Maak beheerder
+    more_button: Meer...
+    no_name: Geen naam
+    remove_admin: Beheerdersrechten intrekken
+    resend_button: E-mail opnieuw verzenden
+    resend_error: Verificatie-e-mail verzenden mislukt
+    resend_success: Verificatie-e-mail verzonden naar {email}
+    restore_button: Herstellen
+    restore_error: Gebruiker herstellen mislukt
+    restore_success: Gebruiker hersteld
+    soft_deleted_users: Soft-verwijderde gebruikers
+    title: Gebruikersbeheer
+    unauthorized: Ongeautoriseerd
+    unverified_badge: Niet geverifieerd
+    update_error: Gebruiker bijwerken mislukt
+    update_success: Gebruiker bijgewerkt
+    user_not_found: Gebruiker niet gevonden
+    verified_badge: Geverifieerd
+    verify_button: Verifiëren
+    verify_error: Gebruiker verifiëren mislukt
+    verify_success: Gebruiker gemarkeerd als geverifieerd
+    add_user: Gebruiker toevoegen
+  visualization_types:
+    add_button: Nieuw type toevoegen
+    add_title: Visualisatietype toevoegen
+    create_success: Visualisatietype aangemaakt
+    default_parameters: Standaardparameters (JSON)
+    delete: Verwijderen
+    delete_button: Verwijderen
+    delete_confirmation: Weet je zeker dat je het type "{name}" wilt verwijderen? Dit zal ook alle bijbehorende instanties verwijderen en kan niet ongedaan worden gemaakt.
+    delete_error: Verwijderen mislukt
+    delete_success: Visualisatietype verwijderd
+    delete_title: Visualisatietype verwijderen
+    description: Beschrijving
+    disabled: Uitgeschakeld
+    edit: Bewerken
+    edit_title: Visualisatietype bewerken
+    enabled: Ingeschakeld
+    fetch_error: Visualisatietypen laden mislukt
+    input_schema: Invoerschema (JSON)
+    invalid_json: Ongeldige JSON in een van de schemavelden
+    list_title: Alle visualisatietypen
+    name: Naam
+    no_types: Nog geen visualisatietypen gedefinieerd.
+    parameter_schema: Parameterschema (JSON)
+    renderer: Renderer
+    renderer_client: Client
+    renderer_label: Renderer
+    renderer_server: Server
+    save_error: Opslaan mislukt
+    slug: Slug
+    slug_label: Slug
+    title: Visualisatietypen
+    toggle_error: Bijwerken mislukt
+    update_success: Visualisatietype bijgewerkt
+  adduser:
+    creating: Gebruiker aanmaken...
+    success: Account aangemaakt en geverifieerd. De nieuwe gebruiker kan nu inloggen.
+    submit: Gebruiker aanmaken
+    password_mismatch: Wachtwoorden komen niet overeen
+    failed: Gebruiker aanmaken mislukt
+    language_description: Kies de voorkeurstaal van de gebruiker voor de interface.
+    name: Naam
+    not_admin: U heeft geen toestemming om deze pagina te openen.
+    password: Wachtwoord
+    email: E-mail
+    back_to_admin: Terug naar Beheer
+    title: Gebruiker toevoegen
+    confirm_password: Bevestig wachtwoord
+    description: Maak een nieuw gebruikersaccount aan. Het account wordt onmiddellijk geverifieerd.
+  set_password:
+    failed: Wachtwoord instellen mislukt
+    admin_password: Beheerderswachtwoord
+    admin_password_required: Beheerderswachtwoord is vereist
+    description: Stel een nieuw wachtwoord in voor deze gebruiker. Uw eigen beheerderswachtwoord is vereist om de wijziging te bevestigen.
+    title: Wachtwoord instellen
+    success: Wachtwoord succesvol ingesteld
+ai:
+  connection:
+    add_first: Voeg je eerste AI-verbinding toe
+    add_new: Nieuwe AI-verbinding toevoegen
+    add_success: AI-verbinding succesvol toegevoegd
+    add_title: Nieuwe AI-verbinding toevoegen
+    api_key_hint: Je API-sleutel wordt versleuteld voordat deze wordt opgeslagen.
+    api_key_label: API-sleutel
+    by_label: door
+    clear_default: Standaardinstelling wissen
+    currently_not_shared: ❌ Momenteel niet gedeeld
+    currently_shared: ✅ Momenteel gedeeld met groep
+    default_badge: Standaard
+    default_cleared: Standaard AI-verbinding gewist
+    default_set: Standaard AI-verbinding bijgewerkt
+    delete_button: Verwijderen
+    delete_confirmation: Weet je zeker dat je de verbinding wilt verwijderen
+    delete_error: AI-verbinding verwijderen mislukt
+    delete_title: AI-verbinding verwijderen
+    deleted: AI-verbinding verwijderd
+    edit_title: AI-verbinding bewerken
+    endpoint_hint: Overschrijf het standaard API-eindpunt indien nodig.
+    endpoint_label: Eindpunt-URL
+    form_description: Configureer een AI-providerverbinding.
+    group_label: Groep
+    load_error: Verbindingen laden mislukt
+    load_providers_error: Laden van providers mislukt
+    metadata_load_error: Laden van provider-metadata mislukt
+    metadata_loading: Providerinformatie wordt nog geladen. Even geduld.
+    models: Beschikbare modellen
+    models_disabled: Uitgeschakeld
+    models_load_error: Laden van modellen mislukt
+    models_sync_error: Synchroniseren van modellen mislukt
+    models_synced: Modellen succesvol gesynchroniseerd
+    name_label: Verbindingsnaam
+    name_placeholder: bijv. Mijn AI-verbinding
+    no_connections: Nog geen AI-verbindingen opgeslagen.
+    not_found: Verbinding niet gevonden
+    provider_label: Provider
+    provider_not_found: Provider niet gevonden
+    save_error: Opslaan van AI-verbinding mislukt
+    select_provider: Kies de AI-provider
+    select_provider_first: Selecteer eerst een provider
+    set_default: Instellen als standaard
+    shared_badge: Gedeeld
+    shared_description: Maak deze verbinding beschikbaar voor andere gebruikers in je groep.
+    shared_label: Delen met groep
+    shared_readonly: Gedeeld
+    shared_readonly_message: Deze verbinding is met je gedeeld. Je kunt deze bekijken, maar bewerken is voorbehouden aan de eigenaar.
+    test_button: Verbinding testen
+    test_error: Verbinding mislukt.
+    test_success: Verbinding geslaagd!
+    unknown_user: Onbekend
+    update_success: AI-verbinding succesvol bijgewerkt
+    models_refresh: Modellen vernieuwen
+    models_none: Nog geen modellen gesynchroniseerd. Klik op Vernieuwen om modellen van de provider op te halen.
+    probe_timeout_hint: Hoe lang één geschiktheidstest hier mag duren. Een model op CPU heeft minuten nodig.
+    models_discovered: 'Er zijn {seen} model(len) op deze verbinding ontdekt: {created} nieuw, {refreshed} al bekend, {pruned} niet langer aangeboden.'
+    invalid_connect_timeout: De verbindingstime-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal 60.
+    timeouts_section_label: Verbindingstime-outs
+    invalid_probe_timeout: De modeltest-time-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal 1200.
+    timeouts_section_hint: Laat een vak leeg om de Workbench-standaard te gebruiken.
+    connect_exceeds_probe: De verbindingstime-out mag niet langer zijn dan de modeltest-time-out — een verbinding mag er niet langer over doen om tot stand te komen dan de hele test mag duren.
+    connect_timeout_hint: Hoe lang het netwerk erover mag doen om een verbinding te accepteren. Een waarde lager dan wat dit netwerk nodig heeft, verandert een werkend eindpunt in een onbereikbaar eindpunt.
+  database:
+    add_connection: Databaseverbinding toevoegen
+    all_issues: Alle problemen
+    analysis_report: Analyserapport
+    analysis_summary: '{tables} tabellen, {columns} kolommen, {issues} problemen gevonden'
+    analyze: Schema analyseren
+    analyzing: Analyseren...
+    business_value: Bedrijfswaarde
+    categories: Categorieën
+    code_systems_detected: Gedetecteerde codesystemen
+    cols_rows_format: '{cols} kolommen, {rows} rijen'
+    columns_label: Kolommen
+    confidence: Betrouwbaarheid
+    description: Analyseer het databaseontwerp op indexering, normalisatie, relaties, gegevenstypen en naamgevingsproblemen.
+    download_pdf: PDF downloaden
+    email_body_attachment: Zie bijgevoegd analyserapport.
+    email_body_connection: 'Verbinding: {conn_name}'
+    email_body_database: 'Database: {db_name}'
+    email_body_id: 'Verbindings-ID: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Rapport databaseontwerpanalyse
+    email_body_type: 'Databasetype: {db_type}'
+    email_error: E-mailen van rapport mislukt
+    email_pdf: PDF e-mailen
+    email_sent: Rapport succesvol gemaild
+    email_subject: Databaseontwerpanalyse — {db_name} ({db_type}) [Verbinding {conn_id}]
+    empty_state: Selecteer een databaseverbinding en klik op Analyseren om te beginnen.
+    enter_question: Voer een vraag in.
+    foreign_keys: Externe sleutels
+    high_risk: Hoog
+    indexes_label: Indexen
+    issues_label: Problemen
+    low_risk: Laag
+    medium_risk: Gemiddeld
+    no_issues: Geen problemen gevonden. Je databaseontwerp ziet er goed uit!
+    no_semi_structured: Geen patronen van semigestructureerde data gedetecteerd in tekstkolommen.
+    normalisation_suggestions: Normalisatiesuggesties
+    normalisation_suggestions_desc: Voorgestelde referentietabellen op basis van trefwoorden gevonden in semigestructureerde tekstkolommen.
+    normalisation_warning: Dit zijn AI-gegenereerde suggesties. Databaseherontwerpen vereisen zorgvuldige beoordeling. Test wijzigingen eerst op een replica.
+    pdf_downloaded: PDF succesvol gedownload
+    pdf_error: Genereren van PDF mislukt
+    pk_prefix: PK –
+    placeholder: Binnenkort beschikbaar. Deze functie helpt je databaseschema's te ontwerpen met behulp van AI.
+    proposed_reference_table: Voorgestelde referentietabel
+    rag_ask: Vragen
+    rag_chat: RAG Chat — Stel vragen over je gegevens
+    rag_chat_desc: Stel vragen in natuurlijke taal. Het systeem doorzoekt tekstkolommen en retourneert AI-gegenereerde antwoorden met bronvermeldingen.
+    rag_error: RAG-query mislukt
+    rag_placeholder: bijv. Wat zijn de veelvoorkomende diagnoses?
+    rag_sources: Bronnen
+    risk_breakdown: Risicoverdeling
+    rows_label: Rijen
+    schema_error: Analyseren van databaseschema mislukt
+    select_connection: Selecteer databaseverbinding
+    select_connection_first: Selecteer eerst een databaseverbinding.
+    select_connection_placeholder: Kies een databaseverbinding...
+    semi_structured: Analyse van semigestructureerde data
+    semi_structured_desc: Tekstkolommen geanalyseerd op ingesloten codes, trefwoorden en patronen.
+    tables_explorer: Tabellenverkenner
+    tables_label: Tabellen
+    title: Databaseontwerpassistent
+    top_recommendations: Topaanbevelingen
+    implicit_relationships: Impliciete relaties
+    ai_augmented_desc: Schema AI, Semantische AI en Integratie AI hebben deze database geanalyseerd.
+    table_purposes: Tabeldoelen
+    timeout_error: Analyse verliep met time-out. De database is mogelijk te groot of de AI-service is niet beschikbaar.
+    ai_health_score: AI-gezondheidsscore
+    integration_analysis: Integratieanalyse
+    timeout_log: Analyse verliep met time-out na 15 minuten.
+    ai_augmented: AI-ondersteunde analyse
+    isic_domains: ISIC Domeinclassificaties
+    ai_fallback: Basisanalyse
+    ai_fallback_desc: AI-uitbreiding niet beschikbaar. Alleen structurele analyse wordt getoond. Selecteer een AI-verbinding voor diepere inzichten.
+    ai_unavailable: AI-analyse niet beschikbaar. Verbind een AI-provider om uitgebreide analyse in te schakelen.
+    priority_actions: Acties met hoogste prioriteit
+    missing_dimensions: Ontbrekende dimensies
+    integration_analysis_desc: Impliciete relaties, onderzoeksmogelijkheden en ontbrekende dimensies gedetecteerd door Integration AI.
+    semantic_analysis: Semantische analyse
+    semantic_analysis_desc: Door AI afgeleide kolombetekenissen, ISIC-domeinclassificaties en detecties van codesystemen.
+    column_meanings: Kolombetekenissen
+    research_capabilities: Onderzoeksmogelijkheden
+    peer_tables: 'Peer-tabellen:'
+    health_score_desc: Algehele databasegezondheid beoordeeld door Schema AI. 0 = kritieke structurele problemen, 100 = productieklaar.
+    is_missing: ontbreekt
+  dataclean:
+    chat_error: Ophalen van antwoord mislukt
+    chat_placeholder: Vraag naar het opschonen of voorbereiden van deze dataset...
+    column_tooltip: '{type} — {null_count} nullen, {unique_count} uniek'
+    column_type:
+      category: Categorie
+      datetime: Datum/Tijd
+      number: Getal
+      text: Tekst
+    description: AI-ondersteunde opschoning en voorbereiding van datasets.
+    empty_chat: Selecteer een dataset en begin vragen te stellen over hoe je deze kunt opschonen en voorbereiden.
+    enter_message: Voer een bericht in.
+    loading_schema: Schema laden...
+    no_connection: Configureer een standaard AI-verbinding in Instellingen > AI.
+    no_datasets: Geen datasets beschikbaar. Upload of definieer eerst een dataset.
+    placeholder: Binnenkort beschikbaar. Met deze functie kunt u datasets opschonen en voorbereiden met behulp van AI.
+    schema_summary: '{rows} rijen, {cols} kolommen'
+    select_dataset: Selecteer dataset
+    select_dataset_first: Selecteer eerst een dataset.
+    select_dataset_placeholder: Kies een dataset...
+    send: Verzenden
+    shared_badge: (gedeeld)
+    title: Assistent datasetopschoning
+    schema_error: Dataset-schema laden mislukt.
+    clean_name_label: Naam voor de schone kopie
+    clean_copy_success: Nieuwe dataset '{name}' aangemaakt — het origineel is ongewijzigd.
+    rules_title: Voorbereidingsregels
+    clean_copy: Schone kopie
+    no_dataset_selected: Geen dataset geselecteerd
+    clean_in_place_success: Dataset '{name}' bijgewerkt.
+    clean_in_place: Ter plaatse opschonen
+    preview_title: Gegevensvoorbeeld
+    no_rules: Nog geen regels
+    operations_count: '{count} bewerkingen'
+    clean_no_rules: Nog geen opschoonregels om toe te passen.
+  default_hint: De standaardverbinding wordt gebruikt als terugvaloptie wanneer een analyserecept geen AI-provider specificeert.
+  new_session: Nieuwe sessie
+  no_ai_connections: Geen AI-verbindingen geconfigureerd. Voeg er een toe in Instellingen > AI.
+  recipe:
+    chat_error: Kan geen antwoord ontvangen
+    chat_placeholder: Vraag naar statistische analyse of receptconfiguratie...
+    description: Door AI ondersteunde generatie van recepten en analyseregels.
+    empty_chat: Selecteer een dataset en vraag welke statistische technieken u kunt gebruiken.
+    enter_message: Voer een bericht in.
+    loading_schema: Schema laden...
+    no_datasets: Geen datasets beschikbaar. Upload of definieer eerst een dataset.
+    placeholder: Binnenkort beschikbaar. Met deze functie kunt u analyserecepten maken met behulp van AI.
+    schema_summary: '{rows} rijen, {cols} kolommen'
+    select_dataset: Selecteer dataset
+    select_dataset_first: Selecteer eerst een dataset.
+    select_dataset_placeholder: Kies een dataset...
+    send: Verzenden
+    title: Assistent analyseregels
+  select_ai_connection: AI-verbinding
+  select_ai_connection_placeholder: Kies AI-verbinding...
+  select_model: Model
+  select_model_placeholder: Kies model...
+  test_error: Verbinding mislukt.
+  test_success: Verbinding succesvol!
+  title: AI-instellingen
+  recipe_concierge:
+    stage_technique: Techniek kiezen
+    stage_columns: Kolommen selecteren
+    save: Recept opslaan
+    draft_empty: Start een gesprek om je recept op te bouwen. Het concept verschijnt hier terwijl je beslissingen neemt.
+    delete_session: Sessie verwijderen
+    create_prompt: Maak een nieuwe sessie aan om te beginnen.
+    no_sessions: Nog geen sessies
+    title: AI-receptconciërge
+    draft_title: Receptconcept
+    open: Openen in editor
+    stage_transforms: Datavoorbereiding
+    welcome: Vertel me wat je in je data wilt ontdekken, en ik help je een compleet analyserecept op te bouwen.
+    status_ready: Gereed
+    tab_chat: Chat
+    new_session: Nieuwe sessie
+    stage_greeting: Welkom
+    stage_complete: Recept gereed
+    tab_sessions: Sessies
+    tab_draft: Concept
+    stage_goal: Onderzoeksvraag
+    status_draft: Concept
+    stage_review: Recept controleren
+    chat_error: Reactie ophalen mislukt.
+    manual_label: Handmatig recept
+    toggle_panel: Receptpaneel in-/uitschakelen
+    select_dataset: Dataset selecteren...
+    no_session: Geen sessie geselecteerd
+    input_placeholder: Vraag iets over je data... of zeg gewoon "hoi".
+    saved: Recept opgeslagen!
+    stage_visualisation: Visualisatie
+    saving: Opslaan...
+    schema_changes: 'Schemawijzigingen gedetecteerd:'
+    draft_dataset: Dataset
+    draft_no_visualisation: Numerieke resultaten
+    warnings_heading: Waarschuwingen
+    draft_output: Uitvoer
+    draft_algorithm: Algoritme
+    errors_heading: Kan nog niet opslaan
+    progress_decided: '{count} van {total} beslist'
+    done: Klaar
+    progress_next: '{voortgang} · {volgende}'
+    chip_withheld: +{count} meer
+    unread_sources: Sommige bronnen konden niet worden gelezen, dus de kolommenlijst is mogelijk onvolledig.
+    chip_superseded: Vervangen door een nieuwer aanbod.
+    chip_expand: Toon {count} meer
+    chip_collapse: Toon minder
+  thinking: Denken...
+  testing:
+    cost_warning: Hiermee voert u {count} test(s) uit; de turn-test duurt minuten per model op CPU. Druk nogmaals om te starten.
+    run_test: Test uitvoeren.
+    slow_limit_unavailable: Uw instellingen bevatten geen limiet voor trage modellen, dus wordt er geen enkel model als te traag gemarkeerd.
+    column_enabled: Ingeschakeld.
+    discover_failed: 'Kon modellen niet ontdekken: {detail}'
+    column_actions: Test
+    connection_label: AI-verbinding
+    failure_reason: 'Reden: {reason}'
+    no_connections_body: Voor het testen van een model is een AI-verbinding nodig. Voeg er een toe en kom daarna terug naar deze pagina.
+    slow_limit_failed: Kon uw limiet voor trage modellen niet lezen, dus wordt er geen enkel model als te traag gemarkeerd. {detail}
+    discover_result: 'De server vermeldde {seen} model(len): {created} nieuw, {refreshed} al bekend, {pruned} niet langer aangeboden.'
+    slow_limit_session_link: Stel dit permanent in uw profiel in.
+    cost_confirm: Start de testrun.
+    test_turn: Complexiteit
+    test_tools: gebruikt Tools
+    discover_running: De server wordt gevraagd…
+    no_duration_here: Niet uitgevoerd op deze verbinding.
+    no_models: Er zijn nog geen modellen ontdekt op deze verbinding.
+    run_all_untested: Voer elke test uit op ongeteste modellen.
+    run_failed: 'De test kon niet worden uitgevoerd: {detail}'
+    state_pass: Geslaagd
+    title: AI-testen
+    load_error: Kon uw AI-verbindingen niet laden. {detail}
+    no_connections_heading: Nog geen AI-verbinding.
+    explanation: De AI-conciërges van de Workbench zijn gemaakt voor modellen die handelen. Een model dat alleen maar praat — hoe beleefd ook, hoe groot ook — laat de recepteditor reageren terwijl het model
+      niets doet. De oplossing is het model, niet de code. Met de tool op deze pagina kunt u testen of een model geschikt is.
+    duration_seconds: '{seconds} s'
+    discover_models: Modellen ontdekken
+    test_competence: Competentie
+    state_fail: Mislukt
+    slow_limit_session_reset: Gebruik mijn opgeslagen limiet.
+    cancelled: Gestopt. Reeds vastgelegde resultaten zijn behouden.
+    enabled_yes: Model ingeschakeld.
+    run_all_for_model: Alles uitvoeren voor dit model.
+    elsewhere_note: Een model kan een capaciteitstestresultaat van een andere verbinding hebben. De duur naast elke status is de eigen meting van deze verbinding, dus een model kan hier een status zonder
+      duur weergeven.
+    slow_limit_session_hint: Geldt alleen voor deze pagina — wordt niet opgeslagen.
+    duration_ms: '{ms} ms'
+    running: Bezig…
+    enabled_no: Model uitgeschakeld
+    too_slow: Boven je limiet van {seconds} s
+    no_connections_link: Ga naar AI-verbindingen
+    column_model: Model
+    models_heading: Modellen
+    slow_limit_session_label: Limiet voor trage modellen
+api:
+  admin:
+    already_full_admin: Gebruiker is al Volledig beheerder
+    already_group_admin: Gebruiker is al Groepsbeheerder
+    cannot_delete_self: U kunt uw eigen account niet verwijderen
+    cannot_demote_full_admin: Kan een Volledig beheerder niet degraderen
+    cannot_demote_self: U kunt uzelf niet degraderen
+    cannot_promote_example: Kan een voorbeeldgebruiker niet promoveren
+    delete_error: Verwijderen van gebruiker mislukt
+    demote_error: Degraderen van gebruiker mislukt
+    description_required: Beschrijving mag niet leeg zijn
+    example_blocked: Voorbeeldgebruikers kunnen geen beheerderacties uitvoeren
+    group_not_found: Groep niet gevonden
+    group_users_load_error: Laden van groepsgebruikers mislukt
+    groups_load_error: Laden van groepen mislukt
+    groups_stats_error: Laden van groepsstatistieken mislukt
+    instance_exists: Kan type niet verwijderen omdat het {count} gekoppelde instantie(s) heeft.
+    insufficient_permissions: Onvoldoende rechten voor deze actie
+    invalid_group_id: Ongeldige group_id. Moet 00-99 zijn
+    invalid_id: Ongeldige id
+    invalid_upload_count: maxUploadCount moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    invalid_upload_size: maxUploadSizeMB moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    missing_fields: Vereiste velden ontbreken
+    missing_group_id: Groeps-ID ontbreekt
+    missing_id: Ontbrekende id
+    missing_model_id: Ontbrekende model-id
+    missing_provider_code: Ontbrekende parameter providerCode
+    missing_user_id: Ontbrekende userId
+    model_update_error: Bijwerken van model mislukt
+    models_load_error: Laden van modellen mislukt
+    no_fields: Geen geldige velden om bij te werken
+    no_group: Gebruiker heeft geen groep toegewezen
+    not_group_admin: Gebruiker is geen Groepsbeheerder
+    only_full_admin: Alleen Volledige beheerders kunnen deze actie uitvoeren
+    promote_error: Promoveren van gebruiker mislukt
+    provider_delete_error: Verwijderen van provider mislukt
+    provider_not_found: Provider niet gevonden
+    provider_update_error: Bijwerken van provider mislukt
+    providers_load_error: Laden van providers mislukt
+    slug_exists: Slug bestaat al
+    update_error: Bijwerken van gebruiker mislukt
+    user_load_error: Laden van gebruiker mislukt
+    user_not_found: Gebruiker niet gevonden
+    users_load_error: Laden van gebruikers mislukt
+    viz_type_create_error: Aanmaken van visualisatietype mislukt
+    viz_type_delete_error: Verwijderen van visualisatietype mislukt
+    viz_type_update_error: Bijwerken van visualisatietype mislukt
+    viz_types_load_error: Laden van visualisatietypen mislukt
+    settings_invalid_email_timeout: Time-out voor e-mailverificatie moet een positief getal zijn (uren)
+    settings_save_error: Opslaan van algemene instellingen mislukt
+    settings_invalid_max_registrations: Maximale registraties moeten een positief getal zijn of onbeperkt
+    settings_load_error: Laden van algemene instellingen mislukt
+    settings_invalid_upload_size: Standaard maximale uploadgrootte moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    settings_invalid_email_sender: Ongeldig e-mailadresformaat van afzender
+    settings_view_forbidden: Alleen volledige beheerders kunnen algemene instellingen bekijken
+    settings_modify_forbidden: Alleen volledige beheerders kunnen algemene instellingen wijzigen
+    settings_invalid_grace_period: Gratieperiode voor registratie moet een positief getal zijn (uren)
+    settings_invalid_public_url: Ongeldig openbaar URL-formaat
+    settings_invalid_upload_count: Standaard maximaal aantal uploads moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+  auth:
+    account_deleted: Dit account is verwijderd.
+    email_not_verified: E-mail niet geverifieerd. Controleer uw inbox en SPAM-map.
+    example_user_blocked: Wachtwoordwijzigingen zijn uitgeschakeld voor voorbeeldgebruikers.
+    example_user_forgot_blocked: Wachtwoord opnieuw instellen is uitgeschakeld voor voorbeeldgebruikers
+    example_user_register_blocked: Voorbeeldgebruikers kunnen geen nieuwe accounts aanmaken
+    example_user_reset_blocked: Wachtwoord opnieuw instellen is uitgeschakeld voor voorbeeldgebruikers
+    internal_error: Interne serverfout
+    invalid_credentials: Ongeldige inloggegevens
+    invalid_current_password: Huidig wachtwoord is onjuist
+    invalid_token: Ongeldig of verlopen token
+    missing_email: E-mail vereist
+    missing_fields: Ontbrekende velden
+    password_validation_failed: Wachtwoordvalidatie mislukt
+    token_expired: Token is verlopen
+    unauthorized: Ongeautoriseerd
+    user_not_found: Gebruiker niet gevonden
+  datasets:
+    delete_blocked: Voorbeeldgebruikers kunnen geen datasets verwijderen
+    example_blocked: Voorbeeldgebruikers kunnen geen datasets aanmaken
+    proxy_error: Interne serverfout
+    update_blocked: Voorbeeldgebruikers kunnen datasets niet bijwerken
+  profile:
+    name_required: Naam is verplicht
+    update_failed: Profiel bijwerken mislukt
+  recipes:
+    create_error: Recept aanmaken mislukt
+    dataset_not_found: Dataset niet gevonden
+    dataset_required: datasetId is verplicht
+    delete_error: Recept verwijderen mislukt
+    execute_error: Recept uitvoeren mislukt
+    execution_load_error: Uitvoering laden mislukt
+    execution_not_found: Uitvoering niet gevonden
+    executions_load_error: Uitvoeringen laden mislukt
+    load_error: Recepten laden mislukt
+    missing_id: Recept-ID is verplicht
+    name_required: Naam en fasen zijn verplicht
+    not_found: Recept niet gevonden
+    not_owned: Recept niet gevonden of niet van jou
+    update_error: Recept bijwerken mislukt
+  register:
+    email_exists: E-mailadres bestaat al
+    internal_error: Interne serverfout
+    invalid_email: Ongeldig e-mailformaat
+    limit_reached: Registratielimiet bereikt (maximaal {max_reg} gebruikers).
+    missing_fields: Ontbrekende velden
+    password_validation_failed: Wachtwoordvalidatie mislukt
+    settings_not_found: Algemene instellingen niet gevonden
+  settings:
+    load_failed: Instellingen laden mislukt
+    save_failed: Instellingen opslaan mislukt
+    user_not_found: Gebruiker niet gevonden
+  user:
+    api_key_required: API-sleutel is vereist voor deze aanbieder
+    connection_name_exists: Er bestaat al een verbinding met deze naam
+    connection_not_found: Verbinding niet gevonden
+    example_blocked: Voorbeeldgebruikers kunnen deze actie niet uitvoeren
+    internal_error: Interne serverfout
+    missing_fields: Vereiste velden ontbreken
+    provider_not_found: Provider "{provider}" niet gevonden
+    user_not_found: Gebruiker niet gevonden
+  global_settings_load_error: Interne serverfout
+app:
+  name: Statisticians Workbench
+  version: Versie
+chat:
+  connection_not_found: AI-verbinding niet gevonden of niet toegankelijk
+  connections_load_error: Verbindingen laden mislukt
+  delete: Verwijderen
+  delete_confirm: Weet je zeker dat je deze chat wilt verwijderen?
+  delete_error: Chat verwijderen mislukt
+  delete_success: Chat verwijderd
+  empty_state: Stuur een bericht om een gesprek te starten.
+  go_to_ai_settings: Ga naar AI-instellingen
+  history: Chatgeschiedenis
+  input_placeholder: Typ je bericht...
+  load_error: Chats laden mislukt
+  models_load_error: Modellen laden mislukt
+  new_chat: Nieuwe chat
+  no_chat_selected: Geen actieve chat
+  no_chats: Nog geen chats
+  no_connections_message: Je moet minimaal één AI-verbinding definiëren voordat je Chat kunt gebruiken.
+  no_models: Geen modellen beschikbaar voor deze verbinding
+  rename: Hernoemen
+  rename_empty: Titel mag niet leeg zijn
+  rename_error: Chat hernoemen mislukt
+  rename_success: Chat hernoemd
+  select_connection: AI-verbinding
+  select_connection_first: Selecteer eerst een AI-verbinding.
+  select_connection_placeholder: Selecteer een AI-verbinding
+  select_model: Model
+  select_model_placeholder: Selecteer een model
+  send_error: Bericht verzenden mislukt
+  title: Chat
+common:
+  audio_settings: Audio-instellingen
+  back: Terug
+  cancel: Annuleren
+  cannot_undo: Deze actie kan niet ongedaan worden gemaakt.
+  clear: Wissen
+  close: Sluiten
+  close_navigation: Navigatie sluiten
+  copied: Gekopieerd!
+  copy: Kopiëren
+  copy_to_clipboard: Naar klembord kopiëren
+  delete: Verwijderen
+  delete_chat: Chat verwijderen
+  deleting: Verwijderen...
+  dismiss: Sluiten
+  dismiss_error: Foutmelding sluiten
+  dismiss_success: Succesmelding sluiten
+  edit: Bewerken
+  error_label: Fout
+  false_label: Onwaar
+  generating: Genereren...
+  has_more_information: heeft meer informatie
+  loading: Laden...
+  microphone_off: Microfoon uit
+  microphone_on: Microfoon aan
+  next: Volgende
+  no_answer: Geen antwoord geretourneerd
+  no_permission: Je hebt geen toestemming om deze pagina te bekijken.
+  open_navigation: Navigatie openen
+  reset_to_defaults: Standaardwaarden herstellen
+  restoring: Herstellen...
+  save: Opslaan
+  saving: Opslaan...
+  select_language: Selecteer taal
+  sending: Verzenden...
+  speaker_off: Luidspreker uit
+  speaker_on: Luidspreker aan
+  speech_input_unsupported: 'Spraakinvoer wordt niet ondersteund in uw browser. Compatibele browsers: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: Microfoontoegang is geweigerd. Sta microfoontoegang toe in uw browserinstellingen.
+  speech_mic_failed: 'Microfoon starten mislukt: {error}.'
+  speech_network_error: Netwerkfout bij spraakherkenning — controleer uw internetverbinding en probeer opnieuw.
+  speech_output_unsupported: 'Spraakuitvoer wordt niet ondersteund in uw browser. Compatibele browsers: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Spraakherkenningsfout: {error}. Probeer opnieuw.'
+  success_label: Succes
+  system_default: Systeemstandaard
+  testing: Testen...
+  true_label: Waar
+  unknown: Onbekend
+  untitled: Naamloos
+  uploading: Uploaden...
+  verifying: Verifiëren...
+  view: Bekijken
+  view_dataset: Dataset bekijken
+  voice: Stem
+  unknown_error: Onbekende fout
+  access_denied_admin: Toegang geweigerd — alleen voor beheerders.
+  audio_resume: Hervatten
+  audio_stop: Stoppen
+  audio_pause: Pauzeren
+  email_features_unavailable: E-mailgebaseerde accountfuncties zijn niet beschikbaar.
+  ai_timeout_label: Maximale AI-tijd
+  ai_max_tokens_label: Maximale uitvoertokens
+  connect_timeout_label: Verbindingstime-out (seconden)
+  ai_models: AI-modellen
+  probe_timeout_label: Modeltest-time-out (seconden)
+  ai_temperature_label: Temperatuur
+components:
+  audio_settings_dialog:
+    close: Sluiten
+    pitch_label: 'Toonhoogte: {0}'
+    reset_to_defaults: Herstel standaardwaarden
+    speed_label: 'Snelheid: {0}x'
+    system_default: Systeemstandaard
+    title: Audio-instellingen
+    voice: Stem
+  example_user_badge: Voorbeeldgebruiker
+  example_user_badge_tooltip: Registreer voor volledige toegang
+  example_user_banner:
+    message: U bekijkt het systeem in alleen-lezen modus. Registreer voor volledige toegang om resources aan te maken en te wijzigen.
+    message_short: Alleen-lezen modus - Registreer voor volledige toegang
+    register_button: Registreer voor Volledige Toegang
+    register_short: Registreer
+    title: VOORBEELDGEBRUIKERMODUS
+  group_admin_badge: Groepsbeheerder
+  preparation_preview:
+    more_columns: +{0} meer
+    null_value: 'null'
+    rows_removed: '{0} verwijderd'
+  readonly_wrapper:
+    message: Alleen-lezen modus - Registreer voor volledige toegang om deze inhoud te wijzigen
+  active_checkmark: ✓
+  feature_gate:
+    upgrade_title: Zakelijke functie
+    upgrade_message: Voor deze functie is een bedrijfslicentie vereist. Neem contact op met Sentuny voor upgrade-opties.
+  return_banner:
+    text: Je was bezig met een AI-recept.
+    link: Terug naar je sessie
+    recipe_link: Terug naar je recept
+    fallback_link: Terug
+    recipe_text: Je was bezig met een recept.
+  data_value:
+    some_content_not_shown: Sommige inhoud niet getoond
+database:
+  connection:
+    add_first: Voeg uw eerste verbinding toe
+    add_new: Nieuwe verbinding toevoegen
+    add_success: Verbinding succesvol toegevoegd
+    add_title: Nieuwe verbinding toevoegen
+    by_label: door
+    clear_default: Wis standaard
+    currently_not_shared: ❌ Momenteel niet gedeeld
+    currently_shared: ✅ Momenteel gedeeld met groep
+    database_label: Databasenaam
+    db_create_badge: DB aanmaken
+    default_badge: Standaard
+    default_cleared: Standaardverbinding gewist
+    default_set: Standaardverbinding bijgewerkt
+    delete_button: Verwijderen
+    delete_confirmation: Weet u zeker dat u de verbinding wilt verwijderen
+    delete_error: Verwijderen van verbinding mislukt
+    delete_title: Verbinding verwijderen
+    deleted: Verbinding verwijderd
+    edit_title: Verbinding bewerken
+    form_description: Voer uw databaseverbindingsgegevens in.
+    group_label: Groep
+    host_label: Host
+    load_error: Laden van verbindingen mislukt
+    name_label: Verbindingsnaam
+    name_placeholder: bijv., Productiedatabase
+    no_connections: Er zijn nog geen databaseverbindingen opgeslagen.
+    not_found: Verbinding niet gevonden
+    password_label: Wachtwoord
+    port_label: Poort
+    save_error: Opslaan van verbinding mislukt
+    select_type: Type selecteren
+    set_default: Als standaard instellen
+    shared_badge: Gedeeld
+    shared_description: Maak deze verbinding beschikbaar voor andere gebruikers in uw groep.
+    shared_label: Delen met groep
+    shared_readonly: Gedeeld
+    shared_readonly_message: Deze verbinding is met u gedeeld. U kunt deze bekijken, maar bewerken is beperkt tot de eigenaar.
+    tables_badge: Tabellen
+    test_button: Verbinding testen
+    test_failed: Verbinding mislukt
+    test_incomplete: Vult u alstublieft alle velden in voordat u test
+    test_network_error: Netwerkfout tijdens het testen van de verbinding.
+    test_success: Verbinding gelukt!
+    type_label: Databasetype
+    unknown_user: Onbekend
+    update_success: Verbinding succesvol bijgewerkt
+    username_label: Gebruikersnaam
+    auto_create_views: Automatisch aanmaken van weergave-datasets
+    auto_create_warnings_title: 'Verbinding opgeslagen, maar automatisch aanmaken van dataset had waarschuwingen:'
+    browse_tables: Bladeren door tabellen
+    jet_host_label: Jet-serverhost
+    jet_port_label: Jet-serverpoort
+    datasets_created: '{n} datasets aangemaakt'
+    file_path_label: Bestandspad
+    auto_create_title: Datasets automatisch aanmaken
+    auto_create_tables: Automatisch tabeldatasets aanmaken
+    probe_state:
+      auth_failed: Authenticatie mislukt
+      no_database: Geen database
+      no_permission: Geen toestemming
+      incomplete: Onvolledige configuratie
+      schema_error: Schema onleesbaar
+      unreachable: Onbereikbaar
+      unknown: Niet gecontroleerd
+      reachable: Bereikbaar
+    probe_hours_ago: '{count} uur geleden'
+    probe_hour_ago: 1 uur geleden
+    probe_check_now: Nu controleren
+    probe_title: Laatste controle
+    probe_minutes_ago: '{count} minuten geleden'
+    probe_last_succeeded: Laatst geslaagd
+    probe_minute_ago: 1 minuut geleden
+    probe_auto_hint: Wordt automatisch bijgewerkt wanneer de verbindingslijst wordt geladen.
+    probe_just_now: zojuist
+    probe_check_failed: De verbinding kon zojuist niet worden gecontroleerd.
+    probe_no_success: geen geslaagde controle geregistreerd
+    probe_unsaved_hint: Een verbinding wordt gecontroleerd zodra deze is opgeslagen.
+    probe_never: Nooit
+    probe_checked: Gecontroleerd
+  default_hint: De standaardverbinding wordt gebruikt als terugvaloptie wanneer een analyserecept geen verbinding specificeert.
+  title: Database-instellingen
+datasets:
+  all_datasets: Alle gegevens
+  by_label: door
+  created_label: Aangemaakt
+  define_button: Database verbinden
+  define_first: Een database verbinden
+  delete:
+    confirm: Deze dataset verwijderen?
+    error: Verwijderen van dataset mislukt
+    success: Dataset '{id}' succesvol verwijderd
+    title: Verwijderen
+  description:
+    empty: Gegenereerde beschrijving is leeg. Controleer de configuratie van de AI-provider.
+    error: Genereren van beschrijving mislukt.
+    generated: Beschrijving succesvol gegenereerd.
+    title: Gegenereerde beschrijving
+  detail:
+    created: Aangemaakt
+    descriptions: AI-beschrijvingen
+    generated: Gegenereerd
+    load_error: Dataset laden mislukt
+    model: Model
+    no_description: Geen beschrijving
+    not_found: Dataset niet gevonden
+    not_found_message: De dataset die u zoekt, kan niet worden gevonden.
+    overview: Overzicht
+    rows: Rijen
+    rows_not_computed: Niet berekend
+    storage_live: Liveweergave
+    materialize_failed: 'De opgeslagen tabel kon niet worden gebouwd:'
+    rows_not_computed_hint: De join is nog niet uitgevoerd, dus er is nog geen aantal rijen.
+    storage_table: Opgeslagen tabel
+  list_error: Datasets laden mislukt
+  no_datasets: Geen gegevens beschikbaar.
+  no_uploaded: Nog geen geüploade datasets.
+  preparation:
+    add_operation: Bewerking toevoegen
+    add_rule: Regel toevoegen
+    column_required: Bewerking vereist een kolom
+    columns_required: Bewerking vereist minimaal één kolom
+    delete_confirmation: Weet u zeker dat u de transformatieregel "{name}" wilt verwijderen? Dit zal deze ook verwijderen uit alle recepten die deze gebruiken.
+    delete_error: Verwijderen van transformatieregel mislukt
+    delete_title: Transformatieregel verwijderen
+    edit_rule: Regel bewerken
+    encode:
+      label: Label
+      one_hot: One-Hot
+    fill:
+      constant: Constante
+      drop: Verwijderen
+      mean: Gemiddelde
+      median: Mediaan
+      mode: Modus
+    filter_invalid: Filterbewerking vereist kolom en waarde
+    link:
+      description: Deze dataset opschonen en transformeren
+      title: Voorbereidingsregels
+    name_required: Regelnaam is vereist
+    new_name_required: Hernoembewerking vereist een nieuwe naam
+    new_rule: Nieuwe regel
+    no_rules: Geen transformatieregels gedefinieerd voor deze dataset.
+    operation:
+      convert_type: Type converteren
+      drop_columns: Kolommen verwijderen
+      encode: Coderen
+      fill_missing: Ontbrekende waarden invullen
+      filter: Filteren
+      normalize: Normaliseren
+      rename_column: Kolom hernoemen
+      standardize: Standaardiseren
+    operations: Bewerkingen
+    operations_count: bewerking(en)
+    operator:
+      after: Na (>)
+      before: Voor (<)
+      contains: Bevat
+      ends_with: Eindigt op
+      equal_to: Gelijk aan (=)
+      greater_than: Groter dan (>)
+      greater_than_or_equal: Groter dan of gelijk aan (>=)
+      less_than: Kleiner dan (<)
+      less_than_or_equal: Kleiner dan of gelijk aan (<=)
+      not_contains: Bevat niet
+      not_equal: Niet gelijk aan (!=)
+      on_or_after: Op of na (>=)
+      on_or_before: Op of voor (<=)
+      starts_with: Begint met
+    original_data: Oorspronkelijke gegevens
+    placeholder:
+      boolean: waar / onwaar
+      datetime: JJJJ-MM-DD of tijdstempel...
+      number: Voer een getal in...
+      value: Voer een waarde in...
+    preview: Voorbeeld
+    preview_error: Voorbeeld van regel weergeven mislukt
+    preview_title: Voorbeeld
+    rows_after: Na
+    rows_before: Voor
+    rows_removed: Verwijderd
+    rule_created: Voorbereidingsregel '{name}' succesvol aangemaakt
+    rule_deleted: Voorbereidingsregel succesvol verwijderd
+    rule_description: Beschrijving (optioneel)
+    rule_description_placeholder: Korte beschrijving
+    rule_name: Regelnaam
+    rule_name_placeholder: bijv. Opschonen voor analyse
+    rule_updated: Voorbereidingsregel succesvol bijgewerkt
+    rules_title: Transformatieregels
+    save_error: Transformatieregel opslaan mislukt
+    shared: Delen met groep
+    transformed_data: Getransformeerde gegevens
+    type:
+      boolean: Booleaans
+      datetime: DatumTijd
+      numeric: Numeriek
+      string: Tekst
+    ui:
+      column: kolom
+      columns: kolommen (komma gescheiden)
+      encoding: codering
+      method: methode
+      new_name: nieuwe naam
+      operator: operator
+      target_type: doeltype
+      type: Type
+      value: waarde
+  rules_button: Regels
+  schema:
+    column_name: Kolom
+    column_type: Type
+    columns: Kolommen
+    load_error: 'Kon schema niet laden: {error}'
+    no_sample_data: Geen voorbeeldgegevens beschikbaar
+    null_count: Nullen
+    sample_data: Voorbeeldgegevens (eerste 5 rijen)
+    title: Schema-voorbeeld
+    total_columns: Totaal aantal kolommen
+    total_rows: Totaal aantal rijen
+    unique_count: Uniek
+  share: Delen
+  share_error: Delen bijwerken mislukt
+  shared: Dataset gedeeld
+  shared_badge: Gedeeld
+  source:
+    unknown_file: Onbekend bestand
+  title: Mijn gegevens
+  transform_button: Transformeren
+  type:
+    table: Tabel
+    upload: Geüpload
+    view: Weergave
+    virtual: Virtueel
+    mssql: MS SQL
+    postgresql: PostgreSQL
+    access: MS Access
+    mysql: MySQL
+    notebook: Notebook
+    cleaned_copy: Opgeschoonde kopie
+  unknown_user: Onbekend
+  unshare: Delen ongedaan maken
+  unshared: Dataset niet meer gedeeld
+  upload:
+    card_title: Uploaden en beschrijven
+    connection_not_found: Verbinding niet gevonden. Selecteer een geldige AI-verbinding.
+    description_label: Beschrijving (optioneel)
+    description_placeholder: Korte beschrijving van deze gegevens
+    error: Uploaden van dataset mislukt
+    file_label: Bestand
+    file_selected: Geselecteerd bestand
+    file_too_large: Bestand overschrijdt de maximale uploadgrootte van {max} MB. Uploaden is niet toegestaan.
+    generate_description: Beschrijving genereren
+    history: Uploadgeschiedenis
+    limit_reached: Limiet bereikt
+    limit_reached_message: U heeft het maximaal toegestane aantal datasets bereikt ({count}).
+    name_label: Gegevensnaam
+    name_placeholder: Mijn gegevens
+    no_connections: U moet minstens één AI-verbinding definiëren om beschrijvingen te genereren.
+    no_datasets: Nog geen datasets
+    no_file: Selecteer eerst een bestand.
+    no_name: Voer een datasetnaam in.
+    select_dataset: Upload of selecteer eerst een dataset.
+    shared_description: Maak deze gegevens beschikbaar voor andere gebruikers in uw groep.
+    shared_group_hint: 'Groep: {group} - {description}'
+    shared_label: Delen met groep
+    success: Dataset '{name}' succesvol geüpload.
+    title: Gegevens uploaden
+    upload_button: Uploaden
+    escalation_label: Probeer opnieuw met (seconden)
+    escalation_invalid: Voer een geheel aantal seconden in tussen 1 en {max}.
+    escalation_hint: Dit geldt alleen voor deze poging. Als dit model gewoonlijk langer nodig heeft, pas dan de modelinstellingen van de verbinding aan in plaats van dit elke keer te verhogen.
+    escalation_retry: Probeer opnieuw
+    escalation_failed_at: De beschrijving gaf na {seconds} seconden een time-out.
+  upload_button: Gegevens uploaden
+  upload_count: '{count} upload(s)'
+  upload_first: Upload uw eerste gegevensbestand
+  upload_first_file: Upload uw eerste bestand
+  upload_new: Nieuw bestand uploaden
+  uploaded_title: Geüploade gegevens
+  view_dataset_title: Dataset bekijken
+  view_schema: Schema bekijken
+  transforms:
+    back: Terug naar Mijn Gegevens
+    create_error: Kan transformatie niet aanmaken
+    create_button: Aanmaken
+    no_transforms: Geen transformaties gedefinieerd voor deze dataset.
+    delete_confirm: Deze transformatie verwijderen?
+    load_error: Transformeren laden mislukt
+    creating: Aanmaken…
+    title: Transformaties
+    create_new: Nieuwe transformatie
+    operations_label: '{count} bewerking(en)'
+    created_label: Aangemaakt
+    description_label: Beschrijving (optioneel)
+    for: Transformaties voor {name}
+    delete_error: Verwijderen van transformatie mislukt
+    name_label: Naam
+  browse:
+    load_tables_error: Kan tabellen niet laden
+    column: Kolom
+    load_preview_error: Kan voorbeeld niet laden
+    tables: Tabellen
+    preview_hint: Klik op "Voorbeeld laden" om voorbeeldrijen te zien.
+    browse_tables: Bladeren door tabellen
+    back: Terug
+    nullable: Nullabel
+    type: Type
+    connections: Verbindingen
+    tables_count: '{count} tabellen'
+    preview: Voorbeeld
+    select_table_hint: Selecteer een tabel om de kolommen te bekijken en een gegevensvoorbeeld te zien.
+    load_columns_error: Laden van kolommen mislukt
+    columns_title: Kolommen — {table}
+    load_preview: Voorbeeld laden
+  database_label: DB
+  filter:
+    mysql: MySQL
+    access: MS Access
+    no_match: Geen datasets komen overeen met dit filter.
+    uploads: Uploads
+    label: Filter
+    all: Alles
+    virtual: Virtueel
+    postgresql: PostgreSQL
+    shared: Gedeeld
+    mssql: MS SQL
+    not_shared: Niet gedeeld
+    notebooks: Notebooks
+    cleaned: Opgeschoond
+  created_from: Aangemaakt vanuit {name}
+  source_unavailable: bron niet beschikbaar
+  cleaned_badge: Opgeschoond
+  table_not_built: Tabel niet gebouwd
+define:
+  column_name: Kolom
+  column_type: Type
+  connection_label: Databaseverbinding
+  dataset_name: Datasetnaam
+  dataset_name_placeholder: bijv. Klantgegevens
+  description_label: Beschrijving (optioneel)
+  description_placeholder: Korte beschrijving van deze dataset
+  existing_none: Geen
+  existing_title: Bestaand
+  go_to_db_settings: Ga naar database-instellingen
+  load_connections_error: Verbindingen laden mislukt
+  load_sources_error: Bronnen laden mislukt
+  name_required: Datasetnaam is verplicht
+  no_connections_message: U moet minstens één databaseverbinding definiëren voordat u een database kunt verbinden.
+  no_sources: Geen tabellen of weergaven gevonden in deze database.
+  nullable: Nullable
+  preview_label: Voorbeeldgegevens (eerste 10 rijen)
+  save_button: Dataset opslaan
+  save_error: Dataset aanmaken mislukt
+  save_success: Dataset succesvol aangemaakt
+  schema_label: Schema
+  select_connection: Selecteer een verbinding
+  select_source: Selecteer een bron
+  select_source_first: Selecteer eerst een tabel of weergave.
+  shared_description: Maak deze dataset beschikbaar voor andere gebruikers in uw groep.
+  shared_label: Delen met groep
+  source_label: Bron
+  source_type_label: Brontype
+  step1_description: Kies een databaseverbinding om een dataset te verbinden.
+  step1_title: Databaseverbinding selecteren
+  step2_description: Kies of u een tabel of weergave wilt gebruiken en selecteer vervolgens de bron.
+  step2_title: Bron selecteren
+  step3_description: Controleer de kolommen en bekijk voorbeeldgegevens van de geselecteerde bron.
+  step3_title: Bron verifiëren
+  step4_description: Geef uw dataset een naam en beschrijving en sla deze vervolgens op.
+  step4_title: Naam en opslaan
+  step_connection: Verbinding
+  step_save: Opslaan
+  step_source: Bron
+  step_verify: Verifiëren
+  table: Tabel
+  title: Database verbinden
+  verify_button: Bron verifiëren
+  verify_error: Verifiëren van tabel/weergave mislukt
+  verify_success: Tabel/weergave succesvol geverifieerd
+  view: Weergave
+demo:
+  badge: DEMO
+  banner:
+    message: Dit is een demonstratiesysteem. Gegevens kunnen periodiek worden gereset.
+    title: ⚠️ DEMOMODUS
+forgot_password:
+  back_to_login: Terug naar inloggen
+  check_spam: Controleer uw spamfolder als u de e-mail niet binnen een paar minuten ziet.
+  description: Voer uw e-mailadres in en wij sturen u een link om uw wachtwoord te resetten.
+  error: Verzenden van reset-e-mail mislukt.
+  sent: Als er een account met dit e-mailadres bestaat, ontvangt u een link om uw wachtwoord te resetten.
+  sent_description: Als er een account met dit e-mailadres bestaat, ontvangt u een link om uw wachtwoord te resetten.
+  sent_title: E-mail verzonden
+  submit: Reset-link versturen
+  title: Wachtwoord vergeten
+global:
+  demo_mode:
+    description: Wanneer ingeschakeld, draait het systeem in demomodus.
+    label: Demomodus
+  email_sender:
+    hint: Het e-mailadres dat als afzender van verificatiemails verschijnt.
+    label: E-mailafzenderadres
+  email_timeout:
+    hint: Hoeveel uur de e-mailverificatielink geldig blijft.
+    label: E-mailverificatie time-out (uren)
+  grace_period:
+    hint: Uren voordat zacht verwijderde accounts permanent worden gewist.
+    label: Verwijderingsvertraging (uren)
+  invalid_grace_period: Voer een geldig positief getal in voor verwijderingsvertraging (uren)
+  invalid_number: Voer een geldig positief getal in voor maximale registraties
+  invalid_timeout: Voer een geldig positief getal in voor de verificatie time-out (uren)
+  load_error: Laden van globale instellingen mislukt
+  max_registrations:
+    custom: Aangepast (hieronder invoeren)
+    custom_placeholder: Voer een positief getal in
+    hint: Stel een limiet in voor het aantal gebruikers dat zich kan registreren.
+    label: Maximale gebruikersregistraties
+    placeholder: Selecteer limiet
+    unlimited: Onbeperkt
+    users: gebruikers
+  password_policy:
+    custom: Aangepast
+    high: Hoog (min 10, hoofdletter, kleine letter, cijfer, speciaal)
+    hint: Kies de wachtwoordcomplexiteitsvereisten voor gebruikersregistratie en wachtwoordwijzigingen.
+    label: Wachtwoordbeleid
+    low: Laag (min 6 tekens)
+    medium: Gemiddeld (min 8, hoofdletter, kleine letter, cijfer)
+    min_length: Minimale lengte
+    min_strength: Minimale sterkte (zxcvbn-score 0-4)
+    require_digit: Vereist cijfer
+    require_lowercase: Vereist kleine letter
+    require_special: Vereist speciaal teken
+    require_uppercase: Vereist hoofdletter
+    select: Selecteer beleid
+  public_url:
+    hint: De basis-URL die wordt gebruikt in e-mailverificatielinks (bijv. https://workbench.example.com).
+    label: Openbare URL
+  save_button: Globale instellingen opslaan
+  save_success: Globale instellingen opgeslagen
+  system:
+    description: Beheer globale instellingen die voor alle gebruikers gelden (alleen admin).
+    title: Systeemconfiguratie
+  title: Globale instellingen
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Maximum aantal datasets per gebruiker (0 = onbeperkt). Van toepassing op nieuwe gebruikers.
+    count_unlimited: Onbeperkt
+    default_count_label: Standaard maximum aantal uploads per gebruiker
+    default_size_label: Standaard maximale uploadgrootte per gebruiker (MB)
+    select_count: Selecteer limiet
+    select_size: Selecteer limiet
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: Maximale totale opslag per gebruiker (0 = onbeperkt). Van toepassing op nieuwe gebruikers.
+    size_unlimited: Onbeperkt
+  welcome:
+    hint: Dit bericht verschijnt op de inlogpagina. Laat leeg om het te verbergen.
+    label: Welkomstbericht
+    placeholder: Voer een welkomstbericht in om op de inlogpagina weer te geven.
+home:
+  welcome_placeholder: Welkom bij de Statisticians Workbench
+login:
+  account_deleted: Dit account is verwijderd.
+  description: Log in op uw account
+  docs_more_info: heeft meer informatie
+  email: E-mail
+  email_not_verified: E-mail niet geverifieerd. Controleer uw inbox en SPAM-map.
+  email_verified: E-mail succesvol geverifieerd! U kunt nu inloggen.
+  forgot_password: Wachtwoord vergeten?
+  invalid_credentials: Ongeldig e-mailadres of wachtwoord.
+  invalid_token: Ongeldige verificatielink. Vraag een nieuwe aan.
+  missing_token: Geen verificatietoken opgegeven.
+  no_account: Heeft u nog geen account?
+  password: Wachtwoord
+  register_link: Registreren
+  resend_link: Verificatie-e-mail opnieuw verzenden?
+  signing_in: Inloggen...
+  submit: Inloggen
+  success: Succesvol ingelogd
+  title: Inloggen
+  token_expired: De verificatielink is verlopen. Vraag een nieuwe aan.
+nav:
+  about: Over
+  admin: Admin
+  admin_groups: Groepsbeschrijvingen
+  admin_panel: Gebruikersbeheer
+  admin_providers: AI-providers
+  admin_visualization_types: Visualisatietypen
+  ai_analysis_rules: Analyseregels
+  ai_chat: AI-tools
+  ai_database_design: Databaseontwerp
+  ai_dataset_cleaning: Datasetreiniging
+  ai_general: Algemeen
+  ai_virtual_datasets: Virtuele datasets
+  home: Home
+  logout: Uitloggen
+  user: Gebruiker
+  admin_setup_limits: Limieten
+  admin_setup_internal: Intern
+  admin_licence: Licentie
+  admin_setup: Configuratie
+  admin_setup_options: Opties
+  ai_testing: AI-testen
+  admin_setup_tuning: Afstemming
+notebooks:
+  and_more: +{count} meer
+  cant_create_tables: Deze verbinding kan geen tabellen maken — importeren geweigerd
+  cells_label: 'Cellen:'
+  connection_create_db_badge: DB aanmaken
+  connection_form_label: Verbinding
+  connection_tables_badge: Tabellen
+  connection_unavailable: Databaseverbinding niet gevonden of niet toegankelijk
+  create_dataset: Dataset automatisch aanmaken
+  create_new_database: Nieuwe database aanmaken
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrames:'
+  dataset_created: Dataset aangemaakt
+  delete_confirm: Import "{name}" en alle bijbehorende tabellen verwijderen?
+  delete_failed: Verwijderen van import mislukt
+  delete_title: Import verwijderen
+  detected_dataframes: 'Gedetecteerde DataFrames:'
+  doc_preview: 'Documentatievoorbeeld:'
+  example_banner: Je bekijkt dit als voorbeeldgebruiker. Registreer om notebooks te importeren en te beheren.
+  example_blocked: Voorbeeldgebruikers kunnen geen notebooks importeren.
+  example_register: Registreren
+  fetch_error: Ophalen van imports mislukt
+  import_button: Notebook importeren
+  import_complete: Importeren voltooid
+  import_deleted: Import verwijderd
+  import_failed: 'Notebook-import mislukt: {error}'
+  import_success: '{count} tabel(len) succesvol geïmporteerd'
+  import_title: Jupyter Notebook importeren
+  imported_at_label: 'Geïmporteerd op:'
+  importing: Bezig met importeren...
+  kb_unit: KB
+  kernel_label: 'Kernel:'
+  list_title: Notebook-imports
+  no_dataframes: Geen DataFrames gevonden in dit notebook
+  no_imports: Nog geen notebook-imports.
+  notebook_label: 'Notebook:'
+  parse_error: Parsen van notebook mislukt
+  parsing: Bezig met parsen...
+  preview_button: Voorvertoning
+  rows_cols_format: '{rows} rijen × {cols} kolommen'
+  run_preview_first: Voer de voorvertoning uit om te zien wat er geïmporteerd gaat worden
+  sanitised_notice: Codecellen zijn om veiligheidsredenen verwijderd. Alleen gegevensuitvoer en markdown blijven behouden.
+  select_connection: Selecteer een databaseverbinding
+  select_connection_placeholder: Selecteer verbinding...
+  select_file_first: Selecteer een .ipynb-bestand
+  share_error: Alleen de eigenaar kan de deelinstellingen wijzigen.
+  share_label: Delen met groep
+  shared: Notebook gedeeld met groep
+  shared_badge: Gedeeld
+  size_label: 'Grootte:'
+  step1_title: 'Stap 1: Bestand selecteren'
+  step2_title: 'Stap 2: Voorvertoning'
+  storage_form_label: Opslag
+  storage_label: 'Opslag:'
+  table_count: '{count} tabel(len)'
+  tables_created_label: 'Aangemaakte tabellen:'
+  title_label: 'Titel:'
+  unshared: Notebook niet meer gedeeld
+  table_name: 'Tabel: {name}'
+password:
+  strength:
+    fair: Redelijk
+    good: Goed
+    strong: Sterk
+    weak: Zwak
+preparation:
+  add_operation: Bewerking toevoegen
+  after: Na
+  back_to_list: Terug naar regels
+  before: Voor
+  cancel: Annuleren
+  col:
+    categorical: categorisch
+    datetime: datum/tijd
+    nulls: '{percent}% null'
+    numeric: numeriek
+  cols: kolommen
+  column_label: Kolom
+  constant_value_label: Constante waarde
+  create_first: Maak je eerste voorbereidingsregel om deze dataset op te schonen en te transformeren voor de analyse.
+  delete: Verwijderen
+  delete_confirm: Regel "{name}" verwijderen? Dit kan niet ongedaan worden gemaakt.
+  description_label: Beschrijving (optioneel)
+  duplicate: Dupliceren
+  duplicate_suffix: (kopie)
+  edit: Bewerken
+  edit_title: 'Regel bewerken: {name}'
+  encoding:
+    label: Label
+    onehot: One-Hot
+  encoding_param_label: Codering
+  live_preview: Live-voorbeeld
+  load_error: Laden van gegevens mislukt
+  method:
+    minmax: Min-Max
+    zscore: Z-score
+  method_label: Methode
+  name_label: Naam
+  name_required: Regelnaam is vereist
+  new_name_label: Nieuwe naam
+  new_rule: Nieuwe regel
+  new_title: Nieuwe voorbereidingsregel
+  no_rules: Nog geen voorbereidingsregels
+  nulls: nulls
+  op:
+    convert_type: Type converteren
+    drop_column: Kolom verwijderen
+    drop_duplicates: Duplicaten verwijderen
+    encode_category: Categorie coderen
+    fill_missing: Ontbrekende invullen
+    filter: Filter
+    rename_column: Kolom hernoemen
+    standardize: Standaardiseren
+    normalize: Normaliseren
+  operations_count: '{count} bewerking{itemize}'
+  operations_label: Bewerkingen
+  operator_label: Operator
+  ops_required: Ten minste één bewerking is vereist
+  preview: Voorbeeld
+  preview_error: Voorbeeld weergeven mislukt
+  preview_loading: Bezig met voorbeeldweergave...
+  preview_no_ops: Voeg bewerkingen toe om voorbeeld te zien
+  row_impact: '{before} → {after} rijen'
+  rows: rijen
+  rule_deleted: Regel verwijderd
+  rule_duplicated: Regel gedupliceerd
+  rule_saved: Regel opgeslagen
+  rules_for: Regels voor {dataset}
+  sample_data: Voorbeeldgegevens
+  save: Regel opslaan
+  save_error: Opslaan van regel mislukt
+  saving: Bezig met opslaan...
+  schema_error: Laden van dataset-schema mislukt
+  select_column: -- Selecteer kolom --
+  select_type: -- Selecteer bewerking --
+  strategy:
+    constant: Constante
+    drop_row: Rij verwijderen
+    mean: Gemiddelde
+    median: Mediaan
+    mode: Modus
+  strategy_label: Strategie
+  target_type_label: Doeltype
+  title: Voorbereidingsregels — {dataset}
+  type_label: Bewerking
+  value_label: Waarde
+profile:
+  change_password:
+    description: Werk uw wachtwoord bij.
+    title: Wachtwoord wijzigen
+  change_password_button: Wachtwoord wijzigen
+  confirm_password: Nieuw wachtwoord bevestigen
+  current_password: Huidig wachtwoord
+  current_password_required: Huidig wachtwoord is vereist
+  dark_mode_description: Wissel tussen licht en donker thema.
+  dark_mode_label: Donkere modus
+  email_label: E-mail
+  email_notifications_description: Ontvang e-mailupdates over uw account.
+  email_notifications_label: E-mailmeldingen
+  email_unchangeable: E-mail kan niet worden gewijzigd
+  example_user_language_hint: Registreer voor volledige toegang om uw taalvoorkeur te wijzigen.
+  example_user_name_hint: Registreer voor volledige toegang om uw naam te wijzigen.
+  example_user_notifications_hint: Registreer voor volledige toegang om meldingsinstellingen te wijzigen.
+  example_user_save_hint: Registreer voor volledige toegang om wijzigingen op te slaan.
+  example_user_theme_hint: Registreer voor volledige toegang om themavoorkeuren te wijzigen.
+  group_description: Beschrijving
+  group_id: Groeps-ID
+  group_info_title: Groepsinformatie
+  group_load_error: Laden van groepsinformatie mislukt
+  group_readonly_hint: Uw groep is toegewezen door een beheerder en kan hier niet worden gewijzigd.
+  language_description: Kies uw voorkeurstaal voor de interface.
+  language_label: Taal
+  language_select_placeholder: Selecteer taal
+  languages_load_error: Laden van talen mislukt
+  load_error: Laden van instellingen mislukt
+  name_label: Naam
+  name_placeholder: Uw naam
+  new_password: Nieuw wachtwoord
+  password_change_failed: Wachtwoord wijzigen mislukt
+  password_changed: Wachtwoord succesvol gewijzigd
+  password_disabled: Wachtwoordwijzigingen zijn uitgeschakeld voor voorbeeldgebruikers
+  password_disabled_message: U bent ingelogd als een voorbeeldgebruiker. Wachtwoordfuncties zijn uitgeschakeld.
+  password_mismatch: Nieuwe wachtwoorden komen niet overeen
+  personal:
+    description: Werk uw persoonlijke gegevens en app-voorkeuren bij.
+    title: Profiel en voorkeuren
+  save_button: Wijzigingen opslaan
+  save_error: Opslaan van profiel mislukt
+  save_success: Profiel opgeslagen
+  title: Profielinstellingen
+  update_error: Bijwerken van profiel mislukt
+  slow_threshold:
+    invalid: De limiet moet een geheel aantal seconden zijn, minimaal 1.
+    effective: 'Momenteel van kracht:'
+    save: Limiet opslaan
+    placeholder: Gebruik de standaard van de site.
+    seconds: seconden
+    description: Een modeltest die langer duurt dan dit, wordt als te traag gerapporteerd. Laat leeg om de standaard van de site te gebruiken.
+    label: Mijn limiet
+    saved: Limiet voor trage modellen opgeslagen
+    title: Drempel voor trage modellen
+recipes:
+  add_rule: Regel toevoegen
+  back_to_recipe: Terug naar recept
+  by_label: door
+  cancel_button: Afbreken
+  cancel_error: Annulering van de uitvoering mislukt
+  cancel_success: Uitvoering geannuleerd
+  chart:
+    category: Categorie
+    count: Aantal
+    value: Waarde
+    x_axis: X
+    y_axis: Y
+  clone: Klonen
+  clone_button: Klonen
+  clone_error: Klonen van het recept mislukt
+  clone_success: Recept succesvol gekloond
+  clone_suffix: (Kopie)
+  column_type:
+    category: Categorie
+    datetime: Datum/Tijd
+    number: Getal
+    text: Tekst
+  columns_after: Kolommen
+  columns_before: Kolommen
+  columns_label: Kolommen
+  columns_label_short: Kolommen
+  columns_required: Selecteer ten minste één kolom
+  create_error: Maken van recept mislukt
+  create_success: Recept '{name}' succesvol aangemaakt
+  dataset_label: Dataset
+  dataset_required: Selecteer een dataset
+  delete: Verwijderen
+  delete_button: Verwijderen
+  delete_confirmation: Weet u zeker dat u het recept "{name}" wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.
+  delete_title: Recept verwijderen
+  description_label: Beschrijving (optioneel)
+  description_placeholder: Beschrijving van dit recept
+  edit: Bewerken
+  execute: Uitvoeren
+  execute_button: Uitvoeren
+  execute_error: 'Recept uitvoeren mislukt: {error}'
+  execute_success: Recept succesvol uitgevoerd
+  execution_error: Fout
+  execution_load_error: 'Uitvoering laden mislukt: {error}'
+  execution_not_found: Uitvoering '{id}' niet gevonden
+  execution_progress: Voortgang
+  execution_stage_results: Fase resultaten
+  execution_started: Gestart
+  execution_status: Status
+  execution_title: Uitvoeringsresultaten
+  executions_title: Recente uitvoeringen
+  export_results: Resultaten exporteren
+  go_define: Ga naar Definiëren
+  go_upload: Ga naar Uploaden
+  group_by_hint: Groepeer op een categorische kolom om statistieken over groepen te vergelijken
+  group_by_label: Groepeer op (optioneel)
+  list_load_error: Laden van recepten mislukt
+  load_datasets_error: 'Datasets laden mislukt: {error}'
+  load_error: 'Recepten laden mislukt: {error}'
+  load_rules_error: Laden van voorbereidingsregels mislukt
+  loading_schema: Kolommen laden...
+  move_down: Omlaag verplaatsen
+  move_up: Omhoog verplaatsen
+  my_recipes: Mijn Recepten
+  name_label: Receptnaam
+  name_placeholder: bijv. Verkoopanalyse
+  name_required: Receptnaam is verplicht
+  new_button: Nieuw Recept
+  new_title: Nieuw Recept
+  no_datasets: Geen datasets gevonden. Upload of definieer eerst een dataset.
+  no_datasets_available: Geen datasets beschikbaar. Upload eerst een dataset.
+  no_datasets_found: Geen datasets beschikbaar. Upload eerst een dataset.
+  no_group: Geen
+  no_group_options: Geen categorische kolommen beschikbaar voor groepering
+  no_preparation_rules: Geen voorbereidingsregels beschikbaar voor deze dataset.
+  no_recipes: U heeft nog geen recepten aangemaakt.
+  no_schema: Geen schema beschikbaar voor deze dataset
+  no_stages: Recept moet ten minste één fase hebben.
+  no_visualisation: Geen
+  no_visualisation_data: Geen visualisatiegegevens beschikbaar
+  none: Geen
+  preparation_rules: Voorbereidingsregels (optioneel)
+  preparation_rules_applied: Toegepaste voorbereidingsregels
+  preparation_rules_applied_description: Regels werden toegepast in de onderstaande volgorde vóór de analysefases.
+  preparation_rules_applied_title: Toegepaste voorbereidingsregels
+  preparation_rules_description: Selecteer regels om in volgorde toe te passen. Regels worden opeenvolgend toegepast.
+  recipe_label: Recept
+  remove_rule: Regel verwijderen
+  rows_after: Rijen na
+  rows_before: Rijen
+  rows_label: Rijen
+  rules_applied_label: '{count} regels toegepast:'
+  save_button: Recept opslaan
+  schema_error: 'Kolomschema laden mislukt: {error}'
+  schema_loaded: 'Schema geladen: {count} kolommen gevonden.'
+  select_dataset: Selecteer een dataset
+  select_group: Selecteer een kolom om op te groeperen
+  select_rule: Selecteer een regel om toe te voegen
+  select_rule_placeholder: Kies een regel
+  select_technique: Selecteer een techniek
+  select_visualisation: Selecteer een visualisatie
+  selected: geselecteerd
+  shared: gedeeld
+  shared_badge: Gedeeld
+  shared_description: Maak dit recept beschikbaar voor andere gebruikers in je groep.
+  shared_group_hint: 'Groep: {group} - {description}'
+  shared_label: Deel met groep
+  shared_with_group: Gedeeld met je groep
+  stage_data_selection: Dataselectie
+  stage_number: Stap {number}
+  stage_preparation: Datavoorbereiding
+  stage_statistics: Statistieken
+  stage_visualisation: Visualisatie
+  stages_title: Stappen
+  status:
+    cancelled: Geannuleerd
+    completed: Voltooid
+    failed: Mislukt
+    pending: In afwachting
+    running: Bezig
+  step1_description: Geef je recept een naam en beschrijving.
+  step1_title: Geef je recept een naam
+  step2_description: Kies een dataset en selecteer de kolommen om te analyseren.
+  step2_title: Selecteer data
+  step3_description: Selecteer de statistische techniek om toe te passen.
+  step3_title: Kies analyse
+  step4_description: Voeg een visualisatie toe aan je recept.
+  step4_title: Visualisatie (Optioneel)
+  step_analysis: Analyse
+  step_complete: Stap {step} voltooid
+  step_data: Data
+  step_name: Naam
+  step_visualise: Visualiseren
+  technique_anova_one_way: Enkelvoudige ANOVA
+  technique_anova_two_way: Tweeweg-ANOVA
+  technique_chi_square: Chi-kwadraattoets
+  technique_correlation: Correlatiematrix
+  technique_descriptive: Beschrijvende statistieken
+  technique_hint: Beschrijvende statistieken tonen samenvattende maten zoals gemiddelde, mediaan en standaarddeviatie.
+  technique_label: Techniek
+  technique_linear_regression: Lineaire regressie
+  technique_t_test_independent: Onafhankelijke t-toets
+  technique_t_test_paired: Gepaarde t-toets
+  title: Statistische recepten
+  total_rules_applied: Totaal toegepaste regels
+  unknown_user: Onbekend
+  update_error: 'Recept bijwerken mislukt: {error}'
+  update_success: Recept '{id}' succesvol bijgewerkt
+  updated_label: Bijgewerkt
+  visualisation:
+    columns_label: Kolommen
+    data_points: Datapunten
+    distribution: Verdeling
+    trend: Trend
+    type_label: Type
+  visualisation_bar: Staafdiagram
+  visualisation_hint: De grafiek wordt gegenereerd met de geselecteerde kolommen.
+  visualisation_label: Visualisatietype
+  visualisation_line: Lijndiagram
+  visualisation_pie: Cirkeldiagram
+  visualisation_raw_data: 'Visualisatiedata:'
+  visualisation_scatter: Spreidingsdiagram
+  require:
+    factorColumn: Selecteer factorkolom voor {algo}
+    second_response: Selecteer tweede responskolom
+    xColumn: Selecteer X-kolom voor {out}
+    categoryColumn: Selecteer categoriekolom voor {out}
+    dataset: Selecteer een dataset
+    algorithm: Kies een analyse
+    yColumn: Selecteer Y-kolom voor {out}
+    first_response: Selecteer eerste responskolom
+    independentColumns: Selecteer onafhankelijke kolommen
+    responseColumn: Selecteer responskolom voor {algo}
+    dependentColumn: Selecteer afhankelijke kolom
+  editor:
+    component_output: Uitvoer
+    save_success: Recept opgeslagen
+    new_recipe_name: Nieuw recept
+    create_mode: Nieuw recept aanmaken — editor komt in Fase 3.
+    save_error: Recept opslaan mislukt
+    save: Recept opslaan
+    run: Uitvoeren
+    name_placeholder: Receptnaam
+    component_algorithm: Algoritme
+    component_dataset: Dataset/Transformatie
+    name_required: Een receptnaam is vereist.
+    loading: Recept laden...
+    placeholder: Dit is de handmatige Statistische Recepteditor — Recepten vormen het hart van de Workbench. De handmatige gebruikersinterface is sneller dan de AI-interface, maar als je echt niet zeker
+      weet wat er moet gebeuren, heb je waarschijnlijk de AI-Recepteditor nodig. Het is ook een statistiekleraar... maar je hebt een werkende AI-verbinding nodig die is ingesteld in je Instellingen als
+      je het wilt gebruiken. Selecteer een recept of maak een nieuw recept.
+    name_hint: Een naam is vereist voordat je het recept kunt opslaan.
+  execution:
+    results_label: 'Resultaten:'
+    running: Recept uitvoeren…
+    rules_count: '{count} voorbereidingsregel(s) toegepast.'
+    failed_start: Starten van uitvoering mislukt
+    errors_label: 'Fouten:'
+    request_failed: Uitvoering mislukt
+    showing_rows: '{count} van {total} rijen worden weergegeven'
+  dataset:
+    load_error: Kan datasets niet laden
+    no_datasets: Geen datasets beschikbaar
+    rows_label: rijen
+    placeholder: Selecteer een dataset
+    loading: Datasets laden...
+    columns_label: Kolommen
+  panel:
+    new_button: Nieuw recept
+    incomplete: Onvolledig
+    complete: Gereed
+    my_recipes: Mijn recepten
+    updated: Bijgewerkt
+    shared_recipes: Gedeeld
+    no_recipes: Nog geen recepten
+    no_results: Geen recepten komen overeen met je zoekopdracht
+    search: Recepten zoeken...
+  transforms:
+    remove: Verwijderen
+    label: Transformaties
+    manage_button: Transformaties beheren
+    no_transforms: Geen transformaties toegepast
+    add: Transformatie toevoegen
+  share:
+    unshare: Delen opheffen
+    shared_badge: Gedeeld
+    read_only: Gedeeld door {owner} — alleen-lezen
+    group_info: Groep {group} — {desc}
+    button: Delen
+  algorithm:
+    independent_columns: Onafhankelijke variabelen
+    response_column: Respons (numeriek)
+    group_by: Groeperen op
+    dependent_column: Afhankelijke variabele
+    factor_column: Factor (categorisch)
+    placeholder: Selecteer analysetype
+  output:
+    x_column: X-as kolom
+    placeholder: Selecteer uitvoertype
+    category_column: Categorie kolom
+    y_column: Y-as kolom
+  needs_other_columns: (heeft andere kolommen nodig)
+  visualisation_table: Tabel
+  visualisation_hbar: Horizontaal staafdiagram
+  visualisation_area: Vlakdiagram
+  visualisation_donut: Donutdiagram
+  ui:
+    delete_error: Recept verwijderen mislukt
+    delete_success: Recept verwijderd
+  visualisation_histogram: Histogram
+register:
+  confirm_password: Bevestig wachtwoord
+  creating: Account aanmaken...
+  description: Een nieuw account aanmaken
+  email: E-mail
+  failed: Registratie mislukt
+  have_account: Heb je al een account?
+  language_description: Kies de gewenste taal voor de interface.
+  login_link: Inloggen
+  name: Naam
+  password: Wachtwoord
+  password_mismatch: Wachtwoorden komen niet overeen
+  submit: Registreren
+  success_with_verification: Uw account is aangemaakt. Controleer uw e-mail voor de verificatielink om uw account te activeren.
+  title: Registreren
+  email_failed_use_resend: Registratie succesvol, maar de verificatie-e-mail kon niet worden verzonden. Verstuur deze opnieuw vanaf de inlogpagina.
+  success_auto_verified: Uw account is aangemaakt en klaar voor gebruik. U kunt nu inloggen.
+  success_pending_approval: Uw account is aangemaakt en wacht op goedkeuring van een beheerder. U kunt inloggen zodra het is goedgekeurd.
+  registration_disabled: Zelfregistratie is uitgeschakeld. Neem contact op met een beheerder.
+resend_verification:
+  back_to_login: Terug naar inloggen
+  check_spam: Controleer je spamfolder als je de e-mail niet binnen enkele minuten ontvangt.
+  description: Voer je e-mailadres in om een nieuwe verificatielink te ontvangen.
+  error: Versturen van verificatie-e-mail mislukt.
+  send_button: Verificatie-e-mail verzenden
+  sent: Verificatie-e-mail verzonden. Controleer je inbox (en spamfolder).
+  sent_description: Als er een account met dit e-mailadres bestaat, ontvang je een verificatielink.
+  sent_title: E-mail verzonden
+  title: Verificatie-e-mail opnieuw verzenden
+reset_password:
+  confirm_password: Bevestig nieuw wachtwoord
+  description: Voer hieronder je nieuwe wachtwoord in.
+  failed: Wachtwoord resetten mislukt
+  login_button: Ga naar inloggen
+  missing_token: Geen resettoken opgegeven
+  new_password: Nieuw wachtwoord
+  password_mismatch: Wachtwoorden komen niet overeen
+  submit: Wachtwoord opnieuw instellen
+  success: Wachtwoord succesvol opnieuw ingesteld
+  success_description: Je wachtwoord is opnieuw ingesteld. Je wordt doorgestuurd naar de login...
+  success_title: Wachtwoord opnieuw instellen
+  title: Wachtwoord opnieuw instellen
+settings:
+  ai:
+    title: AI-verbindingen
+  database:
+    title: Databaseverbindingen
+  profile:
+    title: Voorkeuren
+  title: Instellingen
+tools:
+  all_datasets: Alle datasets
+  connect_database: Database verbinden
+  description: Extra hulpprogramma's en analysetools verschijnen hier.
+  import_notebook: Notebook importeren
+  manage_data: Gegevens verzamelen
+  my_data: Mijn gegevens
+  notebooks: Notebooks
+  placeholder: De tools-pagina komt binnenkort.
+  title: Andere tools
+  upload_csv_excel: CSV / Excel uploaden
+  upload_data: Gegevens uploaden
+  uploads_list: Uploads (csv, Excel)
+  visualize: Visualisatie Sandbox
+validation:
+  api_key_required: API-sleutel is vereist voor deze provider
+  database_required: Databasenaam is vereist
+  host_required: Host is vereist
+  name_required: Verbindingsnaam is vereist
+  password:
+    min_length: Wachtwoord moet minimaal {min} tekens lang zijn.
+    require_digit: Wachtwoord moet minimaal één cijfer bevatten.
+    require_lowercase: Wachtwoord moet minimaal één kleine letter bevatten.
+    require_special: Wachtwoord moet minimaal één speciaal teken bevatten.
+    require_uppercase: Wachtwoord moet minimaal één hoofdletter bevatten.
+    too_weak: Wachtwoord is te zwak. Kies een sterker wachtwoord.
+  password_required: Wachtwoord is vereist
+  port_invalid: Poort moet tussen 1 en 65535 liggen.
+  provider_required: Selecteer een provider
+  username_required: Gebruikersnaam is vereist
+  type_required: Selecteer een databasetype
+verify_email:
+  error_description: Er is iets misgegaan.
+  error_title: Verificatie mislukt
+  expired_description: De verificatielink is verlopen.
+  expired_message: Je kunt hieronder een nieuwe verificatie-e-mail aanvragen.
+  expired_title: Link verlopen
+  invalid_token: Ongeldige verificatielink.
+  login_button: Naar login gaan
+  missing_description: Er is geen verificatietoken opgegeven.
+  missing_title: Geen verificatietoken
+  network_error: Netwerkfout. Probeer het opnieuw.
+  resend_button: Verificatie-e-mail opnieuw verzenden
+  success_description: Je e-mailadres is succesvol geverifieerd. Je wordt doorgestuurd naar de login...
+  success_title: E-mail geverifieerd
+  unknown_error: Er is iets misgegaan.
+virtual:
+  clone: Klonen
+  deleted: Dataset verwijderd
+  draft_badge: Concept
+  edit: Bewerken
+  error: Er is een fout opgetreden
+  existing_none: Geen
+  existing_title: Bestaande datasets
+  loading: Laden...
+  more: meer
+  new_chat: Nieuwe virtuele dataset
+  placeholder: Beschrijf wat u wilt doen...
+  ready_badge: Gereed
+  recent_chats: Recente chats
+  send: Verzenden
+  stage: Fase
+  title: Virtuele datasets
+  verbose: Uitgebreid
+  welcome: Welkom bij de Virtuele Datasets-assistent. Als dit nieuw voor u is, wilt u misschien weten hoe u kunt beginnen. Vraag me om uit te leggen hoe statistici datasets gebruiken als invoer voor analyserecepten,
+    en vervolgens de uitvoer gebruiken om rapporten en visualisaties te maken. Of vraag me om uw daadwerkelijke datasets te doorbladeren, zodat we gegevens ervan kunnen selecteren om te gebruiken. Zeg gewoon
+    "hallo" als u het niet zeker weet.
+  preview_joins: Joins
+  preview_name: Naam
+  preview_columns: Uitvoerkolommen
+  preview_title: Datasetvoorbeeld
+  preview_sources: Bronnen
+  manual:
+    no_match: Niets hier voldoet aan het filter.
+    open_none: Er is nog geen virtuele dataset om te openen.
+    new_dataset: Nieuwe dataset starten
+    name_label: Datasetnaam
+    validate_errors: 'De definitie bevat problemen:'
+    need_join: Er zijn twee bronnen geselecteerd, maar niets koppelt ze.
+    joins_title: Hoe de bronnen worden gekoppeld
+    need_name: Geef de dataset een naam voordat je opslaat.
+    alias_taken: Die alias is al in gebruik door een andere bron.
+    unattached_sources: 'Niet gekoppeld aan de rest: {sources}. Voeg een join toe die ze verbindt.'
+    bridge_choose_columns: Geen overeenkomende kolommen gevonden — voeg de join toe en kies ze.
+    preview_error: De join kon niet worden uitgevoerd.
+    need_columns: Vink minstens één kolom aan om op te nemen.
+    bridge_no_columns: Kolommen zijn nog niet gelezen — vouw de bron uit, of voeg de join toe en kies ze.
+    save_error: De virtuele dataset kon niet worden opgeslagen.
+    preview_empty: De join gaf geen rijen terug.
+    bridge: Brug
+    select_all: Alles selecteren
+    validate: De definitie valideren
+    move_down: Deze kolom één plaats omlaag verplaatsen
+    remove: Deze kolom uit de uitvoer verwijderen
+    loaded_note: Bestaande definitie geopend — opslaan werkt deze bij.
+    no_sources: Er zijn geen verbindingen of datasets beschikbaar om te gebruiken.
+    tables_error: De tabellen konden niet worden gelezen.
+    description_label: Datasetbeschrijving
+    move_up: Deze kolom één plaats omhoog verplaatsen
+    column_placeholder: Kies een kolom
+    columns_error: De kolommen konden niet worden gelezen.
+    select_none: Niets selecteren
+    sources_title: Waar de gegevens vandaan komen
+    update_dataset: Deze dataset bijwerken
+    preview_rows: '{count} rij(en) geretourneerd'
+    sources_hint: Vouw een verbinding of een dataset uit en vink de kolommen aan die je wilt opnemen.
+    output_title: Wat de dataset beschikbaar stelt
+    alias_label: Alias
+    complete_join: Vul de onvoltooide join in
+    aggregation_note: Een aggregatie die afkomstig is uit een oude definitie blijft ongewijzigd behouden, maar de join past deze niet toe.
+    remove_join: Deze join verwijderen
+    materialized_label: Resultaat materialiseren
+    output_hint: De kolommen die deze dataset beschikbaar zal stellen, in volgorde.
+    add_join: Een join toevoegen
+    save_success: Virtuele dataset opgeslagen.
+    incomplete_join: Voltooi of verwijder de join waarvoor nog geen kolommen zijn gekozen.
+    suggested: Voorgesteld
+    title: Editor voor virtuele datasets
+    validate_ok: De definitie is structureel geldig.
+    test_join: De join testen
+    loading_columns: Kolommen lezen…
+    test_pulls_every_source: Het testen van de join leest elke bron volledig en kan daarom traag zijn.
+    materialized_hint: Schrijft een tabel in plaats van een live join. Laat dit uitgeschakeld tijdens het prototypen.
+    open_label: Bestaande dataset openen
+    intro: Stel een virtuele dataset samen uit de kolommen die je kiest, of open een bestaande om deze te wijzigen.
+    joins_hint: Twee of meer bronnen hebben een join ertussen nodig. Eén bron heeft er geen nodig.
+    load_error: De definitie van die dataset kon niet worden geladen.
+    loaded_note_shared: Een bestaande gedeelde definitie geopend — alleen-lezen - bijwerken niet toegestaan
+    materialize_retry: Opnieuw proberen
+    materialize_done: Tabel gebouwd.
+    materialize_failed: 'Opgeslagen, maar de tabel kon niet worden gebouwd:'
+  progress_decided: '{decided} van {total} beslist'
+  panel_columns: '{count} kol.'
+  panel_tick_no_session: Stuur eerst een bericht — de boom registreert je vinkjes in de sessie.
+  chip_error: Die keuze kon niet worden toegepast.
+  panel_fold_error: De ingeklapte status van het paneel kon niet worden opgeslagen, dus het paneel zal de volgende keer weer open zijn.
+  panel:
+    collapse: Bronpaneel inklappen
+    expand: Bronpaneel weergeven
+  chip_load_error: De keuzes konden niet worden vernieuwd, dus deze zijn mogelijk verouderd.
+  panel_tick_error: Die kolom kon niet worden aangevinkt.
+  heading_choose_columns: Kies kolommen
+  heading_materialised: Live of gematerialiseerd?
+  heading_choose_table: Kies een tabel
+  heading_match_columns: Koppel deze kolommen
+  act:
+    sources: '{count} tabellen geaccepteerd'
+    sources_short: '{count} tabellen geaccepteerd: {tables}'
+    applied: '{piece} toegepast'
+    join: '{pair} samengevoegd'
+    named: De naam “{name}” gegeven
+  suggestion_applied: Toegepast
+  selection_hint: Vink alles uit wat u niet wilt en gebruik ze vervolgens samen.
+  confirm_selection: Gebruik deze
+  act_joins: '{count} paren gekoppeld'
+  joins_apply: Toepassen
+  joins_coverage: '{connected} van {total} tabellen verbonden'
+  joins_unjoined: 'Niet gekoppeld: {tables}'
+  joins_hint: Wijzig een kolom of het join-type en ga verder.
+  join_type_label: Join-type
+  joins_unsaved: Deze rijen wijken af van de dataset. Pas ze toe of corrigeer eerst de lege rij.
+  name_suggestion_heading: Voorgestelde naam — wijzig deze als je wilt
+  name_suggestion_accept: Gebruik deze naam
+visualize:
+  config: Configuratie
+  data: Gegevens (JSON)
+  data_placeholder: Plak hier JSON-gegevens of genereer voorbeeld
+  description: Selecteer een visualisatietype, genereer voorbeeldgegevens, pas parameters aan en bekijk een voorbeeld.
+  download_error: Downloaden van tabel mislukt
+  download_png: Downloaden als PNG
+  download_success: Tabel gedownload als PNG
+  generate_sample: Voorbeeld genereren
+  invalid_data: Ongeldige gegevens voor teksttabel. Kolommen en rijen verwacht.
+  load_error: Laden van visualisatietypen mislukt
+  no_data: Geen gegevens om te visualiseren. Genereer voorbeeldgegevens of plak JSON.
+  no_types: Geen visualisatietypen gedefinieerd. Neem contact op met een beheerder.
+  parameters: Parameters
+  preview: Voorbeeld
+  sample_expenses: Uitgaven
+  sample_generated: Voorbeeldgegevens gegenereerd
+  sample_item: Item
+  sample_sales: Verkoop
+  sample_value: Waarde
+  save_error: Opslaan mislukt
+  save_instance: Instantie opslaan
+  save_no_data: Geen gegevens om op te slaan. Genereer of plak gegevens.
+  save_success: Visualisatie succesvol opgeslagen
+  select_type: Selecteer type
+  title: Visualisatie Sandbox
+  type: Visualisatietype
+  unsupported: Visualisatietype nog niet geïmplementeerd
+  unsupported_parameter: Niet-ondersteund type
+licence:
+  open_source_message: Deze installatie draait in open-source modus. Neem contact op met Sentuny om te upgraden naar een bedrijfslicentie.
+  features_label: Ingeschakelde functies
+  delete_button: Licentie verwijderen
+  admin_required: U moet beheerder zijn om licentie-informatie te bekijken.
+  tier_label: Niveau
+  preview_invalid: Ongeldig licentiebestand.
+  install_success: Licentie succesvol geïnstalleerd.
+  preview_title: Licentievoorbeeld
+  details_label: Licentiedetails
+  description: Huidige functielicentie- en niveau-informatie.
+  delete_yes: Ja, licentie verwijderen
+  delete_no: Annuleren
+  upload_title: Licentiebestand uploaden
+  delete_success: Licentie verwijderd. Draait in open-source modus.
+  max_users_label: Gelicentieerde gebruikers
+  preview_error: Licentiebestand valideren mislukt.
+  issued_at_label: Uitgegeven
+  load_error: Licentie-informatie laden mislukt.
+  no_features: Er zijn momenteel geen afgeschermde functies ingeschakeld.
+  delete_title: Licentie verwijderen
+  install_no_file: Geen bestand geselecteerd.
+  install_button: Licentie installeren
+  install_error: Installatie van licentie mislukt.
+  delete_error: Verwijderen van licentie mislukt.
+  issued_to_label: Uitgegeven aan
+  title: Licentiestatus
+  expires_at_label: Verloopt
+  delete_confirm: Hiermee wordt het systeem teruggezet naar de open-sourcemodus. Alle functies met beperkte toegang worden uitgeschakeld. Je kunt ze herstellen door een nieuwe licentie te installeren.
+transforms:
+  filter:
+    op_gt: '>'
+    op_lt: <
+    op_is_null: is null
+    op_neq: '!='
+    op_is_not_null: is niet null
+    op_contains: bevat
+    op_eq: '='
+  op:
+    column_placeholder: Selecteer kolom
+    type:
+      drop_column: Kolom verwijderen
+      rename_column: Kolom hernoemen
+      filter: Rijen filteren
+      drop_duplicates: Duplicaten verwijderen
+      encode_category: Categorie coderen
+      fill_missing: Ontbrekende waarden opvullen
+      convert_type: Type converteren
+      normalize: Normaliseren
+      standardize: Standaardiseren
+    target_string: Tekst
+    target_numeric: Numeriek
+    type_placeholder: Bewerkingstype
+    encoding_label: Label
+    new_name_placeholder: Nieuwe naam
+    encoding_onehot: One-hot
+    encoding_placeholder: Codering
+    target_boolean: Booleaans
+    add: Bewerking toevoegen
+    value_placeholder: Waarde
+    empty_hint: Voeg een bewerking toe om uw transformatie op te bouwen.
+    target_type_placeholder: Doeltype
+    operations_label: Bewerkingen
+    method_placeholder: Methode
+    target_datetime: Datum/tijd
+    operator_placeholder: Operator
+    remove: Verwijderen
+  operations_count: '{count} bewerkingen'
+  name_label: Naam
+  for_recipe: 'Recept: {name}'
+  fill:
+    mean: Gemiddelde
+    drop_rows: Rijen verwijderen
+    mode: Modus
+    constant: Constante
+    median: Mediaan
+  empty_hint: Bewerkingen worden in lijstvolgorde toegepast wanneer de transformatie wordt uitgevoerd.
+  empty_state: Voeg een bewerking toe om uw transformatie op te bouwen.
+  save_button: Opslaan
+  new_transform: Nieuwe transformatie
+  back_to_data: Terug naar Mijn gegevens
+  description_label: Beschrijving
+  load_error: Transform laden mislukt
+  empty_title: Selecteer een transformatie uit de lijst of maak een nieuwe.
+  back_to_recipe: 'Terug naar recept: {name}'
+  connect_transform: Verbinden met recept
+  operations_heading: Bewerkingen
+  delete_success: Transformatie verwijderd.
+  no_transforms: Geen transformaties gedefinieerd voor deze dataset.
+  delete_button: Verwijderen
+  save_success: Transformatie opgeslagen.
+  description_placeholder: Beschrijving (optioneel)
+  connected_count: '{count} verbonden'
+  delete_confirm: Deze transformatie verwijderen?
+  name_required: Transformatienaam is vereist.
+  no_search_results: Geen transformaties gevonden die overeenkomen met uw zoekopdracht
+  disconnect_transform: Verbreek verbinding met recept
+  search_placeholder: Doorzoek transformaties…
+  connected_to_recipe: 'Verbonden met: {name}'
+  name_placeholder: Transformatienaam
+  disconnect_error: Verbinding verbreken met transformatie mislukt
+  connect_error: Verbinding met transform mislukt
+setup:
+  options:
+    save_success: Optie-instellingen opgeslagen
+    password_policy:
+      require_digit: Cijfer vereist
+      custom: Aangepast
+      require_uppercase: Hoofdletter vereist
+      min_length: Minimale lengte
+      low: Laag (min. 6 tekens)
+      label: Wachtwoordbeleid
+      require_lowercase: Kleine letters vereist
+      medium: Gemiddeld (min 8, hoofdletter, kleine letter, cijfer)
+      min_strength: Minimale sterkte (zxcvbn-score 0-4)
+      require_special: Speciaal teken vereisen
+      select: Selecteer beleid
+      hint: Kies de wachtwoordcomplexiteitseisen voor gebruikersregistratie en wachtwoordwijzigingen.
+      high: Hoog (min. 10, hoofdletter, kleine letter, cijfer, speciaal teken)
+    public_url:
+      label: Openbare URL
+      hint: De basis-URL die wordt gebruikt in e-mailverificatielinks (bijv. https://workbench.example.com).
+    welcome:
+      placeholder: Voer een welkomstbericht in dat op de inlogpagina wordt weergegeven.
+      hint: Dit bericht verschijnt op de inlogpagina. Laat leeg om het te verbergen.
+      label: Welkomstbericht
+    description: Installatie-instellingen die de identiteit en het gedrag van deze implementatie bepalen. Wees voorzichtig met wijzigingen - deze hebben invloed op alle gebruikers.
+    email_sender:
+      hint: Het e-mailadres waarvan verificatie-e-mails lijken te komen.
+      label: Afzendermailadres
+    save_button: Opties opslaan
+    save_error: Opslaan van optie-instellingen mislukt
+    load_error: Laden van optie-instellingen mislukt
+    title: Opties
+    registration_mode:
+      label: Registratiemodus
+      hint: Kies hoe nieuwe gebruikersaccounts worden aangemaakt en geverifieerd.
+      mode_1: Beheerder maakt geverifieerde gebruikers aan
+      mode_4: Zelfregistratie met e-mailverificatie
+      mode_2: Zelfregistratie en door beheerder geverifieerd
+      mode_0: Zelfregistratie automatisch geverifieerd
+      select: Selecteer registratiemodus
+  internal:
+    system_status:
+      initialized: Geïnitialiseerd
+      description: Realtime gezondheidsindicatoren voor backend-diensten.
+      available: Beschikbaar
+      title: Systeemstatus
+      not_required: Niet vereist
+      shared_memory: Gedeeld geheugen
+      db_pool: Databasepool
+      version: Versie
+      not_initialized: Niet geïnitialiseerd
+      healthy: Gezond
+      overall_health: Algehele gezondheid
+      unavailable: Niet beschikbaar
+      unhealthy: Ongezond
+      db_cluster: Databasecluster
+    licence:
+      issued_to: Uitgegeven aan
+      features: Ingeschakelde functies
+      expiry: Vervaldatum
+      description: Huidige licentieniveau en ingeschakelde functies.
+      tier: Licentieniveau
+      title: Licentie & Functies
+    description: Systeemdiagnostiek en interne configuratie. Alleen-lezen statusindicatoren.
+    future:
+      description: Aanvullende diagnostiek zal worden toegevoegd in toekomstige releases.
+      title: Binnenkort beschikbaar
+      email_transport: E-mailtransportstatus
+      cache_config: Cache-/sessieconfiguratie
+      debug_logging: Schakeloptie voor foutopsporing/uitgebreide logboekregistratie
+      pool_stats: Databasepoolstatistieken
+    title: Intern
+    load_error: Laden van systeemdiagnostiek mislukt
+  limits:
+    demo_mode:
+      label: Demomodus
+      description: Indien ingeschakeld, draait het systeem in demomodus - destructieve acties worden geblokkeerd en indicatoren worden in de UI weergegeven.
+    upload:
+      select_size: Selecteer limiet
+      select_count: Selecteer limiet
+      count_hint: Maximaal aantal datasets per gebruiker (0 = onbeperkt). Toegepast op nieuwe gebruikers.
+      size_5_mb: 5 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      default_size_label: Standaard maximale uploadgrootte per gebruiker (MB)
+      count_1: '1'
+      count_1000: '1000'
+      count_500: '500'
+      count_50: '50'
+      count_5: '5'
+      count_10: '10'
+      size_250_mb: 250 MB
+      count_25: '25'
+      size_hint: Maximale totale opslag per gebruiker (0 = onbeperkt). Toegepast op nieuwe gebruikers.
+      size_unlimited: Onbeperkt
+      size_500_mb: 500 MB
+      count_unlimited: Onbeperkt
+      size_100_mb: 100 MB
+      default_count_label: Standaard max. aantal uploads per gebruiker
+      count_100: '100'
+      size_25_mb: 25 MB
+      count_250: '250'
+      size_10_mb: 10 MB
+      size_50_mb: 50 MB
+    description: Operationele bedieningselementen voor resource limieten, time-outs en systeemgedrag. Veilig om op elk moment aan te passen.
+    save_success: Limietinstellingen opgeslagen
+    max_registrations:
+      hint: Stel een limiet in voor het aantal gebruikers dat kan registreren.
+      label: Maximum aantal gebruikersregistraties
+      users: gebruikers
+      unlimited: Onbeperkt
+      placeholder: Selecteer limiet
+    grace_period:
+      label: Verwijderingsvertraging (uur)
+      hint: Uren voordat zacht verwijderde accounts permanent worden gewist.
+    save_error: Limietinstellingen opslaan mislukt
+    load_error: Laden van limietinstellingen mislukt
+    email_timeout:
+      label: E-mailverificatietime-out (uren)
+      hint: Hoeveel uren de e-mailverificatielink geldig blijft.
+    invalid_registration_max: Voer een geldig positief getal in voor maximumregistraties
+    save_button: Limieten opslaan
+    invalid_timeout: Voer een geldig positief getal in voor de verificatietime-out (uren)
+    title: Limieten
+    invalid_grace_period: Voer een geldig positief getal in voor de verwijderingsvertraging (uren)
+  tuning:
+    ai_section_hint: Standaardwaarden voor elk AI-verzoek. Eén specifieke combinatie van verbinding en model kan deze overschrijven wanneer de afstemming specifiek is voor dat paar.
+    invalid_max_tokens: Voer een geheel aantal tokens in, minimaal 1.
+    invalid_temperature: Temperatuur moet een getal van 0 tot 2 zijn.
+    ai_temperature_hint: 'Hoe gevarieerd de antwoorden zijn: 0 is zo reproduceerbaar als het model toestaat, 2 is het meest gevarieerd. Waarden buiten 0 tot 2 worden door de provider geweigerd, niet door
+      dit systeem.'
+    forbidden: Alleen een volledige beheerder kan deze instellingen wijzigen.
+    load_error: Kon de afstemmingsinstellingen niet laden.
+    reset_error: Kon de afstemmingsinstellingen niet resetten.
+    reset_confirm_body: Elke waarde op deze pagina wordt teruggezet naar de standaardwaarde waarmee die werd geleverd. Overschrijvingen per verbinding worden niet beïnvloed. Dit kan niet ongedaan worden
+      gemaakt en u moet elke waarde die u had gewijzigd opnieuw instellen.
+    ai_section_label: AI-generatie
+    description: Standaardwaarden voor AI-gedrag en tijdslimieten. Deze zijn meestal geschikt zoals ze zijn — een instelling per gebruiker of per verbinding kan afwijken, en de waarde hier geldt wanneer
+      geen van beide dat doet.
+    connect_timeout_hint: Hoe lang het netwerk erover mag doen om een verbinding te accepteren voordat het eindpunt als onbereikbaar wordt beschouwd. Een waarde onder wat het netwerk nodig heeft, verandert
+      een werkend eindpunt in een dood eindpunt.
+    saving: Opslaan…
+    saved: Afstemmingsinstellingen opgeslagen.
+    slow_threshold_hint: Een modeltest die langer duurt dan dit, wordt als te traag gerapporteerd. Gebruikers mogen hun eigen limiet verhogen; niemand mag de eigen limiet lager dan 1 instellen.
+    ai_max_tokens_hint: Het langste antwoord dat één verzoek mag produceren. Een beschrijving heeft ongeveer 500 tokens nodig; 4000 biedt voldoende ruimte.
+    resetting: Resetten…
+    ai_tokens: tokens
+    invalid_model_test_seconds: Voer een geheel aantal seconden in, minimaal 1.
+    reset_confirm_title: Deze zes terugzetten naar hun standaardwaarden?
+    invalid_connect_timeout: De verbindingstime-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal 60.
+    reset_done: Afstemmingsinstellingen teruggezet naar hun standaardwaarden.
+    reset_confirm_action: Resetten
+    slow_threshold_label: Drempelwaarde voor trage modellen
+    ai_timeout_hint: Hoe lang één AI-verzoek mag lopen voordat het wordt afgebroken. Te laag en chat faalt stilletjes; te hoog en een vastgelopen model houdt een werkproces bezet. Lokale modellen op een
+      CPU kunnen enkele minuten nodig hebben.
+    save_error: Kon de afstemmingsinstellingen niet opslaan
+    save: Instellingen opslaan
+    probe_timeout_hint: Hoe lang één geschiktheidstest mag draaien. Een model dat op de CPU wordt gehost, heeft minuten nodig, dus een korte limiet registreert hier een onterechte fout in plaats van tijd
+      te besparen.
+    preamble_detail: Elk AI-verzoek gebruikt deze instellingen, tenzij een verbinding deze overschrijft. Een wijziging beïnvloedt elk model dat geen eigen instelling heeft; een verbinding die je al hebt
+      afgestemd, verandert niet.
+    invalid_probe_timeout: De time-out voor de test moet een geheel aantal seconden zijn, minimaal 1 en maximaal 1200.
+    seconds: seconden
+    invalid_ai_timeout: De AI-tijdslimiet moet een geheel aantal seconden zijn, minimaal 1.

@@ -1,0 +1,2254 @@
+about:
+  description: Erstelle beeindruckende Erlebnisse mit shadcn/ui und Next.js. Sauberes Design, schnelle Performance.
+  fast_desc: Auf dem Next.js App Router für optimale Performance aufgebaut.
+  fast_title: Schnell
+  get_started: Loslegen
+  modern_desc: Barrierefreie Komponenten von shadcn/ui, gestaltet mit Tailwind CSS.
+  modern_title: Moderne Benutzeroberfläche
+  secure_desc: Typsicher und anpassbar – du besitzt den Komponentencode.
+  secure_title: Sicher
+  title: Über Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: Zurück zum Admin
+    cannot_modify_self: Du kannst dein eigenes Konto nicht bearbeiten.
+    delete_confirmation: Bist du sicher, dass du {name} löschen möchtest? Dieser Benutzer wird soft-gelöscht und kann von einem Voll-Admin wiederhergestellt werden.
+    delete_error: Benutzer konnte nicht gelöscht werden.
+    delete_title: Benutzer löschen
+    demote: Herabstufen
+    demote_error: Benutzer konnte nicht herabgestuft werden.
+    demote_success: Benutzer vom Gruppen-Admin herabgestuft.
+    description_placeholder: Beschreibung eingeben
+    description_required: Beschreibung darf nicht leer sein.
+    group_description: Gruppenbeschreibung
+    group_users_load_error: Gruppenbenutzer konnten nicht geladen werden.
+    load_error: Gruppen konnten nicht geladen werden.
+    load_success: Gruppen erfolgreich geladen.
+    no_users: Keine Benutzer in dieser Gruppe gefunden.
+    promote: Befördern
+    promote_error: Benutzer konnte nicht befördert werden.
+    promote_success: Benutzer zum Gruppen-Admin befördert.
+    readonly_badge: (schreibgeschützt)
+    readonly_message: Du betrachtest diese Seite im schreibgeschützten Modus. Beispielbenutzer können keine Änderungen vornehmen.
+    readonly_title: Gruppenverwaltung (Schreibgeschützt)
+    select_group: Gruppe auswählen
+    select_group_placeholder: Wähle eine Gruppe
+    title: Gruppenverwaltung
+    update_error: Gruppe konnte nicht aktualisiert werden.
+    update_success: Gruppenbeschreibung aktualisiert.
+    users_in_group: Benutzer in der Gruppe
+  models:
+    comment_placeholder: Kommentar eingeben
+    description: Jedes Modell, das der Workbench bekannt ist. Das Aktivieren eines Modells wirkt sich auf jede Verbindung aus, die es bereitstellt; die Serverspalte zeigt, welche Server es erreichen können.
+    disabled: Deaktiviert
+    edit_comment: Kommentar bearbeiten
+    enabled: Aktiviert
+    load_models_error: Modelle konnten nicht geladen werden.
+    no_comment: —
+    no_models: Noch keine Modelle. Die Erkennung erstellt sie anhand einer Verbindung.
+    not_preferred: Nicht bevorzugt
+    preferred: Bevorzugt
+    toggle_error: Modell konnte nicht aktualisiert werden.
+    update_error: Kommentar konnte nicht aktualisiert werden.
+    update_success: Modell aktualisiert.
+    fetch_non_standard: Dieser Anbieter stellt keine Standard-API zum Auflisten von Modellen bereit. Fügen Sie Modelle manuell im Admin-Bereich hinzu.
+    fetch_auth_required: Dieser Anbieter benötigt einen API-Schlüssel, um Modelle aufzulisten. Aktualisieren Sie stattdessen unter Einstellungen → KI-Verbindungen.
+    filter_clear: Filter zurücksetzen
+    tuning_timeout_hint: Sekunden, die eine KI-Anfrage laufen darf. Ein lokales CPU-Modell kann mehrere Minuten benötigen.
+    filter_result: Ergebnis
+    filter_state: Status
+    tuning_loading: KI-Einstellungen werden geladen…
+    no_matches: Keine Modelle entsprechen diesen Filtern.
+    no_servers: Noch keine Verbindung stellt dieses Modell bereit.
+    tuning_saved: KI-Einstellungen gespeichert
+    model_count: '{count} Modelle'
+    filter_test: Fähigkeitstest
+    tuning_save_error: KI-Einstellungen konnten nicht gespeichert werden
+    search_placeholder: Modellnamen suchen
+    filter_any: Beliebiger Status
+    tuning_inherited_title: Leer übernimmt den Workbench-Standard
+    tuning_title: KI-Einstellungen für diesen Server
+    tuning_inherited: geerbt
+    servers_title: Erreichbar von
+    tuning_hint: Diese Werte gelten überall, wo dieses Modell auf dieser Verbindung verwendet wird. Leer bedeutet, dass der Workbench-Standard übernommen wird.
+    tuning_load_error: Die KI-Einstellungen konnten nicht geladen werden.
+    tuning_temperature_hint: Niedrigere Werte liefern besser reproduzierbare Antworten; höhere Werte liefern variablere Antworten.
+  providers:
+    code_label: Code
+    delete_button: Löschen
+    delete_confirmation: Bist du sicher, dass du den Anbieter "{name}" löschen möchtest? Dadurch werden auch alle zugehörigen Modelle entfernt und dies kann nicht rückgängig gemacht werden.
+    delete_error: Anbieter konnte nicht gelöscht werden.
+    delete_provider: Anbieter löschen
+    delete_success: Anbieter gelöscht.
+    delete_title: Anbieter löschen
+    description: Aktiviere oder deaktiviere KI-Anbieter. Deaktivierte Anbieter erscheinen nicht in den Verbindungsformularen der Benutzer.
+    disabled: Deaktiviert
+    enabled: Aktiviert
+    fetch_error: Anbieter konnten nicht geladen werden.
+    list_title: Alle Anbieter
+    local: Lokal
+    no_api_key: kein API-Schlüssel erforderlich
+    requires_api_key: erfordert API-Schlüssel
+    title: KI-Anbieter
+    toggle_error: Anbieter konnte nicht aktualisiert werden.
+    update_success: Anbieter aktualisiert.
+  title: Admin-Panel
+  user_details:
+    dark_mode_description: Zwischen hellem und dunklem Thema wechseln.
+    dark_mode_label: Dunkelmodus
+    email_label: E-Mail
+    email_notifications_description: E-Mail-Updates zu deinem Konto erhalten.
+    email_notifications_label: E-Mail-Benachrichtigungen
+    full_admin_note: Voll-Admins haben standardmäßig alle Berechtigungen von Gruppen-Admins.
+    group_admin_description: Benutzer können andere Benutzer innerhalb ihrer Gruppe verwalten.
+    group_admin_label: Gruppen-Admin
+    group_hint: Die Gruppe eines Benutzers bestimmt, auf welche gemeinsam genutzten Ressourcen er zugreifen kann.
+    language_label: Sprache
+    language_select_placeholder: Sprache auswählen
+    load_error: Benutzerdetails konnten nicht geladen werden.
+    max_upload_count_hint: Maximale Anzahl von Datensätzen pro Benutzer (0 = unbegrenzt).
+    max_upload_count_label: Maximale Anzahl von Uploads
+    max_upload_count_placeholder: Anzahl auswählen
+    max_upload_size_hint: Maximaler Gesamtspeicher pro Benutzer (0 = unbegrenzt).
+    max_upload_size_label: Maximale Upload-Größe
+    max_upload_size_placeholder: Größe auswählen
+    name_label: Name
+    not_found: Benutzer nicht gefunden
+    save_error: Benutzer konnte nicht aktualisiert werden.
+    save_success: Benutzerdetails aktualisiert.
+    select_group: Gruppe auswählen
+    title: Benutzer verwalten
+    unnamed: Unbenannter Benutzer
+    user_group: Benutzergruppe
+  users:
+    active_users: Aktive Benutzer
+    admin_badge: Admin
+    bcc_label: BCC-Registrierungen
+    bcc_updated: BCC-Registrierungseinstellung aktualisiert
+    created_label: Erstellt
+    current_user_badge: Sie
+    delete_button: Löschen
+    delete_confirmation: Möchten Sie „{name}“ wirklich endgültig löschen? Diese Aktion KANN NICHT rückgängig gemacht werden.
+    delete_error: Fehler beim Löschen des Benutzers
+    delete_self_error: Sie können Ihr eigenes Konto nicht löschen
+    delete_success: Benutzer endgültig gelöscht
+    delete_title: Benutzer löschen
+    deleted_badge: Vorläufig gelöscht
+    deleted_label: Gelöscht
+    example_user_badge: Beispielbenutzer
+    forbidden: Verboten
+    group_admin_badge: Gruppenadministrator
+    hard_delete_button: Endgültig löschen
+    hard_delete_confirmation: Möchten Sie „{name}“ wirklich endgültig löschen? Diese Aktion KANN NICHT rückgängig gemacht werden.
+    hard_delete_error: Fehler beim endgültigen Löschen des Benutzers
+    hard_delete_success: Benutzer endgültig gelöscht
+    hard_delete_title: Benutzer endgültig löschen
+    load_error: Fehler beim Laden der Benutzer
+    make_admin: Zum Administrator machen
+    more_button: Mehr …
+    no_name: Kein Name
+    remove_admin: Administrator entfernen
+    resend_button: E-Mail erneut senden
+    resend_error: Fehler beim Senden der Bestätigungs-E-Mail
+    resend_success: Bestätigungs-E-Mail gesendet an {email}
+    restore_button: Wiederherstellen
+    restore_error: Fehler beim Wiederherstellen des Benutzers
+    restore_success: Benutzer wiederhergestellt
+    soft_deleted_users: Vorläufig gelöschte Benutzer
+    title: Benutzerverwaltung
+    unauthorized: Nicht autorisiert
+    unverified_badge: Nicht verifiziert
+    update_error: Fehler beim Aktualisieren des Benutzers
+    update_success: Benutzer aktualisiert
+    user_not_found: Benutzer nicht gefunden
+    verified_badge: Verifiziert
+    verify_button: Verifizieren
+    verify_error: Fehler beim Verifizieren des Benutzers
+    verify_success: Benutzer als verifiziert markiert
+    add_user: Benutzer hinzufügen
+  visualization_types:
+    add_button: Neuen Typ hinzufügen
+    add_title: Visualisierungstyp hinzufügen
+    create_success: Visualisierungstyp erstellt
+    default_parameters: Standardparameter (JSON)
+    delete: Löschen
+    delete_button: Löschen
+    delete_confirmation: Möchten Sie den Typ „{name}“ wirklich löschen? Dadurch werden auch alle zugehörigen Instanzen entfernt und der Vorgang kann nicht rückgängig gemacht werden.
+    delete_error: Fehler beim Löschen
+    delete_success: Visualisierungstyp gelöscht
+    delete_title: Visualisierungstyp löschen
+    description: Beschreibung
+    disabled: Deaktiviert
+    edit: Bearbeiten
+    edit_title: Visualisierungstyp bearbeiten
+    enabled: Aktiviert
+    fetch_error: Fehler beim Laden der Visualisierungstypen
+    input_schema: Eingabeschema (JSON)
+    invalid_json: Ungültiges JSON in einem der Schemafelder
+    list_title: Alle Visualisierungstypen
+    name: Name
+    no_types: Noch keine Visualisierungstypen definiert.
+    parameter_schema: Parameterschema (JSON)
+    renderer: Renderer
+    renderer_client: Client
+    renderer_label: Renderer
+    renderer_server: Server
+    save_error: Fehler beim Speichern
+    slug: Slug
+    slug_label: Slug
+    title: Visualisierungstypen
+    toggle_error: Fehler beim Aktualisieren
+    update_success: Visualisierungstyp aktualisiert
+  adduser:
+    confirm_password: Passwort bestätigen
+    name: Name
+    title: Benutzer hinzufügen
+    password: Passwort
+    failed: Benutzer konnte nicht erstellt werden
+    not_admin: Sie haben keine Berechtigung, auf diese Seite zuzugreifen.
+    email: E-Mail
+    success: Konto erstellt und bestätigt. Der neue Benutzer kann sich jetzt anmelden.
+    description: Neues Benutzerkonto erstellen. Das Konto wird sofort bestätigt.
+    submit: Benutzer erstellen
+    creating: Benutzer wird erstellt...
+    password_mismatch: Passwörter stimmen nicht überein
+    back_to_admin: Zurück zur Administration
+    language_description: Wählen Sie die bevorzugte Sprache des Benutzers für die Oberfläche.
+  set_password:
+    description: Legen Sie für diesen Benutzer ein neues Passwort fest. Zur Bestätigung der Änderung ist Ihr eigenes Admin-Passwort erforderlich.
+    admin_password_required: Das Admin-Passwort ist erforderlich
+    success: Passwort erfolgreich festgelegt
+    title: Passwort festlegen
+    admin_password: Admin-Passwort
+    failed: Passwort konnte nicht festgelegt werden
+ai:
+  connection:
+    add_first: Fügen Sie Ihre erste KI-Verbindung hinzu
+    add_new: Neue KI-Verbindung hinzufügen
+    add_success: KI-Verbindung erfolgreich hinzugefügt
+    add_title: Neue KI-Verbindung hinzufügen
+    api_key_hint: Ihr API-Schlüssel wird vor der Speicherung verschlüsselt.
+    api_key_label: API-Schlüssel
+    by_label: von
+    clear_default: Standard löschen
+    currently_not_shared: ❌ Derzeit nicht geteilt
+    currently_shared: ✅ Derzeit mit Gruppe geteilt
+    default_badge: Standard
+    default_cleared: Standard-KI-Verbindung entfernt
+    default_set: Standard-KI-Verbindung aktualisiert
+    delete_button: Löschen
+    delete_confirmation: Möchten Sie die Verbindung wirklich löschen?
+    delete_error: Fehler beim Löschen der KI-Verbindung
+    delete_title: KI-Verbindung löschen
+    deleted: KI-Verbindung gelöscht
+    edit_title: KI-Verbindung bearbeiten
+    endpoint_hint: Überschreiben Sie bei Bedarf den Standard-API-Endpunkt.
+    endpoint_label: Endpunkt-URL
+    form_description: Konfigurieren Sie eine KI-Anbieter-Verbindung.
+    group_label: Gruppe
+    load_error: Fehler beim Laden der Verbindungen
+    load_providers_error: Fehler beim Laden der Anbieter
+    metadata_load_error: Fehler beim Laden der Anbieter-Metadaten
+    metadata_loading: Anbieterinformationen werden noch geladen. Bitte warten.
+    models: Verfügbare Modelle
+    models_disabled: Deaktiviert
+    models_load_error: Fehler beim Laden der Modelle
+    models_sync_error: Fehler beim Synchronisieren der Modelle
+    models_synced: Modelle erfolgreich synchronisiert
+    name_label: Name der Verbindung
+    name_placeholder: z. B. Meine KI-Verbindung
+    no_connections: Noch keine KI-Verbindungen gespeichert.
+    not_found: Verbindung nicht gefunden
+    provider_label: Anbieter
+    provider_not_found: Anbieter nicht gefunden
+    save_error: Fehler beim Speichern der KI-Verbindung
+    select_provider: KI-Anbieter auswählen
+    select_provider_first: Bitte wählen Sie zuerst einen Anbieter
+    set_default: Als Standard einstellen
+    shared_badge: Geteilt
+    shared_description: Diese Verbindung für andere Benutzer in Ihrer Gruppe verfügbar machen.
+    shared_label: Mit Gruppe teilen
+    shared_readonly: Geteilt
+    shared_readonly_message: Diese Verbindung wird mit Ihnen geteilt. Sie können sie einsehen, aber nur der Besitzer kann sie bearbeiten.
+    test_button: Verbindung testen
+    test_error: Verbindung fehlgeschlagen.
+    test_success: Verbindung erfolgreich!
+    unknown_user: Unbekannt
+    update_success: KI-Verbindung erfolgreich aktualisiert
+    models_none: Noch keine Modelle synchronisiert. Klicken Sie auf „Aktualisieren“, um Modelle vom Anbieter abzurufen.
+    models_refresh: Modelle aktualisieren
+    invalid_connect_timeout: Das Verbindungs-Timeout muss eine ganze Zahl in Sekunden sein, mindestens 1 und höchstens 60.
+    invalid_probe_timeout: Das Modelltest-Timeout muss eine ganze Zahl in Sekunden sein, mindestens 1 und höchstens 1200.
+    connect_timeout_hint: Wie lange das Netzwerk für die Annahme einer Verbindung brauchen darf. Ein Wert unterhalb des Netzwerkbedarfs macht aus einem funktionierenden Endpunkt einen unerreichbaren.
+    timeouts_section_label: Verbindungs-Timeouts
+    models_discovered: 'Auf dieser Verbindung {seen} Modell(e) entdeckt: {created} neu, {refreshed} bereits bekannt, {pruned} nicht mehr bereitgestellt'
+    connect_exceeds_probe: Der Verbindungs-Timeout darf nicht länger sein als der Modelltest-Timeout – eine Verbindung darf für den Aufbau nicht länger benötigen, als der gesamte Test laufen darf.
+    probe_timeout_hint: Wie lange ein Eignungstest hier laufen darf. Ein CPU-gehostetes Modell benötigt Minuten.
+    timeouts_section_hint: Lassen Sie ein Feld leer, um den Workbench-Standard zu verwenden.
+  database:
+    add_connection: Datenbankverbindung hinzufügen
+    ai_augmented: KI-gestützte Analyse
+    ai_augmented_desc: Schema-KI, semantische KI und Integrations-KI haben diese Datenbank analysiert.
+    ai_fallback: Grundlegende Analyse
+    ai_fallback_desc: KI-Erweiterung nicht verfügbar. Nur strukturelle Analyse wird angezeigt. Wählen Sie eine KI-Verbindung für tiefere Einblicke.
+    ai_health_score: KI-Gesundheitsbewertung
+    ai_unavailable: KI-Analyse nicht verfügbar. Verbinden Sie einen KI-Anbieter, um erweiterte Analysen zu aktivieren.
+    all_issues: Alle Probleme
+    analysis_report: Analysebericht
+    analysis_summary: '{tables} Tabellen, {columns} Spalten, {issues} Probleme gefunden'
+    analyze: Schema analysieren
+    analyzing: Analysiere...
+    business_value: Geschäftswert
+    categories: Kategorien
+    code_systems_detected: Erkannte Codesysteme
+    cols_rows_format: '{cols} Spalten, {rows} Zeilen'
+    column_meanings: Spaltenbedeutungen
+    columns_label: Spalten
+    confidence: Konfidenz
+    description: Analysieren Sie Ihr Datenbankdesign auf Indizierungs-, Normalisierungs-, Beziehungs-, Datentyp- und Namensprobleme.
+    download_pdf: PDF herunterladen
+    email_body_attachment: Bitte finden Sie den Analysebericht im Anhang.
+    email_body_connection: 'Verbindung: {conn_name}'
+    email_body_database: 'Datenbank: {db_name}'
+    email_body_id: 'Verbindungs-ID: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Analysebericht zum Datenbankdesign
+    email_body_type: 'Datenbanktyp: {db_type}'
+    email_error: Fehler beim Versenden des Berichts per E-Mail
+    email_pdf: PDF per E-Mail senden
+    email_sent: Bericht erfolgreich per E-Mail gesendet
+    email_subject: Datenbank-Design-Analyse — {db_name} ({db_type}) [Verbindung {conn_id}]
+    empty_state: Wählen Sie eine Datenbankverbindung aus und klicken Sie auf Analysieren, um zu beginnen.
+    enter_question: Bitte geben Sie eine Frage ein.
+    foreign_keys: Fremdschlüssel
+    high_risk: Hoch
+    implicit_relationships: Implizite Beziehungen
+    indexes_label: Indizes
+    integration_analysis: Integrationsanalyse
+    integration_analysis_desc: Implizite Beziehungen, Forschungsfähigkeiten und fehlende Dimensionen, erkannt durch die Integrations-KI.
+    isic_domains: ISIC-Domänenklassifikationen
+    issues_label: Probleme
+    low_risk: Niedrig
+    medium_risk: Mittel
+    missing_dimensions: Fehlende Dimensionen
+    no_issues: Keine Probleme gefunden. Ihr Datenbankdesign sieht gut aus!
+    no_semi_structured: Keine semi-strukturierten Datenmuster in Textspalten erkannt.
+    normalisation_suggestions: Normalisierungsvorschläge
+    normalisation_suggestions_desc: Vorgeschlagene Referenztabellen basierend auf in semi-strukturierten Textspalten gefundenen Schlüsselwörtern.
+    normalisation_warning: Dies sind KI-generierte Vorschläge. Datenbank-Neugestaltungen erfordern eine sorgfältige Überprüfung. Testen Sie Änderungen zuerst auf einer Replik.
+    pdf_downloaded: PDF erfolgreich heruntergeladen
+    pdf_error: Fehler beim Erstellen der PDF
+    pk_prefix: PK –
+    placeholder: Demnächst verfügbar. Diese Funktion wird Ihnen helfen, Datenbankschemata mit KI zu entwerfen.
+    priority_actions: Prioritäre Maßnahmen
+    proposed_reference_table: Vorgeschlagene Referenztabelle
+    rag_ask: Fragen
+    rag_chat: RAG-Chat — Stellen Sie Fragen zu Ihren Daten
+    rag_chat_desc: Stellen Sie natürlichsprachliche Fragen. Das System durchsucht Textspalten und liefert KI-generierte Antworten mit Quellenangaben.
+    rag_error: RAG-Abfrage fehlgeschlagen
+    rag_placeholder: z. B. Was sind die häufigsten Diagnosen?
+    rag_sources: Quellen
+    research_capabilities: Forschungsfähigkeiten
+    risk_breakdown: Risikoaufschlüsselung
+    rows_label: Zeilen
+    schema_error: Fehler beim Analysieren des Datenbankschemas
+    select_connection: Datenbankverbindung auswählen
+    select_connection_first: Bitte wählen Sie zuerst eine Datenbankverbindung aus.
+    select_connection_placeholder: Eine Datenbankverbindung auswählen...
+    semantic_analysis: Semantische Analyse
+    semantic_analysis_desc: KI-abgeleitete Spaltenbedeutungen, ISIC-Domänenklassifikationen und Erkennung von Codesystemen.
+    semi_structured: Analyse semi-strukturierter Daten
+    semi_structured_desc: Textspalten analysiert auf eingebettete Codes, Schlüsselwörter und Muster.
+    table_purposes: Tabellenzwecke
+    tables_explorer: Tabellen-Explorer
+    tables_label: Tabellen
+    timeout_error: Analyse Zeitüberschreitung. Die Datenbank ist möglicherweise zu groß oder der KI-Dienst ist nicht verfügbar.
+    timeout_log: Analyse nach 15 Minuten Zeitüberschreitung abgebrochen.
+    title: Datenbank-Design-Assistent
+    top_recommendations: Top-Empfehlungen
+    peer_tables: 'Peer-Tabellen:'
+    is_missing: fehlt
+    health_score_desc: Gesamtzustand der Datenbank, bewertet von Schema AI. 0 = kritische strukturelle Probleme, 100 = produktionsreif.
+  dataclean:
+    chat_error: Fehler beim Abrufen der Antwort
+    chat_placeholder: Fragen Sie nach der Bereinigung oder Vorbereitung dieses Datensatzes...
+    column_tooltip: '{type} — {null_count} Nullwerte, {unique_count} eindeutig'
+    column_type:
+      category: Kategorie
+      datetime: Datum/Uhrzeit
+      number: Zahl
+      text: Text
+    description: KI-gestützte Bereinigung und Vorbereitung von Datensätzen.
+    empty_chat: Wählen Sie einen Datensatz aus und stellen Sie Fragen zur Bereinigung und Vorbereitung.
+    enter_message: Bitte geben Sie eine Nachricht ein.
+    loading_schema: Schema wird geladen...
+    no_connection: Bitte konfigurieren Sie eine Standard-KI-Verbindung unter Einstellungen > KI.
+    no_datasets: Keine Datensätze verfügbar. Laden Sie zuerst einen Datensatz hoch oder definieren Sie einen.
+    placeholder: Demnächst verfügbar. Diese Funktion hilft Ihnen, Datensätze mithilfe von KI zu bereinigen und vorzubereiten.
+    schema_summary: '{rows} Zeilen, {cols} Spalten'
+    select_dataset: Datensatz auswählen
+    select_dataset_first: Bitte wählen Sie zuerst einen Datensatz aus.
+    select_dataset_placeholder: Datensatz auswählen...
+    send: Senden
+    shared_badge: (geteilt)
+    title: Assistent für Datensatzbereinigung
+    schema_error: Datensatzschema konnte nicht geladen werden
+    preview_title: Datenvorschau
+    rules_title: Vorbereitungsregeln
+    operations_count: '{count} Operationen'
+    no_rules: Noch keine Regeln
+    clean_in_place_success: Datensatz '{name}' aktualisiert.
+    clean_in_place: Direkt bereinigen
+    clean_copy: Kopie bereinigen
+    clean_copy_success: Neuer Datensatz '{name}' erstellt – das Original bleibt unverändert.
+    clean_no_rules: Noch keine Bereinigungsregeln zum Anwenden.
+    no_dataset_selected: Kein Datensatz ausgewählt
+    clean_name_label: Name für die bereinigte Kopie
+  default_hint: Die Standardverbindung wird als Fallback verwendet, wenn ein Analyse-Rezept keinen KI-Anbieter angibt.
+  new_session: Neue Sitzung
+  no_ai_connections: Keine KI-Verbindungen konfiguriert. Fügen Sie eine unter Einstellungen > KI hinzu.
+  recipe:
+    chat_error: Fehler beim Abrufen der Antwort
+    chat_placeholder: Fragen Sie nach statistischen Analysen oder Rezeptkonfiguration...
+    description: KI-gestützte Rezept- und Analyseregelgenerierung.
+    empty_chat: Wählen Sie einen Datensatz aus und fragen Sie, welche statistischen Techniken verwendet werden sollen.
+    enter_message: Bitte geben Sie eine Nachricht ein.
+    loading_schema: Schema wird geladen...
+    no_datasets: Keine Datensätze verfügbar. Laden Sie zuerst einen Datensatz hoch oder definieren Sie einen.
+    placeholder: Demnächst verfügbar. Diese Funktion hilft Ihnen, Analyse-Rezepte mithilfe von KI zu erstellen.
+    schema_summary: '{rows} Zeilen, {cols} Spalten'
+    select_dataset: Datensatz auswählen
+    select_dataset_first: Bitte wählen Sie zuerst einen Datensatz aus.
+    select_dataset_placeholder: Datensatz auswählen...
+    send: Senden
+    title: Assistent für Analyseregeln
+  select_ai_connection: KI-Verbindung
+  select_ai_connection_placeholder: KI-Verbindung auswählen...
+  select_model: Modell
+  select_model_placeholder: Modell auswählen...
+  test_error: Verbindung fehlgeschlagen.
+  test_success: Verbindung erfolgreich!
+  title: KI-Einstellungen
+  recipe_concierge:
+    stage_greeting: Willkommen
+    stage_transforms: Datenvorbereitung
+    save: Rezept speichern
+    open: Im Editor öffnen
+    saving: Wird gespeichert ...
+    new_session: Neue Sitzung
+    chat_error: Antwort konnte nicht abgerufen werden
+    welcome: Sagen Sie mir, was Sie in Ihren Daten entdecken möchten, und ich helfe Ihnen, ein vollständiges Analyse-Rezept zu erstellen.
+    create_prompt: Erstellen Sie eine neue Sitzung, um zu beginnen.
+    stage_goal: Forschungsfrage
+    tab_sessions: Sitzungen
+    input_placeholder: Fragen Sie etwas zu Ihren Daten ... oder sagen Sie einfach „Hallo“.
+    select_dataset: Datensatz auswählen ...
+    saved: Rezept gespeichert!
+    no_sessions: Noch keine Sitzungen
+    stage_review: Rezept überprüfen
+    delete_session: Sitzung löschen
+    tab_chat: Chat
+    stage_technique: Technik auswählen
+    status_ready: Bereit
+    tab_draft: Entwurf
+    draft_title: Rezept-Entwurf
+    stage_visualisation: Visualisierung
+    no_session: Keine Sitzung ausgewählt
+    status_draft: Entwurf
+    stage_complete: Rezept bereit
+    draft_empty: Beginnen Sie ein Gespräch, um Ihr Rezept zu erstellen. Der Entwurf wird hier angezeigt, während Sie Entscheidungen treffen.
+    manual_label: Manuelles Rezept
+    toggle_panel: Rezeptbereich umschalten
+    stage_columns: Spalten auswählen
+    title: KI-Rezept-Concierge
+    schema_changes: 'Schemaänderungen erkannt:'
+    draft_no_visualisation: Numerische Ergebnisse
+    draft_dataset: Datensatz
+    draft_output: Ausgabe
+    errors_heading: Kann noch nicht gespeichert werden
+    warnings_heading: Warnungen
+    draft_algorithm: Algorithmus
+    progress_decided: '{count} von {total} entschieden'
+    done: Fertig
+    chip_withheld: +{count} weitere
+    progress_next: '{progress} · {next}'
+    unread_sources: Einige Quellen konnten nicht gelesen werden, daher ist die Spaltenliste möglicherweise unvollständig.
+    chip_superseded: Durch ein neueres Angebot ersetzt.
+    chip_collapse: Weniger anzeigen
+    chip_expand: Weitere {count} anzeigen
+  thinking: Denken...
+  testing:
+    cancelled: Gestoppt. Bereits aufgezeichnete Ergebnisse wurden beibehalten.
+    discover_running: Server wird abgefragt…
+    too_slow: Über Ihrem {seconds}-Sekunden-Limit
+    run_all_untested: Alle Tests für ungetestete Modelle ausführen
+    slow_limit_session_label: Limit für langsame Modelle
+    slow_limit_unavailable: Ihre Einstellungen enthielten kein Limit für langsame Modelle, daher wird kein Modell als zu langsam markiert.
+    slow_limit_session_link: Dauerhaft in Ihrem Profil festlegen
+    no_duration_here: Auf dieser Verbindung nicht ausgeführt
+    test_turn: Komplexität
+    test_tools: verwendet Tools
+    no_models: Auf dieser Verbindung wurden noch keine Modelle erkannt.
+    cost_confirm: Lauf starten
+    discover_failed: 'Modelle konnten nicht erkannt werden: {detail}'
+    column_model: Modell
+    slow_limit_failed: Ihr Limit für langsame Modelle konnte nicht gelesen werden, daher wird kein Modell als zu langsam markiert. {detail}
+    connection_label: KI-Verbindung
+    run_failed: 'Der Test konnte nicht ausgeführt werden: {detail}'
+    failure_reason: 'Grund: {reason}'
+    no_connections_link: Zu KI-Verbindungen
+    no_connections_heading: Noch keine KI-Verbindung
+    duration_ms: '{ms} ms'
+    state_pass: Bestanden
+    slow_limit_session_reset: Mein gespeichertes Limit verwenden
+    duration_seconds: '{seconds} s'
+    no_connections_body: Das Testen eines Modells erfordert eine KI-Verbindung. Fügen Sie eine hinzu und kehren Sie dann zu dieser Seite zurück.
+    cost_warning: Dies führt {count} Test(s) aus; der Turn-Test dauert auf CPU Minuten pro Modell. Erneut drücken, um zu starten.
+    running: Wird ausgeführt…
+    discover_models: Modelle erkennen
+    column_actions: Test
+    state_fail: Nicht bestanden
+    explanation: Die KI-Concierges der Workbench sind für Modelle gebaut, die handeln. Ein Modell, das nur redet – so höflich, so groß es auch ist – lässt den Rezepteditor reagieren, ohne dass etwas geschieht.
+      Die Lösung ist das Modell, nicht der Code. Mit dem Werkzeug auf dieser Seite können Sie testen, ob ein Modell geeignet ist.
+    enabled_no: Modell deaktiviert
+    column_enabled: Aktiviert
+    elsewhere_note: Ein Modell kann ein Fähigkeitsergebnis aus einer anderen Verbindung behalten. Die Dauer neben jedem Status ist die eigene Messung dieser Verbindung, daher kann ein Modell hier einen
+      Status ohne Dauer anzeigen.
+    run_all_for_model: Alle für dieses Modell ausführen
+    title: KI-Tests
+    slow_limit_session_hint: Gilt nur für diese Seite – wird nicht gespeichert.
+    load_error: Ihre KI-Verbindungen konnten nicht geladen werden. {detail}
+    test_competence: Kompetenz
+    run_test: Test ausführen
+    enabled_yes: Modell aktiviert
+    models_heading: Modelle
+    discover_result: 'Der Server hat {seen} Modell(e) aufgelistet: {created} neu, {refreshed} bereits bekannt, {pruned} nicht mehr bereitgestellt'
+api:
+  admin:
+    already_full_admin: Benutzer ist bereits ein Volladministrator
+    already_group_admin: Benutzer ist bereits ein Gruppenadministrator
+    cannot_delete_self: Eigenes Konto kann nicht gelöscht werden
+    cannot_demote_full_admin: Ein Volladministrator kann nicht herabgestuft werden
+    cannot_demote_self: Sie können sich nicht selbst herabstufen
+    cannot_promote_example: Beispielbenutzer können nicht befördert werden
+    delete_error: Benutzer konnte nicht gelöscht werden
+    demote_error: Benutzer konnte nicht herabgestuft werden
+    description_required: Beschreibung darf nicht leer sein
+    example_blocked: Beispielbenutzer können keine Administratoraktionen durchführen
+    group_not_found: Gruppe nicht gefunden
+    group_users_load_error: Gruppenbenutzer konnten nicht geladen werden
+    groups_load_error: Gruppen konnten nicht geladen werden
+    groups_stats_error: Gruppenstatistiken konnten nicht geladen werden
+    instance_exists: Typ kann nicht gelöscht werden, da {count} zugehörige Instanz(en) vorhanden sind.
+    insufficient_permissions: Ungenügende Berechtigungen für diese Aktion
+    invalid_group_id: Ungültige group_id. Muss 00-99 sein.
+    invalid_id: Ungültige ID
+    invalid_upload_count: maxUploadCount muss eine nicht negative Ganzzahl sein (0 für unbegrenzt).
+    invalid_upload_size: maxUploadSizeMB muss eine nicht negative Ganzzahl sein (0 für unbegrenzt).
+    missing_fields: Erforderliche Felder fehlen
+    missing_group_id: Fehlende Gruppen-ID
+    missing_id: Fehlende ID
+    missing_model_id: Fehlende Modell-ID
+    missing_provider_code: Fehlender providerCode-Parameter
+    missing_user_id: Fehlende Benutzer-ID
+    model_update_error: Modell konnte nicht aktualisiert werden
+    models_load_error: Modelle konnten nicht geladen werden
+    no_fields: Keine gültigen Felder zum Aktualisieren
+    no_group: Benutzer hat keine Gruppe zugewiesen
+    not_group_admin: Benutzer ist kein Gruppenadministrator
+    only_full_admin: Nur Volladministratoren können diese Aktion ausführen
+    promote_error: Benutzer konnte nicht befördert werden
+    provider_delete_error: Anbieter konnte nicht gelöscht werden
+    provider_not_found: Anbieter nicht gefunden
+    provider_update_error: Anbieter konnte nicht aktualisiert werden
+    providers_load_error: Anbieter konnten nicht geladen werden
+    slug_exists: Slug existiert bereits
+    update_error: Benutzer konnte nicht aktualisiert werden
+    user_load_error: Benutzer konnte nicht geladen werden
+    user_not_found: Benutzer nicht gefunden
+    users_load_error: Benutzer konnten nicht geladen werden
+    viz_type_create_error: Visualisierungstyp konnte nicht erstellt werden
+    viz_type_delete_error: Visualisierungstyp konnte nicht gelöscht werden
+    viz_type_update_error: Visualisierungstyp konnte nicht aktualisiert werden
+    viz_types_load_error: Fehler beim Laden der Visualisierungstypen
+    settings_invalid_public_url: Ungültiges Format der öffentlichen URL
+    settings_invalid_max_registrations: Die maximale Anzahl von Registrierungen muss eine positive Zahl oder unbegrenzt sein.
+    settings_view_forbidden: Nur Volladministratoren können globale Einstellungen anzeigen.
+    settings_load_error: Globale Einstellungen konnten nicht geladen werden.
+    settings_invalid_upload_size: Die standardmäßige maximale Upload-Größe muss eine nichtnegative Ganzzahl sein (0 für unbegrenzt).
+    settings_save_error: Globale Einstellungen konnten nicht gespeichert werden.
+    settings_invalid_grace_period: Die Registrierungs-Schonfrist muss eine positive Zahl sein (Stunden).
+    settings_modify_forbidden: Nur Volladministratoren können globale Einstellungen ändern.
+    settings_invalid_email_sender: Ungültiges Format der Absender-E-Mail-Adresse.
+    settings_invalid_email_timeout: Der E-Mail-Verifizierungs-Timeout muss eine positive Zahl sein (Stunden).
+    settings_invalid_upload_count: Die standardmäßige maximale Anzahl von Uploads muss eine nichtnegative Ganzzahl sein (0 für unbegrenzt).
+  auth:
+    account_deleted: Dieses Konto wurde gelöscht.
+    email_not_verified: E-Mail nicht verifiziert. Bitte überprüfen Sie Ihren Posteingang und den SPAM-Ordner.
+    example_user_blocked: Passwortänderungen sind für Beispielbenutzer deaktiviert.
+    example_user_forgot_blocked: Passwort zurücksetzen ist für Beispielbenutzer deaktiviert
+    example_user_register_blocked: Beispielbenutzer können keine neuen Konten erstellen
+    example_user_reset_blocked: Passwort zurücksetzen ist für Beispielbenutzer deaktiviert
+    internal_error: Interner Serverfehler
+    invalid_credentials: Ungültige Anmeldedaten
+    invalid_current_password: Aktuelles Passwort ist falsch
+    invalid_token: Ungültiger oder abgelaufener Token
+    missing_email: E-Mail erforderlich
+    missing_fields: Fehlende Felder
+    password_validation_failed: Passwortvalidierung fehlgeschlagen
+    token_expired: Token ist abgelaufen
+    unauthorized: Nicht autorisiert
+    user_not_found: Benutzer nicht gefunden
+  datasets:
+    delete_blocked: Beispielbenutzer können keine Datensätze löschen
+    example_blocked: Beispielbenutzer können keine Datensätze erstellen
+    proxy_error: Interner Serverfehler
+    update_blocked: Beispielbenutzer können keine Datensätze aktualisieren
+  profile:
+    name_required: Name ist erforderlich
+    update_failed: Fehler beim Aktualisieren des Profils
+  recipes:
+    create_error: Fehler beim Erstellen des Rezepts
+    dataset_not_found: Datensatz nicht gefunden
+    dataset_required: datasetId ist erforderlich
+    delete_error: Fehler beim Löschen des Rezepts
+    execute_error: Fehler beim Ausführen des Rezepts
+    execution_load_error: Fehler beim Laden der Ausführung
+    execution_not_found: Ausführung nicht gefunden
+    executions_load_error: Fehler beim Laden der Ausführungen
+    load_error: Fehler beim Laden der Rezepte
+    missing_id: Rezept-ID erforderlich
+    name_required: Name und Stufen sind erforderlich
+    not_found: Rezept nicht gefunden
+    not_owned: Rezept nicht gefunden oder nicht im Besitz
+    update_error: Fehler beim Aktualisieren des Rezepts
+  register:
+    email_exists: E-Mail existiert bereits
+    internal_error: Interner Serverfehler
+    invalid_email: Ungültiges E-Mail-Format
+    limit_reached: Registrierungslimit erreicht (maximal {max_reg} Benutzer).
+    missing_fields: Fehlende Felder
+    password_validation_failed: Passwortvalidierung fehlgeschlagen
+    settings_not_found: Globale Einstellungen nicht gefunden
+  settings:
+    load_failed: Fehler beim Laden der Einstellungen
+    save_failed: Fehler beim Speichern der Einstellungen
+    user_not_found: Benutzer nicht gefunden
+  user:
+    api_key_required: API-Schlüssel ist für diesen Anbieter erforderlich
+    connection_name_exists: Eine Verbindung mit diesem Namen existiert bereits
+    connection_not_found: Verbindung nicht gefunden
+    example_blocked: Beispielbenutzer können diese Aktion nicht ausführen
+    internal_error: Interner Serverfehler
+    missing_fields: Erforderliche Felder fehlen
+    provider_not_found: Anbieter "{provider}" nicht gefunden.
+    user_not_found: Benutzer nicht gefunden
+  global_settings_load_error: Interner Serverfehler
+app:
+  name: Statisticians Workbench
+  version: Version
+chat:
+  connection_not_found: KI-Verbindung nicht gefunden oder nicht zugänglich.
+  connections_load_error: Fehler beim Laden der Verbindungen
+  delete: Löschen
+  delete_confirm: Sind Sie sicher, dass Sie diesen Chat löschen möchten?
+  delete_error: Fehler beim Löschen des Chats
+  delete_success: Chat gelöscht
+  empty_state: Senden Sie eine Nachricht, um eine Unterhaltung zu beginnen.
+  go_to_ai_settings: Zu den KI-Einstellungen
+  history: Chat-Verlauf
+  input_placeholder: Nachricht eingeben...
+  load_error: Fehler beim Laden der Chats
+  models_load_error: Fehler beim Laden der Modelle
+  new_chat: Neuer Chat
+  no_chat_selected: Kein aktiver Chat
+  no_chats: Noch keine Chats
+  no_connections_message: Sie müssen mindestens eine KI-Verbindung definieren, bevor Sie den Chat verwenden können.
+  no_models: Keine Modelle für diese Verbindung verfügbar
+  rename: Umbenennen
+  rename_empty: Titel darf nicht leer sein
+  rename_error: Fehler beim Umbenennen des Chats
+  rename_success: Chat umbenannt
+  select_connection: KI-Verbindung
+  select_connection_first: Bitte wählen Sie zuerst eine KI-Verbindung aus.
+  select_connection_placeholder: KI-Verbindung auswählen
+  select_model: Modell
+  select_model_placeholder: Modell auswählen
+  send_error: Fehler beim Senden der Nachricht
+  title: Chat
+common:
+  audio_settings: Audio-Einstellungen
+  back: Zurück
+  cancel: Abbrechen
+  cannot_undo: Diese Aktion kann nicht rückgängig gemacht werden.
+  clear: Leeren
+  close: Schließen
+  close_navigation: Navigation schließen
+  copied: Kopiert!
+  copy: Kopieren
+  copy_to_clipboard: In die Zwischenablage kopieren
+  delete: Löschen
+  delete_chat: Chat löschen
+  deleting: Wird gelöscht...
+  dismiss: Verwerfen
+  dismiss_error: Fehler verwerfen
+  dismiss_success: Erfolgsmeldung schließen
+  edit: Bearbeiten
+  error_label: Fehler
+  false_label: Falsch
+  generating: Generieren…
+  has_more_information: hat weitere Informationen
+  loading: Laden…
+  microphone_off: Mikrofon aus
+  microphone_on: Mikrofon an
+  next: Weiter
+  no_answer: Keine Antwort zurückgegeben
+  no_permission: Sie haben keine Berechtigung, diese Seite anzuzeigen.
+  open_navigation: Navigation öffnen
+  reset_to_defaults: Auf Standardeinstellungen zurücksetzen
+  restoring: Wiederherstellen…
+  save: Speichern
+  saving: Speichern…
+  select_language: Sprache auswählen
+  sending: Senden…
+  speaker_off: Lautsprecher aus
+  speaker_on: Lautsprecher an
+  speech_input_unsupported: 'Spracheingabe wird von Ihrem Browser nicht unterstützt. Kompatible Browser: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: Der Zugriff auf das Mikrofon wurde verweigert. Bitte erlauben Sie den Mikrofonzugriff in Ihren Browsereinstellungen.
+  speech_mic_failed: 'Mikrofon konnte nicht gestartet werden: {error}.'
+  speech_network_error: Netzwerkfehler bei der Spracherkennung – überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.
+  speech_output_unsupported: 'Sprachausgabe wird von Ihrem Browser nicht unterstützt. Kompatible Browser: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Spracherkennungsfehler: {error}. Versuchen Sie es erneut.'
+  success_label: Erfolg
+  system_default: Systemstandard
+  testing: Testen…
+  true_label: Wahr
+  unknown: Unbekannt
+  untitled: Unbenannt
+  uploading: Hochladen…
+  verifying: Überprüfen…
+  view: Anzeigen
+  view_dataset: Datensatz anzeigen
+  voice: Stimme
+  access_denied_admin: Zugriff verweigert — nur für Administratoren.
+  unknown_error: Unbekannter Fehler
+  audio_resume: Fortsetzen
+  audio_stop: Stopp
+  audio_pause: Pause
+  email_features_unavailable: E-Mail-basierte Kontofunktionen sind nicht verfügbar.
+  ai_max_tokens_label: Maximale Ausgabe-Tokens
+  ai_models: KI-Modelle
+  ai_timeout_label: Maximale KI-Zeit
+  ai_temperature_label: Temperatur
+  connect_timeout_label: Verbindungs-Timeout (Sekunden)
+  probe_timeout_label: Modelltest-Timeout (Sekunden)
+components:
+  audio_settings_dialog:
+    close: Schließen
+    pitch_label: 'Tonhöhe: {0}'
+    reset_to_defaults: Auf Standardeinstellungen zurücksetzen
+    speed_label: 'Geschwindigkeit: {0}x'
+    system_default: Systemstandard
+    title: Audioeinstellungen
+    voice: Stimme
+  example_user_badge: Beispielbenutzer
+  example_user_badge_tooltip: Registrieren für Vollzugriff
+  example_user_banner:
+    message: Sie sehen das System im schreibgeschützten Modus. Registrieren Sie sich für Vollzugriff, um Ressourcen anzulegen und zu bearbeiten.
+    message_short: Schreibgeschützter Modus – Registrieren für Vollzugriff
+    register_button: Registrieren für Vollzugriff
+    register_short: Registrieren
+    title: BEISPIELBENUTZER-MODUS
+  feature_gate:
+    upgrade_message: Diese Funktion erfordert eine Unternehmenslizenz. Kontaktieren Sie Sentuny für Upgrade-Optionen.
+    upgrade_title: Unternehmensfunktion
+  group_admin_badge: Gruppenadministrator
+  preparation_preview:
+    more_columns: +{0} weitere
+    null_value: 'null'
+    rows_removed: '{0} entfernt'
+  readonly_wrapper:
+    message: Schreibgeschützter Modus – Registrieren für Vollzugriff, um diesen Inhalt zu bearbeiten
+  active_checkmark: ✓
+  return_banner:
+    text: Sie haben an einem KI-Rezept gearbeitet.
+    link: Zurück zu Ihrer Sitzung
+    recipe_link: Zurück zu Ihrem Rezept
+    fallback_link: Zurück
+    recipe_text: Sie haben an einem Rezept gearbeitet.
+  data_value:
+    some_content_not_shown: Einige Inhalte werden nicht angezeigt
+database:
+  connection:
+    add_first: Fügen Sie Ihre erste Verbindung hinzu
+    add_new: Neue Verbindung hinzufügen
+    add_success: Verbindung erfolgreich hinzugefügt
+    add_title: Neue Verbindung hinzufügen
+    auto_create_tables: Tabellen-Datensätze automatisch erstellen
+    auto_create_title: Datensätze automatisch erstellen
+    auto_create_views: Ansichts-Datensätze automatisch erstellen
+    browse_tables: Tabellen durchsuchen
+    by_label: von
+    clear_default: Standard löschen
+    currently_not_shared: ❌ Derzeit nicht geteilt
+    currently_shared: ✅ Derzeit mit Gruppe geteilt
+    database_label: Datenbankname
+    datasets_created: '{n} Datensätze erstellt'
+    db_create_badge: DB erstellen
+    default_badge: Standard
+    default_cleared: Standardverbindung gelöscht
+    default_set: Standardverbindung aktualisiert
+    delete_button: Löschen
+    delete_confirmation: Möchten Sie die Verbindung wirklich löschen?
+    delete_error: Verbindung konnte nicht gelöscht werden
+    delete_title: Verbindung löschen
+    deleted: Verbindung gelöscht
+    edit_title: Verbindung bearbeiten
+    file_path_label: Dateipfad
+    form_description: Geben Sie die Details Ihrer Datenbankverbindung ein.
+    group_label: Gruppe
+    host_label: Host
+    jet_host_label: Jet-Server-Host
+    jet_port_label: Jet-Server-Port
+    load_error: Verbindungen konnten nicht geladen werden
+    name_label: Verbindungsname
+    name_placeholder: z. B. Produktionsdatenbank
+    no_connections: Noch keine Datenbankverbindungen gespeichert.
+    not_found: Verbindung nicht gefunden
+    password_label: Passwort
+    port_label: Port
+    save_error: Verbindung konnte nicht gespeichert werden
+    select_type: Typ auswählen
+    set_default: Als Standard festlegen
+    shared_badge: Geteilt
+    shared_description: Diese Verbindung für andere Benutzer in Ihrer Gruppe verfügbar machen.
+    shared_label: Mit Gruppe teilen
+    shared_readonly: Geteilt
+    shared_readonly_message: Diese Verbindung wurde mit Ihnen geteilt. Sie können sie anzeigen, aber die Bearbeitung ist dem Eigentümer vorbehalten.
+    tables_badge: Tabellen
+    test_button: Verbindung testen
+    test_failed: Verbindung fehlgeschlagen
+    test_incomplete: Bitte füllen Sie vor dem Testen alle Felder aus.
+    test_network_error: Netzwerkfehler beim Testen der Verbindung.
+    test_success: Verbindung erfolgreich!
+    type_label: Datenbanktyp
+    unknown_user: Unbekannt
+    update_success: Verbindung erfolgreich aktualisiert
+    username_label: Benutzername
+    auto_create_warnings_title: 'Verbindung gespeichert, aber die automatische Datensatzerstellung hatte Warnungen:'
+    probe_unsaved_hint: Eine Verbindung wird nach dem Speichern geprüft.
+    probe_check_now: Jetzt prüfen
+    probe_state:
+      reachable: Erreichbar
+      auth_failed: Authentifizierung fehlgeschlagen
+      unknown: Nicht geprüft
+      no_permission: Keine Berechtigung
+      no_database: Keine Datenbank
+      incomplete: Unvollständige Einrichtung
+      schema_error: Schema nicht lesbar
+      unreachable: Nicht erreichbar
+    probe_auto_hint: Wird automatisch aktualisiert, sobald die Verbindungsliste geladen wird.
+    probe_checked: Geprüft
+    probe_last_succeeded: Zuletzt erfolgreich
+    probe_minutes_ago: vor {count} Minuten
+    probe_never: Nie
+    probe_no_success: Keine erfolgreiche Prüfung aufgezeichnet
+    probe_hours_ago: vor {count} Stunden
+    probe_minute_ago: vor 1 Minute
+    probe_title: Letzte Überprüfung
+    probe_hour_ago: vor 1 Stunde
+    probe_check_failed: Die Verbindung konnte gerade nicht überprüft werden.
+    probe_just_now: gerade eben
+  default_hint: Die Standardverbindung wird als Fallback verwendet, wenn ein Analyserezept keine Verbindung angibt.
+  title: Datenbankeinstellungen
+datasets:
+  all_datasets: Alle Daten
+  by_label: von
+  created_label: Erstellt
+  database_label: DB
+  define_button: Datenbank verbinden
+  define_first: Eine Datenbank verbinden
+  delete:
+    confirm: Diesen Datensatz löschen?
+    error: Löschen des Datensatzes fehlgeschlagen
+    success: Datensatz '{id}' erfolgreich gelöscht.
+    title: Löschen
+  description:
+    empty: Generierte Beschreibung ist leer. Bitte überprüfen Sie die Konfiguration des KI-Anbieters.
+    error: Beschreibung konnte nicht generiert werden.
+    generated: Beschreibung erfolgreich generiert.
+    title: Generierte Beschreibung
+  detail:
+    created: Erstellt
+    descriptions: KI-Beschreibungen
+    generated: Generiert
+    load_error: Laden des Datensatzes fehlgeschlagen
+    model: Modell
+    no_description: Keine Beschreibung
+    not_found: Datensatz nicht gefunden
+    not_found_message: Der gesuchte Datensatz konnte nicht gefunden werden.
+    overview: Übersicht
+    rows: Zeilen
+    rows_not_computed: Nicht berechnet
+    storage_live: Live-Ansicht
+    materialize_failed: 'Die gespeicherte Tabelle konnte nicht erstellt werden:'
+    rows_not_computed_hint: Der Join wurde noch nicht ausgeführt, daher gibt es noch keine Zeilenanzahl.
+    storage_table: Gespeicherte Tabelle
+  list_error: Laden der Datensätze fehlgeschlagen
+  no_datasets: Keine Daten verfügbar.
+  no_uploaded: Noch keine hochgeladenen Datensätze.
+  preparation:
+    add_operation: Operation hinzufügen
+    add_rule: Regel hinzufügen
+    column_required: Operation erfordert eine Spalte
+    columns_required: Operation erfordert mindestens eine Spalte
+    delete_confirmation: Sind Sie sicher, dass Sie die Transformationsregel "{name}" löschen möchten? Dadurch wird sie auch aus allen Rezepten entfernt, die sie verwenden.
+    delete_error: Löschen der Transformationsregel fehlgeschlagen
+    delete_title: Transformationsregel löschen
+    edit_rule: Regel bearbeiten
+    encode:
+      label: Bezeichnung
+      one_hot: One-Hot
+    fill:
+      constant: Konstante
+      drop: Entfernen
+      mean: Mittelwert
+      median: Median
+      mode: Modus
+    filter_invalid: Filteroperation erfordert Spalte und Wert
+    link:
+      description: Diesen Datensatz bereinigen und transformieren
+      title: Transformationen
+    name_required: Regelname ist erforderlich
+    new_name_required: Umbenennungsoperation erfordert einen neuen Namen
+    new_rule: Neue Regel
+    no_rules: Keine Transformationsregeln für diesen Datensatz definiert.
+    operation:
+      convert_type: Typ konvertieren
+      drop_columns: Spalten entfernen
+      encode: Kodieren
+      fill_missing: Fehlende Werte füllen
+      filter: Filtern
+      normalize: Normalisieren
+      rename_column: Spalte umbenennen
+      standardize: Standardisieren
+    operations: Operationen
+    operations_count: Operation(en)
+    operator:
+      after: Nach (>)
+      before: Vor (<)
+      contains: Enthält
+      ends_with: Endet mit
+      equal_to: Gleich (=)
+      greater_than: Größer als (>)
+      greater_than_or_equal: Größer oder gleich (>=)
+      less_than: Kleiner als (<)
+      less_than_or_equal: Kleiner oder gleich (<=)
+      not_contains: Enthält nicht
+      not_equal: Ungleich (!=)
+      on_or_after: Ab (>=)
+      on_or_before: Bis (<=)
+      starts_with: Beginnt mit
+    original_data: Ursprüngliche Daten
+    placeholder:
+      boolean: wahr / falsch
+      datetime: JJJJ-MM-TT oder Zeitstempel…
+      number: Zahl eingeben…
+      value: Wert eingeben…
+    preview: Vorschau
+    preview_error: Vorschau der Regel fehlgeschlagen
+    preview_title: Vorschau
+    rows_after: Nach
+    rows_before: Vor
+    rows_removed: Entfernt
+    rule_created: Vorbereitungsregel '{name}' erfolgreich erstellt.
+    rule_deleted: Vorbereitungsregel erfolgreich gelöscht.
+    rule_description: Beschreibung (optional)
+    rule_description_placeholder: Kurzbeschreibung
+    rule_name: Regelname
+    rule_name_placeholder: z. B. „Für Analyse bereinigen“
+    rule_updated: Vorbereitungsregel erfolgreich aktualisiert.
+    rules_title: Transformationsregeln
+    save_error: Transformationsregel konnte nicht gespeichert werden
+    shared: Mit Gruppe teilen
+    transformed_data: Transformierte Daten
+    type:
+      boolean: Boolean
+      datetime: DateTime
+      numeric: Numerisch
+      string: String
+    ui:
+      column: Spalte
+      columns: Spalten (durch Komma getrennt)
+      encoding: Kodierung
+      method: Methode
+      new_name: neuer Name
+      operator: Operator
+      target_type: Zieltyp
+      type: Typ
+      value: Wert
+  rules_button: Regeln
+  schema:
+    column_name: Spalte
+    column_type: Typ
+    columns: Spalten
+    load_error: 'Schema konnte nicht geladen werden: {error}'
+    no_sample_data: Keine Beispieldaten verfügbar
+    null_count: Nullwerte
+    sample_data: Beispieldaten (erste 5 Zeilen)
+    title: Schema-Vorschau
+    total_columns: Spalten insgesamt
+    total_rows: Zeilen insgesamt
+    unique_count: Eindeutig
+  share: Teilen
+  share_error: Freigabe konnte nicht aktualisiert werden
+  shared: Datensatz geteilt
+  shared_badge: Geteilt
+  source:
+    unknown_file: Unbekannte Datei
+  title: Meine Daten
+  transform_button: Transformieren
+  type:
+    table: Tabelle
+    upload: Hochgeladen
+    view: Ansicht
+    virtual: Virtuell
+    mssql: MS SQL
+    postgresql: PostgreSQL
+    access: MS Access
+    notebook: Notizbuch
+    mysql: MySQL
+    cleaned_copy: Bereinigte Kopie
+  unknown_user: Unbekannt
+  unshare: Freigabe aufheben
+  unshared: Datensatz-Freigabe aufgehoben
+  upload:
+    card_title: Hochladen und beschreiben
+    connection_not_found: Verbindung nicht gefunden. Bitte wählen Sie eine gültige KI-Verbindung aus.
+    description_label: Beschreibung (optional)
+    description_placeholder: Kurzbeschreibung dieser Daten
+    error: Datensatz konnte nicht hochgeladen werden.
+    file_label: Datei
+    file_selected: Ausgewählte Datei
+    file_too_large: Die Datei überschreitet die maximale Upload-Größe von {max} MB. Das Hochladen ist nicht erlaubt.
+    generate_description: Beschreibung generieren
+    history: Upload-Verlauf
+    limit_reached: Limit erreicht
+    limit_reached_message: Sie haben die maximal zulässige Anzahl von Datensätzen erreicht ({count}).
+    name_label: Datenname
+    name_placeholder: Meine Daten
+    no_connections: Sie müssen mindestens eine KI-Verbindung definieren, um Beschreibungen zu generieren.
+    no_datasets: Noch keine Datensätze
+    no_file: Bitte wählen Sie zuerst eine Datei aus.
+    no_name: Bitte geben Sie einen Datensatznamen ein.
+    select_dataset: Bitte laden Sie zuerst einen Datensatz hoch oder wählen Sie einen aus.
+    shared_description: Diese Daten für andere Benutzer in Ihrer Gruppe verfügbar machen.
+    shared_group_hint: 'Gruppe: {group} - {description}'
+    shared_label: Mit Gruppe teilen
+    success: Datensatz '{name}' erfolgreich hochgeladen.
+    title: Daten hochladen
+    upload_button: Hochladen
+    escalation_label: Erneut versuchen mit (Sekunden)
+    escalation_failed_at: Die Beschreibung wurde nach {seconds} Sekunden wegen Zeitüberschreitung abgebrochen.
+    escalation_invalid: Geben Sie eine ganze Zahl in Sekunden zwischen 1 und {max} ein.
+    escalation_retry: Erneut versuchen
+    escalation_hint: Nur dieser Versuch verwendet diesen Wert. Wenn dieses Modell normalerweise länger benötigt, passen Sie die Modelleinstellungen der Verbindung an, statt diesen Wert jedes Mal zu erhöhen.
+  upload_button: Daten hochladen
+  upload_count: '{count} Upload{plural}'
+  upload_first: Laden Sie Ihre erste Datendatei hoch
+  upload_first_file: Laden Sie Ihre erste Datei hoch
+  upload_new: Neue Datei hochladen
+  uploaded_title: Hochgeladene Daten
+  view_dataset_title: Datensatz anzeigen
+  view_schema: Schema anzeigen
+  browse:
+    column: Spalte
+    columns_title: Spalten — {table}
+    select_table_hint: Wählen Sie eine Tabelle aus, um ihre Spalten anzuzeigen und eine Datenvorschau zu erhalten.
+    preview: Vorschau
+    nullable: Nullwerte zulassend
+    load_columns_error: Fehler beim Laden der Spalten
+    load_tables_error: Fehler beim Laden der Tabellen
+    preview_hint: Klicken Sie auf „Vorschau laden“, um Beispielzeilen anzuzeigen.
+    connections: Verbindungen
+    tables_count: '{count} Tabellen'
+    tables: Tabellen
+    load_preview_error: Fehler beim Laden der Vorschau
+    type: Typ
+    back: Zurück
+    load_preview: Vorschau laden
+    browse_tables: Tabellen durchsuchen
+  transforms:
+    no_transforms: Keine Transformationen für diesen Datensatz definiert.
+    create_new: Neue Transformation
+    description_label: Beschreibung (optional)
+    delete_error: Fehler beim Löschen der Transformation
+    delete_confirm: Diese Transformation löschen?
+    operations_label: '{count} Operation(en)'
+    create_error: Fehler beim Erstellen der Transformation
+    creating: Wird erstellt…
+    for: Transformationen für {name}
+    create_button: Erstellen
+    created_label: Erstellt
+    load_error: Laden der Transformationen fehlgeschlagen.
+    title: Transformationen
+    back: Zurück zu My Data
+    name_label: Name
+  filter:
+    cleaned: Bereinigt
+    not_shared: Nicht geteilt
+    postgresql: PostgreSQL
+    no_match: Keine Datensätze entsprechen diesem Filter.
+    notebooks: Notizbücher
+    label: Filter
+    mssql: MS SQL
+    mysql: MySQL
+    uploads: Uploads
+    shared: Geteilt
+    virtual: Virtuell
+    all: Alle
+    access: MS Access
+  cleaned_badge: Bereinigt
+  created_from: Erstellt aus {name}
+  source_unavailable: Quelle nicht verfügbar
+  table_not_built: Tabelle nicht erstellt
+define:
+  column_name: Spalte
+  column_type: Typ
+  connection_label: Datenbankverbindung
+  dataset_name: Datensatzname
+  dataset_name_placeholder: z. B. „Kundendaten“
+  description_label: Beschreibung (optional)
+  description_placeholder: Kurzbeschreibung dieses Datensatzes
+  existing_none: Keine
+  existing_title: Vorhandene
+  go_to_db_settings: Zu den Datenbankeinstellungen gehen
+  load_connections_error: Verbindungen konnten nicht geladen werden
+  load_sources_error: Quellen konnten nicht geladen werden
+  name_required: Datensatzname ist erforderlich
+  no_connections_message: Sie müssen mindestens eine Datenbankverbindung definieren, bevor Sie eine Datenbank verbinden können.
+  no_sources: Keine Tabellen oder Ansichten in dieser Datenbank gefunden.
+  nullable: Null zulässig
+  preview_label: Datenvorschau (erste 10 Zeilen)
+  save_button: Datensatz speichern
+  save_error: Fehler beim Erstellen des Datensatzes
+  save_success: Datensatz erfolgreich erstellt
+  schema_label: Schema
+  select_connection: Verbindung auswählen
+  select_source: Quelle auswählen
+  select_source_first: Bitte wählen Sie zuerst eine Tabelle oder Ansicht aus.
+  shared_description: Machen Sie diesen Datensatz für andere Benutzer in Ihrer Gruppe verfügbar.
+  shared_label: Mit Gruppe teilen
+  source_label: Quelle
+  source_type_label: Quellentyp
+  step1_description: Wählen Sie eine Datenbankverbindung aus, um einen Datensatz zu verbinden.
+  step1_title: Datenbankverbindung auswählen
+  step2_description: Wählen Sie, ob Sie eine Tabelle oder Ansicht verwenden möchten, und wählen Sie dann die Quelle aus.
+  step2_title: Quelle auswählen
+  step3_description: Überprüfen Sie die Spalten und zeigen Sie eine Vorschau der Daten aus der ausgewählten Quelle an.
+  step3_title: Quelle überprüfen
+  step4_description: Geben Sie Ihrem Datensatz einen Namen und eine Beschreibung und speichern Sie ihn.
+  step4_title: Benennen und speichern
+  step_connection: Verbindung
+  step_save: Speichern
+  step_source: Quelle
+  step_verify: Überprüfen
+  table: Tabelle
+  title: Datenbank verbinden
+  verify_button: Quelle überprüfen
+  verify_error: Überprüfung der Tabelle/Ansicht fehlgeschlagen
+  verify_success: Tabelle/Ansicht erfolgreich überprüft
+  view: Ansicht
+demo:
+  badge: DEMO
+  banner:
+    message: Dies ist ein Demonstrationssystem. Daten können in regelmäßigen Abständen zurückgesetzt werden.
+    title: ⚠️ DEMO-MODUS
+forgot_password:
+  back_to_login: Zurück zur Anmeldung
+  check_spam: Bitte überprüfen Sie Ihren Spam-Ordner, falls Sie die E-Mail nicht innerhalb weniger Minuten erhalten.
+  description: Geben Sie Ihre E-Mail-Adresse ein, und wir senden Ihnen einen Link zum Zurücksetzen des Passworts.
+  error: Fehler beim Senden der E-Mail zum Zurücksetzen
+  sent: Falls ein Konto mit dieser E-Mail-Adresse existiert, erhalten Sie einen Link zum Zurücksetzen des Passworts.
+  sent_description: Falls ein Konto mit dieser E-Mail-Adresse existiert, erhalten Sie einen Link zum Zurücksetzen des Passworts.
+  sent_title: E-Mail gesendet
+  submit: Link zum Zurücksetzen senden
+  title: Passwort vergessen
+global:
+  demo_mode:
+    description: Wenn aktiviert, läuft das System im Demo-Modus.
+    label: Demo-Modus
+  email_sender:
+    hint: Die E-Mail-Adresse, von der Bestätigungs-E-Mails zu stammen scheinen.
+    label: Absenderadresse für E-Mails
+  email_timeout:
+    hint: Gibt an, wie viele Stunden der Bestätigungslink gültig bleibt.
+    label: Zeitlimit für E-Mail-Bestätigung (Stunden)
+  grace_period:
+    hint: Stunden, bevor vorläufig gelöschte Konten endgültig entfernt werden.
+    label: Löschverzögerung (Stunden)
+  invalid_grace_period: Bitte geben Sie eine gültige positive Zahl für die Löschverzögerung (Stunden) ein.
+  invalid_number: Bitte geben Sie eine gültige positive Zahl für maximale Registrierungen ein.
+  invalid_timeout: Bitte geben Sie eine gültige positive Zahl für das Bestätigungs-Zeitlimit (Stunden) ein.
+  load_error: Fehler beim Laden der globalen Einstellungen
+  max_registrations:
+    custom: Benutzerdefiniert (unten eingeben)
+    custom_placeholder: Geben Sie eine positive Zahl ein
+    hint: Legen Sie ein Limit für die Anzahl der Benutzer fest, die sich registrieren können.
+    label: Maximale Benutzerregistrierungen
+    placeholder: Limit auswählen
+    unlimited: Unbegrenzt
+    users: Benutzer
+  password_policy:
+    custom: Benutzerdefiniert
+    high: Hoch (min. 10 Zeichen, Groß-/Kleinbuchstabe, Ziffer, Sonderzeichen)
+    hint: Wählen Sie die Anforderungen an die Passwortkomplexität für Benutzerregistrierung und Passwortänderungen aus.
+    label: Passwortrichtlinie
+    low: Niedrig (min. 6 Zeichen)
+    medium: Mittel (min. 8 Zeichen, Groß-/Kleinbuchstabe, Ziffer)
+    min_length: Minimale Länge
+    min_strength: Minimale Stärke (zxcvbn-Score 0-4)
+    require_digit: Ziffer erforderlich
+    require_lowercase: Kleinbuchstabe erforderlich
+    require_special: Sonderzeichen erforderlich
+    require_uppercase: Großbuchstabe erforderlich
+    select: Richtlinie auswählen
+  public_url:
+    hint: Die Basis-URL, die in E-Mail-Bestätigungslinks verwendet wird (z. B. https://workbench.example.com).
+    label: Öffentliche URL
+  save_button: Globale Einstellungen speichern
+  save_success: Globale Einstellungen gespeichert
+  system:
+    description: Verwalten Sie globale Einstellungen, die für alle Benutzer gelten (nur Administratoren).
+    title: Systemkonfiguration
+  title: Globale Einstellungen
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Maximale Anzahl von Datensätzen pro Benutzer (0 = unbegrenzt). Gilt für neue Benutzer.
+    count_unlimited: Unbegrenzt
+    default_count_label: Standardmäßige max. Upload-Anzahl pro Benutzer
+    default_size_label: Standardmäßige max. Upload-Größe pro Benutzer (MB)
+    select_count: Limit auswählen
+    select_size: Limit auswählen
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: Maximaler Speicherplatz pro Benutzer (0 = unbegrenzt). Wird auf neue Benutzer angewendet.
+    size_unlimited: Unbegrenzt
+  welcome:
+    hint: Diese Nachricht wird auf der Anmeldeseite angezeigt. Leer lassen, um sie auszublenden.
+    label: Willkommensnachricht
+    placeholder: Geben Sie eine Willkommensnachricht ein, die auf der Anmeldeseite angezeigt wird.
+home:
+  welcome_placeholder: Willkommen bei der Statisticians Workbench
+licence:
+  admin_required: Sie müssen Administrator sein, um Lizenzinformationen anzuzeigen.
+  delete_button: Lizenz entfernen
+  delete_confirm: Dadurch wird das System in den Open-Source-Modus zurückversetzt. Alle gesperrten Funktionen werden deaktiviert. Sie können sie durch die Installation einer neuen Lizenz wiederherstellen.
+  delete_error: Entfernen der Lizenz fehlgeschlagen.
+  delete_no: Abbrechen
+  delete_success: Lizenz entfernt. Läuft im Open-Source-Modus.
+  delete_title: Lizenz entfernen
+  delete_yes: Ja, Lizenz entfernen
+  description: Aktuelle Informationen zu Funktionslizenz und Stufe.
+  details_label: Lizenzdetails
+  expires_at_label: Läuft ab
+  features_label: Aktivierte Funktionen
+  install_button: Lizenz installieren
+  install_error: Installation der Lizenz fehlgeschlagen.
+  install_no_file: Keine Datei ausgewählt.
+  install_success: Lizenz erfolgreich installiert.
+  issued_at_label: Ausgestellt
+  issued_to_label: Ausgestellt für
+  load_error: Laden der Lizenzinformationen fehlgeschlagen.
+  max_users_label: Lizenzierte Benutzer
+  no_features: Derzeit sind keine gesperrten Funktionen aktiviert.
+  open_source_message: Diese Installation läuft im Open-Source-Modus. Kontaktieren Sie Sentuny, um auf eine Unternehmenslizenz zu aktualisieren.
+  preview_error: Validierung der Lizenzdatei fehlgeschlagen.
+  preview_invalid: Ungültige Lizenzdatei.
+  preview_title: Lizenzvorschau
+  tier_label: Stufe
+  title: Lizenzstatus
+  upload_title: Lizenzdatei hochladen
+login:
+  account_deleted: Dieses Konto wurde gelöscht.
+  description: Bei Ihrem Konto anmelden
+  docs_more_info: hat weitere Informationen
+  email: E-Mail
+  email_not_verified: E-Mail nicht verifiziert. Bitte überprüfen Sie Ihren Posteingang und den SPAM-Ordner.
+  email_verified: E-Mail erfolgreich verifiziert! Sie können sich jetzt anmelden.
+  forgot_password: Passwort vergessen?
+  invalid_credentials: Ungültige E-Mail oder Passwort.
+  invalid_token: Ungültiger Verifizierungslink. Bitte fordern Sie einen neuen an.
+  missing_token: Kein Verifizierungstoken angegeben.
+  no_account: Noch kein Konto?
+  password: Passwort
+  register_link: Registrieren
+  resend_link: Verifizierungs-E-Mail erneut senden?
+  signing_in: Anmelden...
+  submit: Anmelden
+  success: Erfolgreich angemeldet
+  title: Anmelden
+  token_expired: Der Verifizierungslink ist abgelaufen. Bitte fordern Sie einen neuen an.
+nav:
+  about: Über
+  admin: Admin
+  admin_groups: Gruppenbeschreibungen
+  admin_licence: Lizenz
+  admin_panel: Benutzerverwaltung
+  admin_providers: KI-Anbieter
+  admin_setup: Einrichtung
+  admin_setup_internal: Intern
+  admin_setup_limits: Beschränkungen
+  admin_setup_options: Optionen
+  admin_visualization_types: Visualisierungstypen
+  ai_analysis_rules: Rezept-Editor
+  ai_chat: KI-Tools
+  ai_database_design: Datenbankdesign
+  ai_dataset_cleaning: Datensatzbereinigung
+  ai_general: Allgemein
+  ai_virtual_datasets: Virtuelle Datensätze
+  home: Startseite
+  logout: Abmelden
+  user: Benutzer
+  ai_testing: KI-Tests
+  admin_setup_tuning: Tuning
+notebooks:
+  and_more: +{count} weitere
+  cant_create_tables: Diese Verbindung kann keine Tabellen erstellen – Import verweigert
+  cells_label: 'Zellen:'
+  connection_create_db_badge: DB erstellen
+  connection_form_label: Verbindung
+  connection_tables_badge: Tabellen
+  connection_unavailable: Datenbankverbindung nicht gefunden oder nicht zugänglich
+  create_dataset: Datensatz automatisch erstellen
+  create_new_database: Neue Datenbank erstellen
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrames:'
+  dataset_created: Datensatz erstellt
+  delete_confirm: Import "{name}" und alle zugehörigen Tabellen löschen?
+  delete_failed: Löschen des Imports fehlgeschlagen
+  delete_title: Import löschen
+  detected_dataframes: 'Erkannte DataFrames:'
+  doc_preview: 'Dokumentationsvorschau:'
+  example_banner: Sie sehen dies als Beispielbenutzer. Registrieren Sie sich, um Notizbücher zu importieren und zu verwalten.
+  example_blocked: Beispielbenutzer können keine Notizbücher importieren.
+  example_register: Registrieren
+  fetch_error: Abrufen der Imports fehlgeschlagen
+  import_button: Notizbuch importieren
+  import_complete: Import abgeschlossen
+  import_deleted: Import gelöscht
+  import_failed: 'Notebook-Import fehlgeschlagen: {error}'
+  import_success: '{count} Tabelle(n) erfolgreich importiert'
+  import_title: Jupyter-Notebook-Import
+  imported_at_label: 'Importiert am:'
+  importing: Importiere...
+  kb_unit: KB
+  kernel_label: 'Kernel:'
+  list_title: Notebook-Importe
+  no_dataframes: Keine DataFrames in diesem Notizbuch gefunden
+  no_imports: Noch keine Notebook-Importe.
+  notebook_label: 'Notizbuch:'
+  parse_error: Notizbuch konnte nicht analysiert werden
+  parsing: Wird analysiert...
+  preview_button: Vorschau
+  rows_cols_format: '{rows} Zeilen × {cols} Spalten'
+  run_preview_first: Vorschau ausführen, um anzuzeigen, was importiert wird
+  sanitised_notice: Code-Zellen wurden aus Sicherheitsgründen entfernt. Nur Datenausgaben und Markdown bleiben erhalten.
+  select_connection: Datenbankverbindung auswählen
+  select_connection_placeholder: Verbindung auswählen...
+  select_file_first: Bitte wählen Sie eine .ipynb-Datei aus
+  share_error: Nur der Eigentümer kann die Freigabeeinstellungen ändern.
+  share_label: Mit Gruppe teilen
+  shared: Notizbuch mit Gruppe geteilt
+  shared_badge: Geteilt
+  size_label: 'Größe:'
+  step1_title: 'Schritt 1: Datei auswählen'
+  step2_title: 'Schritt 2: Vorschau'
+  storage_form_label: Speicher
+  storage_label: 'Speicher:'
+  table_count: '{count} Tabelle(n)'
+  tables_created_label: 'Erstellte Tabellen:'
+  title_label: 'Titel:'
+  unshared: Notizbuch nicht mehr geteilt
+  table_name: 'Tabelle: {name}'
+password:
+  strength:
+    fair: Ausreichend
+    good: Gut
+    strong: Stark
+    weak: Schwach
+preparation:
+  add_operation: Operation hinzufügen
+  after: Nach
+  back_to_list: Zurück zu den Regeln
+  before: Vor
+  cancel: Abbrechen
+  col:
+    categorical: kategorial
+    datetime: Datum/Uhrzeit
+    nulls: '{percent}% Nullwerte'
+    numeric: numerisch
+  cols: Spalten
+  column_label: Spalte
+  constant_value_label: Konstanter Wert
+  create_first: Erstellen Sie Ihre erste Transformation, um diesen Datensatz vor der Analyse zu bereinigen und vorzubereiten.
+  delete: Löschen
+  delete_confirm: Regel "{name}" löschen? Dies kann nicht rückgängig gemacht werden.
+  description_label: Beschreibung (optional)
+  duplicate: Duplizieren
+  duplicate_suffix: (Kopie)
+  edit: Bearbeiten
+  edit_title: 'Regel bearbeiten: {name}'
+  encoding:
+    label: Bezeichnung
+    onehot: One-Hot
+  encoding_param_label: Kodierung
+  live_preview: Live-Vorschau
+  load_error: Daten konnten nicht geladen werden
+  method:
+    minmax: Min-Max
+    zscore: Z-Score
+  method_label: Methode
+  name_label: Name
+  name_required: Regelname ist erforderlich
+  new_name_label: Neuer Name
+  new_rule: Neue Regel
+  new_title: Neue Transformation
+  no_rules: Noch keine Transformationen
+  nulls: Nullwerte
+  op:
+    convert_type: Typ konvertieren
+    drop_column: Spalte löschen
+    drop_duplicates: Duplikate entfernen
+    encode_category: Kategorie kodieren
+    fill_missing: Fehlende Werte füllen
+    filter: Filter
+    rename_column: Spalte umbenennen
+    normalize: Normalisieren
+    standardize: Standardisieren
+  operations_count: '{count} Operation(en)'
+  operations_label: Operationen
+  operator_label: Operator
+  ops_required: Mindestens eine Operation ist erforderlich
+  preview: Vorschau
+  preview_error: Vorschau fehlgeschlagen
+  preview_loading: Vorschau wird geladen...
+  preview_no_ops: Fügen Sie Operationen hinzu, um die Vorschau anzuzeigen
+  row_impact: '{before} → {after} Zeilen'
+  rows: Zeilen
+  rule_deleted: Regel gelöscht
+  rule_duplicated: Regel dupliziert
+  rule_saved: Regel gespeichert
+  rules_for: Regeln für {dataset}
+  sample_data: Beispieldaten
+  save: Regel speichern
+  save_error: Regel konnte nicht gespeichert werden
+  saving: Speichern...
+  schema_error: Datensatzschema konnte nicht geladen werden
+  select_column: -- Spalte auswählen --
+  select_type: -- Operation auswählen --
+  strategy:
+    constant: Konstante
+    drop_row: Zeile löschen
+    mean: Mittelwert
+    median: Median
+    mode: Modalwert
+  strategy_label: Strategie
+  target_type_label: Zieltyp
+  title: Transformationen — {dataset}
+  type_label: Operation
+  value_label: Wert
+profile:
+  change_password:
+    description: Aktualisieren Sie Ihr Passwort.
+    title: Passwort ändern
+  change_password_button: Passwort ändern
+  confirm_password: Neues Passwort bestätigen
+  current_password: Aktuelles Passwort
+  current_password_required: Aktuelles Passwort ist erforderlich
+  dark_mode_description: Zwischen hellem und dunklem Thema wechseln.
+  dark_mode_label: Dunkelmodus
+  email_label: E-Mail
+  email_notifications_description: E-Mail-Updates zu Ihrem Konto erhalten.
+  email_notifications_label: E-Mail-Benachrichtigungen
+  email_unchangeable: E-Mail kann nicht geändert werden
+  example_user_language_hint: Registrieren Sie sich für vollen Zugriff, um Ihre Spracheinstellung zu ändern.
+  example_user_name_hint: Registrieren Sie sich für vollen Zugriff, um Ihren Namen zu ändern.
+  example_user_notifications_hint: Registrieren Sie sich für vollen Zugriff, um Benachrichtigungseinstellungen zu ändern.
+  example_user_save_hint: Registrieren Sie sich für vollen Zugriff, um Änderungen zu speichern.
+  example_user_theme_hint: Registrieren Sie sich für vollen Zugriff, um Designeinstellungen zu ändern.
+  group_description: Beschreibung
+  group_id: Gruppen-ID
+  group_info_title: Gruppeninformationen
+  group_load_error: Gruppeninformationen konnten nicht geladen werden
+  group_readonly_hint: Ihre Gruppe wird von einem Administrator zugewiesen und kann hier nicht geändert werden.
+  language_description: Wählen Sie Ihre bevorzugte Sprache für die Benutzeroberfläche.
+  language_label: Sprache
+  language_select_placeholder: Sprache auswählen
+  languages_load_error: Sprachen konnten nicht geladen werden
+  load_error: Einstellungen konnten nicht geladen werden
+  name_label: Name
+  name_placeholder: Ihr Name
+  new_password: Neues Passwort
+  password_change_failed: Passwortänderung fehlgeschlagen
+  password_changed: Passwort erfolgreich geändert
+  password_disabled: Passwortänderungen sind für Beispielbenutzer deaktiviert
+  password_disabled_message: Sie sind als Beispielbenutzer angemeldet. Passwortfunktionen sind deaktiviert.
+  password_mismatch: Neue Passwörter stimmen nicht überein
+  personal:
+    description: Aktualisieren Sie Ihre persönlichen Daten und App-Einstellungen.
+    title: Profil & Einstellungen
+  save_button: Änderungen speichern
+  save_error: Profil konnte nicht gespeichert werden
+  save_success: Profil gespeichert
+  title: Profileinstellungen
+  update_error: Profil konnte nicht aktualisiert werden
+  slow_threshold:
+    invalid: Das Limit muss eine ganze Zahl in Sekunden sein, mindestens 1.
+    save: Limit speichern
+    title: Schwellenwert für langsame Modelle
+    label: Mein Limit
+    effective: 'Derzeit gültig:'
+    placeholder: Site-Standard verwenden
+    seconds: Sekunden
+    description: Ein Modelltest, der länger dauert, wird als zu langsam gemeldet. Leer lassen, um den Site-Standard zu verwenden.
+    saved: Limit für langsame Modelle gespeichert
+recipes:
+  add_rule: Regel hinzufügen
+  algorithm:
+    dependent_column: Abhängige Variable
+    factor_column: Faktor (kategorisch)
+    group_by: Gruppieren nach
+    independent_columns: Unabhängige Variablen
+    placeholder: Analysetyp auswählen
+    response_column: Antwort (numerisch)
+  back_to_recipe: Zurück zum Rezept
+  by_label: von
+  cancel_button: Beenden
+  cancel_error: Ausführung konnte nicht abgebrochen werden
+  cancel_success: Ausführung abgebrochen
+  chart:
+    category: Kategorie
+    count: Anzahl
+    value: Wert
+    x_axis: X
+    y_axis: Y
+  clone: Klonen
+  clone_button: Klonen
+  clone_error: Rezept konnte nicht geklont werden
+  clone_success: Rezept erfolgreich geklont
+  clone_suffix: (Kopie)
+  column_type:
+    category: Kategorie
+    datetime: Datum/Uhrzeit
+    number: Zahl
+    text: Text
+  columns_after: Spalten
+  columns_before: Spalten
+  columns_label: Spalten
+  columns_label_short: Spalten
+  columns_required: Bitte wählen Sie mindestens eine Spalte aus
+  create_error: Rezept konnte nicht erstellt werden
+  create_success: Rezept '{name}' erfolgreich erstellt.
+  dataset:
+    columns_label: Spalten
+    load_error: Datensätze konnten nicht geladen werden
+    loading: Datensätze werden geladen...
+    no_datasets: Keine Datensätze verfügbar
+    placeholder: Wählen Sie einen Datensatz aus
+    rows_label: Zeilen
+  dataset_label: Datensatz
+  dataset_required: Bitte wählen Sie einen Datensatz aus
+  delete: Löschen
+  delete_button: Löschen
+  delete_confirmation: Sind Sie sicher, dass Sie das Rezept "{name}" löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.
+  delete_title: Rezept löschen
+  description_label: Beschreibung (optional)
+  description_placeholder: Beschreibung dieses Rezepts
+  edit: Bearbeiten
+  editor:
+    component_algorithm: Algorithmus
+    component_dataset: Datensatz / Transformation
+    component_output: Ausgabe
+    create_mode: Neues Rezept erstellen – Editor kommt in Phase 3.
+    loading: Rezept wird geladen …
+    name_hint: Ein Name ist erforderlich, bevor Sie das Rezept speichern können.
+    name_placeholder: Rezeptname
+    name_required: Ein Rezeptname ist erforderlich.
+    new_recipe_name: Neues Rezept
+    placeholder: Dies ist der manuelle statistische Rezept-Editor — Rezepte sind das Herzstück der Workbench.
+    save: Rezept speichern
+    save_error: Rezept konnte nicht gespeichert werden.
+    save_success: Rezept gespeichert
+    run: Ausführen
+  execute: Ausführen
+  execute_button: Ausführen
+  execute_error: 'Rezept konnte nicht ausgeführt werden: {error}'
+  execute_success: Rezept erfolgreich ausgeführt
+  execution_error: Fehler
+  execution_load_error: 'Ausführung konnte nicht geladen werden: {error}'
+  execution_not_found: Ausführung '{id}' nicht gefunden.
+  execution_progress: Fortschritt
+  execution_stage_results: Stufenergebnisse
+  execution_started: Gestartet
+  execution_status: Status
+  execution_title: Ausführungsergebnisse
+  executions_title: Letzte Ausführungen
+  export_results: Ergebnisse exportieren
+  go_define: Zu Definieren
+  go_upload: Zum Hochladen
+  group_by_hint: Nach einer kategorialen Spalte gruppieren, um Statistiken gruppenweise zu vergleichen
+  group_by_label: Gruppieren nach (optional)
+  list_load_error: Rezepte konnten nicht geladen werden.
+  load_datasets_error: 'Datensätze konnten nicht geladen werden: {error}'
+  load_error: 'Rezepte konnten nicht geladen werden: {error}'
+  load_rules_error: Vorbereitungsregeln konnten nicht geladen werden.
+  loading_schema: Spalten werden geladen …
+  move_down: Nach unten
+  move_up: Nach oben
+  my_recipes: Meine Rezepte
+  name_label: Rezeptname
+  name_placeholder: z. B. Verkaufsanalyse
+  name_required: Rezeptname ist erforderlich
+  new_button: Neues Rezept
+  new_title: Neues Rezept
+  no_datasets: Keine Datensätze gefunden. Bitte laden Sie zuerst einen Datensatz hoch oder definieren Sie einen.
+  no_datasets_available: Keine Datensätze verfügbar. Bitte laden Sie zuerst einen Datensatz hoch.
+  no_datasets_found: Keine Datensätze verfügbar. Laden Sie zuerst einen Datensatz hoch.
+  no_group: Keine
+  no_group_options: Keine kategorialen Spalten zum Gruppieren verfügbar
+  no_preparation_rules: Für diesen Datensatz sind keine Vorbereitungsregeln verfügbar.
+  no_recipes: Sie haben noch keine Rezepte erstellt.
+  no_schema: Für diesen Datensatz ist kein Schema verfügbar.
+  no_stages: Rezept muss mindestens einen Schritt enthalten.
+  no_visualisation: Numerische Ergebnisse
+  no_visualisation_data: Keine Visualisierungsdaten verfügbar
+  none: Keine
+  output:
+    category_column: Kategoriespalte
+    placeholder: Ausgabetyp auswählen
+    x_column: X-Achsen-Spalte
+    y_column: Y-Achsen-Spalte
+  panel:
+    complete: Bereit
+    incomplete: Unvollständig
+    my_recipes: Meine Rezepte
+    new_button: Neues Rezept
+    no_recipes: Noch keine Rezepte
+    no_results: Keine Rezepte entsprechen Ihrer Suche
+    search: Rezepte suchen …
+    shared_recipes: Geteilt
+    updated: Aktualisiert
+  preparation_rules: Vorbereitungsregeln (optional)
+  preparation_rules_applied: Vorbereitungsregeln angewendet
+  preparation_rules_applied_description: Regeln wurden in der unten angegebenen Reihenfolge vor den Analysestufen angewendet.
+  preparation_rules_applied_title: Vorbereitungsregeln angewendet
+  preparation_rules_description: Wählen Sie die Regeln in der gewünschten Reihenfolge aus. Die Regeln werden nacheinander angewendet.
+  recipe_label: Rezept
+  remove_rule: Regel entfernen
+  rows_after: Zeilen nach
+  rows_before: Zeilen
+  rows_label: Zeilen
+  rules_applied_label: '{count} Regeln angewendet:'
+  save_button: Rezept speichern
+  schema_error: 'Spaltenschema konnte nicht geladen werden: {error}'
+  schema_loaded: 'Schema geladen: {count} Spalten gefunden'
+  select_dataset: Datensatz auswählen
+  select_group: Spalte zum Gruppieren auswählen
+  select_rule: Regel zum Hinzufügen auswählen
+  select_rule_placeholder: Regel auswählen
+  select_technique: Technik auswählen
+  select_visualisation: Visualisierung auswählen
+  selected: ausgewählt
+  shared: geteilt
+  shared_badge: Geteilt
+  shared_description: Dieses Rezept für andere Benutzer in deiner Gruppe freigeben.
+  shared_group_hint: 'Gruppe: {group} - {description}'
+  shared_label: Mit Gruppe teilen
+  shared_with_group: Mit deiner Gruppe geteilt
+  stage_data_selection: Datenauswahl
+  stage_number: Stufe {number}
+  stage_preparation: Datenvorbereitung
+  stage_statistics: Statistik
+  stage_visualisation: Visualisierung
+  stages_title: Stufen
+  status:
+    cancelled: Abgebrochen
+    completed: Abgeschlossen
+    failed: Fehlgeschlagen
+    pending: Ausstehend
+    running: Läuft
+  step1_description: Gib deinem Rezept einen Namen und eine Beschreibung.
+  step1_title: Benenne dein Rezept
+  step2_description: Wähle einen Datensatz und die zu analysierenden Spalten aus.
+  step2_title: Daten auswählen
+  step3_description: Wähle die anzuwendende statistische Methode aus.
+  step3_title: Analyse auswählen
+  step4_description: Füge deinem Rezept eine Visualisierung hinzu.
+  step4_title: Visualisierung (Optional)
+  step_analysis: Analyse
+  step_complete: Schritt {step} abgeschlossen
+  step_data: Daten
+  step_name: Name
+  step_visualise: Visualisieren
+  technique_anova_one_way: Einfaktorielle ANOVA
+  technique_anova_two_way: Zweifaktorielle ANOVA
+  technique_chi_square: Chi-Quadrat-Test
+  technique_correlation: Korrelationsmatrix
+  technique_descriptive: Deskriptive Statistik
+  technique_hint: Die deskriptive Statistik zeigt zusammenfassende Kennzahlen wie Mittelwert, Median und Standardabweichung.
+  technique_label: Methode
+  technique_linear_regression: Lineare Regression
+  technique_t_test_independent: Unabhängiger t-Test
+  technique_t_test_paired: Gepaarter t-Test
+  title: Statistische Rezepte
+  total_rules_applied: Insgesamt angewendete Regeln
+  transforms:
+    add: Transformation hinzufügen
+    label: Transformationen
+    no_transforms: Keine Transformationen angewendet
+    remove: Entfernen
+    manage_button: Transformationen verwalten
+  unknown_user: Unbekannt
+  update_error: 'Rezept konnte nicht aktualisiert werden: {error}'
+  update_success: Rezept '{id}' erfolgreich aktualisiert.
+  updated_label: Aktualisiert
+  visualisation:
+    columns_label: Spalten
+    data_points: Datenpunkte
+    distribution: Verteilung
+    trend: Trend
+    type_label: Typ
+  visualisation_bar: Balkendiagramm
+  visualisation_hint: Das Diagramm wird anhand der ausgewählten Datenspalten erstellt.
+  visualisation_label: Visualisierungstyp
+  visualisation_line: Liniendiagramm
+  visualisation_pie: Kreisdiagramm
+  visualisation_raw_data: 'Visualisierungsdaten:'
+  visualisation_scatter: Streudiagramm
+  visualisation_table: Tabelle
+  share:
+    read_only: Geteilt von {owner} — schreibgeschützt
+    unshare: Freigabe aufheben
+    shared_badge: Geteilt
+    button: Teilen
+    group_info: Gruppe {group} — {desc}
+  require:
+    factorColumn: Faktorspalte für {algo} auswählen
+    second_response: Zweite Antwortspalte auswählen
+    first_response: Erste Antwortspalte auswählen
+    dependentColumn: Abhängige Spalte auswählen
+    independentColumns: Unabhängige Spalten auswählen
+    xColumn: X-Spalte für {out} auswählen
+    algorithm: Analyse auswählen
+    yColumn: Y-Spalte für {out} auswählen
+    categoryColumn: Kategoriespalte für {out} auswählen
+    responseColumn: Antwortspalte für {algo} auswählen
+    dataset: Datensatz auswählen
+  execution:
+    rules_count: '{count} Vorbereitungsregel(n) angewendet.'
+    results_label: 'Ergebnisse:'
+    running: Rezept wird ausgeführt…
+    errors_label: 'Fehler:'
+    request_failed: Ausführung fehlgeschlagen
+    failed_start: Fehler beim Starten der Ausführung
+    showing_rows: Zeige {count} von {total} Zeilen
+  needs_other_columns: (benötigt andere Spalten)
+  visualisation_donut: Donut-Diagramm
+  visualisation_area: Flächendiagramm
+  visualisation_hbar: Horizontales Balkendiagramm
+  ui:
+    delete_error: Rezept konnte nicht gelöscht werden
+    delete_success: Rezept gelöscht
+  visualisation_histogram: Histogramm
+register:
+  confirm_password: Passwort bestätigen
+  creating: Konto wird erstellt...
+  description: Neues Konto erstellen
+  email: E-Mail
+  failed: Registrierung fehlgeschlagen
+  have_account: Hast du schon ein Konto?
+  language_description: Wähle deine bevorzugte Sprache für die Benutzeroberfläche aus.
+  login_link: Anmelden
+  name: Name
+  password: Passwort
+  password_mismatch: Passwörter stimmen nicht überein
+  submit: Registrieren
+  success_with_verification: Ihr Konto wurde erstellt. Überprüfen Sie Ihre E-Mails auf den Verifizierungslink, um Ihr Konto zu aktivieren.
+  title: Registrieren
+  email_failed_use_resend: Registrierung erfolgreich, aber die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte senden Sie sie erneut von der Anmeldeseite aus.
+  success_pending_approval: Ihr Konto wurde erstellt und wartet auf die Genehmigung durch einen Administrator. Sobald es genehmigt wurde, können Sie sich anmelden.
+  registration_disabled: Selbstregistrierung ist deaktiviert. Bitte wenden Sie sich an einen Administrator.
+  success_auto_verified: Ihr Konto wurde erstellt und ist einsatzbereit. Sie können sich jetzt anmelden.
+resend_verification:
+  back_to_login: Zurück zur Anmeldung
+  check_spam: Bitte überprüfe deinen Spam-Ordner, falls du die E-Mail nicht innerhalb weniger Minuten siehst.
+  description: Gib deine E-Mail-Adresse ein, um einen neuen Bestätigungslink zu erhalten.
+  error: Versenden der Bestätigungs-E-Mail fehlgeschlagen.
+  send_button: Bestätigungs-E-Mail senden
+  sent: Bestätigungs-E-Mail gesendet. Bitte überprüfe deinen Posteingang (und den Spam-Ordner).
+  sent_description: Falls ein Konto mit dieser E-Mail existiert, erhältst du einen Bestätigungslink.
+  sent_title: E-Mail gesendet
+  title: Bestätigungs-E-Mail erneut senden
+reset_password:
+  confirm_password: Neues Passwort bestätigen
+  description: Gib unten dein neues Passwort ein.
+  failed: Zurücksetzen des Passworts fehlgeschlagen.
+  login_button: Zur Anmeldung
+  missing_token: Kein Zurücksetzungs-Token angegeben
+  new_password: Neues Passwort
+  password_mismatch: Passwörter stimmen nicht überein
+  submit: Passwort zurücksetzen
+  success: Passwort erfolgreich zurückgesetzt
+  success_description: Dein Passwort wurde zurückgesetzt. Du wirst zur Anmeldung weitergeleitet...
+  success_title: Passwort zurücksetzen
+  title: Passwort zurücksetzen
+settings:
+  ai:
+    title: KI-Verbindungen
+  database:
+    title: Datenbankverbindungen
+  profile:
+    title: Präferenzen
+  title: Einstellungen
+setup:
+  internal:
+    description: Systemdiagnose und interne Konfiguration. Schreibgeschützte Statusanzeigen.
+    future:
+      cache_config: Cache-/Session-Konfiguration
+      debug_logging: Debug-/ausführliches Protokollierungs-Umschalten
+      description: Weitere Diagnosefunktionen werden in künftigen Versionen hinzugefügt.
+      email_transport: E-Mail-Transportstatus
+      pool_stats: Datenbank-Pool-Statistiken
+      title: Demnächst verfügbar
+    licence:
+      description: Aktuelle Lizenzstufe und aktivierte Funktionen.
+      expiry: Ablauf
+      features: Aktivierte Funktionen
+      issued_to: Ausgestellt für
+      tier: Lizenzstufe
+      title: Lizenz & Funktionen
+    load_error: Fehler beim Laden der Systemdiagnose
+    system_status:
+      available: Verfügbar
+      db_pool: Datenbank-Pool
+      description: Echtzeit-Statusanzeigen für Backend-Dienste.
+      healthy: Fehlerfrei
+      initialized: Initialisiert
+      not_initialized: Nicht initialisiert
+      not_required: Nicht erforderlich
+      overall_health: Gesamtzustand
+      shared_memory: Gemeinsamer Speicher
+      title: Systemstatus
+      unavailable: Nicht verfügbar
+      unhealthy: Fehlerhaft
+      version: Version
+      db_cluster: Datenbank-Cluster
+    title: Intern
+  limits:
+    demo_mode:
+      description: Wenn aktiviert, läuft das System im Demo-Modus – destruktive Aktionen werden blockiert und Hinweise in der Benutzeroberfläche angezeigt.
+      label: Demo-Modus
+    description: Betriebliche Steuerung für Ressourcenlimits, Zeitüberschreitungen und Systemverhalten. Jederzeit sicher anpassbar.
+    email_timeout:
+      hint: Wie viele Stunden der E-Mail-Verifizierungslink gültig bleibt.
+      label: E-Mail-Verifizierungs-Timeout (Stunden)
+    grace_period:
+      hint: Stunden, bevor weich gelöschte Konten endgültig entfernt werden.
+      label: Löschverzögerung (Stunden)
+    invalid_grace_period: Bitte geben Sie eine gültige positive Zahl für die Löschverzögerung (Stunden) ein.
+    invalid_registration_max: Bitte geben Sie eine gültige positive Zahl für die maximale Anzahl an Registrierungen ein.
+    invalid_timeout: Bitte geben Sie eine gültige positive Zahl für das Verifizierungs-Timeout (Stunden) ein.
+    load_error: Fehler beim Laden der Limit-Einstellungen
+    max_registrations:
+      hint: Legen Sie eine Obergrenze fest, wie viele Benutzer sich registrieren können.
+      label: Maximale Benutzerregistrierungen
+      placeholder: Limit auswählen
+      unlimited: Unbegrenzt
+      users: Benutzer
+    save_button: Limits speichern
+    save_error: Fehler beim Speichern der Limit-Einstellungen
+    save_success: Limit-Einstellungen gespeichert
+    title: Limits
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: Maximale Anzahl an Datensätzen pro Benutzer (0 = unbegrenzt). Gilt für neue Benutzer.
+      count_unlimited: Unbegrenzt
+      default_count_label: Standard-Maximale Upload-Anzahl pro Benutzer
+      default_size_label: Standard-Maximale Upload-Größe pro Benutzer (MB)
+      select_count: Limit auswählen
+      select_size: Limit auswählen
+      size_100_mb: 100 MB
+      size_10_mb: 10 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_250_mb: 250 MB
+      size_25_mb: 25 MB
+      size_500_mb: 500 MB
+      size_50_mb: 50 MB
+      size_5_mb: 5 MB
+      size_hint: Maximaler Gesamtspeicher pro Benutzer (0 = unbegrenzt). Gilt für neue Benutzer.
+      size_unlimited: Unbegrenzt
+  options:
+    description: Installationszeit-Einstellungen, die die Identität und das Verhalten dieser Bereitstellung definieren. Mit Vorsicht ändern – diese Einstellungen betreffen alle Benutzer.
+    email_sender:
+      hint: Die E-Mail-Adresse, von der Verifikations-E-Mails zu stammen scheinen.
+      label: E-Mail-Absenderadresse
+    load_error: Fehler beim Laden der Optionseinstellungen
+    password_policy:
+      custom: Benutzerdefiniert
+      high: Hoch (min. 10 Zeichen, Groß-, Kleinbuchstaben, Ziffer, Sonderzeichen)
+      hint: Wählen Sie die Anforderungen an die Passwortkomplexität für Benutzerregistrierung und Passwortänderungen.
+      label: Passwortrichtlinie
+      low: Niedrig (min. 6 Zeichen)
+      medium: Mittel (min. 8 Zeichen, Groß-, Kleinbuchstaben, Ziffer)
+      min_length: Mindestlänge
+      min_strength: Mindeststärke (zxcvbn-Score 0-4)
+      require_digit: Ziffer erforderlich
+      require_lowercase: Kleinbuchstabe erforderlich
+      require_special: Sonderzeichen erforderlich
+      require_uppercase: Großbuchstabe erforderlich
+      select: Richtlinie auswählen
+    public_url:
+      hint: Die Basis-URL, die in E-Mail-Verifikationslinks verwendet wird (z. B. https://workbench.example.com).
+      label: Öffentliche URL
+    save_button: Optionen speichern
+    save_error: Fehler beim Speichern der Optionseinstellungen
+    save_success: Optionseinstellungen gespeichert
+    title: Optionen
+    welcome:
+      hint: Diese Nachricht erscheint auf der Anmeldeseite. Leer lassen, um sie auszublenden.
+      label: Willkommensnachricht
+      placeholder: Geben Sie eine Willkommensnachricht ein, die auf der Anmeldeseite angezeigt wird.
+    registration_mode:
+      label: Registrierungsmodus
+      mode_0: Selbstregistrierung automatisch bestätigt
+      mode_1: Administrator erstellt bestätigte Benutzer
+      mode_2: Selbstregistrierung und Administrator bestätigt
+      select: Registrierungsmodus auswählen
+      mode_4: Selbstregistrierung mit E-Mail-Verifizierung
+      hint: Wählen Sie, wie neue Benutzerkonten erstellt und bestätigt werden.
+  tuning:
+    ai_timeout_hint: Wie lange eine KI-Anfrage laufen darf, bevor sie abgebrochen wird. Zu niedrig, und der Chat schlägt still fehl; zu hoch, und ein blockiertes Modell belegt einen Worker. Lokale Modelle
+      auf einer CPU können mehrere Minuten benötigen.
+    saved: Tuning-Einstellungen gespeichert
+    slow_threshold_hint: Ein Modelltest, der länger dauert, wird als zu langsam gemeldet. Benutzer dürfen ihr eigenes Limit erhöhen; niemand darf das eigene unter 1 senken.
+    seconds: Sekunden
+    probe_timeout_hint: Wie lange ein Eignungstest laufen darf. Ein CPU-gehostetes Modell benötigt Minuten; ein kurzes Limit führt hier daher zu einem falschen Fehlschlag, statt Zeit zu sparen.
+    invalid_temperature: Temperatur muss eine Zahl zwischen 0 und 2 sein.
+    reset_error: Tuning-Einstellungen konnten nicht zurückgesetzt werden
+    ai_max_tokens_hint: Die längste Antwort, die eine einzelne Anfrage erzeugen darf. Eine Beschreibung benötigt etwa 500 Tokens; 4000 lässt viel Spielraum.
+    reset_confirm_title: Diese sechs auf ihre Standardwerte zurücksetzen?
+    save: Einstellungen speichern
+    saving: Wird gespeichert…
+    save_error: Tuning-Einstellungen konnten nicht gespeichert werden
+    load_error: Tuning-Einstellungen konnten nicht geladen werden
+    reset_confirm_action: Zurücksetzen
+    forbidden: Nur ein Administrator mit vollen Rechten kann diese Einstellungen ändern.
+    invalid_connect_timeout: Das Verbindungs-Timeout muss eine ganze Zahl in Sekunden sein, mindestens 1 und höchstens 60.
+    reset_confirm_body: Jeder Wert auf dieser Seite wird auf den mitgelieferten Standard zurückgesetzt. Verbindungsspezifische Überschreibungen sind nicht betroffen. Dies kann nicht rückgängig gemacht werden,
+      und Sie müssen alle geänderten Werte erneut festlegen.
+    ai_tokens: Tokens
+    preamble_detail: Jede KI-Anfrage verwendet diese Einstellungen, sofern keine Verbindung sie überschreibt. Eine Änderung wirkt sich auf jedes Modell aus, das keine eigene Einstellung hat; sie ändert
+      keine bereits abgestimmte Verbindung.
+    reset_done: Tuning-Einstellungen auf ihre Standardwerte zurückgesetzt
+    invalid_model_test_seconds: Bitte geben Sie eine ganze Zahl in Sekunden ein, mindestens 1.
+    invalid_ai_timeout: Das KI-Zeitlimit muss eine ganze Zahl in Sekunden sein, mindestens 1.
+    resetting: Wird zurückgesetzt…
+    ai_temperature_hint: 'Wie unterschiedlich die Antworten ausfallen: 0 ist so reproduzierbar, wie das Modell es zulässt, 2 ist am variabelsten. Werte außerhalb von 0 bis 2 werden vom Anbieter abgelehnt,
+      nicht von diesem System.'
+    ai_section_label: KI-Generierung
+    invalid_max_tokens: Bitte geben Sie eine ganze Anzahl von Token ein, mindestens 1.
+    slow_threshold_label: Schwellenwert für langsame Modelle
+    ai_section_hint: Standardeinstellungen für jede KI-Anfrage. Eine einzelne Verbindung und ein einzelnes Modell können sie überschreiben, wenn die Abstimmung für dieses Paar spezifisch ist.
+    description: Standardeinstellungen für KI-Verhalten und Zeitlimits. Diese sind in der Regel so passend, wie sie sind – eine benutzer- oder verbindungsspezifische Einstellung kann abweichen, und der
+      hier festgelegte Wert gilt, wenn keine solche Einstellung greift.
+    invalid_probe_timeout: Der Test-Timeout muss eine ganze Zahl von Sekunden sein, mindestens 1 und höchstens 1200.
+    connect_timeout_hint: Wie lange das Netzwerk für die Annahme einer Verbindung benötigen darf, bevor der Endpunkt als nicht erreichbar behandelt wird. Ein Wert unterhalb dessen, was das Netzwerk benötigt,
+      macht aus einem funktionierenden Endpunkt einen toten.
+tools:
+  all_datasets: Alle Datensätze
+  connect_database: Datenbank verbinden
+  description: Zusätzliche Hilfsprogramme und Analysewerkzeuge erscheinen hier.
+  import_notebook: Notebook importieren
+  manage_data: Daten sammeln
+  my_data: Meine Daten
+  notebooks: Notebooks
+  placeholder: Werkzeugseite folgt in Kürze.
+  title: Weitere Werkzeuge
+  upload_csv_excel: CSV / Excel hochladen
+  upload_data: Daten hochladen
+  uploads_list: Uploads (CSV, Excel)
+  visualize: Visualisierungs‑Sandbox
+validation:
+  api_key_required: Für diesen Anbieter ist ein API‑Schlüssel erforderlich
+  database_required: Datenbankname ist erforderlich
+  host_required: Host ist erforderlich
+  name_required: Verbindungsname ist erforderlich
+  password:
+    min_length: Das Passwort muss mindestens {min} Zeichen lang sein.
+    require_digit: Das Passwort muss mindestens eine Ziffer enthalten.
+    require_lowercase: Das Passwort muss mindestens einen Kleinbuchstaben enthalten.
+    require_special: Das Passwort muss mindestens ein Sonderzeichen enthalten.
+    require_uppercase: Das Passwort muss mindestens einen Großbuchstaben enthalten.
+    too_weak: Das Passwort ist zu schwach. Bitte wählen Sie ein stärkeres Passwort.
+  password_required: Passwort ist erforderlich
+  port_invalid: Der Port muss zwischen 1 und 65535 liegen
+  provider_required: Bitte wählen Sie einen Anbieter aus
+  type_required: Bitte wählen Sie einen Datenbanktyp aus
+  username_required: Benutzername ist erforderlich
+verify_email:
+  error_description: Etwas ist schiefgelaufen.
+  error_title: Überprüfung fehlgeschlagen
+  expired_description: Der Bestätigungslink ist abgelaufen.
+  expired_message: Sie können unten eine neue Bestätigungs‑E‑Mail anfordern.
+  expired_title: Link abgelaufen
+  invalid_token: Ungültiger Bestätigungslink.
+  login_button: Weiter zum Login
+  missing_description: Es wurde kein Bestätigungstoken übermittelt.
+  missing_title: Kein Bestätigungstoken
+  network_error: Netzwerkfehler. Bitte versuchen Sie es erneut.
+  resend_button: Bestätigungs‑E‑Mail erneut senden
+  success_description: Ihre E‑Mail‑Adresse wurde erfolgreich bestätigt. Sie werden zur Anmeldung weitergeleitet …
+  success_title: E‑Mail bestätigt
+  unknown_error: Etwas ist schiefgelaufen.
+virtual:
+  clone: Klonen
+  deleted: Datensatz gelöscht
+  draft_badge: Entwurf
+  edit: Bearbeiten
+  error: Ein Fehler ist aufgetreten
+  existing_none: Keine
+  existing_title: Vorhandene Datensätze
+  loading: Laden …
+  more: mehr
+  new_chat: Neuer virtueller Datensatz
+  placeholder: Beschreiben Sie, was Sie tun möchten …
+  ready_badge: Bereit
+  recent_chats: Letzte Chats
+  send: Senden
+  stage: Stufe
+  title: Virtuelle Datensätze
+  verbose: Ausführlich
+  welcome: Willkommen beim Assistenten für virtuelle Datensätze. Falls das neu für Sie ist, möchten Sie vielleicht wissen, wie Sie beginnen können.
+  preview_sources: Quellen
+  preview_name: Name
+  preview_columns: Ausgabespalten
+  preview_title: Datensatzvorschau
+  preview_joins: Verknüpfungen
+  manual:
+    need_name: Geben Sie dem Datensatz einen Namen, bevor Sie speichern.
+    update_dataset: Diesen Datensatz aktualisieren
+    intro: Erstellen Sie aus den ausgewählten Spalten einen virtuellen Datensatz, oder öffnen Sie einen vorhandenen, um ihn zu ändern.
+    need_join: Zwei Quellen sind ausgewählt, aber nichts verknüpft sie.
+    validate_ok: Die Definition ist strukturell gültig.
+    alias_taken: Dieser Alias wird bereits von einer anderen Quelle verwendet.
+    validate_errors: 'Die Definition weist Probleme auf:'
+    open_label: Vorhandenen Datensatz öffnen
+    aggregation_note: Eine von einer alten Definition übernommene Aggregation wird unverändert beibehalten, aber der Join wendet sie nicht an.
+    incomplete_join: Vervollständigen oder entfernen Sie den Join, für den noch keine Spalten ausgewählt sind.
+    add_join: Join hinzufügen
+    preview_error: Der Join konnte nicht ausgeführt werden.
+    unattached_sources: 'Nicht mit dem Rest verknüpft: {sources}. Fügen Sie einen Join hinzu, der sie verbindet.'
+    move_down: Diese Spalte um einen Platz nach unten verschieben
+    sources_title: Woher die Daten stammen
+    preview_empty: Der Join hat keine Zeilen zurückgegeben.
+    load_error: Die Definition dieses Datensatzes konnte nicht geladen werden.
+    joins_title: Wie die Quellen verknüpft sind
+    materialized_hint: Schreibt eine Tabelle anstelle eines Live-Joins. Lassen Sie die Option beim Prototyping deaktiviert.
+    select_all: Alle auswählen
+    tables_error: Die Tabellen konnten nicht gelesen werden.
+    output_title: Was der Datensatz bereitstellt
+    joins_hint: Zwei oder mehr Quellen benötigen einen Join zwischen ihnen. Eine Quelle benötigt keinen.
+    title: Editor für virtuelle Datensätze
+    columns_error: Die Spalten konnten nicht gelesen werden.
+    bridge_no_columns: Spalten noch nicht gelesen – erweitern Sie die Quelle oder fügen Sie den Join hinzu und wählen Sie die Spalten aus.
+    description_label: Datensatzbeschreibung
+    materialized_label: Ergebnis materialisieren
+    sources_hint: Erweitern Sie eine Verbindung oder einen Datensatz und aktivieren Sie dann die einzuschließenden Spalten.
+    loading_columns: Spalten werden gelesen…
+    name_label: Datensatzname
+    open_none: Es ist noch kein virtueller Datensatz zum Öffnen vorhanden.
+    need_columns: Wählen Sie mindestens eine einzuschließende Spalte aus.
+    select_none: Keine auswählen
+    no_match: Keine Einträge entsprechen dem Filter.
+    bridge_choose_columns: Keine passenden Spalten gefunden – fügen Sie den Join hinzu und wählen Sie die Spalten aus.
+    remove_join: Diesen Join entfernen
+    output_hint: Die Spalten, die dieser Datensatz in dieser Reihenfolge bereitstellt.
+    bridge: Brücke
+    remove: Diese Spalte aus der Ausgabe entfernen
+    move_up: Diese Spalte um einen Platz nach oben verschieben
+    test_pulls_every_source: Das Testen des Joins liest alle Quellen vollständig und kann daher langsam sein.
+    loaded_note: Vorhandene Definition geöffnet – durch Speichern wird sie aktualisiert.
+    no_sources: Es sind keine Verbindungen oder Datensätze verfügbar.
+    new_dataset: Neuen Datensatz erstellen
+    column_placeholder: Spalte auswählen
+    test_join: Join testen
+    complete_join: Unvollständigen Join vervollständigen
+    validate: Definition validieren
+    preview_rows: '{count} Zeile(n) zurückgegeben'
+    save_success: Virtueller Datensatz gespeichert.
+    save_error: Der virtuelle Datensatz konnte nicht gespeichert werden.
+    suggested: Vorgeschlagen
+    alias_label: Alias
+    loaded_note_shared: Eine vorhandene gemeinsame Definition geöffnet — schreibgeschützt – keine Aktualisierung erlaubt.
+    materialize_failed: 'Gespeichert, aber die Tabelle konnte nicht erstellt werden:'
+    materialize_retry: Erneut versuchen
+    materialize_done: Tabelle erstellt.
+  panel:
+    expand: Quellenbereich anzeigen
+    collapse: Quellenbereich einklappen
+  panel_columns: '{count} Sp.'
+  panel_tick_error: Diese Spalte konnte nicht angekreuzt werden.
+  chip_load_error: Die Optionen konnten nicht aktualisiert werden und sind daher möglicherweise veraltet.
+  progress_decided: '{decided} von {total} entschieden'
+  panel_fold_error: Der eingeklappte Zustand des Quellenbereichs konnte nicht gespeichert werden; er ist daher beim nächsten Mal wieder geöffnet.
+  panel_tick_no_session: Senden Sie zuerst eine Nachricht – der Baum zeichnet Ihre Häkchen in der Sitzung auf.
+  chip_error: Diese Option konnte nicht übernommen werden.
+  heading_choose_columns: Spalten auswählen
+  heading_choose_table: Tabelle auswählen
+  heading_match_columns: Diese Spalten abgleichen
+  heading_materialised: Live oder materialisiert?
+  act:
+    sources: '{count} Tabellen übernommen'
+    named: Als „{name}“ benannt
+    applied: '{piece} angewendet'
+    sources_short: '{count} Tabellen übernommen: {tables}'
+    join: '{pair} verbunden'
+  selection_hint: Wähle alles ab, was du nicht möchtest, und verwende sie dann zusammen.
+  suggestion_applied: Angewendet
+  confirm_selection: Diese verwenden
+  act_joins: '{count} Paare verbunden'
+  joins_unjoined: 'Nicht verbunden: {tables}'
+  joins_unsaved: Diese Zeilen weichen vom Datensatz ab. Übernehmen Sie sie oder korrigieren Sie zuerst die leere Zeile.
+  joins_hint: Ändern Sie eine beliebige Spalte oder den Join-Typ und fahren Sie dann fort.
+  join_type_label: Join-Typ
+  joins_apply: Übernehmen
+  joins_coverage: '{connected} von {total} Tabellen verbunden'
+  name_suggestion_heading: Vorgeschlagener Name — ändern Sie ihn, wenn Sie möchten
+  name_suggestion_accept: Diesen Namen verwenden
+visualize:
+  config: Konfiguration
+  data: Daten (JSON)
+  data_placeholder: JSON‑Daten hier einfügen oder Beispiel generieren
+  description: Wählen Sie einen Visualisierungstyp, erstellen Sie Beispieldaten, passen Sie Parameter an und sehen Sie eine Vorschau.
+  download_error: Tabelle konnte nicht heruntergeladen werden
+  download_png: Als PNG herunterladen
+  download_success: Tabelle als PNG heruntergeladen
+  generate_sample: Beispiel generieren
+  invalid_data: Ungültige Daten für Texttabelle. Spalten und Zeilen werden erwartet.
+  load_error: Visualisierungstypen konnten nicht geladen werden
+  no_data: Keine Daten zur Visualisierung vorhanden. Generieren Sie Beispieldaten oder fügen Sie JSON ein.
+  no_types: Keine Visualisierungstypen definiert. Bitte wenden Sie sich an einen Administrator.
+  parameters: Parameter
+  preview: Vorschau
+  sample_expenses: Ausgaben
+  sample_generated: Beispieldaten generiert
+  sample_item: Position
+  sample_sales: Umsatz
+  sample_value: Wert
+  save_error: Speichern fehlgeschlagen
+  save_instance: Instanz speichern
+  save_no_data: Keine Daten zum Speichern. Bitte generieren oder fügen Sie Daten ein.
+  save_success: Visualisierung erfolgreich gespeichert
+  select_type: Typ auswählen
+  title: Visualisierungs‑Sandbox
+  type: Visualisierungstyp
+  unsupported: Visualisierungstyp noch nicht implementiert
+  unsupported_parameter: Nicht unterstützter Typ
+transforms:
+  save_button: Speichern
+  op:
+    method_placeholder: Methode
+    type:
+      convert_type: Typ konvertieren
+      filter: Zeilen filtern
+      encode_category: Kategorie kodieren
+      fill_missing: Fehlende Werte auffüllen
+      drop_column: Spalte löschen
+      drop_duplicates: Duplikate löschen
+      rename_column: Spalte umbenennen
+      standardize: Standardisieren
+      normalize: Normalisieren
+    target_datetime: Datum/Uhrzeit
+    value_placeholder: Wert
+    target_numeric: Numerisch
+    operations_label: Operationen
+    add: Operation hinzufügen
+    column_placeholder: Spalte auswählen
+    encoding_label: Label
+    new_name_placeholder: Neuer Name
+    encoding_onehot: One-Hot
+    encoding_placeholder: Kodierung
+    empty_hint: Fügen Sie eine Operation hinzu, um mit dem Erstellen Ihrer Transformation zu beginnen.
+    type_placeholder: Operationstyp
+    target_type_placeholder: Zieltyp
+    remove: Entfernen
+    operator_placeholder: Operator
+    target_boolean: Boolean
+    target_string: String
+  empty_state: Fügen Sie eine Operation hinzu, um mit dem Erstellen Ihrer Transformation zu beginnen.
+  connected_count: '{count} verbunden'
+  fill:
+    drop_rows: Zeilen löschen
+    constant: Konstante
+    mean: Mittelwert
+    mode: Modus
+    median: Median
+  filter:
+    op_is_not_null: ist nicht null
+    op_lt: <
+    op_contains: enthält
+    op_is_null: ist null
+    op_gt: '>'
+    op_eq: '='
+    op_neq: '!='
+  save_success: Transformation gespeichert.
+  back_to_recipe: 'Zurück zum Rezept: {name}'
+  connect_transform: Mit Rezept verbinden
+  empty_hint: Die Operationen werden in der angegebenen Reihenfolge ausgeführt, wenn die Transformation läuft.
+  operations_heading: Operationen
+  name_required: Transformationsname ist erforderlich.
+  search_placeholder: Transformationen durchsuchen…
+  name_placeholder: Transformationsname
+  back_to_data: Zurück zu Meine Daten
+  for_recipe: 'Rezept: {name}'
+  name_label: Name
+  no_transforms: Keine Transformationen für diesen Datensatz definiert.
+  no_search_results: Keine Transformationen stimmen mit Ihrer Suche überein
+  delete_button: Löschen
+  empty_title: Wählen Sie eine Transformation aus der Liste oder erstellen Sie eine neue.
+  connected_to_recipe: 'Verbunden mit: {name}'
+  connect_error: Fehler beim Verbinden der Transformation
+  delete_confirm: Diese Transformation löschen?
+  description_placeholder: Beschreibung (optional)
+  operations_count: '{count} Operationen'
+  delete_success: Transformation gelöscht.
+  disconnect_error: Fehler beim Trennen der Transformation
+  disconnect_transform: Von Rezept trennen
+  description_label: Beschreibung
+  load_error: Laden der Transformation fehlgeschlagen.
+  new_transform: Neue Transformation

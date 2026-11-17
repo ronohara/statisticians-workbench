@@ -1,0 +1,2254 @@
+about:
+  description: shadcn/ui اور Next.js کے ساتھ شاندار تجربات بنائیں۔ صاف ڈیزائن، تیز کارکردگی۔
+  fast_desc: بہترین کارکردگی کے لیے Next.js App Router پر بنایا گیا۔
+  fast_title: تیز
+  get_started: شروع کریں
+  modern_desc: shadcn/ui کے قابل رسائی اجزاء، Tailwind CSS سے اسٹائل شدہ۔
+  modern_title: جدید یوزر انٹرفیس
+  secure_desc: ٹائپ سیف اور حسب ضرورت – اجزاء کا کوڈ آپ کی ملکیت ہے۔
+  secure_title: محفوظ
+  title: Statisticians Workbench کے بارے میں
+admin:
+  groups:
+    back_to_admin: ایڈمن پر واپس جائیں
+    cannot_modify_self: آپ اپنے اکاؤنٹ میں ترمیم نہیں کر سکتے
+    delete_confirmation: کیا آپ واقعی {name} کو حذف کرنا چاہتے ہیں؟ یہ صارف نرم حذف کیا جائے گا اور مکمل ایڈمن اسے بحال کر سکتا ہے۔
+    delete_error: صارف کو حذف کرنے میں ناکامی
+    delete_title: صارف حذف کریں
+    demote: تنزلی کریں
+    demote_error: صارف کی تنزلی میں ناکامی
+    demote_success: صارف کو گروپ ایڈمن سے تنزلی کر دی گئی
+    description_placeholder: تفصیل درج کریں
+    description_required: تفصیل خالی نہیں ہو سکتی
+    group_description: گروپ کی تفصیل
+    group_users_load_error: گروپ صارفین کو لوڈ کرنے میں ناکامی
+    load_error: گروپس کو لوڈ کرنے میں ناکامی
+    load_success: گروپس کامیابی سے لوڈ ہو گئے
+    no_users: اس گروپ میں کوئی صارف نہیں ملا۔
+    promote: ترقی دیں
+    promote_error: صارف کی ترقی میں ناکامی
+    promote_success: صارف کو گروپ ایڈمن بنا دیا گیا
+    readonly_badge: (صرف پڑھنے کے لیے)
+    readonly_message: آپ یہ صفحہ صرف پڑھنے کے موڈ میں دیکھ رہے ہیں۔ مثال کے صارفین تبدیلیاں نہیں کر سکتے۔
+    readonly_title: گروپ مینجمنٹ (صرف پڑھنے کے لیے)
+    select_group: گروپ منتخب کریں
+    select_group_placeholder: ایک گروپ منتخب کریں
+    title: گروپ مینجمنٹ
+    update_error: گروپ کو اپ ڈیٹ کرنے میں ناکامی
+    update_success: گروپ کی تفصیل اپ ڈیٹ ہو گئی
+    users_in_group: گروپ میں صارفین
+  models:
+    comment_placeholder: تبصرہ درج کریں
+    description: ہر ماڈل جس کے بارے میں ورک بینچ جانتا ہے۔ کسی ماڈل کو فعال کرنے سے ہر اس کنکشن پر اثر پڑتا ہے جو اسے پیش کرتا ہے؛ سرورز کا کالم دکھاتا ہے کہ کون سے اس تک پہنچ سکتے ہیں۔
+    disabled: غیر فعال
+    edit_comment: تبصرہ میں ترمیم کریں
+    enabled: فعال
+    fetch_auth_required: اس فراہم کنندہ کو ماڈلز کی فہرست کے لیے API کلید درکار ہے۔ اس کے بجائے ترتیبات → AI کنکشنز سے ریفریش کریں۔
+    fetch_non_standard: یہ فراہم کنندہ معیاری ماڈل فہرست API فراہم نہیں کرتا۔ ایڈمن پینل میں ماڈلز دستی طور پر شامل کریں۔
+    load_models_error: ماڈلز کو لوڈ کرنے میں ناکامی
+    no_comment: —
+    no_models: ابھی تک کوئی ماڈل نہیں ہے۔ دریافت انہیں ایک کنکشن سے تخلیق کرتی ہے۔
+    not_preferred: غیر ترجیحی
+    preferred: ترجیحی
+    toggle_error: ماڈل کو اپ ڈیٹ کرنے میں ناکامی
+    update_error: تبصرے کو اپ ڈیٹ کرنے میں ناکامی
+    update_success: ماڈل اپ ڈیٹ ہو گیا
+    tuning_hint: یہ اقدار اس کنکشن پر جہاں بھی یہ ماڈل استعمال ہو وہاں لاگو ہوتی ہیں۔ خالی رکھنے کا مطلب ہے کہ یہ ورک بینچ ڈیفالٹ وراثت میں لیتا ہے۔
+    filter_any: کوئی بھی حالت
+    tuning_temperature_hint: کم قدریں زیادہ قابل تکرار جواب دیتی ہیں؛ زیادہ قدریں زیادہ متنوع جواب دیتی ہیں۔
+    filter_result: نتیجہ
+    filter_clear: فلٹرز صاف کریں
+    model_count: '{count} ماڈلز'
+    servers_title: قابل رسائی از
+    no_servers: ابھی کوئی کنکشن یہ ماڈل پیش نہیں کرتا
+    tuning_title: اس سرور کے لیے AI ترتیبات
+    tuning_inherited: وراثت میں ملا
+    tuning_inherited_title: خالی رکھنے پر ورک بینچ ڈیفالٹ وراثت میں ملتا ہے
+    tuning_load_error: AI ترتیبات لوڈ نہیں ہو سکیں
+    tuning_timeout_hint: سیکنڈز جو ایک AI درخواست چل سکتی ہے۔ ایک مقامی CPU ماڈل کو کئی منٹ لگ سکتے ہیں۔
+    filter_test: اہلیت ٹیسٹ
+    tuning_saved: AI ترتیبات محفوظ ہو گئیں
+    search_placeholder: ماڈل کا نام تلاش کریں
+    no_matches: کوئی ماڈل ان فلٹرز سے مطابقت نہیں رکھتا۔
+    filter_state: حالت
+    tuning_save_error: AI کی ترتیبات محفوظ نہیں کی جا سکیں
+    tuning_loading: AI کی ترتیبات لوڈ ہو رہی ہیں…
+  providers:
+    code_label: کوڈ
+    delete_button: حذف کریں
+    delete_confirmation: کیا آپ واقعی فراہم کنندہ "{name}" کو حذف کرنا چاہتے ہیں؟ اس سے تمام متعلقہ ماڈلز بھی حذف ہو جائیں گے اور اسے واپس نہیں کیا جا سکتا۔
+    delete_error: فراہم کنندہ کو حذف کرنے میں ناکامی
+    delete_provider: فراہم کنندہ حذف کریں
+    delete_success: فراہم کنندہ حذف ہو گیا
+    delete_title: فراہم کنندہ حذف کریں
+    description: AI فراہم کنندگان کو فعال یا غیر فعال کریں۔ غیر فعال فراہم کنندگان صارف کے کنکشن فارمز میں نظر نہیں آئیں گے۔
+    disabled: غیر فعال
+    enabled: فعال
+    fetch_error: فراہم کنندگان کو لوڈ کرنے میں ناکامی
+    list_title: تمام فراہم کنندگان
+    local: مقامی
+    no_api_key: API کلید درکار نہیں
+    requires_api_key: API کلید درکار ہے
+    title: AI فراہم کنندگان
+    toggle_error: فراہم کنندہ کو اپ ڈیٹ کرنے میں ناکامی
+    update_success: فراہم کنندہ اپ ڈیٹ ہو گیا
+  title: ایڈمن پینل
+  user_details:
+    dark_mode_description: روشن اور تاریک تھیم کے درمیان ٹوگل کریں۔
+    dark_mode_label: ڈارک موڈ
+    email_label: ای میل
+    email_notifications_description: اپنے اکاؤنٹ کے بارے میں ای میل اپ ڈیٹس موصول کریں۔
+    email_notifications_label: ای میل اطلاعات
+    full_admin_note: مکمل ایڈمنز کے پاس بطور ڈیفالٹ گروپ ایڈمن کی تمام اجازتیں ہوتی ہیں۔
+    group_admin_description: صارف اپنے گروپ کے اندر دوسرے صارفین کا نظم کر سکتا ہے۔
+    group_admin_label: گروپ ایڈمن
+    group_hint: صارف کا گروپ طے کرتا ہے کہ وہ کن مشترکہ وسائل تک رسائی حاصل کر سکتا ہے۔
+    language_label: زبان
+    language_select_placeholder: زبان منتخب کریں
+    load_error: صارف کی تفصیلات کو لوڈ کرنے میں ناکامی
+    max_upload_count_hint: فی صارف ڈیٹا سیٹس کی زیادہ سے زیادہ تعداد (0 = لامحدود)۔
+    max_upload_count_label: زیادہ سے زیادہ اپ لوڈ تعداد
+    max_upload_count_placeholder: تعداد منتخب کریں
+    max_upload_size_hint: فی صارف زیادہ سے زیادہ کل اسٹوریج (0 = لامحدود)۔
+    max_upload_size_label: زیادہ سے زیادہ اپ لوڈ سائز
+    max_upload_size_placeholder: سائز منتخب کریں
+    name_label: نام
+    not_found: صارف نہیں ملا
+    save_error: صارف کو اپ ڈیٹ کرنے میں ناکامی
+    save_success: صارف کی تفصیلات اپ ڈیٹ ہو گئیں
+    select_group: گروپ منتخب کریں
+    title: صارف کا انتظام کریں
+    unnamed: بے نام صارف
+    user_group: صارف گروپ
+  users:
+    active_users: فعال صارفین
+    admin_badge: منتظم
+    bcc_label: BCC رجسٹریشنز
+    bcc_updated: BCC رجسٹریشن کی ترتیب اپ ڈیٹ ہو گئی
+    created_label: تخلیق شدہ
+    current_user_badge: آپ
+    delete_button: حذف کریں
+    delete_confirmation: کیا آپ واقعی "{name}" کو مستقل طور پر حذف کرنا چاہتے ہیں؟ یہ عمل واپس نہیں کیا جا سکتا۔
+    delete_error: صارف کو حذف کرنے میں ناکامی
+    delete_self_error: آپ اپنا اکاؤنٹ خود حذف نہیں کر سکتے
+    delete_success: صارف مستقل طور پر حذف ہو گیا
+    delete_title: صارف حذف کریں
+    deleted_badge: نرم حذف شدہ
+    deleted_label: حذف شدہ
+    example_user_badge: مثال صارف
+    forbidden: ممنوع
+    group_admin_badge: گروپ منتظم
+    hard_delete_button: مستقل حذف کریں
+    hard_delete_confirmation: کیا آپ واقعی "{name}" کو مستقل طور پر حذف کرنا چاہتے ہیں؟ یہ عمل واپس نہیں کیا جا سکتا۔
+    hard_delete_error: صارف کو مستقل طور پر حذف کرنے میں ناکامی
+    hard_delete_success: صارف مستقل طور پر حذف ہو گیا
+    hard_delete_title: صارف کو مستقل طور پر حذف کریں
+    load_error: صارفین کو لوڈ کرنے میں ناکامی
+    make_admin: منتظم بنائیں
+    more_button: مزید...
+    no_name: کوئی نام نہیں
+    remove_admin: منتظم سے ہٹائیں
+    resend_button: ای میل دوبارہ بھیجیں
+    resend_error: تصدیقی ای میل بھیجنے میں ناکامی
+    resend_success: تصدیقی ای میل {email} پر بھیج دی گئی
+    restore_button: بحال کریں
+    restore_error: صارف کو بحال کرنے میں ناکامی
+    restore_success: صارف بحال ہو گیا
+    soft_deleted_users: نرم حذف شدہ صارفین
+    title: صارفین کا انتظام
+    unauthorized: غیر مجاز
+    unverified_badge: غیر تصدیق شدہ
+    update_error: صارف کو اپ ڈیٹ کرنے میں ناکامی
+    update_success: صارف اپ ڈیٹ ہو گیا
+    user_not_found: صارف نہیں ملا
+    verified_badge: تصدیق شدہ
+    verify_button: تصدیق کریں
+    verify_error: صارف کی تصدیق کرنے میں ناکامی
+    verify_success: صارف کو تصدیق شدہ نشان زد کر دیا گیا
+    add_user: صارف شامل کریں
+  visualization_types:
+    add_button: نئی قسم شامل کریں
+    add_title: ویژولائزیشن قسم شامل کریں
+    create_success: ویژولائزیشن قسم تخلیق ہو گئی
+    default_parameters: ڈیفالٹ پیرامیٹرز (JSON)
+    delete: حذف کریں
+    delete_button: حذف کریں
+    delete_confirmation: کیا آپ واقعی قسم "{name}" کو حذف کرنا چاہتے ہیں؟ اس سے تمام متعلقہ مثالیں بھی حذف ہو جائیں گی اور اسے واپس نہیں کیا جا سکتا۔
+    delete_error: حذف کرنے میں ناکامی
+    delete_success: ویژولائزیشن قسم حذف ہو گئی
+    delete_title: ویژولائزیشن قسم حذف کریں
+    description: تفصیل
+    disabled: غیر فعال
+    edit: ترمیم کریں
+    edit_title: ویژولائزیشن قسم میں ترمیم کریں
+    enabled: فعال
+    fetch_error: ویژولائزیشن اقسام لوڈ کرنے میں ناکامی
+    input_schema: ان پٹ اسکیما (JSON)
+    invalid_json: اسکیما کے کسی فیلڈ میں غلط JSON
+    list_title: تمام ویژولائزیشن اقسام
+    name: نام
+    no_types: ابھی تک کوئی ویژولائزیشن قسم متعین نہیں کی گئی۔
+    parameter_schema: پیرامیٹر اسکیما (JSON)
+    renderer: رینڈرر
+    renderer_client: کلائنٹ
+    renderer_label: رینڈرر
+    renderer_server: سرور
+    save_error: محفوظ کرنے میں ناکامی
+    slug: سلگ
+    slug_label: سلگ
+    title: ویژولائزیشن اقسام
+    toggle_error: اپ ڈیٹ کرنے میں ناکامی
+    update_success: ویژولائزیشن قسم اپ ڈیٹ ہو گئی
+  adduser:
+    back_to_admin: ایڈمن پر واپس جائیں
+    name: نام
+    not_admin: آپ کو اس صفحے تک رسائی کی اجازت نہیں ہے۔
+    description: نیا صارف اکاؤنٹ بنائیں۔ اکاؤنٹ فوری طور پر تصدیق شدہ ہو جاتا ہے۔
+    submit: صارف بنائیں
+    email: ای میل
+    confirm_password: پاس ورڈ کی تصدیق کریں
+    language_description: انٹرفیس کے لیے صارف کی ترجیحی زبان منتخب کریں۔
+    password_mismatch: پاس ورڈز مماثل نہیں ہیں
+    password: پاس ورڈ
+    title: صارف شامل کریں
+    failed: صارف بنانے میں ناکام
+    creating: صارف بنایا جا رہا ہے...
+    success: اکاؤنٹ بن گیا اور تصدیق شدہ ہے۔ نیا صارف اب سائن ان کر سکتا ہے۔
+  set_password:
+    failed: پاس ورڈ سیٹ کرنے میں ناکامی
+    admin_password_required: ایڈمن پاس ورڈ درکار ہے
+    title: پاس ورڈ سیٹ کریں
+    description: اس صارف کے لیے نیا پاس ورڈ سیٹ کریں۔ تبدیلی کی تصدیق کے لیے آپ کا اپنا ایڈمن پاس ورڈ درکار ہے۔
+    admin_password: ایڈمن پاس ورڈ
+    success: پاس ورڈ کامیابی سے سیٹ ہو گیا
+ai:
+  connection:
+    add_first: اپنا پہلا AI کنکشن شامل کریں
+    add_new: نیا AI کنکشن شامل کریں
+    add_success: AI کنکشن کامیابی سے شامل ہو گیا
+    add_title: نیا AI کنکشن شامل کریں
+    api_key_hint: آپ کی API کلید ذخیرہ کرنے سے پہلے انکرپٹ کی جاتی ہے۔
+    api_key_label: API کلید
+    by_label: بذریعہ
+    clear_default: ڈیفالٹ صاف کریں
+    currently_not_shared: ❌ فی الحال اشتراک نہیں کیا گیا
+    currently_shared: ✅ فی الحال گروپ کے ساتھ اشتراک کیا گیا ہے
+    default_badge: ڈیفالٹ
+    default_cleared: ڈیفالٹ AI کنکشن صاف کر دیا گیا
+    default_set: ڈیفالٹ AI کنکشن اپ ڈیٹ ہو گیا
+    delete_button: حذف کریں
+    delete_confirmation: کیا آپ واقعی کنکشن حذف کرنا چاہتے ہیں؟
+    delete_error: AI کنکشن حذف کرنے میں ناکامی ہوئی
+    delete_title: AI کنکشن حذف کریں
+    deleted: AI کنکشن حذف کر دیا گیا
+    edit_title: AI کنکشن میں ترمیم کریں
+    endpoint_hint: اگر ضرورت ہو تو پہلے سے طے شدہ API اینڈ پوائنٹ کو اوور رائیڈ کریں۔
+    endpoint_label: اینڈ پوائنٹ URL
+    form_description: AI فراہم کنندہ کنکشن ترتیب دیں۔
+    group_label: گروپ
+    load_error: کنکشنز لوڈ کرنے میں ناکامی ہوئی
+    load_providers_error: فراہم کنندگان لوڈ کرنے میں ناکامی ہوئی
+    metadata_load_error: فراہم کنندہ میٹا ڈیٹا لوڈ کرنے میں ناکامی ہوئی
+    metadata_loading: فراہم کنندہ کی معلومات ابھی لوڈ ہو رہی ہیں۔ براہ کرم انتظار کریں۔
+    models: دستیاب ماڈلز
+    models_disabled: غیر فعال
+    models_load_error: ماڈلز لوڈ کرنے میں ناکامی ہوئی
+    models_none: ابھی تک کوئی ماڈل مطابقت پذیر نہیں ہوا۔ فراہم کنندہ سے ماڈلز حاصل کرنے کے لیے ریفریش پر کلک کریں۔
+    models_refresh: ماڈلز ریفریش کریں
+    models_sync_error: ماڈلز کی مطابقت پذیری میں ناکامی ہوئی
+    models_synced: ماڈلز کامیابی سے مطابقت پذیر ہو گئے
+    name_label: کنکشن کا نام
+    name_placeholder: مثلاً، میرا AI کنکشن
+    no_connections: ابھی تک کوئی AI کنکشن محفوظ نہیں ہے۔
+    not_found: کنکشن نہیں ملا
+    provider_label: فراہم کنندہ
+    provider_not_found: فراہم کنندہ نہیں ملا
+    save_error: AI کنکشن محفوظ کرنے میں ناکامی ہوئی
+    select_provider: AI فراہم کنندہ منتخب کریں
+    select_provider_first: براہ کرم پہلے ایک فراہم کنندہ منتخب کریں
+    set_default: بطور ڈیفالٹ سیٹ کریں
+    shared_badge: اشتراک شدہ
+    shared_description: اس کنکشن کو اپنے گروپ کے دیگر صارفین کے لیے دستیاب کریں۔
+    shared_label: گروپ کے ساتھ اشتراک کریں
+    shared_readonly: اشتراک شدہ
+    shared_readonly_message: یہ کنکشن آپ کے ساتھ اشتراک کیا گیا ہے۔ آپ اسے دیکھ سکتے ہیں، لیکن ترمیم صرف مالک تک محدود ہے۔
+    test_button: کنکشن ٹیسٹ کریں
+    test_error: کنکشن ناکام ہوا۔
+    test_success: کنکشن کامیاب رہا!
+    unknown_user: نامعلوم
+    update_success: AI کنکشن کامیابی سے اپ ڈیٹ ہو گیا
+    timeouts_section_label: کنکشن ٹائم آؤٹس
+    connect_timeout_hint: نیٹ ورک کو کنکشن قبول کرنے میں کتنا وقت لگ سکتا ہے۔ اس نیٹ ورک کو جتنی ضرورت ہے اس سے کم قدر ایک کام کرنے والے اینڈ پوائنٹ کو ناقابل رسائی بنا دیتی ہے۔
+    probe_timeout_hint: یہاں ایک موزونیت ٹیسٹ کتنی دیر چل سکتا ہے۔ CPU پر ہوسٹ کردہ ماڈل منٹوں لیتا ہے۔
+    models_discovered: 'اس کنکشن پر {seen} ماڈل(ز) دریافت ہوئے: {created} نئے، {refreshed} پہلے سے معلوم، {pruned} جو اب پیش نہیں کیے جا رہے'
+    invalid_probe_timeout: ماڈل ٹیسٹ ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ 1200۔
+    connect_exceeds_probe: کنکشن ٹائم آؤٹ ماڈل ٹیسٹ ٹائم آؤٹ سے زیادہ نہیں ہو سکتا — کنکشن کو قائم ہونے میں پورے ٹیسٹ کے چلنے سے زیادہ وقت لینے کی اجازت نہیں دی جا سکتی۔
+    invalid_connect_timeout: کنکشن ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ 60۔
+    timeouts_section_hint: ورک بینچ کا ڈیفالٹ استعمال کرنے کے لیے خانہ خالی چھوڑ دیں۔
+  database:
+    add_connection: ڈیٹا بیس کنکشن شامل کریں
+    ai_augmented: AI سے افزودہ تجزیہ
+    ai_augmented_desc: اسکیما AI، سیمینٹک AI، اور انٹیگریشن AI نے اس ڈیٹا بیس کا تجزیہ کیا ہے۔
+    ai_fallback: بنیادی تجزیہ
+    ai_fallback_desc: AI افزودگی دستیاب نہیں ہے۔ صرف ساختی تجزیہ دکھایا جا رہا ہے۔ گہری بصیرت کے لیے AI کنکشن منتخب کریں۔
+    ai_health_score: AI صحت اسکور
+    ai_unavailable: AI تجزیہ دستیاب نہیں ہے۔ بہتر تجزیہ فعال کرنے کے لیے کسی AI فراہم کنندہ سے جڑیں۔
+    all_issues: تمام مسائل
+    analysis_report: تجزیہ رپورٹ
+    analysis_summary: '{tables} ٹیبلز، {columns} کالمز، {issues} مسائل پائے گئے'
+    analyze: اسکیما کا تجزیہ کریں
+    analyzing: تجزیہ جاری ہے...
+    business_value: کاروباری قدر
+    categories: زمرہ جات
+    code_systems_detected: کوڈ سسٹمز کا پتہ چلا
+    cols_rows_format: '{cols} کالم، {rows} قطاریں'
+    column_meanings: کالم کے معانی
+    columns_label: کالمز
+    confidence: اعتماد
+    description: اشاریہ بندی، نارملائزیشن، تعلقات، ڈیٹا ٹائپ، اور ناموں کے مسائل کے لیے اپنے ڈیٹا بیس ڈیزائن کا تجزیہ کریں۔
+    download_pdf: PDF ڈاؤن لوڈ کریں
+    email_body_attachment: براہ کرم منسلک تجزیہ رپورٹ ملاحظہ کریں۔
+    email_body_connection: 'کنکشن: {conn_name}'
+    email_body_database: 'ڈیٹا بیس: {db_name}'
+    email_body_id: 'کنکشن ID: {conn_id}'
+    email_body_signature: — اسٹیٹسٹیشنز ورک بینچ
+    email_body_title: ڈیٹا بیس ڈیزائن تجزیہ رپورٹ
+    email_body_type: 'ڈیٹا بیس قسم: {db_type}'
+    email_error: رپورٹ ای میل کرنے میں ناکامی ہوئی
+    email_pdf: PDF ای میل کریں
+    email_sent: رپورٹ کامیابی سے ای میل ہو گئی
+    email_subject: ڈیٹا بیس ڈیزائن تجزیہ — {db_name} ({db_type}) [کنکشن {conn_id}]
+    empty_state: شروع کرنے کے لیے ایک ڈیٹا بیس کنکشن منتخب کریں اور تجزیہ کریں پر کلک کریں۔
+    enter_question: براہ کرم ایک سوال درج کریں۔
+    foreign_keys: فارن کیز
+    high_risk: زیادہ
+    implicit_relationships: مضمر تعلقات
+    indexes_label: انڈیکسز
+    integration_analysis: انٹیگریشن تجزیہ
+    integration_analysis_desc: انٹیگریشن AI کے ذریعے شناخت شدہ مضمر تعلقات، تحقیقی صلاحیتیں، اور غائب جہتیں۔
+    isic_domains: ISIC ڈومین درجہ بندیاں
+    issues_label: مسائل
+    low_risk: کم
+    medium_risk: درمیانہ
+    missing_dimensions: غائب جہتیں
+    no_issues: کوئی مسائل نہیں ملے۔ آپ کا ڈیٹا بیس ڈیزائن اچھا لگ رہا ہے!
+    no_semi_structured: متن کالموں میں کوئی نیم ساختی ڈیٹا پیٹرنز شناخت نہیں ہوئے۔
+    normalisation_suggestions: نارملائزیشن تجاویز
+    normalisation_suggestions_desc: نیم ساختی متنی کالموں میں پائے جانے والے کلیدی الفاظ کی بنیاد پر مجوزہ حوالہ جاتی جدولیں۔
+    normalisation_warning: یہ AI سے تیار کردہ تجاویز ہیں۔ ڈیٹا بیس کی دوبارہ ڈیزائننگ کے لیے محتاط جائزہ درکار ہے۔ تبدیلیوں کو پہلے کسی نقل (ریپلیکا) پر آزمائیں۔
+    pdf_downloaded: PDF کامیابی سے ڈاؤن لوڈ ہو گئی
+    pdf_error: PDF تیار کرنے میں ناکامی ہوئی
+    pk_prefix: PK –
+    placeholder: جلد آ رہا ہے۔ یہ خصوصیت AI کا استعمال کرتے ہوئے ڈیٹا بیس اسکیما ڈیزائن کرنے میں آپ کی مدد کرے گی۔
+    priority_actions: اولین ترجیحی اقدامات
+    proposed_reference_table: مجوزہ حوالہ جاتی جدول
+    rag_ask: پوچھیں
+    rag_chat: RAG چیٹ — اپنے ڈیٹا کے بارے میں سوالات پوچھیں
+    rag_chat_desc: قدرتی زبان میں سوالات پوچھیں۔ سسٹم متنی کالموں میں تلاش کرتا ہے اور حوالہ جات کے ساتھ AI سے تیار کردہ جوابات فراہم کرتا ہے۔
+    rag_error: RAG استفسار ناکام رہا
+    rag_placeholder: مثلاً، عام تشخیصات کیا ہیں؟
+    rag_sources: ذرائع
+    research_capabilities: تحقیقی صلاحیتیں
+    risk_breakdown: خطرے کی تقسیم
+    rows_label: قطاریں
+    schema_error: ڈیٹا بیس اسکیما کا تجزیہ کرنے میں ناکام رہا
+    select_connection: ڈیٹا بیس کنکشن منتخب کریں
+    select_connection_first: براہ کرم پہلے ڈیٹا بیس کنکشن منتخب کریں۔
+    select_connection_placeholder: ڈیٹا بیس کنکشن منتخب کریں...
+    semantic_analysis: معنوی تجزیہ
+    semantic_analysis_desc: AI سے اخذ کردہ کالم معانی، ISIC ڈومین درجہ بندی، اور کوڈ سسٹم کی شناخت۔
+    semi_structured: نیم ساختی ڈیٹا کا تجزیہ
+    semi_structured_desc: متنی کالموں کا تجزیہ ایمبیڈڈ کوڈز، کلیدی الفاظ اور نمونوں کے لیے کیا گیا۔
+    table_purposes: جدولوں کے مقاصد
+    tables_explorer: جدولوں کا ایکسپلورر
+    tables_label: جدولیں
+    timeout_error: تجزیہ کا وقت ختم ہوگیا۔ ڈیٹا بیس بہت بڑا ہو سکتا ہے یا AI سروس دستیاب نہیں ہے۔
+    timeout_log: تجزیہ 15 منٹ کے بعد وقت ختم ہوگیا۔
+    title: ڈیٹا بیس ڈیزائن معاون
+    top_recommendations: اہم سفارشات
+    peer_tables: 'ہم مرتبہ ٹیبلز:'
+    health_score_desc: اسکیما AI کے ذریعے مجموعی ڈیٹا بیس کی صحت کا جائزہ۔ 0 = سنگین ساختی مسائل، 100 = پروڈکشن کے لیے تیار۔
+    is_missing: غائب ہے
+  dataclean:
+    chat_error: جواب حاصل کرنے میں ناکام رہا
+    chat_placeholder: اس ڈیٹا سیٹ کی صفائی یا تیاری کے بارے میں پوچھیں...
+    column_tooltip: '{type} — {null_count} خالی، {unique_count} منفرد'
+    column_type:
+      category: زمرہ
+      datetime: تاریخ/وقت
+      number: عدد
+      text: متن
+    description: AI سے چلنے والی ڈیٹا سیٹ کی صفائی اور تیاری۔
+    empty_chat: ایک ڈیٹا سیٹ منتخب کریں اور اسے صاف اور تیار کرنے کے بارے میں سوال پوچھنا شروع کریں۔
+    enter_message: براہ کرم پیغام درج کریں۔
+    loading_schema: اسکیما لوڈ ہو رہا ہے...
+    no_connection: براہ کرم سیٹنگز > AI میں ایک طے شدہ AI کنکشن ترتیب دیں۔
+    no_datasets: کوئی ڈیٹا سیٹ دستیاب نہیں ہے۔ پہلے ڈیٹا سیٹ اپ لوڈ یا وضاحت کریں۔
+    placeholder: جلد آ رہا ہے۔ یہ خصوصیت AI کے ذریعے ڈیٹا سیٹس کو صاف اور تیار کرنے میں مدد کرے گی۔
+    schema_error: ڈیٹا سیٹ اسکیما لوڈ کرنے میں ناکام رہا
+    schema_summary: '{rows} قطاریں، {cols} کالم'
+    select_dataset: ڈیٹا سیٹ منتخب کریں
+    select_dataset_first: براہ کرم پہلے ڈیٹا سیٹ منتخب کریں۔
+    select_dataset_placeholder: ڈیٹا سیٹ منتخب کریں...
+    send: بھیجیں
+    shared_badge: (مشترکہ)
+    title: ڈیٹا سیٹ صفائی معاون
+    clean_name_label: صاف شدہ نقل کا نام
+    preview_title: ڈیٹا کا پیش منظر
+    rules_title: تیاری کے اصول
+    clean_copy_success: ایک نیا ڈیٹا سیٹ '{name}' بنایا گیا — اصل تبدیل نہیں ہوا۔
+    clean_copy: صاف شدہ نقل
+    no_rules: ابھی کوئی اصول نہیں
+    clean_in_place_success: ڈیٹا سیٹ '{name}' اپ ڈیٹ ہو گیا۔
+    clean_no_rules: ابھی لاگو کرنے کے لیے صفائی کے کوئی اصول نہیں ہیں۔
+    operations_count: '{count} آپریشنز'
+    no_dataset_selected: کوئی ڈیٹا سیٹ منتخب نہیں ہے
+    clean_in_place: اسی جگہ صاف کریں
+  default_hint: طے شدہ کنکشن اس وقت بیک اپ کے طور پر استعمال ہوتا ہے جب تجزیہ ریسیپی AI فراہم کنندہ کی وضاحت نہیں کرتی۔
+  new_session: نیا سیشن
+  no_ai_connections: کوئی AI کنکشن ترتیب نہیں دیا گیا۔ سیٹنگز > AI میں ایک شامل کریں۔
+  recipe:
+    chat_error: جواب حاصل کرنے میں ناکام رہا
+    chat_placeholder: شماریاتی تجزیے یا ریسیپی ترتیب کے بارے میں پوچھیں...
+    description: AI سے چلنے والی ریسیپی اور تجزیہ اصولوں کی تخلیق۔
+    empty_chat: ایک ڈیٹا سیٹ منتخب کریں اور پوچھیں کہ کون سی شماریاتی تکنیکیں استعمال کریں۔
+    enter_message: براہ کرم پیغام درج کریں۔
+    loading_schema: اسکیما لوڈ ہو رہا ہے...
+    no_datasets: کوئی ڈیٹا سیٹ دستیاب نہیں ہے۔ پہلے ڈیٹا سیٹ اپ لوڈ یا وضاحت کریں۔
+    placeholder: جلد آ رہا ہے۔ یہ خصوصیت AI کے ذریعے تجزیہ ریسیپیز بنانے میں مدد کرے گی۔
+    schema_summary: '{rows} قطاریں، {cols} کالم'
+    select_dataset: ڈیٹا سیٹ منتخب کریں
+    select_dataset_first: براہ کرم پہلے ڈیٹا سیٹ منتخب کریں۔
+    select_dataset_placeholder: ڈیٹا سیٹ منتخب کریں...
+    send: بھیجیں
+    title: تجزیہ اصول معاون
+  recipe_concierge:
+    chat_error: جواب حاصل کرنے میں ناکام رہا
+    create_prompt: شروع کرنے کے لیے نیا سیشن بنائیں۔
+    delete_session: سیشن حذف کریں
+    draft_empty: اپنی ریسیپی بنانے کے لیے گفتگو شروع کریں۔ جیسے ہی آپ فیصلے کریں گے، مسودہ یہاں ظاہر ہوگا۔
+    draft_title: ریسیپی کا مسودہ
+    input_placeholder: اپنے ڈیٹا کے بارے میں پوچھیں... یا صرف "ہیلو" کہیں
+    manual_label: دستی ریسیپی
+    new_session: نیا سیشن
+    no_session: کوئی سیشن منتخب نہیں
+    no_sessions: ابھی کوئی سیشن نہیں
+    open: ایڈیٹر میں کھولیں
+    save: ریسیپی محفوظ کریں
+    saved: ریسیپی محفوظ ہوگئی!
+    saving: محفوظ ہو رہا ہے...
+    select_dataset: ڈیٹا سیٹ منتخب کریں...
+    stage_columns: کالم منتخب کریں
+    stage_complete: ریسیپی تیار ہے
+    stage_goal: تحقیقی سوال
+    stage_greeting: خوش آمدید
+    stage_review: ریسیپی کا جائزہ لیں
+    stage_technique: تکنیک منتخب کریں
+    stage_transforms: ڈیٹا کی تیاری
+    stage_visualisation: بصری نمائش
+    status_draft: مسودہ
+    status_ready: تیار
+    tab_chat: گفتگو
+    tab_draft: مسودہ
+    tab_sessions: سیشنز
+    title: AI ریسیپی کونسیئرج
+    toggle_panel: ریسیپی پینل کو ٹوگل کریں
+    welcome: مجھے بتائیں کہ آپ اپنے ڈیٹا میں کیا دریافت کرنا چاہتے ہیں، اور میں آپ کو مکمل تجزیہ ریسیپی بنانے میں مدد کروں گا۔
+    schema_changes: 'اسکیما تبدیلیاں پائی گئیں:'
+    draft_algorithm: الگورتھم
+    draft_no_visualisation: عددی نتائج
+    draft_dataset: ڈیٹا سیٹ
+    warnings_heading: انتباہات
+    draft_output: آؤٹ پٹ
+    errors_heading: ابھی محفوظ نہیں کیا جا سکتا
+    progress_decided: '{total} میں سے {count} طے شدہ'
+    done: مکمل
+    chip_withheld: +{count} مزید
+    progress_next: '{progress} · {next}'
+    unread_sources: کچھ ذرائع پڑھے نہیں جا سکے، اس لیے کالم کی فہرست نامکمل ہو سکتی ہے۔
+    chip_superseded: ایک نئی پیشکش سے تبدیل کر دیا گیا۔
+    chip_expand: '{count} مزید دکھائیں'
+    chip_collapse: کم دکھائیں
+  select_ai_connection: AI کنکشن
+  select_ai_connection_placeholder: AI کنکشن منتخب کریں...
+  select_model: ماڈل
+  select_model_placeholder: ماڈل منتخب کریں...
+  test_error: کنکشن ناکام ہوا۔
+  test_success: کنکشن کامیاب ہوا!
+  title: AI ترتیبات
+  thinking: سوچ رہا ہوں...
+  testing:
+    test_turn: پیچیدگی
+    no_duration_here: اس کنکشن پر نہیں چلایا گیا
+    slow_limit_failed: آپ کی سست ماڈل کی حد پڑھی نہیں جا سکی، اس لیے کوئی ماڈل بہت سست نشان زد نہیں کیا گیا۔ {detail}
+    enabled_yes: ماڈل فعال
+    running: چل رہا ہے…
+    no_connections_heading: ابھی کوئی AI کنکشن نہیں ہے
+    cost_confirm: رن شروع کریں
+    run_test: ٹیسٹ چلائیں
+    test_competence: اہلیت
+    load_error: آپ کے AI کنکشنز لوڈ نہیں ہو سکے۔ {detail}
+    discover_result: 'سرور نے {seen} ماڈل(ز) درج کیے: {created} نئے، {refreshed} پہلے سے معلوم، {pruned} جو اب پیش نہیں کیے جا رہے'
+    too_slow: آپ کی {seconds} سیکنڈ کی حد سے زیادہ
+    slow_limit_session_reset: میری محفوظ کردہ حد استعمال کریں
+    slow_limit_session_label: سست ماڈل کی حد
+    state_pass: پاس
+    enabled_no: ماڈل غیر فعال
+    column_model: ماڈل
+    connection_label: AI کنکشن
+    discover_running: سرور سے پوچھا جا رہا ہے…
+    explanation: ورک بینچ کے AI معاون ایسے ماڈلز کے لیے بنائے گئے ہیں جو عمل کرتے ہیں۔ جو ماڈل صرف بات کرتا ہے — چاہے کتنا ہی شائستہ ہو، کتنا ہی بڑا ہو — نسخہ ایڈیٹر کو جواب دیتا چھوڑ دے گا جبکہ وہ کچھ
+      نہیں کر رہا ہوتا۔ حل ماڈل ہے، کوڈ نہیں۔ اس صفحے کا ٹول آپ کو جانچنے دیتا ہے کہ آیا کوئی ماڈل موزوں ہے۔
+    models_heading: ماڈلز
+    run_all_for_model: اس ماڈل کے لیے سب چلائیں
+    no_models: ابھی اس کنکشن پر کوئی ماڈل دریافت نہیں ہوا ہے۔
+    discover_models: ماڈلز دریافت کریں
+    slow_limit_session_hint: صرف اس صفحے پر لاگو ہوتا ہے — محفوظ نہیں کیا جاتا۔
+    cost_warning: یہ {count} ٹیسٹ چلاتا ہے، اور ٹرن ٹیسٹ CPU پر فی ماڈل منٹوں لیتا ہے۔ شروع کرنے کے لیے دوبارہ دبائیں۔
+    no_connections_body: ماڈل کی جانچ کے لیے AI کنکشن درکار ہے۔ ایک شامل کریں، پھر اس صفحے پر واپس آئیں۔
+    test_tools: ٹولز استعمال کرتا ہے
+    run_all_untested: غیر جانچے گئے ماڈلز پر ہر ٹیسٹ چلائیں
+    elsewhere_note: ایک ماڈل کسی دوسرے کنکشن سے اہلیت کا نتیجہ رکھ سکتا ہے۔ ہر حالت کے ساتھ دیا گیا دورانیہ اس کنکشن کی اپنی پیمائش ہے، اس لیے یہاں کوئی ماڈل بغیر دورانیے کے حالت دکھا سکتا ہے۔
+    discover_failed: 'ماڈلز دریافت نہیں ہو سکے: {detail}'
+    failure_reason: 'وجہ: {reason}'
+    duration_seconds: '{seconds} سیکنڈ'
+    run_failed: 'ٹیسٹ نہیں چل سکا: {detail}'
+    title: AI جانچ
+    no_connections_link: AI کنکشنز پر جائیں
+    cancelled: روک دیا گیا۔ پہلے سے ریکارڈ شدہ نتائج رکھ لیے گئے۔
+    slow_limit_session_link: اسے اپنے پروفائل میں مستقل طور پر سیٹ کریں
+    duration_ms: '{ms} ms'
+    slow_limit_unavailable: آپ کی ترتیبات میں سست ماڈل کی حد شامل نہیں تھی، اس لیے کوئی ماڈل بہت سست نشان زد نہیں کیا گیا۔
+    state_fail: ناکام
+    column_enabled: فعال
+    column_actions: ٹیسٹ
+api:
+  admin:
+    already_full_admin: صارف پہلے سے فل ایڈمن ہے
+    already_group_admin: صارف پہلے سے گروپ ایڈمن ہے
+    cannot_delete_self: آپ اپنا اکاؤنٹ حذف نہیں کر سکتے
+    cannot_demote_full_admin: فل ایڈمن کو تنزلی نہیں دی جا سکتی
+    cannot_demote_self: آپ خود کو تنزلی نہیں دے سکتے
+    cannot_promote_example: نمونہ صارف کو ترقی نہیں دی جا سکتی
+    delete_error: صارف حذف کرنے میں ناکامی
+    demote_error: صارف کو تنزلی دینے میں ناکامی
+    description_required: تفصیل خالی نہیں ہو سکتی
+    example_blocked: نمونہ صارفین ایڈمن کارروائیاں انجام نہیں دے سکتے
+    group_not_found: گروپ نہیں ملا
+    group_users_load_error: گروپ صارفین لوڈ کرنے میں ناکامی
+    groups_load_error: گروپس لوڈ کرنے میں ناکامی
+    groups_stats_error: گروپ شماریات لوڈ کرنے میں ناکامی
+    instance_exists: قسم حذف نہیں کی جا سکتی کیونکہ اس سے {count} منسلک مثالیں ہیں۔
+    insufficient_permissions: اس کارروائی کے لیے ناکافی اجازتیں
+    invalid_group_id: غلط group_id۔ 00-99 ہونا ضروری ہے
+    invalid_id: غلط id
+    invalid_upload_count: maxUploadCount ایک غیر منفی عدد ہونا ضروری ہے (0 کا مطلب لامحدود ہے)۔
+    invalid_upload_size: maxUploadSizeMB ایک غیر منفی عدد ہونا ضروری ہے (0 کا مطلب لامحدود ہے)۔
+    missing_fields: ضروری فیلڈز غائب ہیں
+    missing_group_id: گروپ ID غائب ہے
+    missing_id: id غائب ہے
+    missing_model_id: ماڈل id غائب ہے
+    missing_provider_code: providerCode پیرامیٹر غائب ہے
+    missing_user_id: userId غائب ہے
+    model_update_error: ماڈل اپ ڈیٹ کرنے میں ناکامی
+    models_load_error: ماڈلز لوڈ کرنے میں ناکامی
+    no_fields: اپ ڈیٹ کرنے کے لیے کوئی درست فیلڈ موجود نہیں
+    no_group: صارف کو کوئی گروپ تفویض نہیں کیا گیا
+    not_group_admin: صارف گروپ ایڈمن نہیں ہے
+    only_full_admin: یہ کارروائی صرف فل ایڈمن ہی انجام دے سکتے ہیں
+    promote_error: صارف کو ترقی دینے میں ناکامی
+    provider_delete_error: فراہم کنندہ حذف کرنے میں ناکامی
+    provider_not_found: فراہم کنندہ نہیں ملا
+    provider_update_error: فراہم کنندہ اپ ڈیٹ کرنے میں ناکامی
+    providers_load_error: فراہم کنندگان لوڈ کرنے میں ناکامی
+    slug_exists: سلگ پہلے سے موجود ہے
+    update_error: صارف اپ ڈیٹ کرنے میں ناکامی
+    user_load_error: صارف لوڈ کرنے میں ناکامی
+    user_not_found: صارف نہیں ملا
+    users_load_error: صارفین لوڈ کرنے میں ناکامی
+    viz_type_create_error: ویژولائزیشن قسم بنانے میں ناکامی
+    viz_type_delete_error: ویژولائزیشن قسم حذف کرنے میں ناکامی
+    viz_type_update_error: ویژولائزیشن قسم اپ ڈیٹ کرنے میں ناکامی
+    viz_types_load_error: ویژولائزیشن اقسام لوڈ کرنے میں ناکامی
+    settings_invalid_grace_period: رجسٹریشن کے لیے مہلت کا دورانیہ ایک مثبت نمبر (گھنٹے) ہونا چاہیے
+    settings_save_error: عالمی ترتیبات کو محفوظ کرنے میں ناکامی ہوئی
+    settings_modify_forbidden: صرف مکمل منتظمین ہی عالمی ترتیبات میں ترمیم کر سکتے ہیں
+    settings_load_error: عالمی ترتیبات کو لوڈ کرنے میں ناکامی ہوئی
+    settings_invalid_upload_count: طے شدہ زیادہ سے زیادہ اپ لوڈ کی تعداد ایک غیر منفی صحیح عدد ہونی چاہیے (0 کا مطلب لامحدود ہے)
+    settings_invalid_upload_size: طے شدہ زیادہ سے زیادہ اپ لوڈ سائز ایک غیر منفی صحیح عدد ہونا چاہیے (0 کا مطلب لامحدود ہے)
+    settings_invalid_public_url: عوامی URL کا فارمیٹ غلط ہے
+    settings_invalid_max_registrations: زیادہ سے زیادہ رجسٹریشنز کی تعداد ایک مثبت نمبر یا لامحدود ہونی چاہیے
+    settings_view_forbidden: صرف مکمل منتظمین ہی عالمی ترتیبات دیکھ سکتے ہیں
+    settings_invalid_email_sender: بھیجنے والے کے ای میل ایڈریس کا فارمیٹ غلط ہے
+    settings_invalid_email_timeout: ای میل تصدیق کا ٹائم آؤٹ ایک مثبت نمبر (گھنٹے) ہونا چاہیے
+  auth:
+    account_deleted: یہ اکاؤنٹ حذف کر دیا گیا ہے۔
+    email_not_verified: ای میل کی تصدیق نہیں ہوئی۔ براہ کرم اپنا ان باکس اور اسپام فولڈر چیک کریں۔
+    example_user_blocked: مثالی صارفین کے لیے پاس ورڈ کی تبدیلی غیر فعال ہے۔
+    example_user_forgot_blocked: نمونہ صارفین کے لیے پاس ورڈ ری سیٹ غیر فعال ہے
+    example_user_register_blocked: نمونہ صارفین نئے اکاؤنٹس نہیں بنا سکتے
+    example_user_reset_blocked: نمونہ صارفین کے لیے پاس ورڈ ری سیٹ غیر فعال ہے
+    internal_error: اندرونی سرور کی خرابی
+    invalid_credentials: غلط اسناد
+    invalid_current_password: موجودہ پاس ورڈ غلط ہے
+    invalid_token: غلط یا معیاد ختم شدہ ٹوکن
+    missing_email: ای میل درکار ہے
+    missing_fields: فیلڈز غائب ہیں
+    password_validation_failed: پاس ورڈ کی توثیق ناکام ہوئی
+    token_expired: ٹوکن کی معیاد ختم ہو گئی ہے
+    unauthorized: غیر مجاز
+    user_not_found: صارف نہیں ملا
+  datasets:
+    delete_blocked: نمونہ صارفین ڈیٹا سیٹس حذف نہیں کر سکتے
+    example_blocked: نمونہ صارفین ڈیٹا سیٹس نہیں بنا سکتے
+    proxy_error: اندرونی سرور کی خرابی
+    update_blocked: نمونہ صارفین ڈیٹا سیٹس اپ ڈیٹ نہیں کر سکتے
+  profile:
+    name_required: نام درکار ہے
+    update_failed: پروفائل اپ ڈیٹ کرنے میں ناکامی
+  recipes:
+    create_error: ترکیب بنانے میں ناکامی
+    dataset_not_found: ڈیٹا سیٹ نہیں ملا
+    dataset_required: datasetId درکار ہے
+    delete_error: ترکیب حذف کرنے میں ناکامی
+    execute_error: ترکیب پر عمل درآمد کرنے میں ناکامی
+    execution_load_error: عمل درآمد لوڈ کرنے میں ناکامی
+    execution_not_found: عمل درآمد نہیں ملا
+    executions_load_error: عمل درآمد لوڈ کرنے میں ناکامی
+    load_error: تراکیب لوڈ کرنے میں ناکامی
+    missing_id: ترکیب ID درکار ہے
+    name_required: نام اور مراحل درکار ہیں
+    not_found: ترکیب نہیں ملی
+    not_owned: ترکیب نہیں ملی یا آپ کی ملکیت میں نہیں ہے
+    update_error: ترکیب اپ ڈیٹ کرنے میں ناکامی
+  register:
+    email_exists: ای میل پہلے سے موجود ہے
+    internal_error: اندرونی سرور کی خرابی
+    invalid_email: ای میل کا فارمیٹ غلط ہے
+    limit_reached: رجسٹریشن کی حد تک پہنچ گئے (زیادہ سے زیادہ {max_reg} صارفین)۔
+    missing_fields: فیلڈز غائب ہیں
+    password_validation_failed: پاس ورڈ کی توثیق ناکام ہوئی
+    settings_not_found: عالمی ترتیبات نہیں ملیں
+  settings:
+    load_failed: ترتیبات لوڈ کرنے میں ناکامی
+    save_failed: ترتیبات محفوظ کرنے میں ناکامی
+    user_not_found: صارف نہیں ملا
+  user:
+    api_key_required: اس فراہم کنندہ کے لیے API کلید درکار ہے
+    connection_name_exists: اس نام سے ایک کنکشن پہلے سے موجود ہے
+    connection_not_found: کنکشن نہیں ملا
+    example_blocked: نمونے کے صارفین یہ عمل انجام نہیں دے سکتے
+    internal_error: اندرونی سرور خرابی
+    missing_fields: ضروری خانے غائب ہیں
+    provider_not_found: فراہم کنندہ "{provider}" نہیں ملا۔
+    user_not_found: صارف نہیں ملا
+  global_settings_load_error: اندرونی سرور کی خرابی
+app:
+  name: ماہرین شماریات کا ورک بینچ
+  version: ورژن
+chat:
+  connection_not_found: AI کنکشن نہیں ملا یا قابل رسائی نہیں ہے۔
+  connections_load_error: کنکشنز لوڈ کرنے میں ناکامی
+  delete: حذف کریں
+  delete_confirm: کیا آپ واقعی یہ چیٹ حذف کرنا چاہتے ہیں؟
+  delete_error: چیٹ حذف کرنے میں ناکامی
+  delete_success: چیٹ حذف ہو گئی
+  empty_state: گفتگو شروع کرنے کے لیے پیغام بھیجیں۔
+  go_to_ai_settings: AI ترتیبات پر جائیں
+  history: چیٹ کی سرگزشت
+  input_placeholder: اپنا پیغام لکھیں...
+  load_error: چیٹس لوڈ کرنے میں ناکامی
+  models_load_error: ماڈلز لوڈ کرنے میں ناکامی
+  new_chat: نئی چیٹ
+  no_chat_selected: کوئی فعال چیٹ نہیں
+  no_chats: ابھی کوئی چیٹ نہیں
+  no_connections_message: چیٹ استعمال کرنے سے پہلے آپ کو کم از کم ایک AI کنکشن طے کرنا ہوگا۔
+  no_models: اس کنکشن کے لیے کوئی ماڈل دستیاب نہیں
+  rename: نام تبدیل کریں
+  rename_empty: عنوان خالی نہیں ہو سکتا
+  rename_error: چیٹ کا نام تبدیل کرنے میں ناکامی
+  rename_success: چیٹ کا نام تبدیل کر دیا گیا
+  select_connection: AI کنکشن
+  select_connection_first: براہ کرم پہلے ایک AI کنکشن منتخب کریں۔
+  select_connection_placeholder: ایک AI کنکشن منتخب کریں
+  select_model: ماڈل
+  select_model_placeholder: ایک ماڈل منتخب کریں
+  send_error: پیغام بھیجنے میں ناکامی
+  title: چیٹ
+common:
+  access_denied_admin: رسائی سے انکار — صرف منتظم۔
+  audio_settings: آڈیو ترتیبات
+  back: واپس
+  cancel: منسوخ کریں
+  cannot_undo: یہ عمل واپس نہیں لیا جا سکتا۔
+  clear: صاف کریں
+  close: بند کریں
+  close_navigation: نیویگیشن بند کریں
+  copied: کاپی ہو گیا!
+  copy: کاپی کریں
+  copy_to_clipboard: کلپ بورڈ پر کاپی کریں
+  delete: حذف کریں
+  delete_chat: چیٹ حذف کریں
+  deleting: حذف کیا جا رہا ہے...
+  dismiss: ختم کریں
+  dismiss_error: خرابی کو ختم کریں
+  dismiss_success: کامیابی کو ختم کریں
+  edit: ترمیم کریں
+  error_label: خرابی
+  false_label: غلط
+  generating: تیار کیا جا رہا ہے...
+  has_more_information: مزید معلومات موجود ہیں
+  loading: لوڈ ہو رہا ہے...
+  microphone_off: مائیکروفون بند
+  microphone_on: مائیکروفون آن
+  next: اگلا
+  no_answer: کوئی جواب واپس نہیں آیا
+  no_permission: آپ کو یہ صفحہ دیکھنے کی اجازت نہیں ہے۔
+  open_navigation: نیویگیشن کھولیں
+  reset_to_defaults: طے شدہ اقدار پر دوبارہ مرتب کریں
+  restoring: بحال کیا جا رہا ہے...
+  save: محفوظ کریں
+  saving: محفوظ کیا جا رہا ہے...
+  select_language: زبان منتخب کریں
+  sending: بھیجا جا رہا ہے...
+  speaker_off: اسپیکر بند
+  speaker_on: اسپیکر آن
+  speech_input_unsupported: 'آپ کے براؤزر میں صوتی ان پٹ تعاون یافتہ نہیں ہے۔ ہم آہنگ براؤزرز: گوگل کروم، مائیکروسافٹ ایج، اوپیرا، سام سنگ انٹرنیٹ۔'
+  speech_mic_denied: مائیکروفون تک رسائی مسترد کر دی گئی۔ براہ کرم اپنے براؤزر کی ترتیبات میں مائیکروفون تک رسائی کی اجازت دیں۔
+  speech_mic_failed: 'مائیکروفون شروع کرنے میں ناکامی: {error}۔'
+  speech_network_error: صوتی شناخت نیٹ ورک خرابی — اپنا انٹرنیٹ کنکشن چیک کریں اور دوبارہ کوشش کریں۔
+  speech_output_unsupported: 'آپ کے براؤزر میں صوتی آؤٹ پٹ تعاون یافتہ نہیں ہے۔ ہم آہنگ براؤزرز: گوگل کروم، مائیکروسافٹ ایج، موزیلا فائر فاکس، ایپل سفاری، اوپیرا، سام سنگ انٹرنیٹ۔'
+  speech_recognition_error: 'صوتی شناخت خرابی: {error}۔ دوبارہ کوشش کریں۔'
+  success_label: کامیابی
+  system_default: سسٹم ڈیفالٹ
+  testing: جانچ کی جا رہی ہے...
+  true_label: درست
+  unknown: نامعلوم
+  unknown_error: نامعلوم خرابی
+  untitled: بے عنوان
+  uploading: اپ لوڈ کیا جا رہا ہے...
+  verifying: تصدیق کی جا رہی ہے...
+  view: دیکھیں
+  view_dataset: ڈیٹا سیٹ دیکھیں
+  voice: آواز
+  audio_pause: توقف کریں
+  audio_stop: روکیں
+  audio_resume: دوبارہ شروع کریں
+  email_features_unavailable: ای میل پر مبنی اکاؤنٹ کی خصوصیات دستیاب نہیں ہیں۔
+  ai_timeout_label: AI کا زیادہ سے زیادہ وقت
+  ai_models: AI ماڈلز
+  connect_timeout_label: کنکشن ٹائم آؤٹ (سیکنڈ)
+  ai_temperature_label: درجہ حرارت
+  probe_timeout_label: ماڈل ٹیسٹ ٹائم آؤٹ (سیکنڈ)
+  ai_max_tokens_label: زیادہ سے زیادہ آؤٹ پٹ ٹوکنز
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: بند کریں
+    pitch_label: 'پچ: {0}'
+    reset_to_defaults: طے شدہ اقدار پر دوبارہ مرتب کریں
+    speed_label: 'رفتار: {0}x'
+    system_default: سسٹم ڈیفالٹ
+    title: آڈیو ترتیبات
+    voice: آواز
+  example_user_badge: مثال صارف
+  example_user_badge_tooltip: مکمل رسائی کے لیے رجسٹر کریں
+  example_user_banner:
+    message: آپ سسٹم کو صرف پڑھنے کی حالت میں دیکھ رہے ہیں۔ وسائل بنانے اور تبدیل کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں۔
+    message_short: صرف پڑھنے کی حالت - مکمل رسائی کے لیے رجسٹر کریں
+    register_button: مکمل رسائی کے لیے رجسٹر کریں
+    register_short: رجسٹر کریں
+    title: مثال صارف موڈ
+  feature_gate:
+    upgrade_message: اس خصوصیت کے لیے کارپوریٹ لائسنس درکار ہے۔ اپ گریڈ کے اختیارات کے لیے Sentuny سے رابطہ کریں۔
+    upgrade_title: کارپوریٹ خصوصیت
+  group_admin_badge: گروپ ایڈمن
+  preparation_preview:
+    more_columns: +{0} مزید
+    null_value: 'null'
+    rows_removed: '{0} ہٹا دیا گیا'
+  readonly_wrapper:
+    message: صرف پڑھنے کی حالت - اس مواد کو تبدیل کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں
+  return_banner:
+    link: اپنے سیشن پر واپس جائیں
+    text: آپ ایک AI نسخے پر کام کر رہے تھے۔
+    recipe_link: اپنی ترکیب پر واپس جائیں
+    fallback_link: واپس
+    recipe_text: آپ ایک ترکیب پر کام کر رہے تھے۔
+  data_value:
+    some_content_not_shown: کچھ مواد نہیں دکھایا گیا
+database:
+  connection:
+    add_first: اپنا پہلا کنکشن شامل کریں
+    add_new: نیا کنکشن شامل کریں
+    add_success: کنکشن کامیابی سے شامل ہو گیا
+    add_title: نیا کنکشن شامل کریں
+    auto_create_tables: ٹیبل ڈیٹا سیٹس خودکار بنائیں
+    auto_create_title: ڈیٹا سیٹس خودکار بنائیں
+    auto_create_views: ویو ڈیٹا سیٹس خودکار بنائیں
+    auto_create_warnings_title: 'کنکشن محفوظ ہو گیا، لیکن ڈیٹا سیٹ خودکار تخلیق میں انتباہات تھے:'
+    browse_tables: ٹیبلز براؤز کریں
+    by_label: بذریعہ
+    clear_default: ڈیفالٹ صاف کریں
+    currently_not_shared: ❌ فی الحال اشتراک شدہ نہیں
+    currently_shared: ✅ فی الحال گروپ کے ساتھ اشتراک شدہ
+    database_label: ڈیٹا بیس کا نام
+    datasets_created: '{n} ڈیٹا سیٹس بنائے گئے'
+    db_create_badge: ڈی بی تخلیق
+    default_badge: ڈیفالٹ
+    default_cleared: ڈیفالٹ کنکشن صاف ہو گیا
+    default_set: ڈیفالٹ کنکشن اپ ڈیٹ ہو گیا
+    delete_button: حذف کریں
+    delete_confirmation: کیا آپ واقعی کنکشن حذف کرنا چاہتے ہیں
+    delete_error: کنکشن حذف کرنے میں ناکام
+    delete_title: کنکشن حذف کریں
+    deleted: کنکشن حذف ہو گیا
+    edit_title: کنکشن میں ترمیم کریں
+    file_path_label: فائل کا راستہ
+    form_description: اپنے ڈیٹا بیس کنکشن کی تفصیلات درج کریں۔
+    group_label: گروپ
+    host_label: ہوسٹ
+    jet_host_label: Jet سرور ہوسٹ
+    jet_port_label: Jet سرور پورٹ
+    load_error: کنکشنز لوڈ کرنے میں ناکام
+    name_label: کنکشن کا نام
+    name_placeholder: مثلاً، پروڈکشن ڈی بی
+    no_connections: ابھی تک کوئی ڈیٹا بیس کنکشن محفوظ نہیں ہے۔
+    not_found: کنکشن نہیں ملا
+    password_label: پاس ورڈ
+    port_label: پورٹ
+    save_error: کنکشن محفوظ کرنے میں ناکام
+    select_type: قسم منتخب کریں
+    set_default: بطور ڈیفالٹ سیٹ کریں
+    shared_badge: اشتراک شدہ
+    shared_description: اس کنکشن کو اپنے گروپ کے دیگر صارفین کے لیے دستیاب بنائیں۔
+    shared_label: گروپ کے ساتھ اشتراک کریں
+    shared_readonly: اشتراک شدہ
+    shared_readonly_message: یہ کنکشن آپ کے ساتھ اشتراک کیا گیا ہے۔ آپ اسے دیکھ سکتے ہیں، لیکن ترمیم صرف مالک کر سکتا ہے۔
+    tables_badge: ٹیبلز
+    test_button: کنکشن ٹیسٹ کریں
+    test_failed: کنکشن ناکام ہوا
+    test_incomplete: جانچ سے پہلے براہ کرم تمام خانے پُر کریں
+    test_network_error: کنکشن جانچتے وقت نیٹ ورک کی خرابی۔
+    test_success: کنکشن کامیاب!
+    type_label: ڈیٹا بیس کی قسم
+    unknown_user: نامعلوم
+    update_success: کنکشن کامیابی سے اپ ڈیٹ ہو گیا
+    username_label: صارف نام
+    probe_hour_ago: 1 گھنٹہ پہلے
+    probe_last_succeeded: آخری کامیابی
+    probe_no_success: کوئی کامیاب جانچ درج نہیں ہے
+    probe_unsaved_hint: کنکشن محفوظ ہوتے ہی جانچا جاتا ہے۔
+    probe_state:
+      no_permission: کوئی اجازت نہیں
+      incomplete: نامکمل سیٹ اپ
+      no_database: کوئی ڈیٹا بیس نہیں
+      schema_error: اسکیما پڑھا نہیں جا سکتا
+      unreachable: ناقابلِ رسائی
+      reachable: قابلِ رسائی
+      unknown: جانچا نہیں گیا
+      auth_failed: تصدیق ناکام ہو گئی
+    probe_auto_hint: کنکشن کی فہرست لوڈ ہونے پر خودکار طور پر اپ ڈیٹ ہوتی ہے۔
+    probe_minute_ago: 1 منٹ پہلے
+    probe_never: کبھی نہیں
+    probe_check_now: ابھی جانچیں
+    probe_hours_ago: '{count} گھنٹے پہلے'
+    probe_checked: جانچا گیا
+    probe_title: آخری جانچ
+    probe_just_now: ابھی ابھی
+    probe_check_failed: ابھی کنکشن کو جانچا نہیں جا سکا۔
+    probe_minutes_ago: '{count} منٹ پہلے'
+  default_hint: ڈیفالٹ کنکشن اس وقت فال بیک کے طور پر استعمال ہوتا ہے جب تجزیہ نسخہ کسی کنکشن کی وضاحت نہیں کرتا۔
+  title: ڈیٹا بیس کی ترتیبات
+datasets:
+  all_datasets: تمام ڈیٹا
+  browse:
+    back: واپس
+    browse_tables: ٹیبلز براؤز کریں
+    column: کالم
+    columns_title: کالم — {table}
+    connections: کنکشنز
+    load_columns_error: کالم لوڈ کرنے میں ناکام
+    load_preview: پیش نظارہ لوڈ کریں
+    load_preview_error: پیش نظارہ لوڈ کرنے میں ناکام
+    load_tables_error: ٹیبلز لوڈ کرنے میں ناکام
+    nullable: نل ایبل
+    preview: پیش نظارہ
+    preview_hint: نمونہ قطاریں دیکھنے کے لیے "پیش نظارہ لوڈ کریں" پر کلک کریں۔
+    select_table_hint: کالم اور ڈیٹا کا پیش نظارہ دیکھنے کے لیے ایک ٹیبل منتخب کریں۔
+    tables: ٹیبلز
+    tables_count: '{count} ٹیبلز'
+    type: قسم
+  by_label: بذریعہ
+  created_label: تخلیق شدہ
+  database_label: ڈی بی
+  define_button: ڈیٹا بیس منسلک کریں
+  define_first: ایک ڈیٹا بیس منسلک کریں
+  delete:
+    confirm: کیا یہ ڈیٹا سیٹ حذف کریں؟
+    error: ڈیٹا سیٹ حذف کرنے میں ناکام
+    success: ڈیٹا سیٹ '{id}' کامیابی سے حذف ہو گیا۔
+    title: حذف کریں
+  description:
+    empty: تیار کردہ تفصیل خالی ہے۔ براہ کرم AI فراہم کنندہ کی ترتیب چیک کریں۔
+    error: تفصیل تیار کرنے میں ناکامی ہوئی۔
+    generated: تفصیل کامیابی سے تیار ہو گئی۔
+    title: تیار کردہ تفصیل
+  detail:
+    created: تخلیق شدہ
+    descriptions: AI تفصیلات
+    generated: تیار شدہ
+    load_error: ڈیٹا سیٹ لوڈ کرنے میں ناکامی ہوئی۔
+    model: ماڈل
+    no_description: کوئی تفصیل نہیں
+    not_found: ڈیٹا سیٹ نہیں ملا
+    not_found_message: جس ڈیٹا سیٹ کی آپ تلاش کر رہے ہیں وہ نہیں مل سکا۔
+    overview: جائزہ
+    rows: قطاریں
+    storage_table: محفوظ شدہ ٹیبل
+    rows_not_computed_hint: جوائن ابھی چلایا نہیں گیا، اس لیے قطاروں کی تعداد ابھی موجود نہیں ہے۔
+    rows_not_computed: حساب نہیں کیا گیا
+    storage_live: لائیو ویو
+    materialize_failed: 'محفوظ شدہ ٹیبل نہیں بنایا جا سکا:'
+  list_error: ڈیٹا سیٹس لوڈ کرنے میں ناکامی ہوئی۔
+  no_datasets: کوئی ڈیٹا دستیاب نہیں۔
+  no_uploaded: ابھی تک کوئی اپ لوڈ کردہ ڈیٹا سیٹ نہیں ہے۔
+  preparation:
+    add_operation: آپریشن شامل کریں
+    add_rule: رول شامل کریں
+    column_required: آپریشن کے لیے ایک کالم درکار ہے
+    columns_required: آپریشن کے لیے کم از کم ایک کالم درکار ہے
+    delete_confirmation: کیا آپ واقعی تبدیلی کا رول "{name}" حذف کرنا چاہتے ہیں؟ اس سے یہ ان تمام ترکیبوں سے بھی ہٹ جائے گا جو اسے استعمال کرتی ہیں۔
+    delete_error: تبدیلی کا رول حذف کرنے میں ناکامی ہوئی
+    delete_title: تبدیلی کا رول حذف کریں
+    edit_rule: رول میں ترمیم کریں
+    encode:
+      label: لیبل
+      one_hot: ون ہاٹ
+    fill:
+      constant: مستقل
+      drop: ڈراپ
+      mean: اوسط
+      median: میڈین
+      mode: موڈ
+    filter_invalid: فلٹر آپریشن کے لیے کالم اور قدر درکار ہے
+    link:
+      description: اس ڈیٹا سیٹ کو صاف اور تبدیل کریں
+      title: تبدیلیاں
+    name_required: رول کا نام درکار ہے
+    new_name_required: نام تبدیل کرنے کے آپریشن کے لیے نیا نام درکار ہے
+    new_rule: نیا رول
+    no_rules: اس ڈیٹا سیٹ کے لیے کوئی تبدیلی کا رول متعین نہیں ہے۔
+    operation:
+      convert_type: قسم تبدیل کریں
+      drop_columns: کالم ڈراپ کریں
+      encode: انکوڈ کریں
+      fill_missing: گم شدہ اقدار پُر کریں
+      filter: فلٹر
+      normalize: نارملائز کریں
+      rename_column: کالم کا نام تبدیل کریں
+      standardize: معیاری بنائیں
+    operations: آپریشنز
+    operations_count: آپریشن(ز)
+    operator:
+      after: بعد (>)
+      before: قبل (<)
+      contains: شامل ہے
+      ends_with: پر ختم ہوتا ہے
+      equal_to: کے برابر (=)
+      greater_than: سے بڑا (>)
+      greater_than_or_equal: سے بڑا یا برابر (>=)
+      less_than: سے چھوٹا (<)
+      less_than_or_equal: سے چھوٹا یا برابر (<=)
+      not_contains: شامل نہیں ہے
+      not_equal: کے برابر نہیں (!=)
+      on_or_after: تاریخ پر یا بعد میں (>=)
+      on_or_before: تاریخ پر یا قبل (<=)
+      starts_with: سے شروع ہوتا ہے
+    original_data: اصل ڈیٹا
+    placeholder:
+      boolean: درست / غلط
+      datetime: YYYY-MM-DD یا ٹائم اسٹیمپ...
+      number: ایک عدد درج کریں...
+      value: ایک قدر درج کریں...
+    preview: پیش نظارہ
+    preview_error: رول کا پیش نظارہ کرنے میں ناکامی ہوئی
+    preview_title: پیش نظارہ
+    rows_after: بعد
+    rows_before: قبل
+    rows_removed: ہٹا دیا گیا
+    rule_created: تیاری کا اصول '{name}' کامیابی سے تخلیق ہو گیا۔
+    rule_deleted: تیاری کا اصول کامیابی سے حذف ہو گیا۔
+    rule_description: تفصیل (اختیاری)
+    rule_description_placeholder: مختصر تفصیل
+    rule_name: رول کا نام
+    rule_name_placeholder: مثلاً، تجزیے کے لیے صفائی
+    rule_updated: تیاری کا اصول کامیابی سے اپ ڈیٹ ہو گیا۔
+    rules_title: تبدیلی کے رولز
+    save_error: تبدیلی کا رول محفوظ کرنے میں ناکامی ہوئی
+    shared: گروپ کے ساتھ شیئر کریں
+    transformed_data: تبدیل شدہ ڈیٹا
+    type:
+      boolean: بولین
+      datetime: ڈیٹ ٹائم
+      numeric: عددی
+      string: سٹرنگ
+    ui:
+      column: کالم
+      columns: کالم (کوما سے الگ کیے گئے)
+      encoding: انکوڈنگ
+      method: طریقہ
+      new_name: نیا نام
+      operator: آپریٹر
+      target_type: ہدف کی قسم
+      type: قسم
+      value: قدر
+  rules_button: رولز
+  schema:
+    column_name: کالم
+    column_type: قسم
+    columns: کالم
+    load_error: 'اسکیما لوڈ نہیں ہو سکا: {error}'
+    no_sample_data: کوئی نمونہ ڈیٹا دستیاب نہیں
+    null_count: نل
+    sample_data: نمونہ ڈیٹا (پہلی 5 قطاریں)
+    title: اسکیما پیش نظارہ
+    total_columns: کل کالم
+    total_rows: کل قطاریں
+    unique_count: منفرد
+  share: اشتراک کریں
+  share_error: اشتراک اپ ڈیٹ کرنے میں ناکام
+  shared: ڈیٹا سیٹ شیئر کر دیا گیا
+  shared_badge: شیئر شدہ
+  source:
+    unknown_file: نامعلوم فائل
+  title: میرا ڈیٹا
+  transform_button: ٹرانسفارم
+  transforms:
+    back: میرے ڈیٹا پر واپس جائیں
+    create_button: تخلیق کریں
+    create_error: ٹرانسفارم تخلیق کرنے میں ناکام
+    create_new: نیا ٹرانسفارم
+    created_label: تخلیق ہو گیا
+    creating: تخلیق ہو رہا ہے…
+    delete_confirm: کیا یہ ٹرانسفارم حذف کریں؟
+    delete_error: ٹرانسفارم حذف کرنے میں ناکام
+    description_label: تفصیل (اختیاری)
+    for: '{name} کے لیے ٹرانسفارمز'
+    load_error: ٹرانسفارمز لوڈ کرنے میں ناکام
+    name_label: نام
+    no_transforms: اس ڈیٹا سیٹ کے لیے کوئی ٹرانسفارم متعین نہیں ہے۔
+    operations_label: '{count} آپریشن(ز)'
+    title: ٹرانسفارمز
+  type:
+    table: ٹیبل
+    upload: اپ لوڈ شدہ
+    view: ویو
+    virtual: ورچوئل
+    access: MS Access
+    mysql: MySQL
+    notebook: نوٹ بک
+    mssql: MS SQL
+    postgresql: PostgreSQL
+    cleaned_copy: صاف شدہ کاپی
+  unknown_user: نامعلوم
+  unshare: اشتراک ختم کریں
+  unshared: ڈیٹا سیٹ کا اشتراک ختم کر دیا گیا
+  upload:
+    card_title: اپ لوڈ کریں اور وضاحت کریں
+    connection_not_found: کنکشن نہیں ملا۔ براہ کرم ایک درست AI کنکشن منتخب کریں۔
+    description_label: تفصیل (اختیاری)
+    description_placeholder: اس ڈیٹا کی مختصر تفصیل
+    error: ڈیٹا سیٹ اپ لوڈ کرنے میں ناکامی ہوئی۔
+    file_label: فائل
+    file_selected: منتخب فائل
+    file_too_large: فائل زیادہ سے زیادہ اپ لوڈ سائز {max}MB سے بڑی ہے۔ اپ لوڈ کی اجازت نہیں ہے۔
+    generate_description: تفصیل تیار کریں
+    history: اپ لوڈ ہسٹری
+    limit_reached: حد تک پہنچ گئے
+    limit_reached_message: آپ ڈیٹا سیٹس کی زیادہ سے زیادہ مجاز تعداد ({count}) تک پہنچ گئے ہیں۔
+    name_label: ڈیٹا کا نام
+    name_placeholder: میرا ڈیٹا
+    no_connections: تفصیل تیار کرنے کے لیے آپ کو کم از کم ایک AI کنکشن متعین کرنا ضروری ہے۔
+    no_datasets: ابھی کوئی ڈیٹا سیٹ نہیں
+    no_file: براہ کرم پہلے ایک فائل منتخب کریں۔
+    no_name: براہ کرم ڈیٹا سیٹ کا نام درج کریں۔
+    select_dataset: براہ کرم پہلے ایک ڈیٹا سیٹ اپ لوڈ یا منتخب کریں۔
+    shared_description: اس ڈیٹا کو اپنے گروپ کے دیگر صارفین کے لیے دستیاب کریں۔
+    shared_group_hint: 'گروپ: {group} - {description}'
+    shared_label: گروپ کے ساتھ اشتراک کریں
+    success: ڈیٹا سیٹ '{name}' کامیابی سے اپ لوڈ ہو گیا۔
+    title: ڈیٹا اپ لوڈ کریں
+    upload_button: اپ لوڈ کریں
+    escalation_retry: دوبارہ کوشش کریں
+    escalation_hint: صرف یہ کوشش اسے استعمال کرتی ہے۔ اگر اس ماڈل کو عام طور پر زیادہ وقت درکار ہوتا ہے، تو ہر بار اسے بڑھانے کے بجائے کنکشن کی ماڈل ترتیبات ٹیون کریں۔
+    escalation_invalid: 1 اور {max} کے درمیان سیکنڈوں کا ایک مکمل عدد درج کریں
+    escalation_label: (سیکنڈ) کے ساتھ دوبارہ کوشش کریں
+    escalation_failed_at: تفصیل {seconds} سیکنڈ کے بعد ٹائم آؤٹ ہو گئی۔
+  upload_button: ڈیٹا اپ لوڈ کریں
+  upload_count: '{count} اپ لوڈ{plural}'
+  upload_first: اپنی پہلی ڈیٹا فائل اپ لوڈ کریں
+  upload_first_file: اپنی پہلی فائل اپ لوڈ کریں
+  upload_new: نئی فائل اپ لوڈ کریں
+  uploaded_title: اپ لوڈ شدہ ڈیٹا
+  view_dataset_title: ڈیٹا سیٹ دیکھیں
+  view_schema: اسکیما دیکھیں
+  filter:
+    no_match: کوئی ڈیٹا سیٹ اس فلٹر سے مماثل نہیں ہے۔
+    all: سب
+    mysql: MySQL
+    mssql: MS SQL
+    label: فلٹر
+    uploads: اپ لوڈز
+    not_shared: غیر اشتراک شدہ
+    virtual: ورچوئل
+    access: MS Access
+    shared: اشتراک شدہ
+    notebooks: نوٹ بکس
+    postgresql: PostgreSQL
+    cleaned: صاف شدہ
+  created_from: '{name} سے بنایا گیا'
+  source_unavailable: ذریعہ دستیاب نہیں ہے
+  cleaned_badge: صاف شدہ
+  table_not_built: ٹیبل نہیں بنایا گیا
+define:
+  column_name: کالم
+  column_type: قسم
+  connection_label: ڈیٹا بیس کنکشن
+  dataset_name: ڈیٹا سیٹ کا نام
+  dataset_name_placeholder: مثلاً، کسٹمر ڈیٹا
+  description_label: تفصیل (اختیاری)
+  description_placeholder: اس ڈیٹا سیٹ کی مختصر تفصیل
+  existing_none: کوئی نہیں
+  existing_title: موجودہ
+  go_to_db_settings: ڈیٹا بیس سیٹنگز پر جائیں
+  load_connections_error: کنکشنز لوڈ کرنے میں ناکام
+  load_sources_error: ذرائع لوڈ کرنے میں ناکام
+  name_required: ڈیٹا سیٹ کا نام درکار ہے
+  no_connections_message: ڈیٹا بیس کنیکٹ کرنے سے پہلے آپ کو کم از کم ایک ڈیٹا بیس کنکشن متعین کرنا ضروری ہے۔
+  no_sources: اس ڈیٹا بیس میں کوئی ٹیبل یا ویو نہیں ملا۔
+  nullable: نل قابل
+  preview_label: ڈیٹا کا پیش نظارہ (پہلی 10 قطاریں)
+  save_button: ڈیٹا سیٹ محفوظ کریں
+  save_error: ڈیٹا سیٹ تخلیق کرنے میں ناکام
+  save_success: ڈیٹا سیٹ کامیابی سے تخلیق ہو گیا
+  schema_label: اسکیما
+  select_connection: ایک کنکشن منتخب کریں
+  select_source: ایک ذریعہ منتخب کریں
+  select_source_first: براہ کرم پہلے ایک ٹیبل یا ویو منتخب کریں
+  shared_description: اس ڈیٹا سیٹ کو اپنے گروپ کے دیگر صارفین کے لیے دستیاب کریں۔
+  shared_label: گروپ کے ساتھ اشتراک کریں
+  source_label: ذریعہ
+  source_type_label: ذریعہ کی قسم
+  step1_description: ڈیٹا سیٹ منسلک کرنے کے لیے ایک ڈیٹا بیس کنکشن منتخب کریں۔
+  step1_title: ڈیٹا بیس کنکشن منتخب کریں
+  step2_description: منتخب کریں کہ ٹیبل استعمال کرنا ہے یا ویو، پھر ماخذ منتخب کریں۔
+  step2_title: ماخذ منتخب کریں
+  step3_description: منتخب ماخذ کے کالموں کا جائزہ لیں اور ڈیٹا کا پیش نظارہ دیکھیں۔
+  step3_title: ماخذ کی تصدیق کریں
+  step4_description: اپنے ڈیٹا سیٹ کو نام اور تفصیل دیں، پھر اسے محفوظ کریں۔
+  step4_title: نام دیں اور محفوظ کریں
+  step_connection: کنکشن
+  step_save: محفوظ کریں
+  step_source: ماخذ
+  step_verify: تصدیق کریں
+  table: ٹیبل
+  title: ڈیٹا بیس سے منسلک کریں
+  verify_button: ماخذ کی تصدیق کریں
+  verify_error: ٹیبل/ویو کی تصدیق میں ناکامی ہوئی
+  verify_success: ٹیبل/ویو کی تصدیق کامیابی سے ہو گئی
+  view: ویو
+demo:
+  badge: ڈیمو
+  banner:
+    message: یہ ایک نمائشی نظام ہے۔ ڈیٹا کو وقفے وقفے سے ری سیٹ کیا جا سکتا ہے۔
+    title: ⚠️ ڈیمو موڈ
+forgot_password:
+  back_to_login: لاگ ان پر واپس جائیں
+  check_spam: اگر آپ کو چند منٹوں میں ای میل نظر نہ آئے تو براہ کرم اپنا اسپام فولڈر چیک کریں۔
+  description: اپنا ای میل ایڈریس درج کریں اور ہم آپ کو پاس ورڈ ری سیٹ کرنے کا لنک بھیجیں گے۔
+  error: ری سیٹ ای میل بھیجنے میں ناکامی ہوئی
+  sent: اگر اس ای میل کے ساتھ کوئی اکاؤنٹ موجود ہے تو آپ کو پاس ورڈ ری سیٹ کا لنک موصول ہوگا۔
+  sent_description: اگر اس ای میل کے ساتھ کوئی اکاؤنٹ موجود ہے تو آپ کو پاس ورڈ ری سیٹ کا لنک موصول ہوگا۔
+  sent_title: ای میل بھیج دی گئی ہے
+  submit: ری سیٹ لنک بھیجیں
+  title: پاس ورڈ بھول گئے؟
+global:
+  demo_mode:
+    description: فعال ہونے پر، نظام ڈیمو موڈ میں چلتا ہے۔
+    label: ڈیمو موڈ
+  email_sender:
+    hint: وہ ای میل ایڈریس جس سے تصدیقی ای میلز آتی ہوئی نظر آئیں گی۔
+    label: ای میل بھیجنے والے کا پتہ
+  email_timeout:
+    hint: ای میل تصدیقی لنک کتنے گھنٹوں تک کارآمد رہتا ہے۔
+    label: ای میل تصدیق کا دورانیہ (گھنٹے)
+  grace_period:
+    hint: عارضی طور پر حذف شدہ اکاؤنٹس کے مستقل طور پر ختم ہونے سے پہلے کے گھنٹے
+    label: حذف کرنے میں تاخیر (گھنٹے)
+  invalid_grace_period: براہ کرم حذف کرنے میں تاخیر (گھنٹے) کے لیے ایک درست مثبت عدد درج کریں
+  invalid_number: براہ کرم زیادہ سے زیادہ رجسٹریشن کے لیے ایک درست مثبت عدد درج کریں
+  invalid_timeout: براہ کرم تصدیق کے دورانیے (گھنٹے) کے لیے ایک درست مثبت عدد درج کریں
+  load_error: عالمی ترتیبات لوڈ کرنے میں ناکامی ہوئی
+  max_registrations:
+    custom: کسٹم (نیچے درج کریں)
+    custom_placeholder: ایک مثبت عدد درج کریں
+    hint: اس بات کی حد مقرر کریں کہ کتنے صارفین رجسٹر ہو سکتے ہیں۔
+    label: زیادہ سے زیادہ صارف رجسٹریشن
+    placeholder: حد منتخب کریں
+    unlimited: لامحدود
+    users: صارفین
+  password_policy:
+    custom: کسٹم
+    high: اعلیٰ (کم از کم 10، بڑا حرف، چھوٹا حرف، ہندسہ، خصوصی حرف)
+    hint: صارف رجسٹریشن اور پاس ورڈ تبدیل کرنے کے لیے پاس ورڈ کی پیچیدگی کے تقاضے منتخب کریں۔
+    label: پاس ورڈ پالیسی
+    low: کم (کم از کم 6 حروف)
+    medium: درمیانہ (کم از کم 8، بڑا حرف، چھوٹا حرف، ہندسہ)
+    min_length: کم از کم لمبائی
+    min_strength: کم از کم مضبوطی (zxcvbn اسکور 0-4)
+    require_digit: ہندسہ لازمی کریں
+    require_lowercase: چھوٹا حرف لازمی کریں
+    require_special: خصوصی حرف لازمی کریں
+    require_uppercase: بڑا حرف لازمی کریں
+    select: پالیسی منتخب کریں
+  public_url:
+    hint: ای میل تصدیقی لنکس میں استعمال ہونے والا بنیادی URL (مثلاً https://workbench.example.com)۔
+    label: عوامی URL
+  save_button: عالمی ترتیبات محفوظ کریں
+  save_success: عالمی ترتیبات محفوظ ہو گئیں
+  system:
+    description: عالمی ترتیبات کا نظم کریں جو تمام صارفین پر لاگو ہوتی ہیں (صرف ایڈمن)۔
+    title: نظام کی تشکیل
+  title: عالمی ترتیبات
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: فی صارف ڈیٹا سیٹس کی زیادہ سے زیادہ تعداد (0 = لامحدود)۔ نئے صارفین پر لاگو ہوتی ہے۔
+    count_unlimited: لامحدود
+    default_count_label: فی صارف طے شدہ زیادہ سے زیادہ اپ لوڈ تعداد
+    default_size_label: فی صارف طے شدہ زیادہ سے زیادہ اپ لوڈ سائز (MB)
+    select_count: حد منتخب کریں
+    select_size: حد منتخب کریں
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: فی صارف زیادہ سے زیادہ کل اسٹوریج (0 = لامحدود)۔ نئے صارفین پر لاگو ہوتی ہے۔
+    size_unlimited: لامحدود
+  welcome:
+    hint: یہ پیغام لاگ ان صفحہ پر ظاہر ہوگا۔ اسے چھپانے کے لیے خالی چھوڑ دیں۔
+    label: خوش آمدید پیغام
+    placeholder: لاگ ان صفحہ پر ظاہر کرنے کے لیے خوش آمدید پیغام درج کریں۔
+home:
+  welcome_placeholder: شماریات دانوں کے ورک بینچ میں خوش آمدید
+licence:
+  admin_required: لائسنس کی معلومات دیکھنے کے لیے آپ کا ایڈمن ہونا ضروری ہے۔
+  delete_button: لائسنس ہٹائیں
+  delete_confirm: اس سے سسٹم اوپن سورس موڈ میں واپس چلا جائے گا۔ تمام گیٹڈ فیچرز غیر فعال ہو جائیں گے۔ آپ نیا لائسنس انسٹال کر کے انہیں بحال کر سکتے ہیں۔
+  delete_error: لائسنس ہٹانے میں ناکامی ہوئی۔
+  delete_no: منسوخ کریں
+  delete_success: لائسنس ہٹا دیا گیا۔ اوپن سورس موڈ میں چل رہا ہے۔
+  delete_title: لائسنس ہٹائیں
+  delete_yes: ہاں، لائسنس ہٹا دیں
+  description: موجودہ فیچر لائسنس اور ٹیئر کی معلومات۔
+  details_label: لائسنس کی تفصیلات
+  expires_at_label: میعاد ختم
+  features_label: فعال کردہ فیچرز
+  install_button: لائسنس انسٹال کریں
+  install_error: لائسنس انسٹال کرنے میں ناکامی ہوئی۔
+  install_no_file: کوئی فائل منتخب نہیں کی گئی۔
+  install_success: لائسنس کامیابی سے انسٹال ہو گیا۔
+  issued_at_label: جاری شدہ
+  issued_to_label: جاری کردہ برائے
+  load_error: لائسنس کی معلومات لوڈ کرنے میں ناکامی ہوئی۔
+  max_users_label: لائسنس یافتہ صارفین
+  no_features: فی الحال کوئی گیٹڈ فیچر فعال نہیں ہے۔
+  open_source_message: یہ انسٹالیشن اوپن سورس موڈ میں چل رہی ہے۔ کارپوریٹ لائسنس میں اپ گریڈ کرنے کے لیے Sentuny سے رابطہ کریں۔
+  preview_error: لائسنس فائل کی تصدیق میں ناکامی ہوئی۔
+  preview_invalid: غلط لائسنس فائل۔
+  preview_title: لائسنس پیش نظارہ
+  tier_label: ٹیئر
+  title: لائسنس کی حیثیت
+  upload_title: لائسنس فائل اپ لوڈ کریں
+login:
+  account_deleted: یہ اکاؤنٹ حذف کر دیا گیا ہے۔
+  description: اپنے اکاؤنٹ میں سائن ان کریں
+  docs_more_info: مزید معلومات موجود ہیں
+  email: ای میل
+  email_not_verified: ای میل تصدیق شدہ نہیں ہے۔ براہ کرم اپنا ان باکس اور اسپام فولڈر چیک کریں۔
+  email_verified: ای میل کامیابی سے تصدیق ہو گئی! اب آپ لاگ ان کر سکتے ہیں۔
+  forgot_password: پاس ورڈ بھول گئے؟
+  invalid_credentials: غلط ای میل یا پاس ورڈ۔
+  invalid_token: غلط تصدیقی لنک۔ براہ کرم نیا لنک حاصل کریں۔
+  missing_token: کوئی تصدیقی ٹوکن فراہم نہیں کیا گیا۔
+  no_account: کیا آپ کا اکاؤنٹ نہیں ہے؟
+  password: پاس ورڈ
+  register_link: رجسٹر کریں
+  resend_link: تصدیقی ای میل دوبارہ بھیجیں؟
+  signing_in: سائن ان ہو رہا ہے...
+  submit: لاگ ان
+  success: کامیابی سے لاگ ان ہو گئے
+  title: لاگ ان
+  token_expired: تصدیقی لنک کی میعاد ختم ہو گئی ہے۔ براہ کرم نیا لنک حاصل کریں۔
+nav:
+  about: کے بارے میں
+  admin: ایڈمن
+  admin_groups: گروپ کی تفصیلات
+  admin_licence: لائسنس
+  admin_panel: صارف کا انتظام
+  admin_providers: AI فراہم کنندگان
+  admin_setup: سیٹ اپ
+  admin_setup_internal: اندرونی
+  admin_setup_limits: حدود
+  admin_setup_options: اختیارات
+  admin_visualization_types: ویژولائزیشن اقسام
+  ai_analysis_rules: ریسیپی ایڈیٹر
+  ai_chat: AI ٹولز
+  ai_database_design: ڈیٹا بیس ڈیزائن
+  ai_dataset_cleaning: ڈیٹا سیٹ کی صفائی
+  ai_general: عمومی
+  ai_virtual_datasets: ورچوئل ڈیٹا سیٹس
+  home: ہوم
+  logout: لاگ آؤٹ
+  user: صارف
+  admin_setup_tuning: ٹیوننگ
+  ai_testing: AI جانچ
+notebooks:
+  and_more: +{count} مزید
+  cant_create_tables: یہ کنکشن ٹیبلز نہیں بنا سکتا — درآمد مسترد
+  cells_label: 'سیلز:'
+  connection_create_db_badge: DB تخلیق
+  connection_form_label: کنکشن
+  connection_tables_badge: ٹیبلز
+  connection_unavailable: ڈیٹا بیس کنکشن نہیں ملا یا قابل رسائی نہیں
+  create_dataset: ڈیٹا سیٹ خودکار طور پر بنائیں
+  create_new_database: نیا ڈیٹا بیس بنائیں
+  dataframe_prefix: ڈیٹا فریم
+  dataframes_label: 'ڈیٹا فریمز:'
+  dataset_created: ڈیٹا سیٹ بن گیا
+  delete_confirm: درآمد "{name}" اور اس کی تمام ٹیبلز حذف کریں؟
+  delete_failed: درآمد حذف کرنے میں ناکامی ہوئی
+  delete_title: درآمد حذف کریں
+  detected_dataframes: 'پائے گئے ڈیٹا فریمز:'
+  doc_preview: 'دستاویز کا پیش نظارہ:'
+  example_banner: آپ بطور نمونہ صارف دیکھ رہے ہیں۔ نوٹ بکس درآمد اور منظم کرنے کے لیے رجسٹر کریں۔
+  example_blocked: نمونہ صارفین نوٹ بکس درآمد نہیں کر سکتے۔
+  example_register: رجسٹر کریں
+  fetch_error: درآمدات حاصل کرنے میں ناکامی ہوئی
+  import_button: نوٹ بک درآمد کریں
+  import_complete: درآمد مکمل
+  import_deleted: درآمد حذف ہو گئی
+  import_failed: 'نوٹ بک درآمد ناکام ہوئی: {error}'
+  import_success: '{count} ٹیبل(ز) کامیابی سے درآمد کیے گئے'
+  import_title: Jupyter نوٹ بک درآمد
+  imported_at_label: 'درآمد کا وقت:'
+  importing: درآمد ہو رہا ہے...
+  kb_unit: KB
+  kernel_label: 'کرنل:'
+  list_title: نوٹ بک درآمدات
+  no_dataframes: اس نوٹ بک میں کوئی ڈیٹا فریمز نہیں ملے۔
+  no_imports: ابھی تک کوئی نوٹ بک درآمد نہیں ہوئی۔
+  notebook_label: 'نوٹ بک:'
+  parse_error: نوٹ بک کو پارس کرنے میں ناکام رہا۔
+  parsing: پارس کیا جا رہا ہے...
+  preview_button: پیش نظارہ
+  rows_cols_format: '{rows} قطاریں × {cols} کالم'
+  run_preview_first: یہ دیکھنے کے لیے پیش نظارہ چلائیں کہ کیا درآمد کیا جائے گا۔
+  sanitised_notice: سیکیورٹی وجوہات کی بنا پر کوڈ سیلز ہٹا دیے گئے ہیں۔ صرف ڈیٹا آؤٹ پٹس اور مارک ڈاؤن محفوظ رکھے گئے ہیں۔
+  select_connection: ایک ڈیٹا بیس کنکشن منتخب کریں۔
+  select_connection_placeholder: کنکشن منتخب کریں...
+  select_file_first: براہ کرم ایک .ipynb فائل منتخب کریں۔
+  share_error: صرف مالک ہی اشتراک کی ترتیبات تبدیل کر سکتا ہے۔
+  share_label: گروپ کے ساتھ شیئر کریں۔
+  shared: نوٹ بک گروپ کے ساتھ شیئر کر دی گئی۔
+  shared_badge: شیئر شدہ
+  size_label: 'سائز:'
+  step1_title: 'مرحلہ 1: فائل منتخب کریں'
+  step2_title: 'مرحلہ 2: پیش نظارہ'
+  storage_form_label: اسٹوریج
+  storage_label: 'اسٹوریج:'
+  table_count: '{count} ٹیبل{plural}'
+  tables_created_label: 'بنائے گئے ٹیبلز:'
+  title_label: 'عنوان:'
+  unshared: نوٹ بک کی شیئرنگ ختم کر دی گئی۔
+  table_name: 'ٹیبل: {name}'
+password:
+  strength:
+    fair: مناسب
+    good: اچھا
+    strong: مضبوط
+    weak: کمزور
+preparation:
+  add_operation: آپریشن شامل کریں
+  after: بعد
+  back_to_list: رولز پر واپس
+  before: پہلے
+  cancel: منسوخ کریں
+  col:
+    categorical: زمرہ وار
+    datetime: تاریخ و وقت
+    nulls: '{percent}% نل'
+    numeric: عددی
+  cols: کالم
+  column_label: کالم
+  constant_value_label: مستقل قدر
+  create_first: تجزیہ سے پہلے اس ڈیٹا سیٹ کو صاف اور تیار کرنے کے لیے اپنا پہلا ٹرانسفارم بنائیں۔
+  delete: حذف کریں
+  delete_confirm: رول "{name}" حذف کریں؟ یہ عمل واپس نہیں ہو سکتا۔
+  description_label: تفصیل (اختیاری)
+  duplicate: نقل بنائیں
+  duplicate_suffix: (کاپی)
+  edit: ترمیم کریں
+  edit_title: 'رول میں ترمیم: {name}'
+  encoding:
+    label: لیبل
+    onehot: ون ہاٹ
+  encoding_param_label: انکوڈنگ
+  live_preview: لائیو پیش نظارہ
+  load_error: ڈیٹا لوڈ کرنے میں ناکام رہا۔
+  method:
+    minmax: من-میکس
+    zscore: زیڈ اسکور
+  method_label: طریقہ
+  name_label: نام
+  name_required: رول کا نام درکار ہے۔
+  new_name_label: نیا نام
+  new_rule: نیا رول
+  new_title: نیا ٹرانسفارم
+  no_rules: ابھی تک کوئی ٹرانسفارم نہیں ہے۔
+  nulls: نلز
+  op:
+    convert_type: قسم تبدیل کریں
+    drop_column: کالم حذف کریں
+    drop_duplicates: نقلیں حذف کریں
+    encode_category: زمرہ انکوڈ کریں
+    fill_missing: غائب بھریں
+    filter: فلٹر
+    rename_column: کالم کا نام تبدیل کریں
+    normalize: نارملائز کریں
+    standardize: معیاری بنائیں
+  operations_count: '{count} آپریشن{itemize}'
+  operations_label: آپریشنز
+  operator_label: آپریٹر
+  ops_required: کم از کم ایک آپریشن درکار ہے۔
+  preview: پیش نظارہ
+  preview_error: پیش نظارہ ناکام رہا۔
+  preview_loading: پیش نظارہ ہو رہا ہے...
+  preview_no_ops: پیش نظارہ دیکھنے کے لیے آپریشنز شامل کریں۔
+  row_impact: '{before} → {after} قطاریں'
+  rows: قطاریں
+  rule_deleted: رول حذف کر دیا گیا۔
+  rule_duplicated: رول نقل کر دیا گیا۔
+  rule_saved: رول محفوظ کر لیا گیا۔
+  rules_for: '{dataset} کے لیے رولز'
+  sample_data: نمونہ ڈیٹا
+  save: رول محفوظ کریں
+  save_error: رول محفوظ کرنے میں ناکام رہا۔
+  saving: محفوظ کیا جا رہا ہے...
+  schema_error: ڈیٹا سیٹ اسکیما لوڈ کرنے میں ناکام رہا۔
+  select_column: -- کالم منتخب کریں --
+  select_type: -- آپریشن منتخب کریں --
+  strategy:
+    constant: مستقل
+    drop_row: قطار حذف کریں
+    mean: اوسط
+    median: وسطانیہ
+    mode: موڈ
+  strategy_label: حکمت عملی
+  target_type_label: ہدف کی قسم
+  title: ٹرانسفارمز — {dataset}
+  type_label: آپریشن
+  value_label: قدر
+profile:
+  change_password:
+    description: اپنا پاس ورڈ اپ ڈیٹ کریں۔
+    title: پاس ورڈ تبدیل کریں
+  change_password_button: پاس ورڈ تبدیل کریں
+  confirm_password: نئے پاس ورڈ کی تصدیق کریں
+  current_password: موجودہ پاس ورڈ
+  current_password_required: موجودہ پاس ورڈ درکار ہے
+  dark_mode_description: لائٹ اور ڈارک تھیم کے درمیان ٹوگل کریں۔
+  dark_mode_label: ڈارک موڈ
+  email_label: ای میل
+  email_notifications_description: اپنے اکاؤنٹ کے بارے میں ای میل اپ ڈیٹس حاصل کریں۔
+  email_notifications_label: ای میل اطلاعات
+  email_unchangeable: ای میل تبدیل نہیں کیا جا سکتا
+  example_user_language_hint: زبان کی ترجیح تبدیل کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں۔
+  example_user_name_hint: نام تبدیل کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں۔
+  example_user_notifications_hint: اطلاعات کی ترتیبات تبدیل کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں۔
+  example_user_save_hint: تبدیلیاں محفوظ کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں۔
+  example_user_theme_hint: تھیم کی ترجیحات تبدیل کرنے کے لیے مکمل رسائی کے لیے رجسٹر کریں۔
+  group_description: تفصیل
+  group_id: گروپ آئی ڈی
+  group_info_title: گروپ کی معلومات
+  group_load_error: گروپ کی معلومات لوڈ کرنے میں ناکام
+  group_readonly_hint: آپ کا گروپ منتظم کے ذریعے تفویض کیا جاتا ہے اور یہاں تبدیل نہیں کیا جا سکتا۔
+  language_description: انٹرفیس کے لیے اپنی پسندیدہ زبان منتخب کریں۔
+  language_label: زبان
+  language_select_placeholder: زبان منتخب کریں
+  languages_load_error: زبانیں لوڈ کرنے میں ناکام
+  load_error: ترتیبات لوڈ کرنے میں ناکام
+  name_label: نام
+  name_placeholder: آپ کا نام
+  new_password: نیا پاس ورڈ
+  password_change_failed: پاس ورڈ تبدیل کرنے میں ناکام
+  password_changed: پاس ورڈ کامیابی سے تبدیل ہو گیا
+  password_disabled: مثالی صارفین کے لیے پاس ورڈ کی تبدیلیاں غیر فعال ہیں
+  password_disabled_message: آپ ایک مثالی صارف کے طور پر لاگ ان ہیں۔ پاس ورڈ کی سہولتیں غیر فعال ہیں۔
+  password_mismatch: نئے پاس ورڈ مماثل نہیں ہیں
+  personal:
+    description: اپنی ذاتی معلومات اور ایپ ترجیحات اپ ڈیٹ کریں۔
+    title: پروفائل اور ترجیحات
+  save_button: تبدیلیاں محفوظ کریں
+  save_error: پروفائل محفوظ کرنے میں ناکام
+  save_success: پروفائل محفوظ ہو گیا
+  title: پروفائل کی ترتیبات
+  update_error: پروفائل اپ ڈیٹ کرنے میں ناکام
+  slow_threshold:
+    placeholder: سائٹ کا ڈیفالٹ استعمال کریں
+    seconds: سیکنڈ
+    invalid: حد سیکنڈوں میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+    effective: 'فی الحال نافذ:'
+    description: اس سے زیادہ وقت لینے والا ماڈل ٹیسٹ بہت سست رپورٹ کیا جاتا ہے۔ سائٹ کا ڈیفالٹ استعمال کرنے کے لیے خالی چھوڑیں۔
+    label: میری حد
+    saved: سست ماڈل کی حد محفوظ ہو گئی
+    save: حد محفوظ کریں
+    title: سست ماڈل کی حد
+recipes:
+  add_rule: قاعدہ شامل کریں
+  algorithm:
+    dependent_column: منحصر متغیر
+    factor_column: فیکٹر (زمرہ وار)
+    group_by: گروپ بہ لحاظ
+    independent_columns: آزاد متغیرات
+    placeholder: تجزیہ کی قسم منتخب کریں
+    response_column: رسپانس (عددی)
+  back_to_recipe: ریسیپی پر واپس
+  by_label: بذریعہ
+  cancel_button: ختم کریں
+  cancel_error: عمل منسوخ کرنے میں ناکام
+  cancel_success: عمل منسوخ ہو گیا
+  chart:
+    category: زمرہ
+    count: گنتی
+    value: قدر
+    x_axis: X
+    y_axis: Y
+  clone: کلون کریں
+  clone_button: کلون کریں
+  clone_error: ریسیپی کلون کرنے میں ناکام
+  clone_success: ریسیپی کامیابی سے کلون ہو گئی
+  clone_suffix: (نقل)
+  column_type:
+    category: زمرہ
+    datetime: تاریخ/وقت
+    number: عدد
+    text: متن
+  columns_after: کالم
+  columns_before: کالم
+  columns_label: کالم
+  columns_label_short: کالم
+  columns_required: براہ کرم کم از کم ایک کالم منتخب کریں
+  create_error: ریسیپی بنانے میں ناکام
+  create_success: ترکیب '{name}' کامیابی سے تخلیق ہوئی۔
+  dataset:
+    columns_label: کالم
+    load_error: ڈیٹا سیٹس لوڈ کرنے میں ناکام
+    loading: ڈیٹا سیٹس لوڈ ہو رہے ہیں...
+    no_datasets: کوئی ڈیٹا سیٹ دستیاب نہیں ہے
+    placeholder: ایک ڈیٹا سیٹ منتخب کریں
+    rows_label: قطاریں
+  dataset_label: ڈیٹا سیٹ
+  dataset_required: براہ کرم ایک ڈیٹا سیٹ منتخب کریں
+  delete: حذف کریں
+  delete_button: حذف کریں
+  delete_confirmation: کیا آپ واقعی ریسیپی "{name}" کو حذف کرنا چاہتے ہیں؟ یہ عمل واپس نہیں کیا جا سکتا۔
+  delete_title: ریسیپی حذف کریں
+  description_label: تفصیل (اختیاری)
+  description_placeholder: اس ریسیپی کی تفصیل
+  edit: ترمیم کریں
+  editor:
+    component_algorithm: الگورتھم
+    component_dataset: ڈیٹا سیٹ / ٹرانسفارم
+    component_output: آؤٹ پٹ
+    create_mode: ایک نئی ریسیپی بنائیں — ایڈیٹر فیز 3 میں آ رہا ہے۔
+    loading: نسخہ لوڈ ہو رہا ہے...
+    name_hint: نسخہ محفوظ کرنے سے پہلے ایک نام درکار ہے۔
+    name_placeholder: نسخے کا نام
+    name_required: نسخے کا نام درکار ہے۔
+    new_recipe_name: نیا نسخہ
+    placeholder: یہ دستی شماریاتی نسخہ ایڈیٹر ہے — نسخے ورک بینچ کا مرکز ہیں۔ دستی یوزر انٹرفیس اے آئی انٹرفیس سے تیز ہے، لیکن اگر آپ واقعی نہیں جانتے کہ کیا کیا جانا چاہیے، تو آپ شاید اے آئی نسخہ ایڈیٹر
+      استعمال کرنا چاہیں گے۔ یہ شماریات کا استاد بھی ہے... لیکن اگر آپ اسے استعمال کرنا چاہتے ہیں تو آپ کو اپنی ترتیبات میں ایک فعال اے آئی کنکشن ترتیب دینا ہوگا۔ ایک نسخہ منتخب کریں یا نیا بنائیں۔
+    run: چلائیں
+    save: نسخہ محفوظ کریں
+    save_error: نسخہ محفوظ کرنے میں ناکام
+    save_success: نسخہ محفوظ ہو گیا
+  execute: عمل درآمد کریں
+  execute_button: عمل درآمد کریں
+  execute_error: 'ترکیب پر عمل درآمد ناکام ہوا: {error}'
+  execute_success: نسخہ کامیابی سے عمل درآمد ہو گیا
+  execution:
+    errors_label: 'غلطیاں:'
+    failed_start: عمل درآمد شروع کرنے میں ناکامی
+    request_failed: عمل درآمد ناکام رہا
+    results_label: 'نتائج:'
+    rules_count: '{count} تیاری کے اصول لاگو کیے گئے۔'
+    running: نسخہ چل رہا ہے…
+    showing_rows: کل {total} میں سے {count} قطاریں دکھائی جا رہی ہیں
+  execution_error: خرابی
+  execution_load_error: 'عمل درآمد لوڈ کرنے میں ناکامی ہوئی: {error}'
+  execution_not_found: عمل درآمد '{id}' نہیں ملا۔
+  execution_progress: پیش رفت
+  execution_stage_results: مرحلے کے نتائج
+  execution_started: شروع ہوا
+  execution_status: حیثیت
+  execution_title: عمل درآمد کے نتائج
+  executions_title: حالیہ عمل درآمد
+  export_results: نتائج برآمد کریں
+  go_define: ڈیفائن پر جائیں
+  go_upload: اپ لوڈ پر جائیں
+  group_by_hint: گروہوں میں شماریات کا موازنہ کرنے کے لیے کسی زمرہ وار کالم کے مطابق گروہ بندی کریں
+  group_by_label: گروہ بندی (اختیاری)
+  list_load_error: نسخے لوڈ کرنے میں ناکامی
+  load_datasets_error: 'ڈیٹا سیٹس لوڈ کرنے میں ناکامی ہوئی: {error}'
+  load_error: 'ترکیبیں لوڈ کرنے میں ناکامی ہوئی: {error}'
+  load_rules_error: تیاری کے اصول لوڈ کرنے میں ناکامی
+  loading_schema: کالم لوڈ ہو رہے ہیں...
+  move_down: نیچے منتقل کریں
+  move_up: اوپر منتقل کریں
+  my_recipes: میرے نسخے
+  name_label: نسخے کا نام
+  name_placeholder: مثلاً، فروخت کا تجزیہ
+  name_required: نسخے کا نام درکار ہے
+  needs_other_columns: (دیگر کالموں کی ضرورت ہے)
+  new_button: نیا نسخہ
+  new_title: نیا نسخہ
+  no_datasets: کوئی ڈیٹا سیٹ نہیں ملا۔ براہ کرم پہلے ڈیٹا سیٹ اپ لوڈ یا ڈیفائن کریں۔
+  no_datasets_available: کوئی ڈیٹا سیٹ دستیاب نہیں۔ براہ کرم پہلے ڈیٹا سیٹ اپ لوڈ کریں۔
+  no_datasets_found: کوئی ڈیٹا سیٹ دستیاب نہیں۔ پہلے ڈیٹا سیٹ اپ لوڈ کریں۔
+  no_group: کوئی نہیں
+  no_group_options: گروہ بندی کے لیے کوئی زمرہ وار کالم دستیاب نہیں
+  no_preparation_rules: اس ڈیٹا سیٹ کے لیے تیاری کے کوئی اصول دستیاب نہیں۔
+  no_recipes: آپ نے ابھی تک کوئی نسخہ نہیں بنایا۔
+  no_schema: اس ڈیٹا سیٹ کے لیے کوئی اسکیما دستیاب نہیں
+  no_stages: ترکیب میں کم از کم ایک مرحلہ ہونا ضروری ہے۔
+  no_visualisation: عددی نتائج
+  no_visualisation_data: ویژولائزیشن کا کوئی ڈیٹا دستیاب نہیں
+  none: کوئی نہیں
+  output:
+    category_column: زمرہ کالم
+    placeholder: آؤٹ پٹ قسم منتخب کریں
+    x_column: X محور کا کالم
+    y_column: Y محور کا کالم
+  panel:
+    complete: تیار
+    incomplete: نامکمل
+    my_recipes: میرے نسخے
+    new_button: نیا نسخہ
+    no_recipes: ابھی تک کوئی نسخہ نہیں
+    no_results: آپ کی تلاش سے کوئی نسخہ مطابقت نہیں رکھتا
+    search: نسخے تلاش کریں...
+    shared_recipes: مشترکہ
+    updated: تازہ کاری شدہ
+  preparation_rules: تیاری کے اصول (اختیاری)
+  preparation_rules_applied: تیاری کے اصول لاگو ہوئے
+  preparation_rules_applied_description: تجزیہ کے مراحل سے پہلے نیچے دکھائی گئی ترتیب میں اصول لاگو کیے گئے تھے۔
+  preparation_rules_applied_title: تیاری کے اصول لاگو ہوئے
+  preparation_rules_description: ترتیب سے لاگو کرنے کے لیے اصول منتخب کریں۔ اصول یکے بعد دیگرے لاگو ہوتے ہیں۔
+  recipe_label: نسخہ
+  remove_rule: اصول ہٹائیں
+  require:
+    algorithm: ایک تجزیہ منتخب کریں
+    categoryColumn: '{out} کے لیے زمرہ کالم منتخب کریں'
+    dataset: ایک ڈیٹا سیٹ منتخب کریں
+    dependentColumn: منحصر کالم منتخب کریں
+    factorColumn: '{algo} کے لیے فیکٹر کالم منتخب کریں'
+    first_response: پہلا رسپانس کالم منتخب کریں
+    independentColumns: آزاد کالم منتخب کریں
+    responseColumn: '{algo} کے لیے رسپانس کالم منتخب کریں'
+    second_response: دوسرا رسپانس کالم منتخب کریں
+    xColumn: '{out} کے لیے X کالم منتخب کریں'
+    yColumn: '{out} کے لیے Y کالم منتخب کریں'
+  rows_after: بعد کی قطاریں
+  rows_before: قطاریں
+  rows_label: قطاریں
+  rules_applied_label: '{count} اصول لاگو کیے گئے:'
+  save_button: نسخہ محفوظ کریں
+  schema_error: 'کالم اسکیما لوڈ کرنے میں ناکامی ہوئی: {error}'
+  schema_loaded: 'اسکیما لوڈ ہوا: {count} کالم ملے'
+  select_dataset: ایک ڈیٹا سیٹ منتخب کریں
+  select_group: گروپ کرنے کے لیے ایک کالم منتخب کریں
+  select_rule: شامل کرنے کے لیے ایک اصول منتخب کریں
+  select_rule_placeholder: ایک اصول منتخب کریں
+  select_technique: ایک تکنیک منتخب کریں
+  select_visualisation: ایک ویژولائزیشن منتخب کریں
+  selected: منتخب شدہ
+  share:
+    button: اشتراک کریں
+    group_info: گروپ {group} — {desc}
+    read_only: '{owner} کے ذریعے اشتراک شدہ — صرف پڑھنے کے لیے'
+    shared_badge: اشتراک شدہ
+    unshare: اشتراک ختم کریں
+  shared: اشتراک شدہ
+  shared_badge: اشتراک شدہ
+  shared_description: اس ترکیب کو اپنے گروپ کے دیگر صارفین کے لیے دستیاب بنائیں۔
+  shared_group_hint: 'گروپ: {group} - {description}'
+  shared_label: گروپ کے ساتھ اشتراک کریں
+  shared_with_group: آپ کے گروپ کے ساتھ اشتراک شدہ
+  stage_data_selection: ڈیٹا کا انتخاب
+  stage_number: مرحلہ {number}
+  stage_preparation: ڈیٹا کی تیاری
+  stage_statistics: شماریات
+  stage_visualisation: ویژولائزیشن
+  stages_title: مراحل
+  status:
+    cancelled: منسوخ شدہ
+    completed: مکمل
+    failed: ناکام
+    pending: زیر التوا
+    running: جاری ہے
+  step1_description: اپنی ترکیب کو نام اور تفصیل دیں۔
+  step1_title: اپنی ترکیب کا نام رکھیں
+  step2_description: ایک ڈیٹا سیٹ منتخب کریں اور تجزیہ کرنے کے لیے کالم منتخب کریں۔
+  step2_title: ڈیٹا منتخب کریں
+  step3_description: اطلاق کرنے کے لیے شماریاتی تکنیک منتخب کریں۔
+  step3_title: تجزیہ منتخب کریں
+  step4_description: اپنی ترکیب میں ایک ویژولائزیشن شامل کریں۔
+  step4_title: ویژولائزیشن (اختیاری)
+  step_analysis: تجزیہ
+  step_complete: مرحلہ {step} مکمل
+  step_data: ڈیٹا
+  step_name: نام
+  step_visualise: ویژولائز کریں
+  technique_anova_one_way: یک طرفہ انووا
+  technique_anova_two_way: دو طرفہ انووا
+  technique_chi_square: کائی اسکوائر ٹیسٹ
+  technique_correlation: ارتباطی میٹرکس
+  technique_descriptive: وضاحتی شماریات
+  technique_hint: وضاحتی شماریات خلاصہ پیمانے دکھاتی ہیں جیسے اوسط، درمیانی قدر، اور معیاری انحراف۔
+  technique_label: تکنیک
+  technique_linear_regression: لکیری رجعت
+  technique_t_test_independent: آزاد ٹی ٹیسٹ
+  technique_t_test_paired: جوڑا دار ٹی ٹیسٹ
+  title: شماریاتی ترکیبیں
+  total_rules_applied: کل اطلاق شدہ اصول
+  transforms:
+    add: تبدیلی شامل کریں
+    label: تبدیلیاں
+    manage_button: تبدیلیاں منظم کریں
+    no_transforms: کوئی تبدیلی اطلاق نہیں ہوئی
+    remove: ہٹائیں
+  unknown_user: نامعلوم
+  update_error: 'ترکیب اپ ڈیٹ کرنے میں ناکامی ہوئی: {error}'
+  update_success: ترکیب '{id}' کامیابی سے اپ ڈیٹ ہوئی۔
+  updated_label: اپ ڈیٹ شدہ
+  visualisation:
+    columns_label: کالم
+    data_points: ڈیٹا پوائنٹس
+    distribution: تقسیم
+    trend: رجحان
+    type_label: قسم
+  visualisation_area: ایریا چارٹ
+  visualisation_bar: بار چارٹ
+  visualisation_donut: ڈونٹ چارٹ
+  visualisation_hbar: افقی بار
+  visualisation_hint: چارٹ منتخب ڈیٹا کالموں کا استعمال کرتے ہوئے تیار کیا جائے گا۔
+  visualisation_label: ویژولائزیشن کی قسم
+  visualisation_line: لائن چارٹ
+  visualisation_pie: پائی چارٹ
+  visualisation_raw_data: 'ویژولائزیشن ڈیٹا:'
+  visualisation_scatter: اسکیٹر پلاٹ
+  visualisation_table: جدول
+  ui:
+    delete_success: نسخہ حذف کر دیا گیا
+    delete_error: نسخہ حذف کرنے میں ناکامی ہوئی
+  visualisation_histogram: ہسٹوگرام
+register:
+  confirm_password: پاس ورڈ کی تصدیق کریں
+  creating: اکاؤنٹ بنایا جا رہا ہے...
+  description: نیا اکاؤنٹ بنائیں
+  email: ای میل
+  failed: رجسٹریشن ناکام ہوئی
+  have_account: پہلے سے اکاؤنٹ ہے؟
+  language_description: انٹرفیس کے لیے اپنی پسندیدہ زبان منتخب کریں۔
+  login_link: لاگ ان
+  name: نام
+  password: پاس ورڈ
+  password_mismatch: پاس ورڈ مماثل نہیں ہیں
+  submit: رجسٹر کریں
+  success_with_verification: آپ کا اکاؤنٹ بن گیا ہے۔ اپنا اکاؤنٹ فعال کرنے کے لیے اپنے ای میل میں تصدیقی لنک دیکھیں۔
+  title: رجسٹر کریں
+  email_failed_use_resend: رجسٹریشن کامیاب ہو گئی، لیکن تصدیقی ای میل نہیں بھیجی جا سکی۔ براہ کرم لاگ ان صفحہ سے اسے دوبارہ بھیجیں۔
+  success_auto_verified: آپ کا اکاؤنٹ بن گیا ہے اور استعمال کے لیے تیار ہے۔ اب آپ سائن ان کر سکتے ہیں۔
+  success_pending_approval: آپ کا اکاؤنٹ بن گیا ہے اور منتظم کی منظوری کا منتظر ہے۔ منظوری کے بعد آپ سائن ان کر سکیں گے۔
+  registration_disabled: خود رجسٹریشن غیر فعال ہے۔ براہ کرم منتظم سے رابطہ کریں۔
+resend_verification:
+  back_to_login: لاگ ان پر واپس جائیں
+  check_spam: اگر آپ کو چند منٹوں میں ای میل نظر نہ آئے تو براہ کرم اپنا اسپام فولڈر چیک کریں۔
+  description: نیا تصدیقی لنک حاصل کرنے کے لیے اپنا ای میل پتہ درج کریں۔
+  error: تصدیقی ای میل بھیجنے میں ناکامی۔
+  send_button: تصدیقی ای میل بھیجیں
+  sent: تصدیقی ای میل بھیج دی گئی ہے۔ براہ کرم اپنا ان باکس (اور اسپام فولڈر) چیک کریں۔
+  sent_description: اگر اس ای میل کے ساتھ کوئی اکاؤنٹ موجود ہے تو آپ کو تصدیقی لنک موصول ہوگا۔
+  sent_title: ای میل بھیج دی گئی
+  title: تصدیقی ای میل دوبارہ بھیجیں
+reset_password:
+  confirm_password: نئے پاس ورڈ کی تصدیق کریں
+  description: نیچے اپنا نیا پاس ورڈ درج کریں۔
+  failed: پاس ورڈ دوبارہ ترتیب دینا ناکام رہا
+  login_button: لاگ ان پر جائیں
+  missing_token: کوئی ری سیٹ ٹوکن فراہم نہیں کیا گیا
+  new_password: نیا پاس ورڈ
+  password_mismatch: پاس ورڈ مماثل نہیں ہیں
+  submit: پاس ورڈ دوبارہ ترتیب دیں
+  success: پاس ورڈ کامیابی سے دوبارہ ترتیب دیا گیا
+  success_description: آپ کا پاس ورڈ دوبارہ ترتیب دے دیا گیا ہے۔ لاگ ان پر منتقل کیا جا رہا ہے...
+  success_title: پاس ورڈ ری سیٹ
+  title: پاس ورڈ دوبارہ ترتیب دیں
+settings:
+  ai:
+    title: AI کنکشنز
+  database:
+    title: ڈیٹا بیس کنکشنز
+  profile:
+    title: ترجیحات
+  title: ترتیبات
+setup:
+  internal:
+    description: سسٹم تشخیصات اور اندرونی ترتیب۔ صرف پڑھنے کے لیے اسٹیٹس اشارے۔
+    future:
+      cache_config: کیش / سیشن ترتیب
+      debug_logging: ڈیبگ / تفصیلی لاگنگ ٹوگل
+      description: اضافی تشخیصات مستقبل کی ریلیز میں شامل کی جائیں گی۔
+      email_transport: ای میل ٹرانسپورٹ اسٹیٹس
+      pool_stats: ڈیٹا بیس پول شماریات
+      title: جلد آرہا ہے
+    licence:
+      description: موجودہ لائسنس سطح اور فعال خصوصیات۔
+      expiry: میعاد
+      features: فعال خصوصیات
+      issued_to: جاری کردہ برائے
+      tier: لائسنس سطح
+      title: لائسنس اور خصوصیات
+    load_error: سسٹم تشخیصات لوڈ کرنے میں ناکام
+    system_status:
+      available: دستیاب
+      db_pool: ڈیٹا بیس پول
+      description: بیک اینڈ خدمات کے لیے ریئل ٹائم صحت کے اشارے۔
+      healthy: صحت مند
+      initialized: شروع شدہ
+      not_initialized: شروع نہیں شدہ
+      not_required: ضرورت نہیں
+      overall_health: مجموعی صحت
+      shared_memory: مشترکہ میموری
+      title: سسٹم اسٹیٹس
+      unavailable: غیر دستیاب
+      unhealthy: غیر صحت مند
+      version: ورژن
+      db_cluster: ڈیٹا بیس کلسٹر
+    title: اندرونی
+  limits:
+    demo_mode:
+      description: فعال ہونے پر، سسٹم ڈیمو موڈ میں چلتا ہے — تباہ کن اقدامات مسدود ہوتے ہیں اور UI میں اشارے دکھائے جاتے ہیں۔
+      label: ڈیمو موڈ
+    description: وسائل کی حدود، ٹائم آؤٹس، اور سسٹم کے رویے کے لیے آپریشنل کنٹرولز۔ کسی بھی وقت ایڈجسٹ کرنا محفوظ ہے۔
+    email_timeout:
+      hint: ای میل تصدیقی لنک کتنے گھنٹوں تک درست رہتا ہے۔
+      label: ای میل تصدیقی ٹائم آؤٹ (گھنٹے)
+    grace_period:
+      hint: نرم حذف شدہ اکاؤنٹس کے مستقل طور پر حذف کیے جانے سے پہلے کے گھنٹے۔
+      label: حذف کرنے میں تاخیر (گھنٹے)
+    invalid_grace_period: برائے مہربانی حذف کرنے کی تاخیر (گھنٹے) کے لیے درست مثبت عدد درج کریں
+    invalid_registration_max: برائے مہربانی زیادہ سے زیادہ رجسٹریشنز کے لیے درست مثبت عدد درج کریں
+    invalid_timeout: برائے مہربانی تصدیقی ٹائم آؤٹ (گھنٹے) کے لیے درست مثبت عدد درج کریں
+    load_error: حدود کی ترتیبات لوڈ کرنے میں ناکام
+    max_registrations:
+      hint: یہ حد مقرر کریں کہ کتنے صارفین رجسٹر کر سکتے ہیں۔
+      label: زیادہ سے زیادہ صارف رجسٹریشنز
+      placeholder: حد منتخب کریں
+      unlimited: لامحدود
+      users: صارفین
+    save_button: حدود محفوظ کریں
+    save_error: حدود کی ترتیبات محفوظ کرنے میں ناکام
+    save_success: حدود کی ترتیبات محفوظ ہو گئیں
+    title: حدود
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: فی صارف ڈیٹا سیٹس کی زیادہ سے زیادہ تعداد (0 = لامحدود)۔ نئے صارفین پر لاگو ہوتی ہے۔
+      count_unlimited: لامحدود
+      default_count_label: فی صارف پہلے سے طے شدہ زیادہ سے زیادہ اپ لوڈ تعداد
+      default_size_label: فی صارف پہلے سے طے شدہ زیادہ سے زیادہ اپ لوڈ سائز (MB)
+      select_count: حد منتخب کریں
+      select_size: حد منتخب کریں
+      size_100_mb: 100 MB
+      size_10_mb: 10 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_250_mb: 250 MB
+      size_25_mb: 25 MB
+      size_500_mb: 500 MB
+      size_50_mb: 50 MB
+      size_5_mb: 5 MB
+      size_hint: فی صارف زیادہ سے زیادہ کل اسٹوریج (0 = لامحدود)۔ نئے صارفین پر لاگو ہوتا ہے۔
+      size_unlimited: لامحدود
+  options:
+    description: انسٹالیشن کے وقت کی ترتیبات جو اس تعیناتی کی شناخت اور رویے کی وضاحت کرتی ہیں۔ احتیاط سے تبدیل کریں — یہ تمام صارفین کو متاثر کرتی ہیں۔
+    email_sender:
+      hint: ای میل ایڈریس جس سے تصدیقی ای میلز آتی ہوئی دکھائی دیں گی۔
+      label: ای میل بھیجنے والے کا پتہ
+    load_error: اختیارات کی ترتیبات لوڈ کرنے میں ناکام
+    password_policy:
+      custom: کسٹم
+      high: اعلیٰ (کم از کم 10، بڑے حروف، چھوٹے حروف، ہندسے، خصوصی حروف)
+      hint: صارف کے اندراج اور پاس ورڈ تبدیل کرنے کے لیے پاس ورڈ کی پیچیدگی کے تقاضے منتخب کریں۔
+      label: پاس ورڈ پالیسی
+      low: کم (کم از کم 6 حروف)
+      medium: درمیانہ (کم از کم 8، بڑے حروف، چھوٹے حروف، ہندسے)
+      min_length: کم از کم لمبائی
+      min_strength: کم از کم مضبوطی (zxcvbn اسکور 0–4)
+      require_digit: ہندسہ درکار ہے
+      require_lowercase: چھوٹے حروف درکار ہیں
+      require_special: خصوصی حرف درکار ہے
+      require_uppercase: بڑے حروف درکار ہیں
+      select: پالیسی منتخب کریں
+    public_url:
+      hint: ای میل تصدیقی لنکس میں استعمال ہونے والا بنیادی URL (مثلاً https://workbench.example.com)۔
+      label: عوامی URL
+    save_button: اختیارات محفوظ کریں
+    save_error: اختیارات کی ترتیبات محفوظ کرنے میں ناکامی ہوئی
+    save_success: اختیارات کی ترتیبات محفوظ ہو گئیں
+    title: اختیارات
+    welcome:
+      hint: یہ پیغام لاگ ان صفحہ پر ظاہر ہوگا۔ اسے چھپانے کے لیے خالی چھوڑ دیں۔
+      label: خوش آمدید پیغام
+      placeholder: لاگ ان صفحہ پر ظاہر کرنے کے لیے خوش آمدید پیغام درج کریں۔
+    registration_mode:
+      mode_1: ایڈمن تصدیق شدہ صارفین بناتا ہے
+      hint: منتخب کریں کہ نئے صارف اکاؤنٹس کیسے بنائے اور تصدیق کیے جائیں۔
+      label: رجسٹریشن موڈ
+      mode_0: خود رجسٹریشن خودکار طور پر تصدیق شدہ
+      select: رجسٹریشن موڈ منتخب کریں
+      mode_4: ای میل تصدیق کے ساتھ خود رجسٹریشن
+      mode_2: خود رجسٹریشن اور ایڈمن سے تصدیق شدہ
+  tuning:
+    reset_confirm_body: اس صفحے پر موجود ہر قدر اپنے اصل ڈیفالٹ پر واپس چلی جاتی ہے۔ فی کنکشن اووررائیڈز متاثر نہیں ہوتیں۔ اس عمل کو واپس نہیں کیا جا سکتا، اور جو قدر آپ نے تبدیل کی تھی اسے دوبارہ سیٹ کرنا
+      ہوگا۔
+    preamble_detail: ہر AI درخواست انہیں استعمال کرتی ہے جب تک کوئی کنکشن انہیں اووررائیڈ نہ کرے۔ کسی ایک قدر کو تبدیل کرنے سے ہر وہ ماڈل متاثر ہوتا ہے جس کی اپنی کوئی ترتیب نہیں ہے؛ اس سے کوئی ایسا کنکشن
+      نہیں بدلتا جسے آپ پہلے ہی ٹیون کر چکے ہیں۔
+    save: ترتیبات محفوظ کریں
+    reset_confirm_title: کیا ان چھ کو ان کے ڈیفالٹ پر دوبارہ سیٹ کریں؟
+    ai_section_label: AI جنریشن
+    description: AI رویے اور وقت کی حدود کے لیے ڈیفالٹس۔ یہ عام طور پر ویسے ہی موزوں ہوتے ہیں — فی صارف یا فی کنکشن ترتیب مختلف ہو سکتی ہے، اور یہاں کی قدر اس وقت لاگو ہوتی ہے جب ان میں سے کوئی بھی نہ ہو۔
+    invalid_temperature: درجہ حرارت 0 سے 2 تک ایک عدد ہونا چاہیے
+    saved: ٹیوننگ ترتیبات محفوظ ہو گئیں
+    connect_timeout_hint: کنکشن قبول کرنے میں نیٹ ورک کو کتنا وقت لگ سکتا ہے اس سے پہلے کہ اینڈ پوائنٹ کو ناقابل رسائی سمجھ لیا جائے۔ اس نیٹ ورک کو جتنی ضرورت ہے اس سے کم قدر ایک کام کرنے والے اینڈ پوائنٹ
+      کو ناکام بنا دیتی ہے۔
+    reset_confirm_action: دوبارہ سیٹ کریں
+    invalid_probe_timeout: ٹیسٹ ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ 1200
+    forbidden: صرف ایک مکمل منتظم ہی یہ ترتیبات تبدیل کر سکتا ہے۔
+    load_error: ٹیوننگ ترتیبات لوڈ نہیں ہو سکیں
+    saving: محفوظ کیا جا رہا ہے…
+    reset_done: ٹیوننگ ترتیبات ان کے ڈیفالٹ پر دوبارہ سیٹ ہو گئیں
+    ai_max_tokens_hint: سب سے طویل جواب جو ایک درخواست پیدا کر سکتا ہے۔ ایک تفصیل کو تقریباً 500 ٹوکنز درکار ہوتے ہیں؛ 4000 کافی گنجائش چھوڑتا ہے۔
+    invalid_model_test_seconds: براہ کرم سیکنڈوں میں ایک مکمل عدد درج کریں، کم از کم 1
+    probe_timeout_hint: ایک موزونیت ٹیسٹ کتنی دیر چل سکتا ہے۔ CPU پر ہوسٹ کردہ ماڈل منٹوں لیتا ہے، اس لیے یہاں مختصر حد وقت بچانے کے بجائے غلط ناکامی درج کرتی ہے۔
+    reset_error: ٹیوننگ ترتیبات دوبارہ سیٹ نہیں ہو سکیں
+    slow_threshold_hint: اس سے زیادہ وقت لینے والا ماڈل ٹیسٹ بہت سست رپورٹ کیا جاتا ہے۔ صارفین اپنی حد بڑھا سکتے ہیں؛ کوئی بھی اپنی حد 1 سے کم نہیں کر سکتا۔
+    ai_temperature_hint: 'جوابات کتنے متنوع ہیں: 0 اتنا قابل تکرار جتنا ماڈل اجازت دیتا ہے، 2 سب سے زیادہ متنوع۔ 0 سے 2 سے باہر قدریں فراہم کنندہ مسترد کرتا ہے، یہ نظام نہیں۔'
+    invalid_max_tokens: براہ کرم ٹوکنز کی ایک مکمل عدد درج کریں، کم از کم 1
+    save_error: ٹیوننگ کی ترتیبات محفوظ نہیں کی جا سکیں
+    ai_timeout_hint: ایک AI درخواست کتنی دیر چل سکتی ہے اس سے پہلے کہ اسے ترک کر دیا جائے۔ اگر یہ بہت کم ہو تو چیٹ خاموشی سے ناکام ہو جاتی ہے؛ اگر بہت زیادہ ہو تو ایک رکا ہوا ماڈل ورکر کو روکے رکھتا ہے۔
+      CPU پر مقامی ماڈلز کو کئی منٹ لگ سکتے ہیں۔
+    invalid_connect_timeout: کنکشن ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ 60
+    invalid_ai_timeout: AI وقت کی حد سیکنڈوں میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+    slow_threshold_label: سست ماڈل کی حد
+    resetting: ری سیٹ ہو رہا ہے…
+    seconds: سیکنڈ
+    ai_section_hint: ہر AI درخواست کے لیے پہلے سے طے شدہ اقدار۔ ایک واحد کنکشن اور ماڈل انہیں وہاں اوور رائیڈ کر سکتے ہیں جہاں ٹیوننگ اس جوڑی کے لیے مخصوص ہو۔
+    ai_tokens: ٹوکنز
+tools:
+  all_datasets: تمام ڈیٹا سیٹس
+  connect_database: ڈیٹا بیس منسلک کریں
+  description: اضافی یوٹیلیٹیز اور تجزیاتی ٹولز یہاں ظاہر ہوں گے۔
+  import_notebook: نوٹ بک درآمد کریں
+  manage_data: ڈیٹا جمع کریں
+  my_data: میرا ڈیٹا
+  notebooks: نوٹ بکس
+  placeholder: ٹولز کا صفحہ جلد آرہا ہے۔
+  title: دیگر ٹولز
+  upload_csv_excel: CSV / Excel اپ لوڈ کریں
+  upload_data: ڈیٹا اپ لوڈ کریں
+  uploads_list: اپ لوڈز (csv، Excel)
+  visualize: ویژولائزیشن سینڈ باکس
+transforms:
+  back_to_data: میرے ڈیٹا پر واپس جائیں
+  back_to_recipe: 'ریسیپی پر واپس: {name}'
+  connect_error: ٹرانسفارم منسلک کرنے میں ناکامی ہوئی
+  connect_transform: ریسیپی سے منسلک کریں
+  connected_count: '{count} منسلک'
+  connected_to_recipe: 'منسلک: {name}'
+  delete_button: حذف کریں
+  delete_confirm: کیا یہ ٹرانسفارم حذف کریں؟
+  delete_success: ٹرانسفارم حذف کر دیا گیا۔
+  description_label: تفصیل
+  description_placeholder: تفصیل (اختیاری)
+  disconnect_error: ٹرانسفارم منقطع کرنے میں ناکامی ہوئی
+  disconnect_transform: ریسیپی سے منقطع کریں
+  empty_hint: جب ٹرانسفارم چلتا ہے تو آپریشنز فہرست کی ترتیب میں لاگو ہوتے ہیں۔
+  empty_state: اپنا ٹرانسفارم بنانا شروع کرنے کے لیے ایک آپریشن شامل کریں۔
+  empty_title: فہرست سے ٹرانسفارم منتخب کریں یا نیا بنائیں۔
+  fill:
+    constant: مستقل
+    drop_rows: قطاریں خارج کریں
+    mean: اوسط
+    median: وسطانیہ
+    mode: موڈ
+  filter:
+    op_contains: پر مشتمل ہے
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: null نہیں ہے
+    op_is_null: null ہے
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'ریسیپی: {name}'
+  load_error: ٹرانسفارم لوڈ کرنے میں ناکامی ہوئی
+  name_label: نام
+  name_placeholder: ٹرانسفارم کا نام
+  name_required: ٹرانسفارم کا نام درکار ہے۔
+  new_transform: نیا ٹرانسفارم
+  no_search_results: آپ کی تلاش سے کوئی ٹرانسفارم مطابقت نہیں رکھتا
+  no_transforms: اس ڈیٹا سیٹ کے لیے کوئی ٹرانسفارم متعین نہیں ہے۔
+  op:
+    add: آپریشن شامل کریں
+    column_placeholder: کالم منتخب کریں
+    empty_hint: اپنا ٹرانسفارم بنانا شروع کرنے کے لیے ایک آپریشن شامل کریں۔
+    encoding_label: لیبل
+    encoding_onehot: ون ہاٹ
+    encoding_placeholder: انکوڈنگ
+    method_placeholder: طریقہ
+    new_name_placeholder: نیا نام
+    operations_label: آپریشنز
+    operator_placeholder: آپریٹر
+    remove: ہٹائیں
+    target_boolean: بولین
+    target_datetime: تاریخ و وقت
+    target_numeric: عددی
+    target_string: سٹرنگ
+    target_type_placeholder: ہدف کی قسم
+    type:
+      convert_type: قسم تبدیل کریں
+      drop_column: کالم خارج کریں
+      drop_duplicates: نقلیں خارج کریں
+      encode_category: زمرہ انکوڈ کریں
+      fill_missing: گم شدہ اقدار پُر کریں
+      filter: قطاروں کو فلٹر کریں
+      rename_column: کالم کا نام تبدیل کریں
+      normalize: نارملائز کریں
+      standardize: معیاری بنائیں
+    type_placeholder: آپریشن کی قسم
+    value_placeholder: قدر
+  operations_count: '{count} آپریشنز'
+  operations_heading: آپریشنز
+  save_button: محفوظ کریں
+  save_success: ٹرانسفارم محفوظ ہو گیا۔
+  search_placeholder: ٹرانسفارمز تلاش کریں…
+validation:
+  api_key_required: اس فراہم کنندہ کے لیے API کلید درکار ہے
+  database_required: ڈیٹا بیس کا نام درکار ہے
+  host_required: ہوسٹ درکار ہے
+  name_required: کنکشن کا نام درکار ہے
+  password:
+    min_length: پاس ورڈ کم از کم {min} حروف پر مشتمل ہونا چاہیے۔
+    require_digit: پاس ورڈ میں کم از کم ایک ہندسہ شامل ہونا چاہیے۔
+    require_lowercase: پاس ورڈ میں کم از کم ایک چھوٹا حرف شامل ہونا چاہیے۔
+    require_special: پاس ورڈ میں کم از کم ایک خاص حرف شامل ہونا چاہیے۔
+    require_uppercase: پاس ورڈ میں کم از کم ایک بڑا حرف شامل ہونا چاہیے۔
+    too_weak: پاس ورڈ بہت کمزور ہے۔ براہ کرم مضبوط پاس ورڈ منتخب کریں۔
+  password_required: پاس ورڈ درکار ہے
+  port_invalid: پورٹ 1 اور 65535 کے درمیان ہونا چاہیے
+  provider_required: براہ کرم فراہم کنندہ منتخب کریں
+  type_required: براہ کرم ڈیٹا بیس کی قسم منتخب کریں
+  username_required: صارف نام درکار ہے
+verify_email:
+  error_description: کچھ غلط ہو گیا۔
+  error_title: تصدیق ناکام ہو گئی
+  expired_description: تصدیقی لنک کی میعاد ختم ہو چکی ہے۔
+  expired_message: آپ نیچے نئی تصدیقی ای میل کی درخواست کر سکتے ہیں۔
+  expired_title: لنک کی میعاد ختم ہو گئی
+  invalid_token: غلط تصدیقی لنک۔
+  login_button: لاگ ان کی طرف بڑھیں
+  missing_description: کوئی تصدیقی ٹوکن فراہم نہیں کیا گیا۔
+  missing_title: کوئی تصدیقی ٹوکن نہیں
+  network_error: نیٹ ورک کی خرابی۔ براہ کرم دوبارہ کوشش کریں۔
+  resend_button: تصدیقی ای میل دوبارہ بھیجیں
+  success_description: آپ کی ای میل کامیابی سے تصدیق ہو گئی ہے۔ لاگ ان پر منتقل کیا جا رہا ہے...
+  success_title: ای میل تصدیق شدہ
+  unknown_error: کچھ غلط ہو گیا۔
+virtual:
+  clone: کلون کریں
+  deleted: ڈیٹا سیٹ حذف کر دیا گیا
+  draft_badge: مسودہ
+  edit: ترمیم کریں
+  error: ایک خرابی پیش آئی
+  existing_none: کوئی نہیں
+  existing_title: موجودہ ڈیٹا سیٹس
+  loading: لوڈ ہو رہا ہے...
+  more: مزید
+  new_chat: نیا ورچوئل ڈیٹا سیٹ
+  placeholder: بیان کریں کہ آپ کیا کرنا چاہتے ہیں...
+  ready_badge: تیار
+  recent_chats: حالیہ چیٹس
+  send: بھیجیں
+  stage: مرحلہ
+  title: ورچوئل ڈیٹا سیٹس
+  verbose: تفصیلی
+  welcome: ورچوئل ڈیٹا سیٹس اسسٹنٹ میں خوش آمدید۔ اگر یہ آپ کے لیے نیا ہے، تو آپ جاننا چاہیں گے کہ آغاز کیسے کریں۔ مجھ سے پوچھیں کہ ماہرینِ شماریات ڈیٹا سیٹس کو تجزیہ کی ترکیبوں میں ان پٹ کے طور پر کیسے
+    استعمال کرتے ہیں، اور پھر رپورٹس اور ویژولائزیشنز بنانے کے لیے آؤٹ پٹ استعمال کرتے ہیں۔ یا مجھ سے اپنے حقیقی ڈیٹا سیٹس براؤز کرنے کو کہیں تاکہ ہم ان میں سے ڈیٹا منتخب کرنا شروع کر سکیں۔ اگر آپ کو یقین
+    نہیں ہے تو بس "ہیلو" کہیں۔
+  preview_columns: آؤٹ پٹ کالم
+  preview_title: ڈیٹا سیٹ پیش منظر
+  preview_joins: جوائنز
+  preview_name: نام
+  preview_sources: ذرائع
+  manual:
+    preview_error: جوائن نہیں چل سکا۔
+    alias_label: عرفی نام
+    complete_join: نامکمل جوائن کو مکمل کریں
+    column_placeholder: ایک کالم منتخب کریں
+    incomplete_join: جس جوائن میں ابھی تک کوئی کالم منتخب نہیں کیا گیا، اسے مکمل کریں یا ہٹا دیں۔
+    loading_columns: کالم پڑھے جا رہے ہیں…
+    bridge_choose_columns: کوئی مماثل کالم نہیں ملے — جوائن شامل کریں اور انہیں منتخب کریں۔
+    materialized_hint: لائیو جوائن کے بجائے ایک ٹیبل بناتا ہے۔ پروٹو ٹائپنگ کے دوران اسے بند رکھیں۔
+    title: ورچوئل ڈیٹا سیٹ ایڈیٹر
+    validate: تعریف کی تصدیق کریں
+    unattached_sources: 'باقی سے منسلک نہیں: {sources}۔ ایک جوائن شامل کریں جو انہیں جوڑے۔'
+    tables_error: ٹیبلیں پڑھی نہیں جا سکیں۔
+    save_success: ورچوئل ڈیٹا سیٹ محفوظ ہو گیا۔
+    no_sources: استعمال کے لیے کوئی کنکشن یا ڈیٹا سیٹ دستیاب نہیں ہے۔
+    bridge_no_columns: کالم ابھی پڑھے نہیں گئے — سورس کو پھیلائیں، یا جوائن شامل کریں اور انہیں منتخب کریں۔
+    select_none: کچھ منتخب نہ کریں
+    joins_title: سورسز کیسے جوڑے گئے ہیں
+    joins_hint: دو یا زیادہ سورسز کو آپس میں جوائن کی ضرورت ہوتی ہے۔ ایک سورس کو کسی جوائن کی ضرورت نہیں ہوتی۔
+    suggested: تجویز کردہ
+    materialized_label: نتیجہ مادی بنائیں
+    move_down: اس کالم کو ایک جگہ نیچے لے جائیں
+    remove_join: یہ جوائن ہٹائیں
+    validate_ok: تعریف ساختی طور پر درست ہے۔
+    aggregation_note: پرانی تعریف میں موجود ایگریگیشن کو جوں کا توں رکھا جاتا ہے، لیکن جوائن اسے لاگو نہیں کرتا۔
+    test_pulls_every_source: جوائن کی جانچ کرنے پر ہر سورس مکمل پڑھا جاتا ہے، اس لیے یہ سست ہو سکتا ہے۔
+    sources_title: ڈیٹا کہاں سے آتا ہے
+    preview_empty: جوائن نے کوئی قطاریں واپس نہیں کیں۔
+    open_none: ابھی کھولنے کے لیے کوئی ورچوئل ڈیٹا سیٹ نہیں ہے۔
+    add_join: ایک جوائن شامل کریں
+    preview_rows: '{count} قطار(یں) واپس آئیں'
+    load_error: اس ڈیٹا سیٹ کی تعریف لوڈ نہیں ہو سکی۔
+    open_label: ایک موجودہ ڈیٹا سیٹ کھولیں
+    new_dataset: نیا ڈیٹا سیٹ شروع کریں
+    output_title: ڈیٹا سیٹ کیا ظاہر کرتا ہے
+    select_all: سب منتخب کریں
+    move_up: اس کالم کو ایک جگہ اوپر لے جائیں
+    update_dataset: اس ڈیٹا سیٹ کو اپ ڈیٹ کریں
+    alias_taken: یہ عرفی نام پہلے ہی کسی دوسرے سورس کے زیرِ استعمال ہے۔
+    need_columns: شامل کرنے کے لیے کم از کم ایک کالم پر نشان لگائیں۔
+    name_label: ڈیٹا سیٹ کا نام
+    description_label: ڈیٹا سیٹ کی تفصیل
+    validate_errors: 'تعریف میں مسائل ہیں:'
+    save_error: ورچوئل ڈیٹا سیٹ محفوظ نہیں ہو سکا۔
+    sources_hint: کسی کنکشن یا ڈیٹا سیٹ کو پھیلائیں، پھر شامل کرنے کے لیے کالموں پر نشان لگائیں۔
+    need_join: دو سورسز منتخب ہیں، لیکن انہیں جوڑنے والا کوئی جوائن نہیں ہے۔
+    output_hint: وہ کالم جو یہ ڈیٹا سیٹ ظاہر کرے گا، ترتیب وار۔
+    columns_error: کالم پڑھے نہیں جا سکے۔
+    intro: اپنے منتخب کردہ کالموں سے ایک ورچوئل ڈیٹا سیٹ بنائیں، یا کسی موجودہ ڈیٹا سیٹ کو تبدیل کرنے کے لیے کھولیں۔
+    test_join: جوائن کی جانچ کریں
+    no_match: یہاں کچھ بھی فلٹر سے مماثل نہیں ہے۔
+    bridge: پل
+    need_name: محفوظ کرنے سے پہلے ڈیٹا سیٹ کو نام دیں۔
+    remove: اس کالم کو آؤٹ پٹ سے ہٹائیں
+    loaded_note: ایک موجودہ تعریف کھول لی گئی — محفوظ کرنے سے وہ اپ ڈیٹ ہو جاتی ہے۔
+    loaded_note_shared: ایک موجودہ مشترکہ تعریف کھولی گئی — صرف پڑھنے کے لیے - اپ ڈیٹ کی اجازت نہیں ہے
+    materialize_retry: دوبارہ کوشش کریں
+    materialize_done: ٹیبل بنایا گیا۔
+    materialize_failed: 'محفوظ ہو گیا، لیکن ٹیبل نہیں بن سکا:'
+  progress_decided: '{total} میں سے {decided} طے شدہ'
+  panel_tick_error: وہ کالم نشان زد نہیں کیا جا سکا۔
+  chip_error: وہ انتخاب لاگو نہیں کیا جا سکا۔
+  chip_load_error: اختیارات تازہ نہیں کیے جا سکے، اس لیے یہ پرانے ہو سکتے ہیں۔
+  panel_tick_no_session: پہلے ایک پیغام بھیجیں — ٹری سیشن میں آپ کے نشانات محفوظ کرتا ہے۔
+  panel_columns: '{count} کالم'
+  panel:
+    expand: ماخذ پینل دکھائیں
+    collapse: ماخذ پینل کو سکیڑیں
+  panel_fold_error: پینل کی سکیڑی ہوئی حالت محفوظ نہیں کی جا سکی، اس لیے اگلی بار یہ دوبارہ کھلا ہوگا۔
+  heading_materialised: لائیو یا مادی؟
+  heading_choose_table: ایک ٹیبل منتخب کریں
+  heading_match_columns: ان کالموں کو ملائیں
+  heading_choose_columns: کالم منتخب کریں
+  act:
+    sources: '{count} میزیں قبول کی گئیں'
+    sources_short: '{count} میزیں قبول کی گئیں: {tables}'
+    join: '{pair} جوڑا گیا'
+    named: اس کا نام “{name}” رکھا گیا
+    applied: '{piece} لاگو کر دیا گیا'
+  selection_hint: جو چیزیں آپ نہیں چاہتے ان سے نشان ہٹا دیں، پھر انہیں ایک ساتھ استعمال کریں۔
+  confirm_selection: انہیں استعمال کریں
+  suggestion_applied: لاگو کر دیا گیا
+  act_joins: '{count} جوڑے جوائن کیے گئے'
+  joins_hint: کوئی بھی کالم یا جوائن کی قسم تبدیل کریں، پھر جاری رکھیں۔
+  joins_unjoined: 'جوائن نہیں ہوئے: {tables}'
+  joins_apply: لاگو کریں
+  joins_unsaved: یہ قطاریں ڈیٹا سیٹ سے مختلف ہیں۔ انہیں لاگو کریں، یا پہلے خالی قطار درست کریں۔
+  join_type_label: جوائن کی قسم
+  joins_coverage: '{total} میں سے {connected} ٹیبلز منسلک ہیں'
+  name_suggestion_accept: یہ نام استعمال کریں
+  name_suggestion_heading: تجویز کردہ نام — اگر چاہیں تو اسے تبدیل کر دیں
+visualize:
+  config: ترتیب
+  data: ڈیٹا (JSON)
+  data_placeholder: یہاں JSON ڈیٹا پیسٹ کریں یا نمونہ تیار کریں
+  description: ویژولائزیشن کی قسم منتخب کریں، نمونہ ڈیٹا تیار کریں، پیرامیٹرز ایڈجسٹ کریں، اور پیش نظارہ کریں۔
+  download_error: جدول ڈاؤن لوڈ کرنے میں ناکامی
+  download_png: PNG کے طور پر ڈاؤن لوڈ کریں
+  download_success: جدول PNG کے طور پر ڈاؤن لوڈ ہو گیا
+  generate_sample: نمونہ تیار کریں
+  invalid_data: متنی جدول کے لیے غلط ڈیٹا۔ کالم اور قطاریں درکار ہیں۔
+  load_error: ویژولائزیشن کی اقسام لوڈ کرنے میں ناکامی
+  no_data: ویژولائز کرنے کے لیے کوئی ڈیٹا نہیں۔ نمونہ ڈیٹا تیار کریں یا JSON پیسٹ کریں۔
+  no_types: ویژولائزیشن کی کوئی قسم متعین نہیں ہے۔ براہ کرم منتظم سے رابطہ کریں۔
+  parameters: پیرامیٹرز
+  preview: پیش نظارہ
+  sample_expenses: اخراجات
+  sample_generated: نمونہ ڈیٹا تیار ہو گیا
+  sample_item: آئٹم
+  sample_sales: فروخت
+  sample_value: قدر
+  save_error: محفوظ کرنے میں ناکامی
+  save_instance: مثال محفوظ کریں
+  save_no_data: محفوظ کرنے کے لیے کوئی ڈیٹا نہیں۔ براہ کرم ڈیٹا تیار کریں یا پیسٹ کریں۔
+  save_success: ویژولائزیشن کامیابی سے محفوظ ہو گئی
+  select_type: قسم منتخب کریں
+  title: ویژولائزیشن سینڈ باکس
+  type: ویژولائزیشن کی قسم
+  unsupported: ویژولائزیشن کی قسم ابھی لاگو نہیں ہوئی
+  unsupported_parameter: غیر معاون قسم

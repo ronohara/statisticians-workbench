@@ -1,0 +1,2255 @@
+about:
+  description: shadcn/ui এবং Next.js দিয়ে চমৎকার অভিজ্ঞতা তৈরি করুন। পরিষ্কার ডিজাইন, দ্রুত পারফরম্যান্স।
+  fast_desc: সর্বোত্তম পারফরম্যান্সের জন্য Next.js App Router-এ নির্মিত।
+  fast_title: দ্রুত
+  get_started: শুরু করুন
+  modern_desc: shadcn/ui থেকে অ্যাক্সেসযোগ্য কম্পোনেন্ট, Tailwind CSS দিয়ে স্টাইল করা।
+  modern_title: আধুনিক UI
+  secure_desc: টাইপ-সেফ ও কাস্টমাইজযোগ্য – কম্পোনেন্ট কোড আপনার নিজস্ব।
+  secure_title: নিরাপদ
+  title: Statisticians Workbench সম্পর্কে
+admin:
+  groups:
+    back_to_admin: অ্যাডমিনে ফিরে যান
+    cannot_modify_self: আপনার নিজের অ্যাকাউন্ট পরিবর্তন করা যাবে না
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি {name}-কে মুছে ফেলতে চান? এই ব্যবহারকারীকে সফট-ডিলিট করা হবে এবং একজন পূর্ণ অ্যাডমিন তা পুনরুদ্ধার করতে পারবেন।
+    delete_error: ব্যবহারকারী মুছে ফেলতে ব্যর্থ হয়েছে
+    delete_title: ব্যবহারকারী মুছে ফেলুন
+    demote: ডিমোট করুন
+    demote_error: ব্যবহারকারীকে ডিমোট করতে ব্যর্থ হয়েছে
+    demote_success: ব্যবহারকারীকে গ্রুপ অ্যাডমিন থেকে ডিমোট করা হয়েছে
+    description_placeholder: বিবরণ লিখুন
+    description_required: বিবরণ খালি থাকা যাবে না
+    group_description: গ্রুপ বিবরণ
+    group_users_load_error: গ্রুপ ব্যবহারকারী লোড করতে ব্যর্থ হয়েছে
+    load_error: গ্রুপ লোড করতে ব্যর্থ হয়েছে
+    load_success: গ্রুপ সফলভাবে লোড হয়েছে
+    no_users: এই গ্রুপে কোনো ব্যবহারকারী পাওয়া যায়নি।
+    promote: প্রমোট করুন
+    promote_error: ব্যবহারকারীকে প্রমোট করতে ব্যর্থ হয়েছে
+    promote_success: ব্যবহারকারীকে গ্রুপ অ্যাডমিন হিসেবে প্রমোট করা হয়েছে
+    readonly_badge: (শুধুমাত্র পঠন)
+    readonly_message: আপনি এই পৃষ্ঠাটি শুধুমাত্র পঠন মোডে দেখছেন। উদাহরণ ব্যবহারকারীরা পরিবর্তন করতে পারেন না।
+    readonly_title: গ্রুপ ব্যবস্থাপনা (শুধুমাত্র পঠন)
+    select_group: গ্রুপ নির্বাচন করুন
+    select_group_placeholder: একটি গ্রুপ নির্বাচন করুন
+    title: গ্রুপ ব্যবস্থাপনা
+    update_error: গ্রুপ আপডেট করতে ব্যর্থ হয়েছে
+    update_success: গ্রুপ বিবরণ আপডেট হয়েছে
+    users_in_group: গ্রুপের ব্যবহারকারীরা
+  models:
+    comment_placeholder: মন্তব্য লিখুন
+    description: ওয়ার্কবেঞ্চ যেসব মডেল সম্পর্কে জানে। একটি মডেল সক্রিয় করলে এটি পরিবেশনকারী প্রতিটি সংযোগে প্রভাব পড়ে; সার্ভার কলাম দেখায় কোনগুলো এটি অ্যাক্সেস করতে পারে।
+    disabled: নিষ্ক্রিয়
+    edit_comment: মন্তব্য সম্পাদনা করুন
+    enabled: সক্রিয়
+    fetch_auth_required: এই প্রোভাইডারের মডেল তালিকা করতে একটি API কী প্রয়োজন। পরিবর্তে সেটিংস → AI সংযোগ থেকে রিফ্রেশ করুন।
+    fetch_non_standard: এই প্রোভাইডার কোনো স্ট্যান্ডার্ড মডেল-তালিকা API প্রকাশ করে না। অ্যাডমিন প্যানেলে ম্যানুয়ালি মডেল যোগ করুন।
+    load_models_error: মডেল লোড করতে ব্যর্থ হয়েছে
+    no_comment: —
+    no_models: এখনও কোনো মডেল নেই। আবিষ্কার একটি সংযোগ থেকে সেগুলো তৈরি করে।
+    not_preferred: পছন্দের নয়
+    preferred: পছন্দের
+    toggle_error: মডেল আপডেট করতে ব্যর্থ হয়েছে
+    update_error: মন্তব্য আপডেট করতে ব্যর্থ হয়েছে
+    update_success: মডেল আপডেট হয়েছে
+    model_count: '{count}টি মডেল'
+    tuning_save_error: AI সেটিংস সংরক্ষণ করা যায়নি
+    filter_state: অবস্থা
+    servers_title: যেখান থেকে পৌঁছানো যায়
+    filter_test: সক্ষমতা পরীক্ষা
+    filter_clear: ফিল্টার পরিষ্কার করুন
+    no_matches: এই ফিল্টারগুলোর সঙ্গে কোনো মডেল মেলে না।
+    filter_result: ফলাফল
+    tuning_load_error: AI সেটিংস লোড করা যায়নি
+    tuning_temperature_hint: কম মান আরও পুনরুৎপাদনযোগ্য উত্তর দেয়; বেশি মান আরও বৈচিত্র্যময় উত্তর দেয়।
+    tuning_timeout_hint: একটি AI অনুরোধ কত সেকেন্ড চলতে পারে। একটি লোকাল CPU মডেলের কয়েক মিনিট লাগতে পারে।
+    search_placeholder: মডেলের নাম খুঁজুন
+    tuning_loading: AI সেটিংস লোড হচ্ছে…
+    tuning_saved: এআই সেটিংস সংরক্ষিত হয়েছে।
+    tuning_hint: এই মানগুলো এই সংযোগে এই মডেলটি যেখানেই ব্যবহৃত হয় সেখানে প্রযোজ্য। খালি রাখার অর্থ এটি ওয়ার্কবেঞ্চ ডিফল্ট উত্তরাধিকারসূত্রে পায়।
+    tuning_inherited_title: খালি রাখলে ওয়ার্কবেঞ্চ ডিফল্ট উত্তরাধিকারসূত্রে পাওয়া যায়।
+    tuning_inherited: উত্তরাধিকারসূত্রে প্রাপ্ত
+    no_servers: এখনও কোনো সংযোগ এই মডেল পরিবেশন করে না।
+    tuning_title: এই সার্ভারের জন্য এআই সেটিংস
+    filter_any: যেকোনো অবস্থা
+  providers:
+    code_label: কোড
+    delete_button: মুছে ফেলুন
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি প্রোভাইডার "{name}" মুছে ফেলতে চান? এতে সংশ্লিষ্ট সব মডেলও মুছে যাবে এবং এটি ফেরানো যাবে না।
+    delete_error: প্রোভাইডার মুছে ফেলতে ব্যর্থ হয়েছে
+    delete_provider: প্রোভাইডার মুছে ফেলুন
+    delete_success: প্রোভাইডার মুছে ফেলা হয়েছে
+    delete_title: প্রোভাইডার মুছে ফেলুন
+    description: AI প্রোভাইডার সক্রিয় বা নিষ্ক্রিয় করুন। নিষ্ক্রিয় প্রোভাইডার ব্যবহারকারীর সংযোগ ফর্মে দেখানো হবে না।
+    disabled: নিষ্ক্রিয়
+    enabled: সক্রিয়
+    fetch_error: প্রোভাইডার লোড করতে ব্যর্থ হয়েছে
+    list_title: সব প্রোভাইডার
+    local: লোকাল
+    no_api_key: কোনো API কী প্রয়োজন নেই
+    requires_api_key: API কী প্রয়োজন
+    title: AI প্রোভাইডার
+    toggle_error: প্রোভাইডার আপডেট করতে ব্যর্থ হয়েছে
+    update_success: প্রোভাইডার আপডেট হয়েছে
+  title: অ্যাডমিন প্যানেল
+  user_details:
+    dark_mode_description: লাইট ও ডার্ক থিমের মধ্যে টগল করুন।
+    dark_mode_label: ডার্ক মোড
+    email_label: ইমেইল
+    email_notifications_description: আপনার অ্যাকাউন্ট সম্পর্কে ইমেইল আপডেট পান।
+    email_notifications_label: ইমেইল বিজ্ঞপ্তি
+    full_admin_note: পূর্ণ অ্যাডমিনদের ডিফল্টভাবে গ্রুপ অ্যাডমিনের সব অনুমতি থাকে।
+    group_admin_description: ব্যবহারকারী নিজের গ্রুপের মধ্যে অন্যান্য ব্যবহারকারীদের পরিচালনা করতে পারেন।
+    group_admin_label: গ্রুপ অ্যাডমিন
+    group_hint: ব্যবহারকারীর গ্রুপ নির্ধারণ করে তারা কোন শেয়ার করা রিসোর্সগুলোতে অ্যাক্সেস করতে পারবেন।
+    language_label: ভাষা
+    language_select_placeholder: ভাষা নির্বাচন করুন
+    load_error: ব্যবহারকারীর বিবরণ লোড করতে ব্যর্থ হয়েছে
+    max_upload_count_hint: প্রতি ব্যবহারকারীর জন্য সর্বোচ্চ ডেটাসেট সংখ্যা (0 = সীমাহীন)।
+    max_upload_count_label: সর্বোচ্চ আপলোড সংখ্যা
+    max_upload_count_placeholder: সংখ্যা নির্বাচন করুন
+    max_upload_size_hint: প্রতি ব্যবহারকারীর জন্য সর্বোচ্চ মোট স্টোরেজ (0 = সীমাহীন)।
+    max_upload_size_label: সর্বোচ্চ আপলোড আকার
+    max_upload_size_placeholder: আকার নির্বাচন করুন
+    name_label: নাম
+    not_found: ব্যবহারকারী পাওয়া যায়নি
+    save_error: ব্যবহারকারী আপডেট করতে ব্যর্থ হয়েছে
+    save_success: ব্যবহারকারীর তথ্য আপডেট হয়েছে
+    select_group: গ্রুপ নির্বাচন করুন
+    title: ব্যবহারকারী পরিচালনা করুন
+    unnamed: নামহীন ব্যবহারকারী
+    user_group: ব্যবহারকারী গ্রুপ
+  users:
+    active_users: সক্রিয় ব্যবহারকারীরা
+    admin_badge: অ্যাডমিন
+    bcc_label: BCC নিবন্ধনসমূহ
+    bcc_updated: BCC নিবন্ধন সেটিং আপডেট হয়েছে
+    created_label: তৈরি হয়েছে
+    current_user_badge: আপনি
+    delete_button: মুছুন
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি "{name}" স্থায়ীভাবে মুছে ফেলতে চান? এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।
+    delete_error: ব্যবহারকারী মুছতে ব্যর্থ হয়েছে
+    delete_self_error: আপনি নিজের অ্যাকাউন্ট মুছতে পারবেন না
+    delete_success: ব্যবহারকারী স্থায়ীভাবে মুছে ফেলা হয়েছে
+    delete_title: ব্যবহারকারী মুছুন
+    deleted_badge: সফট-ডিলিটেড
+    deleted_label: মুছে ফেলা হয়েছে
+    example_user_badge: উদাহরণ ব্যবহারকারী
+    forbidden: নিষিদ্ধ
+    group_admin_badge: গ্রুপ অ্যাডমিন
+    hard_delete_button: স্থায়ীভাবে মুছুন
+    hard_delete_confirmation: আপনি কি নিশ্চিত যে আপনি "{name}" স্থায়ীভাবে মুছে ফেলতে চান? এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।
+    hard_delete_error: ব্যবহারকারী স্থায়ীভাবে মুছতে ব্যর্থ হয়েছে
+    hard_delete_success: ব্যবহারকারী স্থায়ীভাবে মুছে ফেলা হয়েছে
+    hard_delete_title: ব্যবহারকারী স্থায়ীভাবে মুছুন
+    load_error: ব্যবহারকারী লোড করতে ব্যর্থ হয়েছে
+    make_admin: অ্যাডমিন করুন
+    more_button: আরও...
+    no_name: কোনো নাম নেই
+    remove_admin: অ্যাডমিন অপসারণ করুন
+    resend_button: ইমেইল পুনরায় পাঠান
+    resend_error: যাচাইকরণ ইমেইল পাঠাতে ব্যর্থ হয়েছে
+    resend_success: যাচাইকরণ ইমেইল {email} ঠিকানায় পাঠানো হয়েছে
+    restore_button: পুনরুদ্ধার করুন
+    restore_error: ব্যবহারকারী পুনরুদ্ধার করতে ব্যর্থ হয়েছে
+    restore_success: ব্যবহারকারী পুনরুদ্ধার করা হয়েছে
+    soft_deleted_users: সফট-ডিলিটেড ব্যবহারকারীরা
+    title: ব্যবহারকারী ব্যবস্থাপনা
+    unauthorized: অননুমোদিত
+    unverified_badge: অযাচাইকৃত
+    update_error: ব্যবহারকারী আপডেট করতে ব্যর্থ হয়েছে
+    update_success: ব্যবহারকারী আপডেট হয়েছে
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+    verified_badge: যাচাইকৃত
+    verify_button: যাচাই করুন
+    verify_error: ব্যবহারকারী যাচাই করতে ব্যর্থ হয়েছে
+    verify_success: ব্যবহারকারীকে যাচাইকৃত হিসেবে চিহ্নিত করা হয়েছে
+    add_user: ব্যবহারকারী যোগ করুন
+  visualization_types:
+    add_button: নতুন ধরন যোগ করুন
+    add_title: ভিজ্যুয়ালাইজেশন ধরন যোগ করুন
+    create_success: ভিজ্যুয়ালাইজেশন ধরন তৈরি করা হয়েছে
+    default_parameters: ডিফল্ট প্যারামিটার (JSON)
+    delete: মুছুন
+    delete_button: মুছুন
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি "{name}" ধরনটি মুছতে চান? এটি সংশ্লিষ্ট সকল ইনস্ট্যান্সও মুছে ফেলবে এবং এটি পূর্বাবস্থায় ফেরানো যাবে না।
+    delete_error: মুছতে ব্যর্থ হয়েছে
+    delete_success: ভিজ্যুয়ালাইজেশন ধরন মুছে ফেলা হয়েছে
+    delete_title: ভিজ্যুয়ালাইজেশন ধরন মুছুন
+    description: বিবরণ
+    disabled: নিষ্ক্রিয়
+    edit: সম্পাদনা করুন
+    edit_title: ভিজ্যুয়ালাইজেশন ধরন সম্পাদনা করুন
+    enabled: সক্রিয়
+    fetch_error: ভিজ্যুয়ালাইজেশন ধরন লোড করতে ব্যর্থ হয়েছে
+    input_schema: ইনপুট স্কিমা (JSON)
+    invalid_json: স্কিমা ক্ষেত্রগুলোর একটিতে অবৈধ JSON
+    list_title: সকল ভিজ্যুয়ালাইজেশন ধরন
+    name: নাম
+    no_types: এখনো কোনো ভিজ্যুয়ালাইজেশন ধরন সংজ্ঞায়িত করা হয়নি।
+    parameter_schema: প্যারামিটার স্কিমা (JSON)
+    renderer: রেন্ডারার
+    renderer_client: ক্লায়েন্ট
+    renderer_label: রেন্ডারার
+    renderer_server: সার্ভার
+    save_error: সংরক্ষণ করতে ব্যর্থ হয়েছে
+    slug: স্লাগ
+    slug_label: স্লাগ
+    title: ভিজ্যুয়ালাইজেশন ধরনসমূহ
+    toggle_error: আপডেট করতে ব্যর্থ হয়েছে
+    update_success: ভিজ্যুয়ালাইজেশন ধরন আপডেট করা হয়েছে
+  adduser:
+    language_description: ইন্টারফেসের জন্য ব্যবহারকারীর পছন্দের ভাষা নির্বাচন করুন।
+    not_admin: এই পৃষ্ঠাটি অ্যাক্সেস করার অনুমতি আপনার নেই।
+    submit: ব্যবহারকারী তৈরি করুন
+    name: নাম
+    email: ইমেইল
+    failed: ব্যবহারকারী তৈরি করা যায়নি
+    password: পাসওয়ার্ড
+    title: ব্যবহারকারী যোগ করুন
+    success: অ্যাকাউন্ট তৈরি ও যাচাই করা হয়েছে। নতুন ব্যবহারকারী এখন সাইন ইন করতে পারবেন।
+    back_to_admin: অ্যাডমিনে ফিরে যান
+    description: একটি নতুন ব্যবহারকারী অ্যাকাউন্ট তৈরি করুন। অ্যাকাউন্টটি অবিলম্বে যাচাই করা হয়।
+    password_mismatch: পাসওয়ার্ড মিলছে না
+    creating: ব্যবহারকারী তৈরি হচ্ছে...
+    confirm_password: পাসওয়ার্ড নিশ্চিত করুন
+  set_password:
+    admin_password_required: অ্যাডমিন পাসওয়ার্ড প্রয়োজন
+    failed: পাসওয়ার্ড সেট করা যায়নি
+    description: এই ব্যবহারকারীর জন্য একটি নতুন পাসওয়ার্ড সেট করুন। পরিবর্তন নিশ্চিত করতে আপনার নিজের অ্যাডমিন পাসওয়ার্ড প্রয়োজন।
+    title: পাসওয়ার্ড সেট করুন
+    success: পাসওয়ার্ড সফলভাবে সেট করা হয়েছে
+    admin_password: অ্যাডমিন পাসওয়ার্ড
+ai:
+  connection:
+    add_first: আপনার প্রথম AI সংযোগ যোগ করুন
+    add_new: নতুন AI সংযোগ যোগ করুন
+    add_success: AI সংযোগ সফলভাবে যোগ করা হয়েছে
+    add_title: নতুন AI সংযোগ যোগ করুন
+    api_key_hint: আপনার API কী সংরক্ষণের আগে এনক্রিপ্ট করা হয়।
+    api_key_label: API কী
+    by_label: দ্বারা
+    clear_default: ডিফল্ট পরিষ্কার করুন
+    currently_not_shared: ❌ বর্তমানে শেয়ার করা হয়নি
+    currently_shared: ✅ বর্তমানে গ্রুপের সাথে শেয়ার করা হয়েছে
+    default_badge: ডিফল্ট
+    default_cleared: ডিফল্ট AI সংযোগ পরিষ্কার করা হয়েছে
+    default_set: ডিফল্ট AI সংযোগ আপডেট হয়েছে
+    delete_button: মুছুন
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি সংযোগটি মুছতে চান?
+    delete_error: AI সংযোগ মুছতে ব্যর্থ হয়েছে
+    delete_title: AI সংযোগ মুছুন
+    deleted: AI সংযোগ মুছে ফেলা হয়েছে
+    edit_title: AI সংযোগ সম্পাদনা করুন
+    endpoint_hint: প্রয়োজনে ডিফল্ট API এন্ডপয়েন্ট ওভাররাইড করুন।
+    endpoint_label: এন্ডপয়েন্ট URL
+    form_description: একটি AI প্রদানকারী সংযোগ কনফিগার করুন।
+    group_label: গ্রুপ
+    load_error: সংযোগগুলো লোড করতে ব্যর্থ হয়েছে
+    load_providers_error: প্রদানকারীগুলো লোড করতে ব্যর্থ হয়েছে
+    metadata_load_error: প্রদানকারীর মেটাডেটা লোড করতে ব্যর্থ হয়েছে
+    metadata_loading: প্রদানকারীর তথ্য এখনও লোড হচ্ছে। অনুগ্রহ করে অপেক্ষা করুন।
+    models: উপলব্ধ মডেল
+    models_disabled: নিষ্ক্রিয়
+    models_load_error: মডেল লোড করতে ব্যর্থ হয়েছে
+    models_none: এখনও কোনো মডেল সিঙ্ক হয়নি। প্রদানকারী থেকে মডেল আনতে রিফ্রেশ ক্লিক করুন।
+    models_refresh: মডেল রিফ্রেশ করুন
+    models_sync_error: মডেল সিঙ্ক করতে ব্যর্থ হয়েছে
+    models_synced: মডেল সফলভাবে সিঙ্ক হয়েছে
+    name_label: সংযোগের নাম
+    name_placeholder: যেমন, আমার AI সংযোগ
+    no_connections: এখনও কোনো AI সংযোগ সংরক্ষণ করা হয়নি।
+    not_found: সংযোগ পাওয়া যায়নি
+    provider_label: প্রদানকারী
+    provider_not_found: প্রদানকারী পাওয়া যায়নি
+    save_error: AI সংযোগ সংরক্ষণ করতে ব্যর্থ হয়েছে
+    select_provider: AI প্রদানকারী নির্বাচন করুন
+    select_provider_first: অনুগ্রহ করে প্রথমে একটি প্রদানকারী নির্বাচন করুন
+    set_default: ডিফল্ট হিসেবে সেট করুন
+    shared_badge: শেয়ার করা
+    shared_description: এই সংযোগটি আপনার গ্রুপের অন্যান্য ব্যবহারকারীদের জন্য উপলব্ধ করুন।
+    shared_label: গ্রুপের সাথে শেয়ার করুন
+    shared_readonly: শেয়ার করা
+    shared_readonly_message: এই সংযোগটি আপনার সাথে শেয়ার করা হয়েছে। আপনি এটি দেখতে পারবেন, তবে সম্পাদনা শুধুমাত্র মালিকের জন্য সীমাবদ্ধ।
+    test_button: সংযোগ পরীক্ষা করুন
+    test_error: সংযোগ ব্যর্থ হয়েছে।
+    test_success: সংযোগ সফল হয়েছে!
+    unknown_user: অজানা
+    update_success: AI সংযোগ সফলভাবে আপডেট হয়েছে
+    timeouts_section_label: সংযোগ টাইমআউট
+    timeouts_section_hint: ওয়ার্কবেঞ্চের ডিফল্ট ব্যবহার করতে একটি বাক্স খালি রাখুন।
+    connect_exceeds_probe: সংযোগ টাইমআউট মডেল পরীক্ষার টাইমআউটের চেয়ে বেশি হতে পারে না — একটি সংযোগ স্থাপনে পুরো পরীক্ষাটি যতক্ষণ চলতে পারে তার চেয়ে বেশি সময় দেওয়া যায় না।
+    invalid_connect_timeout: সংযোগ টাইমআউট অবশ্যই সেকেন্ডে একটি পূর্ণসংখ্যা হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ ৬০।
+    invalid_probe_timeout: মডেল পরীক্ষার টাইমআউট অবশ্যই সেকেন্ডে একটি পূর্ণসংখ্যা হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ ১২০০।
+    probe_timeout_hint: এখানে একটি উপযুক্ততা পরীক্ষা কতক্ষণ চলতে পারে। CPU-হোস্টেড একটি মডেল কয়েক মিনিট সময় নেয়।
+    models_discovered: 'এই সংযোগে {seen}টি মডেল আবিষ্কার হয়েছে: {created} নতুন, {refreshed} ইতিমধ্যে পরিচিত, {pruned} আর পরিবেশিত নয়'
+    connect_timeout_hint: একটি সংযোগ গ্রহণ করতে নেটওয়ার্কের কত সময় লাগতে পারে। এই নেটওয়ার্কের প্রয়োজনের চেয়ে কম মান একটি কার্যকর এন্ডপয়েন্টকে অগম্য করে তোলে।
+  database:
+    add_connection: ডাটাবেস সংযোগ যোগ করুন
+    ai_augmented: AI-বর্ধিত বিশ্লেষণ
+    ai_augmented_desc: Schema AI, Semantic AI এবং Integration AI এই ডাটাবেস বিশ্লেষণ করেছে।
+    ai_fallback: মৌলিক বিশ্লেষণ
+    ai_fallback_desc: AI বর্ধিতকরণ অনুপলব্ধ। শুধুমাত্র কাঠামোগত বিশ্লেষণ দেখানো হচ্ছে। গভীর অন্তর্দৃষ্টির জন্য একটি AI সংযোগ নির্বাচন করুন।
+    ai_health_score: AI স্বাস্থ্য স্কোর
+    ai_unavailable: AI বিশ্লেষণ অনুপলব্ধ। উন্নত বিশ্লেষণ সক্ষম করতে একটি AI প্রদানকারী সংযোগ করুন।
+    all_issues: সকল সমস্যা
+    analysis_report: বিশ্লেষণ প্রতিবেদন
+    analysis_summary: '{tables} টেবিল, {columns} কলাম, {issues} সমস্যা পাওয়া গেছে'
+    analyze: স্কিমা বিশ্লেষণ করুন
+    analyzing: বিশ্লেষণ করা হচ্ছে...
+    business_value: ব্যবসায়িক মূল্য
+    categories: বিভাগসমূহ
+    code_systems_detected: সনাক্তকৃত কোড সিস্টেম
+    cols_rows_format: '{cols} কলাম, {rows} সারি'
+    column_meanings: কলামের অর্থ
+    columns_label: কলাম
+    confidence: আস্থা
+    description: ইনডেক্সিং, নরমালাইজেশন, সম্পর্ক, ডেটা টাইপ এবং নামকরণের সমস্যার জন্য আপনার ডাটাবেস ডিজাইন বিশ্লেষণ করুন।
+    download_pdf: PDF ডাউনলোড করুন
+    email_body_attachment: বিশ্লেষণ প্রতিবেদনটি সংযুক্ত করা হলো।
+    email_body_connection: 'সংযোগ: {conn_name}'
+    email_body_database: 'ডাটাবেস: {db_name}'
+    email_body_id: 'সংযোগ আইডি: {conn_id}'
+    email_body_signature: — স্ট্যাটিস্টিশিয়ানস ওয়ার্কবেঞ্চ
+    email_body_title: ডাটাবেস ডিজাইন বিশ্লেষণ প্রতিবেদন
+    email_body_type: 'ডাটাবেসের ধরন: {db_type}'
+    email_error: প্রতিবেদন ইমেইল পাঠাতে ব্যর্থ হয়েছে
+    email_pdf: PDF ইমেইল করুন
+    email_sent: প্রতিবেদন সফলভাবে ইমেইল করা হয়েছে
+    email_subject: ডাটাবেস ডিজাইন বিশ্লেষণ — {db_name} ({db_type}) [সংযোগ {conn_id}]
+    empty_state: শুরু করতে একটি ডাটাবেস সংযোগ নির্বাচন করুন এবং বিশ্লেষণ করুন বোতামে ক্লিক করুন।
+    enter_question: অনুগ্রহ করে একটি প্রশ্ন লিখুন।
+    foreign_keys: ফরেন কী
+    high_risk: উচ্চ
+    implicit_relationships: অন্তর্নিহিত সম্পর্ক
+    indexes_label: ইনডেক্সসমূহ
+    integration_analysis: ইন্টিগ্রেশন বিশ্লেষণ
+    integration_analysis_desc: Integration AI দ্বারা সনাক্তকৃত অন্তর্নিহিত সম্পর্ক, গবেষণা সক্ষমতা এবং অনুপস্থিত ডাইমেনশন।
+    isic_domains: ISIC ডোমেইন শ্রেণিবিন্যাস
+    issues_label: সমস্যাসমূহ
+    low_risk: কম
+    medium_risk: মাঝারি
+    missing_dimensions: অনুপস্থিত ডাইমেনশন
+    no_issues: কোনো সমস্যা পাওয়া যায়নি। আপনার ডাটাবেস ডিজাইন ভালো দেখাচ্ছে!
+    no_semi_structured: টেক্সট কলামে কোনো আধা-কাঠামোগত ডেটা প্যাটার্ন সনাক্ত করা হয়নি।
+    normalisation_suggestions: নরমালাইজেশন পরামর্শ
+    normalisation_suggestions_desc: আধা-কাঠামোগত টেক্সট কলামে পাওয়া কীওয়ার্ডের ভিত্তিতে প্রস্তাবিত রেফারেন্স টেবিল।
+    normalisation_warning: এগুলো AI-উৎপন্ন পরামর্শ। ডাটাবেস পুনর্নকশার জন্য সতর্ক পর্যালোচনা প্রয়োজন। প্রথমে একটি প্রতিলিপিতে পরিবর্তন পরীক্ষা করুন।
+    pdf_downloaded: PDF সফলভাবে ডাউনলোড হয়েছে
+    pdf_error: PDF তৈরি করতে ব্যর্থ হয়েছে
+    pk_prefix: PK –
+    placeholder: শীঘ্রই আসছে। এই বৈশিষ্ট্যটি AI ব্যবহার করে ডাটাবেস স্কিমা ডিজাইন করতে সহায়তা করবে।
+    priority_actions: শীর্ষ অগ্রাধিকার পদক্ষেপসমূহ
+    proposed_reference_table: প্রস্তাবিত রেফারেন্স টেবিল
+    rag_ask: জিজ্ঞাসা করুন
+    rag_chat: RAG চ্যাট — আপনার ডেটা সম্পর্কে প্রশ্ন করুন
+    rag_chat_desc: স্বাভাবিক ভাষায় প্রশ্ন করুন। সিস্টেম টেক্সট কলাম অনুসন্ধান করে এবং উদ্ধৃতিসহ AI-উৎপন্ন উত্তর প্রদান করে।
+    rag_error: RAG কোয়েরি ব্যর্থ হয়েছে
+    rag_placeholder: যেমন, সাধারণ রোগনির্ণয়গুলো কী কী?
+    rag_sources: উৎসসমূহ
+    research_capabilities: গবেষণা সক্ষমতা
+    risk_breakdown: ঝুঁকি বিভাজন
+    rows_label: সারি
+    schema_error: ডেটাবেস স্কিমা বিশ্লেষণ করা যায়নি
+    select_connection: ডেটাবেস সংযোগ নির্বাচন করুন
+    select_connection_first: অনুগ্রহ করে প্রথমে একটি ডেটাবেস সংযোগ নির্বাচন করুন।
+    select_connection_placeholder: একটি ডেটাবেস সংযোগ বেছে নিন...
+    semantic_analysis: সেম্যান্টিক বিশ্লেষণ
+    semantic_analysis_desc: এআই-নির্ণীত কলামের অর্থ, আইএসআইসি ডোমেইন শ্রেণিবিন্যাস এবং কোড সিস্টেম সনাক্তকরণ।
+    semi_structured: আধা-কাঠামোবদ্ধ ডেটা বিশ্লেষণ
+    semi_structured_desc: এমবেডেড কোড, কীওয়ার্ড এবং প্যাটার্নের জন্য টেক্সট কলামগুলো বিশ্লেষণ করা হয়েছে।
+    table_purposes: টেবিলের উদ্দেশ্যসমূহ
+    tables_explorer: টেবিল এক্সপ্লোরার
+    tables_label: টেবিলসমূহ
+    timeout_error: বিশ্লেষণের সময়সীমা শেষ হয়েছে। ডেটাবেসটি খুব বড় হতে পারে বা এআই পরিষেবা অনুপলব্ধ থাকতে পারে।
+    timeout_log: ১৫ মিনিট পর বিশ্লেষণের সময়সীমা শেষ হয়েছে।
+    title: ডেটাবেস ডিজাইন সহায়ক
+    top_recommendations: শীর্ষ সুপারিশসমূহ
+    health_score_desc: Schema AI দ্বারা ডাটাবেসের সামগ্রিক স্বাস্থ্য মূল্যায়ন করা হয়েছে। 0 = গুরুতর কাঠামোগত সমস্যা, 100 = প্রোডাকশন-উপযোগী।
+    peer_tables: 'পিয়ার টেবিল:'
+    is_missing: অনুপস্থিত
+  dataclean:
+    chat_error: প্রতিক্রিয়া পাওয়া যায়নি
+    chat_placeholder: এই ডেটাসেট পরিষ্কার বা প্রস্তুত করার বিষয়ে জিজ্ঞাসা করুন...
+    column_tooltip: '{type} — {null_count}টি নাল, {unique_count}টি ইউনিক'
+    column_type:
+      category: বিভাগ
+      datetime: তারিখ/সময়
+      number: সংখ্যা
+      text: টেক্সট
+    description: এআই-চালিত ডেটাসেট পরিষ্কারকরণ এবং প্রস্তুতি।
+    empty_chat: একটি ডেটাসেট নির্বাচন করুন এবং এটি কীভাবে পরিষ্কার ও প্রস্তুত করবেন সে সম্পর্কে প্রশ্ন করা শুরু করুন।
+    enter_message: অনুগ্রহ করে একটি বার্তা লিখুন।
+    loading_schema: স্কিমা লোড হচ্ছে...
+    no_connection: অনুগ্রহ করে সেটিংস > এআই-এ একটি ডিফল্ট এআই সংযোগ কনফিগার করুন।
+    no_datasets: কোনো ডেটাসেট উপলব্ধ নেই। প্রথমে একটি ডেটাসেট আপলোড বা সংজ্ঞায়িত করুন।
+    placeholder: শীঘ্রই আসছে। এই বৈশিষ্ট্যটি এআই ব্যবহার করে ডেটাসেট পরিষ্কার ও প্রস্তুত করতে সহায়তা করবে।
+    schema_error: ডেটাসেট স্কিমা লোড করা যায়নি
+    schema_summary: '{rows}টি সারি, {cols}টি কলাম'
+    select_dataset: ডেটাসেট নির্বাচন করুন
+    select_dataset_first: অনুগ্রহ করে প্রথমে একটি ডেটাসেট নির্বাচন করুন।
+    select_dataset_placeholder: একটি ডেটাসেট বেছে নিন...
+    send: পাঠান
+    shared_badge: (শেয়ারকৃত)
+    title: ডেটাসেট পরিষ্কারকরণ সহায়ক
+    preview_title: ডেটা প্রিভিউ
+    no_dataset_selected: কোনো ডেটাসেট নির্বাচন করা হয়নি
+    clean_name_label: পরিষ্কার করা কপির নাম
+    operations_count: '{count} অপারেশন'
+    rules_title: প্রস্তুতির নিয়ম
+    clean_in_place_success: ডেটাসেট '{name}' আপডেট করা হয়েছে।
+    no_rules: এখনও কোনো নিয়ম নেই
+    clean_copy_success: একটি নতুন ডেটাসেট '{name}' তৈরি করা হয়েছে — মূলটি অপরিবর্তিত রয়েছে।
+    clean_in_place: স্থানে পরিষ্কার করুন
+    clean_no_rules: এখনও প্রয়োগ করার জন্য কোনো পরিষ্কারের নিয়ম নেই।
+    clean_copy: পরিষ্কার কপি
+  default_hint: যখন কোনো বিশ্লেষণ রেসিপি এআই প্রদানকারী নির্দিষ্ট করে না, তখন ডিফল্ট সংযোগটি ফলব্যাক হিসেবে ব্যবহৃত হয়।
+  new_session: নতুন সেশন
+  no_ai_connections: কোনো এআই সংযোগ কনফিগার করা নেই। সেটিংস > এআই-এ একটি যোগ করুন।
+  recipe:
+    chat_error: প্রতিক্রিয়া পাওয়া যায়নি
+    chat_placeholder: পরিসংখ্যানগত বিশ্লেষণ বা রেসিপি কনফিগারেশন সম্পর্কে জিজ্ঞাসা করুন...
+    description: এআই-চালিত রেসিপি এবং বিশ্লেষণ নিয়ম তৈরি।
+    empty_chat: একটি ডেটাসেট নির্বাচন করুন এবং কোন পরিসংখ্যানগত কৌশল ব্যবহার করবেন সে সম্পর্কে জিজ্ঞাসা করুন।
+    enter_message: অনুগ্রহ করে একটি বার্তা লিখুন।
+    loading_schema: স্কিমা লোড হচ্ছে...
+    no_datasets: কোনো ডেটাসেট উপলব্ধ নেই। প্রথমে একটি ডেটাসেট আপলোড বা সংজ্ঞায়িত করুন।
+    placeholder: শীঘ্রই আসছে। এই বৈশিষ্ট্যটি এআই ব্যবহার করে বিশ্লেষণ রেসিপি তৈরি করতে সহায়তা করবে।
+    schema_summary: '{rows}টি সারি, {cols}টি কলাম'
+    select_dataset: ডেটাসেট নির্বাচন করুন
+    select_dataset_first: অনুগ্রহ করে প্রথমে একটি ডেটাসেট নির্বাচন করুন।
+    select_dataset_placeholder: একটি ডেটাসেট বেছে নিন...
+    send: পাঠান
+    title: বিশ্লেষণ নিয়ম সহায়ক
+  recipe_concierge:
+    chat_error: প্রতিক্রিয়া পাওয়া যায়নি
+    create_prompt: শুরু করতে একটি নতুন সেশন তৈরি করুন।
+    delete_session: সেশন মুছুন
+    draft_empty: আপনার রেসিপি তৈরি করতে একটি কথোপকথন শুরু করুন। আপনি সিদ্ধান্ত নেওয়ার সাথে সাথে খসড়াটি এখানে উপস্থিত হবে।
+    draft_title: রেসিপি খসড়া
+    input_placeholder: আপনার ডেটা সম্পর্কে জিজ্ঞাসা করুন... অথবা শুধু "হাই" বলুন
+    manual_label: ম্যানুয়াল রেসিপি
+    new_session: নতুন সেশন
+    no_session: কোনো সেশন নির্বাচন করা হয়নি
+    no_sessions: এখনও কোনো সেশন নেই
+    open: এডিটরে খুলুন
+    save: রেসিপি সংরক্ষণ করুন
+    saved: রেসিপি সংরক্ষিত হয়েছে!
+    saving: সংরক্ষণ হচ্ছে...
+    select_dataset: ডেটাসেট নির্বাচন করুন...
+    stage_columns: কলাম নির্বাচন করুন
+    stage_complete: রেসিপি প্রস্তুত
+    stage_goal: গবেষণা প্রশ্ন
+    stage_greeting: স্বাগতম
+    stage_review: রেসিপি পর্যালোচনা
+    stage_technique: কৌশল বেছে নিন
+    stage_transforms: ডেটা প্রস্তুতি
+    stage_visualisation: ভিজ্যুয়ালাইজেশন
+    status_draft: খসড়া
+    status_ready: প্রস্তুত
+    tab_chat: চ্যাট
+    tab_draft: খসড়া
+    tab_sessions: সেশনসমূহ
+    title: এআই রেসিপি কনসিয়ার্জ
+    toggle_panel: রেসিপি প্যানেল টগল করুন
+    welcome: আপনার ডেটায় কী আবিষ্কার করতে চান তা আমাকে বলুন, এবং আমি আপনাকে একটি সম্পূর্ণ বিশ্লেষণ রেসিপি তৈরি করতে সহায়তা করব।
+    schema_changes: 'স্কিমা পরিবর্তন সনাক্ত করা হয়েছে:'
+    draft_dataset: ডেটাসেট
+    errors_heading: এখনও সংরক্ষণ করা যাবে না
+    warnings_heading: সতর্কতা
+    draft_algorithm: অ্যালগরিদম
+    draft_no_visualisation: সংখ্যাসূচক ফলাফল
+    draft_output: আউটপুট
+    progress_decided: '{total}টির মধ্যে {count}টি সিদ্ধান্ত নেওয়া হয়েছে'
+    done: সম্পন্ন
+    progress_next: '{progress} · {next}'
+    chip_withheld: +{count} আরও
+    chip_superseded: একটি নতুন অফার দ্বারা প্রতিস্থাপিত হয়েছে।
+    unread_sources: কিছু উৎস পড়া যায়নি, তাই কলামের তালিকা অসম্পূর্ণ থাকতে পারে।
+    chip_expand: আরও {count}টি দেখুন
+    chip_collapse: কম দেখুন
+  select_ai_connection: এআই সংযোগ
+  select_ai_connection_placeholder: এআই সংযোগ নির্বাচন করুন...
+  select_model: মডেল
+  select_model_placeholder: মডেল নির্বাচন করুন...
+  test_error: সংযোগ ব্যর্থ হয়েছে।
+  test_success: সংযোগ সফল হয়েছে!
+  title: এআই সেটিংস
+  thinking: ভাবছি...
+  testing:
+    slow_limit_failed: আপনার স্লো-মডেল সীমা পড়া যায়নি, তাই কোনো মডেলকে অতিরিক্ত ধীর হিসেবে চিহ্নিত করা হয়নি। {detail}
+    cost_confirm: রান শুরু করুন
+    discover_models: মডেল আবিষ্কার করুন
+    slow_limit_session_label: স্লো-মডেল সীমা
+    no_duration_here: এই সংযোগে চালানো হয়নি
+    no_connections_heading: এখনও কোনো AI সংযোগ নেই
+    test_tools: টুলস ব্যবহার করে
+    cost_warning: এটি {count}টি পরীক্ষা চালায়, এবং টার্ন পরীক্ষা CPU-তে প্রতি মডেলে কয়েক মিনিট সময় নেয়। শুরু করতে আবার চাপুন।
+    discover_running: সার্ভারকে জিজ্ঞাসা করা হচ্ছে…
+    slow_limit_session_reset: আমার সংরক্ষিত সীমা ব্যবহার করুন
+    too_slow: আপনার {seconds} সেকেন্ড সীমার বেশি
+    running: চলছে…
+    run_test: পরীক্ষা চালান
+    slow_limit_session_link: আপনার প্রোফাইলে এটি স্থায়ীভাবে সেট করুন
+    title: AI পরীক্ষা
+    elsewhere_note: একটি মডেল অন্য সংযোগ থেকে একটি সক্ষমতার ফলাফল ধরে রাখতে পারে। প্রতিটি অবস্থার পাশের সময়কাল এই সংযোগের নিজস্ব পরিমাপ, তাই কোনো মডেল এখানে সময়কাল ছাড়াই একটি অবস্থা দেখাতে পারে।
+    slow_limit_unavailable: আপনার সেটিংসে কোনো স্লো-মডেল সীমা ছিল না, তাই কোনো মডেলকে অতিরিক্ত ধীর হিসেবে চিহ্নিত করা হয়নি।
+    no_models: এই সংযোগে এখনও কোনো মডেল আবিষ্কার হয়নি।
+    column_model: মডেল
+    run_all_for_model: এই মডেলের জন্য সব চালান
+    slow_limit_session_hint: শুধুমাত্র এই পৃষ্ঠায় প্রযোজ্য — সংরক্ষিত হয় না।
+    models_heading: মডেল
+    run_all_untested: অপরীক্ষিত মডেলগুলোর ওপর প্রতিটি পরীক্ষা চালান
+    discover_result: 'সার্ভার {seen}টি মডেল তালিকাভুক্ত করেছে: {created} নতুন, {refreshed} ইতিমধ্যে পরিচিত, {pruned} আর পরিবেশিত নয়'
+    explanation: Workbench-এর AI কনসিয়ার্জগুলো এমন মডেলের জন্য তৈরি যারা কাজ করে। যে মডেল কেবল কথা বলে — যতই ভদ্র হোক, যতই বড় হোক — রেসিপি এডিটরকে সাড়া দেওয়া অবস্থায় রেখে দেবে, কিন্তু আসলে কিছুই করবে
+      না। সমাধান মডেলের, কোডের নয়। এই পৃষ্ঠার টুলটি দিয়ে আপনি পরীক্ষা করতে পারবেন কোনো মডেল উপযুক্ত কি না।
+    state_fail: ব্যর্থ
+    load_error: আপনার AI সংযোগগুলো লোড করা যায়নি। {detail}
+    run_failed: 'পরীক্ষাটি চালানো যায়নি: {detail}'
+    test_competence: দক্ষতা
+    discover_failed: 'মডেল আবিষ্কার করা যায়নি: {detail}'
+    column_actions: পরীক্ষা
+    enabled_no: মডেল নিষ্ক্রিয়
+    no_connections_body: একটি মডেল পরীক্ষা করতে একটি AI সংযোগ প্রয়োজন। একটি যোগ করুন, তারপর এই পৃষ্ঠায় ফিরে আসুন।
+    connection_label: AI সংযোগ
+    test_turn: জটিলতা
+    duration_seconds: '{seconds} সেকেন্ড'
+    column_enabled: সক্রিয়
+    failure_reason: 'কারণ: {reason}'
+    duration_ms: '{ms} মি.সে.'
+    state_pass: সফল
+    no_connections_link: এআই সংযোগগুলোতে যান
+    cancelled: বন্ধ করা হয়েছে। ইতিমধ্যে রেকর্ড করা ফলাফল রাখা হয়েছে।
+    enabled_yes: মডেল সক্রিয়
+api:
+  admin:
+    already_full_admin: ব্যবহারকারী ইতিমধ্যে একজন ফুল অ্যাডমিন
+    already_group_admin: ব্যবহারকারী ইতিমধ্যে একজন গ্রুপ অ্যাডমিন
+    cannot_delete_self: আপনি নিজের অ্যাকাউন্ট মুছতে পারবেন না
+    cannot_demote_full_admin: একজন ফুল অ্যাডমিনকে ডিমোট করা যাবে না
+    cannot_demote_self: আপনি নিজেকে ডিমোট করতে পারবেন না
+    cannot_promote_example: উদাহরণ ব্যবহারকারীকে প্রমোট করা যাবে না
+    delete_error: ব্যবহারকারী মুছতে ব্যর্থ হয়েছে
+    demote_error: ব্যবহারকারীকে ডিমোট করতে ব্যর্থ হয়েছে
+    description_required: বিবরণ খালি থাকতে পারবে না
+    example_blocked: উদাহরণ ব্যবহারকারীরা অ্যাডমিন কার্যক্রম সম্পাদন করতে পারে না
+    group_not_found: গ্রুপ পাওয়া যায়নি
+    group_users_load_error: গ্রুপ ব্যবহারকারী লোড করতে ব্যর্থ হয়েছে
+    groups_load_error: গ্রুপগুলো লোড করতে ব্যর্থ হয়েছে
+    groups_stats_error: গ্রুপ পরিসংখ্যান লোড করতে ব্যর্থ হয়েছে
+    instance_exists: টাইপটি মুছে ফেলা যাবে না কারণ এর সাথে {count}টি সম্পর্কিত ইনস্ট্যান্স রয়েছে।
+    insufficient_permissions: এই কার্যক্রমের জন্য পর্যাপ্ত অনুমতি নেই
+    invalid_group_id: অবৈধ group_id। অবশ্যই 00-99 হতে হবে
+    invalid_id: অবৈধ আইডি
+    invalid_upload_count: maxUploadCount অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (0 মানে সীমাহীন)।
+    invalid_upload_size: maxUploadSizeMB অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (0 মানে সীমাহীন)।
+    missing_fields: প্রয়োজনীয় ফিল্ড অনুপস্থিত
+    missing_group_id: গ্রুপ আইডি অনুপস্থিত
+    missing_id: আইডি অনুপস্থিত
+    missing_model_id: মডেল আইডি অনুপস্থিত
+    missing_provider_code: providerCode প্যারামিটার অনুপস্থিত
+    missing_user_id: userId অনুপস্থিত
+    model_update_error: মডেল আপডেট করতে ব্যর্থ হয়েছে
+    models_load_error: মডেলগুলো লোড করতে ব্যর্থ হয়েছে
+    no_fields: আপডেট করার মতো কোনো বৈধ ফিল্ড নেই
+    no_group: ব্যবহারকারীকে কোনো গ্রুপ বরাদ্দ করা হয়নি
+    not_group_admin: ব্যবহারকারী গ্রুপ অ্যাডমিন নন
+    only_full_admin: শুধুমাত্র ফুল অ্যাডমিনরা এই কার্যক্রম সম্পাদন করতে পারবেন
+    promote_error: ব্যবহারকারীকে প্রমোট করতে ব্যর্থ হয়েছে
+    provider_delete_error: প্রোভাইডার মুছতে ব্যর্থ হয়েছে
+    provider_not_found: প্রোভাইডার পাওয়া যায়নি
+    provider_update_error: প্রোভাইডার আপডেট করতে ব্যর্থ হয়েছে
+    providers_load_error: প্রোভাইডারগুলো লোড করতে ব্যর্থ হয়েছে
+    slug_exists: স্লাগ ইতিমধ্যে বিদ্যমান
+    update_error: ব্যবহারকারী আপডেট করতে ব্যর্থ হয়েছে
+    user_load_error: ব্যবহারকারী লোড করতে ব্যর্থ হয়েছে
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+    users_load_error: ব্যবহারকারীগুলো লোড করতে ব্যর্থ হয়েছে
+    viz_type_create_error: ভিজ্যুয়ালাইজেশন টাইপ তৈরি করতে ব্যর্থ হয়েছে
+    viz_type_delete_error: ভিজ্যুয়ালাইজেশন টাইপ মুছতে ব্যর্থ হয়েছে
+    viz_type_update_error: ভিজ্যুয়ালাইজেশন টাইপ আপডেট করতে ব্যর্থ হয়েছে
+    viz_types_load_error: ভিজ্যুয়ালাইজেশন টাইপগুলো লোড করতে ব্যর্থ হয়েছে
+    settings_view_forbidden: শুধুমাত্র পূর্ণ অ্যাডমিনরা গ্লোবাল সেটিংস দেখতে পারেন
+    settings_load_error: গ্লোবাল সেটিংস লোড করতে ব্যর্থ হয়েছে
+    settings_invalid_upload_size: ডিফল্ট সর্বোচ্চ আপলোড সাইজ অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+    settings_invalid_max_registrations: সর্বোচ্চ নিবন্ধন সংখ্যা অবশ্যই একটি ধনাত্মক সংখ্যা বা সীমাহীন হতে হবে
+    settings_invalid_public_url: পাবলিক URL ফরম্যাট অবৈধ
+    settings_invalid_email_timeout: ইমেইল যাচাইকরণের সময়সীমা অবশ্যই একটি ধনাত্মক সংখ্যা হতে হবে (ঘণ্টা)
+    settings_invalid_grace_period: নিবন্ধনের গ্রেস পিরিয়ড অবশ্যই একটি ধনাত্মক সংখ্যা হতে হবে (ঘণ্টা)
+    settings_save_error: গ্লোবাল সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে
+    settings_invalid_upload_count: ডিফল্ট সর্বোচ্চ আপলোড সংখ্যা অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+    settings_modify_forbidden: শুধুমাত্র পূর্ণ অ্যাডমিনরা গ্লোবাল সেটিংস পরিবর্তন করতে পারেন
+    settings_invalid_email_sender: প্রেরকের ইমেইল ঠিকানার ফরম্যাট অবৈধ
+  auth:
+    account_deleted: এই অ্যাকাউন্টটি মুছে ফেলা হয়েছে।
+    email_not_verified: ইমেইল যাচাই করা হয়নি। অনুগ্রহ করে আপনার ইনবক্স এবং স্প্যাম ফোল্ডার দেখুন।
+    example_user_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড পরিবর্তন নিষ্ক্রিয়
+    example_user_forgot_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড রিসেট নিষ্ক্রিয়
+    example_user_register_blocked: উদাহরণ ব্যবহারকারীরা নতুন অ্যাকাউন্ট তৈরি করতে পারে না
+    example_user_reset_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড রিসেট নিষ্ক্রিয়
+    internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    invalid_credentials: অবৈধ শংসাপত্র
+    invalid_current_password: বর্তমান পাসওয়ার্ড সঠিক নয়
+    invalid_token: অবৈধ বা মেয়াদোত্তীর্ণ টোকেন
+    missing_email: ইমেইল প্রয়োজন
+    missing_fields: ফিল্ড অনুপস্থিত
+    password_validation_failed: পাসওয়ার্ড যাচাইকরণ ব্যর্থ হয়েছে
+    token_expired: টোকেনের মেয়াদ শেষ হয়ে গেছে
+    unauthorized: অননুমোদিত
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  datasets:
+    delete_blocked: উদাহরণ ব্যবহারকারীরা ডেটাসেট মুছতে পারে না
+    example_blocked: উদাহরণ ব্যবহারকারীরা ডেটাসেট তৈরি করতে পারে না
+    proxy_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    update_blocked: উদাহরণ ব্যবহারকারীরা ডেটাসেট আপডেট করতে পারে না
+  profile:
+    name_required: নাম প্রয়োজন
+    update_failed: প্রোফাইল আপডেট করতে ব্যর্থ হয়েছে
+  recipes:
+    create_error: রেসিপি তৈরি করতে ব্যর্থ হয়েছে
+    dataset_not_found: ডেটাসেট পাওয়া যায়নি
+    dataset_required: datasetId প্রয়োজন
+    delete_error: রেসিপি মুছতে ব্যর্থ হয়েছে
+    execute_error: রেসিপি এক্সিকিউট করতে ব্যর্থ হয়েছে
+    execution_load_error: এক্সিকিউশন লোড করতে ব্যর্থ হয়েছে
+    execution_not_found: এক্সিকিউশন পাওয়া যায়নি
+    executions_load_error: এক্সিকিউশনগুলো লোড করতে ব্যর্থ হয়েছে
+    load_error: রেসিপিগুলো লোড করতে ব্যর্থ হয়েছে
+    missing_id: রেসিপি আইডি প্রয়োজন
+    name_required: নাম এবং ধাপ প্রয়োজন
+    not_found: রেসিপি পাওয়া যায়নি
+    not_owned: রেসিপি পাওয়া যায়নি বা মালিকানাধীন নয়
+    update_error: রেসিপি আপডেট করতে ব্যর্থ হয়েছে
+  register:
+    email_exists: ইমেইল ইতিমধ্যে বিদ্যমান
+    internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    invalid_email: অবৈধ ইমেইল ফরম্যাট
+    limit_reached: নিবন্ধনের সীমা পূর্ণ হয়েছে (সর্বোচ্চ {max_reg} জন ব্যবহারকারী)।
+    missing_fields: ফিল্ড অনুপস্থিত
+    password_validation_failed: পাসওয়ার্ড যাচাইকরণ ব্যর্থ হয়েছে
+    settings_not_found: গ্লোবাল সেটিংস পাওয়া যায়নি
+  settings:
+    load_failed: সেটিংস লোড করতে ব্যর্থ হয়েছে
+    save_failed: সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  user:
+    api_key_required: এই প্রোভাইডারের জন্য API কী প্রয়োজন
+    connection_name_exists: এই নামে একটি সংযোগ ইতিমধ্যে বিদ্যমান
+    connection_not_found: সংযোগ পাওয়া যায়নি
+    example_blocked: উদাহরণ ব্যবহারকারীরা এই কাজটি করতে পারে না
+    internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    missing_fields: প্রয়োজনীয় ক্ষেত্রসমূহ অনুপস্থিত
+    provider_not_found: প্রোভাইডার "{provider}" খুঁজে পাওয়া যায়নি
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  global_settings_load_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+app:
+  name: স্ট্যাটিস্টিশিয়ানস ওয়ার্কবেঞ্চ
+  version: সংস্করণ
+chat:
+  connection_not_found: AI সংযোগটি পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+  connections_load_error: সংযোগগুলো লোড করতে ব্যর্থ হয়েছে
+  delete: মুছুন
+  delete_confirm: আপনি কি নিশ্চিত যে এই চ্যাটটি মুছতে চান?
+  delete_error: চ্যাট মুছতে ব্যর্থ হয়েছে
+  delete_success: চ্যাট মুছে ফেলা হয়েছে
+  empty_state: কথোপকথন শুরু করতে একটি বার্তা পাঠান।
+  go_to_ai_settings: এআই সেটিংসে যান
+  history: চ্যাট ইতিহাস
+  input_placeholder: আপনার বার্তা লিখুন...
+  load_error: চ্যাটগুলো লোড করতে ব্যর্থ হয়েছে
+  models_load_error: মডেল লোড করতে ব্যর্থ হয়েছে
+  new_chat: নতুন চ্যাট
+  no_chat_selected: কোনো সক্রিয় চ্যাট নেই
+  no_chats: এখনও কোনো চ্যাট নেই
+  no_connections_message: চ্যাট ব্যবহার করার আগে আপনাকে অন্তত একটি এআই সংযোগ নির্ধারণ করতে হবে।
+  no_models: এই সংযোগের জন্য কোনো মডেল উপলব্ধ নেই
+  rename: নাম পরিবর্তন করুন
+  rename_empty: শিরোনাম খালি থাকতে পারবে না
+  rename_error: চ্যাটের নাম পরিবর্তন করতে ব্যর্থ হয়েছে
+  rename_success: চ্যাটের নাম পরিবর্তন করা হয়েছে
+  select_connection: এআই সংযোগ
+  select_connection_first: অনুগ্রহ করে প্রথমে একটি এআই সংযোগ নির্বাচন করুন।
+  select_connection_placeholder: একটি এআই সংযোগ নির্বাচন করুন
+  select_model: মডেল
+  select_model_placeholder: একটি মডেল নির্বাচন করুন
+  send_error: বার্তা পাঠাতে ব্যর্থ হয়েছে
+  title: চ্যাট
+common:
+  access_denied_admin: প্রবেশাধিকার প্রত্যাখ্যাত — শুধুমাত্র অ্যাডমিন।
+  audio_settings: অডিও সেটিংস
+  back: ফিরে যান
+  cancel: বাতিল করুন
+  cannot_undo: এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।
+  clear: পরিষ্কার করুন
+  close: বন্ধ করুন
+  close_navigation: নেভিগেশন বন্ধ করুন
+  copied: কপি করা হয়েছে!
+  copy: কপি করুন
+  copy_to_clipboard: ক্লিপবোর্ডে কপি করুন
+  delete: মুছুন
+  delete_chat: চ্যাট মুছুন
+  deleting: মুছে ফেলা হচ্ছে...
+  dismiss: খারিজ করুন
+  dismiss_error: ত্রুটি খারিজ করুন
+  dismiss_success: সাফল্য খারিজ করুন
+  edit: সম্পাদনা করুন
+  error_label: ত্রুটি
+  false_label: মিথ্যা
+  generating: তৈরি হচ্ছে...
+  has_more_information: আরও তথ্য রয়েছে
+  loading: লোড হচ্ছে...
+  microphone_off: মাইক্রোফোন বন্ধ
+  microphone_on: মাইক্রোফোন চালু
+  next: পরবর্তী
+  no_answer: কোনো উত্তর ফেরত আসেনি
+  no_permission: এই পৃষ্ঠাটি দেখার অনুমতি আপনার নেই।
+  open_navigation: নেভিগেশন খুলুন
+  reset_to_defaults: ডিফল্টে রিসেট করুন
+  restoring: পুনরুদ্ধার হচ্ছে...
+  save: সংরক্ষণ করুন
+  saving: সংরক্ষণ হচ্ছে...
+  select_language: ভাষা নির্বাচন করুন
+  sending: পাঠানো হচ্ছে...
+  speaker_off: স্পিকার বন্ধ
+  speaker_on: স্পিকার চালু
+  speech_input_unsupported: 'আপনার ব্রাউজারে স্পিচ ইনপুট সমর্থিত নয়। সামঞ্জস্যপূর্ণ ব্রাউজার: Google Chrome, Microsoft Edge, Opera, Samsung Internet।'
+  speech_mic_denied: মাইক্রোফোনের অনুমতি প্রত্যাখ্যান করা হয়েছে। অনুগ্রহ করে আপনার ব্রাউজার সেটিংসে মাইক্রোফোনের অনুমতি দিন।
+  speech_mic_failed: 'মাইক্রোফোন শুরু করতে ব্যর্থ হয়েছে: {error}।'
+  speech_network_error: স্পিচ রিকগনিশন নেটওয়ার্ক ত্রুটি — আপনার ইন্টারনেট সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।
+  speech_output_unsupported: 'আপনার ব্রাউজারে স্পিচ আউটপুট সমর্থিত নয়। সামঞ্জস্যপূর্ণ ব্রাউজার: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet।'
+  speech_recognition_error: 'স্পিচ রিকগনিশন ত্রুটি: {error}। আবার চেষ্টা করুন।'
+  success_label: সাফল্য
+  system_default: সিস্টেম ডিফল্ট
+  testing: পরীক্ষা হচ্ছে...
+  true_label: সত্য
+  unknown: অজানা
+  unknown_error: অজানা ত্রুটি
+  untitled: শিরোনামহীন
+  uploading: আপলোড হচ্ছে...
+  verifying: যাচাই করা হচ্ছে...
+  view: দেখুন
+  view_dataset: ডেটাসেট দেখুন
+  voice: কণ্ঠস্বর
+  audio_stop: বন্ধ করুন
+  audio_resume: পুনরায় শুরু করুন
+  audio_pause: বিরতি দিন
+  email_features_unavailable: ইমেইল-ভিত্তিক অ্যাকাউন্ট বৈশিষ্ট্যগুলো উপলব্ধ নেই।
+  probe_timeout_label: মডেল পরীক্ষার টাইমআউট (সেকেন্ড)
+  ai_models: AI মডেল
+  ai_max_tokens_label: সর্বোচ্চ আউটপুট টোকেন
+  connect_timeout_label: সংযোগ টাইমআউট (সেকেন্ড)
+  ai_timeout_label: সর্বোচ্চ AI সময়
+  ai_temperature_label: টেম্পারেচার
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: বন্ধ করুন
+    pitch_label: 'পিচ: {0}'
+    reset_to_defaults: ডিফল্টে রিসেট করুন
+    speed_label: 'গতি: {0}x'
+    system_default: সিস্টেম ডিফল্ট
+    title: অডিও সেটিংস
+    voice: কণ্ঠস্বর
+  example_user_badge: উদাহরণ ব্যবহারকারী
+  example_user_badge_tooltip: সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন
+  example_user_banner:
+    message: আপনি সিস্টেমটি কেবল-পঠন মোডে দেখছেন। সম্পূর্ণ অ্যাক্সেস পেতে নিবন্ধন করুন এবং রিসোর্স তৈরি ও পরিবর্তন করুন।
+    message_short: কেবল-পঠন মোড - সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন
+    register_button: সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন
+    register_short: নিবন্ধন করুন
+    title: উদাহরণ ব্যবহারকারী মোড
+  feature_gate:
+    upgrade_message: এই ফিচারটির জন্য কর্পোরেট লাইসেন্স প্রয়োজন। আপগ্রেড বিকল্পের জন্য Sentuny-এর সাথে যোগাযোগ করুন।
+    upgrade_title: কর্পোরেট ফিচার
+  group_admin_badge: গ্রুপ অ্যাডমিন
+  preparation_preview:
+    more_columns: +{0} আরও
+    null_value: 'null'
+    rows_removed: '{0} সরানো হয়েছে'
+  readonly_wrapper:
+    message: কেবল-পঠন মোড - এই কন্টেন্ট পরিবর্তন করতে সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন
+  return_banner:
+    link: আপনার সেশনে ফিরে যান
+    text: আপনি একটি AI রেসিপিতে কাজ করছিলেন।
+    recipe_text: আপনি একটি রেসিপিতে কাজ করছিলেন।
+    fallback_link: ফিরে যান
+    recipe_link: আপনার রেসিপিতে ফিরে যান
+  data_value:
+    some_content_not_shown: কিছু বিষয়বস্তু দেখানো হয়নি
+database:
+  connection:
+    add_first: আপনার প্রথম সংযোগ যোগ করুন
+    add_new: নতুন সংযোগ যোগ করুন
+    add_success: সংযোগ সফলভাবে যোগ করা হয়েছে
+    add_title: নতুন সংযোগ যোগ করুন
+    auto_create_tables: টেবিল ডেটাসেট স্বয়ংক্রিয়ভাবে তৈরি করুন
+    auto_create_title: ডেটাসেট স্বয়ংক্রিয়ভাবে তৈরি করুন
+    auto_create_views: ভিউ ডেটাসেট স্বয়ংক্রিয়ভাবে তৈরি করুন
+    auto_create_warnings_title: 'সংযোগ সংরক্ষিত হয়েছে, তবে ডেটাসেট স্বয়ংক্রিয়ভাবে তৈরিতে সতর্কতা ছিল:'
+    browse_tables: টেবিল ব্রাউজ করুন
+    by_label: দ্বারা
+    clear_default: ডিফল্ট সাফ করুন
+    currently_not_shared: ❌ বর্তমানে শেয়ার করা হয়নি
+    currently_shared: ✅ বর্তমানে গ্রুপের সাথে শেয়ার করা হয়েছে
+    database_label: ডেটাবেসের নাম
+    datasets_created: '{n}টি ডেটাসেট তৈরি হয়েছে'
+    db_create_badge: ডিবি তৈরি
+    default_badge: ডিফল্ট
+    default_cleared: ডিফল্ট সংযোগ সাফ করা হয়েছে
+    default_set: ডিফল্ট সংযোগ আপডেট করা হয়েছে
+    delete_button: মুছুন
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি সংযোগটি মুছতে চান?
+    delete_error: সংযোগ মুছতে ব্যর্থ হয়েছে
+    delete_title: সংযোগ মুছুন
+    deleted: সংযোগ মুছে ফেলা হয়েছে
+    edit_title: সংযোগ সম্পাদনা করুন
+    file_path_label: ফাইল পাথ
+    form_description: আপনার ডেটাবেস সংযোগের বিবরণ লিখুন।
+    group_label: গ্রুপ
+    host_label: হোস্ট
+    jet_host_label: Jet Server হোস্ট
+    jet_port_label: Jet Server পোর্ট
+    load_error: সংযোগসমূহ লোড করতে ব্যর্থ হয়েছে
+    name_label: সংযোগের নাম
+    name_placeholder: যেমন, প্রোডাকশন ডিবি
+    no_connections: এখনও কোনো ডেটাবেস সংযোগ সংরক্ষণ করা হয়নি।
+    not_found: সংযোগ পাওয়া যায়নি
+    password_label: পাসওয়ার্ড
+    port_label: পোর্ট
+    save_error: সংযোগ সংরক্ষণ করতে ব্যর্থ হয়েছে
+    select_type: ধরন নির্বাচন করুন
+    set_default: ডিফল্ট হিসেবে সেট করুন
+    shared_badge: শেয়ার করা হয়েছে
+    shared_description: এই সংযোগটি আপনার গ্রুপের অন্যান্য ব্যবহারকারীদের জন্য উপলব্ধ করুন।
+    shared_label: গ্রুপের সাথে শেয়ার করুন
+    shared_readonly: শেয়ার করা হয়েছে
+    shared_readonly_message: এই সংযোগটি আপনার সাথে শেয়ার করা হয়েছে। আপনি এটি দেখতে পারেন, তবে সম্পাদনা শুধুমাত্র মালিকের জন্য সীমাবদ্ধ।
+    tables_badge: টেবিল
+    test_button: সংযোগ পরীক্ষা করুন
+    test_failed: সংযোগ ব্যর্থ হয়েছে
+    test_incomplete: পরীক্ষা করার আগে অনুগ্রহ করে সব ক্ষেত্র পূরণ করুন
+    test_network_error: সংযোগ পরীক্ষা করার সময় নেটওয়ার্ক ত্রুটি হয়েছে।
+    test_success: সংযোগ সফল হয়েছে!
+    type_label: ডেটাবেসের ধরন
+    unknown_user: অজানা
+    update_success: সংযোগ সফলভাবে আপডেট হয়েছে
+    username_label: ব্যবহারকারীর নাম
+    probe_last_succeeded: সর্বশেষ সফল হয়েছে
+    probe_state:
+      no_permission: অনুমতি নেই
+      schema_error: স্কিমা পাঠযোগ্য নয়
+      unreachable: পৌঁছানো যায় না
+      reachable: পৌঁছানো যায়
+      no_database: কোনো ডাটাবেস নেই
+      unknown: পরীক্ষা করা হয়নি
+      incomplete: অসম্পূর্ণ সেটআপ
+      auth_failed: প্রমাণীকরণ ব্যর্থ হয়েছে
+    probe_minute_ago: ১ মিনিট আগে
+    probe_unsaved_hint: সংযোগ সংরক্ষিত হলে একবার পরীক্ষা করা হয়।
+    probe_never: কখনোই না
+    probe_check_failed: এই মুহূর্তে সংযোগ পরীক্ষা করা যায়নি।
+    probe_check_now: এখনই পরীক্ষা করুন
+    probe_auto_hint: সংযোগ তালিকা লোড হলে স্বয়ংক্রিয়ভাবে আপডেট হয়।
+    probe_minutes_ago: '{count} মিনিট আগে'
+    probe_no_success: কোনো সফল পরীক্ষা রেকর্ড করা হয়নি
+    probe_title: সর্বশেষ পরীক্ষা
+    probe_checked: পরীক্ষা করা হয়েছে
+    probe_hours_ago: '{count} ঘণ্টা আগে'
+    probe_hour_ago: ১ ঘণ্টা আগে
+    probe_just_now: এইমাত্র
+  default_hint: কোনো বিশ্লেষণ রেসিপি সংযোগ নির্দিষ্ট না করলে ডিফল্ট সংযোগটি ফলব্যাক হিসেবে ব্যবহৃত হয়।
+  title: ডেটাবেস সেটিংস
+datasets:
+  all_datasets: সমস্ত ডেটা
+  browse:
+    back: পিছনে
+    browse_tables: টেবিল ব্রাউজ করুন
+    column: কলাম
+    columns_title: কলাম — {table}
+    connections: সংযোগসমূহ
+    load_columns_error: কলাম লোড করতে ব্যর্থ হয়েছে
+    load_preview: প্রিভিউ লোড করুন
+    load_preview_error: প্রিভিউ লোড করতে ব্যর্থ হয়েছে
+    load_tables_error: টেবিল লোড করতে ব্যর্থ হয়েছে
+    nullable: নালযোগ্য
+    preview: প্রিভিউ
+    preview_hint: নমুনা সারি দেখতে "প্রিভিউ লোড করুন" ক্লিক করুন।
+    select_table_hint: টেবিলের কলাম ও প্রিভিউ ডেটা দেখতে একটি টেবিল নির্বাচন করুন।
+    tables: টেবিল
+    tables_count: '{count}টি টেবিল'
+    type: ধরন
+  by_label: দ্বারা
+  created_label: তৈরি হয়েছে
+  database_label: ডিবি
+  define_button: ডেটাবেস সংযোগ করুন
+  define_first: একটি ডেটাবেস সংযোগ করুন
+  delete:
+    confirm: এই ডেটাসেটটি মুছবেন?
+    error: ডেটাসেট মুছতে ব্যর্থ হয়েছে
+    success: ডেটাসেট '{id}' সফলভাবে মুছে ফেলা হয়েছে
+    title: মুছুন
+  description:
+    empty: উৎপন্ন বিবরণ খালি। অনুগ্রহ করে AI প্রদানকারীর কনফিগারেশন পরীক্ষা করুন।
+    error: বিবরণ তৈরি করতে ব্যর্থ হয়েছে।
+    generated: বিবরণ সফলভাবে তৈরি হয়েছে।
+    title: উৎপন্ন বিবরণ
+  detail:
+    created: তৈরি হয়েছে
+    descriptions: এআই বিবরণ
+    generated: উৎপন্ন
+    load_error: ডেটাসেট লোড করতে ব্যর্থ হয়েছে
+    model: মডেল
+    no_description: কোনো বিবরণ নেই
+    not_found: ডেটাসেট পাওয়া যায়নি
+    not_found_message: আপনি যে ডেটাসেটটি খুঁজছেন তা পাওয়া যায়নি।
+    overview: সারসংক্ষেপ
+    rows: সারিগুলো
+    storage_table: সংরক্ষিত টেবিল
+    rows_not_computed_hint: জয়েনটি এখনও চালানো হয়নি, তাই এখনও সারি সংখ্যা নেই।
+    storage_live: লাইভ ভিউ
+    rows_not_computed: গণনা করা হয়নি
+    materialize_failed: 'সংরক্ষিত টেবিলটি তৈরি করা যায়নি:'
+  list_error: ডেটাসেটগুলো লোড করতে ব্যর্থ হয়েছে
+  no_datasets: কোনো ডেটা উপলব্ধ নেই।
+  no_uploaded: এখনও কোনো আপলোড করা ডেটাসেট নেই।
+  preparation:
+    add_operation: অপারেশন যোগ করুন
+    add_rule: নিয়ম যোগ করুন
+    column_required: অপারেশনের জন্য একটি কলাম প্রয়োজন
+    columns_required: অপারেশনের জন্য কমপক্ষে একটি কলাম প্রয়োজন
+    delete_confirmation: আপনি কি নিশ্চিত যে আপনি রূপান্তর নিয়ম "{name}" মুছতে চান? এটি এটি ব্যবহার করে এমন যেকোনো রেসিপি থেকেও সরিয়ে দেওয়া হবে।
+    delete_error: রূপান্তর নিয়ম মুছতে ব্যর্থ হয়েছে
+    delete_title: রূপান্তর নিয়ম মুছুন
+    edit_rule: নিয়ম সম্পাদনা করুন
+    encode:
+      label: লেবেল
+      one_hot: ওয়ান-হট
+    fill:
+      constant: ধ্রুবক
+      drop: ড্রপ
+      mean: গড়
+      median: মধ্যমা
+      mode: প্রচুরক
+    filter_invalid: ফিল্টার অপারেশনের জন্য কলাম এবং মান প্রয়োজন
+    link:
+      description: এই ডেটাসেটটি পরিষ্কার এবং রূপান্তর করুন
+      title: রূপান্তরসমূহ
+    name_required: নিয়মের নাম প্রয়োজন
+    new_name_required: পুনঃনামকরণ অপারেশনের জন্য একটি নতুন নাম প্রয়োজন
+    new_rule: নতুন নিয়ম
+    no_rules: এই ডেটাসেটের জন্য কোনো রূপান্তর নিয়ম সংজ্ঞায়িত করা হয়নি।
+    operation:
+      convert_type: ধরন রূপান্তর করুন
+      drop_columns: কলাম ড্রপ করুন
+      encode: এনকোড করুন
+      fill_missing: অনুপস্থিত পূরণ করুন
+      filter: ফিল্টার
+      normalize: স্বাভাবিক করুন
+      rename_column: কলাম পুনঃনামকরণ করুন
+      standardize: মানক করুন
+    operations: অপারেশনসমূহ
+    operations_count: অপারেশন(গুলো)
+    operator:
+      after: পরে (>)
+      before: আগে (<)
+      contains: ধারণ করে
+      ends_with: দিয়ে শেষ হয়
+      equal_to: সমান (=)
+      greater_than: এর চেয়ে বড় (>)
+      greater_than_or_equal: এর চেয়ে বড় বা সমান (>=)
+      less_than: এর চেয়ে ছোট (<)
+      less_than_or_equal: এর চেয়ে ছোট বা সমান (<=)
+      not_contains: ধারণ করে না
+      not_equal: সমান নয় (!=)
+      on_or_after: তারিখ বা পরে (>=)
+      on_or_before: তারিখ বা আগে (<=)
+      starts_with: দিয়ে শুরু হয়
+    original_data: মূল ডেটা
+    placeholder:
+      boolean: সত্য / মিথ্যা
+      datetime: YYYY-MM-DD বা টাইমস্ট্যাম্প...
+      number: একটি সংখ্যা লিখুন...
+      value: একটি মান লিখুন...
+    preview: প্রাকদর্শন
+    preview_error: নিয়ম প্রাকদর্শন করতে ব্যর্থ হয়েছে
+    preview_title: প্রাকদর্শন
+    rows_after: পরে
+    rows_before: আগে
+    rows_removed: সরানো হয়েছে
+    rule_created: প্রস্তুতি নিয়ম '{name}' সফলভাবে তৈরি করা হয়েছে
+    rule_deleted: প্রস্তুতি নিয়ম সফলভাবে মুছে ফেলা হয়েছে
+    rule_description: বিবরণ (ঐচ্ছিক)
+    rule_description_placeholder: সংক্ষিপ্ত বিবরণ
+    rule_name: নিয়মের নাম
+    rule_name_placeholder: যেমন, বিশ্লেষণের জন্য পরিষ্কার
+    rule_updated: প্রস্তুতি নিয়ম সফলভাবে আপডেট করা হয়েছে
+    rules_title: রূপান্তর নিয়মসমূহ
+    save_error: রূপান্তর নিয়ম সংরক্ষণ করতে ব্যর্থ হয়েছে
+    shared: গ্রুপের সাথে শেয়ার করুন
+    transformed_data: রূপান্তরিত ডেটা
+    type:
+      boolean: বুলিয়ান
+      datetime: তারিখ ও সময়
+      numeric: সংখ্যাসূচক
+      string: স্ট্রিং
+    ui:
+      column: কলাম
+      columns: কলামসমূহ (কমা দিয়ে পৃথক করা)
+      encoding: এনকোডিং
+      method: পদ্ধতি
+      new_name: নতুন নাম
+      operator: অপারেটর
+      target_type: লক্ষ্য ধরন
+      type: ধরন
+      value: মান
+  rules_button: নিয়মসমূহ
+  schema:
+    column_name: কলাম
+    column_type: ধরন
+    columns: কলাম
+    load_error: 'স্কিমা লোড করা যায়নি: {error}'
+    no_sample_data: কোনো নমুনা ডেটা উপলব্ধ নেই
+    null_count: নাল মান
+    sample_data: নমুনা ডেটা (প্রথম ৫টি সারি)
+    title: স্কিমা প্রিভিউ
+    total_columns: মোট কলাম
+    total_rows: মোট সারি
+    unique_count: ইউনিক
+  share: শেয়ার করুন
+  share_error: শেয়ারিং আপডেট করতে ব্যর্থ হয়েছে
+  shared: ডেটাসেট শেয়ার করা হয়েছে
+  shared_badge: শেয়ার করা হয়েছে
+  source:
+    unknown_file: অজানা ফাইল
+  title: আমার ডেটা
+  transform_button: ট্রান্সফর্ম
+  transforms:
+    back: আমার ডেটায় ফিরে যান
+    create_button: তৈরি করুন
+    create_error: ট্রান্সফর্ম তৈরি করতে ব্যর্থ হয়েছে
+    create_new: নতুন ট্রান্সফর্ম
+    created_label: তৈরি হয়েছে
+    creating: তৈরি হচ্ছে…
+    delete_confirm: এই ট্রান্সফর্মটি মুছে ফেলবেন?
+    delete_error: ট্রান্সফর্ম মুছে ফেলতে ব্যর্থ হয়েছে
+    description_label: বিবরণ (ঐচ্ছিক)
+    for: '{name}-এর জন্য ট্রান্সফর্মসমূহ'
+    load_error: ট্রান্সফর্ম লোড করতে ব্যর্থ হয়েছে
+    name_label: নাম
+    no_transforms: এই ডেটাসেটের জন্য কোনো ট্রান্সফর্ম নির্ধারিত নেই।
+    operations_label: '{count}টি অপারেশন'
+    title: ট্রান্সফর্মসমূহ
+  type:
+    table: টেবিল
+    upload: আপলোড করা হয়েছে
+    view: ভিউ
+    virtual: ভার্চুয়াল
+    mysql: MySQL
+    notebook: নোটবুক
+    postgresql: PostgreSQL
+    mssql: MS SQL
+    access: MS Access
+    cleaned_copy: পরিষ্কার কপি
+  unknown_user: অজানা
+  unshare: শেয়ার বাতিল করুন
+  unshared: ডেটাসেট শেয়ার বাতিল করা হয়েছে
+  upload:
+    card_title: আপলোড করুন এবং বিবরণ দিন
+    connection_not_found: সংযোগ পাওয়া যায়নি। অনুগ্রহ করে একটি বৈধ AI সংযোগ নির্বাচন করুন।
+    description_label: বিবরণ (ঐচ্ছিক)
+    description_placeholder: এই ডেটার সংক্ষিপ্ত বিবরণ
+    error: ডেটাসেট আপলোড করা ব্যর্থ হয়েছে
+    file_label: ফাইল
+    file_selected: নির্বাচিত ফাইল
+    file_too_large: ফাইল সর্বোচ্চ {max}MB আপলোড সীমা অতিক্রম করেছে। এই আপলোড অনুমোদিত নয়।
+    generate_description: বিবরণ তৈরি করুন
+    history: আপলোড ইতিহাস
+    limit_reached: সীমায় পৌঁছেছে
+    limit_reached_message: আপনি অনুমোদিত সর্বোচ্চ সংখ্যক ডেটাসেটে ({count}) পৌঁছেছেন।
+    name_label: ডেটার নাম
+    name_placeholder: আমার ডেটা
+    no_connections: বিবরণ তৈরি করতে আপনাকে অন্তত একটি AI সংযোগ নির্ধারণ করতে হবে।
+    no_datasets: এখনও কোনো ডেটাসেট নেই
+    no_file: অনুগ্রহ করে প্রথমে একটি ফাইল নির্বাচন করুন।
+    no_name: অনুগ্রহ করে একটি ডেটাসেটের নাম লিখুন।
+    select_dataset: অনুগ্রহ করে প্রথমে একটি ডেটাসেট আপলোড বা নির্বাচন করুন।
+    shared_description: এই ডেটা আপনার গ্রুপের অন্যান্য ব্যবহারকারীদের জন্য উপলব্ধ করুন।
+    shared_group_hint: 'গ্রুপ: {group} - {description}'
+    shared_label: গ্রুপের সাথে শেয়ার করুন
+    success: ডেটাসেট '{name}' সফলভাবে আপলোড করা হয়েছে
+    title: ডেটা আপলোড করুন
+    upload_button: আপলোড করুন
+    escalation_retry: আবার চেষ্টা করুন
+    escalation_invalid: ১ এবং {max} এর মধ্যে সেকেন্ডে একটি পূর্ণসংখ্যা লিখুন
+    escalation_failed_at: '{seconds} সেকেন্ড পরে বিবরণের সময়সীমা শেষ হয়েছে।'
+    escalation_hint: এটি শুধুমাত্র এই প্রচেষ্টায় ব্যবহৃত হয়। যদি এই মডেলটির সাধারণত বেশি সময় লাগে, তবে প্রতিবার এটি না বাড়িয়ে সংযোগের মডেল সেটিংস টিউন করুন।
+    escalation_label: (সেকেন্ড) দিয়ে আবার চেষ্টা করুন
+  upload_button: ডেটা আপলোড করুন
+  upload_count: '{count}টি আপলোড'
+  upload_first: আপনার প্রথম ডেটা ফাইল আপলোড করুন
+  upload_first_file: আপনার প্রথম ফাইল আপলোড করুন
+  upload_new: নতুন ফাইল আপলোড করুন
+  uploaded_title: আপলোড করা ডেটা
+  view_dataset_title: ডেটাসেট দেখুন
+  view_schema: স্কিমা দেখুন
+  cleaned_badge: পরিষ্কার করা হয়েছে
+  filter:
+    no_match: এই ফিল্টারের সাথে মেলে এমন কোনো ডেটাসেট নেই।
+    shared: শেয়ার করা হয়েছে
+    cleaned: পরিষ্কার করা হয়েছে
+    postgresql: PostgreSQL
+    label: ফিল্টার
+    virtual: ভার্চুয়াল
+    mssql: MS SQL
+    access: MS Access
+    mysql: MySQL
+    not_shared: শেয়ার করা হয়নি
+    notebooks: নোটবুক
+    uploads: আপলোড
+    all: সব
+  source_unavailable: উৎস অনুপলব্ধ
+  created_from: '{name} থেকে তৈরি'
+  table_not_built: টেবিল তৈরি হয়নি
+define:
+  column_name: কলাম
+  column_type: ধরন
+  connection_label: ডেটাবেস সংযোগ
+  dataset_name: ডেটাসেটের নাম
+  dataset_name_placeholder: যেমন, গ্রাহক ডেটা
+  description_label: বিবরণ (ঐচ্ছিক)
+  description_placeholder: এই ডেটাসেটের সংক্ষিপ্ত বিবরণ
+  existing_none: কোনোটি নয়
+  existing_title: বিদ্যমান
+  go_to_db_settings: ডেটাবেস সেটিংসে যান
+  load_connections_error: সংযোগ লোড করতে ব্যর্থ হয়েছে
+  load_sources_error: উৎস লোড করতে ব্যর্থ হয়েছে
+  name_required: ডেটাসেটের নাম আবশ্যক
+  no_connections_message: একটি ডেটাবেসে সংযোগ করার আগে আপনাকে অন্তত একটি ডেটাবেস সংযোগ নির্ধারণ করতে হবে।
+  no_sources: এই ডেটাবেসে কোনো টেবিল বা ভিউ পাওয়া যায়নি।
+  nullable: নালযোগ্য
+  preview_label: ডেটা প্রিভিউ (প্রথম ১০টি সারি)
+  save_button: ডেটাসেট সংরক্ষণ করুন
+  save_error: ডেটাসেট তৈরি করতে ব্যর্থ হয়েছে
+  save_success: ডেটাসেট সফলভাবে তৈরি হয়েছে
+  schema_label: স্কিমা
+  select_connection: একটি সংযোগ নির্বাচন করুন
+  select_source: একটি উৎস নির্বাচন করুন
+  select_source_first: অনুগ্রহ করে প্রথমে একটি টেবিল বা ভিউ নির্বাচন করুন
+  shared_description: এই ডেটাসেটটি আপনার গ্রুপের অন্যান্য ব্যবহারকারীদের জন্য উপলব্ধ করুন।
+  shared_label: গ্রুপের সাথে শেয়ার করুন
+  source_label: উৎস
+  source_type_label: উৎসের ধরন
+  step1_description: ডেটাসেট সংযুক্ত করার জন্য একটি ডাটাবেস সংযোগ বেছে নিন।
+  step1_title: ডাটাবেস সংযোগ নির্বাচন করুন
+  step2_description: টেবিল নাকি ভিউ ব্যবহার করবেন তা বেছে নিন, তারপর উৎস নির্বাচন করুন।
+  step2_title: উৎস নির্বাচন করুন
+  step3_description: নির্বাচিত উৎসের কলাম পর্যালোচনা করুন এবং ডেটা প্রিভিউ দেখুন।
+  step3_title: উৎস যাচাই করুন
+  step4_description: আপনার ডেটাসেটের একটি নাম ও বিবরণ দিন, তারপর সংরক্ষণ করুন।
+  step4_title: নাম দিন ও সংরক্ষণ করুন
+  step_connection: সংযোগ
+  step_save: সংরক্ষণ করুন
+  step_source: উৎস
+  step_verify: যাচাই করুন
+  table: টেবিল
+  title: ডাটাবেস সংযুক্ত করুন
+  verify_button: উৎস যাচাই করুন
+  verify_error: টেবিল/ভিউ যাচাই করা যায়নি
+  verify_success: টেবিল/ভিউ সফলভাবে যাচাই করা হয়েছে
+  view: ভিউ
+demo:
+  badge: DEMO
+  banner:
+    message: এটি একটি প্রদর্শনমূলক সিস্টেম। ডেটা পর্যায়ক্রমে রিসেট হতে পারে।
+    title: ⚠️ ডেমো মোড
+forgot_password:
+  back_to_login: লগইনে ফিরে যান
+  check_spam: কয়েক মিনিটের মধ্যে ইমেইল না পেলে আপনার স্প্যাম ফোল্ডার দেখুন।
+  description: আপনার ইমেইল ঠিকানা লিখুন, আমরা আপনাকে পাসওয়ার্ড রিসেট করার একটি লিংক পাঠাবো।
+  error: রিসেট ইমেইল পাঠানো যায়নি
+  sent: এই ইমেইলে কোনো অ্যাকাউন্ট থাকলে, আপনি একটি পাসওয়ার্ড রিসেট লিংক পাবেন।
+  sent_description: এই ইমেইলে কোনো অ্যাকাউন্ট থাকলে, আপনি একটি পাসওয়ার্ড রিসেট লিংক পাবেন।
+  sent_title: ইমেইল পাঠানো হয়েছে
+  submit: রিসেট লিংক পাঠান
+  title: পাসওয়ার্ড ভুলে গেছেন?
+global:
+  demo_mode:
+    description: সক্রিয় করা হলে সিস্টেম ডেমো মোডে চলবে।
+    label: ডেমো মোড
+  email_sender:
+    hint: যাচাইকরণ ইমেইলগুলির প্রেরক হিসেবে যে ইমেইল ঠিকানা দেখানো হবে।
+    label: ইমেইল প্রেরকের ঠিকানা
+  email_timeout:
+    hint: ইমেইল যাচাইকরণ লিংক কত ঘণ্টা কার্যকর থাকবে।
+    label: ইমেইল যাচাইয়ের সময়সীমা (ঘণ্টা)
+  grace_period:
+    hint: সফট-ডিলিট করা অ্যাকাউন্ট স্থায়ীভাবে মুছে ফেলার আগের ঘণ্টা।
+    label: মুছে ফেলার বিলম্ব (ঘণ্টা)
+  invalid_grace_period: মুছে ফেলার বিলম্বের (ঘণ্টা) জন্য অনুগ্রহ করে একটি বৈধ ধনাত্মক সংখ্যা লিখুন
+  invalid_number: সর্বোচ্চ নিবন্ধনের জন্য অনুগ্রহ করে একটি বৈধ ধনাত্মক সংখ্যা লিখুন
+  invalid_timeout: যাচাইয়ের সময়সীমার (ঘণ্টা) জন্য অনুগ্রহ করে একটি বৈধ ধনাত্মক সংখ্যা লিখুন
+  load_error: গ্লোবাল সেটিংস লোড করা যায়নি
+  max_registrations:
+    custom: কাস্টম (নিচে লিখুন)
+    custom_placeholder: একটি ধনাত্মক সংখ্যা লিখুন
+    hint: কতজন ব্যবহারকারী নিবন্ধন করতে পারবেন তার একটি সীমা নির্ধারণ করুন।
+    label: সর্বোচ্চ ব্যবহারকারী নিবন্ধন সংখ্যা
+    placeholder: সীমা নির্বাচন করুন
+    unlimited: সীমাহীন
+    users: ব্যবহারকারী
+  password_policy:
+    custom: কাস্টম
+    high: উচ্চ (ন্যূনতম ১০, বড় হাতের অক্ষর, ছোট হাতের অক্ষর, সংখ্যা, বিশেষ অক্ষর)
+    hint: ব্যবহারকারী নিবন্ধন এবং পাসওয়ার্ড পরিবর্তনের জন্য পাসওয়ার্ড জটিলতার প্রয়োজনীয়তা নির্বাচন করুন।
+    label: পাসওয়ার্ড নীতি
+    low: নিম্ন (ন্যূনতম ৬ অক্ষর)
+    medium: মাঝারি (ন্যূনতম ৮, বড় হাতের অক্ষর, ছোট হাতের অক্ষর, সংখ্যা)
+    min_length: ন্যূনতম দৈর্ঘ্য
+    min_strength: ন্যূনতম শক্তি (zxcvbn স্কোর ০-৪)
+    require_digit: সংখ্যা আবশ্যক
+    require_lowercase: ছোট হাতের অক্ষর আবশ্যক
+    require_special: বিশেষ অক্ষর আবশ্যক
+    require_uppercase: বড় হাতের অক্ষর আবশ্যক
+    select: নীতি নির্বাচন করুন
+  public_url:
+    hint: 'ইমেইল যাচাইকরণ লিংকে ব্যবহৃত বেস URL (যেমন: https://workbench.example.com)।'
+    label: পাবলিক URL
+  save_button: গ্লোবাল সেটিংস সংরক্ষণ করুন
+  save_success: গ্লোবাল সেটিংস সংরক্ষণ করা হয়েছে
+  system:
+    description: সকল ব্যবহারকারীর জন্য প্রযোজ্য গ্লোবাল সেটিংস পরিচালনা করুন (শুধুমাত্র অ্যাডমিন)।
+    title: সিস্টেম কনফিগারেশন
+  title: গ্লোবাল সেটিংস
+  upload:
+    count_1: ১
+    count_10: ১০
+    count_100: ১০০
+    count_1000: ১০০০
+    count_25: ২৫
+    count_250: ২৫০
+    count_5: ৫
+    count_50: ৫০
+    count_500: ৫০০
+    count_hint: প্রতি ব্যবহারকারীর জন্য সর্বোচ্চ ডেটাসেট সংখ্যা (০ = সীমাহীন)। নতুন ব্যবহারকারীদের জন্য প্রযোজ্য।
+    count_unlimited: সীমাহীন
+    default_count_label: প্রতি ব্যবহারকারীর জন্য ডিফল্ট সর্বোচ্চ আপলোড সংখ্যা
+    default_size_label: প্রতি ব্যবহারকারীর জন্য ডিফল্ট সর্বোচ্চ আপলোড সাইজ (MB)
+    select_count: সীমা নির্বাচন করুন
+    select_size: সীমা নির্বাচন করুন
+    size_100_mb: ১০০ MB
+    size_10_mb: ১০ MB
+    size_1_gb: ১ GB
+    size_1_mb: ১ MB
+    size_250_mb: ২৫০ MB
+    size_25_mb: ২৫ MB
+    size_500_mb: ৫০০ MB
+    size_50_mb: ৫০ MB
+    size_5_mb: ৫ MB
+    size_hint: প্রতি ব্যবহারকারীর জন্য সর্বোচ্চ মোট স্টোরেজ (০ = সীমাহীন)। নতুন ব্যবহারকারীদের জন্য প্রযোজ্য।
+    size_unlimited: সীমাহীন
+  welcome:
+    hint: এই বার্তাটি লগইন পৃষ্ঠায় দেখানো হবে। লুকাতে খালি রাখুন।
+    label: স্বাগত বার্তা
+    placeholder: লগইন পৃষ্ঠায় দেখানোর জন্য একটি স্বাগত বার্তা লিখুন।
+home:
+  welcome_placeholder: পরিসংখ্যানবিদদের ওয়ার্কবেঞ্চে স্বাগতম
+licence:
+  admin_required: লাইসেন্স তথ্য দেখতে হলে আপনাকে অ্যাডমিন হতে হবে।
+  delete_button: লাইসেন্স মুছুন
+  delete_confirm: এটি সিস্টেমকে ওপেন-সোর্স মোডে ফিরিয়ে নেবে। সব গেটেড ফিচার নিষ্ক্রিয় হয়ে যাবে। নতুন লাইসেন্স ইনস্টল করে আপনি সেগুলো পুনরুদ্ধার করতে পারবেন।
+  delete_error: লাইসেন্স মুছতে ব্যর্থ হয়েছে।
+  delete_no: বাতিল করুন
+  delete_success: লাইসেন্স মুছে ফেলা হয়েছে। ওপেন-সোর্স মোডে চলছে।
+  delete_title: লাইসেন্স মুছুন
+  delete_yes: হ্যাঁ, লাইসেন্স মুছুন
+  description: বর্তমান ফিচার লাইসেন্স ও টিয়ার তথ্য।
+  details_label: লাইসেন্সের বিবরণ
+  expires_at_label: মেয়াদ শেষ হওয়ার তারিখ
+  features_label: সক্রিয় ফিচারসমূহ
+  install_button: লাইসেন্স ইনস্টল করুন
+  install_error: লাইসেন্স ইনস্টল করতে ব্যর্থ হয়েছে।
+  install_no_file: কোনো ফাইল নির্বাচন করা হয়নি।
+  install_success: লাইসেন্স সফলভাবে ইনস্টল হয়েছে।
+  issued_at_label: ইস্যু করা হয়েছে
+  issued_to_label: যাকে ইস্যু করা হয়েছে
+  load_error: লাইসেন্সের তথ্য লোড করতে ব্যর্থ হয়েছে।
+  max_users_label: লাইসেন্সপ্রাপ্ত ব্যবহারকারী
+  no_features: বর্তমানে কোনো গেটেড ফিচার সক্রিয় নেই।
+  open_source_message: এই ইনস্টলেশনটি ওপেন-সোর্স মোডে চলছে। কর্পোরেট লাইসেন্সে আপগ্রেড করতে Sentuny-এর সাথে যোগাযোগ করুন।
+  preview_error: লাইসেন্স ফাইল যাচাই করতে ব্যর্থ হয়েছে।
+  preview_invalid: অবৈধ লাইসেন্স ফাইল।
+  preview_title: লাইসেন্স প্রিভিউ
+  tier_label: টিয়ার
+  title: লাইসেন্সের অবস্থা
+  upload_title: লাইসেন্স ফাইল আপলোড করুন
+login:
+  account_deleted: এই অ্যাকাউন্টটি মুছে ফেলা হয়েছে।
+  description: আপনার অ্যাকাউন্টে সাইন ইন করুন
+  docs_more_info: আরও তথ্য রয়েছে
+  email: ইমেইল
+  email_not_verified: ইমেইল যাচাই করা হয়নি। অনুগ্রহ করে আপনার ইনবক্স ও স্প্যাম ফোল্ডার দেখুন।
+  email_verified: ইমেইল সফলভাবে যাচাই হয়েছে! আপনি এখন লগ ইন করতে পারেন।
+  forgot_password: পাসওয়ার্ড ভুলে গেছেন?
+  invalid_credentials: অবৈধ ইমেইল বা পাসওয়ার্ড।
+  invalid_token: অবৈধ যাচাই লিংক। অনুগ্রহ করে নতুন একটি অনুরোধ করুন।
+  missing_token: কোনো যাচাই টোকেন দেওয়া হয়নি।
+  no_account: অ্যাকাউন্ট নেই?
+  password: পাসওয়ার্ড
+  register_link: নিবন্ধন করুন
+  resend_link: যাচাই ইমেইল আবার পাঠাবেন?
+  signing_in: সাইন ইন হচ্ছে...
+  submit: লগইন
+  success: সফলভাবে লগ ইন হয়েছে
+  title: লগইন
+  token_expired: যাচাই লিংকের মেয়াদ শেষ হয়েছে। অনুগ্রহ করে নতুন একটি অনুরোধ করুন।
+nav:
+  about: সম্পর্কে
+  admin: অ্যাডমিন
+  admin_groups: গ্রুপ বিবরণ
+  admin_licence: লাইসেন্স
+  admin_panel: ব্যবহারকারী ব্যবস্থাপনা
+  admin_providers: এআই প্রোভাইডার
+  admin_setup: সেটআপ
+  admin_setup_internal: অভ্যন্তরীণ
+  admin_setup_limits: সীমা
+  admin_setup_options: বিকল্প
+  admin_visualization_types: ভিজ্যুয়ালাইজেশন ধরন
+  ai_analysis_rules: রেসিপি এডিটর
+  ai_chat: এআই টুলস
+  ai_database_design: ডাটাবেস ডিজাইন
+  ai_dataset_cleaning: ডেটাসেট পরিষ্করণ
+  ai_general: সাধারণ
+  ai_virtual_datasets: ভার্চুয়াল ডেটাসেট
+  home: হোম
+  logout: লগআউট
+  user: ব্যবহারকারী
+  ai_testing: AI পরীক্ষা
+  admin_setup_tuning: টিউনিং
+notebooks:
+  and_more: +{count} আরও
+  cant_create_tables: এই সংযোগটি টেবিল তৈরি করতে পারে না — ইম্পোর্ট প্রত্যাখ্যান করা হয়েছে
+  cells_label: 'সেল:'
+  connection_create_db_badge: ডিবি তৈরি
+  connection_form_label: সংযোগ
+  connection_tables_badge: টেবিল
+  connection_unavailable: ডাটাবেস সংযোগ পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+  create_dataset: স্বয়ংক্রিয়ভাবে ডেটাসেট তৈরি করুন
+  create_new_database: নতুন ডাটাবেস তৈরি করুন
+  dataframe_prefix: ডেটাফ্রেম
+  dataframes_label: 'ডেটাফ্রেমসমূহ:'
+  dataset_created: ডেটাসেট তৈরি হয়েছে
+  delete_confirm: '"{name}" ইম্পোর্টটি এবং এর সব টেবিল মুছবেন?'
+  delete_failed: ইম্পোর্ট মুছতে ব্যর্থ হয়েছে
+  delete_title: ইম্পোর্ট মুছুন
+  detected_dataframes: 'শনাক্তকৃত ডেটাফ্রেমসমূহ:'
+  doc_preview: 'ডকুমেন্টেশন প্রিভিউ:'
+  example_banner: আপনি উদাহরণ ব্যবহারকারী হিসেবে দেখছেন। নোটবুক ইম্পোর্ট ও পরিচালনা করতে নিবন্ধন করুন।
+  example_blocked: উদাহরণ ব্যবহারকারীরা নোটবুক ইম্পোর্ট করতে পারে না।
+  example_register: নিবন্ধন করুন
+  fetch_error: ইম্পোর্টসমূহ আনতে ব্যর্থ হয়েছে
+  import_button: নোটবুক ইম্পোর্ট করুন
+  import_complete: ইম্পোর্ট সম্পন্ন
+  import_deleted: ইম্পোর্ট মুছে ফেলা হয়েছে
+  import_failed: 'নোটবুক ইম্পোর্ট ব্যর্থ হয়েছে: {error}'
+  import_success: '{count}টি টেবিল সফলভাবে ইম্পোর্ট হয়েছে'
+  import_title: জুপিটার নোটবুক ইম্পোর্ট
+  imported_at_label: 'ইম্পোর্টের সময়:'
+  importing: ইম্পোর্ট করা হচ্ছে...
+  kb_unit: কেবি
+  kernel_label: 'কার্নেল:'
+  list_title: নোটবুক ইম্পোর্টসমূহ
+  no_dataframes: এই নোটবুকে কোনো ডেটাফ্রেম পাওয়া যায়নি
+  no_imports: এখনও কোনো নোটবুক ইমপোর্ট হয়নি।
+  notebook_label: 'নোটবুক:'
+  parse_error: নোটবুক পার্স করতে ব্যর্থ হয়েছে
+  parsing: পার্স করা হচ্ছে...
+  preview_button: প্রিভিউ
+  rows_cols_format: '{rows} সারি × {cols} কলাম'
+  run_preview_first: কী ইমপোর্ট হবে তা দেখতে প্রিভিউ চালান
+  sanitised_notice: নিরাপত্তার কারণে কোড সেলগুলো সরিয়ে দেওয়া হয়েছে। শুধুমাত্র ডেটা আউটপুট এবং মার্কডাউন সংরক্ষিত আছে।
+  select_connection: একটি ডেটাবেস সংযোগ নির্বাচন করুন
+  select_connection_placeholder: সংযোগ নির্বাচন করুন...
+  select_file_first: অনুগ্রহ করে একটি .ipynb ফাইল নির্বাচন করুন
+  share_error: শুধুমাত্র মালিক শেয়ারিং সেটিংস পরিবর্তন করতে পারবেন।
+  share_label: গ্রুপের সাথে শেয়ার করুন
+  shared: নোটবুক গ্রুপের সাথে শেয়ার করা হয়েছে
+  shared_badge: শেয়ার করা হয়েছে
+  size_label: 'আকার:'
+  step1_title: 'ধাপ ১: ফাইল নির্বাচন করুন'
+  step2_title: 'ধাপ ২: প্রিভিউ'
+  storage_form_label: স্টোরেজ
+  storage_label: 'স্টোরেজ:'
+  table_count: '{count} টেবিল{plural}'
+  tables_created_label: 'তৈরি করা টেবিল:'
+  title_label: 'শিরোনাম:'
+  unshared: নোটবুক শেয়ার বাতিল করা হয়েছে
+  table_name: 'টেবিল: {name}'
+password:
+  strength:
+    fair: মোটামুটি
+    good: ভালো
+    strong: শক্তিশালী
+    weak: দুর্বল
+preparation:
+  add_operation: অপারেশন যোগ করুন
+  after: পরে
+  back_to_list: নিয়মে ফিরে যান
+  before: আগে
+  cancel: বাতিল
+  col:
+    categorical: শ্রেণিগত
+    datetime: তারিখসময়
+    nulls: '{percent}% নাল'
+    numeric: সংখ্যাসূচক
+  cols: কলাম
+  column_label: কলাম
+  constant_value_label: ধ্রুবক মান
+  create_first: বিশ্লেষণের আগে এই ডেটাসেট পরিষ্কার ও প্রস্তুত করতে আপনার প্রথম ট্রান্সফর্ম তৈরি করুন।
+  delete: মুছুন
+  delete_confirm: নিয়ম "{name}" মুছবেন? এটি ফেরানো যাবে না।
+  description_label: বিবরণ (ঐচ্ছিক)
+  duplicate: প্রতিলিপি করুন
+  duplicate_suffix: (কপি)
+  edit: সম্পাদনা করুন
+  edit_title: 'নিয়ম সম্পাদনা করুন: {name}'
+  encoding:
+    label: লেবেল
+    onehot: ওয়ান-হট
+  encoding_param_label: এনকোডিং
+  live_preview: লাইভ প্রিভিউ
+  load_error: ডেটা লোড করতে ব্যর্থ হয়েছে
+  method:
+    minmax: মিন-ম্যাক্স
+    zscore: জেড-স্কোর
+  method_label: পদ্ধতি
+  name_label: নাম
+  name_required: নিয়মের নাম আবশ্যক
+  new_name_label: নতুন নাম
+  new_rule: নতুন নিয়ম
+  new_title: নতুন ট্রান্সফর্ম
+  no_rules: এখনও কোনো ট্রান্সফর্ম নেই
+  nulls: নাল
+  op:
+    convert_type: ধরন রূপান্তর করুন
+    drop_column: কলাম বাদ দিন
+    drop_duplicates: ডুপ্লিকেট বাদ দিন
+    encode_category: ক্যাটাগরি এনকোড করুন
+    fill_missing: অনুপস্থিত পূরণ করুন
+    filter: ফিল্টার
+    rename_column: কলামের নাম পরিবর্তন করুন
+    normalize: স্বাভাবিকীকরণ
+    standardize: মানকীকরণ
+  operations_count: '{count} অপারেশন{itemize}'
+  operations_label: অপারেশনসমূহ
+  operator_label: অপারেটর
+  ops_required: কমপক্ষে একটি অপারেশন আবশ্যক
+  preview: প্রিভিউ
+  preview_error: প্রিভিউ ব্যর্থ হয়েছে
+  preview_loading: প্রিভিউ করা হচ্ছে...
+  preview_no_ops: প্রিভিউ দেখতে অপারেশন যোগ করুন
+  row_impact: '{before} → {after} সারি'
+  rows: সারি
+  rule_deleted: নিয়ম মুছে ফেলা হয়েছে
+  rule_duplicated: নিয়ম প্রতিলিপি করা হয়েছে
+  rule_saved: নিয়ম সংরক্ষণ করা হয়েছে
+  rules_for: '{dataset} এর জন্য নিয়ম'
+  sample_data: নমুনা ডেটা
+  save: নিয়ম সংরক্ষণ করুন
+  save_error: নিয়ম সংরক্ষণ করতে ব্যর্থ হয়েছে
+  saving: সংরক্ষণ করা হচ্ছে...
+  schema_error: ডেটাসেট স্কিমা লোড করতে ব্যর্থ হয়েছে
+  select_column: -- কলাম নির্বাচন করুন --
+  select_type: -- অপারেশন নির্বাচন করুন --
+  strategy:
+    constant: ধ্রুবক
+    drop_row: সারি বাদ দিন
+    mean: গড়
+    median: মধ্যমা
+    mode: মোড
+  strategy_label: কৌশল
+  target_type_label: লক্ষ্যের ধরন
+  title: ট্রান্সফর্ম — {dataset}
+  type_label: অপারেশন
+  value_label: মান
+profile:
+  change_password:
+    description: আপনার পাসওয়ার্ড আপডেট করুন।
+    title: পাসওয়ার্ড পরিবর্তন করুন
+  change_password_button: পাসওয়ার্ড পরিবর্তন করুন
+  confirm_password: নতুন পাসওয়ার্ড নিশ্চিত করুন
+  current_password: বর্তমান পাসওয়ার্ড
+  current_password_required: বর্তমান পাসওয়ার্ড প্রয়োজন
+  dark_mode_description: লাইট ও ডার্ক থিমের মধ্যে টগল করুন।
+  dark_mode_label: ডার্ক মোড
+  email_label: ইমেইল
+  email_notifications_description: আপনার অ্যাকাউন্ট সম্পর্কে ইমেইল আপডেট গ্রহণ করুন।
+  email_notifications_label: ইমেইল বিজ্ঞপ্তি
+  email_unchangeable: ইমেইল পরিবর্তন করা যাবে না
+  example_user_language_hint: আপনার ভাষার পছন্দ পরিবর্তন করতে সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন।
+  example_user_name_hint: আপনার নাম পরিবর্তন করতে সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন।
+  example_user_notifications_hint: বিজ্ঞপ্তি সেটিংস পরিবর্তন করতে সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন।
+  example_user_save_hint: পরিবর্তন সংরক্ষণ করতে সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন।
+  example_user_theme_hint: থিম পছন্দ পরিবর্তন করতে সম্পূর্ণ অ্যাক্সেসের জন্য নিবন্ধন করুন।
+  group_description: বিবরণ
+  group_id: গ্রুপ আইডি
+  group_info_title: গ্রুপের তথ্য
+  group_load_error: গ্রুপের তথ্য লোড করা ব্যর্থ হয়েছে
+  group_readonly_hint: আপনার গ্রুপ একজন প্রশাসক দ্বারা নির্ধারিত এবং এখানে পরিবর্তন করা যাবে না।
+  language_description: ইন্টারফেসের জন্য আপনার পছন্দের ভাষা বেছে নিন।
+  language_label: ভাষা
+  language_select_placeholder: ভাষা নির্বাচন করুন
+  languages_load_error: ভাষা লোড করা ব্যর্থ হয়েছে
+  load_error: সেটিংস লোড করা ব্যর্থ হয়েছে
+  name_label: নাম
+  name_placeholder: আপনার নাম
+  new_password: নতুন পাসওয়ার্ড
+  password_change_failed: পাসওয়ার্ড পরিবর্তন করা ব্যর্থ হয়েছে
+  password_changed: পাসওয়ার্ড সফলভাবে পরিবর্তন করা হয়েছে
+  password_disabled: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড পরিবর্তন নিষ্ক্রিয়
+  password_disabled_message: আপনি একজন উদাহরণ ব্যবহারকারী হিসেবে লগ ইন করেছেন। পাসওয়ার্ড ফাংশন নিষ্ক্রিয়।
+  password_mismatch: নতুন পাসওয়ার্ড মিলছে না
+  personal:
+    description: আপনার ব্যক্তিগত তথ্য ও অ্যাপ পছন্দ আপডেট করুন।
+    title: প্রোফাইল ও পছন্দসমূহ
+  save_button: পরিবর্তন সংরক্ষণ করুন
+  save_error: প্রোফাইল সংরক্ষণ করা ব্যর্থ হয়েছে
+  save_success: প্রোফাইল সংরক্ষণ করা হয়েছে
+  title: প্রোফাইল সেটিংস
+  update_error: প্রোফাইল আপডেট করা ব্যর্থ হয়েছে
+  slow_threshold:
+    title: স্লো-মডেল থ্রেশহোল্ড
+    effective: 'বর্তমানে কার্যকর:'
+    save: সীমা সংরক্ষণ করুন
+    invalid: সীমাটি অবশ্যই সেকেন্ডে একটি পূর্ণসংখ্যা হতে হবে, কমপক্ষে ১
+    label: আমার সীমা
+    saved: স্লো-মডেল সীমা সংরক্ষিত হয়েছে
+    placeholder: সাইটের ডিফল্ট ব্যবহার করুন
+    description: এর চেয়ে বেশি সময় নেওয়া একটি মডেল পরীক্ষাকে খুব ধীর বলে রিপোর্ট করা হয়। সাইটের ডিফল্ট ব্যবহার করতে খালি রাখুন।
+    seconds: সেকেন্ড
+recipes:
+  add_rule: নিয়ম যোগ করুন
+  algorithm:
+    dependent_column: নির্ভরশীল চলক
+    factor_column: ফ্যাক্টর (শ্রেণিগত)
+    group_by: গ্রুপ করুন
+    independent_columns: স্বাধীন চলক
+    placeholder: বিশ্লেষণের ধরন নির্বাচন করুন
+    response_column: রেসপন্স (সংখ্যাসূচক)
+  back_to_recipe: রেসিপিতে ফিরে যান
+  by_label: দ্বারা
+  cancel_button: বাতিল করুন
+  cancel_error: এক্সিকিউশন বাতিল করা ব্যর্থ হয়েছে
+  cancel_success: এক্সিকিউশন বাতিল করা হয়েছে
+  chart:
+    category: বিভাগ
+    count: গণনা
+    value: মান
+    x_axis: X
+    y_axis: Y
+  clone: ক্লোন
+  clone_button: ক্লোন
+  clone_error: রেসিপি ক্লোন করা ব্যর্থ হয়েছে
+  clone_success: রেসিপি সফলভাবে ক্লোন করা হয়েছে
+  clone_suffix: (কপি)
+  column_type:
+    category: বিভাগ
+    datetime: তারিখ/সময়
+    number: সংখ্যা
+    text: টেক্সট
+  columns_after: কলাম
+  columns_before: কলাম
+  columns_label: কলাম
+  columns_label_short: কলাম
+  columns_required: অনুগ্রহ করে কমপক্ষে একটি কলাম নির্বাচন করুন
+  create_error: রেসিপি তৈরি করা ব্যর্থ হয়েছে
+  create_success: রেসিপি '{name}' সফলভাবে তৈরি করা হয়েছে
+  dataset:
+    columns_label: কলাম
+    load_error: ডেটাসেট লোড করা ব্যর্থ হয়েছে
+    loading: ডেটাসেট লোড হচ্ছে...
+    no_datasets: কোনো ডেটাসেট উপলব্ধ নেই
+    placeholder: একটি ডেটাসেট নির্বাচন করুন
+    rows_label: সারি
+  dataset_label: ডেটাসেট
+  dataset_required: অনুগ্রহ করে একটি ডেটাসেট নির্বাচন করুন
+  delete: মুছুন
+  delete_button: মুছুন
+  delete_confirmation: আপনি কি নিশ্চিত যে আপনি "{name}" রেসিপিটি মুছতে চান? এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।
+  delete_title: রেসিপি মুছুন
+  description_label: বিবরণ (ঐচ্ছিক)
+  description_placeholder: এই রেসিপির বিবরণ
+  edit: সম্পাদনা করুন
+  editor:
+    component_algorithm: অ্যালগরিদম
+    component_dataset: ডেটাসেট / ট্রান্সফর্ম
+    component_output: আউটপুট
+    create_mode: একটি নতুন রেসিপি তৈরি করুন — এডিটর ফেজ ৩-এ আসছে।
+    loading: রেসিপি লোড হচ্ছে...
+    name_hint: রেসিপি সংরক্ষণ করার আগে একটি নাম প্রয়োজন।
+    name_placeholder: রেসিপির নাম
+    name_required: একটি রেসিপির নাম প্রয়োজন।
+    new_recipe_name: নতুন রেসিপি
+    placeholder: এটি ম্যানুয়াল পরিসংখ্যানগত রেসিপি সম্পাদক — রেসিপি হলো ওয়ার্কবেঞ্চের প্রাণকেন্দ্র। ম্যানুয়াল ইউজার ইন্টারফেস এআই ইন্টারফেসের চেয়ে দ্রুত, তবে কী করা উচিত তা নিয়ে সত্যিই নিশ্চিত না হলে
+      আপনি সম্ভবত এআই রেসিপি সম্পাদক ব্যবহার করতে চাইবেন। এটি একটি পরিসংখ্যান শিক্ষকও... তবে এটি ব্যবহার করতে চাইলে আপনার সেটিংসে একটি কার্যকর এআই সংযোগ সেট আপ থাকতে হবে। একটি রেসিপি নির্বাচন করুন বা নতুন
+      একটি তৈরি করুন।
+    run: চালান
+    save: রেসিপি সংরক্ষণ করুন
+    save_error: রেসিপি সংরক্ষণ করা যায়নি
+    save_success: রেসিপি সংরক্ষিত হয়েছে
+  execute: নির্বাহ করুন
+  execute_button: নির্বাহ করুন
+  execute_error: 'রেসিপি নির্বাহ করা ব্যর্থ হয়েছে: {error}'
+  execute_success: রেসিপি সফলভাবে নির্বাহ হয়েছে
+  execution:
+    errors_label: 'ত্রুটি:'
+    failed_start: নির্বাহ শুরু করা যায়নি
+    request_failed: নির্বাহ ব্যর্থ হয়েছে
+    results_label: 'ফলাফল:'
+    rules_count: '{count}টি প্রস্তুতির নিয়ম প্রয়োগ করা হয়েছে।'
+    running: রেসিপি চালানো হচ্ছে…
+    showing_rows: মোট {total} সারির মধ্যে {count} দেখানো হচ্ছে
+  execution_error: ত্রুটি
+  execution_load_error: 'এক্সিকিউশন লোড করা ব্যর্থ হয়েছে: {error}'
+  execution_not_found: এক্সিকিউশন '{id}' খুঁজে পাওয়া যায়নি
+  execution_progress: অগ্রগতি
+  execution_stage_results: পর্যায়ের ফলাফল
+  execution_started: শুরু হয়েছে
+  execution_status: অবস্থা
+  execution_title: নির্বাহের ফলাফল
+  executions_title: সাম্প্রতিক নির্বাহসমূহ
+  export_results: ফলাফল রপ্তানি করুন
+  go_define: ডিফাইনে যান
+  go_upload: আপলোডে যান
+  group_by_hint: গোষ্ঠীগুলির মধ্যে পরিসংখ্যান তুলনা করতে একটি ক্যাটাগোরিক্যাল কলাম দ্বারা গ্রুপ করুন
+  group_by_label: গ্রুপ বাই (ঐচ্ছিক)
+  list_load_error: রেসিপিগুলি লোড করা যায়নি
+  load_datasets_error: 'ডেটাসেটগুলো লোড করা ব্যর্থ হয়েছে: {error}'
+  load_error: 'রেসিপিগুলো লোড করা ব্যর্থ হয়েছে: {error}'
+  load_rules_error: প্রস্তুতির নিয়ম লোড করা যায়নি
+  loading_schema: কলাম লোড হচ্ছে...
+  move_down: নিচে সরান
+  move_up: উপরে সরান
+  my_recipes: আমার রেসিপি
+  name_label: রেসিপির নাম
+  name_placeholder: যেমন, বিক্রয় বিশ্লেষণ
+  name_required: রেসিপির নাম প্রয়োজন
+  needs_other_columns: (অন্যান্য কলাম প্রয়োজন)
+  new_button: নতুন রেসিপি
+  new_title: নতুন রেসিপি
+  no_datasets: কোনো ডেটাসেট পাওয়া যায়নি। অনুগ্রহ করে প্রথমে একটি ডেটাসেট আপলোড বা ডিফাইন করুন।
+  no_datasets_available: কোনো ডেটাসেট উপলব্ধ নেই। অনুগ্রহ করে প্রথমে একটি ডেটাসেট আপলোড করুন।
+  no_datasets_found: কোনো ডেটাসেট উপলব্ধ নেই। প্রথমে একটি ডেটাসেট আপলোড করুন।
+  no_group: কোনোটি নয়
+  no_group_options: গ্রুপ করার জন্য কোনো ক্যাটাগোরিক্যাল কলাম উপলব্ধ নেই
+  no_preparation_rules: এই ডেটাসেটের জন্য কোনো প্রস্তুতির নিয়ম উপলব্ধ নেই।
+  no_recipes: আপনি এখনও কোনো রেসিপি তৈরি করেননি।
+  no_schema: এই ডেটাসেটের জন্য কোনো স্কিমা উপলব্ধ নেই
+  no_stages: রেসিপির অন্তত একটি ধাপ থাকতে হবে
+  no_visualisation: সংখ্যাসূচক ফলাফল
+  no_visualisation_data: ভিজ্যুয়ালাইজেশন ডেটা উপলব্ধ নেই
+  none: কোনোটি নয়
+  output:
+    category_column: ক্যাটাগরি কলাম
+    placeholder: আউটপুটের ধরন নির্বাচন করুন
+    x_column: X-অক্ষের কলাম
+    y_column: Y-অক্ষের কলাম
+  panel:
+    complete: প্রস্তুত
+    incomplete: অসম্পূর্ণ
+    my_recipes: আমার রেসিপি
+    new_button: নতুন রেসিপি
+    no_recipes: এখনও কোনো রেসিপি নেই
+    no_results: আপনার অনুসন্ধানের সাথে মেলে এমন কোনো রেসিপি নেই
+    search: রেসিপি অনুসন্ধান করুন...
+    shared_recipes: শেয়ার করা
+    updated: আপডেট করা
+  preparation_rules: প্রস্তুতির নিয়ম (ঐচ্ছিক)
+  preparation_rules_applied: প্রস্তুতির নিয়ম প্রয়োগ করা হয়েছে
+  preparation_rules_applied_description: বিশ্লেষণ পর্যায়ের আগে নিচে দেখানো ক্রমে নিয়ম প্রয়োগ করা হয়েছিল।
+  preparation_rules_applied_title: প্রস্তুতির নিয়ম প্রয়োগ করা হয়েছে
+  preparation_rules_description: ক্রমানুসারে প্রয়োগ করার জন্য নিয়ম নির্বাচন করুন। নিয়মগুলো পর্যায়ক্রমে প্রয়োগ করা হয়।
+  recipe_label: রেসিপি
+  remove_rule: নিয়ম সরান
+  require:
+    algorithm: একটি বিশ্লেষণ নির্বাচন করুন
+    categoryColumn: '{out}-এর জন্য ক্যাটাগরি কলাম নির্বাচন করুন'
+    dataset: একটি ডেটাসেট নির্বাচন করুন
+    dependentColumn: নির্ভরশীল কলাম নির্বাচন করুন
+    factorColumn: '{algo}-এর জন্য ফ্যাক্টর কলাম নির্বাচন করুন'
+    first_response: প্রথম প্রতিক্রিয়া কলাম নির্বাচন করুন
+    independentColumns: স্বাধীন কলাম নির্বাচন করুন
+    responseColumn: '{algo}-এর জন্য প্রতিক্রিয়া কলাম নির্বাচন করুন'
+    second_response: দ্বিতীয় প্রতিক্রিয়া কলাম নির্বাচন করুন
+    xColumn: '{out}-এর জন্য X কলাম নির্বাচন করুন'
+    yColumn: '{out}-এর জন্য Y কলাম নির্বাচন করুন'
+  rows_after: পরে সারি
+  rows_before: সারি
+  rows_label: সারি
+  rules_applied_label: '{count}টি নিয়ম প্রয়োগ করা হয়েছে:'
+  save_button: রেসিপি সংরক্ষণ করুন
+  schema_error: 'কলাম স্কিমা লোড করা ব্যর্থ হয়েছে: {error}'
+  schema_loaded: 'স্কিমা লোড হয়েছে: {count}টি কলাম পাওয়া গেছে'
+  select_dataset: একটি ডেটাসেট নির্বাচন করুন
+  select_group: গ্রুপ করার জন্য একটি কলাম নির্বাচন করুন
+  select_rule: যোগ করার জন্য একটি নিয়ম নির্বাচন করুন
+  select_rule_placeholder: একটি নিয়ম বেছে নিন
+  select_technique: একটি কৌশল নির্বাচন করুন
+  select_visualisation: একটি ভিজ্যুয়ালাইজেশন নির্বাচন করুন
+  selected: নির্বাচিত
+  share:
+    button: শেয়ার করুন
+    group_info: গ্রুপ {group} — {desc}
+    read_only: '{owner} কর্তৃক শেয়ার করা — কেবল পঠনযোগ্য'
+    shared_badge: শেয়ার করা হয়েছে
+    unshare: শেয়ার বাতিল করুন
+  shared: শেয়ার করা
+  shared_badge: শেয়ার করা হয়েছে
+  shared_description: আপনার গ্রুপের অন্যান্য ব্যবহারকারীদের জন্য এই রেসিপিটি উপলব্ধ করুন।
+  shared_group_hint: 'গ্রুপ: {group} - {description}'
+  shared_label: গ্রুপের সাথে শেয়ার করুন
+  shared_with_group: আপনার গ্রুপের সাথে শেয়ার করা হয়েছে
+  stage_data_selection: ডেটা নির্বাচন
+  stage_number: পর্যায় {number}
+  stage_preparation: ডেটা প্রস্তুতি
+  stage_statistics: পরিসংখ্যান
+  stage_visualisation: ভিজ্যুয়ালাইজেশন
+  stages_title: পর্যায়সমূহ
+  status:
+    cancelled: বাতিল করা হয়েছে
+    completed: সম্পন্ন হয়েছে
+    failed: ব্যর্থ হয়েছে
+    pending: অপেক্ষমাণ
+    running: চলছে
+  step1_description: আপনার রেসিপির একটি নাম এবং বিবরণ দিন।
+  step1_title: আপনার রেসিপির নাম দিন
+  step2_description: একটি ডেটাসেট বেছে নিন এবং বিশ্লেষণের জন্য কলাম নির্বাচন করুন।
+  step2_title: ডেটা নির্বাচন করুন
+  step3_description: প্রয়োগ করার জন্য পরিসংখ্যানগত কৌশল নির্বাচন করুন।
+  step3_title: বিশ্লেষণ বেছে নিন
+  step4_description: আপনার রেসিপিতে একটি ভিজ্যুয়ালাইজেশন যোগ করুন।
+  step4_title: ভিজ্যুয়ালাইজেশন (ঐচ্ছিক)
+  step_analysis: বিশ্লেষণ
+  step_complete: ধাপ {step} সম্পন্ন
+  step_data: ডেটা
+  step_name: নাম
+  step_visualise: ভিজ্যুয়ালাইজ করুন
+  technique_anova_one_way: একমুখী ANOVA
+  technique_anova_two_way: দ্বিমুখী ANOVA
+  technique_chi_square: কাই-স্কয়ার পরীক্ষা
+  technique_correlation: সহসম্পর্ক ম্যাট্রিক্স
+  technique_descriptive: বর্ণনামূলক পরিসংখ্যান
+  technique_hint: বর্ণনামূলক পরিসংখ্যান গড়, মধ্যমা এবং মানক বিচ্যুতির মতো সারসংক্ষেপ পরিমাপ দেখায়।
+  technique_label: কৌশল
+  technique_linear_regression: রৈখিক রিগ্রেশন
+  technique_t_test_independent: স্বাধীন t-পরীক্ষা
+  technique_t_test_paired: জোড়াযুক্ত t-পরীক্ষা
+  title: পরিসংখ্যানগত রেসিপি
+  total_rules_applied: মোট প্রয়োগকৃত নিয়ম
+  transforms:
+    add: রূপান্তর যোগ করুন
+    label: রূপান্তরসমূহ
+    manage_button: রূপান্তর পরিচালনা করুন
+    no_transforms: কোনো রূপান্তর প্রয়োগ করা হয়নি
+    remove: সরান
+  unknown_user: অজানা
+  update_error: 'রেসিপি আপডেট করা ব্যর্থ হয়েছে: {error}'
+  update_success: রেসিপি '{id}' সফলভাবে আপডেট করা হয়েছে
+  updated_label: আপডেট হয়েছে
+  visualisation:
+    columns_label: কলামসমূহ
+    data_points: ডেটা পয়েন্ট
+    distribution: বণ্টন
+    trend: প্রবণতা
+    type_label: ধরন
+  visualisation_area: এরিয়া চার্ট
+  visualisation_bar: বার চার্ট
+  visualisation_donut: ডোনাট চার্ট
+  visualisation_hbar: অনুভূমিক বার
+  visualisation_hint: নির্বাচিত ডেটা কলাম ব্যবহার করে চার্টটি তৈরি করা হবে।
+  visualisation_label: ভিজ্যুয়ালাইজেশনের ধরন
+  visualisation_line: লাইন চার্ট
+  visualisation_pie: পাই চার্ট
+  visualisation_raw_data: 'ভিজ্যুয়ালাইজেশন ডেটা:'
+  visualisation_scatter: স্ক্যাটার প্লট
+  visualisation_table: টেবিল
+  ui:
+    delete_success: রেসিপি মুছে ফেলা হয়েছে
+    delete_error: রেসিপি মুছে ফেলতে ব্যর্থ হয়েছে
+  visualisation_histogram: হিস্টোগ্রাম
+register:
+  confirm_password: পাসওয়ার্ড নিশ্চিত করুন
+  creating: অ্যাকাউন্ট তৈরি হচ্ছে...
+  description: একটি নতুন অ্যাকাউন্ট তৈরি করুন
+  email: ইমেইল
+  failed: নিবন্ধন ব্যর্থ হয়েছে
+  have_account: ইতিমধ্যে একটি অ্যাকাউন্ট আছে?
+  language_description: ইন্টারফেসের জন্য আপনার পছন্দের ভাষা নির্বাচন করুন।
+  login_link: লগইন
+  name: নাম
+  password: পাসওয়ার্ড
+  password_mismatch: পাসওয়ার্ড মিলছে না
+  submit: নিবন্ধন করুন
+  success_with_verification: Your account has been created. Check your email for the verification link to activate your account.
+  title: নিবন্ধন করুন
+  email_failed_use_resend: নিবন্ধন সফল হয়েছে, কিন্তু যাচাইকরণ ইমেইল পাঠানো যায়নি। অনুগ্রহ করে লগইন পৃষ্ঠা থেকে এটি আবার পাঠান।
+  registration_disabled: স্ব-নিবন্ধন নিষ্ক্রিয় করা হয়েছে। অনুগ্রহ করে একজন প্রশাসকের সাথে যোগাযোগ করুন।
+  success_auto_verified: আপনার অ্যাকাউন্ট তৈরি হয়েছে এবং ব্যবহারের জন্য প্রস্তুত। আপনি এখন সাইন ইন করতে পারেন।
+  success_pending_approval: আপনার অ্যাকাউন্ট তৈরি হয়েছে এবং প্রশাসকের অনুমোদনের অপেক্ষায় আছে। অনুমোদিত হলে আপনি সাইন ইন করতে পারবেন।
+resend_verification:
+  back_to_login: লগইনে ফিরে যান
+  check_spam: কয়েক মিনিটের মধ্যে ইমেইল না দেখলে অনুগ্রহ করে আপনার স্প্যাম ফোল্ডার দেখুন।
+  description: একটি নতুন যাচাইকরণ লিঙ্ক পেতে আপনার ইমেইল ঠিকানা লিখুন।
+  error: যাচাইকরণ ইমেইল পাঠাতে ব্যর্থ হয়েছে।
+  send_button: যাচাইকরণ ইমেইল পাঠান
+  sent: যাচাইকরণ ইমেইল পাঠানো হয়েছে। অনুগ্রহ করে আপনার ইনবক্স (এবং স্প্যাম ফোল্ডার) দেখুন।
+  sent_description: এই ইমেইলের সাথে একটি অ্যাকাউন্ট থাকলে, আপনি একটি যাচাইকরণ লিঙ্ক পাবেন।
+  sent_title: ইমেইল পাঠানো হয়েছে
+  title: যাচাইকরণ ইমেইল পুনঃপ্রেরণ করুন
+reset_password:
+  confirm_password: নতুন পাসওয়ার্ড নিশ্চিত করুন
+  description: নিচে আপনার নতুন পাসওয়ার্ড লিখুন।
+  failed: পাসওয়ার্ড রিসেট করতে ব্যর্থ হয়েছে
+  login_button: লগইনে যান
+  missing_token: কোনো রিসেট টোকেন দেওয়া হয়নি
+  new_password: নতুন পাসওয়ার্ড
+  password_mismatch: পাসওয়ার্ড মিলছে না
+  submit: পাসওয়ার্ড রিসেট করুন
+  success: পাসওয়ার্ড সফলভাবে রিসেট হয়েছে
+  success_description: আপনার পাসওয়ার্ড রিসেট হয়েছে। লগইনে পুনর্নির্দেশ করা হচ্ছে...
+  success_title: পাসওয়ার্ড রিসেট
+  title: পাসওয়ার্ড রিসেট করুন
+settings:
+  ai:
+    title: এআই সংযোগসমূহ
+  database:
+    title: ডাটাবেস সংযোগসমূহ
+  profile:
+    title: পছন্দসমূহ
+  title: সেটিংস
+setup:
+  internal:
+    description: সিস্টেম ডায়াগনস্টিকস এবং অভ্যন্তরীণ কনফিগারেশন। কেবল পঠনযোগ্য স্থিতি নির্দেশক।
+    future:
+      cache_config: ক্যাশ / সেশন কনফিগারেশন
+      debug_logging: ডিবাগ / ভার্বোজ লগিং টগল
+      description: ভবিষ্যৎ রিলিজে অতিরিক্ত ডায়াগনস্টিকস যোগ করা হবে।
+      email_transport: ইমেইল ট্রান্সপোর্ট স্থিতি
+      pool_stats: ডাটাবেস পুল পরিসংখ্যান
+      title: শীঘ্রই আসছে
+    licence:
+      description: বর্তমান লাইসেন্স স্তর এবং সক্রিয় বৈশিষ্ট্যসমূহ।
+      expiry: মেয়াদ শেষ
+      features: সক্রিয় বৈশিষ্ট্যসমূহ
+      issued_to: ইস্যু করা হয়েছে
+      tier: লাইসেন্স স্তর
+      title: লাইসেন্স ও বৈশিষ্ট্যসমূহ
+    load_error: সিস্টেম ডায়াগনস্টিকস লোড করতে ব্যর্থ হয়েছে
+    system_status:
+      available: উপলব্ধ
+      db_pool: ডাটাবেস পুল
+      description: ব্যাকএন্ড পরিষেবাগুলোর জন্য রিয়েল-টাইম স্বাস্থ্য নির্দেশক।
+      healthy: সুস্থ
+      initialized: সূচনাকৃত
+      not_initialized: সূচনা করা হয়নি
+      not_required: প্রয়োজন নেই
+      overall_health: সার্বিক স্বাস্থ্য
+      shared_memory: শেয়ার্ড মেমোরি
+      title: সিস্টেম স্থিতি
+      unavailable: অনুপলব্ধ
+      unhealthy: অসুস্থ
+      version: সংস্করণ
+      db_cluster: ডাটাবেস ক্লাস্টার
+    title: অভ্যন্তরীণ
+  limits:
+    demo_mode:
+      description: সক্রিয় করা হলে, সিস্টেম ডেমো মোডে চলে — ধ্বংসাত্মক কার্যক্রম ব্লক করা হয় এবং UI-তে নির্দেশক দেখানো হয়।
+      label: ডেমো মোড
+    description: রিসোর্স সীমা, টাইমআউট এবং সিস্টেম আচরণের জন্য পরিচালনাগত নিয়ন্ত্রণ। যেকোনো সময় সমন্বয় করা নিরাপদ।
+    email_timeout:
+      hint: ইমেইল যাচাইকরণ লিঙ্ক কত ঘণ্টা বৈধ থাকে।
+      label: ইমেইল যাচাইকরণ টাইমআউট (ঘণ্টা)
+    grace_period:
+      hint: সফট-ডিলিট করা অ্যাকাউন্ট স্থায়ীভাবে মুছে ফেলার আগের ঘণ্টা।
+      label: মোছার বিলম্ব (ঘণ্টা)
+    invalid_grace_period: অনুগ্রহ করে মোছার বিলম্বের (ঘণ্টা) জন্য একটি বৈধ ধনাত্মক সংখ্যা লিখুন
+    invalid_registration_max: অনুগ্রহ করে সর্বোচ্চ নিবন্ধনের জন্য একটি বৈধ ধনাত্মক সংখ্যা লিখুন
+    invalid_timeout: অনুগ্রহ করে যাচাইকরণ টাইমআউটের (ঘণ্টা) জন্য একটি বৈধ ধনাত্মক সংখ্যা লিখুন
+    load_error: সীমা সেটিংস লোড করতে ব্যর্থ হয়েছে
+    max_registrations:
+      hint: কতজন ব্যবহারকারী নিবন্ধন করতে পারবেন তার একটি সীমা নির্ধারণ করুন।
+      label: সর্বোচ্চ ব্যবহারকারী নিবন্ধন
+      placeholder: সীমা নির্বাচন করুন
+      unlimited: সীমাহীন
+      users: ব্যবহারকারী
+    save_button: সীমা সংরক্ষণ করুন
+    save_error: সীমা সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে
+    save_success: সীমা সেটিংস সংরক্ষণ করা হয়েছে
+    title: সীমা
+    upload:
+      count_1: ১
+      count_10: ১০
+      count_100: ১০০
+      count_1000: ১০০০
+      count_25: ২৫
+      count_250: ২৫০
+      count_5: ৫
+      count_50: ৫০
+      count_500: ৫০০
+      count_hint: প্রতি ব্যবহারকারীর সর্বোচ্চ ডেটাসেট সংখ্যা (0 = সীমাহীন)। নতুন ব্যবহারকারীদের জন্য প্রযোজ্য।
+      count_unlimited: সীমাহীন
+      default_count_label: প্রতি ব্যবহারকারীর ডিফল্ট সর্বোচ্চ আপলোড সংখ্যা
+      default_size_label: প্রতি ব্যবহারকারীর ডিফল্ট সর্বোচ্চ আপলোড আকার (MB)
+      select_count: সীমা নির্বাচন করুন
+      select_size: সীমা নির্বাচন করুন
+      size_100_mb: ১০০ MB
+      size_10_mb: ১০ MB
+      size_1_gb: ১ GB
+      size_1_mb: ১ MB
+      size_250_mb: ২৫০ MB
+      size_25_mb: ২৫ MB
+      size_500_mb: ৫০০ MB
+      size_50_mb: ৫০ MB
+      size_5_mb: ৫ MB
+      size_hint: প্রতি ব্যবহারকারীর সর্বোচ্চ মোট স্টোরেজ (0 = সীমাহীন)। নতুন ব্যবহারকারীদের জন্য প্রযোজ্য।
+      size_unlimited: সীমাহীন
+  options:
+    description: ইনস্টলেশনকালীন সেটিংস যা এই ডিপ্লয়মেন্টের পরিচয় ও আচরণ নির্ধারণ করে। সতর্কতার সাথে পরিবর্তন করুন — এগুলো সকল ব্যবহারকারীকে প্রভাবিত করে।
+    email_sender:
+      hint: যাচাইকরণ ইমেইলগুলো যে ইমেইল ঠিকানা থেকে পাঠানো হয়েছে বলে প্রদর্শিত হবে।
+      label: ইমেইল প্রেরকের ঠিকানা
+    load_error: বিকল্প সেটিংস লোড করতে ব্যর্থ হয়েছে
+    password_policy:
+      custom: কাস্টম
+      high: উচ্চ (সর্বনিম্ন ১০, বড় হাতের অক্ষর, ছোট হাতের অক্ষর, সংখ্যা, বিশেষ অক্ষর)
+      hint: ব্যবহারকারী নিবন্ধন এবং পাসওয়ার্ড পরিবর্তনের জন্য পাসওয়ার্ড জটিলতার প্রয়োজনীয়তা নির্বাচন করুন।
+      label: পাসওয়ার্ড নীতি
+      low: নিম্ন (সর্বনিম্ন ৬ অক্ষর)
+      medium: মাঝারি (সর্বনিম্ন ৮, বড় হাতের অক্ষর, ছোট হাতের অক্ষর, সংখ্যা)
+      min_length: সর্বনিম্ন দৈর্ঘ্য
+      min_strength: সর্বনিম্ন শক্তি (zxcvbn স্কোর ০-৪)
+      require_digit: সংখ্যা আবশ্যক
+      require_lowercase: ছোট হাতের অক্ষর আবশ্যক
+      require_special: বিশেষ অক্ষর আবশ্যক
+      require_uppercase: বড় হাতের অক্ষর আবশ্যক
+      select: নীতি নির্বাচন করুন
+    public_url:
+      hint: ইমেইল যাচাইকরণ লিংকে ব্যবহৃত বেস URL (যেমন, https://workbench.example.com)।
+      label: পাবলিক URL
+    save_button: অপশন সংরক্ষণ করুন
+    save_error: অপশন সেটিংস সংরক্ষণ করা যায়নি
+    save_success: অপশন সেটিংস সংরক্ষিত হয়েছে
+    title: অপশন
+    welcome:
+      hint: এই বার্তাটি লগইন পৃষ্ঠায় দেখানো হবে। লুকাতে খালি রাখুন।
+      label: স্বাগত বার্তা
+      placeholder: লগইন পৃষ্ঠায় প্রদর্শনের জন্য একটি স্বাগত বার্তা লিখুন।
+    registration_mode:
+      select: নিবন্ধন মোড নির্বাচন করুন
+      mode_1: অ্যাডমিন যাচাইকৃত ব্যবহারকারী তৈরি করেন
+      label: নিবন্ধন মোড
+      mode_2: স্ব-নিবন্ধন এবং অ্যাডমিন কর্তৃক যাচাইকৃত
+      mode_4: ইমেইল যাচাইকরণসহ স্ব-নিবন্ধন
+      hint: নতুন ব্যবহারকারী অ্যাকাউন্ট কীভাবে তৈরি ও যাচাই করা হবে তা নির্বাচন করুন।
+      mode_0: স্ব-নিবন্ধন স্বয়ংক্রিয়ভাবে যাচাইকৃত
+  tuning:
+    reset_error: টিউনিং সেটিংস রিসেট করা যায়নি
+    ai_timeout_hint: একটি AI অনুরোধ কতক্ষণ চলতে পারে তার আগে তা পরিত্যাগ করা হবে। খুব কম হলে চ্যাট নিঃশব্দে ব্যর্থ হয়; খুব বেশি হলে আটকে থাকা মডেল একটি কর্মী ধরে রাখে। CPU-তে লোকাল মডেলের কয়েক মিনিট লাগতে
+      পারে।
+    saving: সংরক্ষণ হচ্ছে…
+    invalid_max_tokens: অনুগ্রহ করে টোকেনের একটি পূর্ণসংখ্যা লিখুন, কমপক্ষে ১
+    ai_section_label: AI জেনারেশন
+    ai_max_tokens_hint: একটি একক অনুরোধ কত দীর্ঘ উত্তর তৈরি করতে পারে। একটি বিবরণের জন্য প্রায় ৫০০ টোকেন প্রয়োজন; ৪০০০ যথেষ্ট জায়গা রাখে।
+    reset_confirm_title: এই ছয়টি কি তাদের ডিফল্টে রিসেট করবেন?
+    ai_temperature_hint: 'উত্তরগুলো কতটা বৈচিত্র্যময় হবে: ০ মানে মডেল যতটা অনুমতি দেয় ততটা পুনরুৎপাদনযোগ্য, ২ সবচেয়ে বৈচিত্র্যময়। ০ থেকে ২-এর বাইরের মানগুলো প্রদানকারী প্রত্যাখ্যান করে, এই সিস্টেম নয়।'
+    description: AI আচরণ এবং সময়সীমার জন্য ডিফল্ট। এগুলো সাধারণত যেমন আছে তেমনই উপযুক্ত — প্রতি-ব্যবহারকারী বা প্রতি-সংযোগ সেটিং ভিন্ন হতে পারে, এবং এখানকার মান তখনই প্রযোজ্য যখন ওই দুটির কোনোটিই প্রযোজ্য
+      নয়।
+    invalid_ai_timeout: AI সময়সীমা অবশ্যই সেকেন্ডে একটি পূর্ণসংখ্যা হতে হবে, কমপক্ষে ১
+    saved: টিউনিং সেটিংস সংরক্ষিত হয়েছে
+    load_error: টিউনিং সেটিংস লোড করা যায়নি
+    reset_confirm_body: এই পৃষ্ঠার প্রতিটি মান তার প্রাথমিক ডিফল্টে ফিরে যায়। প্রতি-সংযোগ ওভাররাইড প্রভাবিত হয় না। এটি পূর্বাবস্থায় ফেরানো যাবে না, এবং আপনাকে পরিবর্তন করা প্রতিটি মান আবার সেট করতে হবে।
+    resetting: রিসেট হচ্ছে…
+    save: সেটিংস সংরক্ষণ করুন
+    preamble_detail: প্রতিটি AI অনুরোধ এগুলো ব্যবহার করে, যদি না কোনো সংযোগ ওভাররাইড করে। একটি পরিবর্তন করলে প্রতিটি মডেল প্রভাবিত হয় যার নিজস্ব কোনো সেটিং নেই; এটি ইতিমধ্যে টিউন করা কোনো সংযোগ পরিবর্তন
+      করে না।
+    connect_timeout_hint: একটি সংযোগ গ্রহণ করতে নেটওয়ার্ক কতক্ষণ সময় নিতে পারে তার আগে এন্ডপয়েন্টটিকে অগম্য হিসেবে গণ্য করা হবে। নেটওয়ার্কের প্রয়োজনের চেয়ে কম মান একটি কার্যকর এন্ডপয়েন্টকে অকার্যকর
+      করে দেয়।
+    probe_timeout_hint: একটি উপযুক্ততা পরীক্ষা কতক্ষণ চলতে পারে। CPU-হোস্টেড একটি মডেল কয়েক মিনিট সময় নেয়, তাই এখানে ছোট সীমা সময় বাঁচানোর বদলে ভুল ব্যর্থতা রেকর্ড করে।
+    invalid_temperature: টেম্পারেচার অবশ্যই ০ থেকে ২-এর মধ্যে একটি সংখ্যা হতে হবে
+    ai_tokens: টোকেন
+    invalid_connect_timeout: সংযোগ টাইমআউট অবশ্যই সেকেন্ডে একটি পূর্ণসংখ্যা হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ ৬০
+    forbidden: শুধুমাত্র একজন পূর্ণ প্রশাসক এই সেটিংস পরিবর্তন করতে পারেন।
+    save_error: টিউনিং সেটিংস সংরক্ষণ করা যায়নি
+    reset_confirm_action: রিসেট
+    invalid_probe_timeout: পরীক্ষার টাইমআউট অবশ্যই সেকেন্ডে একটি পূর্ণসংখ্যা হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ ১২০০
+    invalid_model_test_seconds: অনুগ্রহ করে সেকেন্ডে একটি পূর্ণসংখ্যা লিখুন, কমপক্ষে ১
+    slow_threshold_hint: এর চেয়ে বেশি সময় নেওয়া একটি মডেল পরীক্ষাকে অতিরিক্ত ধীর হিসেবে রিপোর্ট করা হয়। ব্যবহারকারীরা নিজেদের সীমা বাড়াতে পারেন; কেউ নিজের সীমা ১-এর নিচে নামাতে পারবেন না।
+    slow_threshold_label: স্লো-মডেল থ্রেশহোল্ড
+    seconds: সেকেন্ড
+    ai_section_hint: প্রতিটি এআই অনুরোধের জন্য ডিফল্ট মান। যেখানে টিউনিং নির্দিষ্ট সংযোগ-মডেল জুটির জন্য, সেখানে একটি সংযোগ ও মডেল এগুলো ওভাররাইড করতে পারে।
+    reset_done: টিউনিং সেটিংস তাদের ডিফল্টে রিসেট করা হয়েছে।
+tools:
+  all_datasets: সকল ডেটাসেট
+  connect_database: ডেটাবেস সংযোগ করুন
+  description: অতিরিক্ত ইউটিলিটি এবং বিশ্লেষণ সরঞ্জাম এখানে উপস্থিত হবে।
+  import_notebook: নোটবুক ইম্পোর্ট করুন
+  manage_data: ডেটা সংগ্রহ করুন
+  my_data: আমার ডেটা
+  notebooks: নোটবুকসমূহ
+  placeholder: টুলস পৃষ্ঠা শীঘ্রই আসছে।
+  title: অন্যান্য টুল
+  upload_csv_excel: CSV / Excel আপলোড করুন
+  upload_data: ডেটা আপলোড করুন
+  uploads_list: আপলোডসমূহ (csv, Excel)
+  visualize: ভিজ্যুয়ালাইজেশন স্যান্ডবক্স
+transforms:
+  back_to_data: আমার ডেটাতে ফিরে যান
+  back_to_recipe: 'রেসিপিতে ফিরে যান: {name}'
+  connect_error: ট্রান্সফরম সংযোগ করা যায়নি
+  connect_transform: রেসিপিতে সংযোগ করুন
+  connected_count: '{count} সংযুক্ত'
+  connected_to_recipe: 'সংযুক্ত হয়েছে: {name}'
+  delete_button: মুছে ফেলুন
+  delete_confirm: এই ট্রান্সফরমটি মুছে ফেলবেন?
+  delete_success: ট্রান্সফরম মুছে ফেলা হয়েছে।
+  description_label: বিবরণ
+  description_placeholder: বিবরণ (ঐচ্ছিক)
+  disconnect_error: ট্রান্সফরম সংযোগ বিচ্ছিন্ন করা যায়নি
+  disconnect_transform: রেসিপি থেকে সংযোগ বিচ্ছিন্ন করুন
+  empty_hint: ট্রান্সফরম চালানোর সময় অপারেশনগুলো তালিকার ক্রমে প্রয়োগ হয়।
+  empty_state: আপনার ট্রান্সফরম তৈরি শুরু করতে একটি অপারেশন যোগ করুন।
+  empty_title: তালিকা থেকে একটি ট্রান্সফরম নির্বাচন করুন বা নতুন একটি তৈরি করুন।
+  fill:
+    constant: ধ্রুবক
+    drop_rows: সারি বাদ দিন
+    mean: গড়
+    median: মধ্যমা
+    mode: প্রচুরক
+  filter:
+    op_contains: ধারণ করে
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: নাল নয়
+    op_is_null: নাল
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'রেসিপি: {name}'
+  load_error: ট্রান্সফরম লোড করা যায়নি
+  name_label: নাম
+  name_placeholder: ট্রান্সফরমের নাম
+  name_required: ট্রান্সফরমের নাম আবশ্যক।
+  new_transform: নতুন ট্রান্সফরম
+  no_search_results: আপনার অনুসন্ধানের সাথে মিলে এমন কোনো ট্রান্সফরম নেই
+  no_transforms: এই ডেটাসেটের জন্য কোনো ট্রান্সফরম সংজ্ঞায়িত নেই।
+  op:
+    add: অপারেশন যোগ করুন
+    column_placeholder: কলাম নির্বাচন করুন
+    empty_hint: আপনার ট্রান্সফরম তৈরি শুরু করতে একটি অপারেশন যোগ করুন।
+    encoding_label: লেবেল
+    encoding_onehot: ওয়ান-হট
+    encoding_placeholder: এনকোডিং
+    method_placeholder: পদ্ধতি
+    new_name_placeholder: নতুন নাম
+    operations_label: অপারেশনসমূহ
+    operator_placeholder: অপারেটর
+    remove: সরান
+    target_boolean: বুলিয়ান
+    target_datetime: তারিখ-সময়
+    target_numeric: সংখ্যাসূচক
+    target_string: স্ট্রিং
+    target_type_placeholder: লক্ষ্য ধরন
+    type:
+      convert_type: ধরন রূপান্তর করুন
+      drop_column: কলাম বাদ দিন
+      drop_duplicates: ডুপ্লিকেট বাদ দিন
+      encode_category: ক্যাটাগরি এনকোড করুন
+      fill_missing: অনুপস্থিত মান পূরণ করুন
+      filter: সারি ফিল্টার করুন
+      rename_column: কলামের নাম পরিবর্তন করুন
+      standardize: মানকীকরণ
+      normalize: স্বাভাবিকীকরণ
+    type_placeholder: অপারেশনের ধরন
+    value_placeholder: মান
+  operations_count: '{count} অপারেশন'
+  operations_heading: অপারেশনসমূহ
+  save_button: সংরক্ষণ করুন
+  save_success: ট্রান্সফর্ম সংরক্ষিত হয়েছে।
+  search_placeholder: ট্রান্সফর্ম অনুসন্ধান করুন…
+validation:
+  api_key_required: এই প্রদানকারীর জন্য API কী প্রয়োজন
+  database_required: ডেটাবেসের নাম প্রয়োজন
+  host_required: হোস্ট প্রয়োজন
+  name_required: সংযোগের নাম প্রয়োজন
+  password:
+    min_length: পাসওয়ার্ড কমপক্ষে {min} অক্ষরের হতে হবে।
+    require_digit: পাসওয়ার্ডে কমপক্ষে একটি সংখ্যা থাকতে হবে।
+    require_lowercase: পাসওয়ার্ডে কমপক্ষে একটি ছোট হাতের অক্ষর থাকতে হবে।
+    require_special: পাসওয়ার্ডে কমপক্ষে একটি বিশেষ অক্ষর থাকতে হবে।
+    require_uppercase: পাসওয়ার্ডে কমপক্ষে একটি বড় হাতের অক্ষর থাকতে হবে।
+    too_weak: পাসওয়ার্ডটি খুব দুর্বল। অনুগ্রহ করে একটি শক্তিশালী পাসওয়ার্ড নির্বাচন করুন।
+  password_required: পাসওয়ার্ড প্রয়োজন
+  port_invalid: পোর্ট ১ থেকে ৬৫৫৩৫ এর মধ্যে হতে হবে
+  provider_required: অনুগ্রহ করে একটি প্রদানকারী নির্বাচন করুন
+  type_required: অনুগ্রহ করে একটি ডেটাবেসের ধরন নির্বাচন করুন
+  username_required: ব্যবহারকারীর নাম প্রয়োজন
+verify_email:
+  error_description: কিছু একটা সমস্যা হয়েছে।
+  error_title: যাচাইকরণ ব্যর্থ হয়েছে
+  expired_description: যাচাইকরণ লিঙ্কটির মেয়াদ শেষ হয়ে গেছে।
+  expired_message: আপনি নিচে একটি নতুন যাচাইকরণ ইমেইলের জন্য অনুরোধ করতে পারেন।
+  expired_title: লিঙ্কের মেয়াদ শেষ
+  invalid_token: অবৈধ যাচাইকরণ লিঙ্ক।
+  login_button: লগইনে এগিয়ে যান
+  missing_description: কোনো যাচাইকরণ টোকেন প্রদান করা হয়নি।
+  missing_title: কোনো যাচাইকরণ টোকেন নেই
+  network_error: নেটওয়ার্ক ত্রুটি। অনুগ্রহ করে আবার চেষ্টা করুন।
+  resend_button: যাচাইকরণ ইমেইল পুনরায় পাঠান
+  success_description: আপনার ইমেইল সফলভাবে যাচাই করা হয়েছে। লগইনে পুনর্নির্দেশ করা হচ্ছে...
+  success_title: ইমেইল যাচাই করা হয়েছে
+  unknown_error: কিছু একটা সমস্যা হয়েছে।
+virtual:
+  clone: ক্লোন
+  deleted: ডেটাসেট মুছে ফেলা হয়েছে
+  draft_badge: খসড়া
+  edit: সম্পাদনা
+  error: একটি ত্রুটি ঘটেছে
+  existing_none: কোনোটিই নয়
+  existing_title: বিদ্যমান ডেটাসেটসমূহ
+  loading: লোড হচ্ছে...
+  more: আরও
+  new_chat: নতুন ভার্চুয়াল ডেটাসেট
+  placeholder: আপনি কী করতে চান তা বর্ণনা করুন...
+  ready_badge: প্রস্তুত
+  recent_chats: সাম্প্রতিক চ্যাটসমূহ
+  send: পাঠান
+  stage: পর্যায়
+  title: ভার্চুয়াল ডেটাসেটসমূহ
+  verbose: বিস্তারিত
+  welcome: ভার্চুয়াল ডেটাসেট সহকারীতে স্বাগতম। এটি যদি আপনার কাছে নতুন হয়, তাহলে কীভাবে শুরু করবেন তা জানতে চাইতে পারেন। আমাকে ব্যাখ্যা করতে বলুন কীভাবে পরিসংখ্যানবিদরা বিশ্লেষণ রেসিপিতে ইনপুট হিসেবে
+    ডেটাসেট ব্যবহার করেন এবং তারপর আউটপুট ব্যবহার করে প্রতিবেদন ও ভিজ্যুয়ালাইজেশন তৈরি করেন। অথবা আপনার প্রকৃত ডেটাসেট ব্রাউজ করতে বলুন যাতে আমরা সেগুলো থেকে ডেটা নির্বাচন করা শুরু করতে পারি। নিশ্চিত না
+    হলে শুধু "হ্যালো" বলুন।
+  preview_columns: আউটপুট কলাম
+  preview_name: নাম
+  preview_joins: জয়েন
+  preview_sources: উৎস
+  preview_title: ডেটাসেট প্রিভিউ
+  manual:
+    save_success: ভার্চুয়াল ডেটাসেট সংরক্ষণ করা হয়েছে।
+    save_error: ভার্চুয়াল ডেটাসেটটি সংরক্ষণ করা যায়নি।
+    no_sources: ব্যবহারের জন্য কোনো সংযোগ বা ডেটাসেট উপলব্ধ নেই।
+    test_join: জয়েন পরীক্ষা করুন
+    sources_title: ডেটা কোথা থেকে আসে
+    test_pulls_every_source: জয়েন পরীক্ষা করলে প্রতিটি উৎস সম্পূর্ণ পড়া হয়, তাই এটি ধীর হতে পারে।
+    need_columns: অন্তর্ভুক্ত করতে অন্তত একটি কলাম টিক দিন।
+    joins_hint: দুই বা ততোধিক উৎসের মধ্যে একটি জয়েন প্রয়োজন। একটি উৎসের কোনো জয়েন প্রয়োজন নেই।
+    preview_rows: '{count} সারি ফিরেছে'
+    move_up: এই কলামটি এক ধাপ উপরে সরান
+    name_label: ডেটাসেটের নাম
+    suggested: প্রস্তাবিত
+    alias_taken: সেই অ্যালিয়াসটি ইতিমধ্যে অন্য একটি উৎসে ব্যবহৃত হচ্ছে।
+    column_placeholder: একটি কলাম বেছে নিন
+    intro: আপনার বেছে নেওয়া কলামগুলো থেকে একটি ভার্চুয়াল ডেটাসেট তৈরি করুন, অথবা ইতিমধ্যে থাকা একটি খুলে তা পরিবর্তন করুন।
+    validate: সংজ্ঞা যাচাই করুন
+    bridge_choose_columns: কোনো মিলে যাওয়া কলাম পাওয়া যায়নি — জয়েন যোগ করুন এবং সেগুলো বেছে নিন।
+    incomplete_join: যে জয়েনে এখনো কোনো কলাম বেছে নেওয়া হয়নি, তা সম্পূর্ণ করুন বা সরিয়ে ফেলুন।
+    materialized_hint: লাইভ জয়েনের পরিবর্তে একটি টেবিল লেখে। প্রোটোটাইপ করার সময় এটি বন্ধ রাখুন।
+    complete_join: অসমাপ্ত জয়েনটি পূরণ করুন
+    no_match: এখানে কিছুই ফিল্টারের সাথে মেলে না।
+    preview_error: জয়েনটি চালানো যায়নি।
+    aggregation_note: পুরোনো সংজ্ঞায় থাকা একটি অ্যাগ্রিগেশন যেমন আছে তেমনই রাখা হয়, কিন্তু জয়েন সেটি প্রয়োগ করে না।
+    loading_columns: কলাম পড়া হচ্ছে…
+    new_dataset: একটি নতুন ডেটাসেট শুরু করুন
+    description_label: ডেটাসেটের বিবরণ
+    alias_label: অ্যালিয়াস
+    title: ভার্চুয়াল ডেটাসেট সম্পাদক
+    bridge_no_columns: কলামগুলো এখনো পড়া হয়নি — উৎস প্রসারিত করুন, অথবা জয়েন যোগ করে সেগুলো বেছে নিন।
+    update_dataset: এই ডেটাসেটটি আপডেট করুন
+    materialized_label: ফলাফল ম্যাটেরিয়ালাইজ করুন
+    add_join: একটি জয়েন যোগ করুন
+    select_all: সব নির্বাচন করুন
+    output_title: ডেটাসেট যা প্রকাশ করে
+    open_none: খোলার মতো এখনো কোনো ভার্চুয়াল ডেটাসেট নেই।
+    validate_ok: সংজ্ঞাটি কাঠামোগতভাবে বৈধ।
+    move_down: এই কলামটি এক ধাপ নিচে সরান
+    preview_empty: জয়েনটি কোনো সারি ফেরত দেয়নি।
+    validate_errors: 'সংজ্ঞায় সমস্যা রয়েছে:'
+    load_error: সেই ডেটাসেটের সংজ্ঞা লোড করা যায়নি।
+    joins_title: উৎসগুলো কীভাবে জয়েন করা হয়েছে
+    bridge: ব্রিজ
+    need_name: সংরক্ষণের আগে ডেটাসেটের একটি নাম দিন।
+    tables_error: টেবিলগুলো পড়া যায়নি।
+    remove_join: এই জয়েনটি সরান
+    remove: আউটপুট থেকে এই কলামটি সরান
+    unattached_sources: 'বাকিগুলোর সাথে জয়েন করা নেই: {sources}। একটি জয়েন যোগ করুন যা এগুলোকে সংযুক্ত করে।'
+    open_label: একটি বিদ্যমান ডেটাসেট খুলুন
+    need_join: দুটি উৎস নির্বাচন করা হয়েছে, কিন্তু এদের মধ্যে কোনো জয়েন নেই।
+    select_none: কোনোটি নির্বাচন করবেন না
+    sources_hint: একটি সংযোগ বা ডেটাসেট প্রসারিত করুন, তারপর অন্তর্ভুক্ত করার জন্য কলামগুলো টিক দিন।
+    columns_error: কলামগুলো পড়া যায়নি।
+    output_hint: এই ডেটাসেট যে কলামগুলো প্রকাশ করবে, ক্রমানুসারে।
+    loaded_note: একটি বিদ্যমান সংজ্ঞা খোলা হয়েছে — সংরক্ষণ করলে এটি আপডেট হবে।
+    loaded_note_shared: একটি বিদ্যমান শেয়ার করা সংজ্ঞা খোলা হয়েছে — শুধুমাত্র পঠনযোগ্য - আপডেট অনুমোদিত নয়
+    materialize_failed: 'সংরক্ষিত হয়েছে, কিন্তু টেবিল তৈরি করা যায়নি:'
+    materialize_retry: আবার চেষ্টা করুন
+    materialize_done: টেবিল তৈরি হয়েছে।
+  panel:
+    collapse: উৎস প্যানেলটি ভাঁজ করে লুকান
+    expand: উৎস প্যানেলটি দেখান
+  chip_load_error: বিকল্পগুলো রিফ্রেশ করা যায়নি, তাই এগুলো পুরনো হতে পারে।
+  chip_error: সেই বিকল্পটি প্রয়োগ করা যায়নি।
+  panel_columns: '{count}টি কলাম'
+  panel_tick_no_session: প্রথমে একটি বার্তা পাঠান — ট্রি এই সেশনে আপনার দেওয়া টিক চিহ্নগুলো রেকর্ড করে।
+  progress_decided: '{total}টির মধ্যে {decided}টি নির্ধারিত হয়েছে'
+  panel_fold_error: প্যানেলের ভাঁজ করা অবস্থা সংরক্ষণ করা যায়নি, তাই পরের বার এটি আবার খোলা থাকবে।
+  panel_tick_error: সেই কলামে টিক চিহ্ন দেওয়া যায়নি।
+  heading_choose_columns: কলাম নির্বাচন করুন
+  heading_match_columns: এই কলামগুলো মিলান
+  heading_choose_table: একটি টেবিল নির্বাচন করুন
+  heading_materialised: লাইভ নাকি ম্যাটেরিয়ালাইজড?
+  selection_hint: যেগুলো আপনি চান না সেগুলোর টিক চিহ্ন তুলে দিন, তারপর সেগুলো একসাথে ব্যবহার করুন।
+  suggestion_applied: প্রয়োগ করা হয়েছে
+  act:
+    sources_short: 'গৃহীত {count}টি টেবিল: {tables}'
+    applied: '{piece} প্রয়োগ করা হয়েছে'
+    join: '{pair} যুক্ত হয়েছে'
+    sources: গৃহীত {count}টি টেবিল
+    named: এটির নাম “{name}” রাখা হয়েছে
+  confirm_selection: এগুলো ব্যবহার করুন
+  join_type_label: জয়েনের ধরন
+  joins_hint: যেকোনো কলাম বা জয়েনের ধরন পরিবর্তন করুন, তারপর চালিয়ে যান।
+  joins_coverage: '{total} টেবিলের মধ্যে {connected}টি সংযুক্ত'
+  joins_unsaved: এই সারিগুলো ডেটাসেট থেকে আলাদা। এগুলো প্রয়োগ করুন, অথবা প্রথমে খালি সারিটি ঠিক করুন।
+  joins_unjoined: 'সংযুক্ত হয়নি: {tables}'
+  act_joins: '{count} জোড়া সংযুক্ত হয়েছে'
+  joins_apply: প্রয়োগ করুন
+  name_suggestion_accept: এই নামটি ব্যবহার করুন
+  name_suggestion_heading: প্রস্তাবিত নাম — চাইলে পরিবর্তন করুন
+visualize:
+  config: কনফিগারেশন
+  data: ডেটা (JSON)
+  data_placeholder: এখানে JSON ডেটা পেস্ট করুন অথবা নমুনা তৈরি করুন
+  description: একটি ভিজ্যুয়ালাইজেশনের ধরন নির্বাচন করুন, নমুনা ডেটা তৈরি করুন, প্যারামিটার সামঞ্জস্য করুন এবং প্রিভিউ দেখুন।
+  download_error: টেবিল ডাউনলোড করতে ব্যর্থ হয়েছে
+  download_png: PNG হিসেবে ডাউনলোড করুন
+  download_success: টেবিল PNG হিসেবে ডাউনলোড হয়েছে
+  generate_sample: নমুনা তৈরি করুন
+  invalid_data: টেক্সট টেবিলের জন্য অবৈধ ডেটা। কলাম এবং সারি প্রত্যাশিত।
+  load_error: ভিজ্যুয়ালাইজেশনের ধরন লোড করতে ব্যর্থ হয়েছে
+  no_data: ভিজ্যুয়ালাইজ করার জন্য কোনো ডেটা নেই। নমুনা ডেটা তৈরি করুন অথবা JSON পেস্ট করুন।
+  no_types: কোনো ভিজ্যুয়ালাইজেশনের ধরন সংজ্ঞায়িত নেই। অনুগ্রহ করে একজন প্রশাসকের সাথে যোগাযোগ করুন।
+  parameters: প্যারামিটারসমূহ
+  preview: প্রিভিউ
+  sample_expenses: ব্যয়সমূহ
+  sample_generated: নমুনা ডেটা তৈরি হয়েছে
+  sample_item: আইটেম
+  sample_sales: বিক্রয়
+  sample_value: মান
+  save_error: সংরক্ষণ করতে ব্যর্থ হয়েছে
+  save_instance: ইনস্ট্যান্স সংরক্ষণ করুন
+  save_no_data: সংরক্ষণ করার জন্য কোনো ডেটা নেই। অনুগ্রহ করে ডেটা তৈরি করুন বা পেস্ট করুন।
+  save_success: ভিজ্যুয়ালাইজেশন সফলভাবে সংরক্ষিত হয়েছে
+  select_type: ধরন নির্বাচন করুন
+  title: ভিজ্যুয়ালাইজেশন স্যান্ডবক্স
+  type: ভিজ্যুয়ালাইজেশনের ধরন
+  unsupported: ভিজ্যুয়ালাইজেশনের ধরনটি এখনও বাস্তবায়িত হয়নি
+  unsupported_parameter: অসমর্থিত ধরন

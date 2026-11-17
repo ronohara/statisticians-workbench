@@ -1,0 +1,2257 @@
+about:
+  description: shadcn/ui ve Next.js ile harika deneyimler oluşturun. Temiz tasarım, hızlı performans.
+  fast_desc: Optimum performans için Next.js App Router üzerine inşa edilmiştir.
+  fast_title: Hızlı
+  get_started: Başlayın
+  modern_desc: shadcn/ui ile erişilebilir bileşenler, Tailwind CSS ile stillendirilmiştir.
+  modern_title: Modern Arayüz
+  secure_desc: Tür güvenli ve özelleştirilebilir – bileşen kodunun sahibi sizsiniz.
+  secure_title: Güvenli
+  title: Statisticians Workbench Hakkında
+admin:
+  groups:
+    back_to_admin: Yönetim Paneline Dön
+    cannot_modify_self: Kendi hesabınızı değiştiremezsiniz.
+    delete_confirmation: '{name} adlı kullanıcıyı silmek istediğinizden emin misiniz? Bu kullanıcı geçici olarak silinecek ve bir Tam Yetkili Yönetici tarafından geri yüklenebilir.'
+    delete_error: Kullanıcı silinemedi.
+    delete_title: Kullanıcıyı Sil
+    demote: Yetkisini Düşür
+    demote_error: Kullanıcının yetkisi düşürülemedi.
+    demote_success: Kullanıcının Grup Yöneticisi yetkisi düşürüldü.
+    description_placeholder: Açıklama girin.
+    description_required: Açıklama boş olamaz.
+    group_description: Grup Açıklaması
+    group_users_load_error: Grup kullanıcıları yüklenemedi.
+    load_error: Gruplar yüklenemedi.
+    load_success: Gruplar başarıyla yüklendi.
+    no_users: Bu grupta kullanıcı bulunamadı.
+    promote: Yetkisini Yükselt
+    promote_error: Kullanıcının yetkisi yükseltilemedi.
+    promote_success: Kullanıcı Grup Yöneticiliğine yükseltildi.
+    readonly_badge: (salt okunur)
+    readonly_message: Bu sayfayı salt okunur modda görüntülüyorsunuz. Örnek kullanıcılar değişiklik yapamaz.
+    readonly_title: Grup Yönetimi (Salt Okunur)
+    select_group: Grup Seçin
+    select_group_placeholder: Bir grup seçin
+    title: Grup Yönetimi
+    update_error: Grup güncellenemedi.
+    update_success: Grup açıklaması güncellendi.
+    users_in_group: Gruptaki Kullanıcılar
+  models:
+    comment_placeholder: Yorum girin.
+    description: Workbench'in bildiği her model. Bir modeli etkinleştirmek, onu sunan her bağlantıyı etkiler; sunucular sütunu, hangi sunucuların ona erişebildiğini gösterir.
+    disabled: Devre Dışı
+    edit_comment: Yorumu Düzenle
+    enabled: Etkin
+    fetch_auth_required: Bu sağlayıcı, modelleri listelemek için bir API anahtarı gerektirir. Bunun yerine Ayarlar → Yapay Zeka Bağlantıları bölümünden yenileyin.
+    fetch_non_standard: Bu sağlayıcı standart bir model listeleme API'si sunmaz. Modelleri yönetici panelinden manuel olarak ekleyin.
+    load_models_error: Modeller yüklenemedi.
+    no_comment: —
+    no_models: Henüz hiç model yok. Keşif, bunları bir bağlantıdan oluşturur.
+    not_preferred: Tercih Edilmeyen
+    preferred: Tercih Edilen
+    toggle_error: Model güncellenemedi.
+    update_error: Yorum güncellenemedi.
+    update_success: Model güncellendi.
+    no_servers: Henüz hiçbir bağlantı bu modeli sunmuyor.
+    servers_title: 'Şuradan ulaşılabilir:'
+    tuning_inherited_title: Boş bırakılırsa Workbench varsayılanını devralır.
+    tuning_save_error: AI ayarları kaydedilemedi.
+    tuning_saved: AI ayarları kaydedildi.
+    tuning_loading: AI ayarları yükleniyor…
+    filter_clear: Filtreleri temizle
+    filter_any: Herhangi bir durum
+    filter_state: Durum
+    tuning_timeout_hint: Bir AI isteğinin çalışabileceği saniye. Yerel bir CPU modeli birkaç dakika gerektirebilir.
+    search_placeholder: Model adı ara
+    model_count: '{count} model'
+    filter_result: Sonuç
+    tuning_hint: Bu değerler, bu modelin bu bağlantıda kullanıldığı her yerde geçerlidir. Boş bırakılması, Workbench varsayılanını devraldığı anlamına gelir.
+    tuning_temperature_hint: Düşük değerler daha tekrarlanabilir yanıtlar verir; yüksek değerler daha çeşitli yanıtlar verir.
+    filter_test: Yetenek testi
+    tuning_load_error: AI ayarları yüklenemedi.
+    tuning_title: Bu sunucu için AI ayarları
+    no_matches: Bu filtrelerle eşleşen model yok.
+    tuning_inherited: devralınan
+  providers:
+    code_label: Kod
+    delete_button: Sil
+    delete_confirmation: '"{name}" adlı sağlayıcıyı silmek istediğinizden emin misiniz? Bu işlem, ilişkili tüm modelleri de kaldırır ve geri alınamaz.'
+    delete_error: Sağlayıcı silinemedi.
+    delete_provider: Sağlayıcıyı Sil
+    delete_success: Sağlayıcı silindi.
+    delete_title: Sağlayıcıyı Sil
+    description: Yapay zeka sağlayıcılarını etkinleştirin veya devre dışı bırakın. Devre dışı bırakılan sağlayıcılar, kullanıcı bağlantı formlarında görünmez.
+    disabled: Devre Dışı
+    enabled: Etkin
+    fetch_error: Sağlayıcılar yüklenemedi.
+    list_title: Tüm Sağlayıcılar
+    local: Yerel
+    no_api_key: API anahtarı gerekmez
+    requires_api_key: API anahtarı gerektirir
+    title: Yapay Zeka Sağlayıcıları
+    toggle_error: Sağlayıcı güncellenemedi.
+    update_success: Sağlayıcı güncellendi.
+  title: Yönetici Paneli
+  user_details:
+    dark_mode_description: Açık ve koyu tema arasında geçiş yapın.
+    dark_mode_label: Koyu Mod
+    email_label: E-posta
+    email_notifications_description: Hesabınızla ilgili e-posta güncellemeleri alın.
+    email_notifications_label: E-posta Bildirimleri
+    full_admin_note: Tam Yetkili Yöneticiler varsayılan olarak tüm Grup Yöneticisi izinlerine sahiptir.
+    group_admin_description: Kullanıcı, grubundaki diğer kullanıcıları yönetebilir.
+    group_admin_label: Grup Yöneticisi
+    group_hint: Kullanıcının grubu, hangi paylaşılan kaynaklara erişebileceğini belirler.
+    language_label: Dil
+    language_select_placeholder: Dil seçin
+    load_error: Kullanıcı ayrıntıları yüklenemedi.
+    max_upload_count_hint: Kullanıcı başına maksimum veri kümesi sayısı (0 = sınırsız).
+    max_upload_count_label: Maksimum Yükleme Sayısı
+    max_upload_count_placeholder: Sayı seçin
+    max_upload_size_hint: Kullanıcı başına maksimum toplam depolama alanı (0 = sınırsız).
+    max_upload_size_label: Maksimum Yükleme Boyutu
+    max_upload_size_placeholder: Boyut seçin
+    name_label: Ad
+    not_found: Kullanıcı bulunamadı
+    save_error: Kullanıcı güncellenemedi
+    save_success: Kullanıcı bilgileri güncellendi
+    select_group: Grup seçin
+    title: Kullanıcıyı Yönet
+    unnamed: Adsız Kullanıcı
+    user_group: Kullanıcı Grubu
+  users:
+    active_users: Aktif Kullanıcılar
+    admin_badge: Yönetici
+    bcc_label: BCC Kayıtları
+    bcc_updated: BCC kayıt ayarı güncellendi
+    created_label: Oluşturuldu
+    current_user_badge: Siz
+    delete_button: Sil
+    delete_confirmation: '"{name}" adlı kullanıcıyı kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem GERİ ALINAMAZ.'
+    delete_error: Kullanıcı silinemedi
+    delete_self_error: Kendi hesabınızı silemezsiniz
+    delete_success: Kullanıcı kalıcı olarak silindi
+    delete_title: Kullanıcıyı Sil
+    deleted_badge: Yumuşak Silinmiş
+    deleted_label: Silinmiş
+    example_user_badge: Örnek Kullanıcı
+    forbidden: Yasaklandı
+    group_admin_badge: Grup Yöneticisi
+    hard_delete_button: Kalıcı Sil
+    hard_delete_confirmation: '"{name}" adlı kullanıcıyı kalıcı olarak silmek istediğinizden emin misiniz? Bu işlem GERİ ALINAMAZ.'
+    hard_delete_error: Kullanıcı kalıcı olarak silinemedi
+    hard_delete_success: Kullanıcı kalıcı olarak silindi
+    hard_delete_title: Kullanıcıyı Kalıcı Olarak Sil
+    load_error: Kullanıcılar yüklenemedi
+    make_admin: Yönetici Yap
+    more_button: Daha Fazla...
+    no_name: Ad yok
+    remove_admin: Yöneticilikten Çıkar
+    resend_button: E-postayı Yeniden Gönder
+    resend_error: Doğrulama e-postası gönderilemedi
+    resend_success: Doğrulama e-postası {email} adresine gönderildi
+    restore_button: Geri Yükle
+    restore_error: Kullanıcı geri yüklenemedi
+    restore_success: Kullanıcı geri yüklendi
+    soft_deleted_users: Yumuşak Silinmiş Kullanıcılar
+    title: Kullanıcı Yönetimi
+    unauthorized: Yetkisiz
+    unverified_badge: Doğrulanmamış
+    update_error: Kullanıcı güncellenemedi
+    update_success: Kullanıcı güncellendi
+    user_not_found: Kullanıcı bulunamadı
+    verified_badge: Doğrulanmış
+    verify_button: Doğrula
+    verify_error: Kullanıcı doğrulanamadı
+    verify_success: Kullanıcı doğrulanmış olarak işaretlendi
+    add_user: Kullanıcı Ekle
+  visualization_types:
+    add_button: Yeni Tür Ekle
+    add_title: Görselleştirme Türü Ekle
+    create_success: Görselleştirme türü oluşturuldu
+    default_parameters: Varsayılan Parametreler (JSON)
+    delete: Sil
+    delete_button: Sil
+    delete_confirmation: '"{name}" adlı türü silmek istediğinizden emin misiniz? Bu işlem aynı zamanda ilişkili tüm örnekleri de kaldırır ve geri alınamaz.'
+    delete_error: Silinemedi
+    delete_success: Görselleştirme türü silindi
+    delete_title: Görselleştirme Türünü Sil
+    description: Açıklama
+    disabled: Devre Dışı
+    edit: Düzenle
+    edit_title: Görselleştirme Türünü Düzenle
+    enabled: Etkin
+    fetch_error: Görselleştirme türleri yüklenemedi
+    input_schema: Girdi Şeması (JSON)
+    invalid_json: Şema alanlarından birinde geçersiz JSON
+    list_title: Tüm Görselleştirme Türleri
+    name: Ad
+    no_types: Henüz tanımlı görselleştirme türü yok.
+    parameter_schema: Parametre Şeması (JSON)
+    renderer: İşleyici
+    renderer_client: İstemci
+    renderer_label: İşleyici
+    renderer_server: Sunucu
+    save_error: Kaydedilemedi
+    slug: Slug
+    slug_label: Slug
+    title: Görselleştirme Türleri
+    toggle_error: Güncellenemedi
+    update_success: Görselleştirme türü güncellendi
+  adduser:
+    creating: Kullanıcı oluşturuluyor...
+    submit: Kullanıcı Oluştur
+    password: Parola
+    back_to_admin: Yöneticiye Dön
+    language_description: Kullanıcının arayüz için tercih ettiği dili seçin.
+    password_mismatch: Parolalar eşleşmiyor
+    name: Ad
+    confirm_password: Parolayı Doğrula
+    title: Kullanıcı Ekle
+    email: E-posta
+    success: Hesap oluşturuldu ve doğrulandı. Yeni kullanıcı şimdi oturum açabilir.
+    failed: Kullanıcı oluşturulamadı
+    description: Yeni bir kullanıcı hesabı oluşturun. Hesap hemen doğrulanır.
+    not_admin: Bu sayfaya erişim izniniz yok.
+  set_password:
+    admin_password_required: Yönetici parolası gereklidir.
+    admin_password: Yönetici Parolası
+    failed: Parola belirlenemedi.
+    description: Bu kullanıcı için yeni bir parola belirleyin. Değişikliği onaylamak için kendi yönetici parolanız gereklidir.
+    title: Parola Belirle
+    success: Parola başarıyla belirlendi.
+ai:
+  connection:
+    add_first: İlk AI bağlantınızı ekleyin
+    add_new: Yeni AI Bağlantısı Ekle
+    add_success: AI bağlantısı başarıyla eklendi
+    add_title: Yeni AI Bağlantısı Ekle
+    api_key_hint: API anahtarınız depolanmadan önce şifrelenir.
+    api_key_label: API Anahtarı
+    by_label: tarafından
+    clear_default: Varsayılanı Temizle
+    currently_not_shared: ❌ Şu anda paylaşılmıyor
+    currently_shared: ✅ Şu anda grupla paylaşılıyor
+    default_badge: Varsayılan
+    default_cleared: Varsayılan AI bağlantısı temizlendi
+    default_set: Varsayılan AI bağlantısı güncellendi
+    delete_button: Sil
+    delete_confirmation: Bu bağlantıyı silmek istediğinizden emin misiniz?
+    delete_error: AI bağlantısı silinemedi
+    delete_title: AI Bağlantısını Sil
+    deleted: AI bağlantısı silindi
+    edit_title: AI Bağlantısını Düzenle
+    endpoint_hint: Gerekirse varsayılan API uç noktasını geçersiz kılın.
+    endpoint_label: Uç Nokta URL'si
+    form_description: Bir AI sağlayıcı bağlantısı yapılandırın.
+    group_label: Grup
+    load_error: Bağlantılar yüklenemedi
+    load_providers_error: Sağlayıcılar yüklenemedi
+    metadata_load_error: Sağlayıcı meta verileri yüklenemedi
+    metadata_loading: Sağlayıcı bilgileri hâlâ yükleniyor. Lütfen bekleyin.
+    models: Kullanılabilir Modeller
+    models_disabled: Devre Dışı
+    models_load_error: Modeller yüklenemedi
+    models_none: Henüz hiçbir model eşitlenmedi. Sağlayıcıdan modelleri getirmek için Yenile'ye tıklayın.
+    models_refresh: Modelleri yenile
+    models_sync_error: Modeller eşitlenemedi
+    models_synced: Modeller başarıyla eşitlendi
+    name_label: Bağlantı Adı
+    name_placeholder: örn. My AI bağlantısı
+    no_connections: Henüz kayıtlı AI bağlantısı yok.
+    not_found: Bağlantı bulunamadı
+    provider_label: Sağlayıcı
+    provider_not_found: Sağlayıcı bulunamadı
+    save_error: AI bağlantısı kaydedilemedi
+    select_provider: AI sağlayıcısını seçin
+    select_provider_first: Lütfen önce bir sağlayıcı seçin
+    set_default: Varsayılan Olarak Ayarla
+    shared_badge: Paylaşılan
+    shared_description: Bu bağlantıyı grubunuzdaki diğer kullanıcıların kullanımına açın.
+    shared_label: Grupla paylaş
+    shared_readonly: Paylaşılan
+    shared_readonly_message: Bu bağlantı sizinle paylaşılmış. Görüntüleyebilirsiniz ancak düzenleme yalnızca sahibine açıktır.
+    test_button: Bağlantıyı Test Et
+    test_error: Bağlantı başarısız oldu.
+    test_success: Bağlantı başarılı!
+    unknown_user: Bilinmiyor
+    update_success: AI bağlantısı başarıyla güncellendi
+    connect_timeout_hint: Ağın bir bağlantıyı kabul etmesi için geçebilecek süre. Bu ağın gereksindiği değerin altındaki bir değer, çalışan bir uç noktayı erişilemez hale getirir.
+    invalid_connect_timeout: Bağlantı zaman aşımı, en az 1 ve en çok 60 olmak üzere tam sayı saniye olmalıdır.
+    models_discovered: 'Bu bağlantıda {seen} model keşfedildi: {created} yeni, {refreshed} zaten bilinen, {pruned} artık sunulmayan.'
+    timeouts_section_label: Bağlantı zaman aşımları
+    timeouts_section_hint: Bir kutuyu boş bırakırsanız Workbench varsayılanı kullanılır.
+    probe_timeout_hint: Bir uygunluk testinin burada çalışabileceği süre. CPU üzerinde barındırılan bir model dakikalar sürer.
+    invalid_probe_timeout: Model testi zaman aşımı, en az 1 ve en çok 1200 olmak üzere tam sayı saniye olmalıdır.
+    connect_exceeds_probe: Bağlantı zaman aşımı, model testi zaman aşımından daha uzun olamaz; bir bağlantının kurulmasına tüm testin çalışabileceği süreden daha uzun süre izin verilemez.
+  database:
+    add_connection: Veritabanı Bağlantısı Ekle
+    ai_augmented: AI Destekli Analiz
+    ai_augmented_desc: Şema AI, Semantik AI ve Entegrasyon AI bu veritabanını analiz etti.
+    ai_fallback: Temel Analiz
+    ai_fallback_desc: AI desteği kullanılamıyor. Yalnızca yapısal analiz gösteriliyor. Daha derin içgörüler için bir AI bağlantısı seçin.
+    ai_health_score: AI Sağlık Puanı
+    ai_unavailable: AI analizi kullanılamıyor. Gelişmiş analizi etkinleştirmek için bir AI sağlayıcısına bağlanın.
+    all_issues: Tüm Sorunlar
+    analysis_report: Analiz Raporu
+    analysis_summary: '{tables} tablo, {columns} sütun, {issues} sorun bulundu'
+    analyze: Şemayı Analiz Et
+    analyzing: Analiz ediliyor...
+    business_value: İş Değeri
+    categories: Kategoriler
+    code_systems_detected: Algılanan Kod Sistemleri
+    cols_rows_format: '{cols} sütun, {rows} satır'
+    column_meanings: Sütun Anlamları
+    columns_label: Sütunlar
+    confidence: Güven
+    description: Veritabanı tasarımınızı dizinleme, normalizasyon, ilişki, veri türü ve adlandırma sorunları açısından analiz edin.
+    download_pdf: PDF İndir
+    email_body_attachment: Analiz raporu ekte yer almaktadır.
+    email_body_connection: 'Bağlantı: {conn_name}'
+    email_body_database: 'Veritabanı: {db_name}'
+    email_body_id: 'Bağlantı Kimliği: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Veritabanı Tasarımı Analiz Raporu
+    email_body_type: 'Veritabanı Türü: {db_type}'
+    email_error: Rapor e-postayla gönderilemedi
+    email_pdf: PDF'yi E-postayla Gönder
+    email_sent: Rapor başarıyla e-postayla gönderildi
+    email_subject: Veritabanı Tasarımı Analizi — {db_name} ({db_type}) [Bağlantı {conn_id}]
+    empty_state: Başlamak için bir veritabanı bağlantısı seçin ve Analiz Et'e tıklayın.
+    enter_question: Lütfen bir soru girin.
+    foreign_keys: Yabancı Anahtarlar
+    high_risk: Yüksek
+    implicit_relationships: Örtük İlişkiler
+    indexes_label: Dizinler
+    integration_analysis: Entegrasyon Analizi
+    integration_analysis_desc: Entegrasyon AI tarafından algılanan örtük ilişkiler, araştırma yetenekleri ve eksik boyutlar.
+    isic_domains: ISIC Alan Sınıflandırmaları
+    issues_label: Sorunlar
+    low_risk: Düşük
+    medium_risk: Orta
+    missing_dimensions: Eksik Boyutlar
+    no_issues: Sorun bulunamadı. Veritabanı tasarımınız iyi görünüyor!
+    no_semi_structured: Metin sütunlarında yarı yapılandırılmış veri deseni algılanmadı.
+    normalisation_suggestions: Normalizasyon Önerileri
+    normalisation_suggestions_desc: Yarı yapılandırılmış metin sütunlarında bulunan anahtar kelimelere dayalı olarak önerilen referans tabloları.
+    normalisation_warning: Bunlar AI tarafından oluşturulan önerilerdir. Veritabanı yeniden tasarımları dikkatli inceleme gerektirir. Değişiklikleri önce bir kopyada test edin.
+    pdf_downloaded: PDF başarıyla indirildi
+    pdf_error: PDF oluşturulamadı
+    pk_prefix: PK –
+    placeholder: Çok yakında. Bu özellik, AI kullanarak veritabanı şemaları tasarlamanıza yardımcı olacak.
+    priority_actions: Öncelikli Eylemler
+    proposed_reference_table: Önerilen Referans Tablosu
+    rag_ask: Sor
+    rag_chat: RAG Sohbeti — Verileriniz Hakkında Sorular Sorun
+    rag_chat_desc: Doğal dilde sorular sorun. Sistem metin sütunlarını arar ve kaynaklarıyla birlikte AI tarafından oluşturulan yanıtlar döndürür.
+    rag_error: RAG sorgusu başarısız oldu
+    rag_placeholder: örn. En yaygın tanılar nelerdir?
+    rag_sources: Kaynaklar
+    research_capabilities: Araştırma Yetenekleri
+    risk_breakdown: Risk Dağılımı
+    rows_label: Satırlar
+    schema_error: Veritabanı şeması analiz edilemedi
+    select_connection: Veritabanı Bağlantısı Seçin
+    select_connection_first: Lütfen önce bir veritabanı bağlantısı seçin.
+    select_connection_placeholder: Bir veritabanı bağlantısı seçin...
+    semantic_analysis: Anlamsal Analiz
+    semantic_analysis_desc: Yapay zeka ile çıkarılan sütun anlamları, ISIC alan sınıflandırmaları ve kod sistemi tespitleri.
+    semi_structured: Yarı Yapılandırılmış Veri Analizi
+    semi_structured_desc: Metin sütunları gömülü kodlar, anahtar kelimeler ve desenler için analiz edilir.
+    table_purposes: Tablo Amaçları
+    tables_explorer: Tablo Gezgini
+    tables_label: Tablolar
+    timeout_error: Analiz zaman aşımına uğradı. Veritabanı çok büyük olabilir veya yapay zeka hizmeti kullanılamıyor olabilir.
+    timeout_log: Analiz 15 dakika sonra zaman aşımına uğradı.
+    title: Veritabanı Tasarım Asistanı
+    top_recommendations: Öne Çıkan Öneriler
+    health_score_desc: Schema AI tarafından değerlendirilen genel veritabanı sağlığı. 0 = kritik yapısal sorunlar, 100 = üretime hazır.
+    is_missing: eksik
+    peer_tables: 'Eş tablolar:'
+  dataclean:
+    chat_error: Yanıt alınamadı
+    chat_placeholder: Bu veri kümesini temizleme veya hazırlama hakkında sorun...
+    column_tooltip: '{type} — {null_count} boş, {unique_count} benzersiz'
+    column_type:
+      category: Kategori
+      datetime: Tarih/Saat
+      number: Sayı
+      text: Metin
+    description: Yapay zeka destekli veri kümesi temizleme ve hazırlama.
+    empty_chat: Bir veri kümesi seçin ve onu nasıl temizleyip hazırlayacağınız hakkında soru sormaya başlayın.
+    enter_message: Lütfen bir mesaj girin.
+    loading_schema: Şema yükleniyor...
+    no_connection: Lütfen Ayarlar > Yapay Zeka bölümünde varsayılan bir yapay zeka bağlantısı yapılandırın.
+    no_datasets: Kullanılabilir veri kümesi yok. Önce bir veri kümesi yükleyin veya tanımlayın.
+    placeholder: Yakında. Bu özellik, yapay zeka kullanarak veri kümelerini temizlemenize ve hazırlamanıza yardımcı olacak.
+    schema_error: Veri kümesi şeması yüklenemedi
+    schema_summary: '{rows} satır, {cols} sütun'
+    select_dataset: Veri Kümesi Seçin
+    select_dataset_first: Lütfen önce bir veri kümesi seçin.
+    select_dataset_placeholder: Bir veri kümesi seçin...
+    send: Gönder
+    shared_badge: (paylaşılan)
+    title: Veri Kümesi Temizleme Asistanı
+    clean_name_label: Temizlenmiş kopya için ad
+    clean_copy: Temiz kopya
+    no_rules: Henüz kural yok
+    no_dataset_selected: Veri kümesi seçilmedi
+    preview_title: Veri önizlemesi
+    rules_title: Hazırlama kuralları
+    clean_copy_success: Yeni bir veri kümesi oluşturuldu '{name}' — orijinal değiştirilmedi.
+    clean_no_rules: Henüz uygulanacak temizleme kuralı yok.
+    operations_count: '{count} işlem'
+    clean_in_place: Yerinde temizle
+    clean_in_place_success: Veri kümesi '{name}' güncellendi.
+  default_hint: Varsayılan bağlantı, bir analiz reçetesi bir yapay zeka sağlayıcısı belirtmediğinde yedek olarak kullanılır.
+  new_session: Yeni Oturum
+  no_ai_connections: Yapılandırılmış yapay zeka bağlantısı yok. Ayarlar > Yapay Zeka bölümünden bir bağlantı ekleyin.
+  recipe:
+    chat_error: Yanıt alınamadı
+    chat_placeholder: İstatistiksel analiz veya reçete yapılandırması hakkında sorun...
+    description: Yapay zeka destekli reçete ve analiz kuralı oluşturma.
+    empty_chat: Bir veri kümesi seçin ve hangi istatistiksel teknikleri kullanacağınızı sorun.
+    enter_message: Lütfen bir mesaj girin.
+    loading_schema: Şema yükleniyor...
+    no_datasets: Kullanılabilir veri kümesi yok. Önce bir veri kümesi yükleyin veya tanımlayın.
+    placeholder: Yakında. Bu özellik, yapay zeka kullanarak analiz reçeteleri oluşturmanıza yardımcı olacak.
+    schema_summary: '{rows} satır, {cols} sütun'
+    select_dataset: Veri Kümesi Seçin
+    select_dataset_first: Lütfen önce bir veri kümesi seçin.
+    select_dataset_placeholder: Bir veri kümesi seçin...
+    send: Gönder
+    title: Analiz Kuralları Asistanı
+  recipe_concierge:
+    chat_error: Yanıt alınamadı
+    create_prompt: Başlamak için yeni bir oturum oluşturun.
+    delete_session: Oturumu sil
+    draft_empty: Reçetenizi oluşturmak için bir konuşma başlatın. Kararlar verdikçe taslak burada görünecek.
+    draft_title: Reçete Taslağı
+    input_placeholder: Verileriniz hakkında sorun... ya da sadece "merhaba" deyin
+    manual_label: Manuel Reçete
+    new_session: Yeni Oturum
+    no_session: Seçili oturum yok
+    no_sessions: Henüz oturum yok
+    open: Düzenleyicide aç
+    save: Reçeteyi Kaydet
+    saved: Reçete kaydedildi!
+    saving: Kaydediliyor...
+    select_dataset: Veri kümesi seçin...
+    stage_columns: Sütunları Seçin
+    stage_complete: Reçete Hazır
+    stage_goal: Araştırma Sorusu
+    stage_greeting: Hoş Geldiniz
+    stage_review: Reçeteyi İncele
+    stage_technique: Teknik Seçin
+    stage_transforms: Veri Hazırlığı
+    stage_visualisation: Görselleştirme
+    status_draft: Taslak
+    status_ready: Hazır
+    tab_chat: Sohbet
+    tab_draft: Taslak
+    tab_sessions: Oturumlar
+    title: Yapay Zeka Reçete Danışmanı
+    toggle_panel: Reçete panelini aç/kapat
+    welcome: Verilerinizde ne keşfetmek istediğinizi söyleyin, ben de size eksiksiz bir analiz reçetesi oluşturmanızda yardımcı olayım.
+    schema_changes: 'Şema değişiklikleri algılandı:'
+    draft_no_visualisation: Sayısal sonuçlar
+    errors_heading: Henüz kaydedilemiyor
+    draft_dataset: Veri kümesi
+    draft_algorithm: Algoritma
+    draft_output: Çıktı
+    warnings_heading: Uyarılar
+    progress_decided: '{count} / {total} karar verildi'
+    done: Tamamlandı
+    progress_next: '{progress} · {next}'
+    chip_withheld: +{count} daha
+    unread_sources: Bazı kaynaklar okunamadı, bu nedenle sütun listesi eksik olabilir.
+    chip_superseded: Daha yeni bir teklifle değiştirildi.
+    chip_expand: '{count} tane daha göster'
+    chip_collapse: Daha az göster
+  select_ai_connection: AI Bağlantısı
+  select_ai_connection_placeholder: AI bağlantısı seçin...
+  select_model: Model
+  select_model_placeholder: Model seçin...
+  test_error: Bağlantı başarısız oldu.
+  test_success: Bağlantı başarılı!
+  title: AI Ayarları
+  thinking: Düşünüyor...
+  testing:
+    test_competence: Yeterlilik
+    cancelled: Durduruldu. Zaten kaydedilmiş sonuçlar korundu.
+    column_model: Model
+    running: Çalışıyor…
+    discover_models: Modelleri keşfet
+    slow_limit_session_link: Bunu profilinizde kalıcı olarak ayarlayın.
+    elsewhere_note: Bir model başka bir bağlantıdan gelen yetenek sonucunu taşıyabilir. Her durumun yanındaki süre bu bağlantının kendi ölçümüdür; bu nedenle bir model burada süre olmadan bir durum gösterebilir.
+    duration_ms: '{ms} ms'
+    run_all_untested: Test edilmemiş modellerde tüm testleri çalıştır
+    enabled_no: Model devre dışı
+    enabled_yes: Model etkin
+    run_failed: 'Test çalıştırılamadı: {detail}'
+    no_duration_here: Bu bağlantıda çalıştırılmadı
+    slow_limit_session_reset: Kayıtlı sınırımı kullan
+    slow_limit_unavailable: Ayarlarınızda yavaş model sınırı bulunmadığından hiçbir model çok yavaş olarak işaretlenmedi.
+    discover_failed: 'Modeller keşfedilemedi: {detail}'
+    failure_reason: 'Neden: {reason}'
+    state_fail: Başarısız
+    no_connections_link: AI bağlantılarına git
+    duration_seconds: '{seconds} sn'
+    connection_label: AI bağlantısı
+    title: AI Testi
+    no_connections_heading: Henüz AI bağlantısı yok
+    run_all_for_model: Bu model için tümünü çalıştır
+    slow_limit_failed: Yavaş model sınırınız okunamadı, bu nedenle hiçbir model çok yavaş olarak işaretlenmedi. {detail}
+    column_enabled: Etkin
+    test_turn: Karmaşıklık
+    column_actions: Test
+    load_error: AI bağlantılarınız yüklenemedi. {detail}
+    slow_limit_session_hint: Yalnızca bu sayfa için geçerlidir — kaydedilmez.
+    models_heading: Modeller
+    too_slow: '{seconds} sn sınırınızı aşıyor'
+    test_tools: araçları kullanıyor
+    state_pass: Geçti
+    cost_confirm: Çalıştırmayı başlat
+    run_test: Testi çalıştır
+    discover_result: 'Sunucu {seen} model listeledi: {created} yeni, {refreshed} zaten bilinen, {pruned} artık sunulmayan.'
+    explanation: Workbench'in AI konsiyerjleri eyleme geçen modeller için geliştirilmiştir. Yalnızca konuşan bir model — ne kadar kibar, ne kadar büyük olursa olsun — tarif düzenleyicisini yanıt verirken
+      hiçbir şey yapmadan bırakır. Çözüm modeldir, kod değildir. Bu sayfadaki araç, bir modelin uygun olup olmadığını test etmenizi sağlar.
+    slow_limit_session_label: Yavaş model sınırı
+    no_models: Bu bağlantıda henüz hiçbir model keşfedilmedi.
+    cost_warning: Bu, {count} test çalıştırır; tur testi ise CPU'da model başına dakikalar sürer. Başlatmak için tekrar basın.
+    discover_running: Sunucuya soruluyor…
+    no_connections_body: Bir modeli test etmek için bir AI bağlantısı gerekir. Bir tane ekleyin, sonra bu sayfaya geri dönün.
+api:
+  admin:
+    already_full_admin: Kullanıcı zaten Tam Yönetici
+    already_group_admin: Kullanıcı zaten Grup Yöneticisi
+    cannot_delete_self: Kendi hesabınızı silemezsiniz
+    cannot_demote_full_admin: Tam Yönetici rütbesi düşürülemez
+    cannot_demote_self: Kendi rütbenizi düşüremezsiniz
+    cannot_promote_example: Örnek Kullanıcı yükseltilemez
+    delete_error: Kullanıcı silinemedi
+    demote_error: Kullanıcı rütbesi düşürülemedi
+    description_required: Açıklama boş olamaz
+    example_blocked: Örnek kullanıcılar yönetici eylemleri gerçekleştiremez
+    group_not_found: Grup bulunamadı
+    group_users_load_error: Grup kullanıcıları yüklenemedi
+    groups_load_error: Gruplar yüklenemedi
+    groups_stats_error: Grup istatistikleri yüklenemedi
+    instance_exists: Tür, {count} ilişkili örneğe sahip olduğu için silinemiyor.
+    insufficient_permissions: Bu eylem için yetersiz izin
+    invalid_group_id: Geçersiz group_id. 00-99 arasında olmalı
+    invalid_id: Geçersiz id
+    invalid_upload_count: maxUploadCount negatif olmayan bir tam sayı olmalıdır (sınırsız için 0).
+    invalid_upload_size: maxUploadSizeMB negatif olmayan bir tam sayı olmalıdır (sınırsız için 0).
+    missing_fields: Gerekli alanlar eksik
+    missing_group_id: Grup kimliği eksik
+    missing_id: id eksik
+    missing_model_id: Model kimliği eksik
+    missing_provider_code: providerCode parametresi eksik
+    missing_user_id: userId eksik
+    model_update_error: Model güncellenemedi
+    models_load_error: Modeller yüklenemedi
+    no_fields: Güncellenecek geçerli alan yok
+    no_group: Kullanıcının atanmış grubu yok
+    not_group_admin: Kullanıcı Grup Yöneticisi değil
+    only_full_admin: Bu eylemi yalnızca Tam Yöneticiler gerçekleştirebilir
+    promote_error: Kullanıcı yükseltilemedi
+    provider_delete_error: Sağlayıcı silinemedi
+    provider_not_found: Sağlayıcı bulunamadı
+    provider_update_error: Sağlayıcı güncellenemedi
+    providers_load_error: Sağlayıcılar yüklenemedi
+    slug_exists: Slug zaten mevcut
+    update_error: Kullanıcı güncellenemedi
+    user_load_error: Kullanıcı yüklenemedi
+    user_not_found: Kullanıcı bulunamadı
+    users_load_error: Kullanıcılar yüklenemedi
+    viz_type_create_error: Görselleştirme türü oluşturulamadı
+    viz_type_delete_error: Görselleştirme türü silinemedi
+    viz_type_update_error: Görselleştirme türü güncellenemedi
+    viz_types_load_error: Görselleştirme türleri yüklenemedi
+    settings_invalid_grace_period: Kayıt ek süresi pozitif bir sayı olmalıdır (saat)
+    settings_invalid_upload_count: Varsayılan maksimum yükleme sayısı negatif olmayan bir tam sayı olmalıdır (sınırsız için 0)
+    settings_load_error: Genel ayarlar yüklenemedi
+    settings_invalid_public_url: Geçersiz genel URL biçimi
+    settings_invalid_email_timeout: E-posta doğrulama zaman aşımı pozitif bir sayı olmalıdır (saat)
+    settings_invalid_upload_size: Varsayılan maksimum yükleme boyutu negatif olmayan bir tam sayı olmalıdır (sınırsız için 0)
+    settings_invalid_email_sender: Geçersiz gönderen e-posta adresi biçimi
+    settings_invalid_max_registrations: Maksimum kayıt sayısı pozitif bir sayı veya sınırsız olmalıdır
+    settings_modify_forbidden: Genel ayarları yalnızca Tam Yetkili Yöneticiler değiştirebilir
+    settings_view_forbidden: Genel ayarları yalnızca Tam Yetkili Yöneticiler görüntüleyebilir
+    settings_save_error: Genel ayarlar kaydedilemedi
+  auth:
+    account_deleted: Bu hesap silinmiştir.
+    email_not_verified: E-posta doğrulanmadı. Lütfen gelen kutunuzu ve SPAM klasörünü kontrol edin.
+    example_user_blocked: Örnek kullanıcılar için parola değişiklikleri devre dışıdır.
+    example_user_forgot_blocked: Örnek kullanıcılar için parola sıfırlama devre dışıdır
+    example_user_register_blocked: Örnek kullanıcılar yeni hesap oluşturamaz
+    example_user_reset_blocked: Örnek kullanıcılar için parola sıfırlama devre dışıdır
+    internal_error: Dahili sunucu hatası
+    invalid_credentials: Geçersiz kimlik bilgileri
+    invalid_current_password: Geçerli parola yanlış
+    invalid_token: Geçersiz veya süresi dolmuş token
+    missing_email: E-posta gereklidir
+    missing_fields: Alanlar eksik
+    password_validation_failed: Parola doğrulaması başarısız oldu
+    token_expired: Token süresi doldu
+    unauthorized: Yetkisiz
+    user_not_found: Kullanıcı bulunamadı
+  datasets:
+    delete_blocked: Örnek kullanıcılar veri kümelerini silemez
+    example_blocked: Örnek kullanıcılar veri kümesi oluşturamaz
+    proxy_error: Dahili sunucu hatası
+    update_blocked: Örnek kullanıcılar veri kümelerini güncelleyemez
+  profile:
+    name_required: İsim gereklidir
+    update_failed: Profil güncellenemedi
+  recipes:
+    create_error: Tarif oluşturulamadı
+    dataset_not_found: Veri kümesi bulunamadı
+    dataset_required: datasetId gereklidir
+    delete_error: Tarif silinemedi
+    execute_error: Tarif çalıştırılamadı
+    execution_load_error: Çalıştırma yüklenemedi
+    execution_not_found: Çalıştırma bulunamadı
+    executions_load_error: Çalıştırmalar yüklenemedi
+    load_error: Tarifler yüklenemedi
+    missing_id: Tarif kimliği gerekli
+    name_required: İsim ve aşamalar gereklidir
+    not_found: Tarif bulunamadı
+    not_owned: Tarif bulunamadı veya size ait değil
+    update_error: Tarif güncellenemedi
+  register:
+    email_exists: E-posta zaten mevcut
+    internal_error: Dahili sunucu hatası
+    invalid_email: Geçersiz e-posta formatı
+    limit_reached: Kayıt sınırına ulaşıldı (en fazla {max_reg} kullanıcı).
+    missing_fields: Alanlar eksik
+    password_validation_failed: Parola doğrulaması başarısız oldu
+    settings_not_found: Genel ayarlar bulunamadı
+  settings:
+    load_failed: Ayarlar yüklenemedi
+    save_failed: Ayarlar kaydedilemedi
+    user_not_found: Kullanıcı bulunamadı
+  user:
+    api_key_required: Bu sağlayıcı için API anahtarı gereklidir
+    connection_name_exists: Bu ada sahip bir bağlantı zaten mevcut.
+    connection_not_found: Bağlantı bulunamadı.
+    example_blocked: Örnek kullanıcılar bu işlemi gerçekleştiremez.
+    internal_error: Dahili sunucu hatası.
+    missing_fields: Zorunlu alanlar eksik.
+    provider_not_found: Sağlayıcı "{provider}" bulunamadı.
+    user_not_found: Kullanıcı bulunamadı.
+  global_settings_load_error: Dahili sunucu hatası
+app:
+  name: İstatistikçiler Çalışma Alanı
+  version: Sürüm
+chat:
+  connection_not_found: AI bağlantısı bulunamadı veya erişilemiyor.
+  connections_load_error: Bağlantılar yüklenemedi.
+  delete: Sil
+  delete_confirm: Bu sohbeti silmek istediğinize emin misiniz?
+  delete_error: Sohbet silinemedi.
+  delete_success: Sohbet silindi.
+  empty_state: Sohbet başlatmak için bir mesaj gönderin.
+  go_to_ai_settings: Yapay Zeka Ayarlarına Git
+  history: Sohbet Geçmişi
+  input_placeholder: Mesajınızı yazın...
+  load_error: Sohbetler yüklenemedi.
+  models_load_error: Modeller yüklenemedi.
+  new_chat: Yeni Sohbet
+  no_chat_selected: Etkin sohbet yok.
+  no_chats: Henüz sohbet yok.
+  no_connections_message: Sohbeti kullanmadan önce en az bir yapay zeka bağlantısı tanımlamalısınız.
+  no_models: Bu bağlantı için kullanılabilir model yok.
+  rename: Yeniden Adlandır
+  rename_empty: Başlık boş olamaz.
+  rename_error: Sohbet yeniden adlandırılamadı.
+  rename_success: Sohbet yeniden adlandırıldı.
+  select_connection: Yapay Zeka Bağlantısı
+  select_connection_first: Lütfen önce bir yapay zeka bağlantısı seçin.
+  select_connection_placeholder: Bir yapay zeka bağlantısı seçin
+  select_model: Model
+  select_model_placeholder: Bir model seçin
+  send_error: Mesaj gönderilemedi.
+  title: Sohbet
+common:
+  access_denied_admin: Erişim reddedildi — yalnızca yönetici.
+  audio_settings: Ses ayarları
+  back: Geri
+  cancel: İptal
+  cannot_undo: Bu işlem geri alınamaz.
+  clear: Temizle
+  close: Kapat
+  close_navigation: Gezinmeyi kapat
+  copied: Kopyalandı!
+  copy: Kopyala
+  copy_to_clipboard: Panoya kopyala
+  delete: Sil
+  delete_chat: Sohbeti sil
+  deleting: Siliniyor...
+  dismiss: Gizle
+  dismiss_error: Hatayı gizle
+  dismiss_success: Başarı bildirimini gizle
+  edit: Düzenle
+  error_label: Hata
+  false_label: Yanlış
+  generating: Oluşturuluyor...
+  has_more_information: daha fazla bilgi içeriyor
+  loading: Yükleniyor...
+  microphone_off: Mikrofon kapalı
+  microphone_on: Mikrofon açık
+  next: İleri
+  no_answer: Yanıt döndürülmedi.
+  no_permission: Bu sayfayı görüntüleme izniniz yok.
+  open_navigation: Gezinmeyi aç
+  reset_to_defaults: Varsayılanlara sıfırla
+  restoring: Geri yükleniyor...
+  save: Kaydet
+  saving: Kaydediliyor...
+  select_language: Dil seçin
+  sending: Gönderiliyor...
+  speaker_off: Hoparlör kapalı
+  speaker_on: Hoparlör açık
+  speech_input_unsupported: 'Tarayıcınızda ses girişi desteklenmiyor. Uyumlu tarayıcılar: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: Mikrofon erişimi reddedildi. Lütfen tarayıcı ayarlarınızdan mikrofon erişimine izin verin.
+  speech_mic_failed: 'Mikrofon başlatılamadı: {error}.'
+  speech_network_error: Ses tanıma ağ hatası — internet bağlantınızı kontrol edip tekrar deneyin.
+  speech_output_unsupported: 'Tarayıcınızda ses çıkışı desteklenmiyor. Uyumlu tarayıcılar: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Ses tanıma hatası: {error}. Tekrar deneyin.'
+  success_label: Başarılı
+  system_default: Sistem varsayılanı
+  testing: Test ediliyor...
+  true_label: Doğru
+  unknown: Bilinmiyor
+  unknown_error: Bilinmeyen hata
+  untitled: Başlıksız
+  uploading: Karşıya yükleniyor...
+  verifying: Doğrulanıyor...
+  view: Görüntüle
+  view_dataset: Veri kümesini görüntüle
+  voice: Ses
+  audio_stop: Durdur
+  audio_pause: Duraklat
+  audio_resume: Devam et
+  email_features_unavailable: E-posta tabanlı hesap özellikleri kullanılamıyor.
+  connect_timeout_label: Bağlantı zaman aşımı (saniye)
+  ai_temperature_label: Sıcaklık
+  ai_models: AI Modelleri
+  ai_max_tokens_label: Maksimum çıktı token sayısı
+  probe_timeout_label: Model testi zaman aşımı (saniye)
+  ai_timeout_label: Maksimum AI süresi
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: Kapat
+    pitch_label: 'Perde: {0}'
+    reset_to_defaults: Varsayılanlara sıfırla
+    speed_label: 'Hız: {0}x'
+    system_default: Sistem varsayılanı
+    title: Ses Ayarları
+    voice: Ses
+  example_user_badge: Örnek Kullanıcı
+  example_user_badge_tooltip: Tam erişim için kaydolun
+  example_user_banner:
+    message: Sistemi salt okunur modda görüntülüyorsunuz. Kaynak oluşturmak ve değiştirmek için tam erişime kaydolun.
+    message_short: Salt okunur mod - Tam erişim için kaydolun
+    register_button: Tam Erişim için Kaydolun
+    register_short: Kaydol
+    title: ÖRNEK KULLANICI MODU
+  feature_gate:
+    upgrade_message: Bu özellik kurumsal lisans gerektirir. Yükseltme seçenekleri için Sentuny ile iletişime geçin.
+    upgrade_title: Kurumsal Özellik
+  group_admin_badge: Grup Yöneticisi
+  preparation_preview:
+    more_columns: +{0} daha
+    null_value: 'null'
+    rows_removed: '{0} kaldırıldı'
+  readonly_wrapper:
+    message: Salt okunur mod - Bu içeriği değiştirmek için tam erişime kaydolun
+  return_banner:
+    link: Oturumunuza dönün
+    text: Bir yapay zekâ tarifi üzerinde çalışıyordunuz.
+    fallback_link: Geri dönün
+    recipe_text: Bir tarif üzerinde çalışıyordunuz.
+    recipe_link: Tarifinize geri dönün
+  data_value:
+    some_content_not_shown: Bazı içerikler gösterilmiyor
+database:
+  connection:
+    add_first: İlk bağlantınızı ekleyin
+    add_new: Yeni Bağlantı Ekle
+    add_success: Bağlantı başarıyla eklendi
+    add_title: Yeni Bağlantı Ekle
+    auto_create_tables: Tablo veri setlerini otomatik oluştur
+    auto_create_title: Veri Setlerini Otomatik Oluştur
+    auto_create_views: Görünüm veri setlerini otomatik oluştur
+    auto_create_warnings_title: 'Bağlantı kaydedildi, ancak veri seti otomatik oluşturmada uyarılar vardı:'
+    browse_tables: Tablolara Göz At
+    by_label: tarafından
+    clear_default: Varsayılanı Temizle
+    currently_not_shared: ❌ Şu anda paylaşılmıyor
+    currently_shared: ✅ Şu anda grupla paylaşılıyor
+    database_label: Veritabanı Adı
+    datasets_created: '{n} veri seti oluşturuldu'
+    db_create_badge: DB oluştur
+    default_badge: Varsayılan
+    default_cleared: Varsayılan bağlantı temizlendi
+    default_set: Varsayılan bağlantı güncellendi
+    delete_button: Sil
+    delete_confirmation: Bağlantıyı silmek istediğinizden emin misiniz?
+    delete_error: Bağlantı silinemedi
+    delete_title: Bağlantıyı Sil
+    deleted: Bağlantı silindi
+    edit_title: Bağlantıyı Düzenle
+    file_path_label: Dosya Yolu
+    form_description: Veritabanı bağlantı bilgilerinizi girin.
+    group_label: Grup
+    host_label: Sunucu
+    jet_host_label: Jet Sunucu Ana Makinesi
+    jet_port_label: Jet Sunucu Portu
+    load_error: Bağlantılar yüklenemedi
+    name_label: Bağlantı Adı
+    name_placeholder: örn. Üretim Veritabanı
+    no_connections: Henüz kayıtlı veritabanı bağlantısı yok.
+    not_found: Bağlantı bulunamadı
+    password_label: Parola
+    port_label: Port
+    save_error: Bağlantı kaydedilemedi
+    select_type: Tür seçin
+    set_default: Varsayılan Olarak Ayarla
+    shared_badge: Paylaşılan
+    shared_description: Bu bağlantıyı grubunuzdaki diğer kullanıcıların kullanımına açın.
+    shared_label: Grupla paylaş
+    shared_readonly: Paylaşılan
+    shared_readonly_message: Bu bağlantı sizinle paylaşıldı. Görüntüleyebilirsiniz, ancak düzenleme yalnızca sahibine aittir.
+    tables_badge: Tablolar
+    test_button: Bağlantıyı Test Et
+    test_failed: Bağlantı başarısız oldu
+    test_incomplete: Test etmeden önce lütfen tüm alanları doldurun
+    test_network_error: Bağlantı test edilirken ağ hatası oluştu.
+    test_success: Bağlantı başarılı!
+    type_label: Veritabanı Türü
+    unknown_user: Bilinmiyor
+    update_success: Bağlantı başarıyla güncellendi
+    username_label: Kullanıcı Adı
+    probe_minutes_ago: '{count} dakika önce'
+    probe_hours_ago: '{count} saat önce'
+    probe_checked: Kontrol edildi
+    probe_check_failed: Bağlantı az önce kontrol edilemedi.
+    probe_state:
+      auth_failed: Kimlik doğrulama başarısız
+      unreachable: Erişilemiyor
+      schema_error: Şema okunamıyor
+      no_permission: İzin yok
+      no_database: Veritabanı yok
+      reachable: Erişilebilir
+      unknown: Kontrol edilmedi
+      incomplete: Eksik kurulum
+    probe_never: Hiçbir zaman
+    probe_hour_ago: 1 saat önce
+    probe_no_success: başarılı deneme kaydedilmedi
+    probe_just_now: az önce
+    probe_auto_hint: Bağlantı listesi yüklendiğinde otomatik olarak güncellenir.
+    probe_unsaved_hint: Bir bağlantı kaydedildikten sonra denetlenir.
+    probe_check_now: Şimdi kontrol et
+    probe_title: Son kontrol
+    probe_last_succeeded: Son başarılı
+    probe_minute_ago: 1 dakika önce
+  default_hint: Varsayılan bağlantı, bir analiz tarifi bağlantı belirtmediğinde yedek olarak kullanılır.
+  title: Veritabanı Ayarları
+datasets:
+  all_datasets: Tüm Veriler
+  browse:
+    back: Geri
+    browse_tables: Tablolara Göz At
+    column: Sütun
+    columns_title: Sütunlar — {table}
+    connections: Bağlantılar
+    load_columns_error: Sütunlar yüklenemedi
+    load_preview: Önizlemeyi Yükle
+    load_preview_error: Önizleme yüklenemedi
+    load_tables_error: Tablolar yüklenemedi
+    nullable: Boş değer alabilir
+    preview: Önizleme
+    preview_hint: Örnek satırları görmek için "Önizlemeyi Yükle"ye tıklayın.
+    select_table_hint: Sütunlarını ve veri önizlemesini görüntülemek için bir tablo seçin.
+    tables: Tablolar
+    tables_count: '{count} tablo'
+    type: Tür
+  by_label: tarafından
+  created_label: Oluşturuldu
+  database_label: DB
+  define_button: Veritabanı Bağla
+  define_first: Bir veritabanı bağlayın
+  delete:
+    confirm: Bu veri setini silmek istiyor musunuz?
+    error: Veri seti silinemedi
+    success: Veri kümesi '{id}' başarıyla silindi.
+    title: Sil
+  description:
+    empty: Oluşturulan açıklama boş. Lütfen AI sağlayıcı yapılandırmasını kontrol edin.
+    error: Açıklama oluşturulamadı.
+    generated: Açıklama başarıyla oluşturuldu.
+    title: Oluşturulan Açıklama
+  detail:
+    created: Oluşturuldu
+    descriptions: AI Açıklamaları
+    generated: Üretildi
+    load_error: Veri seti yüklenemedi.
+    model: Model
+    no_description: Açıklama yok
+    not_found: Veri seti bulunamadı
+    not_found_message: Aradığınız veri seti bulunamadı.
+    overview: Genel Bakış
+    rows: Satırlar
+    materialize_failed: 'Kayıtlı tablo oluşturulamadı:'
+    rows_not_computed_hint: Birleştirme henüz çalıştırılmadığı için henüz satır sayısı yok.
+    storage_table: Kayıtlı tablo
+    rows_not_computed: Hesaplanmadı
+    storage_live: Canlı görünüm
+  list_error: Veri setleri yüklenemedi.
+  no_datasets: Veri mevcut değil.
+  no_uploaded: Henüz yüklenmiş veri seti yok.
+  preparation:
+    add_operation: İşlem Ekle
+    add_rule: Kural Ekle
+    column_required: İşlem bir sütun gerektirir
+    columns_required: İşlem en az bir sütun gerektirir
+    delete_confirmation: '"{name}" dönüşüm kuralını silmek istediğinizden emin misiniz? Bu, kuralı kullanan tüm tariflerden de kaldırır.'
+    delete_error: Dönüşüm kuralı silinemedi.
+    delete_title: Dönüşüm Kuralını Sil
+    edit_rule: Kuralı Düzenle
+    encode:
+      label: Etiket
+      one_hot: One-Hot
+    fill:
+      constant: Sabit
+      drop: Kaldır
+      mean: Ortalama
+      median: Medyan
+      mode: Mod
+    filter_invalid: Filtre işlemi sütun ve değer gerektirir
+    link:
+      description: Bu veri setini temizle ve dönüştür
+      title: Dönüşümler
+    name_required: Kural adı zorunludur
+    new_name_required: Yeniden adlandırma işlemi yeni bir ad gerektirir
+    new_rule: Yeni Kural
+    no_rules: Bu veri seti için tanımlanmış dönüşüm kuralı yok.
+    operation:
+      convert_type: Tür Dönüştür
+      drop_columns: Sütunları Kaldır
+      encode: Kodla
+      fill_missing: Eksikleri Doldur
+      filter: Filtrele
+      normalize: Normalleştir
+      rename_column: Sütunu Yeniden Adlandır
+      standardize: Standartlaştır
+    operations: İşlemler
+    operations_count: işlem(ler)
+    operator:
+      after: Sonra (>)
+      before: Önce (<)
+      contains: İçerir
+      ends_with: İle biter
+      equal_to: Eşittir (=)
+      greater_than: Büyüktür (>)
+      greater_than_or_equal: Büyük veya eşit (>=)
+      less_than: Küçüktür (<)
+      less_than_or_equal: Küçük veya eşit (<=)
+      not_contains: İçermez
+      not_equal: Eşit değil (!=)
+      on_or_after: Bu tarihte veya sonrasında (>=)
+      on_or_before: Bu tarihte veya öncesinde (<=)
+      starts_with: İle başlar
+    original_data: Orijinal Veri
+    placeholder:
+      boolean: true / false
+      datetime: YYYY-MM-DD veya zaman damgası...
+      number: Bir sayı girin...
+      value: Bir değer girin...
+    preview: Önizleme
+    preview_error: Kural önizlenemedi.
+    preview_title: Önizleme
+    rows_after: Sonra
+    rows_before: Önce
+    rows_removed: Kaldırıldı
+    rule_created: Hazırlık kuralı '{name}' başarıyla oluşturuldu.
+    rule_deleted: Hazırlık kuralı başarıyla silindi.
+    rule_description: Açıklama (isteğe bağlı)
+    rule_description_placeholder: Kısa açıklama
+    rule_name: Kural Adı
+    rule_name_placeholder: örn. Analiz için Temizle
+    rule_updated: Hazırlık kuralı başarıyla güncellendi.
+    rules_title: Dönüşüm Kuralları
+    save_error: Dönüşüm kuralı kaydedilemedi.
+    shared: Grupla paylaş
+    transformed_data: Dönüştürülmüş Veri
+    type:
+      boolean: Mantıksal
+      datetime: TarihSaat
+      numeric: Sayısal
+      string: Metin
+    ui:
+      column: sütun
+      columns: sütunlar (virgülle ayrılmış)
+      encoding: kodlama
+      method: yöntem
+      new_name: yeni ad
+      operator: operatör
+      target_type: hedef tür
+      type: Tür
+      value: değer
+  rules_button: Kurallar
+  schema:
+    column_name: Sütun
+    column_type: Tür
+    columns: Sütunlar
+    load_error: 'Şema yüklenemedi: {error}'
+    no_sample_data: Örnek veri yok
+    null_count: Boş Değerler
+    sample_data: Örnek Veri (ilk 5 satır)
+    title: Şema Önizleme
+    total_columns: Toplam Sütun
+    total_rows: Toplam Satır
+    unique_count: Benzersiz
+  share: Paylaş
+  share_error: Paylaşım güncellenemedi
+  shared: Veri kümesi paylaşıldı
+  shared_badge: Paylaşıldı
+  source:
+    unknown_file: Bilinmeyen dosya
+  title: Verilerim
+  transform_button: Dönüşüm
+  transforms:
+    back: Verilerime Dön
+    create_button: Oluştur
+    create_error: Dönüşüm oluşturulamadı
+    create_new: Yeni Dönüşüm
+    created_label: Oluşturuldu
+    creating: Oluşturuluyor…
+    delete_confirm: Bu dönüşüm silinsin mi?
+    delete_error: Dönüşüm silinemedi
+    description_label: Açıklama (isteğe bağlı)
+    for: '{name} için Dönüşümler'
+    load_error: Dönüşümler yüklenemedi
+    name_label: Ad
+    no_transforms: Bu veri kümesi için tanımlanmış dönüşüm yok.
+    operations_label: '{count} işlem'
+    title: Dönüşümler
+  type:
+    table: Tablo
+    upload: Yüklendi
+    view: Görünüm
+    virtual: Sanal
+    mssql: MS SQL
+    postgresql: PostgreSQL
+    mysql: MySQL
+    notebook: Not Defteri
+    access: MS Access
+    cleaned_copy: Temizlenmiş kopya
+  unknown_user: Bilinmiyor
+  unshare: Paylaşımı Kaldır
+  unshared: Veri kümesinin paylaşımı kaldırıldı
+  upload:
+    card_title: Yükle ve Açıkla
+    connection_not_found: Bağlantı bulunamadı. Lütfen geçerli bir AI bağlantısı seçin.
+    description_label: Açıklama (isteğe bağlı)
+    description_placeholder: Bu verinin kısa açıklaması
+    error: Veri kümesi yüklenemedi.
+    file_label: Dosya
+    file_selected: Seçilen dosya
+    file_too_large: Dosya, maksimum {max}MB yükleme boyutunu aşıyor. Yüklemeye izin verilmiyor.
+    generate_description: Açıklama Oluştur
+    history: Yükleme Geçmişi
+    limit_reached: Sınıra ulaşıldı
+    limit_reached_message: İzin verilen maksimum veri kümesi sayısına ulaştınız ({count}).
+    name_label: Veri Adı
+    name_placeholder: Verilerim
+    no_connections: Açıklama oluşturmak için en az bir AI bağlantısı tanımlamanız gerekiyor.
+    no_datasets: Henüz veri kümesi yok
+    no_file: Lütfen önce bir dosya seçin.
+    no_name: Lütfen bir veri kümesi adı girin.
+    select_dataset: Lütfen önce bir veri kümesi yükleyin veya seçin.
+    shared_description: Bu veriyi grubunuzdaki diğer kullanıcıların kullanımına açın.
+    shared_group_hint: 'Grup: {group} - {description}'
+    shared_label: Grupla paylaş
+    success: Veri kümesi '{name}' başarıyla yüklendi.
+    title: Veri Yükle
+    upload_button: Yükle
+    escalation_retry: Tekrar dene
+    escalation_label: (saniye) ile tekrar dene
+    escalation_failed_at: Açıklama {seconds} saniye sonra zaman aşımına uğradı.
+    escalation_hint: Bunu yalnızca bu deneme kullanır. Bu model genellikle daha uzun süreye ihtiyaç duyuyorsa, her seferinde bunu artırmak yerine bağlantının model ayarlarını yapılandırın.
+    escalation_invalid: 1 ile {max} arasında tam sayı saniye girin.
+  upload_button: Veri Yükle
+  upload_count: '{count} yükleme'
+  upload_first: İlk veri dosyanızı yükleyin
+  upload_first_file: İlk Dosyanızı Yükleyin
+  upload_new: Yeni Dosya Yükle
+  uploaded_title: Yüklenen Veri
+  view_dataset_title: Veri kümesini görüntüle
+  view_schema: Şemayı Görüntüle
+  filter:
+    cleaned: Temizlendi
+    mysql: MySQL
+    notebooks: Not Defterleri
+    mssql: MS SQL
+    not_shared: Paylaşılmadı
+    shared: Paylaşıldı
+    label: Filtre
+    access: MS Access
+    all: Tümü
+    postgresql: PostgreSQL
+    no_match: Bu filtreyle eşleşen veri kümesi yok.
+    uploads: Yüklemeler
+    virtual: Sanal
+  created_from: '{name} kaynağından oluşturuldu'
+  source_unavailable: kaynak kullanılamıyor
+  cleaned_badge: Temizlendi
+  table_not_built: Tablo oluşturulmadı
+define:
+  column_name: Sütun
+  column_type: Tür
+  connection_label: Veritabanı Bağlantısı
+  dataset_name: Veri Kümesi Adı
+  dataset_name_placeholder: örn., Müşteri Verisi
+  description_label: Açıklama (isteğe bağlı)
+  description_placeholder: Bu veri kümesinin kısa açıklaması
+  existing_none: Yok
+  existing_title: Mevcut
+  go_to_db_settings: Veritabanı Ayarlarına Git
+  load_connections_error: Bağlantılar yüklenemedi
+  load_sources_error: Kaynaklar yüklenemedi
+  name_required: Veri kümesi adı zorunludur
+  no_connections_message: Bir veritabanı bağlamadan önce en az bir veritabanı bağlantısı tanımlamanız gerekiyor.
+  no_sources: Bu veritabanında tablo veya görünüm bulunamadı.
+  nullable: Boş olabilir
+  preview_label: Veriyi Önizle (ilk 10 satır)
+  save_button: Veri Kümesini Kaydet
+  save_error: Veri kümesi oluşturulamadı
+  save_success: Veri kümesi başarıyla oluşturuldu
+  schema_label: Şema
+  select_connection: Bir bağlantı seçin
+  select_source: Bir kaynak seçin
+  select_source_first: Lütfen önce bir tablo veya görünüm seçin
+  shared_description: Bu veri kümesini grubunuzdaki diğer kullanıcıların kullanımına açın.
+  shared_label: Grupla paylaş
+  source_label: Kaynak
+  source_type_label: Kaynak Türü
+  step1_description: Bir veri kümesi bağlamak için bir veritabanı bağlantısı seçin.
+  step1_title: Veritabanı Bağlantısı Seçin
+  step2_description: Tablo mu yoksa görünüm mü kullanacağınızı seçin, ardından kaynağı seçin.
+  step2_title: Kaynak Seçin
+  step3_description: Seçilen kaynaktaki sütunları inceleyin ve verileri önizleyin.
+  step3_title: Kaynağı Doğrula
+  step4_description: Veri kümenize bir ad ve açıklama verin, ardından kaydedin.
+  step4_title: Adlandır ve Kaydet
+  step_connection: Bağlantı
+  step_save: Kaydet
+  step_source: Kaynak
+  step_verify: Doğrula
+  table: Tablo
+  title: Veritabanına Bağlan
+  verify_button: Kaynağı Doğrula
+  verify_error: Tablo/görünüm doğrulanamadı
+  verify_success: Tablo/görünüm başarıyla doğrulandı
+  view: Görünüm
+demo:
+  badge: DEMO
+  banner:
+    message: Bu bir demo sistemidir. Veriler düzenli olarak sıfırlanabilir.
+    title: ⚠️ DEMO MODU
+forgot_password:
+  back_to_login: Girişe Geri Dön
+  check_spam: Birkaç dakika içinde e-postayı görmezseniz lütfen spam/önemsiz klasörünüzü kontrol edin.
+  description: E-posta adresinizi girin, size parola sıfırlama bağlantısı gönderelim.
+  error: Sıfırlama e-postası gönderilemedi
+  sent: Bu e-posta adresiyle bir hesap varsa, bir parola sıfırlama bağlantısı alacaksınız.
+  sent_description: Bu e-posta adresiyle bir hesap varsa, bir parola sıfırlama bağlantısı alacaksınız.
+  sent_title: E-posta Gönderildi
+  submit: Sıfırlama Bağlantısı Gönder
+  title: Parolamı Unuttum
+global:
+  demo_mode:
+    description: Etkinleştirildiğinde, sistem demo modunda çalışır.
+    label: Demo Modu
+  email_sender:
+    hint: Doğrulama e-postalarının gönderici adresi olarak görünecek e-posta adresi.
+    label: E-posta Gönderici Adresi
+  email_timeout:
+    hint: E-posta doğrulama bağlantısının kaç saat geçerli kalacağı.
+    label: E-posta Doğrulama Zaman Aşımı (saat)
+  grace_period:
+    hint: Geçici olarak silinen hesapların kalıcı olarak silinmesinden önceki saat sayısı.
+    label: Silme gecikmesi (saat)
+  invalid_grace_period: Silme gecikmesi (saat) için geçerli pozitif bir sayı girin
+  invalid_number: Maksimum kayıt sayısı için geçerli pozitif bir sayı girin
+  invalid_timeout: Doğrulama zaman aşımı (saat) için geçerli pozitif bir sayı girin
+  load_error: Genel ayarlar yüklenemedi
+  max_registrations:
+    custom: Özel (aşağıya girin)
+    custom_placeholder: Pozitif bir sayı girin
+    hint: Kaç kullanıcının kayıt olabileceğine bir sınır koyun.
+    label: Maksimum Kullanıcı Kaydı
+    placeholder: Sınır seçin
+    unlimited: Sınırsız
+    users: kullanıcı
+  password_policy:
+    custom: Özel
+    high: Yüksek (min 10, büyük harf, küçük harf, rakam, özel karakter)
+    hint: Kullanıcı kaydı ve parola değişiklikleri için parola karmaşıklığı gereksinimlerini seçin.
+    label: Parola Politikası
+    low: Düşük (min 6 karakter)
+    medium: Orta (min 8, büyük harf, küçük harf, rakam)
+    min_length: Minimum Uzunluk
+    min_strength: Minimum Güç (zxcvbn puanı 0-4)
+    require_digit: Rakam Zorunlu
+    require_lowercase: Küçük Harf Zorunlu
+    require_special: Özel Karakter Zorunlu
+    require_uppercase: Büyük Harf Zorunlu
+    select: Politika seçin
+  public_url:
+    hint: E-posta doğrulama bağlantılarında kullanılan temel URL (örn. https://workbench.example.com).
+    label: Genel URL
+  save_button: Genel Ayarları Kaydet
+  save_success: Genel ayarlar kaydedildi
+  system:
+    description: Tüm kullanıcılar için geçerli genel ayarları yönetin (yalnızca yönetici).
+    title: Sistem Yapılandırması
+  title: Genel Ayarlar
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Kullanıcı başına maksimum veri kümesi sayısı (0 = sınırsız). Yeni kullanıcılara uygulanır.
+    count_unlimited: Sınırsız
+    default_count_label: Kullanıcı Başına Varsayılan Maksimum Yükleme Sayısı
+    default_size_label: Kullanıcı Başına Varsayılan Maksimum Yükleme Boyutu (MB)
+    select_count: Sınır seçin
+    select_size: Sınır seçin
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: Kullanıcı başına maksimum toplam depolama (0 = sınırsız). Yeni kullanıcılara uygulanır.
+    size_unlimited: Sınırsız
+  welcome:
+    hint: Bu mesaj giriş sayfasında görünecek. Gizlemek için boş bırakın.
+    label: Karşılama Mesajı
+    placeholder: Giriş sayfasında görüntülenecek bir karşılama mesajı girin.
+home:
+  welcome_placeholder: İstatistikçiler Çalışma Tezgahına Hoş Geldiniz
+licence:
+  admin_required: Lisans bilgilerini görüntülemek için yönetici olmalısınız.
+  delete_button: Lisansı Kaldır
+  delete_confirm: Bu, sistemi açık kaynak moduna döndürür. Tüm kısıtlı özellikler devre dışı bırakılır. Bunları yeni bir lisans yükleyerek geri yükleyebilirsiniz.
+  delete_error: Lisans kaldırılamadı.
+  delete_no: İptal
+  delete_success: Lisans kaldırıldı. Açık kaynak modunda çalışıyor.
+  delete_title: Lisansı Kaldır
+  delete_yes: Evet, lisansı kaldır
+  description: Mevcut özellik lisansı ve kademe bilgileri.
+  details_label: Lisans Detayları
+  expires_at_label: Sona Erme
+  features_label: Etkin Özellikler
+  install_button: Lisans Yükle
+  install_error: Lisans yüklenemedi.
+  install_no_file: Dosya seçilmedi.
+  install_success: Lisans başarıyla yüklendi.
+  issued_at_label: Düzenlenme
+  issued_to_label: Düzenlenen
+  load_error: Lisans bilgileri yüklenemedi.
+  max_users_label: Lisanslı kullanıcılar
+  no_features: Şu anda etkinleştirilmiş kısıtlı özellik yok.
+  open_source_message: Bu kurulum açık kaynak modunda çalışıyor. Kurumsal lisansa yükseltmek için Sentuny ile iletişime geçin.
+  preview_error: Lisans dosyası doğrulanamadı.
+  preview_invalid: Geçersiz lisans dosyası.
+  preview_title: Lisans Önizleme
+  tier_label: Kademe
+  title: Lisans Durumu
+  upload_title: Lisans Dosyası Yükle
+login:
+  account_deleted: Bu hesap silinmiş.
+  description: Hesabınıza giriş yapın
+  docs_more_info: daha fazla bilgi içeriyor
+  email: E-posta
+  email_not_verified: E-posta doğrulanmadı. Lütfen gelen kutunuzu ve SPAM klasörünü kontrol edin.
+  email_verified: E-posta başarıyla doğrulandı! Artık giriş yapabilirsiniz.
+  forgot_password: Parolanızı mı unuttunuz?
+  invalid_credentials: Geçersiz e-posta veya parola.
+  invalid_token: Geçersiz doğrulama bağlantısı. Lütfen yenisini talep edin.
+  missing_token: Doğrulama belirteci sağlanmadı.
+  no_account: Hesabınız yok mu?
+  password: Parola
+  register_link: Kayıt Ol
+  resend_link: Doğrulama e-postası yeniden gönderilsin mi?
+  signing_in: Giriş yapılıyor...
+  submit: Giriş Yap
+  success: Başarıyla giriş yapıldı
+  title: Giriş Yap
+  token_expired: Doğrulama bağlantısının süresi doldu. Lütfen yenisini talep edin.
+nav:
+  about: Hakkında
+  admin: Yönetici
+  admin_groups: Grup Açıklamaları
+  admin_licence: Lisans
+  admin_panel: Kullanıcı Yönetimi
+  admin_providers: Yapay Zeka Sağlayıcıları
+  admin_setup: Kurulum
+  admin_setup_internal: Dahili
+  admin_setup_limits: Sınırlar
+  admin_setup_options: Seçenekler
+  admin_visualization_types: Görselleştirme Türleri
+  ai_analysis_rules: Tarif Düzenleyici
+  ai_chat: Yapay Zeka Araçları
+  ai_database_design: Veritabanı tasarımı
+  ai_dataset_cleaning: Veri kümesi temizliği
+  ai_general: Genel
+  ai_virtual_datasets: Sanal Veri Kümeleri
+  home: Ana Sayfa
+  logout: Çıkış Yap
+  user: Kullanıcı
+  admin_setup_tuning: İnce ayar
+  ai_testing: AI testi
+notebooks:
+  and_more: +{count} tane daha
+  cant_create_tables: Bu bağlantı tablolar oluşturamaz — içe aktarma reddedildi
+  cells_label: 'Hücreler:'
+  connection_create_db_badge: Veritabanı oluştur
+  connection_form_label: Bağlantı
+  connection_tables_badge: Tablolar
+  connection_unavailable: Veritabanı bağlantısı bulunamadı veya erişilemiyor
+  create_dataset: Veri kümesini otomatik oluştur
+  create_new_database: Yeni veritabanı oluştur
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrame''ler:'
+  dataset_created: Veri kümesi oluşturuldu
+  delete_confirm: '"{name}" içe aktarması ve tüm tabloları silinsin mi?'
+  delete_failed: İçe aktarma silinemedi
+  delete_title: İçe aktarmayı sil
+  detected_dataframes: 'Algılanan DataFrame''ler:'
+  doc_preview: 'Dokümantasyon Önizlemesi:'
+  example_banner: Örnek kullanıcı olarak görüntülüyorsunuz. Not defterlerini içe aktarmak ve yönetmek için kayıt olun.
+  example_blocked: Örnek kullanıcılar not defterlerini içe aktaramaz.
+  example_register: Kayıt Ol
+  fetch_error: İçe aktarmalar alınamadı
+  import_button: Not Defterini İçe Aktar
+  import_complete: İçe Aktarma Tamamlandı
+  import_deleted: İçe aktarma silindi
+  import_failed: 'Notebook içe aktarılamadı: {error}'
+  import_success: '{count} tablo başarıyla içe aktarıldı'
+  import_title: Jupyter Not Defteri İçe Aktarma
+  imported_at_label: 'İçe aktarılma zamanı:'
+  importing: İçe aktarılıyor...
+  kb_unit: KB
+  kernel_label: 'Çekirdek:'
+  list_title: Not Defteri İçe Aktarmaları
+  no_dataframes: Bu not defterinde DataFrame bulunamadı
+  no_imports: Henüz not defteri içe aktarımı yok.
+  notebook_label: 'Not Defteri:'
+  parse_error: Not defteri ayrıştırılamadı
+  parsing: Ayrıştırılıyor...
+  preview_button: Önizleme
+  rows_cols_format: '{rows} satır × {cols} sütun'
+  run_preview_first: Neyin içe aktarılacağını görmek için Önizleme'yi çalıştırın
+  sanitised_notice: Güvenlik nedeniyle kod hücreleri kaldırıldı. Yalnızca veri çıktıları ve Markdown korunur.
+  select_connection: Bir veritabanı bağlantısı seçin
+  select_connection_placeholder: Bağlantı seçin...
+  select_file_first: Lütfen bir .ipynb dosyası seçin
+  share_error: Paylaşım ayarlarını yalnızca sahibi değiştirebilir.
+  share_label: Grupla paylaş
+  shared: Not defteri grupla paylaşıldı
+  shared_badge: Paylaşıldı
+  size_label: 'Boyut:'
+  step1_title: 'Adım 1: Dosya Seçin'
+  step2_title: 'Adım 2: Önizleme'
+  storage_form_label: Depolama
+  storage_label: 'Depolama:'
+  table_count: '{count} tablo'
+  tables_created_label: 'Oluşturulan tablolar:'
+  title_label: 'Başlık:'
+  unshared: Not defteri paylaşımı kaldırıldı
+  table_name: 'Tablo: {name}'
+password:
+  strength:
+    fair: Orta
+    good: İyi
+    strong: Güçlü
+    weak: Zayıf
+preparation:
+  add_operation: İşlem Ekle
+  after: Sonra
+  back_to_list: Kurallara dön
+  before: Önce
+  cancel: İptal
+  col:
+    categorical: kategorik
+    datetime: tarih/saat
+    nulls: '%{percent} boş'
+    numeric: sayısal
+  cols: sütun
+  column_label: Sütun
+  constant_value_label: Sabit değer
+  create_first: Analizden önce bu veri kümesini temizlemek ve hazırlamak için ilk dönüşümünüzü oluşturun.
+  delete: Sil
+  delete_confirm: '"{name}" kuralı silinsin mi? Bu işlem geri alınamaz.'
+  description_label: Açıklama (isteğe bağlı)
+  duplicate: Çoğalt
+  duplicate_suffix: (kopya)
+  edit: Düzenle
+  edit_title: 'Kuralı Düzenle: {name}'
+  encoding:
+    label: Etiket
+    onehot: One-Hot
+  encoding_param_label: Kodlama
+  live_preview: Canlı Önizleme
+  load_error: Veri yüklenemedi
+  method:
+    minmax: Min-Max
+    zscore: Z-Skoru
+  method_label: Yöntem
+  name_label: Ad
+  name_required: Kural adı zorunludur
+  new_name_label: Yeni ad
+  new_rule: Yeni Kural
+  new_title: Yeni Dönüşüm
+  no_rules: Henüz dönüşüm yok
+  nulls: boş değerler
+  op:
+    convert_type: Tür Dönüştür
+    drop_column: Sütunu Kaldır
+    drop_duplicates: Yinelenenleri Kaldır
+    encode_category: Kategoriyi Kodla
+    fill_missing: Eksikleri Doldur
+    filter: Filtrele
+    rename_column: Sütunu Yeniden Adlandır
+    normalize: Normalleştir
+    standardize: Standartlaştır
+  operations_count: '{count} işlem'
+  operations_label: İşlemler
+  operator_label: Operatör
+  ops_required: En az bir işlem gereklidir
+  preview: Önizleme
+  preview_error: Önizleme başarısız oldu
+  preview_loading: Önizleniyor...
+  preview_no_ops: Önizlemeyi görmek için işlemler ekleyin
+  row_impact: '{before} → {after} satır'
+  rows: satır
+  rule_deleted: Kural silindi
+  rule_duplicated: Kural çoğaltıldı
+  rule_saved: Kural kaydedildi
+  rules_for: '{dataset} için kurallar'
+  sample_data: Örnek veri
+  save: Kuralı Kaydet
+  save_error: Kural kaydedilemedi
+  saving: Kaydediliyor...
+  schema_error: Veri kümesi şeması yüklenemedi
+  select_column: -- Sütun seçin --
+  select_type: -- İşlem seçin --
+  strategy:
+    constant: Sabit
+    drop_row: Satırı Kaldır
+    mean: Ortalama
+    median: Medyan
+    mode: Mod
+  strategy_label: Strateji
+  target_type_label: Hedef türü
+  title: Dönüşümler — {dataset}
+  type_label: İşlem
+  value_label: Değer
+profile:
+  change_password:
+    description: Şifrenizi güncelleyin.
+    title: Şifreyi Değiştir
+  change_password_button: Şifreyi Değiştir
+  confirm_password: Yeni Şifreyi Onayla
+  current_password: Mevcut Şifre
+  current_password_required: Mevcut şifre gereklidir
+  dark_mode_description: Açık ve koyu tema arasında geçiş yapın.
+  dark_mode_label: Karanlık Mod
+  email_label: E-posta
+  email_notifications_description: Hesabınızla ilgili e-posta güncellemeleri alın.
+  email_notifications_label: E-posta Bildirimleri
+  email_unchangeable: E-posta değiştirilemez
+  example_user_language_hint: Dil tercihinizi değiştirmek için tam erişime kaydolun.
+  example_user_name_hint: Adınızı değiştirmek için tam erişime kaydolun.
+  example_user_notifications_hint: Bildirim ayarlarını değiştirmek için tam erişime kaydolun.
+  example_user_save_hint: Değişiklikleri kaydetmek için tam erişime kaydolun.
+  example_user_theme_hint: Tema tercihlerini değiştirmek için tam erişime kaydolun.
+  group_description: Açıklama
+  group_id: Grup Kimliği
+  group_info_title: Grup Bilgisi
+  group_load_error: Grup bilgisi yüklenemedi
+  group_readonly_hint: Grubunuz bir yönetici tarafından atanır ve burada değiştirilemez.
+  language_description: Arayüz için tercih ettiğiniz dili seçin.
+  language_label: Dil
+  language_select_placeholder: Dil seçin
+  languages_load_error: Diller yüklenemedi
+  load_error: Ayarlar yüklenemedi
+  name_label: Ad
+  name_placeholder: Adınız
+  new_password: Yeni Şifre
+  password_change_failed: Şifre değiştirilemedi
+  password_changed: Şifre başarıyla değiştirildi
+  password_disabled: Örnek kullanıcılar için şifre değişiklikleri devre dışıdır
+  password_disabled_message: Örnek Kullanıcı olarak oturum açtınız. Şifre işlevleri devre dışıdır.
+  password_mismatch: Yeni şifreler eşleşmiyor
+  personal:
+    description: Kişisel bilgilerinizi ve uygulama tercihlerinizi güncelleyin.
+    title: Profil ve Tercihler
+  save_button: Değişiklikleri Kaydet
+  save_error: Profil kaydedilemedi
+  save_success: Profil kaydedildi
+  title: Profil Ayarları
+  update_error: Profil güncellenemedi
+  slow_threshold:
+    description: Bundan daha uzun süren bir model testi çok yavaş olarak bildirilir. Site varsayılanını kullanmak için boş bırakın.
+    saved: Yavaş model sınırı kaydedildi.
+    invalid: Sınır, en az 1 olmak üzere tam sayı saniye olmalıdır.
+    placeholder: Site varsayılanını kullan.
+    effective: 'Şu anda geçerli:'
+    title: Yavaş model eşiği
+    seconds: saniye
+    label: Sınırım
+    save: Sınırı kaydet
+recipes:
+  add_rule: Kural Ekle
+  algorithm:
+    dependent_column: Bağımlı değişken
+    factor_column: Faktör (kategorik)
+    group_by: Grupla
+    independent_columns: Bağımsız değişkenler
+    placeholder: Analiz türünü seçin
+    response_column: Yanıt (sayısal)
+  back_to_recipe: Tarife Dön
+  by_label: göre
+  cancel_button: Sonlandır
+  cancel_error: Yürütme iptal edilemedi
+  cancel_success: Yürütme iptal edildi
+  chart:
+    category: Kategori
+    count: Sayı
+    value: Değer
+    x_axis: X
+    y_axis: Y
+  clone: Klonla
+  clone_button: Klonla
+  clone_error: Tarif klonlanamadı
+  clone_success: Tarif başarıyla klonlandı
+  clone_suffix: (Kopya)
+  column_type:
+    category: Kategori
+    datetime: Tarih/Saat
+    number: Sayı
+    text: Metin
+  columns_after: Sütunlar
+  columns_before: Sütunlar
+  columns_label: Sütunlar
+  columns_label_short: Sütunlar
+  columns_required: Lütfen en az bir sütun seçin
+  create_error: Tarif oluşturulamadı
+  create_success: Reçete '{name}' başarıyla oluşturuldu.
+  dataset:
+    columns_label: Sütunlar
+    load_error: Veri kümeleri yüklenemedi
+    loading: Veri kümeleri yükleniyor...
+    no_datasets: Kullanılabilir veri kümesi yok
+    placeholder: Bir veri kümesi seçin
+    rows_label: satır
+  dataset_label: Veri kümesi
+  dataset_required: Lütfen bir veri kümesi seçin
+  delete: Sil
+  delete_button: Sil
+  delete_confirmation: '"{name}" adlı tarifi silmek istediğinizden emin misiniz? Bu eylem geri alınamaz.'
+  delete_title: Tarifi Sil
+  description_label: Açıklama (isteğe bağlı)
+  description_placeholder: Bu tarifin açıklaması
+  edit: Düzenle
+  editor:
+    component_algorithm: Algoritma
+    component_dataset: Veri Kümesi / Dönüşüm
+    component_output: Çıktı
+    create_mode: Yeni bir tarif oluşturun — düzenleyici 3. Aşamada geliyor.
+    loading: Tarif yükleniyor...
+    name_hint: Tarifi kaydedebilmek için bir ad gereklidir.
+    name_placeholder: Tarif adı
+    name_required: Tarif adı zorunludur.
+    new_recipe_name: Yeni Tarif
+    placeholder: Bu, manuel İstatistiksel Tarif düzenleyicisidir — Tarifler Workbench'in kalbidir. Manuel kullanıcı arayüzü yapay zeka arayüzünden daha hızlıdır; ancak ne yapılması gerektiğinden gerçekten
+      emin değilseniz büyük olasılıkla Yapay Zeka Tarif Düzenleyicisi'ni istersiniz. Aynı zamanda bir istatistik eğitmenidir... ancak kullanmak istiyorsanız Ayarlar bölümünde çalışan bir yapay zeka bağlantısı
+      kurulu olması gerekir. Bir tarif seçin veya yeni bir tane oluşturun.
+    run: Çalıştır
+    save: Tarifi Kaydet
+    save_error: Tarif kaydedilemedi
+    save_success: Tarif kaydedildi
+  execute: Yürüt
+  execute_button: Yürüt
+  execute_error: 'Reçete çalıştırılamadı: {error}'
+  execute_success: Tarif başarıyla yürütüldü
+  execution:
+    errors_label: 'Hatalar:'
+    failed_start: Yürütme başlatılamadı
+    request_failed: Yürütme başarısız oldu
+    results_label: 'Sonuçlar:'
+    rules_count: '{count} hazırlık kuralı uygulandı.'
+    running: Tarif çalıştırılıyor…
+    showing_rows: '{count} / {total} satır gösteriliyor'
+  execution_error: Hata
+  execution_load_error: 'Çalıştırma yüklenemedi: {error}'
+  execution_not_found: Çalıştırma '{id}' bulunamadı.
+  execution_progress: İlerleme
+  execution_stage_results: Aşama Sonuçları
+  execution_started: Başlatıldı
+  execution_status: Durum
+  execution_title: Yürütme Sonuçları
+  executions_title: Son Yürütmeler
+  export_results: Sonuçları Dışa Aktar
+  go_define: Tanımlamaya Git
+  go_upload: Yüklemeye Git
+  group_by_hint: Gruplar arasındaki istatistikleri karşılaştırmak için kategorik bir sütuna göre gruplayın.
+  group_by_label: Gruplama Ölçütü (isteğe bağlı)
+  list_load_error: Tarifler yüklenemedi
+  load_datasets_error: 'Veri kümeleri yüklenemedi: {error}'
+  load_error: 'Reçeteler yüklenemedi: {error}'
+  load_rules_error: Hazırlık kuralları yüklenemedi
+  loading_schema: Sütunlar yükleniyor...
+  move_down: Aşağı taşı
+  move_up: Yukarı taşı
+  my_recipes: Tariflerim
+  name_label: Tarif Adı
+  name_placeholder: ör. Satış Analizi
+  name_required: Tarif adı zorunludur
+  needs_other_columns: (başka sütunlar gerektirir)
+  new_button: Yeni Tarif
+  new_title: Yeni Tarif
+  no_datasets: Veri kümesi bulunamadı. Lütfen önce bir veri kümesi yükleyin veya tanımlayın.
+  no_datasets_available: Kullanılabilir veri kümesi yok. Lütfen önce bir veri kümesi yükleyin.
+  no_datasets_found: Kullanılabilir veri kümesi yok. Önce bir veri kümesi yükleyin.
+  no_group: Hiçbiri
+  no_group_options: Gruplama için kullanılabilir kategorik sütun yok
+  no_preparation_rules: Bu veri kümesi için hazırlık kuralı yok.
+  no_recipes: Henüz hiç tarif oluşturmadınız.
+  no_schema: Bu veri kümesi için şema yok
+  no_stages: Reçete en az bir aşama içermelidir.
+  no_visualisation: Sayısal sonuçlar
+  no_visualisation_data: Görselleştirme verisi yok
+  none: Hiçbiri
+  output:
+    category_column: Kategori sütunu
+    placeholder: Çıktı türünü seçin
+    x_column: X ekseni sütunu
+    y_column: Y ekseni sütunu
+  panel:
+    complete: Hazır
+    incomplete: Eksik
+    my_recipes: Tariflerim
+    new_button: Yeni Tarif
+    no_recipes: Henüz tarif yok
+    no_results: Aramanızla eşleşen tarif yok
+    search: Tariflerde ara...
+    shared_recipes: Paylaşılan
+    updated: Güncellendi
+  preparation_rules: Hazırlık Kuralları (isteğe bağlı)
+  preparation_rules_applied: Uygulanan Hazırlık Kuralları
+  preparation_rules_applied_description: Kurallar, analiz aşamalarından önce aşağıda gösterilen sırayla uygulandı.
+  preparation_rules_applied_title: Uygulanan Hazırlık Kuralları
+  preparation_rules_description: Sırayla uygulanacak kuralları seçin. Kurallar sıralı olarak uygulanır.
+  recipe_label: Tarif
+  remove_rule: Kuralı kaldır
+  require:
+    algorithm: Bir analiz seçin
+    categoryColumn: '{out} için kategori sütununu seçin'
+    dataset: Bir veri kümesi seçin
+    dependentColumn: Bağımlı sütunu seçin
+    factorColumn: '{algo} için faktör sütununu seçin'
+    first_response: İlk yanıt sütununu seçin
+    independentColumns: Bağımsız sütunları seçin
+    responseColumn: '{algo} için yanıt sütununu seçin'
+    second_response: İkinci yanıt sütununu seçin
+    xColumn: '{out} için X sütununu seçin'
+    yColumn: '{out} için Y sütununu seçin'
+  rows_after: Sonraki satırlar
+  rows_before: Satırlar
+  rows_label: Satırlar
+  rules_applied_label: '{count} kural uygulandı:'
+  save_button: Tarifi Kaydet
+  schema_error: 'Sütun şeması yüklenemedi: {error}'
+  schema_loaded: 'Şema yüklendi: {count} sütun bulundu'
+  select_dataset: Bir veri kümesi seçin
+  select_group: Gruplamak için bir sütun seçin
+  select_rule: Eklemek için bir kural seçin
+  select_rule_placeholder: Bir kural seçin
+  select_technique: Bir teknik seçin
+  select_visualisation: Bir görselleştirme seçin
+  selected: seçili
+  share:
+    button: Paylaş
+    group_info: Grup {group} — {desc}
+    read_only: '{owner} tarafından paylaşıldı — salt okunur'
+    shared_badge: Paylaşıldı
+    unshare: Paylaşımı kaldır
+  shared: paylaşıldı
+  shared_badge: Paylaşıldı
+  shared_description: Bu tarifi grubunuzdaki diğer kullanıcıların kullanımına sunun.
+  shared_group_hint: 'Grup: {group} - {description}'
+  shared_label: Grupla paylaş
+  shared_with_group: Grubunuzla Paylaşıldı
+  stage_data_selection: Veri Seçimi
+  stage_number: Aşama {number}
+  stage_preparation: Veri Hazırlama
+  stage_statistics: İstatistikler
+  stage_visualisation: Görselleştirme
+  stages_title: Aşamalar
+  status:
+    cancelled: İptal edildi
+    completed: Tamamlandı
+    failed: Başarısız
+    pending: Beklemede
+    running: Çalışıyor
+  step1_description: Tarifinize bir ad ve açıklama verin.
+  step1_title: Tarifinizi Adlandırın
+  step2_description: Bir veri kümesi seçin ve analiz edilecek sütunları seçin.
+  step2_title: Veri Seç
+  step3_description: Uygulanacak istatistiksel tekniği seçin.
+  step3_title: Analiz Seç
+  step4_description: Tarifinize bir görselleştirme ekleyin.
+  step4_title: Görselleştirme (İsteğe Bağlı)
+  step_analysis: Analiz
+  step_complete: Adım {step} tamamlandı
+  step_data: Veri
+  step_name: Ad
+  step_visualise: Görselleştir
+  technique_anova_one_way: Tek Yönlü ANOVA
+  technique_anova_two_way: İki Yönlü ANOVA
+  technique_chi_square: Ki-kare Testi
+  technique_correlation: Korelasyon Matrisi
+  technique_descriptive: Tanımlayıcı İstatistikler
+  technique_hint: Tanımlayıcı istatistikler ortalama, medyan ve standart sapma gibi özet ölçüleri gösterir.
+  technique_label: Teknik
+  technique_linear_regression: Doğrusal Regresyon
+  technique_t_test_independent: Bağımsız t-testi
+  technique_t_test_paired: Eşleştirilmiş t-testi
+  title: İstatistiksel Tarifler
+  total_rules_applied: Uygulanan toplam kural
+  transforms:
+    add: Dönüşüm ekle
+    label: Dönüşümler
+    manage_button: Dönüşümleri yönet
+    no_transforms: Uygulanan dönüşüm yok
+    remove: Kaldır
+  unknown_user: Bilinmiyor
+  update_error: 'Reçete güncellenemedi: {error}'
+  update_success: Reçete '{id}' başarıyla güncellendi.
+  updated_label: Güncellendi
+  visualisation:
+    columns_label: Sütunlar
+    data_points: Veri noktaları
+    distribution: Dağılım
+    trend: Eğilim
+    type_label: Tür
+  visualisation_area: Alan Grafiği
+  visualisation_bar: Çubuk Grafiği
+  visualisation_donut: Halka Grafiği
+  visualisation_hbar: Yatay Çubuk Grafiği
+  visualisation_hint: Grafik, seçilen veri sütunları kullanılarak oluşturulacak.
+  visualisation_label: Görselleştirme Türü
+  visualisation_line: Çizgi Grafiği
+  visualisation_pie: Pasta Grafiği
+  visualisation_raw_data: 'Görselleştirme verileri:'
+  visualisation_scatter: Saçılım Grafiği
+  visualisation_table: Tablo
+  ui:
+    delete_success: Tarif silindi
+    delete_error: Tarif silinemedi
+  visualisation_histogram: Histogram
+register:
+  confirm_password: Parolayı Onayla
+  creating: Hesap oluşturuluyor...
+  description: Yeni bir hesap oluştur
+  email: E-posta
+  failed: Kayıt başarısız oldu
+  have_account: Zaten bir hesabınız var mı?
+  language_description: Arayüz için tercih ettiğiniz dili seçin.
+  login_link: Giriş Yap
+  name: Ad
+  password: Parola
+  password_mismatch: Parolalar eşleşmiyor
+  submit: Kayıt Ol
+  success_with_verification: Hesabınız oluşturuldu. Hesabınızı etkinleştirmek için e-postanızdaki doğrulama bağlantısını kontrol edin.
+  title: Kayıt Ol
+  email_failed_use_resend: Kayıt başarılı, ancak doğrulama e-postası gönderilemedi. Lütfen giriş sayfasından yeniden gönderin.
+  registration_disabled: Kendi kendine kayıt devre dışı. Lütfen bir yöneticiyle iletişime geçin.
+  success_pending_approval: Hesabınız oluşturuldu ve yönetici onayı bekliyor. Onaylandıktan sonra oturum açabileceksiniz.
+  success_auto_verified: Hesabınız oluşturuldu ve kullanıma hazır. Şimdi oturum açabilirsiniz.
+resend_verification:
+  back_to_login: Girişe Dön
+  check_spam: E-postayı birkaç dakika içinde görmezseniz lütfen spam klasörünüzü kontrol edin.
+  description: Yeni bir doğrulama bağlantısı almak için e-posta adresinizi girin.
+  error: Doğrulama e-postası gönderilemedi.
+  send_button: Doğrulama E-postası Gönder
+  sent: Doğrulama e-postası gönderildi. Lütfen gelen kutunuzu (ve spam klasörünü) kontrol edin.
+  sent_description: Bu e-posta adresiyle bir hesap varsa, bir doğrulama bağlantısı alacaksınız.
+  sent_title: E-posta Gönderildi
+  title: Doğrulama E-postasını Yeniden Gönder
+reset_password:
+  confirm_password: Yeni Şifreyi Onayla
+  description: Aşağıya yeni şifrenizi girin.
+  failed: Şifre sıfırlanamadı
+  login_button: Girişe Git
+  missing_token: Sıfırlama belirteci sağlanmadı
+  new_password: Yeni Şifre
+  password_mismatch: Şifreler eşleşmiyor
+  submit: Şifreyi Sıfırla
+  success: Şifre başarıyla sıfırlandı
+  success_description: Şifreniz sıfırlandı. Girişe yönlendiriliyorsunuz...
+  success_title: Şifre Sıfırlama
+  title: Şifreyi Sıfırla
+settings:
+  ai:
+    title: Yapay Zeka Bağlantıları
+  database:
+    title: Veritabanı Bağlantıları
+  profile:
+    title: Tercihler
+  title: Ayarlar
+setup:
+  internal:
+    description: Sistem tanılamaları ve dahili yapılandırma. Salt okunur durum göstergeleri.
+    future:
+      cache_config: Önbellek / oturum yapılandırması
+      debug_logging: Hata ayıklama / ayrıntılı günlük kaydı anahtarı
+      description: Gelecek sürümlerde ek tanılamalar eklenecek.
+      email_transport: E-posta aktarım durumu
+      pool_stats: Veritabanı havuzu istatistikleri
+      title: Yakında
+    licence:
+      description: Geçerli lisans seviyesi ve etkinleştirilen özellikler.
+      expiry: Son Kullanma
+      features: Etkin Özellikler
+      issued_to: Adına Düzenlenen
+      tier: Lisans Seviyesi
+      title: Lisans ve Özellikler
+    load_error: Sistem tanılamaları yüklenemedi
+    system_status:
+      available: Kullanılabilir
+      db_pool: Veritabanı Havuzu
+      description: Arka uç hizmetleri için gerçek zamanlı sağlık göstergeleri.
+      healthy: Sağlıklı
+      initialized: Başlatıldı
+      not_initialized: Başlatılmadı
+      not_required: Gerekli Değil
+      overall_health: Genel Sağlık
+      shared_memory: Paylaşımlı Bellek
+      title: Sistem Durumu
+      unavailable: Kullanılamıyor
+      unhealthy: Sağlıksız
+      version: Sürüm
+      db_cluster: Veritabanı Kümesi
+    title: Dahili
+  limits:
+    demo_mode:
+      description: Etkinleştirildiğinde sistem demo modunda çalışır; yıkıcı eylemler engellenir ve arayüzde göstergeler görüntülenir.
+      label: Demo Modu
+    description: Kaynak sınırları, zaman aşımları ve sistem davranışı için operasyonel kontroller. İstediğiniz zaman ayarlanabilir.
+    email_timeout:
+      hint: E-posta doğrulama bağlantısının kaç saat geçerli kalacağı.
+      label: E-posta Doğrulama Zaman Aşımı (saat)
+    grace_period:
+      hint: Geçici olarak silinen hesapların kalıcı olarak silinmesinden önceki saat.
+      label: Silme Gecikmesi (saat)
+    invalid_grace_period: Silme gecikmesi (saat) için geçerli pozitif bir sayı girin
+    invalid_registration_max: Maksimum kayıt sayısı için geçerli pozitif bir sayı girin
+    invalid_timeout: Doğrulama zaman aşımı (saat) için geçerli pozitif bir sayı girin
+    load_error: Limit ayarları yüklenemedi
+    max_registrations:
+      hint: Kaç kullanıcının kayıt olabileceğine ilişkin bir sınır belirleyin.
+      label: Maksimum Kullanıcı Kaydı
+      placeholder: Sınır seçin
+      unlimited: Sınırsız
+      users: kullanıcı
+    save_button: Limitleri Kaydet
+    save_error: Limit ayarları kaydedilemedi
+    save_success: Limit ayarları kaydedildi
+    title: Limitler
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: Kullanıcı başına maksimum veri kümesi sayısı (0 = sınırsız). Yeni kullanıcılara uygulanır.
+      count_unlimited: Sınırsız
+      default_count_label: Kullanıcı Başına Varsayılan Maksimum Yükleme Sayısı
+      default_size_label: Kullanıcı Başına Varsayılan Maksimum Yükleme Boyutu (MB)
+      select_count: Sınır seçin
+      select_size: Sınır seçin
+      size_100_mb: 100 MB
+      size_10_mb: 10 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_250_mb: 250 MB
+      size_25_mb: 25 MB
+      size_500_mb: 500 MB
+      size_50_mb: 50 MB
+      size_5_mb: 5 MB
+      size_hint: Kullanıcı başına maksimum toplam depolama alanı (0 = sınırsız). Yeni kullanıcılara uygulanır.
+      size_unlimited: Sınırsız
+  options:
+    description: Bu dağıtımın kimliğini ve davranışını tanımlayan kurulum zamanı ayarları. Dikkatli değiştirin; bunlar tüm kullanıcıları etkiler.
+    email_sender:
+      hint: Doğrulama e-postalarının gönderildiği adres olarak görünecek e-posta adresi.
+      label: E-posta Gönderen Adresi
+    load_error: Seçenek ayarları yüklenemedi
+    password_policy:
+      custom: Özel
+      high: Yüksek (min 10, büyük harf, küçük harf, rakam, özel karakter)
+      hint: Kullanıcı kaydı ve parola değişiklikleri için parola karmaşıklık gereksinimlerini seçin.
+      label: Parola Politikası
+      low: Düşük (min 6 karakter)
+      medium: Orta (min 8, büyük harf, küçük harf, rakam)
+      min_length: Minimum Uzunluk
+      min_strength: Minimum Güç (zxcvbn puanı 0-4)
+      require_digit: Rakam Zorunlu
+      require_lowercase: Küçük Harf Zorunlu
+      require_special: Özel Karakter Zorunlu
+      require_uppercase: Büyük Harf Zorunlu
+      select: Politika seçin
+    public_url:
+      hint: E-posta doğrulama bağlantılarında kullanılan temel URL (ör. https://workbench.example.com).
+      label: Genel URL
+    save_button: Seçenekleri Kaydet
+    save_error: Seçenek ayarları kaydedilemedi
+    save_success: Seçenek ayarları kaydedildi
+    title: Seçenekler
+    welcome:
+      hint: Bu mesaj oturum açma sayfasında görünecektir. Gizlemek için boş bırakın.
+      label: Karşılama Mesajı
+      placeholder: Oturum açma sayfasında gösterilecek bir karşılama mesajı girin.
+    registration_mode:
+      label: Kayıt Modu
+      mode_2: Kendi kendine kayıt ve Yönetici onaylı
+      mode_1: Yönetici doğrulanmış kullanıcılar oluşturur
+      hint: Yeni kullanıcı hesaplarının nasıl oluşturulacağını ve doğrulanacağını seçin.
+      mode_0: Kendi kendine kayıt otomatik doğrulanır
+      mode_4: Kendi kendine kayıt e-posta doğrulamalı
+      select: Kayıt modunu seçin
+  tuning:
+    seconds: saniye
+    ai_section_hint: Her AI isteği için varsayılanlar. İnce ayar yalnızca o çifte özgü olduğunda tek bir bağlantı ve model bunları geçersiz kılabilir.
+    invalid_max_tokens: Lütfen en az 1 olacak şekilde tam sayı token girin.
+    reset_error: İnce ayar ayarları sıfırlanamadı.
+    description: AI davranışı ve süre sınırları için varsayılanlar. Bunlar genellikle olduğu gibi uygundur; kullanıcı veya bağlantı bazında ayarlar farklı olabilir ve buradaki değer, ikisi de bulunmadığında
+      geçerli olan değerdir.
+    save_error: İnce ayar ayarları kaydedilemedi.
+    reset_confirm_action: Sıfırla
+    invalid_probe_timeout: Test zaman aşımı, en az 1 ve en çok 1200 olmak üzere tam sayı saniye olmalıdır.
+    saved: İnce ayar ayarları kaydedildi.
+    slow_threshold_label: Yavaş model eşiği
+    slow_threshold_hint: Bundan daha uzun süren bir model testi çok yavaş olarak bildirilir. Kullanıcılar kendi sınırlarını yükseltebilir; hiçbiri kendi sınırını 1'in altına indiremez.
+    invalid_connect_timeout: Bağlanma zaman aşımı, en az 1 ve en çok 60 olmak üzere tam sayı saniye olmalıdır.
+    reset_confirm_title: Bu altı ayar varsayılanlarına sıfırlansın mı?
+    reset_confirm_body: Bu sayfadaki her değer, birlikte geldiği varsayılan değere döner. Bağlantıya özel geçersiz kılmalar etkilenmez. Bu işlem geri alınamaz ve değiştirdiğiniz her değeri yeniden ayarlamanız
+      gerekir.
+    reset_done: İnce ayar ayarları varsayılanlarına sıfırlandı.
+    ai_section_label: AI üretimi
+    ai_tokens: token
+    ai_temperature_hint: 'Yanıtların ne kadar çeşitlilik göstereceği: 0, modelin izin verdiği ölçüde tekrarlanabilir; 2 en çeşitlidir. 0 ile 2 dışındaki değerler bu sistem tarafından değil, sağlayıcı tarafından
+      reddedilir.'
+    ai_max_tokens_hint: Tek bir isteğin üretebileceği en uzun yanıt. Bir açıklama yaklaşık 500 token gerektirir; 4000 ise fazlasıyla yeterli alan bırakır.
+    invalid_ai_timeout: AI süre sınırı, en az 1 olmak üzere tam sayı saniye olmalıdır.
+    save: Ayarları kaydet
+    invalid_temperature: Sıcaklık 0 ile 2 arasında bir sayı olmalıdır.
+    saving: Kaydediliyor…
+    forbidden: Bu ayarları yalnızca tam yetkili bir yönetici değiştirebilir.
+    probe_timeout_hint: Bir uygunluk testinin en fazla ne kadar süre çalışabileceği. CPU'da barındırılan bir model dakikalar sürer; bu nedenle burada kısa bir sınır, zaman kazandırmak yerine hatalı bir
+      başarısızlık kaydeder.
+    resetting: Sıfırlanıyor…
+    load_error: İnce ayar ayarları yüklenemedi.
+    invalid_model_test_seconds: Lütfen en az 1 olacak şekilde tam sayı saniye girin.
+    ai_timeout_hint: Bir AI isteğinin iptal edilmeden önce ne kadar süre çalışabileceği. Çok düşük olursa sohbet sessizce başarısız olur; çok yüksek olursa takılmış bir model bir çalışanı meşgul eder. CPU
+      üzerindeki yerel modeller birkaç dakikaya ihtiyaç duyabilir.
+    connect_timeout_hint: Uç nokta erişilemez olarak değerlendirilmeden önce ağın bir bağlantıyı kabul etmesi için tanınan süre. Ağın ihtiyaç duyduğu değerin altındaki bir değer, çalışan bir uç noktayı
+      ölü bir uç noktaya dönüştürür.
+    preamble_detail: Bir bağlantı bunları geçersiz kılmadığı sürece her AI isteği bunları kullanır. Birini değiştirmek, kendi ayarı olmayan her modeli etkiler; önceden ayarladığınız bir bağlantıyı değiştirmez.
+tools:
+  all_datasets: Tüm Veri Kümeleri
+  connect_database: Veritabanına Bağlan
+  description: Ek yardımcı programlar ve analiz araçları burada görünecek.
+  import_notebook: Not Defterini İçe Aktar
+  manage_data: Veri Topla
+  my_data: Verilerim
+  notebooks: Not Defterleri
+  placeholder: Araçlar sayfası yakında.
+  title: Diğer Araçlar
+  upload_csv_excel: CSV / Excel Yükle
+  upload_data: Veri Yükle
+  uploads_list: Yüklemeler (CSV, Excel)
+  visualize: Görselleştirme Korumalı Alanı
+transforms:
+  back_to_data: Verilerime Geri Dön
+  back_to_recipe: 'Tarife Geri Dön: {name}'
+  connect_error: Dönüşüm bağlanamadı
+  connect_transform: Tarife bağlan
+  connected_count: '{count} bağlı'
+  connected_to_recipe: 'Bağlı: {name}'
+  delete_button: Sil
+  delete_confirm: Bu dönüşüm silinsin mi?
+  delete_success: Dönüşüm silindi.
+  description_label: Açıklama
+  description_placeholder: Açıklama (isteğe bağlı)
+  disconnect_error: Dönüşümün bağlantısı kesilemedi
+  disconnect_transform: Tarifle bağlantıyı kes
+  empty_hint: Dönüşüm çalıştığında işlemler liste sırasıyla uygulanır.
+  empty_state: Dönüşümünüzü oluşturmaya başlamak için bir işlem ekleyin.
+  empty_title: Listeden bir dönüşüm seçin veya yeni bir tane oluşturun.
+  fill:
+    constant: Sabit
+    drop_rows: Satırları kaldır
+    mean: Ortalama
+    median: Medyan
+    mode: Mod
+  filter:
+    op_contains: içerir
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: null değil
+    op_is_null: 'null'
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'Tarif: {name}'
+  load_error: Dönüşüm yüklenemedi
+  name_label: Ad
+  name_placeholder: Dönüşüm adı
+  name_required: Dönüşüm adı zorunludur.
+  new_transform: Yeni Dönüşüm
+  no_search_results: Aramanızla eşleşen dönüşüm yok
+  no_transforms: Bu veri kümesi için tanımlanmış dönüşüm yok.
+  op:
+    add: İşlem Ekle
+    column_placeholder: Sütun seç
+    empty_hint: Dönüşümünüzü oluşturmaya başlamak için bir işlem ekleyin.
+    encoding_label: Etiket
+    encoding_onehot: One-hot
+    encoding_placeholder: Kodlama
+    method_placeholder: Yöntem
+    new_name_placeholder: Yeni ad
+    operations_label: İşlemler
+    operator_placeholder: Operatör
+    remove: Kaldır
+    target_boolean: Boole
+    target_datetime: Tarih/Saat
+    target_numeric: Sayısal
+    target_string: Metin
+    target_type_placeholder: Hedef tür
+    type:
+      convert_type: Tür dönüştür
+      drop_column: Sütunu kaldır
+      drop_duplicates: Yinelenenleri kaldır
+      encode_category: Kategoriyi kodla
+      fill_missing: Eksik değerleri doldur
+      filter: Satırları filtrele
+      rename_column: Sütunu yeniden adlandır
+      normalize: Normalleştir
+      standardize: Standartlaştır
+    type_placeholder: İşlem türü
+    value_placeholder: Değer
+  operations_count: '{count} işlem'
+  operations_heading: İşlemler
+  save_button: Kaydet
+  save_success: Dönüşüm kaydedildi.
+  search_placeholder: Dönüşümleri ara…
+validation:
+  api_key_required: Bu sağlayıcı için API anahtarı gereklidir.
+  database_required: Veritabanı adı gereklidir.
+  host_required: Sunucu gereklidir.
+  name_required: Bağlantı adı gereklidir.
+  password:
+    min_length: Parola en az {min} karakter uzunluğunda olmalıdır.
+    require_digit: Parola en az bir rakam içermelidir.
+    require_lowercase: Parola en az bir küçük harf içermelidir.
+    require_special: Parola en az bir özel karakter içermelidir.
+    require_uppercase: Parola en az bir büyük harf içermelidir.
+    too_weak: Parola çok zayıf. Lütfen daha güçlü bir parola seçin.
+  password_required: Parola gereklidir.
+  port_invalid: Bağlantı noktası 1 ile 65535 arasında olmalıdır.
+  provider_required: Lütfen bir sağlayıcı seçin.
+  type_required: Lütfen bir veritabanı türü seçin.
+  username_required: Kullanıcı adı gereklidir.
+verify_email:
+  error_description: Bir şeyler ters gitti.
+  error_title: Doğrulama Başarısız
+  expired_description: Doğrulama bağlantısının süresi doldu.
+  expired_message: Aşağıdan yeni bir doğrulama e-postası isteyebilirsiniz.
+  expired_title: Bağlantının Süresi Doldu
+  invalid_token: Geçersiz doğrulama bağlantısı.
+  login_button: Girişe Devam Et
+  missing_description: Doğrulama kodu sağlanmadı.
+  missing_title: Doğrulama Kodu Yok
+  network_error: Ağ hatası. Lütfen tekrar deneyin.
+  resend_button: Doğrulama E-postasını Yeniden Gönder
+  success_description: E-postanız başarıyla doğrulandı. Girişe yönlendiriliyorsunuz...
+  success_title: E-posta Doğrulandı
+  unknown_error: Bir şeyler ters gitti.
+virtual:
+  clone: Klonla
+  deleted: Veri kümesi silindi
+  draft_badge: Taslak
+  edit: Düzenle
+  error: Bir hata oluştu
+  existing_none: Hiçbiri
+  existing_title: Mevcut Veri Kümeleri
+  loading: Yükleniyor...
+  more: daha fazla
+  new_chat: Yeni Sanal Veri Kümesi
+  placeholder: Ne yapmak istediğinizi açıklayın...
+  ready_badge: Hazır
+  recent_chats: Son Sohbetler
+  send: Gönder
+  stage: Aşama
+  title: Sanal Veri Kümeleri
+  verbose: Ayrıntılı
+  welcome: Sanal Veri Kümeleri asistanına hoş geldiniz. Bu size yeni geliyorsa nasıl başlayacağınızı öğrenmek isteyebilirsiniz. İstatistikçilerin veri kümelerini analiz tariflerine girdi olarak nasıl kullandığını
+    ve ardından çıktıyı raporlar ve görselleştirmeler oluşturmak için nasıl kullandığını açıklamamı isteyin. Ya da gerçek veri kümelerinize göz atmamı isteyin, böylece kullanmak üzere onlardan veri seçmeye
+    başlayalım. Emin değilseniz sadece "merhaba" deyin.
+  preview_title: Veri kümesi önizlemesi
+  preview_name: Ad
+  preview_columns: Çıktı sütunları
+  preview_joins: Birleştirmeler
+  preview_sources: Kaynaklar
+  manual:
+    open_label: Mevcut bir veri setini açın
+    move_down: Bu sütunu bir sıra aşağı taşıyın
+    open_none: Henüz açılacak sanal veri seti yok.
+    alias_taken: Bu takma ad zaten başka bir kaynak tarafından kullanılıyor.
+    no_sources: Kullanılabilecek hiçbir bağlantı veya veri seti yok.
+    bridge_choose_columns: eşleşen sütun bulunamadı — birleştirmeyi ekleyip sütunları seçin
+    preview_empty: Birleştirme hiç satır döndürmedi.
+    save_success: Sanal veri seti kaydedildi.
+    move_up: Bu sütunu bir sıra yukarı taşıyın
+    aggregation_note: Eski bir tanımın taşıdığı toplulaştırma olduğu gibi korunur; ancak birleştirme bunu uygulamaz.
+    title: Sanal veri seti düzenleyicisi
+    update_dataset: Bu veri setini güncelleyin
+    save_error: Sanal veri seti kaydedilemedi.
+    validate: Tanımı doğrulayın
+    preview_rows: '{count} satır döndürüldü'
+    materialized_label: Sonucu somutlaştırın
+    joins_title: Kaynakların nasıl birleştirildiği
+    select_all: Tümünü seçin
+    remove: Bu sütunu çıktıdan kaldırın
+    output_hint: Bu veri setinin sırayla sunacağı sütunlar.
+    column_placeholder: Bir sütun seçin
+    loaded_note: Mevcut bir tanım açıldı — kaydetmek onu günceller.
+    no_match: Burada filtreyle eşleşen hiçbir şey yok.
+    intro: Seçtiğiniz sütunlardan bir sanal veri seti oluşturun veya değiştirmek için mevcut bir sanal veri setini açın.
+    unattached_sources: 'Geri kalanıyla birleştirilmemiş: {sources}. Bunları bağlayan bir birleştirme ekleyin.'
+    complete_join: Tamamlanmamış birleştirmeyi doldurun
+    loading_columns: Sütunlar okunuyor…
+    validate_ok: Tanım yapısal olarak geçerli.
+    bridge_no_columns: sütunlar henüz okunmadı — kaynağı genişletin veya birleştirmeyi ekleyip sütunları seçin
+    add_join: Birleştirme ekleyin
+    columns_error: Sütunlar okunamadı.
+    need_name: Kaydetmeden önce veri setine bir ad verin.
+    joins_hint: İki veya daha fazla kaynak arasında bir birleştirme gerekir. Tek bir kaynak için gerekmez.
+    load_error: Bu veri setinin tanımı yüklenemedi.
+    need_join: İki kaynak seçili ancak bunları birleştiren hiçbir şey yok.
+    materialized_hint: Canlı bir birleştirme yerine tablo yazar. Prototip oluştururken bunu kapalı bırakın.
+    bridge: Köprü
+    name_label: Veri seti adı
+    validate_errors: 'Tanımda sorunlar var:'
+    select_none: Hiçbirini seçmeyin
+    alias_label: Takma ad
+    output_title: Veri setinin sundukları
+    new_dataset: Yeni bir veri seti oluşturun
+    test_pulls_every_source: Birleştirmeyi test etmek her kaynağı tamamen okur; bu nedenle yavaş olabilir.
+    preview_error: Birleştirme çalıştırılamadı.
+    remove_join: Bu birleştirmeyi kaldırın
+    test_join: Birleştirmeyi test edin
+    sources_hint: Bir bağlantıyı veya veri setini genişletin, ardından dahil edilecek sütunları işaretleyin.
+    tables_error: Tablolar okunamadı.
+    incomplete_join: Henüz sütun seçilmemiş olan birleştirmeyi tamamlayın veya kaldırın.
+    sources_title: Verinin nereden geldiği
+    description_label: Veri seti açıklaması
+    need_columns: Dahil etmek için en az bir sütun işaretleyin.
+    suggested: Önerilen
+    loaded_note_shared: Mevcut paylaşılan tanım açıldı — salt okunur - güncellemeye izin verilmiyor
+    materialize_failed: 'Kaydedildi, ancak tablo oluşturulamadı:'
+    materialize_retry: Tekrar dene
+    materialize_done: Tablo oluşturuldu.
+  chip_error: Bu seçenek uygulanamadı.
+  panel_tick_error: Bu sütun işaretlenemedi.
+  panel_fold_error: Panelin katlanmış durumu kaydedilemedi; bu nedenle bir sonraki seferde yine açık olacak.
+  panel:
+    expand: Kaynak panelini göster
+    collapse: Kaynak panelini katla
+  chip_load_error: Seçenekler yenilenemedi; bu nedenle güncel olmayabilirler.
+  panel_columns: '{count} sütun'
+  progress_decided: '{decided}/{total} karar verildi'
+  panel_tick_no_session: Önce bir mesaj gönderin — ağaç, oturumdaki işaretlemelerinizi kaydeder.
+  heading_match_columns: Bu sütunları eşleştirin
+  heading_choose_table: Bir tablo seçin
+  heading_materialised: Canlı mı yoksa materyalize mi?
+  heading_choose_columns: Sütunları seçin
+  act:
+    join: '{pair} birleştirildi'
+    sources_short: '{count} tablo kabul edildi: {tables}'
+    applied: '{piece} uygulandı'
+    named: “{name}” olarak adlandırıldı
+    sources: '{count} tablo kabul edildi'
+  suggestion_applied: Uygulandı
+  confirm_selection: Bunları kullanın
+  selection_hint: İstemediğiniz her şeyin işaretini kaldırın, sonra bunları birlikte kullanın.
+  join_type_label: Birleştirme türü
+  joins_unjoined: 'Birleştirilmedi: {tables}'
+  joins_coverage: '{total} tablodan {connected} tanesi bağlı'
+  act_joins: '{count} çift birleştirildi'
+  joins_apply: Uygula
+  joins_hint: Herhangi bir sütunu veya birleştirme türünü değiştir, sonra devam et.
+  joins_unsaved: Bu satırlar veri kümesinden farklı. Bunları uygula veya önce boş satırı düzelt.
+  name_suggestion_accept: Bu adı kullan
+  name_suggestion_heading: Önerilen ad — isterseniz değiştirin
+visualize:
+  config: Yapılandırma
+  data: Veri (JSON)
+  data_placeholder: JSON verilerini buraya yapıştırın veya örnek oluşturun
+  description: Bir görselleştirme türü seçin, örnek veriler oluşturun, parametreleri ayarlayın ve önizleyin.
+  download_error: Tablo indirilemedi
+  download_png: PNG olarak indir
+  download_success: Tablo PNG olarak indirildi
+  generate_sample: Örnek Oluştur
+  invalid_data: Metin tablosu için geçersiz veri. Sütunlar ve satırlar bekleniyor.
+  load_error: Görselleştirme türleri yüklenemedi
+  no_data: Görselleştirilecek veri yok. Örnek veri oluşturun veya JSON yapıştırın.
+  no_types: Tanımlı görselleştirme türü yok. Lütfen bir yöneticiyle iletişime geçin.
+  parameters: Parametreler
+  preview: Önizleme
+  sample_expenses: Giderler
+  sample_generated: Örnek veriler oluşturuldu
+  sample_item: Öğe
+  sample_sales: Satışlar
+  sample_value: Değer
+  save_error: Kaydedilemedi
+  save_instance: Örneği Kaydet
+  save_no_data: Kaydedilecek veri yok. Lütfen veri oluşturun veya yapıştırın.
+  save_success: Görselleştirme başarıyla kaydedildi
+  select_type: Tür seç
+  title: Görselleştirme Korumalı Alanı
+  type: Görselleştirme Türü
+  unsupported: Görselleştirme türü henüz uygulanmadı
+  unsupported_parameter: Desteklenmeyen tür

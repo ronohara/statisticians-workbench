@@ -1,0 +1,2250 @@
+about:
+  description: أنشئ تجارب مذهلة باستخدام shadcn/ui وNext.js. تصميم نظيف وأداء سريع.
+  fast_desc: مبني على Next.js App Router لأداء مثالي.
+  fast_title: سريع
+  get_started: ابدأ الآن
+  modern_desc: مكونات قابلة للوصول من shadcn/ui، بتنسيق Tailwind CSS.
+  modern_title: واجهة عصرية
+  secure_desc: آمن الأنواع وقابل للتخصيص – أنت تمتلك كود المكون.
+  secure_title: آمن
+  title: عن Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: العودة إلى الإدارة
+    cannot_modify_self: لا يمكنك تعديل حسابك الخاص
+    delete_confirmation: هل أنت متأكد أنك تريد حذف {name}؟ سيتم حذف هذا المستخدم حذفًا مؤقتًا ويمكن استعادته بواسطة مدير عام.
+    delete_error: فشل حذف المستخدم
+    delete_title: حذف المستخدم
+    demote: تخفيض الرتبة
+    demote_error: فشل تخفيض رتبة المستخدم
+    demote_success: تم تخفيض رتبة المستخدم من مدير المجموعة
+    description_placeholder: أدخل الوصف
+    description_required: لا يمكن أن يكون الوصف فارغًا
+    group_description: وصف المجموعة
+    group_users_load_error: فشل تحميل مستخدمي المجموعة
+    load_error: فشل تحميل المجموعات
+    load_success: تم تحميل المجموعات بنجاح
+    no_users: لم يتم العثور على مستخدمين في هذه المجموعة.
+    promote: ترقية
+    promote_error: فشل ترقية المستخدم
+    promote_success: تمت ترقية المستخدم إلى مدير المجموعة
+    readonly_badge: (للقراءة فقط)
+    readonly_message: أنت تعرض هذه الصفحة في وضع القراءة فقط. لا يمكن للمستخدمين التجريبيين إجراء تغييرات.
+    readonly_title: إدارة المجموعة (قراءة فقط)
+    select_group: اختر مجموعة
+    select_group_placeholder: اختر مجموعة
+    title: إدارة المجموعة
+    update_error: فشل تحديث المجموعة
+    update_success: تم تحديث وصف المجموعة
+    users_in_group: المستخدمون في المجموعة
+  models:
+    comment_placeholder: أدخل تعليقًا
+    description: كل نموذج تعرفه منضدة العمل. يؤثر تمكين النموذج على كل اتصال يقدّمه؛ ويُظهر عمود الخوادم أيها يمكنه الوصول إليه.
+    disabled: معطّل
+    edit_comment: تعديل التعليق
+    enabled: مفعّل
+    fetch_auth_required: يتطلب هذا المزود مفتاح API لعرض النماذج. قم بالتحديث من الإعدادات ← اتصالات الذكاء الاصطناعي بدلاً من ذلك.
+    fetch_non_standard: لا يوفر هذا المزود واجهة API قياسية لعرض النماذج. أضف النماذج يدويًا في لوحة الإدارة.
+    load_models_error: فشل تحميل النماذج
+    no_comment: —
+    no_models: لا توجد نماذج بعد. الاكتشاف ينشئها من اتصال.
+    not_preferred: غير مفضّل
+    preferred: مفضّل
+    toggle_error: فشل تحديث النموذج
+    update_error: فشل تحديث التعليق
+    update_success: تم تحديث النموذج
+    tuning_hint: تنطبق هذه القيم أينما يُستخدم هذا النموذج على هذا الاتصال. تركه فارغًا يعني أنه يرث الإعداد الافتراضي لمنصة العمل.
+    tuning_temperature_hint: القيم الأقل تعطي إجابات أكثر قابلية للتكرار؛ والقيم الأعلى تعطي إجابات أكثر تنوعًا.
+    tuning_save_error: تعذّر حفظ إعدادات الذكاء الاصطناعي
+    tuning_loading: جارٍ تحميل إعدادات الذكاء الاصطناعي…
+    no_servers: لا يوجد اتصال يخدم هذا النموذج بعد
+    servers_title: يمكن الوصول إليه من
+    tuning_title: إعدادات الذكاء الاصطناعي لهذا الخادم
+    filter_state: الحالة
+    tuning_inherited_title: تركه فارغًا يرث الإعداد الافتراضي لمنصة العمل
+    filter_any: أي حالة
+    tuning_load_error: تعذّر تحميل إعدادات الذكاء الاصطناعي
+    filter_clear: مسح عوامل التصفية
+    model_count: '{count} من النماذج'
+    filter_test: اختبار القدرة
+    tuning_timeout_hint: الثواني التي قد يعمل فيها طلب الذكاء الاصطناعي الواحد. قد يحتاج نموذج محلي على وحدة المعالجة المركزية عدة دقائق.
+    search_placeholder: البحث عن اسم النموذج
+    no_matches: لا توجد نماذج تطابق عوامل التصفية هذه.
+    filter_result: النتيجة
+    tuning_inherited: موروث
+    tuning_saved: تم حفظ إعدادات الذكاء الاصطناعي.
+  providers:
+    code_label: الرمز
+    delete_button: حذف
+    delete_confirmation: هل أنت متأكد أنك تريد حذف المزود "{name}"؟ سيؤدي هذا أيضًا إلى إزالة جميع النماذج المرتبطة ولا يمكن التراجع عنه.
+    delete_error: فشل حذف المزود
+    delete_provider: حذف المزود
+    delete_success: تم حذف المزود
+    delete_title: حذف المزود
+    description: تمكين أو تعطيل مزودي الذكاء الاصطناعي. لن يظهر المزودون المعطلون في نماذج اتصال المستخدم.
+    disabled: معطّل
+    enabled: مفعّل
+    fetch_error: فشل تحميل المزودين
+    list_title: جميع المزودين
+    local: محلي
+    no_api_key: لا يتطلب مفتاح API
+    requires_api_key: يتطلب مفتاح API
+    title: مزودو الذكاء الاصطناعي
+    toggle_error: فشل تحديث المزود
+    update_success: تم تحديث المزود
+  title: لوحة الإدارة
+  user_details:
+    dark_mode_description: التبديل بين المظهر الفاتح والداكن.
+    dark_mode_label: الوضع الداكن
+    email_label: البريد الإلكتروني
+    email_notifications_description: استقبل تحديثات عبر البريد الإلكتروني حول حسابك.
+    email_notifications_label: إشعارات البريد الإلكتروني
+    full_admin_note: يمتلك المديرون العامون جميع صلاحيات مدير المجموعة بشكل افتراضي.
+    group_admin_description: يمكن للمستخدم إدارة مستخدمين آخرين داخل مجموعته.
+    group_admin_label: مدير المجموعة
+    group_hint: تحدد مجموعة المستخدم الموارد المشتركة التي يمكنه الوصول إليها.
+    language_label: اللغة
+    language_select_placeholder: اختر اللغة
+    load_error: فشل تحميل تفاصيل المستخدم
+    max_upload_count_hint: الحد الأقصى لعدد مجموعات البيانات لكل مستخدم (0 = غير محدود).
+    max_upload_count_label: الحد الأقصى لعدد الرفعات
+    max_upload_count_placeholder: اختر العدد
+    max_upload_size_hint: الحد الأقصى لإجمالي مساحة التخزين لكل مستخدم (0 = غير محدود).
+    max_upload_size_label: الحد الأقصى لحجم الرفع
+    max_upload_size_placeholder: اختر الحجم
+    name_label: الاسم
+    not_found: المستخدم غير موجود
+    save_error: فشل تحديث المستخدم
+    save_success: تم تحديث تفاصيل المستخدم
+    select_group: اختر المجموعة
+    title: إدارة المستخدم
+    unnamed: مستخدم بدون اسم
+    user_group: مجموعة المستخدم
+  users:
+    active_users: المستخدمون النشطون
+    admin_badge: مدير
+    bcc_label: تسجيلات BCC
+    bcc_updated: تم تحديث إعداد تسجيل BCC
+    created_label: تم الإنشاء
+    current_user_badge: أنت
+    delete_button: حذف
+    delete_confirmation: هل أنت متأكد أنك تريد حذف "{name}" نهائيًا؟ لا يمكن التراجع عن هذا الإجراء.
+    delete_error: فشل حذف المستخدم
+    delete_self_error: لا يمكنك حذف حسابك الخاص
+    delete_success: تم حذف المستخدم نهائيًا
+    delete_title: حذف المستخدم
+    deleted_badge: محذوف مؤقتًا
+    deleted_label: محذوف
+    example_user_badge: مستخدم مثال
+    forbidden: محظور
+    group_admin_badge: مدير المجموعة
+    hard_delete_button: حذف نهائي
+    hard_delete_confirmation: هل أنت متأكد أنك تريد حذف "{name}" نهائيًا؟ لا يمكن التراجع عن هذا الإجراء.
+    hard_delete_error: فشل حذف المستخدم نهائيًا
+    hard_delete_success: تم حذف المستخدم نهائيًا
+    hard_delete_title: حذف المستخدم نهائيًا
+    load_error: فشل تحميل المستخدمين
+    make_admin: تعيين كمدير
+    more_button: المزيد...
+    no_name: بدون اسم
+    remove_admin: إزالة صلاحية المدير
+    resend_button: إعادة إرسال البريد الإلكتروني
+    resend_error: فشل إرسال البريد الإلكتروني للتحقق
+    resend_success: تم إرسال بريد التحقق إلى {email}
+    restore_button: استعادة
+    restore_error: فشل استعادة المستخدم
+    restore_success: تمت استعادة المستخدم
+    soft_deleted_users: المستخدمون المحذوفون مؤقتًا
+    title: إدارة المستخدمين
+    unauthorized: غير مصرح
+    unverified_badge: غير موثّق
+    update_error: فشل تحديث المستخدم
+    update_success: تم تحديث المستخدم
+    user_not_found: المستخدم غير موجود
+    verified_badge: موثّق
+    verify_button: توثيق
+    verify_error: فشل توثيق المستخدم
+    verify_success: تم تعليم المستخدم كموثّق
+    add_user: إضافة مستخدم
+  visualization_types:
+    add_button: إضافة نوع جديد
+    add_title: إضافة نوع عرض مرئي
+    create_success: تم إنشاء نوع العرض المرئي
+    default_parameters: المعلمات الافتراضية (JSON)
+    delete: حذف
+    delete_button: حذف
+    delete_confirmation: هل أنت متأكد من حذف النوع "{name}"؟ سيؤدي هذا أيضًا إلى إزالة جميع المثيلات المرتبطة ولا يمكن التراجع عنه.
+    delete_error: فشل الحذف
+    delete_success: تم حذف نوع العرض المرئي
+    delete_title: حذف نوع العرض المرئي
+    description: الوصف
+    disabled: معطّل
+    edit: تعديل
+    edit_title: تعديل نوع العرض المرئي
+    enabled: مفعّل
+    fetch_error: فشل تحميل أنواع العرض المرئي
+    input_schema: مخطط الإدخال (JSON)
+    invalid_json: JSON غير صالح في أحد حقول المخطط
+    list_title: جميع أنواع العرض المرئي
+    name: الاسم
+    no_types: لم يتم تعريف أي أنواع عرض مرئي بعد.
+    parameter_schema: مخطط المعلمات (JSON)
+    renderer: المُصيِّر
+    renderer_client: العميل
+    renderer_label: المُصيِّر
+    renderer_server: الخادم
+    save_error: فشل الحفظ
+    slug: المعرّف
+    slug_label: المعرّف
+    title: أنواع العرض المرئي
+    toggle_error: فشل التحديث
+    update_success: تم تحديث نوع العرض المرئي
+  adduser:
+    name: الاسم
+    password: كلمة المرور
+    email: البريد الإلكتروني
+    back_to_admin: العودة إلى لوحة الإدارة
+    failed: فشل إنشاء المستخدم
+    creating: جارٍ إنشاء المستخدم...
+    password_mismatch: كلمتا المرور غير متطابقتين
+    success: تم إنشاء الحساب والتحقق منه. يمكن للمستخدم الجديد تسجيل الدخول الآن.
+    not_admin: ليس لديك إذن للوصول إلى هذه الصفحة.
+    submit: إنشاء مستخدم
+    confirm_password: تأكيد كلمة المرور
+    title: إضافة مستخدم
+    description: إنشاء حساب مستخدم جديد. يتم التحقق من الحساب فورًا.
+    language_description: اختر لغة المستخدم المفضلة للواجهة.
+  set_password:
+    success: تم تعيين كلمة المرور بنجاح
+    admin_password_required: كلمة مرور المسؤول مطلوبة
+    title: تعيين كلمة المرور
+    description: عيّن كلمة مرور جديدة لهذا المستخدم. كلمة مرور المسؤول الخاصة بك مطلوبة لتأكيد التغيير.
+    failed: فشل تعيين كلمة المرور
+    admin_password: كلمة مرور المسؤول
+ai:
+  connection:
+    add_first: أضف أول اتصال ذكاء اصطناعي لك
+    add_new: إضافة اتصال ذكاء اصطناعي جديد
+    add_success: تمت إضافة اتصال الذكاء الاصطناعي بنجاح
+    add_title: إضافة اتصال ذكاء اصطناعي جديد
+    api_key_hint: يتم تشفير مفتاح API الخاص بك قبل تخزينه.
+    api_key_label: مفتاح API
+    by_label: بواسطة
+    clear_default: مسح الافتراضي
+    currently_not_shared: ❌ غير مشارك حاليًا
+    currently_shared: ✅ مشارك حاليًا مع المجموعة
+    default_badge: افتراضي
+    default_cleared: تم مسح اتصال الذكاء الاصطناعي الافتراضي
+    default_set: تم تحديث اتصال الذكاء الاصطناعي الافتراضي
+    delete_button: حذف
+    delete_confirmation: هل أنت متأكد أنك تريد حذف الاتصال؟
+    delete_error: فشل حذف اتصال الذكاء الاصطناعي
+    delete_title: حذف اتصال الذكاء الاصطناعي
+    deleted: تم حذف اتصال الذكاء الاصطناعي
+    edit_title: تعديل اتصال الذكاء الاصطناعي
+    endpoint_hint: تجاوز نقطة نهاية API الافتراضية عند الحاجة.
+    endpoint_label: رابط نقطة النهاية
+    form_description: تهيئة اتصال مزوّد ذكاء اصطناعي.
+    group_label: المجموعة
+    load_error: فشل تحميل الاتصالات
+    load_providers_error: فشل تحميل المزوّدين
+    metadata_load_error: فشل تحميل البيانات الوصفية للمزوّد
+    metadata_loading: معلومات المزوّد لا تزال قيد التحميل. يرجى الانتظار.
+    models: النماذج المتاحة
+    models_disabled: معطّل
+    models_load_error: فشل تحميل النماذج
+    models_none: لم تتم مزامنة أي نماذج بعد. انقر على تحديث لجلب النماذج من المزوّد.
+    models_refresh: تحديث النماذج
+    models_sync_error: فشلت مزامنة النماذج
+    models_synced: تمت مزامنة النماذج بنجاح
+    name_label: اسم الاتصال
+    name_placeholder: على سبيل المثال، اتصال My AI
+    no_connections: لا توجد اتصالات ذكاء اصطناعي محفوظة بعد.
+    not_found: الاتصال غير موجود
+    provider_label: المزوّد
+    provider_not_found: المزوّد غير موجود
+    save_error: فشل حفظ اتصال الذكاء الاصطناعي
+    select_provider: اختر مزوّد الذكاء الاصطناعي
+    select_provider_first: يرجى اختيار مزوّد أولاً
+    set_default: تعيين كافتراضي
+    shared_badge: مشارَك
+    shared_description: اجعل هذا الاتصال متاحًا للمستخدمين الآخرين في مجموعتك.
+    shared_label: مشاركة مع المجموعة
+    shared_readonly: مشارَك
+    shared_readonly_message: هذا الاتصال مشارَك معك. يمكنك عرضه، لكن التعديل يقتصر على المالك.
+    test_button: اختبار الاتصال
+    test_error: فشل الاتصال.
+    test_success: نجح الاتصال!
+    unknown_user: غير معروف
+    update_success: تم تحديث اتصال الذكاء الاصطناعي بنجاح
+    timeouts_section_hint: اترك المربع فارغًا لاستخدام الإعداد الافتراضي لمنصة العمل.
+    timeouts_section_label: مهلات الاتصال
+    probe_timeout_hint: المدة التي قد يستغرقها اختبار ملاءمة واحد هنا. يستغرق النموذج المستضاف على وحدة المعالجة المركزية دقائق.
+    invalid_connect_timeout: يجب أن تكون مهلة الاتصال عددًا صحيحًا من الثواني، على الأقل 1 وبحد أقصى 60.
+    connect_exceeds_probe: لا يجوز أن تكون مهلة الاتصال أطول من مهلة اختبار النموذج — لا يمكن السماح للاتصال بأن يستغرق وقتًا أطول للتأسيس من الوقت الكامل الذي قد يعمل فيه الاختبار.
+    connect_timeout_hint: كم من الوقت قد تستغرق الشبكة لقبول اتصال. قيمة أقل مما تحتاجه هذه الشبكة تحوّل نقطة النهاية العاملة إلى نقطة يتعذر الوصول إليها.
+    invalid_probe_timeout: يجب أن تكون مهلة اختبار النموذج عددًا صحيحًا من الثواني، بحد أدنى 1 وبحد أقصى 1200.
+    models_discovered: 'تم اكتشاف {seen} نموذج/نماذج على هذا الاتصال: {created} جديد، {refreshed} معروف بالفعل، {pruned} لم يعد يُقدَّم.'
+  database:
+    add_connection: إضافة اتصال قاعدة بيانات
+    ai_augmented: تحليل معزّز بالذكاء الاصطناعي
+    ai_augmented_desc: قام الذكاء الاصطناعي للمخطط والذكاء الاصطناعي الدلالي والذكاء الاصطناعي للتكامل بتحليل قاعدة البيانات هذه.
+    ai_fallback: تحليل أساسي
+    ai_fallback_desc: تعزيز الذكاء الاصطناعي غير متاح. يتم عرض التحليل الهيكلي فقط. اختر اتصال ذكاء اصطناعي للحصول على رؤى أعمق.
+    ai_health_score: درجة صحة الذكاء الاصطناعي
+    ai_unavailable: التحليل بالذكاء الاصطناعي غير متاح. قم بربط مزوّد ذكاء اصطناعي لتفعيل التحليل المعزّز.
+    all_issues: جميع المشكلات
+    analysis_report: تقرير التحليل
+    analysis_summary: تم العثور على {tables} جداول، و{columns} أعمدة، و{issues} مشكلات
+    analyze: تحليل المخطط
+    analyzing: جارٍ التحليل...
+    business_value: قيمة الأعمال
+    categories: الفئات
+    code_systems_detected: أنظمة الترميز المكتشفة
+    cols_rows_format: '{cols} أعمدة، {rows} صفوف'
+    column_meanings: معاني الأعمدة
+    columns_label: الأعمدة
+    confidence: درجة الثقة
+    description: حلّل تصميم قاعدة بياناتك بحثًا عن مشكلات في الفهرسة والتطبيع والعلاقات وأنواع البيانات والتسمية.
+    download_pdf: تنزيل PDF
+    email_body_attachment: يرجى الاطلاع على تقرير التحليل المرفق.
+    email_body_connection: 'الاتصال: {conn_name}'
+    email_body_database: 'قاعدة البيانات: {db_name}'
+    email_body_id: 'معرّف الاتصال: {conn_id}'
+    email_body_signature: — منصة عمل الإحصائيين
+    email_body_title: تقرير تحليل تصميم قاعدة البيانات
+    email_body_type: 'نوع قاعدة البيانات: {db_type}'
+    email_error: فشل إرسال التقرير بالبريد الإلكتروني
+    email_pdf: إرسال PDF بالبريد الإلكتروني
+    email_sent: تم إرسال التقرير بالبريد الإلكتروني بنجاح
+    email_subject: تحليل تصميم قاعدة البيانات — {db_name} ({db_type}) [الاتصال {conn_id}]
+    empty_state: اختر اتصال قاعدة بيانات وانقر على تحليل للبدء.
+    enter_question: يرجى إدخال سؤال.
+    foreign_keys: المفاتيح الخارجية
+    high_risk: مرتفع
+    implicit_relationships: العلاقات الضمنية
+    indexes_label: الفهارس
+    integration_analysis: تحليل التكامل
+    integration_analysis_desc: العلاقات الضمنية وقدرات البحث والأبعاد المفقودة المكتشفة بواسطة الذكاء الاصطناعي للتكامل.
+    isic_domains: تصنيفات نطاقات ISIC
+    issues_label: المشكلات
+    low_risk: منخفض
+    medium_risk: متوسط
+    missing_dimensions: الأبعاد المفقودة
+    no_issues: لم يتم العثور على أي مشكلات. تصميم قاعدة بياناتك يبدو جيدًا!
+    no_semi_structured: لم يتم اكتشاف أنماط بيانات شبه منظمة في الأعمدة النصية.
+    normalisation_suggestions: اقتراحات التطبيع
+    normalisation_suggestions_desc: جداول مرجعية مقترحة بناءً على كلمات مفتاحية موجودة في أعمدة نصية شبه منظمة.
+    normalisation_warning: هذه اقتراحات مولّدة بالذكاء الاصطناعي. تتطلب إعادة تصميم قاعدة البيانات مراجعة دقيقة. اختبر التغييرات على نسخة طبق الأصل أولاً.
+    pdf_downloaded: تم تنزيل PDF بنجاح
+    pdf_error: فشل إنشاء PDF
+    pk_prefix: مفتاح أساسي –
+    placeholder: قريبًا. ستساعدك هذه الميزة في تصميم مخططات قواعد البيانات باستخدام الذكاء الاصطناعي.
+    priority_actions: الإجراءات ذات الأولوية القصوى
+    proposed_reference_table: جدول مرجعي مقترح
+    rag_ask: اسأل
+    rag_chat: دردشة RAG — اطرح أسئلة حول بياناتك
+    rag_chat_desc: اطرح أسئلة باللغة الطبيعية. يبحث النظام في الأعمدة النصية ويعيد إجابات مولّدة بالذكاء الاصطناعي مع استشهادات.
+    rag_error: فشل استعلام RAG
+    rag_placeholder: 'على سبيل المثال: ما التشخيصات الشائعة؟'
+    rag_sources: المصادر
+    research_capabilities: الإمكانيات البحثية
+    risk_breakdown: توزيع المخاطر
+    rows_label: الصفوف
+    schema_error: فشل في تحليل مخطط قاعدة البيانات
+    select_connection: اختر اتصال قاعدة البيانات
+    select_connection_first: يرجى تحديد اتصال قاعدة البيانات أولاً.
+    select_connection_placeholder: اختر اتصال قاعدة البيانات...
+    semantic_analysis: التحليل الدلالي
+    semantic_analysis_desc: معاني الأعمدة المستنتجة بالذكاء الاصطناعي، وتصنيفات مجالات ISIC، واكتشافات أنظمة الترميز.
+    semi_structured: تحليل البيانات شبه المهيكلة
+    semi_structured_desc: تم تحليل الأعمدة النصية بحثًا عن الرموز المضمنة والكلمات المفتاحية والأنماط.
+    table_purposes: أغراض الجداول
+    tables_explorer: مستكشف الجداول
+    tables_label: الجداول
+    timeout_error: انتهت مهلة التحليل. قد تكون قاعدة البيانات كبيرة جدًا أو أن خدمة الذكاء الاصطناعي غير متاحة.
+    timeout_log: انتهت مهلة التحليل بعد 15 دقيقة.
+    title: مساعد تصميم قاعدة البيانات
+    top_recommendations: أهم التوصيات
+    peer_tables: 'جداول النظير:'
+    is_missing: غير موجود
+    health_score_desc: تقييم الصحة العامة لقاعدة البيانات بواسطة Schema AI. 0 = مشكلات هيكلية حرجة، 100 = جاهزة للإنتاج.
+  dataclean:
+    chat_error: فشل الحصول على رد
+    chat_placeholder: اسأل عن تنظيف مجموعة البيانات هذه أو تجهيزها...
+    column_tooltip: '{type} — {null_count} قيم فارغة، {unique_count} قيم فريدة'
+    column_type:
+      category: فئة
+      datetime: التاريخ/الوقت
+      number: رقم
+      text: نص
+    description: تنظيف مجموعة البيانات وتجهيزها بمساعدة الذكاء الاصطناعي.
+    empty_chat: اختر مجموعة بيانات وابدأ بطرح أسئلة حول كيفية تنظيفها وتجهيزها.
+    enter_message: يرجى إدخال رسالة.
+    loading_schema: جارٍ تحميل المخطط...
+    no_connection: يرجى تهيئة اتصال ذكاء اصطناعي افتراضي في الإعدادات > الذكاء الاصطناعي.
+    no_datasets: لا تتوفر مجموعات بيانات. قم بتحميل مجموعة بيانات أو تعريفها أولاً.
+    placeholder: قريبًا. ستساعدك هذه الميزة في تنظيف مجموعات البيانات وتجهيزها باستخدام الذكاء الاصطناعي.
+    schema_error: فشل تحميل مخطط مجموعة البيانات
+    schema_summary: '{rows} صفوف، {cols} أعمدة'
+    select_dataset: اختر مجموعة البيانات
+    select_dataset_first: يرجى اختيار مجموعة بيانات أولاً.
+    select_dataset_placeholder: اختر مجموعة بيانات...
+    send: إرسال
+    shared_badge: (مشتركة)
+    title: مساعد تنظيف مجموعة البيانات
+    no_rules: لا توجد قواعد بعد
+    preview_title: معاينة البيانات
+    rules_title: قواعد التحضير
+    clean_in_place: تنظيف في المكان
+    clean_copy: نسخة منظفة
+    clean_in_place_success: تم تحديث مجموعة البيانات '{name}'.
+    operations_count: '{count} عملية'
+    no_dataset_selected: لم يتم تحديد مجموعة بيانات
+    clean_name_label: اسم النسخة المنظفة
+    clean_copy_success: تم إنشاء مجموعة بيانات جديدة '{name}' — الأصل لم يتغير.
+    clean_no_rules: لا توجد قواعد تنظيف لتطبيقها بعد.
+  default_hint: يُستخدم الاتصال الافتراضي كخيار احتياطي عندما لا تحدد وصفة التحليل مزود ذكاء اصطناعي.
+  new_session: جلسة جديدة
+  no_ai_connections: لا توجد اتصالات ذكاء اصطناعي مهيأة. أضف واحدًا في الإعدادات > الذكاء الاصطناعي.
+  recipe:
+    chat_error: فشل الحصول على رد
+    chat_placeholder: اسأل عن التحليل الإحصائي أو إعداد الوصفة...
+    description: إنشاء الوصفات وقواعد التحليل بمساعدة الذكاء الاصطناعي.
+    empty_chat: اختر مجموعة بيانات واسأل عن الأساليب الإحصائية التي يمكنك استخدامها.
+    enter_message: يرجى إدخال رسالة.
+    loading_schema: جارٍ تحميل المخطط...
+    no_datasets: لا تتوفر مجموعات بيانات. قم بتحميل مجموعة بيانات أو تعريفها أولاً.
+    placeholder: قريبًا. ستساعدك هذه الميزة في إنشاء وصفات التحليل باستخدام الذكاء الاصطناعي.
+    schema_summary: '{rows} صفوف، {cols} أعمدة'
+    select_dataset: اختر مجموعة البيانات
+    select_dataset_first: يرجى اختيار مجموعة بيانات أولاً.
+    select_dataset_placeholder: اختر مجموعة بيانات...
+    send: إرسال
+    title: مساعد قواعد التحليل
+  recipe_concierge:
+    chat_error: فشل الحصول على رد
+    create_prompt: أنشئ جلسة جديدة للبدء.
+    delete_session: حذف الجلسة
+    draft_empty: ابدأ محادثة لبناء وصفتك. ستظهر المسودة هنا أثناء اتخاذك للقرارات.
+    draft_title: مسودة الوصفة
+    input_placeholder: اسأل عن بياناتك... أو قل «مرحبًا»
+    manual_label: وصفة يدوية
+    new_session: جلسة جديدة
+    no_session: لم يتم تحديد أي جلسة
+    no_sessions: لا توجد جلسات بعد
+    open: فتح في المحرر
+    save: حفظ الوصفة
+    saved: تم حفظ الوصفة!
+    saving: جارٍ الحفظ...
+    select_dataset: اختر مجموعة البيانات...
+    stage_columns: اختر الأعمدة
+    stage_complete: الوصفة جاهزة
+    stage_goal: سؤال البحث
+    stage_greeting: مرحبًا
+    stage_review: مراجعة الوصفة
+    stage_technique: اختر الأسلوب
+    stage_transforms: تجهيز البيانات
+    stage_visualisation: التصور المرئي
+    status_draft: مسودة
+    status_ready: جاهز
+    tab_chat: محادثة
+    tab_draft: مسودة
+    tab_sessions: الجلسات
+    title: مساعد الوصفات بالذكاء الاصطناعي
+    toggle_panel: إظهار/إخفاء لوحة الوصفة
+    welcome: أخبرني بما تريد اكتشافه في بياناتك، وسأساعدك في بناء وصفة تحليل كاملة.
+    schema_changes: 'تم اكتشاف تغييرات في المخطط:'
+    draft_output: المخرجات
+    draft_no_visualisation: نتائج رقمية
+    draft_dataset: مجموعة البيانات
+    errors_heading: لا يمكن الحفظ بعد
+    warnings_heading: تحذيرات
+    draft_algorithm: خوارزمية
+    progress_decided: تم البت في {count} من {total}
+    done: تم
+    chip_withheld: +{count} المزيد
+    progress_next: '{progress} · {next}'
+    unread_sources: تعذّرت قراءة بعض المصادر، لذلك قد تكون قائمة الأعمدة غير مكتملة.
+    chip_superseded: تم استبداله بعرض أحدث.
+    chip_collapse: عرض أقل
+    chip_expand: عرض {count} إضافية
+  select_ai_connection: اتصال الذكاء الاصطناعي
+  select_ai_connection_placeholder: اختر اتصال الذكاء الاصطناعي...
+  select_model: النموذج
+  select_model_placeholder: اختر النموذج...
+  test_error: فشل الاتصال.
+  test_success: تم الاتصال بنجاح!
+  title: إعدادات الذكاء الاصطناعي
+  thinking: أفكر...
+  testing:
+    state_pass: ناجح
+    connection_label: اتصال الذكاء الاصطناعي
+    duration_ms: '{ms} مللي ثانية'
+    column_enabled: مفعّل
+    discover_running: جارٍ الاستعلام من الخادم…
+    title: اختبار الذكاء الاصطناعي
+    enabled_yes: النموذج مفعّل
+    load_error: تعذّر تحميل اتصالات الذكاء الاصطناعي الخاصة بك. {detail}
+    no_models: لم يتم اكتشاف أي نماذج على هذا الاتصال بعد.
+    test_competence: الكفاءة
+    slow_limit_unavailable: لم تتضمن إعداداتك حدًا للنموذج البطيء، لذا لن يُعلَّم أي نموذج بأنه بطيء جدًا.
+    test_tools: يستخدم الأدوات
+    models_heading: النماذج
+    run_failed: 'تعذّر تشغيل الاختبار: {detail}'
+    cost_warning: يؤدي هذا إلى تشغيل {count} اختبار(ات)، ويستغرق اختبار الدور دقائق لكل نموذج على وحدة المعالجة المركزية. اضغط مرة أخرى للبدء.
+    no_connections_link: الانتقال إلى اتصالات الذكاء الاصطناعي
+    duration_seconds: '{seconds} ث'
+    slow_limit_session_label: حد النموذج البطيء
+    cancelled: تم الإيقاف. تم الاحتفاظ بالنتائج المسجلة بالفعل.
+    discover_result: 'أدرج الخادم {seen} من النماذج: {created} جديد، و{refreshed} معروف بالفعل، و{pruned} لم يعد مخدومًا'
+    run_all_untested: تشغيل كل اختبار على النماذج غير المختبرة
+    test_turn: التعقيد
+    slow_limit_failed: تعذّرت قراءة حد النموذج البطيء الخاص بك، لذا لن يُعلَّم أي نموذج بأنه بطيء جدًا. {detail}
+    column_actions: اختبار
+    cost_confirm: بدء التشغيل
+    state_fail: فاشل
+    no_connections_body: يتطلب اختبار نموذج اتصال ذكاء اصطناعي. أضف واحدًا، ثم عُد إلى هذه الصفحة.
+    enabled_no: النموذج معطّل
+    discover_failed: 'تعذّر اكتشاف النماذج: {detail}'
+    slow_limit_session_reset: استخدام الحد المحفوظ الخاص بي
+    elsewhere_note: يمكن أن يحتفظ النموذج بنتيجة قدرة من اتصال آخر. المدة بجانب كل حالة هي قياس هذا الاتصال نفسه، لذا قد يعرض النموذج حالة هنا دون مدة.
+    running: جارٍ التشغيل…
+    no_connections_heading: لا يوجد اتصال بالذكاء الاصطناعي بعد.
+    column_model: النموذج
+    run_all_for_model: تشغيل الكل لهذا النموذج
+    explanation: صُمم مساعدو الذكاء الاصطناعي في منضدة العمل لنماذج تنفّذ إجراءات. النموذج الذي يكتفي بالكلام — مهما كان مهذبًا أو كبيرًا — سيجعل محرر الوصفات يستجيب دون أن يفعل شيئًا. الحل هو النموذج،
+      لا الكود. تتيح لك الأداة في هذه الصفحة اختبار ما إذا كان النموذج مناسبًا.
+    slow_limit_session_link: عيّنه بشكل دائم في ملفك الشخصي.
+    failure_reason: 'السبب: {reason}'
+    slow_limit_session_hint: ينطبق على هذه الصفحة فقط — لا يُحفظ.
+    discover_models: اكتشاف النماذج
+    too_slow: تجاوز حدّ {seconds} ثانية
+    no_duration_here: لم يُنفَّذ على هذا الاتصال
+    run_test: تشغيل الاختبار
+api:
+  admin:
+    already_full_admin: المستخدم مدير كامل بالفعل
+    already_group_admin: المستخدم مدير مجموعة بالفعل
+    cannot_delete_self: لا يمكنك حذف حسابك الخاص
+    cannot_demote_full_admin: لا يمكن خفض رتبة مدير كامل
+    cannot_demote_self: لا يمكنك خفض رتبتك
+    cannot_promote_example: لا يمكن ترقية مستخدم تجريبي
+    delete_error: فشل حذف المستخدم
+    demote_error: فشل خفض رتبة المستخدم
+    description_required: لا يمكن أن يكون الوصف فارغًا
+    example_blocked: لا يمكن للمستخدمين التجريبيين تنفيذ إجراءات إدارية
+    group_not_found: المجموعة غير موجودة
+    group_users_load_error: فشل تحميل مستخدمي المجموعة
+    groups_load_error: فشل تحميل المجموعات
+    groups_stats_error: فشل تحميل إحصائيات المجموعة
+    instance_exists: لا يمكن حذف النوع لأنه يحتوي على {count} مثيل(ات) مرتبط.
+    insufficient_permissions: أذونات غير كافية لتنفيذ هذا الإجراء
+    invalid_group_id: معرف المجموعة غير صالح. يجب أن يكون من 00 إلى 99
+    invalid_id: معرف غير صالح
+    invalid_upload_count: يجب أن يكون maxUploadCount عددًا صحيحًا غير سالب (0 يعني غير محدود).
+    invalid_upload_size: يجب أن يكون maxUploadSizeMB عددًا صحيحًا غير سالب (0 يعني غير محدود).
+    missing_fields: حقول مطلوبة مفقودة
+    missing_group_id: معرف المجموعة مفقود
+    missing_id: المعرف مفقود
+    missing_model_id: معرف النموذج مفقود
+    missing_provider_code: المعامل providerCode مفقود
+    missing_user_id: معرف المستخدم مفقود
+    model_update_error: فشل تحديث النموذج
+    models_load_error: فشل تحميل النماذج
+    no_fields: لا توجد حقول صالحة للتحديث
+    no_group: المستخدم ليس لديه مجموعة مخصصة
+    not_group_admin: المستخدم ليس مدير مجموعة
+    only_full_admin: يمكن للمديرين الكاملين فقط تنفيذ هذا الإجراء
+    promote_error: فشل ترقية المستخدم
+    provider_delete_error: فشل حذف المزود
+    provider_not_found: المزود غير موجود
+    provider_update_error: فشل تحديث المزود
+    providers_load_error: فشل تحميل المزودين
+    slug_exists: المعرّف النصي موجود بالفعل
+    update_error: فشل تحديث المستخدم
+    user_load_error: فشل تحميل المستخدم
+    user_not_found: المستخدم غير موجود
+    users_load_error: فشل تحميل المستخدمين
+    viz_type_create_error: فشل إنشاء نوع العرض المرئي
+    viz_type_delete_error: فشل حذف نوع العرض المرئي
+    viz_type_update_error: فشل تحديث نوع العرض المرئي
+    viz_types_load_error: فشل تحميل أنواع العرض المرئي
+    settings_invalid_public_url: صيغة الرابط العام غير صالحة
+    settings_save_error: فشل حفظ الإعدادات العامة
+    settings_invalid_upload_size: يجب أن يكون الحد الأقصى الافتراضي لحجم الرفع عددًا صحيحًا غير سالب (0 يعني غير محدود).
+    settings_invalid_email_sender: صيغة عنوان البريد الإلكتروني للمرسِل غير صالحة
+    settings_invalid_email_timeout: يجب أن تكون مهلة التحقق من البريد الإلكتروني عددًا موجبًا (بالساعات)
+    settings_load_error: فشل تحميل الإعدادات العامة
+    settings_modify_forbidden: يمكن للمسؤولين الكاملين فقط تعديل الإعدادات العامة
+    settings_view_forbidden: يمكن للمسؤولين الكاملين فقط عرض الإعدادات العامة
+    settings_invalid_max_registrations: يجب أن يكون الحد الأقصى للتسجيلات عددًا موجبًا أو غير محدود
+    settings_invalid_upload_count: يجب أن يكون الحد الأقصى الافتراضي لعدد الرفعات عددًا صحيحًا غير سالب (0 يعني غير محدود).
+    settings_invalid_grace_period: يجب أن تكون فترة السماح للتسجيل عددًا موجبًا (بالساعات)
+  auth:
+    account_deleted: تم حذف هذا الحساب.
+    email_not_verified: لم يتم التحقق من البريد الإلكتروني. يرجى التحقق من صندوق الوارد ومجلد البريد المزعج.
+    example_user_blocked: تم تعطيل تغيير كلمات المرور للمستخدمين التجريبيين.
+    example_user_forgot_blocked: إعادة تعيين كلمة المرور معطلة للمستخدمين التجريبيين
+    example_user_register_blocked: لا يمكن للمستخدمين التجريبيين إنشاء حسابات جديدة
+    example_user_reset_blocked: إعادة تعيين كلمة المرور معطلة للمستخدمين التجريبيين
+    internal_error: خطأ داخلي في الخادم
+    invalid_credentials: بيانات الاعتماد غير صالحة
+    invalid_current_password: كلمة المرور الحالية غير صحيحة
+    invalid_token: رمز غير صالح أو منتهي الصلاحية
+    missing_email: البريد الإلكتروني مطلوب
+    missing_fields: حقول مفقودة
+    password_validation_failed: فشل التحقق من صحة كلمة المرور
+    token_expired: انتهت صلاحية الرمز
+    unauthorized: غير مصرح
+    user_not_found: المستخدم غير موجود
+  datasets:
+    delete_blocked: لا يمكن للمستخدمين التجريبيين حذف مجموعات البيانات
+    example_blocked: لا يمكن للمستخدمين التجريبيين إنشاء مجموعات بيانات
+    proxy_error: خطأ داخلي في الخادم
+    update_blocked: لا يمكن للمستخدمين التجريبيين تحديث مجموعات البيانات
+  profile:
+    name_required: الاسم مطلوب
+    update_failed: فشل تحديث الملف الشخصي
+  recipes:
+    create_error: فشل إنشاء الوصفة
+    dataset_not_found: مجموعة البيانات غير موجودة
+    dataset_required: معرف مجموعة البيانات مطلوب
+    delete_error: فشل حذف الوصفة
+    execute_error: فشل تنفيذ الوصفة
+    execution_load_error: فشل تحميل التنفيذ
+    execution_not_found: التنفيذ غير موجود
+    executions_load_error: فشل تحميل عمليات التنفيذ
+    load_error: فشل تحميل الوصفات
+    missing_id: معرف الوصفة مطلوب
+    name_required: الاسم والمراحل مطلوبان
+    not_found: الوصفة غير موجودة
+    not_owned: الوصفة غير موجودة أو لا تملكها
+    update_error: فشل تحديث الوصفة
+  register:
+    email_exists: البريد الإلكتروني موجود بالفعل
+    internal_error: خطأ داخلي في الخادم
+    invalid_email: تنسيق البريد الإلكتروني غير صالح
+    limit_reached: تم بلوغ حد التسجيل (الحد الأقصى {max_reg} مستخدم).
+    missing_fields: حقول مفقودة
+    password_validation_failed: فشل التحقق من صحة كلمة المرور
+    settings_not_found: الإعدادات العامة غير موجودة
+  settings:
+    load_failed: فشل تحميل الإعدادات
+    save_failed: فشل حفظ الإعدادات
+    user_not_found: المستخدم غير موجود
+  user:
+    api_key_required: مفتاح API مطلوب لهذا المزود
+    connection_name_exists: يوجد اتصال بهذا الاسم بالفعل
+    connection_not_found: الاتصال غير موجود
+    example_blocked: المستخدمون التجريبيون لا يمكنهم تنفيذ هذا الإجراء
+    internal_error: خطأ داخلي في الخادم
+    missing_fields: حقول مطلوبة مفقودة
+    provider_not_found: الموفر "{provider}" غير موجود.
+    user_not_found: المستخدم غير موجود
+  global_settings_load_error: خطأ داخلي في الخادم
+app:
+  name: منصة عمل الإحصائيين
+  version: الإصدار
+chat:
+  connection_not_found: اتصال الذكاء الاصطناعي غير موجود أو لا يمكن الوصول إليه.
+  connections_load_error: فشل تحميل الاتصالات
+  delete: حذف
+  delete_confirm: هل أنت متأكد أنك تريد حذف هذه المحادثة؟
+  delete_error: فشل حذف المحادثة
+  delete_success: تم حذف المحادثة
+  empty_state: أرسل رسالة لبدء محادثة.
+  go_to_ai_settings: الانتقال إلى إعدادات الذكاء الاصطناعي
+  history: سجل المحادثات
+  input_placeholder: اكتب رسالتك...
+  load_error: فشل تحميل المحادثات
+  models_load_error: فشل تحميل النماذج
+  new_chat: محادثة جديدة
+  no_chat_selected: لا توجد محادثة نشطة
+  no_chats: لا توجد محادثات بعد
+  no_connections_message: يجب عليك تعريف اتصال ذكاء اصطناعي واحد على الأقل قبل استخدام المحادثة.
+  no_models: لا توجد نماذج متاحة لهذا الاتصال
+  rename: إعادة تسمية
+  rename_empty: لا يمكن أن يكون العنوان فارغًا
+  rename_error: فشل إعادة تسمية المحادثة
+  rename_success: تمت إعادة تسمية المحادثة
+  select_connection: اتصال الذكاء الاصطناعي
+  select_connection_first: يرجى تحديد اتصال ذكاء اصطناعي أولاً.
+  select_connection_placeholder: حدد اتصال ذكاء اصطناعي
+  select_model: النموذج
+  select_model_placeholder: حدد نموذجًا
+  send_error: فشل إرسال الرسالة
+  title: محادثة
+common:
+  access_denied_admin: تم رفض الوصول — للمسؤول فقط.
+  audio_settings: إعدادات الصوت
+  back: رجوع
+  cancel: إلغاء
+  cannot_undo: لا يمكن التراجع عن هذا الإجراء.
+  clear: مسح
+  close: إغلاق
+  close_navigation: إغلاق التنقل
+  copied: تم النسخ!
+  copy: نسخ
+  copy_to_clipboard: نسخ إلى الحافظة
+  delete: حذف
+  delete_chat: حذف المحادثة
+  deleting: جارٍ الحذف...
+  dismiss: تجاهل
+  dismiss_error: تجاهل الخطأ
+  dismiss_success: تجاهل رسالة النجاح
+  edit: تعديل
+  error_label: خطأ
+  false_label: غير صحيح
+  generating: جارٍ التوليد...
+  has_more_information: لديه معلومات إضافية
+  loading: جارٍ التحميل...
+  microphone_off: الميكروفون متوقف
+  microphone_on: الميكروفون قيد التشغيل
+  next: التالي
+  no_answer: لم يتم إرجاع أي إجابة
+  no_permission: ليس لديك إذن لعرض هذه الصفحة.
+  open_navigation: فتح التنقل
+  reset_to_defaults: إعادة التعيين إلى الوضع الافتراضي
+  restoring: جارٍ الاستعادة...
+  save: حفظ
+  saving: جارٍ الحفظ...
+  select_language: اختر اللغة
+  sending: جارٍ الإرسال...
+  speaker_off: مكبر الصوت متوقف
+  speaker_on: مكبر الصوت قيد التشغيل
+  speech_input_unsupported: 'الإدخال الصوتي غير مدعوم في متصفحك. المتصفحات المتوافقة: Google Chrome وMicrosoft Edge وOpera وSamsung Internet.'
+  speech_mic_denied: تم رفض الوصول إلى الميكروفون. يرجى السماح بالوصول إلى الميكروفون في إعدادات المتصفح.
+  speech_mic_failed: 'فشل تشغيل الميكروفون: {error}.'
+  speech_network_error: خطأ في شبكة التعرف على الصوت — تحقق من اتصالك بالإنترنت وحاول مرة أخرى.
+  speech_output_unsupported: 'الإخراج الصوتي غير مدعوم في متصفحك. المتصفحات المتوافقة: Google Chrome وMicrosoft Edge وMozilla Firefox وApple Safari وOpera وSamsung Internet.'
+  speech_recognition_error: 'خطأ في التعرف على الصوت: {error}. حاول مرة أخرى.'
+  success_label: نجاح
+  system_default: النظام الافتراضي
+  testing: جارٍ الاختبار...
+  true_label: صحيح
+  unknown: غير معروف
+  unknown_error: خطأ غير معروف
+  untitled: بدون عنوان
+  uploading: جارٍ الرفع...
+  verifying: جارٍ التحقق...
+  view: عرض
+  view_dataset: عرض مجموعة البيانات
+  voice: الصوت
+  audio_resume: استئناف
+  audio_stop: إيقاف
+  audio_pause: إيقاف مؤقت
+  email_features_unavailable: ميزات الحساب المعتمدة على البريد الإلكتروني غير متاحة.
+  ai_models: نماذج الذكاء الاصطناعي
+  ai_temperature_label: درجة الحرارة
+  ai_max_tokens_label: الحد الأقصى لرموز الإخراج
+  ai_timeout_label: الحد الأقصى لوقت الذكاء الاصطناعي
+  connect_timeout_label: مهلة الاتصال (بالثواني)
+  probe_timeout_label: مهلة اختبار النموذج (بالثواني)
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: إغلاق
+    pitch_label: 'درجة الصوت: {0}'
+    reset_to_defaults: إعادة التعيين إلى الوضع الافتراضي
+    speed_label: 'السرعة: {0}x'
+    system_default: النظام الافتراضي
+    title: إعدادات الصوت
+    voice: الصوت
+  example_user_badge: مستخدم تجريبي
+  example_user_badge_tooltip: سجّل للوصول الكامل
+  example_user_banner:
+    message: أنت تستعرض النظام في وضع القراءة فقط. سجّل للوصول الكامل لإنشاء الموارد وتعديلها.
+    message_short: وضع القراءة فقط - سجّل للوصول الكامل
+    register_button: سجّل للوصول الكامل
+    register_short: تسجيل
+    title: وضع المستخدم التجريبي
+  feature_gate:
+    upgrade_message: تتطلب هذه الميزة ترخيصًا مؤسسيًا. تواصل مع Sentuny لمعرفة خيارات الترقية.
+    upgrade_title: ميزة مؤسسية
+  group_admin_badge: مدير المجموعة
+  preparation_preview:
+    more_columns: +{0} المزيد
+    null_value: قيمة فارغة
+    rows_removed: تمت إزالة {0}
+  readonly_wrapper:
+    message: وضع القراءة فقط - سجّل للوصول الكامل لتعديل هذا المحتوى
+  return_banner:
+    link: العودة إلى جلستك
+    text: كنت تعمل على وصفة ذكاء اصطناعي.
+    recipe_text: كنت تعمل على وصفة.
+    recipe_link: عُد إلى وصفتك
+    fallback_link: رجوع
+  data_value:
+    some_content_not_shown: بعض المحتوى غير معروض
+database:
+  connection:
+    add_first: أضف اتصالك الأول
+    add_new: إضافة اتصال جديد
+    add_success: تمت إضافة الاتصال بنجاح
+    add_title: إضافة اتصال جديد
+    auto_create_tables: إنشاء مجموعات بيانات الجداول تلقائيًا
+    auto_create_title: إنشاء مجموعات البيانات تلقائيًا
+    auto_create_views: إنشاء مجموعات بيانات طرق العرض تلقائيًا
+    auto_create_warnings_title: 'تم حفظ الاتصال، لكن حدثت تحذيرات أثناء الإنشاء التلقائي لمجموعات البيانات:'
+    browse_tables: استعراض الجداول
+    by_label: بواسطة
+    clear_default: مسح الافتراضي
+    currently_not_shared: ❌ غير مشارك حاليًا
+    currently_shared: ✅ مشارك حاليًا مع المجموعة
+    database_label: اسم قاعدة البيانات
+    datasets_created: تم إنشاء {n} مجموعة بيانات
+    db_create_badge: إنشاء قاعدة بيانات
+    default_badge: افتراضي
+    default_cleared: تم مسح الاتصال الافتراضي
+    default_set: تم تحديث الاتصال الافتراضي
+    delete_button: حذف
+    delete_confirmation: هل أنت متأكد أنك تريد حذف الاتصال؟
+    delete_error: فشل حذف الاتصال
+    delete_title: حذف الاتصال
+    deleted: تم حذف الاتصال
+    edit_title: تعديل الاتصال
+    file_path_label: مسار الملف
+    form_description: أدخل تفاصيل الاتصال بقاعدة البيانات الخاصة بك.
+    group_label: المجموعة
+    host_label: المضيف
+    jet_host_label: مضيف خادم Jet
+    jet_port_label: منفذ خادم Jet
+    load_error: فشل تحميل الاتصالات
+    name_label: اسم الاتصال
+    name_placeholder: 'مثال: قاعدة بيانات الإنتاج'
+    no_connections: لم يتم حفظ أي اتصالات قاعدة بيانات بعد.
+    not_found: لم يتم العثور على الاتصال
+    password_label: كلمة المرور
+    port_label: المنفذ
+    save_error: فشل حفظ الاتصال
+    select_type: اختر النوع
+    set_default: تعيين كافتراضي
+    shared_badge: مشارك
+    shared_description: اجعل هذا الاتصال متاحًا للمستخدمين الآخرين في مجموعتك.
+    shared_label: مشاركة مع المجموعة
+    shared_readonly: مشارك
+    shared_readonly_message: هذا الاتصال مشارك معك. يمكنك عرضه، لكن التعديل يقتصر على المالك.
+    tables_badge: الجداول
+    test_button: اختبار الاتصال
+    test_failed: فشل الاتصال
+    test_incomplete: يرجى ملء جميع الحقول قبل الاختبار
+    test_network_error: خطأ في الشبكة أثناء اختبار الاتصال.
+    test_success: نجح الاتصال!
+    type_label: نوع قاعدة البيانات
+    unknown_user: غير معروف
+    update_success: تم تحديث الاتصال بنجاح
+    username_label: اسم المستخدم
+    probe_auto_hint: يتم التحديث تلقائيًا عند تحميل قائمة الاتصالات.
+    probe_unsaved_hint: يتم فحص الاتصال بمجرد حفظه.
+    probe_no_success: لم يتم تسجيل أي فحص ناجح.
+    probe_just_now: قبل قليل
+    probe_check_failed: تعذّر فحص الاتصال قبل قليل.
+    probe_never: أبدًا
+    probe_checked: تم الفحص
+    probe_check_now: افحص الآن
+    probe_minute_ago: منذ دقيقة واحدة
+    probe_last_succeeded: آخر نجاح
+    probe_title: آخر فحص
+    probe_state:
+      incomplete: إعداد غير مكتمل
+      no_database: لا توجد قاعدة بيانات
+      auth_failed: فشلت المصادقة
+      unreachable: لا يمكن الوصول إليه
+      no_permission: لا توجد صلاحية
+      unknown: لم يتم الفحص
+      schema_error: تعذّرت قراءة المخطط
+      reachable: يمكن الوصول إليه
+    probe_hours_ago: منذ {count} ساعة
+    probe_hour_ago: منذ ساعة واحدة
+    probe_minutes_ago: منذ {count} دقيقة
+  default_hint: يُستخدم الاتصال الافتراضي كخيار احتياطي عندما لا تحدد وصفة التحليل اتصالًا.
+  title: إعدادات قاعدة البيانات
+datasets:
+  all_datasets: جميع البيانات
+  browse:
+    back: رجوع
+    browse_tables: استعراض الجداول
+    column: عمود
+    columns_title: الأعمدة — {table}
+    connections: الاتصالات
+    load_columns_error: فشل تحميل الأعمدة
+    load_preview: تحميل المعاينة
+    load_preview_error: فشل تحميل المعاينة
+    load_tables_error: فشل تحميل الجداول
+    nullable: يقبل القيمة الفارغة
+    preview: معاينة
+    preview_hint: انقر على "تحميل المعاينة" لرؤية صفوف نموذجية.
+    select_table_hint: اختر جدولًا لعرض أعمدته ومعاينة بياناته.
+    tables: الجداول
+    tables_count: '{count} جدول'
+    type: النوع
+  by_label: بواسطة
+  created_label: تاريخ الإنشاء
+  database_label: قاعدة بيانات
+  define_button: الاتصال بقاعدة البيانات
+  define_first: اتصل بقاعدة بيانات
+  delete:
+    confirm: هل تريد حذف مجموعة البيانات هذه؟
+    error: فشل حذف مجموعة البيانات
+    success: تم حذف مجموعة البيانات '{id}' بنجاح.
+    title: حذف
+  description:
+    empty: الوصف المُولَّد فارغ. يرجى التحقق من إعدادات مزوّد الذكاء الاصطناعي.
+    error: فشل توليد الوصف.
+    generated: تم توليد الوصف بنجاح.
+    title: الوصف المُولَّد
+  detail:
+    created: تم الإنشاء
+    descriptions: أوصاف الذكاء الاصطناعي
+    generated: تم التوليد
+    load_error: فشل تحميل مجموعة البيانات
+    model: النموذج
+    no_description: لا يوجد وصف
+    not_found: مجموعة البيانات غير موجودة
+    not_found_message: تعذّر العثور على مجموعة البيانات التي تبحث عنها.
+    overview: نظرة عامة
+    rows: الصفوف
+    storage_table: جدول محفوظ
+    materialize_failed: 'تعذّر إنشاء الجدول المحفوظ:'
+    rows_not_computed: غير محسوب
+    storage_live: عرض مباشر
+    rows_not_computed_hint: لم يتم تنفيذ الربط بعد، لذا لا يوجد عدد صفوف بعد.
+  list_error: فشل تحميل مجموعات البيانات
+  no_datasets: لا توجد بيانات متاحة.
+  no_uploaded: لا توجد مجموعات بيانات مرفوعة بعد.
+  preparation:
+    add_operation: إضافة عملية
+    add_rule: إضافة قاعدة
+    column_required: تتطلب العملية عمودًا
+    columns_required: تتطلب العملية عمودًا واحدًا على الأقل
+    delete_confirmation: هل أنت متأكد من حذف قاعدة التحويل "{name}"؟ سيؤدي ذلك أيضًا إلى إزالتها من أي وصفات تستخدمها.
+    delete_error: فشل حذف قاعدة التحويل
+    delete_title: حذف قاعدة التحويل
+    edit_rule: تعديل القاعدة
+    encode:
+      label: التسمية
+      one_hot: One-Hot
+    fill:
+      constant: ثابت
+      drop: إسقاط
+      mean: المتوسط
+      median: الوسيط
+      mode: المنوال
+    filter_invalid: تتطلب عملية التصفية عمودًا وقيمة
+    link:
+      description: تنظيف مجموعة البيانات هذه وتحويلها
+      title: التحويلات
+    name_required: اسم القاعدة مطلوب
+    new_name_required: تتطلب عملية إعادة التسمية اسمًا جديدًا
+    new_rule: قاعدة جديدة
+    no_rules: لا توجد قواعد تحويل معرّفة لمجموعة البيانات هذه.
+    operation:
+      convert_type: تحويل النوع
+      drop_columns: إسقاط الأعمدة
+      encode: ترميز
+      fill_missing: تعبئة القيم المفقودة
+      filter: تصفية
+      normalize: تطبيع
+      rename_column: إعادة تسمية العمود
+      standardize: توحيد
+    operations: العمليات
+    operations_count: عملية/عمليات
+    operator:
+      after: بعد (>)
+      before: قبل (<)
+      contains: يحتوي على
+      ends_with: ينتهي بـ
+      equal_to: يساوي (=)
+      greater_than: أكبر من (>)
+      greater_than_or_equal: أكبر من أو يساوي (>=)
+      less_than: أقل من (<)
+      less_than_or_equal: أقل من أو يساوي (<=)
+      not_contains: لا يحتوي على
+      not_equal: لا يساوي (!=)
+      on_or_after: في أو بعد (>=)
+      on_or_before: في أو قبل (<=)
+      starts_with: يبدأ بـ
+    original_data: البيانات الأصلية
+    placeholder:
+      boolean: صحيح / خطأ
+      datetime: YYYY-MM-DD أو طابع زمني...
+      number: أدخل رقمًا...
+      value: أدخل قيمة...
+    preview: معاينة
+    preview_error: فشل معاينة القاعدة
+    preview_title: معاينة
+    rows_after: بعد
+    rows_before: قبل
+    rows_removed: تمت الإزالة
+    rule_created: تم إنشاء قاعدة التحضير '{name}' بنجاح.
+    rule_deleted: تم حذف قاعدة التحضير بنجاح.
+    rule_description: الوصف (اختياري)
+    rule_description_placeholder: وصف موجز
+    rule_name: اسم القاعدة
+    rule_name_placeholder: 'مثال: تنظيف للتحليل'
+    rule_updated: تم تحديث قاعدة التحضير بنجاح.
+    rules_title: قواعد التحويل
+    save_error: فشل حفظ قاعدة التحويل
+    shared: مشاركة مع المجموعة
+    transformed_data: البيانات المحوَّلة
+    type:
+      boolean: منطقي
+      datetime: تاريخ ووقت
+      numeric: رقمي
+      string: نصي
+    ui:
+      column: عمود
+      columns: الأعمدة (مفصولة بفواصل)
+      encoding: الترميز
+      method: الطريقة
+      new_name: اسم جديد
+      operator: المعامل
+      target_type: النوع المستهدف
+      type: النوع
+      value: القيمة
+  rules_button: القواعد
+  schema:
+    column_name: العمود
+    column_type: النوع
+    columns: الأعمدة
+    load_error: 'تعذر تحميل المخطط: {error}'
+    no_sample_data: لا تتوفر بيانات نموذجية
+    null_count: القيم الفارغة
+    sample_data: بيانات نموذجية (أول 5 صفوف)
+    title: معاينة المخطط
+    total_columns: إجمالي الأعمدة
+    total_rows: إجمالي الصفوف
+    unique_count: القيم الفريدة
+  share: مشاركة
+  share_error: فشل تحديث المشاركة
+  shared: تمت مشاركة مجموعة البيانات
+  shared_badge: تمت المشاركة
+  source:
+    unknown_file: ملف غير معروف
+  title: بياناتي
+  transform_button: تحويل
+  transforms:
+    back: العودة إلى بياناتي
+    create_button: إنشاء
+    create_error: فشل إنشاء التحويل
+    create_new: تحويل جديد
+    created_label: تم الإنشاء
+    creating: جارٍ الإنشاء...
+    delete_confirm: هل تريد حذف هذا التحويل؟
+    delete_error: فشل حذف التحويل
+    description_label: الوصف (اختياري)
+    for: تحويلات {name}
+    load_error: فشل تحميل التحويلات
+    name_label: الاسم
+    no_transforms: لا توجد تحويلات معرّفة لمجموعة البيانات هذه.
+    operations_label: '{count} عملية/عمليات'
+    title: التحويلات
+  type:
+    table: جدول
+    upload: تم الرفع
+    view: عرض
+    virtual: افتراضي
+    notebook: دفتر
+    mssql: MS SQL
+    mysql: MySQL
+    access: MS Access
+    postgresql: PostgreSQL
+    cleaned_copy: نسخة نظيفة
+  unknown_user: غير معروف
+  unshare: إلغاء المشاركة
+  unshared: تم إلغاء مشاركة مجموعة البيانات
+  upload:
+    card_title: رفع ووصف
+    connection_not_found: لم يتم العثور على الاتصال. يرجى تحديد اتصال ذكاء اصطناعي صالح.
+    description_label: الوصف (اختياري)
+    description_placeholder: وصف موجز لهذه البيانات
+    error: فشل رفع مجموعة البيانات.
+    file_label: ملف
+    file_selected: الملف المحدد
+    file_too_large: يتجاوز الملف الحد الأقصى لحجم الرفع البالغ {max} ميغابايت. لا يُسمح بالرفع.
+    generate_description: إنشاء الوصف
+    history: سجل الرفع
+    limit_reached: تم الوصول إلى الحد الأقصى
+    limit_reached_message: لقد وصلت إلى الحد الأقصى لعدد مجموعات البيانات المسموح به ({count}).
+    name_label: اسم البيانات
+    name_placeholder: بياناتي
+    no_connections: تحتاج إلى تعريف اتصال ذكاء اصطناعي واحد على الأقل لإنشاء الأوصاف.
+    no_datasets: لا توجد مجموعات بيانات بعد
+    no_file: يرجى تحديد ملف أولاً.
+    no_name: يرجى إدخال اسم مجموعة البيانات.
+    select_dataset: يرجى رفع أو تحديد مجموعة بيانات أولاً.
+    shared_description: اجعل هذه البيانات متاحة للمستخدمين الآخرين في مجموعتك.
+    shared_group_hint: 'المجموعة: {group} - {description}'
+    shared_label: مشاركة مع المجموعة
+    success: تم رفع مجموعة البيانات '{name}' بنجاح
+    title: رفع البيانات
+    upload_button: رفع
+    escalation_retry: إعادة المحاولة
+    escalation_failed_at: انتهت مهلة الوصف بعد {seconds} ثانية.
+    escalation_invalid: أدخل عددًا صحيحًا من الثواني بين 1 و{max}
+    escalation_hint: هذه المحاولة فقط هي التي تستخدمه. إذا كان هذا النموذج يحتاج عادةً وقتًا أطول، فاضبط إعدادات النموذج الخاصة بالاتصال بدلًا من رفع هذا الحد كل مرة.
+    escalation_label: إعادة المحاولة مع (ثوانٍ)
+  upload_button: رفع البيانات
+  upload_count: '{count} عملية رفع'
+  upload_first: ارفع أول ملف بيانات لك
+  upload_first_file: ارفع ملفك الأول
+  upload_new: رفع ملف جديد
+  uploaded_title: البيانات المرفوعة
+  view_dataset_title: عرض مجموعة البيانات
+  view_schema: عرض المخطط
+  filter:
+    not_shared: غير مشترك
+    uploads: المرفوعات
+    label: تصفية
+    cleaned: منظَّف
+    notebooks: دفاتر
+    mysql: MySQL
+    virtual: افتراضي
+    all: الكل
+    no_match: لا توجد مجموعات بيانات مطابقة لعامل التصفية هذا.
+    postgresql: PostgreSQL
+    access: MS Access
+    shared: مشترك
+    mssql: MS SQL
+  cleaned_badge: منظَّف
+  source_unavailable: المصدر غير متاح
+  created_from: تم الإنشاء من {name}
+  table_not_built: لم يتم بناء الجدول
+define:
+  column_name: عمود
+  column_type: النوع
+  connection_label: اتصال قاعدة البيانات
+  dataset_name: اسم مجموعة البيانات
+  dataset_name_placeholder: 'مثال: بيانات العملاء'
+  description_label: الوصف (اختياري)
+  description_placeholder: وصف موجز لمجموعة البيانات هذه
+  existing_none: لا شيء
+  existing_title: موجود
+  go_to_db_settings: الانتقال إلى إعدادات قاعدة البيانات
+  load_connections_error: فشل تحميل الاتصالات
+  load_sources_error: فشل تحميل المصادر
+  name_required: اسم مجموعة البيانات مطلوب
+  no_connections_message: تحتاج إلى تعريف اتصال قاعدة بيانات واحد على الأقل قبل أن تتمكن من الاتصال بقاعدة بيانات.
+  no_sources: لم يتم العثور على جداول أو عروض في قاعدة البيانات هذه.
+  nullable: يقبل القيم الفارغة
+  preview_label: معاينة البيانات (أول 10 صفوف)
+  save_button: حفظ مجموعة البيانات
+  save_error: فشل إنشاء مجموعة البيانات
+  save_success: تم إنشاء مجموعة البيانات بنجاح
+  schema_label: المخطط
+  select_connection: حدد اتصالاً
+  select_source: حدد مصدراً
+  select_source_first: يرجى تحديد جدول أو عرض أولاً
+  shared_description: اجعل مجموعة البيانات هذه متاحة للمستخدمين الآخرين في مجموعتك.
+  shared_label: مشاركة مع المجموعة
+  source_label: المصدر
+  source_type_label: نوع المصدر
+  step1_description: اختر اتصال قاعدة بيانات لتوصيل مجموعة بيانات منه.
+  step1_title: حدد اتصال قاعدة البيانات
+  step2_description: اختر ما إذا كنت ستستخدم جدولًا أم عرضًا، ثم حدد المصدر.
+  step2_title: حدد المصدر
+  step3_description: راجع الأعمدة واستعرض البيانات من المصدر المحدد.
+  step3_title: تحقق من المصدر
+  step4_description: أعطِ مجموعة البيانات اسمًا ووصفًا، ثم احفظها.
+  step4_title: التسمية والحفظ
+  step_connection: اتصال
+  step_save: حفظ
+  step_source: المصدر
+  step_verify: تحقق
+  table: جدول
+  title: ربط قاعدة البيانات
+  verify_button: تحقق من المصدر
+  verify_error: فشل التحقق من الجدول/العرض
+  verify_success: تم التحقق من الجدول/العرض بنجاح
+  view: عرض
+demo:
+  badge: تجريبي
+  banner:
+    message: هذا نظام تجريبي. قد تتم إعادة تعيين البيانات دوريًا.
+    title: ⚠️ الوضع التجريبي
+forgot_password:
+  back_to_login: العودة إلى تسجيل الدخول
+  check_spam: يرجى التحقق من مجلد البريد غير المرغوب فيه إذا لم تشاهد الرسالة خلال بضع دقائق.
+  description: أدخل عنوان بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة المرور.
+  error: فشل إرسال البريد الإلكتروني لإعادة التعيين
+  sent: إذا كان هناك حساب مرتبط بهذا البريد الإلكتروني، فستتلقى رابطًا لإعادة تعيين كلمة المرور.
+  sent_description: إذا كان هناك حساب مرتبط بهذا البريد الإلكتروني، فستتلقى رابطًا لإعادة تعيين كلمة المرور.
+  sent_title: تم إرسال البريد الإلكتروني
+  submit: إرسال رابط إعادة التعيين
+  title: نسيت كلمة المرور
+global:
+  demo_mode:
+    description: عند التمكين، يعمل النظام في الوضع التجريبي.
+    label: الوضع التجريبي
+  email_sender:
+    hint: عنوان البريد الإلكتروني الذي ستظهر منه رسائل التحقق.
+    label: عنوان مرسل البريد الإلكتروني
+  email_timeout:
+    hint: عدد الساعات التي يبقى فيها رابط التحقق عبر البريد الإلكتروني صالحًا.
+    label: مهلة التحقق من البريد الإلكتروني (ساعات)
+  grace_period:
+    hint: عدد الساعات قبل حذف الحسابات المحذوفة مؤقتًا نهائيًا.
+    label: مهلة الحذف (ساعات)
+  invalid_grace_period: يرجى إدخال رقم موجب صالح لمهلة الحذف (ساعات)
+  invalid_number: يرجى إدخال رقم موجب صالح للحد الأقصى للتسجيلات
+  invalid_timeout: يرجى إدخال رقم موجب صالح لمهلة التحقق (ساعات)
+  load_error: فشل تحميل الإعدادات العامة
+  max_registrations:
+    custom: مخصص (أدخل أدناه)
+    custom_placeholder: أدخل رقمًا موجبًا
+    hint: عيّن حدًا لعدد المستخدمين الذين يمكنهم التسجيل.
+    label: الحد الأقصى لتسجيلات المستخدمين
+    placeholder: حدد الحد
+    unlimited: غير محدود
+    users: مستخدم
+  password_policy:
+    custom: مخصص
+    high: 'عالية (الحد الأدنى 10: أحرف كبيرة وصغيرة وأرقام ورموز خاصة)'
+    hint: اختر متطلبات تعقيد كلمة المرور لتسجيل المستخدم وتغيير كلمات المرور.
+    label: سياسة كلمة المرور
+    low: منخفضة (الحد الأدنى 6 أحرف)
+    medium: 'متوسطة (الحد الأدنى 8: أحرف كبيرة وصغيرة وأرقام)'
+    min_length: الحد الأدنى للطول
+    min_strength: الحد الأدنى للقوة (نقاط zxcvbn 0-4)
+    require_digit: يتطلب رقمًا
+    require_lowercase: يتطلب أحرفًا صغيرة
+    require_special: يتطلب رمزًا خاصًا
+    require_uppercase: يتطلب أحرفًا كبيرة
+    select: اختر السياسة
+  public_url:
+    hint: 'عنوان URL الأساسي المستخدم في روابط التحقق عبر البريد الإلكتروني (مثال: https://workbench.example.com).'
+    label: عنوان URL العام
+  save_button: حفظ الإعدادات العامة
+  save_success: تم حفظ الإعدادات العامة
+  system:
+    description: إدارة الإعدادات العامة التي تنطبق على جميع المستخدمين (للمسؤول فقط).
+    title: إعدادات النظام
+  title: الإعدادات العامة
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: الحد الأقصى لعدد مجموعات البيانات لكل مستخدم (0 = غير محدود). يُطبق على المستخدمين الجدد.
+    count_unlimited: غير محدود
+    default_count_label: الحد الأقصى الافتراضي لعدد مرات الرفع لكل مستخدم
+    default_size_label: الحد الأقصى الافتراضي لحجم الرفع لكل مستخدم (ميجابايت)
+    select_count: حدد الحد
+    select_size: حدد الحد
+    size_100_mb: 100 ميجابايت
+    size_10_mb: 10 ميجابايت
+    size_1_gb: 1 جيجابايت
+    size_1_mb: 1 ميجابايت
+    size_250_mb: 250 ميجابايت
+    size_25_mb: 25 ميجابايت
+    size_500_mb: 500 ميجابايت
+    size_50_mb: 50 ميجابايت
+    size_5_mb: 5 ميجابايت
+    size_hint: الحد الأقصى لإجمالي مساحة التخزين لكل مستخدم (0 = غير محدود). يُطبق على المستخدمين الجدد.
+    size_unlimited: غير محدود
+  welcome:
+    hint: ستظهر هذه الرسالة في صفحة تسجيل الدخول. اتركها فارغة لإخفائها.
+    label: رسالة الترحيب
+    placeholder: أدخل رسالة ترحيب لعرضها في صفحة تسجيل الدخول.
+home:
+  welcome_placeholder: مرحبًا بكم في منصة عمل الإحصائيين
+licence:
+  admin_required: يجب أن تكون مسؤولًا لعرض معلومات الترخيص.
+  delete_button: إزالة الترخيص
+  delete_confirm: سيؤدي هذا إلى إعادة النظام إلى وضع المصدر المفتوح. سيتم تعطيل جميع الميزات المقيدة. يمكنك استعادتها بتثبيت ترخيص جديد.
+  delete_error: فشل إزالة الترخيص.
+  delete_no: إلغاء
+  delete_success: تمت إزالة الترخيص. يعمل الآن في وضع المصدر المفتوح.
+  delete_title: إزالة الترخيص
+  delete_yes: نعم، إزالة الترخيص
+  description: معلومات ترخيص الميزات الحالي والفئة.
+  details_label: تفاصيل الترخيص
+  expires_at_label: تاريخ انتهاء الصلاحية
+  features_label: الميزات الممكّنة
+  install_button: تثبيت الترخيص
+  install_error: فشل تثبيت الترخيص.
+  install_no_file: لم يتم اختيار أي ملف.
+  install_success: تم تثبيت الترخيص بنجاح.
+  issued_at_label: تاريخ الإصدار
+  issued_to_label: صادر إلى
+  load_error: فشل تحميل معلومات الترخيص.
+  max_users_label: المستخدمون المرخَّص لهم
+  no_features: لا توجد أي ميزات مقيدة مُمكّنة حاليًا.
+  open_source_message: هذا التثبيت يعمل في وضع المصدر المفتوح. تواصل مع Sentuny للترقية إلى ترخيص مؤسسي.
+  preview_error: فشل التحقق من صحة ملف الترخيص.
+  preview_invalid: ملف ترخيص غير صالح.
+  preview_title: معاينة الترخيص
+  tier_label: الفئة
+  title: حالة الترخيص
+  upload_title: رفع ملف الترخيص
+login:
+  account_deleted: تم حذف هذا الحساب.
+  description: تسجيل الدخول إلى حسابك
+  docs_more_info: يحتوي على مزيد من المعلومات
+  email: البريد الإلكتروني
+  email_not_verified: لم يتم التحقق من البريد الإلكتروني. يرجى التحقق من صندوق الوارد ومجلد الرسائل غير المرغوب فيها.
+  email_verified: تم التحقق من البريد الإلكتروني بنجاح! يمكنك الآن تسجيل الدخول.
+  forgot_password: هل نسيت كلمة المرور؟
+  invalid_credentials: البريد الإلكتروني أو كلمة المرور غير صالحين.
+  invalid_token: رابط التحقق غير صالح. يرجى طلب رابط جديد.
+  missing_token: لم يتم توفير رمز التحقق.
+  no_account: ليس لديك حساب؟
+  password: كلمة المرور
+  register_link: تسجيل
+  resend_link: إعادة إرسال رسالة التحقق؟
+  signing_in: جارٍ تسجيل الدخول...
+  submit: تسجيل الدخول
+  success: تم تسجيل الدخول بنجاح
+  title: تسجيل الدخول
+  token_expired: انتهت صلاحية رابط التحقق. يرجى طلب رابط جديد.
+nav:
+  about: حول
+  admin: الإدارة
+  admin_groups: أوصاف المجموعات
+  admin_licence: الترخيص
+  admin_panel: إدارة المستخدمين
+  admin_providers: مزوّدو الذكاء الاصطناعي
+  admin_setup: الإعداد
+  admin_setup_internal: داخلي
+  admin_setup_limits: الحدود
+  admin_setup_options: الخيارات
+  admin_visualization_types: أنواع التمثيل البصري
+  ai_analysis_rules: محرر الوصفات
+  ai_chat: أدوات الذكاء الاصطناعي
+  ai_database_design: تصميم قاعدة البيانات
+  ai_dataset_cleaning: تنظيف مجموعات البيانات
+  ai_general: عام
+  ai_virtual_datasets: مجموعات البيانات الافتراضية
+  home: الرئيسية
+  logout: تسجيل الخروج
+  user: المستخدم
+  admin_setup_tuning: الضبط
+  ai_testing: اختبار الذكاء الاصطناعي
+notebooks:
+  and_more: +{count} المزيد
+  cant_create_tables: لا يمكن لهذا الاتصال إنشاء جداول — تم رفض الاستيراد
+  cells_label: 'الخلايا:'
+  connection_create_db_badge: إنشاء قاعدة بيانات
+  connection_form_label: الاتصال
+  connection_tables_badge: الجداول
+  connection_unavailable: تعذّر العثور على اتصال قاعدة البيانات أو لا يمكن الوصول إليه
+  create_dataset: إنشاء مجموعة البيانات تلقائيًا
+  create_new_database: إنشاء قاعدة بيانات جديدة
+  dataframe_prefix: إطار البيانات
+  dataframes_label: 'إطارات البيانات:'
+  dataset_created: تم إنشاء مجموعة البيانات
+  delete_confirm: هل تريد حذف الاستيراد "{name}" وجميع جداوله؟
+  delete_failed: فشل حذف الاستيراد
+  delete_title: حذف الاستيراد
+  detected_dataframes: 'إطارات البيانات المكتشفة:'
+  doc_preview: 'معاينة التوثيق:'
+  example_banner: أنت تتصفح كمستخدم تجريبي. سجّل لاستيراد دفاتر الملاحظات وإدارتها.
+  example_blocked: لا يمكن للمستخدمين التجريبيين استيراد دفاتر الملاحظات.
+  example_register: تسجيل
+  fetch_error: فشل جلب عمليات الاستيراد
+  import_button: استيراد دفتر ملاحظات
+  import_complete: اكتمل الاستيراد
+  import_deleted: تم حذف الاستيراد
+  import_failed: 'فشل استيراد دفتر الملاحظات: {error}'
+  import_success: تم استيراد {count} جدول/جداول بنجاح
+  import_title: استيراد دفتر Jupyter
+  imported_at_label: 'تاريخ الاستيراد:'
+  importing: جارٍ الاستيراد...
+  kb_unit: قاعدة المعرفة
+  kernel_label: 'النواة:'
+  list_title: استيرادات دفاتر الملاحظات
+  no_dataframes: لا توجد إطارات بيانات في دفتر الملاحظات هذا
+  no_imports: لا توجد عمليات استيراد لدفاتر الملاحظات بعد.
+  notebook_label: 'دفتر الملاحظات:'
+  parse_error: فشل تحليل دفتر الملاحظات
+  parsing: جارٍ التحليل...
+  preview_button: معاينة
+  rows_cols_format: '{rows} صفوف × {cols} أعمدة'
+  run_preview_first: شغّل المعاينة لرؤية ما سيتم استيراده
+  sanitised_notice: تمت إزالة خلايا التعليمات البرمجية لأسباب أمنية. يتم الاحتفاظ فقط بمخرجات البيانات وMarkdown.
+  select_connection: اختر اتصال قاعدة بيانات
+  select_connection_placeholder: اختر اتصالاً...
+  select_file_first: يُرجى اختيار ملف .ipynb
+  share_error: يمكن للمالك فقط تغيير إعدادات المشاركة.
+  share_label: مشاركة مع مجموعة
+  shared: تمت مشاركة دفتر الملاحظات مع المجموعة
+  shared_badge: تمت المشاركة
+  size_label: 'الحجم:'
+  step1_title: 'الخطوة 1: اختر ملفًا'
+  step2_title: 'الخطوة 2: معاينة'
+  storage_form_label: مساحة التخزين
+  storage_label: 'مساحة التخزين:'
+  table_count: '{count} جدول{plural}'
+  tables_created_label: 'الجداول التي تم إنشاؤها:'
+  title_label: 'العنوان:'
+  unshared: تم إلغاء مشاركة دفتر الملاحظات
+  table_name: 'جدول: {name}'
+password:
+  strength:
+    fair: مقبول
+    good: جيد
+    strong: قوي
+    weak: ضعيف
+preparation:
+  add_operation: إضافة عملية
+  after: بعد
+  back_to_list: العودة إلى القواعد
+  before: قبل
+  cancel: إلغاء
+  col:
+    categorical: فئوي
+    datetime: تاريخ ووقت
+    nulls: '{percent}% قيم فارغة'
+    numeric: رقمي
+  cols: أعمدة
+  column_label: عمود
+  constant_value_label: قيمة ثابتة
+  create_first: أنشئ أول تحويل لتنظيف مجموعة البيانات هذه وتحضيرها قبل التحليل.
+  delete: حذف
+  delete_confirm: هل تريد حذف القاعدة "{name}"؟ لا يمكن التراجع عن هذا.
+  description_label: الوصف (اختياري)
+  duplicate: تكرار
+  duplicate_suffix: (نسخة)
+  edit: تعديل
+  edit_title: 'تعديل القاعدة: {name}'
+  encoding:
+    label: تسمية
+    onehot: One-Hot
+  encoding_param_label: ترميز
+  live_preview: معاينة مباشرة
+  load_error: فشل تحميل البيانات
+  method:
+    minmax: Min-Max
+    zscore: Z-Score
+  method_label: الطريقة
+  name_label: الاسم
+  name_required: اسم القاعدة مطلوب
+  new_name_label: اسم جديد
+  new_rule: قاعدة جديدة
+  new_title: تحويل جديد
+  no_rules: لا توجد تحويلات بعد
+  nulls: قيم فارغة
+  op:
+    convert_type: تحويل النوع
+    drop_column: حذف عمود
+    drop_duplicates: حذف التكرارات
+    encode_category: ترميز الفئة
+    fill_missing: تعبئة القيم المفقودة
+    filter: تصفية
+    rename_column: إعادة تسمية عمود
+    standardize: توحيد
+    normalize: تطبيع
+  operations_count: '{count} عملية{itemize}'
+  operations_label: العمليات
+  operator_label: العامل
+  ops_required: يلزم إضافة عملية واحدة على الأقل
+  preview: معاينة
+  preview_error: فشلت المعاينة
+  preview_loading: جارٍ المعاينة...
+  preview_no_ops: أضف عمليات لعرض المعاينة
+  row_impact: '{before} ← {after} صفوف'
+  rows: صفوف
+  rule_deleted: تم حذف القاعدة
+  rule_duplicated: تم تكرار القاعدة
+  rule_saved: تم حفظ القاعدة
+  rules_for: قواعد {dataset}
+  sample_data: بيانات نموذجية
+  save: حفظ القاعدة
+  save_error: فشل حفظ القاعدة
+  saving: جارٍ الحفظ...
+  schema_error: فشل تحميل مخطط مجموعة البيانات
+  select_column: -- اختر عمود --
+  select_type: -- اختر عملية --
+  strategy:
+    constant: ثابت
+    drop_row: حذف صف
+    mean: المتوسط
+    median: الوسيط
+    mode: المنوال
+  strategy_label: الاستراتيجية
+  target_type_label: نوع الهدف
+  title: التحويلات — {dataset}
+  type_label: العملية
+  value_label: القيمة
+profile:
+  change_password:
+    description: حدّث كلمة المرور الخاصة بك.
+    title: تغيير كلمة المرور
+  change_password_button: تغيير كلمة المرور
+  confirm_password: تأكيد كلمة المرور الجديدة
+  current_password: كلمة المرور الحالية
+  current_password_required: كلمة المرور الحالية مطلوبة
+  dark_mode_description: التبديل بين المظهر الفاتح والداكن.
+  dark_mode_label: الوضع الداكن
+  email_label: البريد الإلكتروني
+  email_notifications_description: استقبل تحديثات عبر البريد الإلكتروني حول حسابك.
+  email_notifications_label: إشعارات البريد الإلكتروني
+  email_unchangeable: لا يمكن تغيير البريد الإلكتروني
+  example_user_language_hint: سجّل للوصول الكامل لتغيير تفضيل اللغة.
+  example_user_name_hint: سجّل للوصول الكامل لتغيير اسمك.
+  example_user_notifications_hint: سجّل للوصول الكامل لتغيير إعدادات الإشعارات.
+  example_user_save_hint: سجّل للوصول الكامل لحفظ التغييرات.
+  example_user_theme_hint: سجّل للوصول الكامل لتغيير تفضيلات المظهر.
+  group_description: الوصف
+  group_id: معرّف المجموعة
+  group_info_title: معلومات المجموعة
+  group_load_error: فشل تحميل معلومات المجموعة
+  group_readonly_hint: يتم تعيين مجموعتك من قبل المسؤول ولا يمكن تغييرها هنا.
+  language_description: اختر لغتك المفضلة للواجهة.
+  language_label: اللغة
+  language_select_placeholder: اختر اللغة
+  languages_load_error: فشل تحميل اللغات
+  load_error: فشل تحميل الإعدادات
+  name_label: الاسم
+  name_placeholder: اسمك
+  new_password: كلمة المرور الجديدة
+  password_change_failed: فشل تغيير كلمة المرور
+  password_changed: تم تغيير كلمة المرور بنجاح
+  password_disabled: تغيير كلمة المرور معطّل للمستخدمين التجريبيين
+  password_disabled_message: أنت مسجّل الدخول كمستخدم تجريبي. وظائف كلمة المرور معطّلة.
+  password_mismatch: كلمتا المرور الجديدتان غير متطابقتين
+  personal:
+    description: حدّث معلوماتك الشخصية وتفضيلات التطبيق.
+    title: الملف الشخصي والتفضيلات
+  save_button: حفظ التغييرات
+  save_error: فشل حفظ الملف الشخصي
+  save_success: تم حفظ الملف الشخصي
+  title: إعدادات الملف الشخصي
+  update_error: فشل تحديث الملف الشخصي
+  slow_threshold:
+    title: عتبة النموذج البطيء
+    save: حفظ الحد
+    label: الحد الخاص بي
+    effective: 'سارٍ حاليًا:'
+    saved: تم حفظ حد النموذج البطيء
+    invalid: يجب أن يكون الحد عددًا صحيحًا من الثواني، على الأقل 1
+    seconds: ثوانٍ
+    placeholder: استخدام الافتراضي للموقع
+    description: أي اختبار نموذج يستغرق وقتًا أطول من هذا يُبلَّغ عنه بأنه بطيء جدًا. اتركه فارغًا لاستخدام الافتراضي للموقع.
+recipes:
+  add_rule: إضافة قاعدة
+  algorithm:
+    dependent_column: المتغير التابع
+    factor_column: عامل (فئوي)
+    group_by: تجميع حسب
+    independent_columns: المتغيرات المستقلة
+    placeholder: اختر نوع التحليل
+    response_column: الاستجابة (رقمية)
+  back_to_recipe: العودة إلى الوصفة
+  by_label: حسب
+  cancel_button: إنهاء
+  cancel_error: فشل إلغاء التنفيذ
+  cancel_success: تم إلغاء التنفيذ
+  chart:
+    category: الفئة
+    count: العدد
+    value: القيمة
+    x_axis: س
+    y_axis: ص
+  clone: استنساخ
+  clone_button: استنساخ
+  clone_error: فشل استنساخ الوصفة
+  clone_success: تم استنساخ الوصفة بنجاح
+  clone_suffix: (نسخة)
+  column_type:
+    category: الفئة
+    datetime: التاريخ/الوقت
+    number: رقم
+    text: نص
+  columns_after: الأعمدة
+  columns_before: الأعمدة
+  columns_label: الأعمدة
+  columns_label_short: الأعمدة
+  columns_required: يرجى تحديد عمود واحد على الأقل
+  create_error: فشل إنشاء الوصفة
+  create_success: تم إنشاء الوصفة '{name}' بنجاح.
+  dataset:
+    columns_label: الأعمدة
+    load_error: فشل تحميل مجموعات البيانات
+    loading: جارٍ تحميل مجموعات البيانات...
+    no_datasets: لا توجد مجموعات بيانات متاحة
+    placeholder: اختر مجموعة بيانات
+    rows_label: صفوف
+  dataset_label: مجموعة البيانات
+  dataset_required: يرجى اختيار مجموعة بيانات
+  delete: حذف
+  delete_button: حذف
+  delete_confirmation: هل أنت متأكد من أنك تريد حذف الوصفة "{name}"؟ لا يمكن التراجع عن هذا الإجراء.
+  delete_title: حذف الوصفة
+  description_label: الوصف (اختياري)
+  description_placeholder: وصف هذه الوصفة
+  edit: تحرير
+  editor:
+    component_algorithm: الخوارزمية
+    component_dataset: مجموعة البيانات / التحويل
+    component_output: المخرجات
+    create_mode: إنشاء وصفة جديدة — المحرر قادم في المرحلة الثالثة.
+    loading: جارٍ تحميل الوصفة...
+    name_hint: يجب إدخال اسم قبل حفظ الوصفة.
+    name_placeholder: اسم الوصفة
+    name_required: اسم الوصفة مطلوب.
+    new_recipe_name: وصفة جديدة
+    placeholder: هذا هو محرر الوصفات الإحصائية اليدوي — الوصفات هي قلب منصة العمل. الواجهة اليدوية أسرع من واجهة الذكاء الاصطناعي، لكن إذا كنت غير متأكد حقًا مما ينبغي فعله، فربما تفضل محرر الوصفات بالذكاء
+      الاصطناعي. كما أنه معلم إحصائي... لكنك تحتاج إلى اتصال ذكاء اصطناعي عامل مُعد في الإعدادات إذا أردت استخدامه. حدد وصفة أو أنشئ وصفة جديدة.
+    run: تشغيل
+    save: حفظ الوصفة
+    save_error: فشل حفظ الوصفة
+    save_success: تم حفظ الوصفة
+  execute: تنفيذ
+  execute_button: تنفيذ
+  execute_error: 'فشل تنفيذ الوصفة: {error}'
+  execute_success: تم تنفيذ الوصفة بنجاح
+  execution:
+    errors_label: 'الأخطاء:'
+    failed_start: فشل بدء التنفيذ
+    request_failed: فشل التنفيذ
+    results_label: 'النتائج:'
+    rules_count: تم تطبيق {count} قاعدة/قواعد تحضير.
+    running: جارٍ تشغيل الوصفة...
+    showing_rows: عرض {count} من {total} صف
+  execution_error: خطأ
+  execution_load_error: 'فشل تحميل التنفيذ: {error}'
+  execution_not_found: التنفيذ '{id}' غير موجود.
+  execution_progress: التقدم
+  execution_stage_results: نتائج المرحلة
+  execution_started: بدأ
+  execution_status: الحالة
+  execution_title: نتائج التنفيذ
+  executions_title: عمليات التنفيذ الأخيرة
+  export_results: تصدير النتائج
+  go_define: الانتقال إلى التعريف
+  go_upload: الانتقال إلى الرفع
+  group_by_hint: تجميع حسب عمود فئوي لمقارنة الإحصائيات عبر المجموعات
+  group_by_label: تجميع حسب (اختياري)
+  list_load_error: فشل تحميل الوصفات
+  load_datasets_error: 'فشل تحميل مجموعات البيانات: {error}'
+  load_error: 'فشل تحميل الوصفات: {error}'
+  load_rules_error: فشل تحميل قواعد التحضير
+  loading_schema: جارٍ تحميل الأعمدة...
+  move_down: نقل لأسفل
+  move_up: نقل لأعلى
+  my_recipes: وصفاتي
+  name_label: اسم الوصفة
+  name_placeholder: 'مثلاً: تحليل المبيعات'
+  name_required: اسم الوصفة مطلوب
+  needs_other_columns: (يحتاج إلى أعمدة أخرى)
+  new_button: وصفة جديدة
+  new_title: وصفة جديدة
+  no_datasets: لم يتم العثور على مجموعات بيانات. يرجى رفع مجموعة بيانات أو تعريفها أولاً.
+  no_datasets_available: لا توجد مجموعات بيانات متاحة. يرجى رفع مجموعة بيانات أولاً.
+  no_datasets_found: لا توجد مجموعات بيانات متاحة. ارفع مجموعة بيانات أولاً.
+  no_group: بلا
+  no_group_options: لا توجد أعمدة فئوية متاحة للتجميع
+  no_preparation_rules: لا توجد قواعد تحضير متاحة لمجموعة البيانات هذه.
+  no_recipes: لم تنشئ أي وصفات بعد.
+  no_schema: لا يتوفر مخطط لمجموعة البيانات هذه
+  no_stages: يجب أن تحتوي الوصفة على مرحلة واحدة على الأقل.
+  no_visualisation: نتائج رقمية
+  no_visualisation_data: لا تتوفر بيانات عرض مرئي
+  none: بلا
+  output:
+    category_column: عمود الفئة
+    placeholder: اختر نوع المخرجات
+    x_column: عمود المحور السيني
+    y_column: عمود المحور الصادي
+  panel:
+    complete: جاهز
+    incomplete: غير مكتمل
+    my_recipes: وصفاتي
+    new_button: وصفة جديدة
+    no_recipes: لا توجد وصفات بعد
+    no_results: لا توجد وصفات تطابق بحثك
+    search: البحث في الوصفات...
+    shared_recipes: مُشارَك
+    updated: مُحدَّث
+  preparation_rules: قواعد التحضير (اختياري)
+  preparation_rules_applied: قواعد التحضير المطبقة
+  preparation_rules_applied_description: تم تطبيق القواعد بالترتيب الموضح أدناه قبل مراحل التحليل.
+  preparation_rules_applied_title: قواعد التحضير المطبقة
+  preparation_rules_description: اختر القواعد لتطبيقها بالترتيب. يتم تطبيق القواعد بالتتابع.
+  recipe_label: الوصفة
+  remove_rule: إزالة القاعدة
+  require:
+    algorithm: اختر تحليلاً
+    categoryColumn: اختر عمود الفئة لـ {out}
+    dataset: اختر مجموعة بيانات
+    dependentColumn: اختر العمود التابع
+    factorColumn: اختر عمود العامل لـ {algo}
+    first_response: اختر عمود الاستجابة الأول
+    independentColumns: اختر الأعمدة المستقلة
+    responseColumn: اختر عمود الاستجابة لـ {algo}
+    second_response: اختر عمود الاستجابة الثاني
+    xColumn: اختر عمود X لـ {out}
+    yColumn: اختر عمود Y لـ {out}
+  rows_after: الصفوف بعد
+  rows_before: صفوف
+  rows_label: صفوف
+  rules_applied_label: 'تم تطبيق {count} قاعدة/قواعد:'
+  save_button: حفظ الوصفة
+  schema_error: 'فشل تحميل مخطط العمود: {error}'
+  schema_loaded: 'تم تحميل المخطط: تم العثور على {count} عمود/أعمدة'
+  select_dataset: اختر مجموعة بيانات
+  select_group: اختر عمودًا للتجميع حسبه
+  select_rule: اختر قاعدة لإضافتها
+  select_rule_placeholder: اختر قاعدة
+  select_technique: اختر أسلوبًا
+  select_visualisation: اختر مخططًا
+  selected: محدد
+  share:
+    button: مشاركة
+    group_info: مجموعة {group} — {desc}
+    read_only: تمت المشاركة بواسطة {owner} — للقراءة فقط
+    shared_badge: تمت المشاركة
+    unshare: إلغاء المشاركة
+  shared: تمت المشاركة
+  shared_badge: تمت المشاركة
+  shared_description: اجعل هذه الوصفة متاحة للمستخدمين الآخرين في مجموعتك.
+  shared_group_hint: 'المجموعة: {group} - {description}'
+  shared_label: مشاركة مع المجموعة
+  shared_with_group: تمت المشاركة مع مجموعتك
+  stage_data_selection: اختيار البيانات
+  stage_number: المرحلة {number}
+  stage_preparation: إعداد البيانات
+  stage_statistics: الإحصائيات
+  stage_visualisation: المخطط
+  stages_title: المراحل
+  status:
+    cancelled: ملغى
+    completed: مكتمل
+    failed: فاشل
+    pending: معلّق
+    running: قيد التنفيذ
+  step1_description: أعطِ وصفتك اسمًا ووصفًا.
+  step1_title: سمِّ وصفتك
+  step2_description: اختر مجموعة بيانات وحدد الأعمدة لتحليلها.
+  step2_title: اختر البيانات
+  step3_description: حدد الأسلوب الإحصائي المطلوب تطبيقه.
+  step3_title: اختر التحليل
+  step4_description: أضف مخططًا إلى وصفتك.
+  step4_title: مخطط (اختياري)
+  step_analysis: التحليل
+  step_complete: اكتملت الخطوة {step}
+  step_data: البيانات
+  step_name: الاسم
+  step_visualise: إنشاء مخطط
+  technique_anova_one_way: تحليل التباين أحادي الاتجاه
+  technique_anova_two_way: تحليل التباين ثنائي الاتجاه
+  technique_chi_square: اختبار كاي تربيع
+  technique_correlation: مصفوفة الارتباط
+  technique_descriptive: إحصائيات وصفية
+  technique_hint: تعرض الإحصائيات الوصفية مقاييس موجزة مثل المتوسط والوسيط والانحراف المعياري.
+  technique_label: الأسلوب
+  technique_linear_regression: الانحدار الخطي
+  technique_t_test_independent: اختبار t للعينات المستقلة
+  technique_t_test_paired: اختبار t للعينات المزدوجة
+  title: وصفات إحصائية
+  total_rules_applied: إجمالي القواعد المطبقة
+  transforms:
+    add: إضافة تحويل
+    label: التحويلات
+    manage_button: إدارة التحويلات
+    no_transforms: لا توجد تحويلات مطبقة
+    remove: إزالة
+  unknown_user: غير معروف
+  update_error: 'فشل تحديث الوصفة: {error}'
+  update_success: تم تحديث الوصفة '{id}' بنجاح.
+  updated_label: تم التحديث
+  visualisation:
+    columns_label: الأعمدة
+    data_points: نقاط البيانات
+    distribution: التوزيع
+    trend: الاتجاه
+    type_label: النوع
+  visualisation_area: مخطط مساحي
+  visualisation_bar: مخطط شريطي
+  visualisation_donut: مخطط دائري مجوف
+  visualisation_hbar: مخطط شريطي أفقي
+  visualisation_hint: سيتم إنشاء المخطط باستخدام أعمدة البيانات المحددة.
+  visualisation_label: نوع المخطط
+  visualisation_line: مخطط خطي
+  visualisation_pie: مخطط دائري
+  visualisation_raw_data: 'بيانات المخطط:'
+  visualisation_scatter: مخطط تشتت
+  visualisation_table: جدول
+  ui:
+    delete_error: فشل حذف الوصفة
+    delete_success: تم حذف الوصفة
+  visualisation_histogram: مدرج تكراري
+register:
+  confirm_password: تأكيد كلمة المرور
+  creating: جارٍ إنشاء الحساب...
+  description: إنشاء حساب جديد
+  email: البريد الإلكتروني
+  failed: فشل التسجيل
+  have_account: هل لديك حساب بالفعل؟
+  language_description: اختر لغتك المفضلة للواجهة.
+  login_link: تسجيل الدخول
+  name: الاسم
+  password: كلمة المرور
+  password_mismatch: كلمتا المرور غير متطابقتين
+  submit: تسجيل
+  success_with_verification: تم إنشاء حسابك. تحقق من بريدك الإلكتروني للحصول على رابط التحقق لتفعيل حسابك.
+  title: تسجيل
+  email_failed_use_resend: تم التسجيل بنجاح، ولكن تعذّر إرسال رسالة التحقق الإلكترونية. يُرجى إعادة إرسالها من صفحة تسجيل الدخول.
+  success_auto_verified: تم إنشاء حسابك وأصبح جاهزًا للاستخدام. يمكنك الآن تسجيل الدخول.
+  success_pending_approval: تم إنشاء حسابك وهو بانتظار موافقة المسؤول. ستتمكن من تسجيل الدخول بعد الموافقة عليه.
+  registration_disabled: التسجيل الذاتي معطَّل. يرجى التواصل مع المسؤول.
+resend_verification:
+  back_to_login: العودة إلى تسجيل الدخول
+  check_spam: يرجى التحقق من مجلد الرسائل غير المرغوب فيها إذا لم يصلك البريد الإلكتروني خلال بضع دقائق.
+  description: أدخل عنوان بريدك الإلكتروني لاستلام رابط تحقق جديد.
+  error: فشل إرسال بريد التحقق.
+  send_button: إرسال بريد التحقق
+  sent: تم إرسال بريد التحقق. يرجى التحقق من صندوق الوارد (ومجلد الرسائل غير المرغوب فيها).
+  sent_description: إذا وُجد حساب بهذا البريد الإلكتروني، فستصلك رسالة تحتوي على رابط تحقق.
+  sent_title: تم إرسال البريد الإلكتروني
+  title: إعادة إرسال بريد التحقق الإلكتروني
+reset_password:
+  confirm_password: تأكيد كلمة المرور الجديدة
+  description: أدخل كلمة المرور الجديدة أدناه.
+  failed: فشل إعادة تعيين كلمة المرور
+  login_button: الانتقال إلى تسجيل الدخول
+  missing_token: لم يتم توفير رمز إعادة التعيين
+  new_password: كلمة المرور الجديدة
+  password_mismatch: كلمتا المرور غير متطابقتين
+  submit: إعادة تعيين كلمة المرور
+  success: تمت إعادة تعيين كلمة المرور بنجاح
+  success_description: تمت إعادة تعيين كلمة المرور الخاصة بك. جارٍ إعادة التوجيه إلى تسجيل الدخول...
+  success_title: إعادة تعيين كلمة المرور
+  title: إعادة تعيين كلمة المرور
+settings:
+  ai:
+    title: اتصالات الذكاء الاصطناعي
+  database:
+    title: اتصالات قاعدة البيانات
+  profile:
+    title: التفضيلات
+  title: الإعدادات
+setup:
+  internal:
+    description: تشخيصات النظام والتكوين الداخلي. مؤشرات حالة للقراءة فقط.
+    future:
+      cache_config: إعدادات ذاكرة التخزين المؤقت / الجلسة
+      debug_logging: مفتاح تسجيل تصحيح الأخطاء / التسجيل التفصيلي
+      description: ستُضاف تشخيصات إضافية في الإصدارات المستقبلية.
+      email_transport: حالة نقل البريد الإلكتروني
+      pool_stats: إحصائيات مجموعة قاعدة البيانات
+      title: قريبًا
+    licence:
+      description: فئة الترخيص الحالية والميزات المفعّلة.
+      expiry: تاريخ الانتهاء
+      features: الميزات المفعّلة
+      issued_to: صادر إلى
+      tier: فئة الترخيص
+      title: الترخيص والميزات
+    load_error: فشل تحميل تشخيصات النظام
+    system_status:
+      available: متاح
+      db_pool: مجموعة قاعدة البيانات
+      description: مؤشرات صحة فورية لخدمات الخلفية.
+      healthy: سليم
+      initialized: مُهيأ
+      not_initialized: غير مُهيأ
+      not_required: غير مطلوب
+      overall_health: الصحة العامة
+      shared_memory: الذاكرة المشتركة
+      title: حالة النظام
+      unavailable: غير متاح
+      unhealthy: غير سليم
+      version: الإصدار
+      db_cluster: عنقود قاعدة البيانات
+    title: داخلي
+  limits:
+    demo_mode:
+      description: عند التفعيل، يعمل النظام في الوضع التجريبي — تُحظر الإجراءات التدميرية وتُعرض مؤشرات في واجهة المستخدم.
+      label: الوضع التجريبي
+    description: عناصر تحكم تشغيلية لحدود الموارد والمهل الزمنية وسلوك النظام. يمكن تعديلها بأمان في أي وقت.
+    email_timeout:
+      hint: عدد الساعات التي يظل فيها رابط التحقق عبر البريد الإلكتروني صالحًا.
+      label: مهلة التحقق عبر البريد الإلكتروني (ساعات)
+    grace_period:
+      hint: عدد الساعات قبل أن تُحذف الحسابات المحذوفة مؤقتًا نهائيًا.
+      label: تأخير الحذف (ساعات)
+    invalid_grace_period: يرجى إدخال رقم موجب صالح لتأخير الحذف (ساعات)
+    invalid_registration_max: يرجى إدخال رقم موجب صالح للحد الأقصى للتسجيلات
+    invalid_timeout: يرجى إدخال رقم موجب صالح لمهلة التحقق (ساعات)
+    load_error: فشل تحميل إعدادات الحدود
+    max_registrations:
+      hint: عيّن حدًا لعدد المستخدمين الذين يمكنهم التسجيل.
+      label: الحد الأقصى لتسجيلات المستخدمين
+      placeholder: اختر الحد
+      unlimited: غير محدود
+      users: مستخدمون
+    save_button: حفظ الحدود
+    save_error: فشل حفظ إعدادات الحدود
+    save_success: تم حفظ إعدادات الحدود
+    title: الحدود
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: الحد الأقصى لعدد مجموعات البيانات لكل مستخدم (0 = غير محدود). يُطبَّق على المستخدمين الجدد.
+      count_unlimited: غير محدود
+      default_count_label: الحد الأقصى الافتراضي لعدد عمليات الرفع لكل مستخدم
+      default_size_label: الحد الأقصى الافتراضي لحجم الرفع لكل مستخدم (ميغابايت)
+      select_count: اختر الحد
+      select_size: اختر الحد
+      size_100_mb: 100 ميغابايت
+      size_10_mb: 10 ميغابايت
+      size_1_gb: 1 غيغابايت
+      size_1_mb: 1 ميغابايت
+      size_250_mb: 250 ميغابايت
+      size_25_mb: 25 ميغابايت
+      size_500_mb: 500 ميغابايت
+      size_50_mb: 50 ميغابايت
+      size_5_mb: 5 ميغابايت
+      size_hint: الحد الأقصى لإجمالي مساحة التخزين لكل مستخدم (0 = غير محدود). يُطبَّق على المستخدمين الجدد.
+      size_unlimited: غير محدود
+  options:
+    description: إعدادات وقت التثبيت التي تحدد هوية هذا النشر وسلوكه. غيّرها بحذر — فهي تؤثر على جميع المستخدمين.
+    email_sender:
+      hint: عنوان البريد الإلكتروني الذي ستظهر رسائل التحقق وكأنها مرسلة منه.
+      label: عنوان مرسل البريد الإلكتروني
+    load_error: فشل تحميل إعدادات الخيارات
+    password_policy:
+      custom: مخصص
+      high: عالية (الحد الأدنى 10 أحرف، أحرف كبيرة، أحرف صغيرة، أرقام، رموز خاصة)
+      hint: اختر متطلبات تعقيد كلمة المرور لتسجيل المستخدم وتغييرات كلمة المرور.
+      label: سياسة كلمة المرور
+      low: منخفضة (الحد الأدنى 6 أحرف)
+      medium: متوسطة (الحد الأدنى 8 أحرف، أحرف كبيرة، أحرف صغيرة، أرقام)
+      min_length: الحد الأدنى للطول
+      min_strength: الحد الأدنى للقوة (نتيجة zxcvbn من 0 إلى 4)
+      require_digit: يتطلب رقمًا
+      require_lowercase: يتطلب أحرفًا صغيرة
+      require_special: يتطلب رمزًا خاصًا
+      require_uppercase: يتطلب أحرفًا كبيرة
+      select: اختر السياسة
+    public_url:
+      hint: 'عنوان URL الأساسي المستخدم في روابط التحقق من البريد الإلكتروني (مثال: https://workbench.example.com).'
+      label: عنوان URL العام
+    save_button: حفظ الخيارات
+    save_error: فشل حفظ إعدادات الخيارات
+    save_success: تم حفظ إعدادات الخيارات
+    title: خيارات
+    welcome:
+      hint: ستظهر هذه الرسالة في صفحة تسجيل الدخول. اتركها فارغة لإخفائها.
+      label: رسالة الترحيب
+      placeholder: أدخل رسالة ترحيب لعرضها في صفحة تسجيل الدخول.
+    registration_mode:
+      mode_0: تسجيل ذاتي مع تحقق تلقائي
+      select: اختر وضع التسجيل
+      label: وضع التسجيل
+      hint: اختر كيفية إنشاء حسابات المستخدمين الجدد والتحقق منها.
+      mode_1: المسؤول ينشئ مستخدمين موثَّقين
+      mode_2: تسجيل ذاتي مع تحقق المسؤول
+      mode_4: تسجيل ذاتي مع تحقق عبر البريد الإلكتروني
+  tuning:
+    reset_confirm_title: إعادة تعيين هذه الستة إلى إعداداتها الافتراضية؟
+    slow_threshold_hint: يُبلَّغ عن اختبار النموذج الذي يستغرق وقتًا أطول من هذا بأنه بطيء جدًا. يمكن للمستخدمين رفع الحد الخاص بهم؛ ولا يجوز لأحد خفض حده إلى أقل من 1.
+    ai_section_label: توليد الذكاء الاصطناعي
+    invalid_max_tokens: يُرجى إدخال عدد صحيح من الرموز، على الأقل 1
+    ai_max_tokens_hint: أطول إجابة قد ينتجها طلب واحد. يحتاج الوصف إلى نحو 500 رمز تقريبًا؛ ويترك 4000 مساحة كافية.
+    description: الإعدادات الافتراضية لسلوك الذكاء الاصطناعي والحدود الزمنية. عادة ما تكون مناسبة كما هي — يمكن أن يختلف إعداد لكل مستخدم أو لكل اتصال، والقيمة هنا هي ما يُطبق عند غياب كليهما.
+    save_error: تعذّر حفظ إعدادات الضبط
+    invalid_connect_timeout: يجب أن تكون مهلة الاتصال عددًا صحيحًا من الثواني، على الأقل 1 وبحد أقصى 60
+    reset_confirm_action: إعادة تعيين
+    preamble_detail: يستخدم كل طلب ذكاء اصطناعي هذه الإعدادات ما لم يتجاوزها اتصال. تغيير أحدها يؤثر على كل نموذج ليس له إعداد خاص به؛ ولا يغيّر اتصالًا قمت بضبطه بالفعل.
+    invalid_temperature: يجب أن تكون درجة الحرارة رقمًا من 0 إلى 2
+    ai_tokens: رموز
+    saved: تم حفظ إعدادات الضبط
+    reset_done: تمت إعادة تعيين إعدادات الضبط إلى افتراضياتها
+    save: حفظ الإعدادات
+    resetting: جارٍ إعادة التعيين…
+    invalid_probe_timeout: يجب أن تكون مهلة الاختبار عددًا صحيحًا من الثواني، على الأقل 1 وبحد أقصى 1200
+    probe_timeout_hint: المدة التي قد يستغرقها اختبار ملاءمة واحد. يستغرق النموذج المستضاف على وحدة المعالجة المركزية دقائق، لذا فإن الحد القصير هنا يسجل فشلًا خاطئًا بدلًا من توفير الوقت.
+    invalid_model_test_seconds: يُرجى إدخال عدد صحيح من الثواني، على الأقل 1
+    reset_error: تعذّرت إعادة تعيين إعدادات الضبط
+    saving: جارٍ الحفظ…
+    invalid_ai_timeout: يجب أن يكون الحد الزمني للذكاء الاصطناعي عددًا صحيحًا من الثواني، على الأقل 1
+    load_error: تعذّر تحميل إعدادات الضبط
+    connect_timeout_hint: المدة التي قد تستغرقها الشبكة لقبول اتصال قبل اعتبار نقطة النهاية غير قابلة للوصول. القيمة الأقل مما تحتاجه الشبكة تحوّل نقطة نهاية تعمل إلى نقطة ميتة.
+    forbidden: لا يمكن تغيير هذه الإعدادات إلا بصلاحية مدير كامل.
+    slow_threshold_label: عتبة النموذج البطيء
+    reset_confirm_body: تعود كل قيمة في هذه الصفحة إلى افتراضها الأصلي الذي وردت به. لا تتأثر التجاوزات الخاصة بكل اتصال. لا يمكن التراجع عن هذا، وسيتعين عليك تعيين أي قيمة كنت قد غيّرتها مرة أخرى.
+    ai_temperature_hint: 'مدى تنوع الإجابات: 0 يعني أعلى قابلية للتكرار يسمح بها النموذج، و2 يعني أكبر قدر من التنوع. القيم خارج النطاق من 0 إلى 2 يرفضها المزوّد، وليس هذا النظام.'
+    seconds: ثوانٍ
+    ai_timeout_hint: كم من الوقت يمكن أن يستمر طلب ذكاء اصطناعي واحد قبل التخلي عنه. الانخفاض الشديد يجعل الدردشة تفشل بصمت؛ والارتفاع الشديد يجعل نموذجًا متوقفًا يحتجز عاملًا. قد تحتاج النماذج المحلية
+      على وحدة معالجة مركزية إلى عدة دقائق.
+    ai_section_hint: الإعدادات الافتراضية لكل طلب ذكاء اصطناعي. قد يتجاوزها اتصال ونموذج معيّنان عندما يكون الضبط خاصًا بهذا الثنائي.
+tools:
+  all_datasets: جميع مجموعات البيانات
+  connect_database: ربط قاعدة بيانات
+  description: ستظهر هنا أدوات مساعدة وأدوات تحليل إضافية.
+  import_notebook: استيراد دفتر ملاحظات
+  manage_data: جمع البيانات
+  my_data: بياناتي
+  notebooks: دفاتر الملاحظات
+  placeholder: صفحة الأدوات قادمة قريبًا.
+  title: أدوات أخرى
+  upload_csv_excel: رفع CSV / Excel
+  upload_data: رفع البيانات
+  uploads_list: المرفوعات (CSV، Excel)
+  visualize: ملعب التصور البياني
+transforms:
+  back_to_data: العودة إلى بياناتي
+  back_to_recipe: 'العودة إلى الوصفة: {name}'
+  connect_error: فشل ربط التحويل
+  connect_transform: ربط بالوصفة
+  connected_count: تم ربط {count}
+  connected_to_recipe: 'متصل بـ: {name}'
+  delete_button: حذف
+  delete_confirm: هل تريد حذف هذا التحويل؟
+  delete_success: تم حذف التحويل.
+  description_label: الوصف
+  description_placeholder: الوصف (اختياري)
+  disconnect_error: فشل فصل التحويل
+  disconnect_transform: قطع الاتصال بالوصفة
+  empty_hint: تُنفَّذ العمليات بترتيب القائمة عند تشغيل التحويل.
+  empty_state: أضف عملية لبدء بناء التحويل الخاص بك.
+  empty_title: اختر تحويلاً من القائمة أو أنشئ تحويلاً جديدًا.
+  fill:
+    constant: ثابت
+    drop_rows: إسقاط صفوف
+    mean: المتوسط
+    median: الوسيط
+    mode: المنوال
+  filter:
+    op_contains: يحتوي على
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: ليس فارغًا
+    op_is_null: فارغ
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'الوصفة: {name}'
+  load_error: فشل تحميل التحويل
+  name_label: الاسم
+  name_placeholder: اسم التحويل
+  name_required: اسم التحويل مطلوب.
+  new_transform: تحويل جديد
+  no_search_results: لا توجد تحويلات تطابق بحثك
+  no_transforms: لا توجد تحويلات معرّفة لمجموعة البيانات هذه.
+  op:
+    add: إضافة عملية
+    column_placeholder: اختر العمود
+    empty_hint: أضف عملية لبدء بناء التحويل الخاص بك.
+    encoding_label: التسمية
+    encoding_onehot: ترميز واحد ساخن
+    encoding_placeholder: الترميز
+    method_placeholder: الطريقة
+    new_name_placeholder: الاسم الجديد
+    operations_label: العمليات
+    operator_placeholder: المُعامِل
+    remove: إزالة
+    target_boolean: منطقي
+    target_datetime: تاريخ ووقت
+    target_numeric: رقمي
+    target_string: نصي
+    target_type_placeholder: النوع الهدف
+    type:
+      convert_type: تحويل النوع
+      drop_column: إسقاط عمود
+      drop_duplicates: إسقاط التكرارات
+      encode_category: ترميز الفئة
+      fill_missing: تعبئة القيم المفقودة
+      filter: تصفية الصفوف
+      rename_column: إعادة تسمية العمود
+      standardize: توحيد
+      normalize: تطبيع
+    type_placeholder: نوع العملية
+    value_placeholder: القيمة
+  operations_count: '{count} عملية'
+  operations_heading: العمليات
+  save_button: حفظ
+  save_success: تم حفظ التحويل.
+  search_placeholder: بحث في التحويلات…
+validation:
+  api_key_required: مفتاح API مطلوب لهذا المزوّد
+  database_required: اسم قاعدة البيانات مطلوب
+  host_required: المضيف مطلوب
+  name_required: اسم الاتصال مطلوب
+  password:
+    min_length: يجب أن تتكون كلمة المرور من {min} حرفًا على الأقل.
+    require_digit: يجب أن تحتوي كلمة المرور على رقم واحد على الأقل.
+    require_lowercase: يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل.
+    require_special: يجب أن تحتوي كلمة المرور على رمز خاص واحد على الأقل.
+    require_uppercase: يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل.
+    too_weak: كلمة المرور ضعيفة جدًا. يرجى اختيار كلمة مرور أقوى.
+  password_required: كلمة المرور مطلوبة
+  port_invalid: يجب أن يكون المنفذ بين 1 و65535
+  provider_required: يرجى اختيار مزوّد
+  type_required: يرجى اختيار نوع قاعدة البيانات
+  username_required: اسم المستخدم مطلوب
+verify_email:
+  error_description: حدث خطأ ما.
+  error_title: فشل التحقق
+  expired_description: انتهت صلاحية رابط التحقق.
+  expired_message: يمكنك طلب بريد تحقق جديد أدناه.
+  expired_title: انتهت صلاحية الرابط
+  invalid_token: رابط التحقق غير صالح.
+  login_button: المتابعة إلى تسجيل الدخول
+  missing_description: لم يتم توفير رمز التحقق.
+  missing_title: لا يوجد رمز تحقق
+  network_error: خطأ في الشبكة. يرجى المحاولة مرة أخرى.
+  resend_button: إعادة إرسال بريد التحقق
+  success_description: تم التحقق من بريدك الإلكتروني بنجاح. جارٍ التحويل إلى تسجيل الدخول...
+  success_title: تم التحقق من البريد الإلكتروني
+  unknown_error: حدث خطأ ما.
+virtual:
+  clone: استنساخ
+  deleted: تم حذف مجموعة البيانات
+  draft_badge: مسودة
+  edit: تعديل
+  error: حدث خطأ
+  existing_none: لا شيء
+  existing_title: مجموعات البيانات الحالية
+  loading: جارٍ التحميل...
+  more: المزيد
+  new_chat: مجموعة بيانات افتراضية جديدة
+  placeholder: صف ما تريد القيام به...
+  ready_badge: جاهز
+  recent_chats: المحادثات الأخيرة
+  send: إرسال
+  stage: مرحلة
+  title: مجموعات البيانات الافتراضية
+  verbose: تفصيلي
+  welcome: مرحبًا بك في مساعد مجموعات البيانات الافتراضية. إذا كان هذا جديدًا عليك، فقد ترغب في معرفة كيفية البدء. اطلب مني أن أشرح كيف يستخدم الإحصائيون مجموعات البيانات كمدخلات لوصفات التحليل، ثم يستخدمون
+    المخرجات لإنشاء التقارير والمرئيات. أو اطلب مني تصفح مجموعات بياناتك الفعلية حتى نبدأ في اختيار البيانات منها لاستخدامها. قل "مرحبًا" فقط إذا كنت غير متأكد.
+  preview_name: الاسم
+  preview_joins: انضمامات
+  preview_columns: أعمدة المخرجات
+  preview_title: معاينة مجموعة البيانات
+  preview_sources: المصادر
+  manual:
+    need_join: تم تحديد مصدرين، لكن لا شيء يربط بينهما.
+    bridge_choose_columns: لم يُعثر على أعمدة متطابقة — أضف الربط واخترها.
+    joins_hint: تحتاج المصادر المتعددة إلى ربط بينها، بينما لا يحتاج المصدر الواحد إلى ذلك.
+    need_name: أعطِ مجموعة البيانات اسمًا قبل الحفظ.
+    unattached_sources: 'غير مرتبطة بالبقية: {sources}. أضف ربطًا يربطها.'
+    preview_empty: لم يُرجع الربط أي صفوف.
+    alias_label: اسم مستعار
+    validate_errors: 'يحتوي التعريف على مشكلات:'
+    output_hint: الأعمدة التي ستعرضها مجموعة البيانات هذه، بالترتيب.
+    add_join: أضف ربطًا
+    no_sources: لا تتوفر اتصالات أو مجموعات بيانات لاستخدامها.
+    preview_rows: تم إرجاع {count} صف/صفوف
+    tables_error: تعذّرت قراءة الجداول.
+    materialized_hint: يكتب جدولًا بدلاً من الربط المباشر. اتركه متوقفًا أثناء إعداد النموذج الأولي.
+    sources_title: مصدر البيانات
+    materialized_label: حوِّل النتيجة إلى جدول
+    load_error: تعذّر تحميل تعريف مجموعة البيانات تلك.
+    test_join: اختبر الربط
+    preview_error: تعذّر تنفيذ الربط.
+    intro: أنشئ مجموعة بيانات افتراضية من الأعمدة التي تختارها، أو افتح واحدة موجودة لتعديلها.
+    bridge_no_columns: الأعمدة لم تُقرأ بعد — وسّع المصدر، أو أضف الربط واخترها.
+    title: محرر مجموعة البيانات الافتراضية
+    remove_join: أزل هذا الربط
+    test_pulls_every_source: اختبار الربط يقرأ كل مصدر بالكامل، لذا قد يكون بطيئًا.
+    select_all: تحديد الكل
+    aggregation_note: يُحتفظ بالتجميع القادم من تعريف قديم كما هو، لكن الربط لا يطبقه.
+    incomplete_join: أكمل أو أزل الربط الذي لم تُختر له أعمدة بعد.
+    remove: أزل هذا العمود من المخرجات
+    no_match: لا يوجد هنا ما يطابق عامل التصفية.
+    move_up: انقل هذا العمود مرتبة واحدة للأعلى
+    sources_hint: وسّع اتصالًا أو مجموعة بيانات، ثم حدد الأعمدة لتضمينها.
+    open_label: افتح مجموعة بيانات موجودة
+    suggested: مقترح
+    columns_error: تعذّرت قراءة الأعمدة.
+    alias_taken: هذا الاسم المستعار يستخدمه مصدر آخر بالفعل.
+    loaded_note: تم فتح تعريف موجود — سيؤدي الحفظ إلى تحديثه.
+    loading_columns: جارٍ قراءة الأعمدة…
+    validate_ok: التعريف سليم من الناحية الهيكلية.
+    move_down: انقل هذا العمود مرتبة واحدة للأسفل
+    joins_title: كيفية ربط المصادر
+    description_label: وصف مجموعة البيانات
+    save_success: تم حفظ مجموعة البيانات الافتراضية.
+    output_title: ما تعرضه مجموعة البيانات
+    name_label: اسم مجموعة البيانات
+    new_dataset: ابدأ مجموعة بيانات جديدة
+    bridge: جسر
+    save_error: تعذّر حفظ مجموعة البيانات الافتراضية.
+    update_dataset: حدّث مجموعة البيانات هذه
+    column_placeholder: اختر عمودًا
+    open_none: لا توجد مجموعة بيانات افتراضية لفتحها بعد.
+    need_columns: حدد عمودًا واحدًا على الأقل لتضمينه.
+    validate: تحقق من صحة التعريف
+    complete_join: أكمل الربط غير المكتمل
+    select_none: إلغاء تحديد الكل
+    loaded_note_shared: تم فتح تعريف مشترك موجود — للقراءة فقط - لا يُسمح بالتحديث
+    materialize_done: تم بناء الجدول.
+    materialize_retry: إعادة المحاولة
+    materialize_failed: 'تم الحفظ، لكن تعذّر بناء الجدول:'
+  panel_tick_error: تعذّر تحديد ذلك العمود.
+  panel:
+    expand: إظهار لوحة المصدر
+    collapse: طيّ لوحة المصدر
+  panel_fold_error: تعذّر حفظ حالة طيّ اللوحة، لذا ستكون مفتوحةً مرة أخرى في المرة القادمة.
+  panel_tick_no_session: أرسل رسالة أولًا — تسجّل الشجرة تحديداتك في الجلسة.
+  panel_columns: '{count} عمود'
+  chip_error: تعذّر تطبيق ذلك الاختيار.
+  chip_load_error: تعذّر تحديث الاختيارات، لذا قد تكون هذه غير محدّثة.
+  progress_decided: تم حسم {decided} من {total}
+  heading_match_columns: طابق هذه الأعمدة
+  heading_choose_columns: اختر الأعمدة
+  heading_materialised: مباشر أم مادي؟
+  heading_choose_table: اختر جدولاً
+  suggestion_applied: تم التطبيق
+  selection_hint: ألغِ تحديد أي شيء لا تريده، ثم استخدمها معًا.
+  act:
+    sources: تم قبول {count} جداول
+    join: تم ضم {pair}
+    sources_short: 'تم قبول {count} جداول: {tables}'
+    named: تمت تسميته “{name}”
+    applied: تم تطبيق {piece}
+  confirm_selection: استخدم هذه
+  join_type_label: نوع الربط
+  joins_unsaved: هذه الصفوف تختلف عن مجموعة البيانات. قم بتطبيقها، أو أصلح الصف الفارغ أولاً.
+  joins_unjoined: 'غير مرتبطة: {tables}'
+  joins_apply: تطبيق
+  joins_hint: قم بتغيير أي عمود أو نوع الربط، ثم تابع.
+  joins_coverage: تم توصيل {connected} من أصل {total} جدول
+  act_joins: تم ربط {count} زوجًا
+  name_suggestion_heading: الاسم المقترح — غيّره إذا أردت
+  name_suggestion_accept: استخدم هذا الاسم
+visualize:
+  config: الإعدادات
+  data: البيانات (JSON)
+  data_placeholder: الصق بيانات JSON هنا أو أنشئ عينة
+  description: اختر نوع التمثيل المرئي، وأنشئ بيانات عينة، واضبط المعاملات، وقم بالمعاينة.
+  download_error: فشل تنزيل الجدول
+  download_png: تنزيل بصيغة PNG
+  download_success: تم تنزيل الجدول بصيغة PNG
+  generate_sample: إنشاء عينة
+  invalid_data: بيانات غير صالحة للجدول النصي. من المتوقع وجود أعمدة وصفوف.
+  load_error: فشل تحميل أنواع التمثيل المرئي
+  no_data: لا توجد بيانات للتمثيل المرئي. أنشئ بيانات عينة أو الصق JSON.
+  no_types: لا توجد أنواع تمثيل مرئي معرّفة. يرجى التواصل مع المسؤول.
+  parameters: المعاملات
+  preview: معاينة
+  sample_expenses: المصروفات
+  sample_generated: تم إنشاء بيانات العينة
+  sample_item: العنصر
+  sample_sales: المبيعات
+  sample_value: القيمة
+  save_error: فشل الحفظ
+  save_instance: حفظ المثيل
+  save_no_data: لا توجد بيانات للحفظ. يرجى إنشاء بيانات أو لصقها.
+  save_success: تم حفظ التمثيل المرئي بنجاح
+  select_type: اختر النوع
+  title: بيئة اختبار التمثيل المرئي
+  type: نوع التمثيل المرئي
+  unsupported: نوع التمثيل المرئي غير مُنفذ بعد
+  unsupported_parameter: نوع غير مدعوم

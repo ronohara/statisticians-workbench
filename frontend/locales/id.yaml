@@ -1,0 +1,2258 @@
+about:
+  description: Bangun pengalaman luar biasa dengan shadcn/ui dan Next.js. Desain bersih, performa cepat.
+  fast_desc: Dibangun di atas Next.js App Router untuk performa optimal.
+  fast_title: Cepat
+  get_started: Mulai
+  modern_desc: Komponen yang aksesibel dari shadcn/ui, ditata dengan Tailwind CSS.
+  modern_title: UI Modern
+  secure_desc: Aman tipe dan dapat disesuaikan – Anda memiliki kode komponen.
+  secure_title: Aman
+  title: Tentang Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: Kembali ke Admin
+    cannot_modify_self: Tidak dapat mengubah akun Anda sendiri.
+    delete_confirmation: Apakah Anda yakin ingin menghapus {name}? Pengguna ini akan dihapus sementara (soft delete) dan dapat dipulihkan oleh Admin Penuh.
+    delete_error: Gagal menghapus pengguna
+    delete_title: Hapus Pengguna
+    demote: Turunkan Jabatan
+    demote_error: Gagal menurunkan jabatan pengguna
+    demote_success: Pengguna diturunkan dari Admin Grup
+    description_placeholder: Masukkan deskripsi
+    description_required: Deskripsi tidak boleh kosong
+    group_description: Deskripsi Grup
+    group_users_load_error: Gagal memuat pengguna grup
+    load_error: Gagal memuat grup
+    load_success: Grup berhasil dimuat
+    no_users: Tidak ada pengguna ditemukan di grup ini.
+    promote: Naikkan Jabatan
+    promote_error: Gagal menaikkan jabatan pengguna
+    promote_success: Pengguna dinaikkan menjadi Admin Grup
+    readonly_badge: (hanya-baca)
+    readonly_message: Anda melihat halaman ini dalam mode hanya-baca. Pengguna contoh tidak dapat melakukan perubahan.
+    readonly_title: Manajemen Grup (Hanya-Baca)
+    select_group: Pilih Grup
+    select_group_placeholder: Pilih grup
+    title: Manajemen Grup
+    update_error: Gagal memperbarui grup
+    update_success: Deskripsi grup diperbarui
+    users_in_group: Pengguna dalam Grup
+  models:
+    comment_placeholder: Masukkan komentar
+    description: Setiap model yang diketahui workbench. Mengaktifkan model memengaruhi setiap koneksi yang menyediakannya; kolom server menunjukkan koneksi mana yang dapat menjangkaunya.
+    disabled: Nonaktif
+    edit_comment: Edit komentar
+    enabled: Aktif
+    fetch_auth_required: Penyedia ini memerlukan kunci API untuk mendaftarkan model. Muat ulang dari Pengaturan → Koneksi AI.
+    fetch_non_standard: Penyedia ini tidak menyediakan API daftar model standar. Tambahkan model secara manual di panel admin.
+    load_models_error: Gagal memuat model
+    no_comment: —
+    no_models: Belum ada model. Discovery membuatnya dari koneksi.
+    not_preferred: Tidak Diprioritaskan
+    preferred: Diprioritaskan
+    toggle_error: Gagal memperbarui model
+    update_error: Gagal memperbarui komentar
+    update_success: Model diperbarui
+    model_count: '{count} model'
+    no_servers: Belum ada koneksi yang melayani model ini
+    tuning_save_error: Tidak dapat menyimpan pengaturan AI
+    tuning_hint: Nilai-nilai ini berlaku di mana pun model ini digunakan pada koneksi ini. Kosong berarti mewarisi bawaan Workbench.
+    filter_test: Tes kapabilitas
+    filter_result: Hasil
+    tuning_temperature_hint: Nilai lebih rendah memberikan jawaban yang lebih konsisten; nilai lebih tinggi memberikan jawaban yang lebih bervariasi.
+    tuning_timeout_hint: Jumlah detik satu permintaan AI boleh berjalan. Model CPU lokal dapat memerlukan beberapa menit.
+    servers_title: Dapat dijangkau dari
+    search_placeholder: Cari nama model
+    filter_state: Status
+    tuning_load_error: Tidak dapat memuat pengaturan AI
+    filter_clear: Bersihkan filter
+    tuning_loading: Memuat pengaturan AI…
+    filter_any: Status apa pun
+    tuning_saved: Pengaturan AI disimpan
+    no_matches: Tidak ada model yang cocok dengan filter ini.
+    tuning_title: Pengaturan AI untuk server ini
+    tuning_inherited: diwariskan
+    tuning_inherited_title: Kosong mewarisi bawaan workbench
+  providers:
+    code_label: Kode
+    delete_button: Hapus
+    delete_confirmation: Apakah Anda yakin ingin menghapus penyedia "{name}"? Ini juga akan menghapus semua model terkait dan tidak dapat dibatalkan.
+    delete_error: Gagal menghapus penyedia
+    delete_provider: Hapus penyedia
+    delete_success: Penyedia dihapus
+    delete_title: Hapus Penyedia
+    description: Aktifkan atau nonaktifkan penyedia AI. Penyedia yang dinonaktifkan tidak akan muncul dalam formulir koneksi pengguna.
+    disabled: Nonaktif
+    enabled: Aktif
+    fetch_error: Gagal memuat penyedia
+    list_title: Semua Penyedia
+    local: Lokal
+    no_api_key: tidak memerlukan kunci API
+    requires_api_key: memerlukan kunci API
+    title: Penyedia AI
+    toggle_error: Gagal memperbarui penyedia
+    update_success: Penyedia diperbarui
+  title: Panel Admin
+  user_details:
+    dark_mode_description: Beralih antara tema terang dan gelap.
+    dark_mode_label: Mode Gelap
+    email_label: Email
+    email_notifications_description: Terima pembaruan email tentang akun Anda.
+    email_notifications_label: Notifikasi Email
+    full_admin_note: Admin Penuh memiliki semua izin Admin Grup secara default.
+    group_admin_description: Pengguna dapat mengelola pengguna lain dalam grup mereka.
+    group_admin_label: Admin Grup
+    group_hint: Grup pengguna menentukan sumber daya bersama yang dapat mereka akses.
+    language_label: Bahasa
+    language_select_placeholder: Pilih bahasa
+    load_error: Gagal memuat detail pengguna
+    max_upload_count_hint: Jumlah maksimum dataset per pengguna (0 = tidak terbatas).
+    max_upload_count_label: Jumlah Unggahan Maksimum
+    max_upload_count_placeholder: Pilih jumlah
+    max_upload_size_hint: Total penyimpanan maksimum per pengguna (0 = tidak terbatas).
+    max_upload_size_label: Ukuran Unggahan Maksimum
+    max_upload_size_placeholder: Pilih ukuran
+    name_label: Nama
+    not_found: Pengguna tidak ditemukan
+    save_error: Gagal memperbarui pengguna
+    save_success: Detail pengguna diperbarui
+    select_group: Pilih grup
+    title: Kelola Pengguna
+    unnamed: Pengguna Tanpa Nama
+    user_group: Grup Pengguna
+  users:
+    active_users: Pengguna Aktif
+    admin_badge: Admin
+    bcc_label: Registrasi BCC
+    bcc_updated: Pengaturan registrasi BCC diperbarui
+    created_label: Dibuat
+    current_user_badge: Anda
+    delete_button: Hapus
+    delete_confirmation: Apakah Anda yakin ingin menghapus permanen "{name}"? Tindakan ini TIDAK dapat dibatalkan.
+    delete_error: Gagal menghapus pengguna
+    delete_self_error: Tidak dapat menghapus akun Anda sendiri
+    delete_success: Pengguna dihapus permanen
+    delete_title: Hapus Pengguna
+    deleted_badge: Dihapus Sementara
+    deleted_label: Dihapus
+    example_user_badge: Pengguna Contoh
+    forbidden: Terlarang
+    group_admin_badge: Admin Grup
+    hard_delete_button: Hapus Permanen
+    hard_delete_confirmation: Apakah Anda yakin ingin menghapus permanen "{name}"? Tindakan ini TIDAK dapat dibatalkan.
+    hard_delete_error: Gagal menghapus pengguna secara permanen
+    hard_delete_success: Pengguna dihapus permanen
+    hard_delete_title: Hapus Pengguna Secara Permanen
+    load_error: Gagal memuat pengguna
+    make_admin: Jadikan Admin
+    more_button: Lainnya...
+    no_name: Tanpa Nama
+    remove_admin: Cabut Admin
+    resend_button: Kirim Ulang Email
+    resend_error: Gagal mengirim email verifikasi
+    resend_success: Email verifikasi terkirim ke {email}
+    restore_button: Pulihkan
+    restore_error: Gagal memulihkan pengguna
+    restore_success: Pengguna dipulihkan
+    soft_deleted_users: Pengguna yang Dihapus Sementara
+    title: Manajemen Pengguna
+    unauthorized: Tidak Diizinkan
+    unverified_badge: Belum Terverifikasi
+    update_error: Gagal memperbarui pengguna
+    update_success: Pengguna diperbarui
+    user_not_found: Pengguna tidak ditemukan
+    verified_badge: Terverifikasi
+    verify_button: Verifikasi
+    verify_error: Gagal memverifikasi pengguna
+    verify_success: Pengguna ditandai sebagai terverifikasi
+    add_user: Tambah Pengguna
+  visualization_types:
+    add_button: Tambah Tipe Baru
+    add_title: Tambah Tipe Visualisasi
+    create_success: Tipe visualisasi dibuat
+    default_parameters: Parameter Bawaan (JSON)
+    delete: Hapus
+    delete_button: Hapus
+    delete_confirmation: Apakah Anda yakin ingin menghapus tipe "{name}"? Ini juga akan menghapus semua instans terkait dan tidak dapat dibatalkan.
+    delete_error: Gagal menghapus
+    delete_success: Tipe visualisasi dihapus
+    delete_title: Hapus Tipe Visualisasi
+    description: Deskripsi
+    disabled: Dinonaktifkan
+    edit: Ubah
+    edit_title: Ubah Tipe Visualisasi
+    enabled: Diaktifkan
+    fetch_error: Gagal memuat tipe visualisasi
+    input_schema: Skema Input (JSON)
+    invalid_json: JSON tidak valid di salah satu kolom skema
+    list_title: Semua Tipe Visualisasi
+    name: Nama
+    no_types: Belum ada tipe visualisasi yang ditentukan.
+    parameter_schema: Skema Parameter (JSON)
+    renderer: Renderer
+    renderer_client: Klien
+    renderer_label: Renderer
+    renderer_server: Server
+    save_error: Gagal menyimpan
+    slug: Slug
+    slug_label: Slug
+    title: Tipe Visualisasi
+    toggle_error: Gagal memperbarui
+    update_success: Tipe visualisasi diperbarui
+  adduser:
+    back_to_admin: Kembali ke Admin
+    confirm_password: Konfirmasi Kata Sandi
+    not_admin: Anda tidak memiliki izin untuk mengakses halaman ini.
+    failed: Gagal membuat pengguna
+    creating: Membuat pengguna...
+    name: Nama
+    submit: Buat Pengguna
+    email: Email
+    success: Akun dibuat dan terverifikasi. Pengguna baru sekarang dapat masuk.
+    password_mismatch: Kata sandi tidak cocok
+    description: Buat akun pengguna baru. Akun langsung terverifikasi.
+    title: Tambah Pengguna
+    password: Kata Sandi
+    language_description: Pilih bahasa pilihan pengguna untuk antarmuka.
+  set_password:
+    title: Atur Kata Sandi
+    admin_password: Kata Sandi Admin
+    failed: Gagal mengatur kata sandi
+    admin_password_required: Kata sandi admin diperlukan
+    success: Kata sandi berhasil diatur
+    description: Atur kata sandi baru untuk pengguna ini. Kata sandi admin Anda sendiri diperlukan untuk mengonfirmasi perubahan.
+ai:
+  connection:
+    add_first: Tambahkan koneksi AI pertama Anda
+    add_new: Tambah Koneksi AI Baru
+    add_success: Koneksi AI berhasil ditambahkan
+    add_title: Tambah Koneksi AI Baru
+    api_key_hint: Kunci API Anda dienkripsi sebelum disimpan.
+    api_key_label: Kunci API
+    by_label: oleh
+    clear_default: Hapus Bawaan
+    currently_not_shared: ❌ Saat ini tidak dibagikan
+    currently_shared: ✅ Saat ini dibagikan dengan grup
+    default_badge: Bawaan
+    default_cleared: Koneksi AI bawaan dihapus
+    default_set: Koneksi AI bawaan diperbarui
+    delete_button: Hapus
+    delete_confirmation: Apakah Anda yakin ingin menghapus koneksi ini?
+    delete_error: Gagal menghapus koneksi AI
+    delete_title: Hapus Koneksi AI
+    deleted: Koneksi AI dihapus
+    edit_title: Ubah Koneksi AI
+    endpoint_hint: Timpa endpoint API default jika diperlukan.
+    endpoint_label: URL Endpoint
+    form_description: Konfigurasikan koneksi penyedia AI.
+    group_label: Grup
+    load_error: Gagal memuat koneksi
+    load_providers_error: Gagal memuat penyedia
+    metadata_load_error: Gagal memuat metadata penyedia
+    metadata_loading: Informasi penyedia masih dimuat. Harap tunggu.
+    models: Model yang Tersedia
+    models_disabled: Nonaktif
+    models_load_error: Gagal memuat model
+    models_none: Belum ada model yang disinkronkan. Klik Muat Ulang untuk mengambil model dari penyedia.
+    models_refresh: Muat Ulang Model
+    models_sync_error: Gagal menyinkronkan model
+    models_synced: Model berhasil disinkronkan
+    name_label: Nama Koneksi
+    name_placeholder: mis., Koneksi AI Saya
+    no_connections: Belum ada koneksi AI yang disimpan.
+    not_found: Koneksi tidak ditemukan
+    provider_label: Penyedia
+    provider_not_found: Penyedia tidak ditemukan
+    save_error: Gagal menyimpan koneksi AI
+    select_provider: Pilih penyedia AI
+    select_provider_first: Harap pilih penyedia terlebih dahulu
+    set_default: Jadikan Default
+    shared_badge: Dibagikan
+    shared_description: Jadikan koneksi ini tersedia kepada pengguna lain di grup Anda.
+    shared_label: Bagikan ke Grup
+    shared_readonly: Dibagikan
+    shared_readonly_message: Koneksi ini dibagikan kepada Anda. Anda dapat melihatnya, tetapi pengeditan dibatasi untuk pemilik.
+    test_button: Uji Koneksi
+    test_error: Koneksi gagal.
+    test_success: Koneksi berhasil!
+    unknown_user: Tidak diketahui
+    update_success: Koneksi AI berhasil diperbarui
+    timeouts_section_label: Batas waktu koneksi
+    timeouts_section_hint: Biarkan kotak kosong untuk menggunakan bawaan Workbench.
+    connect_exceeds_probe: Batas waktu koneksi tidak boleh lebih lama dari batas waktu tes model — koneksi tidak boleh diizinkan memerlukan waktu lebih lama untuk dibangun daripada keseluruhan tes boleh
+      berjalan.
+    invalid_probe_timeout: Batas waktu tes model harus berupa bilangan bulat detik, minimal 1 dan maksimal 1200.
+    invalid_connect_timeout: Batas waktu koneksi harus berupa bilangan bulat detik, minimal 1 dan maksimal 60.
+    models_discovered: 'Ditemukan {seen} model pada koneksi ini: {created} baru, {refreshed} sudah dikenal, {pruned} tidak lagi dilayani'
+    connect_timeout_hint: Berapa lama jaringan boleh memerlukan waktu untuk menerima koneksi. Nilai di bawah yang dibutuhkan jaringan ini akan membuat endpoint yang berfungsi menjadi tidak dapat dijangkau.
+    probe_timeout_hint: Berapa lama satu tes kesesuaian boleh berjalan di sini. Model yang dihosting di CPU membutuhkan waktu beberapa menit.
+  database:
+    add_connection: Tambah Koneksi Database
+    ai_augmented: Analisis Teraugmentasi AI
+    ai_augmented_desc: AI Skema, AI Semantik, dan AI Integrasi telah menganalisis database ini.
+    ai_fallback: Analisis Dasar
+    ai_fallback_desc: Augmentasi AI tidak tersedia. Hanya menampilkan analisis struktural. Pilih koneksi AI untuk wawasan lebih mendalam.
+    ai_health_score: Skor Kesehatan AI
+    ai_unavailable: Analisis AI tidak tersedia. Hubungkan penyedia AI untuk mengaktifkan analisis lanjutan.
+    all_issues: Semua Masalah
+    analysis_report: Laporan Analisis
+    analysis_summary: '{tables} tabel, {columns} kolom, {issues} masalah ditemukan'
+    analyze: Analisis Skema
+    analyzing: Menganalisis...
+    business_value: Nilai Bisnis
+    categories: Kategori
+    code_systems_detected: Sistem Kode Terdeteksi
+    cols_rows_format: '{cols} kolom, {rows} baris'
+    column_meanings: Makna Kolom
+    columns_label: Kolom
+    confidence: Tingkat Keyakinan
+    description: Analisis desain database Anda untuk masalah pengindeksan, normalisasi, relasi, tipe data, dan penamaan.
+    download_pdf: Unduh PDF
+    email_body_attachment: Laporan analisis terlampir.
+    email_body_connection: 'Koneksi: {conn_name}'
+    email_body_database: 'Database: {db_name}'
+    email_body_id: 'ID Koneksi: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Laporan Analisis Desain Database
+    email_body_type: 'Tipe Database: {db_type}'
+    email_error: Gagal mengirim laporan melalui email
+    email_pdf: Kirim PDF lewat Email
+    email_sent: Laporan berhasil dikirim melalui email
+    email_subject: Analisis Desain Database — {db_name} ({db_type}) [Koneksi {conn_id}]
+    empty_state: Pilih koneksi database dan klik Analisis untuk memulai.
+    enter_question: Harap masukkan pertanyaan.
+    foreign_keys: Kunci Asing
+    high_risk: Tinggi
+    implicit_relationships: Relasi Implisit
+    indexes_label: Indeks
+    integration_analysis: Analisis Integrasi
+    integration_analysis_desc: Relasi implisit, kemampuan riset, dan dimensi yang hilang terdeteksi oleh AI Integrasi.
+    isic_domains: Klasifikasi Domain ISIC
+    issues_label: Masalah
+    low_risk: Rendah
+    medium_risk: Sedang
+    missing_dimensions: Dimensi yang Hilang
+    no_issues: Tidak ada masalah yang ditemukan. Desain database Anda terlihat baik!
+    no_semi_structured: Tidak ada pola data semi-terstruktur yang terdeteksi pada kolom teks.
+    normalisation_suggestions: Saran Normalisasi
+    normalisation_suggestions_desc: Tabel referensi yang diusulkan berdasarkan kata kunci yang ditemukan pada kolom teks semi-terstruktur.
+    normalisation_warning: Ini adalah saran yang dihasilkan AI. Desain ulang database memerlukan tinjauan yang cermat. Uji perubahan pada replika terlebih dahulu.
+    pdf_downloaded: PDF berhasil diunduh
+    pdf_error: Gagal membuat PDF
+    pk_prefix: PK –
+    placeholder: Segera hadir. Fitur ini akan membantu Anda mendesain skema database menggunakan AI.
+    priority_actions: Tindakan Prioritas Utama
+    proposed_reference_table: Tabel Referensi yang Diusulkan
+    rag_ask: Tanyakan
+    rag_chat: Obrolan RAG — Ajukan Pertanyaan Tentang Data Anda
+    rag_chat_desc: Ajukan pertanyaan dalam bahasa alami. Sistem mencari kolom teks dan mengembalikan jawaban yang dihasilkan AI dengan kutipan.
+    rag_error: Kueri RAG gagal
+    rag_placeholder: mis., Apa saja diagnosis yang umum?
+    rag_sources: Sumber
+    research_capabilities: Kemampuan Riset
+    risk_breakdown: Rincian Risiko
+    rows_label: Baris
+    schema_error: Gagal menganalisis skema database
+    select_connection: Pilih Koneksi Database
+    select_connection_first: Silakan pilih koneksi database terlebih dahulu.
+    select_connection_placeholder: Pilih koneksi database...
+    semantic_analysis: Analisis Semantik
+    semantic_analysis_desc: Makna kolom yang disimpulkan AI, klasifikasi domain ISIC, dan deteksi sistem kode.
+    semi_structured: Analisis Data Semi-Terstruktur
+    semi_structured_desc: Kolom teks dianalisis untuk kode tersemat, kata kunci, dan pola.
+    table_purposes: Tujuan Tabel
+    tables_explorer: Penjelajah Tabel
+    tables_label: Tabel
+    timeout_error: Analisis kehabisan waktu. Database mungkin terlalu besar atau layanan AI tidak tersedia.
+    timeout_log: Analisis kehabisan waktu setelah 15 menit.
+    title: Asisten Desain Database
+    top_recommendations: Rekomendasi Teratas
+    is_missing: tidak ada
+    peer_tables: 'Tabel peer:'
+    health_score_desc: Kesehatan database secara keseluruhan dinilai oleh Schema AI. 0 = masalah struktural kritis, 100 = siap produksi.
+  dataclean:
+    chat_error: Gagal mendapatkan respons
+    chat_placeholder: Tanyakan tentang pembersihan atau persiapan dataset ini...
+    column_tooltip: '{type} — {null_count} null, {unique_count} unik'
+    column_type:
+      category: Kategori
+      datetime: Tanggal/Waktu
+      number: Angka
+      text: Teks
+    description: Pembersihan dan persiapan dataset bertenaga AI.
+    empty_chat: Pilih dataset dan mulailah bertanya tentang cara membersihkan dan menyiapkannya.
+    enter_message: Silakan masukkan pesan.
+    loading_schema: Memuat skema...
+    no_connection: Silakan konfigurasikan koneksi AI default di Pengaturan > AI.
+    no_datasets: Tidak ada dataset yang tersedia. Unggah atau tentukan dataset terlebih dahulu.
+    placeholder: Segera hadir. Fitur ini akan membantu Anda membersihkan dan menyiapkan dataset menggunakan AI.
+    schema_error: Gagal memuat skema dataset
+    schema_summary: '{rows} baris, {cols} kolom'
+    select_dataset: Pilih Dataset
+    select_dataset_first: Silakan pilih dataset terlebih dahulu.
+    select_dataset_placeholder: Pilih dataset...
+    send: Kirim
+    shared_badge: (dibagikan)
+    title: Asisten Pembersihan Dataset
+    clean_in_place: Bersihkan di tempat
+    clean_name_label: Nama untuk salinan bersih
+    no_dataset_selected: Tidak ada dataset yang dipilih
+    clean_no_rules: Belum ada aturan pembersihan untuk diterapkan.
+    no_rules: Belum ada aturan
+    clean_in_place_success: Dataset '{name}' diperbarui.
+    clean_copy: Salinan bersih
+    preview_title: Pratinjau data
+    rules_title: Aturan persiapan
+    operations_count: '{count} operasi'
+    clean_copy_success: Dataset baru '{name}' telah dibuat — yang asli tidak berubah.
+  default_hint: Koneksi default digunakan sebagai cadangan ketika resep analisis tidak menentukan penyedia AI.
+  new_session: Sesi Baru
+  no_ai_connections: Tidak ada koneksi AI yang dikonfigurasi. Tambahkan di Pengaturan > AI.
+  recipe:
+    chat_error: Gagal mendapatkan respons
+    chat_placeholder: Tanyakan tentang analisis statistik atau konfigurasi resep...
+    description: Pembuatan resep dan aturan analisis bertenaga AI.
+    empty_chat: Pilih dataset dan tanyakan teknik statistik mana yang akan digunakan.
+    enter_message: Silakan masukkan pesan.
+    loading_schema: Memuat skema...
+    no_datasets: Tidak ada dataset yang tersedia. Unggah atau tentukan dataset terlebih dahulu.
+    placeholder: Segera hadir. Fitur ini akan membantu Anda membuat resep analisis menggunakan AI.
+    schema_summary: '{rows} baris, {cols} kolom'
+    select_dataset: Pilih Dataset
+    select_dataset_first: Silakan pilih dataset terlebih dahulu.
+    select_dataset_placeholder: Pilih dataset...
+    send: Kirim
+    title: Asisten Aturan Analisis
+  recipe_concierge:
+    chat_error: Gagal mendapatkan respons
+    create_prompt: Buat sesi baru untuk memulai.
+    delete_session: Hapus sesi
+    draft_empty: Mulai percakapan untuk membuat resep Anda. Draf akan muncul di sini saat Anda membuat keputusan.
+    draft_title: Draf Resep
+    input_placeholder: Tanyakan tentang data Anda... atau cukup katakan "halo"
+    manual_label: Resep Manual
+    new_session: Sesi Baru
+    no_session: Tidak ada sesi yang dipilih
+    no_sessions: Belum ada sesi
+    open: Buka di editor
+    save: Simpan Resep
+    saved: Resep tersimpan!
+    saving: Menyimpan...
+    select_dataset: Pilih dataset...
+    stage_columns: Pilih Kolom
+    stage_complete: Resep Siap
+    stage_goal: Pertanyaan Riset
+    stage_greeting: Selamat Datang
+    stage_review: Tinjau Resep
+    stage_technique: Pilih Teknik
+    stage_transforms: Persiapan Data
+    stage_visualisation: Visualisasi
+    status_draft: Draf
+    status_ready: Siap
+    tab_chat: Obrolan
+    tab_draft: Draf
+    tab_sessions: Sesi
+    title: Asisten Resep AI
+    toggle_panel: Alihkan panel resep
+    welcome: Beri tahu saya apa yang ingin Anda temukan dalam data Anda, dan saya akan membantu Anda membuat resep analisis yang lengkap.
+    schema_changes: 'Perubahan skema terdeteksi:'
+    draft_no_visualisation: Hasil numerik
+    warnings_heading: Peringatan
+    errors_heading: Belum dapat disimpan
+    draft_algorithm: Algoritma
+    draft_output: Output
+    draft_dataset: Dataset
+    progress_decided: '{count} dari {total} telah memutuskan'
+    done: Selesai
+    progress_next: '{progress} · {next}'
+    chip_withheld: +{count} lainnya
+    chip_superseded: Digantikan oleh penawaran yang lebih baru.
+    unread_sources: Beberapa sumber tidak dapat dibaca, sehingga daftar kolom mungkin tidak lengkap.
+    chip_collapse: Tampilkan lebih sedikit
+    chip_expand: Tampilkan {count} lainnya
+  select_ai_connection: Koneksi AI
+  select_ai_connection_placeholder: Pilih koneksi AI...
+  select_model: Model
+  select_model_placeholder: Pilih model...
+  test_error: Koneksi gagal.
+  test_success: Koneksi berhasil!
+  title: Pengaturan AI
+  thinking: Berpikir...
+  testing:
+    column_model: Model
+    explanation: Concierge AI Workbench dibuat untuk model yang bertindak. Model yang sekadar berbicara—meski sopan, meski besar—akan membuat editor resep merespons tanpa melakukan apa-apa. Perbaikannya
+      ada pada model, bukan kode. Alat di halaman ini memungkinkan Anda menguji apakah suatu model cocok.
+    discover_running: Menanyakan ke server…
+    test_turn: Kompleksitas
+    no_duration_here: Tidak dijalankan pada koneksi ini
+    column_actions: Tes
+    state_fail: Gagal
+    models_heading: Model
+    test_tools: menggunakan Alat
+    connection_label: Koneksi AI
+    elsewhere_note: Suatu model dapat menyimpan hasil kapabilitas dari koneksi lain. Durasi di samping setiap status adalah pengukuran koneksi ini sendiri, sehingga model dapat menampilkan status di sini
+      tanpa durasi.
+    no_connections_link: Buka koneksi AI
+    cancelled: Dihentikan. Hasil yang sudah tercatat tetap disimpan.
+    running: Berjalan…
+    too_slow: Melebihi batas {seconds} detik Anda
+    cost_confirm: Mulai pengujian
+    enabled_no: Model dinonaktifkan
+    no_connections_body: Menguji model memerlukan koneksi AI. Tambahkan satu, lalu kembali ke halaman ini.
+    slow_limit_unavailable: Pengaturan Anda tidak menyertakan batas model lambat, sehingga tidak ada model yang ditandai terlalu lambat.
+    run_all_for_model: Jalankan semua untuk model ini
+    slow_limit_failed: Tidak dapat membaca batas model lambat Anda, sehingga tidak ada model yang ditandai terlalu lambat. {detail}
+    discover_failed: 'Tidak dapat menemukan model: {detail}'
+    duration_seconds: '{seconds} dtk'
+    test_competence: Kompetensi
+    failure_reason: 'Alasan: {reason}'
+    discover_result: 'Server mencantumkan {seen} model: {created} baru, {refreshed} sudah dikenal, {pruned} tidak lagi dilayani'
+    column_enabled: Diaktifkan
+    slow_limit_session_link: Atur secara permanen di profil Anda
+    no_models: Belum ada model yang ditemukan pada koneksi ini.
+    state_pass: Lulus
+    run_test: Jalankan tes
+    discover_models: Temukan model
+    slow_limit_session_label: Batas model lambat
+    slow_limit_session_hint: Hanya berlaku untuk halaman ini — tidak disimpan.
+    run_failed: 'Tes tidak dapat dijalankan: {detail}'
+    duration_ms: '{ms} ms'
+    enabled_yes: Model diaktifkan
+    load_error: Tidak dapat memuat koneksi AI Anda. {detail}
+    no_connections_heading: Belum ada koneksi AI
+    run_all_untested: Jalankan setiap tes pada model yang belum diuji
+    title: Pengujian AI
+    slow_limit_session_reset: Gunakan batas tersimpan saya
+    cost_warning: Ini akan menjalankan {count} tes, dan tes giliran membutuhkan waktu beberapa menit per model pada CPU. Tekan lagi untuk memulai.
+api:
+  admin:
+    already_full_admin: Pengguna sudah menjadi Admin Penuh
+    already_group_admin: Pengguna sudah menjadi Admin Grup
+    cannot_delete_self: Tidak dapat menghapus akun Anda sendiri
+    cannot_demote_full_admin: Tidak dapat menurunkan Admin Penuh
+    cannot_demote_self: Anda tidak dapat menurunkan diri sendiri
+    cannot_promote_example: Tidak dapat mempromosikan Pengguna Contoh
+    delete_error: Gagal menghapus pengguna
+    demote_error: Gagal menurunkan pengguna
+    description_required: Deskripsi tidak boleh kosong
+    example_blocked: Pengguna contoh tidak dapat melakukan tindakan admin
+    group_not_found: Grup tidak ditemukan
+    group_users_load_error: Gagal memuat pengguna grup
+    groups_load_error: Gagal memuat grup
+    groups_stats_error: Gagal memuat statistik grup
+    instance_exists: Tidak dapat menghapus tipe karena memiliki {count} instansi terkait.
+    insufficient_permissions: Izin tidak cukup untuk tindakan ini
+    invalid_group_id: group_id tidak valid. Harus 00-99
+    invalid_id: ID tidak valid
+    invalid_upload_count: maxUploadCount harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    invalid_upload_size: maxUploadSizeMB harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    missing_fields: Kolom wajib belum diisi
+    missing_group_id: ID grup tidak ada
+    missing_id: ID tidak ada
+    missing_model_id: ID model tidak ada
+    missing_provider_code: Parameter providerCode tidak ada
+    missing_user_id: userId tidak ada
+    model_update_error: Gagal memperbarui model
+    models_load_error: Gagal memuat model
+    no_fields: Tidak ada kolom valid untuk diperbarui
+    no_group: Pengguna tidak memiliki grup yang ditetapkan
+    not_group_admin: Pengguna bukan Admin Grup
+    only_full_admin: Hanya Admin Penuh yang dapat melakukan tindakan ini
+    promote_error: Gagal mempromosikan pengguna
+    provider_delete_error: Gagal menghapus penyedia
+    provider_not_found: Penyedia tidak ditemukan
+    provider_update_error: Gagal memperbarui penyedia
+    providers_load_error: Gagal memuat penyedia
+    slug_exists: Slug sudah ada
+    update_error: Gagal memperbarui pengguna
+    user_load_error: Gagal memuat pengguna
+    user_not_found: Pengguna tidak ditemukan
+    users_load_error: Gagal memuat pengguna
+    viz_type_create_error: Gagal membuat tipe visualisasi
+    viz_type_delete_error: Gagal menghapus tipe visualisasi
+    viz_type_update_error: Gagal memperbarui tipe visualisasi
+    viz_types_load_error: Gagal memuat tipe visualisasi
+    settings_invalid_max_registrations: Registrasi maksimal harus berupa angka positif atau tanpa batas
+    settings_invalid_upload_count: Jumlah unggahan maksimal bawaan harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    settings_invalid_public_url: Format URL publik tidak valid
+    settings_invalid_email_sender: Format alamat email pengirim tidak valid
+    settings_view_forbidden: Hanya Admin Penuh yang dapat melihat pengaturan global
+    settings_invalid_upload_size: Ukuran unggahan maksimal bawaan harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    settings_load_error: Gagal memuat pengaturan global
+    settings_save_error: Gagal menyimpan pengaturan global
+    settings_modify_forbidden: Hanya Admin Penuh yang dapat mengubah pengaturan global
+    settings_invalid_email_timeout: Batas waktu verifikasi email harus berupa angka positif (jam)
+    settings_invalid_grace_period: Masa tenggang registrasi harus berupa angka positif (jam)
+  auth:
+    account_deleted: Akun ini telah dihapus.
+    email_not_verified: Email belum diverifikasi. Silakan periksa kotak masuk dan folder SPAM Anda.
+    example_user_blocked: Perubahan kata sandi dinonaktifkan untuk pengguna contoh.
+    example_user_forgot_blocked: Reset kata sandi dinonaktifkan untuk pengguna contoh
+    example_user_register_blocked: Pengguna contoh tidak dapat membuat akun baru
+    example_user_reset_blocked: Reset kata sandi dinonaktifkan untuk pengguna contoh
+    internal_error: Kesalahan server internal
+    invalid_credentials: Kredensial tidak valid
+    invalid_current_password: Kata sandi saat ini salah
+    invalid_token: Token tidak valid atau kedaluwarsa
+    missing_email: Email wajib diisi
+    missing_fields: Kolom belum diisi
+    password_validation_failed: Validasi kata sandi gagal
+    token_expired: Token telah kedaluwarsa
+    unauthorized: Tidak diizinkan
+    user_not_found: Pengguna tidak ditemukan
+  datasets:
+    delete_blocked: Pengguna contoh tidak dapat menghapus dataset
+    example_blocked: Pengguna contoh tidak dapat membuat dataset
+    proxy_error: Kesalahan server internal
+    update_blocked: Pengguna contoh tidak dapat memperbarui dataset
+  profile:
+    name_required: Nama wajib diisi
+    update_failed: Gagal memperbarui profil
+  recipes:
+    create_error: Gagal membuat resep
+    dataset_not_found: Dataset tidak ditemukan
+    dataset_required: datasetId wajib diisi
+    delete_error: Gagal menghapus resep
+    execute_error: Gagal mengeksekusi resep
+    execution_load_error: Gagal memuat eksekusi
+    execution_not_found: Eksekusi tidak ditemukan
+    executions_load_error: Gagal memuat eksekusi
+    load_error: Gagal memuat resep
+    missing_id: ID resep wajib diisi
+    name_required: Nama dan tahapan wajib diisi
+    not_found: Resep tidak ditemukan
+    not_owned: Resep tidak ditemukan atau bukan milik Anda
+    update_error: Gagal memperbarui resep
+  register:
+    email_exists: Email sudah ada
+    internal_error: Kesalahan server internal
+    invalid_email: Format email tidak valid
+    limit_reached: Batas pendaftaran tercapai (maksimal {max_reg} pengguna).
+    missing_fields: Kolom belum diisi
+    password_validation_failed: Validasi kata sandi gagal
+    settings_not_found: Pengaturan global tidak ditemukan
+  settings:
+    load_failed: Gagal memuat pengaturan
+    save_failed: Gagal menyimpan pengaturan
+    user_not_found: Pengguna tidak ditemukan
+  user:
+    api_key_required: Kunci API wajib diisi untuk penyedia ini
+    connection_name_exists: Koneksi dengan nama ini sudah ada
+    connection_not_found: Koneksi tidak ditemukan
+    example_blocked: Pengguna contoh tidak dapat melakukan tindakan ini
+    internal_error: Kesalahan server internal
+    missing_fields: Kolom wajib belum diisi
+    provider_not_found: Penyedia "{provider}" tidak ditemukan.
+    user_not_found: Pengguna tidak ditemukan
+  global_settings_load_error: Kesalahan server internal
+app:
+  name: Meja Kerja Statistikawan
+  version: Versi
+chat:
+  connection_not_found: Koneksi AI tidak ditemukan atau tidak dapat diakses.
+  connections_load_error: Gagal memuat koneksi
+  delete: Hapus
+  delete_confirm: Apakah Anda yakin ingin menghapus percakapan ini?
+  delete_error: Gagal menghapus percakapan
+  delete_success: Percakapan dihapus
+  empty_state: Kirim pesan untuk memulai percakapan.
+  go_to_ai_settings: Buka Pengaturan AI
+  history: Riwayat Percakapan
+  input_placeholder: Ketik pesan Anda...
+  load_error: Gagal memuat percakapan
+  models_load_error: Gagal memuat model
+  new_chat: Percakapan Baru
+  no_chat_selected: Tidak ada percakapan aktif
+  no_chats: Belum ada percakapan
+  no_connections_message: Anda perlu menentukan setidaknya satu koneksi AI sebelum dapat menggunakan Percakapan.
+  no_models: Tidak ada model yang tersedia untuk koneksi ini
+  rename: Ubah nama
+  rename_empty: Judul tidak boleh kosong
+  rename_error: Gagal mengubah nama percakapan
+  rename_success: Nama percakapan diubah
+  select_connection: Koneksi AI
+  select_connection_first: Silakan pilih koneksi AI terlebih dahulu.
+  select_connection_placeholder: Pilih koneksi AI
+  select_model: Model
+  select_model_placeholder: Pilih model
+  send_error: Gagal mengirim pesan
+  title: Percakapan
+common:
+  access_denied_admin: Akses ditolak — khusus admin.
+  audio_settings: Pengaturan audio
+  back: Kembali
+  cancel: Batal
+  cannot_undo: Tindakan ini tidak dapat dibatalkan.
+  clear: Bersihkan
+  close: Tutup
+  close_navigation: Tutup navigasi
+  copied: Tersalin!
+  copy: Salin
+  copy_to_clipboard: Salin ke papan klip
+  delete: Hapus
+  delete_chat: Hapus percakapan
+  deleting: Menghapus...
+  dismiss: Tutup
+  dismiss_error: Tutup kesalahan
+  dismiss_success: Tutup keberhasilan
+  edit: Ubah
+  error_label: Kesalahan
+  false_label: Salah
+  generating: Menghasilkan...
+  has_more_information: memiliki informasi lebih lanjut
+  loading: Memuat...
+  microphone_off: Mikrofon mati
+  microphone_on: Mikrofon hidup
+  next: Berikutnya
+  no_answer: Tidak ada jawaban yang dikembalikan
+  no_permission: Anda tidak memiliki izin untuk melihat halaman ini.
+  open_navigation: Buka navigasi
+  reset_to_defaults: Atur ulang ke default
+  restoring: Memulihkan...
+  save: Simpan
+  saving: Menyimpan...
+  select_language: Pilih bahasa
+  sending: Mengirim...
+  speaker_off: Speaker mati
+  speaker_on: Speaker hidup
+  speech_input_unsupported: 'Input suara tidak didukung di browser Anda. Browser yang kompatibel: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: Akses mikrofon ditolak. Izinkan akses mikrofon di pengaturan browser Anda.
+  speech_mic_failed: 'Gagal memulai mikrofon: {error}.'
+  speech_network_error: Kesalahan jaringan pengenalan suara — periksa koneksi internet Anda dan coba lagi.
+  speech_output_unsupported: 'Output suara tidak didukung di browser Anda. Browser yang kompatibel: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Kesalahan pengenalan suara: {error}. Coba lagi.'
+  success_label: Berhasil
+  system_default: Bawaan sistem
+  testing: Menguji...
+  true_label: Benar
+  unknown: Tidak diketahui
+  unknown_error: Kesalahan tidak diketahui
+  untitled: Tanpa judul
+  uploading: Mengunggah...
+  verifying: Memverifikasi...
+  view: Lihat
+  view_dataset: Lihat dataset
+  voice: Suara
+  audio_resume: Lanjutkan
+  audio_stop: Berhenti
+  audio_pause: Jeda
+  email_features_unavailable: Fitur akun berbasis email tidak tersedia.
+  ai_models: Model AI
+  ai_timeout_label: Waktu AI maksimum
+  ai_max_tokens_label: Token output maksimum
+  ai_temperature_label: Suhu
+  probe_timeout_label: Batas waktu tes model (detik)
+  connect_timeout_label: Batas waktu koneksi (detik)
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: Tutup
+    pitch_label: 'Nada: {0}'
+    reset_to_defaults: Atur ulang ke default
+    speed_label: 'Kecepatan: {0}x'
+    system_default: Bawaan sistem
+    title: Pengaturan Audio
+    voice: Suara
+  example_user_badge: Pengguna Contoh
+  example_user_badge_tooltip: Daftar untuk akses penuh
+  example_user_banner:
+    message: Anda sedang melihat sistem dalam mode hanya-baca. Daftar untuk akses penuh untuk membuat dan mengubah sumber daya.
+    message_short: Mode hanya-baca - Daftar untuk akses penuh
+    register_button: Daftar untuk Akses Penuh
+    register_short: Daftar
+    title: MODE PENGGUNA CONTOH
+  feature_gate:
+    upgrade_message: Fitur ini memerlukan lisensi korporat. Hubungi Sentuny untuk opsi peningkatan.
+    upgrade_title: Fitur Korporat
+  group_admin_badge: Admin Grup
+  preparation_preview:
+    more_columns: +{0} lainnya
+    null_value: 'null'
+    rows_removed: '{0} dihapus'
+  readonly_wrapper:
+    message: Mode hanya-baca - Daftar untuk akses penuh untuk mengubah konten ini
+  return_banner:
+    link: Kembali ke sesi Anda
+    text: Anda sedang mengerjakan resep AI.
+    recipe_link: Kembali ke resep Anda
+    recipe_text: Anda sedang mengerjakan sebuah resep.
+    fallback_link: Kembali
+  data_value:
+    some_content_not_shown: Beberapa konten tidak ditampilkan
+database:
+  connection:
+    add_first: Tambahkan koneksi pertama Anda
+    add_new: Tambah Koneksi Baru
+    add_success: Koneksi berhasil ditambahkan
+    add_title: Tambah Koneksi Baru
+    auto_create_tables: Buat otomatis dataset tabel
+    auto_create_title: Buat Dataset Secara Otomatis
+    auto_create_views: Buat otomatis dataset view
+    auto_create_warnings_title: 'Koneksi disimpan, tetapi pembuatan dataset otomatis memiliki peringatan:'
+    browse_tables: Telusuri Tabel
+    by_label: oleh
+    clear_default: Hapus Default
+    currently_not_shared: ❌ Saat ini tidak dibagikan
+    currently_shared: ✅ Saat ini dibagikan dengan grup
+    database_label: Nama Database
+    datasets_created: '{n} dataset dibuat'
+    db_create_badge: Pembuatan DB
+    default_badge: Default
+    default_cleared: Koneksi default dihapus
+    default_set: Koneksi default diperbarui
+    delete_button: Hapus
+    delete_confirmation: Apakah Anda yakin ingin menghapus koneksi
+    delete_error: Gagal menghapus koneksi
+    delete_title: Hapus Koneksi
+    deleted: Koneksi dihapus
+    edit_title: Edit Koneksi
+    file_path_label: Jalur File
+    form_description: Masukkan detail koneksi database Anda.
+    group_label: Grup
+    host_label: Host
+    jet_host_label: Host Jet Server
+    jet_port_label: Port Jet Server
+    load_error: Gagal memuat koneksi
+    name_label: Nama Koneksi
+    name_placeholder: mis., DB Produksi
+    no_connections: Belum ada koneksi database yang disimpan.
+    not_found: Koneksi tidak ditemukan
+    password_label: Kata Sandi
+    port_label: Port
+    save_error: Gagal menyimpan koneksi
+    select_type: Pilih jenis
+    set_default: Tetapkan sebagai Default
+    shared_badge: Dibagikan
+    shared_description: Jadikan koneksi ini tersedia untuk pengguna lain di grup Anda.
+    shared_label: Bagikan ke grup
+    shared_readonly: Dibagikan
+    shared_readonly_message: Koneksi ini dibagikan kepada Anda. Anda dapat melihatnya, tetapi pengeditan dibatasi hanya untuk pemilik.
+    tables_badge: Tabel
+    test_button: Uji Koneksi
+    test_failed: Koneksi gagal
+    test_incomplete: Harap isi semua kolom sebelum menguji
+    test_network_error: Kesalahan jaringan saat menguji koneksi.
+    test_success: Koneksi berhasil!
+    type_label: Jenis Database
+    unknown_user: Tidak diketahui
+    update_success: Koneksi berhasil diperbarui
+    username_label: Nama Pengguna
+    probe_state:
+      unreachable: Tidak dapat dijangkau
+      auth_failed: Autentikasi gagal
+      no_database: Tidak ada database
+      unknown: Belum diperiksa
+      incomplete: Pengaturan tidak lengkap
+      reachable: Dapat dijangkau
+      schema_error: Skema tidak dapat dibaca
+      no_permission: Tidak ada izin
+    probe_check_failed: Tidak dapat memeriksa koneksi saat ini.
+    probe_unsaved_hint: Koneksi diuji setelah disimpan.
+    probe_never: Tidak pernah
+    probe_minute_ago: 1 menit yang lalu
+    probe_checked: Diperiksa
+    probe_last_succeeded: Terakhir berhasil
+    probe_title: Pemeriksaan terakhir
+    probe_just_now: baru saja
+    probe_check_now: Periksa sekarang
+    probe_no_success: tidak ada pemeriksaan berhasil yang tercatat
+    probe_auto_hint: Diperbarui secara otomatis saat daftar koneksi dimuat.
+    probe_hour_ago: 1 jam yang lalu
+    probe_hours_ago: '{count} jam yang lalu'
+    probe_minutes_ago: '{count} menit yang lalu'
+  default_hint: Koneksi default digunakan sebagai cadangan ketika resep analisis tidak menentukan koneksi.
+  title: Pengaturan Database
+datasets:
+  all_datasets: Semua Data
+  browse:
+    back: Kembali
+    browse_tables: Telusuri Tabel
+    column: Kolom
+    columns_title: Kolom — {table}
+    connections: Koneksi
+    load_columns_error: Gagal memuat kolom
+    load_preview: Muat Pratinjau
+    load_preview_error: Gagal memuat pratinjau
+    load_tables_error: Gagal memuat tabel
+    nullable: Nullable
+    preview: Pratinjau
+    preview_hint: Klik "Muat Pratinjau" untuk melihat baris contoh.
+    select_table_hint: Pilih tabel untuk melihat kolom dan pratinjau datanya.
+    tables: Tabel
+    tables_count: '{count} tabel'
+    type: Jenis
+  by_label: oleh
+  created_label: Dibuat
+  database_label: DB
+  define_button: Hubungkan Database
+  define_first: Hubungkan database
+  delete:
+    confirm: Hapus dataset ini?
+    error: Gagal menghapus dataset
+    success: Dataset '{id}' berhasil dihapus.
+    title: Hapus
+  description:
+    empty: Deskripsi yang dihasilkan kosong. Silakan periksa konfigurasi penyedia AI.
+    error: Gagal menghasilkan deskripsi.
+    generated: Deskripsi berhasil dibuat.
+    title: Deskripsi yang Dihasilkan
+  detail:
+    created: Dibuat
+    descriptions: Deskripsi AI
+    generated: Dihasilkan
+    load_error: Gagal memuat dataset
+    model: Model
+    no_description: Tidak ada deskripsi
+    not_found: Dataset tidak ditemukan
+    not_found_message: Dataset yang Anda cari tidak dapat ditemukan.
+    overview: Ringkasan
+    rows: Baris
+    rows_not_computed: Belum dihitung
+    materialize_failed: 'Tabel tersimpan tidak dapat dibuat:'
+    storage_live: Tampilan langsung
+    rows_not_computed_hint: Join belum dijalankan, jadi belum ada jumlah baris.
+    storage_table: Tabel tersimpan
+  list_error: Gagal memuat dataset
+  no_datasets: Tidak ada data yang tersedia.
+  no_uploaded: Belum ada dataset yang diunggah.
+  preparation:
+    add_operation: Tambah Operasi
+    add_rule: Tambah Aturan
+    column_required: Operasi memerlukan kolom
+    columns_required: Operasi memerlukan setidaknya satu kolom
+    delete_confirmation: Apakah Anda yakin ingin menghapus aturan transformasi "{name}"? Ini juga akan menghapusnya dari resep mana pun yang menggunakannya.
+    delete_error: Gagal menghapus aturan transformasi
+    delete_title: Hapus Aturan Transformasi
+    edit_rule: Edit Aturan
+    encode:
+      label: Label
+      one_hot: One-Hot
+    fill:
+      constant: Konstanta
+      drop: Hapus
+      mean: Rata-rata
+      median: Median
+      mode: Modus
+    filter_invalid: Operasi filter memerlukan kolom dan nilai
+    link:
+      description: Bersihkan dan transformasikan dataset ini
+      title: Transformasi
+    name_required: Nama aturan wajib diisi
+    new_name_required: Operasi ganti nama memerlukan nama baru
+    new_rule: Aturan Baru
+    no_rules: Tidak ada aturan transformasi yang ditentukan untuk dataset ini.
+    operation:
+      convert_type: Ubah Tipe
+      drop_columns: Hapus Kolom
+      encode: Enkode
+      fill_missing: Isi Data Hilang
+      filter: Filter
+      normalize: Normalisasi
+      rename_column: Ganti Nama Kolom
+      standardize: Standarisasi
+    operations: Operasi
+    operations_count: operasi
+    operator:
+      after: Sesudah (>)
+      before: Sebelum (<)
+      contains: Mengandung
+      ends_with: Diakhiri dengan
+      equal_to: Sama dengan (=)
+      greater_than: Lebih besar dari (>)
+      greater_than_or_equal: Lebih besar dari atau sama dengan (>=)
+      less_than: Kurang dari (<)
+      less_than_or_equal: Kurang dari atau sama dengan (<=)
+      not_contains: Tidak mengandung
+      not_equal: Tidak sama dengan (!=)
+      on_or_after: Pada atau setelah (>=)
+      on_or_before: Pada atau sebelum (<=)
+      starts_with: Dimulai dengan
+    original_data: Data Asli
+    placeholder:
+      boolean: benar / salah
+      datetime: YYYY-MM-DD atau timestamp...
+      number: Masukkan angka...
+      value: Masukkan nilai...
+    preview: Pratinjau
+    preview_error: Gagal mempratinjau aturan
+    preview_title: Pratinjau
+    rows_after: Sesudah
+    rows_before: Sebelum
+    rows_removed: Dihapus
+    rule_created: Aturan persiapan '{name}' berhasil dibuat.
+    rule_deleted: Aturan persiapan berhasil dihapus.
+    rule_description: Deskripsi (opsional)
+    rule_description_placeholder: Deskripsi singkat
+    rule_name: Nama Aturan
+    rule_name_placeholder: mis., Bersihkan untuk Analisis
+    rule_updated: Aturan persiapan berhasil diperbarui.
+    rules_title: Aturan Transformasi
+    save_error: Gagal menyimpan aturan transformasi
+    shared: Bagikan dengan grup
+    transformed_data: Data Hasil Transformasi
+    type:
+      boolean: Boolean
+      datetime: DateTime
+      numeric: Numerik
+      string: String
+    ui:
+      column: kolom
+      columns: kolom (dipisahkan koma)
+      encoding: pengkodean
+      method: metode
+      new_name: nama baru
+      operator: operator
+      target_type: tipe target
+      type: Tipe
+      value: nilai
+  rules_button: Aturan
+  schema:
+    column_name: Kolom
+    column_type: Tipe
+    columns: Kolom
+    load_error: 'Tidak dapat memuat skema: {error}.'
+    no_sample_data: Tidak ada data sampel tersedia
+    null_count: 'Null'
+    sample_data: Contoh Data (5 baris pertama)
+    title: Pratinjau Skema
+    total_columns: Total Kolom
+    total_rows: Total Baris
+    unique_count: Unik
+  share: Bagikan
+  share_error: Gagal memperbarui pembagian
+  shared: Dataset dibagikan
+  shared_badge: Dibagikan
+  source:
+    unknown_file: File tidak dikenal
+  title: Data Saya
+  transform_button: Transformasi
+  transforms:
+    back: Kembali ke Data Saya
+    create_button: Buat
+    create_error: Gagal membuat transformasi
+    create_new: Transformasi Baru
+    created_label: Dibuat
+    creating: Membuat…
+    delete_confirm: Hapus transformasi ini?
+    delete_error: Gagal menghapus transformasi
+    description_label: Deskripsi (opsional)
+    for: Transformasi untuk {name}
+    load_error: Gagal memuat transformasi
+    name_label: Nama
+    no_transforms: Tidak ada transformasi yang didefinisikan untuk dataset ini.
+    operations_label: '{count} operasi'
+    title: Transformasi
+  type:
+    table: Tabel
+    upload: Diunggah
+    view: Tampilan
+    virtual: Virtual
+    mysql: MySQL
+    access: MS Access
+    notebook: Notebook
+    postgresql: PostgreSQL
+    mssql: MS SQL
+    cleaned_copy: Salinan bersih
+  unknown_user: Tidak Diketahui
+  unshare: Batalkan Berbagi
+  unshared: Dataset tidak dibagikan
+  upload:
+    card_title: Unggah dan Deskripsikan
+    connection_not_found: Koneksi tidak ditemukan. Silakan pilih koneksi AI yang valid.
+    description_label: Deskripsi (opsional)
+    description_placeholder: Deskripsi singkat data ini
+    error: Gagal mengunggah dataset.
+    file_label: File
+    file_selected: File yang dipilih
+    file_too_large: File melebihi ukuran unggah maksimum {max}MB. Unggahan tidak diizinkan.
+    generate_description: Hasilkan Deskripsi
+    history: Riwayat Unggahan
+    limit_reached: Batas tercapai
+    limit_reached_message: Anda telah mencapai jumlah maksimum dataset yang diizinkan ({count}).
+    name_label: Nama Data
+    name_placeholder: Data Saya
+    no_connections: Anda perlu menentukan setidaknya satu koneksi AI untuk membuat deskripsi.
+    no_datasets: Belum ada dataset
+    no_file: Silakan pilih file terlebih dahulu.
+    no_name: Silakan masukkan nama dataset.
+    select_dataset: Silakan unggah atau pilih dataset terlebih dahulu.
+    shared_description: Jadikan data ini tersedia untuk pengguna lain di grup Anda.
+    shared_group_hint: 'Grup: {group} - {description}'
+    shared_label: Bagikan ke grup
+    success: Dataset '{name}' berhasil diunggah
+    title: Unggah Data
+    upload_button: Unggah
+    escalation_failed_at: Deskripsi kehabisan waktu setelah {seconds} detik.
+    escalation_label: Coba lagi dengan (detik)
+    escalation_retry: Coba lagi
+    escalation_invalid: Masukkan bilangan bulat detik antara 1 dan {max}
+    escalation_hint: Hanya percobaan ini yang menggunakannya. Jika model ini biasanya membutuhkan waktu lebih lama, setel pengaturan model koneksi alih-alih menaikkan nilai ini setiap kali.
+  upload_button: Unggah Data
+  upload_count: '{count} unggahan'
+  upload_first: Unggah file data pertama Anda
+  upload_first_file: Unggah File Pertama Anda
+  upload_new: Unggah File Baru
+  uploaded_title: Data yang Diunggah
+  view_dataset_title: Lihat dataset
+  view_schema: Lihat Skema
+  filter:
+    label: Filter
+    postgresql: PostgreSQL
+    virtual: Virtual
+    not_shared: Tidak Dibagikan
+    mssql: MS SQL
+    cleaned: Dibersihkan
+    all: Semua
+    shared: Dibagikan
+    access: MS Access
+    notebooks: Notebook
+    uploads: Unggahan
+    mysql: MySQL
+    no_match: Tidak ada dataset yang cocok dengan filter ini.
+  created_from: Dibuat dari {name}
+  source_unavailable: sumber tidak tersedia
+  cleaned_badge: Dibersihkan
+  table_not_built: Tabel tidak dibuat.
+define:
+  column_name: Kolom
+  column_type: Tipe
+  connection_label: Koneksi Database
+  dataset_name: Nama Dataset
+  dataset_name_placeholder: mis., Data Pelanggan
+  description_label: Deskripsi (opsional)
+  description_placeholder: Deskripsi singkat dataset ini
+  existing_none: Tidak Ada
+  existing_title: Sudah Ada
+  go_to_db_settings: Buka Pengaturan Database
+  load_connections_error: Gagal memuat koneksi
+  load_sources_error: Gagal memuat sumber
+  name_required: Nama dataset wajib diisi
+  no_connections_message: Anda perlu menentukan setidaknya satu koneksi database sebelum dapat menghubungkan database.
+  no_sources: Tidak ada tabel atau tampilan yang ditemukan di database ini.
+  nullable: Boleh Null
+  preview_label: Pratinjau Data (10 baris pertama)
+  save_button: Simpan Dataset
+  save_error: Gagal membuat dataset
+  save_success: Dataset berhasil dibuat
+  schema_label: Skema
+  select_connection: Pilih koneksi
+  select_source: Pilih sumber
+  select_source_first: Silakan pilih tabel atau tampilan terlebih dahulu
+  shared_description: Jadikan dataset ini tersedia untuk pengguna lain di grup Anda.
+  shared_label: Bagikan ke grup
+  source_label: Sumber
+  source_type_label: Tipe Sumber
+  step1_description: Pilih koneksi database untuk menghubungkan dataset.
+  step1_title: Pilih Koneksi Database
+  step2_description: Pilih apakah akan menggunakan tabel atau view, lalu pilih sumbernya.
+  step2_title: Pilih Sumber
+  step3_description: Tinjau kolom dan pratinjau data dari sumber yang dipilih.
+  step3_title: Verifikasi Sumber
+  step4_description: Beri nama dan deskripsi dataset Anda, lalu simpan.
+  step4_title: Beri Nama dan Simpan
+  step_connection: Koneksi
+  step_save: Simpan
+  step_source: Sumber
+  step_verify: Verifikasi
+  table: Tabel
+  title: Hubungkan Database
+  verify_button: Verifikasi Sumber
+  verify_error: Gagal memverifikasi tabel/view
+  verify_success: Tabel/view berhasil diverifikasi
+  view: View
+demo:
+  badge: DEMO
+  banner:
+    message: Ini adalah sistem demonstrasi. Data dapat diatur ulang secara berkala.
+    title: ⚠️ MODE DEMO
+forgot_password:
+  back_to_login: Kembali ke Login
+  check_spam: Silakan periksa folder spam Anda jika email tidak muncul dalam beberapa menit.
+  description: Masukkan alamat email Anda dan kami akan mengirimkan tautan untuk mengatur ulang kata sandi Anda.
+  error: Gagal mengirim email reset
+  sent: Jika ada akun dengan email ini, Anda akan menerima tautan reset kata sandi.
+  sent_description: Jika ada akun dengan email ini, Anda akan menerima tautan reset kata sandi.
+  sent_title: Email Terkirim
+  submit: Kirim Tautan Reset
+  title: Lupa Kata Sandi
+global:
+  demo_mode:
+    description: Saat diaktifkan, sistem berjalan dalam mode demo.
+    label: Mode Demo
+  email_sender:
+    hint: Alamat email yang akan tampak sebagai pengirim email verifikasi.
+    label: Alamat Pengirim Email
+  email_timeout:
+    hint: Berapa jam tautan verifikasi email tetap berlaku.
+    label: Batas Waktu Verifikasi Email (jam)
+  grace_period:
+    hint: Jam sebelum akun yang terhapus sementara dihapus secara permanen.
+    label: Penundaan Penghapusan (jam)
+  invalid_grace_period: Masukkan angka positif yang valid untuk penundaan penghapusan (jam)
+  invalid_number: Masukkan angka positif yang valid untuk pendaftaran maksimum
+  invalid_timeout: Masukkan angka positif yang valid untuk batas waktu verifikasi (jam)
+  load_error: Gagal memuat pengaturan global
+  max_registrations:
+    custom: Kustom (masukkan di bawah)
+    custom_placeholder: Masukkan angka positif
+    hint: Tetapkan batas jumlah pengguna yang dapat mendaftar.
+    label: Pendaftaran Pengguna Maksimum
+    placeholder: Pilih batas
+    unlimited: Tidak Terbatas
+    users: pengguna
+  password_policy:
+    custom: Kustom
+    high: Tinggi (min 10, huruf besar, huruf kecil, angka, karakter khusus)
+    hint: Pilih persyaratan kompleksitas kata sandi untuk pendaftaran pengguna dan perubahan kata sandi.
+    label: Kebijakan Kata Sandi
+    low: Rendah (min 6 karakter)
+    medium: Sedang (min 8, huruf besar, huruf kecil, angka)
+    min_length: Panjang Minimum
+    min_strength: Kekuatan Minimum (skor zxcvbn 0-4)
+    require_digit: Wajib Ada Angka
+    require_lowercase: Wajib Ada Huruf Kecil
+    require_special: Wajib Ada Karakter Khusus
+    require_uppercase: Wajib Ada Huruf Besar
+    select: Pilih kebijakan
+  public_url:
+    hint: URL dasar yang digunakan dalam tautan verifikasi email (mis., https://workbench.example.com).
+    label: URL Publik
+  save_button: Simpan Pengaturan Global
+  save_success: Pengaturan global disimpan
+  system:
+    description: Kelola pengaturan global yang berlaku untuk semua pengguna (khusus admin).
+    title: Konfigurasi Sistem
+  title: Pengaturan Global
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Jumlah maksimum dataset per pengguna (0 = tidak terbatas). Diterapkan untuk pengguna baru.
+    count_unlimited: Tidak Terbatas
+    default_count_label: Jumlah Unggahan Maksimum Bawaan per Pengguna
+    default_size_label: Ukuran Unggahan Maksimum Bawaan per Pengguna (MB)
+    select_count: Pilih batas
+    select_size: Pilih batas
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: Total penyimpanan maksimum per pengguna (0 = tidak terbatas). Diterapkan untuk pengguna baru.
+    size_unlimited: Tidak Terbatas
+  welcome:
+    hint: Pesan ini akan muncul di halaman login. Kosongkan untuk menyembunyikannya.
+    label: Pesan Selamat Datang
+    placeholder: Masukkan pesan selamat datang untuk ditampilkan di halaman login.
+home:
+  welcome_placeholder: Selamat Datang di Statisticians Workbench
+licence:
+  admin_required: Anda harus menjadi admin untuk melihat informasi lisensi.
+  delete_button: Hapus Lisensi
+  delete_confirm: Ini akan mengembalikan sistem ke mode open-source. Semua fitur yang dibatasi akan dinonaktifkan. Anda dapat memulihkannya dengan memasang lisensi baru.
+  delete_error: Gagal menghapus lisensi.
+  delete_no: Batal
+  delete_success: Lisensi dihapus. Berjalan dalam mode open-source.
+  delete_title: Hapus Lisensi
+  delete_yes: Ya, hapus lisensi
+  description: Informasi lisensi fitur dan tier saat ini.
+  details_label: Detail Lisensi
+  expires_at_label: Kedaluwarsa
+  features_label: Fitur yang Diaktifkan
+  install_button: Pasang Lisensi
+  install_error: Gagal memasang lisensi.
+  install_no_file: Tidak ada file yang dipilih.
+  install_success: Lisensi berhasil dipasang.
+  issued_at_label: Diterbitkan
+  issued_to_label: Diterbitkan kepada
+  load_error: Gagal memuat informasi lisensi.
+  max_users_label: Pengguna berlisensi
+  no_features: Tidak ada fitur yang dibatasi yang sedang aktif.
+  open_source_message: Instalasi ini berjalan dalam mode open-source. Hubungi Sentuny untuk meningkatkan ke lisensi korporat.
+  preview_error: Gagal memvalidasi file lisensi.
+  preview_invalid: File lisensi tidak valid.
+  preview_title: Pratinjau Lisensi
+  tier_label: Tier
+  title: Status Lisensi
+  upload_title: Unggah File Lisensi
+login:
+  account_deleted: Akun ini telah dihapus.
+  description: Masuk ke akun Anda
+  docs_more_info: memiliki informasi lebih lanjut
+  email: Email
+  email_not_verified: Email belum diverifikasi. Silakan periksa kotak masuk dan folder SPAM Anda.
+  email_verified: Email berhasil diverifikasi! Anda sekarang dapat masuk.
+  forgot_password: Lupa kata sandi?
+  invalid_credentials: Email atau kata sandi tidak valid.
+  invalid_token: Tautan verifikasi tidak valid. Silakan minta yang baru.
+  missing_token: Tidak ada token verifikasi yang diberikan.
+  no_account: Belum punya akun?
+  password: Kata sandi
+  register_link: Daftar
+  resend_link: Kirim ulang email verifikasi?
+  signing_in: Sedang masuk...
+  submit: Masuk
+  success: Berhasil masuk
+  title: Masuk
+  token_expired: Tautan verifikasi telah kedaluwarsa. Silakan minta yang baru.
+nav:
+  about: Tentang
+  admin: Admin
+  admin_groups: Deskripsi Grup
+  admin_licence: Lisensi
+  admin_panel: Manajemen Pengguna
+  admin_providers: Penyedia AI
+  admin_setup: Penyiapan
+  admin_setup_internal: Internal
+  admin_setup_limits: Batas
+  admin_setup_options: Opsi
+  admin_visualization_types: Jenis Visualisasi
+  ai_analysis_rules: Editor Resep
+  ai_chat: Alat AI
+  ai_database_design: Desain basis data
+  ai_dataset_cleaning: Pembersihan dataset
+  ai_general: Umum
+  ai_virtual_datasets: Dataset Virtual
+  home: Beranda
+  logout: Keluar
+  user: Pengguna
+  ai_testing: Pengujian AI
+  admin_setup_tuning: Penyetelan
+notebooks:
+  and_more: +{count} lainnya
+  cant_create_tables: Koneksi ini tidak dapat membuat tabel — impor ditolak
+  cells_label: 'Sel:'
+  connection_create_db_badge: Pembuatan DB
+  connection_form_label: Koneksi
+  connection_tables_badge: Tabel
+  connection_unavailable: Koneksi basis data tidak ditemukan atau tidak dapat diakses
+  create_dataset: Buat dataset secara otomatis
+  create_new_database: Buat basis data baru
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrame:'
+  dataset_created: Dataset dibuat
+  delete_confirm: Hapus impor "{name}" dan semua tabelnya?
+  delete_failed: Gagal menghapus impor
+  delete_title: Hapus impor
+  detected_dataframes: 'DataFrame yang terdeteksi:'
+  doc_preview: 'Pratinjau Dokumentasi:'
+  example_banner: Anda sedang melihat sebagai pengguna contoh. Daftar untuk mengimpor dan mengelola notebook.
+  example_blocked: Pengguna contoh tidak dapat mengimpor notebook.
+  example_register: Daftar
+  fetch_error: Gagal mengambil impor
+  import_button: Impor Notebook
+  import_complete: Impor Selesai
+  import_deleted: Impor dihapus
+  import_failed: 'Impor notebook gagal: {error}.'
+  import_success: Berhasil mengimpor {count} tabel
+  import_title: Impor Jupyter Notebook
+  imported_at_label: 'Diimpor pada:'
+  importing: Mengimpor...
+  kb_unit: KB
+  kernel_label: 'Kernel:'
+  list_title: Impor Notebook
+  no_dataframes: Tidak ada DataFrame ditemukan di notebook ini.
+  no_imports: Belum ada impor notebook.
+  notebook_label: 'Notebook:'
+  parse_error: Gagal mengurai notebook.
+  parsing: Mengurai...
+  preview_button: Pratinjau
+  rows_cols_format: '{rows} baris × {cols} kolom'
+  run_preview_first: Jalankan Pratinjau untuk melihat apa yang akan diimpor.
+  sanitised_notice: Sel kode telah dihapus demi keamanan. Hanya keluaran data dan markdown yang dipertahankan.
+  select_connection: Pilih koneksi database
+  select_connection_placeholder: Pilih koneksi...
+  select_file_first: Silakan pilih file .ipynb
+  share_error: Hanya pemilik yang dapat mengubah pengaturan berbagi.
+  share_label: Bagikan ke grup
+  shared: Notebook dibagikan ke grup
+  shared_badge: Dibagikan
+  size_label: 'Ukuran:'
+  step1_title: 'Langkah 1: Pilih File'
+  step2_title: 'Langkah 2: Pratinjau'
+  storage_form_label: Penyimpanan
+  storage_label: 'Penyimpanan:'
+  table_count: '{count} tabel'
+  tables_created_label: 'Tabel dibuat:'
+  title_label: 'Judul:'
+  unshared: Notebook tidak dibagikan
+  table_name: 'Tabel: {name}'
+password:
+  strength:
+    fair: Cukup
+    good: Baik
+    strong: Kuat
+    weak: Lemah
+preparation:
+  add_operation: Tambah Operasi
+  after: Setelah
+  back_to_list: Kembali ke aturan
+  before: Sebelum
+  cancel: Batal
+  col:
+    categorical: kategorikal
+    datetime: datetime
+    nulls: '{percent}% null'
+    numeric: numerik
+  cols: kolom
+  column_label: Kolom
+  constant_value_label: Nilai konstan
+  create_first: Buat transformasi pertama Anda untuk membersihkan dan menyiapkan dataset ini sebelum analisis.
+  delete: Hapus
+  delete_confirm: Hapus aturan "{name}"? Tindakan ini tidak dapat dibatalkan.
+  description_label: Deskripsi (opsional)
+  duplicate: Duplikat
+  duplicate_suffix: (salinan)
+  edit: Edit
+  edit_title: 'Edit Aturan: {name}'
+  encoding:
+    label: Label
+    onehot: One-Hot
+  encoding_param_label: Encoding
+  live_preview: Pratinjau Langsung
+  load_error: Gagal memuat data
+  method:
+    minmax: Min-Max
+    zscore: Z-Score
+  method_label: Metode
+  name_label: Nama
+  name_required: Nama aturan wajib diisi
+  new_name_label: Nama baru
+  new_rule: Aturan Baru
+  new_title: Transformasi Baru
+  no_rules: Belum ada transformasi
+  nulls: 'null'
+  op:
+    convert_type: Konversi Tipe
+    drop_column: Hapus Kolom
+    drop_duplicates: Hapus Duplikat
+    encode_category: Encode Kategori
+    fill_missing: Isi Data Hilang
+    filter: Filter
+    rename_column: Ganti Nama Kolom
+    normalize: Normalkan
+    standardize: Standarkan
+  operations_count: '{count} operasi'
+  operations_label: Operasi
+  operator_label: Operator
+  ops_required: Setidaknya satu operasi diperlukan
+  preview: Pratinjau
+  preview_error: Pratinjau gagal
+  preview_loading: Mempratinjau...
+  preview_no_ops: Tambahkan operasi untuk melihat pratinjau
+  row_impact: '{before} → {after} baris'
+  rows: baris
+  rule_deleted: Aturan dihapus
+  rule_duplicated: Aturan diduplikasi
+  rule_saved: Aturan disimpan
+  rules_for: Aturan untuk {dataset}
+  sample_data: Data sampel
+  save: Simpan Aturan
+  save_error: Gagal menyimpan aturan
+  saving: Menyimpan...
+  schema_error: Gagal memuat skema dataset
+  select_column: -- Pilih kolom --
+  select_type: -- Pilih operasi --
+  strategy:
+    constant: Konstan
+    drop_row: Hapus baris
+    mean: Rata-rata
+    median: Median
+    mode: Modus
+  strategy_label: Strategi
+  target_type_label: Tipe target
+  title: Transformasi — {dataset}
+  type_label: Operasi
+  value_label: Nilai
+profile:
+  change_password:
+    description: Perbarui kata sandi Anda.
+    title: Ubah Kata Sandi
+  change_password_button: Ubah Kata Sandi
+  confirm_password: Konfirmasi Kata Sandi Baru
+  current_password: Kata Sandi Saat Ini
+  current_password_required: Kata sandi saat ini wajib diisi
+  dark_mode_description: Beralih antara tema terang dan gelap.
+  dark_mode_label: Mode Gelap
+  email_label: Email
+  email_notifications_description: Terima pembaruan email tentang akun Anda.
+  email_notifications_label: Notifikasi Email
+  email_unchangeable: Email tidak dapat diubah
+  example_user_language_hint: Daftar untuk akses penuh guna mengubah preferensi bahasa Anda.
+  example_user_name_hint: Daftar untuk akses penuh guna mengubah nama Anda.
+  example_user_notifications_hint: Daftar untuk akses penuh guna mengubah pengaturan notifikasi.
+  example_user_save_hint: Daftar untuk akses penuh guna menyimpan perubahan.
+  example_user_theme_hint: Daftar untuk akses penuh guna mengubah preferensi tema.
+  group_description: Deskripsi
+  group_id: ID Grup
+  group_info_title: Informasi Grup
+  group_load_error: Gagal memuat info grup
+  group_readonly_hint: Grup Anda ditetapkan oleh administrator dan tidak dapat diubah di sini.
+  language_description: Pilih bahasa pilihan Anda untuk antarmuka.
+  language_label: Bahasa
+  language_select_placeholder: Pilih bahasa
+  languages_load_error: Gagal memuat bahasa
+  load_error: Gagal memuat pengaturan
+  name_label: Nama
+  name_placeholder: Nama Anda
+  new_password: Kata Sandi Baru
+  password_change_failed: Gagal mengubah kata sandi
+  password_changed: Kata sandi berhasil diubah
+  password_disabled: Perubahan kata sandi dinonaktifkan untuk pengguna contoh
+  password_disabled_message: Anda masuk sebagai Pengguna Contoh. Fungsi kata sandi dinonaktifkan.
+  password_mismatch: Kata sandi baru tidak cocok
+  personal:
+    description: Perbarui informasi pribadi dan preferensi aplikasi Anda.
+    title: Profil & Preferensi
+  save_button: Simpan Perubahan
+  save_error: Gagal menyimpan profil
+  save_success: Profil disimpan
+  title: Pengaturan Profil
+  update_error: Gagal memperbarui profil
+  slow_threshold:
+    save: Simpan batas
+    seconds: detik
+    description: Tes model yang berlangsung lebih lama dari ini dilaporkan sebagai terlalu lambat. Biarkan kosong untuk menggunakan bawaan situs.
+    saved: Batas model lambat disimpan
+    effective: 'Saat ini berlaku:'
+    label: Batas saya
+    placeholder: Gunakan bawaan situs
+    title: Ambang batas model lambat
+    invalid: Batas harus berupa bilangan bulat detik, minimal 1
+recipes:
+  add_rule: Tambah Aturan
+  algorithm:
+    dependent_column: Variabel dependen
+    factor_column: Faktor (kategorikal)
+    group_by: Kelompokkan berdasarkan
+    independent_columns: Variabel independen
+    placeholder: Pilih jenis analisis
+    response_column: Respons (numerik)
+  back_to_recipe: Kembali ke Resep
+  by_label: oleh
+  cancel_button: Hentikan
+  cancel_error: Gagal membatalkan eksekusi
+  cancel_success: Eksekusi dibatalkan
+  chart:
+    category: Kategori
+    count: Jumlah
+    value: Nilai
+    x_axis: X
+    y_axis: Y
+  clone: Duplikat
+  clone_button: Duplikat
+  clone_error: Gagal menduplikasi resep
+  clone_success: Resep berhasil diduplikasi
+  clone_suffix: (Salinan)
+  column_type:
+    category: Kategori
+    datetime: Tanggal/Waktu
+    number: Angka
+    text: Teks
+  columns_after: Kolom
+  columns_before: Kolom
+  columns_label: Kolom
+  columns_label_short: Kolom
+  columns_required: Silakan pilih setidaknya satu kolom
+  create_error: Gagal membuat resep
+  create_success: Resep '{name}' berhasil dibuat.
+  dataset:
+    columns_label: Kolom
+    load_error: Gagal memuat dataset
+    loading: Memuat dataset...
+    no_datasets: Tidak ada dataset tersedia
+    placeholder: Pilih dataset
+    rows_label: baris
+  dataset_label: Dataset
+  dataset_required: Silakan pilih dataset
+  delete: Hapus
+  delete_button: Hapus
+  delete_confirmation: Apakah Anda yakin ingin menghapus resep "{name}"? Tindakan ini tidak dapat dibatalkan.
+  delete_title: Hapus Resep
+  description_label: Deskripsi (opsional)
+  description_placeholder: Deskripsi resep ini
+  edit: Edit
+  editor:
+    component_algorithm: Algoritma
+    component_dataset: Dataset / Transformasi
+    component_output: Output
+    create_mode: Buat resep baru — editor hadir di Tahap 3.
+    loading: Memuat resep...
+    name_hint: Nama diperlukan sebelum Anda dapat menyimpan resep.
+    name_placeholder: Nama resep
+    name_required: Nama resep diperlukan.
+    new_recipe_name: Resep Baru
+    placeholder: Ini adalah editor Resep Statistik manual — Resep adalah inti dari Workbench. Antarmuka pengguna manual lebih cepat daripada antarmuka AI, tetapi jika Anda benar-benar tidak yakin apa yang
+      harus dilakukan, Anda mungkin menginginkan Editor Resep AI. Ini juga merupakan tutor statistik... tetapi Anda perlu koneksi AI yang berfungsi diatur di Pengaturan jika Anda ingin menggunakannya. Pilih
+      resep atau buat yang baru.
+    run: Jalankan
+    save: Simpan Resep
+    save_error: Gagal menyimpan resep
+    save_success: Resep disimpan
+  execute: Eksekusi
+  execute_button: Eksekusi
+  execute_error: 'Gagal mengeksekusi resep: {error}.'
+  execute_success: Resep berhasil dieksekusi
+  execution:
+    errors_label: 'Kesalahan:'
+    failed_start: Gagal memulai eksekusi
+    request_failed: Eksekusi gagal
+    results_label: 'Hasil:'
+    rules_count: '{count} aturan persiapan diterapkan.'
+    running: Menjalankan resep…
+    showing_rows: Menampilkan {count} dari {total} baris
+  execution_error: Kesalahan
+  execution_load_error: 'Gagal memuat eksekusi: {error}.'
+  execution_not_found: Eksekusi '{id}' tidak ditemukan.
+  execution_progress: Progres
+  execution_stage_results: Hasil Tahap
+  execution_started: Dimulai
+  execution_status: Status
+  execution_title: Hasil Eksekusi
+  executions_title: Eksekusi Terbaru
+  export_results: Ekspor Hasil
+  go_define: Buka Define
+  go_upload: Buka Unggah
+  group_by_hint: Kelompokkan berdasarkan kolom kategorikal untuk membandingkan statistik antarkelompok
+  group_by_label: Kelompokkan Berdasarkan (opsional)
+  list_load_error: Gagal memuat resep
+  load_datasets_error: 'Gagal memuat dataset: {error}.'
+  load_error: 'Gagal memuat resep: {error}.'
+  load_rules_error: Gagal memuat aturan persiapan
+  loading_schema: Memuat kolom...
+  move_down: Pindahkan ke bawah
+  move_up: Pindahkan ke atas
+  my_recipes: Resep Saya
+  name_label: Nama Resep
+  name_placeholder: mis., Analisis Penjualan
+  name_required: Nama resep diperlukan
+  needs_other_columns: (memerlukan kolom lain)
+  new_button: Resep Baru
+  new_title: Resep Baru
+  no_datasets: Tidak ada dataset ditemukan. Silakan unggah atau definisikan dataset terlebih dahulu.
+  no_datasets_available: Tidak ada dataset yang tersedia. Silakan unggah dataset terlebih dahulu.
+  no_datasets_found: Tidak ada dataset yang tersedia. Unggah dataset terlebih dahulu.
+  no_group: Tidak ada
+  no_group_options: Tidak ada kolom kategorikal yang tersedia untuk pengelompokan
+  no_preparation_rules: Tidak ada aturan persiapan yang tersedia untuk dataset ini.
+  no_recipes: Anda belum membuat resep apa pun.
+  no_schema: Tidak ada skema yang tersedia untuk dataset ini
+  no_stages: Resep harus memiliki setidaknya satu tahap.
+  no_visualisation: Hasil numerik
+  no_visualisation_data: Tidak ada data visualisasi yang tersedia
+  none: Tidak ada
+  output:
+    category_column: Kolom kategori
+    placeholder: Pilih jenis keluaran
+    x_column: Kolom sumbu X
+    y_column: Kolom sumbu Y
+  panel:
+    complete: Siap
+    incomplete: Tidak lengkap
+    my_recipes: Resep Saya
+    new_button: Resep Baru
+    no_recipes: Belum ada resep
+    no_results: Tidak ada resep yang cocok dengan pencarian Anda
+    search: Cari resep...
+    shared_recipes: Dibagikan
+    updated: Diperbarui
+  preparation_rules: Aturan Persiapan (opsional)
+  preparation_rules_applied: Aturan Persiapan Diterapkan
+  preparation_rules_applied_description: Aturan diterapkan dalam urutan yang ditunjukkan di bawah ini sebelum tahap analisis.
+  preparation_rules_applied_title: Aturan Persiapan Diterapkan
+  preparation_rules_description: Pilih aturan untuk diterapkan secara berurutan. Aturan diterapkan secara berurutan.
+  recipe_label: Resep
+  remove_rule: Hapus aturan
+  require:
+    algorithm: Pilih analisis
+    categoryColumn: Pilih kolom kategori untuk {out}
+    dataset: Pilih dataset
+    dependentColumn: Pilih kolom dependen
+    factorColumn: Pilih kolom faktor untuk {algo}
+    first_response: Pilih kolom respons pertama
+    independentColumns: Pilih kolom independen
+    responseColumn: Pilih kolom respons untuk {algo}
+    second_response: Pilih kolom respons kedua
+    xColumn: Pilih kolom X untuk {out}
+    yColumn: Pilih kolom Y untuk {out}
+  rows_after: Baris setelah
+  rows_before: Baris
+  rows_label: Baris
+  rules_applied_label: '{count} aturan diterapkan:'
+  save_button: Simpan Resep
+  schema_error: 'Gagal memuat skema kolom: {error}.'
+  schema_loaded: 'Skema dimuat: {count} kolom ditemukan'
+  select_dataset: Pilih dataset
+  select_group: Pilih kolom untuk dikelompokkan
+  select_rule: Pilih aturan untuk ditambahkan
+  select_rule_placeholder: Pilih aturan
+  select_technique: Pilih teknik
+  select_visualisation: Pilih visualisasi
+  selected: dipilih
+  share:
+    button: Bagikan
+    group_info: Grup {group} — {desc}
+    read_only: Dibagikan oleh {owner} — hanya-baca
+    shared_badge: Dibagikan
+    unshare: Batalkan berbagi
+  shared: dibagikan
+  shared_badge: Dibagikan
+  shared_description: Jadikan resep ini tersedia untuk pengguna lain di grup Anda.
+  shared_group_hint: 'Grup: {group} - {description}'
+  shared_label: Bagikan dengan grup
+  shared_with_group: Dibagikan dengan Grup Anda
+  stage_data_selection: Pemilihan Data
+  stage_number: Tahap {number}
+  stage_preparation: Persiapan Data
+  stage_statistics: Statistik
+  stage_visualisation: Visualisasi
+  stages_title: Tahapan
+  status:
+    cancelled: Dibatalkan
+    completed: Selesai
+    failed: Gagal
+    pending: Tertunda
+    running: Berjalan
+  step1_description: Beri resep Anda nama dan deskripsi.
+  step1_title: Beri Nama Resep Anda
+  step2_description: Pilih dataset dan pilih kolom untuk dianalisis.
+  step2_title: Pilih Data
+  step3_description: Pilih teknik statistik yang akan diterapkan.
+  step3_title: Pilih Analisis
+  step4_description: Tambahkan visualisasi ke resep Anda.
+  step4_title: Visualisasi (Opsional)
+  step_analysis: Analisis
+  step_complete: Langkah {step} selesai
+  step_data: Data
+  step_name: Nama
+  step_visualise: Visualisasikan
+  technique_anova_one_way: ANOVA Satu Arah
+  technique_anova_two_way: ANOVA Dua Arah
+  technique_chi_square: Uji Chi-square
+  technique_correlation: Matriks Korelasi
+  technique_descriptive: Statistik Deskriptif
+  technique_hint: Statistik deskriptif menampilkan ukuran ringkasan seperti rata-rata, median, dan simpangan baku.
+  technique_label: Teknik
+  technique_linear_regression: Regresi Linear
+  technique_t_test_independent: Uji t Independen
+  technique_t_test_paired: Uji t Berpasangan
+  title: Resep Statistik
+  total_rules_applied: Total aturan diterapkan
+  transforms:
+    add: Tambah transformasi
+    label: Transformasi
+    manage_button: Kelola transformasi
+    no_transforms: Tidak ada transformasi diterapkan
+    remove: Hapus
+  unknown_user: Tidak diketahui
+  update_error: 'Gagal memperbarui resep: {error}.'
+  update_success: Resep '{id}' berhasil diperbarui.
+  updated_label: Diperbarui
+  visualisation:
+    columns_label: Kolom
+    data_points: Titik data
+    distribution: Distribusi
+    trend: Tren
+    type_label: Tipe
+  visualisation_area: Diagram Area
+  visualisation_bar: Diagram Batang
+  visualisation_donut: Diagram Donat
+  visualisation_hbar: Batang Horizontal
+  visualisation_hint: Bagan akan dibuat menggunakan kolom data yang dipilih.
+  visualisation_label: Tipe Visualisasi
+  visualisation_line: Diagram Garis
+  visualisation_pie: Diagram Lingkaran
+  visualisation_raw_data: 'Data visualisasi:'
+  visualisation_scatter: Diagram Pencar
+  visualisation_table: Tabel
+  ui:
+    delete_success: Resep dihapus
+    delete_error: Gagal menghapus resep
+  visualisation_histogram: Histogram
+register:
+  confirm_password: Konfirmasi Kata Sandi
+  creating: Membuat akun...
+  description: Buat akun baru
+  email: Email
+  failed: Pendaftaran gagal
+  have_account: Sudah punya akun?
+  language_description: Pilih bahasa pilihan Anda untuk antarmuka.
+  login_link: Masuk
+  name: Nama
+  password: Kata Sandi
+  password_mismatch: Kata sandi tidak cocok
+  submit: Daftar
+  success_with_verification: Akun Anda telah dibuat. Periksa email Anda untuk tautan verifikasi guna mengaktifkan akun Anda.
+  title: Daftar
+  email_failed_use_resend: Registrasi berhasil, tetapi email verifikasi tidak dapat dikirim. Silakan kirim ulang dari halaman login.
+  registration_disabled: Pendaftaran mandiri dinonaktifkan. Silakan hubungi administrator.
+  success_pending_approval: Akun Anda telah dibuat dan menunggu persetujuan administrator. Anda akan dapat masuk setelah disetujui.
+  success_auto_verified: Akun Anda telah dibuat dan siap digunakan. Anda sekarang dapat masuk.
+resend_verification:
+  back_to_login: Kembali ke Masuk
+  check_spam: Silakan periksa folder spam Anda jika Anda tidak melihat email dalam beberapa menit.
+  description: Masukkan alamat email Anda untuk menerima tautan verifikasi baru.
+  error: Gagal mengirim email verifikasi.
+  send_button: Kirim Email Verifikasi
+  sent: Email verifikasi terkirim. Silakan periksa kotak masuk Anda (dan folder spam).
+  sent_description: Jika akun dengan email ini ada, Anda akan menerima tautan verifikasi.
+  sent_title: Email Terkirim
+  title: Kirim Ulang Email Verifikasi
+reset_password:
+  confirm_password: Konfirmasi Kata Sandi Baru
+  description: Masukkan kata sandi baru Anda di bawah ini.
+  failed: Gagal mengatur ulang kata sandi
+  login_button: Ke Halaman Login
+  missing_token: Token reset tidak diberikan
+  new_password: Kata Sandi Baru
+  password_mismatch: Kata sandi tidak cocok
+  submit: Atur Ulang Kata Sandi
+  success: Kata sandi berhasil diatur ulang
+  success_description: Kata sandi Anda telah diatur ulang. Mengalihkan ke halaman login...
+  success_title: Pengaturan Ulang Kata Sandi
+  title: Atur Ulang Kata Sandi
+settings:
+  ai:
+    title: Koneksi AI
+  database:
+    title: Koneksi Database
+  profile:
+    title: Preferensi
+  title: Pengaturan
+setup:
+  internal:
+    description: Diagnostik sistem dan konfigurasi internal. Indikator status hanya-baca.
+    future:
+      cache_config: Konfigurasi cache / sesi
+      debug_logging: Sakelar logging debug / verbose
+      description: Diagnostik tambahan akan ditambahkan pada rilis mendatang.
+      email_transport: Status transport email
+      pool_stats: Statistik pool database
+      title: Segera Hadir
+    licence:
+      description: Tingkat lisensi saat ini dan fitur yang diaktifkan.
+      expiry: Kedaluwarsa
+      features: Fitur yang Diaktifkan
+      issued_to: Diterbitkan Kepada
+      tier: Tingkat Lisensi
+      title: Lisensi & Fitur
+    load_error: Gagal memuat diagnostik sistem
+    system_status:
+      available: Tersedia
+      db_pool: Pool Database
+      description: Indikator kesehatan waktu nyata untuk layanan backend.
+      healthy: Sehat
+      initialized: Diinisialisasi
+      not_initialized: Belum Diinisialisasi
+      not_required: Tidak Diperlukan
+      overall_health: Kesehatan Keseluruhan
+      shared_memory: Memori Bersama
+      title: Status Sistem
+      unavailable: Tidak Tersedia
+      unhealthy: Tidak Sehat
+      version: Versi
+      db_cluster: Klaster Database
+    title: Internal
+  limits:
+    demo_mode:
+      description: Saat diaktifkan, sistem berjalan dalam mode demo — tindakan destruktif diblokir dan indikator ditampilkan di UI.
+      label: Mode Demo
+    description: Kontrol operasional untuk batas sumber daya, waktu tunggu, dan perilaku sistem. Aman untuk disesuaikan kapan saja.
+    email_timeout:
+      hint: Berapa jam tautan verifikasi email tetap berlaku.
+      label: Waktu Tunggu Verifikasi Email (jam)
+    grace_period:
+      hint: Jam sebelum akun yang dihapus sementara dihapus permanen.
+      label: Penundaan Penghapusan (jam)
+    invalid_grace_period: Masukkan angka positif yang valid untuk penundaan penghapusan (jam)
+    invalid_registration_max: Masukkan angka positif yang valid untuk pendaftaran maksimum
+    invalid_timeout: Masukkan angka positif yang valid untuk waktu tunggu verifikasi (jam)
+    load_error: Gagal memuat pengaturan batas
+    max_registrations:
+      hint: Tetapkan batas berapa banyak pengguna yang dapat mendaftar.
+      label: Pendaftaran Pengguna Maksimum
+      placeholder: Pilih batas
+      unlimited: Tidak Terbatas
+      users: pengguna
+    save_button: Simpan Batas
+    save_error: Gagal menyimpan pengaturan batas
+    save_success: Pengaturan batas disimpan
+    title: Batas
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: Jumlah maksimum dataset per pengguna (0 = tidak terbatas). Diterapkan untuk pengguna baru.
+      count_unlimited: Tidak Terbatas
+      default_count_label: Jumlah Unggahan Maksimum Default per Pengguna
+      default_size_label: Ukuran Unggahan Maksimum Default per Pengguna (MB)
+      select_count: Pilih batas
+      select_size: Pilih batas
+      size_100_mb: 100 MB
+      size_10_mb: 10 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_250_mb: 250 MB
+      size_25_mb: 25 MB
+      size_500_mb: 500 MB
+      size_50_mb: 50 MB
+      size_5_mb: 5 MB
+      size_hint: Total penyimpanan maksimum per pengguna (0 = tidak terbatas). Diterapkan untuk pengguna baru.
+      size_unlimited: Tidak Terbatas
+  options:
+    description: Pengaturan saat instalasi yang menentukan identitas dan perilaku deployment ini. Ubah dengan hati-hati — ini memengaruhi semua pengguna.
+    email_sender:
+      hint: Alamat email yang akan tampak sebagai pengirim email verifikasi.
+      label: Alamat Pengirim Email
+    load_error: Gagal memuat pengaturan opsi
+    password_policy:
+      custom: Kustom
+      high: Tinggi (min 10, huruf besar, huruf kecil, angka, karakter khusus)
+      hint: Pilih persyaratan kompleksitas kata sandi untuk pendaftaran pengguna dan perubahan kata sandi.
+      label: Kebijakan Kata Sandi
+      low: Rendah (min 6 karakter)
+      medium: Sedang (min 8, huruf besar, huruf kecil, angka)
+      min_length: Panjang Minimum
+      min_strength: Kekuatan Minimum (skor zxcvbn 0-4)
+      require_digit: Wajib Angka
+      require_lowercase: Wajib Huruf Kecil
+      require_special: Wajib Karakter Khusus
+      require_uppercase: Wajib Huruf Besar
+      select: Pilih kebijakan
+    public_url:
+      hint: URL dasar yang digunakan dalam tautan verifikasi email (mis., https://workbench.example.com).
+      label: URL Publik
+    save_button: Simpan Opsi
+    save_error: Gagal menyimpan pengaturan opsi
+    save_success: Pengaturan opsi disimpan
+    title: Opsi
+    welcome:
+      hint: Pesan ini akan muncul di halaman login. Kosongkan untuk menyembunyikannya.
+      label: Pesan Selamat Datang
+      placeholder: Masukkan pesan selamat datang untuk ditampilkan di halaman login.
+    registration_mode:
+      mode_0: Pendaftaran mandiri terverifikasi otomatis
+      label: Mode Pendaftaran
+      mode_2: Pendaftaran mandiri dan terverifikasi Admin
+      select: Pilih mode pendaftaran
+      mode_4: Pendaftaran mandiri dengan verifikasi email
+      hint: Pilih bagaimana akun pengguna baru dibuat dan diverifikasi.
+      mode_1: Admin membuat pengguna terverifikasi
+  tuning:
+    slow_threshold_hint: Tes model yang berlangsung lebih lama dari ini dilaporkan sebagai terlalu lambat. Pengguna dapat menaikkan batasnya sendiri; tidak ada yang dapat menurunkan batasnya di bawah 1.
+    reset_confirm_title: Atur ulang keenam ini ke bawaannya?
+    ai_timeout_hint: Berapa lama satu permintaan AI boleh berjalan sebelum dibatalkan. Terlalu rendah membuat obrolan gagal diam-diam; terlalu tinggi membuat model yang macet menahan worker. Model lokal
+      pada CPU dapat memerlukan beberapa menit.
+    reset_confirm_action: Atur ulang
+    preamble_detail: Setiap permintaan AI menggunakan nilai ini kecuali ada koneksi yang menimpanya. Mengubah salah satunya memengaruhi setiap model yang tidak memiliki pengaturannya sendiri; itu tidak
+      mengubah koneksi yang sudah Anda setel.
+    ai_section_label: Generasi AI
+    resetting: Mengatur ulang…
+    reset_error: Tidak dapat mengatur ulang pengaturan tuning
+    ai_section_hint: Bawaan untuk setiap permintaan AI. Satu koneksi dan model dapat menimpanya jika penyetelan bersifat khusus untuk pasangan tersebut.
+    invalid_probe_timeout: Batas waktu tes harus berupa bilangan bulat detik, minimal 1 dan maksimal 1200
+    invalid_model_test_seconds: Harap masukkan bilangan bulat detik, minimal 1
+    invalid_temperature: Suhu harus berupa angka dari 0 hingga 2
+    save_error: Tidak dapat menyimpan pengaturan tuning
+    connect_timeout_hint: Berapa lama jaringan boleh memerlukan waktu untuk menerima koneksi sebelum endpoint dianggap tidak dapat dijangkau. Nilai di bawah kebutuhan jaringan mengubah endpoint yang berfungsi
+      menjadi mati.
+    probe_timeout_hint: Berapa lama satu tes kelayakan boleh berjalan. Model yang dihosting di CPU memerlukan hitungan menit, sehingga batas pendek di sini mencatat kegagalan palsu alih-alih menghemat waktu.
+    saved: Pengaturan tuning disimpan
+    seconds: detik
+    reset_done: Pengaturan tuning diatur ulang ke bawaannya
+    saving: Menyimpan…
+    description: Bawaan untuk perilaku AI dan batas waktu. Nilai ini biasanya sudah sesuai apa adanya — pengaturan per pengguna atau per koneksi dapat berbeda, dan nilai di sini adalah yang berlaku jika
+      keduanya tidak ada.
+    invalid_connect_timeout: Batas waktu koneksi harus berupa bilangan bulat detik, minimal 1 dan maksimal 60.
+    invalid_ai_timeout: Batas waktu AI harus berupa bilangan bulat detik, minimal 1
+    load_error: Tidak dapat memuat pengaturan penyetelan
+    ai_max_tokens_hint: Jawaban terpanjang yang dapat dihasilkan oleh satu permintaan. Sebuah deskripsi membutuhkan sekitar 500 token; 4000 memberikan ruang yang cukup.
+    forbidden: Hanya administrator penuh yang dapat mengubah pengaturan ini.
+    ai_temperature_hint: 'Seberapa bervariasi jawabannya: 0 berarti sekonsisten yang dimungkinkan model, 2 berarti paling bervariasi. Nilai di luar 0 hingga 2 ditolak oleh penyedia, bukan oleh sistem ini.'
+    slow_threshold_label: Ambang batas model lambat
+    reset_confirm_body: Setiap nilai di halaman ini kembali ke bawaan awalnya. Override per koneksi tidak terpengaruh. Tindakan ini tidak dapat dibatalkan, dan Anda harus mengatur ulang setiap nilai yang
+      pernah Anda ubah.
+    invalid_max_tokens: Harap masukkan bilangan bulat token, minimal 1
+    ai_tokens: token
+    save: Simpan pengaturan
+tools:
+  all_datasets: Semua Dataset
+  connect_database: Hubungkan Database
+  description: Utilitas tambahan dan alat analisis akan muncul di sini.
+  import_notebook: Impor Notebook
+  manage_data: Kumpulkan Data
+  my_data: Data Saya
+  notebooks: Notebook
+  placeholder: Halaman alat segera hadir.
+  title: Alat Lainnya
+  upload_csv_excel: Unggah CSV / Excel
+  upload_data: Unggah Data
+  uploads_list: Unggahan (csv, Excel)
+  visualize: Sandbox Visualisasi
+transforms:
+  back_to_data: Kembali ke Data Saya
+  back_to_recipe: 'Kembali ke Resep: {name}'
+  connect_error: Gagal menghubungkan transformasi
+  connect_transform: Hubungkan ke resep
+  connected_count: '{count} terhubung'
+  connected_to_recipe: 'Terhubung ke: {name}'
+  delete_button: Hapus
+  delete_confirm: Hapus transformasi ini?
+  delete_success: Transformasi dihapus.
+  description_label: Deskripsi
+  description_placeholder: Deskripsi (opsional)
+  disconnect_error: Gagal memutuskan transformasi
+  disconnect_transform: Putuskan dari resep
+  empty_hint: Operasi diterapkan sesuai urutan daftar saat transformasi dijalankan.
+  empty_state: Tambahkan operasi untuk mulai membangun transformasi Anda.
+  empty_title: Pilih transformasi dari daftar atau buat baru.
+  fill:
+    constant: Konstanta
+    drop_rows: Hapus baris
+    mean: Rata-rata
+    median: Median
+    mode: Modus
+  filter:
+    op_contains: mengandung
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: tidak null
+    op_is_null: 'null'
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'Resep: {name}'
+  load_error: Gagal memuat transformasi
+  name_label: Nama
+  name_placeholder: Nama transformasi
+  name_required: Nama transformasi wajib diisi.
+  new_transform: Transformasi Baru
+  no_search_results: Tidak ada transformasi yang cocok dengan pencarian Anda
+  no_transforms: Tidak ada transformasi yang ditentukan untuk dataset ini.
+  op:
+    add: Tambah Operasi
+    column_placeholder: Pilih kolom
+    empty_hint: Tambahkan operasi untuk mulai membangun transformasi Anda.
+    encoding_label: Label
+    encoding_onehot: One-hot
+    encoding_placeholder: Penyandian
+    method_placeholder: Metode
+    new_name_placeholder: Nama baru
+    operations_label: Operasi
+    operator_placeholder: Operator
+    remove: Hapus
+    target_boolean: Boolean
+    target_datetime: Datetime
+    target_numeric: Numerik
+    target_string: String
+    target_type_placeholder: Tipe target
+    type:
+      convert_type: Konversi tipe
+      drop_column: Hapus kolom
+      drop_duplicates: Hapus duplikat
+      encode_category: Enkode kategori
+      fill_missing: Isi nilai yang hilang
+      filter: Saring baris
+      rename_column: Ganti nama kolom
+      standardize: Standarkan
+      normalize: Normalkan
+    type_placeholder: Tipe operasi
+    value_placeholder: Nilai
+  operations_count: '{count} operasi'
+  operations_heading: Operasi
+  save_button: Simpan
+  save_success: Transformasi disimpan.
+  search_placeholder: Cari transformasi...
+validation:
+  api_key_required: Kunci API diperlukan untuk penyedia ini
+  database_required: Nama database diperlukan
+  host_required: Host diperlukan
+  name_required: Nama koneksi diperlukan
+  password:
+    min_length: Kata sandi harus minimal {min} karakter.
+    require_digit: Kata sandi harus mengandung setidaknya satu angka.
+    require_lowercase: Kata sandi harus mengandung setidaknya satu huruf kecil.
+    require_special: Kata sandi harus mengandung setidaknya satu karakter khusus.
+    require_uppercase: Kata sandi harus mengandung setidaknya satu huruf besar.
+    too_weak: Kata sandi terlalu lemah. Harap pilih kata sandi yang lebih kuat.
+  password_required: Kata sandi diperlukan
+  port_invalid: Port harus antara 1 dan 65535
+  provider_required: Harap pilih penyedia
+  type_required: Harap pilih tipe database
+  username_required: Nama pengguna diperlukan
+verify_email:
+  error_description: Terjadi kesalahan.
+  error_title: Verifikasi Gagal
+  expired_description: Tautan verifikasi telah kedaluwarsa.
+  expired_message: Anda dapat meminta email verifikasi baru di bawah ini.
+  expired_title: Tautan Kedaluwarsa
+  invalid_token: Tautan verifikasi tidak valid.
+  login_button: Lanjutkan ke Login
+  missing_description: Tidak ada token verifikasi yang diberikan.
+  missing_title: Tidak Ada Token Verifikasi
+  network_error: Kesalahan jaringan. Silakan coba lagi.
+  resend_button: Kirim Ulang Email Verifikasi
+  success_description: Email Anda telah berhasil diverifikasi. Mengalihkan ke login...
+  success_title: Email Terverifikasi
+  unknown_error: Terjadi kesalahan.
+virtual:
+  clone: Duplikat
+  deleted: Dataset dihapus
+  draft_badge: Draf
+  edit: Edit
+  error: Terjadi kesalahan
+  existing_none: Tidak ada
+  existing_title: Dataset yang Ada
+  loading: Memuat...
+  more: Lainnya
+  new_chat: Dataset Virtual Baru
+  placeholder: Jelaskan apa yang ingin Anda lakukan...
+  ready_badge: Siap
+  recent_chats: Obrolan Terbaru
+  send: Kirim
+  stage: Tahap
+  title: Dataset Virtual
+  verbose: Verbose
+  welcome: Selamat datang di asisten Dataset Virtual. Jika ini baru bagi Anda, Anda mungkin ingin tahu cara memulai. Minta saya untuk menjelaskan bagaimana ahli statistik menggunakan dataset sebagai input
+    untuk resep analisis, lalu menggunakan keluarannya untuk membuat laporan dan visualisasi. Atau minta saya untuk menelusuri dataset aktual Anda agar kita dapat mulai memilih data darinya untuk digunakan.
+    Katakan saja "halo" jika Anda ragu.
+  preview_title: Pratinjau dataset
+  preview_name: Nama
+  preview_joins: Penggabungan
+  preview_columns: Kolom output
+  preview_sources: Sumber
+  manual:
+    add_join: Tambahkan join
+    save_error: Dataset virtual tidak dapat disimpan.
+    title: Editor dataset virtual
+    joins_hint: Dua sumber atau lebih memerlukan join di antaranya. Satu sumber tidak memerlukannya.
+    intro: Bangun dataset virtual dari kolom yang Anda pilih, atau buka yang sudah ada untuk mengubahnya.
+    load_error: Definisi dataset tersebut tidak dapat dimuat.
+    select_all: Pilih semua
+    tables_error: Tabel tidak dapat dibaca.
+    need_columns: Centang setidaknya satu kolom untuk disertakan.
+    save_success: Dataset virtual disimpan.
+    validate_ok: Definisi valid secara struktural.
+    description_label: Deskripsi dataset
+    new_dataset: Mulai dataset baru
+    bridge_choose_columns: tidak ada kolom yang cocok ditemukan — tambahkan join dan pilih kolomnya
+    select_none: Bersihkan pilihan
+    open_label: Buka dataset yang sudah ada
+    move_down: Pindahkan kolom ini turun satu posisi
+    move_up: Pindahkan kolom ini naik satu posisi
+    update_dataset: Perbarui dataset ini
+    aggregation_note: Agregasi yang dibawa oleh definisi lama dipertahankan apa adanya, tetapi join tidak menerapkannya.
+    bridge_no_columns: kolom belum dibaca — perluas sumber, atau tambahkan join dan pilih kolomnya
+    preview_empty: Join tidak mengembalikan baris apa pun.
+    test_pulls_every_source: Menguji join membaca semua sumber secara penuh, sehingga bisa lambat.
+    preview_rows: '{count} baris dikembalikan'
+    sources_title: Dari mana data berasal
+    materialized_label: Wujudkan hasil
+    name_label: Nama dataset
+    loaded_note: Membuka definisi yang sudah ada — menyimpan akan memperbaruinya.
+    joins_title: Cara sumber digabungkan
+    test_join: Uji join
+    materialized_hint: Membuat tabel alih-alih join langsung. Biarkan nonaktif saat membuat prototipe.
+    incomplete_join: Selesaikan atau hapus join yang belum dipilih kolomnya.
+    no_match: Tidak ada yang cocok dengan filter di sini.
+    bridge: Jembatan
+    open_none: Belum ada dataset virtual untuk dibuka.
+    alias_taken: Alias tersebut sudah digunakan oleh sumber lain.
+    alias_label: Alias
+    loading_columns: Membaca kolom…
+    preview_error: Join tidak dapat dijalankan.
+    validate_errors: 'Definisi memiliki masalah:'
+    need_join: Dua sumber dipilih, tetapi tidak ada yang menggabungkannya.
+    output_hint: Kolom yang akan diekspos oleh dataset ini, secara berurutan.
+    suggested: Disarankan
+    remove_join: Hapus join ini
+    unattached_sources: 'Tidak tergabung dengan yang lain: {sources}. Tambahkan join yang menghubungkannya.'
+    column_placeholder: Pilih kolom
+    columns_error: Kolom tidak dapat dibaca.
+    output_title: Yang diekspos oleh dataset
+    need_name: Beri nama dataset sebelum menyimpan.
+    complete_join: Lengkapi join yang belum selesai
+    sources_hint: Perluas koneksi atau dataset, lalu centang kolom yang akan disertakan.
+    remove: Hapus kolom ini dari output
+    validate: Validasi definisi
+    no_sources: Tidak ada koneksi atau dataset yang tersedia untuk digunakan.
+    loaded_note_shared: Membuka definisi bersama yang sudah ada — hanya baca - tidak ada pembaruan yang diizinkan
+    materialize_done: Tabel dibuat.
+    materialize_failed: 'Disimpan, tetapi tabel tidak dapat dibuat:'
+    materialize_retry: Coba lagi
+  progress_decided: '{decided} dari {total} diputuskan'
+  panel:
+    expand: Tampilkan panel sumber
+    collapse: Lipat panel sumber
+  panel_columns: '{count} kol.'
+  chip_load_error: Pilihan tidak dapat disegarkan, jadi pilihan ini mungkin sudah usang.
+  panel_fold_error: Status panel terlipat tidak dapat disimpan, jadi panel akan terbuka kembali lain kali.
+  panel_tick_no_session: Kirim pesan terlebih dahulu — pohon mencatat tanda centang Anda dalam sesi ini.
+  chip_error: Pilihan tersebut tidak dapat diterapkan.
+  panel_tick_error: Kolom tersebut tidak dapat dicentang.
+  heading_materialised: Live atau materialisasi?
+  heading_choose_columns: Pilih kolom
+  heading_match_columns: Cocokkan kolom-kolom ini
+  heading_choose_table: Pilih tabel
+  suggestion_applied: Diterapkan
+  act:
+    join: Menggabungkan {pair}
+    sources_short: 'Menerima {count} tabel: {tables}'
+    applied: Menerapkan {piece}
+    sources: Menerima {count} tabel
+    named: Menamainya “{name}”
+  confirm_selection: Gunakan ini
+  selection_hint: Hapus centang apa pun yang tidak Anda inginkan, lalu gunakan bersama-sama.
+  joins_unjoined: 'Tidak digabungkan: {tables}'
+  joins_apply: Terapkan
+  joins_hint: Ubah kolom atau jenis penggabungan apa pun, lalu lanjutkan.
+  join_type_label: Jenis penggabungan
+  act_joins: '{count} pasangan digabungkan'
+  joins_coverage: '{connected} dari {total} tabel terhubung'
+  joins_unsaved: Baris-baris ini berbeda dari dataset. Terapkan, atau perbaiki baris kosong terlebih dahulu.
+  name_suggestion_accept: Gunakan nama ini
+  name_suggestion_heading: Nama yang disarankan — ubah jika Anda mau
+visualize:
+  config: Konfigurasi
+  data: Data (JSON)
+  data_placeholder: Tempel data JSON di sini atau buat sampel
+  description: Pilih tipe visualisasi, buat data sampel, sesuaikan parameter, dan pratinjau.
+  download_error: Gagal mengunduh tabel
+  download_png: Unduh sebagai PNG
+  download_success: Tabel diunduh sebagai PNG
+  generate_sample: Buat Sampel
+  invalid_data: Data tidak valid untuk tabel teks. Diharapkan kolom dan baris.
+  load_error: Gagal memuat tipe visualisasi
+  no_data: Tidak ada data untuk divisualisasikan. Buat data sampel atau tempel JSON.
+  no_types: Tidak ada tipe visualisasi yang ditentukan. Harap hubungi administrator.
+  parameters: Parameter
+  preview: Pratinjau
+  sample_expenses: Pengeluaran
+  sample_generated: Data sampel dibuat
+  sample_item: Item
+  sample_sales: Penjualan
+  sample_value: Nilai
+  save_error: Gagal menyimpan
+  save_instance: Simpan Instans
+  save_no_data: Tidak ada data untuk disimpan. Harap buat atau tempel data.
+  save_success: Visualisasi berhasil disimpan
+  select_type: Pilih tipe
+  title: Sandbox Visualisasi
+  type: Tipe Visualisasi
+  unsupported: Tipe visualisasi belum diimplementasikan
+  unsupported_parameter: Tipe tidak didukung

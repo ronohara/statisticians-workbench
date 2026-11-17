@@ -1,0 +1,2246 @@
+about:
+  description: 使用 shadcn/ui 和 Next.js 构建出色的体验。设计简洁，性能快速。
+  fast_desc: 基于 Next.js App Router 构建，以获得最佳性能。
+  fast_title: 快速
+  get_started: 开始使用
+  modern_desc: 来自 shadcn/ui 的可访问组件，采用 Tailwind CSS 进行样式设计。
+  modern_title: 现代 UI
+  secure_desc: 类型安全且可自定义 —— 您拥有组件的代码。
+  secure_title: 安全
+  title: 关于 Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: 返回管理面板
+    cannot_modify_self: 无法修改您自己的帐户
+    delete_confirmation: 确定要删除 {name} 吗？该用户将被软删除，并可由完全管理员恢复。
+    delete_error: 删除用户失败
+    delete_title: 删除用户
+    demote: 降级
+    demote_error: 用户降级失败
+    demote_success: 用户已从组管理员降级
+    description_placeholder: 输入描述
+    description_required: 描述不能为空
+    group_description: 组描述
+    group_users_load_error: 加载组用户失败
+    load_error: 加载组失败
+    load_success: 组加载成功
+    no_users: 此组中未找到用户。
+    promote: 升级
+    promote_error: 用户升级失败
+    promote_success: 用户已升级为组管理员
+    readonly_badge: （只读）
+    readonly_message: 您正以只读模式查看此页面。示例用户无法进行更改。
+    readonly_title: 组管理（只读）
+    select_group: 选择组
+    select_group_placeholder: 选择一个组
+    title: 组管理
+    update_error: 更新组失败
+    update_success: 组描述已更新
+    users_in_group: 组内用户
+  models:
+    comment_placeholder: 输入评论
+    description: 工作台已知的每个模型。启用某个模型会影响提供该模型的每个连接；“服务器”列显示哪些连接可以访问该模型。
+    disabled: 已禁用
+    edit_comment: 编辑评论
+    enabled: 已启用
+    load_models_error: 加载模型失败
+    no_comment: —
+    no_models: 尚无模型。发现操作会从连接中创建模型。
+    not_preferred: 非首选
+    preferred: 首选
+    toggle_error: 更新模型失败
+    update_error: 更新评论失败
+    update_success: 模型已更新
+    fetch_auth_required: 此提供商需要 API 密钥才能列出模型。请改为从“设置 → AI 连接”刷新。
+    fetch_non_standard: 此提供商未提供标准的模型列表 API。请在管理面板中手动添加模型。
+    tuning_timeout_hint: 一次 AI 请求可运行的秒数。本地 CPU 模型可能需要几分钟。
+    search_placeholder: 搜索模型名称
+    tuning_inherited_title: 留空则继承工作台默认值。
+    tuning_load_error: 无法加载 AI 设置。
+    servers_title: 可访问来源
+    tuning_save_error: 无法保存 AI 设置。
+    no_matches: 没有模型符合这些筛选条件。
+    tuning_loading: 正在加载 AI 设置…
+    filter_any: 任何状态
+    filter_test: 能力测试
+    filter_result: 结果
+    model_count: '{count} 个模型'
+    filter_state: 状态
+    tuning_hint: 这些值适用于此连接上使用该模型的所有位置。留空表示继承工作台默认值。
+    tuning_title: 此服务器的 AI 设置
+    tuning_inherited: 已继承
+    no_servers: 尚无连接提供此模型
+    tuning_saved: AI 设置已保存
+    filter_clear: 清除筛选条件
+    tuning_temperature_hint: 较低的值会产生更可重复的回答；较高的值会产生更多样化的回答。
+  providers:
+    code_label: 代码
+    delete_button: 删除
+    delete_confirmation: 确定要删除提供程序“{name}”吗？这将同时删除所有关联的模型，且无法撤消。
+    delete_error: 删除提供程序失败
+    delete_provider: 删除提供程序
+    delete_success: 提供程序已删除
+    delete_title: 删除提供程序
+    description: 启用或禁用 AI 提供程序。已禁用的提供程序将不会出现在用户连接表单中。
+    disabled: 已禁用
+    enabled: 已启用
+    fetch_error: 加载提供程序失败
+    list_title: 所有提供程序
+    local: 本地
+    no_api_key: 无需 API 密钥
+    requires_api_key: 需要 API 密钥
+    title: AI 提供程序
+    toggle_error: 更新提供程序失败
+    update_success: 提供程序已更新
+  title: 管理面板
+  user_details:
+    dark_mode_description: 切换浅色和深色主题。
+    dark_mode_label: 深色模式
+    email_label: 电子邮件
+    email_notifications_description: 接收有关您帐户的电子邮件更新。
+    email_notifications_label: 电子邮件通知
+    full_admin_note: 完全管理员默认拥有所有组管理员权限。
+    group_admin_description: 用户可以管理其所在组内的其他用户。
+    group_admin_label: 组管理员
+    group_hint: 用户的组决定他们可以访问哪些共享资源。
+    language_label: 语言
+    language_select_placeholder: 选择语言
+    load_error: 加载用户详细信息失败
+    max_upload_count_hint: 每个用户的最大数据集数量（0 = 无限制）。
+    max_upload_count_label: 最大上传数量
+    max_upload_count_placeholder: 选择数量
+    max_upload_size_hint: 每个用户的最大总存储空间（0 = 无限制）。
+    max_upload_size_label: 最大上传大小
+    max_upload_size_placeholder: 选择大小
+    name_label: 名称
+    not_found: 未找到用户
+    save_error: 更新用户失败
+    save_success: 用户详细信息已更新
+    select_group: 选择组
+    title: 管理用户
+    unnamed: 未命名用户
+    user_group: 用户组
+  users:
+    active_users: 活跃用户
+    admin_badge: 管理员
+    bcc_label: BCC 注册
+    bcc_updated: BCC 注册设置已更新
+    created_label: 已创建
+    current_user_badge: 您
+    delete_button: 删除
+    delete_confirmation: 确定要永久删除"{name}"吗？此操作无法撤销。
+    delete_error: 删除用户失败
+    delete_self_error: 无法删除您自己的账户
+    delete_success: 用户已永久删除
+    delete_title: 删除用户
+    deleted_badge: 已软删除
+    deleted_label: 已删除
+    example_user_badge: 示例用户
+    forbidden: 禁止访问
+    group_admin_badge: 组管理员
+    hard_delete_button: 永久删除
+    hard_delete_confirmation: 确定要永久删除"{name}"吗？此操作无法撤销。
+    hard_delete_error: 永久删除用户失败
+    hard_delete_success: 用户已永久删除
+    hard_delete_title: 永久删除用户
+    load_error: 加载用户失败
+    make_admin: 设为管理员
+    more_button: 更多...
+    no_name: 无名称
+    remove_admin: 取消管理员
+    resend_button: 重发邮件
+    resend_error: 发送验证邮件失败
+    resend_success: 验证邮件已发送至 {email}
+    restore_button: 恢复
+    restore_error: 恢复用户失败
+    restore_success: 用户已恢复
+    soft_deleted_users: 已软删除的用户
+    title: 用户管理
+    unauthorized: 未授权
+    unverified_badge: 未验证
+    update_error: 更新用户失败
+    update_success: 用户已更新
+    user_not_found: 未找到用户
+    verified_badge: 已验证
+    verify_button: 验证
+    verify_error: 验证用户失败
+    verify_success: 用户已标记为已验证
+    add_user: 添加用户
+  visualization_types:
+    add_button: 添加新类型
+    add_title: 添加可视化类型
+    create_success: 可视化类型已创建
+    default_parameters: 默认参数 (JSON)
+    delete: 删除
+    delete_button: 删除
+    delete_confirmation: 确定要删除类型"{name}"吗？这将同时移除所有关联实例且无法撤销。
+    delete_error: 删除失败
+    delete_success: 可视化类型已删除
+    delete_title: 删除可视化类型
+    description: 描述
+    disabled: 已禁用
+    edit: 编辑
+    edit_title: 编辑可视化类型
+    enabled: 已启用
+    fetch_error: 加载可视化类型失败
+    input_schema: 输入架构 (JSON)
+    invalid_json: 某个架构字段中的JSON无效
+    list_title: 所有可视化类型
+    name: 名称
+    no_types: 尚未定义任何可视化类型。
+    parameter_schema: 参数架构 (JSON)
+    renderer: 渲染器
+    renderer_client: 客户端
+    renderer_label: 渲染器
+    renderer_server: 服务器端
+    save_error: 保存失败
+    slug: 标识串
+    slug_label: 标识串
+    title: 可视化类型
+    toggle_error: 更新失败
+    update_success: 可视化类型已更新
+  adduser:
+    description: 创建新用户账户。该账户将立即通过验证。
+    password: 密码
+    password_mismatch: 两次输入的密码不一致
+    title: 添加用户
+    submit: 创建用户
+    confirm_password: 确认密码
+    failed: 创建用户失败
+    creating: 正在创建用户...
+    back_to_admin: 返回管理后台
+    language_description: 选择用户偏好的界面语言。
+    success: 账户已创建并通过验证。新用户现在可以登录。
+    not_admin: 您无权访问此页面。
+    email: 邮箱
+    name: 姓名
+  set_password:
+    admin_password_required: 需要管理员密码
+    admin_password: 管理员密码
+    description: 为该用户设置新密码。需要输入您自己的管理员密码以确认更改。
+    success: 密码设置成功
+    failed: 密码设置失败
+    title: 设置密码
+ai:
+  connection:
+    add_first: 添加您的第一个AI连接
+    add_new: 添加新AI连接
+    add_success: AI连接已成功添加
+    add_title: 添加新AI连接
+    api_key_hint: 您的API密钥在存储前会进行加密。
+    api_key_label: API密钥
+    by_label: 由
+    clear_default: 清除默认
+    currently_not_shared: ❌ 当前未共享
+    currently_shared: ✅ 当前已与群组共享
+    default_badge: 默认
+    default_cleared: 默认AI连接已清除
+    default_set: 默认AI连接已更新
+    delete_button: 删除
+    delete_confirmation: 确定要删除该连接吗
+    delete_error: 删除AI连接失败
+    delete_title: 删除AI连接
+    deleted: AI连接已删除
+    edit_title: 编辑AI连接
+    endpoint_hint: 如需可覆盖默认的API端点。
+    endpoint_label: 端点URL
+    form_description: 配置AI提供者连接。
+    group_label: 群组
+    load_error: 加载连接失败
+    load_providers_error: 加载提供商失败
+    metadata_load_error: 加载提供商元数据失败
+    metadata_loading: 提供商信息仍在加载，请稍候。
+    models: 可用模型
+    models_disabled: 已禁用
+    models_load_error: 加载模型失败
+    models_sync_error: 同步模型失败
+    models_synced: 模型同步成功
+    name_label: 连接名称
+    name_placeholder: 例如，我的 AI 连接
+    no_connections: 尚未保存任何 AI 连接。
+    not_found: 未找到连接
+    provider_label: 提供商
+    provider_not_found: 未找到提供商
+    save_error: 保存 AI 连接失败
+    select_provider: 选择 AI 提供商
+    select_provider_first: 请先选择提供商
+    set_default: 设为默认
+    shared_badge: 共享
+    shared_description: 将此连接提供给群组中的其他用户使用。
+    shared_label: 与群组共享
+    shared_readonly: 已共享
+    shared_readonly_message: 此连接已与你共享。你可以查看，但仅限所有者编辑。
+    test_button: 测试连接
+    test_error: 连接失败。
+    test_success: 连接成功！
+    unknown_user: 未知
+    update_success: AI 连接更新成功
+    models_none: 尚未同步任何模型。点击“刷新”从提供商获取模型。
+    models_refresh: 刷新模型
+    invalid_probe_timeout: 模型测试超时必须是整数秒数，至少为 1，最多为 1200。
+    connect_timeout_hint: 网络接受连接可能需要的时间。低于该网络所需的数值会将可用端点变为不可达端点。
+    timeouts_section_hint: 将输入框留空以使用工作台默认值。
+    invalid_connect_timeout: 连接超时必须是整数秒数，至少为 1，最多为 60。
+    probe_timeout_hint: 此处一次适用性测试可运行的时间。由 CPU 托管的模型需要几分钟。
+    models_discovered: 在此连接上发现 {seen} 个模型：{created} 个新增，{refreshed} 个已刷新，{pruned} 个不再提供。
+    timeouts_section_label: 连接超时
+    connect_exceeds_probe: 连接超时不能大于模型测试超时——不允许建立连接的时间超过整个测试可运行的时间。
+  database:
+    add_connection: 添加数据库连接
+    all_issues: 所有问题
+    analysis_report: 分析报告
+    analysis_summary: 发现 {tables} 张表、{columns} 列、{issues} 个问题
+    analyze: 分析模式
+    analyzing: 分析中...
+    business_value: 业务价值
+    categories: 类别
+    code_systems_detected: 检测到的编码系统
+    cols_rows_format: '{cols} 列，{rows} 行'
+    columns_label: 列
+    confidence: 置信度
+    description: 分析数据库设计的索引、规范化、关系、数据类型和命名问题。
+    download_pdf: 下载 PDF
+    email_body_attachment: 请查收附件的分析报告。
+    email_body_connection: 连接：{conn_name}
+    email_body_database: 数据库：{db_name}
+    email_body_id: 连接 ID：{conn_id}
+    email_body_signature: — 统计学家工作台
+    email_body_title: 数据库设计分析报告
+    email_body_type: 数据库类型：{db_type}
+    email_error: 邮件发送报告失败
+    email_pdf: 通过邮件发送 PDF
+    email_sent: 报告已成功通过邮件发送
+    email_subject: 数据库设计分析 — {db_name} ({db_type}) [连接 {conn_id}]
+    empty_state: 选择一个数据库连接并点击“分析”开始。
+    enter_question: 请输入问题。
+    foreign_keys: 外键
+    high_risk: 高
+    indexes_label: 索引
+    issues_label: 问题
+    low_risk: 低
+    medium_risk: 中
+    no_issues: 未发现问题，你的数据库设计看起来不错！
+    no_semi_structured: 在文本列中未检测到半结构化数据模式。
+    normalisation_suggestions: 规范化建议
+    normalisation_suggestions_desc: 基于在半结构化文本列中发现的关键词，这里提供建议的参考表。
+    normalisation_warning: 这些为 AI 生成的建议。数据库重新设计前需谨慎审查，请先在副本上测试变更。
+    pdf_downloaded: PDF 下载成功
+    pdf_error: 生成 PDF 失败
+    pk_prefix: PK –
+    placeholder: 即将推出。此功能将帮助你使用 AI 设计数据库模式。
+    proposed_reference_table: 建议的参考表
+    rag_ask: 提问
+    rag_chat: RAG 聊天 — 针对数据提问
+    rag_chat_desc: 用自然语言提问。系统会搜索文本列，并返回带引用来源的 AI 生成答案。
+    rag_error: RAG 查询失败
+    rag_placeholder: 例如：常见的诊断有哪些？
+    rag_sources: 来源
+    risk_breakdown: 风险细分
+    rows_label: 行
+    schema_error: 分析数据库模式失败
+    select_connection: 选择数据库连接
+    select_connection_first: 请先选择数据库连接。
+    select_connection_placeholder: 选择数据库连接...
+    semi_structured: 半结构化数据分析
+    semi_structured_desc: 已对文本列进行嵌入式编码、关键词和模式分析。
+    tables_explorer: 表浏览器
+    tables_label: 表
+    title: 数据库设计助手
+    top_recommendations: 首要建议
+    research_capabilities: 研究能力
+    ai_health_score: AI 健康评分
+    isic_domains: ISIC 领域分类
+    implicit_relationships: 隐式关系
+    ai_fallback_desc: AI 增强不可用。仅显示结构分析。选择 AI 连接以获取更深入的洞察。
+    ai_unavailable: AI 分析不可用。连接 AI 提供商以启用增强分析。
+    ai_augmented_desc: 模式 AI、语义 AI 和集成 AI 已分析此数据库。
+    integration_analysis_desc: 集成 AI 检测到的隐式关系、研究能力和缺失维度。
+    timeout_log: 分析在 15 分钟后超时。
+    ai_augmented: AI增强分析
+    missing_dimensions: 缺失维度
+    priority_actions: 最高优先级操作
+    integration_analysis: 集成分析
+    column_meanings: 列含义
+    table_purposes: 表用途
+    semantic_analysis: 语义分析
+    ai_fallback: 基础分析
+    timeout_error: 分析超时。数据库可能过大或AI服务不可用。
+    semantic_analysis_desc: AI推断的列含义、ISIC领域分类和编码系统检测。
+    health_score_desc: 由 Schema AI 评估的数据库整体健康状况。0 = 严重结构问题，100 = 生产就绪。
+    is_missing: 缺失
+    peer_tables: 对等表：
+  dataclean:
+    chat_error: 获取响应失败
+    chat_placeholder: 询问如何清理或准备此数据集...
+    column_tooltip: '{type} — {null_count} 个空值，{unique_count} 个唯一值'
+    column_type:
+      category: 类别
+      datetime: 日期/时间
+      number: 数字
+      text: 文本
+    description: AI 驱动的数据集清理与准备。
+    empty_chat: 选择一个数据集，并开始询问如何清理和准备它。
+    enter_message: 请输入消息。
+    loading_schema: 加载模式中...
+    no_connection: 请在“设置 > AI”中配置默认AI连接。
+    no_datasets: 没有可用的数据集。请先上传或定义一个数据集。
+    placeholder: 即将推出。此功能将帮助您使用AI清洗和准备数据集。
+    schema_summary: '{rows} 行，{cols} 列'
+    select_dataset: 选择数据集
+    select_dataset_first: 请先选择一个数据集。
+    select_dataset_placeholder: 选择一个数据集...
+    send: 发送
+    shared_badge: （共享）
+    title: 数据集清洗助手
+    schema_error: 加载数据集架构失败
+    no_dataset_selected: 未选择数据集
+    clean_name_label: 清理后副本的名称
+    clean_no_rules: 尚无要应用的清理规则。
+    clean_in_place: 就地清理
+    clean_copy_success: 已创建新数据集“{name}”——原始数据集未更改。
+    operations_count: '{count} 个操作'
+    clean_copy: 清理副本
+    rules_title: 准备规则
+    preview_title: 数据预览
+    clean_in_place_success: 数据集“{name}”已更新。
+    no_rules: 尚无规则
+  default_hint: 当分析配方未指定AI提供商时，默认连接将用作后备。
+  new_session: 新会话
+  no_ai_connections: 未配置AI连接。请在“设置 > AI”中添加一个。
+  recipe:
+    chat_error: 获取响应失败
+    chat_placeholder: 询问关于统计分析或配方配置...
+    description: 基于AI的配方和分析规则生成。
+    empty_chat: 选择一个数据集并询问要使用哪些统计方法。
+    enter_message: 请输入消息。
+    loading_schema: 加载模式中...
+    no_datasets: 没有可用的数据集。请先上传或定义一个数据集。
+    placeholder: 即将推出。此功能将帮助您使用AI创建分析配方。
+    schema_summary: '{rows} 行，{cols} 列'
+    select_dataset: 选择数据集
+    select_dataset_first: 请先选择一个数据集。
+    select_dataset_placeholder: 选择一个数据集...
+    send: 发送
+    title: 分析规则助手
+  select_ai_connection: AI连接
+  select_ai_connection_placeholder: 选择AI连接...
+  select_model: 模型
+  select_model_placeholder: 选择模型...
+  test_error: 连接失败。
+  test_success: 连接成功！
+  title: AI设置
+  recipe_concierge:
+    title: AI 配方管家
+    stage_goal: 研究问题
+    delete_session: 删除会话
+    status_ready: 就绪
+    open: 在编辑器中打开
+    no_session: 未选择会话
+    draft_title: 配方草稿
+    stage_visualisation: 可视化
+    stage_complete: 配方已就绪
+    status_draft: 草稿
+    chat_error: 获取响应失败
+    manual_label: 手动配方
+    toggle_panel: 切换配方面板
+    stage_greeting: 欢迎
+    welcome: 告诉我您想从数据中发现什么，我将帮助您构建一份完整的分析配方。
+    tab_sessions: 会话
+    saving: 正在保存...
+    create_prompt: 创建一个新会话以开始使用。
+    stage_columns: 选择列
+    draft_empty: 开始对话以构建您的配方。当您做出决策时，草稿将显示在这里。
+    saved: 配方已保存！
+    input_placeholder: 询问您的数据……或者只是说“你好”
+    tab_draft: 草稿
+    tab_chat: 聊天
+    new_session: 新建会话
+    no_sessions: 尚无会话
+    stage_technique: 选择技术
+    stage_review: 审阅配方
+    select_dataset: 选择数据集...
+    stage_transforms: 数据准备
+    save: 保存配方
+    schema_changes: 检测到架构更改：
+    draft_algorithm: 算法
+    draft_no_visualisation: 数值结果
+    draft_output: 输出
+    errors_heading: 尚无法保存
+    draft_dataset: 数据集
+    warnings_heading: 警告
+    progress_decided: '{count}/{total} 已决定'
+    done: 完成
+    progress_next: '{progress} · {next}'
+    chip_withheld: +{count} 更多
+    chip_superseded: 已被更新的优惠取代。
+    unread_sources: 某些来源无法读取，因此列列表可能不完整。
+    chip_collapse: 收起
+    chip_expand: 再显示 {count} 条
+  thinking: 思考中...
+  testing:
+    models_heading: 模型
+    elsewhere_note: 一个模型可能保留来自另一连接的能力结果。每个状态旁边的时长是此连接自身的测量结果，因此模型在此处显示的状态可能没有时长。
+    explanation: 工作台的 AI 管家是为能够执行操作的模型构建的。一个只会说话——无论多么礼貌、规模多大——的模型会让配方编辑器一直等待响应却什么都不做。解决办法在于模型，而不是代码。本页工具可让你测试模型是否合适。
+    run_failed: 测试无法运行：{detail}
+    connection_label: AI 连接
+    load_error: 无法加载你的 AI 连接。{detail}
+    state_fail: 失败
+    no_duration_here: 未在此连接上运行
+    state_pass: 通过
+    slow_limit_session_label: 慢模型限制
+    run_all_for_model: 为此模型运行全部测试
+    no_connections_body: 测试模型需要一个 AI 连接。请先添加一个，然后返回此页面。
+    test_turn: 复杂度
+    slow_limit_session_reset: 使用我保存的限制
+    cost_warning: 这将运行 {count} 项测试，在 CPU 上，每个模型的回合测试需要几分钟。再次按下以开始。
+    slow_limit_unavailable: 你的设置未包含慢模型限制，因此没有模型被标记为过慢。
+    discover_running: 正在询问服务器…
+    discover_result: 服务器列出了 {seen} 个模型：{created} 个新增，{refreshed} 个已知并已刷新，{pruned} 个不再提供。
+    too_slow: 超过你的 {seconds} 秒限制
+    test_tools: 使用工具
+    cost_confirm: 开始运行
+    duration_ms: '{ms} 毫秒'
+    discover_failed: 无法发现模型：{detail}
+    no_connections_heading: 尚无 AI 连接
+    column_actions: 测试
+    run_all_untested: 对未测试的模型运行所有测试
+    column_model: 模型
+    running: 正在运行…
+    enabled_yes: 模型已启用
+    no_models: 在此连接上尚未发现任何模型。
+    column_enabled: 已启用
+    enabled_no: 模型已禁用
+    title: AI 测试
+    slow_limit_session_hint: 仅应用于此页面 — 不保存。
+    slow_limit_session_link: 在您的个人资料中永久设置
+    no_connections_link: 转到 AI 连接
+    test_competence: 能力
+    duration_seconds: '{seconds} 秒'
+    slow_limit_failed: 无法读取您的慢模型阈值，因此没有模型被标记为过慢。{detail}
+    failure_reason: 原因：{reason}
+    run_test: 运行测试
+    cancelled: 已停止。已记录的结果已保留。
+    discover_models: 发现模型
+api:
+  admin:
+    already_full_admin: 该用户已是完全管理员
+    already_group_admin: 该用户已是群组管理员
+    cannot_delete_self: 无法删除自己的账户
+    cannot_demote_full_admin: 无法降级完全管理员
+    cannot_demote_self: 您不能降级自己
+    cannot_promote_example: 无法提升示例用户
+    delete_error: 删除用户失败
+    demote_error: 降级用户失败
+    description_required: 描述不能为空
+    example_blocked: 示例用户无法执行管理员操作
+    group_not_found: 群组未找到
+    group_users_load_error: 加载群组用户失败
+    groups_load_error: 加载群组失败
+    groups_stats_error: 加载群组统计信息失败
+    instance_exists: 无法删除类型，因为它有 {count} 个关联实例。
+    insufficient_permissions: 此操作的权限不足
+    invalid_group_id: 无效的 group_id。必须为 00-99
+    invalid_id: 无效的 id
+    invalid_upload_count: maxUploadCount 必须是非负整数（0 表示无限制）。
+    invalid_upload_size: maxUploadSizeMB 必须是非负整数（0 表示无限制）。
+    missing_fields: 缺少必填字段
+    missing_group_id: 缺少群组 ID
+    missing_id: 缺少 id
+    missing_model_id: 缺少模型 id
+    missing_provider_code: 缺少 providerCode 参数
+    missing_user_id: 缺少 userId
+    model_update_error: 更新模型失败
+    models_load_error: 加载模型失败
+    no_fields: 没有可更新的有效字段
+    no_group: 用户未分配群组
+    not_group_admin: 用户不是群组管理员
+    only_full_admin: 只有完全管理员才能执行此操作
+    promote_error: 提升用户失败
+    provider_delete_error: 删除提供商失败
+    provider_not_found: 提供商未找到
+    provider_update_error: 更新提供商失败
+    providers_load_error: 加载提供商失败
+    slug_exists: 别名已存在
+    update_error: 更新用户失败
+    user_load_error: 加载用户失败
+    user_not_found: 用户未找到
+    users_load_error: 加载用户失败
+    viz_type_create_error: 创建可视化类型失败
+    viz_type_delete_error: 删除可视化类型失败
+    viz_type_update_error: 更新可视化类型失败
+    viz_types_load_error: 加载可视化类型失败
+    settings_load_error: 无法加载全局设置
+    settings_save_error: 无法保存全局设置
+    settings_modify_forbidden: 只有完全管理员可以修改全局设置
+    settings_invalid_email_timeout: 邮箱验证超时时间必须为正数（小时）
+    settings_invalid_upload_size: 默认最大上传大小必须为非负整数（0 表示不限）。
+    settings_invalid_grace_period: 注册宽限期必须为正数（小时）
+    settings_invalid_public_url: 公共 URL 格式无效
+    settings_invalid_upload_count: 默认最大上传数量必须为非负整数（0 表示不限）。
+    settings_invalid_max_registrations: 最大注册数必须为正数或不限
+    settings_view_forbidden: 只有完全管理员可以查看全局设置
+    settings_invalid_email_sender: 发件人电子邮件地址格式无效
+  auth:
+    account_deleted: 此账户已被删除。
+    email_not_verified: 邮箱未验证。请检查您的收件箱和垃圾邮件文件夹。
+    example_user_blocked: 示例用户已禁用密码更改。
+    example_user_forgot_blocked: 示例用户已禁用密码重置
+    example_user_register_blocked: 示例用户无法创建新账户
+    example_user_reset_blocked: 示例用户已禁用密码重置
+    internal_error: 内部服务器错误
+    invalid_credentials: 无效的凭据
+    invalid_current_password: 当前密码不正确
+    invalid_token: 无效或过期的令牌
+    missing_email: 需要电子邮箱
+    missing_fields: 缺少字段
+    password_validation_failed: 密码验证失败
+    token_expired: 令牌已过期
+    unauthorized: 未授权
+    user_not_found: 用户未找到
+  datasets:
+    delete_blocked: 示例用户无法删除数据集
+    example_blocked: 示例用户无法创建数据集
+    proxy_error: 内部服务器错误
+    update_blocked: 示例用户无法更新数据集
+  profile:
+    name_required: 名称为必填项
+    update_failed: 更新个人资料失败
+  recipes:
+    create_error: 创建配方失败
+    dataset_not_found: 未找到数据集
+    dataset_required: datasetId 为必填项
+    delete_error: 删除配方失败
+    execute_error: 执行配方失败
+    execution_load_error: 加载执行记录失败
+    execution_not_found: 未找到执行记录
+    executions_load_error: 加载执行记录列表失败
+    load_error: 加载配方列表失败
+    missing_id: 需要提供配方 ID
+    name_required: 名称和阶段为必填项
+    not_found: 未找到配方
+    not_owned: 未找到配方或无所有权
+    update_error: 更新配方失败
+  register:
+    email_exists: 电子邮件已存在
+    internal_error: 内部服务器错误
+    invalid_email: 电子邮件格式无效
+    limit_reached: 已达到注册限制（最多 {max_reg} 个用户）。
+    missing_fields: 缺少字段
+    password_validation_failed: 密码验证失败
+    settings_not_found: 未找到全局设置
+  settings:
+    load_failed: 加载设置失败
+    save_failed: 保存设置失败
+    user_not_found: 未找到用户
+  user:
+    api_key_required: 此提供商需要 API 密钥
+    connection_name_exists: 该名称的连接已存在
+    connection_not_found: 未找到连接
+    example_blocked: 示例用户无法执行此操作
+    internal_error: 内部服务器错误
+    missing_fields: 缺少必填字段
+    provider_not_found: 未找到提供程序“{provider}”。
+    user_not_found: 未找到用户
+  global_settings_load_error: 内部服务器错误
+app:
+  name: 统计员工作台
+  version: 版本
+chat:
+  connection_not_found: 未找到或无法访问 AI 连接。
+  connections_load_error: 加载连接列表失败
+  delete: 删除
+  delete_confirm: 确定要删除此聊天吗？
+  delete_error: 删除聊天失败
+  delete_success: 聊天已删除
+  empty_state: 发送消息以开始对话。
+  go_to_ai_settings: 前往 AI 设置
+  history: 聊天记录
+  input_placeholder: 输入您的消息...
+  load_error: 加载聊天列表失败
+  models_load_error: 加载模型列表失败
+  new_chat: 新建聊天
+  no_chat_selected: 没有活动聊天
+  no_chats: 暂无聊天记录
+  no_connections_message: 您需要先定义至少一个 AI 连接，才能使用聊天功能。
+  no_models: 此连接没有可用的模型
+  rename: 重命名
+  rename_empty: 标题不能为空
+  rename_error: 重命名聊天失败
+  rename_success: 聊天已重命名
+  select_connection: AI 连接
+  select_connection_first: 请先选择一个 AI 连接。
+  select_connection_placeholder: 选择一个 AI 连接
+  select_model: 模型
+  select_model_placeholder: 选择模型
+  send_error: 发送消息失败
+  title: 聊天
+common:
+  audio_settings: 音频设置
+  back: 返回
+  cancel: 取消
+  cannot_undo: 此操作无法撤消。
+  clear: 清除
+  close: 关闭
+  close_navigation: 关闭导航
+  copied: 已复制！
+  copy: 复制
+  copy_to_clipboard: 复制到剪贴板
+  delete: 删除
+  delete_chat: 删除聊天
+  deleting: 正在删除...
+  dismiss: 关闭
+  dismiss_error: 关闭错误
+  dismiss_success: 关闭成功提示
+  edit: 编辑
+  error_label: 错误
+  false_label: 假
+  generating: 正在生成...
+  has_more_information: 有更多信息
+  loading: 加载中...
+  microphone_off: 麦克风关闭
+  microphone_on: 麦克风开启
+  next: 下一步
+  no_answer: 未返回任何答案
+  no_permission: 您无权查看此页面。
+  open_navigation: 打开导航
+  reset_to_defaults: 重置为默认值
+  restoring: 正在恢复...
+  save: 保存
+  saving: 正在保存...
+  select_language: 选择语言
+  sending: 正在发送...
+  speaker_off: 扬声器关闭
+  speaker_on: 扬声器开启
+  speech_input_unsupported: 您的浏览器不支持语音输入。兼容的浏览器：Google Chrome、Microsoft Edge、Opera、Samsung Internet。
+  speech_mic_denied: 麦克风权限被拒绝。请在浏览器设置中允许麦克风访问。
+  speech_mic_failed: 启动麦克风失败：{error}。
+  speech_network_error: 语音识别网络错误——请检查您的互联网连接，然后重试。
+  speech_output_unsupported: 您的浏览器不支持语音输出。兼容的浏览器：Google Chrome、Microsoft Edge、Mozilla Firefox、Apple Safari、Opera、Samsung Internet。
+  speech_recognition_error: 语音识别错误：{error}。请重试。
+  success_label: 成功
+  system_default: 系统默认
+  testing: 测试中...
+  true_label: 真
+  unknown: 未知
+  untitled: 无标题
+  uploading: 上传中...
+  verifying: 验证中...
+  view: 查看
+  view_dataset: 查看数据集
+  voice: 语音
+  access_denied_admin: 拒绝访问 — 仅限管理员。
+  unknown_error: 未知错误
+  audio_stop: 停止
+  audio_resume: 继续
+  audio_pause: 暂停
+  email_features_unavailable: 基于邮箱的账户功能不可用。
+  connect_timeout_label: 连接超时（秒）
+  ai_temperature_label: 温度
+  ai_models: AI 模型
+  ai_max_tokens_label: 最大输出 token 数
+  probe_timeout_label: 模型测试超时（秒）
+  ai_timeout_label: 最长 AI 时间
+components:
+  audio_settings_dialog:
+    close: 关闭
+    pitch_label: 音高：{0}
+    reset_to_defaults: 重置为默认值
+    speed_label: 语速：{0}x
+    system_default: 系统默认
+    title: 音频设置
+    voice: 语音
+  example_user_badge: 示例用户
+  example_user_badge_tooltip: 注册以获得完整访问权限
+  example_user_banner:
+    message: 您正在以只读模式查看系统。注册以获得完整访问权限，从而创建和修改资源。
+    message_short: 只读模式 - 注册以获得完整访问权限
+    register_button: 注册以获得完整访问权限
+    register_short: 注册
+    title: 示例用户模式
+  group_admin_badge: 组管理员
+  preparation_preview:
+    more_columns: +{0} 更多
+    null_value: 'null'
+    rows_removed: '{0} 已移除'
+  readonly_wrapper:
+    message: 只读模式 - 注册以获得完整访问权限来修改此内容
+  active_checkmark: ✓
+  feature_gate:
+    upgrade_message: 此功能需要企业许可证。联系 Sentuny 获取升级选项。
+    upgrade_title: 企业功能
+  return_banner:
+    text: 您之前正在处理一个 AI 配方。
+    link: 返回您的会话
+    fallback_link: 返回
+    recipe_link: 返回你的配方
+    recipe_text: 你之前正在处理一个配方。
+  data_value:
+    some_content_not_shown: 部分内容未显示
+database:
+  connection:
+    add_first: 添加您的第一个连接
+    add_new: 添加新连接
+    add_success: 连接添加成功
+    add_title: 添加新连接
+    by_label: 由
+    clear_default: 清除默认值
+    currently_not_shared: ❌ 当前未共享
+    currently_shared: ✅ 当前已与组共享
+    database_label: 数据库名称
+    db_create_badge: 创建数据库
+    default_badge: 默认
+    default_cleared: 默认连接已清除
+    default_set: 默认连接已更新
+    delete_button: 删除
+    delete_confirmation: 您确定要删除该连接吗
+    delete_error: 删除连接失败
+    delete_title: 删除连接
+    deleted: 连接已删除
+    edit_title: 编辑连接
+    form_description: 输入您的数据库连接详细信息。
+    group_label: 组
+    host_label: 主机
+    load_error: 加载连接失败
+    name_label: 连接名称
+    name_placeholder: 例如：生产数据库
+    no_connections: 尚未保存任何数据库连接。
+    not_found: 未找到连接
+    password_label: 密码
+    port_label: 端口
+    save_error: 保存连接失败
+    select_type: 选择类型
+    set_default: 设为默认
+    shared_badge: 已共享
+    shared_description: 使此连接可供组内其他用户使用。
+    shared_label: 与组共享
+    shared_readonly: 已共享
+    shared_readonly_message: 此连接已与您共享。您可以查看，但编辑权限仅限于所有者。
+    tables_badge: 表
+    test_button: 测试连接
+    test_failed: 连接失败
+    test_incomplete: 请在测试前填写所有字段
+    test_network_error: 测试连接时出现网络错误。
+    test_success: 连接成功！
+    type_label: 数据库类型
+    unknown_user: 未知
+    update_success: 连接更新成功
+    username_label: 用户名
+    datasets_created: 已创建 {n} 个数据集
+    auto_create_warnings_title: 连接已保存，但数据集自动创建时出现警告：
+    auto_create_tables: 自动创建表数据集
+    browse_tables: 浏览表
+    jet_host_label: Jet 服务器主机
+    auto_create_views: 自动创建视图数据集
+    file_path_label: 文件路径
+    auto_create_title: 自动创建数据集
+    jet_port_label: Jet服务器端口
+    probe_never: 从未
+    probe_no_success: 未记录到成功的探测
+    probe_minutes_ago: '{count} 分钟前'
+    probe_minute_ago: 1 分钟前
+    probe_checked: 已检查
+    probe_check_failed: 刚刚无法检查连接。
+    probe_unsaved_hint: 连接保存后才会进行探测。
+    probe_state:
+      unreachable: 无法访问
+      unknown: 未检查
+      incomplete: 设置不完整
+      no_database: 无数据库
+      reachable: 可访问
+      no_permission: 无权限
+      auth_failed: 认证失败
+      schema_error: 架构不可读
+    probe_hours_ago: '{count} 小时前'
+    probe_just_now: 刚刚
+    probe_check_now: 立即检查
+    probe_hour_ago: 1 小时前
+    probe_auto_hint: 连接列表加载时自动更新。
+    probe_last_succeeded: 上次成功
+    probe_title: 上次检查
+  default_hint: 默认连接在分析配方未指定连接时用作备用连接。
+  title: 数据库设置
+datasets:
+  all_datasets: 所有数据
+  by_label: 由
+  created_label: 已创建
+  define_button: 连接数据库
+  define_first: 连接一个数据库
+  delete:
+    confirm: 删除此数据集？
+    error: 删除数据集失败
+    success: 数据集“{id}”删除成功。
+    title: 删除
+  description:
+    empty: 生成的描述为空。请检查 AI 提供商配置。
+    error: 生成描述失败。
+    generated: 描述生成成功。
+    title: 生成的描述
+  detail:
+    created: 创建时间
+    descriptions: AI 描述
+    generated: 生成时间
+    load_error: 加载数据集失败
+    model: 模型
+    no_description: 无描述
+    not_found: 找不到数据集
+    not_found_message: 您要查找的数据集不存在。
+    overview: 概览
+    rows: 行数
+    rows_not_computed: 未计算
+    rows_not_computed_hint: 该连接尚未运行，因此还没有行数。
+    storage_live: 实时视图
+    materialize_failed: 无法构建已保存的表：
+    storage_table: 已保存的表
+  list_error: 加载数据集列表失败
+  no_datasets: 暂无可用数据。
+  no_uploaded: 还没有上传数据集。
+  preparation:
+    add_operation: 添加操作
+    add_rule: 添加规则
+    column_required: 操作需要指定一列
+    columns_required: 操作至少需要一列
+    delete_confirmation: 确定要删除转换规则 "{name}" 吗？这将同时将它从所有使用该规则的配方中移除。
+    delete_error: 删除转换规则失败
+    delete_title: 删除转换规则
+    edit_rule: 编辑规则
+    encode:
+      label: 标签
+      one_hot: 独热编码
+    fill:
+      constant: 常量
+      drop: 删除
+      mean: 均值
+      median: 中位数
+      mode: 众数
+    filter_invalid: 过滤操作需要指定列和值
+    link:
+      description: 清洗并转换此数据集
+      title: 准备规则
+    name_required: 规则名称不能为空
+    new_name_required: 重命名操作需要提供新名称
+    new_rule: 新建规则
+    no_rules: 此数据集尚未定义转换规则。
+    operation:
+      convert_type: 转换类型
+      drop_columns: 删除列
+      encode: 编码
+      fill_missing: 填充缺失值
+      filter: 过滤
+      normalize: 归一化
+      rename_column: 重命名列
+      standardize: 标准化
+    operations: 操作
+    operations_count: 个操作
+    operator:
+      after: 之后 (>)
+      before: 之前 (<)
+      contains: 包含
+      ends_with: 以……结尾
+      equal_to: 等于 (=)
+      greater_than: 大于 (>)
+      greater_than_or_equal: 大于或等于 (>=)
+      less_than: 小于 (<)
+      less_than_or_equal: 小于或等于 (<=)
+      not_contains: 不包含
+      not_equal: 不等于 (!=)
+      on_or_after: 当天或之后 (>=)
+      on_or_before: 当天或之前 (<=)
+      starts_with: 以……开头
+    original_data: 原始数据
+    placeholder:
+      boolean: 是/否
+      datetime: 年-月-日 或时间戳……
+      number: 输入数字……
+      value: 输入值……
+    preview: 预览
+    preview_error: 规则预览失败
+    preview_title: 预览
+    rows_after: 之后
+    rows_before: 之前
+    rows_removed: 已移除
+    rule_created: 准备规则“{name}”创建成功。
+    rule_deleted: 准备规则删除成功。
+    rule_description: 描述（选填）
+    rule_description_placeholder: 简要描述
+    rule_name: 规则名称
+    rule_name_placeholder: 例如：用于分析的清洗
+    rule_updated: 准备规则更新成功。
+    rules_title: 转换规则
+    save_error: 保存转换规则失败
+    shared: 分享给群组
+    transformed_data: 转换后的数据
+    type:
+      boolean: 布尔值
+      datetime: 日期时间
+      numeric: 数值
+      string: 字符串
+    ui:
+      column: 列
+      columns: 列（逗号分隔）
+      encoding: 编码
+      method: 方法
+      new_name: 新名称
+      operator: 运算符
+      target_type: 目标类型
+      type: 类型
+      value: 值
+  rules_button: 规则
+  schema:
+    column_name: 列
+    column_type: 类型
+    columns: 列
+    load_error: 无法加载架构：{error}
+    no_sample_data: 无样本数据可用
+    null_count: 空值
+    sample_data: 样本数据（前5行）
+    title: 模式预览
+    total_columns: 总列数
+    total_rows: 总行数
+    unique_count: 唯一值
+  share: 共享
+  share_error: 更新共享失败
+  shared: 数据集已共享
+  shared_badge: 已共享
+  source:
+    unknown_file: 未知文件
+  title: 我的数据
+  transform_button: 转换
+  type:
+    table: 表
+    upload: 已上传
+    view: 视图
+    virtual: 虚拟
+    notebook: 笔记本
+    postgresql: PostgreSQL
+    access: MS Access
+    mssql: MS SQL
+    mysql: MySQL
+    cleaned_copy: 清理后的副本
+  unknown_user: 未知
+  unshare: 取消共享
+  unshared: 数据集已取消共享
+  upload:
+    card_title: 上传并描述
+    connection_not_found: 未找到连接，请选择有效的AI连接。
+    description_label: 描述（可选）
+    description_placeholder: 此数据的简要描述
+    error: 上传数据集失败。
+    file_label: 文件
+    file_selected: 已选文件
+    file_too_large: 文件超过最大上传大小{max}MB，不允许上传。
+    generate_description: 生成描述
+    history: 上传历史
+    limit_reached: 已达上限
+    limit_reached_message: 您已达到允许的最大数据集数量（{count}）。
+    name_label: 数据名称
+    name_placeholder: 我的数据
+    no_connections: 您需要至少定义一个AI连接才能生成描述。
+    no_datasets: 暂无数据集
+    no_file: 请先选择文件。
+    no_name: 请输入数据集名称。
+    select_dataset: 请先上传或选择数据集。
+    shared_description: 将此数据提供给组内其他用户使用。
+    shared_group_hint: 组：{group} - {description}
+    shared_label: 共享给组
+    success: 数据集“{name}”上传成功。
+    title: 上传数据
+    upload_button: 上传
+    escalation_retry: 重试
+    escalation_failed_at: 描述在 {seconds} 秒后超时。
+    escalation_hint: 只有此次尝试使用它。如果此模型通常需要更长时间，请调整连接的模型设置，而不是每次都调高此值。
+    escalation_invalid: 请输入 1 到 {max} 之间的整数秒数。
+    escalation_label: 重试间隔（秒）
+  upload_button: 上传数据
+  upload_count: '{count}次上传'
+  upload_first: 上传您的第一个数据文件
+  upload_first_file: 上传您的第一个文件
+  upload_new: 上传新文件
+  uploaded_title: 已上传的数据
+  view_dataset_title: 查看数据集
+  view_schema: 查看模式
+  browse:
+    load_preview_error: 加载预览失败
+    load_preview: 加载预览
+    browse_tables: 浏览表
+    connections: 连接
+    nullable: 可为空
+    columns_title: 列 — {table}
+    select_table_hint: 选择一个表以查看其列并预览数据。
+    tables: 表
+    preview: 预览
+    preview_hint: 点击“加载预览”查看示例行。
+    load_tables_error: 加载表失败
+    back: 返回
+    column: 列
+    tables_count: '{count} 张表'
+    type: 类型
+    load_columns_error: 加载列失败
+  transforms:
+    load_error: 加载转换失败
+    delete_error: 删除转换失败
+    delete_confirm: 删除此转换？
+    description_label: 描述（可选）
+    created_label: 已创建
+    operations_label: '{count} 个操作'
+    create_new: 新建转换
+    creating: 正在创建…
+    title: 转换
+    no_transforms: 未为此数据集定义转换。
+    back: 返回我的数据
+    name_label: 名称
+    create_button: 创建
+    for: '{name}的转换'
+    create_error: 创建转换失败
+  database_label: 数据库
+  filter:
+    access: MS Access
+    postgresql: PostgreSQL
+    uploads: 上传
+    mssql: MS SQL
+    not_shared: 未共享
+    label: 筛选
+    all: 全部
+    shared: 已共享
+    notebooks: 笔记本
+    cleaned: 已清理
+    no_match: 没有符合此筛选条件的数据集。
+    virtual: 虚拟
+    mysql: MySQL
+  created_from: 创建自 {name}
+  source_unavailable: 来源不可用
+  cleaned_badge: 已清理
+  table_not_built: 表未构建
+define:
+  column_name: 列
+  column_type: 类型
+  connection_label: 数据库连接
+  dataset_name: 数据集名称
+  dataset_name_placeholder: 例如：客户数据
+  description_label: 描述（可选）
+  description_placeholder: 此数据集的简要描述
+  existing_none: 无
+  existing_title: 现有的
+  go_to_db_settings: 前往数据库设置
+  load_connections_error: 加载连接失败
+  load_sources_error: 加载数据源失败
+  name_required: 数据集名称为必填项
+  no_connections_message: 在连接数据库之前，您需要至少定义一个数据库连接。
+  no_sources: 此数据库中未找到表或视图。
+  nullable: 可为空
+  preview_label: 预览数据（前10行）
+  save_button: 保存数据集
+  save_error: 创建数据集失败
+  save_success: 数据集创建成功
+  schema_label: 模式
+  select_connection: 选择一个连接
+  select_source: 选择一个数据源
+  select_source_first: 请先选择表或视图
+  shared_description: 将此数据集提供给组内其他用户使用。
+  shared_label: 共享给组
+  source_label: 数据源
+  source_type_label: 数据源类型
+  step1_description: 选择一个数据库连接以连接数据集。
+  step1_title: 选择数据库连接
+  step2_description: 选择使用表还是视图，然后选择数据源。
+  step2_title: 选择数据源
+  step3_description: 查看所选数据源中的列并预览数据。
+  step3_title: 验证数据源
+  step4_description: 为您的数据集命名并添加描述，然后保存。
+  step4_title: 命名并保存
+  step_connection: 连接
+  step_save: 保存
+  step_source: 数据源
+  step_verify: 验证
+  table: 表
+  title: 连接数据库
+  verify_button: 验证数据源
+  verify_error: 验证表/视图失败
+  verify_success: 表/视图验证成功
+  view: 视图
+demo:
+  badge: 演示
+  banner:
+    message: 这是一个演示系统。数据可能会定期重置。
+    title: ⚠️ 演示模式
+forgot_password:
+  back_to_login: 返回登录
+  check_spam: 如果几分钟后仍未收到邮件，请检查垃圾邮件文件夹。
+  description: 输入您的邮箱地址，我们将发送重置密码的链接。
+  error: 发送重置邮件失败
+  sent: 如果该邮箱已注册账号，您将收到密码重置链接。
+  sent_description: 如果该邮箱已注册账号，您将收到密码重置链接。
+  sent_title: 邮件已发送
+  submit: 发送重置链接
+  title: 忘记密码
+global:
+  demo_mode:
+    description: 启用后，系统将以演示模式运行。
+    label: 演示模式
+  email_sender:
+    hint: 验证邮件显示的发送方邮箱地址。
+    label: 邮件发送方地址
+  email_timeout:
+    hint: 邮箱验证链接的有效时长（小时）。
+    label: 邮箱验证超时（小时）
+  grace_period:
+    hint: 软删除的账号彻底清除前的保留时长（小时）。
+    label: 删除延迟（小时）
+  invalid_grace_period: 请为删除延迟输入一个有效的正数（小时）
+  invalid_number: 请为最大注册数输入一个有效的正数
+  invalid_timeout: 请为验证超时输入一个有效的正数（小时）
+  load_error: 加载全局设置失败
+  max_registrations:
+    custom: 自定义（在下方输入）
+    custom_placeholder: 输入一个正数
+    hint: 对可注册的用户数量设置上限。
+    label: 最大用户注册数
+    placeholder: 选择限制
+    unlimited: 无限制
+    users: 用户
+  password_policy:
+    custom: 自定义
+    high: 高强度（至少 10 位，包含大写、小写、数字、特殊字符）
+    hint: 选择用户注册与修改密码时的密码复杂度要求。
+    label: 密码策略
+    low: 低强度（至少 6 位）
+    medium: 中强度（至少 8 位，包含大写、小写、数字）
+    min_length: 最小长度
+    min_strength: 最低强度（zxcvbn 评分 0-4）
+    require_digit: 必须包含数字
+    require_lowercase: 必须包含小写字母
+    require_special: 必须包含特殊字符
+    require_uppercase: 必须包含大写字母
+    select: 选择策略
+  public_url:
+    hint: 用于邮箱验证链接的基础 URL（例如，https://workbench.example.com）。
+    label: 公开 URL
+  save_button: 保存全局设置
+  save_success: 全局设置已保存
+  system:
+    description: 管理适用于所有用户的全局设置（仅限管理员）。
+    title: 系统配置
+  title: 全局设置
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: 每个用户的最大数据集数量（0 表示无限制）。应用于新用户。
+    count_unlimited: 无限制
+    default_count_label: 每个用户的默认最大上传数量
+    default_size_label: 每个用户的默认最大上传大小（MB）
+    select_count: 选择限制
+    select_size: 选择限制
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: 每个用户的最大总存储空间（0 表示无限制）。应用于新用户。
+    size_unlimited: 无限制
+  welcome:
+    hint: 此消息将显示在登录页面。留空则隐藏。
+    label: 欢迎消息
+    placeholder: 输入要在登录页面显示的欢迎消息。
+home:
+  welcome_placeholder: 欢迎使用统计人员工作台
+login:
+  account_deleted: 此账号已被删除。
+  description: 登录您的账号
+  docs_more_info: 有更多信息
+  email: 邮箱
+  email_not_verified: 邮箱未验证。请检查收件箱和垃圾邮件文件夹。
+  email_verified: 邮箱验证成功！您现在可以登录。
+  forgot_password: 忘记密码？
+  invalid_credentials: 邮箱或密码无效。
+  invalid_token: 验证链接无效。请重新请求。
+  missing_token: 未提供验证令牌。
+  no_account: 还没有账号？
+  password: 密码
+  register_link: 注册
+  resend_link: 重新发送验证邮件？
+  signing_in: 正在登录...
+  submit: 登录
+  success: 登录成功
+  title: 登录
+  token_expired: 验证链接已过期，请重新请求。
+nav:
+  about: 关于
+  admin: 管理员
+  admin_groups: 组描述
+  admin_panel: 用户管理
+  admin_providers: AI 提供者
+  admin_visualization_types: 可视化类型
+  ai_analysis_rules: 分析规则
+  ai_chat: AI 工具
+  ai_database_design: 数据库设计
+  ai_dataset_cleaning: 数据集清理
+  ai_general: 常规
+  ai_virtual_datasets: 虚拟数据集
+  home: 主页
+  logout: 注销
+  user: 用户
+  admin_setup: 设置
+  admin_setup_options: 选项
+  admin_setup_limits: 限制
+  admin_setup_internal: 内部
+  admin_licence: 许可证
+  admin_setup_tuning: 调优
+  ai_testing: AI 测试
+notebooks:
+  and_more: +{count} 更多
+  cant_create_tables: 此连接无法创建表 — 导入被拒绝
+  cells_label: 单元格：
+  connection_create_db_badge: 数据库创建
+  connection_form_label: 连接
+  connection_tables_badge: 表
+  connection_unavailable: 未找到数据库连接或无法访问
+  create_dataset: 自动创建数据集
+  create_new_database: 创建新数据库
+  dataframe_prefix: DataFrame
+  dataframes_label: DataFrames：
+  dataset_created: 数据集已创建
+  delete_confirm: 删除导入 "{name}" 及其所有表？
+  delete_failed: 删除导入失败
+  delete_title: 删除导入
+  detected_dataframes: 检测到的 DataFrame：
+  doc_preview: 文档预览：
+  example_banner: 您当前以示例用户身份查看。注册后可导入和管理笔记本。
+  example_blocked: 示例用户无法导入笔记本。
+  example_register: 注册
+  fetch_error: 获取导入失败
+  import_button: 导入笔记本
+  import_complete: 导入完成
+  import_deleted: 导入已删除
+  import_failed: Notebook 导入失败：{error}
+  import_success: 已成功导入 {count} 个表
+  import_title: Jupyter 笔记本导入
+  imported_at_label: 导入时间：
+  importing: 正在导入...
+  kb_unit: KB
+  kernel_label: 内核：
+  list_title: 笔记本导入
+  no_dataframes: 此笔记本中未找到 DataFrame
+  no_imports: 尚未导入笔记本。
+  notebook_label: 笔记本：
+  parse_error: 解析笔记本失败
+  parsing: 正在解析...
+  preview_button: 预览
+  rows_cols_format: '{rows} 行 × {cols} 列'
+  run_preview_first: 运行预览以查看将要导入的内容
+  sanitised_notice: 出于安全考虑，代码单元格已被移除。仅保留数据输出和 Markdown 内容。
+  select_connection: 选择数据库连接
+  select_connection_placeholder: 选择连接...
+  select_file_first: 请选择一个 .ipynb 文件
+  share_error: 只有所有者才能更改共享设置。
+  share_label: 共享给组
+  shared: 笔记本已共享给组
+  shared_badge: 已共享
+  size_label: 大小：
+  step1_title: 第 1 步：选择文件
+  step2_title: 第 2 步：预览
+  storage_form_label: 存储
+  storage_label: 存储：
+  table_count: '{count} 个表'
+  tables_created_label: 已创建的表：
+  title_label: 标题：
+  unshared: 笔记本已取消共享
+  table_name: 表：{name}
+password:
+  strength:
+    fair: 一般
+    good: 良好
+    strong: 强
+    weak: 弱
+preparation:
+  add_operation: 添加操作
+  after: 之后
+  back_to_list: 返回规则列表
+  before: 之前
+  cancel: 取消
+  col:
+    categorical: 分类
+    datetime: 日期时间
+    nulls: '{percent}% 为空'
+    numeric: 数值
+  cols: 列
+  column_label: 列
+  constant_value_label: 常量值
+  create_first: 创建您的第一个准备规则，以在分析前清理和转换此数据集。
+  delete: 删除
+  delete_confirm: 删除规则 “{name}”？此操作无法撤销。
+  description_label: 描述（可选）
+  duplicate: 复制
+  duplicate_suffix: (副本)
+  edit: 编辑
+  edit_title: 编辑规则：{name}
+  encoding:
+    label: 标签
+    onehot: 独热编码
+  encoding_param_label: 编码
+  live_preview: 实时预览
+  load_error: 加载数据失败
+  method:
+    minmax: 最小-最大归一化
+    zscore: Z分数标准化
+  method_label: 方法
+  name_label: 名称
+  name_required: 规则名称不能为空
+  new_name_label: 新名称
+  new_rule: 新建规则
+  new_title: 新建准备规则
+  no_rules: 暂无准备规则
+  nulls: 空值
+  op:
+    convert_type: 转换类型
+    drop_column: 删除列
+    drop_duplicates: 删除重复项
+    encode_category: 编码类别
+    fill_missing: 填充缺失值
+    filter: 筛选
+    rename_column: 重命名列
+    normalize: 规范化
+    standardize: 标准化
+  operations_count: '{count} 个操作{itemize}'
+  operations_label: 操作
+  operator_label: 操作符
+  ops_required: 至少需要一项操作
+  preview: 预览
+  preview_error: 预览失败
+  preview_loading: 正在预览...
+  preview_no_ops: 添加操作以查看预览
+  row_impact: '{before} → {after} 行'
+  rows: 行
+  rule_deleted: 规则已删除
+  rule_duplicated: 规则已复制
+  rule_saved: 规则已保存
+  rules_for: '{dataset} 的规则'
+  sample_data: 样本数据
+  save: 保存规则
+  save_error: 保存规则失败
+  saving: 正在保存...
+  schema_error: 加载数据集架构失败
+  select_column: -- 选择列 --
+  select_type: -- 选择操作 --
+  strategy:
+    constant: 常量
+    drop_row: 删除行
+    mean: 均值
+    median: 中位数
+    mode: 众数
+  strategy_label: 策略
+  target_type_label: 目标类型
+  title: 准备规则 — {dataset}
+  type_label: 操作
+  value_label: 值
+profile:
+  change_password:
+    description: 更新您的密码。
+    title: 修改密码
+  change_password_button: 修改密码
+  confirm_password: 确认新密码
+  current_password: 当前密码
+  current_password_required: 当前密码不能为空
+  dark_mode_description: 切换浅色/深色主题。
+  dark_mode_label: 深色模式
+  email_label: 电子邮件
+  email_notifications_description: 接收有关您帐户的电子邮件更新。
+  email_notifications_label: 电子邮件通知
+  email_unchangeable: 电子邮件无法更改
+  example_user_language_hint: 注册获得完整访问权限以更改语言偏好。
+  example_user_name_hint: 注册获得完整访问权限以更改名称。
+  example_user_notifications_hint: 注册获得完整访问权限以更改通知设置。
+  example_user_save_hint: 注册获得完整访问权限以保存更改。
+  example_user_theme_hint: 注册获得完整访问权限以更改主题偏好。
+  group_description: 描述
+  group_id: 组ID
+  group_info_title: 组信息
+  group_load_error: 加载组信息失败
+  group_readonly_hint: 您的组由管理员分配，无法在此更改。
+  language_description: 选择您偏好的界面语言。
+  language_label: 语言
+  language_select_placeholder: 选择语言
+  languages_load_error: 加载语言列表失败
+  load_error: 加载设置失败
+  name_label: 名称
+  name_placeholder: 您的姓名
+  new_password: 新密码
+  password_change_failed: 更改密码失败
+  password_changed: 密码已成功更改
+  password_disabled: 示例用户禁用密码更改
+  password_disabled_message: 您以示例用户身份登录，密码功能被禁用。
+  password_mismatch: 新密码不匹配
+  personal:
+    description: 更新您的个人信息和应用程序偏好设置。
+    title: 个人资料与偏好设置
+  save_button: 保存更改
+  save_error: 保存个人资料失败
+  save_success: 个人资料已保存
+  title: 个人资料设置
+  update_error: 更新个人资料失败
+  slow_threshold:
+    description: 模型测试超过此时间将报告为过慢。留空以使用站点默认值。
+    seconds: 秒
+    save: 保存限制
+    effective: 当前生效：
+    saved: 慢模型限制已保存
+    invalid: 限制必须是整数秒数，至少为 1。
+    placeholder: 使用站点默认值
+    label: 我的限制
+    title: 慢模型阈值
+recipes:
+  add_rule: 添加规则
+  back_to_recipe: 返回配方
+  by_label: 由
+  cancel_button: 终止
+  cancel_error: 无法取消执行
+  cancel_success: 执行已取消
+  chart:
+    category: 类别
+    count: 计数
+    value: 值
+    x_axis: X
+    y_axis: Y
+  clone: 克隆
+  clone_button: 克隆
+  clone_error: 克隆配方失败
+  clone_success: 配方克隆成功
+  clone_suffix: （副本）
+  column_type:
+    category: 类别
+    datetime: 日期/时间
+    number: 数字
+    text: 文本
+  columns_after: 列
+  columns_before: 列
+  columns_label: 列
+  columns_label_short: 列
+  columns_required: 请至少选择一列
+  create_error: 创建配方失败
+  create_success: 配方“{name}”创建成功。
+  dataset_label: 数据集
+  dataset_required: 请选择一个数据集
+  delete: 删除
+  delete_button: 删除
+  delete_confirmation: 确定要删除配方“{name}”吗？此操作无法撤销。
+  delete_title: 删除配方
+  description_label: 描述（可选）
+  description_placeholder: 配方描述
+  edit: 编辑
+  execute: 执行
+  execute_button: 执行
+  execute_error: 执行配方失败：{error}
+  execute_success: 配方执行成功
+  execution_error: 错误
+  execution_load_error: 加载执行失败：{error}
+  execution_not_found: 未找到执行“{id}”。
+  execution_progress: 进度
+  execution_stage_results: 阶段结果
+  execution_started: 已开始
+  execution_status: 状态
+  execution_title: 执行结果
+  executions_title: 最近执行
+  export_results: 导出结果
+  go_define: 前往定义
+  go_upload: 前往上传
+  group_by_hint: 按分类列分组以比较各组统计数据
+  group_by_label: 分组依据（可选）
+  list_load_error: 加载配方列表失败
+  load_datasets_error: 加载数据集失败：{error}
+  load_error: 加载配方失败：{error}
+  load_rules_error: 加载预处理规则失败
+  loading_schema: 正在加载列...
+  move_down: 下移
+  move_up: 上移
+  my_recipes: 我的配方
+  name_label: 配方名称
+  name_placeholder: 例如：销售分析
+  name_required: 配方名称为必填项
+  new_button: 新建配方
+  new_title: 新建配方
+  no_datasets: 未找到数据集，请先上传或定义一个数据集。
+  no_datasets_available: 无可用数据集，请先上传数据集。
+  no_datasets_found: 无可用数据集，请先上传数据集。
+  no_group: 无
+  no_group_options: 无可用分类列进行分组
+  no_preparation_rules: 此数据集没有可用的预处理规则。
+  no_recipes: 您尚未创建任何配方。
+  no_schema: 此数据集没有可用的模式。
+  no_stages: 配方必须至少包含一个阶段。
+  no_visualisation: 无
+  no_visualisation_data: 无可视化数据
+  none: 无
+  preparation_rules: 预处理规则（可选）
+  preparation_rules_applied: 已应用的预处理规则
+  preparation_rules_applied_description: 规则在分析阶段之前按下示顺序应用。
+  preparation_rules_applied_title: 已应用的预处理规则
+  preparation_rules_description: 按顺序选择要应用的规则。规则将依次应用。
+  recipe_label: 配方
+  remove_rule: 移除规则
+  rows_after: 之后行数
+  rows_before: 行
+  rows_label: 行
+  rules_applied_label: 已应用 {count} 条规则：
+  save_button: 保存配方
+  schema_error: 加载列架构失败：{error}
+  schema_loaded: 模式已加载：找到 {count} 列
+  select_dataset: 选择数据集
+  select_group: 选择分组列
+  select_rule: 选择要添加的规则
+  select_rule_placeholder: 选择规则
+  select_technique: 选择技术
+  select_visualisation: 选择可视化
+  selected: 已选择
+  shared: 已共享
+  shared_badge: 共享
+  shared_description: 将此配方提供给组内其他用户。
+  shared_group_hint: 组：{group} - {description}
+  shared_label: 与组共享
+  shared_with_group: 已与您的组共享
+  stage_data_selection: 数据选择
+  stage_number: 阶段 {number}
+  stage_preparation: 数据准备
+  stage_statistics: 统计
+  stage_visualisation: 可视化
+  stages_title: 阶段
+  status:
+    cancelled: 已取消
+    completed: 已完成
+    failed: 失败
+    pending: 待处理
+    running: 运行中
+  step1_description: 为您的配方命名并添加描述。
+  step1_title: 命名您的配方
+  step2_description: 选择数据集并选择要分析的列。
+  step2_title: 选择数据
+  step3_description: 选择要应用的统计技术。
+  step3_title: 选择分析
+  step4_description: 向您的配方添加可视化。
+  step4_title: 可视化（可选）
+  step_analysis: 分析
+  step_complete: 步骤 {step} 完成
+  step_data: 数据
+  step_name: 名称
+  step_visualise: 可视化
+  technique_anova_one_way: 单因素方差分析
+  technique_anova_two_way: 双因素方差分析
+  technique_chi_square: 卡方检验
+  technique_correlation: 相关矩阵
+  technique_descriptive: 描述性统计
+  technique_hint: 描述性统计显示汇总指标，如均值、中位数和标准差。
+  technique_label: 技术
+  technique_linear_regression: 线性回归
+  technique_t_test_independent: 独立样本t检验
+  technique_t_test_paired: 配对样本t检验
+  title: 统计配方
+  total_rules_applied: 应用的规则总数
+  unknown_user: 未知
+  update_error: 更新配方失败：{error}
+  update_success: 配方“{id}”更新成功。
+  updated_label: 已更新
+  visualisation:
+    columns_label: 列
+    data_points: 数据点
+    distribution: 分布
+    trend: 趋势
+    type_label: 类型
+  visualisation_bar: 条形图
+  visualisation_hint: 图表将使用所选数据列生成。
+  visualisation_label: 可视化类型
+  visualisation_line: 折线图
+  visualisation_pie: 饼图
+  visualisation_raw_data: 可视化数据：
+  visualisation_scatter: 散点图
+  editor:
+    new_recipe_name: 新配方
+    save_success: 配方已保存
+    save: 保存配方
+    name_required: 需要提供配方名称。
+    placeholder: 这是手动统计配方编辑器——配方是工作台的核心。
+    component_dataset: 数据集 / 转换
+    component_output: 输出
+    loading: 正在加载配方…
+    name_hint: 保存配方前需要提供名称。
+    run: 运行
+    component_algorithm: 算法
+    save_error: 保存配方失败
+    name_placeholder: 配方名称
+    create_mode: 创建新配方——编辑器将在第3阶段推出。
+  require:
+    algorithm: 选择一项分析
+    independentColumns: 选择独立列
+    dataset: 选择数据集
+    second_response: 选择第二个响应列
+    categoryColumn: 为 {out} 选择类别列
+    responseColumn: 为 {algo} 选择响应列
+    xColumn: 为 {out} 选择 X 列
+    factorColumn: 为 {algo} 选择因子列
+    yColumn: 为 {out} 选择 Y 列
+    dependentColumn: 选择依赖列
+    first_response: 选择第一个响应列
+  output:
+    x_column: X 轴列
+    placeholder: 选择输出类型
+    category_column: 类别列
+    y_column: Y轴列
+  share:
+    group_info: 组 {group} — {desc}
+    unshare: 取消共享
+    button: 共享
+    read_only: 由 {owner} 共享 — 只读
+    shared_badge: 已共享
+  panel:
+    shared_recipes: 已共享
+    no_results: 没有符合搜索条件的配方
+    my_recipes: 我的配方
+    search: 搜索配方...
+    complete: 就绪
+    incomplete: 未完成
+    new_button: 新建配方
+    no_recipes: 暂无配方
+    updated: 已更新
+  execution:
+    errors_label: 错误：
+    request_failed: 执行失败
+    results_label: 结果：
+    rules_count: 已应用 {count} 条准备规则。
+    failed_start: 启动执行失败
+    running: 正在运行配方…
+    showing_rows: 显示 {count} / {total} 行
+  algorithm:
+    response_column: 响应（数值型）
+    independent_columns: 自变量
+    factor_column: 因子（分类变量）
+    placeholder: 选择分析类型
+    group_by: 分组依据
+    dependent_column: 因变量
+  dataset:
+    no_datasets: 没有可用的数据集
+    placeholder: 选择数据集
+    loading: 正在加载数据集...
+    rows_label: 行
+    load_error: 加载数据集失败
+    columns_label: 列
+  transforms:
+    label: 转换
+    add: 添加转换
+    no_transforms: 未应用转换
+    remove: 移除
+    manage_button: 管理转换
+  visualisation_table: 表
+  needs_other_columns: （需要其他列）
+  visualisation_donut: 环形图
+  visualisation_area: 面积图
+  visualisation_hbar: 水平条形图
+  ui:
+    delete_error: 删除配方失败
+    delete_success: 配方已删除
+  visualisation_histogram: 直方图
+register:
+  confirm_password: 确认密码
+  creating: 正在创建账户...
+  description: 创建新账户
+  email: 电子邮件
+  failed: 注册失败
+  have_account: 已有账户？
+  language_description: 选择您偏好的界面语言。
+  login_link: 登录
+  name: 名称
+  password: 密码
+  password_mismatch: 密码不匹配
+  submit: 注册
+  success_with_verification: 您的账户已创建。请检查您的邮箱，点击验证链接以激活您的账户。
+  title: 注册
+  email_failed_use_resend: 注册成功，但验证邮件无法发送。请从登录页面重新发送。
+  success_auto_verified: 您的账户已创建并可立即使用。您现在可以登录。
+  success_pending_approval: 您的账户已创建，正在等待管理员批准。批准后您即可登录。
+  registration_disabled: 自助注册已禁用。请联系管理员。
+resend_verification:
+  back_to_login: 返回登录
+  check_spam: 如果几分钟内未收到邮件，请检查您的垃圾邮件文件夹。
+  description: 输入您的电子邮件地址以接收新的验证链接。
+  error: 发送验证电子邮件失败。
+  send_button: 发送验证电子邮件
+  sent: 验证电子邮件已发送。请检查您的收件箱（和垃圾邮件文件夹）。
+  sent_description: 如果此电子邮件关联了账户，您将收到验证链接。
+  sent_title: 电子邮件已发送
+  title: 重新发送验证电子邮件
+reset_password:
+  confirm_password: 确认新密码
+  description: 在下方输入您的新密码。
+  failed: 密码重置失败
+  login_button: 前往登录
+  missing_token: 未提供重置令牌
+  new_password: 新密码
+  password_mismatch: 密码不匹配
+  submit: 重置密码
+  success: 密码重置成功
+  success_description: 密码已重置，正在跳转到登录页面...
+  success_title: 密码重置
+  title: 重置密码
+settings:
+  ai:
+    title: AI 连接
+  database:
+    title: 数据库连接
+  profile:
+    title: 偏好设置
+  title: 设置
+tools:
+  all_datasets: 所有数据集
+  connect_database: 连接数据库
+  description: 更多实用工具和分析工具将显示在此处。
+  import_notebook: 导入笔记本
+  manage_data: 收集数据
+  my_data: 我的数据
+  notebooks: 笔记本
+  placeholder: 工具页面即将上线。
+  title: 其他工具
+  upload_csv_excel: 上传 CSV / Excel
+  upload_data: 上传数据
+  uploads_list: 上传文件（csv, Excel）
+  visualize: 可视化沙盒
+validation:
+  api_key_required: 此提供商需要 API 密钥
+  database_required: 数据库名称为必填项
+  host_required: 主机为必填项
+  name_required: 连接名称为必填项
+  password:
+    min_length: 密码长度必须至少为 {min} 个字符。
+    require_digit: 密码必须包含至少一个数字。
+    require_lowercase: 密码必须包含至少一个小写字母。
+    require_special: 密码必须包含至少一个特殊字符。
+    require_uppercase: 密码必须包含至少一个大写字母。
+    too_weak: 密码强度太弱，请选择更强的密码。
+  password_required: 密码为必填项
+  port_invalid: 端口号必须在 1 到 65535 之间
+  provider_required: 请选择提供商
+  username_required: 用户名为必填项
+  type_required: 请选择数据库类型
+verify_email:
+  error_description: 出了点问题。
+  error_title: 验证失败
+  expired_description: 验证链接已过期。
+  expired_message: 您可以在下方请求新的验证邮件。
+  expired_title: 链接已过期
+  invalid_token: 无效的验证链接。
+  login_button: 前往登录
+  missing_description: 未提供验证令牌。
+  missing_title: 无验证令牌
+  network_error: 网络错误，请重试。
+  resend_button: 重新发送验证邮件
+  success_description: 您的邮箱已验证成功，正在跳转到登录页面...
+  success_title: 邮箱已验证
+  unknown_error: 出了点问题。
+virtual:
+  clone: 克隆
+  deleted: 数据集已删除
+  draft_badge: 草稿
+  edit: 编辑
+  error: 发生错误
+  existing_none: 无
+  existing_title: 现有数据集
+  loading: 加载中...
+  more: 更多
+  new_chat: 新建虚拟数据集
+  placeholder: 描述您想要执行的操作...
+  ready_badge: 就绪
+  recent_chats: 最近对话
+  send: 发送
+  stage: 阶段
+  title: 虚拟数据集
+  verbose: 详细模式
+  welcome: 欢迎使用虚拟数据集助手。如果您是第一次使用，可能想了解如何开始。
+  preview_title: 数据集预览
+  preview_columns: 输出列
+  preview_name: 名称
+  preview_joins: 连接
+  preview_sources: 来源
+  manual:
+    output_title: 数据集公开的内容
+    save_error: 无法保存虚拟数据集。
+    joins_title: 数据源的联接方式
+    column_placeholder: 选择列
+    title: 虚拟数据集编辑器
+    description_label: 数据集描述
+    select_all: 全选
+    alias_label: 别名
+    aggregation_note: 旧定义中的聚合会保留原样，但联接不会应用该聚合。
+    incomplete_join: 完成或移除尚未选择列的联接。
+    preview_error: 联接无法运行。
+    new_dataset: 新建数据集
+    test_pulls_every_source: 测试联接会完整读取每个数据源，因此可能较慢。
+    columns_error: 无法读取列。
+    select_none: 全不选
+    loading_columns: 正在读取列…
+    output_hint: 此数据集将按顺序公开的列。
+    update_dataset: 更新此数据集
+    name_label: 数据集名称
+    loaded_note: 打开了现有定义——保存会更新它。
+    intro: 通过选择列构建虚拟数据集，或打开已有数据集进行修改。
+    validate: 验证定义
+    add_join: 添加联接
+    complete_join: 填写未完成的联接
+    bridge: 桥接
+    remove: 从输出中移除此列
+    load_error: 无法加载该数据集的定义。
+    save_success: 虚拟数据集已保存。
+    need_columns: 请至少勾选一列以包含。
+    move_down: 将此列下移一位
+    sources_title: 数据来源
+    preview_empty: 联接未返回任何行。
+    no_match: 此处没有任何内容与筛选条件匹配。
+    alias_taken: 该别名已被另一个数据源使用。
+    joins_hint: 两个或更多数据源之间需要联接。一个数据源则不需要。
+    tables_error: 无法读取表。
+    need_name: 保存前请为数据集命名。
+    open_label: 打开现有数据集
+    validate_errors: 定义存在以下问题：
+    remove_join: 移除此联接
+    bridge_choose_columns: 未找到匹配的列——添加联接并选择它们
+    suggested: 建议
+    move_up: 将此列上移一位
+    unattached_sources: 未与其余部分联接：{sources}。请添加一个联接将它们连接起来。
+    open_none: 尚无可打开的虚拟数据集。
+    need_join: 已选择两个数据源，但没有任何联接将它们连接起来。
+    materialized_hint: 将结果写入表而非使用实时联接。制作原型时请保持关闭。
+    sources_hint: 展开连接或数据集，然后勾选要包含的列。
+    preview_rows: 返回了 {count} 行
+    materialized_label: 物化结果
+    validate_ok: 该定义在结构上有效。
+    no_sources: 没有可用的连接或数据集。
+    bridge_no_columns: 尚未读取列——展开数据源，或添加联接并选择它们
+    test_join: 测试联接
+    loaded_note_shared: 已打开现有共享定义 — 只读 - 不允许更新
+    materialize_done: 表已构建。
+    materialize_retry: 重试
+    materialize_failed: 已保存，但无法构建该表：
+  chip_error: 该选项无法应用。
+  panel_columns: '{count} 列'
+  panel_tick_error: 该列无法勾选。
+  chip_load_error: 选项无法刷新，因此这些选项可能已过时。
+  panel:
+    expand: 显示来源面板
+    collapse: 收起来源面板
+  progress_decided: 已决定 {decided}/{total}
+  panel_fold_error: 面板的折叠状态无法保存，因此下次将再次展开。
+  panel_tick_no_session: 请先发送消息——树会记录您在当前会话中的勾选状态。
+  heading_match_columns: 匹配这些列
+  heading_choose_table: 选择表格
+  heading_materialised: 实时还是物化？
+  heading_choose_columns: 选择列
+  suggestion_applied: 已应用
+  confirm_selection: 使用这些
+  act:
+    sources: 已接受 {count} 张表
+    applied: 已应用 {piece}
+    sources_short: 已接受 {count} 张表：{tables}
+    join: 已加入 {pair}
+    named: 将其命名为“{name}”
+  selection_hint: 取消勾选任何你不需要的，然后一起使用它们。
+  joins_unjoined: 未联接：{tables}
+  joins_coverage: 已连接 {connected}/{total} 个表
+  joins_apply: 应用
+  act_joins: 已联接 {count} 对
+  joins_unsaved: 这些行与数据集不同。请应用它们，或先修复空行。
+  join_type_label: 联接类型
+  joins_hint: 更改任意列或联接类型，然后继续。
+  name_suggestion_heading: 建议名称 — 如不满意可修改
+  name_suggestion_accept: 使用此名称
+visualize:
+  config: 配置
+  data: 数据 (JSON)
+  data_placeholder: 在此粘贴 JSON 数据或生成示例
+  description: 选择可视化类型、生成示例数据、调整参数并预览。
+  download_error: 下载表格失败
+  download_png: 下载为 PNG
+  download_success: 表格已下载为 PNG
+  generate_sample: 生成示例
+  invalid_data: 文本表格的数据无效，需要包含列和行。
+  load_error: 加载可视化类型失败
+  no_data: 无可视化数据。请生成示例数据或粘贴 JSON。
+  no_types: 未定义可视化类型，请联系管理员。
+  parameters: 参数
+  preview: 预览
+  sample_expenses: 支出
+  sample_generated: 示例数据已生成
+  sample_item: 项目
+  sample_sales: 销售额
+  sample_value: 数值
+  save_error: 保存失败
+  save_instance: 保存实例
+  save_no_data: 没有可保存的数据，请生成或粘贴数据。
+  save_success: 可视化保存成功
+  select_type: 选择类型
+  title: 可视化沙盒
+  type: 可视化类型
+  unsupported: 可视化类型尚未实现
+  unsupported_parameter: 不支持的类型
+transforms:
+  no_transforms: 此数据集未定义任何转换。
+  filter:
+    op_eq: '='
+    op_gt: '>'
+    op_contains: 包含
+    op_is_null: 为空
+    op_is_not_null: 非空
+    op_lt: <
+    op_neq: '!='
+  operations_count: '{count} 个操作'
+  op:
+    type_placeholder: 操作类型
+    target_datetime: 日期时间
+    type:
+      drop_duplicates: 删除重复项
+      filter: 过滤行
+      fill_missing: 填充缺失值
+      encode_category: 类别编码
+      convert_type: 转换类型
+      rename_column: 重命名列
+      drop_column: 删除列
+      standardize: 标准化
+      normalize: 规范化
+    encoding_label: 标签
+    method_placeholder: 方法
+    target_type_placeholder: 目标类型
+    add: 添加操作
+    target_boolean: 布尔值
+    encoding_onehot: 独热编码
+    remove: 移除
+    value_placeholder: 值
+    empty_hint: 添加一个操作以开始构建您的转换。
+    new_name_placeholder: 新名称
+    target_numeric: 数值
+    operator_placeholder: 运算符
+    target_string: 字符串
+    column_placeholder: 选择列
+    encoding_placeholder: 编码
+    operations_label: 操作
+  delete_confirm: 删除此转换？
+  connect_transform: 连接到配方
+  description_placeholder: 描述（可选）
+  disconnect_transform: 断开与配方的连接
+  disconnect_error: 断开转换连接失败
+  fill:
+    constant: 常量
+    drop_rows: 删除行
+    mean: 均值
+    median: 中位数
+    mode: 众数
+  delete_success: 转换已删除。
+  save_success: 转换已保存。
+  empty_title: 从列表中选择一个转换或创建一个新转换。
+  back_to_recipe: 返回配方：{name}
+  connect_error: 连接转换失败
+  description_label: 描述
+  connected_count: '{count} 已连接'
+  empty_hint: 运行转换时，操作将按列表顺序应用。
+  empty_state: 添加一个操作以开始构建转换。
+  delete_button: 删除
+  save_button: 保存
+  no_search_results: 没有匹配您搜索的转换
+  name_placeholder: 转换名称
+  operations_heading: 操作
+  back_to_data: 返回我的数据
+  search_placeholder: 搜索转换…
+  for_recipe: 配方：{name}
+  connected_to_recipe: 已连接到：{name}
+  new_transform: 新建转换
+  name_label: 名称
+  load_error: 加载转换失败
+  name_required: 转换名称为必填项。
+licence:
+  delete_success: 许可证已移除。正在以开源模式运行。
+  details_label: 许可证详情
+  no_features: 当前未启用任何门控功能。
+  tier_label: 层级
+  expires_at_label: 到期时间
+  admin_required: 您必须是管理员才能查看许可证信息。
+  preview_error: 验证许可证文件失败。
+  delete_no: 取消
+  delete_error: 移除许可证失败。
+  upload_title: 上传许可证文件
+  issued_at_label: 已签发
+  title: 许可证状态
+  delete_confirm: 这将使系统恢复为开源模式。所有受限功能将被禁用。您可以通过安装新许可证来恢复。
+  max_users_label: 许可用户
+  install_button: 安装许可证
+  delete_yes: 是，移除许可证
+  load_error: 加载许可证信息失败。
+  install_error: 安装许可证失败。
+  install_no_file: 未选择文件。
+  issued_to_label: 授权给
+  delete_title: 移除许可证
+  install_success: 许可证安装成功。
+  features_label: 已启用功能
+  description: 当前功能许可证和级别信息。
+  delete_button: 移除许可证
+  preview_invalid: 无效的许可证文件。
+  preview_title: 许可证预览
+  open_source_message: 此安装正在开源模式下运行。联系Sentuny以升级到企业许可证。
+setup:
+  options:
+    password_policy:
+      require_digit: 要求数字
+      low: 低（最少 6 个字符）
+      min_strength: 最低强度（zxcvbn 评分 0-4）
+      require_special: 要求特殊字符
+      require_lowercase: 要求小写字母
+      medium: 中（最少8位，需含大小写字母和数字）
+      min_length: 最小长度
+      label: 密码策略
+      hint: 选择用户注册和密码更改的密码复杂度要求。
+      custom: 自定义
+      require_uppercase: 需要大写字母
+      select: 选择策略
+      high: 高（至少10个字符，包含大写、小写、数字、特殊字符）
+    email_sender:
+      label: 电子邮件发件人地址
+      hint: 验证邮件显示的发件邮箱地址。
+    save_button: 保存选项
+    welcome:
+      label: 欢迎消息
+      hint: 此消息将显示在登录页面上。留空以隐藏。
+      placeholder: 输入要在登录页面显示的欢迎消息。
+    load_error: 加载选项设置失败
+    save_success: 选项设置已保存
+    save_error: 保存选项设置失败
+    public_url:
+      label: 公共URL
+      hint: 用于电子邮件验证链接的基础URL（例如 https://workbench.example.com）。
+    title: 选项
+    description: 安装时设置，定义此部署的身份和行为。请谨慎更改——这些会影响所有用户。
+    registration_mode:
+      hint: 选择新用户账户的创建和验证方式。
+      mode_2: 自助注册并由管理员验证
+      select: 选择注册模式
+      label: 注册模式
+      mode_1: 管理员创建已验证用户
+      mode_4: 自助注册并通过邮箱验证
+      mode_0: 自助注册并自动验证
+  limits:
+    upload:
+      size_hint: 每用户最大存储总量（0 = 无限制）。适用于新用户。
+      count_5: '5'
+      size_250_mb: 250 MB
+      size_1_mb: 1 MB
+      count_500: '500'
+      count_1: '1'
+      select_size: 选择限制
+      count_unlimited: 无限制
+      size_5_mb: 5 MB
+      size_10_mb: 10 MB
+      default_count_label: 每用户默认最大上传数量
+      count_50: '50'
+      select_count: 选择限制
+      count_250: '250'
+      count_25: '25'
+      size_unlimited: 无限制
+      count_1000: '1000'
+      size_50_mb: 50 MB
+      size_100_mb: 100 MB
+      count_hint: 每个用户的最大数据集数量（0 = 无限制）。应用于新用户。
+      size_500_mb: 500 MB
+      size_25_mb: 25 MB
+      size_1_gb: 1 GB
+      count_100: '100'
+      count_10: '10'
+      default_size_label: 每用户默认最大上传大小（MB）
+    title: 限制
+    max_registrations:
+      label: 最大用户注册数
+      hint: 设置可注册用户的数量限制。
+      placeholder: 选择限制
+      users: 用户
+      unlimited: 无限制
+    invalid_grace_period: 请输入有效的正数以指定删除延迟（小时）
+    invalid_registration_max: 请输入有效的正数以指定最大注册数
+    invalid_timeout: 请输入有效的正数以指定验证超时时间（小时）
+    grace_period:
+      label: 删除延迟（小时）
+      hint: 软删除账户永久清除前的小时数。
+    email_timeout:
+      hint: 电子邮件验证链接有效的小时数。
+      label: 邮件验证超时（小时）
+    demo_mode:
+      description: 启用后，系统将以演示模式运行 — 破坏性操作会被阻止，并在界面中显示指示符。
+      label: 演示模式
+    load_error: 加载限制设置失败
+    save_success: 限制设置已保存
+    description: 用于资源限制、超时和系统行为的操作控件。可随时安全调整。
+    save_error: 保存限制设置失败
+    save_button: 保存限制
+  internal:
+    system_status:
+      initialized: 已初始化
+      not_initialized: 未初始化
+      title: 系统状态
+      unhealthy: 不健康
+      unavailable: 不可用
+      description: 后端服务的实时健康指标。
+      healthy: 健康
+      available: 可用
+      version: 版本
+      db_pool: 数据库连接池
+      not_required: 不需要
+      overall_health: 整体健康状况
+      shared_memory: 共享内存
+      db_cluster: 数据库集群
+    title: 内部
+    licence:
+      expiry: 到期时间
+      description: 当前许可证层级和已启用的功能。
+      tier: 许可证层级
+      features: 已启用功能
+      issued_to: 授权给
+      title: 许可证与功能
+    future:
+      email_transport: 邮件传输状态
+      title: 即将推出
+      pool_stats: 数据库连接池统计信息
+      debug_logging: 调试/详细日志开关
+      description: 未来的版本将添加额外的诊断信息。
+      cache_config: 缓存/会话配置
+    description: 系统诊断和内部配置。只读状态指示器。
+    load_error: 加载系统诊断信息失败
+  tuning:
+    invalid_temperature: 温度必须是 0 到 2 之间的数字。
+    invalid_max_tokens: 请输入整数 token 数，至少为 1。
+    slow_threshold_hint: 模型测试超过此时间将报告为过慢。用户可以调高自己的限制；但任何人不得将其限制调低到 1 以下。
+    save: 保存设置
+    preamble_detail: 每个 AI 请求都会使用这些设置，除非某个连接覆盖了它们。更改其中一项会影响所有没有自身设置的模型；它不会更改你已经调整过的连接。
+    probe_timeout_hint: 一次适用性测试可运行的时间。由 CPU 托管的模型需要几分钟，因此这里设置过短的限制会误报失败，而不是节省时间。
+    invalid_connect_timeout: 连接超时必须是整数秒数，至少为 1，最多为 60。
+    reset_confirm_title: 要将这六项重置为默认值吗？
+    ai_section_label: AI 生成
+    invalid_probe_timeout: 测试超时必须是整数秒数，至少为 1，最多为 1200。
+    forbidden: 只有完全管理员才能更改这些设置。
+    load_error: 无法加载调优设置。
+    seconds: 秒
+    invalid_model_test_seconds: 请输入整数秒数，至少为 1。
+    ai_timeout_hint: 一次 AI 请求在被放弃之前可以运行的时间。时间过短会导致聊天静默失败；时间过长则会导致停滞的模型占用工作进程。CPU 上的本地模型可能需要几分钟。
+    ai_max_tokens_hint: 单个请求可生成的最长回答。一段描述大约需要 500 个 token；4000 则留有充足余量。
+    reset_confirm_body: 此页面上的每个值都会恢复为其出厂默认值。各连接的覆盖设置不受影响。此操作无法撤销，你必须重新设置曾更改过的任何值。
+    invalid_ai_timeout: AI 时间限制必须是整数秒数，至少为 1。
+    save_error: 无法保存调优设置。
+    ai_temperature_hint: 答案的变化程度：0 表示在模型允许范围内尽可能可重复，2 表示变化最大。0 到 2 之外的值会被提供方拒绝，而不是被本系统拒绝。
+    connect_timeout_hint: 在网络端点被视为不可达之前，网络可用于接受连接的时间。低于该网络所需的数值会将可用端点变为失效端点。
+    saving: 正在保存…
+    slow_threshold_label: 慢模型阈值
+    reset_done: 调优设置已重置为默认值
+    reset_error: 无法重置调优设置。
+    reset_confirm_action: 重置
+    ai_section_hint: 适用于每个 AI 请求的默认设置。如果调优针对特定连接和模型组合，该连接和模型可覆盖这些设置。
+    ai_tokens: 词元
+    saved: 调优设置已保存
+    description: AI 行为和时间限制的默认设置。这些设置通常适合保持原样——按用户或按连接的设置可以不同；当两者均未设置时，将应用此处的值。
+    resetting: 正在重置…

@@ -1,0 +1,2255 @@
+about:
+  description: ساخت تجربه‌های فوق‌العاده با shadcn/ui و Next.js. طراحی تمیز، عملکرد سریع.
+  fast_desc: ساخته‌شده بر پایه Next.js App Router برای عملکرد بهینه.
+  fast_title: سریع
+  get_started: شروع کنید
+  modern_desc: کامپوننت‌های دسترس‌پذیر از shadcn/ui، استایل‌دهی‌شده با Tailwind CSS.
+  modern_title: رابط کاربری مدرن
+  secure_desc: ایمن از نظر نوع و قابل‌شخصی‌سازی – شما مالک کد کامپوننت هستید.
+  secure_title: امن
+  title: درباره میز کار آماردانان
+admin:
+  groups:
+    back_to_admin: بازگشت به مدیریت
+    cannot_modify_self: امکان تغییر حساب کاربری خودتان وجود ندارد
+    delete_confirmation: آیا مطمئن هستید که می‌خواهید {name} را حذف کنید؟ این کاربر به‌صورت نرم حذف خواهد شد و مدیر ارشد می‌تواند آن را بازیابی کند.
+    delete_error: حذف کاربر ناموفق بود
+    delete_title: حذف کاربر
+    demote: تنزل مقام
+    demote_error: تنزل مقام کاربر ناموفق بود
+    demote_success: کاربر از مدیریت گروه تنزل یافت
+    description_placeholder: توضیحات را وارد کنید
+    description_required: توضیحات نمی‌تواند خالی باشد
+    group_description: توضیحات گروه
+    group_users_load_error: بارگیری کاربران گروه ناموفق بود
+    load_error: بارگیری گروه‌ها ناموفق بود
+    load_success: گروه‌ها با موفقیت بارگیری شدند
+    no_users: هیچ کاربری در این گروه یافت نشد.
+    promote: ارتقا
+    promote_error: ارتقای کاربر ناموفق بود
+    promote_success: کاربر به مدیریت گروه ارتقا یافت
+    readonly_badge: (فقط‌خواندنی)
+    readonly_message: شما این صفحه را در حالت فقط‌خواندنی مشاهده می‌کنید. کاربران نمونه نمی‌توانند تغییری ایجاد کنند.
+    readonly_title: مدیریت گروه (فقط‌خواندنی)
+    select_group: انتخاب گروه
+    select_group_placeholder: یک گروه انتخاب کنید
+    title: مدیریت گروه
+    update_error: به‌روزرسانی گروه ناموفق بود
+    update_success: توضیحات گروه به‌روزرسانی شد
+    users_in_group: کاربران گروه
+  models:
+    comment_placeholder: دیدگاه را وارد کنید
+    description: تمام مدل‌هایی که میز کار از آنها خبر دارد. فعال‌کردن یک مدل بر هر اتصالی که آن را ارائه می‌کند اثر می‌گذارد؛ ستون سرورها نشان می‌دهد کدام‌ها می‌توانند به آن دسترسی داشته باشند.
+    disabled: غیرفعال
+    edit_comment: ویرایش دیدگاه
+    enabled: فعال
+    fetch_auth_required: این ارائه‌دهنده برای فهرست‌کردن مدل‌ها به کلید API نیاز دارد. به‌جای آن از تنظیمات ← اتصالات هوش مصنوعی به‌روزرسانی کنید.
+    fetch_non_standard: این ارائه‌دهنده API استاندارد فهرست مدل را ارائه نمی‌کند. مدل‌ها را به‌صورت دستی در پنل مدیریت اضافه کنید.
+    load_models_error: بارگیری مدل‌ها ناموفق بود
+    no_comment: —
+    no_models: هنوز مدلی وجود ندارد. کشف خودکار آنها را از یک اتصال ایجاد می‌کند.
+    not_preferred: غیرمرجح
+    preferred: مرجح
+    toggle_error: به‌روزرسانی مدل ناموفق بود
+    update_error: به‌روزرسانی دیدگاه ناموفق بود
+    update_success: مدل به‌روزرسانی شد
+    no_servers: هنوز هیچ اتصالی این مدل را ارائه نمی‌کند
+    servers_title: قابل‌دسترس از
+    tuning_inherited_title: خالی بودن، پیش‌فرض میزکار را به ارث می‌برد.
+    tuning_temperature_hint: مقادیر پایین‌تر پاسخ‌های تکرارپذیرتری می‌دهند؛ مقادیر بالاتر پاسخ‌های متنوع‌تری می‌دهند.
+    tuning_timeout_hint: ثانیه‌هایی که یک درخواست هوش مصنوعی می‌تواند اجرا شود. یک مدل محلی روی CPU ممکن است چند دقیقه نیاز داشته باشد.
+    filter_clear: پاک کردن فیلترها
+    search_placeholder: جستجوی نام مدل
+    filter_result: نتیجه
+    tuning_load_error: بارگیری تنظیمات هوش مصنوعی ممکن نشد
+    filter_test: آزمون قابلیت
+    tuning_saved: تنظیمات هوش مصنوعی ذخیره شد
+    model_count: '{count} مدل'
+    tuning_hint: این مقادیر هرجا که این مدل روی این اتصال استفاده شود اعمال می‌شوند. خالی بودن یعنی پیش‌فرض میزکار را به ارث می‌برد.
+    tuning_save_error: ذخیره تنظیمات هوش مصنوعی ممکن نشد
+    tuning_inherited: به ارث رسیده
+    filter_state: وضعیت
+    tuning_title: تنظیمات هوش مصنوعی برای این سرور
+    filter_any: هر وضعیت
+    no_matches: هیچ مدلی با این فیلترها مطابقت ندارد.
+    tuning_loading: در حال بارگیری تنظیمات هوش مصنوعی…
+  providers:
+    code_label: کد
+    delete_button: حذف
+    delete_confirmation: آیا مطمئن هستید که می‌خواهید ارائه‌دهنده «{name}» را حذف کنید؟ این کار همه مدل‌های مرتبط را نیز حذف می‌کند و قابل بازگشت نیست.
+    delete_error: حذف ارائه‌دهنده ناموفق بود
+    delete_provider: حذف ارائه‌دهنده
+    delete_success: ارائه‌دهنده حذف شد
+    delete_title: حذف ارائه‌دهنده
+    description: ارائه‌دهندگان هوش مصنوعی را فعال یا غیرفعال کنید. ارائه‌دهندگان غیرفعال در فرم‌های اتصال کاربر ظاهر نخواهند شد.
+    disabled: غیرفعال
+    enabled: فعال
+    fetch_error: بارگیری ارائه‌دهندگان ناموفق بود
+    list_title: همه ارائه‌دهندگان
+    local: محلی
+    no_api_key: بدون نیاز به کلید API
+    requires_api_key: به کلید API نیاز دارد
+    title: ارائه‌دهندگان هوش مصنوعی
+    toggle_error: به‌روزرسانی ارائه‌دهنده ناموفق بود
+    update_success: ارائه‌دهنده به‌روزرسانی شد
+  title: پنل مدیریت
+  user_details:
+    dark_mode_description: جابه‌جایی بین پوسته روشن و تاریک.
+    dark_mode_label: حالت تاریک
+    email_label: ایمیل
+    email_notifications_description: به‌روزرسانی‌های ایمیلی درباره حساب کاربری خود دریافت کنید.
+    email_notifications_label: اعلان‌های ایمیلی
+    full_admin_note: مدیران ارشد به‌طور پیش‌فرض همه مجوزهای مدیریت گروه را دارند.
+    group_admin_description: کاربر می‌تواند سایر کاربران درون گروه خود را مدیریت کند.
+    group_admin_label: مدیر گروه
+    group_hint: گروه کاربر تعیین می‌کند که به کدام منابع مشترک دسترسی دارد.
+    language_label: زبان
+    language_select_placeholder: انتخاب زبان
+    load_error: بارگیری جزئیات کاربر ناموفق بود
+    max_upload_count_hint: حداکثر تعداد مجموعه‌داده برای هر کاربر (۰ = نامحدود).
+    max_upload_count_label: حداکثر تعداد بارگذاری
+    max_upload_count_placeholder: تعداد را انتخاب کنید
+    max_upload_size_hint: حداکثر فضای ذخیره‌سازی کل برای هر کاربر (۰ = نامحدود).
+    max_upload_size_label: حداکثر اندازه بارگذاری
+    max_upload_size_placeholder: انتخاب اندازه
+    name_label: نام
+    not_found: کاربر یافت نشد
+    save_error: به‌روزرسانی کاربر ناموفق بود
+    save_success: جزئیات کاربر به‌روزرسانی شد
+    select_group: انتخاب گروه
+    title: مدیریت کاربر
+    unnamed: کاربر بی‌نام
+    user_group: گروه کاربر
+  users:
+    active_users: کاربران فعال
+    admin_badge: مدیر
+    bcc_label: ثبت‌نام‌های BCC
+    bcc_updated: تنظیم ثبت‌نام BCC به‌روزرسانی شد
+    created_label: ایجاد شد
+    current_user_badge: شما
+    delete_button: حذف
+    delete_confirmation: آیا مطمئن هستید که می‌خواهید «{name}» را برای همیشه حذف کنید؟ این عمل قابل بازگشت نیست.
+    delete_error: حذف کاربر ناموفق بود
+    delete_self_error: نمی‌توانید حساب خودتان را حذف کنید
+    delete_success: کاربر برای همیشه حذف شد
+    delete_title: حذف کاربر
+    deleted_badge: حذف نرم‌شده
+    deleted_label: حذف شد
+    example_user_badge: کاربر نمونه
+    forbidden: ممنوع
+    group_admin_badge: مدیر گروه
+    hard_delete_button: حذف دائمی
+    hard_delete_confirmation: آیا مطمئن هستید که می‌خواهید «{name}» را برای همیشه حذف کنید؟ این عمل قابل بازگشت نیست.
+    hard_delete_error: حذف دائمی کاربر ناموفق بود
+    hard_delete_success: کاربر برای همیشه حذف شد
+    hard_delete_title: حذف دائمی کاربر
+    load_error: بارگیری کاربران ناموفق بود
+    make_admin: تبدیل به مدیر
+    more_button: بیشتر...
+    no_name: بدون نام
+    remove_admin: حذف از مدیر
+    resend_button: ارسال مجدد ایمیل
+    resend_error: ارسال ایمیل تأیید ناموفق بود
+    resend_success: ایمیل تأیید به {email} ارسال شد
+    restore_button: بازیابی
+    restore_error: بازیابی کاربر ناموفق بود
+    restore_success: کاربر بازیابی شد
+    soft_deleted_users: کاربران حذف نرم‌شده
+    title: مدیریت کاربران
+    unauthorized: غیرمجاز
+    unverified_badge: تأییدنشده
+    update_error: به‌روزرسانی کاربر ناموفق بود
+    update_success: کاربر به‌روزرسانی شد
+    user_not_found: کاربر یافت نشد
+    verified_badge: تأییدشده
+    verify_button: تأیید
+    verify_error: تأیید کاربر ناموفق بود
+    verify_success: کاربر به‌عنوان تأییدشده علامت خورد
+    add_user: افزودن کاربر
+  visualization_types:
+    add_button: افزودن نوع جدید
+    add_title: افزودن نوع مصورسازی
+    create_success: نوع مصورسازی ایجاد شد
+    default_parameters: پارامترهای پیش‌فرض (JSON)
+    delete: حذف
+    delete_button: حذف
+    delete_confirmation: آیا مطمئن هستید که می‌خواهید نوع «{name}» را حذف کنید؟ این کار تمام نمونه‌های مرتبط را نیز حذف می‌کند و قابل بازگشت نیست.
+    delete_error: حذف ناموفق بود
+    delete_success: نوع مصورسازی حذف شد
+    delete_title: حذف نوع مصورسازی
+    description: توضیحات
+    disabled: غیرفعال
+    edit: ویرایش
+    edit_title: ویرایش نوع مصورسازی
+    enabled: فعال
+    fetch_error: بارگیری انواع مصورسازی ناموفق بود
+    input_schema: طرحواره ورودی (JSON)
+    invalid_json: JSON نامعتبر در یکی از فیلدهای طرحواره
+    list_title: همه انواع مصورسازی
+    name: نام
+    no_types: هنوز نوع مصورسازی تعریف نشده است.
+    parameter_schema: طرحواره پارامتر (JSON)
+    renderer: رندرکننده
+    renderer_client: کلاینت
+    renderer_label: رندرکننده
+    renderer_server: سرور
+    save_error: ذخیره ناموفق بود
+    slug: اسلاگ
+    slug_label: اسلاگ
+    title: انواع مصورسازی
+    toggle_error: به‌روزرسانی ناموفق بود
+    update_success: نوع مصورسازی به‌روزرسانی شد
+  adduser:
+    title: افزودن کاربر
+    failed: ایجاد کاربر ناموفق بود
+    description: ایجاد حساب کاربری جدید. حساب بلافاصله تأیید میشود.
+    email: ایمیل
+    creating: در حال ایجاد کاربر...
+    password_mismatch: رمزهای عبور مطابقت ندارند
+    success: حساب ایجاد و تأیید شد. کاربر جدید اکنون میتواند وارد شود.
+    language_description: زبان ترجیحی کاربر برای رابط کاربری را انتخاب کنید.
+    not_admin: شما اجازه دسترسی به این صفحه را ندارید.
+    back_to_admin: بازگشت به مدیریت
+    submit: ایجاد کاربر
+    name: نام
+    confirm_password: تأیید رمز عبور
+    password: رمز عبور
+  set_password:
+    admin_password: رمز عبور مدیر
+    title: تنظیم رمز عبور
+    admin_password_required: رمز عبور مدیر لازم است
+    failed: تنظیم رمز عبور ناموفق بود
+    success: رمز عبور با موفقیت تنظیم شد
+    description: یک رمز عبور جدید برای این کاربر تنظیم کنید. برای تأیید این تغییر، رمز عبور مدیر خودتان لازم است.
+ai:
+  connection:
+    add_first: اولین اتصال هوش مصنوعی خود را اضافه کنید
+    add_new: افزودن اتصال هوش مصنوعی جدید
+    add_success: اتصال هوش مصنوعی با موفقیت اضافه شد
+    add_title: افزودن اتصال هوش مصنوعی جدید
+    api_key_hint: کلید API شما قبل از ذخیره‌سازی رمزنگاری می‌شود.
+    api_key_label: کلید API
+    by_label: توسط
+    clear_default: پاک‌کردن پیش‌فرض
+    currently_not_shared: ❌ در حال حاضر به اشتراک گذاشته نشده است
+    currently_shared: ✅ در حال حاضر با گروه به اشتراک گذاشته شده است
+    default_badge: پیش‌فرض
+    default_cleared: اتصال هوش مصنوعی پیش‌فرض پاک شد
+    default_set: اتصال هوش مصنوعی پیش‌فرض به‌روزرسانی شد
+    delete_button: حذف
+    delete_confirmation: آیا مطمئن هستید که می‌خواهید اتصال را حذف کنید؟
+    delete_error: حذف اتصال هوش مصنوعی ناموفق بود
+    delete_title: حذف اتصال هوش مصنوعی
+    deleted: اتصال هوش مصنوعی حذف شد
+    edit_title: ویرایش اتصال هوش مصنوعی
+    endpoint_hint: در صورت نیاز نقطه پایانی API پیش‌فرض را بازنویسی کنید.
+    endpoint_label: نشانی نقطه پایانی
+    form_description: پیکربندی اتصال ارائه‌دهنده هوش مصنوعی
+    group_label: گروه
+    load_error: بارگیری اتصال‌ها ناموفق بود
+    load_providers_error: بارگیری ارائه‌دهنده‌ها ناموفق بود
+    metadata_load_error: بارگیری فراداده ارائه‌دهنده ناموفق بود
+    metadata_loading: اطلاعات ارائه‌دهنده هنوز در حال بارگیری است. لطفاً صبر کنید.
+    models: مدل‌های موجود
+    models_disabled: غیرفعال
+    models_load_error: بارگیری مدل‌ها ناموفق بود
+    models_none: هنوز مدلی همگام‌سازی نشده است. برای دریافت مدل‌ها از ارائه‌دهنده، روی بازخوانی کلیک کنید.
+    models_refresh: بازخوانی مدل‌ها
+    models_sync_error: همگام‌سازی مدل‌ها ناموفق بود
+    models_synced: مدل‌ها با موفقیت همگام‌سازی شدند
+    name_label: نام اتصال
+    name_placeholder: مثلاً اتصال هوش مصنوعی من
+    no_connections: هنوز هیچ اتصال هوش مصنوعی ذخیره نشده است.
+    not_found: اتصال یافت نشد
+    provider_label: ارائه‌دهنده
+    provider_not_found: ارائه‌دهنده یافت نشد
+    save_error: ذخیره اتصال هوش مصنوعی ناموفق بود
+    select_provider: ارائه‌دهنده هوش مصنوعی را انتخاب کنید
+    select_provider_first: ابتدا یک ارائه‌دهنده انتخاب کنید
+    set_default: تنظیم به عنوان پیش‌فرض
+    shared_badge: به اشتراک گذاشته‌شده
+    shared_description: این اتصال را برای سایر کاربران گروه در دسترس قرار دهید.
+    shared_label: به اشتراک‌گذاری با گروه
+    shared_readonly: به اشتراک گذاشته‌شده
+    shared_readonly_message: این اتصال با شما به اشتراک گذاشته شده است. می‌توانید آن را مشاهده کنید، اما ویرایش فقط برای مالک مجاز است.
+    test_button: آزمایش اتصال
+    test_error: اتصال ناموفق بود.
+    test_success: اتصال موفق بود!
+    unknown_user: ناشناخته
+    update_success: اتصال هوش مصنوعی با موفقیت به‌روزرسانی شد
+    probe_timeout_hint: مدت زمان اجرای یک آزمون تناسب در اینجا. یک مدل میزبانی‌شده روی CPU دقیقه‌ها طول می‌کشد.
+    models_discovered: 'در این اتصال {seen} مدل کشف شد: {created} جدید، {refreshed} شناخته‌شده، {pruned} دیگر ارائه نمی‌شود'
+    connect_exceeds_probe: مهلت اتصال نمی‌تواند طولانی‌تر از مهلت آزمون مدل باشد — اتصال نمی‌تواند برای برقراری، بیشتر از کل زمان آزمون طول بکشد.
+    invalid_connect_timeout: مهلت اتصال باید عدد صحیحی از ثانیه باشد، حداقل ۱ و حداکثر ۶۰
+    timeouts_section_hint: برای استفاده از پیش‌فرض میزکار، کادر را خالی بگذارید.
+    invalid_probe_timeout: مهلت آزمون مدل باید عدد صحیحی از ثانیه باشد، حداقل ۱ و حداکثر ۱۲۰۰
+    connect_timeout_hint: چه مدت شبکه ممکن است برای پذیرش یک اتصال زمان ببرد. مقداری کمتر از نیاز این شبکه، یک نقطهٔ پایانیِ در حال کار را به نقطهٔ پایانیِ غیرقابل دسترس تبدیل می‌کند.
+    timeouts_section_label: مهلت‌های اتصال
+  database:
+    add_connection: افزودن اتصال پایگاه داده
+    ai_augmented: تحلیل افزوده‌شده با هوش مصنوعی
+    ai_augmented_desc: هوش مصنوعی طرحواره، هوش مصنوعی معنایی و هوش مصنوعی یکپارچه‌سازی این پایگاه داده را تحلیل کرده‌اند.
+    ai_fallback: تحلیل پایه
+    ai_fallback_desc: تحلیل افزوده‌شده با هوش مصنوعی در دسترس نیست. فقط تحلیل ساختاری نمایش داده می‌شود. برای بینش عمیق‌تر یک اتصال هوش مصنوعی انتخاب کنید.
+    ai_health_score: امتیاز سلامت هوش مصنوعی
+    ai_unavailable: تحلیل هوش مصنوعی در دسترس نیست. برای فعال‌سازی تحلیل پیشرفته، یک ارائه‌دهنده هوش مصنوعی متصل کنید.
+    all_issues: همه مشکلات
+    analysis_report: گزارش تحلیل
+    analysis_summary: '{tables} جدول، {columns} ستون، {issues} مشکل یافت شد'
+    analyze: تحلیل طرحواره
+    analyzing: در حال تحلیل...
+    business_value: ارزش تجاری
+    categories: دسته‌ها
+    code_systems_detected: سیستم‌های کد شناسایی شد
+    cols_rows_format: '{cols} ستون، {rows} ردیف'
+    column_meanings: معانی ستون‌ها
+    columns_label: ستون‌ها
+    confidence: اطمینان
+    description: طراحی پایگاه داده خود را برای مشکلات نمایه‌سازی، نرمال‌سازی، رابطه، نوع داده و نام‌گذاری تحلیل کنید.
+    download_pdf: دانلود PDF
+    email_body_attachment: گزارش تحلیل پیوست شده است.
+    email_body_connection: 'اتصال: {conn_name}'
+    email_body_database: 'پایگاه داده: {db_name}'
+    email_body_id: 'شناسه اتصال: {conn_id}'
+    email_body_signature: — میز کار آمارگران
+    email_body_title: گزارش تحلیل طراحی پایگاه داده
+    email_body_type: 'نوع پایگاه داده: {db_type}'
+    email_error: ارسال ایمیل گزارش ناموفق بود
+    email_pdf: ارسال PDF با ایمیل
+    email_sent: گزارش با موفقیت ایمیل شد
+    email_subject: تحلیل طراحی پایگاه داده — {db_name} ({db_type}) [اتصال {conn_id}]
+    empty_state: برای شروع، یک اتصال پایگاه داده انتخاب کنید و روی تحلیل کلیک کنید.
+    enter_question: لطفاً یک سؤال وارد کنید.
+    foreign_keys: کلیدهای خارجی
+    high_risk: بالا
+    implicit_relationships: روابط ضمنی
+    indexes_label: نمایه‌ها
+    integration_analysis: تحلیل یکپارچه‌سازی
+    integration_analysis_desc: روابط ضمنی، قابلیت‌های پژوهشی و ابعاد گمشده شناسایی‌شده توسط هوش مصنوعی یکپارچه‌سازی.
+    isic_domains: طبقه‌بندی‌های حوزه ISIC
+    issues_label: مشکلات
+    low_risk: پایین
+    medium_risk: متوسط
+    missing_dimensions: ابعاد گمشده
+    no_issues: هیچ مشکلی یافت نشد. طراحی پایگاه داده شما خوب به نظر می‌رسد!
+    no_semi_structured: هیچ الگوی داده نیمه‌ساختاریافته در ستون‌های متنی شناسایی نشد.
+    normalisation_suggestions: پیشنهادهای نرمال‌سازی
+    normalisation_suggestions_desc: جدول‌های مرجع پیشنهادی بر اساس کلیدواژه‌های یافت‌شده در ستون‌های متنی نیمه‌ساختاریافته.
+    normalisation_warning: این‌ها پیشنهادهای تولیدشده توسط هوش مصنوعی هستند. بازطراحی پایگاه داده نیازمند بررسی دقیق است. ابتدا تغییرات را روی یک نسخه کپی آزمایش کنید.
+    pdf_downloaded: PDF با موفقیت دانلود شد
+    pdf_error: تولید PDF ناموفق بود
+    pk_prefix: کلید اصلی –
+    placeholder: به‌زودی. این قابلیت به شما کمک می‌کند با استفاده از هوش مصنوعی طرحواره‌های پایگاه داده طراحی کنید.
+    priority_actions: اقدام‌های دارای اولویت بالا
+    proposed_reference_table: جدول مرجع پیشنهادی
+    rag_ask: بپرس
+    rag_chat: گفتگوی RAG — درباره داده‌های خود سؤال بپرسید
+    rag_chat_desc: سؤال‌های زبان طبیعی بپرسید. سیستم ستون‌های متنی را جستجو می‌کند و پاسخ‌های تولیدشده توسط هوش مصنوعی را همراه با استناد برمی‌گرداند.
+    rag_error: پرس‌وجوی RAG ناموفق بود
+    rag_placeholder: مثلاً، تشخیص‌های رایج کدام‌اند؟
+    rag_sources: منابع
+    research_capabilities: قابلیت‌های پژوهشی
+    risk_breakdown: تفکیک ریسک
+    rows_label: ردیف‌ها
+    schema_error: تحلیل طرحواره پایگاه داده ناموفق بود
+    select_connection: انتخاب اتصال پایگاه داده
+    select_connection_first: لطفاً ابتدا یک اتصال پایگاه داده انتخاب کنید.
+    select_connection_placeholder: یک اتصال پایگاه داده انتخاب کنید...
+    semantic_analysis: تحلیل معنایی
+    semantic_analysis_desc: معانی ستون استنباط‌شده توسط هوش مصنوعی، طبقه‌بندی‌های دامنه ISIC و شناسایی سیستم‌های کد.
+    semi_structured: تحلیل داده‌های نیمه‌ساخت‌یافته
+    semi_structured_desc: ستون‌های متنی برای کدهای نهفته، کلیدواژه‌ها و الگوها تحلیل شدند.
+    table_purposes: اهداف جدول‌ها
+    tables_explorer: کاوشگر جدول‌ها
+    tables_label: جدول‌ها
+    timeout_error: مهلت تحلیل به پایان رسید. پایگاه داده ممکن است بیش از حد بزرگ باشد یا سرویس هوش مصنوعی در دسترس نباشد.
+    timeout_log: مهلت تحلیل پس از ۱۵ دقیقه به پایان رسید.
+    title: دستیار طراحی پایگاه داده
+    top_recommendations: توصیه‌های برتر
+    health_score_desc: سلامت کلی پایگاه داده توسط Schema AI ارزیابی شد. ۰ = مشکلات ساختاری بحرانی، ۱۰۰ = آماده تولید.
+    is_missing: وجود ندارد
+    peer_tables: 'جدول‌های همتا:'
+  dataclean:
+    chat_error: دریافت پاسخ ناموفق بود
+    chat_placeholder: درباره پاک‌سازی یا آماده‌سازی این مجموعه داده بپرسید...
+    column_tooltip: '{type} — {null_count} مقدار null، {unique_count} مقدار یکتا'
+    column_type:
+      category: دسته
+      datetime: تاریخ/زمان
+      number: عدد
+      text: متن
+    description: پاک‌سازی و آماده‌سازی مجموعه داده مبتنی بر هوش مصنوعی.
+    empty_chat: یک مجموعه داده انتخاب کنید و شروع به پرسیدن سؤالات درباره نحوه پاک‌سازی و آماده‌سازی آن کنید.
+    enter_message: لطفاً یک پیام وارد کنید.
+    loading_schema: در حال بارگیری طرحواره...
+    no_connection: لطفاً یک اتصال هوش مصنوعی پیش‌فرض در تنظیمات > هوش مصنوعی پیکربندی کنید.
+    no_datasets: هیچ مجموعه داده‌ای در دسترس نیست. ابتدا یک مجموعه داده بارگذاری یا تعریف کنید.
+    placeholder: به‌زودی. این قابلیت به شما کمک می‌کند با استفاده از هوش مصنوعی مجموعه داده‌ها را پاک‌سازی و آماده کنید.
+    schema_error: بارگیری طرحواره مجموعه داده ناموفق بود
+    schema_summary: '{rows} ردیف، {cols} ستون'
+    select_dataset: انتخاب مجموعه داده
+    select_dataset_first: لطفاً ابتدا یک مجموعه داده انتخاب کنید.
+    select_dataset_placeholder: یک مجموعه داده انتخاب کنید...
+    send: ارسال
+    shared_badge: (مشترک)
+    title: دستیار پاک‌سازی مجموعه داده
+    clean_in_place_success: مجموعه‌داده «{name}» به‌روزرسانی شد.
+    no_dataset_selected: هیچ مجموعه‌داده‌ای انتخاب نشده است
+    operations_count: '{count} عملیات'
+    clean_copy_success: مجموعه‌داده جدیدی به نام «{name}» ایجاد شد — نسخه اصلی بدون تغییر باقی ماند.
+    preview_title: پیش‌نمایش داده‌ها
+    rules_title: قوانین آماده‌سازی
+    clean_copy: نسخه پاک‌سازی‌شده
+    no_rules: هنوز قوانینی وجود ندارد
+    clean_in_place: پاک‌سازی در محل
+    clean_name_label: نام نسخه پاک‌سازی‌شده
+    clean_no_rules: هنوز قوانین پاک‌سازی برای اعمال وجود ندارد.
+  default_hint: اتصال پیش‌فرض به‌عنوان پشتیبان در صورتی استفاده می‌شود که دستور تحلیل ارائه‌دهنده هوش مصنوعی را مشخص نکرده باشد.
+  new_session: نشست جدید
+  no_ai_connections: هیچ اتصال هوش مصنوعی پیکربندی نشده است. یکی در تنظیمات > هوش مصنوعی اضافه کنید.
+  recipe:
+    chat_error: دریافت پاسخ ناموفق بود
+    chat_placeholder: درباره تحلیل آماری یا پیکربندی دستور تحلیل بپرسید...
+    description: تولید دستور تحلیل و قواعد تحلیل مبتنی بر هوش مصنوعی.
+    empty_chat: یک مجموعه داده انتخاب کنید و بپرسید از کدام تکنیک‌های آماری استفاده کنید.
+    enter_message: لطفاً یک پیام وارد کنید.
+    loading_schema: در حال بارگیری طرحواره...
+    no_datasets: هیچ مجموعه داده‌ای در دسترس نیست. ابتدا یک مجموعه داده بارگذاری یا تعریف کنید.
+    placeholder: به‌زودی. این قابلیت به شما کمک می‌کند با استفاده از هوش مصنوعی دستورهای تحلیل بسازید.
+    schema_summary: '{rows} ردیف، {cols} ستون'
+    select_dataset: انتخاب مجموعه داده
+    select_dataset_first: لطفاً ابتدا یک مجموعه داده انتخاب کنید.
+    select_dataset_placeholder: یک مجموعه داده انتخاب کنید...
+    send: ارسال
+    title: دستیار قواعد تحلیل
+  recipe_concierge:
+    chat_error: دریافت پاسخ ناموفق بود
+    create_prompt: برای شروع یک نشست جدید ایجاد کنید.
+    delete_session: حذف نشست
+    draft_empty: برای ساخت دستور تحلیل خود گفتگو را آغاز کنید. پیش‌نویس با تصمیم‌گیری شما اینجا ظاهر می‌شود.
+    draft_title: پیش‌نویس دستور تحلیل
+    input_placeholder: درباره داده‌های خود بپرسید... یا فقط بگویید «سلام»
+    manual_label: دستور تحلیل دستی
+    new_session: نشست جدید
+    no_session: نشستی انتخاب نشده است
+    no_sessions: هنوز نشستی ایجاد نشده است
+    open: باز کردن در ویرایشگر
+    save: ذخیره دستور تحلیل
+    saved: دستور تحلیل ذخیره شد!
+    saving: در حال ذخیره...
+    select_dataset: انتخاب مجموعه داده...
+    stage_columns: انتخاب ستون‌ها
+    stage_complete: دستور تحلیل آماده است
+    stage_goal: سؤال پژوهشی
+    stage_greeting: خوش آمدید
+    stage_review: مرور دستور تحلیل
+    stage_technique: انتخاب تکنیک
+    stage_transforms: آماده‌سازی داده
+    stage_visualisation: بصری‌سازی
+    status_draft: پیش‌نویس
+    status_ready: آماده
+    tab_chat: گفتگو
+    tab_draft: پیش‌نویس
+    tab_sessions: نشست‌ها
+    title: دستیار شخصی هوش مصنوعی برای دستور تحلیل
+    toggle_panel: نمایش/پنهان کردن پنل دستور تحلیل
+    welcome: به من بگویید می‌خواهید در داده‌های خود چه چیزی را کشف کنید تا به شما کمک کنم یک دستور تحلیل کامل بسازید.
+    schema_changes: 'تغییرات طرحواره شناسایی شد:'
+    draft_output: خروجی
+    errors_heading: هنوز نمی‌توان ذخیره کرد
+    warnings_heading: هشدارها
+    draft_algorithm: الگوریتم
+    draft_dataset: مجموعه‌داده
+    draft_no_visualisation: نتایج عددی
+    progress_decided: '{count} از {total} تصمیم گرفته شده'
+    done: انجام شد
+    chip_withheld: +{count} بیشتر
+    progress_next: '{progress} · {next}'
+    unread_sources: برخی از منابع قابل خواندن نبودند، بنابراین فهرست ستونها ممکن است ناقص باشد.
+    chip_superseded: با یک پیشنهاد جدیدتر جایگزین شد.
+    chip_expand: نمایش {count} مورد بیشتر
+    chip_collapse: نمایش کمتر
+  select_ai_connection: اتصال هوش مصنوعی
+  select_ai_connection_placeholder: انتخاب اتصال هوش مصنوعی...
+  select_model: مدل
+  select_model_placeholder: انتخاب مدل...
+  test_error: اتصال ناموفق بود.
+  test_success: اتصال با موفقیت برقرار شد!
+  title: تنظیمات هوش مصنوعی
+  thinking: در حال فکر کردن...
+  testing:
+    failure_reason: 'دلیل: {reason}'
+    run_failed: 'اجرای آزمون ممکن نشد: {detail}'
+    slow_limit_session_hint: فقط برای این صفحه اعمال می‌شود — ذخیره نمی‌شود.
+    run_all_for_model: اجرای همه برای این مدل
+    slow_limit_session_reset: استفاده از محدودیت ذخیره‌شده من
+    test_turn: پیچیدگی
+    test_tools: از ابزارها استفاده می‌کند
+    discover_result: 'سرور {seen} مدل را فهرست کرد: {created} جدید، {refreshed} شناخته‌شده، {pruned} دیگر ارائه نمی‌شود'
+    state_fail: ناموفق
+    running: در حال اجرا…
+    column_actions: آزمون
+    cost_confirm: شروع اجرا
+    enabled_no: مدل غیرفعال شد
+    no_duration_here: روی این اتصال اجرا نشده است
+    load_error: بارگیری اتصال‌های هوش مصنوعی شما ممکن نشد. {detail}
+    slow_limit_session_link: آن را به‌طور دائمی در نمایه خود تنظیم کنید
+    run_all_untested: اجرای همه آزمون‌ها روی مدل‌های آزمون‌نداده
+    no_models: هنوز مدلی روی این اتصال کشف نشده است.
+    elsewhere_note: یک مدل می‌تواند نتیجه قابلیت را از اتصال دیگری نگه دارد. مدت کنار هر وضعیت، اندازه‌گیری خودِ این اتصال است، بنابراین یک مدل ممکن است وضعیتی را اینجا بدون مدت نشان دهد.
+    duration_seconds: '{seconds} ثانیه'
+    state_pass: موفق
+    test_competence: شایستگی
+    cancelled: متوقف شد. نتایجی که قبلاً ثبت شده بودند نگه داشته شدند.
+    title: آزمایش هوش مصنوعی
+    no_connections_heading: هنوز اتصال هوش مصنوعی وجود ندارد
+    duration_ms: '{ms} میلی‌ثانیه'
+    no_connections_body: آزمودن یک مدل به اتصال هوش مصنوعی نیاز دارد. یکی اضافه کنید، سپس به این صفحه بازگردید.
+    explanation: دستیارهای هوش مصنوعی میزکار برای مدل‌هایی ساخته شده‌اند که عمل می‌کنند. مدلی که فقط صحبت می‌کند — هرچقدر مؤدبانه، هرچقدر بزرگ — ویرایشگر دستورالعمل را در حال پاسخگویی رها می‌کند در حالی
+      که هیچ کاری انجام نمی‌دهد. راه‌حل، مدل است نه کد. ابزار این صفحه به شما امکان می‌دهد بررسی کنید که آیا مدلی مناسب است.
+    no_connections_link: رفتن به اتصال‌های هوش مصنوعی
+    connection_label: اتصال هوش مصنوعی
+    discover_failed: 'کشف مدل‌ها ممکن نشد: {detail}'
+    discover_models: کشف مدل‌ها
+    discover_running: در حال پرسش از سرور…
+    column_model: مدل
+    slow_limit_session_label: محدودیت مدل کند
+    slow_limit_unavailable: تنظیمات شما شامل محدودیت مدل کند نبود، بنابراین هیچ مدلی به‌عنوان خیلی کند علامت‌گذاری نشده است.
+    too_slow: بیش از محدودیت {seconds} ثانیه‌ای شما
+    models_heading: مدل‌ها
+    column_enabled: فعال
+    slow_limit_failed: نتوانست محدودیت مدل کند شما را بخواند، بنابراین هیچ مدلی به‌عنوان خیلی کند علامت‌گذاری نشده است. {detail}
+    cost_warning: این کار {count} آزمایش اجرا می‌کند و آزمایش نوبتی روی CPU برای هر مدل چند دقیقه زمان می‌برد. برای شروع دوباره فشار دهید.
+    run_test: اجرای آزمایش
+    enabled_yes: مدل فعال شد
+api:
+  admin:
+    already_full_admin: کاربر از قبل مدیر کل است
+    already_group_admin: کاربر از قبل مدیر گروه است
+    cannot_delete_self: نمی‌توانید حساب خود را حذف کنید
+    cannot_demote_full_admin: نمی‌توان یک مدیر کل را تنزل داد
+    cannot_demote_self: نمی‌توانید خود را تنزل دهید
+    cannot_promote_example: نمی‌توان کاربر نمونه را ارتقا داد
+    delete_error: حذف کاربر ناموفق بود
+    demote_error: تنزل کاربر ناموفق بود
+    description_required: توضیحات نمی‌تواند خالی باشد
+    example_blocked: کاربران نمونه نمی‌توانند اقدامات مدیریتی انجام دهند
+    group_not_found: گروه یافت نشد
+    group_users_load_error: بارگیری کاربران گروه ناموفق بود
+    groups_load_error: بارگیری گروه‌ها ناموفق بود
+    groups_stats_error: بارگیری آمار گروه ناموفق بود
+    instance_exists: نمی‌توان نوع را حذف کرد زیرا {count} نمونه مرتبط دارد.
+    insufficient_permissions: مجوزهای کافی برای این اقدام وجود ندارد
+    invalid_group_id: group_id نامعتبر است. باید بین 00 تا 99 باشد
+    invalid_id: شناسه نامعتبر است
+    invalid_upload_count: maxUploadCount باید یک عدد صحیح نامنفی باشد (0 برای نامحدود).
+    invalid_upload_size: maxUploadSizeMB باید یک عدد صحیح نامنفی باشد (0 برای نامحدود).
+    missing_fields: فیلدهای الزامی تکمیل نشده‌اند
+    missing_group_id: شناسه گروه موجود نیست
+    missing_id: شناسه موجود نیست
+    missing_model_id: شناسه مدل موجود نیست
+    missing_provider_code: پارامتر providerCode موجود نیست
+    missing_user_id: شناسه کاربر موجود نیست
+    model_update_error: به‌روزرسانی مدل ناموفق بود
+    models_load_error: بارگیری مدل‌ها ناموفق بود
+    no_fields: هیچ فیلد معتبری برای به‌روزرسانی وجود ندارد
+    no_group: کاربر به هیچ گروهی اختصاص داده نشده است
+    not_group_admin: کاربر مدیر گروه نیست
+    only_full_admin: فقط مدیران کل می‌توانند این اقدام را انجام دهند
+    promote_error: ارتقای کاربر ناموفق بود
+    provider_delete_error: حذف ارائه‌دهنده ناموفق بود
+    provider_not_found: ارائه‌دهنده یافت نشد
+    provider_update_error: به‌روزرسانی ارائه‌دهنده ناموفق بود
+    providers_load_error: بارگیری ارائه‌دهنده‌ها ناموفق بود
+    slug_exists: اسلاگ از قبل وجود دارد
+    update_error: به‌روزرسانی کاربر ناموفق بود
+    user_load_error: بارگیری کاربر ناموفق بود
+    user_not_found: کاربر یافت نشد
+    users_load_error: بارگیری کاربران ناموفق بود
+    viz_type_create_error: ایجاد نوع بصری‌سازی ناموفق بود
+    viz_type_delete_error: حذف نوع بصری‌سازی ناموفق بود
+    viz_type_update_error: به‌روزرسانی نوع بصری‌سازی ناموفق بود
+    viz_types_load_error: بارگیری انواع بصری‌سازی ناموفق بود
+    settings_invalid_email_timeout: مهلت تأیید ایمیل باید عددی مثبت باشد (ساعت)
+    settings_invalid_public_url: قالب نشانی اینترنتی عمومی نامعتبر است
+    settings_invalid_upload_size: حداکثر اندازه بارگذاری پیش‌فرض باید یک عدد صحیح نامنفی باشد (۰ برای نامحدود).
+    settings_invalid_max_registrations: حداکثر تعداد ثبت‌نام باید عددی مثبت یا نامحدود باشد
+    settings_modify_forbidden: فقط مدیران کامل می‌توانند تنظیمات سراسری را تغییر دهند
+    settings_invalid_email_sender: قالب نشانی ایمیل فرستنده نامعتبر است
+    settings_save_error: ذخیره تنظیمات سراسری ناموفق بود
+    settings_invalid_grace_period: مهلت ثبت‌نام باید عددی مثبت باشد (ساعت)
+    settings_view_forbidden: فقط مدیران کامل می‌توانند تنظیمات سراسری را مشاهده کنند
+    settings_invalid_upload_count: حداکثر تعداد بارگذاری پیش‌فرض باید یک عدد صحیح نامنفی باشد (۰ برای نامحدود).
+    settings_load_error: بارگیری تنظیمات سراسری ناموفق بود
+  auth:
+    account_deleted: این حساب حذف شده است.
+    email_not_verified: ایمیل تأیید نشده است. لطفاً صندوق ورودی و پوشه هرزنامه (SPAM) را بررسی کنید.
+    example_user_blocked: تغییر رمز عبور برای کاربران نمونه غیرفعال است.
+    example_user_forgot_blocked: بازنشانی رمز عبور برای کاربران نمونه غیرفعال است
+    example_user_register_blocked: کاربران نمونه نمی‌توانند حساب جدید ایجاد کنند
+    example_user_reset_blocked: بازنشانی رمز عبور برای کاربران نمونه غیرفعال است
+    internal_error: خطای داخلی سرور
+    invalid_credentials: اعتبارنامه نامعتبر است
+    invalid_current_password: رمز عبور فعلی نادرست است
+    invalid_token: نشانه نامعتبر یا منقضی‌شده است
+    missing_email: ایمیل الزامی است
+    missing_fields: فیلدها تکمیل نشده‌اند
+    password_validation_failed: اعتبارسنجی رمز عبور ناموفق بود
+    token_expired: نشانه منقضی‌شده است
+    unauthorized: غیرمجاز
+    user_not_found: کاربر یافت نشد
+  datasets:
+    delete_blocked: کاربران نمونه نمی‌توانند مجموعه‌های داده را حذف کنند
+    example_blocked: کاربران نمونه نمی‌توانند مجموعه داده ایجاد کنند
+    proxy_error: خطای داخلی سرور
+    update_blocked: کاربران نمونه نمی‌توانند مجموعه‌های داده را به‌روزرسانی کنند
+  profile:
+    name_required: نام الزامی است
+    update_failed: به‌روزرسانی نمایه ناموفق بود
+  recipes:
+    create_error: ایجاد دستورالعمل ناموفق بود
+    dataset_not_found: مجموعه داده یافت نشد
+    dataset_required: شناسه مجموعه داده الزامی است
+    delete_error: حذف دستورالعمل ناموفق بود
+    execute_error: اجرای دستورالعمل ناموفق بود
+    execution_load_error: بارگیری اجرا ناموفق بود
+    execution_not_found: اجرا یافت نشد
+    executions_load_error: بارگیری اجراها ناموفق بود
+    load_error: بارگیری دستورالعمل‌ها ناموفق بود
+    missing_id: شناسه دستورالعمل الزامی است
+    name_required: نام و مراحل الزامی هستند
+    not_found: دستورالعمل یافت نشد
+    not_owned: دستورالعمل یافت نشد یا متعلق به شما نیست
+    update_error: به‌روزرسانی دستورالعمل ناموفق بود
+  register:
+    email_exists: ایمیل از قبل وجود دارد
+    internal_error: خطای داخلی سرور
+    invalid_email: قالب ایمیل نامعتبر است
+    limit_reached: سقف ثبت‌نام تکمیل شد (حداکثر {max_reg} کاربر).
+    missing_fields: فیلدها تکمیل نشده‌اند
+    password_validation_failed: اعتبارسنجی رمز عبور ناموفق بود
+    settings_not_found: تنظیمات سراسری یافت نشد
+  settings:
+    load_failed: بارگیری تنظیمات ناموفق بود
+    save_failed: ذخیره تنظیمات ناموفق بود
+    user_not_found: کاربر یافت نشد
+  user:
+    api_key_required: کلید API برای این ارائه‌دهنده الزامی است
+    connection_name_exists: اتصالی با این نام از قبل وجود دارد
+    connection_not_found: اتصال یافت نشد
+    example_blocked: کاربران نمونه نمی‌توانند این عمل را انجام دهند
+    internal_error: خطای داخلی سرور
+    missing_fields: فیلدهای الزامی تکمیل نشده‌اند
+    provider_not_found: ارائه‌دهنده "{provider}" یافت نشد.
+    user_not_found: کاربر یافت نشد
+  global_settings_load_error: خطای داخلی سرور
+app:
+  name: میزکار آمارشناسان
+  version: نسخه
+chat:
+  connection_not_found: اتصال هوش مصنوعی یافت نشد یا در دسترس نیست.
+  connections_load_error: بارگیری اتصالات ناموفق بود
+  delete: حذف
+  delete_confirm: آیا مطمئن هستید که می‌خواهید این گفتگو را حذف کنید؟
+  delete_error: حذف گفتگو ناموفق بود
+  delete_success: گفتگو حذف شد
+  empty_state: برای شروع گفتگو پیامی بفرستید.
+  go_to_ai_settings: رفتن به تنظیمات هوش مصنوعی
+  history: تاریخچه گفتگو
+  input_placeholder: پیام خود را بنویسید...
+  load_error: بارگیری گفتگوها ناموفق بود
+  models_load_error: بارگیری مدل‌ها ناموفق بود
+  new_chat: گفتگوی جدید
+  no_chat_selected: گفتگوی فعالی وجود ندارد
+  no_chats: هنوز گفتگویی وجود ندارد
+  no_connections_message: برای استفاده از گفتگو باید حداقل یک اتصال هوش مصنوعی تعریف کنید.
+  no_models: هیچ مدلی برای این اتصال موجود نیست
+  rename: تغییر نام
+  rename_empty: عنوان نمی‌تواند خالی باشد
+  rename_error: تغییر نام گفتگو ناموفق بود
+  rename_success: نام گفتگو تغییر کرد
+  select_connection: اتصال هوش مصنوعی
+  select_connection_first: ابتدا یک اتصال هوش مصنوعی انتخاب کنید.
+  select_connection_placeholder: یک اتصال هوش مصنوعی انتخاب کنید
+  select_model: مدل
+  select_model_placeholder: یک مدل انتخاب کنید
+  send_error: ارسال پیام ناموفق بود
+  title: گفتگو
+common:
+  access_denied_admin: دسترسی رد شد — فقط مدیر.
+  audio_settings: تنظیمات صدا
+  back: بازگشت
+  cancel: لغو
+  cannot_undo: این عمل قابل بازگشت نیست.
+  clear: پاک کردن
+  close: بستن
+  close_navigation: بستن ناوبری
+  copied: کپی شد!
+  copy: کپی
+  copy_to_clipboard: کپی در کلیپ‌بورد
+  delete: حذف
+  delete_chat: حذف گفتگو
+  deleting: در حال حذف...
+  dismiss: رد کردن
+  dismiss_error: رد خطا
+  dismiss_success: رد موفقیت
+  edit: ویرایش
+  error_label: خطا
+  false_label: نادرست
+  generating: در حال تولید...
+  has_more_information: اطلاعات بیشتری دارد
+  loading: در حال بارگیری...
+  microphone_off: میکروفن خاموش
+  microphone_on: میکروفن روشن
+  next: بعدی
+  no_answer: هیچ پاسخی برگردانده نشد
+  no_permission: شما اجازه مشاهده این صفحه را ندارید.
+  open_navigation: باز کردن ناوبری
+  reset_to_defaults: بازنشانی به پیش‌فرض‌ها
+  restoring: در حال بازیابی...
+  save: ذخیره
+  saving: در حال ذخیره...
+  select_language: انتخاب زبان
+  sending: در حال ارسال...
+  speaker_off: بلندگو خاموش
+  speaker_on: بلندگو روشن
+  speech_input_unsupported: 'ورودی گفتار در مرورگر شما پشتیبانی نمی‌شود. مرورگرهای سازگار: گوگل کروم، مایکروسافت اج، اپرا، سامسونگ اینترنت.'
+  speech_mic_denied: دسترسی میکروفن رد شد. لطفاً دسترسی میکروفن را در تنظیمات مرورگر خود مجاز کنید.
+  speech_mic_failed: 'راه‌اندازی میکروفن ناموفق بود: {error}.'
+  speech_network_error: خطای شبکه در تشخیص گفتار — اتصال اینترنت خود را بررسی و دوباره تلاش کنید.
+  speech_output_unsupported: 'خروجی گفتار در مرورگر شما پشتیبانی نمی‌شود. مرورگرهای سازگار: گوگل کروم، مایکروسافت اج، موزیلا فایرفاکس، اپل سافاری، اپرا، سامسونگ اینترنت.'
+  speech_recognition_error: 'خطای تشخیص گفتار: {error}. دوباره تلاش کنید.'
+  success_label: موفقیت
+  system_default: پیش‌فرض سیستم
+  testing: در حال آزمایش...
+  true_label: درست
+  unknown: ناشناخته
+  unknown_error: خطای ناشناخته
+  untitled: بدون عنوان
+  uploading: در حال بارگذاری...
+  verifying: در حال تأیید...
+  view: مشاهده
+  view_dataset: مشاهده مجموعه‌داده
+  voice: صدا
+  audio_stop: توقف
+  audio_pause: مکث
+  audio_resume: ادامه
+  email_features_unavailable: امکانات حساب مبتنی بر ایمیل در دسترس نیست.
+  probe_timeout_label: مهلت آزمون مدل (ثانیه)
+  ai_models: مدل‌های هوش مصنوعی
+  ai_max_tokens_label: حداکثر توکن‌های خروجی
+  ai_temperature_label: دما
+  ai_timeout_label: حداکثر زمان هوش مصنوعی
+  connect_timeout_label: مهلت اتصال (ثانیه)
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: بستن
+    pitch_label: 'زیر و بمی: {0}'
+    reset_to_defaults: بازنشانی به پیش‌فرض‌ها
+    speed_label: 'سرعت: {0}x'
+    system_default: پیش‌فرض سیستم
+    title: تنظیمات صدا
+    voice: صدا
+  example_user_badge: کاربر نمونه
+  example_user_badge_tooltip: برای دسترسی کامل ثبتنام کنید
+  example_user_banner:
+    message: شما سیستم را در حالت فقطخواندنی مشاهده میکنید. برای ایجاد و ویرایش منابع، ثبتنام کنید.
+    message_short: حالت فقطخواندنی - برای دسترسی کامل ثبتنام کنید
+    register_button: برای دسترسی کامل ثبتنام کنید
+    register_short: ثبتنام
+    title: حالت کاربر نمونه
+  feature_gate:
+    upgrade_message: این قابلیت به مجوز سازمانی نیاز دارد. برای گزینههای ارتقا با Sentuny تماس بگیرید.
+    upgrade_title: قابلیت سازمانی
+  group_admin_badge: مدیر گروه
+  preparation_preview:
+    more_columns: '{0}+ بیشتر'
+    null_value: 'null'
+    rows_removed: '{0} حذف شد'
+  readonly_wrapper:
+    message: حالت فقطخواندنی - برای دسترسی کامل جهت ویرایش این محتوا ثبتنام کنید
+  return_banner:
+    link: بازگشت به نشست شما
+    text: شما در حال کار روی یک دستور هوش مصنوعی بودید.
+    recipe_link: بازگشت به دستور تهیه شما
+    fallback_link: بازگشت
+    recipe_text: شما در حال کار روی یک دستور تهیه بودید.
+  data_value:
+    some_content_not_shown: برخی محتواها نمایش داده نشدهاند
+database:
+  connection:
+    add_first: اولین اتصال خود را اضافه کنید
+    add_new: افزودن اتصال جدید
+    add_success: اتصال با موفقیت اضافه شد
+    add_title: افزودن اتصال جدید
+    auto_create_tables: ایجاد خودکار مجموعهداده‌های جدول
+    auto_create_title: ایجاد خودکار مجموعه‌داده‌ها
+    auto_create_views: ایجاد خودکار مجموعه‌داده‌های نما
+    auto_create_warnings_title: 'اتصال ذخیره شد، اما ایجاد خودکار مجموعه‌داده هشدارهایی داشت:'
+    browse_tables: مرور جدول‌ها
+    by_label: توسط
+    clear_default: پاک کردن پیش‌فرض
+    currently_not_shared: ❌ در حال حاضر به اشتراک گذاشته نشده است
+    currently_shared: ✅ در حال حاضر با گروه به اشتراک گذاشته شده است
+    database_label: نام پایگاه داده
+    datasets_created: '{n} مجموعه‌داده ایجاد شد'
+    db_create_badge: ایجاد پایگاه داده
+    default_badge: پیش‌فرض
+    default_cleared: اتصال پیش‌فرض پاک شد
+    default_set: اتصال پیش‌فرض به‌روزرسانی شد
+    delete_button: حذف
+    delete_confirmation: آیا مطمئن هستید که می‌خواهید اتصال را حذف کنید؟
+    delete_error: حذف اتصال ناموفق بود
+    delete_title: حذف اتصال
+    deleted: اتصال حذف شد
+    edit_title: ویرایش اتصال
+    file_path_label: مسیر فایل
+    form_description: جزئیات اتصال پایگاه داده خود را وارد کنید.
+    group_label: گروه
+    host_label: میزبان
+    jet_host_label: میزبان سرور Jet
+    jet_port_label: پورت سرور Jet
+    load_error: بارگیری اتصال‌ها ناموفق بود
+    name_label: نام اتصال
+    name_placeholder: 'برای مثال: پایگاه داده تولید'
+    no_connections: هنوز هیچ اتصال پایگاه‌داده‌ای ذخیره نشده است.
+    not_found: اتصال یافت نشد
+    password_label: رمز عبور
+    port_label: پورت
+    save_error: ذخیره اتصال ناموفق بود
+    select_type: نوع را انتخاب کنید
+    set_default: تنظیم به‌عنوان پیش‌فرض
+    shared_badge: به اشتراک گذاشته شده
+    shared_description: این اتصال را برای سایر کاربران گروه خود در دسترس قرار دهید.
+    shared_label: اشتراک‌گذاری با گروه
+    shared_readonly: به اشتراک گذاشته شده
+    shared_readonly_message: این اتصال با شما به اشتراک گذاشته شده است. می‌توانید آن را مشاهده کنید، اما ویرایش فقط برای مالک مجاز است.
+    tables_badge: جدول‌ها
+    test_button: آزمایش اتصال
+    test_failed: اتصال ناموفق بود
+    test_incomplete: لطفاً پیش از آزمایش، همه فیلدها را پر کنید
+    test_network_error: خطای شبکه هنگام آزمایش اتصال.
+    test_success: اتصال موفق بود!
+    type_label: نوع پایگاه داده
+    unknown_user: ناشناخته
+    update_success: اتصال با موفقیت به‌روزرسانی شد
+    username_label: نام کاربری
+    probe_check_now: اکنون بررسی کن
+    probe_check_failed: بررسی اتصال همین حالا ممکن نشد.
+    probe_state:
+      no_database: بدون پایگاه داده
+      unknown: بررسی نشده
+      unreachable: در دسترس نیست
+      auth_failed: احراز هویت ناموفق بود
+      reachable: در دسترس
+      incomplete: تنظیمات ناقص
+      no_permission: بدون مجوز
+      schema_error: طرحواره قابل خواندن نیست
+    probe_minutes_ago: '{count} دقیقه پیش'
+    probe_just_now: همین حالا
+    probe_auto_hint: هنگام بارگذاری فهرست اتصال‌ها به‌صورت خودکار به‌روزرسانی می‌شود.
+    probe_hours_ago: '{count} ساعت پیش'
+    probe_minute_ago: ۱ دقیقه پیش
+    probe_never: هرگز
+    probe_unsaved_hint: اتصال به محض ذخیره شدن بررسی می‌شود.
+    probe_hour_ago: ۱ ساعت پیش
+    probe_title: آخرین بررسی
+    probe_checked: بررسی شده
+    probe_no_success: هیچ بررسی موفق ثبت نشده است
+    probe_last_succeeded: آخرین بررسی موفق
+  default_hint: اتصال پیش‌فرض به‌عنوان گزینه جایگزین زمانی استفاده می‌شود که دستور تحلیل، اتصالی را مشخص نکرده باشد.
+  title: تنظیمات پایگاه داده
+datasets:
+  all_datasets: همه داده‌ها
+  browse:
+    back: بازگشت
+    browse_tables: مرور جدول‌ها
+    column: ستون
+    columns_title: ستون‌ها — {table}
+    connections: اتصال‌ها
+    load_columns_error: بارگیری ستون‌ها ناموفق بود
+    load_preview: بارگیری پیش‌نمایش
+    load_preview_error: بارگیری پیش‌نمایش ناموفق بود
+    load_tables_error: بارگیری جدول‌ها ناموفق بود
+    nullable: نال‌پذیر
+    preview: پیش‌نمایش
+    preview_hint: برای مشاهده ردیف‌های نمونه، روی «بارگیری پیش‌نمایش» کلیک کنید.
+    select_table_hint: برای مشاهده ستون‌ها و پیش‌نمایش داده‌ها، یک جدول انتخاب کنید.
+    tables: جدول‌ها
+    tables_count: '{count} جدول'
+    type: نوع
+  by_label: توسط
+  created_label: ایجادشده
+  database_label: پایگاه داده
+  define_button: اتصال پایگاه داده
+  define_first: یک پایگاه داده را متصل کنید
+  delete:
+    confirm: این مجموعه‌داده حذف شود؟
+    error: حذف مجموعه‌داده ناموفق بود
+    success: مجموعه‌داده '{id}' با موفقیت حذف شد.
+    title: حذف
+  description:
+    empty: توضیحات تولیدشده خالی است. لطفاً پیکربندی ارائه‌دهنده هوش مصنوعی را بررسی کنید.
+    error: تولید توضیحات ناموفق بود.
+    generated: توضیحات با موفقیت تولید شد.
+    title: توضیحات تولیدشده
+  detail:
+    created: ایجاد شد
+    descriptions: توضیحات هوش مصنوعی
+    generated: تولید شد
+    load_error: بارگذاری مجموعه داده ناموفق بود
+    model: مدل
+    no_description: بدون توضیح
+    not_found: مجموعه داده یافت نشد
+    not_found_message: مجموعه داده‌ای که به دنبال آن هستید یافت نشد.
+    overview: نمای کلی
+    rows: ردیف‌ها
+    materialize_failed: 'جدول ذخیرهشده ساخته نشد:'
+    rows_not_computed_hint: پیوند هنوز اجرا نشده است، بنابراین هنوز تعداد سطرها مشخص نیست.
+    rows_not_computed: محاسبه نشده
+    storage_live: نمای زنده
+    storage_table: جدول ذخیرهشده
+  list_error: بارگذاری مجموعه داده‌ها ناموفق بود
+  no_datasets: داده‌ای در دسترس نیست.
+  no_uploaded: هنوز مجموعه داده‌ای بارگذاری نشده است.
+  preparation:
+    add_operation: افزودن عملیات
+    add_rule: افزودن قانون
+    column_required: عملیات به یک ستون نیاز دارد
+    columns_required: عملیات حداقل به یک ستون نیاز دارد
+    delete_confirmation: آیا از حذف قانون تبدیل «{name}» مطمئن هستید؟ این کار همچنین آن را از هر دستورالعملی که از آن استفاده می‌کند حذف خواهد کرد.
+    delete_error: حذف قانون تبدیل ناموفق بود
+    delete_title: حذف قانون تبدیل
+    edit_rule: ویرایش قانون
+    encode:
+      label: برچسب
+      one_hot: وان‌هات
+    fill:
+      constant: ثابت
+      drop: حذف
+      mean: میانگین
+      median: میانه
+      mode: مد
+    filter_invalid: عملیات فیلتر به ستون و مقدار نیاز دارد
+    link:
+      description: پاکسازی و تبدیل این مجموعه داده
+      title: تبدیل‌ها
+    name_required: نام قانون الزامی است
+    new_name_required: عملیات تغییر نام به نام جدید نیاز دارد
+    new_rule: قانون جدید
+    no_rules: هیچ قانون تبدیلی برای این مجموعه داده تعریف نشده است.
+    operation:
+      convert_type: تبدیل نوع
+      drop_columns: حذف ستون‌ها
+      encode: کدگذاری
+      fill_missing: پر کردن مقادیر گمشده
+      filter: فیلتر
+      normalize: نرمال‌سازی
+      rename_column: تغییر نام ستون
+      standardize: استانداردسازی
+    operations: عملیات‌ها
+    operations_count: عملیات(ها)
+    operator:
+      after: بعد از (>)
+      before: قبل از (<)
+      contains: شامل
+      ends_with: پایان می‌یابد با
+      equal_to: مساوی با (=)
+      greater_than: بزرگ‌تر از (>)
+      greater_than_or_equal: بزرگ‌تر یا مساوی (>=)
+      less_than: کوچک‌تر از (<)
+      less_than_or_equal: کوچک‌تر یا مساوی (<=)
+      not_contains: شامل نمی‌شود
+      not_equal: نامساوی (!=)
+      on_or_after: در تاریخ یا بعد از (>=)
+      on_or_before: در تاریخ یا قبل از (<=)
+      starts_with: شروع می‌شود با
+    original_data: داده اصلی
+    placeholder:
+      boolean: صحیح / غلط
+      datetime: YYYY-MM-DD یا برچسب زمانی...
+      number: یک عدد وارد کنید...
+      value: یک مقدار وارد کنید...
+    preview: پیش‌نمایش
+    preview_error: پیش‌نمایش قانون ناموفق بود
+    preview_title: پیش‌نمایش
+    rows_after: بعد از
+    rows_before: قبل از
+    rows_removed: حذف شد
+    rule_created: قانون آماده‌سازی '{name}' با موفقیت ایجاد شد.
+    rule_deleted: قانون آماده‌سازی با موفقیت حذف شد.
+    rule_description: توضیحات (اختیاری)
+    rule_description_placeholder: توضیح مختصر
+    rule_name: نام قانون
+    rule_name_placeholder: 'مثلاً: پاکسازی برای تحلیل'
+    rule_updated: قانون آماده‌سازی با موفقیت به‌روزرسانی شد.
+    rules_title: قوانین تبدیل
+    save_error: ذخیره قانون تبدیل ناموفق بود
+    shared: اشتراک‌گذاری با گروه
+    transformed_data: داده تبدیل‌شده
+    type:
+      boolean: بولی
+      datetime: تاریخ و زمان
+      numeric: عددی
+      string: رشته
+    ui:
+      column: ستون
+      columns: ستون‌ها (با کاما جدا شوند)
+      encoding: کدگذاری
+      method: روش
+      new_name: نام جدید
+      operator: عملگر
+      target_type: نوع هدف
+      type: نوع
+      value: مقدار
+  rules_button: قوانین
+  schema:
+    column_name: ستون
+    column_type: نوع
+    columns: ستون‌ها
+    load_error: 'بارگذاری طرحواره ممکن نشد: {error}'
+    no_sample_data: داده نمونه موجود نیست
+    null_count: مقادیر null
+    sample_data: داده نمونه (۵ ردیف اول)
+    title: پیش‌نمایش طرحواره
+    total_columns: تعداد کل ستون‌ها
+    total_rows: تعداد کل ردیف‌ها
+    unique_count: یکتا
+  share: اشتراک‌گذاری
+  share_error: به‌روزرسانی اشتراک‌گذاری ناموفق بود
+  shared: مجموعه‌داده به اشتراک گذاشته شد
+  shared_badge: به اشتراک گذاشته شده
+  source:
+    unknown_file: فایل ناشناخته
+  title: داده‌های من
+  transform_button: تبدیل
+  transforms:
+    back: بازگشت به داده‌های من
+    create_button: ایجاد
+    create_error: ایجاد تبدیل ناموفق بود
+    create_new: تبدیل جدید
+    created_label: ایجاد شد
+    creating: در حال ایجاد…
+    delete_confirm: این تبدیل حذف شود؟
+    delete_error: حذف تبدیل ناموفق بود
+    description_label: توضیحات (اختیاری)
+    for: تبدیل‌ها برای {name}
+    load_error: بارگذاری تبدیل‌ها ناموفق بود
+    name_label: نام
+    no_transforms: هیچ تبدیلی برای این مجموعه‌داده تعریف نشده است.
+    operations_label: '{count} عملیات'
+    title: تبدیل‌ها
+  type:
+    table: جدول
+    upload: بارگذاری شده
+    view: نما
+    virtual: مجازی
+    mssql: MS SQL
+    postgresql: PostgreSQL
+    notebook: نوت‌بوک
+    access: MS Access
+    mysql: MySQL
+    cleaned_copy: نسخه تمیز
+  unknown_user: ناشناخته
+  unshare: لغو اشتراک‌گذاری
+  unshared: اشتراک‌گذاری مجموعه‌داده لغو شد
+  upload:
+    card_title: بارگذاری و توصیف
+    connection_not_found: اتصال یافت نشد. لطفاً یک اتصال هوش مصنوعی معتبر انتخاب کنید.
+    description_label: توضیحات (اختیاری)
+    description_placeholder: توضیح مختصر این داده
+    error: بارگذاری مجموعه‌داده ناموفق بود.
+    file_label: فایل
+    file_selected: فایل انتخاب شده
+    file_too_large: حجم فایل از حداکثر اندازه بارگذاری {max} مگابایت بیشتر است. بارگذاری مجاز نیست.
+    generate_description: تولید توضیحات
+    history: تاریخچه بارگذاری
+    limit_reached: به محدودیت رسیده
+    limit_reached_message: به حداکثر تعداد مجاز مجموعه‌داده‌ها ({count}) رسیده‌اید.
+    name_label: نام داده
+    name_placeholder: داده‌های من
+    no_connections: برای تولید توضیحات باید حداقل یک اتصال هوش مصنوعی تعریف کنید.
+    no_datasets: هنوز مجموعه‌داده‌ای وجود ندارد
+    no_file: لطفاً ابتدا یک فایل انتخاب کنید.
+    no_name: لطفاً نام مجموعه‌داده را وارد کنید.
+    select_dataset: لطفاً ابتدا یک مجموعه‌داده بارگذاری یا انتخاب کنید.
+    shared_description: این داده را برای سایر کاربران گروه خود در دسترس قرار دهید.
+    shared_group_hint: 'گروه: {group} - {description}'
+    shared_label: اشتراک‌گذاری با گروه
+    success: مجموعه‌داده «{name}» با موفقیت بارگذاری شد.
+    title: بارگذاری داده
+    upload_button: بارگذاری
+    escalation_label: تلاش مجدد با (ثانیه)
+    escalation_hint: فقط همین تلاش از آن استفاده می‌کند. اگر این مدل معمولاً زمان بیشتری نیاز دارد، به‌جای افزایش هر باره این مقدار، تنظیمات مدل اتصال را تنظیم کنید.
+    escalation_retry: دوباره تلاش کنید
+    escalation_failed_at: مهلت توضیح پس از {seconds} ثانیه به پایان رسید.
+    escalation_invalid: لطفاً یک عدد صحیح بین ۱ و {max} برای ثانیه وارد کنید.
+  upload_button: بارگذاری داده
+  upload_count: '{count} بارگذاری'
+  upload_first: اولین فایل داده خود را بارگذاری کنید
+  upload_first_file: اولین فایل خود را بارگذاری کنید
+  upload_new: بارگذاری فایل جدید
+  uploaded_title: داده‌های بارگذاری شده
+  view_dataset_title: مشاهده مجموعه‌داده
+  view_schema: مشاهده طرحواره
+  filter:
+    access: MS Access
+    uploads: بارگذاری‌ها
+    postgresql: PostgreSQL
+    cleaned: پاک‌سازی‌شده
+    label: فیلتر
+    virtual: مجازی
+    shared: به‌اشتراک‌گذاشته‌شده
+    not_shared: به‌اشتراک‌گذاشته نشده
+    no_match: هیچ مجموعه‌داده‌ای با این فیلتر مطابقت ندارد.
+    notebooks: نوت‌بوک‌ها
+    all: همه
+    mysql: MySQL
+    mssql: MS SQL
+  source_unavailable: منبع در دسترس نیست
+  cleaned_badge: پاک‌سازی‌شده
+  created_from: ایجاد شده از {name}
+  table_not_built: جدول ساخته نشد
+define:
+  column_name: ستون
+  column_type: نوع
+  connection_label: اتصال پایگاه داده
+  dataset_name: نام مجموعه‌داده
+  dataset_name_placeholder: مثلاً داده مشتریان
+  description_label: توضیحات (اختیاری)
+  description_placeholder: توضیح مختصر این مجموعه‌داده
+  existing_none: هیچ‌کدام
+  existing_title: موجود
+  go_to_db_settings: رفتن به تنظیمات پایگاه داده
+  load_connections_error: بارگذاری اتصال‌ها ناموفق بود
+  load_sources_error: بارگذاری منابع ناموفق بود
+  name_required: نام مجموعه‌داده الزامی است
+  no_connections_message: قبل از اتصال به پایگاه داده باید حداقل یک اتصال پایگاه داده تعریف کنید.
+  no_sources: هیچ جدول یا نمایی در این پایگاه داده یافت نشد.
+  nullable: نال‌پذیر
+  preview_label: پیش‌نمایش داده (۱۰ ردیف اول)
+  save_button: ذخیره مجموعه‌داده
+  save_error: ایجاد مجموعه‌داده ناموفق بود
+  save_success: مجموعه‌داده با موفقیت ایجاد شد
+  schema_label: طرحواره
+  select_connection: یک اتصال انتخاب کنید
+  select_source: یک منبع انتخاب کنید
+  select_source_first: لطفاً ابتدا یک جدول یا نما انتخاب کنید
+  shared_description: این مجموعه‌داده را برای سایر کاربران گروه خود در دسترس قرار دهید.
+  shared_label: اشتراک‌گذاری با گروه
+  source_label: منبع
+  source_type_label: نوع منبع
+  step1_description: برای اتصال یک مجموعهداده، یک اتصال پایگاهداده انتخاب کنید.
+  step1_title: انتخاب اتصال پایگاهداده
+  step2_description: انتخاب کنید که از جدول استفاده میکنید یا نما؛ سپس منبع را انتخاب کنید.
+  step2_title: انتخاب منبع
+  step3_description: ستونها را بررسی کنید و پیشنمایش دادههای منبع انتخابشده را مشاهده کنید.
+  step3_title: تأیید منبع
+  step4_description: برای مجموعهداده خود نام و توضیح تعیین کنید، سپس آن را ذخیره کنید.
+  step4_title: نامگذاری و ذخیره
+  step_connection: اتصال
+  step_save: ذخیره
+  step_source: منبع
+  step_verify: تأیید
+  table: جدول
+  title: اتصال به پایگاهداده
+  verify_button: تأیید منبع
+  verify_error: تأیید جدول/نما ناموفق بود
+  verify_success: جدول/نما با موفقیت تأیید شد
+  view: نما
+demo:
+  badge: دمو
+  banner:
+    message: این یک سیستم نمایشی است. دادهها ممکن است بهصورت دورهای بازنشانی شوند.
+    title: ⚠️ حالت دمو
+forgot_password:
+  back_to_login: بازگشت به صفحه ورود
+  check_spam: لطفاً اگر ایمیل را تا چند دقیقه دیگر ندیدید، پوشه اسپم/هرزنامه را بررسی کنید.
+  description: نشانی ایمیل خود را وارد کنید تا پیوندی برای بازنشانی رمز عبور برایتان ارسال کنیم.
+  error: ارسال ایمیل بازنشانی ناموفق بود
+  sent: اگر حسابی با این ایمیل وجود داشته باشد، پیوند بازنشانی رمز عبور دریافت خواهید کرد.
+  sent_description: اگر حسابی با این ایمیل وجود داشته باشد، پیوند بازنشانی رمز عبور دریافت خواهید کرد.
+  sent_title: ایمیل ارسال شد
+  submit: ارسال پیوند بازنشانی
+  title: فراموشی رمز عبور
+global:
+  demo_mode:
+    description: وقتی فعال باشد، سیستم در حالت دمو اجرا میشود.
+    label: حالت دمو
+  email_sender:
+    hint: نشانی ایمیلی که ایمیلهای تأیید از طرف آن ارسال میشوند.
+    label: نشانی فرستنده ایمیل
+  email_timeout:
+    hint: مدت اعتبار پیوند تأیید ایمیل بر حسب ساعت.
+    label: مهلت تأیید ایمیل (ساعت)
+  grace_period:
+    hint: تعداد ساعتهایی که باید بگذرد تا حسابهای حذفشده نرم بهطور دائمی پاک شوند.
+    label: تأخیر حذف (ساعت)
+  invalid_grace_period: لطفاً یک عدد مثبت معتبر برای تأخیر حذف (ساعت) وارد کنید.
+  invalid_number: لطفاً یک عدد مثبت معتبر برای حداکثر ثبتنام وارد کنید.
+  invalid_timeout: لطفاً یک عدد مثبت معتبر برای مهلت تأیید (ساعت) وارد کنید.
+  load_error: بارگیری تنظیمات سراسری ناموفق بود
+  max_registrations:
+    custom: سفارشی (در زیر وارد کنید)
+    custom_placeholder: یک عدد مثبت وارد کنید
+    hint: محدودیتی برای تعداد کاربرانی که میتوانند ثبتنام کنند تعیین کنید.
+    label: حداکثر ثبتنام کاربران
+    placeholder: انتخاب محدودیت
+    unlimited: نامحدود
+    users: کاربر
+  password_policy:
+    custom: سفارشی
+    high: بالا (حداقل ۱۰ کاراکتر، حروف بزرگ، حروف کوچک، رقم، نویسه ویژه)
+    hint: الزامات پیچیدگی رمز عبور را برای ثبتنام کاربران و تغییر رمز عبور انتخاب کنید.
+    label: خطمشی رمز عبور
+    low: پایین (حداقل ۶ کاراکتر)
+    medium: متوسط (حداقل ۸ کاراکتر، حروف بزرگ، حروف کوچک، رقم)
+    min_length: حداقل طول
+    min_strength: حداقل قدرت (امتیاز zxcvbn از ۰ تا ۴)
+    require_digit: الزام رقم
+    require_lowercase: الزام حروف کوچک
+    require_special: الزام نویسه ویژه
+    require_uppercase: الزام حروف بزرگ
+    select: انتخاب خطمشی
+  public_url:
+    hint: نشانی اینترنتی پایه که در پیوندهای تأیید ایمیل استفاده میشود (برای مثال https://workbench.example.com).
+    label: نشانی عمومی
+  save_button: ذخیره تنظیمات سراسری
+  save_success: تنظیمات سراسری ذخیره شد
+  system:
+    description: مدیریت تنظیمات سراسری که برای همه کاربران اعمال میشود (فقط مدیر).
+    title: پیکربندی سیستم
+  title: تنظیمات سراسری
+  upload:
+    count_1: ۱
+    count_10: ۱۰
+    count_100: ۱۰۰
+    count_1000: ۱۰۰۰
+    count_25: ۲۵
+    count_250: ۲۵۰
+    count_5: ۵
+    count_50: ۵۰
+    count_500: ۵۰۰
+    count_hint: حداکثر تعداد مجموعهداده برای هر کاربر (۰ = نامحدود). برای کاربران جدید اعمال میشود.
+    count_unlimited: نامحدود
+    default_count_label: پیشفرض حداکثر تعداد بارگذاری برای هر کاربر
+    default_size_label: پیشفرض حداکثر اندازه بارگذاری برای هر کاربر (مگابایت)
+    select_count: انتخاب محدودیت
+    select_size: انتخاب محدودیت
+    size_100_mb: ۱۰۰ مگابایت
+    size_10_mb: ۱۰ مگابایت
+    size_1_gb: ۱ گیگابایت
+    size_1_mb: ۱ مگابایت
+    size_250_mb: ۲۵۰ مگابایت
+    size_25_mb: ۲۵ مگابایت
+    size_500_mb: ۵۰۰ مگابایت
+    size_50_mb: ۵۰ مگابایت
+    size_5_mb: ۵ مگابایت
+    size_hint: حداکثر فضای ذخیرهسازی کل برای هر کاربر (۰ = نامحدود). برای کاربران جدید اعمال میشود.
+    size_unlimited: نامحدود
+  welcome:
+    hint: این پیام در صفحه ورود نمایش داده میشود. برای پنهانکردن آن، خالی بگذارید.
+    label: پیام خوشآمد
+    placeholder: یک پیام خوشآمد برای نمایش در صفحه ورود وارد کنید.
+home:
+  welcome_placeholder: به میز کار آماردانان خوش آمدید
+licence:
+  admin_required: برای مشاهده اطلاعات مجوز باید مدیر باشید.
+  delete_button: حذف مجوز
+  delete_confirm: این کار سیستم را به حالت متنباز بازمیگرداند. همه ویژگیهای دارای محدودیت غیرفعال خواهند شد. میتوانید با نصب مجوز جدید آنها را بازیابی کنید.
+  delete_error: حذف مجوز ناموفق بود.
+  delete_no: انصراف
+  delete_success: مجوز حذف شد. در حال اجرا در حالت متنباز.
+  delete_title: حذف مجوز
+  delete_yes: بله، مجوز حذف شود
+  description: اطلاعات مجوز ویژگی و سطح فعلی.
+  details_label: جزئیات مجوز
+  expires_at_label: تاریخ انقضا
+  features_label: ویژگیهای فعال
+  install_button: نصب مجوز
+  install_error: نصب مجوز ناموفق بود.
+  install_no_file: فایلی انتخاب نشده است.
+  install_success: مجوز با موفقیت نصب شد.
+  issued_at_label: تاریخ صدور
+  issued_to_label: صادر شده به
+  load_error: بارگیری اطلاعات مجوز ناموفق بود.
+  max_users_label: کاربران دارای مجوز
+  no_features: در حال حاضر هیچ ویژگی دارای محدودیتی فعال نیست.
+  open_source_message: این نصب در حالت متنباز اجرا میشود. برای ارتقا به مجوز سازمانی با Sentuny تماس بگیرید.
+  preview_error: اعتبارسنجی فایل مجوز ناموفق بود.
+  preview_invalid: فایل مجوز نامعتبر است.
+  preview_title: پیشنمایش مجوز
+  tier_label: سطح
+  title: وضعیت مجوز
+  upload_title: بارگذاری فایل مجوز
+login:
+  account_deleted: این حساب کاربری حذف شده است.
+  description: ورود به حساب کاربری
+  docs_more_info: اطلاعات بیشتری دارد
+  email: ایمیل
+  email_not_verified: ایمیل تأیید نشده است. لطفاً صندوق ورودی و پوشه هرزنامه را بررسی کنید.
+  email_verified: ایمیل با موفقیت تأیید شد! اکنون میتوانید وارد شوید.
+  forgot_password: رمز عبور را فراموش کردهاید؟
+  invalid_credentials: ایمیل یا رمز عبور نامعتبر است.
+  invalid_token: لینک تأیید نامعتبر است. لطفاً یک لینک جدید درخواست کنید.
+  missing_token: هیچ توکن تأییدی ارائه نشده است.
+  no_account: حساب کاربری ندارید؟
+  password: رمز عبور
+  register_link: ثبتنام
+  resend_link: ارسال مجدد ایمیل تأیید؟
+  signing_in: در حال ورود...
+  submit: ورود
+  success: با موفقیت وارد شدید
+  title: ورود
+  token_expired: لینک تأیید منقضی شده است. لطفاً یک لینک جدید درخواست کنید.
+nav:
+  about: درباره
+  admin: مدیریت
+  admin_groups: توضیحات گروهها
+  admin_licence: مجوز
+  admin_panel: مدیریت کاربران
+  admin_providers: ارائهدهندگان هوش مصنوعی
+  admin_setup: راهاندازی
+  admin_setup_internal: داخلی
+  admin_setup_limits: محدودیتها
+  admin_setup_options: گزینهها
+  admin_visualization_types: انواع بصریسازی
+  ai_analysis_rules: ویرایشگر دستورالعمل
+  ai_chat: ابزارهای هوش مصنوعی
+  ai_database_design: طراحی پایگاه داده
+  ai_dataset_cleaning: پاکسازی مجموعه داده
+  ai_general: عمومی
+  ai_virtual_datasets: مجموعه دادههای مجازی
+  home: خانه
+  logout: خروج
+  user: کاربر
+  ai_testing: آزمایش هوش مصنوعی
+  admin_setup_tuning: تنظیم دقیق
+notebooks:
+  and_more: +{count} مورد دیگر
+  cant_create_tables: این اتصال نمیتواند جدول ایجاد کند — ایمپورت رد شد
+  cells_label: 'سلولها:'
+  connection_create_db_badge: ایجاد دیتابیس
+  connection_form_label: اتصال
+  connection_tables_badge: جدولها
+  connection_unavailable: اتصال پایگاه داده یافت نشد یا در دسترس نیست
+  create_dataset: ایجاد خودکار مجموعه داده
+  create_new_database: ایجاد پایگاه داده جدید
+  dataframe_prefix: دیتافریم
+  dataframes_label: 'دیتافریمها:'
+  dataset_created: مجموعه داده ایجاد شد
+  delete_confirm: ایمپورت «{name}» و همه جدولهای آن حذف شود؟
+  delete_failed: حذف ایمپورت ناموفق بود
+  delete_title: حذف ایمپورت
+  detected_dataframes: 'دیتافریمهای شناساییشده:'
+  doc_preview: 'پیشنمایش مستندات:'
+  example_banner: شما بهعنوان کاربر نمونه در حال مشاهده هستید. برای ایمپورت و مدیریت نوتبوکها ثبتنام کنید.
+  example_blocked: کاربران نمونه نمیتوانند نوتبوک ایمپورت کنند.
+  example_register: ثبتنام
+  fetch_error: دریافت ایمپورتها ناموفق بود
+  import_button: ایمپورت نوتبوک
+  import_complete: ایمپورت کامل شد
+  import_deleted: ایمپورت حذف شد
+  import_failed: 'وارد کردن نوت‌بوک ناموفق بود: {error}'
+  import_success: '{count} جدول با موفقیت ایمپورت شد'
+  import_title: ایمپورت نوتبوک Jupyter
+  imported_at_label: 'ایمپورت شده در:'
+  importing: در حال ایمپورت...
+  kb_unit: کیلوبایت
+  kernel_label: 'هسته:'
+  list_title: ایمپورتهای نوتبوک
+  no_dataframes: هیچ DataFrame‌ای در این نوت‌بوک یافت نشد.
+  no_imports: هنوز هیچ نوت‌بوکی وارد نشده است.
+  notebook_label: 'نوت‌بوک:'
+  parse_error: تجزیه نوت‌بوک ناموفق بود.
+  parsing: در حال تجزیه...
+  preview_button: پیش‌نمایش
+  rows_cols_format: '{rows} ردیف × {cols} ستون'
+  run_preview_first: برای مشاهده موارد واردشدنی، پیش‌نمایش را اجرا کنید.
+  sanitised_notice: سلول‌های کد به دلایل امنیتی حذف شده‌اند. فقط خروجی‌های داده و مارک‌داون نگهداری می‌شوند.
+  select_connection: یک اتصال پایگاه داده انتخاب کنید.
+  select_connection_placeholder: انتخاب اتصال...
+  select_file_first: لطفاً یک فایل .ipynb انتخاب کنید.
+  share_error: فقط مالک می‌تواند تنظیمات اشتراک‌گذاری را تغییر دهد.
+  share_label: اشتراک‌گذاری با گروه
+  shared: نوت‌بوک با گروه به اشتراک گذاشته شد.
+  shared_badge: به اشتراک گذاشته شده
+  size_label: 'اندازه:'
+  step1_title: 'مرحله ۱: انتخاب فایل'
+  step2_title: 'مرحله ۲: پیش‌نمایش'
+  storage_form_label: ذخیره‌سازی
+  storage_label: 'ذخیره‌سازی:'
+  table_count: '{count} جدول'
+  tables_created_label: 'جدول‌های ایجادشده:'
+  title_label: 'عنوان:'
+  unshared: اشتراک‌گذاری نوت‌بوک لغو شد.
+  table_name: 'جدول: {name}'
+password:
+  strength:
+    fair: متوسط
+    good: خوب
+    strong: قوی
+    weak: ضعیف
+preparation:
+  add_operation: افزودن عملیات
+  after: بعد
+  back_to_list: بازگشت به قوانین
+  before: قبل
+  cancel: انصراف
+  col:
+    categorical: مقوله‌ای
+    datetime: تاریخ و زمان
+    nulls: '{percent}% null'
+    numeric: عددی
+  cols: ستون‌ها
+  column_label: ستون
+  constant_value_label: مقدار ثابت
+  create_first: برای پاک‌سازی و آماده‌سازی این مجموعه داده پیش از تحلیل، اولین تبدیل خود را ایجاد کنید.
+  delete: حذف
+  delete_confirm: قانون «{name}» حذف شود؟ این کار قابل بازگشت نیست.
+  description_label: توضیح (اختیاری)
+  duplicate: تکثیر
+  duplicate_suffix: (کپی)
+  edit: ویرایش
+  edit_title: 'ویرایش قانون: {name}'
+  encoding:
+    label: برچسب
+    onehot: One-Hot
+  encoding_param_label: کدگذاری
+  live_preview: پیش‌نمایش زنده
+  load_error: بارگذاری داده ناموفق بود.
+  method:
+    minmax: کمینه-بیشینه
+    zscore: Z-Score
+  method_label: روش
+  name_label: نام
+  name_required: نام قانون الزامی است.
+  new_name_label: نام جدید
+  new_rule: قانون جدید
+  new_title: تبدیل جدید
+  no_rules: هنوز تبدیلی وجود ندارد.
+  nulls: nullها
+  op:
+    convert_type: تبدیل نوع
+    drop_column: حذف ستون
+    drop_duplicates: حذف تکراری‌ها
+    encode_category: کدگذاری مقوله
+    fill_missing: پر کردن مقادیر گم‌شده
+    filter: فیلتر
+    rename_column: تغییر نام ستون
+    standardize: استانداردسازی
+    normalize: نرمال‌سازی
+  operations_count: '{count} عملیات'
+  operations_label: عملیات
+  operator_label: عملگر
+  ops_required: حداقل یک عملیات لازم است.
+  preview: پیش‌نمایش
+  preview_error: پیش‌نمایش ناموفق بود.
+  preview_loading: در حال پیش‌نمایش...
+  preview_no_ops: برای دیدن پیش‌نمایش، عملیات اضافه کنید.
+  row_impact: '{before} → {after} ردیف'
+  rows: ردیف‌ها
+  rule_deleted: قانون حذف شد.
+  rule_duplicated: قانون تکثیر شد.
+  rule_saved: قانون ذخیره شد.
+  rules_for: قوانین برای {dataset}
+  sample_data: داده نمونه
+  save: ذخیره قانون
+  save_error: ذخیره قانون ناموفق بود.
+  saving: در حال ذخیره...
+  schema_error: بارگذاری طرح‌واره مجموعه داده ناموفق بود.
+  select_column: -- انتخاب ستون --
+  select_type: -- انتخاب عملیات --
+  strategy:
+    constant: ثابت
+    drop_row: حذف ردیف
+    mean: میانگین
+    median: میانه
+    mode: نما
+  strategy_label: راهبرد
+  target_type_label: نوع هدف
+  title: تبدیل‌ها — {dataset}
+  type_label: عملیات
+  value_label: مقدار
+profile:
+  change_password:
+    description: رمز عبور خود را به‌روزرسانی کنید.
+    title: تغییر رمز عبور
+  change_password_button: تغییر رمز عبور
+  confirm_password: تأیید رمز عبور جدید
+  current_password: رمز عبور فعلی
+  current_password_required: رمز عبور فعلی الزامی است
+  dark_mode_description: جابه‌جایی بین حالت روشن و تاریک.
+  dark_mode_label: حالت تاریک
+  email_label: ایمیل
+  email_notifications_description: دریافت به‌روزرسانی‌های ایمیلی درباره حساب کاربری شما.
+  email_notifications_label: اعلان‌های ایمیلی
+  email_unchangeable: ایمیل قابل تغییر نیست
+  example_user_language_hint: برای دسترسی کامل و تغییر ترجیح زبان ثبت‌نام کنید.
+  example_user_name_hint: برای دسترسی کامل و تغییر نام ثبت‌نام کنید.
+  example_user_notifications_hint: برای دسترسی کامل و تغییر تنظیمات اعلان ثبت‌نام کنید.
+  example_user_save_hint: برای دسترسی کامل و ذخیره تغییرات ثبت‌نام کنید.
+  example_user_theme_hint: برای دسترسی کامل و تغییر ترجیحات پوسته ثبت‌نام کنید.
+  group_description: توضیحات
+  group_id: شناسه گروه
+  group_info_title: اطلاعات گروه
+  group_load_error: بارگیری اطلاعات گروه ناموفق بود
+  group_readonly_hint: گروه شما توسط مدیر تعیین می‌شود و در اینجا قابل تغییر نیست.
+  language_description: زبان ترجیحی خود را برای رابط کاربری انتخاب کنید.
+  language_label: زبان
+  language_select_placeholder: انتخاب زبان
+  languages_load_error: بارگیری زبان‌ها ناموفق بود
+  load_error: بارگیری تنظیمات ناموفق بود
+  name_label: نام
+  name_placeholder: نام شما
+  new_password: رمز عبور جدید
+  password_change_failed: تغییر رمز عبور ناموفق بود
+  password_changed: رمز عبور با موفقیت تغییر کرد
+  password_disabled: تغییر رمز عبور برای کاربران نمونه غیرفعال است
+  password_disabled_message: شما به‌عنوان کاربر نمونه وارد شده‌اید. عملیات رمز عبور غیرفعال است.
+  password_mismatch: رمزهای عبور جدید مطابقت ندارند
+  personal:
+    description: اطلاعات شخصی و ترجیحات برنامه خود را به‌روزرسانی کنید.
+    title: نمایه و ترجیحات
+  save_button: ذخیره تغییرات
+  save_error: ذخیره نمایه ناموفق بود
+  save_success: نمایه ذخیره شد
+  title: تنظیمات نمایه
+  update_error: به‌روزرسانی نمایه ناموفق بود
+  slow_threshold:
+    seconds: ثانیه
+    invalid: محدودیت باید عدد صحیحی از ثانیه باشد، حداقل ۱
+    placeholder: استفاده از پیش‌فرض سایت
+    save: ذخیره محدودیت
+    description: آزمون مدلی که بیشتر از این طول بکشد، کند گزارش می‌شود. برای استفاده از پیش‌فرض سایت خالی بگذارید.
+    label: محدودیت من
+    effective: 'در حال حاضر اعمال‌شده:'
+    saved: محدودیت مدل کند ذخیره شد
+    title: آستانهٔ مدل کند
+recipes:
+  add_rule: افزودن قاعده
+  algorithm:
+    dependent_column: متغیر وابسته
+    factor_column: عامل (مقوله‌ای)
+    group_by: گروه‌بندی بر اساس
+    independent_columns: متغیرهای مستقل
+    placeholder: انتخاب نوع تحلیل
+    response_column: پاسخ (عددی)
+  back_to_recipe: بازگشت به دستور
+  by_label: بر اساس
+  cancel_button: توقف
+  cancel_error: لغو اجرا ناموفق بود
+  cancel_success: اجرا لغو شد
+  chart:
+    category: دسته
+    count: تعداد
+    value: مقدار
+    x_axis: X
+    y_axis: Y
+  clone: کپی
+  clone_button: کپی
+  clone_error: کپی دستور ناموفق بود
+  clone_success: دستور با موفقیت کپی شد
+  clone_suffix: (کپی)
+  column_type:
+    category: دسته
+    datetime: تاریخ/زمان
+    number: عدد
+    text: متن
+  columns_after: ستون‌ها
+  columns_before: ستون‌ها
+  columns_label: ستون‌ها
+  columns_label_short: ستون‌ها
+  columns_required: لطفاً حداقل یک ستون انتخاب کنید
+  create_error: ایجاد دستور ناموفق بود
+  create_success: دستورالعمل '{name}' با موفقیت ایجاد شد.
+  dataset:
+    columns_label: ستون‌ها
+    load_error: بارگیری مجموعه‌داده‌ها ناموفق بود
+    loading: در حال بارگیری مجموعه‌داده‌ها...
+    no_datasets: هیچ مجموعه‌داده‌ای در دسترس نیست
+    placeholder: یک مجموعه‌داده انتخاب کنید
+    rows_label: ردیف‌ها
+  dataset_label: مجموعه‌داده
+  dataset_required: لطفاً یک مجموعه‌داده انتخاب کنید
+  delete: حذف
+  delete_button: حذف
+  delete_confirmation: آیا مطمئن هستید که می‌خواهید دستور «{name}» را حذف کنید؟ این عمل قابل بازگشت نیست.
+  delete_title: حذف دستور
+  description_label: توضیحات (اختیاری)
+  description_placeholder: توضیحات این دستور
+  edit: ویرایش
+  editor:
+    component_algorithm: الگوریتم
+    component_dataset: مجموعه‌داده / تبدیل
+    component_output: خروجی
+    create_mode: ایجاد دستور جدید — ویرایشگر در مرحله ۳ ارائه می‌شود.
+    loading: در حال بارگذاری دستورالعمل...
+    name_hint: برای ذخیره دستورالعمل، نام لازم است.
+    name_placeholder: نام دستورالعمل
+    name_required: نام دستورالعمل لازم است.
+    new_recipe_name: دستورالعمل جدید
+    placeholder: این ویرایشگر دستی دستورالعمل‌های آماری است — دستورالعمل‌ها قلب میز کار هستند. رابط کاربری دستی سریع‌تر از رابط هوش مصنوعی است، اما اگر واقعاً مطمئن نیستید چه کاری باید انجام شود، احتمالاً
+      ویرایشگر دستورالعمل هوش مصنوعی را می‌خواهید. همچنین یک مربی آمار است... اما برای استفاده از آن باید یک اتصال هوش مصنوعی فعال در تنظیمات خود داشته باشید. یک دستورالعمل انتخاب کنید یا یک دستورالعمل
+      جدید بسازید.
+    run: اجرا
+    save: ذخیره دستورالعمل
+    save_error: ذخیره دستورالعمل ناموفق بود
+    save_success: دستورالعمل ذخیره شد
+  execute: اجرا
+  execute_button: اجرا
+  execute_error: 'اجرای دستورالعمل ناموفق بود: {error}'
+  execute_success: دستورالعمل با موفقیت اجرا شد
+  execution:
+    errors_label: 'خطاها:'
+    failed_start: شروع اجرا ناموفق بود
+    request_failed: اجرا ناموفق بود
+    results_label: 'نتایج:'
+    rules_count: '{count} قانون آماده‌سازی اعمال شد.'
+    running: در حال اجرای دستورالعمل...
+    showing_rows: نمایش {count} از {total} ردیف
+  execution_error: خطا
+  execution_load_error: 'بارگذاری اجرا ناموفق بود: {error}'
+  execution_not_found: اجرای '{id}' یافت نشد.
+  execution_progress: پیشرفت
+  execution_stage_results: نتایج مرحله
+  execution_started: شروع شد
+  execution_status: وضعیت
+  execution_title: نتایج اجرا
+  executions_title: اجراهای اخیر
+  export_results: استخراج نتایج
+  go_define: رفتن به تعریف
+  go_upload: رفتن به بارگذاری
+  group_by_hint: برای مقایسه آمار بین گروه‌ها، بر اساس یک ستون طبقه‌ای گروه‌بندی کنید
+  group_by_label: گروه‌بندی بر اساس (اختیاری)
+  list_load_error: بارگذاری دستورالعمل‌ها ناموفق بود
+  load_datasets_error: 'بارگذاری مجموعه‌داده‌ها ناموفق بود: {error}'
+  load_error: 'بارگذاری دستورالعمل‌ها ناموفق بود: {error}'
+  load_rules_error: بارگذاری قوانین آماده‌سازی ناموفق بود
+  loading_schema: در حال بارگذاری ستون‌ها...
+  move_down: انتقال به پایین
+  move_up: انتقال به بالا
+  my_recipes: دستورالعمل‌های من
+  name_label: نام دستورالعمل
+  name_placeholder: به عنوان مثال، تحلیل فروش
+  name_required: نام دستورالعمل لازم است
+  needs_other_columns: (به ستون‌های دیگری نیاز دارد)
+  new_button: دستورالعمل جدید
+  new_title: دستورالعمل جدید
+  no_datasets: هیچ مجموعه‌داده‌ای یافت نشد. لطفاً ابتدا یک مجموعه‌داده بارگذاری یا تعریف کنید.
+  no_datasets_available: هیچ مجموعه‌داده‌ای در دسترس نیست. لطفاً ابتدا یک مجموعه‌داده بارگذاری کنید.
+  no_datasets_found: هیچ مجموعه‌داده‌ای در دسترس نیست. ابتدا یک مجموعه‌داده بارگذاری کنید.
+  no_group: هیچ‌کدام
+  no_group_options: هیچ ستون طبقه‌ای برای گروه‌بندی در دسترس نیست
+  no_preparation_rules: هیچ قانون آماده‌سازی برای این مجموعه‌داده در دسترس نیست.
+  no_recipes: شما هنوز هیچ دستورالعملی ایجاد نکرده‌اید.
+  no_schema: هیچ طرح‌واره‌ای برای این مجموعه‌داده در دسترس نیست
+  no_stages: دستورالعمل باید حداقل یک مرحله داشته باشد.
+  no_visualisation: نتایج عددی
+  no_visualisation_data: هیچ داده‌ای برای مصورسازی در دسترس نیست
+  none: هیچ‌کدام
+  output:
+    category_column: ستون طبقه
+    placeholder: نوع خروجی را انتخاب کنید
+    x_column: ستون محور X
+    y_column: ستون محور Y
+  panel:
+    complete: آماده
+    incomplete: ناقص
+    my_recipes: دستورالعمل‌های من
+    new_button: دستورالعمل جدید
+    no_recipes: هنوز دستورالعملی وجود ندارد
+    no_results: هیچ دستورالعملی با جستجوی شما مطابقت ندارد
+    search: جستجوی دستورالعمل‌ها...
+    shared_recipes: به اشتراک گذاشته‌شده
+    updated: به‌روزرسانی‌شده
+  preparation_rules: قوانین آماده‌سازی (اختیاری)
+  preparation_rules_applied: قوانین آماده‌سازی اعمال‌شده
+  preparation_rules_applied_description: قوانین پیش از مراحل تحلیل، به ترتیب نشان‌داده‌شده در زیر اعمال شدند.
+  preparation_rules_applied_title: قوانین آماده‌سازی اعمال‌شده
+  preparation_rules_description: قوانین را برای اعمال به ترتیب انتخاب کنید. قوانین به‌صورت متوالی اعمال می‌شوند.
+  recipe_label: دستورالعمل
+  remove_rule: حذف قانون
+  require:
+    algorithm: یک تحلیل انتخاب کنید
+    categoryColumn: ستون طبقه را برای {out} انتخاب کنید
+    dataset: یک مجموعه‌داده انتخاب کنید
+    dependentColumn: ستون وابسته را انتخاب کنید
+    factorColumn: ستون عامل را برای {algo} انتخاب کنید
+    first_response: اولین ستون پاسخ را انتخاب کنید
+    independentColumns: ستون‌های مستقل را انتخاب کنید
+    responseColumn: ستون پاسخ را برای {algo} انتخاب کنید
+    second_response: دومین ستون پاسخ را انتخاب کنید
+    xColumn: ستون X را برای {out} انتخاب کنید
+    yColumn: ستون Y را برای {out} انتخاب کنید
+  rows_after: ردیف‌ها پس از
+  rows_before: ردیف‌ها
+  rows_label: ردیف‌ها
+  rules_applied_label: '{count} قانون اعمال شد:'
+  save_button: ذخیره دستورالعمل
+  schema_error: 'بارگذاری طرحواره ستون ناموفق بود: {error}'
+  schema_loaded: 'طرح‌واره بارگذاری شد: {count} ستون یافت شد'
+  select_dataset: یک مجموعه‌داده انتخاب کنید
+  select_group: ستونی برای گروه‌بندی انتخاب کنید
+  select_rule: قانونی برای افزودن انتخاب کنید
+  select_rule_placeholder: یک قانون انتخاب کنید
+  select_technique: یک تکنیک انتخاب کنید
+  select_visualisation: یک نمودار انتخاب کنید
+  selected: انتخاب‌شده
+  share:
+    button: اشتراک‌گذاری
+    group_info: گروه {group} — {desc}
+    read_only: اشتراک‌گذاشته‌شده توسط {owner} — فقط‌خواندنی
+    shared_badge: اشتراک‌گذاشته‌شده
+    unshare: لغو اشتراک‌گذاری
+  shared: اشتراک‌گذاشته‌شده
+  shared_badge: اشتراک‌گذاشته‌شده
+  shared_description: این دستور را برای سایر کاربران گروه خود در دسترس قرار دهید.
+  shared_group_hint: 'گروه: {group} - {description}'
+  shared_label: اشتراک‌گذاری با گروه
+  shared_with_group: اشتراک‌گذاشته‌شده با گروه شما
+  stage_data_selection: انتخاب داده
+  stage_number: مرحله {number}
+  stage_preparation: آماده‌سازی داده
+  stage_statistics: آمار
+  stage_visualisation: نمودار
+  stages_title: مراحل
+  status:
+    cancelled: لغو شد
+    completed: تکمیل شد
+    failed: ناموفق
+    pending: در انتظار
+    running: در حال اجرا
+  step1_description: برای دستور خود نام و توضیحی تعیین کنید.
+  step1_title: دستور خود را نام‌گذاری کنید
+  step2_description: یک مجموعه‌داده انتخاب کنید و ستون‌های مورد نظر برای تحلیل را برگزینید.
+  step2_title: انتخاب داده
+  step3_description: تکنیک آماری مورد نظر برای اعمال را انتخاب کنید.
+  step3_title: انتخاب تحلیل
+  step4_description: یک نمودار به دستور خود اضافه کنید.
+  step4_title: نمودار (اختیاری)
+  step_analysis: تحلیل
+  step_complete: گام {step} تکمیل شد
+  step_data: داده
+  step_name: نام
+  step_visualise: نمایش نمودار
+  technique_anova_one_way: تحلیل واریانس یک‌طرفه
+  technique_anova_two_way: تحلیل واریانس دوسویه
+  technique_chi_square: آزمون کای دو
+  technique_correlation: ماتریس همبستگی
+  technique_descriptive: آمار توصیفی
+  technique_hint: آمار توصیفی معیارهای خلاصه‌ای مانند میانگین، میانه و انحراف معیار را نشان می‌دهد.
+  technique_label: تکنیک
+  technique_linear_regression: رگرسیون خطی
+  technique_t_test_independent: آزمون تی مستقل
+  technique_t_test_paired: آزمون تی زوجی
+  title: دستورهای آماری
+  total_rules_applied: کل قوانین اعمال‌شده
+  transforms:
+    add: افزودن تبدیل
+    label: تبدیل‌ها
+    manage_button: مدیریت تبدیل‌ها
+    no_transforms: هیچ تبدیلی اعمال نشده است
+    remove: حذف
+  unknown_user: ناشناخته
+  update_error: 'به‌روزرسانی دستورالعمل ناموفق بود: {error}'
+  update_success: دستورالعمل '{id}' با موفقیت به‌روزرسانی شد.
+  updated_label: به‌روزرسانی شد
+  visualisation:
+    columns_label: ستون‌ها
+    data_points: نقاط داده
+    distribution: توزیع
+    trend: روند
+    type_label: نوع
+  visualisation_area: نمودار ناحیه‌ای
+  visualisation_bar: نمودار میله‌ای
+  visualisation_donut: نمودار دونات
+  visualisation_hbar: میله‌ای افقی
+  visualisation_hint: نمودار با استفاده از ستون‌های داده انتخاب‌شده تولید خواهد شد.
+  visualisation_label: نوع نمودار
+  visualisation_line: نمودار خطی
+  visualisation_pie: نمودار دایره‌ای
+  visualisation_raw_data: 'داده‌های نمودار:'
+  visualisation_scatter: نمودار پراکندگی
+  visualisation_table: جدول
+  ui:
+    delete_success: دستورالعمل حذف شد
+    delete_error: حذف دستورالعمل ناموفق بود
+  visualisation_histogram: هیستوگرام
+register:
+  confirm_password: تأیید رمز عبور
+  creating: در حال ایجاد حساب...
+  description: ایجاد حساب جدید
+  email: ایمیل
+  failed: ثبت‌نام ناموفق بود
+  have_account: آیا قبلاً حساب کاربری دارید؟
+  language_description: زبان مورد نظر خود را برای رابط کاربری انتخاب کنید.
+  login_link: ورود
+  name: نام
+  password: رمز عبور
+  password_mismatch: رمزهای عبور مطابقت ندارند
+  submit: ثبت‌نام
+  success_with_verification: حساب شما ایجاد شده است. برای فعالسازی حساب، پیوند تأیید را در ایمیل خود بررسی کنید.
+  title: ثبت‌نام
+  email_failed_use_resend: ثبت‌نام با موفقیت انجام شد، اما ایمیل تأیید ارسال نشد. لطفاً آن را از صفحه ورود دوباره ارسال کنید.
+  success_pending_approval: حساب شما ایجاد شده و در انتظار تأیید مدیر است. پس از تأیید میتوانید وارد شوید.
+  registration_disabled: ثبتنام توسط خود کاربر غیرفعال است. لطفاً با مدیر تماس بگیرید.
+  success_auto_verified: حساب شما ایجاد شده و آماده استفاده است. اکنون میتوانید وارد شوید.
+resend_verification:
+  back_to_login: بازگشت به ورود
+  check_spam: اگر در چند دقیقه آینده ایمیل را مشاهده نکردید، پوشه هرزنامه را بررسی کنید.
+  description: برای دریافت پیوند تأیید جدید، آدرس ایمیل خود را وارد کنید.
+  error: ارسال ایمیل تأیید ناموفق بود.
+  send_button: ارسال ایمیل تأیید
+  sent: ایمیل تأیید ارسال شد. لطفاً صندوق ورودی (و پوشه هرزنامه) را بررسی کنید.
+  sent_description: اگر حسابی با این ایمیل وجود داشته باشد، پیوند تأیید دریافت خواهید کرد.
+  sent_title: ایمیل ارسال شد
+  title: ارسال مجدد ایمیل تأیید
+reset_password:
+  confirm_password: تأیید رمز عبور جدید
+  description: رمز عبور جدید خود را در زیر وارد کنید.
+  failed: بازنشانی رمز عبور ناموفق بود
+  login_button: رفتن به صفحه ورود
+  missing_token: توکن بازنشانی ارائه نشده است
+  new_password: رمز عبور جدید
+  password_mismatch: رمزهای عبور مطابقت ندارند
+  submit: بازنشانی رمز عبور
+  success: رمز عبور با موفقیت بازنشانی شد
+  success_description: رمز عبور شما بازنشانی شد. در حال انتقال به صفحه ورود...
+  success_title: بازنشانی رمز عبور
+  title: بازنشانی رمز عبور
+settings:
+  ai:
+    title: اتصالات هوش مصنوعی
+  database:
+    title: اتصالات پایگاه داده
+  profile:
+    title: ترجیحات
+  title: تنظیمات
+setup:
+  internal:
+    description: عیب‌یابی سیستم و پیکربندی داخلی. نشانگرهای وضعیت فقط‌خواندنی.
+    future:
+      cache_config: پیکربندی کش / نشست
+      debug_logging: کلید تغییر وضعیت ثبت گزارش اشکال‌زدایی / مفصل
+      description: عیب‌یابی‌های بیشتری در نسخه‌های آینده اضافه خواهد شد.
+      email_transport: وضعیت انتقال ایمیل
+      pool_stats: آمار استخر پایگاه داده
+      title: به‌زودی
+    licence:
+      description: سطح لایسنس فعلی و قابلیت‌های فعال.
+      expiry: انقضا
+      features: قابلیت‌های فعال
+      issued_to: صادر شده برای
+      tier: سطح لایسنس
+      title: لایسنس و قابلیت‌ها
+    load_error: بارگیری عیب‌یابی سیستم ناموفق بود
+    system_status:
+      available: در دسترس
+      db_pool: استخر پایگاه داده
+      description: نشانگرهای سلامت بلادرنگ برای سرویس‌های پس‌زمینه.
+      healthy: سالم
+      initialized: مقداردهی‌اولیه شده
+      not_initialized: مقداردهی‌اولیه نشده
+      not_required: لازم نیست
+      overall_health: سلامت کلی
+      shared_memory: حافظه مشترک
+      title: وضعیت سیستم
+      unavailable: در دسترس نیست
+      unhealthy: ناسالم
+      version: نسخه
+      db_cluster: خوشه پایگاه داده
+    title: داخلی
+  limits:
+    demo_mode:
+      description: وقتی فعال باشد، سیستم در حالت نمایشی اجرا می‌شود — اقدامات مخرب مسدود شده و نشانگرها در رابط کاربری نمایش داده می‌شوند.
+      label: حالت نمایشی
+    description: کنترل‌های عملیاتی برای محدودیت منابع، مهلت‌ها و رفتار سیستم. تنظیم آن در هر زمانی ایمن است.
+    email_timeout:
+      hint: چند ساعت پیوند تأیید ایمیل معتبر می‌ماند.
+      label: مهلت تأیید ایمیل (ساعت)
+    grace_period:
+      hint: چند ساعت قبل از حذف دائمی حساب‌های حذف‌شده نرم.
+      label: تأخیر حذف (ساعت)
+    invalid_grace_period: لطفاً یک عدد مثبت معتبر برای تأخیر حذف (ساعت) وارد کنید
+    invalid_registration_max: لطفاً یک عدد مثبت معتبر برای حداکثر ثبت‌نام وارد کنید
+    invalid_timeout: لطفاً یک عدد مثبت معتبر برای مهلت تأیید (ساعت) وارد کنید
+    load_error: بارگیری تنظیمات محدودیت‌ها ناموفق بود
+    max_registrations:
+      hint: محدودیتی برای تعداد کاربرانی که می‌توانند ثبت‌نام کنند تعیین کنید.
+      label: حداکثر ثبت‌نام کاربران
+      placeholder: انتخاب محدودیت
+      unlimited: نامحدود
+      users: کاربر
+    save_button: ذخیره محدودیت‌ها
+    save_error: ذخیره تنظیمات محدودیت‌ها ناموفق بود
+    save_success: تنظیمات محدودیت‌ها ذخیره شد
+    title: محدودیت‌ها
+    upload:
+      count_1: ۱
+      count_10: ۱۰
+      count_100: ۱۰۰
+      count_1000: ۱۰۰۰
+      count_25: ۲۵
+      count_250: ۲۵۰
+      count_5: ۵
+      count_50: ۵۰
+      count_500: ۵۰۰
+      count_hint: حداکثر تعداد مجموعه‌داده برای هر کاربر (۰ = نامحدود). برای کاربران جدید اعمال می‌شود.
+      count_unlimited: نامحدود
+      default_count_label: حداکثر تعداد بارگذاری پیش‌فرض برای هر کاربر
+      default_size_label: حداکثر اندازه بارگذاری پیش‌فرض برای هر کاربر (مگابایت)
+      select_count: انتخاب محدودیت
+      select_size: انتخاب محدودیت
+      size_100_mb: ۱۰۰ مگابایت
+      size_10_mb: ۱۰ مگابایت
+      size_1_gb: ۱ گیگابایت
+      size_1_mb: ۱ مگابایت
+      size_250_mb: ۲۵۰ مگابایت
+      size_25_mb: ۲۵ مگابایت
+      size_500_mb: ۵۰۰ مگابایت
+      size_50_mb: ۵۰ مگابایت
+      size_5_mb: ۵ مگابایت
+      size_hint: حداکثر فضای ذخیره‌سازی کل برای هر کاربر (۰ = نامحدود). برای کاربران جدید اعمال می‌شود.
+      size_unlimited: نامحدود
+  options:
+    description: تنظیمات زمان نصب که هویت و رفتار این استقرار را تعریف می‌کنند. با احتیاط تغییر دهید — این موارد بر همه کاربران تأثیر می‌گذارند.
+    email_sender:
+      hint: آدرس ایمیلی که ایمیل‌های تأیید از طرف آن به نظر می‌رسند.
+      label: آدرس فرستنده ایمیل
+    load_error: بارگیری تنظیمات گزینه‌ها ناموفق بود
+    password_policy:
+      custom: سفارشی
+      high: بالا (حداقل ۱۰، حروف بزرگ، حروف کوچک، رقم، نویسه ویژه)
+      hint: الزامات پیچیدگی رمز عبور را برای ثبت‌نام کاربر و تغییر رمز عبور انتخاب کنید.
+      label: خط‌مشی رمز عبور
+      low: پایین (حداقل ۶ نویسه)
+      medium: متوسط (حداقل ۸، حروف بزرگ، حروف کوچک، رقم)
+      min_length: حداقل طول
+      min_strength: حداقل قدرت (امتیاز zxcvbn از ۰ تا ۴)
+      require_digit: نیاز به رقم
+      require_lowercase: نیاز به حروف کوچک
+      require_special: نیاز به نویسه ویژه
+      require_uppercase: نیاز به حروف بزرگ
+      select: انتخاب خط‌مشی
+    public_url:
+      hint: نشانی پایه استفاده‌شده در پیوندهای تأیید ایمیل (مثلاً https://workbench.example.com).
+      label: نشانی عمومی
+    save_button: ذخیره گزینه‌ها
+    save_error: ذخیره تنظیمات گزینه‌ها ناموفق بود
+    save_success: تنظیمات گزینه‌ها ذخیره شد
+    title: گزینه‌ها
+    welcome:
+      hint: این پیام در صفحه ورود نمایش داده خواهد شد. برای پنهان‌کردن، خالی بگذارید.
+      label: پیام خوش‌آمد
+      placeholder: یک پیام خوش‌آمد برای نمایش در صفحه ورود وارد کنید.
+    registration_mode:
+      select: انتخاب حالت ثبتنام
+      mode_2: ثبتنام توسط خود کاربر و تأیید توسط مدیر
+      mode_4: ثبتنام توسط خود کاربر با تأیید ایمیل
+      mode_1: ایجاد کاربران تأییدشده توسط مدیر
+      hint: نحوه ایجاد و تأیید حسابهای کاربری جدید را انتخاب کنید.
+      label: حالت ثبتنام
+      mode_0: ثبتنام توسط خود کاربر با تأیید خودکار
+  tuning:
+    ai_section_label: تولید هوش مصنوعی
+    invalid_probe_timeout: مهلت آزمون باید عدد صحیحی از ثانیه باشد، حداقل ۱ و حداکثر ۱۲۰۰
+    saved: تنظیمات تنظیم دقیق ذخیره شد
+    connect_timeout_hint: چه مدت شبکه ممکن است برای پذیرش اتصال زمان ببرد پیش از آنکه نقطه پایانی غیرقابل‌دسترس تلقی شود. مقداری کمتر از نیاز شبکه، یک نقطه پایانی سالم را به نقطه پایانی مرده تبدیل می‌کند.
+    ai_section_hint: پیش‌فرض‌ها برای هر درخواست هوش مصنوعی. یک اتصال و مدل مشخص ممکن است آن‌ها را در جایی که تنظیم دقیق مخصوص همان جفت است نادیده بگیرد.
+    seconds: ثانیه
+    reset_confirm_title: این شش مورد به پیش‌فرض‌شان بازنشانی شوند؟
+    slow_threshold_label: آستانه مدل کند
+    description: پیش‌فرض‌های رفتار هوش مصنوعی و محدودیت‌های زمانی. این‌ها معمولاً همان‌گونه که هستند مناسب‌اند — تنظیم هر کاربر یا هر اتصال می‌تواند متفاوت باشد، و مقدار اینجا وقتی اعمال می‌شود که هیچ‌کدام
+      تنظیم خاصی نداشته باشند.
+    reset_confirm_body: هر مقدار در این صفحه به پیش‌فرض اولیه‌اش بازمی‌گردد. تنظیمات نادیده‌گیرنده هر اتصال تحت‌تأثیر قرار نمی‌گیرند. این کار قابل بازگشت نیست و باید هر مقداری را که تغییر داده بودید دوباره
+      تنظیم کنید.
+    reset_confirm_action: بازنشانی
+    forbidden: فقط یک مدیر کامل می‌تواند این تنظیمات را تغییر دهد.
+    invalid_temperature: دما باید عددی بین ۰ تا ۲ باشد
+    invalid_model_test_seconds: لطفاً یک عدد صحیح از ثانیه وارد کنید، حداقل ۱
+    reset_done: تنظیمات تنظیم دقیق به پیش‌فرض‌هایشان بازنشانی شد
+    ai_temperature_hint: 'میزان تنوع پاسخ‌ها: ۰ یعنی تکرارپذیرترین حد مجاز مدل، ۲ یعنی بیشترین تنوع. مقادیر خارج از ۰ تا ۲ توسط ارائه‌دهنده رد می‌شوند، نه توسط این سامانه.'
+    probe_timeout_hint: مدت زمان اجرای یک آزمون تناسب. یک مدل میزبانی‌شده روی CPU دقیقه‌ها طول می‌کشد، بنابراین محدودیت کوتاه در اینجا به‌جای صرفه‌جویی در زمان، شکست نادرست ثبت می‌کند.
+    saving: در حال ذخیره…
+    save: ذخیره تنظیمات
+    invalid_ai_timeout: محدودیت زمانی هوش مصنوعی باید عدد صحیحی از ثانیه باشد، حداقل ۱
+    save_error: ذخیره تنظیمات تنظیم دقیق ممکن نشد
+    reset_error: بازنشانی تنظیمات تنظیم دقیق ممکن نشد
+    invalid_connect_timeout: مهلت اتصال باید عدد صحیحی از ثانیه باشد، حداقل ۱ و حداکثر ۶۰
+    resetting: در حال بازنشانی…
+    ai_tokens: توکن‌ها
+    ai_timeout_hint: مدت زمانی که یک درخواست هوش مصنوعی ممکن است پیش از رها شدن اجرا شود. اگر خیلی کم باشد، گفتگو بی‌سروصدا شکست می‌خورد؛ اگر خیلی زیاد باشد، یک مدل متوقف‌شده کارگر را مشغول نگه می‌دارد.
+      مدل‌های محلی روی CPU ممکن است چند دقیقه زمان نیاز داشته باشند.
+    preamble_detail: هر درخواست هوش مصنوعی از این تنظیمات استفاده می‌کند مگر اینکه یک اتصال آنها را نادیده بگیرد. تغییر یکی از آنها بر هر مدلی که تنظیمات اختصاصی خود را ندارد اثر می‌گذارد؛ اما اتصالی را
+      که قبلاً تنظیم کرده‌اید تغییر نمی‌دهد.
+    slow_threshold_hint: اگر آزمایش یک مدل بیشتر از این مقدار طول بکشد، به‌عنوان خیلی کند گزارش می‌شود. کاربران می‌توانند محدودیت خود را افزایش دهند؛ هیچ‌کس نمی‌تواند آن را کمتر از ۱ کاهش دهد.
+    ai_max_tokens_hint: طولانی‌ترین پاسخی که یک درخواست منفرد ممکن است تولید کند. یک توضیح تقریباً ۵۰۰ توکن نیاز دارد؛ ۴۰۰۰ توکن فضای کافی باقی می‌گذارد.
+    invalid_max_tokens: لطفاً یک عدد صحیح برای تعداد توکن‌ها وارد کنید، حداقل ۱
+    load_error: نتوانست تنظیمات مربوط به تنظیم دقیق را بارگیری کند.
+tools:
+  all_datasets: همه مجموعه‌داده‌ها
+  connect_database: اتصال پایگاه داده
+  description: ابزارهای کمکی و تحلیلی بیشتر اینجا ظاهر خواهند شد.
+  import_notebook: وارد کردن دفترچه یادداشت
+  manage_data: جمع‌آوری داده
+  my_data: داده‌های من
+  notebooks: دفترچه‌ها
+  placeholder: صفحه ابزارها به‌زودی.
+  title: ابزارهای دیگر
+  upload_csv_excel: بارگذاری CSV / Excel
+  upload_data: بارگذاری داده
+  uploads_list: بارگذاری‌ها (csv، Excel)
+  visualize: جعبه‌شنی تجسم
+transforms:
+  back_to_data: بازگشت به داده‌های من
+  back_to_recipe: 'بازگشت به دستور: {name}'
+  connect_error: اتصال تبدیل ناموفق بود
+  connect_transform: اتصال به دستور
+  connected_count: '{count} متصل'
+  connected_to_recipe: 'متصل به: {name}'
+  delete_button: حذف
+  delete_confirm: این تبدیل حذف شود؟
+  delete_success: تبدیل حذف شد.
+  description_label: توضیحات
+  description_placeholder: توضیحات (اختیاری)
+  disconnect_error: قطع اتصال تبدیل ناموفق بود
+  disconnect_transform: قطع اتصال از دستور
+  empty_hint: هنگام اجرای تبدیل، عملیات‌ها به ترتیب فهرست اعمال می‌شوند.
+  empty_state: برای شروع ساخت تبدیل، یک عملیات اضافه کنید.
+  empty_title: یک تبدیل از فهرست انتخاب کنید یا یکی جدید بسازید.
+  fill:
+    constant: مقدار ثابت
+    drop_rows: حذف ردیف‌ها
+    mean: میانگین
+    median: میانه
+    mode: نما
+  filter:
+    op_contains: شامل
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: ناتهی است
+    op_is_null: تهی است
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'دستور: {name}'
+  load_error: بارگیری تبدیل ناموفق بود
+  name_label: نام
+  name_placeholder: نام تبدیل
+  name_required: نام تبدیل الزامی است.
+  new_transform: تبدیل جدید
+  no_search_results: هیچ تبدیلی با جستجوی شما مطابقت ندارد
+  no_transforms: هیچ تبدیلی برای این مجموعه‌داده تعریف نشده است.
+  op:
+    add: افزودن عملیات
+    column_placeholder: انتخاب ستون
+    empty_hint: برای شروع ساخت تبدیل، یک عملیات اضافه کنید.
+    encoding_label: برچسب
+    encoding_onehot: یک‌داغ
+    encoding_placeholder: کدگذاری
+    method_placeholder: روش
+    new_name_placeholder: نام جدید
+    operations_label: عملیات‌ها
+    operator_placeholder: عملگر
+    remove: حذف
+    target_boolean: بولی
+    target_datetime: تاریخ‌وزمان
+    target_numeric: عددی
+    target_string: رشته‌ای
+    target_type_placeholder: نوع هدف
+    type:
+      convert_type: تبدیل نوع
+      drop_column: حذف ستون
+      drop_duplicates: حذف تکراری‌ها
+      encode_category: کدگذاری دسته
+      fill_missing: پر کردن مقادیر گمشده
+      filter: فیلتر ردیف‌ها
+      rename_column: تغییر نام ستون
+      normalize: نرمال‌سازی
+      standardize: استانداردسازی
+    type_placeholder: نوع عملیات
+    value_placeholder: مقدار
+  operations_count: '{count} عملیات'
+  operations_heading: عملیات
+  save_button: ذخیره
+  save_success: تبدیل ذخیره شد.
+  search_placeholder: جستجوی تبدیل‌ها...
+validation:
+  api_key_required: کلید API برای این ارائه‌دهنده لازم است.
+  database_required: نام پایگاه‌داده لازم است.
+  host_required: میزبان لازم است.
+  name_required: نام اتصال لازم است.
+  password:
+    min_length: رمز عبور باید حداقل {min} کاراکتر باشد.
+    require_digit: رمز عبور باید حداقل یک رقم داشته باشد.
+    require_lowercase: رمز عبور باید حداقل یک حرف کوچک داشته باشد.
+    require_special: رمز عبور باید حداقل یک کاراکتر ویژه داشته باشد.
+    require_uppercase: رمز عبور باید حداقل یک حرف بزرگ داشته باشد.
+    too_weak: رمز عبور خیلی ضعیف است. لطفاً رمز عبور قوی‌تری انتخاب کنید.
+  password_required: رمز عبور لازم است.
+  port_invalid: پورت باید بین 1 و 65535 باشد.
+  provider_required: لطفاً یک ارائه‌دهنده انتخاب کنید.
+  type_required: لطفاً نوع پایگاه‌داده را انتخاب کنید.
+  username_required: نام کاربری لازم است.
+verify_email:
+  error_description: مشکلی پیش آمد.
+  error_title: تأیید ناموفق بود
+  expired_description: لینک تأیید منقضی شده است.
+  expired_message: می‌توانید در زیر یک ایمیل تأیید جدید درخواست کنید.
+  expired_title: لینک منقضی شده
+  invalid_token: لینک تأیید نامعتبر است.
+  login_button: ادامه به ورود
+  missing_description: هیچ توکن تأییدی ارائه نشده است.
+  missing_title: بدون توکن تأیید
+  network_error: خطای شبکه. لطفاً دوباره تلاش کنید.
+  resend_button: ارسال مجدد ایمیل تأیید
+  success_description: ایمیل شما با موفقیت تأیید شد. در حال انتقال به صفحه ورود...
+  success_title: ایمیل تأیید شد
+  unknown_error: مشکلی پیش آمد.
+virtual:
+  clone: کلون
+  deleted: مجموعه‌داده حذف شد
+  draft_badge: پیش‌نویس
+  edit: ویرایش
+  error: خطایی رخ داد
+  existing_none: هیچ‌کدام
+  existing_title: مجموعه‌داده‌های موجود
+  loading: در حال بارگذاری...
+  more: بیشتر
+  new_chat: مجموعه‌داده مجازی جدید
+  placeholder: توضیح دهید چه کاری می‌خواهید انجام دهید...
+  ready_badge: آماده
+  recent_chats: گفتگوهای اخیر
+  send: ارسال
+  stage: مرحله
+  title: مجموعه‌داده‌های مجازی
+  verbose: تفصیلی
+  welcome: به دستیار مجموعه‌داده‌های مجازی خوش آمدید. اگر این برای شما تازگی دارد، شاید بخواهید بدانید چگونه شروع کنید. از من بخواهید توضیح دهم که آماردانان چگونه از مجموعه‌داده‌ها به‌عنوان ورودی دستورالعمل‌های
+    تحلیل استفاده می‌کنند و سپس از خروجی برای ایجاد گزارش‌ها و نمودارها بهره می‌برند. یا از من بخواهید مجموعه‌داده‌های واقعی شما را مرور کنم تا بتوانیم انتخاب داده‌ها را از آن‌ها برای استفاده آغاز کنیم.
+    اگر مطمئن نیستید، فقط بگویید «سلام».
+  preview_joins: اتصال‌ها
+  preview_columns: ستون‌های خروجی
+  preview_name: نام
+  preview_title: پیش‌نمایش مجموعه‌داده
+  preview_sources: منابع
+  manual:
+    sources_title: منشأ داده‌ها
+    validate: تعریف را اعتبارسنجی کنید
+    need_columns: حداقل یک ستون را علامت بزنید تا گنجانده شود.
+    move_up: این ستون را یک مرحله به بالا منتقل کنید.
+    add_join: یک پیوند اضافه کنید.
+    joins_title: نحوه پیوند منابع
+    loading_columns: در حال خواندن ستون‌ها…
+    remove: این ستون را از خروجی حذف کنید.
+    no_sources: هیچ اتصال یا مجموعه‌داده‌ای برای استفاده موجود نیست.
+    select_none: انتخاب هیچ‌کدام
+    validate_ok: ساختار تعریف معتبر است.
+    bridge: پل
+    complete_join: پیوند ناتمام را کامل کنید.
+    alias_taken: آن نام مستعار قبلاً توسط منبع دیگری استفاده شده است.
+    tables_error: جدول‌ها خوانده نشدند.
+    output_title: آنچه مجموعه‌داده ارائه می‌دهد
+    intro: یک مجموعه‌داده مجازی از ستون‌هایی که انتخاب می‌کنید بسازید، یا یکی از موارد موجود را برای تغییر باز کنید.
+    open_label: یک مجموعه‌داده موجود باز کنید.
+    select_all: انتخاب همه
+    columns_error: ستون‌ها خوانده نشدند.
+    bridge_choose_columns: هیچ ستون منطبقی پیدا نشد — پیوند را اضافه کنید و آن‌ها را انتخاب کنید.
+    move_down: این ستون را یک مرحله به پایین منتقل کنید.
+    need_join: دو منبع انتخاب شده‌اند، اما هیچ‌چیز آن‌ها را به یکدیگر پیوند نمی‌دهد.
+    preview_rows: '{count} ردیف برگردانده شد.'
+    column_placeholder: یک ستون انتخاب کنید.
+    sources_hint: یک اتصال یا مجموعه‌داده را گسترش دهید، سپس ستون‌هایی را که می‌خواهید گنجانده شوند علامت بزنید.
+    need_name: پیش از ذخیره، نامی برای مجموعه‌داده تعیین کنید.
+    loaded_note: یک تعریف موجود باز شد — ذخیره کردن، آن را به‌روزرسانی می‌کند.
+    materialized_hint: به‌جای پیوند زنده، جدول می‌نویسد. هنگام نمونه‌سازی آن را خاموش نگه دارید.
+    open_none: هنوز مجموعه‌داده مجازی برای باز کردن وجود ندارد.
+    new_dataset: شروع مجموعه‌داده جدید
+    no_match: هیچ موردی اینجا با فیلتر مطابقت ندارد.
+    preview_error: پیوند اجرا نشد.
+    suggested: پیشنهادی
+    test_join: پیوند را آزمایش کنید.
+    remove_join: این پیوند را حذف کنید.
+    output_hint: ستون‌هایی که این مجموعه‌داده ارائه خواهد داد، به‌ترتیب.
+    save_success: مجموعه‌داده مجازی ذخیره شد.
+    alias_label: نام مستعار
+    bridge_no_columns: ستون‌ها هنوز خوانده نشده‌اند — منبع را گسترش دهید، یا پیوند را اضافه و آن‌ها را انتخاب کنید.
+    joins_hint: دو یا چند منبع به پیوندی میان خود نیاز دارند. یک منبع به هیچ پیوندی نیاز ندارد.
+    save_error: مجموعه‌داده مجازی ذخیره نشد.
+    aggregation_note: تجمیعی که از یک تعریف قدیمی به همراه آمده است همان‌طور حفظ می‌شود، اما پیوند آن را اعمال نمی‌کند.
+    unattached_sources: 'به بقیه پیوند داده نشده است: {sources}. پیوندی اضافه کنید که آن‌ها را متصل کند.'
+    name_label: نام مجموعه‌داده
+    description_label: توضیحات مجموعه‌داده
+    materialized_label: نتیجه را مادی‌سازی کنید
+    preview_empty: پیوند هیچ ردیفی برنگرداند.
+    update_dataset: این مجموعه‌داده را به‌روزرسانی کنید.
+    test_pulls_every_source: آزمایش پیوند همه منابع را به‌طور کامل می‌خواند، بنابراین ممکن است کند باشد.
+    title: ویرایشگر مجموعه‌داده مجازی
+    validate_errors: 'تعریف مشکلاتی دارد:'
+    incomplete_join: پیوندی را که هنوز ستونی برای آن انتخاب نشده است، کامل یا حذف کنید.
+    load_error: تعریف آن مجموعه‌داده بارگذاری نشد.
+    loaded_note_shared: یک تعریف اشتراکی موجود باز شد — فقط خواندنی - به‌روزرسانی مجاز نیست
+    materialize_done: جدول ساخته شد.
+    materialize_retry: تلاش مجدد
+    materialize_failed: 'ذخیره شد، اما جدول ساخته نشد:'
+  progress_decided: '{decided} از {total} تصمیم گرفته شده'
+  panel_tick_error: تیک زدن آن ستون ممکن نشد.
+  chip_load_error: گزینه‌ها به‌روزرسانی نشدند؛ بنابراین ممکن است قدیمی باشند.
+  panel_fold_error: وضعیت تاشده پنل ذخیره نشد؛ بنابراین دفعه بعد دوباره باز خواهد بود.
+  panel_tick_no_session: ابتدا پیامی بفرستید — درخت تیک‌های شما را در این جلسه ثبت می‌کند.
+  panel:
+    expand: نمایش پنل منبع
+    collapse: پنل منبع را جمع کنید
+  panel_columns: '{count} ستون'
+  chip_error: اعمال آن گزینه ممکن نشد.
+  heading_choose_columns: ستون‌ها را انتخاب کنید
+  heading_materialised: زنده یا مادی‌شده؟
+  heading_choose_table: یک جدول انتخاب کنید
+  heading_match_columns: این ستون‌ها را مطابقت دهید
+  confirm_selection: از اینها استفاده کنید
+  selection_hint: تیک هر چیزی را که نمیخواهید بردارید، سپس آنها را با هم استفاده کنید
+  act:
+    join: به {pair} پیوست
+    named: آن را «{name}» نامید
+    sources_short: '{count} جدول پذیرفته شد: {tables}'
+    sources: '{count} جدول پذیرفته شد'
+    applied: '{piece} اعمال شد'
+  suggestion_applied: اعمال شد
+  act_joins: '{count} جفت متصل شد'
+  joins_unjoined: 'متصل نشده: {tables}'
+  joins_apply: اعمال
+  joins_coverage: '{connected} از {total} جدول متصل است'
+  joins_hint: هر ستون یا نوع اتصال را تغییر دهید، سپس ادامه دهید.
+  joins_unsaved: این ردیف‌ها با مجموعه داده تفاوت دارند. آن‌ها را اعمال کنید، یا ابتدا ردیف خالی را اصلاح کنید.
+  join_type_label: نوع اتصال
+  name_suggestion_accept: از این نام استفاده کنید
+  name_suggestion_heading: نام پیشنهادی — در صورت تمایل آن را تغییر دهید
+visualize:
+  config: پیکربندی
+  data: داده (JSON)
+  data_placeholder: داده JSON را اینجا جایگذاری کنید یا نمونه تولید کنید
+  description: یک نوع نمودار انتخاب کنید، داده نمونه تولید کنید، پارامترها را تنظیم و پیش‌نمایش کنید.
+  download_error: دانلود جدول ناموفق بود
+  download_png: دانلود به‌صورت PNG
+  download_success: جدول به‌صورت PNG دانلود شد
+  generate_sample: تولید نمونه
+  invalid_data: داده نامعتبر برای جدول متنی. ستون‌ها و ردیف‌ها مورد انتظار است.
+  load_error: بارگیری انواع نمودار ناموفق بود
+  no_data: داده‌ای برای نمایش وجود ندارد. داده نمونه تولید کنید یا JSON جایگذاری کنید.
+  no_types: هیچ نوع نموداری تعریف نشده است. لطفاً با مدیر تماس بگیرید.
+  parameters: پارامترها
+  preview: پیش‌نمایش
+  sample_expenses: هزینه‌ها
+  sample_generated: داده نمونه تولید شد
+  sample_item: مورد
+  sample_sales: فروش
+  sample_value: مقدار
+  save_error: ذخیره‌سازی ناموفق بود
+  save_instance: ذخیره نمونه
+  save_no_data: داده‌ای برای ذخیره وجود ندارد. لطفاً داده تولید یا جایگذاری کنید.
+  save_success: نمودار با موفقیت ذخیره شد
+  select_type: انتخاب نوع
+  title: محیط آزمایشی نمودار
+  type: نوع نمودار
+  unsupported: نوع نمودار هنوز پیاده‌سازی نشده است
+  unsupported_parameter: نوع پشتیبانی‌نشده

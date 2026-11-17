@@ -1,0 +1,2259 @@
+about:
+  description: Crea esperienze straordinarie con shadcn/ui e Next.js. Design pulito, prestazioni elevate.
+  fast_desc: Basato su Next.js App Router per prestazioni ottimali.
+  fast_title: Veloce
+  get_started: Inizia
+  modern_desc: Componenti accessibili da shadcn/ui, stilizzati con Tailwind CSS.
+  modern_title: UI moderna
+  secure_desc: 'Tipizzato e personalizzabile: possiedi il codice dei componenti.'
+  secure_title: Sicuro
+  title: Informazioni su Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: Torna all'amministrazione
+    cannot_modify_self: Non puoi modificare il tuo account
+    delete_confirmation: Vuoi davvero eliminare {name}? Questo utente verrà eliminato temporaneamente e potrà essere ripristinato da un amministratore completo.
+    delete_error: Eliminazione dell'utente non riuscita
+    delete_title: Elimina utente
+    demote: Retrocedi
+    demote_error: Retrocessione dell'utente non riuscita
+    demote_success: Utente retrocesso da Amministratore di gruppo
+    description_placeholder: Inserisci una descrizione
+    description_required: La descrizione non può essere vuota
+    group_description: Descrizione del gruppo
+    group_users_load_error: Caricamento degli utenti del gruppo non riuscito
+    load_error: Caricamento dei gruppi non riuscito
+    load_success: Gruppi caricati correttamente
+    no_users: Nessun utente trovato in questo gruppo.
+    promote: Promuovi
+    promote_error: Promozione dell'utente non riuscita
+    promote_success: Utente promosso ad Amministratore di gruppo
+    readonly_badge: (sola lettura)
+    readonly_message: Stai visualizzando questa pagina in modalità di sola lettura. Gli utenti di esempio non possono apportare modifiche.
+    readonly_title: Gestione gruppi (sola lettura)
+    select_group: Seleziona gruppo
+    select_group_placeholder: Seleziona un gruppo
+    title: Gestione gruppi
+    update_error: Aggiornamento del gruppo non riuscito
+    update_success: Descrizione del gruppo aggiornata
+    users_in_group: Utenti nel gruppo
+  models:
+    comment_placeholder: Inserisci un commento
+    description: Tutti i modelli che il workbench conosce. Abilitare un modello influisce su tutte le connessioni che lo servono; la colonna dei server mostra quali possono raggiungerlo.
+    disabled: Disabilitato
+    edit_comment: Modifica commento
+    enabled: Abilitato
+    fetch_auth_required: Questo provider richiede una chiave API per elencare i modelli. Aggiorna invece da Impostazioni → Connessioni IA.
+    fetch_non_standard: Questo provider non espone un'API standard per l'elenco dei modelli. Aggiungi i modelli manualmente nel pannello di amministrazione.
+    load_models_error: Caricamento dei modelli non riuscito
+    no_comment: —
+    no_models: Ancora nessun modello. Il rilevamento li crea a partire da una connessione.
+    not_preferred: Non preferito
+    preferred: Preferito
+    toggle_error: Aggiornamento del modello non riuscito
+    update_error: Aggiornamento del commento non riuscito
+    update_success: Modello aggiornato
+    filter_test: Test di capacità
+    tuning_saved: Impostazioni IA salvate
+    no_servers: Nessuna connessione serve ancora questo modello
+    filter_any: Qualsiasi stato
+    tuning_inherited: ereditato
+    servers_title: Raggiungibile da
+    filter_state: Stato
+    tuning_hint: Questi valori si applicano ovunque questo modello venga usato su questa connessione. Un valore vuoto indica che eredita il predefinito del Workbench.
+    tuning_save_error: Impossibile salvare le impostazioni IA
+    search_placeholder: Cerca nome modello
+    filter_result: Risultato
+    tuning_timeout_hint: Secondi per cui una richiesta IA può essere eseguita. Un modello locale su CPU può richiedere diversi minuti.
+    no_matches: Nessun modello corrisponde a questi filtri.
+    tuning_inherited_title: Un valore vuoto eredita il predefinito del Workbench
+    model_count: '{count} modelli'
+    tuning_load_error: Impossibile caricare le impostazioni IA
+    tuning_temperature_hint: Valori più bassi danno risposte più ripetibili; valori più alti danno risposte più varie.
+    tuning_title: Impostazioni IA per questo server
+    filter_clear: Cancella filtri
+    tuning_loading: Caricamento impostazioni IA…
+  providers:
+    code_label: Codice
+    delete_button: Elimina
+    delete_confirmation: Vuoi davvero eliminare il provider "{name}"? Verranno rimossi anche tutti i modelli associati e l'operazione non può essere annullata.
+    delete_error: Eliminazione del provider non riuscita
+    delete_provider: Elimina provider
+    delete_success: Provider eliminato
+    delete_title: Elimina provider
+    description: Abilita o disabilita i provider IA. I provider disabilitati non compariranno nei moduli di connessione degli utenti.
+    disabled: Disabilitato
+    enabled: Abilitato
+    fetch_error: Caricamento dei provider non riuscito
+    list_title: Tutti i provider
+    local: Locale
+    no_api_key: nessuna chiave API richiesta
+    requires_api_key: richiede chiave API
+    title: Provider IA
+    toggle_error: Aggiornamento del provider non riuscito
+    update_success: Provider aggiornato
+  title: Pannello di amministrazione
+  user_details:
+    dark_mode_description: Alterna tra tema chiaro e scuro.
+    dark_mode_label: Modalità scura
+    email_label: Email
+    email_notifications_description: Ricevi aggiornamenti via email sul tuo account.
+    email_notifications_label: Notifiche email
+    full_admin_note: Gli amministratori completi dispongono per impostazione predefinita di tutte le autorizzazioni degli amministratori di gruppo.
+    group_admin_description: L'utente può gestire altri utenti all'interno del proprio gruppo.
+    group_admin_label: Amministratore di gruppo
+    group_hint: Il gruppo dell'utente determina a quali risorse condivise può accedere.
+    language_label: Lingua
+    language_select_placeholder: Seleziona lingua
+    load_error: Caricamento dei dettagli dell'utente non riuscito
+    max_upload_count_hint: Numero massimo di dataset per utente (0 = illimitato).
+    max_upload_count_label: Numero massimo di caricamenti
+    max_upload_count_placeholder: Seleziona quantità
+    max_upload_size_hint: Spazio di archiviazione totale massimo per utente (0 = illimitato).
+    max_upload_size_label: Dimensione massima di caricamento
+    max_upload_size_placeholder: Seleziona dimensione
+    name_label: Nome
+    not_found: Utente non trovato
+    save_error: Impossibile aggiornare l'utente
+    save_success: Dettagli utente aggiornati
+    select_group: Seleziona gruppo
+    title: Amministra utente
+    unnamed: Utente senza nome
+    user_group: Gruppo utente
+  users:
+    active_users: Utenti attivi
+    admin_badge: Amministratore
+    bcc_label: Registrazioni BCC
+    bcc_updated: Impostazione di registrazione BCC aggiornata
+    created_label: Creato
+    current_user_badge: Tu
+    delete_button: Elimina
+    delete_confirmation: Sei sicuro di voler eliminare definitivamente "{name}"? Questa azione NON può essere annullata.
+    delete_error: Impossibile eliminare l'utente
+    delete_self_error: Non puoi eliminare il tuo account
+    delete_success: Utente eliminato definitivamente
+    delete_title: Elimina utente
+    deleted_badge: Eliminato temporaneamente
+    deleted_label: Eliminato
+    example_user_badge: Utente di esempio
+    forbidden: Vietato
+    group_admin_badge: Amministratore del gruppo
+    hard_delete_button: Eliminazione definitiva
+    hard_delete_confirmation: Sei sicuro di voler eliminare definitivamente "{name}"? Questa azione NON può essere annullata.
+    hard_delete_error: Impossibile eliminare definitivamente l'utente
+    hard_delete_success: Utente eliminato definitivamente
+    hard_delete_title: Elimina definitivamente l'utente
+    load_error: Impossibile caricare gli utenti
+    make_admin: Rendi amministratore
+    more_button: Altro...
+    no_name: Nessun nome
+    remove_admin: Rimuovi amministratore
+    resend_button: Reinvia email
+    resend_error: Impossibile inviare l'email di verifica
+    resend_success: Email di verifica inviata a {email}
+    restore_button: Ripristina
+    restore_error: Impossibile ripristinare l'utente
+    restore_success: Utente ripristinato
+    soft_deleted_users: Utenti eliminati temporaneamente
+    title: Gestione utenti
+    unauthorized: Non autorizzato
+    unverified_badge: Non verificato
+    update_error: Impossibile aggiornare l'utente
+    update_success: Utente aggiornato
+    user_not_found: Utente non trovato
+    verified_badge: Verificato
+    verify_button: Verifica
+    verify_error: Impossibile verificare l'utente
+    verify_success: Utente contrassegnato come verificato
+    add_user: Aggiungi utente
+  visualization_types:
+    add_button: Aggiungi nuovo tipo
+    add_title: Aggiungi tipo di visualizzazione
+    create_success: Tipo di visualizzazione creato
+    default_parameters: Parametri predefiniti (JSON)
+    delete: Elimina
+    delete_button: Elimina
+    delete_confirmation: Sei sicuro di voler eliminare il tipo "{name}"? Verranno eliminate anche tutte le istanze associate e l'operazione non può essere annullata.
+    delete_error: Impossibile eliminare
+    delete_success: Tipo di visualizzazione eliminato
+    delete_title: Elimina tipo di visualizzazione
+    description: Descrizione
+    disabled: Disabilitato
+    edit: Modifica
+    edit_title: Modifica tipo di visualizzazione
+    enabled: Abilitato
+    fetch_error: Impossibile caricare i tipi di visualizzazione
+    input_schema: Schema di input (JSON)
+    invalid_json: JSON non valido in uno dei campi dello schema
+    list_title: Tutti i tipi di visualizzazione
+    name: Nome
+    no_types: Nessun tipo di visualizzazione ancora definito.
+    parameter_schema: Schema dei parametri (JSON)
+    renderer: Renderer
+    renderer_client: Client
+    renderer_label: Renderer
+    renderer_server: Server
+    save_error: Impossibile salvare
+    slug: Slug
+    slug_label: Slug
+    title: Tipi di visualizzazione
+    toggle_error: Impossibile aggiornare
+    update_success: Tipo di visualizzazione aggiornato
+  adduser:
+    submit: Crea utente
+    description: Crea un nuovo account utente. L'account viene verificato immediatamente.
+    name: Nome
+    confirm_password: Conferma password
+    back_to_admin: Torna all'amministrazione
+    creating: Creazione utente...
+    failed: Impossibile creare l'utente
+    success: Account creato e verificato. Il nuovo utente può ora accedere.
+    title: Aggiungi utente
+    password: Password
+    password_mismatch: Le password non corrispondono
+    email: Email
+    not_admin: Non hai il permesso di accedere a questa pagina.
+    language_description: Scegli la lingua preferita dall'utente per l'interfaccia.
+  set_password:
+    admin_password_required: È richiesta la password amministratore
+    description: Imposta una nuova password per questo utente. È richiesta la tua password di amministratore per confermare la modifica.
+    success: Password impostata correttamente
+    admin_password: Password amministratore
+    title: Imposta password
+    failed: Impossibile impostare la password
+ai:
+  connection:
+    add_first: Aggiungi la tua prima connessione IA
+    add_new: Aggiungi nuova connessione IA
+    add_success: Connessione IA aggiunta correttamente
+    add_title: Aggiungi nuova connessione IA
+    api_key_hint: La tua chiave API viene crittografata prima di essere archiviata.
+    api_key_label: Chiave API
+    by_label: da
+    clear_default: Rimuovi predefinito
+    currently_not_shared: ❌ Attualmente non condivisa
+    currently_shared: ✅ Attualmente condivisa con il gruppo
+    default_badge: Predefinito
+    default_cleared: Connessione IA predefinita rimossa
+    default_set: Connessione IA predefinita aggiornata
+    delete_button: Elimina
+    delete_confirmation: Sei sicuro di voler eliminare la connessione?
+    delete_error: Impossibile eliminare la connessione IA
+    delete_title: Elimina connessione IA
+    deleted: Connessione IA eliminata
+    edit_title: Modifica connessione IA
+    endpoint_hint: Sovrascrivi l'endpoint API predefinito se necessario.
+    endpoint_label: URL endpoint
+    form_description: Configura una connessione a un provider IA.
+    group_label: Gruppo
+    load_error: Impossibile caricare le connessioni
+    load_providers_error: Impossibile caricare i provider
+    metadata_load_error: Impossibile caricare i metadati del provider
+    metadata_loading: Le informazioni sul provider sono ancora in caricamento. Attendi.
+    models: Modelli disponibili
+    models_disabled: Disabilitato
+    models_load_error: Impossibile caricare i modelli
+    models_none: Nessun modello ancora sincronizzato. Fai clic su Aggiorna per recuperare i modelli dal provider.
+    models_refresh: Aggiorna modelli
+    models_sync_error: Impossibile sincronizzare i modelli
+    models_synced: Modelli sincronizzati correttamente
+    name_label: Nome connessione
+    name_placeholder: ad es., La mia connessione AI
+    no_connections: Nessuna connessione IA salvata.
+    not_found: Connessione non trovata
+    provider_label: Provider
+    provider_not_found: Provider non trovato
+    save_error: Impossibile salvare la connessione IA
+    select_provider: Scegli il provider IA
+    select_provider_first: Seleziona prima un provider
+    set_default: Imposta come predefinita
+    shared_badge: Condivisa
+    shared_description: Rendi questa connessione disponibile agli altri utenti del tuo gruppo.
+    shared_label: Condividi con il gruppo
+    shared_readonly: Condivisa
+    shared_readonly_message: Questa connessione è condivisa con te. Puoi visualizzarla, ma la modifica è riservata al proprietario.
+    test_button: Verifica connessione
+    test_error: Connessione non riuscita.
+    test_success: Connessione riuscita!
+    unknown_user: Sconosciuto
+    update_success: Connessione IA aggiornata correttamente
+    timeouts_section_label: Timeout di connessione
+    invalid_probe_timeout: Il timeout del test del modello deve essere un numero intero di secondi, almeno 1 e al massimo 1200.
+    probe_timeout_hint: Quanto può durare qui un test di idoneità. Un modello ospitato su CPU richiede minuti.
+    models_discovered: 'Rilevati {seen} modello/i su questa connessione: {created} nuovi, {refreshed} già noti, {pruned} non più serviti'
+    invalid_connect_timeout: Il timeout di connessione deve essere un numero intero di secondi, almeno 1 e al massimo 60.
+    connect_exceeds_probe: 'Il timeout di connessione non può essere superiore al timeout del test del modello: non si può consentire a una connessione di impiegare più tempo per stabilirsi di quanto possa
+      durare l''intero test.'
+    connect_timeout_hint: Quanto tempo può impiegare la rete ad accettare una connessione. Un valore inferiore a quello richiesto da questa rete trasforma un endpoint funzionante in uno non raggiungibile.
+    timeouts_section_hint: Lascia vuoto un campo per usare il valore predefinito del workbench.
+  database:
+    add_connection: Aggiungi connessione al database
+    ai_augmented: Analisi aumentata dall'IA
+    ai_augmented_desc: Schema AI, Semantic AI e Integration AI hanno analizzato questo database.
+    ai_fallback: Analisi di base
+    ai_fallback_desc: Potenziamento IA non disponibile. Viene mostrata solo l'analisi strutturale. Seleziona una connessione IA per approfondimenti.
+    ai_health_score: Punteggio di salute IA
+    ai_unavailable: Analisi IA non disponibile. Connetti un provider IA per abilitare l'analisi avanzata.
+    all_issues: Tutti i problemi
+    analysis_report: Report di analisi
+    analysis_summary: '{tables} tabelle, {columns} colonne, {issues} problemi rilevati'
+    analyze: Analizza schema
+    analyzing: Analisi in corso...
+    business_value: Valore aziendale
+    categories: Categorie
+    code_systems_detected: Sistemi di codifica rilevati
+    cols_rows_format: '{cols} colonne, {rows} righe'
+    column_meanings: Significati delle colonne
+    columns_label: Colonne
+    confidence: Confidenza
+    description: Analizza la progettazione del database per individuare problemi di indicizzazione, normalizzazione, relazioni, tipi di dati e denominazione.
+    download_pdf: Scarica PDF
+    email_body_attachment: In allegato trovi il report di analisi.
+    email_body_connection: 'Connessione: {conn_name}'
+    email_body_database: 'Database: {db_name}'
+    email_body_id: 'ID connessione: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Report di analisi della progettazione del database
+    email_body_type: 'Tipo di database: {db_type}'
+    email_error: Impossibile inviare il report via e-mail
+    email_pdf: Invia PDF via e-mail
+    email_sent: Report inviato via e-mail correttamente
+    email_subject: Analisi della progettazione del database — {db_name} ({db_type}) [Connessione {conn_id}]
+    empty_state: Seleziona una connessione al database e fai clic su Analizza per iniziare.
+    enter_question: Inserisci una domanda.
+    foreign_keys: Chiavi esterne
+    high_risk: Alta
+    implicit_relationships: Relazioni implicite
+    indexes_label: Indici
+    integration_analysis: Analisi di integrazione
+    integration_analysis_desc: Relazioni implicite, capacità di ricerca e dimensioni mancanti rilevate da Integration AI.
+    isic_domains: Classificazioni di dominio ISIC
+    issues_label: Problemi
+    low_risk: Bassa
+    medium_risk: Media
+    missing_dimensions: Dimensioni mancanti
+    no_issues: Nessun problema rilevato. La progettazione del database sembra buona!
+    no_semi_structured: Nessun modello di dati semi-strutturati rilevato nelle colonne di testo.
+    normalisation_suggestions: Suggerimenti di normalizzazione
+    normalisation_suggestions_desc: Tabelle di riferimento proposte in base alle parole chiave trovate nelle colonne di testo semi-strutturate.
+    normalisation_warning: Questi sono suggerimenti generati dall'IA. Le riprogettazioni del database richiedono un'attenta revisione. Prova prima le modifiche su una replica.
+    pdf_downloaded: PDF scaricato correttamente
+    pdf_error: Impossibile generare il PDF
+    pk_prefix: PK –
+    placeholder: In arrivo. Questa funzione ti aiuterà a progettare schemi di database usando l'IA.
+    priority_actions: Azioni prioritarie
+    proposed_reference_table: Tabella di riferimento proposta
+    rag_ask: Chiedi
+    rag_chat: Chat RAG — Fai domande sui tuoi dati
+    rag_chat_desc: Fai domande in linguaggio naturale. Il sistema cerca nelle colonne di testo e restituisce risposte generate dall'IA con citazioni.
+    rag_error: Query RAG non riuscita
+    rag_placeholder: ad es., Quali sono le diagnosi comuni?
+    rag_sources: Fonti
+    research_capabilities: Capacità di ricerca
+    risk_breakdown: Scomposizione del rischio
+    rows_label: Righe
+    schema_error: Analisi dello schema del database non riuscita
+    select_connection: Seleziona connessione al database
+    select_connection_first: Seleziona prima una connessione al database.
+    select_connection_placeholder: Scegli una connessione al database...
+    semantic_analysis: Analisi semantica
+    semantic_analysis_desc: Significati delle colonne inferiti dall'IA, classificazioni di dominio ISIC e rilevamenti dei sistemi di codici.
+    semi_structured: Analisi di dati semi-strutturati
+    semi_structured_desc: Colonne di testo analizzate per codici incorporati, parole chiave e modelli.
+    table_purposes: Scopi delle tabelle
+    tables_explorer: Esploratore tabelle
+    tables_label: Tabelle
+    timeout_error: Timeout dell'analisi. Il database potrebbe essere troppo grande o il servizio IA potrebbe non essere disponibile.
+    timeout_log: Timeout dell'analisi dopo 15 minuti.
+    title: Assistente alla progettazione del database
+    top_recommendations: Raccomandazioni principali
+    peer_tables: 'Tabelle peer:'
+    health_score_desc: Salute generale del database valutata da Schema AI. 0 = problemi strutturali critici, 100 = pronto per la produzione.
+    is_missing: è mancante
+  dataclean:
+    chat_error: Impossibile ottenere una risposta
+    chat_placeholder: Chiedi informazioni sulla pulizia o preparazione di questo dataset...
+    column_tooltip: '{type} — {null_count} valori nulli, {unique_count} valori univoci'
+    column_type:
+      category: Categoria
+      datetime: Data/Ora
+      number: Numero
+      text: Testo
+    description: Pulizia e preparazione dei dataset basate sull'IA.
+    empty_chat: Seleziona un dataset e inizia a fare domande su come pulirlo e prepararlo.
+    enter_message: Inserisci un messaggio.
+    loading_schema: Caricamento schema...
+    no_connection: Configura una connessione IA predefinita in Impostazioni > IA.
+    no_datasets: Nessun dataset disponibile. Carica o definisci prima un dataset.
+    placeholder: In arrivo. Questa funzione ti aiuterà a pulire e preparare i dataset usando l'IA.
+    schema_error: Impossibile caricare lo schema del dataset
+    schema_summary: '{rows} righe, {cols} colonne'
+    select_dataset: Seleziona dataset
+    select_dataset_first: Seleziona prima un dataset.
+    select_dataset_placeholder: Scegli un dataset...
+    send: Invia
+    shared_badge: (condiviso)
+    title: Assistente per la pulizia dei dataset
+    clean_copy: Copia pulita
+    clean_no_rules: Nessuna regola di pulizia da applicare ancora.
+    no_rules: Nessuna regola ancora
+    operations_count: '{count} operazioni'
+    preview_title: Anteprima dati
+    clean_in_place_success: Dataset '{name}' aggiornato.
+    rules_title: Regole di preparazione
+    clean_copy_success: Creato un nuovo dataset '{name}' — l'originale è invariato.
+    no_dataset_selected: Nessun dataset selezionato
+    clean_name_label: Nome per la copia pulita
+    clean_in_place: Pulizia in loco
+  default_hint: La connessione predefinita viene utilizzata come fallback quando una ricetta di analisi non specifica un provider IA.
+  new_session: Nuova sessione
+  no_ai_connections: Nessuna connessione IA configurata. Aggiungine una in Impostazioni > IA.
+  recipe:
+    chat_error: Impossibile ottenere una risposta
+    chat_placeholder: Chiedi informazioni sull'analisi statistica o sulla configurazione della ricetta...
+    description: Generazione di ricette e regole di analisi basata sull'IA.
+    empty_chat: Seleziona un dataset e chiedi quali tecniche statistiche utilizzare.
+    enter_message: Inserisci un messaggio.
+    loading_schema: Caricamento schema...
+    no_datasets: Nessun dataset disponibile. Carica o definisci prima un dataset.
+    placeholder: In arrivo. Questa funzione ti aiuterà a creare ricette di analisi usando l'IA.
+    schema_summary: '{rows} righe, {cols} colonne'
+    select_dataset: Seleziona dataset
+    select_dataset_first: Seleziona prima un dataset.
+    select_dataset_placeholder: Scegli un dataset...
+    send: Invia
+    title: Assistente per le regole di analisi
+  recipe_concierge:
+    chat_error: Impossibile ottenere una risposta
+    create_prompt: Crea una nuova sessione per iniziare.
+    delete_session: Elimina sessione
+    draft_empty: Avvia una conversazione per creare la tua ricetta. La bozza apparirà qui man mano che prendi decisioni.
+    draft_title: Bozza della ricetta
+    input_placeholder: Chiedi informazioni sui tuoi dati... o di' semplicemente "ciao"
+    manual_label: Ricetta manuale
+    new_session: Nuova sessione
+    no_session: Nessuna sessione selezionata
+    no_sessions: Nessuna sessione ancora
+    open: Apri nell'editor
+    save: Salva ricetta
+    saved: Ricetta salvata!
+    saving: Salvataggio...
+    select_dataset: Seleziona dataset...
+    stage_columns: Seleziona colonne
+    stage_complete: Ricetta pronta
+    stage_goal: Domanda di ricerca
+    stage_greeting: Benvenuto
+    stage_review: Rivedi ricetta
+    stage_technique: Scegli tecnica
+    stage_transforms: Preparazione dei dati
+    stage_visualisation: Visualizzazione
+    status_draft: Bozza
+    status_ready: Pronto
+    tab_chat: Chat
+    tab_draft: Bozza
+    tab_sessions: Sessioni
+    title: Concierge IA per ricette
+    toggle_panel: Mostra/nascondi pannello ricetta
+    welcome: Dimmi cosa vuoi scoprire nei tuoi dati e ti aiuterò a creare una ricetta di analisi completa.
+    schema_changes: 'Modifiche allo schema rilevate:'
+    draft_dataset: Dataset
+    draft_no_visualisation: Risultati numerici
+    warnings_heading: Avvisi
+    errors_heading: Non è ancora possibile salvare
+    draft_output: Output
+    draft_algorithm: Algoritmo
+    progress_decided: '{count} di {total} decisi'
+    done: Completato
+    chip_withheld: +{count} altri
+    progress_next: '{progress} · {next}'
+    chip_superseded: Sostituito da un'offerta più recente.
+    unread_sources: Non è stato possibile leggere alcune fonti, quindi l'elenco delle colonne potrebbe essere incompleto.
+    chip_expand: Mostra {count} in più
+    chip_collapse: Mostra meno
+  select_ai_connection: Connessione AI
+  select_ai_connection_placeholder: Scegli connessione AI...
+  select_model: Modello
+  select_model_placeholder: Scegli modello...
+  test_error: Connessione non riuscita.
+  test_success: Connessione riuscita!
+  title: Impostazioni AI
+  thinking: Pensando...
+  testing:
+    too_slow: Oltre il tuo limite di {seconds} s
+    discover_running: Interrogazione del server…
+    state_fail: Non superato
+    discover_models: Rileva modelli
+    slow_limit_session_label: Limite per modello lento
+    no_models: Nessun modello è stato ancora rilevato su questa connessione.
+    load_error: Impossibile caricare le tue connessioni IA. {detail}
+    column_enabled: Abilitato
+    column_model: Modello
+    slow_limit_unavailable: Le tue impostazioni non includevano un limite per modello lento, quindi nessun modello è contrassegnato come troppo lento.
+    title: Test IA
+    test_tools: usa Strumenti
+    explanation: I concierge IA del Workbench sono progettati per modelli che agiscono. Un modello che si limita a parlare — per quanto educatamente, per quanto grande — lascerà l'editor di ricette che
+      risponde senza fare nulla. La soluzione è il modello, non il codice. Lo strumento in questa pagina consente di verificare se un modello è adatto.
+    discover_result: 'Il server ha elencato {seen} modello/i: {created} nuovi, {refreshed} già noti, {pruned} non più serviti'
+    state_pass: Superato
+    duration_ms: '{ms} ms'
+    failure_reason: 'Motivo: {reason}'
+    column_actions: Test
+    discover_failed: 'Impossibile rilevare i modelli: {detail}'
+    cancelled: Interrotto. I risultati già registrati sono stati mantenuti.
+    run_all_untested: Esegui tutti i test sui modelli non testati
+    duration_seconds: '{seconds} s'
+    slow_limit_failed: Impossibile leggere il tuo limite per modello lento, quindi nessun modello è contrassegnato come troppo lento. {detail}
+    enabled_yes: Modello abilitato
+    cost_confirm: Avvia l'esecuzione
+    test_competence: Competenza
+    test_turn: Complessità
+    run_all_for_model: Esegui tutto per questo modello
+    cost_warning: Questo esegue {count} test e il test di turno richiede minuti per modello su CPU. Premi di nuovo per iniziare.
+    run_failed: 'Impossibile eseguire il test: {detail}'
+    elsewhere_note: Un modello può conservare un risultato di capacità da un'altra connessione. La durata accanto a ogni stato è la misurazione di questa connessione, quindi un modello può mostrare qui
+      uno stato senza durata.
+    enabled_no: Modello disabilitato
+    run_test: Esegui test
+    models_heading: Modelli
+    slow_limit_session_link: Impostalo in modo permanente nel tuo profilo
+    slow_limit_session_reset: Usa il mio limite salvato
+    slow_limit_session_hint: Si applica solo a questa pagina — non viene salvato.
+    no_duration_here: Non eseguito su questa connessione
+    no_connections_body: Per testare un modello serve una connessione IA. Aggiungine una, poi torna a questa pagina.
+    connection_label: Connessione IA
+    no_connections_link: Vai alle connessioni IA
+    no_connections_heading: Ancora nessuna connessione IA
+    running: In esecuzione…
+api:
+  admin:
+    already_full_admin: L'utente è già un amministratore completo
+    already_group_admin: L'utente è già un amministratore di gruppo
+    cannot_delete_self: Non puoi eliminare il tuo account
+    cannot_demote_full_admin: Non è possibile retrocedere un amministratore completo
+    cannot_demote_self: Non puoi retrocedere te stesso
+    cannot_promote_example: Non puoi promuovere un utente di esempio
+    delete_error: Eliminazione utente non riuscita
+    demote_error: Retrocessione utente non riuscita
+    description_required: La descrizione non può essere vuota
+    example_blocked: Gli utenti di esempio non possono eseguire azioni di amministrazione
+    group_not_found: Gruppo non trovato
+    group_users_load_error: Caricamento utenti del gruppo non riuscito
+    groups_load_error: Caricamento gruppi non riuscito
+    groups_stats_error: Caricamento statistiche del gruppo non riuscito
+    instance_exists: Impossibile eliminare il tipo perché ha {count} istanze associate.
+    insufficient_permissions: Permessi insufficienti per questa azione
+    invalid_group_id: group_id non valido. Deve essere compreso tra 00 e 99
+    invalid_id: ID non valido
+    invalid_upload_count: maxUploadCount deve essere un intero non negativo (0 per illimitato)
+    invalid_upload_size: maxUploadSizeMB deve essere un intero non negativo (0 per illimitato)
+    missing_fields: Campi obbligatori mancanti
+    missing_group_id: ID gruppo mancante
+    missing_id: ID mancante
+    missing_model_id: ID modello mancante
+    missing_provider_code: Parametro providerCode mancante
+    missing_user_id: userId mancante
+    model_update_error: Aggiornamento modello non riuscito
+    models_load_error: Caricamento modelli non riuscito
+    no_fields: Nessun campo valido da aggiornare
+    no_group: L'utente non ha alcun gruppo assegnato
+    not_group_admin: L'utente non è un amministratore di gruppo
+    only_full_admin: Solo gli amministratori completi possono eseguire questa azione
+    promote_error: Promozione utente non riuscita
+    provider_delete_error: Eliminazione provider non riuscita
+    provider_not_found: Provider non trovato
+    provider_update_error: Aggiornamento provider non riuscito
+    providers_load_error: Caricamento provider non riuscito
+    slug_exists: Lo slug esiste già
+    update_error: Aggiornamento utente non riuscito
+    user_load_error: Caricamento utente non riuscito
+    user_not_found: Utente non trovato
+    users_load_error: Caricamento utenti non riuscito
+    viz_type_create_error: Creazione tipo di visualizzazione non riuscita
+    viz_type_delete_error: Eliminazione tipo di visualizzazione non riuscita
+    viz_type_update_error: Aggiornamento tipo di visualizzazione non riuscito
+    viz_types_load_error: Caricamento tipi di visualizzazione non riuscito
+    settings_view_forbidden: Solo gli amministratori completi possono visualizzare le impostazioni globali.
+    settings_invalid_upload_count: Il numero massimo predefinito di caricamenti deve essere un intero non negativo (0 per illimitato).
+    settings_load_error: Impossibile caricare le impostazioni globali.
+    settings_invalid_max_registrations: Il numero massimo di registrazioni deve essere un numero positivo o illimitato.
+    settings_modify_forbidden: Solo gli amministratori completi possono modificare le impostazioni globali.
+    settings_invalid_grace_period: Il periodo di grazia per la registrazione deve essere un numero positivo (ore).
+    settings_invalid_public_url: Formato URL pubblico non valido.
+    settings_invalid_email_timeout: Il timeout per la verifica dell’email deve essere un numero positivo (ore).
+    settings_save_error: Impossibile salvare le impostazioni globali.
+    settings_invalid_email_sender: Formato dell’indirizzo email del mittente non valido.
+    settings_invalid_upload_size: La dimensione massima predefinita per il caricamento deve essere un intero non negativo (0 per illimitato).
+  auth:
+    account_deleted: Questo account è stato eliminato
+    email_not_verified: Email non verificata. Controlla la tua casella di posta e la cartella SPAM
+    example_user_blocked: La modifica della password è disabilitata per gli utenti di esempio.
+    example_user_forgot_blocked: Il reset della password è disabilitato per gli utenti di esempio
+    example_user_register_blocked: Gli utenti di esempio non possono creare nuovi account
+    example_user_reset_blocked: Il reset della password è disabilitato per gli utenti di esempio
+    internal_error: Errore interno del server
+    invalid_credentials: Credenziali non valide
+    invalid_current_password: La password attuale non è corretta
+    invalid_token: Token non valido o scaduto
+    missing_email: Email obbligatoria
+    missing_fields: Campi mancanti
+    password_validation_failed: Validazione della password non riuscita
+    token_expired: Il token è scaduto
+    unauthorized: Non autorizzato
+    user_not_found: Utente non trovato
+  datasets:
+    delete_blocked: Gli utenti di esempio non possono eliminare i dataset
+    example_blocked: Gli utenti di esempio non possono creare i dataset
+    proxy_error: Errore interno del server
+    update_blocked: Gli utenti di esempio non possono aggiornare i dataset
+  profile:
+    name_required: Il nome è obbligatorio
+    update_failed: Aggiornamento profilo non riuscito
+  recipes:
+    create_error: Creazione ricetta non riuscita
+    dataset_not_found: Dataset non trovato
+    dataset_required: datasetId è obbligatorio
+    delete_error: Eliminazione ricetta non riuscita
+    execute_error: Esecuzione ricetta non riuscita
+    execution_load_error: Caricamento esecuzione non riuscito
+    execution_not_found: Esecuzione non trovata
+    executions_load_error: Caricamento esecuzioni non riuscito
+    load_error: Caricamento ricette non riuscito
+    missing_id: ID ricetta obbligatorio
+    name_required: Nome e fasi sono obbligatori
+    not_found: Ricetta non trovata
+    not_owned: Ricetta non trovata o non di proprietà
+    update_error: Aggiornamento ricetta non riuscito
+  register:
+    email_exists: L'email esiste già
+    internal_error: Errore interno del server
+    invalid_email: Formato email non valido
+    limit_reached: Limite di registrazione raggiunto (massimo {max_reg} utenti).
+    missing_fields: Campi mancanti
+    password_validation_failed: Validazione della password non riuscita
+    settings_not_found: Impostazioni globali non trovate
+  settings:
+    load_failed: Caricamento impostazioni non riuscito
+    save_failed: Salvataggio impostazioni non riuscito
+    user_not_found: Utente non trovato
+  user:
+    api_key_required: La chiave API è obbligatoria per questo provider
+    connection_name_exists: Esiste già una connessione con questo nome
+    connection_not_found: Connessione non trovata
+    example_blocked: Gli utenti di esempio non possono eseguire questa azione
+    internal_error: Errore interno del server
+    missing_fields: Campi obbligatori mancanti
+    provider_not_found: Provider "{provider}" non trovato.
+    user_not_found: Utente non trovato
+  global_settings_load_error: Errore interno del server.
+app:
+  name: Statisticians Workbench
+  version: Versione
+chat:
+  connection_not_found: Connessione AI non trovata o non accessibile.
+  connections_load_error: Impossibile caricare le connessioni
+  delete: Elimina
+  delete_confirm: Sei sicuro di voler eliminare questa chat?
+  delete_error: Impossibile eliminare la chat
+  delete_success: Chat eliminata
+  empty_state: Invia un messaggio per iniziare una conversazione.
+  go_to_ai_settings: Vai alle impostazioni IA
+  history: Cronologia chat
+  input_placeholder: Scrivi il tuo messaggio...
+  load_error: Impossibile caricare le chat
+  models_load_error: Impossibile caricare i modelli
+  new_chat: Nuova chat
+  no_chat_selected: Nessuna chat attiva
+  no_chats: Ancora nessuna chat
+  no_connections_message: Devi definire almeno una connessione IA prima di poter usare la chat.
+  no_models: Nessun modello disponibile per questa connessione
+  rename: Rinomina
+  rename_empty: Il titolo non può essere vuoto
+  rename_error: Impossibile rinominare la chat
+  rename_success: Chat rinominata
+  select_connection: Connessione IA
+  select_connection_first: Seleziona prima una connessione IA.
+  select_connection_placeholder: Seleziona una connessione IA
+  select_model: Modello
+  select_model_placeholder: Seleziona un modello
+  send_error: Impossibile inviare il messaggio
+  title: Chat
+common:
+  access_denied_admin: Accesso negato — solo amministratori.
+  audio_settings: Impostazioni audio
+  back: Indietro
+  cancel: Annulla
+  cannot_undo: Questa azione non può essere annullata.
+  clear: Cancella
+  close: Chiudi
+  close_navigation: Chiudi navigazione
+  copied: Copiato!
+  copy: Copia
+  copy_to_clipboard: Copia negli appunti
+  delete: Elimina
+  delete_chat: Elimina chat
+  deleting: Eliminazione in corso...
+  dismiss: Ignora
+  dismiss_error: Ignora errore
+  dismiss_success: Ignora successo
+  edit: Modifica
+  error_label: Errore
+  false_label: Falso
+  generating: Generazione in corso...
+  has_more_information: ha ulteriori informazioni
+  loading: Caricamento...
+  microphone_off: Microfono disattivato
+  microphone_on: Microfono attivo
+  next: Avanti
+  no_answer: Nessuna risposta restituita
+  no_permission: Non hai il permesso di visualizzare questa pagina.
+  open_navigation: Apri navigazione
+  reset_to_defaults: Ripristina impostazioni predefinite
+  restoring: Ripristino in corso...
+  save: Salva
+  saving: Salvataggio...
+  select_language: Seleziona lingua
+  sending: Invio in corso...
+  speaker_off: Altoparlante disattivato
+  speaker_on: Altoparlante attivo
+  speech_input_unsupported: 'L''input vocale non è supportato nel tuo browser. Browser compatibili: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: L'accesso al microfono è stato negato. Consenti l'accesso al microfono nelle impostazioni del browser.
+  speech_mic_failed: 'Impossibile avviare il microfono: {error}.'
+  speech_network_error: Errore di rete nel riconoscimento vocale — controlla la connessione internet e riprova.
+  speech_output_unsupported: 'L''output vocale non è supportato nel tuo browser. Browser compatibili: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Errore di riconoscimento vocale: {error}. Riprova.'
+  success_label: Successo
+  system_default: Predefinito di sistema
+  testing: Test in corso...
+  true_label: Vero
+  unknown: Sconosciuto
+  unknown_error: Errore sconosciuto
+  untitled: Senza titolo
+  uploading: Caricamento in corso...
+  verifying: Verifica in corso...
+  view: Visualizza
+  view_dataset: Visualizza dataset
+  voice: Voce
+  audio_stop: Stop
+  audio_resume: Riprendi
+  audio_pause: Pausa
+  email_features_unavailable: Le funzionalità dell'account basate su email non sono disponibili.
+  ai_temperature_label: Temperatura
+  ai_max_tokens_label: Numero massimo di token in output
+  ai_timeout_label: Tempo massimo IA
+  ai_models: Modelli IA
+  connect_timeout_label: Timeout di connessione (secondi)
+  probe_timeout_label: Timeout del test del modello (secondi)
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: Chiudi
+    pitch_label: 'Tono: {0}'
+    reset_to_defaults: Ripristina impostazioni predefinite
+    speed_label: 'Velocità: {0}x'
+    system_default: Predefinito di sistema
+    title: Impostazioni audio
+    voice: Voce
+  example_user_badge: Utente di esempio
+  example_user_badge_tooltip: Registrati per l'accesso completo
+  example_user_banner:
+    message: Stai visualizzando il sistema in modalità sola lettura. Registrati per l'accesso completo per creare e modificare le risorse.
+    message_short: Modalità sola lettura - Registrati per l'accesso completo
+    register_button: Registrati per l'accesso completo
+    register_short: Registrati
+    title: MODALITÀ UTENTE DI ESEMPIO
+  feature_gate:
+    upgrade_message: Questa funzione richiede una licenza aziendale. Contatta Sentuny per le opzioni di upgrade.
+    upgrade_title: Funzione aziendale
+  group_admin_badge: Amministratore del gruppo
+  preparation_preview:
+    more_columns: +{0} altri
+    null_value: 'null'
+    rows_removed: '{0} rimosso'
+  readonly_wrapper:
+    message: Modalità sola lettura - Registrati per l'accesso completo per modificare questo contenuto
+  return_banner:
+    link: Torna alla tua sessione
+    text: Stavi lavorando a una ricetta AI
+    recipe_link: Torna alla ricetta
+    recipe_text: Stavi lavorando a una ricetta.
+    fallback_link: Indietro
+  data_value:
+    some_content_not_shown: Alcuni contenuti non mostrati
+database:
+  connection:
+    add_first: Aggiungi la tua prima connessione
+    add_new: Aggiungi nuova connessione
+    add_success: Connessione aggiunta correttamente
+    add_title: Aggiungi nuova connessione
+    auto_create_tables: Crea automaticamente i dataset delle tabelle
+    auto_create_title: Crea automaticamente i dataset
+    auto_create_views: Crea automaticamente i dataset delle viste
+    auto_create_warnings_title: 'Connessione salvata, ma la creazione automatica dei dataset ha generato avvisi:'
+    browse_tables: Sfoglia tabelle
+    by_label: di
+    clear_default: Rimuovi predefinita
+    currently_not_shared: ❌ Attualmente non condivisa
+    currently_shared: ✅ Attualmente condivisa con il gruppo
+    database_label: Nome database
+    datasets_created: '{n} dataset creati'
+    db_create_badge: Crea DB
+    default_badge: Predefinita
+    default_cleared: Connessione predefinita rimossa
+    default_set: Connessione predefinita aggiornata
+    delete_button: Elimina
+    delete_confirmation: Sei sicuro di voler eliminare la connessione?
+    delete_error: Impossibile eliminare la connessione
+    delete_title: Elimina connessione
+    deleted: Connessione eliminata
+    edit_title: Modifica connessione
+    file_path_label: Percorso file
+    form_description: Inserisci i dettagli della connessione al database
+    group_label: Gruppo
+    host_label: Host
+    jet_host_label: Host del server Jet
+    jet_port_label: Porta del server Jet
+    load_error: Impossibile caricare le connessioni
+    name_label: Nome connessione
+    name_placeholder: ad es., DB di produzione
+    no_connections: Nessuna connessione al database ancora salvata
+    not_found: Connessione non trovata
+    password_label: Password
+    port_label: Porta
+    save_error: Impossibile salvare la connessione
+    select_type: Seleziona tipo
+    set_default: Imposta come predefinita
+    shared_badge: Condivisa
+    shared_description: Rendi questa connessione disponibile ad altri utenti del tuo gruppo
+    shared_label: Condividi con il gruppo
+    shared_readonly: Condivisa
+    shared_readonly_message: Questa connessione è condivisa con te. Puoi visualizzarla, ma la modifica è riservata al proprietario.
+    tables_badge: Tabelle
+    test_button: Testa connessione
+    test_failed: Connessione non riuscita
+    test_incomplete: Compila tutti i campi prima di testare
+    test_network_error: Errore di rete durante il test della connessione
+    test_success: Connessione riuscita!
+    type_label: Tipo di database
+    unknown_user: Sconosciuto
+    update_success: Connessione aggiornata correttamente
+    username_label: Nome utente
+    probe_last_succeeded: Ultimo successo
+    probe_title: Ultimo controllo
+    probe_check_now: Controlla ora
+    probe_minute_ago: 1 minuto fa
+    probe_state:
+      schema_error: Schema illeggibile
+      unreachable: Non raggiungibile
+      no_permission: Nessun permesso
+      auth_failed: Autenticazione non riuscita
+      no_database: Nessun database
+      unknown: Non controllato
+      reachable: Raggiungibile
+      incomplete: Configurazione incompleta
+    probe_auto_hint: Aggiornato automaticamente al caricamento dell'elenco delle connessioni.
+    probe_no_success: nessun controllo riuscito registrato
+    probe_checked: Controllato
+    probe_hour_ago: 1 ora fa
+    probe_never: Mai
+    probe_hours_ago: '{count} ore fa'
+    probe_unsaved_hint: Una connessione viene controllata una volta salvata.
+    probe_check_failed: Non è stato possibile controllare la connessione in questo momento.
+    probe_just_now: proprio ora
+    probe_minutes_ago: '{count} minuti fa'
+  default_hint: La connessione predefinita viene utilizzata come fallback quando una ricetta di analisi non specifica una connessione.
+  title: Impostazioni database
+datasets:
+  all_datasets: Tutti i dati
+  browse:
+    back: Indietro
+    browse_tables: Sfoglia tabelle
+    column: Colonna
+    columns_title: Colonne — {table}
+    connections: Connessioni
+    load_columns_error: Impossibile caricare le colonne
+    load_preview: Carica anteprima
+    load_preview_error: Impossibile caricare l'anteprima
+    load_tables_error: Impossibile caricare le tabelle
+    nullable: Nullable
+    preview: Anteprima
+    preview_hint: Fai clic su "Carica anteprima" per vedere righe di esempio
+    select_table_hint: Seleziona una tabella per visualizzarne le colonne e l'anteprima dei dati
+    tables: Tabelle
+    tables_count: '{count} tabelle'
+    type: Tipo
+  by_label: di
+  created_label: Creato
+  database_label: DB
+  define_button: Connetti database
+  define_first: Connetti un database
+  delete:
+    confirm: Eliminare questo dataset?
+    error: Impossibile eliminare il dataset
+    success: Dataset '{id}' eliminato con successo.
+    title: Elimina
+  description:
+    empty: La descrizione generata è vuota. Controlla la configurazione del provider di IA.
+    error: Impossibile generare la descrizione.
+    generated: Descrizione generata correttamente.
+    title: Descrizione generata
+  detail:
+    created: Creato
+    descriptions: Descrizioni IA
+    generated: Generato
+    load_error: Impossibile caricare il dataset
+    model: Modello
+    no_description: Nessuna descrizione
+    not_found: Dataset non trovato
+    not_found_message: Il dataset che stai cercando non è stato trovato.
+    overview: Panoramica
+    rows: Righe
+    storage_table: Tabella salvata
+    storage_live: Vista live
+    rows_not_computed: Non calcolato
+    rows_not_computed_hint: Il join non è stato eseguito, quindi non c'è ancora un conteggio delle righe.
+    materialize_failed: 'Non è stato possibile creare la tabella salvata:'
+  list_error: Impossibile caricare i dataset
+  no_datasets: Nessun dato disponibile.
+  no_uploaded: Nessun dataset caricato finora.
+  preparation:
+    add_operation: Aggiungi operazione
+    add_rule: Aggiungi regola
+    column_required: L'operazione richiede una colonna
+    columns_required: L'operazione richiede almeno una colonna
+    delete_confirmation: Sei sicuro di voler eliminare la regola di trasformazione "{name}"? Verrà rimossa anche da tutte le ricette che la utilizzano.
+    delete_error: Impossibile eliminare la regola di trasformazione
+    delete_title: Elimina regola di trasformazione
+    edit_rule: Modifica regola
+    encode:
+      label: Etichetta
+      one_hot: One-Hot
+    fill:
+      constant: Costante
+      drop: Elimina
+      mean: Media
+      median: Mediana
+      mode: Moda
+    filter_invalid: L'operazione di filtro richiede una colonna e un valore
+    link:
+      description: Pulisci e trasforma questo dataset
+      title: Trasformazioni
+    name_required: Il nome della regola è obbligatorio
+    new_name_required: L'operazione di rinomina richiede un nuovo nome
+    new_rule: Nuova regola
+    no_rules: Nessuna regola di trasformazione definita per questo dataset.
+    operation:
+      convert_type: Converti tipo
+      drop_columns: Elimina colonne
+      encode: Codifica
+      fill_missing: Riempi valori mancanti
+      filter: Filtra
+      normalize: Normalizza
+      rename_column: Rinomina colonna
+      standardize: Standardizza
+    operations: Operazioni
+    operations_count: operazione/i
+    operator:
+      after: Dopo (>)
+      before: Prima (<)
+      contains: Contiene
+      ends_with: Termina con
+      equal_to: Uguale a (=)
+      greater_than: Maggiore di (>)
+      greater_than_or_equal: Maggiore o uguale a (>=)
+      less_than: Minore di (<)
+      less_than_or_equal: Minore o uguale a (<=)
+      not_contains: Non contiene
+      not_equal: Diverso da (!=)
+      on_or_after: In data uguale o successiva (>=)
+      on_or_before: In data uguale o precedente (<=)
+      starts_with: Inizia con
+    original_data: Dati originali
+    placeholder:
+      boolean: vero / falso
+      datetime: AAAA-MM-GG o timestamp...
+      number: Inserisci un numero...
+      value: Inserisci un valore...
+    preview: Anteprima
+    preview_error: Impossibile visualizzare l'anteprima della regola
+    preview_title: Anteprima
+    rows_after: Dopo
+    rows_before: Prima
+    rows_removed: Rimosso
+    rule_created: Regola di preparazione '{name}' creata con successo.
+    rule_deleted: Regola di preparazione eliminata con successo.
+    rule_description: Descrizione (facoltativa)
+    rule_description_placeholder: Breve descrizione
+    rule_name: Nome regola
+    rule_name_placeholder: es., Pulizia per l'analisi
+    rule_updated: Regola di preparazione aggiornata con successo.
+    rules_title: Regole di trasformazione
+    save_error: Impossibile salvare la regola di trasformazione
+    shared: Condividi con il gruppo
+    transformed_data: Dati trasformati
+    type:
+      boolean: Booleano
+      datetime: DataOra
+      numeric: Numerico
+      string: Stringa
+    ui:
+      column: colonna
+      columns: colonne (separate da virgola)
+      encoding: codifica
+      method: metodo
+      new_name: nuovo nome
+      operator: operatore
+      target_type: tipo di destinazione
+      type: Tipo
+      value: valore
+  rules_button: Regole
+  schema:
+    column_name: Colonna
+    column_type: Tipo
+    columns: Colonne
+    load_error: 'Impossibile caricare lo schema: {error}'
+    no_sample_data: Nessun dato di esempio disponibile
+    null_count: Nulli
+    sample_data: Dati di esempio (prime 5 righe)
+    title: Anteprima schema
+    total_columns: Colonne totali
+    total_rows: Righe totali
+    unique_count: Univoci
+  share: Condividi
+  share_error: Impossibile aggiornare la condivisione
+  shared: Dataset condiviso
+  shared_badge: Condiviso
+  source:
+    unknown_file: File sconosciuto
+  title: I miei dati
+  transform_button: Trasformazione
+  transforms:
+    back: Torna a I miei dati
+    create_button: Crea
+    create_error: Impossibile creare la trasformazione
+    create_new: Nuova trasformazione
+    created_label: Creata
+    creating: Creazione in corso…
+    delete_confirm: Eliminare questa trasformazione?
+    delete_error: Impossibile eliminare la trasformazione
+    description_label: Descrizione (facoltativa)
+    for: Trasformazioni per {name}
+    load_error: Impossibile caricare le trasformazioni
+    name_label: Nome
+    no_transforms: Nessuna trasformazione definita per questo dataset.
+    operations_label: '{count} operazioni'
+    title: Trasformazioni
+  type:
+    table: Tabella
+    upload: Caricato
+    view: Vista
+    virtual: Virtuale
+    postgresql: PostgreSQL
+    access: MS Access
+    mssql: MS SQL
+    notebook: Notebook
+    mysql: MySQL
+    cleaned_copy: Copia ripulita
+  unknown_user: Sconosciuto
+  unshare: Annulla condivisione
+  unshared: Dataset non più condiviso
+  upload:
+    card_title: Carica e descrivi
+    connection_not_found: Connessione non trovata. Seleziona una connessione AI valida.
+    description_label: Descrizione (facoltativa)
+    description_placeholder: Breve descrizione di questi dati
+    error: Caricamento del dataset non riuscito.
+    file_label: File
+    file_selected: File selezionato
+    file_too_large: Il file supera la dimensione massima di caricamento di {max} MB. Il caricamento non è consentito.
+    generate_description: Genera descrizione
+    history: Cronologia caricamenti
+    limit_reached: Limite raggiunto
+    limit_reached_message: Hai raggiunto il numero massimo di dataset consentiti ({count}).
+    name_label: Nome dati
+    name_placeholder: I miei dati
+    no_connections: Devi definire almeno una connessione AI per generare descrizioni.
+    no_datasets: Nessun dataset presente
+    no_file: Seleziona prima un file.
+    no_name: Inserisci un nome per il dataset.
+    select_dataset: Carica o seleziona prima un dataset.
+    shared_description: Rendi questi dati disponibili agli altri utenti del tuo gruppo.
+    shared_group_hint: 'Gruppo: {group} - {description}'
+    shared_label: Condividi con il gruppo
+    success: Dataset '{name}' caricato con successo
+    title: Carica dati
+    upload_button: Carica
+    escalation_label: Riprova con (seconds)
+    escalation_hint: Solo questo tentativo lo usa. Se questo modello richiede di solito più tempo, regola le impostazioni del modello della connessione invece di aumentare questo valore ogni volta.
+    escalation_invalid: Inserisci un numero intero di secondi compreso tra 1 e {max}
+    escalation_retry: Riprova
+    escalation_failed_at: La descrizione è scaduta dopo {seconds} secondi.
+  upload_button: Carica dati
+  upload_count: '{count} caricamenti'
+  upload_first: Carica il tuo primo file di dati
+  upload_first_file: Carica il tuo primo file
+  upload_new: Carica nuovo file
+  uploaded_title: Dati caricati
+  view_dataset_title: Visualizza dataset
+  view_schema: Visualizza schema
+  cleaned_badge: Pulito
+  filter:
+    uploads: Caricamenti
+    all: Tutti
+    postgresql: PostgreSQL
+    mssql: MS SQL
+    shared: Condiviso
+    virtual: Virtuale
+    notebooks: Notebook
+    access: MS Access
+    cleaned: Pulito
+    no_match: Nessun dataset corrisponde a questo filtro.
+    not_shared: Non condiviso
+    label: Filtro
+    mysql: MySQL
+  source_unavailable: sorgente non disponibile
+  created_from: Creato da {name}
+  table_not_built: Tabella non creata
+define:
+  column_name: Colonna
+  column_type: Tipo
+  connection_label: Connessione database
+  dataset_name: Nome dataset
+  dataset_name_placeholder: ad es., Dati clienti
+  description_label: Descrizione (facoltativa)
+  description_placeholder: Breve descrizione di questo dataset
+  existing_none: Nessuno
+  existing_title: Esistente
+  go_to_db_settings: Vai alle impostazioni del database
+  load_connections_error: Impossibile caricare le connessioni
+  load_sources_error: Impossibile caricare le origini
+  name_required: Il nome del dataset è obbligatorio
+  no_connections_message: Devi definire almeno una connessione al database prima di poter collegare un database.
+  no_sources: Nessuna tabella o vista trovata in questo database.
+  nullable: Nullabile
+  preview_label: Anteprima dati (prime 10 righe)
+  save_button: Salva dataset
+  save_error: Impossibile creare il dataset
+  save_success: Dataset creato correttamente
+  schema_label: Schema
+  select_connection: Seleziona una connessione
+  select_source: Seleziona un'origine
+  select_source_first: Seleziona prima una tabella o una vista
+  shared_description: Rendi questo dataset disponibile agli altri utenti del tuo gruppo.
+  shared_label: Condividi con il gruppo
+  source_label: Origine
+  source_type_label: Tipo di origine
+  step1_description: Scegli una connessione al database da cui collegare un dataset.
+  step1_title: Seleziona connessione al database
+  step2_description: Scegli se utilizzare una tabella o una vista, quindi seleziona l'origine.
+  step2_title: Seleziona origine
+  step3_description: Esamina le colonne e visualizza un'anteprima dei dati dall'origine selezionata.
+  step3_title: Verifica origine
+  step4_description: Assegna un nome e una descrizione al dataset, quindi salvalo.
+  step4_title: Nome e salva
+  step_connection: Connessione
+  step_save: Salva
+  step_source: Origine
+  step_verify: Verifica
+  table: Tabella
+  title: Connetti database
+  verify_button: Verifica origine
+  verify_error: Verifica tabella/vista non riuscita
+  verify_success: Tabella/vista verificata con successo
+  view: Vista
+demo:
+  badge: DEMO
+  banner:
+    message: Questo è un sistema dimostrativo. I dati potrebbero essere ripristinati periodicamente.
+    title: ⚠️ MODALITÀ DEMO
+forgot_password:
+  back_to_login: Torna al login
+  check_spam: Controlla la cartella spam se non vedi l'email entro pochi minuti.
+  description: Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la password.
+  error: Invio dell'email di reimpostazione non riuscito
+  sent: Se esiste un account con questa email, riceverai un link per reimpostare la password.
+  sent_description: Se esiste un account con questa email, riceverai un link per reimpostare la password.
+  sent_title: Email inviata
+  submit: Invia link di reimpostazione
+  title: Password dimenticata
+global:
+  demo_mode:
+    description: Se abilitato, il sistema viene eseguito in modalità demo.
+    label: Modalità demo
+  email_sender:
+    hint: L'indirizzo email da cui appariranno le email di verifica.
+    label: Indirizzo mittente email
+  email_timeout:
+    hint: Per quante ore rimane valido il link di verifica email.
+    label: Scadenza verifica email (ore)
+  grace_period:
+    hint: Ore prima che gli account eliminati temporaneamente vengano cancellati definitivamente.
+    label: Ritardo eliminazione (ore)
+  invalid_grace_period: Inserisci un numero positivo valido per il ritardo di eliminazione (ore)
+  invalid_number: Inserisci un numero positivo valido per il numero massimo di registrazioni
+  invalid_timeout: Inserisci un numero positivo valido per la scadenza della verifica (ore)
+  load_error: Caricamento delle impostazioni globali non riuscito
+  max_registrations:
+    custom: Personalizzato (inserisci sotto)
+    custom_placeholder: Inserisci un numero positivo
+    hint: Imposta un limite al numero di utenti che possono registrarsi.
+    label: Numero massimo di registrazioni utente
+    placeholder: Seleziona limite
+    unlimited: Illimitato
+    users: utenti
+  password_policy:
+    custom: Personalizzato
+    high: Alta (min 10, maiuscole, minuscole, cifre, caratteri speciali)
+    hint: Scegli i requisiti di complessità della password per la registrazione degli utenti e il cambio password.
+    label: Politica password
+    low: Bassa (min 6 caratteri)
+    medium: Media (min 8, maiuscole, minuscole, cifre)
+    min_length: Lunghezza minima
+    min_strength: Robustezza minima (punteggio zxcvbn 0-4)
+    require_digit: Richiedi cifra
+    require_lowercase: Richiedi minuscola
+    require_special: Richiedi carattere speciale
+    require_uppercase: Richiedi maiuscola
+    select: Seleziona criterio
+  public_url:
+    hint: L'URL di base utilizzato nei link di verifica email (ad es. https://workbench.example.com).
+    label: URL pubblico
+  save_button: Salva impostazioni globali
+  save_success: Impostazioni globali salvate
+  system:
+    description: Gestisci le impostazioni globali che si applicano a tutti gli utenti (solo amministratore).
+    title: Configurazione di sistema
+  title: Impostazioni globali
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Numero massimo di dataset per utente (0 = illimitato). Applicato ai nuovi utenti.
+    count_unlimited: Illimitato
+    default_count_label: Numero massimo predefinito di caricamenti per utente
+    default_size_label: Dimensione massima predefinita di caricamento per utente (MB)
+    select_count: Seleziona limite
+    select_size: Seleziona limite
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: Spazio di archiviazione totale massimo per utente (0 = illimitato). Applicato ai nuovi utenti.
+    size_unlimited: Illimitato
+  welcome:
+    hint: Questo messaggio apparirà nella pagina di login. Lascia vuoto per nasconderlo.
+    label: Messaggio di benvenuto
+    placeholder: Inserisci un messaggio di benvenuto da mostrare nella pagina di login.
+home:
+  welcome_placeholder: Benvenuti in Statisticians Workbench
+licence:
+  admin_required: Devi essere un amministratore per visualizzare le informazioni sulla licenza.
+  delete_button: Rimuovi licenza
+  delete_confirm: Questa operazione riporterà il sistema alla modalità open-source. Tutte le funzionalità soggette a licenza verranno disabilitate. Puoi ripristinarle installando una nuova licenza.
+  delete_error: Rimozione della licenza non riuscita.
+  delete_no: Annulla
+  delete_success: Licenza rimossa. Esecuzione in modalità open-source.
+  delete_title: Rimuovi licenza
+  delete_yes: Sì, rimuovi licenza
+  description: Informazioni attuali sulle funzionalità con licenza e sul livello.
+  details_label: Dettagli licenza
+  expires_at_label: Scadenza
+  features_label: Funzionalità abilitate
+  install_button: Installa licenza
+  install_error: Installazione della licenza non riuscita.
+  install_no_file: Nessun file selezionato.
+  install_success: Licenza installata correttamente.
+  issued_at_label: Rilasciata
+  issued_to_label: Rilasciata a
+  load_error: Caricamento delle informazioni sulla licenza non riuscito.
+  max_users_label: Utenti con licenza
+  no_features: Nessuna funzionalità soggetta a licenza è attualmente abilitata.
+  open_source_message: Questa installazione è in esecuzione in modalità open-source. Contatta Sentuny per passare a una licenza aziendale.
+  preview_error: Validazione del file di licenza non riuscita.
+  preview_invalid: File di licenza non valido.
+  preview_title: Anteprima licenza
+  tier_label: Livello
+  title: Stato licenza
+  upload_title: Carica file di licenza
+login:
+  account_deleted: Questo account è stato eliminato.
+  description: Accedi al tuo account
+  docs_more_info: Ha maggiori informazioni
+  email: Email
+  email_not_verified: Email non verificata. Controlla la tua casella di posta e la cartella SPAM.
+  email_verified: Email verificata con successo! Ora puoi accedere.
+  forgot_password: Password dimenticata?
+  invalid_credentials: Email o password non valida.
+  invalid_token: Link di verifica non valido. Richiedine uno nuovo.
+  missing_token: Nessun token di verifica fornito.
+  no_account: Non hai un account?
+  password: Password
+  register_link: Registrati
+  resend_link: Invia di nuovo l'email di verifica?
+  signing_in: Accesso in corso...
+  submit: Accedi
+  success: Accesso effettuato con successo.
+  title: Accedi
+  token_expired: Il link di verifica è scaduto. Richiedine uno nuovo.
+nav:
+  about: Informazioni
+  admin: Amministrazione
+  admin_groups: Descrizioni dei gruppi
+  admin_licence: Licenza
+  admin_panel: Gestione utenti
+  admin_providers: Provider di IA
+  admin_setup: Configurazione
+  admin_setup_internal: Interno
+  admin_setup_limits: Limiti
+  admin_setup_options: Opzioni
+  admin_visualization_types: Tipi di visualizzazione
+  ai_analysis_rules: Editor di ricette
+  ai_chat: Strumenti IA
+  ai_database_design: Progettazione del database
+  ai_dataset_cleaning: Pulizia dei dataset
+  ai_general: Generale
+  ai_virtual_datasets: Dataset virtuali
+  home: Home
+  logout: Esci
+  user: Utente
+  admin_setup_tuning: Regolazione
+  ai_testing: Test IA
+notebooks:
+  and_more: +{count} altri
+  cant_create_tables: Questa connessione non può creare tabelle — importazione negata
+  cells_label: 'Celle:'
+  connection_create_db_badge: Creazione DB
+  connection_form_label: Connessione
+  connection_tables_badge: Tabelle
+  connection_unavailable: Connessione al database non trovata o non accessibile
+  create_dataset: Crea dataset automaticamente
+  create_new_database: Crea nuovo database
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrame:'
+  dataset_created: Dataset creato
+  delete_confirm: Eliminare l'importazione "{name}" e tutte le sue tabelle?
+  delete_failed: Eliminazione dell'importazione non riuscita.
+  delete_title: Elimina importazione
+  detected_dataframes: 'DataFrame rilevati:'
+  doc_preview: 'Anteprima della documentazione:'
+  example_banner: Stai visualizzando come utente di esempio. Registrati per importare e gestire i notebook.
+  example_blocked: Gli utenti di esempio non possono importare notebook.
+  example_register: Registrati
+  fetch_error: Recupero delle importazioni non riuscito.
+  import_button: Importa notebook
+  import_complete: Importazione completata
+  import_deleted: Importazione eliminata
+  import_failed: 'Importazione del notebook non riuscita: {error}'
+  import_success: Importate {count} tabelle con successo
+  import_title: Importazione notebook Jupyter
+  imported_at_label: 'Importato il:'
+  importing: Importazione in corso...
+  kb_unit: KB
+  kernel_label: 'Kernel:'
+  list_title: Importazioni notebook
+  no_dataframes: Nessun DataFrame trovato in questo notebook
+  no_imports: Ancora nessuna importazione di notebook
+  notebook_label: 'Notebook:'
+  parse_error: Analisi del notebook non riuscita
+  parsing: Analisi in corso...
+  preview_button: Anteprima
+  rows_cols_format: '{rows} righe × {cols} colonne'
+  run_preview_first: Esegui l'anteprima per vedere cosa verrà importato
+  sanitised_notice: Le celle di codice sono state rimosse per motivi di sicurezza. Sono conservati solo gli output dei dati e il markdown.
+  select_connection: Seleziona una connessione al database
+  select_connection_placeholder: Seleziona connessione...
+  select_file_first: Seleziona un file .ipynb
+  share_error: Solo il proprietario può modificare le impostazioni di condivisione.
+  share_label: Condividi con il gruppo
+  shared: Notebook condiviso con il gruppo
+  shared_badge: Condiviso
+  size_label: 'Dimensione:'
+  step1_title: 'Passaggio 1: Seleziona file'
+  step2_title: 'Passaggio 2: Anteprima'
+  storage_form_label: Archiviazione
+  storage_label: 'Archiviazione:'
+  table_count: '{count} tabella/tabelle'
+  tables_created_label: 'Tabelle create:'
+  title_label: 'Titolo:'
+  unshared: Notebook non condiviso
+  table_name: 'Tabella: {name}'
+password:
+  strength:
+    fair: Discreto
+    good: Buono
+    strong: Forte
+    weak: Debole
+preparation:
+  add_operation: Aggiungi operazione
+  after: Dopo
+  back_to_list: Torna alle regole
+  before: Prima
+  cancel: Annulla
+  col:
+    categorical: categorico
+    datetime: data/ora
+    nulls: '{percent}% nulli'
+    numeric: numerico
+  cols: colonne
+  column_label: Colonna
+  constant_value_label: Valore costante
+  create_first: Crea la tua prima trasformazione per pulire e preparare questo dataset prima dell'analisi.
+  delete: Elimina
+  delete_confirm: Eliminare la regola "{name}"? Questa operazione non può essere annullata.
+  description_label: Descrizione (facoltativa)
+  duplicate: Duplica
+  duplicate_suffix: (copia)
+  edit: Modifica
+  edit_title: 'Modifica regola: {name}'
+  encoding:
+    label: Etichetta
+    onehot: One-Hot
+  encoding_param_label: Codifica
+  live_preview: Anteprima live
+  load_error: Caricamento dei dati non riuscito
+  method:
+    minmax: Min-Max
+    zscore: Z-Score
+  method_label: Metodo
+  name_label: Nome
+  name_required: Il nome della regola è obbligatorio
+  new_name_label: Nuovo nome
+  new_rule: Nuova regola
+  new_title: Nuova trasformazione
+  no_rules: Nessuna trasformazione ancora
+  nulls: nulli
+  op:
+    convert_type: Converti tipo
+    drop_column: Elimina colonna
+    drop_duplicates: Elimina duplicati
+    encode_category: Codifica categoria
+    fill_missing: Riempi valori mancanti
+    filter: Filtra
+    rename_column: Rinomina colonna
+    normalize: Normalizza
+    standardize: Standardizza
+  operations_count: '{count} operazione/operazioni'
+  operations_label: Operazioni
+  operator_label: Operatore
+  ops_required: È richiesta almeno un'operazione
+  preview: Anteprima
+  preview_error: Anteprima non riuscita
+  preview_loading: Anteprima in corso...
+  preview_no_ops: Aggiungi operazioni per vedere l'anteprima
+  row_impact: '{before} → {after} righe'
+  rows: righe
+  rule_deleted: Regola eliminata
+  rule_duplicated: Regola duplicata
+  rule_saved: Regola salvata
+  rules_for: Regole per {dataset}
+  sample_data: Dati di esempio
+  save: Salva regola
+  save_error: Salvataggio della regola non riuscito
+  saving: Salvataggio in corso...
+  schema_error: Caricamento dello schema del dataset non riuscito
+  select_column: -- Seleziona colonna --
+  select_type: -- Seleziona operazione --
+  strategy:
+    constant: Costante
+    drop_row: Elimina riga
+    mean: Media
+    median: Mediana
+    mode: Moda
+  strategy_label: Strategia
+  target_type_label: Tipo di target
+  title: Trasformazioni — {dataset}
+  type_label: Operazione
+  value_label: Valore
+profile:
+  change_password:
+    description: Aggiorna la tua password.
+    title: Cambia password
+  change_password_button: Cambia password
+  confirm_password: Conferma nuova password
+  current_password: Password attuale
+  current_password_required: La password attuale è obbligatoria
+  dark_mode_description: Passa dal tema chiaro a quello scuro.
+  dark_mode_label: Modalità scura
+  email_label: Email
+  email_notifications_description: Ricevi aggiornamenti email sul tuo account.
+  email_notifications_label: Notifiche email
+  email_unchangeable: L'email non può essere modificata
+  example_user_language_hint: Registrati per l'accesso completo per modificare la tua preferenza di lingua.
+  example_user_name_hint: Registrati per l'accesso completo per modificare il tuo nome.
+  example_user_notifications_hint: Registrati per l'accesso completo per modificare le impostazioni di notifica.
+  example_user_save_hint: Registrati per l'accesso completo per salvare le modifiche.
+  example_user_theme_hint: Registrati per l'accesso completo per modificare le preferenze del tema.
+  group_description: Descrizione
+  group_id: ID gruppo
+  group_info_title: Informazioni sul gruppo
+  group_load_error: Impossibile caricare le informazioni del gruppo
+  group_readonly_hint: Il tuo gruppo è assegnato da un amministratore e non può essere modificato qui.
+  language_description: Scegli la lingua preferita per l'interfaccia.
+  language_label: Lingua
+  language_select_placeholder: Seleziona lingua
+  languages_load_error: Impossibile caricare le lingue
+  load_error: Impossibile caricare le impostazioni
+  name_label: Nome
+  name_placeholder: Il tuo nome
+  new_password: Nuova password
+  password_change_failed: Impossibile cambiare la password
+  password_changed: Password modificata con successo
+  password_disabled: Le modifiche della password sono disabilitate per gli utenti di esempio
+  password_disabled_message: Hai effettuato l'accesso come Utente di esempio. Le funzioni relative alla password sono disabilitate.
+  password_mismatch: Le nuove password non coincidono
+  personal:
+    description: Aggiorna le tue informazioni personali e le preferenze dell'app.
+    title: Profilo e preferenze
+  save_button: Salva modifiche
+  save_error: Impossibile salvare il profilo
+  save_success: Profilo salvato
+  title: Impostazioni del profilo
+  update_error: Impossibile aggiornare il profilo
+  slow_threshold:
+    save: Salva limite
+    label: Il mio limite
+    placeholder: Usa il valore predefinito del sito
+    seconds: secondi
+    description: Un test del modello che impiega più di questo tempo viene segnalato come troppo lento. Lascia vuoto per usare il valore predefinito del sito.
+    title: Soglia per modello lento
+    saved: Limite per modello lento salvato
+    effective: 'Attualmente in vigore:'
+    invalid: Il limite deve essere un numero intero di secondi, almeno 1
+recipes:
+  add_rule: Aggiungi regola
+  algorithm:
+    dependent_column: Variabile dipendente
+    factor_column: Fattore (categorico)
+    group_by: Raggruppa per
+    independent_columns: Variabili indipendenti
+    placeholder: Seleziona tipo di analisi
+    response_column: Risposta (numerica)
+  back_to_recipe: Torna alla ricetta
+  by_label: per
+  cancel_button: Termina
+  cancel_error: Impossibile annullare l'esecuzione
+  cancel_success: Esecuzione annullata
+  chart:
+    category: Categoria
+    count: Conteggio
+    value: Valore
+    x_axis: X
+    y_axis: Y
+  clone: Clona
+  clone_button: Clona
+  clone_error: Impossibile clonare la ricetta
+  clone_success: Ricetta clonata con successo
+  clone_suffix: (Copia)
+  column_type:
+    category: Categoria
+    datetime: Data/Ora
+    number: Numero
+    text: Testo
+  columns_after: Colonne
+  columns_before: Colonne
+  columns_label: Colonne
+  columns_label_short: Colonne
+  columns_required: Seleziona almeno una colonna
+  create_error: Impossibile creare la ricetta
+  create_success: Ricetta '{name}' creata con successo.
+  dataset:
+    columns_label: Colonne
+    load_error: Impossibile caricare i dataset
+    loading: Caricamento dataset...
+    no_datasets: Nessun dataset disponibile
+    placeholder: Seleziona un dataset
+    rows_label: righe
+  dataset_label: Dataset
+  dataset_required: Seleziona un dataset
+  delete: Elimina
+  delete_button: Elimina
+  delete_confirmation: Sei sicuro di voler eliminare la ricetta "{name}"? Questa azione non può essere annullata.
+  delete_title: Elimina ricetta
+  description_label: Descrizione (facoltativa)
+  description_placeholder: Descrizione di questa ricetta
+  edit: Modifica
+  editor:
+    component_algorithm: Algoritmo
+    component_dataset: Dataset / Trasformazione
+    component_output: Output
+    create_mode: Crea una nuova ricetta — editor in arrivo nella Fase 3.
+    loading: Caricamento ricetta...
+    name_hint: È necessario assegnare un nome prima di salvare la ricetta.
+    name_placeholder: Nome ricetta
+    name_required: È necessario inserire un nome per la ricetta.
+    new_recipe_name: Nuova ricetta
+    placeholder: 'Questo è l''editor manuale delle ricette statistiche: le ricette sono il cuore del Workbench. L''interfaccia utente manuale è più veloce dell''interfaccia AI, ma se non sei veramente sicuro
+      di cosa fare, probabilmente ti conviene usare l''editor di ricette AI. È anche un tutor di statistica... ma devi configurare una connessione AI funzionante nelle Impostazioni se vuoi usarlo. Seleziona
+      una ricetta o creane una nuova.'
+    run: Esegui
+    save: Salva ricetta
+    save_error: Impossibile salvare la ricetta
+    save_success: Ricetta salvata
+  execute: Esegui
+  execute_button: Esegui
+  execute_error: 'Esecuzione della ricetta non riuscita: {error}'
+  execute_success: Ricetta eseguita correttamente
+  execution:
+    errors_label: 'Errori:'
+    failed_start: Impossibile avviare l'esecuzione
+    request_failed: Esecuzione non riuscita
+    results_label: 'Risultati:'
+    rules_count: '{count} regola/e di preparazione applicata/e.'
+    running: Esecuzione della ricetta in corso…
+    showing_rows: Mostrando {count} di {total} righe
+  execution_error: Errore
+  execution_load_error: 'Caricamento dell''esecuzione non riuscito: {error}'
+  execution_not_found: Esecuzione '{id}' non trovata.
+  execution_progress: Avanzamento
+  execution_stage_results: Risultati fase
+  execution_started: Avviato
+  execution_status: Stato
+  execution_title: Risultati dell'esecuzione
+  executions_title: Esecuzioni recenti
+  export_results: Esporta risultati
+  go_define: Vai a Definisci
+  go_upload: Vai a Carica
+  group_by_hint: Raggruppa per una colonna categorica per confrontare le statistiche tra i gruppi
+  group_by_label: Raggruppa per (opzionale)
+  list_load_error: Impossibile caricare le ricette
+  load_datasets_error: 'Caricamento dei dataset non riuscito: {error}'
+  load_error: 'Caricamento delle ricette non riuscito: {error}'
+  load_rules_error: Impossibile caricare le regole di preparazione
+  loading_schema: Caricamento colonne...
+  move_down: Sposta giù
+  move_up: Sposta su
+  my_recipes: Le mie ricette
+  name_label: Nome ricetta
+  name_placeholder: ad es., Analisi delle vendite
+  name_required: Il nome della ricetta è obbligatorio
+  needs_other_columns: (richiede altre colonne)
+  new_button: Nuova ricetta
+  new_title: Nuova ricetta
+  no_datasets: Nessun dataset trovato. Carica o definisci prima un dataset.
+  no_datasets_available: Nessun dataset disponibile. Carica prima un dataset.
+  no_datasets_found: Nessun dataset disponibile. Carica prima un dataset.
+  no_group: Nessuno
+  no_group_options: Nessuna colonna categorica disponibile per il raggruppamento
+  no_preparation_rules: Nessuna regola di preparazione disponibile per questo dataset.
+  no_recipes: Non hai ancora creato nessuna ricetta.
+  no_schema: Nessuno schema disponibile per questo dataset
+  no_stages: La ricetta deve avere almeno una fase.
+  no_visualisation: Risultati numerici
+  no_visualisation_data: Nessun dato di visualizzazione disponibile
+  none: Nessuno
+  output:
+    category_column: Colonna categoria
+    placeholder: Seleziona il tipo di output
+    x_column: Colonna asse X
+    y_column: Colonna asse Y
+  panel:
+    complete: Pronto
+    incomplete: Incompleto
+    my_recipes: Le mie ricette
+    new_button: Nuova ricetta
+    no_recipes: Ancora nessuna ricetta
+    no_results: Nessuna ricetta corrisponde alla ricerca
+    search: Cerca ricette...
+    shared_recipes: Condivisi
+    updated: Aggiornato
+  preparation_rules: Regole di preparazione (opzionali)
+  preparation_rules_applied: Regole di preparazione applicate
+  preparation_rules_applied_description: Le regole sono state applicate nell'ordine mostrato di seguito prima delle fasi di analisi.
+  preparation_rules_applied_title: Regole di preparazione applicate
+  preparation_rules_description: Seleziona le regole da applicare in ordine. Le regole vengono applicate in sequenza.
+  recipe_label: Ricetta
+  remove_rule: Rimuovi regola
+  require:
+    algorithm: Scegli un'analisi
+    categoryColumn: Seleziona la colonna categoria per {out}
+    dataset: Seleziona un dataset
+    dependentColumn: Seleziona la colonna dipendente
+    factorColumn: Seleziona la colonna fattore per {algo}
+    first_response: Seleziona la prima colonna di risposta
+    independentColumns: Seleziona le colonne indipendenti
+    responseColumn: Seleziona la colonna di risposta per {algo}
+    second_response: Seleziona la seconda colonna di risposta
+    xColumn: Seleziona la colonna X per {out}
+    yColumn: Seleziona la colonna Y per {out}
+  rows_after: Righe dopo
+  rows_before: Righe
+  rows_label: Righe
+  rules_applied_label: '{count} regole applicate:'
+  save_button: Salva ricetta
+  schema_error: 'Caricamento dello schema della colonna non riuscito: {error}'
+  schema_loaded: 'Schema caricato: {count} colonne trovate'
+  select_dataset: Seleziona un dataset
+  select_group: Seleziona una colonna per raggruppare
+  select_rule: Seleziona una regola da aggiungere
+  select_rule_placeholder: Scegli una regola
+  select_technique: Seleziona una tecnica
+  select_visualisation: Seleziona una visualizzazione
+  selected: selezionato
+  share:
+    button: Condividi
+    group_info: Gruppo {group} — {desc}
+    read_only: Condiviso da {owner} — sola lettura
+    shared_badge: Condiviso
+    unshare: Rimuovi condivisione
+  shared: condiviso
+  shared_badge: Condiviso
+  shared_description: Rendi questa ricetta disponibile agli altri utenti del tuo gruppo.
+  shared_group_hint: 'Gruppo: {group} - {description}'
+  shared_label: Condividi con il gruppo
+  shared_with_group: Condiviso con il tuo gruppo
+  stage_data_selection: Selezione dei dati
+  stage_number: Fase {number}
+  stage_preparation: Preparazione dei dati
+  stage_statistics: Statistiche
+  stage_visualisation: Visualizzazione
+  stages_title: Fasi
+  status:
+    cancelled: Annullato
+    completed: Completato
+    failed: Non riuscito
+    pending: In attesa
+    running: In esecuzione
+  step1_description: Assegna un nome e una descrizione alla tua ricetta.
+  step1_title: Dai un nome alla tua ricetta
+  step2_description: Scegli un dataset e seleziona le colonne da analizzare.
+  step2_title: Seleziona i dati
+  step3_description: Seleziona la tecnica statistica da applicare.
+  step3_title: Scegli l'analisi
+  step4_description: Aggiungi una visualizzazione alla tua ricetta.
+  step4_title: Visualizzazione (opzionale)
+  step_analysis: Analisi
+  step_complete: Passaggio {step} completato
+  step_data: Dati
+  step_name: Nome
+  step_visualise: Visualizza
+  technique_anova_one_way: ANOVA a una via
+  technique_anova_two_way: ANOVA a due vie
+  technique_chi_square: Test del chi-quadrato
+  technique_correlation: Matrice di correlazione
+  technique_descriptive: Statistiche descrittive
+  technique_hint: Le statistiche descrittive mostrano misure di sintesi come media, mediana e deviazione standard.
+  technique_label: Tecnica
+  technique_linear_regression: Regressione lineare
+  technique_t_test_independent: Test t per campioni indipendenti
+  technique_t_test_paired: Test t per dati appaiati
+  title: Ricette statistiche
+  total_rules_applied: Totale regole applicate
+  transforms:
+    add: Aggiungi trasformazione
+    label: Trasformazioni
+    manage_button: Gestisci trasformazioni
+    no_transforms: Nessuna trasformazione applicata
+    remove: Rimuovi
+  unknown_user: Sconosciuto
+  update_error: 'Aggiornamento della ricetta non riuscito: {error}'
+  update_success: Ricetta '{id}' aggiornata con successo.
+  updated_label: Aggiornato
+  visualisation:
+    columns_label: Colonne
+    data_points: Punti dati
+    distribution: Distribuzione
+    trend: Tendenza
+    type_label: Tipo
+  visualisation_area: Grafico ad area
+  visualisation_bar: Grafico a barre
+  visualisation_donut: Grafico a ciambella
+  visualisation_hbar: Barre orizzontali
+  visualisation_hint: Il grafico verrà generato utilizzando le colonne di dati selezionate.
+  visualisation_label: Tipo di visualizzazione
+  visualisation_line: Grafico a linee
+  visualisation_pie: Grafico a torta
+  visualisation_raw_data: 'Dati della visualizzazione:'
+  visualisation_scatter: Grafico a dispersione
+  visualisation_table: Tabella
+  ui:
+    delete_error: Impossibile eliminare la ricetta
+    delete_success: Ricetta eliminata
+  visualisation_histogram: Istogramma
+register:
+  confirm_password: Conferma password
+  creating: Creazione account...
+  description: Crea un nuovo account
+  email: Email
+  failed: Registrazione non riuscita
+  have_account: Hai già un account?
+  language_description: Scegli la lingua preferita per l'interfaccia.
+  login_link: Accedi
+  name: Nome
+  password: Password
+  password_mismatch: Le password non coincidono
+  submit: Registrati
+  success_with_verification: Il tuo account è stato creato. Controlla la tua email per il link di verifica per attivare il tuo account.
+  title: Registrati
+  email_failed_use_resend: Registrazione avvenuta con successo, ma non è stato possibile inviare l'email di verifica. Per favore reinviala dalla pagina di accesso.
+  success_auto_verified: Il tuo account è stato creato ed è pronto all'uso. Ora puoi accedere.
+  registration_disabled: La registrazione autonoma è disabilitata. Contatta un amministratore.
+  success_pending_approval: Il tuo account è stato creato ed è in attesa di approvazione da parte dell'amministratore. Potrai accedere una volta approvato.
+resend_verification:
+  back_to_login: Torna al login
+  check_spam: Controlla la cartella spam se non vedi l'email entro pochi minuti.
+  description: Inserisci il tuo indirizzo email per ricevere un nuovo link di verifica.
+  error: Impossibile inviare l'email di verifica.
+  send_button: Invia email di verifica
+  sent: Email di verifica inviata. Controlla la tua casella di posta (e la cartella spam).
+  sent_description: Se esiste un account con questa email, riceverai un link di verifica.
+  sent_title: Email inviata
+  title: Invia nuovamente l'email di verifica
+reset_password:
+  confirm_password: Conferma nuova password
+  description: Inserisci la tua nuova password qui sotto.
+  failed: Reimpostazione password non riuscita
+  login_button: Vai al login
+  missing_token: Nessun token di reset fornito
+  new_password: Nuova password
+  password_mismatch: Le password non coincidono
+  submit: Reimposta password
+  success: Password reimpostata correttamente
+  success_description: La tua password è stata reimpostata. Reindirizzamento al login...
+  success_title: Reimpostazione password
+  title: Reimposta password
+settings:
+  ai:
+    title: Connessioni IA
+  database:
+    title: Connessioni database
+  profile:
+    title: Preferenze
+  title: Impostazioni
+setup:
+  internal:
+    description: Diagnostica di sistema e configurazione interna. Indicatori di stato in sola lettura.
+    future:
+      cache_config: Configurazione cache / sessione
+      debug_logging: Attivazione/disattivazione della registrazione debug / dettagliata
+      description: Ulteriori elementi diagnostici saranno aggiunti nelle versioni future.
+      email_transport: Stato del trasporto email
+      pool_stats: Statistiche del pool del database
+      title: In arrivo
+    licence:
+      description: Livello di licenza attuale e funzionalità abilitate.
+      expiry: Scadenza
+      features: Funzionalità abilitate
+      issued_to: Rilasciata a
+      tier: Livello di licenza
+      title: Licenza e funzionalità
+    load_error: Caricamento della diagnostica di sistema non riuscito
+    system_status:
+      available: Disponibile
+      db_pool: Pool del database
+      description: Indicatori di salute in tempo reale per i servizi backend.
+      healthy: Sano
+      initialized: Inizializzato
+      not_initialized: Non inizializzato
+      not_required: Non richiesto
+      overall_health: Salute complessiva
+      shared_memory: Memoria condivisa
+      title: Stato del sistema
+      unavailable: Non disponibile
+      unhealthy: Non sano
+      version: Versione
+      db_cluster: Cluster di database
+    title: Interno
+  limits:
+    demo_mode:
+      description: 'Quando è abilitata, il sistema viene eseguito in modalità demo: le azioni distruttive sono bloccate e gli indicatori vengono mostrati nell''interfaccia.'
+      label: Modalità demo
+    description: Controlli operativi per limiti di risorse, timeout e comportamento del sistema. Possono essere modificati in qualsiasi momento.
+    email_timeout:
+      hint: Per quante ore il link di verifica email rimane valido.
+      label: Scadenza verifica email (ore)
+    grace_period:
+      hint: Ore prima che gli account eliminati temporaneamente vengano cancellati definitivamente.
+      label: Ritardo eliminazione (ore)
+    invalid_grace_period: Inserisci un numero positivo valido per il ritardo di eliminazione (ore)
+    invalid_registration_max: Inserisci un numero positivo valido per il numero massimo di registrazioni
+    invalid_timeout: Inserisci un numero positivo valido per la scadenza di verifica (ore)
+    load_error: Caricamento delle impostazioni dei limiti non riuscito
+    max_registrations:
+      hint: Imposta un limite al numero di utenti che possono registrarsi.
+      label: Numero massimo di registrazioni utente
+      placeholder: Seleziona limite
+      unlimited: Illimitato
+      users: utenti
+    save_button: Salva limiti
+    save_error: Salvataggio delle impostazioni dei limiti non riuscito
+    save_success: Impostazioni dei limiti salvate
+    title: Limiti
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: Numero massimo di dataset per utente (0 = illimitato). Applicato ai nuovi utenti.
+      count_unlimited: Illimitato
+      default_count_label: Numero massimo predefinito di caricamenti per utente
+      default_size_label: Dimensione massima predefinita di caricamento per utente (MB)
+      select_count: Seleziona limite
+      select_size: Seleziona limite
+      size_100_mb: 100 MB
+      size_10_mb: 10 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_250_mb: 250 MB
+      size_25_mb: 25 MB
+      size_500_mb: 500 MB
+      size_50_mb: 50 MB
+      size_5_mb: 5 MB
+      size_hint: Spazio di archiviazione totale massimo per utente (0 = illimitato). Applicato ai nuovi utenti.
+      size_unlimited: Illimitato
+  options:
+    description: 'Impostazioni di installazione che definiscono l''identità e il comportamento di questa distribuzione. Modificare con cautela: influiscono su tutti gli utenti.'
+    email_sender:
+      hint: L'indirizzo email da cui risulteranno inviate le email di verifica.
+      label: Indirizzo mittente email
+    load_error: Caricamento delle impostazioni delle opzioni non riuscito
+    password_policy:
+      custom: Personalizzato
+      high: Alta (min 10, maiuscole, minuscole, cifre, speciali)
+      hint: Scegli i requisiti di complessità della password per la registrazione degli utenti e il cambio password.
+      label: Politica password
+      low: Bassa (min 6 caratteri)
+      medium: Media (min 8, maiuscole, minuscole, cifre)
+      min_length: Lunghezza minima
+      min_strength: Robustezza minima (punteggio zxcvbn 0-4)
+      require_digit: Richiedi cifra
+      require_lowercase: Richiedi minuscole
+      require_special: Richiedi carattere speciale
+      require_uppercase: Richiedi maiuscole
+      select: Seleziona criterio
+    public_url:
+      hint: L'URL di base utilizzato nei link di verifica email (ad es., https://workbench.example.com).
+      label: URL pubblico
+    save_button: Salva opzioni
+    save_error: Impossibile salvare le impostazioni delle opzioni
+    save_success: Impostazioni delle opzioni salvate
+    title: Opzioni
+    welcome:
+      hint: Questo messaggio apparirà nella pagina di accesso. Lascia vuoto per nasconderlo.
+      label: Messaggio di benvenuto
+      placeholder: Inserisci un messaggio di benvenuto da mostrare nella pagina di accesso.
+    registration_mode:
+      select: Seleziona modalità di registrazione
+      hint: Scegli come vengono creati e verificati i nuovi account utente.
+      label: Modalità di registrazione
+      mode_1: L'amministratore crea utenti verificati
+      mode_0: Registrazione autonoma verificata automaticamente
+      mode_4: Registrazione autonoma con verifica email
+      mode_2: Registrazione autonoma e verifica dell'amministratore
+  tuning:
+    resetting: Ripristino…
+    ai_max_tokens_hint: La risposta più lunga che una singola richiesta può produrre. Una descrizione richiede circa 500 token; 4000 lasciano ampio margine.
+    reset_done: Impostazioni di regolazione ripristinate ai valori predefiniti
+    slow_threshold_label: Soglia per modello lento
+    forbidden: Solo un amministratore completo può modificare queste impostazioni.
+    ai_section_hint: Predefiniti per ogni richiesta IA. Una singola connessione e un modello possono sostituirli quando la regolazione è specifica per quella coppia.
+    reset_error: Impossibile ripristinare le impostazioni di regolazione
+    invalid_model_test_seconds: Inserisci un numero intero di secondi, almeno 1
+    reset_confirm_body: Ogni valore in questa pagina torna al predefinito con cui è stato distribuito. Le sostituzioni per connessione non sono interessate. L'operazione non può essere annullata e dovrai
+      reimpostare qualsiasi valore che avevi modificato.
+    description: 'Predefiniti per il comportamento dell''IA e i limiti di tempo. Di solito sono adatti così come sono: un''impostazione per utente o per connessione può essere diversa e il valore qui è
+      quello applicato quando nessuna delle due è presente.'
+    ai_tokens: token
+    ai_section_label: Generazione IA
+    invalid_connect_timeout: Il timeout di connessione deve essere un numero intero di secondi, almeno 1 e al massimo 60
+    saving: Salvataggio…
+    invalid_ai_timeout: Il limite di tempo IA deve essere un numero intero di secondi, almeno 1
+    probe_timeout_hint: Quanto può durare un test di idoneità. Un modello ospitato su CPU richiede minuti, quindi un limite breve qui registra un falso fallimento invece di risparmiare tempo.
+    invalid_temperature: La temperatura deve essere un numero compreso tra 0 e 2
+    connect_timeout_hint: Quanto tempo la rete può impiegare per accettare una connessione prima che l'endpoint venga considerato non raggiungibile. Un valore inferiore a ciò che la rete richiede trasforma
+      un endpoint funzionante in uno non funzionante.
+    reset_confirm_title: Ripristinare questi sei valori ai predefiniti?
+    slow_threshold_hint: Un test del modello che impiega più di questo tempo viene segnalato come troppo lento. Gli utenti possono aumentare il proprio limite; nessuno può abbassarlo al di sotto di 1.
+    save: Salva impostazioni
+    seconds: secondi
+    invalid_probe_timeout: Il timeout del test deve essere un numero intero di secondi, minimo 1 e massimo 1200
+    ai_temperature_hint: 'Quanto variano le risposte: 0 corrisponde alla massima ripetibilità consentita dal modello, 2 alla massima varietà. I valori al di fuori dell''intervallo da 0 a 2 vengono rifiutati
+      dal provider, non da questo sistema.'
+    load_error: Impossibile caricare le impostazioni di regolazione
+    ai_timeout_hint: Per quanto tempo una singola richiesta IA può essere eseguita prima di essere abbandonata. Un valore troppo basso fa fallire la chat in modo silenzioso; un valore troppo alto fa sì
+      che un modello bloccato occupi un worker. I modelli locali su CPU possono richiedere diversi minuti.
+    preamble_detail: Ogni richiesta IA usa queste impostazioni, a meno che una connessione non le sovrascriva. Modificarne una influisce su tutti i modelli che non dispongono di una propria impostazione;
+      non modifica una connessione che hai già regolata.
+    invalid_max_tokens: Inserisci un numero intero di token, almeno 1
+    save_error: Impossibile salvare le impostazioni di regolazione
+    reset_confirm_action: Reimposta
+    saved: Impostazioni di regolazione salvate
+tools:
+  all_datasets: Tutti i dataset
+  connect_database: Connetti database
+  description: Ulteriori utilità e strumenti di analisi appariranno qui.
+  import_notebook: Importa notebook
+  manage_data: Raccogli dati
+  my_data: I miei dati
+  notebooks: Notebook
+  placeholder: Pagina degli strumenti in arrivo.
+  title: Altri strumenti
+  upload_csv_excel: Carica CSV / Excel
+  upload_data: Carica dati
+  uploads_list: Caricamenti (csv, Excel)
+  visualize: Sandbox di visualizzazione
+transforms:
+  back_to_data: Torna a I miei dati
+  back_to_recipe: 'Torna alla ricetta: {name}'
+  connect_error: Impossibile collegare la trasformazione
+  connect_transform: Collega alla ricetta
+  connected_count: '{count} collegati'
+  connected_to_recipe: 'Collegato a: {name}'
+  delete_button: Elimina
+  delete_confirm: Eliminare questa trasformazione?
+  delete_success: Trasformazione eliminata.
+  description_label: Descrizione
+  description_placeholder: Descrizione (facoltativa)
+  disconnect_error: Impossibile scollegare la trasformazione
+  disconnect_transform: Scollega dalla ricetta
+  empty_hint: Le operazioni vengono applicate nell'ordine dell'elenco quando viene eseguita la trasformazione.
+  empty_state: Aggiungi un'operazione per iniziare a creare la trasformazione.
+  empty_title: Seleziona una trasformazione dall'elenco o creane una nuova.
+  fill:
+    constant: Costante
+    drop_rows: Elimina righe
+    mean: Media
+    median: Mediana
+    mode: Moda
+  filter:
+    op_contains: contiene
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: non è nullo
+    op_is_null: è nullo
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'Ricetta: {name}'
+  load_error: Impossibile caricare la trasformazione
+  name_label: Nome
+  name_placeholder: Nome trasformazione
+  name_required: Il nome della trasformazione è obbligatorio.
+  new_transform: Nuova trasformazione
+  no_search_results: Nessuna trasformazione corrisponde alla ricerca
+  no_transforms: Nessuna trasformazione definita per questo dataset.
+  op:
+    add: Aggiungi operazione
+    column_placeholder: Seleziona colonna
+    empty_hint: Aggiungi un'operazione per iniziare a creare la trasformazione.
+    encoding_label: Etichetta
+    encoding_onehot: One-hot
+    encoding_placeholder: Codifica
+    method_placeholder: Metodo
+    new_name_placeholder: Nuovo nome
+    operations_label: Operazioni
+    operator_placeholder: Operatore
+    remove: Rimuovi
+    target_boolean: Booleano
+    target_datetime: Data/ora
+    target_numeric: Numerico
+    target_string: Stringa
+    target_type_placeholder: Tipo di destinazione
+    type:
+      convert_type: Converti tipo
+      drop_column: Elimina colonna
+      drop_duplicates: Elimina duplicati
+      encode_category: Codifica categoria
+      fill_missing: Riempi valori mancanti
+      filter: Filtra righe
+      rename_column: Rinomina colonna
+      standardize: Standardizza
+      normalize: Normalizza
+    type_placeholder: Tipo di operazione
+    value_placeholder: Valore
+  operations_count: '{count} operazioni'
+  operations_heading: Operazioni
+  save_button: Salva
+  save_success: Trasformazione salvata.
+  search_placeholder: Cerca trasformazioni…
+validation:
+  api_key_required: La chiave API è obbligatoria per questo provider
+  database_required: Il nome del database è obbligatorio
+  host_required: L'host è obbligatorio
+  name_required: Il nome della connessione è obbligatorio
+  password:
+    min_length: La password deve contenere almeno {min} caratteri.
+    require_digit: La password deve contenere almeno una cifra.
+    require_lowercase: La password deve contenere almeno una lettera minuscola.
+    require_special: La password deve contenere almeno un carattere speciale.
+    require_uppercase: La password deve contenere almeno una lettera maiuscola.
+    too_weak: La password è troppo debole. Scegli una password più sicura.
+  password_required: La password è obbligatoria
+  port_invalid: La porta deve essere compresa tra 1 e 65535
+  provider_required: Seleziona un provider
+  type_required: Seleziona un tipo di database
+  username_required: Il nome utente è obbligatorio
+verify_email:
+  error_description: Qualcosa è andato storto.
+  error_title: Verifica non riuscita
+  expired_description: Il link di verifica è scaduto.
+  expired_message: Puoi richiedere una nuova email di verifica qui sotto.
+  expired_title: Link scaduto
+  invalid_token: Link di verifica non valido.
+  login_button: Procedi al login
+  missing_description: Non è stato fornito alcun token di verifica.
+  missing_title: Nessun token di verifica
+  network_error: Errore di rete. Riprova.
+  resend_button: Invia di nuovo l'email di verifica
+  success_description: La tua email è stata verificata con successo. Reindirizzamento al login...
+  success_title: Email verificata
+  unknown_error: Qualcosa è andato storto.
+virtual:
+  clone: Clona
+  deleted: Dataset eliminato
+  draft_badge: Bozza
+  edit: Modifica
+  error: Si è verificato un errore
+  existing_none: Nessuno
+  existing_title: Dataset esistenti
+  loading: Caricamento...
+  more: altro
+  new_chat: Nuovo dataset virtuale
+  placeholder: Descrivi cosa vuoi fare...
+  ready_badge: Pronto
+  recent_chats: Chat recenti
+  send: Invia
+  stage: Fase
+  title: Dataset virtuali
+  verbose: Dettagliato
+  welcome: Benvenuto nell'assistente per i dataset virtuali. Se è la prima volta, potresti voler sapere come iniziare. Chiedimi di spiegare come gli statistici usano i dataset come input per le ricette
+    di analisi e poi usano l'output per creare report e visualizzazioni. Oppure chiedimi di esplorare i tuoi dataset reali così possiamo iniziare a selezionare i dati da utilizzare. Di' semplicemente "ciao"
+    se non sei sicuro.
+  preview_columns: Colonne di output
+  preview_sources: Sorgenti
+  preview_joins: Join
+  preview_name: Nome
+  preview_title: Anteprima del dataset
+  manual:
+    incomplete_join: Completa o rimuovi il join che non ha ancora colonne selezionate.
+    no_match: Nulla qui corrisponde al filtro.
+    output_hint: Le colonne che questo dataset esporrà, in ordine.
+    output_title: Cosa espone il dataset
+    columns_error: Impossibile leggere le colonne.
+    alias_label: Alias
+    validate_ok: La definizione è strutturalmente valida.
+    bridge_no_columns: 'colonne non ancora lette: espandi l’origine oppure aggiungi il join e selezionale.'
+    select_all: Seleziona tutto
+    test_pulls_every_source: Il test del join legge integralmente ogni origine, quindi può essere lento.
+    loading_columns: Lettura delle colonne…
+    tables_error: Impossibile leggere le tabelle.
+    complete_join: Completa il join non terminato
+    load_error: Impossibile caricare la definizione del dataset.
+    unattached_sources: 'Non collegate al resto: {sources}. Aggiungi un join che le colleghi.'
+    save_error: Impossibile salvare il dataset virtuale.
+    bridge_choose_columns: 'nessuna colonna corrispondente trovata: aggiungi il join e selezionale.'
+    title: Editor del dataset virtuale
+    aggregation_note: Un’aggregazione presente in una vecchia definizione viene mantenuta così com’è, ma il join non la applica.
+    name_label: Nome del dataset
+    remove_join: Rimuovi questo join
+    materialized_hint: Scrive una tabella invece di un join live. Lascialo disattivato durante la prototipazione.
+    remove: Rimuovi questa colonna dall’output
+    preview_error: Impossibile eseguire il join.
+    no_sources: Nessuna connessione o dataset disponibile.
+    sources_hint: Espandi una connessione o un dataset, poi seleziona le colonne da includere.
+    open_label: Apri un dataset esistente
+    column_placeholder: Scegli una colonna
+    select_none: Deseleziona tutto
+    alias_taken: Quell’alias è già usato da un’altra origine.
+    move_down: Sposta questa colonna in basso di una posizione
+    joins_hint: Due o più origini richiedono un join tra loro. Una sola origine non ne richiede.
+    preview_rows: '{count} riga/e restituita/e'
+    need_name: Assegna un nome al dataset prima di salvare.
+    update_dataset: Aggiorna questo dataset
+    validate: Valida la definizione
+    joins_title: Come sono collegate le origini
+    suggested: Suggeriti
+    need_join: Due origini sono selezionate, ma nessun join le collega.
+    bridge: Ponte
+    sources_title: Da dove provengono i dati
+    preview_empty: Il join non ha restituito righe.
+    add_join: Aggiungi un join
+    new_dataset: Crea un nuovo dataset
+    intro: Costruisci un dataset virtuale dalle colonne che scegli oppure aprine uno esistente per modificarlo.
+    description_label: Descrizione del dataset
+    test_join: Testa il join
+    save_success: Dataset virtuale salvato.
+    open_none: Non c’è ancora nessun dataset virtuale da aprire.
+    validate_errors: 'La definizione presenta problemi:'
+    materialized_label: Materializza il risultato
+    need_columns: Seleziona almeno una colonna da includere.
+    loaded_note: 'Aperta una definizione esistente: il salvataggio la aggiorna.'
+    move_up: Sposta questa colonna in alto di una posizione
+    loaded_note_shared: Aperta una definizione condivisa esistente — sola lettura - nessun aggiornamento consentito
+    materialize_done: Tabella creata.
+    materialize_retry: Riprova
+    materialize_failed: 'Salvato, ma non è stato possibile creare la tabella:'
+  progress_decided: '{decided} di {total} decisi'
+  panel:
+    expand: Mostra il pannello sorgente
+    collapse: Ripiega il pannello sorgente
+  panel_columns: '{count} col.'
+  panel_tick_error: Non è stato possibile spuntare quella colonna.
+  panel_tick_no_session: Invia prima un messaggio — l'albero registra le tue spunte nella sessione.
+  chip_error: Non è stato possibile applicare quella scelta.
+  chip_load_error: Non è stato possibile aggiornare le scelte, quindi queste potrebbero non essere aggiornate.
+  panel_fold_error: Non è stato possibile salvare lo stato ripiegato del pannello, quindi la prossima volta sarà di nuovo aperto.
+  heading_choose_table: Scegli una tabella
+  heading_match_columns: Abbina queste colonne
+  heading_materialised: Live o materializzata?
+  heading_choose_columns: Scegli le colonne
+  selection_hint: Deseleziona tutto ciò che non vuoi, quindi usali insieme.
+  suggestion_applied: Applicato
+  act:
+    sources_short: 'Accettate {count} tabelle: {tables}'
+    sources: Accettate {count} tabelle
+    join: Unita {pair}
+    named: Assegnato il nome “{name}”
+    applied: Applicato {piece}
+  confirm_selection: Usa questi
+  joins_coverage: '{connected} di {total} tabelle connesse'
+  joins_unjoined: 'Non unite: {tables}'
+  joins_unsaved: Queste righe differiscono dal dataset. Applica le modifiche o correggi prima la riga vuota.
+  joins_hint: Modifica qualsiasi colonna o tipo di unione, quindi continua.
+  join_type_label: Tipo di unione
+  act_joins: Unite {count} coppie
+  joins_apply: Applica
+  name_suggestion_heading: Nome suggerito — cambialo se vuoi
+  name_suggestion_accept: Usa questo nome
+visualize:
+  config: Configurazione
+  data: Dati (JSON)
+  data_placeholder: Incolla qui i dati JSON o genera un campione
+  description: Seleziona un tipo di visualizzazione, genera dati campione, regola i parametri e visualizza l'anteprima.
+  download_error: Download della tabella non riuscito
+  download_png: Scarica come PNG
+  download_success: Tabella scaricata come PNG
+  generate_sample: Genera campione
+  invalid_data: Dati non validi per la tabella di testo. Previste colonne e righe.
+  load_error: Caricamento dei tipi di visualizzazione non riuscito
+  no_data: Nessun dato da visualizzare. Genera dati campione o incolla JSON.
+  no_types: Nessun tipo di visualizzazione definito. Contatta un amministratore.
+  parameters: Parametri
+  preview: Anteprima
+  sample_expenses: Spese
+  sample_generated: Dati campione generati
+  sample_item: Voce
+  sample_sales: Vendite
+  sample_value: Valore
+  save_error: Salvataggio non riuscito
+  save_instance: Salva istanza
+  save_no_data: Nessun dato da salvare. Genera o incolla i dati.
+  save_success: Visualizzazione salvata con successo
+  select_type: Seleziona tipo
+  title: Sandbox di visualizzazione
+  type: Tipo di visualizzazione
+  unsupported: Tipo di visualizzazione non ancora implementato
+  unsupported_parameter: Tipo non supportato

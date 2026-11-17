@@ -1,0 +1,2253 @@
+about:
+  description: shadcn/ui और Next.js के साथ शानदार अनुभव बनाएं। साफ़ डिज़ाइन, तेज़ प्रदर्शन।
+  fast_desc: इष्टतम प्रदर्शन के लिए Next.js App Router पर निर्मित।
+  fast_title: तेज़
+  get_started: शुरू करें
+  modern_desc: shadcn/ui से सुलभ कंपोनेंट, Tailwind CSS से स्टाइल किए गए।
+  modern_title: आधुनिक UI
+  secure_desc: टाइप-सेफ और अनुकूलन योग्य – कंपोनेंट कोड आपका अपना होता है।
+  secure_title: सुरक्षित
+  title: Statisticians Workbench के बारे में
+admin:
+  groups:
+    back_to_admin: एडमिन पर वापस जाएं
+    cannot_modify_self: अपने स्वयं के खाते को संशोधित नहीं कर सकते
+    delete_confirmation: क्या आप वाकई {name} को हटाना चाहते हैं? यह उपयोगकर्ता सॉफ़्ट-डिलीट किया जाएगा और पूर्ण एडमिन द्वारा पुनर्स्थापित किया जा सकता है।
+    delete_error: उपयोगकर्ता को हटाने में विफल
+    delete_title: उपयोगकर्ता हटाएं
+    demote: डिमोट करें
+    demote_error: उपयोगकर्ता को डिमोट करने में विफल
+    demote_success: उपयोगकर्ता को समूह एडमिन से डिमोट कर दिया गया
+    description_placeholder: विवरण दर्ज करें
+    description_required: विवरण खाली नहीं हो सकता
+    group_description: समूह विवरण
+    group_users_load_error: समूह उपयोगकर्ताओं को लोड करने में विफल
+    load_error: समूह लोड करने में विफल
+    load_success: समूह सफलतापूर्वक लोड हुए
+    no_users: इस समूह में कोई उपयोगकर्ता नहीं मिला।
+    promote: प्रमोट करें
+    promote_error: उपयोगकर्ता को प्रमोट करने में विफल
+    promote_success: उपयोगकर्ता को समूह एडमिन के रूप में प्रमोट किया गया
+    readonly_badge: (केवल पढ़ने के लिए)
+    readonly_message: आप इस पृष्ठ को केवल पढ़ने के मोड में देख रहे हैं। उदाहरण उपयोगकर्ता परिवर्तन नहीं कर सकते।
+    readonly_title: समूह प्रबंधन (केवल पढ़ने के लिए)
+    select_group: समूह चुनें
+    select_group_placeholder: एक समूह चुनें
+    title: समूह प्रबंधन
+    update_error: समूह अपडेट करने में विफल
+    update_success: समूह विवरण अपडेट किया गया
+    users_in_group: समूह में उपयोगकर्ता
+  models:
+    comment_placeholder: टिप्पणी दर्ज करें
+    description: हर मॉडल जिसकी जानकारी वर्कबेंच को है। मॉडल सक्षम करने पर उसे सेवा देने वाले हर कनेक्शन पर असर पड़ता है; सर्वर कॉलम दिखाता है कि कौन-से सर्वर उस तक पहुँच सकते हैं।
+    disabled: अक्षम
+    edit_comment: टिप्पणी संपादित करें
+    enabled: सक्षम
+    fetch_auth_required: इस प्रदाता को मॉडल सूचीबद्ध करने के लिए API कुंजी की आवश्यकता होती है। इसके बजाय Settings → AI Connections से रीफ़्रेश करें।
+    fetch_non_standard: यह प्रदाता मानक मॉडल-सूचीबद्ध API प्रदान नहीं करता है। एडमिन पैनल में मॉडल मैन्युअल रूप से जोड़ें।
+    load_models_error: मॉडल लोड करने में विफल
+    no_comment: —
+    no_models: अभी तक कोई मॉडल नहीं हैं। डिस्कवरी उन्हें किसी कनेक्शन से बनाती है।
+    not_preferred: पसंदीदा नहीं
+    preferred: पसंदीदा
+    toggle_error: मॉडल अपडेट करने में विफल
+    update_error: टिप्पणी अपडेट करने में विफल
+    update_success: मॉडल अपडेट किया गया
+    tuning_hint: ये मान इस कनेक्शन पर जहाँ भी यह मॉडल उपयोग होता है वहाँ लागू होते हैं। खाली छोड़ने का अर्थ है कि यह वर्कबेंच डिफ़ॉल्ट को विरासत में लेता है।
+    tuning_title: इस सर्वर के लिए AI सेटिंग्स
+    filter_clear: फ़िल्टर साफ़ करें
+    filter_any: कोई भी स्थिति
+    tuning_loading: AI सेटिंग्स लोड हो रही हैं…
+    filter_state: स्थिति
+    tuning_temperature_hint: कम मान अधिक दोहराने योग्य उत्तर देते हैं; उच्च मान अधिक विविध उत्तर देते हैं।
+    filter_result: परिणाम
+    no_matches: इन फ़िल्टरों से कोई मॉडल मेल नहीं खाता।
+    servers_title: कहाँ से पहुँच योग्य
+    search_placeholder: मॉडल नाम खोजें
+    tuning_save_error: AI सेटिंग्स सहेजी नहीं जा सकीं
+    filter_test: क्षमता परीक्षण
+    tuning_saved: AI सेटिंग्स सहेजी गईं
+    tuning_inherited: विरासत में मिला
+    tuning_timeout_hint: एक AI अनुरोध कितने सेकंड तक चल सकता है। स्थानीय CPU मॉडल को कई मिनट लग सकते हैं।
+    tuning_inherited_title: खाली होने पर वर्कबेंच का डिफ़ॉल्ट विरासत में मिलता है
+    no_servers: अभी तक कोई कनेक्शन इस मॉडल को सेवा नहीं देता है
+    model_count: '{count} मॉडल'
+    tuning_load_error: AI सेटिंग्स लोड नहीं की जा सकीं
+  providers:
+    code_label: कोड
+    delete_button: हटाएं
+    delete_confirmation: क्या आप वाकई प्रदाता "{name}" को हटाना चाहते हैं? इससे सभी संबद्ध मॉडल भी हट जाएंगे और इसे पूर्ववत नहीं किया जा सकता।
+    delete_error: प्रदाता हटाने में विफल
+    delete_provider: प्रदाता हटाएं
+    delete_success: प्रदाता हटा दिया गया
+    delete_title: प्रदाता हटाएं
+    description: AI प्रदाताओं को सक्षम या अक्षम करें। अक्षम प्रदाता उपयोगकर्ता कनेक्शन फ़ॉर्म में दिखाई नहीं देंगे।
+    disabled: अक्षम
+    enabled: सक्षम
+    fetch_error: प्रदाता लोड करने में विफल
+    list_title: सभी प्रदाता
+    local: स्थानीय
+    no_api_key: कोई API कुंजी आवश्यक नहीं
+    requires_api_key: API कुंजी की आवश्यकता है
+    title: AI प्रदाता
+    toggle_error: प्रदाता अपडेट करने में विफल
+    update_success: प्रदाता अपडेट किया गया
+  title: एडमिन पैनल
+  user_details:
+    dark_mode_description: लाइट और डार्क थीम के बीच टॉगल करें।
+    dark_mode_label: डार्क मोड
+    email_label: ईमेल
+    email_notifications_description: अपने खाते के बारे में ईमेल अपडेट प्राप्त करें।
+    email_notifications_label: ईमेल सूचनाएं
+    full_admin_note: पूर्ण एडमिन के पास समूह एडमिन की सभी अनुमतियां डिफ़ॉल्ट रूप से होती हैं।
+    group_admin_description: उपयोगकर्ता अपने समूह के भीतर अन्य उपयोगकर्ताओं का प्रबंधन कर सकता है।
+    group_admin_label: समूह एडमिन
+    group_hint: उपयोगकर्ता का समूह निर्धारित करता है कि वे किन साझा संसाधनों तक पहुंच सकते हैं।
+    language_label: भाषा
+    language_select_placeholder: भाषा चुनें
+    load_error: उपयोगकर्ता विवरण लोड करने में विफल
+    max_upload_count_hint: प्रति उपयोगकर्ता डेटासेट की अधिकतम संख्या (0 = असीमित)।
+    max_upload_count_label: अधिकतम अपलोड संख्या
+    max_upload_count_placeholder: संख्या चुनें
+    max_upload_size_hint: प्रति उपयोगकर्ता अधिकतम कुल संग्रहण (0 = असीमित)।
+    max_upload_size_label: अधिकतम अपलोड आकार
+    max_upload_size_placeholder: आकार चुनें
+    name_label: नाम
+    not_found: उपयोगकर्ता नहीं मिला
+    save_error: उपयोगकर्ता को अपडेट करने में विफल
+    save_success: उपयोगकर्ता विवरण अपडेट किया गया
+    select_group: समूह चुनें
+    title: उपयोगकर्ता का प्रबंधन करें
+    unnamed: अनाम उपयोगकर्ता
+    user_group: उपयोगकर्ता समूह
+  users:
+    active_users: सक्रिय उपयोगकर्ता
+    admin_badge: एडमिन
+    bcc_label: BCC पंजीकरण
+    bcc_updated: BCC पंजीकरण सेटिंग अपडेट की गई
+    created_label: निर्मित
+    current_user_badge: आप
+    delete_button: हटाएं
+    delete_confirmation: क्या आप वाकई "{name}" को स्थायी रूप से हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।
+    delete_error: उपयोगकर्ता को हटाने में विफल
+    delete_self_error: आप अपना खुद का खाता नहीं हटा सकते
+    delete_success: उपयोगकर्ता स्थायी रूप से हटा दिया गया
+    delete_title: उपयोगकर्ता हटाएं
+    deleted_badge: सॉफ्ट-डिलीटेड
+    deleted_label: हटाया गया
+    example_user_badge: उदाहरण उपयोगकर्ता
+    forbidden: निषिद्ध
+    group_admin_badge: समूह एडमिन
+    hard_delete_button: स्थायी रूप से हटाएं
+    hard_delete_confirmation: क्या आप वाकई "{name}" को स्थायी रूप से हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।
+    hard_delete_error: उपयोगकर्ता को स्थायी रूप से हटाने में विफल
+    hard_delete_success: उपयोगकर्ता स्थायी रूप से हटा दिया गया
+    hard_delete_title: उपयोगकर्ता को स्थायी रूप से हटाएं
+    load_error: उपयोगकर्ताओं को लोड करने में विफल
+    make_admin: एडमिन बनाएं
+    more_button: अधिक...
+    no_name: कोई नाम नहीं
+    remove_admin: एडमिन हटाएं
+    resend_button: ईमेल फिर से भेजें
+    resend_error: सत्यापन ईमेल भेजने में विफल
+    resend_success: सत्यापन ईमेल {email} पर भेजा गया
+    restore_button: पुनर्स्थापित करें
+    restore_error: उपयोगकर्ता को पुनर्स्थापित करने में विफल
+    restore_success: उपयोगकर्ता पुनर्स्थापित किया गया
+    soft_deleted_users: सॉफ्ट-डिलीटेड उपयोगकर्ता
+    title: उपयोगकर्ता प्रबंधन
+    unauthorized: अनधिकृत
+    unverified_badge: असत्यापित
+    update_error: उपयोगकर्ता को अपडेट करने में विफल
+    update_success: उपयोगकर्ता अपडेट किया गया
+    user_not_found: उपयोगकर्ता नहीं मिला
+    verified_badge: सत्यापित
+    verify_button: सत्यापित करें
+    verify_error: उपयोगकर्ता को सत्यापित करने में विफल
+    verify_success: उपयोगकर्ता को सत्यापित के रूप में चिह्नित किया गया
+    add_user: उपयोगकर्ता जोड़ें
+  visualization_types:
+    add_button: नया प्रकार जोड़ें
+    add_title: विज़ुअलाइज़ेशन प्रकार जोड़ें
+    create_success: विज़ुअलाइज़ेशन प्रकार बनाया गया
+    default_parameters: डिफ़ॉल्ट पैरामीटर (JSON)
+    delete: हटाएं
+    delete_button: हटाएं
+    delete_confirmation: क्या आप वाकई "{name}" प्रकार को हटाना चाहते हैं? इससे सभी संबंधित इंस्टेंस भी हट जाएंगे और इसे पूर्ववत नहीं किया जा सकता।
+    delete_error: हटाने में विफल
+    delete_success: विज़ुअलाइज़ेशन प्रकार हटाया गया
+    delete_title: विज़ुअलाइज़ेशन प्रकार हटाएं
+    description: विवरण
+    disabled: अक्षम
+    edit: संपादित करें
+    edit_title: विज़ुअलाइज़ेशन प्रकार संपादित करें
+    enabled: सक्षम
+    fetch_error: विज़ुअलाइज़ेशन प्रकारों को लोड करने में विफल
+    input_schema: इनपुट स्कीमा (JSON)
+    invalid_json: किसी एक स्कीमा फ़ील्ड में अमान्य JSON है
+    list_title: सभी विज़ुअलाइज़ेशन प्रकार
+    name: नाम
+    no_types: अभी तक कोई विज़ुअलाइज़ेशन प्रकार परिभाषित नहीं है।
+    parameter_schema: पैरामीटर स्कीमा (JSON)
+    renderer: रेंडरर
+    renderer_client: क्लाइंट
+    renderer_label: रेंडरर
+    renderer_server: सर्वर
+    save_error: सहेजने में विफल
+    slug: स्लग
+    slug_label: स्लग
+    title: विज़ुअलाइज़ेशन प्रकार
+    toggle_error: अपडेट करने में विफल
+    update_success: विज़ुअलाइज़ेशन प्रकार अपडेट किया गया
+  adduser:
+    confirm_password: पासवर्ड की पुष्टि करें
+    name: नाम
+    description: नया उपयोगकर्ता खाता बनाएँ। खाता तुरंत सत्यापित हो जाता है।
+    not_admin: इस पृष्ठ तक पहुँचने की आपके पास अनुमति नहीं है।
+    creating: उपयोगकर्ता बनाया जा रहा है...
+    submit: उपयोगकर्ता बनाएँ
+    failed: उपयोगकर्ता बनाने में विफल
+    password: पासवर्ड
+    title: उपयोगकर्ता जोड़ें
+    success: खाता बनाया गया और सत्यापित किया गया। नया उपयोगकर्ता अब साइन इन कर सकता है।
+    language_description: इंटरफ़ेस के लिए उपयोगकर्ता की पसंदीदा भाषा चुनें।
+    password_mismatch: पासवर्ड मेल नहीं खाते
+    email: ईमेल
+    back_to_admin: व्यवस्थापक पर वापस जाएँ
+  set_password:
+    success: पासवर्ड सफलतापूर्वक सेट किया गया
+    admin_password_required: एडमिन पासवर्ड आवश्यक है
+    description: इस उपयोगकर्ता के लिए नया पासवर्ड सेट करें। परिवर्तन की पुष्टि करने के लिए आपका अपना एडमिन पासवर्ड आवश्यक है।
+    title: पासवर्ड सेट करें
+    admin_password: एडमिन पासवर्ड
+    failed: पासवर्ड सेट करने में विफल
+ai:
+  connection:
+    add_first: अपना पहला AI कनेक्शन जोड़ें
+    add_new: नया AI कनेक्शन जोड़ें
+    add_success: AI कनेक्शन सफलतापूर्वक जोड़ा गया
+    add_title: नया AI कनेक्शन जोड़ें
+    api_key_hint: आपकी API कुंजी संग्रहित करने से पहले एन्क्रिप्ट की जाती है।
+    api_key_label: API कुंजी
+    by_label: द्वारा
+    clear_default: डिफ़ॉल्ट साफ़ करें
+    currently_not_shared: ❌ वर्तमान में साझा नहीं है
+    currently_shared: ✅ वर्तमान में समूह के साथ साझा है
+    default_badge: डिफ़ॉल्ट
+    default_cleared: डिफ़ॉल्ट AI कनेक्शन साफ़ किया गया
+    default_set: डिफ़ॉल्ट AI कनेक्शन अपडेट किया गया
+    delete_button: हटाएं
+    delete_confirmation: क्या आप वाकई कनेक्शन को हटाना चाहते हैं?
+    delete_error: AI कनेक्शन हटाने में विफल
+    delete_title: AI कनेक्शन हटाएँ
+    deleted: AI कनेक्शन हटा दिया गया
+    edit_title: AI कनेक्शन संपादित करें
+    endpoint_hint: यदि आवश्यक हो तो डिफ़ॉल्ट API एंडपॉइंट को ओवरराइड करें।
+    endpoint_label: एंडपॉइंट URL
+    form_description: AI प्रदाता कनेक्शन कॉन्फ़िगर करें।
+    group_label: समूह
+    load_error: कनेक्शन लोड करने में विफल
+    load_providers_error: प्रदाता लोड करने में विफल
+    metadata_load_error: प्रदाता मेटाडेटा लोड करने में विफल
+    metadata_loading: प्रदाता जानकारी अभी भी लोड हो रही है। कृपया प्रतीक्षा करें।
+    models: उपलब्ध मॉडल
+    models_disabled: अक्षम
+    models_load_error: मॉडल लोड करने में विफल
+    models_none: अभी तक कोई मॉडल सिंक नहीं हुआ है। प्रदाता से मॉडल प्राप्त करने के लिए रीफ़्रेश पर क्लिक करें।
+    models_refresh: मॉडल रीफ़्रेश करें
+    models_sync_error: मॉडल सिंक करने में विफल
+    models_synced: मॉडल सफलतापूर्वक सिंक हो गए
+    name_label: कनेक्शन का नाम
+    name_placeholder: उदा., मेरा AI कनेक्शन
+    no_connections: अभी तक कोई AI कनेक्शन सहेजा नहीं गया है।
+    not_found: कनेक्शन नहीं मिला
+    provider_label: प्रदाता
+    provider_not_found: प्रदाता नहीं मिला
+    save_error: AI कनेक्शन सहेजने में विफल
+    select_provider: AI प्रदाता चुनें
+    select_provider_first: कृपया पहले एक प्रदाता चुनें
+    set_default: डिफ़ॉल्ट के रूप में सेट करें
+    shared_badge: साझा किया गया
+    shared_description: इस कनेक्शन को अपने समूह के अन्य उपयोगकर्ताओं के लिए उपलब्ध कराएँ।
+    shared_label: समूह के साथ साझा करें
+    shared_readonly: साझा
+    shared_readonly_message: यह कनेक्शन आपके साथ साझा किया गया है। आप इसे देख सकते हैं, लेकिन संपादन केवल स्वामी तक सीमित है।
+    test_button: कनेक्शन का परीक्षण करें
+    test_error: कनेक्शन विफल रहा।
+    test_success: कनेक्शन सफल रहा!
+    unknown_user: अज्ञात
+    update_success: AI कनेक्शन सफलतापूर्वक अपडेट किया गया
+    invalid_connect_timeout: कनेक्शन समयसीमा पूरे सेकंड में होनी चाहिए, न्यूनतम 1 और अधिकतम 60।
+    timeouts_section_hint: वर्कबेंच डिफ़ॉल्ट उपयोग करने के लिए बॉक्स को खाली छोड़ें।
+    invalid_probe_timeout: मॉडल परीक्षण समयसीमा पूरे सेकंड में होनी चाहिए, न्यूनतम 1 और अधिकतम 1200।
+    probe_timeout_hint: यहाँ एक उपयुक्तता परीक्षण कितनी देर तक चल सकता है। CPU पर होस्ट किया गया मॉडल मिनटों लेता है।
+    models_discovered: 'इस कनेक्शन पर {seen} मॉडल खोजे: {created} नए, {refreshed} पहले से ज्ञात, {pruned} अब सेवा में नहीं'
+    connect_timeout_hint: नेटवर्क को कनेक्शन स्वीकार करने में कितना समय लग सकता है। इस नेटवर्क की ज़रूरत से कम मान किसी कार्यशील एंडपॉइंट को अगम्य में बदल देता है।
+    timeouts_section_label: कनेक्शन टाइमआउट
+    connect_exceeds_probe: कनेक्शन टाइमआउट मॉडल परीक्षण टाइमआउट से अधिक लंबा नहीं हो सकता — किसी कनेक्शन को स्थापित होने में पूरे परीक्षण की अवधि से अधिक समय लेने की अनुमति नहीं दी जा सकती।
+  database:
+    add_connection: डेटाबेस कनेक्शन जोड़ें
+    ai_augmented: AI-संवर्धित विश्लेषण
+    ai_augmented_desc: Schema AI, Semantic AI और Integration AI ने इस डेटाबेस का विश्लेषण किया है।
+    ai_fallback: बुनियादी विश्लेषण
+    ai_fallback_desc: AI संवर्धन अनुपलब्ध है। केवल संरचनात्मक विश्लेषण दिखाया जा रहा है। गहन जानकारी के लिए AI कनेक्शन चुनें।
+    ai_health_score: AI स्वास्थ्य स्कोर
+    ai_unavailable: AI विश्लेषण अनुपलब्ध है। उन्नत विश्लेषण सक्षम करने के लिए AI प्रदाता कनेक्ट करें।
+    all_issues: सभी समस्याएँ
+    analysis_report: विश्लेषण रिपोर्ट
+    analysis_summary: '{tables} तालिकाएँ, {columns} कॉलम, {issues} समस्याएँ मिलीं'
+    analyze: स्कीमा का विश्लेषण करें
+    analyzing: विश्लेषण हो रहा है...
+    business_value: व्यावसायिक मूल्य
+    categories: श्रेणियाँ
+    code_systems_detected: कोड प्रणालियाँ पाई गईं
+    cols_rows_format: '{cols} कॉलम, {rows} पंक्तियाँ'
+    column_meanings: कॉलम के अर्थ
+    columns_label: कॉलम
+    confidence: विश्वास
+    description: इंडेक्सिंग, सामान्यीकरण, संबंध, डेटा प्रकार और नामकरण समस्याओं के लिए अपने डेटाबेस डिज़ाइन का विश्लेषण करें।
+    download_pdf: PDF डाउनलोड करें
+    email_body_attachment: कृपया संलग्न विश्लेषण रिपोर्ट देखें।
+    email_body_connection: 'कनेक्शन: {conn_name}'
+    email_body_database: 'डेटाबेस: {db_name}'
+    email_body_id: 'कनेक्शन ID: {conn_id}'
+    email_body_signature: — सांख्यिकीविदों का कार्यक्षेत्र
+    email_body_title: डेटाबेस डिज़ाइन विश्लेषण रिपोर्ट
+    email_body_type: 'डेटाबेस प्रकार: {db_type}'
+    email_error: रिपोर्ट ईमेल करने में विफल
+    email_pdf: PDF ईमेल करें
+    email_sent: रिपोर्ट सफलतापूर्वक ईमेल की गई
+    email_subject: डेटाबेस डिज़ाइन विश्लेषण — {db_name} ({db_type}) [कनेक्शन {conn_id}]
+    empty_state: शुरू करने के लिए एक डेटाबेस कनेक्शन चुनें और विश्लेषण पर क्लिक करें।
+    enter_question: कृपया एक प्रश्न दर्ज करें।
+    foreign_keys: विदेशी कुंजियाँ
+    high_risk: उच्च
+    implicit_relationships: अंतर्निहित संबंध
+    indexes_label: इंडेक्स
+    integration_analysis: एकीकरण विश्लेषण
+    integration_analysis_desc: Integration AI द्वारा पाई गई अंतर्निहित संबंध, अनुसंधान क्षमताएँ और अनुपलब्ध आयाम।
+    isic_domains: ISIC डोमेन वर्गीकरण
+    issues_label: समस्याएँ
+    low_risk: निम्न
+    medium_risk: मध्यम
+    missing_dimensions: अनुपलब्ध आयाम
+    no_issues: कोई समस्या नहीं मिली। आपका डेटाबेस डिज़ाइन अच्छा दिख रहा है!
+    no_semi_structured: टेक्स्ट कॉलम में कोई अर्ध-संरचित डेटा पैटर्न नहीं पाया गया।
+    normalisation_suggestions: सामान्यीकरण सुझाव
+    normalisation_suggestions_desc: अर्ध-संरचित टेक्स्ट कॉलम में पाए गए कीवर्ड के आधार पर प्रस्तावित संदर्भ तालिकाएँ।
+    normalisation_warning: ये AI-जनित सुझाव हैं। डेटाबेस पुनर्डिज़ाइन में सावधानीपूर्वक समीक्षा की आवश्यकता होती है। बदलावों का परीक्षण पहले प्रतिकृति पर करें।
+    pdf_downloaded: PDF सफलतापूर्वक डाउनलोड हुई
+    pdf_error: PDF जनरेट करने में विफल
+    pk_prefix: PK –
+    placeholder: जल्द आ रहा है। यह सुविधा AI का उपयोग करके डेटाबेस स्कीमा डिज़ाइन करने में आपकी सहायता करेगी।
+    priority_actions: सर्वोच्च प्राथमिकता वाले कार्य
+    proposed_reference_table: प्रस्तावित संदर्भ तालिका
+    rag_ask: पूछें
+    rag_chat: RAG चैट — अपने डेटा के बारे में प्रश्न पूछें
+    rag_chat_desc: प्राकृतिक भाषा में प्रश्न पूछें। सिस्टम टेक्स्ट कॉलम खोजता है और उद्धरणों के साथ AI-जनित उत्तर देता है।
+    rag_error: RAG क्वेरी विफल रही
+    rag_placeholder: जैसे, सामान्य निदान क्या हैं?
+    rag_sources: स्रोत
+    research_capabilities: शोध क्षमताएँ
+    risk_breakdown: जोखिम विभाजन
+    rows_label: पंक्तियाँ
+    schema_error: डेटाबेस स्कीमा का विश्लेषण करने में विफल
+    select_connection: डेटाबेस कनेक्शन चुनें
+    select_connection_first: कृपया पहले एक डेटाबेस कनेक्शन चुनें।
+    select_connection_placeholder: डेटाबेस कनेक्शन चुनें...
+    semantic_analysis: अर्थगत विश्लेषण
+    semantic_analysis_desc: AI द्वारा अनुमानित कॉलम अर्थ, ISIC डोमेन वर्गीकरण और कोड प्रणाली पहचान।
+    semi_structured: अर्ध-संरचित डेटा विश्लेषण
+    semi_structured_desc: एम्बेडेड कोड, कीवर्ड और पैटर्न के लिए पाठ कॉलम का विश्लेषण किया गया।
+    table_purposes: तालिका उद्देश्य
+    tables_explorer: तालिका एक्सप्लोरर
+    tables_label: तालिकाएँ
+    timeout_error: विश्लेषण का समय समाप्त हो गया। डेटाबेस बहुत बड़ा हो सकता है या AI सेवा अनुपलब्ध है।
+    timeout_log: विश्लेषण 15 मिनट के बाद समय समाप्त हो गया।
+    title: डेटाबेस डिज़ाइन सहायक
+    top_recommendations: शीर्ष अनुशंसाएँ
+    peer_tables: 'सहकर्मी तालिकाएँ:'
+    is_missing: गायब है
+    health_score_desc: Schema AI द्वारा मूल्यांकित डेटाबेस का समग्र स्वास्थ्य। 0 = गंभीर संरचनात्मक समस्याएँ, 100 = उत्पादन के लिए तैयार।
+  dataclean:
+    chat_error: प्रतिक्रिया प्राप्त करने में विफल
+    chat_placeholder: इस डेटासेट की सफाई या तैयारी के बारे में पूछें...
+    column_tooltip: '{type} — {null_count} नल, {unique_count} अद्वितीय'
+    column_type:
+      category: श्रेणी
+      datetime: दिनांक/समय
+      number: संख्या
+      text: पाठ
+    description: AI-संचालित डेटासेट सफाई और तैयारी।
+    empty_chat: एक डेटासेट चुनें और उसे साफ और तैयार करने के तरीके के बारे में प्रश्न पूछना शुरू करें।
+    enter_message: कृपया एक संदेश दर्ज करें।
+    loading_schema: स्कीमा लोड हो रही है...
+    no_connection: कृपया सेटिंग्स > AI में एक डिफ़ॉल्ट AI कनेक्शन कॉन्फ़िगर करें।
+    no_datasets: कोई डेटासेट उपलब्ध नहीं है। पहले एक डेटासेट अपलोड या परिभाषित करें।
+    placeholder: जल्द आ रहा है। यह सुविधा आपको AI का उपयोग करके डेटासेट साफ और तैयार करने में मदद करेगी।
+    schema_error: डेटासेट स्कीमा लोड करने में विफल
+    schema_summary: '{rows} पंक्तियाँ, {cols} कॉलम'
+    select_dataset: डेटासेट चुनें
+    select_dataset_first: कृपया पहले एक डेटासेट चुनें।
+    select_dataset_placeholder: डेटासेट चुनें...
+    send: भेजें
+    shared_badge: (साझा)
+    title: डेटासेट सफाई सहायक
+    rules_title: तैयारी नियम
+    operations_count: '{count} ऑपरेशन'
+    clean_copy: साफ़ प्रतिलिपि
+    clean_name_label: साफ़ की गई प्रतिलिपि के लिए नाम
+    clean_copy_success: नया डेटासेट '{name}' बनाया गया — मूल अपरिवर्तित है।
+    clean_no_rules: अभी लागू करने के लिए कोई सफ़ाई नियम नहीं है।
+    clean_in_place: मूल स्थान पर साफ़ करें
+    preview_title: डेटा पूर्वावलोकन
+    clean_in_place_success: डेटासेट '{name}' अपडेट किया गया।
+    no_rules: अभी कोई नियम नहीं हैं
+    no_dataset_selected: कोई डेटासेट चयनित नहीं है
+  default_hint: जब कोई विश्लेषण रेसिपी AI प्रदाता निर्दिष्ट नहीं करती है, तो डिफ़ॉल्ट कनेक्शन का उपयोग फ़ॉलबैक के रूप में किया जाता है।
+  new_session: नया सत्र
+  no_ai_connections: कोई AI कनेक्शन कॉन्फ़िगर नहीं किया गया है। सेटिंग्स > AI में एक जोड़ें।
+  recipe:
+    chat_error: प्रतिक्रिया प्राप्त करने में विफल
+    chat_placeholder: सांख्यिकीय विश्लेषण या रेसिपी कॉन्फ़िगरेशन के बारे में पूछें...
+    description: AI-संचालित रेसिपी और विश्लेषण नियम निर्माण।
+    empty_chat: एक डेटासेट चुनें और पूछें कि कौन सी सांख्यिकीय तकनीकों का उपयोग करें।
+    enter_message: कृपया एक संदेश दर्ज करें।
+    loading_schema: स्कीमा लोड हो रही है...
+    no_datasets: कोई डेटासेट उपलब्ध नहीं है। पहले एक डेटासेट अपलोड या परिभाषित करें।
+    placeholder: जल्द आ रहा है। यह सुविधा आपको AI का उपयोग करके विश्लेषण रेसिपी बनाने में मदद करेगी।
+    schema_summary: '{rows} पंक्तियाँ, {cols} कॉलम'
+    select_dataset: डेटासेट चुनें
+    select_dataset_first: कृपया पहले एक डेटासेट चुनें।
+    select_dataset_placeholder: डेटासेट चुनें...
+    send: भेजें
+    title: विश्लेषण नियम सहायक
+  recipe_concierge:
+    chat_error: प्रतिक्रिया प्राप्त करने में विफल
+    create_prompt: आरंभ करने के लिए एक नया सत्र बनाएँ।
+    delete_session: सत्र हटाएँ
+    draft_empty: अपनी रेसिपी बनाने के लिए बातचीत शुरू करें। जैसे ही आप निर्णय लेंगे, ड्राफ्ट यहाँ दिखाई देगा।
+    draft_title: रेसिपी ड्राफ्ट
+    input_placeholder: अपने डेटा के बारे में पूछें... या बस "नमस्ते" कहें
+    manual_label: मैनुअल रेसिपी
+    new_session: नया सत्र
+    no_session: कोई सत्र चयनित नहीं
+    no_sessions: अभी तक कोई सत्र नहीं
+    open: संपादक में खोलें
+    save: रेसिपी सहेजें
+    saved: रेसिपी सहेजी गई!
+    saving: सहेजा जा रहा है...
+    select_dataset: डेटासेट चुनें...
+    stage_columns: कॉलम चुनें
+    stage_complete: रेसिपी तैयार है
+    stage_goal: शोध प्रश्न
+    stage_greeting: स्वागत है
+    stage_review: रेसिपी की समीक्षा करें
+    stage_technique: तकनीक चुनें
+    stage_transforms: डेटा तैयारी
+    stage_visualisation: विज़ुअलाइज़ेशन
+    status_draft: ड्राफ्ट
+    status_ready: तैयार
+    tab_chat: चैट
+    tab_draft: ड्राफ्ट
+    tab_sessions: सत्र
+    title: AI रेसिपी कन्सीयर्ज
+    toggle_panel: रेसिपी पैनल टॉगल करें
+    welcome: मुझे बताएं कि आप अपने डेटा में क्या खोजना चाहते हैं, और मैं आपको एक संपूर्ण विश्लेषण रेसिपी बनाने में मदद करूँगा।
+    schema_changes: 'स्कीमा में बदलावों का पता चला:'
+    draft_no_visualisation: संख्यात्मक परिणाम
+    warnings_heading: चेतावनियाँ
+    draft_dataset: डेटासेट
+    draft_output: आउटपुट
+    errors_heading: अभी सहेजा नहीं जा सकता
+    draft_algorithm: एल्गोरिदम
+    progress_decided: '{total} में से {count} निर्णीत'
+    done: पूर्ण
+    chip_withheld: +{count} और
+    progress_next: '{progress} · {next}'
+    chip_superseded: इसे एक नए ऑफ़र से बदल दिया गया है।
+    unread_sources: कुछ स्रोत पढ़े नहीं जा सके, इसलिए कॉलम सूची अधूरी हो सकती है।
+    chip_collapse: कम दिखाएँ
+    chip_expand: '{count} और दिखाएँ'
+  select_ai_connection: AI कनेक्शन
+  select_ai_connection_placeholder: AI कनेक्शन चुनें...
+  select_model: मॉडल
+  select_model_placeholder: मॉडल चुनें...
+  test_error: कनेक्शन विफल रहा।
+  test_success: कनेक्शन सफल रहा!
+  title: AI सेटिंग्स
+  thinking: सोच रहा है...
+  testing:
+    connection_label: AI कनेक्शन
+    no_connections_link: AI कनेक्शन पर जाएँ
+    run_all_for_model: इस मॉडल के लिए सभी चलाएँ
+    duration_ms: '{ms} ms'
+    slow_limit_session_link: इसे अपनी प्रोफ़ाइल में स्थायी रूप से सेट करें
+    no_connections_body: मॉडल का परीक्षण करने के लिए AI कनेक्शन चाहिए। एक जोड़ें, फिर इस पृष्ठ पर वापस आएँ।
+    elsewhere_note: कोई मॉडल दूसरे कनेक्शन से क्षमता परिणाम रख सकता है। प्रत्येक स्थिति के आगे की अवधि इस कनेक्शन का अपना माप है, इसलिए यहाँ कोई मॉडल बिना अवधि के कोई स्थिति दिखा सकता है।
+    load_error: आपके AI कनेक्शन लोड नहीं किए जा सके। {detail}
+    no_duration_here: इस कनेक्शन पर नहीं चला
+    state_fail: विफल
+    failure_reason: 'कारण: {reason}'
+    slow_limit_unavailable: आपकी सेटिंग्स में धीमे मॉडल की सीमा शामिल नहीं थी, इसलिए कोई मॉडल बहुत धीमा चिह्नित नहीं है।
+    discover_models: मॉडल खोजें
+    column_enabled: सक्षम
+    run_test: परीक्षण चलाएँ
+    enabled_no: मॉडल अक्षम
+    running: चल रहा है…
+    cost_confirm: रन शुरू करें
+    cancelled: रोका गया। पहले से रिकॉर्ड किए गए परिणाम रखे गए।
+    duration_seconds: '{seconds} सेकंड'
+    discover_running: सर्वर से पूछा जा रहा है…
+    title: AI परीक्षण
+    column_model: मॉडल
+    explanation: वर्कबेंच के AI कंसीयर्ज ऐसे मॉडलों के लिए बने हैं जो कार्रवाई करते हैं। जो मॉडल केवल बात करता है — चाहे कितना ही विनम्र हो, चाहे कितना ही बड़ा हो — रेसिपी एडिटर को बिना कुछ किए प्रतिक्रिया
+      देता हुआ छोड़ देगा। समाधान मॉडल है, कोड नहीं। इस पृष्ठ का उपकरण आपको यह परीक्षण करने देता है कि कोई मॉडल उपयुक्त है या नहीं।
+    slow_limit_session_hint: केवल इस पृष्ठ पर लागू होता है — सहेजा नहीं जाता।
+    column_actions: परीक्षण
+    cost_warning: यह {count} परीक्षण चलाता है, और टर्न परीक्षण CPU पर प्रति मॉडल मिनटों लेता है। शुरू करने के लिए फिर से दबाएँ।
+    run_failed: 'परीक्षण नहीं चल सका: {detail}'
+    slow_limit_session_label: धीमे मॉडल की सीमा
+    no_models: इस कनेक्शन पर अभी तक कोई मॉडल खोजा नहीं गया है।
+    slow_limit_failed: आपकी धीमे मॉडल की सीमा पढ़ी नहीं जा सकी, इसलिए कोई मॉडल बहुत धीमा चिह्नित नहीं है। {detail}
+    discover_failed: 'मॉडल खोजे नहीं जा सके: {detail}'
+    no_connections_heading: अभी तक कोई AI कनेक्शन नहीं
+    too_slow: आपकी {seconds} सेकंड की सीमा से अधिक
+    discover_result: 'सर्वर ने {seen} मॉडल सूचीबद्ध किए: {created} नए, {refreshed} पहले से ज्ञात, {pruned} अब सेवा में नहीं'
+    test_competence: सक्षमता
+    state_pass: उत्तीर्ण
+    models_heading: मॉडल
+    slow_limit_session_reset: मेरी सहेजी गई सीमा का उपयोग करें
+    test_tools: टूल्स का उपयोग करता है
+    run_all_untested: अपरीक्षित मॉडलों पर हर परीक्षण चलाएँ
+    test_turn: जटिलता
+    enabled_yes: मॉडल सक्षम
+api:
+  admin:
+    already_full_admin: उपयोगकर्ता पहले से फुल एडमिन है
+    already_group_admin: उपयोगकर्ता पहले से ग्रुप एडमिन है
+    cannot_delete_self: आप अपना खाता नहीं हटा सकते
+    cannot_demote_full_admin: फुल एडमिन को डिमोट नहीं किया जा सकता
+    cannot_demote_self: आप स्वयं को डिमोट नहीं कर सकते
+    cannot_promote_example: उदाहरण उपयोगकर्ता को प्रमोट नहीं किया जा सकता
+    delete_error: उपयोगकर्ता हटाने में विफल
+    demote_error: उपयोगकर्ता को डिमोट करने में विफल
+    description_required: विवरण खाली नहीं हो सकता
+    example_blocked: उदाहरण उपयोगकर्ता एडमिन कार्य नहीं कर सकते
+    group_not_found: समूह नहीं मिला
+    group_users_load_error: समूह उपयोगकर्ताओं को लोड करने में विफल
+    groups_load_error: समूहों को लोड करने में विफल
+    groups_stats_error: समूह आँकड़े लोड करने में विफल
+    instance_exists: प्रकार को हटाया नहीं जा सकता क्योंकि इसके {count} संबद्ध इंस्टेंस हैं।
+    insufficient_permissions: इस कार्य के लिए अपर्याप्त अनुमतियाँ
+    invalid_group_id: अमान्य group_id। यह 00-99 होना चाहिए
+    invalid_id: अमान्य id
+    invalid_upload_count: maxUploadCount एक गैर-ऋणात्मक पूर्णांक होना चाहिए (असीमित के लिए 0)।
+    invalid_upload_size: maxUploadSizeMB एक गैर-ऋणात्मक पूर्णांक होना चाहिए (असीमित के लिए 0)।
+    missing_fields: आवश्यक फ़ील्ड गायब हैं
+    missing_group_id: समूह ID गायब है
+    missing_id: id गायब है
+    missing_model_id: मॉडल id गायब है
+    missing_provider_code: providerCode पैरामीटर गायब है
+    missing_user_id: userId गायब है
+    model_update_error: मॉडल अपडेट करने में विफल
+    models_load_error: मॉडलों को लोड करने में विफल
+    no_fields: अपडेट करने के लिए कोई मान्य फ़ील्ड नहीं
+    no_group: उपयोगकर्ता को कोई समूह असाइन नहीं किया गया है
+    not_group_admin: उपयोगकर्ता ग्रुप एडमिन नहीं है
+    only_full_admin: केवल फुल एडमिन ही यह कार्य कर सकते हैं
+    promote_error: उपयोगकर्ता को प्रमोट करने में विफल
+    provider_delete_error: प्रदाता हटाने में विफल
+    provider_not_found: प्रदाता नहीं मिला
+    provider_update_error: प्रदाता अपडेट करने में विफल
+    providers_load_error: प्रदाताओं को लोड करने में विफल
+    slug_exists: स्लग पहले से मौजूद है
+    update_error: उपयोगकर्ता अपडेट करने में विफल
+    user_load_error: उपयोगकर्ता लोड करने में विफल
+    user_not_found: उपयोगकर्ता नहीं मिला
+    users_load_error: उपयोगकर्ताओं को लोड करने में विफल
+    viz_type_create_error: विज़ुअलाइज़ेशन प्रकार बनाने में विफल
+    viz_type_delete_error: विज़ुअलाइज़ेशन प्रकार हटाने में विफल
+    viz_type_update_error: विज़ुअलाइज़ेशन प्रकार अपडेट करने में विफल
+    viz_types_load_error: विज़ुअलाइज़ेशन प्रकार लोड करने में विफल
+    settings_view_forbidden: केवल पूर्ण व्यवस्थापक ही वैश्विक सेटिंग्स देख सकते हैं
+    settings_invalid_email_timeout: ईमेल सत्यापन टाइमआउट एक धनात्मक संख्या होनी चाहिए (घंटे)
+    settings_invalid_grace_period: पंजीकरण अनुग्रह अवधि एक धनात्मक संख्या होनी चाहिए (घंटे)
+    settings_invalid_upload_size: डिफ़ॉल्ट अधिकतम अपलोड आकार एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 का अर्थ असीमित)
+    settings_invalid_max_registrations: अधिकतम पंजीकरण एक धनात्मक संख्या या असीमित होना चाहिए
+    settings_invalid_email_sender: अमान्य प्रेषक ईमेल पता प्रारूप
+    settings_load_error: वैश्विक सेटिंग्स लोड करने में विफल
+    settings_save_error: वैश्विक सेटिंग्स सहेजने में विफल
+    settings_modify_forbidden: केवल पूर्ण व्यवस्थापक ही वैश्विक सेटिंग्स संशोधित कर सकते हैं
+    settings_invalid_upload_count: डिफ़ॉल्ट अधिकतम अपलोड संख्या एक गैर-ऋणात्मक पूर्णांक होनी चाहिए (0 का अर्थ असीमित)
+    settings_invalid_public_url: अमान्य सार्वजनिक URL प्रारूप
+  auth:
+    account_deleted: यह खाता हटा दिया गया है।
+    email_not_verified: ईमेल सत्यापित नहीं है। कृपया अपना इनबॉक्स और स्पैम फ़ोल्डर जाँचें।
+    example_user_blocked: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड परिवर्तन अक्षम हैं।
+    example_user_forgot_blocked: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड रीसेट अक्षम है
+    example_user_register_blocked: उदाहरण उपयोगकर्ता नए खाते नहीं बना सकते
+    example_user_reset_blocked: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड रीसेट अक्षम है
+    internal_error: आंतरिक सर्वर त्रुटि
+    invalid_credentials: अमान्य क्रेडेंशियल
+    invalid_current_password: वर्तमान पासवर्ड गलत है
+    invalid_token: अमान्य या समाप्त टोकन
+    missing_email: ईमेल आवश्यक है
+    missing_fields: फ़ील्ड गायब हैं
+    password_validation_failed: पासवर्ड सत्यापन विफल
+    token_expired: टोकन समाप्त हो गया है
+    unauthorized: अनधिकृत
+    user_not_found: उपयोगकर्ता नहीं मिला
+  datasets:
+    delete_blocked: उदाहरण उपयोगकर्ता डेटासेट नहीं हटा सकते
+    example_blocked: उदाहरण उपयोगकर्ता डेटासेट नहीं बना सकते
+    proxy_error: आंतरिक सर्वर त्रुटि
+    update_blocked: उदाहरण उपयोगकर्ता डेटासेट अपडेट नहीं कर सकते
+  profile:
+    name_required: नाम आवश्यक है
+    update_failed: प्रोफ़ाइल अपडेट करने में विफल
+  recipes:
+    create_error: रेसिपी बनाने में विफल
+    dataset_not_found: डेटासेट नहीं मिला
+    dataset_required: datasetId आवश्यक है
+    delete_error: रेसिपी हटाने में विफल
+    execute_error: रेसिपी निष्पादित करने में विफल
+    execution_load_error: निष्पादन लोड करने में विफल
+    execution_not_found: निष्पादन नहीं मिला
+    executions_load_error: निष्पादन लोड करने में विफल
+    load_error: रेसिपियों को लोड करने में विफल
+    missing_id: रेसिपी ID आवश्यक है
+    name_required: नाम और चरण आवश्यक हैं
+    not_found: रेसिपी नहीं मिली
+    not_owned: रेसिपी नहीं मिली या स्वामित्व में नहीं है
+    update_error: रेसिपी अपडेट करने में विफल
+  register:
+    email_exists: ईमेल पहले से मौजूद है
+    internal_error: आंतरिक सर्वर त्रुटि
+    invalid_email: अमान्य ईमेल प्रारूप
+    limit_reached: पंजीकरण सीमा तक पहुँच गया है (अधिकतम {max_reg} उपयोगकर्ता)।
+    missing_fields: फ़ील्ड गायब हैं
+    password_validation_failed: पासवर्ड सत्यापन विफल
+    settings_not_found: वैश्विक सेटिंग्स नहीं मिलीं
+  settings:
+    load_failed: सेटिंग्स लोड करने में विफल
+    save_failed: सेटिंग्स सहेजने में विफल
+    user_not_found: उपयोगकर्ता नहीं मिला
+  user:
+    api_key_required: इस प्रदाता के लिए API कुंजी आवश्यक है
+    connection_name_exists: इस नाम से एक कनेक्शन पहले से मौजूद है
+    connection_not_found: कनेक्शन नहीं मिला
+    example_blocked: उदाहरण उपयोगकर्ता यह क्रिया नहीं कर सकते
+    internal_error: आंतरिक सर्वर त्रुटि
+    missing_fields: आवश्यक फ़ील्ड गायब हैं
+    provider_not_found: प्रदाता "{provider}" नहीं मिला।
+    user_not_found: उपयोगकर्ता नहीं मिला
+  global_settings_load_error: आंतरिक सर्वर त्रुटि
+app:
+  name: सांख्यिकीविदों का कार्यक्षेत्र
+  version: संस्करण
+chat:
+  connection_not_found: एआई कनेक्शन नहीं मिला या पहुँच योग्य नहीं है।
+  connections_load_error: कनेक्शन लोड करने में विफल
+  delete: हटाएँ
+  delete_confirm: क्या आप वाकई यह चैट हटाना चाहते हैं?
+  delete_error: चैट हटाने में विफल
+  delete_success: चैट हटा दी गई
+  empty_state: बातचीत शुरू करने के लिए संदेश भेजें।
+  go_to_ai_settings: AI सेटिंग्स पर जाएँ
+  history: चैट इतिहास
+  input_placeholder: अपना संदेश लिखें...
+  load_error: चैट लोड करने में विफल
+  models_load_error: मॉडल लोड करने में विफल
+  new_chat: नई चैट
+  no_chat_selected: कोई सक्रिय चैट नहीं
+  no_chats: अभी तक कोई चैट नहीं
+  no_connections_message: चैट का उपयोग करने से पहले आपको कम से कम एक AI कनेक्शन परिभाषित करना होगा।
+  no_models: इस कनेक्शन के लिए कोई मॉडल उपलब्ध नहीं है
+  rename: नाम बदलें
+  rename_empty: शीर्षक खाली नहीं हो सकता
+  rename_error: चैट का नाम बदलने में विफल
+  rename_success: चैट का नाम बदला गया
+  select_connection: AI कनेक्शन
+  select_connection_first: कृपया पहले एक AI कनेक्शन चुनें।
+  select_connection_placeholder: एक AI कनेक्शन चुनें
+  select_model: मॉडल
+  select_model_placeholder: एक मॉडल चुनें
+  send_error: संदेश भेजने में विफल
+  title: चैट
+common:
+  access_denied_admin: पहुँच अस्वीकृत — केवल व्यवस्थापक।
+  audio_settings: ऑडियो सेटिंग्स
+  back: वापस
+  cancel: रद्द करें
+  cannot_undo: यह क्रिया पूर्ववत नहीं की जा सकती।
+  clear: साफ़ करें
+  close: बंद करें
+  close_navigation: नेविगेशन बंद करें
+  copied: कॉपी हो गया!
+  copy: कॉपी करें
+  copy_to_clipboard: क्लिपबोर्ड पर कॉपी करें
+  delete: हटाएँ
+  delete_chat: चैट हटाएँ
+  deleting: हटाया जा रहा है...
+  dismiss: ख़ारिज करें
+  dismiss_error: त्रुटि ख़ारिज करें
+  dismiss_success: सफलता ख़ारिज करें
+  edit: संपादित करें
+  error_label: त्रुटि
+  false_label: गलत
+  generating: जनरेट हो रहा है...
+  has_more_information: अधिक जानकारी है
+  loading: लोड हो रहा है...
+  microphone_off: माइक्रोफ़ोन बंद
+  microphone_on: माइक्रोफ़ोन चालू
+  next: अगला
+  no_answer: कोई उत्तर नहीं मिला
+  no_permission: आपको यह पृष्ठ देखने की अनुमति नहीं है।
+  open_navigation: नेविगेशन खोलें
+  reset_to_defaults: डिफ़ॉल्ट पर रीसेट करें
+  restoring: पुनर्स्थापित किया जा रहा है...
+  save: सहेजें
+  saving: सहेजा जा रहा है...
+  select_language: भाषा चुनें
+  sending: भेजा जा रहा है...
+  speaker_off: स्पीकर बंद
+  speaker_on: स्पीकर चालू
+  speech_input_unsupported: 'आपके ब्राउज़र में वाक इनपुट समर्थित नहीं है। संगत ब्राउज़र: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: माइक्रोफ़ोन की अनुमति अस्वीकृत कर दी गई। कृपया अपनी ब्राउज़र सेटिंग्स में माइक्रोफ़ोन की अनुमति दें।
+  speech_mic_failed: 'माइक्रोफ़ोन प्रारंभ करने में विफल: {error}.'
+  speech_network_error: वाक पहचान नेटवर्क त्रुटि — अपना इंटरनेट कनेक्शन जाँचें और पुनः प्रयास करें।
+  speech_output_unsupported: 'आपके ब्राउज़र में वाक आउटपुट समर्थित नहीं है। संगत ब्राउज़र: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'वाक पहचान त्रुटि: {error}. पुनः प्रयास करें।'
+  success_label: सफलता
+  system_default: सिस्टम डिफ़ॉल्ट
+  testing: परीक्षण हो रहा है...
+  true_label: सही
+  unknown: अज्ञात
+  unknown_error: अज्ञात त्रुटि
+  untitled: शीर्षकहीन
+  uploading: अपलोड हो रहा है...
+  verifying: सत्यापित किया जा रहा है...
+  view: देखें
+  view_dataset: डेटासेट देखें
+  voice: आवाज़
+  audio_pause: रोकें
+  audio_resume: जारी रखें
+  audio_stop: बंद करें
+  email_features_unavailable: ईमेल-आधारित खाता सुविधाएँ उपलब्ध नहीं हैं।
+  ai_max_tokens_label: अधिकतम आउटपुट टोकन
+  probe_timeout_label: मॉडल परीक्षण समयसीमा (सेकंड)
+  ai_timeout_label: अधिकतम AI समय
+  ai_temperature_label: तापमान
+  ai_models: AI मॉडल
+  connect_timeout_label: कनेक्शन टाइमआउट (सेकंड)
+components:
+  active_checkmark: ✓
+  audio_settings_dialog:
+    close: बंद करें
+    pitch_label: 'पिच: {0}'
+    reset_to_defaults: डिफ़ॉल्ट पर रीसेट करें
+    speed_label: 'गति: {0}x'
+    system_default: सिस्टम डिफ़ॉल्ट
+    title: ऑडियो सेटिंग्स
+    voice: आवाज़
+  example_user_badge: उदाहरण उपयोगकर्ता
+  example_user_badge_tooltip: पूर्ण एक्सेस के लिए पंजीकरण करें
+  example_user_banner:
+    message: आप सिस्टम को केवल-पठन मोड में देख रहे हैं। संसाधन बनाने और संशोधित करने के लिए पूर्ण एक्सेस हेतु पंजीकरण करें।
+    message_short: केवल-पठन मोड - पूर्ण एक्सेस के लिए पंजीकरण करें
+    register_button: पूर्ण एक्सेस के लिए पंजीकरण करें
+    register_short: पंजीकरण करें
+    title: उदाहरण उपयोगकर्ता मोड
+  feature_gate:
+    upgrade_message: इस सुविधा के लिए कॉर्पोरेट लाइसेंस आवश्यक है। अपग्रेड विकल्पों के लिए Sentuny से संपर्क करें।
+    upgrade_title: कॉर्पोरेट सुविधा
+  group_admin_badge: समूह व्यवस्थापक
+  preparation_preview:
+    more_columns: +{0} और
+    null_value: नल
+    rows_removed: '{0} हटाया गया'
+  readonly_wrapper:
+    message: केवल-पठन मोड - इस सामग्री को संशोधित करने के लिए पूर्ण एक्सेस हेतु पंजीकरण करें
+  return_banner:
+    link: अपने सत्र पर लौटें
+    text: आप एक AI रेसिपी पर काम कर रहे थे।
+    recipe_text: आप एक रेसिपी पर काम कर रहे थे।
+    fallback_link: वापस जाएँ
+    recipe_link: अपनी रेसिपी पर वापस जाएँ
+  data_value:
+    some_content_not_shown: कुछ सामग्री नहीं दिखाई गई
+database:
+  connection:
+    add_first: अपना पहला कनेक्शन जोड़ें
+    add_new: नया कनेक्शन जोड़ें
+    add_success: कनेक्शन सफलतापूर्वक जोड़ा गया
+    add_title: नया कनेक्शन जोड़ें
+    auto_create_tables: टेबल डेटासेट स्वतः बनाएँ
+    auto_create_title: डेटासेट स्वतः बनाएँ
+    auto_create_views: व्यू डेटासेट स्वतः बनाएँ
+    auto_create_warnings_title: 'कनेक्शन सहेजा गया, लेकिन डेटासेट स्वतः-निर्माण में चेतावनियाँ थीं:'
+    browse_tables: टेबल ब्राउज़ करें
+    by_label: द्वारा
+    clear_default: डिफ़ॉल्ट साफ़ करें
+    currently_not_shared: ❌ वर्तमान में साझा नहीं है
+    currently_shared: ✅ वर्तमान में समूह के साथ साझा है
+    database_label: डेटाबेस नाम
+    datasets_created: '{n} डेटासेट बनाए गए'
+    db_create_badge: DB बनाएँ
+    default_badge: डिफ़ॉल्ट
+    default_cleared: डिफ़ॉल्ट कनेक्शन साफ़ किया गया
+    default_set: डिफ़ॉल्ट कनेक्शन अपडेट किया गया
+    delete_button: हटाएँ
+    delete_confirmation: क्या आप वाकई कनेक्शन हटाना चाहते हैं?
+    delete_error: कनेक्शन हटाने में विफल
+    delete_title: कनेक्शन हटाएँ
+    deleted: कनेक्शन हटाया गया
+    edit_title: कनेक्शन संपादित करें
+    file_path_label: फ़ाइल पथ
+    form_description: अपने डेटाबेस कनेक्शन का विवरण दर्ज करें।
+    group_label: समूह
+    host_label: होस्ट
+    jet_host_label: Jet सर्वर होस्ट
+    jet_port_label: Jet सर्वर पोर्ट
+    load_error: कनेक्शन लोड करने में विफल
+    name_label: कनेक्शन नाम
+    name_placeholder: जैसे, प्रोडक्शन DB
+    no_connections: अभी तक कोई डेटाबेस कनेक्शन सहेजा नहीं गया है।
+    not_found: कनेक्शन नहीं मिला
+    password_label: पासवर्ड
+    port_label: पोर्ट
+    save_error: कनेक्शन सहेजने में विफल
+    select_type: प्रकार चुनें
+    set_default: डिफ़ॉल्ट के रूप में सेट करें
+    shared_badge: साझा
+    shared_description: इस कनेक्शन को अपने समूह के अन्य उपयोगकर्ताओं के लिए उपलब्ध कराएं।
+    shared_label: समूह के साथ साझा करें
+    shared_readonly: साझा
+    shared_readonly_message: यह कनेक्शन आपके साथ साझा किया गया है। आप इसे देख सकते हैं, लेकिन संपादन केवल स्वामी तक सीमित है।
+    tables_badge: टेबल
+    test_button: कनेक्शन का परीक्षण करें
+    test_failed: कनेक्शन विफल
+    test_incomplete: परीक्षण से पहले कृपया सभी फ़ील्ड भरें
+    test_network_error: कनेक्शन का परीक्षण करते समय नेटवर्क त्रुटि।
+    test_success: कनेक्शन सफल रहा!
+    type_label: डेटाबेस प्रकार
+    unknown_user: अज्ञात
+    update_success: कनेक्शन सफलतापूर्वक अपडेट किया गया
+    username_label: उपयोगकर्ता नाम
+    probe_state:
+      no_permission: कोई अनुमति नहीं
+      incomplete: अधूरा सेटअप
+      reachable: पहुँच योग्य
+      no_database: कोई डेटाबेस नहीं
+      unknown: जाँच नहीं की गई
+      auth_failed: प्रमाणीकरण विफल
+      schema_error: स्कीमा अपठनीय
+      unreachable: पहुँच योग्य नहीं
+    probe_minutes_ago: '{count} मिनट पहले'
+    probe_check_now: अभी जाँचें
+    probe_hours_ago: '{count} घंटे पहले'
+    probe_just_now: अभी-अभी
+    probe_never: कभी नहीं
+    probe_title: पिछली जाँच
+    probe_checked: जाँचा गया
+    probe_minute_ago: 1 मिनट पहले
+    probe_auto_hint: कनेक्शन सूची लोड होने पर स्वचालित रूप से अपडेट हो जाता है।
+    probe_no_success: कोई सफल जाँच दर्ज नहीं की गई
+    probe_last_succeeded: पिछली सफलता
+    probe_hour_ago: 1 घंटा पहले
+    probe_check_failed: अभी कनेक्शन की जाँच नहीं की जा सकी।
+    probe_unsaved_hint: कनेक्शन सहेजे जाते ही उसकी जाँच की जाती है।
+  default_hint: जब कोई विश्लेषण रेसिपी कनेक्शन निर्दिष्ट नहीं करती है तो डिफ़ॉल्ट कनेक्शन का उपयोग फ़ॉलबैक के रूप में किया जाता है।
+  title: डेटाबेस सेटिंग्स
+datasets:
+  all_datasets: सभी डेटा
+  browse:
+    back: वापस
+    browse_tables: टेबल ब्राउज़ करें
+    column: कॉलम
+    columns_title: कॉलम — {table}
+    connections: कनेक्शन
+    load_columns_error: कॉलम लोड करने में विफल
+    load_preview: पूर्वावलोकन लोड करें
+    load_preview_error: पूर्वावलोकन लोड करने में विफल
+    load_tables_error: टेबल लोड करने में विफल
+    nullable: नल योग्य
+    preview: पूर्वावलोकन
+    preview_hint: नमूना पंक्तियाँ देखने के लिए "पूर्वावलोकन लोड करें" पर क्लिक करें।
+    select_table_hint: इसके कॉलम देखने और डेटा का पूर्वावलोकन करने के लिए एक टेबल चुनें।
+    tables: टेबल
+    tables_count: '{count} टेबल'
+    type: प्रकार
+  by_label: द्वारा
+  created_label: निर्मित
+  database_label: DB
+  define_button: डेटाबेस कनेक्ट करें
+  define_first: एक डेटाबेस कनेक्ट करें
+  delete:
+    confirm: क्या यह डेटासेट हटाएँ?
+    error: डेटासेट हटाने में विफल
+    success: डेटासेट '{id}' सफलतापूर्वक हटा दिया गया।
+    title: हटाएँ
+  description:
+    empty: जनरेटेड विवरण खाली है। कृपया AI प्रदाता कॉन्फ़िगरेशन जाँचें।
+    error: विवरण जनरेट करने में विफल।
+    generated: विवरण सफलतापूर्वक जनरेट किया गया।
+    title: जनरेटेड विवरण
+  detail:
+    created: निर्मित
+    descriptions: AI विवरण
+    generated: जनरेटेड
+    load_error: डेटासेट लोड करने में विफल
+    model: मॉडल
+    no_description: कोई विवरण नहीं
+    not_found: डेटासेट नहीं मिला
+    not_found_message: जिस डेटासेट को आप खोज रहे हैं वह नहीं मिला।
+    overview: अवलोकन
+    rows: पंक्तियाँ
+    rows_not_computed_hint: जॉइन अभी तक चलाया नहीं गया है, इसलिए अभी तक कोई पंक्ति गणना नहीं है।
+    storage_table: सहेजी गई तालिका
+    materialize_failed: 'सहेजी गई तालिका नहीं बनाई जा सकी:'
+    rows_not_computed: गणना नहीं की गई
+    storage_live: लाइव व्यू
+  list_error: डेटासेट लोड करने में विफल
+  no_datasets: कोई डेटा उपलब्ध नहीं है।
+  no_uploaded: अभी तक कोई अपलोड किया गया डेटासेट नहीं है।
+  preparation:
+    add_operation: ऑपरेशन जोड़ें
+    add_rule: नियम जोड़ें
+    column_required: ऑपरेशन के लिए एक कॉलम आवश्यक है
+    columns_required: ऑपरेशन के लिए कम से कम एक कॉलम आवश्यक है
+    delete_confirmation: क्या आप वाकई परिवर्तन नियम "{name}" को हटाना चाहते हैं? यह इसे उपयोग करने वाली किसी भी रेसिपी से भी हटा देगा।
+    delete_error: परिवर्तन नियम हटाने में विफल
+    delete_title: परिवर्तन नियम हटाएँ
+    edit_rule: नियम संपादित करें
+    encode:
+      label: लेबल
+      one_hot: वन-हॉट
+    fill:
+      constant: स्थिरांक
+      drop: ड्रॉप
+      mean: माध्य
+      median: माध्यिका
+      mode: बहुलक
+    filter_invalid: फ़िल्टर ऑपरेशन के लिए कॉलम और मान आवश्यक है
+    link:
+      description: इस डेटासेट को साफ़ और परिवर्तित करें
+      title: परिवर्तन
+    name_required: नियम का नाम आवश्यक है
+    new_name_required: नाम बदलने के ऑपरेशन के लिए नया नाम आवश्यक है
+    new_rule: नया नियम
+    no_rules: इस डेटासेट के लिए कोई परिवर्तन नियम परिभाषित नहीं है।
+    operation:
+      convert_type: प्रकार बदलें
+      drop_columns: कॉलम ड्रॉप करें
+      encode: एनकोड करें
+      fill_missing: अनुपलब्ध भरें
+      filter: फ़िल्टर
+      normalize: सामान्यीकृत करें
+      rename_column: कॉलम का नाम बदलें
+      standardize: मानकीकृत करें
+    operations: ऑपरेशन
+    operations_count: ऑपरेशन
+    operator:
+      after: बाद (>)
+      before: पहले (<)
+      contains: शामिल है
+      ends_with: से समाप्त होता है
+      equal_to: बराबर (=)
+      greater_than: से अधिक (>)
+      greater_than_or_equal: से अधिक या बराबर (>=)
+      less_than: से कम (<)
+      less_than_or_equal: से कम या बराबर (<=)
+      not_contains: शामिल नहीं है
+      not_equal: बराबर नहीं (!=)
+      on_or_after: इस तिथि को या उसके बाद (>=)
+      on_or_before: इस तिथि को या उससे पहले (<=)
+      starts_with: से शुरू होता है
+    original_data: मूल डेटा
+    placeholder:
+      boolean: सत्य / असत्य
+      datetime: YYYY-MM-DD या टाइमस्टैम्प...
+      number: एक संख्या दर्ज करें...
+      value: एक मान दर्ज करें...
+    preview: पूर्वावलोकन
+    preview_error: नियम का पूर्वावलोकन करने में विफल
+    preview_title: पूर्वावलोकन
+    rows_after: बाद
+    rows_before: पहले
+    rows_removed: हटाया गया
+    rule_created: तैयारी नियम '{name}' सफलतापूर्वक बनाया गया।
+    rule_deleted: तैयारी नियम सफलतापूर्वक हटा दिया गया।
+    rule_description: विवरण (वैकल्पिक)
+    rule_description_placeholder: संक्षिप्त विवरण
+    rule_name: नियम का नाम
+    rule_name_placeholder: उदा., विश्लेषण के लिए साफ़ करें
+    rule_updated: तैयारी नियम सफलतापूर्वक अद्यतन किया गया।
+    rules_title: परिवर्तन नियम
+    save_error: परिवर्तन नियम सहेजने में विफल
+    shared: समूह के साथ साझा करें
+    transformed_data: रूपांतरित डेटा
+    type:
+      boolean: बूलियन
+      datetime: दिनांक समय
+      numeric: संख्यात्मक
+      string: स्ट्रिंग
+    ui:
+      column: कॉलम
+      columns: कॉलम (अल्पविराम से अलग)
+      encoding: एनकोडिंग
+      method: विधि
+      new_name: नया नाम
+      operator: ऑपरेटर
+      target_type: लक्ष्य प्रकार
+      type: प्रकार
+      value: मान
+  rules_button: नियम
+  schema:
+    column_name: कॉलम
+    column_type: प्रकार
+    columns: कॉलम
+    load_error: 'स्कीमा लोड नहीं किया जा सका: {error}'
+    no_sample_data: कोई नमूना डेटा उपलब्ध नहीं
+    null_count: नल
+    sample_data: नमूना डेटा (पहले 5 पंक्तियाँ)
+    title: स्कीमा पूर्वावलोकन
+    total_columns: कुल कॉलम
+    total_rows: कुल पंक्तियाँ
+    unique_count: अद्वितीय
+  share: साझा करें
+  share_error: साझाकरण अपडेट करने में विफल
+  shared: डेटासेट साझा किया गया
+  shared_badge: साझा किया गया
+  source:
+    unknown_file: अज्ञात फ़ाइल
+  title: मेरा डेटा
+  transform_button: रूपांतरण
+  transforms:
+    back: मेरे डेटा पर वापस जाएं
+    create_button: बनाएँ
+    create_error: रूपांतरण बनाने में विफल
+    create_new: नया रूपांतरण
+    created_label: बनाया गया
+    creating: बनाया जा रहा है…
+    delete_confirm: क्या यह रूपांतरण हटाएं?
+    delete_error: रूपांतरण हटाने में विफल
+    description_label: विवरण (वैकल्पिक)
+    for: '{name} के लिए रूपांतरण'
+    load_error: रूपांतरण लोड करने में विफल
+    name_label: नाम
+    no_transforms: इस डेटासेट के लिए कोई रूपांतरण परिभाषित नहीं है।
+    operations_label: '{count} ऑपरेशन'
+    title: रूपांतरण
+  type:
+    table: तालिका
+    upload: अपलोड किया गया
+    view: दृश्य
+    virtual: वर्चुअल
+    notebook: नोटबुक
+    mysql: MySQL
+    access: MS Access
+    mssql: MS SQL
+    postgresql: PostgreSQL
+    cleaned_copy: साफ की गई प्रति
+  unknown_user: अज्ञात
+  unshare: साझाकरण रद्द करें
+  unshared: डेटासेट का साझाकरण रद्द किया गया
+  upload:
+    card_title: अपलोड करें और विवरण दें
+    connection_not_found: कनेक्शन नहीं मिला। कृपया एक मान्य AI कनेक्शन चुनें।
+    description_label: विवरण (वैकल्पिक)
+    description_placeholder: इस डेटा का संक्षिप्त विवरण
+    error: डेटासेट अपलोड करने में विफल।
+    file_label: फ़ाइल
+    file_selected: चयनित फ़ाइल
+    file_too_large: फ़ाइल अधिकतम अपलोड आकार {max}MB से अधिक है। अपलोड की अनुमति नहीं है।
+    generate_description: विवरण जनरेट करें
+    history: अपलोड इतिहास
+    limit_reached: सीमा पूरी हुई
+    limit_reached_message: आप डेटासेट की अधिकतम अनुमत संख्या ({count}) तक पहुँच गए हैं।
+    name_label: डेटा का नाम
+    name_placeholder: मेरा डेटा
+    no_connections: विवरण जनरेट करने के लिए आपको कम से कम एक AI कनेक्शन परिभाषित करना होगा।
+    no_datasets: अभी तक कोई डेटासेट नहीं
+    no_file: कृपया पहले एक फ़ाइल चुनें।
+    no_name: कृपया डेटासेट का नाम दर्ज करें।
+    select_dataset: कृपया पहले एक डेटासेट अपलोड करें या चुनें।
+    shared_description: इस डेटा को अपने समूह के अन्य उपयोगकर्ताओं के लिए उपलब्ध कराएं।
+    shared_group_hint: 'समूह: {group} - {description}'
+    shared_label: समूह के साथ साझा करें
+    success: डेटासेट '{name}' सफलतापूर्वक अपलोड किया गया।
+    title: डेटा अपलोड करें
+    upload_button: अपलोड करें
+    escalation_hint: केवल इसी प्रयास में इसका उपयोग होता है। यदि इस मॉडल को आमतौर पर अधिक समय चाहिए, तो हर बार इसे बढ़ाने के बजाय कनेक्शन की मॉडल सेटिंग्स ट्यून करें।
+    escalation_invalid: 1 और {max} के बीच पूरे सेकंड की संख्या दर्ज करें
+    escalation_retry: पुनः प्रयास करें
+    escalation_label: (सेकंड) के साथ पुनः प्रयास करें
+    escalation_failed_at: विवरण {seconds} सेकंड के बाद टाइमआउट हो गया।
+  upload_button: डेटा अपलोड करें
+  upload_count: '{count} अपलोड'
+  upload_first: अपनी पहली डेटा फ़ाइल अपलोड करें
+  upload_first_file: अपनी पहली फ़ाइल अपलोड करें
+  upload_new: नई फ़ाइल अपलोड करें
+  uploaded_title: अपलोड किया गया डेटा
+  view_dataset_title: डेटासेट देखें
+  view_schema: स्कीमा देखें
+  filter:
+    virtual: वर्चुअल
+    postgresql: PostgreSQL
+    mssql: MS SQL
+    cleaned: साफ़ किया गया
+    all: सभी
+    access: MS Access
+    not_shared: साझा नहीं किया गया
+    label: फ़िल्टर
+    mysql: MySQL
+    no_match: इस फ़िल्टर से कोई डेटासेट मेल नहीं खाता।
+    uploads: अपलोड्स
+    shared: साझा किया गया
+    notebooks: नोटबुक्स
+  source_unavailable: स्रोत अनुपलब्ध
+  created_from: '{name} से बनाया गया'
+  cleaned_badge: साफ़ किया गया
+  table_not_built: टेबल नहीं बनी
+define:
+  column_name: कॉलम
+  column_type: प्रकार
+  connection_label: डेटाबेस कनेक्शन
+  dataset_name: डेटासेट का नाम
+  dataset_name_placeholder: उदा., ग्राहक डेटा
+  description_label: विवरण (वैकल्पिक)
+  description_placeholder: इस डेटासेट का संक्षिप्त विवरण
+  existing_none: कोई नहीं
+  existing_title: मौजूदा
+  go_to_db_settings: डेटाबेस सेटिंग पर जाएं
+  load_connections_error: कनेक्शन लोड करने में विफल
+  load_sources_error: स्रोत लोड करने में विफल
+  name_required: डेटासेट का नाम आवश्यक है
+  no_connections_message: डेटाबेस कनेक्ट करने से पहले आपको कम से कम एक डेटाबेस कनेक्शन परिभाषित करना होगा।
+  no_sources: इस डेटाबेस में कोई तालिका या दृश्य नहीं मिला।
+  nullable: नल योग्य
+  preview_label: डेटा का पूर्वावलोकन (पहले 10 पंक्तियाँ)
+  save_button: डेटासेट सहेजें
+  save_error: डेटासेट बनाने में विफल
+  save_success: डेटासेट सफलतापूर्वक बनाया गया
+  schema_label: स्कीमा
+  select_connection: एक कनेक्शन चुनें
+  select_source: एक स्रोत चुनें
+  select_source_first: कृपया पहले एक तालिका या दृश्य चुनें
+  shared_description: इस डेटासेट को अपने समूह के अन्य उपयोगकर्ताओं के लिए उपलब्ध कराएं।
+  shared_label: समूह के साथ साझा करें
+  source_label: स्रोत
+  source_type_label: स्रोत प्रकार
+  step1_description: डेटासेट कनेक्ट करने के लिए एक डेटाबेस कनेक्शन चुनें।
+  step1_title: डेटाबेस कनेक्शन चुनें
+  step2_description: चुनें कि टेबल उपयोग करनी है या व्यू, फिर स्रोत चुनें।
+  step2_title: स्रोत चुनें
+  step3_description: चयनित स्रोत से कॉलम की समीक्षा करें और डेटा का पूर्वावलोकन करें।
+  step3_title: स्रोत सत्यापित करें
+  step4_description: अपने डेटासेट को नाम और विवरण दें, फिर उसे सहेजें।
+  step4_title: नाम दें और सहेजें
+  step_connection: कनेक्शन
+  step_save: सहेजें
+  step_source: स्रोत
+  step_verify: सत्यापित करें
+  table: टेबल
+  title: डेटाबेस कनेक्ट करें
+  verify_button: स्रोत सत्यापित करें
+  verify_error: टेबल/व्यू सत्यापित करने में विफल
+  verify_success: टेबल/व्यू सफलतापूर्वक सत्यापित हुआ
+  view: व्यू
+demo:
+  badge: डेमो
+  banner:
+    message: यह एक डेमो सिस्टम है। डेटा समय-समय पर रीसेट किया जा सकता है।
+    title: ⚠️ डेमो मोड
+forgot_password:
+  back_to_login: लॉगिन पर वापस जाएं
+  check_spam: यदि कुछ मिनटों में ईमेल न दिखे तो कृपया अपना स्पैम फ़ोल्डर जांचें।
+  description: अपना ईमेल पता दर्ज करें और हम आपको पासवर्ड रीसेट करने का लिंक भेजेंगे।
+  error: रीसेट ईमेल भेजने में विफल
+  sent: यदि इस ईमेल से कोई खाता मौजूद है, तो आपको पासवर्ड रीसेट लिंक प्राप्त होगा।
+  sent_description: यदि इस ईमेल से कोई खाता मौजूद है, तो आपको पासवर्ड रीसेट लिंक प्राप्त होगा।
+  sent_title: ईमेल भेजा गया
+  submit: रीसेट लिंक भेजें
+  title: पासवर्ड भूल गए
+global:
+  demo_mode:
+    description: सक्षम होने पर, सिस्टम डेमो मोड में चलता है।
+    label: डेमो मोड
+  email_sender:
+    hint: वह ईमेल पता जिससे सत्यापन ईमेल भेजे जाते दिखेंगे।
+    label: ईमेल प्रेषक पता
+  email_timeout:
+    hint: ईमेल सत्यापन लिंक कितने घंटों तक मान्य रहता है।
+    label: ईमेल सत्यापन समय सीमा (घंटे)
+  grace_period:
+    hint: सॉफ्ट-डिलीट किए गए खातों को स्थायी रूप से हटाने से पहले के घंटे।
+    label: विलोपन विलंब (घंटे)
+  invalid_grace_period: कृपया विलोपन विलंब (घंटे) के लिए एक मान्य धनात्मक संख्या दर्ज करें
+  invalid_number: कृपया अधिकतम पंजीकरण के लिए एक मान्य धनात्मक संख्या दर्ज करें
+  invalid_timeout: कृपया सत्यापन समय सीमा (घंटे) के लिए एक मान्य धनात्मक संख्या दर्ज करें
+  load_error: वैश्विक सेटिंग्स लोड करने में विफल
+  max_registrations:
+    custom: कस्टम (नीचे दर्ज करें)
+    custom_placeholder: एक धनात्मक संख्या दर्ज करें
+    hint: कितने उपयोगकर्ता पंजीकरण कर सकते हैं, इस पर सीमा निर्धारित करें।
+    label: अधिकतम उपयोगकर्ता पंजीकरण
+    placeholder: सीमा चुनें
+    unlimited: असीमित
+    users: उपयोगकर्ता
+  password_policy:
+    custom: कस्टम
+    high: उच्च (न्यूनतम 10, अपरकेस, लोअरकेस, अंक, विशेष वर्ण)
+    hint: उपयोगकर्ता पंजीकरण और पासवर्ड बदलने के लिए पासवर्ड जटिलता आवश्यकताएँ चुनें।
+    label: पासवर्ड नीति
+    low: निम्न (न्यूनतम 6 अक्षर)
+    medium: मध्यम (न्यूनतम 8, अपरकेस, लोअरकेस, अंक)
+    min_length: न्यूनतम लंबाई
+    min_strength: न्यूनतम मजबूती (zxcvbn स्कोर 0-4)
+    require_digit: अंक आवश्यक करें
+    require_lowercase: लोअरकेस आवश्यक करें
+    require_special: विशेष वर्ण आवश्यक करें
+    require_uppercase: अपरकेस आवश्यक करें
+    select: नीति चुनें
+  public_url:
+    hint: ईमेल सत्यापन लिंक में उपयोग किया जाने वाला आधार URL (जैसे, https://workbench.example.com)।
+    label: सार्वजनिक URL
+  save_button: वैश्विक सेटिंग्स सहेजें
+  save_success: वैश्विक सेटिंग्स सहेजी गईं
+  system:
+    description: सभी उपयोगकर्ताओं पर लागू होने वाली वैश्विक सेटिंग्स प्रबंधित करें (केवल व्यवस्थापक)।
+    title: सिस्टम कॉन्फ़िगरेशन
+  title: वैश्विक सेटिंग्स
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: प्रति उपयोगकर्ता डेटासेट की अधिकतम संख्या (0 = असीमित)। नए उपयोगकर्ताओं पर लागू।
+    count_unlimited: असीमित
+    default_count_label: प्रति उपयोगकर्ता डिफ़ॉल्ट अधिकतम अपलोड संख्या
+    default_size_label: प्रति उपयोगकर्ता डिफ़ॉल्ट अधिकतम अपलोड आकार (MB)
+    select_count: सीमा चुनें
+    select_size: सीमा चुनें
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: प्रति उपयोगकर्ता अधिकतम कुल संग्रहण (0 = असीमित)। नए उपयोगकर्ताओं पर लागू।
+    size_unlimited: असीमित
+  welcome:
+    hint: यह संदेश लॉगिन पृष्ठ पर दिखाई देगा। इसे छिपाने के लिए खाली छोड़ें।
+    label: स्वागत संदेश
+    placeholder: लॉगिन पृष्ठ पर प्रदर्शित करने के लिए स्वागत संदेश दर्ज करें।
+home:
+  welcome_placeholder: सांख्यिकीविदों के कार्यक्षेत्र में आपका स्वागत है
+licence:
+  admin_required: लाइसेंस जानकारी देखने के लिए आपको व्यवस्थापक होना आवश्यक है।
+  delete_button: लाइसेंस हटाएँ
+  delete_confirm: यह सिस्टम को ओपन-सोर्स मोड में वापस कर देगा। सभी गेटेड सुविधाएँ अक्षम हो जाएँगी। नया लाइसेंस स्थापित करके आप उन्हें पुनर्स्थापित कर सकते हैं।
+  delete_error: लाइसेंस हटाने में विफल।
+  delete_no: रद्द करें
+  delete_success: लाइसेंस हटा दिया गया। ओपन-सोर्स मोड में चल रहा है।
+  delete_title: लाइसेंस हटाएँ
+  delete_yes: हाँ, लाइसेंस हटाएँ
+  description: वर्तमान सुविधा लाइसेंस और टियर जानकारी।
+  details_label: लाइसेंस विवरण
+  expires_at_label: समाप्ति
+  features_label: सक्षम सुविधाएँ
+  install_button: लाइसेंस स्थापित करें
+  install_error: लाइसेंस स्थापित करने में विफल।
+  install_no_file: कोई फ़ाइल चयनित नहीं।
+  install_success: लाइसेंस सफलतापूर्वक स्थापित हो गया।
+  issued_at_label: जारी किया गया
+  issued_to_label: जारी किया गया
+  load_error: लाइसेंस जानकारी लोड करने में विफल।
+  max_users_label: लाइसेंस प्राप्त उपयोगकर्ता
+  no_features: वर्तमान में कोई गेटेड सुविधाएँ सक्षम नहीं हैं।
+  open_source_message: यह इंस्टॉलेशन ओपन-सोर्स मोड में चल रहा है। कॉर्पोरेट लाइसेंस में अपग्रेड करने के लिए Sentuny से संपर्क करें।
+  preview_error: लाइसेंस फ़ाइल सत्यापित करने में विफल।
+  preview_invalid: अमान्य लाइसेंस फ़ाइल।
+  preview_title: लाइसेंस पूर्वावलोकन
+  tier_label: टियर
+  title: लाइसेंस स्थिति
+  upload_title: लाइसेंस फ़ाइल अपलोड करें
+login:
+  account_deleted: यह खाता हटा दिया गया है।
+  description: अपने खाते में साइन इन करें
+  docs_more_info: अधिक जानकारी है
+  email: ईमेल
+  email_not_verified: ईमेल सत्यापित नहीं है। कृपया अपना इनबॉक्स और स्पैम फ़ोल्डर जाँचें।
+  email_verified: ईमेल सफलतापूर्वक सत्यापित हो गया! अब आप लॉग इन कर सकते हैं।
+  forgot_password: पासवर्ड भूल गए?
+  invalid_credentials: अमान्य ईमेल या पासवर्ड।
+  invalid_token: अमान्य सत्यापन लिंक। कृपया नया अनुरोध करें।
+  missing_token: कोई सत्यापन टोकन प्रदान नहीं किया गया।
+  no_account: खाता नहीं है?
+  password: पासवर्ड
+  register_link: पंजीकरण करें
+  resend_link: सत्यापन ईमेल पुनः भेजें?
+  signing_in: साइन इन हो रहा है...
+  submit: लॉगिन
+  success: सफलतापूर्वक लॉग इन हुए
+  title: लॉगिन
+  token_expired: सत्यापन लिंक समाप्त हो गया है। कृपया नया अनुरोध करें।
+nav:
+  about: परिचय
+  admin: व्यवस्थापक
+  admin_groups: समूह विवरण
+  admin_licence: लाइसेंस
+  admin_panel: उपयोगकर्ता प्रबंधन
+  admin_providers: AI प्रदाता
+  admin_setup: सेटअप
+  admin_setup_internal: आंतरिक
+  admin_setup_limits: सीमाएँ
+  admin_setup_options: विकल्प
+  admin_visualization_types: विज़ुअलाइज़ेशन प्रकार
+  ai_analysis_rules: रेसिपी संपादक
+  ai_chat: AI उपकरण
+  ai_database_design: डेटाबेस डिज़ाइन
+  ai_dataset_cleaning: डेटासेट सफाई
+  ai_general: सामान्य
+  ai_virtual_datasets: वर्चुअल डेटासेट
+  home: होम
+  logout: लॉगआउट
+  user: उपयोगकर्ता
+  admin_setup_tuning: ट्यूनिंग
+  ai_testing: AI परीक्षण
+notebooks:
+  and_more: +{count} और
+  cant_create_tables: यह कनेक्शन तालिकाएँ नहीं बना सकता — आयात अस्वीकृत
+  cells_label: 'सेल:'
+  connection_create_db_badge: DB निर्माण
+  connection_form_label: कनेक्शन
+  connection_tables_badge: तालिकाएँ
+  connection_unavailable: डेटाबेस कनेक्शन नहीं मिला या पहुँच योग्य नहीं है
+  create_dataset: डेटासेट स्वचालित रूप से बनाएँ
+  create_new_database: नया डेटाबेस बनाएँ
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrame:'
+  dataset_created: डेटासेट बनाया गया
+  delete_confirm: आयात "{name}" और उसकी सभी तालिकाएँ हटाएँ?
+  delete_failed: आयात हटाने में विफल
+  delete_title: आयात हटाएँ
+  detected_dataframes: 'पहचाने गए DataFrame:'
+  doc_preview: 'दस्तावेज़ीकरण पूर्वावलोकन:'
+  example_banner: आप एक उदाहरण उपयोगकर्ता के रूप में देख रहे हैं। नोटबुक आयात और प्रबंधित करने के लिए पंजीकरण करें।
+  example_blocked: उदाहरण उपयोगकर्ता नोटबुक आयात नहीं कर सकते।
+  example_register: पंजीकरण करें
+  fetch_error: आयात प्राप्त करने में विफल
+  import_button: नोटबुक आयात करें
+  import_complete: आयात पूर्ण
+  import_deleted: आयात हटाया गया
+  import_failed: 'नोटबुक आयात विफल: {error}'
+  import_success: '{count} तालिका(एँ) सफलतापूर्वक आयात की गईं'
+  import_title: Jupyter नोटबुक आयात
+  imported_at_label: 'आयातित समय:'
+  importing: आयात हो रहा है...
+  kb_unit: KB
+  kernel_label: 'कर्नेल:'
+  list_title: नोटबुक आयात
+  no_dataframes: इस नोटबुक में कोई DataFrame नहीं मिला।
+  no_imports: अभी तक कोई नोटबुक आयात नहीं हुआ है।
+  notebook_label: 'नोटबुक:'
+  parse_error: नोटबुक पार्स करने में विफल
+  parsing: पार्स किया जा रहा है...
+  preview_button: पूर्वावलोकन
+  rows_cols_format: '{rows} पंक्तियाँ × {cols} स्तंभ'
+  run_preview_first: क्या आयात किया जाएगा यह देखने के लिए पूर्वावलोकन चलाएँ।
+  sanitised_notice: सुरक्षा कारणों से कोड सेल हटा दिए गए हैं। केवल डेटा आउटपुट और मार्कडाउन सुरक्षित रखे गए हैं।
+  select_connection: एक डेटाबेस कनेक्शन चुनें
+  select_connection_placeholder: कनेक्शन चुनें...
+  select_file_first: कृपया एक .ipynb फ़ाइल चुनें
+  share_error: केवल स्वामी ही साझाकरण सेटिंग्स बदल सकता है।
+  share_label: समूह के साथ साझा करें
+  shared: नोटबुक समूह के साथ साझा की गई
+  shared_badge: साझा किया गया
+  size_label: 'आकार:'
+  step1_title: 'चरण 1: फ़ाइल चुनें'
+  step2_title: 'चरण 2: पूर्वावलोकन'
+  storage_form_label: संग्रहण
+  storage_label: 'संग्रहण:'
+  table_count: '{count} तालिका{plural}'
+  tables_created_label: 'बनाई गई तालिकाएँ:'
+  title_label: 'शीर्षक:'
+  unshared: नोटबुक साझाकरण हटाया गया
+  table_name: 'टेबल: {name}'
+password:
+  strength:
+    fair: ठीक
+    good: अच्छा
+    strong: मज़बूत
+    weak: कमज़ोर
+preparation:
+  add_operation: ऑपरेशन जोड़ें
+  after: बाद
+  back_to_list: नियमों पर वापस जाएँ
+  before: पहले
+  cancel: रद्द करें
+  col:
+    categorical: श्रेणीबद्ध
+    datetime: दिनांक-समय
+    nulls: '{percent}% नल'
+    numeric: संख्यात्मक
+  cols: स्तंभ
+  column_label: स्तंभ
+  constant_value_label: स्थिर मान
+  create_first: विश्लेषण से पहले इस डेटासेट को साफ़ और तैयार करने के लिए अपना पहला ट्रांसफ़ॉर्म बनाएँ।
+  delete: हटाएँ
+  delete_confirm: क्या नियम "{name}" हटाएँ? इसे पूर्ववत नहीं किया जा सकता।
+  description_label: विवरण (वैकल्पिक)
+  duplicate: प्रतिलिपि बनाएँ
+  duplicate_suffix: (प्रतिलिपि)
+  edit: संपादित करें
+  edit_title: 'नियम संपादित करें: {name}'
+  encoding:
+    label: लेबल
+    onehot: वन-हॉट
+  encoding_param_label: एन्कोडिंग
+  live_preview: लाइव पूर्वावलोकन
+  load_error: डेटा लोड करने में विफल
+  method:
+    minmax: मिन-मैक्स
+    zscore: Z-स्कोर
+  method_label: विधि
+  name_label: नाम
+  name_required: नियम का नाम आवश्यक है
+  new_name_label: नया नाम
+  new_rule: नया नियम
+  new_title: नया ट्रांसफ़ॉर्म
+  no_rules: अभी तक कोई ट्रांसफ़ॉर्म नहीं है
+  nulls: नल
+  op:
+    convert_type: प्रकार बदलें
+    drop_column: स्तंभ हटाएँ
+    drop_duplicates: डुप्लिकेट हटाएँ
+    encode_category: श्रेणी एन्कोड करें
+    fill_missing: छूटे हुए भरें
+    filter: फ़िल्टर
+    rename_column: स्तंभ का नाम बदलें
+    normalize: सामान्य करें
+    standardize: मानकीकृत करें
+  operations_count: '{count} ऑपरेशन{itemize}'
+  operations_label: ऑपरेशन
+  operator_label: ऑपरेटर
+  ops_required: कम से कम एक ऑपरेशन आवश्यक है
+  preview: पूर्वावलोकन
+  preview_error: पूर्वावलोकन विफल रहा
+  preview_loading: पूर्वावलोकन हो रहा है...
+  preview_no_ops: पूर्वावलोकन देखने के लिए ऑपरेशन जोड़ें
+  row_impact: '{before} → {after} पंक्तियाँ'
+  rows: पंक्तियाँ
+  rule_deleted: नियम हटाया गया
+  rule_duplicated: नियम की प्रतिलिपि बनाई गई
+  rule_saved: नियम सहेजा गया
+  rules_for: '{dataset} के लिए नियम'
+  sample_data: नमूना डेटा
+  save: नियम सहेजें
+  save_error: नियम सहेजने में विफल
+  saving: सहेजा जा रहा है...
+  schema_error: डेटासेट स्कीमा लोड करने में विफल
+  select_column: -- स्तंभ चुनें --
+  select_type: -- ऑपरेशन चुनें --
+  strategy:
+    constant: स्थिर
+    drop_row: पंक्ति हटाएँ
+    mean: माध्य
+    median: माध्यिका
+    mode: बहुलक
+  strategy_label: रणनीति
+  target_type_label: लक्ष्य प्रकार
+  title: रूपांतरण — {dataset}
+  type_label: ऑपरेशन
+  value_label: मान
+profile:
+  change_password:
+    description: अपना पासवर्ड अपडेट करें।
+    title: पासवर्ड बदलें
+  change_password_button: पासवर्ड बदलें
+  confirm_password: नए पासवर्ड की पुष्टि करें
+  current_password: वर्तमान पासवर्ड
+  current_password_required: वर्तमान पासवर्ड आवश्यक है
+  dark_mode_description: लाइट और डार्क थीम के बीच टॉगल करें।
+  dark_mode_label: डार्क मोड
+  email_label: ईमेल
+  email_notifications_description: अपने खाते के बारे में ईमेल अपडेट प्राप्त करें।
+  email_notifications_label: ईमेल सूचनाएँ
+  email_unchangeable: ईमेल बदला नहीं जा सकता
+  example_user_language_hint: अपनी भाषा वरीयता बदलने के लिए पूर्ण पहुँच हेतु पंजीकरण करें।
+  example_user_name_hint: अपना नाम बदलने के लिए पूर्ण पहुँच हेतु पंजीकरण करें।
+  example_user_notifications_hint: अधिसूचना सेटिंग्स बदलने के लिए पूर्ण पहुँच हेतु पंजीकरण करें।
+  example_user_save_hint: परिवर्तन सहेजने के लिए पूर्ण पहुँच हेतु पंजीकरण करें।
+  example_user_theme_hint: थीम वरीयताएँ बदलने के लिए पूर्ण पहुँच हेतु पंजीकरण करें।
+  group_description: विवरण
+  group_id: समूह आईडी
+  group_info_title: समूह जानकारी
+  group_load_error: समूह जानकारी लोड करने में विफल
+  group_readonly_hint: आपका समूह एक व्यवस्थापक द्वारा निर्धारित किया गया है और यहाँ बदला नहीं जा सकता।
+  language_description: इंटरफ़ेस के लिए अपनी पसंदीदा भाषा चुनें।
+  language_label: भाषा
+  language_select_placeholder: भाषा चुनें
+  languages_load_error: भाषाएँ लोड करने में विफल
+  load_error: सेटिंग्स लोड करने में विफल
+  name_label: नाम
+  name_placeholder: आपका नाम
+  new_password: नया पासवर्ड
+  password_change_failed: पासवर्ड बदलने में विफल
+  password_changed: पासवर्ड सफलतापूर्वक बदल दिया गया
+  password_disabled: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड परिवर्तन अक्षम हैं
+  password_disabled_message: आप एक उदाहरण उपयोगकर्ता के रूप में लॉग इन हैं। पासवर्ड कार्य अक्षम हैं।
+  password_mismatch: नए पासवर्ड मेल नहीं खाते
+  personal:
+    description: अपनी व्यक्तिगत जानकारी और ऐप वरीयताएँ अपडेट करें।
+    title: प्रोफ़ाइल और वरीयताएँ
+  save_button: परिवर्तन सहेजें
+  save_error: प्रोफ़ाइल सहेजने में विफल
+  save_success: प्रोफ़ाइल सहेजी गई
+  title: प्रोफ़ाइल सेटिंग्स
+  update_error: प्रोफ़ाइल अपडेट करने में विफल
+  slow_threshold:
+    placeholder: साइट डिफ़ॉल्ट उपयोग करें
+    save: सीमा सहेजें
+    description: इससे अधिक समय लेने वाला मॉडल परीक्षण बहुत धीमा बताया जाता है। साइट डिफ़ॉल्ट उपयोग करने के लिए इसे खाली छोड़ें।
+    label: मेरी सीमा
+    seconds: सेकंड
+    invalid: सीमा पूरे सेकंड में होनी चाहिए, न्यूनतम 1
+    title: धीमे मॉडल की सीमा
+    saved: धीमे मॉडल की सीमा सहेजी गई
+    effective: 'वर्तमान में प्रभावी:'
+recipes:
+  add_rule: नियम जोड़ें
+  algorithm:
+    dependent_column: आश्रित चर
+    factor_column: कारक (श्रेणीबद्ध)
+    group_by: समूहबद्ध करें
+    independent_columns: स्वतंत्र चर
+    placeholder: विश्लेषण प्रकार चुनें
+    response_column: प्रतिक्रिया (संख्यात्मक)
+  back_to_recipe: रेसिपी पर वापस जाएँ
+  by_label: द्वारा
+  cancel_button: समाप्त करें
+  cancel_error: निष्पादन रद्द करने में विफल
+  cancel_success: निष्पादन रद्द किया गया
+  chart:
+    category: श्रेणी
+    count: गणना
+    value: मान
+    x_axis: X
+    y_axis: Y
+  clone: क्लोन करें
+  clone_button: क्लोन करें
+  clone_error: रेसिपी क्लोन करने में विफल
+  clone_success: रेसिपी सफलतापूर्वक क्लोन की गई
+  clone_suffix: (प्रतिलिपि)
+  column_type:
+    category: श्रेणी
+    datetime: दिनांक/समय
+    number: संख्या
+    text: पाठ
+  columns_after: स्तंभ
+  columns_before: स्तंभ
+  columns_label: स्तंभ
+  columns_label_short: स्तंभ
+  columns_required: कृपया कम से कम एक स्तंभ चुनें
+  create_error: रेसिपी बनाने में विफल
+  create_success: रेसिपी '{name}' सफलतापूर्वक बनाई गई।
+  dataset:
+    columns_label: स्तंभ
+    load_error: डेटासेट लोड करने में विफल
+    loading: डेटासेट लोड हो रहे हैं...
+    no_datasets: कोई डेटासेट उपलब्ध नहीं है
+    placeholder: एक डेटासेट चुनें
+    rows_label: पंक्तियाँ
+  dataset_label: डेटासेट
+  dataset_required: कृपया एक डेटासेट चुनें
+  delete: हटाएँ
+  delete_button: हटाएँ
+  delete_confirmation: क्या आप वाकई रेसिपी "{name}" को हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।
+  delete_title: रेसिपी हटाएँ
+  description_label: विवरण (वैकल्पिक)
+  description_placeholder: इस रेसिपी का विवरण
+  edit: संपादित करें
+  editor:
+    component_algorithm: एल्गोरिथ्म
+    component_dataset: डेटासेट / रूपांतरण
+    component_output: आउटपुट
+    create_mode: एक नई रेसिपी बनाएँ — संपादक चरण 3 में आ रहा है।
+    loading: रेसिपी लोड हो रही है...
+    name_hint: रेसिपी सहेजने से पहले एक नाम आवश्यक है।
+    name_placeholder: रेसिपी का नाम
+    name_required: रेसिपी का नाम आवश्यक है।
+    new_recipe_name: नई रेसिपी
+    placeholder: यह मैन्युअल सांख्यिकीय रेसिपी संपादक है — रेसिपियाँ वर्कबेंच का दिल हैं। मैन्युअल यूज़र इंटरफ़ेस AI इंटरफ़ेस से तेज़ है, लेकिन यदि आप वाकई अनिश्चित हैं कि क्या किया जाना चाहिए, तो संभवतः
+      आपको AI रेसिपी संपादक चाहिए। यह एक सांख्यिकी शिक्षक भी है... लेकिन यदि आप इसका उपयोग करना चाहते हैं तो आपको अपनी सेटिंग्स में एक कार्यशील AI कनेक्शन सेट करना होगा। कोई रेसिपी चुनें या नई बनाएँ।
+    run: चलाएँ
+    save: रेसिपी सहेजें
+    save_error: रेसिपी सहेजने में विफल
+    save_success: रेसिपी सहेजी गई
+  execute: निष्पादित करें
+  execute_button: निष्पादित करें
+  execute_error: 'रेसिपी निष्पादित करने में विफल: {error}'
+  execute_success: रेसिपी सफलतापूर्वक निष्पादित हुई
+  execution:
+    errors_label: 'त्रुटियाँ:'
+    failed_start: निष्पादन प्रारंभ करने में विफल
+    request_failed: निष्पादन विफल
+    results_label: 'परिणाम:'
+    rules_count: '{count} तैयारी नियम लागू किए गए।'
+    running: रेसिपी चल रही है…
+    showing_rows: कुल {total} पंक्तियों में से {count} दिखाई जा रही हैं
+  execution_error: त्रुटि
+  execution_load_error: 'निष्पादन लोड करने में विफल: {error}'
+  execution_not_found: निष्पादन '{id}' नहीं मिला।
+  execution_progress: प्रगति
+  execution_stage_results: चरण परिणाम
+  execution_started: प्रारंभ हुआ
+  execution_status: स्थिति
+  execution_title: निष्पादन परिणाम
+  executions_title: हाल के निष्पादन
+  export_results: परिणाम निर्यात करें
+  go_define: परिभाषित करें पर जाएँ
+  go_upload: अपलोड पर जाएँ
+  group_by_hint: समूहों में आँकड़ों की तुलना करने के लिए किसी श्रेणीबद्ध कॉलम से समूह बनाएँ
+  group_by_label: समूह बनाएँ (वैकल्पिक)
+  list_load_error: रेसिपियाँ लोड करने में विफल
+  load_datasets_error: 'डेटासेट लोड करने में विफल: {error}'
+  load_error: 'रेसिपी लोड करने में विफल: {error}'
+  load_rules_error: तैयारी नियम लोड करने में विफल
+  loading_schema: कॉलम लोड हो रहे हैं...
+  move_down: नीचे ले जाएँ
+  move_up: ऊपर ले जाएँ
+  my_recipes: मेरी रेसिपियाँ
+  name_label: रेसिपी का नाम
+  name_placeholder: जैसे, बिक्री विश्लेषण
+  name_required: रेसिपी का नाम आवश्यक है
+  needs_other_columns: (अन्य कॉलम की आवश्यकता है)
+  new_button: नई रेसिपी
+  new_title: नई रेसिपी
+  no_datasets: कोई डेटासेट नहीं मिला। कृपया पहले एक डेटासेट अपलोड करें या परिभाषित करें।
+  no_datasets_available: कोई डेटासेट उपलब्ध नहीं है। कृपया पहले एक डेटासेट अपलोड करें।
+  no_datasets_found: कोई डेटासेट उपलब्ध नहीं है। पहले एक डेटासेट अपलोड करें।
+  no_group: कोई नहीं
+  no_group_options: समूह बनाने के लिए कोई श्रेणीबद्ध कॉलम उपलब्ध नहीं है
+  no_preparation_rules: इस डेटासेट के लिए कोई तैयारी नियम उपलब्ध नहीं है।
+  no_recipes: आपने अभी तक कोई रेसिपी नहीं बनाई है।
+  no_schema: इस डेटासेट के लिए कोई स्कीमा उपलब्ध नहीं है
+  no_stages: रेसिपी में कम से कम एक चरण अवश्य होना चाहिए।
+  no_visualisation: संख्यात्मक परिणाम
+  no_visualisation_data: कोई विज़ुअलाइज़ेशन डेटा उपलब्ध नहीं है
+  none: कोई नहीं
+  output:
+    category_column: श्रेणी कॉलम
+    placeholder: आउटपुट प्रकार चुनें
+    x_column: X-अक्ष कॉलम
+    y_column: Y-अक्ष कॉलम
+  panel:
+    complete: तैयार
+    incomplete: अपूर्ण
+    my_recipes: मेरी रेसिपियाँ
+    new_button: नई रेसिपी
+    no_recipes: अभी तक कोई रेसिपी नहीं
+    no_results: आपकी खोज से मेल खाने वाली कोई रेसिपी नहीं
+    search: रेसिपी खोजें...
+    shared_recipes: साझा की गई
+    updated: अद्यतन
+  preparation_rules: तैयारी नियम (वैकल्पिक)
+  preparation_rules_applied: लागू तैयारी नियम
+  preparation_rules_applied_description: विश्लेषण चरणों से पहले नीचे दिखाए गए क्रम में नियम लागू किए गए थे।
+  preparation_rules_applied_title: लागू तैयारी नियम
+  preparation_rules_description: क्रम से लागू करने के लिए नियम चुनें। नियम क्रमानुसार लागू होते हैं।
+  recipe_label: रेसिपी
+  remove_rule: नियम हटाएँ
+  require:
+    algorithm: विश्लेषण चुनें
+    categoryColumn: '{out} के लिए श्रेणी कॉलम चुनें'
+    dataset: डेटासेट चुनें
+    dependentColumn: आश्रित कॉलम चुनें
+    factorColumn: '{algo} के लिए कारक कॉलम चुनें'
+    first_response: पहला प्रतिक्रिया कॉलम चुनें
+    independentColumns: स्वतंत्र कॉलम चुनें
+    responseColumn: '{algo} के लिए प्रतिक्रिया कॉलम चुनें'
+    second_response: दूसरा प्रतिक्रिया कॉलम चुनें
+    xColumn: '{out} के लिए X कॉलम चुनें'
+    yColumn: '{out} के लिए Y कॉलम चुनें'
+  rows_after: बाद की पंक्तियाँ
+  rows_before: पंक्तियाँ
+  rows_label: पंक्तियाँ
+  rules_applied_label: '{count} नियम लागू:'
+  save_button: रेसिपी सहेजें
+  schema_error: 'स्तंभ स्कीमा लोड करने में विफल: {error}'
+  schema_loaded: 'स्कीमा लोड हुई: {count} कॉलम मिले'
+  select_dataset: डेटासेट चुनें
+  select_group: समूहीकरण के लिए एक कॉलम चुनें
+  select_rule: जोड़ने के लिए एक नियम चुनें
+  select_rule_placeholder: एक नियम चुनें
+  select_technique: एक तकनीक चुनें
+  select_visualisation: एक विज़ुअलाइज़ेशन चुनें
+  selected: चयनित
+  share:
+    button: साझा करें
+    group_info: समूह {group} — {desc}
+    read_only: '{owner} द्वारा साझा किया गया — केवल-पठनीय'
+    shared_badge: साझा किया गया
+    unshare: साझा हटाएँ
+  shared: साझा किया गया
+  shared_badge: साझा किया गया
+  shared_description: इस रेसिपी को अपने समूह के अन्य उपयोगकर्ताओं के लिए उपलब्ध कराएँ।
+  shared_group_hint: 'समूह: {group} - {description}'
+  shared_label: समूह के साथ साझा करें
+  shared_with_group: आपके समूह के साथ साझा किया गया
+  stage_data_selection: डेटा चयन
+  stage_number: चरण {number}
+  stage_preparation: डेटा तैयारी
+  stage_statistics: सांख्यिकी
+  stage_visualisation: विज़ुअलाइज़ेशन
+  stages_title: चरण
+  status:
+    cancelled: रद्द किया गया
+    completed: पूर्ण
+    failed: विफल
+    pending: लंबित
+    running: चल रहा है
+  step1_description: अपनी रेसिपी को एक नाम और विवरण दें।
+  step1_title: अपनी रेसिपी को नाम दें
+  step2_description: एक डेटासेट चुनें और विश्लेषण करने के लिए कॉलम चुनें।
+  step2_title: डेटा चुनें
+  step3_description: लागू करने के लिए सांख्यिकीय तकनीक चुनें।
+  step3_title: विश्लेषण चुनें
+  step4_description: अपनी रेसिपी में एक विज़ुअलाइज़ेशन जोड़ें।
+  step4_title: विज़ुअलाइज़ेशन (वैकल्पिक)
+  step_analysis: विश्लेषण
+  step_complete: चरण {step} पूर्ण
+  step_data: डेटा
+  step_name: नाम
+  step_visualise: विज़ुअलाइज़ करें
+  technique_anova_one_way: एक-तरफ़ा ANOVA
+  technique_anova_two_way: दो-तरफ़ा ANOVA
+  technique_chi_square: काई-वर्ग परीक्षण
+  technique_correlation: सहसंबंध मैट्रिक्स
+  technique_descriptive: वर्णनात्मक सांख्यिकी
+  technique_hint: वर्णनात्मक सांख्यिकी माध्य, माध्यिका और मानक विचलन जैसे सारांश माप दिखाती है।
+  technique_label: तकनीक
+  technique_linear_regression: रैखिक प्रतिगमन
+  technique_t_test_independent: स्वतंत्र t-परीक्षण
+  technique_t_test_paired: युग्मित t-परीक्षण
+  title: सांख्यिकीय रेसिपीज़
+  total_rules_applied: कुल लागू नियम
+  transforms:
+    add: रूपांतरण जोड़ें
+    label: रूपांतरण
+    manage_button: रूपांतरण प्रबंधित करें
+    no_transforms: कोई रूपांतरण लागू नहीं है
+    remove: हटाएँ
+  unknown_user: अज्ञात
+  update_error: 'रेसिपी अद्यतन करने में विफल: {error}'
+  update_success: रेसिपी '{id}' सफलतापूर्वक अद्यतन की गई।
+  updated_label: अपडेट किया गया
+  visualisation:
+    columns_label: कॉलम
+    data_points: डेटा बिंदु
+    distribution: वितरण
+    trend: रुझान
+    type_label: प्रकार
+  visualisation_area: एरिया चार्ट
+  visualisation_bar: बार चार्ट
+  visualisation_donut: डोनट चार्ट
+  visualisation_hbar: क्षैतिज बार
+  visualisation_hint: चार्ट चयनित डेटा कॉलम का उपयोग करके बनाया जाएगा।
+  visualisation_label: विज़ुअलाइज़ेशन प्रकार
+  visualisation_line: लाइन चार्ट
+  visualisation_pie: पाई चार्ट
+  visualisation_raw_data: 'विज़ुअलाइज़ेशन डेटा:'
+  visualisation_scatter: स्कैटर प्लॉट
+  visualisation_table: तालिका
+  ui:
+    delete_error: रेसिपी हटाने में विफल
+    delete_success: रेसिपी हटा दी गई
+  visualisation_histogram: आयतचित्र
+register:
+  confirm_password: पासवर्ड की पुष्टि करें
+  creating: खाता बनाया जा रहा है...
+  description: एक नया खाता बनाएँ
+  email: ईमेल
+  failed: पंजीकरण विफल
+  have_account: क्या आपके पास पहले से खाता है?
+  language_description: इंटरफ़ेस के लिए अपनी पसंदीदा भाषा चुनें।
+  login_link: लॉगिन
+  name: नाम
+  password: पासवर्ड
+  password_mismatch: पासवर्ड मेल नहीं खाते
+  submit: पंजीकरण करें
+  success_with_verification: आपका खाता बन गया है। अपना खाता सक्रिय करने के लिए अपने ईमेल में सत्यापन लिंक देखें।
+  title: पंजीकरण करें
+  email_failed_use_resend: पंजीकरण सफल रहा, लेकिन सत्यापन ईमेल नहीं भेजा जा सका। कृपया इसे लॉगिन पृष्ठ से पुनः भेजें।
+  registration_disabled: स्व-पंजीकरण अक्षम है। कृपया व्यवस्थापक से संपर्क करें।
+  success_auto_verified: आपका खाता बन गया है और उपयोग के लिए तैयार है। अब आप साइन इन कर सकते हैं।
+  success_pending_approval: आपका खाता बन गया है और व्यवस्थापक की स्वीकृति की प्रतीक्षा में है। स्वीकृत होने के बाद आप साइन इन कर सकेंगे।
+resend_verification:
+  back_to_login: लॉगिन पर वापस जाएँ
+  check_spam: यदि आपको कुछ मिनटों में ईमेल न दिखे तो कृपया अपना स्पैम फ़ोल्डर जाँचें।
+  description: नया सत्यापन लिंक प्राप्त करने के लिए अपना ईमेल पता दर्ज करें।
+  error: सत्यापन ईमेल भेजने में विफल।
+  send_button: सत्यापन ईमेल भेजें
+  sent: सत्यापन ईमेल भेज दिया गया है। कृपया अपना इनबॉक्स (और स्पैम फ़ोल्डर) जाँचें।
+  sent_description: यदि इस ईमेल से जुड़ा कोई खाता मौजूद है, तो आपको एक सत्यापन लिंक प्राप्त होगा।
+  sent_title: ईमेल भेजा गया
+  title: सत्यापन ईमेल पुनः भेजें
+reset_password:
+  confirm_password: नए पासवर्ड की पुष्टि करें
+  description: नीचे अपना नया पासवर्ड दर्ज करें।
+  failed: पासवर्ड रीसेट करने में विफल
+  login_button: लॉगिन पर जाएं
+  missing_token: कोई रीसेट टोकन प्रदान नहीं किया गया
+  new_password: नया पासवर्ड
+  password_mismatch: पासवर्ड मेल नहीं खाते
+  submit: पासवर्ड रीसेट करें
+  success: पासवर्ड सफलतापूर्वक रीसेट किया गया
+  success_description: आपका पासवर्ड रीसेट कर दिया गया है। लॉगिन पर पुनर्निर्देशित किया जा रहा है...
+  success_title: पासवर्ड रीसेट
+  title: पासवर्ड रीसेट करें
+settings:
+  ai:
+    title: AI कनेक्शन
+  database:
+    title: डेटाबेस कनेक्शन
+  profile:
+    title: प्राथमिकताएँ
+  title: सेटिंग्स
+setup:
+  internal:
+    description: सिस्टम डायग्नोस्टिक्स और आंतरिक कॉन्फ़िगरेशन। केवल-पठनीय स्थिति संकेतक।
+    future:
+      cache_config: कैश / सत्र कॉन्फ़िगरेशन
+      debug_logging: डिबग / वर्बोज़ लॉगिंग टॉगल
+      description: भविष्य के रिलीज़ में अतिरिक्त डायग्नोस्टिक्स जोड़े जाएँगे।
+      email_transport: ईमेल ट्रांसपोर्ट स्थिति
+      pool_stats: डेटाबेस पूल आँकड़े
+      title: जल्द आ रहा है
+    licence:
+      description: वर्तमान लाइसेंस स्तर और सक्षम सुविधाएँ।
+      expiry: समाप्ति
+      features: सक्षम सुविधाएँ
+      issued_to: जारी किया गया
+      tier: लाइसेंस स्तर
+      title: लाइसेंस और सुविधाएँ
+    load_error: सिस्टम डायग्नोस्टिक्स लोड करने में विफल
+    system_status:
+      available: उपलब्ध
+      db_pool: डेटाबेस पूल
+      description: बैकएंड सेवाओं के लिए वास्तविक समय स्वास्थ्य संकेतक।
+      healthy: स्वस्थ
+      initialized: आरंभीकृत
+      not_initialized: आरंभीकृत नहीं
+      not_required: आवश्यक नहीं
+      overall_health: समग्र स्वास्थ्य
+      shared_memory: साझा मेमोरी
+      title: सिस्टम स्थिति
+      unavailable: अनुपलब्ध
+      unhealthy: अस्वस्थ
+      version: संस्करण
+      db_cluster: डेटाबेस क्लस्टर
+    title: आंतरिक
+  limits:
+    demo_mode:
+      description: सक्षम होने पर, सिस्टम डेमो मोड में चलता है — विनाशकारी कार्रवाइयाँ अवरुद्ध होती हैं और UI में संकेतक दिखाए जाते हैं।
+      label: डेमो मोड
+    description: संसाधन सीमाओं, समय-सीमाओं और सिस्टम व्यवहार के लिए परिचालन नियंत्रण। किसी भी समय समायोजित करना सुरक्षित है।
+    email_timeout:
+      hint: ईमेल सत्यापन लिंक कितने घंटे तक वैध रहता है।
+      label: ईमेल सत्यापन समय-सीमा (घंटे)
+    grace_period:
+      hint: सॉफ्ट-डिलीट किए गए खातों को स्थायी रूप से हटाने से पहले के घंटे।
+      label: विलोपन विलंब (घंटे)
+    invalid_grace_period: कृपया विलोपन विलंब (घंटे) के लिए मान्य धनात्मक संख्या दर्ज करें
+    invalid_registration_max: कृपया अधिकतम पंजीकरण के लिए मान्य धनात्मक संख्या दर्ज करें
+    invalid_timeout: कृपया सत्यापन समय-सीमा (घंटे) के लिए मान्य धनात्मक संख्या दर्ज करें
+    load_error: सीमा सेटिंग्स लोड करने में विफल
+    max_registrations:
+      hint: कितने उपयोगकर्ता पंजीकरण कर सकते हैं, इसकी सीमा निर्धारित करें।
+      label: अधिकतम उपयोगकर्ता पंजीकरण
+      placeholder: सीमा चुनें
+      unlimited: असीमित
+      users: उपयोगकर्ता
+    save_button: सीमाएँ सहेजें
+    save_error: सीमा सेटिंग्स सहेजने में विफल
+    save_success: सीमा सेटिंग्स सहेजी गईं
+    title: सीमाएँ
+    upload:
+      count_1: '1'
+      count_10: '10'
+      count_100: '100'
+      count_1000: '1000'
+      count_25: '25'
+      count_250: '250'
+      count_5: '5'
+      count_50: '50'
+      count_500: '500'
+      count_hint: प्रति उपयोगकर्ता डेटासेट की अधिकतम संख्या (0 = असीमित)। नए उपयोगकर्ताओं पर लागू।
+      count_unlimited: असीमित
+      default_count_label: प्रति उपयोगकर्ता डिफ़ॉल्ट अधिकतम अपलोड संख्या
+      default_size_label: प्रति उपयोगकर्ता डिफ़ॉल्ट अधिकतम अपलोड आकार (MB)
+      select_count: सीमा चुनें
+      select_size: सीमा चुनें
+      size_100_mb: 100 MB
+      size_10_mb: 10 MB
+      size_1_gb: 1 GB
+      size_1_mb: 1 MB
+      size_250_mb: 250 MB
+      size_25_mb: 25 MB
+      size_500_mb: 500 MB
+      size_50_mb: 50 MB
+      size_5_mb: 5 MB
+      size_hint: प्रति उपयोगकर्ता अधिकतम कुल संग्रहण (0 = असीमित)। नए उपयोगकर्ताओं पर लागू।
+      size_unlimited: असीमित
+  options:
+    description: इंस्टॉलेशन के समय की सेटिंग्स जो इस परिनियोजन की पहचान और व्यवहार को परिभाषित करती हैं। सावधानी से बदलें — ये सभी उपयोगकर्ताओं को प्रभावित करती हैं।
+    email_sender:
+      hint: वह ईमेल पता जिससे सत्यापन ईमेल आते हुए दिखाई देंगे।
+      label: ईमेल प्रेषक पता
+    load_error: विकल्प सेटिंग्स लोड करने में विफल
+    password_policy:
+      custom: कस्टम
+      high: उच्च (न्यूनतम 10, अपरकेस, लोअरकेस, अंक, विशेष वर्ण)
+      hint: उपयोगकर्ता पंजीकरण और पासवर्ड बदलाव के लिए पासवर्ड जटिलता आवश्यकताएँ चुनें।
+      label: पासवर्ड नीति
+      low: निम्न (न्यूनतम 6 वर्ण)
+      medium: मध्यम (न्यूनतम 8, अपरकेस, लोअरकेस, अंक)
+      min_length: न्यूनतम लंबाई
+      min_strength: न्यूनतम मजबूती (zxcvbn स्कोर 0-4)
+      require_digit: अंक आवश्यक करें
+      require_lowercase: लोअरकेस आवश्यक करें
+      require_special: विशेष वर्ण आवश्यक करें
+      require_uppercase: अपरकेस आवश्यक करें
+      select: नीति चुनें
+    public_url:
+      hint: ईमेल सत्यापन लिंक में उपयोग किया जाने वाला आधार URL (जैसे, https://workbench.example.com)।
+      label: सार्वजनिक URL
+    save_button: विकल्प सहेजें
+    save_error: विकल्प सेटिंग सहेजने में विफल
+    save_success: विकल्प सेटिंग सहेजी गई
+    title: विकल्प
+    welcome:
+      hint: यह संदेश लॉगिन पृष्ठ पर दिखाई देगा। इसे छिपाने के लिए खाली छोड़ें।
+      label: स्वागत संदेश
+      placeholder: लॉगिन पृष्ठ पर प्रदर्शित करने के लिए स्वागत संदेश दर्ज करें।
+    registration_mode:
+      mode_0: स्व-पंजीकरण स्वचालित रूप से सत्यापित
+      hint: चुनें कि नए उपयोगकर्ता खाते कैसे बनाए और सत्यापित किए जाते हैं।
+      mode_2: स्व-पंजीकरण और व्यवस्थापक द्वारा सत्यापित
+      select: पंजीकरण मोड चुनें
+      mode_4: ईमेल सत्यापन के साथ स्व-पंजीकरण
+      label: पंजीकरण मोड
+      mode_1: व्यवस्थापक सत्यापित उपयोगकर्ता बनाता है
+  tuning:
+    reset_done: ट्यूनिंग सेटिंग्स उनके डिफ़ॉल्ट पर रीसेट हो गई हैं
+    save: सेटिंग्स सहेजें
+    save_error: ट्यूनिंग सेटिंग्स सहेजी नहीं जा सकीं
+    invalid_probe_timeout: परीक्षण समयसीमा पूरे सेकंड में होनी चाहिए, न्यूनतम 1 और अधिकतम 1200
+    ai_max_tokens_hint: किसी एक अनुरोध द्वारा उत्पन्न सबसे लंबा उत्तर। विवरण के लिए लगभग 500 टोकन चाहिए; 4000 में पर्याप्त जगह रहती है।
+    ai_section_label: AI जनरेशन
+    invalid_temperature: तापमान 0 से 2 के बीच की संख्या होनी चाहिए
+    reset_confirm_action: रीसेट करें
+    probe_timeout_hint: एक उपयुक्तता परीक्षण कितनी देर तक चल सकता है। CPU पर होस्ट किया गया मॉडल मिनटों लेता है, इसलिए यहाँ छोटी सीमा समय बचाने के बजाय गलत विफलता दर्ज करती है।
+    slow_threshold_label: धीमे मॉडल की सीमा
+    forbidden: केवल पूर्ण प्रशासक ही इन सेटिंग्स को बदल सकता है।
+    reset_confirm_title: क्या इन छह को उनके डिफ़ॉल्ट पर रीसेट करें?
+    slow_threshold_hint: इससे अधिक समय लेने वाला मॉडल परीक्षण बहुत धीमा बताया जाता है। उपयोगकर्ता अपनी सीमा बढ़ा सकते हैं; कोई भी अपनी सीमा 1 से कम नहीं कर सकता।
+    invalid_connect_timeout: कनेक्ट समयसीमा पूरे सेकंड में होनी चाहिए, न्यूनतम 1 और अधिकतम 60
+    preamble_detail: हर AI अनुरोध इनका उपयोग करता है जब तक कि कोई कनेक्शन इन्हें ओवरराइड न करे। किसी एक को बदलने पर हर उस मॉडल पर असर पड़ता है जिसकी अपनी कोई सेटिंग नहीं है; इससे वह कनेक्शन नहीं बदलता जिसे
+      आप पहले से ट्यून कर चुके हैं।
+    ai_section_hint: हर AI अनुरोध के लिए डिफ़ॉल्ट। कोई एक कनेक्शन और मॉडल उन्हें वहाँ ओवरराइड कर सकते हैं जहाँ ट्यूनिंग उस जोड़ी के लिए विशिष्ट है।
+    seconds: सेकंड
+    ai_timeout_hint: एक AI अनुरोध को छोड़े जाने से पहले कितनी देर तक चलने दिया जा सकता है। बहुत कम होने पर चैट चुपचाप विफल हो जाती है; बहुत अधिक होने पर रुका हुआ मॉडल एक वर्कर को रोके रखता है। CPU पर स्थानीय
+      मॉडल को कई मिनट लग सकते हैं।
+    load_error: ट्यूनिंग सेटिंग्स लोड नहीं की जा सकीं
+    reset_error: ट्यूनिंग सेटिंग्स रीसेट नहीं की जा सकीं
+    resetting: रीसेट हो रहा है…
+    saved: ट्यूनिंग सेटिंग्स सहेजी गईं
+    invalid_model_test_seconds: कृपया पूरे सेकंड की संख्या दर्ज करें, न्यूनतम 1
+    invalid_max_tokens: कृपया पूरे टोकन की संख्या दर्ज करें, न्यूनतम 1
+    invalid_ai_timeout: AI समय सीमा सेकंड की एक पूर्ण संख्या होनी चाहिए, कम से कम 1।
+    reset_confirm_body: इस पृष्ठ का हर मान वापस उस डिफ़ॉल्ट पर चला जाता है जिसके साथ वह आया था। प्रति-कनेक्शन ओवरराइड प्रभावित नहीं होते। इसे पूर्ववत नहीं किया जा सकता, और जो भी मान आपने बदले थे उन्हें
+      आपको फिर से सेट करना होगा।
+    description: AI व्यवहार और समय सीमाओं के लिए डिफ़ॉल्ट। ये आम तौर पर जैसे हैं वैसे ही उपयुक्त होते हैं — प्रति-उपयोगकर्ता या प्रति-कनेक्शन सेटिंग अलग हो सकती है, और यहाँ का मान तब लागू होता है जब इनमें
+      से कोई भी सेट नहीं होता।
+    ai_tokens: टोकन
+    connect_timeout_hint: एंडपॉइंट को अगम्य माने जाने से पहले नेटवर्क को कनेक्शन स्वीकार करने में कितना समय लग सकता है। इस नेटवर्क की ज़रूरत से कम मान कार्यशील एंडपॉइंट को मृत में बदल देता है।
+    ai_temperature_hint: 'उत्तर कितने विविध होते हैं: 0 उतना ही दोहराने योग्य है जितना मॉडल अनुमति देता है, 2 सबसे विविध है। 0 से 2 के बाहर के मान प्रदाता द्वारा अस्वीकार किए जाते हैं, इस सिस्टम द्वारा
+      नहीं।'
+    saving: सहेजा जा रहा है…
+tools:
+  all_datasets: सभी डेटासेट
+  connect_database: डेटाबेस कनेक्ट करें
+  description: अतिरिक्त उपयोगिताएँ और विश्लेषण टूल्स यहाँ दिखाई देंगे।
+  import_notebook: नोटबुक आयात करें
+  manage_data: डेटा एकत्र करें
+  my_data: मेरा डेटा
+  notebooks: नोटबुक्स
+  placeholder: टूल्स पृष्ठ जल्द ही आ रहा है।
+  title: अन्य टूल्स
+  upload_csv_excel: CSV / Excel अपलोड करें
+  upload_data: डेटा अपलोड करें
+  uploads_list: अपलोड्स (CSV, Excel)
+  visualize: विज़ुअलाइज़ेशन सैंडबॉक्स
+transforms:
+  back_to_data: मेरे डेटा पर वापस जाएँ
+  back_to_recipe: 'रेसिपी पर वापस: {name}'
+  connect_error: ट्रांसफ़ॉर्म कनेक्ट करने में विफल
+  connect_transform: रेसिपी से कनेक्ट करें
+  connected_count: '{count} कनेक्टेड'
+  connected_to_recipe: 'कनेक्टेड: {name}'
+  delete_button: हटाएँ
+  delete_confirm: क्या आप यह ट्रांसफ़ॉर्म हटाना चाहते हैं?
+  delete_success: ट्रांसफ़ॉर्म हटा दिया गया।
+  description_label: विवरण
+  description_placeholder: विवरण (वैकल्पिक)
+  disconnect_error: ट्रांसफ़ॉर्म डिस्कनेक्ट करने में विफल
+  disconnect_transform: रेसिपी से डिस्कनेक्ट करें
+  empty_hint: ट्रांसफ़ॉर्म चलने पर ऑपरेशन सूची क्रम में लागू होते हैं।
+  empty_state: अपना ट्रांसफ़ॉर्म बनाना शुरू करने के लिए एक ऑपरेशन जोड़ें।
+  empty_title: सूची से एक ट्रांसफ़ॉर्म चुनें या नया बनाएँ।
+  fill:
+    constant: स्थिरांक
+    drop_rows: पंक्तियाँ हटाएँ
+    mean: माध्य
+    median: माध्यिका
+    mode: बहुलक
+  filter:
+    op_contains: शामिल है
+    op_eq: '='
+    op_gt: '>'
+    op_is_not_null: रिक्त नहीं है
+    op_is_null: रिक्त है
+    op_lt: <
+    op_neq: '!='
+  for_recipe: 'रेसिपी: {name}'
+  load_error: ट्रांसफ़ॉर्म लोड करने में विफल
+  name_label: नाम
+  name_placeholder: ट्रांसफ़ॉर्म का नाम
+  name_required: ट्रांसफ़ॉर्म का नाम आवश्यक है।
+  new_transform: नया ट्रांसफ़ॉर्म
+  no_search_results: आपकी खोज से मेल खाने वाला कोई ट्रांसफ़ॉर्म नहीं है
+  no_transforms: इस डेटासेट के लिए कोई ट्रांसफ़ॉर्म परिभाषित नहीं है।
+  op:
+    add: ऑपरेशन जोड़ें
+    column_placeholder: कॉलम चुनें
+    empty_hint: अपना ट्रांसफ़ॉर्म बनाना शुरू करने के लिए एक ऑपरेशन जोड़ें।
+    encoding_label: लेबल
+    encoding_onehot: वन-हॉट
+    encoding_placeholder: एन्कोडिंग
+    method_placeholder: विधि
+    new_name_placeholder: नया नाम
+    operations_label: ऑपरेशन
+    operator_placeholder: ऑपरेटर
+    remove: हटाएँ
+    target_boolean: बूलियन
+    target_datetime: दिनांक-समय
+    target_numeric: संख्यात्मक
+    target_string: स्ट्रिंग
+    target_type_placeholder: लक्ष्य प्रकार
+    type:
+      convert_type: प्रकार बदलें
+      drop_column: कॉलम हटाएँ
+      drop_duplicates: डुप्लिकेट हटाएँ
+      encode_category: श्रेणी एन्कोड करें
+      fill_missing: गुम मान भरें
+      filter: पंक्तियाँ फ़िल्टर करें
+      rename_column: कॉलम का नाम बदलें
+      standardize: मानकीकृत करें
+      normalize: सामान्य करें
+    type_placeholder: ऑपरेशन प्रकार
+    value_placeholder: मान
+  operations_count: '{count} ऑपरेशन'
+  operations_heading: संचालन
+  save_button: सहेजें
+  save_success: ट्रांसफ़ॉर्म सहेजा गया.
+  search_placeholder: ट्रांसफ़ॉर्म खोजें…
+validation:
+  api_key_required: इस प्रदाता के लिए API कुंजी आवश्यक है
+  database_required: डेटाबेस नाम आवश्यक है
+  host_required: होस्ट आवश्यक है
+  name_required: कनेक्शन नाम आवश्यक है
+  password:
+    min_length: पासवर्ड कम से कम {min} अक्षर लंबा होना चाहिए.
+    require_digit: पासवर्ड में कम से कम एक अंक होना चाहिए.
+    require_lowercase: पासवर्ड में कम से कम एक छोटा अक्षर होना चाहिए.
+    require_special: पासवर्ड में कम से कम एक विशेष वर्ण होना चाहिए.
+    require_uppercase: पासवर्ड में कम से कम एक बड़ा अक्षर होना चाहिए.
+    too_weak: पासवर्ड बहुत कमज़ोर है। कृपया एक मज़बूत पासवर्ड चुनें.
+  password_required: पासवर्ड आवश्यक है
+  port_invalid: पोर्ट 1 और 65535 के बीच होना चाहिए
+  provider_required: कृपया एक प्रदाता चुनें
+  type_required: कृपया एक डेटाबेस प्रकार चुनें
+  username_required: उपयोगकर्ता नाम आवश्यक है
+verify_email:
+  error_description: कुछ गड़बड़ हो गई.
+  error_title: सत्यापन विफल
+  expired_description: सत्यापन लिंक समाप्त हो गया है.
+  expired_message: आप नीचे एक नया सत्यापन ईमेल अनुरोध कर सकते हैं.
+  expired_title: लिंक समाप्त हो गया
+  invalid_token: अमान्य सत्यापन लिंक.
+  login_button: लॉगिन के लिए आगे बढ़ें
+  missing_description: कोई सत्यापन टोकन प्रदान नहीं किया गया.
+  missing_title: कोई सत्यापन टोकन नहीं
+  network_error: नेटवर्क त्रुटि। कृपया पुनः प्रयास करें.
+  resend_button: सत्यापन ईमेल फिर से भेजें
+  success_description: आपका ईमेल सफलतापूर्वक सत्यापित हो गया है। लॉगिन पर पुनर्निर्देशित किया जा रहा है...
+  success_title: ईमेल सत्यापित
+  unknown_error: कुछ गड़बड़ हो गई.
+virtual:
+  clone: क्लोन करें
+  deleted: डेटासेट हटाया गया
+  draft_badge: ड्राफ़्ट
+  edit: संपादित करें
+  error: एक त्रुटि हुई
+  existing_none: कोई नहीं
+  existing_title: मौजूदा डेटासेट
+  loading: लोड हो रहा है...
+  more: अधिक
+  new_chat: नया वर्चुअल डेटासेट
+  placeholder: बताएं कि आप क्या करना चाहते हैं...
+  ready_badge: तैयार
+  recent_chats: हाल की चैट
+  send: भेजें
+  stage: चरण
+  title: वर्चुअल डेटासेट
+  verbose: विस्तृत
+  welcome: वर्चुअल डेटासेट सहायक में आपका स्वागत है। यदि यह आपके लिए नया है, तो आप शुरुआत करने का तरीका जानना चाह सकते हैं।
+  preview_joins: जॉइन्स
+  preview_name: नाम
+  preview_title: डेटासेट पूर्वावलोकन
+  preview_columns: आउटपुट कॉलम
+  preview_sources: स्रोत
+  manual:
+    new_dataset: नया डेटासेट शुरू करें
+    open_label: मौजूदा डेटासेट खोलें
+    unattached_sources: 'बाकी से नहीं जुड़ा है: {sources}। इन्हें जोड़ने वाला जॉइन जोड़ें।'
+    remove: इस कॉलम को आउटपुट से हटाएँ
+    intro: अपने चुने हुए कॉलम से एक वर्चुअल डेटासेट बनाएँ, या बदलाव करने के लिए पहले से मौजूद कोई खोलें।
+    sources_title: डेटा कहाँ से आता है
+    select_none: कुछ न चुनें
+    validate_errors: 'परिभाषा में समस्याएँ हैं:'
+    move_up: इस कॉलम को एक स्थान ऊपर ले जाएँ
+    title: वर्चुअल डेटासेट एडिटर
+    select_all: सभी चुनें
+    save_success: वर्चुअल डेटासेट सहेजा गया।
+    validate: परिभाषा सत्यापित करें
+    loaded_note: मौजूदा परिभाषा खोली गई — सहेजने पर यह अपडेट होगी।
+    materialized_hint: लाइव जॉइन के बजाय एक तालिका लिखता है। प्रोटोटाइप बनाते समय इसे बंद रखें।
+    move_down: इस कॉलम को एक स्थान नीचे ले जाएँ
+    bridge_no_columns: कॉलम अभी तक नहीं पढ़े गए हैं — स्रोत का विस्तार करें, या जॉइन जोड़ें और उन्हें चुनें
+    need_columns: शामिल करने के लिए कम से कम एक कॉलम चुनें।
+    load_error: उस डेटासेट की परिभाषा लोड नहीं की जा सकी।
+    joins_hint: दो या अधिक स्रोतों को आपस में जॉइन की आवश्यकता होती है। एक स्रोत को इसकी आवश्यकता नहीं होती।
+    test_pulls_every_source: जॉइन का परीक्षण हर स्रोत को पूरा पढ़ता है, इसलिए यह धीमा हो सकता है।
+    bridge: ब्रिज
+    remove_join: इस जॉइन को हटाएँ
+    validate_ok: परिभाषा संरचनात्मक रूप से मान्य है।
+    name_label: डेटासेट का नाम
+    column_placeholder: कॉलम चुनें
+    joins_title: स्रोत कैसे जुड़े हैं
+    suggested: सुझाया गया
+    test_join: जॉइन का परीक्षण करें
+    columns_error: कॉलम पढ़े नहीं जा सके।
+    output_hint: इस डेटासेट द्वारा क्रम से प्रस्तुत किए जाने वाले कॉलम।
+    no_match: यहाँ फ़िल्टर से मेल खाने वाला कुछ नहीं है।
+    alias_taken: वह उपनाम पहले से किसी अन्य स्रोत द्वारा उपयोग में है।
+    tables_error: तालिकाएँ पढ़ी नहीं जा सकीं।
+    need_join: दो स्रोत चुने गए हैं, लेकिन उन्हें जोड़ने वाला कुछ नहीं है।
+    update_dataset: इस डेटासेट को अपडेट करें
+    description_label: डेटासेट का विवरण
+    need_name: सहेजने से पहले डेटासेट को नाम दें।
+    incomplete_join: जिस जॉइन में अभी तक कोई कॉलम नहीं चुना गया है, उसे पूरा करें या हटाएँ।
+    add_join: जॉइन जोड़ें
+    output_title: यह डेटासेट क्या प्रदान करता है
+    loading_columns: कॉलम पढ़े जा रहे हैं…
+    aggregation_note: पुरानी परिभाषा में मौजूद एग्रीगेशन को वैसे ही रखा जाता है, लेकिन जॉइन उसे लागू नहीं करता।
+    preview_rows: '{count} पंक्ति(याँ) लौटीं'
+    sources_hint: किसी कनेक्शन या डेटासेट का विस्तार करें, फिर शामिल करने के लिए कॉलम पर टिक करें।
+    alias_label: उपनाम
+    preview_error: जॉइन नहीं चल सका।
+    no_sources: उपयोग के लिए कोई कनेक्शन या डेटासेट उपलब्ध नहीं है।
+    save_error: वर्चुअल डेटासेट सहेजा नहीं जा सका।
+    materialized_label: परिणाम को मटीरियलाइज़ करें
+    complete_join: अधूरा जॉइन भरें
+    bridge_choose_columns: कोई मेल खाते कॉलम नहीं मिले — जॉइन जोड़ें और उन्हें चुनें
+    open_none: खोलने के लिए अभी कोई वर्चुअल डेटासेट नहीं है।
+    preview_empty: जॉइन ने कोई पंक्ति नहीं लौटाई।
+    loaded_note_shared: एक मौजूदा साझा परिभाषा खोली गई — केवल पढ़ने के लिए - अपडेट की अनुमति नहीं है
+    materialize_retry: पुनः प्रयास करें
+    materialize_done: टेबल बन गई।
+    materialize_failed: 'सहेजा गया, लेकिन टेबल नहीं बनाई जा सकी:'
+  panel_tick_no_session: पहले एक संदेश भेजें — ट्री इस सत्र में आपके टिक दर्ज करता है।
+  panel_fold_error: पैनल की मुड़ी हुई अवस्था सहेजी नहीं जा सकी, इसलिए अगली बार यह फिर से खुला होगा।
+  panel:
+    collapse: स्रोत पैनल को मोड़कर हटाएँ
+    expand: स्रोत पैनल दिखाएँ
+  panel_columns: '{count} कॉलम'
+  chip_error: वह विकल्प लागू नहीं किया जा सका।
+  progress_decided: कुल {total} में से {decided} तय
+  panel_tick_error: वह कॉलम टिक नहीं किया जा सका।
+  chip_load_error: विकल्प रीफ़्रेश नहीं किए जा सके, इसलिए ये पुराने हो सकते हैं।
+  heading_match_columns: इन स्तंभों का मिलान करें
+  heading_materialised: लाइव या मटेरियलाइज़्ड?
+  heading_choose_table: एक तालिका चुनें
+  heading_choose_columns: स्तंभ चुनें
+  act:
+    sources_short: '{count} तालिकाएँ स्वीकृत: {tables}'
+    applied: '{piece} लागू किया गया'
+    named: इसे “{name}” नाम दिया
+    sources: '{count} तालिकाएँ स्वीकृत'
+    join: '{pair} को जोड़ा गया'
+  suggestion_applied: लागू किया गया
+  confirm_selection: इन्हें उपयोग करें
+  selection_hint: जो चीज़ें आप नहीं चाहते उन्हें अनटिक करें, फिर उन्हें एक साथ उपयोग करें।
+  joins_hint: किसी भी कॉलम या जॉइन प्रकार को बदलें, फिर जारी रखें।
+  joins_coverage: '{total} में से {connected} टेबल कनेक्टेड'
+  act_joins: '{count} जोड़े जुड़े'
+  join_type_label: जॉइन प्रकार
+  joins_unjoined: 'नहीं जुड़े: {tables}'
+  joins_apply: लागू करें
+  joins_unsaved: ये पंक्तियाँ डेटासेट से भिन्न हैं। इन्हें लागू करें, या पहले खाली पंक्ति को ठीक करें।
+  name_suggestion_heading: सुझाया गया नाम — चाहें तो इसे बदल सकते हैं
+  name_suggestion_accept: इस नाम का उपयोग करें
+visualize:
+  config: कॉन्फ़िगरेशन
+  data: डेटा (JSON)
+  data_placeholder: यहां JSON डेटा चिपकाएँ या नमूना जनरेट करें
+  description: एक विज़ुअलाइज़ेशन प्रकार चुनें, नमूना डेटा जनरेट करें, पैरामीटर समायोजित करें और पूर्वावलोकन करें।
+  download_error: तालिका डाउनलोड करने में विफल
+  download_png: PNG के रूप में डाउनलोड करें
+  download_success: तालिका PNG के रूप में डाउनलोड हो गई
+  generate_sample: नमूना जनरेट करें
+  invalid_data: टेक्स्ट तालिका के लिए अमान्य डेटा। स्तंभ और पंक्तियाँ अपेक्षित हैं।
+  load_error: विज़ुअलाइज़ेशन प्रकार लोड करने में विफल
+  no_data: विज़ुअलाइज़ करने के लिए कोई डेटा नहीं। नमूना डेटा जनरेट करें या JSON चिपकाएँ।
+  no_types: कोई विज़ुअलाइज़ेशन प्रकार परिभाषित नहीं है। कृपया व्यवस्थापक से संपर्क करें।
+  parameters: पैरामीटर
+  preview: पूर्वावलोकन
+  sample_expenses: खर्च
+  sample_generated: नमूना डेटा जनरेट हो गया
+  sample_item: आइटम
+  sample_sales: बिक्री
+  sample_value: मूल्य
+  save_error: सहेजने में विफल
+  save_instance: इंस्टेंस सहेजें
+  save_no_data: सहेजने के लिए कोई डेटा नहीं। कृपया डेटा जनरेट करें या चिपकाएँ।
+  save_success: विज़ुअलाइज़ेशन सफलतापूर्वक सहेजा गया
+  select_type: प्रकार चुनें
+  title: विज़ुअलाइज़ेशन सैंडबॉक्स
+  type: विज़ुअलाइज़ेशन प्रकार
+  unsupported: विज़ुअलाइज़ेशन प्रकार अभी लागू नहीं किया गया
+  unsupported_parameter: असमर्थित प्रकार

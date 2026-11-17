@@ -1,0 +1,2246 @@
+about:
+  description: shadcn/uiとNext.jsで素晴らしい体験を構築。クリーンなデザイン、高速パフォーマンス。
+  fast_desc: 最適なパフォーマンスのためNext.js App Router上に構築。
+  fast_title: 高速
+  get_started: はじめる
+  modern_desc: shadcn/uiのアクセシブルなコンポーネントを使用し、Tailwind CSSでスタイリング。
+  modern_title: モダンUI
+  secure_desc: 型安全でカスタマイズ可能 – コンポーネントコードを所有できます。
+  secure_title: 安全
+  title: Statisticians Workbenchについて
+admin:
+  groups:
+    back_to_admin: 管理画面に戻る
+    cannot_modify_self: 自分のアカウントは変更できません
+    delete_confirmation: 本当に{name}を削除しますか？このユーザーは論理削除され、フル管理者が復元できます。
+    delete_error: ユーザーの削除に失敗しました
+    delete_title: ユーザーを削除
+    demote: 降格
+    demote_error: ユーザーの降格に失敗しました
+    demote_success: ユーザーをグループ管理者から降格しました
+    description_placeholder: 説明を入力
+    description_required: 説明は空にできません
+    group_description: グループの説明
+    group_users_load_error: グループユーザーの読み込みに失敗しました
+    load_error: グループの読み込みに失敗しました
+    load_success: グループが正常に読み込まれました
+    no_users: このグループにユーザーが見つかりません。
+    promote: 昇格
+    promote_error: ユーザーの昇格に失敗しました
+    promote_success: ユーザーをグループ管理者に昇格しました
+    readonly_badge: （読み取り専用）
+    readonly_message: このページは読み取り専用モードで表示しています。サンプルユーザーは変更できません。
+    readonly_title: グループ管理（読み取り専用）
+    select_group: グループを選択
+    select_group_placeholder: グループを選択してください
+    title: グループ管理
+    update_error: グループの更新に失敗しました
+    update_success: グループの説明が更新されました
+    users_in_group: グループ内のユーザー
+  models:
+    comment_placeholder: コメントを入力
+    description: ワークベンチが認識しているすべてのモデルです。モデルを有効にすると、そのモデルを提供するすべての接続に影響します。サーバー列には、そのモデルに到達できるサーバーが表示されます。
+    disabled: 無効
+    edit_comment: コメントを編集
+    enabled: 有効
+    load_models_error: モデルの読み込みに失敗しました
+    no_comment: —
+    no_models: モデルはまだありません。検出機能が接続からモデルを作成します。
+    not_preferred: 優先しない
+    preferred: 優先
+    toggle_error: モデルの更新に失敗しました
+    update_error: コメントの更新に失敗しました
+    update_success: モデルが更新されました
+    fetch_auth_required: このプロバイダーでモデル一覧を取得するにはAPIキーが必要です。代わりに「設定 → AI接続」から更新してください。
+    fetch_non_standard: このプロバイダーは標準のモデル一覧APIを公開していません。管理パネルでモデルを手動で追加してください。
+    filter_any: すべての状態
+    filter_test: 能力テスト
+    model_count: '{count}件のモデル'
+    tuning_inherited_title: 空白の場合はワークベンチの既定値を継承します
+    tuning_timeout_hint: 1回のAIリクエストが実行できる秒数。ローカルCPUモデルでは数分かかることがあります。
+    servers_title: 到達可能な接続
+    tuning_save_error: AI設定を保存できませんでした
+    tuning_loading: AI設定を読み込み中…
+    no_matches: これらのフィルターに一致するモデルはありません。
+    tuning_saved: AI設定を保存しました
+    tuning_hint: これらの値は、この接続でこのモデルが使用されるすべての場所に適用されます。空白の場合はワークベンチの既定値を継承します。
+    search_placeholder: モデル名を検索
+    filter_result: 結果
+    no_servers: このモデルを提供している接続はまだありません。
+    tuning_inherited: 継承
+    tuning_title: このサーバーのAI設定
+    tuning_load_error: AI設定を読み込めませんでした。
+    filter_state: 状態
+    tuning_temperature_hint: 値を低くすると、より再現性の高い回答が得られます。高くすると、より多様な回答が得られます。
+    filter_clear: フィルターをクリア
+  providers:
+    code_label: コード
+    delete_button: 削除
+    delete_confirmation: 本当にプロバイダー「{name}」を削除しますか？関連するすべてのモデルも削除され、元に戻せません。
+    delete_error: プロバイダーの削除に失敗しました
+    delete_provider: プロバイダーを削除
+    delete_success: プロバイダーが削除されました
+    delete_title: プロバイダーを削除
+    description: AIプロバイダーを有効または無効にします。無効化されたプロバイダーはユーザーの接続フォームに表示されません。
+    disabled: 無効
+    enabled: 有効
+    fetch_error: プロバイダーの読み込みに失敗しました
+    list_title: すべてのプロバイダー
+    local: ローカル
+    no_api_key: APIキー不要
+    requires_api_key: APIキー必要
+    title: AIプロバイダー
+    toggle_error: プロバイダーの更新に失敗しました
+    update_success: プロバイダーが更新されました
+  title: 管理パネル
+  user_details:
+    dark_mode_description: ライトテーマとダークテーマを切り替えます。
+    dark_mode_label: ダークモード
+    email_label: メール
+    email_notifications_description: アカウントに関する更新をメールで受け取ります。
+    email_notifications_label: メール通知
+    full_admin_note: フル管理者はデフォルトですべてのグループ管理者権限を持ちます。
+    group_admin_description: ユーザーは自分のグループ内で他のユーザーを管理できます。
+    group_admin_label: グループ管理者
+    group_hint: ユーザーのグループは、アクセス可能な共有リソースを決定します。
+    language_label: 言語
+    language_select_placeholder: 言語を選択
+    load_error: ユーザー詳細の読み込みに失敗しました
+    max_upload_count_hint: ユーザーあたりの最大データセット数（0 = 無制限）。
+    max_upload_count_label: 最大アップロード数
+    max_upload_count_placeholder: 数を選択
+    max_upload_size_hint: ユーザーあたりの最大総ストレージ（0 = 無制限）。
+    max_upload_size_label: 最大アップロードサイズ
+    max_upload_size_placeholder: サイズを選択
+    name_label: 名前
+    not_found: ユーザーが見つかりません
+    save_error: ユーザーの更新に失敗しました
+    save_success: ユーザー詳細が更新されました
+    select_group: グループを選択
+    title: ユーザーを管理
+    unnamed: 名前なしユーザー
+    user_group: ユーザーグループ
+  users:
+    active_users: アクティブユーザー
+    admin_badge: 管理者
+    bcc_label: BCC登録
+    bcc_updated: BCC登録設定が更新されました
+    created_label: 作成日時
+    current_user_badge: 自分
+    delete_button: 削除
+    delete_confirmation: '"{name}"を完全に削除してもよろしいですか？ この操作は元に戻せません。'
+    delete_error: ユーザーの削除に失敗しました
+    delete_self_error: 自分のアカウントは削除できません
+    delete_success: ユーザーは完全に削除されました
+    delete_title: ユーザーを削除
+    deleted_badge: 論理削除済み
+    deleted_label: 削除済み
+    example_user_badge: サンプルユーザー
+    forbidden: 禁止されています
+    group_admin_badge: グループ管理者
+    hard_delete_button: 完全に削除
+    hard_delete_confirmation: '"{name}"を完全に削除してもよろしいですか？ この操作は元に戻せません。'
+    hard_delete_error: ユーザーの完全削除に失敗しました
+    hard_delete_success: ユーザーは完全に削除されました
+    hard_delete_title: ユーザーを完全に削除
+    load_error: ユーザーの読み込みに失敗しました
+    make_admin: 管理者にする
+    more_button: もっと見る...
+    no_name: 名前なし
+    remove_admin: 管理者を解除
+    resend_button: メールを再送信
+    resend_error: 確認メールの送信に失敗しました
+    resend_success: 確認メールを {email} に送信しました
+    restore_button: 復元
+    restore_error: ユーザーの復元に失敗しました
+    restore_success: ユーザーが復元されました
+    soft_deleted_users: 論理削除されたユーザー
+    title: ユーザー管理
+    unauthorized: 権限がありません
+    unverified_badge: 未確認
+    update_error: ユーザーの更新に失敗しました
+    update_success: ユーザーが更新されました
+    user_not_found: ユーザーが見つかりません
+    verified_badge: 確認済み
+    verify_button: 確認
+    verify_error: ユーザーの確認に失敗しました
+    verify_success: ユーザーを確認済みにしました
+    add_user: ユーザーを追加
+  visualization_types:
+    add_button: 新しいタイプを追加
+    add_title: 可視化タイプを追加
+    create_success: 可視化タイプが作成されました
+    default_parameters: デフォルトパラメータ (JSON)
+    delete: 削除
+    delete_button: 削除
+    delete_confirmation: タイプ "{name}" を削除してもよろしいですか？ 関連するすべてのインスタンスも削除され、元に戻せません。
+    delete_error: 削除に失敗しました
+    delete_success: 可視化タイプが削除されました
+    delete_title: 可視化タイプを削除
+    description: 説明
+    disabled: 無効
+    edit: 編集
+    edit_title: 可視化タイプを編集
+    enabled: 有効
+    fetch_error: 可視化タイプの読み込みに失敗しました
+    input_schema: 入力スキーマ (JSON)
+    invalid_json: スキーマフィールドのJSONが無効です
+    list_title: すべての可視化タイプ
+    name: 名前
+    no_types: 可視化タイプはまだ定義されていません。
+    parameter_schema: パラメータスキーマ (JSON)
+    renderer: レンダラー
+    renderer_client: クライアント
+    renderer_label: レンダラー
+    renderer_server: サーバー
+    save_error: 保存に失敗しました
+    slug: スラッグ
+    slug_label: スラッグ
+    title: 可視化タイプ
+    toggle_error: 更新に失敗しました
+    update_success: 可視化タイプが更新されました
+  adduser:
+    confirm_password: パスワード（確認）
+    creating: ユーザーを作成中...
+    failed: ユーザーの作成に失敗しました
+    description: 新しいユーザーアカウントを作成します。アカウントはすぐに確認済みになります。
+    title: ユーザーを追加
+    success: アカウントが作成され、確認済みになりました。新しいユーザーはサインインできます。
+    not_admin: このページにアクセスする権限がありません。
+    name: 名前
+    email: メールアドレス
+    password: パスワード
+    back_to_admin: 管理画面に戻る
+    submit: ユーザーを作成
+    password_mismatch: パスワードが一致しません
+    language_description: ユーザーが希望するインターフェースの言語を選択してください。
+  set_password:
+    failed: パスワードの設定に失敗しました
+    description: このユーザーの新しいパスワードを設定します。変更を確認するには、あなた自身の管理者パスワードが必要です。
+    title: パスワードを設定
+    admin_password: 管理者パスワード
+    admin_password_required: 管理者パスワードが必要です
+    success: パスワードが正常に設定されました
+ai:
+  connection:
+    add_first: 最初のAI接続を追加
+    add_new: 新しいAI接続を追加
+    add_success: AI接続が正常に追加されました
+    add_title: 新しいAI接続を追加
+    api_key_hint: APIキーは保存前に暗号化されます。
+    api_key_label: APIキー
+    by_label: '作成者:'
+    clear_default: デフォルトを解除
+    currently_not_shared: ❌ 現在共有されていません
+    currently_shared: ✅ 現在グループと共有中
+    default_badge: デフォルト
+    default_cleared: デフォルトAI接続が解除されました
+    default_set: デフォルトAI接続が更新されました
+    delete_button: 削除
+    delete_confirmation: 接続を削除してもよろしいですか？
+    delete_error: AI接続の削除に失敗しました
+    delete_title: AI接続を削除
+    deleted: AI接続が削除されました
+    edit_title: AI接続を編集
+    endpoint_hint: 必要に応じてデフォルトのAPIエンドポイントを上書きします。
+    endpoint_label: エンドポイントURL
+    form_description: AIプロバイダー接続を設定します。
+    group_label: グループ
+    load_error: 接続の読み込みに失敗しました
+    load_providers_error: プロバイダーの読み込みに失敗しました
+    metadata_load_error: プロバイダーメタデータの読み込みに失敗しました
+    metadata_loading: プロバイダー情報を読み込み中です。お待ちください。
+    models: 利用可能なモデル
+    models_disabled: 無効
+    models_load_error: モデルの読み込みに失敗しました
+    models_sync_error: モデルの同期に失敗しました
+    models_synced: モデルが正常に同期されました
+    name_label: 接続名
+    name_placeholder: '例: 自分のAI接続'
+    no_connections: まだ保存されたAI接続はありません。
+    not_found: 接続が見つかりません
+    provider_label: プロバイダー
+    provider_not_found: プロバイダーが見つかりません
+    save_error: AI接続の保存に失敗しました
+    select_provider: AIプロバイダーを選択してください
+    select_provider_first: 最初にプロバイダーを選択してください
+    set_default: デフォルトに設定
+    shared_badge: 共有
+    shared_description: この接続をグループ内の他のユーザーが利用できるようにします。
+    shared_label: グループと共有
+    shared_readonly: 共有
+    shared_readonly_message: この接続は共有されています。表示はできますが、編集は所有者に制限されています。
+    test_button: 接続テスト
+    test_error: 接続に失敗しました。
+    test_success: 接続に成功しました！
+    unknown_user: 不明
+    update_success: AI接続が正常に更新されました
+    models_refresh: モデルを更新
+    models_none: モデルがまだ同期されていません。プロバイダーからモデルを取得するには「更新」をクリックしてください。
+    probe_timeout_hint: ここで1つの適合性テストを実行できる時間。CPUで動くモデルは数分かかります。
+    connect_exceeds_probe: 接続タイムアウトはモデルテストのタイムアウトより長くできません。接続確立にテスト全体の実行時間より長くかかることは許容されません。
+    invalid_connect_timeout: 接続タイムアウトは1以上60以下の整数の秒数である必要があります。
+    invalid_probe_timeout: モデルテストのタイムアウトは1以上1200以下の整数の秒数である必要があります。
+    timeouts_section_label: 接続タイムアウト
+    models_discovered: 'この接続で{seen}件のモデルを検出しました: 新規{created}件、既知{refreshed}件、提供終了{pruned}件'
+    timeouts_section_hint: ボックスを空のままにすると、ワークベンチのデフォルトが使用されます。
+    connect_timeout_hint: ネットワークが接続を受け付けるのにかかる時間です。このネットワークに必要な値より低く設定すると、正常に動作しているエンドポイントが到達不能になります。
+  database:
+    add_connection: データベース接続を追加
+    all_issues: すべての問題
+    analysis_report: 分析レポート
+    analysis_summary: '{tables} テーブル、{columns} カラム、{issues} 件の問題が見つかりました'
+    analyze: スキーマを分析
+    analyzing: 分析中...
+    business_value: ビジネス価値
+    categories: カテゴリ
+    code_systems_detected: 検出されたコード体系
+    cols_rows_format: '{cols} 列、{rows} 行'
+    columns_label: カラム
+    confidence: 信頼度
+    description: インデックス、正規化、リレーションシップ、データ型、命名の問題についてデータベース設計を分析します。
+    download_pdf: PDFをダウンロード
+    email_body_attachment: 分析レポートを添付しました。
+    email_body_connection: '接続: {conn_name}'
+    email_body_database: 'データベース: {db_name}'
+    email_body_id: '接続ID: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: データベース設計分析レポート
+    email_body_type: 'データベースタイプ: {db_type}'
+    email_error: レポートのメール送信に失敗しました
+    email_pdf: PDFをメール送信
+    email_sent: レポートをメールで正常に送信しました
+    email_subject: データベース設計分析 — {db_name} ({db_type}) [接続 {conn_id}]
+    empty_state: データベース接続を選択し、「分析」をクリックして開始します。
+    enter_question: 質問を入力してください。
+    foreign_keys: 外部キー
+    high_risk: 高
+    indexes_label: インデックス
+    issues_label: 問題
+    low_risk: 低
+    medium_risk: 中
+    no_issues: 問題は見つかりませんでした。データベース設計は問題ないようです！
+    no_semi_structured: テキスト列に半構造化データパターンは検出されませんでした。
+    normalisation_suggestions: 正規化の提案
+    normalisation_suggestions_desc: 半構造化テキスト列で見つかったキーワードに基づいて提案された参照テーブル。
+    normalisation_warning: これらはAIが生成した提案です。データベースの再設計には慎重なレビューが必要です。変更はまずレプリカでテストしてください。
+    pdf_downloaded: PDFが正常にダウンロードされました
+    pdf_error: PDFの生成に失敗しました
+    pk_prefix: PK –
+    placeholder: 近日公開予定。この機能ではAIを使用してデータベーススキーマを設計できます。
+    proposed_reference_table: 提案された参照テーブル
+    rag_ask: 質問する
+    rag_chat: RAGチャット — データに関する質問をする
+    rag_chat_desc: 自然言語で質問してください。システムがテキスト列を検索し、引用付きのAI生成回答を返します。
+    rag_error: RAGクエリが失敗しました
+    rag_placeholder: '例: 一般的な診断は何ですか？'
+    rag_sources: ソース
+    risk_breakdown: リスク内訳
+    rows_label: 行
+    schema_error: データベーススキーマの分析に失敗しました
+    select_connection: データベース接続を選択
+    select_connection_first: 最初にデータベース接続を選択してください。
+    select_connection_placeholder: データベース接続を選択...
+    semi_structured: 半構造化データ分析
+    semi_structured_desc: 埋め込まれたコード、キーワード、パターンについてテキスト列を分析しました。
+    tables_explorer: テーブルエクスプローラー
+    tables_label: テーブル
+    title: データベース設計アシスタント
+    top_recommendations: 上位の推奨事項
+    ai_augmented: AI拡張分析
+    column_meanings: 列の意味
+    ai_fallback: 基本分析
+    ai_fallback_desc: AI拡張は利用できません。構造分析のみ表示しています。詳細な分析にはAI接続を選択してください。
+    timeout_error: 分析がタイムアウトしました。データベースが大きすぎるか、AIサービスが利用できない可能性があります。
+    timeout_log: 分析が15分後にタイムアウトしました。
+    missing_dimensions: 不足している次元
+    semantic_analysis: 意味分析
+    semantic_analysis_desc: AIが推論した列の意味、ISICドメイン分類、コード体系の検出。
+    ai_augmented_desc: スキーマAI、セマンティックAI、統合AIがこのデータベースを分析しました。
+    ai_unavailable: AI分析は利用できません。拡張分析を有効にするにはAIプロバイダーに接続してください。
+    table_purposes: テーブルの目的
+    ai_health_score: AIヘルススコア
+    priority_actions: 最優先アクション
+    integration_analysis_desc: Integration AI によって検出された暗黙的な関係、研究機能、欠落しているディメンション。
+    integration_analysis: 統合分析
+    research_capabilities: 研究機能
+    implicit_relationships: 暗黙的な関係
+    isic_domains: ISIC ドメイン分類
+    peer_tables: 'ピアテーブル:'
+    is_missing: が見つかりません
+    health_score_desc: Schema AIによって評価されたデータベース全体の健全性。0 = 重大な構造的問題、100 = 本番運用可能。
+  dataclean:
+    chat_error: 応答の取得に失敗しました
+    chat_placeholder: このデータセットのクリーニングや準備について質問する...
+    column_tooltip: '{type} — 欠損 {null_count}、ユニーク {unique_count}'
+    column_type:
+      category: カテゴリ
+      datetime: 日時
+      number: 数値
+      text: テキスト
+    description: AIを活用したデータセットのクリーニングと準備。
+    empty_chat: データセットを選択し、クリーニングと準備の方法について質問を始めてください。
+    enter_message: メッセージを入力してください。
+    loading_schema: スキーマを読み込み中...
+    no_connection: 設定 > AI でデフォルトのAI接続を設定してください。
+    no_datasets: 利用可能なデータセットがありません。最初にデータセットをアップロードまたは定義してください。
+    placeholder: 近日公開予定です。この機能はAIを使ってデータセットをクリーンアップおよび準備するのに役立ちます。
+    schema_summary: '{rows}行、{cols}列'
+    select_dataset: データセットを選択
+    select_dataset_first: 最初にデータセットを選択してください。
+    select_dataset_placeholder: データセットを選択...
+    send: 送信
+    shared_badge: （共有）
+    title: データセットクリーニングアシスタント
+    schema_error: データセットスキーマの読み込みに失敗しました
+    rules_title: 準備ルール
+    clean_copy: クリーンコピー
+    clean_name_label: クリーニング済みコピーの名前
+    preview_title: データプレビュー
+    clean_in_place_success: データセット「{name}」が更新されました。
+    clean_no_rules: 適用するクリーニングルールはまだありません。
+    no_dataset_selected: データセットが選択されていません
+    clean_copy_success: 新しいデータセット「{name}」が作成されました。元のデータセットは変更されていません。
+    clean_in_place: その場でクリーニング
+    operations_count: '{count} 件の操作'
+    no_rules: ルールはまだありません
+  default_hint: デフォルトの接続は、分析レシピがAIプロバイダーを指定していない場合のフォールバックとして使用されます。
+  new_session: 新しいセッション
+  no_ai_connections: AI接続が設定されていません。設定 > AI で追加してください。
+  recipe:
+    chat_error: 応答の取得に失敗しました
+    chat_placeholder: 統計分析またはレシピ設定について質問してください...
+    description: AIによるレシピと分析ルールの生成。
+    empty_chat: データセットを選択し、使用する統計手法について質問してください。
+    enter_message: メッセージを入力してください。
+    loading_schema: スキーマを読み込み中...
+    no_datasets: 利用可能なデータセットがありません。最初にデータセットをアップロードまたは定義してください。
+    placeholder: 近日公開予定です。この機能はAIを使って分析レシピを作成するのに役立ちます。
+    schema_summary: '{rows}行、{cols}列'
+    select_dataset: データセットを選択
+    select_dataset_first: 最初にデータセットを選択してください。
+    select_dataset_placeholder: データセットを選択...
+    send: 送信
+    title: 分析ルールアシスタント
+  select_ai_connection: AI接続
+  select_ai_connection_placeholder: AI接続を選択...
+  select_model: モデル
+  select_model_placeholder: モデルを選択...
+  test_error: 接続に失敗しました。
+  test_success: 接続成功！
+  title: AI設定
+  recipe_concierge:
+    stage_columns: 列を選択
+    open: エディターで開く
+    no_sessions: まだセッションがありません
+    stage_visualisation: 可視化
+    new_session: 新規セッション
+    chat_error: 応答の取得に失敗しました
+    stage_review: レシピを確認
+    draft_empty: 会話を開始してレシピを作成しましょう。決定を行うと、下書きがここに表示されます。
+    stage_complete: レシピの準備ができました
+    stage_goal: 研究課題
+    welcome: データから何を発見したいか教えてください。完全な分析レシピの作成をお手伝いします。
+    saving: 保存中...
+    toggle_panel: レシピパネルを切り替え
+    draft_title: レシピの下書き
+    status_draft: 下書き
+    saved: レシピを保存しました！
+    save: レシピを保存
+    no_session: セッションが選択されていません
+    input_placeholder: データについて質問するか、気軽に「こんにちは」と話しかけてください
+    create_prompt: 新しいセッションを作成して始めましょう。
+    stage_greeting: ようこそ
+    manual_label: 手動レシピ
+    title: AIレシピコンシェルジュ
+    tab_chat: チャット
+    stage_transforms: データ準備
+    select_dataset: データセットを選択...
+    stage_technique: 手法を選択
+    tab_draft: 下書き
+    delete_session: セッションを削除
+    tab_sessions: セッション
+    status_ready: 準備完了
+    schema_changes: 'スキーマ変更が検出されました:'
+    draft_output: 出力
+    draft_no_visualisation: 数値結果
+    warnings_heading: 警告
+    errors_heading: まだ保存できません
+    draft_algorithm: アルゴリズム
+    draft_dataset: データセット
+    progress_decided: '{total}件中{count}件が決定済み'
+    done: 完了
+    chip_withheld: さらに{count}件
+    progress_next: '{progress} · {next}'
+    chip_superseded: 新しいオファーに置き換えられました。
+    unread_sources: 一部のソースを読み取れなかったため、列リストが不完全である可能性があります。
+    chip_collapse: 表示を減らす
+    chip_expand: さらに{count}件を表示
+  thinking: 考え中...
+  testing:
+    enabled_no: モデル無効
+    slow_limit_session_hint: このページのみに適用 — 保存されません。
+    load_error: AI接続を読み込めませんでした。{detail}
+    cancelled: 停止しました。すでに記録された結果は保持されました。
+    discover_result: 'サーバーは{seen}件のモデルをリストしました: 新規{created}件、既知{refreshed}件、提供終了{pruned}件'
+    no_models: この接続ではまだモデルが検出されていません。
+    cost_confirm: 実行を開始
+    explanation: WorkbenchのAIコンシェルジュは行動するモデル向けに作られています。単に話すだけのモデルは、どれほど礼儀正しく、どれほど大規模でも、レシピエディタが応答するだけで何もしない状態になります。修正すべきはコードではなくモデルです。このページのツールで、モデルが適しているかテストできます。
+    enabled_yes: モデル有効
+    state_pass: 合格
+    cost_warning: これにより{count}件のテストが実行され、ターンテストはCPU上ではモデルごとに数分かかります。開始するにはもう一度押してください。
+    discover_failed: 'モデルを検出できませんでした: {detail}'
+    running: 実行中…
+    discover_models: モデルを検出
+    failure_reason: '理由: {reason}'
+    too_slow: あなたの{seconds}秒の制限を超えています
+    models_heading: モデル
+    slow_limit_session_link: プロフィールで恒久的に設定
+    discover_running: サーバーに問い合わせ中…
+    slow_limit_unavailable: 設定に低速モデルの制限が含まれていないため、どのモデルも遅すぎるとはマークされません。
+    no_duration_here: この接続では未実行
+    column_model: モデル
+    elsewhere_note: モデルは別の接続からの能力結果を保持できます。各状態の横の所要時間はこの接続自身の測定値なので、モデルがここで状態を表示しても所要時間がない場合があります。
+    column_actions: テスト
+    no_connections_link: AI接続へ移動
+    run_all_for_model: このモデルについてすべて実行
+    slow_limit_session_reset: 保存した制限を使用
+    no_connections_heading: まだAI接続がありません
+    connection_label: AI接続
+    duration_ms: '{ms} ms'
+    run_all_untested: 未テストのモデルで全テストを実行
+    state_fail: 不合格
+    duration_seconds: '{seconds}秒'
+    test_tools: ツールを使用
+    run_failed: 'テストを実行できませんでした: {detail}'
+    slow_limit_failed: 低速モデルの制限を読み取れなかったため、どのモデルも遅すぎるとはマークされません。{detail}
+    title: AIテスト
+    slow_limit_session_label: 低速モデルの制限
+    test_competence: 能力
+    test_turn: 複雑さ
+    column_enabled: 有効
+    no_connections_body: モデルのテストにはAI接続が必要です。接続を追加してから、このページに戻ってください。
+    run_test: テストを実行
+api:
+  admin:
+    already_full_admin: ユーザーは既にフル管理者です
+    already_group_admin: ユーザーは既にグループ管理者です
+    cannot_delete_self: 自分のアカウントは削除できません
+    cannot_demote_full_admin: フル管理者を降格させることはできません
+    cannot_demote_self: 自分自身を降格させることはできません
+    cannot_promote_example: サンプルユーザーを昇格させることはできません
+    delete_error: ユーザーの削除に失敗しました
+    demote_error: ユーザーの降格に失敗しました
+    description_required: 説明を空にすることはできません
+    example_blocked: サンプルユーザーは管理者アクションを実行できません
+    group_not_found: グループが見つかりません
+    group_users_load_error: グループユーザーの読み込みに失敗しました
+    groups_load_error: グループの読み込みに失敗しました
+    groups_stats_error: グループ統計の読み込みに失敗しました
+    instance_exists: 関連付けられたインスタンスが{count}件あるため、タイプを削除できません。
+    insufficient_permissions: この操作に対する権限が不足しています
+    invalid_group_id: 無効なgroup_idです。00～99の範囲で指定してください
+    invalid_id: 無効なIDです
+    invalid_upload_count: maxUploadCountは0以上の整数である必要があります（0は無制限）。
+    invalid_upload_size: maxUploadSizeMBは0以上の整数である必要があります（0は無制限）。
+    missing_fields: 必須フィールドがありません
+    missing_group_id: グループIDがありません
+    missing_id: IDがありません
+    missing_model_id: モデルIDがありません
+    missing_provider_code: providerCodeパラメータがありません
+    missing_user_id: userIdがありません
+    model_update_error: モデルの更新に失敗しました
+    models_load_error: モデルの読み込みに失敗しました
+    no_fields: 更新可能な有効なフィールドがありません
+    no_group: ユーザーにグループが割り当てられていません
+    not_group_admin: ユーザーはグループ管理者ではありません
+    only_full_admin: この操作はフル管理者のみ実行できます
+    promote_error: ユーザーの昇格に失敗しました
+    provider_delete_error: プロバイダーの削除に失敗しました
+    provider_not_found: プロバイダーが見つかりません
+    provider_update_error: プロバイダーの更新に失敗しました
+    providers_load_error: プロバイダーの読み込みに失敗しました
+    slug_exists: スラグは既に存在します
+    update_error: ユーザーの更新に失敗しました
+    user_load_error: ユーザーの読み込みに失敗しました
+    user_not_found: ユーザーが見つかりません
+    users_load_error: ユーザーの読み込みに失敗しました
+    viz_type_create_error: 可視化タイプの作成に失敗しました
+    viz_type_delete_error: 可視化タイプの削除に失敗しました
+    viz_type_update_error: 可視化タイプの更新に失敗しました
+    viz_types_load_error: 可視化タイプの読み込みに失敗しました
+    settings_invalid_email_sender: 送信元メールアドレスの形式が無効です
+    settings_save_error: グローバル設定の保存に失敗しました
+    settings_load_error: グローバル設定の読み込みに失敗しました
+    settings_invalid_public_url: 公開URLの形式が無効です
+    settings_invalid_max_registrations: 最大登録数は正の数または無制限である必要があります
+    settings_invalid_upload_size: デフォルトの最大アップロードサイズは0以上の整数である必要があります（0は無制限）。
+    settings_view_forbidden: グローバル設定を表示できるのはフル管理者のみです
+    settings_invalid_upload_count: デフォルトの最大アップロード数は0以上の整数である必要があります（0は無制限）。
+    settings_invalid_email_timeout: メール確認のタイムアウトは正の数（時間）である必要があります
+    settings_modify_forbidden: グローバル設定を変更できるのはフル管理者のみです
+    settings_invalid_grace_period: 登録猶予期間は正の数（時間）である必要があります
+  auth:
+    account_deleted: このアカウントは削除されました。
+    email_not_verified: メールアドレスが確認されていません。受信トレイと迷惑メールフォルダを確認してください。
+    example_user_blocked: サンプルユーザーのパスワード変更は無効になっています。
+    example_user_forgot_blocked: サンプルユーザーではパスワードリセットが無効です
+    example_user_register_blocked: サンプルユーザーは新しいアカウントを作成できません
+    example_user_reset_blocked: サンプルユーザーではパスワードリセットが無効です
+    internal_error: 内部サーバーエラー
+    invalid_credentials: 認証情報が無効です
+    invalid_current_password: 現在のパスワードが正しくありません
+    invalid_token: 無効または期限切れのトークンです
+    missing_email: メールアドレスは必須です
+    missing_fields: フィールドが不足しています
+    password_validation_failed: パスワードの検証に失敗しました
+    token_expired: トークンの有効期限が切れています
+    unauthorized: 認証されていません
+    user_not_found: ユーザーが見つかりません
+  datasets:
+    delete_blocked: サンプルユーザーはデータセットを削除できません
+    example_blocked: サンプルユーザーはデータセットを作成できません
+    proxy_error: 内部サーバーエラー
+    update_blocked: サンプルユーザーはデータセットを更新できません
+  profile:
+    name_required: 名前は必須です
+    update_failed: プロフィールの更新に失敗しました
+  recipes:
+    create_error: レシピの作成に失敗しました
+    dataset_not_found: データセットが見つかりません
+    dataset_required: datasetId は必須です
+    delete_error: レシピの削除に失敗しました
+    execute_error: レシピの実行に失敗しました
+    execution_load_error: 実行の読み込みに失敗しました
+    execution_not_found: 実行が見つかりません
+    executions_load_error: 実行の読み込みに失敗しました
+    load_error: レシピの読み込みに失敗しました
+    missing_id: レシピ ID は必須です
+    name_required: 名前とステージは必須です
+    not_found: レシピが見つかりません
+    not_owned: レシピが見つからないか、所有していません
+    update_error: レシピの更新に失敗しました
+  register:
+    email_exists: このメールアドレスは既に存在します
+    internal_error: 内部サーバーエラー
+    invalid_email: メールアドレスの形式が無効です
+    limit_reached: 登録上限に達しました（最大{max_reg}ユーザー）。
+    missing_fields: 入力項目が不足しています
+    password_validation_failed: パスワードの検証に失敗しました
+    settings_not_found: グローバル設定が見つかりません
+  settings:
+    load_failed: 設定の読み込みに失敗しました
+    save_failed: 設定の保存に失敗しました
+    user_not_found: ユーザーが見つかりません
+  user:
+    api_key_required: このプロバイダーには API キーが必要です
+    connection_name_exists: この名前の接続は既に存在します
+    connection_not_found: 接続が見つかりません
+    example_blocked: サンプルユーザーはこの操作を実行できません
+    internal_error: 内部サーバーエラー
+    missing_fields: 必須項目が不足しています
+    provider_not_found: プロバイダー「{provider}」が見つかりません。
+    user_not_found: ユーザーが見つかりません
+  global_settings_load_error: 内部サーバーエラー
+app:
+  name: Statisticians Workbench
+  version: バージョン
+chat:
+  connection_not_found: AI接続が見つからないか、アクセスできません。
+  connections_load_error: 接続の読み込みに失敗しました
+  delete: 削除
+  delete_confirm: このチャットを削除してもよろしいですか？
+  delete_error: チャットの削除に失敗しました
+  delete_success: チャットを削除しました
+  empty_state: 会話を開始するにはメッセージを送信してください。
+  go_to_ai_settings: AI設定に移動
+  history: チャット履歴
+  input_placeholder: メッセージを入力...
+  load_error: チャットの読み込みに失敗しました
+  models_load_error: モデルの読み込みに失敗しました
+  new_chat: 新規チャット
+  no_chat_selected: アクティブなチャットはありません
+  no_chats: まだチャットがありません
+  no_connections_message: チャットを使用する前に、少なくとも1つのAI接続を定義する必要があります。
+  no_models: この接続に利用可能なモデルはありません
+  rename: 名前を変更
+  rename_empty: タイトルは空にできません
+  rename_error: チャット名の変更に失敗しました
+  rename_success: チャット名を変更しました
+  select_connection: AI接続
+  select_connection_first: 最初にAI接続を選択してください。
+  select_connection_placeholder: AI接続を選択
+  select_model: モデル
+  select_model_placeholder: モデルを選択
+  send_error: メッセージの送信に失敗しました
+  title: チャット
+common:
+  audio_settings: 音声設定
+  back: 戻る
+  cancel: キャンセル
+  cannot_undo: この操作は元に戻せません。
+  clear: クリア
+  close: 閉じる
+  close_navigation: ナビゲーションを閉じる
+  copied: コピーしました！
+  copy: コピー
+  copy_to_clipboard: クリップボードにコピー
+  delete: 削除
+  delete_chat: チャットを削除
+  deleting: 削除中...
+  dismiss: 閉じる
+  dismiss_error: エラーを閉じる
+  dismiss_success: 成功通知を閉じる
+  edit: 編集
+  error_label: エラー
+  false_label: 偽
+  generating: 生成中...
+  has_more_information: 詳細情報
+  loading: 読み込み中...
+  microphone_off: マイクオフ
+  microphone_on: マイクオン
+  next: 次へ
+  no_answer: 回答が返されませんでした
+  no_permission: このページを表示する権限がありません。
+  open_navigation: ナビゲーションを開く
+  reset_to_defaults: デフォルトにリセット
+  restoring: 復元中...
+  save: 保存
+  saving: 保存中...
+  select_language: 言語を選択
+  sending: 送信中...
+  speaker_off: スピーカー オフ
+  speaker_on: スピーカー オン
+  speech_input_unsupported: '音声入力はお使いのブラウザではサポートされていません。対応ブラウザ: Google Chrome、Microsoft Edge、Opera、Samsung Internet。'
+  speech_mic_denied: マイクへのアクセスが拒否されました。ブラウザの設定でマイクへのアクセスを許可してください。
+  speech_mic_failed: 'マイクの起動に失敗しました: {error}。'
+  speech_network_error: 音声認識ネットワークエラー — インターネット接続を確認して、もう一度お試しください。
+  speech_output_unsupported: '音声出力はお使いのブラウザではサポートされていません。対応ブラウザ: Google Chrome、Microsoft Edge、Mozilla Firefox、Apple Safari、Opera、Samsung Internet。'
+  speech_recognition_error: '音声認識エラー: {error}。もう一度お試しください。'
+  success_label: 成功
+  system_default: システムデフォルト
+  testing: テスト中...
+  true_label: 真
+  unknown: 不明
+  untitled: 無題
+  uploading: アップロード中...
+  verifying: 確認中...
+  view: 表示
+  view_dataset: データセットを表示
+  voice: 音声
+  access_denied_admin: アクセス拒否 — 管理者のみ。
+  unknown_error: 不明なエラー
+  audio_pause: 一時停止
+  audio_resume: 再開
+  audio_stop: 停止
+  email_features_unavailable: メールを使用したアカウント機能は利用できません。
+  connect_timeout_label: 接続タイムアウト（秒）
+  ai_temperature_label: 温度
+  ai_timeout_label: 最大AI時間
+  ai_models: AIモデル
+  probe_timeout_label: モデルテストのタイムアウト（秒）
+  ai_max_tokens_label: 最大出力トークン数
+components:
+  audio_settings_dialog:
+    close: 閉じる
+    pitch_label: 'ピッチ: {0}'
+    reset_to_defaults: デフォルトにリセット
+    speed_label: '速度: {0}x'
+    system_default: システムデフォルト
+    title: オーディオ設定
+    voice: 音声
+  example_user_badge: サンプルユーザー
+  example_user_badge_tooltip: フルアクセスに登録
+  example_user_banner:
+    message: システムを読み取り専用モードで表示しています。リソースを作成・変更するには、フルアクセスに登録してください。
+    message_short: 読み取り専用モード - フルアクセスに登録
+    register_button: フルアクセスに登録
+    register_short: 登録
+    title: サンプルユーザーモード
+  group_admin_badge: グループ管理者
+  preparation_preview:
+    more_columns: さらに{0}件
+    null_value: 'null'
+    rows_removed: '{0}が削除されました'
+  readonly_wrapper:
+    message: 読み取り専用モード - このコンテンツを変更するには、フルアクセスに登録してください。
+  active_checkmark: ✓
+  feature_gate:
+    upgrade_message: この機能にはコーポレートライセンスが必要です。アップグレードオプションについてはSentunyにお問い合わせください。
+    upgrade_title: 企業向け機能
+  return_banner:
+    link: セッションに戻る
+    text: AIレシピに取り組んでいました。
+    recipe_link: レシピに戻る
+    recipe_text: レシピに取り組んでいました。
+    fallback_link: 戻る
+  data_value:
+    some_content_not_shown: 一部のコンテンツは表示されません
+database:
+  connection:
+    add_first: 最初の接続を追加
+    add_new: 新しい接続を追加
+    add_success: 接続が正常に追加されました
+    add_title: 新しい接続を追加
+    by_label: '作成者:'
+    clear_default: デフォルトをクリア
+    currently_not_shared: ❌ 現在共有されていません
+    currently_shared: ✅ 現在グループと共有されています
+    database_label: データベース名
+    db_create_badge: DB作成
+    default_badge: デフォルト
+    default_cleared: デフォルト接続がクリアされました
+    default_set: デフォルト接続が更新されました
+    delete_button: 削除
+    delete_confirmation: 接続を削除してもよろしいですか？
+    delete_error: 接続の削除に失敗しました
+    delete_title: 接続を削除
+    deleted: 接続が削除されました
+    edit_title: 接続を編集
+    form_description: データベース接続の詳細を入力してください。
+    group_label: グループ
+    host_label: ホスト
+    load_error: 接続の読み込みに失敗しました
+    name_label: 接続名
+    name_placeholder: '例: 本番DB'
+    no_connections: データベース接続はまだ保存されていません。
+    not_found: 接続が見つかりません
+    password_label: パスワード
+    port_label: ポート
+    save_error: 接続の保存に失敗しました
+    select_type: タイプを選択
+    set_default: デフォルトに設定
+    shared_badge: 共有済み
+    shared_description: この接続をグループ内の他のユーザーが利用できるようにします。
+    shared_label: グループと共有
+    shared_readonly: 共有済み
+    shared_readonly_message: この接続はあなたと共有されています。表示はできますが、編集は所有者のみに制限されています。
+    tables_badge: テーブル
+    test_button: 接続テスト
+    test_failed: 接続に失敗しました
+    test_incomplete: テストする前にすべての項目を入力してください
+    test_network_error: 接続テスト中にネットワークエラーが発生しました。
+    test_success: 接続に成功しました！
+    type_label: データベースタイプ
+    unknown_user: 不明
+    update_success: 接続が正常に更新されました
+    username_label: ユーザー名
+    auto_create_warnings_title: '接続は保存されましたが、データセットの自動作成に警告がありました:'
+    auto_create_views: ビューデータセットを自動作成
+    auto_create_title: データセットを自動作成
+    auto_create_tables: テーブルデータセットを自動作成
+    datasets_created: '{n} 個のデータセットが作成されました'
+    browse_tables: テーブルを参照
+    file_path_label: ファイルパス
+    jet_host_label: Jet Server ホスト
+    jet_port_label: Jet Server Port
+    probe_check_now: 今すぐチェック
+    probe_state:
+      unknown: 未チェック
+      unreachable: 接続不可
+      auth_failed: 認証失敗
+      incomplete: セットアップ未完了
+      no_permission: 権限がありません
+      no_database: データベースがありません
+      schema_error: スキーマを読み取れません
+      reachable: 接続可能
+    probe_hour_ago: 1時間前
+    probe_check_failed: たった今、接続をチェックできませんでした。
+    probe_checked: チェック済み
+    probe_minutes_ago: '{count}分前'
+    probe_no_success: 成功した接続確認は記録されていません。
+    probe_unsaved_hint: 接続は保存されると接続確認が行われます。
+    probe_just_now: たった今
+    probe_title: 最終チェック
+    probe_auto_hint: 接続リストの読み込み時に自動更新されます。
+    probe_never: なし
+    probe_minute_ago: 1分前
+    probe_hours_ago: '{count}時間前'
+    probe_last_succeeded: 最終成功
+  default_hint: デフォルト接続は、分析レシピで接続が指定されていない場合のフォールバックとして使用されます。
+  title: データベース設定
+datasets:
+  all_datasets: すべてのデータ
+  by_label: '作成者:'
+  created_label: 作成日時
+  define_button: データベース接続
+  define_first: データベースに接続
+  delete:
+    confirm: このデータセットを削除しますか？
+    error: データセットの削除に失敗しました
+    success: データセット「{id}」が正常に削除されました。
+    title: 削除
+  description:
+    empty: 生成された説明が空です。AIプロバイダーの設定を確認してください。
+    error: 説明の生成に失敗しました。
+    generated: 説明が正常に生成されました。
+    title: 生成された説明
+  detail:
+    created: 作成
+    descriptions: AI説明
+    generated: 生成済み
+    load_error: データセットの読み込みに失敗しました
+    model: モデル
+    no_description: 説明なし
+    not_found: データセットが見つかりません
+    not_found_message: お探しのデータセットが見つかりませんでした。
+    overview: 概要
+    rows: 行
+    rows_not_computed_hint: 結合はまだ実行されていないため、行数はまだありません。
+    storage_live: ライブビュー
+    materialize_failed: 保存済みテーブルを構築できませんでした：
+    storage_table: 保存済みテーブル
+    rows_not_computed: 未計算
+  list_error: データセットの読み込みに失敗しました
+  no_datasets: 利用可能なデータがありません。
+  no_uploaded: まだアップロードされたデータセットはありません。
+  preparation:
+    add_operation: 操作を追加
+    add_rule: ルールを追加
+    column_required: 操作には列が必要です
+    columns_required: 操作には少なくとも1つの列が必要です
+    delete_confirmation: 変換ルール「{name}」を削除してもよろしいですか？このルールは、使用しているすべてのレシピからも削除されます。
+    delete_error: 変換ルールの削除に失敗しました
+    delete_title: 変換ルールの削除
+    edit_rule: ルールを編集
+    encode:
+      label: ラベルエンコード
+      one_hot: ワンホット
+    fill:
+      constant: 定数
+      drop: 削除
+      mean: 平均値
+      median: 中央値
+      mode: 最頻値
+    filter_invalid: フィルター操作には列と値が必要です
+    link:
+      description: このデータセットをクレンジングして変換
+      title: 前処理ルール
+    name_required: ルール名は必須です
+    new_name_required: 名前変更操作には新しい名前が必要です
+    new_rule: 新規ルール
+    no_rules: このデータセットに変換ルールが定義されていません。
+    operation:
+      convert_type: 型変換
+      drop_columns: 列の削除
+      encode: エンコード
+      fill_missing: 欠損値の補完
+      filter: フィルター
+      normalize: 正規化
+      rename_column: 列名の変更
+      standardize: 標準化
+    operations: 操作
+    operations_count: 操作
+    operator:
+      after: より後 (>)
+      before: より前 (<)
+      contains: 含む
+      ends_with: で終わる
+      equal_to: 等しい (=)
+      greater_than: より大きい (>)
+      greater_than_or_equal: 以上 (>=)
+      less_than: より小さい (<)
+      less_than_or_equal: 以下 (<=)
+      not_contains: 含まない
+      not_equal: 等しくない (!=)
+      on_or_after: 以降 (>=)
+      on_or_before: 以前 (<=)
+      starts_with: で始まる
+    original_data: 元データ
+    placeholder:
+      boolean: true / false
+      datetime: YYYY-MM-DD またはタイムスタンプ…
+      number: 数値を入力…
+      value: 値を入力…
+    preview: プレビュー
+    preview_error: ルールのプレビューに失敗しました
+    preview_title: プレビュー
+    rows_after: より後
+    rows_before: より前
+    rows_removed: 削除されました
+    rule_created: 準備ルール「{name}」が正常に作成されました。
+    rule_deleted: 準備ルールが正常に削除されました。
+    rule_description: 説明（任意）
+    rule_description_placeholder: 簡単な説明
+    rule_name: ルール名
+    rule_name_placeholder: '例: 分析用にクレンジング'
+    rule_updated: 準備ルールが正常に更新されました。
+    rules_title: 変換ルール
+    save_error: 変換ルールの保存に失敗しました
+    shared: グループと共有
+    transformed_data: 変換済みデータ
+    type:
+      boolean: ブール型
+      datetime: 日時
+      numeric: 数値
+      string: 文字列
+    ui:
+      column: 列
+      columns: 列（カンマ区切り）
+      encoding: エンコーディング
+      method: 方法
+      new_name: 新しい名前
+      operator: 演算子
+      target_type: 変換後の型
+      type: 型
+      value: 値
+  rules_button: ルール
+  schema:
+    column_name: 列
+    column_type: 型
+    columns: 列
+    load_error: 'スキーマを読み込めませんでした: {error}'
+    no_sample_data: サンプルデータがありません
+    null_count: ヌル
+    sample_data: サンプルデータ（先頭5行）
+    title: スキーマプレビュー
+    total_columns: 総列数
+    total_rows: 総行数
+    unique_count: ユニーク
+  share: 共有
+  share_error: 共有の更新に失敗しました
+  shared: データセットが共有されました
+  shared_badge: 共有済み
+  source:
+    unknown_file: 不明なファイル
+  title: マイデータ
+  transform_button: 変換
+  type:
+    table: テーブル
+    upload: アップロード済み
+    view: ビュー
+    virtual: 仮想
+    notebook: ノートブック
+    mysql: MySQL
+    postgresql: PostgreSQL
+    access: MS Access
+    mssql: MS SQL
+    cleaned_copy: クリーンコピー
+  unknown_user: 不明
+  unshare: 共有解除
+  unshared: データセットの共有が解除されました
+  upload:
+    card_title: アップロードして説明を生成
+    connection_not_found: 接続が見つかりません。有効なAI接続を選択してください。
+    description_label: 説明（任意）
+    description_placeholder: このデータの簡単な説明
+    error: データセットのアップロードに失敗しました。
+    file_label: ファイル
+    file_selected: 選択されたファイル
+    file_too_large: ファイルが最大アップロードサイズの{max}MBを超えています。アップロードは許可されません。
+    generate_description: 説明を生成
+    history: アップロード履歴
+    limit_reached: 上限に達しました
+    limit_reached_message: 許可されているデータセットの最大数（{count}）に達しました。
+    name_label: データ名
+    name_placeholder: マイデータ
+    no_connections: 説明を生成するには、少なくとも1つのAI接続を定義する必要があります。
+    no_datasets: まだデータセットはありません
+    no_file: 最初にファイルを選択してください。
+    no_name: データセット名を入力してください。
+    select_dataset: 最初にデータセットをアップロードまたは選択してください。
+    shared_description: このデータをグループ内の他のユーザーが利用できるようにします。
+    shared_group_hint: 'グループ: {group} - {description}'
+    shared_label: グループと共有
+    success: データセット「{name}」が正常にアップロードされました
+    title: データをアップロード
+    upload_button: アップロード
+    escalation_retry: 再試行
+    escalation_hint: この試行のみがこれを使用します。このモデルが通常より長く必要とする場合は、毎回これを引き上げるのではなく、接続のモデル設定を調整してください。
+    escalation_label: 再試行（秒）
+    escalation_failed_at: 説明は{seconds}秒後にタイムアウトしました。
+    escalation_invalid: 1～{max}の整数の秒数を入力してください。
+  upload_button: データをアップロード
+  upload_count: '{count}アップロード'
+  upload_first: 最初のデータファイルをアップロード
+  upload_first_file: 最初のファイルをアップロード
+  upload_new: 新しいファイルをアップロード
+  uploaded_title: アップロードされたデータ
+  view_dataset_title: データセットを表示
+  view_schema: スキーマを表示
+  browse:
+    column: 列
+    load_tables_error: テーブルの読み込みに失敗しました
+    type: タイプ
+    browse_tables: テーブルを参照
+    preview_hint: 「プレビューを読み込む」をクリックしてサンプル行を表示します。
+    tables_count: '{count} テーブル'
+    tables: テーブル
+    connections: 接続
+    select_table_hint: テーブルを選択すると、カラムの表示とデータのプレビューができます。
+    nullable: NULL許容
+    load_preview: プレビューを読み込む
+    columns_title: カラム — {table}
+    load_columns_error: カラムの読み込みに失敗しました
+    back: 戻る
+    preview: プレビュー
+    load_preview_error: プレビューの読み込みに失敗しました
+  transforms:
+    create_new: 新規変換
+    no_transforms: このデータセットには変換が定義されていません。
+    title: 変換
+    operations_label: '{count} 操作'
+    create_error: 変換の作成に失敗しました
+    delete_confirm: この変換を削除しますか？
+    description_label: 説明（任意）
+    creating: 作成中…
+    create_button: 作成
+    delete_error: 変換の削除に失敗しました
+    for: '{name} の変換'
+    created_label: 作成日時
+    name_label: 名前
+    back: マイデータに戻る
+    load_error: 変換の読み込みに失敗しました
+  database_label: DB
+  source_unavailable: ソースは利用できません
+  filter:
+    no_match: このフィルターに一致するデータセットはありません。
+    notebooks: ノートブック
+    cleaned: クリーニング済み
+    all: すべて
+    shared: 共有済み
+    postgresql: PostgreSQL
+    mysql: MySQL
+    uploads: アップロード
+    not_shared: 未共有
+    virtual: 仮想
+    label: フィルター
+    access: MS Access
+    mssql: MS SQL
+  created_from: '{name} から作成'
+  cleaned_badge: クリーニング済み
+  table_not_built: テーブル未構築
+define:
+  column_name: 列
+  column_type: 型
+  connection_label: データベース接続
+  dataset_name: データセット名
+  dataset_name_placeholder: '例: 顧客データ'
+  description_label: 説明（任意）
+  description_placeholder: このデータセットの簡単な説明
+  existing_none: なし
+  existing_title: 既存
+  go_to_db_settings: データベース設定へ移動
+  load_connections_error: 接続の読み込みに失敗しました
+  load_sources_error: ソースの読み込みに失敗しました
+  name_required: データセット名は必須です
+  no_connections_message: データベースに接続する前に、少なくとも1つのデータベース接続を定義する必要があります。
+  no_sources: このデータベースにテーブルまたはビューが見つかりません。
+  nullable: Null許容
+  preview_label: データプレビュー（先頭10行）
+  save_button: データセットを保存
+  save_error: データセットの作成に失敗しました
+  save_success: データセットが正常に作成されました
+  schema_label: スキーマ
+  select_connection: 接続を選択
+  select_source: ソースを選択
+  select_source_first: 最初にテーブルまたはビューを選択してください
+  shared_description: このデータセットをグループ内の他のユーザーが利用できるようにします。
+  shared_label: グループと共有
+  source_label: ソース
+  source_type_label: ソースタイプ
+  step1_description: データセットの接続元としてデータベース接続を選択してください。
+  step1_title: データベース接続を選択
+  step2_description: テーブルまたはビューを使用するか選択し、ソースを選択してください。
+  step2_title: ソースを選択
+  step3_description: 選択したソースの列とプレビューデータを確認してください。
+  step3_title: ソースを検証
+  step4_description: データセットに名前と説明を付けて、保存してください。
+  step4_title: 名前を付けて保存
+  step_connection: 接続
+  step_save: 保存
+  step_source: ソース
+  step_verify: 検証
+  table: テーブル
+  title: データベースに接続
+  verify_button: ソースを検証
+  verify_error: テーブル/ビューの検証に失敗しました
+  verify_success: テーブル/ビューが正常に検証されました
+  view: ビュー
+demo:
+  badge: デモ
+  banner:
+    message: これはデモシステムです。データは定期的にリセットされる場合があります。
+    title: ⚠️ デモモード
+forgot_password:
+  back_to_login: ログイン画面に戻る
+  check_spam: 数分以内にメールが届かない場合は、迷惑メールフォルダをご確認ください。
+  description: メールアドレスを入力してください。パスワード再設定用のリンクをお送りします。
+  error: 再設定メールの送信に失敗しました
+  sent: このメールアドレスにアカウントが存在する場合、パスワード再設定リンクが送信されます。
+  sent_description: このメールアドレスにアカウントが存在する場合、パスワード再設定リンクが送信されます。
+  sent_title: メール送信済み
+  submit: 再設定リンクを送信
+  title: パスワードをお忘れですか
+global:
+  demo_mode:
+    description: 有効にすると、システムはデモモードで実行されます。
+    label: デモモード
+  email_sender:
+    hint: 確認メールの送信元として表示されるメールアドレス。
+    label: 送信元メールアドレス
+  email_timeout:
+    hint: メール確認リンクの有効時間（時間）
+    label: メール確認の有効期限（時間）
+  grace_period:
+    hint: 論理削除されたアカウントが完全に消去されるまでの時間（時間）
+    label: 削除猶予時間（時間）
+  invalid_grace_period: 削除猶予時間（時間）には正の整数を入力してください
+  invalid_number: 最大登録数には正の整数を入力してください
+  invalid_timeout: 確認の有効期限（時間）には正の整数を入力してください
+  load_error: グローバル設定の読み込みに失敗しました
+  max_registrations:
+    custom: カスタム（下に入力）
+    custom_placeholder: 正の数値を入力してください
+    hint: 登録可能なユーザー数の上限を設定します。
+    label: 最大ユーザー登録数
+    placeholder: 制限を選択
+    unlimited: 無制限
+    users: ユーザー
+  password_policy:
+    custom: カスタム
+    high: 高（最低10文字、大文字、小文字、数字、特殊文字を含む）
+    hint: ユーザー登録時とパスワード変更時のパスワード複雑性要件を選択してください。
+    label: パスワードポリシー
+    low: 低（最低6文字）
+    medium: 中（最低8文字、大文字、小文字、数字を含む）
+    min_length: 最小文字数
+    min_strength: 最低強度（zxcvbnスコア 0～4）
+    require_digit: 数字を必須にする
+    require_lowercase: 小文字を必須にする
+    require_special: 特殊文字を必須にする
+    require_uppercase: 大文字を必須にする
+    select: ポリシーを選択
+  public_url:
+    hint: メール確認リンクで使用するベースURL（例：https://workbench.example.com）
+    label: 公開URL
+  save_button: グローバル設定を保存
+  save_success: グローバル設定が保存されました
+  system:
+    description: 全ユーザーに適用されるグローバル設定を管理します（管理者専用）。
+    title: システム設定
+  title: グローバル設定
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: ユーザーあたりのデータセット最大数（0 = 無制限）。新規ユーザーに適用されます。
+    count_unlimited: 無制限
+    default_count_label: ユーザーあたりのデフォルト最大アップロード数
+    default_size_label: ユーザーあたりのデフォルト最大アップロードサイズ（MB）
+    select_count: 制限を選択
+    select_size: 制限を選択
+    size_100_mb: 100 MB
+    size_10_mb: 10 MB
+    size_1_gb: 1 GB
+    size_1_mb: 1 MB
+    size_250_mb: 250 MB
+    size_25_mb: 25 MB
+    size_500_mb: 500 MB
+    size_50_mb: 50 MB
+    size_5_mb: 5 MB
+    size_hint: ユーザーあたりの最大総ストレージ容量（0 = 無制限）。新規ユーザーに適用されます。
+    size_unlimited: 無制限
+  welcome:
+    hint: このメッセージはログインページに表示されます。非表示にするには空欄にしてください。
+    label: ウェルカムメッセージ
+    placeholder: ログインページに表示するウェルカムメッセージを入力してください。
+home:
+  welcome_placeholder: Statisticians Workbench へようこそ
+login:
+  account_deleted: このアカウントは削除されました。
+  description: アカウントにサインイン
+  docs_more_info: 詳細についてはこちら
+  email: メールアドレス
+  email_not_verified: メールアドレスが確認されていません。受信トレイと迷惑メールフォルダを確認してください。
+  email_verified: メールアドレスが確認されました！ログインできるようになりました。
+  forgot_password: パスワードをお忘れですか？
+  invalid_credentials: メールアドレスまたはパスワードが無効です。
+  invalid_token: 確認リンクが無効です。新しいリンクをリクエストしてください。
+  missing_token: 確認トークンが提供されていません。
+  no_account: アカウントをお持ちでない場合は？
+  password: パスワード
+  register_link: 登録
+  resend_link: 確認メールを再送信しますか？
+  signing_in: サインイン中...
+  submit: ログイン
+  success: ログインに成功しました
+  title: ログイン
+  token_expired: 確認リンクの有効期限が切れました。新しいリンクをリクエストしてください。
+nav:
+  about: 概要
+  admin: 管理者
+  admin_groups: グループの説明
+  admin_panel: ユーザー管理
+  admin_providers: AIプロバイダー
+  admin_visualization_types: 可視化タイプ
+  ai_analysis_rules: 分析ルール
+  ai_chat: AIツール
+  ai_database_design: データベース設計
+  ai_dataset_cleaning: データセットクリーニング
+  ai_general: 一般
+  ai_virtual_datasets: 仮想データセット
+  home: ホーム
+  logout: ログアウト
+  user: ユーザー
+  admin_setup: セットアップ
+  admin_setup_options: オプション
+  admin_setup_internal: 内部
+  admin_setup_limits: 制限
+  admin_licence: ライセンス
+  ai_testing: AIテスト
+  admin_setup_tuning: チューニング
+notebooks:
+  and_more: 他{count}件
+  cant_create_tables: この接続ではテーブルを作成できません — インポートは拒否されました
+  cells_label: 'セル:'
+  connection_create_db_badge: DB作成
+  connection_form_label: 接続
+  connection_tables_badge: テーブル
+  connection_unavailable: データベース接続が見つからないかアクセスできません
+  create_dataset: データセットを自動的に作成
+  create_new_database: 新しいデータベースを作成
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrame:'
+  dataset_created: データセットが作成されました
+  delete_confirm: インポート "{name}" とそのすべてのテーブルを削除しますか？
+  delete_failed: インポートの削除に失敗しました
+  delete_title: インポートを削除
+  detected_dataframes: '検出されたDataFrame:'
+  doc_preview: 'ドキュメントのプレビュー:'
+  example_banner: 現在、サンプルユーザーとして表示しています。ノートブックをインポートして管理するには登録してください。
+  example_blocked: サンプルユーザーはノートブックをインポートできません。
+  example_register: 登録
+  fetch_error: インポートの取得に失敗しました
+  import_button: ノートブックをインポート
+  import_complete: インポート完了
+  import_deleted: インポートが削除されました
+  import_failed: 'ノートブックのインポートに失敗しました: {error}'
+  import_success: '{count}個のテーブルを正常にインポートしました'
+  import_title: Jupyterノートブックのインポート
+  imported_at_label: 'インポート日時:'
+  importing: インポート中...
+  kb_unit: KB
+  kernel_label: 'カーネル:'
+  list_title: ノートブックのインポート
+  no_dataframes: このノートブックにDataFrameが見つかりません
+  no_imports: まだノートブックのインポートはありません。
+  notebook_label: 'ノートブック:'
+  parse_error: ノートブックの解析に失敗しました
+  parsing: 解析中...
+  preview_button: プレビュー
+  rows_cols_format: '{rows}行 × {cols}列'
+  run_preview_first: プレビューを実行してインポート内容を確認してください
+  sanitised_notice: セキュリティのためコードセルは削除されました。データ出力とマークダウンのみが保持されます。
+  select_connection: データベース接続を選択してください
+  select_connection_placeholder: 接続を選択...
+  select_file_first: .ipynbファイルを選択してください
+  share_error: 共有設定を変更できるのはオーナーのみです。
+  share_label: グループと共有
+  shared: ノートブックがグループと共有されました
+  shared_badge: 共有済み
+  size_label: 'サイズ:'
+  step1_title: 'ステップ1: ファイルを選択'
+  step2_title: 'ステップ2: プレビュー'
+  storage_form_label: ストレージ
+  storage_label: 'ストレージ:'
+  table_count: '{count}テーブル'
+  tables_created_label: '作成されたテーブル:'
+  title_label: 'タイトル:'
+  unshared: ノートブックの共有が解除されました
+  table_name: 'テーブル: {name}'
+password:
+  strength:
+    fair: 普通
+    good: 良好
+    strong: 強い
+    weak: 弱い
+preparation:
+  add_operation: 操作を追加
+  after: 後
+  back_to_list: ルールに戻る
+  before: 前
+  cancel: キャンセル
+  col:
+    categorical: カテゴリカル
+    datetime: 日時
+    nulls: '{percent}% 欠損'
+    numeric: 数値
+  cols: 列
+  column_label: 列
+  constant_value_label: 定数値
+  create_first: 分析前に、このデータセットをクリーニングおよび変換するための最初の準備ルールを作成してください。
+  delete: 削除
+  delete_confirm: ルール "{name}" を削除しますか？この操作は元に戻せません。
+  description_label: 説明 (任意)
+  duplicate: 複製
+  duplicate_suffix: (コピー)
+  edit: 編集
+  edit_title: 'ルールを編集: {name}'
+  encoding:
+    label: ラベル
+    onehot: ワンホット
+  encoding_param_label: エンコーディング
+  live_preview: ライブプレビュー
+  load_error: データの読み込みに失敗しました
+  method:
+    minmax: 最小-最大
+    zscore: Zスコア
+  method_label: 方法
+  name_label: 名前
+  name_required: ルール名は必須です
+  new_name_label: 新しい名前
+  new_rule: 新しいルール
+  new_title: 新しい準備ルール
+  no_rules: 準備ルールはまだありません
+  nulls: null値
+  op:
+    convert_type: 型変換
+    drop_column: 列削除
+    drop_duplicates: 重複削除
+    encode_category: カテゴリエンコード
+    fill_missing: 欠損補完
+    filter: フィルタ
+    rename_column: 列名の変更
+    standardize: 標準化
+    normalize: 正規化
+  operations_count: '{count} 操作{itemize}'
+  operations_label: 操作
+  operator_label: 演算子
+  ops_required: 少なくとも1つの操作が必要です
+  preview: プレビュー
+  preview_error: プレビューに失敗しました
+  preview_loading: プレビュー中...
+  preview_no_ops: 操作を追加してプレビューを表示
+  row_impact: '{before} → {after} 行'
+  rows: 行
+  rule_deleted: ルールが削除されました
+  rule_duplicated: ルールが複製されました
+  rule_saved: ルールが保存されました
+  rules_for: '{dataset} のルール'
+  sample_data: サンプルデータ
+  save: ルールを保存
+  save_error: ルールの保存に失敗しました
+  saving: 保存中...
+  schema_error: データセットスキーマの読み込みに失敗しました
+  select_column: -- 列を選択 --
+  select_type: -- 操作を選択 --
+  strategy:
+    constant: 定数
+    drop_row: 行削除
+    mean: 平均
+    median: 中央値
+    mode: 最頻値
+  strategy_label: 戦略
+  target_type_label: ターゲットタイプ
+  title: 準備ルール — {dataset}
+  type_label: 操作
+  value_label: 値
+profile:
+  change_password:
+    description: パスワードを更新してください。
+    title: パスワード変更
+  change_password_button: パスワード変更
+  confirm_password: 新しいパスワードの確認
+  current_password: 現在のパスワード
+  current_password_required: 現在のパスワードが必要です
+  dark_mode_description: ライトテーマとダークテーマを切り替えます。
+  dark_mode_label: ダークモード
+  email_label: メールアドレス
+  email_notifications_description: アカウントに関する更新情報をメールで受け取ります。
+  email_notifications_label: メール通知
+  email_unchangeable: メールアドレスは変更できません
+  example_user_language_hint: 言語設定を変更するにはフルアクセスに登録してください。
+  example_user_name_hint: 名前を変更するにはフルアクセスに登録してください。
+  example_user_notifications_hint: 通知設定を変更するにはフルアクセスに登録してください。
+  example_user_save_hint: 変更を保存するにはフルアクセスに登録してください。
+  example_user_theme_hint: テーマ設定を変更するにはフルアクセスに登録してください。
+  group_description: 説明
+  group_id: グループID
+  group_info_title: グループ情報
+  group_load_error: グループ情報の読み込みに失敗しました
+  group_readonly_hint: グループは管理者によって割り当てられており、ここでは変更できません。
+  language_description: インターフェースの言語を選択してください。
+  language_label: 言語
+  language_select_placeholder: 言語を選択
+  languages_load_error: 言語の読み込みに失敗しました
+  load_error: 設定の読み込みに失敗しました
+  name_label: 名前
+  name_placeholder: あなたの名前
+  new_password: 新しいパスワード
+  password_change_failed: パスワードの変更に失敗しました
+  password_changed: パスワードが正常に変更されました
+  password_disabled: サンプルユーザーはパスワード変更が無効です
+  password_disabled_message: サンプルユーザーとしてログインしています。パスワード機能は無効です。
+  password_mismatch: 新しいパスワードが一致しません
+  personal:
+    description: 個人情報とアプリの設定を更新してください。
+    title: プロフィールと設定
+  save_button: 変更を保存
+  save_error: プロフィールの保存に失敗しました
+  save_success: プロフィールが保存されました
+  title: プロフィール設定
+  update_error: プロフィールの更新に失敗しました
+  slow_threshold:
+    label: 自分の制限
+    description: この時間より長くかかるモデルテストは「遅すぎる」と報告されます。空にするとサイトの既定値を使用します。
+    saved: 低速モデルの制限を保存しました
+    title: 低速モデルのしきい値
+    invalid: 制限は1以上の整数の秒数である必要があります
+    save: 制限を保存
+    effective: '現在有効:'
+    placeholder: サイトの既定値を使用
+    seconds: 秒
+recipes:
+  add_rule: ルールを追加
+  back_to_recipe: レシピに戻る
+  by_label: 作成者
+  cancel_button: 強制終了
+  cancel_error: 実行のキャンセルに失敗しました
+  cancel_success: 実行がキャンセルされました
+  chart:
+    category: カテゴリ
+    count: カウント
+    value: 値
+    x_axis: X
+    y_axis: Y
+  clone: 複製
+  clone_button: 複製
+  clone_error: レシピの複製に失敗しました
+  clone_success: レシピが正常に複製されました
+  clone_suffix: （コピー）
+  column_type:
+    category: カテゴリ
+    datetime: 日付/時刻
+    number: 数値
+    text: テキスト
+  columns_after: 列
+  columns_before: 列
+  columns_label: 列
+  columns_label_short: 列
+  columns_required: 少なくとも1つの列を選択してください
+  create_error: レシピの作成に失敗しました
+  create_success: レシピ「{name}」が正常に作成されました。
+  dataset_label: データセット
+  dataset_required: データセットを選択してください
+  delete: 削除
+  delete_button: 削除
+  delete_confirmation: レシピ「{name}」を削除してもよろしいですか？この操作は元に戻せません。
+  delete_title: レシピを削除
+  description_label: 説明（任意）
+  description_placeholder: このレシピの説明
+  edit: 編集
+  execute: 実行
+  execute_button: 実行
+  execute_error: 'レシピの実行に失敗しました: {error}'
+  execute_success: レシピが正常に実行されました
+  execution_error: エラー
+  execution_load_error: '実行の読み込みに失敗しました: {error}'
+  execution_not_found: 実行「{id}」が見つかりません。
+  execution_progress: 進捗
+  execution_stage_results: ステージの結果
+  execution_started: 開始
+  execution_status: ステータス
+  execution_title: 実行結果
+  executions_title: 最近の実行
+  export_results: 結果をエクスポート
+  go_define: 定義へ移動
+  go_upload: アップロードへ移動
+  group_by_hint: カテゴリ列でグループ化してグループ間の統計量を比較する
+  group_by_label: グループ化（任意）
+  list_load_error: レシピの読み込みに失敗しました
+  load_datasets_error: 'データセットの読み込みに失敗しました: {error}'
+  load_error: 'レシピの読み込みに失敗しました: {error}'
+  load_rules_error: 前処理ルールの読み込みに失敗しました
+  loading_schema: 列を読み込んでいます...
+  move_down: 下へ移動
+  move_up: 上へ移動
+  my_recipes: マイレシピ
+  name_label: レシピ名
+  name_placeholder: 例：売上分析
+  name_required: レシピ名は必須です
+  new_button: 新規レシピ
+  new_title: 新規レシピ
+  no_datasets: データセットが見つかりません。先にデータセットをアップロードまたは定義してください。
+  no_datasets_available: 利用可能なデータセットがありません。先にデータセットをアップロードしてください。
+  no_datasets_found: データセットがありません。先にデータセットをアップロードしてください。
+  no_group: なし
+  no_group_options: グループ化に使用できるカテゴリ列がありません
+  no_preparation_rules: このデータセットに利用可能な前処理ルールはありません。
+  no_recipes: まだレシピを作成していません。
+  no_schema: このデータセットのスキーマが利用できません。
+  no_stages: レシピには少なくとも1つのステージが必要です。
+  no_visualisation: なし
+  no_visualisation_data: 利用可能な可視化データがありません
+  none: なし
+  preparation_rules: 前処理ルール（任意）
+  preparation_rules_applied: 適用された前処理ルール
+  preparation_rules_applied_description: ルールは分析ステージの前に、以下に示す順序で適用されました。
+  preparation_rules_applied_title: 適用された前処理ルール
+  preparation_rules_description: 適用するルールを順に選択してください。ルールは順次適用されます。
+  recipe_label: レシピ
+  remove_rule: ルールを削除
+  rows_after: 処理後の行数
+  rows_before: 行
+  rows_label: 行
+  rules_applied_label: '{count}個のルールが適用されました：'
+  save_button: レシピを保存
+  schema_error: 'カラムスキーマの読み込みに失敗しました: {error}'
+  schema_loaded: 'スキーマを読み込みました: {count} 列が見つかりました'
+  select_dataset: データセットを選択
+  select_group: グループ化する列を選択
+  select_rule: 追加するルールを選択
+  select_rule_placeholder: ルールを選択
+  select_technique: 手法を選択
+  select_visualisation: 可視化を選択
+  selected: 選択済み
+  shared: 共有済み
+  shared_badge: 共有済み
+  shared_description: このレシピをグループ内の他のユーザーが利用できるようにします。
+  shared_group_hint: 'グループ: {group} - {description}'
+  shared_label: グループと共有
+  shared_with_group: あなたのグループと共有済み
+  stage_data_selection: データ選択
+  stage_number: ステージ {number}
+  stage_preparation: データ準備
+  stage_statistics: 統計
+  stage_visualisation: 可視化
+  stages_title: ステージ
+  status:
+    cancelled: キャンセル済み
+    completed: 完了
+    failed: 失敗
+    pending: 保留中
+    running: 実行中
+  step1_description: レシピに名前と説明を入力してください。
+  step1_title: レシピに名前を付ける
+  step2_description: データセットを選び、分析する列を選択してください。
+  step2_title: データを選択
+  step3_description: 適用する統計手法を選択してください。
+  step3_title: 分析を選択
+  step4_description: レシピに可視化を追加します。
+  step4_title: 可視化 (オプション)
+  step_analysis: 分析
+  step_complete: ステップ {step} が完了しました
+  step_data: データ
+  step_name: 名前
+  step_visualise: 可視化
+  technique_anova_one_way: 一元配置分散分析
+  technique_anova_two_way: 二元配置分散分析
+  technique_chi_square: カイ二乗検定
+  technique_correlation: 相関行列
+  technique_descriptive: 記述統計
+  technique_hint: 記述統計は、平均、中央値、標準偏差などの要約統計量を表示します。
+  technique_label: 手法
+  technique_linear_regression: 線形回帰
+  technique_t_test_independent: 対応のないt検定
+  technique_t_test_paired: 対応のあるt検定
+  title: 統計レシピ
+  total_rules_applied: 適用されたルールの総数
+  unknown_user: 不明
+  update_error: 'レシピの更新に失敗しました: {error}'
+  update_success: レシピ「{id}」が正常に更新されました。
+  updated_label: 更新済み
+  visualisation:
+    columns_label: 列
+    data_points: データポイント
+    distribution: 分布
+    trend: 傾向
+    type_label: 種類
+  visualisation_bar: 棒グラフ
+  visualisation_hint: 選択したデータ列を使用してグラフが生成されます。
+  visualisation_label: 可視化の種類
+  visualisation_line: 折れ線グラフ
+  visualisation_pie: 円グラフ
+  visualisation_raw_data: '可視化データ:'
+  visualisation_scatter: 散布図
+  share:
+    button: 共有
+    group_info: グループ {group} — {desc}
+    shared_badge: 共有
+    unshare: 共有解除
+    read_only: '{owner}により共有 — 読み取り専用'
+  execution:
+    errors_label: 'エラー:'
+    results_label: '結果:'
+    running: レシピを実行中…
+    rules_count: '{count} 件の準備ルールが適用されました。'
+    failed_start: 実行の開始に失敗しました
+    request_failed: 実行が失敗しました
+    showing_rows: '{total}行中{count}行を表示'
+  require:
+    dataset: データセットを選択
+    xColumn: '{out}のX列を選択'
+    second_response: 2番目の応答列を選択
+    yColumn: '{out}のY列を選択'
+    dependentColumn: 従属列を選択
+    algorithm: 分析を選択
+    categoryColumn: '{out}のカテゴリ列を選択'
+    first_response: 最初の応答列を選択
+    independentColumns: 独立列を選択
+    factorColumn: '{algo} の因子列を選択'
+    responseColumn: '{algo} の応答列を選択'
+  algorithm:
+    dependent_column: 従属変数
+    placeholder: 分析タイプを選択
+    factor_column: 因子 (カテゴリカル)
+    group_by: グループ化
+    independent_columns: 独立変数
+    response_column: 応答（数値）
+  editor:
+    save_success: レシピが保存されました
+    component_algorithm: アルゴリズム
+    save: レシピを保存
+    create_mode: 新しいレシピを作成 — エディターはフェーズ3で提供予定です。
+    component_dataset: データセット / 変換
+    run: 実行
+    save_error: レシピの保存に失敗しました
+    name_required: レシピ名は必須です。
+    loading: レシピを読み込み中...
+    name_placeholder: レシピ名
+    placeholder: これは手動の統計レシピエディタです — レシピはワークベンチの中核です。
+    new_recipe_name: 新しいレシピ
+    name_hint: レシピを保存するには名前が必要です。
+    component_output: 出力
+  dataset:
+    loading: データセットを読み込み中...
+    load_error: データセットの読み込みに失敗しました
+    rows_label: 行
+    placeholder: データセットを選択
+    columns_label: カラム
+    no_datasets: 利用可能なデータセットはありません
+  panel:
+    no_results: 検索に一致するレシピはありません
+    complete: 準備完了
+    new_button: 新規レシピ
+    no_recipes: まだレシピがありません
+    shared_recipes: 共有
+    incomplete: 不完全
+    search: レシピを検索...
+    updated: 更新済み
+    my_recipes: マイレシピ
+  transforms:
+    add: 変換を追加
+    remove: 削除
+    manage_button: 変換の管理
+    no_transforms: 変換は適用されていません
+    label: 変換
+  output:
+    placeholder: 出力タイプを選択
+    category_column: カテゴリ列
+    x_column: X軸の列
+    y_column: Y軸列
+  visualisation_table: テーブル
+  needs_other_columns: （他の列が必要）
+  visualisation_hbar: 横棒グラフ
+  visualisation_donut: ドーナツチャート
+  visualisation_area: 面グラフ
+  ui:
+    delete_error: レシピの削除に失敗しました。
+    delete_success: レシピが削除されました
+  visualisation_histogram: ヒストグラム
+register:
+  confirm_password: パスワードの確認
+  creating: アカウント作成中...
+  description: 新しいアカウントを作成する
+  email: メールアドレス
+  failed: 登録に失敗しました
+  have_account: すでにアカウントをお持ちですか？
+  language_description: インターフェースの言語を選択してください。
+  login_link: ログイン
+  name: 名前
+  password: パスワード
+  password_mismatch: パスワードが一致しません
+  submit: 登録
+  success_with_verification: アカウントが作成されました。アカウントを有効化するために、メールの確認リンクをご確認ください。
+  title: 登録
+  email_failed_use_resend: 登録は成功しましたが、確認メールを送信できませんでした。ログインページから再送してください。
+  success_pending_approval: アカウントが作成され、管理者の承認待ちです。承認されるとサインインできるようになります。
+  registration_disabled: 自己登録は無効です。管理者に連絡してください。
+  success_auto_verified: アカウントが作成され、すぐに利用できます。サインインできます。
+resend_verification:
+  back_to_login: ログインに戻る
+  check_spam: 数分以内にメールが届かない場合は、迷惑メールフォルダをご確認ください。
+  description: 新しい確認リンクを受け取るには、メールアドレスを入力してください。
+  error: 確認メールの送信に失敗しました。
+  send_button: 確認メールを送信
+  sent: 確認メールを送信しました。受信トレイ（および迷惑メールフォルダ）をご確認ください。
+  sent_description: このメールアドレスにアカウントが存在する場合、確認リンクが送信されます。
+  sent_title: メール送信済み
+  title: 確認メールを再送信
+reset_password:
+  confirm_password: 新しいパスワードの確認
+  description: 下に新しいパスワードを入力してください。
+  failed: パスワードのリセットに失敗しました
+  login_button: ログインへ進む
+  missing_token: リセットトークンが提供されていません
+  new_password: 新しいパスワード
+  password_mismatch: パスワードが一致しません
+  submit: パスワードをリセット
+  success: パスワードが正常にリセットされました
+  success_description: パスワードがリセットされました。ログイン画面にリダイレクトします...
+  success_title: パスワードリセット
+  title: パスワードをリセット
+settings:
+  ai:
+    title: AI 接続
+  database:
+    title: データベース接続
+  profile:
+    title: 環境設定
+  title: 設定
+tools:
+  all_datasets: すべてのデータセット
+  connect_database: データベースに接続
+  description: 追加のユーティリティや分析ツールがここに表示されます。
+  import_notebook: ノートブックをインポート
+  manage_data: データを収集
+  my_data: マイデータ
+  notebooks: ノートブック
+  placeholder: ツールページは近日公開予定です。
+  title: その他のツール
+  upload_csv_excel: CSV / Excel をアップロード
+  upload_data: データをアップロード
+  uploads_list: アップロード (csv, Excel)
+  visualize: 可視化サンドボックス
+validation:
+  api_key_required: このプロバイダーには API キーが必要です
+  database_required: データベース名は必須です
+  host_required: ホストは必須です
+  name_required: 接続名は必須です
+  password:
+    min_length: パスワードは {min} 文字以上の長さが必要です。
+    require_digit: パスワードには少なくとも 1 つの数字が必要です。
+    require_lowercase: パスワードには少なくとも 1 つの小文字が必要です。
+    require_special: パスワードには少なくとも 1 つの特殊文字が必要です。
+    require_uppercase: パスワードには少なくとも 1 つの大文字が必要です。
+    too_weak: パスワードが脆弱です。より強力なパスワードを選んでください。
+  password_required: パスワードは必須です
+  port_invalid: ポートは 1 ～ 65535 の範囲で指定してください
+  provider_required: プロバイダーを選択してください
+  username_required: ユーザー名は必須です
+  type_required: データベースタイプを選択してください。
+verify_email:
+  error_description: 問題が発生しました。
+  error_title: 検証に失敗しました
+  expired_description: 検証リンクの有効期限が切れています。
+  expired_message: 下記から新しい確認メールをリクエストできます。
+  expired_title: リンクの有効期限切れ
+  invalid_token: 無効な検証リンクです。
+  login_button: ログインに進む
+  missing_description: 検証トークンが提供されていません。
+  missing_title: 検証トークンがありません
+  network_error: ネットワークエラーです。もう一度お試しください。
+  resend_button: 確認メールを再送信
+  success_description: メールアドレスが正常に確認されました。ログイン画面にリダイレクトします...
+  success_title: メール確認完了
+  unknown_error: 問題が発生しました。
+virtual:
+  clone: 複製
+  deleted: データセットが削除されました
+  draft_badge: 下書き
+  edit: 編集
+  error: エラーが発生しました
+  existing_none: なし
+  existing_title: 既存のデータセット
+  loading: 読み込み中...
+  more: もっと見る
+  new_chat: 新しい仮想データセット
+  placeholder: 実行したい内容を説明してください...
+  ready_badge: 準備完了
+  recent_chats: 最近のチャット
+  send: 送信
+  stage: ステージ
+  title: 仮想データセット
+  verbose: 詳細表示
+  welcome: 仮想データセットアシスタントへようこそ。初めての方には、使い始め方を説明します。
+  preview_name: 名前
+  preview_sources: ソース
+  preview_columns: 出力列
+  preview_title: データセットプレビュー
+  preview_joins: 結合
+  manual:
+    preview_error: 結合を実行できませんでした。
+    output_hint: このデータセットが公開する列（順序どおり）。
+    columns_error: 列を読み取れませんでした。
+    need_join: 2つのソースが選択されていますが、それらを結合するものがありません。
+    alias_taken: そのエイリアスは別のソースで既に使用されています。
+    materialized_label: 結果をマテリアライズ
+    description_label: データセットの説明
+    need_name: 保存する前にデータセットに名前を付けてください。
+    title: 仮想データセットエディタ
+    alias_label: エイリアス
+    validate_ok: 定義は構造的に有効です。
+    loaded_note: 既存の定義を開きました — 保存すると更新されます。
+    sources_hint: 接続またはデータセットを展開し、含める列にチェックを入れてください。
+    incomplete_join: 列がまだ選択されていない結合を完了するか削除してください。
+    select_all: すべて選択
+    select_none: すべて解除
+    test_pulls_every_source: 結合のテストではすべてのソースを完全に読み取るため、時間がかかることがあります。
+    aggregation_note: 古い定義に含まれる集計はそのまま保持されますが、結合には適用されません。
+    output_title: データセットが公開するもの
+    new_dataset: 新しいデータセットを開始
+    joins_hint: 2つ以上のソースには互いの結合が必要です。1つのソースには結合は不要です。
+    update_dataset: このデータセットを更新
+    column_placeholder: 列を選択
+    no_match: フィルターに一致するものはありません。
+    complete_join: 未完了の結合を入力してください。
+    open_none: まだ開く仮想データセットがありません。
+    bridge_no_columns: 列はまだ読み取られていません — ソースを展開するか、結合を追加して選択してください。
+    bridge: ブリッジ
+    loading_columns: 列を読み取っています…
+    bridge_choose_columns: 一致する列が見つかりません — 結合を追加して選択してください。
+    save_success: 仮想データセットを保存しました。
+    validate_errors: '定義に問題があります:'
+    test_join: 結合をテスト
+    intro: 選択した列から仮想データセットを構築するか、既存のものを開いて変更します。
+    joins_title: ソースの結合方法
+    move_down: この列を1つ下に移動
+    load_error: そのデータセットの定義を読み込めませんでした。
+    remove: この列を出力から削除
+    move_up: この列を1つ上に移動
+    materialized_hint: ライブ結合ではなくテーブルを書き出します。プロトタイピング中はオフのままにしてください。
+    save_error: 仮想データセットを保存できませんでした。
+    open_label: 既存のデータセットを開く
+    remove_join: この結合を削除
+    need_columns: 含める列を少なくとも1つチェックしてください。
+    unattached_sources: '他の部分と結合されていません: {sources}。それらを接続する結合を追加してください。'
+    add_join: 結合を追加
+    validate: 定義を検証
+    preview_empty: 結合は行を返しませんでした。
+    no_sources: 使用できる接続またはデータセットがありません。
+    preview_rows: '{count} 行が返されました'
+    name_label: データセット名
+    sources_title: データの取得元
+    tables_error: テーブルを読み取れませんでした。
+    suggested: 候補
+    loaded_note_shared: 既存の共有定義を開きました — 読み取り専用 - 更新は許可されていません
+    materialize_failed: '保存しましたが、テーブルを構築できませんでした:'
+    materialize_done: テーブル構築済み。
+    materialize_retry: 再試行
+  panel:
+    expand: ソースパネルを表示
+    collapse: ソースパネルを折りたたむ
+  chip_load_error: 選択肢を更新できなかったため、これらは古くなっている可能性があります。
+  progress_decided: '{total}件中{decided}件決定済み'
+  panel_fold_error: パネルの折りたたみ状態を保存できなかったため、次回は再び開いた状態になります。
+  panel_tick_error: その列をチェックできませんでした。
+  chip_error: その選択肢を適用できませんでした。
+  panel_columns: '{count} 列'
+  panel_tick_no_session: まずメッセージを送信してください — ツリーはセッション中のチェック内容を記録します。
+  heading_materialised: ライブまたはマテリアライズド？
+  heading_match_columns: これらの列を対応させてください
+  heading_choose_table: テーブルを選択
+  heading_choose_columns: 列を選択
+  confirm_selection: これらを使用
+  act:
+    applied: '{piece}を適用しました'
+    named: 「{name}」と名付けました
+    sources: '{count}件のテーブルを承認しました'
+    sources_short: '{count}件のテーブルを承認しました: {tables}'
+    join: '{pair}を結合しました'
+  selection_hint: 不要なもののチェックを外してから、それらを一緒に使用してください。
+  suggestion_applied: 適用しました
+  joins_unjoined: '未結合: {tables}'
+  joins_apply: 適用
+  join_type_label: 結合タイプ
+  act_joins: 結合済み {count} ペア
+  joins_coverage: '{total}テーブル中{connected}テーブルが接続済み'
+  joins_unsaved: これらの行はデータセットと異なります。適用するか、先に空の行を修正してください。
+  joins_hint: いずれかの列または結合タイプを変更してから続行してください。
+  name_suggestion_heading: 推奨名 — 必要に応じて変更してください
+  name_suggestion_accept: この名前を使用
+visualize:
+  config: 設定
+  data: データ (JSON)
+  data_placeholder: JSONデータをここに貼り付けるか、サンプルを生成
+  description: 可視化タイプを選択し、サンプルデータを生成、パラメータを調整し、プレビューします。
+  download_error: テーブルのダウンロードに失敗しました
+  download_png: PNGとしてダウンロード
+  download_success: テーブルをPNGとしてダウンロードしました
+  generate_sample: サンプル生成
+  invalid_data: テキストテーブルのデータが無効です。列と行が必要です。
+  load_error: 可視化タイプの読み込みに失敗しました
+  no_data: 可視化するデータがありません。サンプルデータを生成するか、JSONを貼り付けてください。
+  no_types: 可視化タイプが定義されていません。管理者にお問い合わせください。
+  parameters: パラメータ
+  preview: プレビュー
+  sample_expenses: 経費
+  sample_generated: サンプルデータが生成されました
+  sample_item: 項目
+  sample_sales: 売上
+  sample_value: 値
+  save_error: 保存に失敗しました
+  save_instance: インスタンスを保存
+  save_no_data: 保存するデータがありません。データを生成するか貼り付けてください。
+  save_success: 可視化が正常に保存されました
+  select_type: タイプを選択
+  title: 可視化サンドボックス
+  type: 可視化タイプ
+  unsupported: この可視化タイプはまだ実装されていません
+  unsupported_parameter: サポートされていないタイプ
+licence:
+  expires_at_label: 有効期限
+  title: ライセンス状態
+  install_button: ライセンスをインストール
+  open_source_message: このインストールはオープンソースモードで動作しています。企業ライセンスへのアップグレードについてはSentunyにお問い合わせください。
+  preview_title: ライセンスプレビュー
+  install_no_file: ファイルが選択されていません。
+  tier_label: ティア
+  preview_error: ライセンスファイルの検証に失敗しました。
+  delete_no: キャンセル
+  delete_button: ライセンスを削除
+  features_label: 有効な機能
+  delete_confirm: これによりシステムはオープンソースモードに戻ります。すべての制限付き機能が無効になります。新しいライセンスをインストールすることで復元できます。
+  max_users_label: ライセンスユーザー
+  preview_invalid: 無効なライセンスファイル。
+  install_success: ライセンスが正常にインストールされました。
+  no_features: 現在、ゲートされた機能は有効になっていません。
+  upload_title: ライセンスファイルをアップロード
+  admin_required: ライセンス情報を表示するには管理者である必要があります。
+  delete_success: ライセンスが削除されました。オープンソースモードで実行中です。
+  load_error: ライセンス情報の読み込みに失敗しました。
+  details_label: ライセンス詳細
+  issued_to_label: 発行先
+  description: 現在の機能ライセンスとティア情報。
+  delete_title: ライセンスを削除
+  delete_yes: はい、ライセンスを削除します
+  install_error: ライセンスのインストールに失敗しました。
+  issued_at_label: 発行日
+  delete_error: ライセンスの削除に失敗しました。
+transforms:
+  op:
+    type:
+      encode_category: カテゴリをエンコード
+      filter: 行をフィルター
+      rename_column: 列名を変更
+      convert_type: 型変換
+      fill_missing: 欠損値の補完
+      drop_duplicates: 重複の削除
+      drop_column: 列を削除
+      normalize: 正規化
+      standardize: 標準化
+    column_placeholder: 列を選択
+    target_boolean: ブール値
+    encoding_label: ラベル
+    remove: 削除
+    new_name_placeholder: 新しい名前
+    empty_hint: 操作を追加して変換の構築を開始してください。
+    target_type_placeholder: ターゲットタイプ
+    type_placeholder: 操作タイプ
+    target_string: 文字列
+    method_placeholder: メソッド
+    target_datetime: 日時
+    value_placeholder: 値
+    add: 操作を追加
+    operator_placeholder: 演算子
+    operations_label: 操作
+    encoding_onehot: ワンホット
+    encoding_placeholder: エンコーディング
+    target_numeric: 数値
+  fill:
+    mode: モード
+    constant: 定数
+    median: 中央値
+    mean: 平均
+    drop_rows: 行を削除
+  name_required: 変換名は必須です。
+  connect_error: 変換の接続に失敗しました
+  disconnect_error: 変換の切断に失敗しました
+  delete_button: 削除
+  empty_hint: 変換実行時、操作はリストの順序で適用されます。
+  description_placeholder: 説明 (任意)
+  connect_transform: レシピに接続
+  disconnect_transform: レシピから切断
+  load_error: 変換の読み込みに失敗しました
+  for_recipe: 'レシピ: {name}'
+  filter:
+    op_contains: 含む
+    op_neq: '!='
+    op_lt: <
+    op_gt: '>'
+    op_is_not_null: NULLではない
+    op_eq: '='
+    op_is_null: null である
+  save_success: 変換が保存されました。
+  back_to_data: マイデータに戻る
+  new_transform: 新しい変換
+  no_search_results: 検索に一致する変換はありません。
+  delete_confirm: この変換を削除しますか？
+  no_transforms: このデータセットに定義された変換はありません。
+  name_placeholder: 変換名
+  delete_success: 変換が削除されました。
+  name_label: 名前
+  connected_to_recipe: '接続先: {name}'
+  connected_count: '{count} 接続済み'
+  operations_count: '{count} 操作'
+  empty_state: 変換の構築を開始するには操作を追加してください。
+  empty_title: リストから変換を選択するか、新しい変換を作成してください。
+  description_label: 説明
+  operations_heading: 操作
+  save_button: 保存
+  back_to_recipe: 'レシピに戻る: {name}'
+  search_placeholder: 変換を検索…
+setup:
+  limits:
+    invalid_registration_max: 最大登録数に有効な正の数を入力してください
+    upload:
+      size_25_mb: 25 MB
+      count_hint: ユーザーごとの最大データセット数 (0 = 無制限)。新規ユーザーに適用されます。
+      size_unlimited: 無制限
+      count_5: '5'
+      count_500: '500'
+      default_size_label: ユーザーごとのデフォルト最大アップロードサイズ (MB)
+      default_count_label: ユーザーごとのデフォルト最大アップロード数
+      size_1_mb: 1 MB
+      count_25: '25'
+      size_500_mb: 500 MB
+      count_10: '10'
+      size_5_mb: 5 MB
+      size_100_mb: 100 MB
+      size_1_gb: 1 GB
+      size_50_mb: 50 MB
+      count_1: '1'
+      count_unlimited: 無制限
+      size_10_mb: 10 MB
+      size_250_mb: 250 MB
+      count_250: '250'
+      select_count: 制限を選択
+      select_size: 制限を選択
+      count_100: '100'
+      size_hint: ユーザーあたりの最大総ストレージ（0 = 無制限）。新規ユーザーに適用されます。
+      count_1000: '1000'
+      count_50: '50'
+    grace_period:
+      label: 削除遅延 (時間)
+      hint: 論理削除されたアカウントが完全に消去されるまでの時間。
+    save_error: 制限設定の保存に失敗しました
+    max_registrations:
+      users: ユーザー
+      unlimited: 無制限
+      label: 最大ユーザー登録数
+      placeholder: 制限を選択
+      hint: 登録可能なユーザー数の制限を設定します。
+    load_error: 制限設定の読み込みに失敗しました
+    save_success: 制限設定が保存されました
+    demo_mode:
+      description: 有効にすると、システムはデモモードで実行され、破壊的な操作はブロックされ、UIにインジケータが表示されます。
+      label: デモモード
+    save_button: 制限を保存
+    invalid_grace_period: 削除遅延（時間）に有効な正の数を入力してください。
+    title: 制限
+    invalid_timeout: 確認タイムアウト（時間）に有効な正の数を入力してください。
+    description: リソース制限、タイムアウト、システム動作の運用制御。いつでも安全に調整可能です。
+    email_timeout:
+      hint: メール確認リンクの有効時間（時間）。
+      label: メール確認のタイムアウト（時間）
+  internal:
+    system_status:
+      unhealthy: 異常
+      db_pool: データベースプール
+      version: バージョン
+      title: システム状態
+      healthy: 正常
+      shared_memory: 共有メモリ
+      not_initialized: 初期化されていません
+      available: 利用可能
+      overall_health: 全体的なヘルス
+      initialized: 初期化済み
+      unavailable: 利用不可
+      description: バックエンドサービスのリアルタイムヘルスインジケーター。
+      not_required: 不要
+      db_cluster: データベースクラスター
+    title: 内部
+    licence:
+      title: ライセンスと機能
+      expiry: 有効期限
+      issued_to: 発行先
+      features: 有効な機能
+      description: 現在のライセンスティアと有効な機能。
+      tier: ライセンスティア
+    description: システム診断と内部設定。読み取り専用のステータスインジケータ。
+    load_error: システム診断の読み込みに失敗しました
+    future:
+      debug_logging: デバッグ / 詳細ログの切り替え
+      email_transport: メール送信状態
+      description: 追加の診断機能は今後のリリースで追加されます。
+      cache_config: キャッシュ/セッション設定
+      title: 近日公開
+      pool_stats: データベースプール統計
+  options:
+    public_url:
+      label: 公開URL
+      hint: 'メール確認リンクに使用されるベースURL (例: https://workbench.example.com)。'
+    password_policy:
+      min_strength: 最小強度 (zxcvbnスコア 0-4)
+      label: パスワードポリシー
+      require_special: 特殊文字を必須にする
+      high: 高 (最低10文字、大文字、小文字、数字、特殊文字)
+      medium: 中 (最低8文字、大文字、小文字、数字)
+      require_lowercase: 小文字必須
+      custom: カスタム
+      select: ポリシーを選択
+      min_length: 最小長
+      require_digit: 数字が必要
+      low: 低（最低6文字）
+      hint: ユーザー登録とパスワード変更に必要なパスワードの複雑さの要件を選択してください。
+      require_uppercase: 大文字が必要
+    welcome:
+      hint: このメッセージはログインページに表示されます。非表示にするには空のままにします。
+      label: ウェルカムメッセージ
+      placeholder: ログインページに表示するウェルカムメッセージを入力してください。
+    save_error: オプション設定の保存に失敗しました
+    email_sender:
+      label: メール送信者アドレス
+      hint: 確認メールの送信元として表示されるメールアドレス。
+    title: オプション
+    description: このデプロイメントの識別情報と動作を定義するインストール時設定。注意して変更してください — すべてのユーザーに影響します。
+    load_error: オプション設定の読み込みに失敗しました
+    save_button: オプションを保存
+    save_success: オプション設定が保存されました
+    registration_mode:
+      mode_4: メール認証付き自己登録
+      mode_2: 自己登録（管理者による確認）
+      mode_1: 管理者が確認済みユーザーを作成
+      mode_0: 自己登録（自動確認）
+      label: 登録モード
+      select: 登録モードを選択
+      hint: 新しいユーザーアカウントの作成方法と確認方法を選択してください。
+  tuning:
+    description: AIの動作と時間制限の既定値。通常はそのままで適しています。ユーザーごとまたは接続ごとの設定が異なる場合があり、どちらもない場合にここでの値が適用されます。
+    ai_tokens: トークン
+    resetting: リセット中…
+    slow_threshold_hint: この時間より長くかかるモデルテストは「遅すぎる」と報告されます。ユーザーは自分の制限を引き上げられますが、誰も1未満に下げることはできません。
+    slow_threshold_label: 低速モデルのしきい値
+    ai_temperature_hint: '回答の多様性: 0はモデルが許す限り再現性が高く、2は最も多様になります。0から2の範囲外の値は、このシステムではなくプロバイダーによって拒否されます。'
+    probe_timeout_hint: 1つの適合性テストを実行できる時間。CPUで動くモデルは数分かかるため、ここでの短い制限は時間節約ではなく誤った失敗を記録することになります。
+    reset_confirm_body: このページのすべての値が初期の既定値に戻ります。接続ごとの上書きには影響しません。この操作は元に戻せず、変更していた値は再設定が必要です。
+    ai_max_tokens_hint: 1回のリクエストで生成できる最長の回答。説明にはおよそ500トークン必要で、4000あれば十分な余裕があります。
+    invalid_model_test_seconds: 1以上の整数の秒数を入力してください
+    invalid_ai_timeout: AIの時間制限は1以上の整数の秒数である必要があります
+    invalid_temperature: 温度は0から2の数値である必要があります
+    invalid_max_tokens: 1以上の整数のトークン数を入力してください
+    forbidden: これらの設定を変更できるのは完全な管理者のみです。
+    invalid_probe_timeout: テストタイムアウトは1以上1200以下の整数の秒数である必要があります
+    seconds: 秒
+    reset_confirm_action: リセット
+    reset_confirm_title: これら6つを既定値にリセットしますか？
+    invalid_connect_timeout: 接続タイムアウトは1以上60以下の整数の秒数である必要があります
+    load_error: チューニング設定を読み込めませんでした
+    ai_timeout_hint: 1回のAIリクエストが破棄されるまでに実行できる時間。低すぎるとチャットが静かに失敗し、高すぎると停止したモデルがワーカーを保持します。CPU上のローカルモデルでは数分かかることがあります。
+    saving: 保存中…
+    preamble_detail: すべてのAIリクエストは、接続が上書きしない限りこれらの値を使用します。変更すると、独自の設定を持たないすべてのモデルに影響します。すでにチューニングした接続は変更されません。
+    saved: チューニング設定を保存しました
+    ai_section_hint: すべてのAIリクエストの既定値。単一の接続とモデルは、チューニングがそのペアに固有の場合にこれらを上書きできます。
+    save_error: チューニング設定を保存できませんでした。
+    ai_section_label: AI生成
+    save: 設定を保存
+    reset_error: チューニング設定をリセットできませんでした。
+    reset_done: チューニング設定はデフォルトにリセットされました。
+    connect_timeout_hint: エンドポイントが到達不能と見なされるまでに、ネットワークが接続を受け付けるのにかかる時間です。このネットワークに必要な値より低く設定すると、正常に動作しているエンドポイントが到達不能なものになります。

@@ -1,0 +1,2255 @@
+about:
+  description: Создавайте потрясающие интерфейсы с shadcn/ui и Next.js. Чистый дизайн, высокая производительность.
+  fast_desc: Построено на Next.js App Router для оптимальной производительности.
+  fast_title: Быстро
+  get_started: Начать
+  modern_desc: Доступные компоненты shadcn/ui, стилизованные с помощью Tailwind CSS.
+  modern_title: Современный интерфейс
+  secure_desc: Типобезопасные и настраиваемые – вы владеете кодом компонентов.
+  secure_title: Безопасно
+  title: О Statisticians Workbench
+admin:
+  groups:
+    back_to_admin: Вернуться к администрированию
+    cannot_modify_self: Нельзя изменить собственную учётную запись
+    delete_confirmation: Вы уверены, что хотите удалить {name}? Пользователь будет помечен как удалённый (soft‑delete) и может быть восстановлен полным администратором.
+    delete_error: Не удалось удалить пользователя
+    delete_title: Удалить пользователя
+    demote: Понизить
+    demote_error: Не удалось понизить пользователя
+    demote_success: Пользователь понижен с роли администратора группы
+    description_placeholder: Введите описание
+    description_required: Описание не может быть пустым
+    group_description: Описание группы
+    group_users_load_error: Не удалось загрузить пользователей группы
+    load_error: Не удалось загрузить группы
+    load_success: Группы успешно загружены
+    no_users: В этой группе не найдено ни одного пользователя.
+    promote: Повысить
+    promote_error: Не удалось повысить пользователя
+    promote_success: Пользователь повышен до администратора группы
+    readonly_badge: (только для чтения)
+    readonly_message: Вы просматриваете эту страницу в режиме только для чтения. Демонстрационные пользователи не могут вносить изменения.
+    readonly_title: Управление группами (только для чтения)
+    select_group: Выбрать группу
+    select_group_placeholder: Выберите группу
+    title: Управление группами
+    update_error: Не удалось обновить группу
+    update_success: Описание группы обновлено
+    users_in_group: Пользователи в группе
+  models:
+    comment_placeholder: Введите комментарий
+    description: Все модели, известные Workbench. Включение модели влияет на все подключения, которые её обслуживают; столбец «Серверы» показывает, какие из них могут к ней обращаться.
+    disabled: Отключено
+    edit_comment: Редактировать комментарий
+    enabled: Включено
+    load_models_error: Не удалось загрузить модели
+    no_comment: —
+    no_models: Моделей пока нет. Обнаружение создаёт их на основе подключения.
+    not_preferred: Не предпочтительный
+    preferred: Предпочтительный
+    toggle_error: Не удалось обновить модель
+    update_error: Не удалось обновить комментарий
+    update_success: Модель обновлена
+    fetch_auth_required: Этот провайдер требует API-ключ для получения списка моделей. Вместо этого обновите список в разделе «Настройки» → «ИИ-подключения».
+    fetch_non_standard: Этот провайдер не предоставляет стандартного API для получения списка моделей. Добавьте модели вручную в панели администратора.
+    no_matches: Ни одна модель не соответствует этим фильтрам.
+    filter_clear: Сбросить фильтры
+    servers_title: Достижим из
+    no_servers: Ни одно соединение пока не обслуживает эту модель.
+    tuning_temperature_hint: Меньшие значения дают более воспроизводимые ответы; большие — более разнообразные.
+    tuning_inherited_title: Пустое поле наследует значение по умолчанию рабочей среды.
+    filter_any: Любое состояние
+    tuning_hint: Эти значения применяются везде, где эта модель используется на этом соединении. Пустое поле означает, что оно наследует значение по умолчанию рабочей среды.
+    model_count: '{count} моделей'
+    search_placeholder: Поиск по имени модели
+    tuning_loading: Загрузка настроек ИИ…
+    tuning_inherited: унаследовано
+    tuning_load_error: Не удалось загрузить настройки ИИ.
+    filter_state: Состояние
+    tuning_saved: Настройки ИИ сохранены.
+    tuning_timeout_hint: Секунды, в течение которых может выполняться один запрос ИИ. Локальная модель на ЦП может требовать несколько минут.
+    tuning_save_error: Не удалось сохранить настройки ИИ
+    filter_result: Результат
+    filter_test: Тест возможностей
+    tuning_title: Настройки ИИ для этого сервера
+  providers:
+    code_label: Код
+    delete_button: Удалить
+    delete_confirmation: Вы уверены, что хотите удалить провайдера «{name}»? Это также удалит все связанные модели и не может быть отменено.
+    delete_error: Не удалось удалить провайдера
+    delete_provider: Удалить провайдера
+    delete_success: Провайдер удалён
+    delete_title: Удалить провайдера
+    description: Включение или отключение ИИ-провайдеров. Отключённые провайдеры не будут отображаться в формах подключения пользователей.
+    disabled: Отключено
+    enabled: Включено
+    fetch_error: Не удалось загрузить провайдеров
+    list_title: Все провайдеры
+    local: Локальный
+    no_api_key: ключ API не требуется
+    requires_api_key: требуется ключ API
+    title: ИИ-провайдеры
+    toggle_error: Не удалось обновить провайдера
+    update_success: Провайдер обновлён
+  title: Панель администратора
+  user_details:
+    dark_mode_description: Переключение между светлой и тёмной темой.
+    dark_mode_label: Тёмный режим
+    email_label: Электронная почта
+    email_notifications_description: Получать уведомления по электронной почте о вашей учётной записи.
+    email_notifications_label: Уведомления по электронной почте
+    full_admin_note: Полные администраторы по умолчанию имеют все права администратора группы.
+    group_admin_description: Пользователь может управлять другими пользователями в своей группе.
+    group_admin_label: Администратор группы
+    group_hint: Группа пользователя определяет, к каким общим ресурсам он имеет доступ.
+    language_label: Язык
+    language_select_placeholder: Выберите язык
+    load_error: Не удалось загрузить сведения о пользователе
+    max_upload_count_hint: Максимальное количество наборов данных на пользователя (0 = неограниченно).
+    max_upload_count_label: Максимальное количество загрузок
+    max_upload_count_placeholder: Выберите количество
+    max_upload_size_hint: Максимальный общий объём хранилища на пользователя (0 = неограниченно).
+    max_upload_size_label: Максимальный размер загрузки
+    max_upload_size_placeholder: Выберите размер
+    name_label: Имя
+    not_found: Пользователь не найден
+    save_error: Не удалось обновить пользователя
+    save_success: Данные пользователя обновлены
+    select_group: Выберите группу
+    title: Управление пользователем
+    unnamed: Безымянный пользователь
+    user_group: Группа пользователя
+  users:
+    active_users: Активные пользователи
+    admin_badge: Администратор
+    bcc_label: Регистрации BCC
+    bcc_updated: Настройка регистрации BCC обновлена
+    created_label: Создано
+    current_user_badge: Вы
+    delete_button: Удалить
+    delete_confirmation: Вы уверены, что хотите навсегда удалить "{name}"? Это действие НЕЛЬЗЯ отменить.
+    delete_error: Не удалось удалить пользователя
+    delete_self_error: Нельзя удалить свою учётную запись
+    delete_success: Пользователь навсегда удалён
+    delete_title: Удалить пользователя
+    deleted_badge: Мягко удалён
+    deleted_label: Удалён
+    example_user_badge: Пример пользователя
+    forbidden: Запрещено
+    group_admin_badge: Администратор группы
+    hard_delete_button: Удалить навсегда
+    hard_delete_confirmation: Вы уверены, что хотите навсегда удалить "{name}"? Это действие нельзя отменить.
+    hard_delete_error: Не удалось навсегда удалить пользователя
+    hard_delete_success: Пользователь навсегда удалён
+    hard_delete_title: Удалить пользователя навсегда
+    load_error: Не удалось загрузить пользователей
+    make_admin: Сделать администратором
+    more_button: Ещё...
+    no_name: Без имени
+    remove_admin: Снять администратора
+    resend_button: Отправить письмо повторно
+    resend_error: Не удалось отправить письмо для подтверждения
+    resend_success: Письмо для подтверждения отправлено на {email}
+    restore_button: Восстановить
+    restore_error: Не удалось восстановить пользователя
+    restore_success: Пользователь восстановлен
+    soft_deleted_users: Мягко удалённые пользователи
+    title: Управление пользователями
+    unauthorized: Неавторизован
+    unverified_badge: Неподтверждённый
+    update_error: Не удалось обновить пользователя
+    update_success: Пользователь обновлён
+    user_not_found: Пользователь не найден
+    verified_badge: Подтверждён
+    verify_button: Подтвердить
+    verify_error: Не удалось подтвердить пользователя
+    verify_success: Пользователь отмечен как подтверждённый
+    add_user: Добавить пользователя
+  visualization_types:
+    add_button: Добавить новый тип
+    add_title: Добавить тип визуализации
+    create_success: Тип визуализации создан
+    default_parameters: Параметры по умолчанию (JSON)
+    delete: Удалить
+    delete_button: Удалить
+    delete_confirmation: Вы уверены, что хотите удалить тип "{name}"? Это также удалит все связанные экземпляры и не может быть отменено.
+    delete_error: Не удалось удалить
+    delete_success: Тип визуализации удалён
+    delete_title: Удалить тип визуализации
+    description: Описание
+    disabled: Отключено
+    edit: Редактировать
+    edit_title: Редактировать тип визуализации
+    enabled: Включено
+    fetch_error: Не удалось загрузить типы визуализации
+    input_schema: Входная схема (JSON)
+    invalid_json: Некорректный JSON в одном из полей схемы
+    list_title: Все типы визуализации
+    name: Название
+    no_types: Типы визуализации пока не определены.
+    parameter_schema: Схема параметров (JSON)
+    renderer: Рендерер
+    renderer_client: Клиент
+    renderer_label: Рендерер
+    renderer_server: Сервер
+    save_error: Не удалось сохранить
+    slug: Slug
+    slug_label: Slug
+    title: Типы визуализации
+    toggle_error: Не удалось обновить
+    update_success: Тип визуализации обновлён
+  adduser:
+    password_mismatch: Пароли не совпадают
+    failed: Не удалось создать пользователя
+    success: Учётная запись создана и подтверждена. Новый пользователь теперь может войти.
+    back_to_admin: Назад к администратору
+    not_admin: У вас нет прав доступа к этой странице.
+    confirm_password: Подтверждение пароля
+    password: Пароль
+    language_description: Выберите предпочитаемый пользователем язык интерфейса.
+    creating: Создание пользователя...
+    description: Создайте новую учётную запись пользователя. Учётная запись подтверждается сразу.
+    title: Добавить пользователя
+    name: Имя
+    email: Электронная почта
+    submit: Создать пользователя
+  set_password:
+    success: Пароль успешно установлен
+    admin_password: Пароль администратора
+    description: Задайте новый пароль для этого пользователя. Для подтверждения изменения требуется ваш собственный пароль администратора.
+    title: Установить пароль
+    failed: Не удалось установить пароль
+    admin_password_required: Требуется пароль администратора
+ai:
+  connection:
+    add_first: Добавьте своё первое ИИ-подключение
+    add_new: Добавить новое ИИ-подключение
+    add_success: ИИ-подключение успешно добавлено
+    add_title: Добавить новое ИИ-подключение
+    api_key_hint: Ваш API-ключ шифруется перед сохранением.
+    api_key_label: API-ключ
+    by_label: Автор
+    clear_default: Сбросить значение по умолчанию
+    currently_not_shared: ❌ Доступ не предоставлен
+    currently_shared: ✅ Доступ предоставлен группе
+    default_badge: По умолчанию
+    default_cleared: ИИ-подключение по умолчанию сброшено
+    default_set: ИИ-подключение по умолчанию обновлено
+    delete_button: Удалить
+    delete_confirmation: Вы уверены, что хотите удалить подключение
+    delete_error: Не удалось удалить ИИ-подключение
+    delete_title: Удалить ИИ-подключение
+    deleted: ИИ-подключение удалено
+    edit_title: Редактировать ИИ-подключение
+    endpoint_hint: При необходимости переопределите конечную точку API по умолчанию.
+    endpoint_label: URL конечной точки
+    form_description: Настройте подключение к ИИ-провайдеру.
+    group_label: Группа
+    load_error: Не удалось загрузить подключения
+    load_providers_error: Не удалось загрузить провайдеров
+    metadata_load_error: Не удалось загрузить метаданные провайдера
+    metadata_loading: Информация о провайдере всё ещё загружается. Пожалуйста, подождите.
+    models: Доступные модели
+    models_disabled: Отключено
+    models_load_error: Не удалось загрузить модели
+    models_sync_error: Не удалось синхронизировать модели
+    models_synced: Модели успешно синхронизированы
+    name_label: Название подключения
+    name_placeholder: например, Моё подключение к ИИ
+    no_connections: Пока нет сохранённых AI-подключений.
+    not_found: Подключение не найдено
+    provider_label: Провайдер
+    provider_not_found: Провайдер не найден
+    save_error: Не удалось сохранить AI-подключение
+    select_provider: Выберите AI-провайдера
+    select_provider_first: Сначала выберите провайдера
+    set_default: Установить по умолчанию
+    shared_badge: Общий доступ
+    shared_description: Сделать это подключение доступным для других пользователей в вашей группе.
+    shared_label: Поделиться с группой
+    shared_readonly: Общий доступ
+    shared_readonly_message: Это подключение предоставлено вам. Вы можете его просматривать, но редактирование разрешено только владельцу.
+    test_button: Проверить подключение
+    test_error: Подключение не удалось.
+    test_success: Подключение успешно!
+    unknown_user: Неизвестно
+    update_success: AI-подключение успешно обновлено
+    models_refresh: Обновить модели
+    models_none: Модели ещё не синхронизированы. Нажмите «Обновить», чтобы получить модели от провайдера.
+    invalid_probe_timeout: Тайм-аут теста модели должен быть целым числом секунд, не менее 1 и не более 1200.
+    timeouts_section_hint: Оставьте поле пустым, чтобы использовать значение по умолчанию рабочей среды.
+    invalid_connect_timeout: Тайм-аут соединения должен быть целым числом секунд, не менее 1 и не более 60.
+    models_discovered: 'Обнаружено моделей на этом соединении: {seen}; новых: {created}, уже известных: {refreshed}, больше не обслуживается: {pruned}.'
+    connect_timeout_hint: Сколько времени сеть может принимать соединение. Значение ниже необходимого этой сети превращает рабочую конечную точку в недостижимую.
+    probe_timeout_hint: Сколько может выполняться один тест пригодности здесь. Модель на ЦП занимает несколько минут.
+    timeouts_section_label: Тайм-ауты соединения
+    connect_exceeds_probe: Тайм-аут подключения не может превышать тайм-аут теста модели — нельзя допускать, чтобы подключение устанавливалось дольше, чем может выполняться весь тест.
+  database:
+    add_connection: Добавить подключение к базе данных
+    all_issues: Все проблемы
+    analysis_report: Отчёт об анализе
+    analysis_summary: '{tables} таблиц, {columns} столбцов, {issues} проблем найдено'
+    analyze: Анализировать схему
+    analyzing: Анализ...
+    business_value: Бизнес-ценность
+    categories: Категории
+    code_systems_detected: Обнаружены кодовые системы
+    cols_rows_format: '{cols} столбцов, {rows} строк'
+    columns_label: Столбцы
+    confidence: Уверенность
+    description: Проанализируйте дизайн базы данных на предмет индексации, нормализации, связей, типов данных и проблем с именованием.
+    download_pdf: Скачать PDF
+    email_body_attachment: Пожалуйста, найдите прикреплённый отчёт об анализе.
+    email_body_connection: 'Подключение: {conn_name}'
+    email_body_database: 'База данных: {db_name}'
+    email_body_id: 'ID подключения: {conn_id}'
+    email_body_signature: — Statisticians Workbench
+    email_body_title: Отчёт об анализе дизайна базы данных
+    email_body_type: 'Тип базы данных: {db_type}'
+    email_error: Не удалось отправить отчёт по эл. почте
+    email_pdf: Отправить PDF по эл. почте
+    email_sent: Отчёт успешно отправлен по эл. почте
+    email_subject: Анализ дизайна базы данных — {db_name} ({db_type}) [Подключение {conn_id}]
+    empty_state: Выберите подключение к базе данных и нажмите «Анализировать», чтобы начать.
+    enter_question: Пожалуйста, введите вопрос.
+    foreign_keys: Внешние ключи
+    high_risk: Высокий
+    indexes_label: Индексы
+    issues_label: Проблемы
+    low_risk: Низкий
+    medium_risk: Средний
+    no_issues: Проблем не найдено. Дизайн вашей базы данных выглядит хорошо!
+    no_semi_structured: В текстовых столбцах не обнаружено шаблонов полуструктурированных данных.
+    normalisation_suggestions: Рекомендации по нормализации
+    normalisation_suggestions_desc: Предлагаемые справочные таблицы на основе ключевых слов, найденных в полуструктурированных текстовых столбцах.
+    normalisation_warning: Это предложения, созданные AI. Изменения структуры базы данных требуют тщательной проверки. Сначала протестируйте изменения на копии.
+    pdf_downloaded: PDF успешно загружен
+    pdf_error: Не удалось сгенерировать PDF
+    pk_prefix: ПК –
+    placeholder: Скоро появится. Эта функция поможет вам проектировать схемы баз данных с помощью AI.
+    proposed_reference_table: Предлагаемая справочная таблица
+    rag_ask: Спросить
+    rag_chat: RAG-чат — задавайте вопросы о своих данных
+    rag_chat_desc: Задавайте вопросы на естественном языке. Система ищет по текстовым столбцам и возвращает сгенерированные AI ответы с цитированием.
+    rag_error: Ошибка RAG-запроса
+    rag_placeholder: Например, Какие диагнозы являются наиболее распространёнными?
+    rag_sources: Источники
+    risk_breakdown: Распределение рисков
+    rows_label: Строки
+    schema_error: Не удалось проанализировать схему базы данных
+    select_connection: Выберите подключение к базе данных
+    select_connection_first: Сначала выберите подключение к базе данных.
+    select_connection_placeholder: Выберите подключение к базе данных...
+    semi_structured: Анализ полуструктурированных данных
+    semi_structured_desc: Текстовые столбцы проанализированы на наличие встроенных кодов, ключевых слов и шаблонов.
+    tables_explorer: Обозреватель таблиц
+    tables_label: Таблицы
+    title: Помощник по дизайну баз данных
+    top_recommendations: Лучшие рекомендации
+    isic_domains: Классификации доменов ISIC
+    ai_fallback: Базовый анализ
+    timeout_log: Анализ превысил время ожидания через 15 минут.
+    table_purposes: Назначения таблиц
+    missing_dimensions: Отсутствующие измерения
+    priority_actions: Действия с наивысшим приоритетом
+    ai_health_score: Оценка состояния ИИ
+    integration_analysis_desc: Неявные связи, исследовательские возможности и отсутствующие измерения, обнаруженные Integration AI.
+    ai_augmented_desc: Schema AI, Semantic AI и Integration AI проанализировали эту базу данных.
+    semantic_analysis: Семантический анализ
+    semantic_analysis_desc: Определённые ИИ значения столбцов, классификации доменов ISIC и обнаружения систем кодов.
+    integration_analysis: Интеграционный анализ
+    ai_augmented: Анализ, дополненный ИИ
+    column_meanings: Значения столбцов
+    ai_unavailable: Анализ ИИ недоступен. Подключите провайдера ИИ для включения расширенного анализа.
+    ai_fallback_desc: Дополнение ИИ недоступно. Показан только структурный анализ. Выберите ИИ-подключение для более глубоких выводов.
+    timeout_error: Время анализа истекло. Возможно, база данных слишком велика или сервис ИИ недоступен.
+    implicit_relationships: Неявные связи
+    research_capabilities: Исследовательские возможности
+    peer_tables: 'Одноранговые таблицы:'
+    health_score_desc: Общее состояние базы данных оценивается Schema AI. 0 = критические структурные проблемы, 100 = готово к эксплуатации.
+    is_missing: отсутствует
+  dataclean:
+    chat_error: Не удалось получить ответ
+    chat_placeholder: Спросите об очистке или подготовке этого набора данных...
+    column_tooltip: '{type} — {null_count} null-значений, {unique_count} уникальных'
+    column_type:
+      category: Категория
+      datetime: Дата/Время
+      number: Число
+      text: Текст
+    description: Очистка и подготовка данных с помощью AI.
+    empty_chat: Выберите набор данных и начните задавать вопросы о том, как его очистить и подготовить.
+    enter_message: Пожалуйста, введите сообщение.
+    loading_schema: Загрузка схемы...
+    no_connection: Пожалуйста, настройте соединение с ИИ по умолчанию в разделе Настройки > ИИ.
+    no_datasets: Нет доступных наборов данных. Сначала загрузите или определите набор данных.
+    placeholder: Скоро появится. Эта функция поможет очищать и подготавливать наборы данных с помощью ИИ.
+    schema_summary: '{rows} строк, {cols} столбцов'
+    select_dataset: Выберите набор данных
+    select_dataset_first: Пожалуйста, сначала выберите набор данных.
+    select_dataset_placeholder: Выберите набор данных...
+    send: Отправить
+    shared_badge: (общий)
+    title: Помощник по очистке наборов данных
+    schema_error: Не удалось загрузить схему набора данных
+    no_dataset_selected: Набор данных не выбран
+    clean_copy_success: Создан новый набор данных «{name}» — исходный не изменён.
+    operations_count: '{count} операций'
+    clean_no_rules: Пока нет правил очистки для применения.
+    clean_name_label: Название для очищенной копии
+    no_rules: Пока нет правил
+    clean_copy: Очищенная копия
+    preview_title: Предпросмотр данных
+    clean_in_place: Очистить на месте
+    rules_title: Правила подготовки
+    clean_in_place_success: Набор данных «{name}» обновлён.
+  default_hint: Соединение по умолчанию используется в качестве резервного, когда рецепт анализа не указывает провайдера ИИ.
+  new_session: Новая сессия
+  no_ai_connections: Не настроено ни одного соединения с ИИ. Добавьте в Настройки > ИИ.
+  recipe:
+    chat_error: Не удалось получить ответ
+    chat_placeholder: Спросите о статистическом анализе или настройке рецепта...
+    description: Генерация рецептов и правил анализа с помощью ИИ.
+    empty_chat: Выберите набор данных и спросите, какие статистические методы использовать.
+    enter_message: Пожалуйста, введите сообщение.
+    loading_schema: Загрузка схемы...
+    no_datasets: Нет доступных наборов данных. Сначала загрузите или определите набор данных.
+    placeholder: Скоро появится. Эта функция поможет создавать рецепты анализа с помощью ИИ.
+    schema_summary: '{rows} строк, {cols} столбцов'
+    select_dataset: Выберите набор данных
+    select_dataset_first: Пожалуйста, сначала выберите набор данных.
+    select_dataset_placeholder: Выберите набор данных...
+    send: Отправить
+    title: Помощник по правилам анализа
+  select_ai_connection: Соединение с ИИ
+  select_ai_connection_placeholder: Выберите соединение с ИИ...
+  select_model: Модель
+  select_model_placeholder: Выберите модель...
+  test_error: Соединение не удалось.
+  test_success: Соединение успешно!
+  title: Настройки ИИ
+  recipe_concierge:
+    stage_technique: Выбрать метод
+    status_draft: Черновик
+    tab_chat: Чат
+    save: Сохранить рецепт
+    draft_empty: Начните разговор, чтобы создать рецепт. Черновик появится здесь по мере принятия решений.
+    select_dataset: Выберите набор данных...
+    new_session: Новая сессия
+    welcome: Расскажите, что вы хотите узнать из своих данных, и я помогу вам составить полный рецепт анализа.
+    stage_greeting: Добро пожаловать
+    stage_visualisation: Визуализация
+    title: ИИ-консьерж по рецептам
+    status_ready: Готово
+    delete_session: Удалить сессию
+    chat_error: Не удалось получить ответ
+    no_session: Сессия не выбрана
+    stage_goal: Исследовательский вопрос
+    tab_draft: Черновик
+    manual_label: Ручной рецепт
+    input_placeholder: Спросите о своих данных... или просто скажите «привет»
+    saved: Рецепт сохранён!
+    saving: Сохранение...
+    stage_columns: Выбрать столбцы
+    create_prompt: Создайте новую сессию, чтобы начать.
+    stage_complete: Рецепт готов
+    stage_transforms: Подготовка данных
+    stage_review: Просмотр рецепта
+    open: Открыть в редакторе
+    tab_sessions: Сессии
+    draft_title: Черновик рецепта
+    no_sessions: Сессий пока нет
+    toggle_panel: Переключить панель рецепта
+    schema_changes: 'Обнаружены изменения схемы:'
+    warnings_heading: Предупреждения
+    draft_algorithm: Алгоритм
+    errors_heading: Пока нельзя сохранить
+    draft_output: Выходные данные
+    draft_no_visualisation: Числовые результаты
+    draft_dataset: Набор данных
+    progress_decided: '{count} из {total} решено'
+    done: Готово
+    chip_withheld: +{count} ещё
+    progress_next: '{progress} · {next}'
+    chip_superseded: Заменено более новым предложением.
+    unread_sources: Некоторые источники не удалось прочитать, поэтому список столбцов может быть неполным.
+    chip_collapse: Показать меньше
+    chip_expand: Показать ещё {count}
+  thinking: Думаю...
+  testing:
+    slow_limit_session_label: Лимит медленной модели
+    cost_confirm: Начать прогон
+    slow_limit_unavailable: В ваших настройках не указан лимит медленной модели, поэтому ни одна модель не помечается как слишком медленная.
+    cost_warning: Это запустит {count} тест(ов), а тест хода занимает несколько минут на модель на ЦП. Нажмите ещё раз, чтобы начать.
+    enabled_no: Модель отключена
+    no_models: На этом соединении пока не обнаружено ни одной модели.
+    test_competence: Компетентность
+    duration_seconds: '{seconds} с'
+    enabled_yes: Модель включена
+    state_fail: Не пройден
+    test_turn: Сложность
+    column_model: Модель
+    discover_running: Запрос к серверу…
+    run_failed: 'Тест не удалось запустить: {detail}'
+    column_actions: Тест
+    test_tools: использует инструменты
+    run_all_untested: Запустить все тесты для непротестированных моделей.
+    connection_label: ИИ-соединение
+    slow_limit_session_hint: Применяется только к этой странице — не сохраняется.
+    models_heading: Модели
+    slow_limit_failed: Не удалось прочитать ваш лимит медленной модели, поэтому ни одна модель не помечается как слишком медленная. {detail}
+    run_test: Запустить тест
+    discover_result: 'Сервер перечислил моделей: {seen}: новых — {created}, уже известных — {refreshed}, больше не обслуживается — {pruned}.'
+    slow_limit_session_link: Задайте это постоянно в своём профиле.
+    run_all_for_model: Запустить все для этой модели
+    slow_limit_session_reset: Использовать мой сохранённый лимит
+    elsewhere_note: Модель может хранить результат проверки возможности из другого соединения. Длительность рядом с каждым состоянием — это собственное измерение этого соединения, поэтому модель может показывать
+      здесь состояние без длительности.
+    too_slow: Превышен ваш лимит в {seconds} с.
+    title: Тестирование ИИ
+    state_pass: Пройден
+    running: Выполняется…
+    no_duration_here: Не выполнялся на этом подключении
+    failure_reason: 'Причина: {reason}'
+    load_error: Не удалось загрузить ваши подключения ИИ. {detail}
+    no_connections_body: Тестирование модели требует подключения ИИ. Добавьте его и вернитесь на эту страницу.
+    discover_failed: 'Не удалось обнаружить модели: {detail}'
+    discover_models: Обнаружить модели
+    explanation: ИИ-консьержи Workbench созданы для моделей, которые действуют. Модель, которая лишь разговаривает — какой бы вежливой или крупной она ни была — заставит редактор рецептов отвечать, но ничего
+      не делать. Исправлять нужно модель, а не код. Инструмент на этой странице позволяет проверить, подходит ли модель.
+    duration_ms: '{ms} мс'
+    no_connections_heading: Пока нет подключения ИИ
+    no_connections_link: Перейти к подключениям ИИ
+    column_enabled: Включено
+    cancelled: Остановлено. Уже записанные результаты сохранены.
+api:
+  admin:
+    already_full_admin: Пользователь уже является полным администратором
+    already_group_admin: Пользователь уже является администратором группы
+    cannot_delete_self: Нельзя удалить собственную учётную запись
+    cannot_demote_full_admin: Нельзя понизить полного администратора
+    cannot_demote_self: Вы не можете понизить себя
+    cannot_promote_example: Нельзя повысить демонстрационного пользователя
+    delete_error: Не удалось удалить пользователя
+    demote_error: Не удалось понизить пользователя
+    description_required: Описание не может быть пустым
+    example_blocked: Демонстрационные пользователи не могут выполнять административные действия
+    group_not_found: Группа не найдена
+    group_users_load_error: Не удалось загрузить пользователей группы
+    groups_load_error: Не удалось загрузить группы
+    groups_stats_error: Не удалось загрузить статистику группы
+    instance_exists: Невозможно удалить тип, так как с ним связано {count} экземпляров.
+    insufficient_permissions: Недостаточно прав для выполнения этого действия
+    invalid_group_id: Недопустимый group_id. Должен быть от 00 до 99
+    invalid_id: Недопустимый идентификатор
+    invalid_upload_count: maxUploadCount должно быть неотрицательным целым числом (0 — без ограничений).
+    invalid_upload_size: maxUploadSizeMB должно быть неотрицательным целым числом (0 — без ограничений).
+    missing_fields: Отсутствуют обязательные поля
+    missing_group_id: Отсутствует идентификатор группы
+    missing_id: Отсутствует идентификатор
+    missing_model_id: Отсутствует идентификатор модели
+    missing_provider_code: Отсутствует параметр providerCode
+    missing_user_id: Отсутствует идентификатор пользователя
+    model_update_error: Не удалось обновить модель
+    models_load_error: Не удалось загрузить модели
+    no_fields: Нет допустимых полей для обновления
+    no_group: Пользователю не назначена группа
+    not_group_admin: Пользователь не является администратором группы
+    only_full_admin: Только полные администраторы могут выполнять это действие
+    promote_error: Не удалось повысить пользователя
+    provider_delete_error: Не удалось удалить провайдера
+    provider_not_found: Провайдер не найден
+    provider_update_error: Не удалось обновить провайдера
+    providers_load_error: Не удалось загрузить провайдеров
+    slug_exists: Такой slug уже существует
+    update_error: Не удалось обновить пользователя
+    user_load_error: Не удалось загрузить пользователя
+    user_not_found: Пользователь не найден
+    users_load_error: Не удалось загрузить пользователей
+    viz_type_create_error: Не удалось создать тип визуализации
+    viz_type_delete_error: Не удалось удалить тип визуализации
+    viz_type_update_error: Не удалось обновить тип визуализации
+    viz_types_load_error: Не удалось загрузить типы визуализации
+    settings_invalid_max_registrations: Максимальное количество регистраций должно быть положительным числом или неограниченным.
+    settings_invalid_public_url: Неверный формат публичного URL
+    settings_invalid_email_sender: Неверный формат адреса электронной почты отправителя
+    settings_load_error: Не удалось загрузить глобальные настройки
+    settings_modify_forbidden: Только администраторы с полными правами могут изменять глобальные настройки
+    settings_invalid_grace_period: Льготный период регистрации должен быть положительным числом (в часах)
+    settings_invalid_upload_count: Максимальное количество загрузок по умолчанию должно быть неотрицательным целым числом (0 — без ограничений)
+    settings_invalid_upload_size: Максимальный размер загрузки по умолчанию должен быть неотрицательным целым числом (0 — без ограничений)
+    settings_invalid_email_timeout: Тайм-аут подтверждения электронной почты должен быть положительным числом (в часах)
+    settings_save_error: Не удалось сохранить глобальные настройки
+    settings_view_forbidden: Только администраторы с полными правами могут просматривать глобальные настройки
+  auth:
+    account_deleted: Эта учётная запись удалена.
+    email_not_verified: Электронная почта не подтверждена. Проверьте папку «Входящие» и «Спам».
+    example_user_blocked: Смена пароля отключена для демонстрационных пользователей
+    example_user_forgot_blocked: Сброс пароля отключён для демонстрационных пользователей
+    example_user_register_blocked: Демонстрационные пользователи не могут создавать новые учётные записи
+    example_user_reset_blocked: Сброс пароля отключён для демонстрационных пользователей
+    internal_error: Внутренняя ошибка сервера
+    invalid_credentials: Неверные учётные данные
+    invalid_current_password: Текущий пароль неверен
+    invalid_token: Недействительный или истёкший токен
+    missing_email: Требуется электронная почта
+    missing_fields: Отсутствуют поля
+    password_validation_failed: Ошибка проверки пароля
+    token_expired: Срок действия токена истёк
+    unauthorized: Неавторизован
+    user_not_found: Пользователь не найден
+  datasets:
+    delete_blocked: Демонстрационные пользователи не могут удалять наборы данных
+    example_blocked: Демонстрационные пользователи не могут создавать наборы данных
+    proxy_error: Внутренняя ошибка сервера
+    update_blocked: Пользователи-примеры не могут обновлять наборы данных
+  profile:
+    name_required: Имя обязательно
+    update_failed: Не удалось обновить профиль
+  recipes:
+    create_error: Не удалось создать рецепт
+    dataset_not_found: Набор данных не найден
+    dataset_required: Идентификатор набора данных обязателен
+    delete_error: Не удалось удалить рецепт
+    execute_error: Не удалось выполнить рецепт
+    execution_load_error: Не удалось загрузить выполнение
+    execution_not_found: Выполнение не найдено
+    executions_load_error: Не удалось загрузить выполнения
+    load_error: Не удалось загрузить рецепты
+    missing_id: Требуется ID рецепта
+    name_required: Имя и этапы обязательны
+    not_found: Рецепт не найден
+    not_owned: Рецепт не найден или нет прав доступа
+    update_error: Не удалось обновить рецепт
+  register:
+    email_exists: Email уже существует
+    internal_error: Внутренняя ошибка сервера
+    invalid_email: Неверный формат email
+    limit_reached: Достигнут лимит регистраций (максимум {max_reg} пользователей).
+    missing_fields: Не заполнены обязательные поля
+    password_validation_failed: Проверка пароля не пройдена
+    settings_not_found: Глобальные настройки не найдены
+  settings:
+    load_failed: Не удалось загрузить настройки
+    save_failed: Не удалось сохранить настройки
+    user_not_found: Пользователь не найден
+  user:
+    api_key_required: Для этого провайдера требуется API-ключ
+    connection_name_exists: Соединение с таким именем уже существует
+    connection_not_found: Соединение не найдено
+    example_blocked: Пользователи-примеры не могут выполнить это действие
+    internal_error: Внутренняя ошибка сервера
+    missing_fields: Отсутствуют обязательные поля
+    provider_not_found: Провайдер "{provider}" не найден
+    user_not_found: Пользователь не найден
+  global_settings_load_error: Внутренняя ошибка сервера
+app:
+  name: Рабочее место статистика
+  version: Версия
+chat:
+  connection_not_found: Подключение к ИИ не найдено или недоступно
+  connections_load_error: Не удалось загрузить соединения
+  delete: Удалить
+  delete_confirm: Вы уверены, что хотите удалить этот чат?
+  delete_error: Не удалось удалить чат
+  delete_success: Чат удалён
+  empty_state: Отправьте сообщение, чтобы начать разговор
+  go_to_ai_settings: Перейти к настройкам ИИ
+  history: История чатов
+  input_placeholder: Введите сообщение...
+  load_error: Не удалось загрузить чаты
+  models_load_error: Не удалось загрузить модели
+  new_chat: Новый чат
+  no_chat_selected: Нет активного чата
+  no_chats: Пока нет чатов
+  no_connections_message: Для использования чата необходимо настроить хотя бы одно подключение ИИ
+  no_models: Нет доступных моделей для этого соединения
+  rename: Переименовать
+  rename_empty: Название не может быть пустым
+  rename_error: Не удалось переименовать чат
+  rename_success: Чат переименован
+  select_connection: Подключение ИИ
+  select_connection_first: Сначала выберите подключение ИИ
+  select_connection_placeholder: Выберите подключение ИИ
+  select_model: Модель
+  select_model_placeholder: Выберите модель
+  send_error: Не удалось отправить сообщение
+  title: Чат
+common:
+  audio_settings: Настройки аудио
+  back: Назад
+  cancel: Отмена
+  cannot_undo: Это действие нельзя отменить
+  clear: Очистить
+  close: Закрыть
+  close_navigation: Закрыть навигацию
+  copied: Скопировано!
+  copy: Копировать
+  copy_to_clipboard: Копировать в буфер обмена
+  delete: Удалить
+  delete_chat: Удалить чат
+  deleting: Удаление...
+  dismiss: Скрыть
+  dismiss_error: Скрыть ошибку
+  dismiss_success: Скрыть успех
+  edit: Редактировать
+  error_label: Ошибка
+  false_label: Ложь
+  generating: Генерация...
+  has_more_information: содержит дополнительную информацию
+  loading: Загрузка...
+  microphone_off: Микрофон выключен
+  microphone_on: Микрофон включен
+  next: Далее
+  no_answer: Ответ не получен
+  no_permission: У вас нет разрешения на просмотр этой страницы
+  open_navigation: Открыть навигацию
+  reset_to_defaults: Сбросить до значений по умолчанию
+  restoring: Восстановление...
+  save: Сохранить
+  saving: Сохранение...
+  select_language: Выбрать язык
+  sending: Отправка...
+  speaker_off: Динамик выключен
+  speaker_on: Динамик включен
+  speech_input_unsupported: 'Голосовой ввод не поддерживается в вашем браузере. Поддерживаемые браузеры: Google Chrome, Microsoft Edge, Opera, Samsung Internet.'
+  speech_mic_denied: Доступ к микрофону запрещен. Разрешите доступ к микрофону в настройках браузера.
+  speech_mic_failed: 'Не удалось запустить микрофон: {error}.'
+  speech_network_error: Ошибка сети распознавания речи — проверьте подключение к интернету и попробуйте снова.
+  speech_output_unsupported: 'Воспроизведение речи не поддерживается в вашем браузере. Поддерживаемые браузеры: Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera, Samsung Internet.'
+  speech_recognition_error: 'Ошибка распознавания речи: {error}. Попробуйте еще раз.'
+  success_label: Успешно
+  system_default: Системные настройки по умолчанию
+  testing: Тестирование...
+  true_label: Истина
+  unknown: Неизвестно
+  untitled: Без названия
+  uploading: Загрузка...
+  verifying: Проверка...
+  view: Просмотр
+  view_dataset: Просмотр набора данных
+  voice: Голос
+  unknown_error: Неизвестная ошибка
+  access_denied_admin: Доступ запрещён — только для администраторов.
+  audio_pause: Пауза
+  audio_stop: Стоп
+  audio_resume: Продолжить
+  email_features_unavailable: Функции учётной записи, связанные с электронной почтой, недоступны.
+  probe_timeout_label: Тайм-аут теста модели (секунд)
+  ai_timeout_label: Максимальное время ИИ
+  ai_temperature_label: Температура
+  ai_max_tokens_label: Максимум выходных токенов
+  connect_timeout_label: Тайм-аут соединения (секунд)
+  ai_models: Модели ИИ
+components:
+  audio_settings_dialog:
+    close: Закрыть
+    pitch_label: 'Высота тона: {0}'
+    reset_to_defaults: Сбросить до значений по умолчанию
+    speed_label: 'Скорость: {0}x'
+    system_default: Системные настройки по умолчанию
+    title: Настройки звука
+    voice: Голос
+  example_user_badge: Пример пользователя
+  example_user_badge_tooltip: Зарегистрируйтесь для полного доступа
+  example_user_banner:
+    message: Вы просматриваете систему в режиме только для чтения. Зарегистрируйтесь для полного доступа, чтобы создавать и изменять ресурсы.
+    message_short: Режим только для чтения — зарегистрируйтесь для полного доступа
+    register_button: Зарегистрироваться для полного доступа
+    register_short: Зарегистрироваться
+    title: Режим примера пользователя
+  group_admin_badge: Администратор группы
+  preparation_preview:
+    more_columns: +{0} ещё
+    null_value: 'null'
+    rows_removed: '{0} удалено'
+  readonly_wrapper:
+    message: Режим только для чтения — зарегистрируйтесь для полного доступа, чтобы изменить этот контент.
+  feature_gate:
+    upgrade_message: Эта функция требует корпоративную лицензию. Свяжитесь с Sentuny для вариантов обновления.
+    upgrade_title: Корпоративная функция
+  active_checkmark: ✓
+  return_banner:
+    link: Вернуться к вашей сессии
+    text: Вы работали над ИИ-рецептом.
+    recipe_link: Вернуться к вашему рецепту
+    fallback_link: Вернуться
+    recipe_text: Вы работали над рецептом.
+  data_value:
+    some_content_not_shown: Часть контента не отображается
+database:
+  connection:
+    add_first: Добавьте первое подключение
+    add_new: Добавить новое подключение
+    add_success: Подключение успешно добавлено
+    add_title: Добавить новое подключение
+    by_label: от
+    clear_default: Очистить по умолчанию
+    currently_not_shared: ❌ Сейчас не предоставлен общий доступ
+    currently_shared: ✅ Предоставлен общий доступ для группы
+    database_label: Имя базы данных
+    db_create_badge: Создание БД
+    default_badge: По умолчанию
+    default_cleared: Подключение по умолчанию очищено
+    default_set: Подключение по умолчанию обновлено
+    delete_button: Удалить
+    delete_confirmation: Вы уверены, что хотите удалить подключение?
+    delete_error: Не удалось удалить подключение
+    delete_title: Удалить подключение
+    deleted: Подключение удалено
+    edit_title: Изменить подключение
+    form_description: Введите данные для подключения к базе данных.
+    group_label: Группа
+    host_label: Хост
+    load_error: Не удалось загрузить подключения
+    name_label: Имя подключения
+    name_placeholder: например, Production DB
+    no_connections: Пока нет сохраненных подключений к базе данных.
+    not_found: Подключение не найдено
+    password_label: Пароль
+    port_label: Порт
+    save_error: Не удалось сохранить подключение
+    select_type: Выберите тип
+    set_default: Установить по умолчанию
+    shared_badge: Общий
+    shared_description: Сделать это подключение доступным для других пользователей в вашей группе.
+    shared_label: Поделиться с группой
+    shared_readonly: Общий
+    shared_readonly_message: Это подключение предоставлено вам в общий доступ. Вы можете просматривать его, но редактирование разрешено только владельцу.
+    tables_badge: Таблицы
+    test_button: Проверить подключение
+    test_failed: Ошибка подключения
+    test_incomplete: Пожалуйста, заполните все поля перед проверкой.
+    test_network_error: Ошибка сети при проверке подключения.
+    test_success: Подключение успешно!
+    type_label: Тип базы данных
+    unknown_user: Неизвестно
+    update_success: Подключение успешно обновлено
+    username_label: Имя пользователя
+    file_path_label: Путь к файлу
+    browse_tables: Обзор таблиц
+    auto_create_tables: Автосоздание табличных наборов данных
+    auto_create_views: Автосоздание наборов данных представлений
+    auto_create_warnings_title: 'Подключение сохранено, но при автосоздании набора данных возникли предупреждения:'
+    auto_create_title: Автосоздание наборов данных
+    jet_port_label: Порт сервера Jet
+    datasets_created: '{n} наборов данных создано'
+    jet_host_label: Хост сервера Jet
+    probe_never: Никогда
+    probe_check_now: Проверить сейчас
+    probe_checked: Проверено
+    probe_hours_ago: '{count} часов назад'
+    probe_state:
+      no_permission: Нет доступа
+      unreachable: Недоступно
+      schema_error: Схема не читается
+      reachable: Доступно
+      auth_failed: Ошибка аутентификации
+      unknown: Не проверено
+      incomplete: Неполная настройка
+      no_database: Нет базы данных
+    probe_title: Последняя проверка
+    probe_last_succeeded: Последняя успешная проверка
+    probe_minutes_ago: '{count} минут назад'
+    probe_check_failed: Только что не удалось проверить подключение.
+    probe_no_success: нет записей об успешной проверке
+    probe_just_now: только что
+    probe_hour_ago: 1 час назад
+    probe_minute_ago: 1 минуту назад
+    probe_unsaved_hint: Подключение проверяется сразу после сохранения.
+    probe_auto_hint: Обновляется автоматически при загрузке списка подключений.
+  default_hint: Подключение по умолчанию используется в качестве резервного, если в рецепте анализа не указано подключение.
+  title: Настройки базы данных
+datasets:
+  all_datasets: Все данные
+  by_label: от
+  created_label: Создано
+  define_button: Подключить базу данных
+  define_first: Подключить базу данных
+  delete:
+    confirm: Удалить этот набор данных?
+    error: Не удалось удалить набор данных
+    success: Набор данных '{id}' успешно удалён.
+    title: Удалить
+  description:
+    empty: Сгенерированное описание пустое. Проверьте конфигурацию AI-провайдера.
+    error: Не удалось сгенерировать описание.
+    generated: Описание успешно сгенерировано.
+    title: Сгенерированное описание
+  detail:
+    created: Создано
+    descriptions: Описания AI
+    generated: Сгенерировано
+    load_error: Не удалось загрузить набор данных
+    model: Модель
+    no_description: Нет описания
+    not_found: Набор данных не найден
+    not_found_message: Набор данных, который вы ищете, не может быть найден
+    overview: Обзор
+    rows: Строки
+    storage_live: Живое представление
+    rows_not_computed: Не вычислено
+    materialize_failed: 'Сохранённую таблицу не удалось создать:'
+    rows_not_computed_hint: Соединение ещё не выполнено, поэтому количество строк пока не подсчитано.
+    storage_table: Сохранённая таблица
+  list_error: Не удалось загрузить наборы данных
+  no_datasets: Нет доступных данных
+  no_uploaded: Пока нет загруженных наборов данных
+  preparation:
+    add_operation: Добавить операцию
+    add_rule: Добавить правило
+    column_required: Операция требует указания столбца
+    columns_required: Операция требует как минимум один столбец
+    delete_confirmation: Вы уверены, что хотите удалить правило трансформации "{name}"? Это также удалит его из всех рецептов, которые его используют.
+    delete_error: Не удалось удалить правило трансформации
+    delete_title: Удалить правило трансформации
+    edit_rule: Редактировать правило
+    encode:
+      label: Метка
+      one_hot: One-Hot
+    fill:
+      constant: Константа
+      drop: Удалить
+      mean: Среднее
+      median: Медиана
+      mode: Мода
+    filter_invalid: Операция фильтрации требует указания столбца и значения
+    link:
+      description: Очистить и преобразовать этот набор данных
+      title: Правила подготовки
+    name_required: Требуется указать имя правила
+    new_name_required: Операция переименования требует новое имя
+    new_rule: Новое правило
+    no_rules: Для этого набора данных не определены правила трансформации
+    operation:
+      convert_type: Преобразовать тип
+      drop_columns: Удалить столбцы
+      encode: Кодировать
+      fill_missing: Заполнить пропуски
+      filter: Фильтровать
+      normalize: Нормализовать
+      rename_column: Переименовать столбец
+      standardize: Стандартизировать
+    operations: Операции
+    operations_count: операция(и)
+    operator:
+      after: После (>)
+      before: До (<)
+      contains: Содержит
+      ends_with: Заканчивается на
+      equal_to: Равно (=)
+      greater_than: Больше (>)
+      greater_than_or_equal: Больше или равно (>=)
+      less_than: Меньше (<)
+      less_than_or_equal: Меньше или равно (<=)
+      not_contains: Не содержит
+      not_equal: Не равно (!=)
+      on_or_after: С (>=)
+      on_or_before: По (<=)
+      starts_with: Начинается с
+    original_data: Исходные данные
+    placeholder:
+      boolean: истина / ложь
+      datetime: ГГГГ-ММ-ДД или timestamp...
+      number: Введите число...
+      value: Введите значение...
+    preview: Предпросмотр
+    preview_error: Не удалось предпросмотреть правило
+    preview_title: Предпросмотр
+    rows_after: После
+    rows_before: До
+    rows_removed: Удалено
+    rule_created: Правило подготовки '{name}' успешно создано.
+    rule_deleted: Правило подготовки успешно удалено.
+    rule_description: Описание (необязательно)
+    rule_description_placeholder: Краткое описание
+    rule_name: Имя правила
+    rule_name_placeholder: например, Очистка для анализа
+    rule_updated: Правило подготовки успешно обновлено.
+    rules_title: Правила трансформации
+    save_error: Не удалось сохранить правило трансформации
+    shared: Поделиться с группой
+    transformed_data: Преобразованные данные
+    type:
+      boolean: Логический
+      datetime: Дата и время
+      numeric: Числовой
+      string: Строка
+    ui:
+      column: столбец
+      columns: столбцы (через запятую)
+      encoding: кодирование
+      method: метод
+      new_name: новое имя
+      operator: оператор
+      target_type: целевой тип
+      type: Тип
+      value: значение
+  rules_button: Правила
+  schema:
+    column_name: Столбец
+    column_type: Тип
+    columns: Столбцы
+    load_error: 'Не удалось загрузить схему: {error}'
+    no_sample_data: Нет доступных образцов данных
+    null_count: Нулевые значения
+    sample_data: Пример данных (первые 5 строк)
+    title: Предпросмотр схемы
+    total_columns: Всего столбцов
+    total_rows: Всего строк
+    unique_count: Уникальные
+  share: Поделиться
+  share_error: Не удалось обновить настройки доступа
+  shared: Общий доступ к набору данных предоставлен
+  shared_badge: Общий
+  source:
+    unknown_file: Неизвестный файл
+  title: Мои данные
+  transform_button: Преобразовать
+  type:
+    table: Таблица
+    upload: Загружено
+    view: Представление
+    virtual: Виртуальный
+    mysql: MySQL
+    postgresql: PostgreSQL
+    access: MS Access
+    notebook: Блокнот
+    mssql: MS SQL
+    cleaned_copy: Очищенная копия
+  unknown_user: Неизвестно
+  unshare: Отменить общий доступ
+  unshared: Общий доступ к набору данных отменён
+  upload:
+    card_title: Загрузить и описать
+    connection_not_found: Подключение не найдено. Пожалуйста, выберите допустимое AI-подключение.
+    description_label: Описание (необязательно)
+    description_placeholder: Краткое описание этих данных
+    error: Не удалось загрузить набор данных
+    file_label: Файл
+    file_selected: Выбранный файл
+    file_too_large: Файл превышает максимальный размер загрузки {max} МБ. Загрузка запрещена.
+    generate_description: Сгенерировать описание
+    history: История загрузок
+    limit_reached: Достигнут лимит
+    limit_reached_message: Вы достигли максимального количества наборов данных ({count}).
+    name_label: Название данных
+    name_placeholder: Мои данные
+    no_connections: Вам необходимо настроить хотя бы одно AI-подключение для генерации описаний.
+    no_datasets: Пока нет наборов данных
+    no_file: Сначала выберите файл.
+    no_name: Пожалуйста, введите название набора данных.
+    select_dataset: Сначала загрузите или выберите набор данных.
+    shared_description: Сделать эти данные доступными для других пользователей вашей группы.
+    shared_group_hint: 'Группа: {group} - {description}'
+    shared_label: Поделиться с группой
+    success: Набор данных «{name}» успешно загружен
+    title: Загрузить данные
+    upload_button: Загрузить
+    escalation_failed_at: Описание превысило тайм-аут через {seconds} секунд.
+    escalation_retry: Повторить
+    escalation_label: Повторить с (секунды)
+    escalation_hint: Это значение используется только для этой попытки. Если этой модели обычно нужно больше времени, настройте параметры модели для соединения, а не повышайте это значение каждый раз.
+    escalation_invalid: Введите целое число секунд от 1 до {max}.
+  upload_button: Загрузить данные
+  upload_count: '{count} загруз{plural}'
+  upload_first: Загрузите ваш первый файл данных
+  upload_first_file: Загрузите ваш первый файл
+  upload_new: Загрузить новый файл
+  uploaded_title: Загруженные данные
+  view_dataset_title: Просмотреть набор данных
+  view_schema: Просмотреть схему
+  browse:
+    select_table_hint: Выберите таблицу для просмотра колонок и предпросмотра данных.
+    back: Назад
+    tables: Таблицы
+    preview_hint: Нажмите «Загрузить предпросмотр», чтобы увидеть примеры строк.
+    columns_title: Столбцы — {table}
+    load_columns_error: Не удалось загрузить столбцы
+    browse_tables: Обзор таблиц
+    load_tables_error: Не удалось загрузить таблицы
+    tables_count: '{count} таблиц'
+    load_preview: Загрузить предпросмотр
+    type: Тип
+    preview: Предпросмотр
+    nullable: Допускает значение NULL
+    column: Столбец
+    connections: Подключения
+    load_preview_error: Не удалось загрузить предварительный просмотр
+  transforms:
+    delete_error: Не удалось удалить преобразование
+    delete_confirm: Удалить это преобразование?
+    create_button: Создать
+    name_label: Имя
+    create_error: Не удалось создать преобразование
+    load_error: Не удалось загрузить преобразования
+    for: Преобразования для {name}
+    create_new: Новое преобразование
+    description_label: Описание (необязательно)
+    title: Преобразования
+    creating: Создание...
+    created_label: Создано
+    operations_label: '{count} операций'
+    no_transforms: Для этого набора данных не определено ни одного преобразования.
+    back: Назад к Моим данным
+  database_label: БД
+  filter:
+    shared: Общий
+    mysql: MySQL
+    uploads: Загрузки
+    label: Фильтр
+    mssql: MS SQL
+    no_match: Нет наборов данных, соответствующих этому фильтру.
+    not_shared: Не общий
+    access: MS Access
+    virtual: Виртуальный
+    cleaned: Очищенный
+    all: Все
+    notebooks: Блокноты
+    postgresql: PostgreSQL
+  created_from: Создан на основе {name}
+  cleaned_badge: Очищенный
+  source_unavailable: источник недоступен
+  table_not_built: Таблица не построена
+define:
+  column_name: Столбец
+  column_type: Тип
+  connection_label: Подключение к базе данных
+  dataset_name: Название набора данных
+  dataset_name_placeholder: например, Данные клиентов
+  description_label: Описание (необязательно)
+  description_placeholder: Краткое описание этого набора данных
+  existing_none: Нет
+  existing_title: Существующие
+  go_to_db_settings: Перейти к настройкам базы данных
+  load_connections_error: Не удалось загрузить подключения
+  load_sources_error: Не удалось загрузить источники
+  name_required: Название набора данных обязательно
+  no_connections_message: Вам необходимо настроить хотя бы одно подключение к базе данных, прежде чем подключить базу данных.
+  no_sources: В этой базе данных не найдено таблиц или представлений.
+  nullable: Допускает null
+  preview_label: Предпросмотр данных (первые 10 строк)
+  save_button: Сохранить набор данных
+  save_error: Не удалось создать набор данных
+  save_success: Набор данных успешно создан
+  schema_label: Схема
+  select_connection: Выберите подключение
+  select_source: Выберите источник
+  select_source_first: Сначала выберите таблицу или представление
+  shared_description: Сделать этот набор данных доступным для других пользователей вашей группы.
+  shared_label: Поделиться с группой
+  source_label: Источник
+  source_type_label: Тип источника
+  step1_description: Выберите подключение к базе данных для подключения набора данных.
+  step1_title: Выбрать подключение к базе данных
+  step2_description: Выберите, использовать таблицу или представление, затем выберите источник.
+  step2_title: Выбрать источник
+  step3_description: Проверьте столбцы и предпросмотр данных из выбранного источника.
+  step3_title: Проверить источник
+  step4_description: Присвойте набору данных имя и описание, затем сохраните его.
+  step4_title: Назвать и сохранить
+  step_connection: Подключение
+  step_save: Сохранить
+  step_source: Источник
+  step_verify: Проверить
+  table: Таблица
+  title: Подключить базу данных
+  verify_button: Проверить источник
+  verify_error: Не удалось проверить таблицу/представление
+  verify_success: Таблица/представление успешно проверены
+  view: Представление
+demo:
+  badge: ДЕМО
+  banner:
+    message: Это демонстрационная система. Данные могут периодически сбрасываться.
+    title: ⚠️ ДЕМО-РЕЖИМ
+forgot_password:
+  back_to_login: Вернуться ко входу
+  check_spam: Пожалуйста, проверьте папку «Спам», если письмо не пришло в течение нескольких минут.
+  description: Введите ваш адрес электронной почты, и мы отправим вам ссылку для сброса пароля.
+  error: Не удалось отправить письмо для сброса
+  sent: Если аккаунт с таким адресом существует, вы получите ссылку для сброса пароля.
+  sent_description: Если аккаунт с таким адресом существует, вы получите ссылку для сброса пароля.
+  sent_title: Письмо отправлено
+  submit: Отправить ссылку для сброса
+  title: Забыли пароль?
+global:
+  demo_mode:
+    description: При включении система работает в демо-режиме.
+    label: Демо-режим
+  email_sender:
+    hint: Адрес электронной почты, от которого будут приходить письма с подтверждением.
+    label: Адрес отправителя писем
+  email_timeout:
+    hint: Срок действия ссылки для подтверждения email (в часах).
+    label: Тайм-аут подтверждения email (часы)
+  grace_period:
+    hint: Количество часов до окончательного удаления аккаунтов, помеченных как удалённые.
+    label: Задержка удаления (часы)
+  invalid_grace_period: Пожалуйста, введите корректное положительное число для задержки удаления (в часах)
+  invalid_number: Пожалуйста, введите корректное положительное число для максимального количества регистраций
+  invalid_timeout: Пожалуйста, введите корректное положительное число для тайм-аута подтверждения (в часах)
+  load_error: Не удалось загрузить глобальные настройки
+  max_registrations:
+    custom: Своё значение (введите ниже)
+    custom_placeholder: Введите положительное число
+    hint: Установите ограничение на количество регистраций пользователей.
+    label: Максимальное количество регистраций пользователей
+    placeholder: Выберите ограничение
+    unlimited: Без ограничений
+    users: пользователей
+  password_policy:
+    custom: Своё значение
+    high: Высокая (мин. 10 символов, заглавные, строчные, цифры, спецсимволы)
+    hint: Выберите требования к сложности пароля при регистрации и смене пароля.
+    label: Политика паролей
+    low: Низкая (мин. 6 символов)
+    medium: Средняя (мин. 8 символов, заглавные, строчные, цифры)
+    min_length: Минимальная длина
+    min_strength: Минимальная надёжность (оценка zxcvbn от 0 до 4)
+    require_digit: Требовать цифру
+    require_lowercase: Требовать строчную букву
+    require_special: Требовать специальный символ
+    require_uppercase: Требовать заглавную букву
+    select: Выберите политику
+  public_url:
+    hint: Базовый URL, используемый в ссылках для подтверждения email (например, https://workbench.example.com).
+    label: Публичный URL
+  save_button: Сохранить глобальные настройки
+  save_success: Глобальные настройки сохранены
+  system:
+    description: Управление глобальными настройками, применяемыми ко всем пользователям (только для администратора).
+    title: Системная конфигурация
+  title: Глобальные настройки
+  upload:
+    count_1: '1'
+    count_10: '10'
+    count_100: '100'
+    count_1000: '1000'
+    count_25: '25'
+    count_250: '250'
+    count_5: '5'
+    count_50: '50'
+    count_500: '500'
+    count_hint: Максимальное количество наборов данных на пользователя (0 = без ограничений). Применяется к новым пользователям.
+    count_unlimited: Без ограничений
+    default_count_label: Максимальное количество файлов для загрузки на пользователя по умолчанию
+    default_size_label: Максимальный размер загрузок на пользователя по умолчанию (МБ)
+    select_count: Выберите ограничение
+    select_size: Выберите ограничение
+    size_100_mb: 100 МБ
+    size_10_mb: 10 МБ
+    size_1_gb: 1 ГБ
+    size_1_mb: 1 МБ
+    size_250_mb: 250 МБ
+    size_25_mb: 25 МБ
+    size_500_mb: 500 МБ
+    size_50_mb: 50 МБ
+    size_5_mb: 5 МБ
+    size_hint: Максимальный общий объём хранилища на пользователя (0 = без ограничений). Применяется к новым пользователям.
+    size_unlimited: Без ограничений
+  welcome:
+    hint: Это сообщение будет отображаться на странице входа. Оставьте пустым, чтобы скрыть его.
+    label: Приветственное сообщение
+    placeholder: Введите приветственное сообщение для отображения на странице входа.
+home:
+  welcome_placeholder: Добро пожаловать в Statisticians Workbench
+login:
+  account_deleted: Этот аккаунт был удалён.
+  description: Войдите в свой аккаунт
+  docs_more_info: Подробнее
+  email: Email
+  email_not_verified: Email не подтверждён. Пожалуйста, проверьте папку «Входящие» и папку «Спам».
+  email_verified: Email успешно подтверждён! Теперь вы можете войти.
+  forgot_password: Забыли пароль?
+  invalid_credentials: Неверный email или пароль.
+  invalid_token: Недействительная ссылка для подтверждения. Запросите новую.
+  missing_token: Токен подтверждения не предоставлен.
+  no_account: Нет аккаунта?
+  password: Пароль
+  register_link: Зарегистрироваться
+  resend_link: Отправить подтверждение повторно?
+  signing_in: Вход...
+  submit: Войти
+  success: Успешный вход
+  title: Войти
+  token_expired: Срок действия ссылки для подтверждения истёк. Пожалуйста, запросите новую.
+nav:
+  about: О программе
+  admin: Администратор
+  admin_groups: Описания групп
+  admin_panel: Управление пользователями
+  admin_providers: Провайдеры ИИ
+  admin_visualization_types: Типы визуализаций
+  ai_analysis_rules: Правила анализа
+  ai_chat: Инструменты ИИ
+  ai_database_design: Проектирование базы данных
+  ai_dataset_cleaning: Очистка наборов данных
+  ai_general: Общие
+  ai_virtual_datasets: Виртуальные наборы данных
+  home: Главная
+  logout: Выйти
+  user: Пользователь
+  admin_setup_limits: Лимиты
+  admin_setup_options: Параметры
+  admin_setup: Настройка
+  admin_licence: Лицензия
+  admin_setup_internal: Внутренний
+  ai_testing: Тестирование ИИ
+  admin_setup_tuning: Тонкая настройка
+notebooks:
+  and_more: +{count} ещё
+  cant_create_tables: Это подключение не может создавать таблицы — импорт запрещён.
+  cells_label: 'Ячейки:'
+  connection_create_db_badge: Создать БД
+  connection_form_label: Подключение
+  connection_tables_badge: Таблицы
+  connection_unavailable: Подключение к базе данных не найдено или недоступно
+  create_dataset: Автоматически создать набор данных
+  create_new_database: Создать новую базу данных
+  dataframe_prefix: DataFrame
+  dataframes_label: 'DataFrames:'
+  dataset_created: Набор данных создан
+  delete_confirm: Удалить импорт "{name}" и все его таблицы?
+  delete_failed: Не удалось удалить импорт
+  delete_title: Удалить импорт
+  detected_dataframes: 'Обнаруженные DataFrames:'
+  doc_preview: 'Предпросмотр документации:'
+  example_banner: Вы просматриваете как пользователь с гостевой учётной записью. Зарегистрируйтесь, чтобы импортировать и управлять блокнотами.
+  example_blocked: Пользователи гостевых учётных записей не могут импортировать блокноты.
+  example_register: Зарегистрироваться
+  fetch_error: Не удалось загрузить список импортов
+  import_button: Импортировать блокнот
+  import_complete: Импорт завершён
+  import_deleted: Импорт удалён
+  import_failed: 'Не удалось импортировать блокнот: {error}'
+  import_success: Успешно импортировано {count} таблиц
+  import_title: Импорт блокнота Jupyter
+  imported_at_label: 'Импортировано:'
+  importing: Импорт...
+  kb_unit: КБ
+  kernel_label: 'Ядро:'
+  list_title: Импорты блокнотов
+  no_dataframes: В этом блокноте не найдено DataFrames.
+  no_imports: Пока нет импортов блокнотов.
+  notebook_label: 'Блокнот:'
+  parse_error: Не удалось разобрать блокнот
+  parsing: Разбор...
+  preview_button: Предпросмотр
+  rows_cols_format: '{rows} строк × {cols} столбцов'
+  run_preview_first: Запустите предпросмотр, чтобы увидеть, что будет импортировано
+  sanitised_notice: Ячейки с кодом были удалены в целях безопасности. Сохранены только выводы данных и разметка Markdown.
+  select_connection: Выберите подключение к базе данных
+  select_connection_placeholder: Выберите подключение...
+  select_file_first: Пожалуйста, выберите файл .ipynb
+  share_error: Только владелец может изменять настройки общего доступа.
+  share_label: Поделиться с группой
+  shared: Блокнот предоставлен группе
+  shared_badge: Общий доступ
+  size_label: 'Размер:'
+  step1_title: 'Шаг 1: Выберите файл'
+  step2_title: 'Шаг 2: Предпросмотр'
+  storage_form_label: Хранилище
+  storage_label: 'Хранилище:'
+  table_count: '{count} таблиц'
+  tables_created_label: 'Создано таблиц:'
+  title_label: 'Название:'
+  unshared: Общий доступ отозван
+  table_name: 'Таблица: {name}'
+password:
+  strength:
+    fair: Удовлетворительно
+    good: Хорошо
+    strong: Сильный
+    weak: Слабый
+preparation:
+  add_operation: Добавить операцию
+  after: После
+  back_to_list: Вернуться к правилам
+  before: До
+  cancel: Отмена
+  col:
+    categorical: категориальный
+    datetime: дата и время
+    nulls: '{percent}% null'
+    numeric: числовой
+  cols: столбцов
+  column_label: Столбец
+  constant_value_label: Константное значение
+  create_first: Создайте первое правило подготовки для очистки и преобразования этого набора данных перед анализом.
+  delete: Удалить
+  delete_confirm: Удалить правило "{name}"? Это действие нельзя отменить.
+  description_label: Описание (необязательно)
+  duplicate: Дублировать
+  duplicate_suffix: (копия)
+  edit: Редактировать
+  edit_title: 'Редактировать правило: {name}'
+  encoding:
+    label: Метка
+    onehot: Унитарное кодирование
+  encoding_param_label: Кодирование
+  live_preview: Предпросмотр в реальном времени
+  load_error: Не удалось загрузить данные
+  method:
+    minmax: Мин-Макс
+    zscore: Z-оценка
+  method_label: Метод
+  name_label: Имя
+  name_required: Необходимо указать имя правила
+  new_name_label: Новое имя
+  new_rule: Новое правило
+  new_title: Новое правило подготовки
+  no_rules: Пока нет правил подготовки
+  nulls: пустые значения
+  op:
+    convert_type: Преобразовать тип
+    drop_column: Удалить столбец
+    drop_duplicates: Удалить дубликаты
+    encode_category: Кодировать категорию
+    fill_missing: Заполнить пропуски
+    filter: Фильтр
+    rename_column: Переименовать столбец
+    normalize: Нормализовать
+    standardize: Стандартизировать
+  operations_count: '{count} операция{itemize}'
+  operations_label: Операции
+  operator_label: Оператор
+  ops_required: Требуется хотя бы одна операция
+  preview: Предпросмотр
+  preview_error: Не удалось выполнить предпросмотр
+  preview_loading: Выполняется предпросмотр...
+  preview_no_ops: Добавьте операции, чтобы увидеть предпросмотр
+  row_impact: '{before} → {after} строк'
+  rows: Строки
+  rule_deleted: Правило удалено
+  rule_duplicated: Правило дублировано
+  rule_saved: Правило сохранено
+  rules_for: Правила для {dataset}
+  sample_data: Пример данных
+  save: Сохранить правило
+  save_error: Не удалось сохранить правило
+  saving: Сохранение...
+  schema_error: Не удалось загрузить схему набора данных
+  select_column: -- Выберите столбец --
+  select_type: -- Выберите операцию --
+  strategy:
+    constant: Константа
+    drop_row: Удалить строку
+    mean: Среднее
+    median: Медиана
+    mode: Мода
+  strategy_label: Стратегия
+  target_type_label: Тип целевой переменной
+  title: Правила подготовки — {dataset}
+  type_label: Операция
+  value_label: Значение
+profile:
+  change_password:
+    description: Обновите ваш пароль.
+    title: Изменить пароль
+  change_password_button: Изменить пароль
+  confirm_password: Подтвердите новый пароль
+  current_password: Текущий пароль
+  current_password_required: Требуется текущий пароль
+  dark_mode_description: Переключение между светлой и тёмной темой.
+  dark_mode_label: Тёмный режим
+  email_label: Электронная почта
+  email_notifications_description: Получать уведомления по электронной почте о вашем аккаунте.
+  email_notifications_label: Уведомления по электронной почте
+  email_unchangeable: Электронную почту нельзя изменить
+  example_user_language_hint: Зарегистрируйтесь для полного доступа, чтобы изменить языковые настройки.
+  example_user_name_hint: Зарегистрируйтесь для полного доступа, чтобы изменить имя.
+  example_user_notifications_hint: Зарегистрируйтесь для полного доступа, чтобы изменить настройки уведомлений.
+  example_user_save_hint: Зарегистрируйтесь для полного доступа, чтобы сохранить изменения.
+  example_user_theme_hint: Зарегистрируйтесь для полного доступа, чтобы изменить настройки темы.
+  group_description: Описание
+  group_id: Идентификатор группы
+  group_info_title: Информация о группе
+  group_load_error: Не удалось загрузить информацию о группе
+  group_readonly_hint: Ваша группа назначается администратором и не может быть изменена здесь.
+  language_description: Выберите предпочитаемый язык интерфейса.
+  language_label: Язык
+  language_select_placeholder: Выберите язык
+  languages_load_error: Не удалось загрузить языки
+  load_error: Не удалось загрузить настройки
+  name_label: Имя
+  name_placeholder: Ваше имя
+  new_password: Новый пароль
+  password_change_failed: Не удалось изменить пароль
+  password_changed: Пароль успешно изменён
+  password_disabled: Изменение пароля отключено для демонстрационных пользователей
+  password_disabled_message: Вы вошли как демонстрационный пользователь. Функции пароля отключены.
+  password_mismatch: Новые пароли не совпадают
+  personal:
+    description: Обновите личную информацию и настройки приложения.
+    title: Профиль и настройки
+  save_button: Сохранить изменения
+  save_error: Не удалось сохранить профиль
+  save_success: Профиль сохранён
+  title: Настройки профиля
+  update_error: Не удалось обновить профиль
+  slow_threshold:
+    effective: 'Сейчас действуют:'
+    seconds: секунд
+    invalid: Лимит должен быть целым числом секунд, не менее 1.
+    placeholder: Использовать значение сайта по умолчанию
+    description: Тест модели, занявший больше этого времени, помечается как слишком медленный. Оставьте пустым, чтобы использовать значение сайта по умолчанию.
+    save: Сохранить лимит
+    saved: Лимит медленной модели сохранён
+    title: Порог медленной модели
+    label: Мой лимит
+recipes:
+  add_rule: Добавить правило
+  back_to_recipe: Назад к рецепту
+  by_label: от
+  cancel_button: Завершить
+  cancel_error: Не удалось отменить выполнение
+  cancel_success: Выполнение отменено
+  chart:
+    category: Категория
+    count: Количество
+    value: Значение
+    x_axis: X
+    y_axis: Y
+  clone: Клонировать
+  clone_button: Клонировать
+  clone_error: Не удалось клонировать рецепт
+  clone_success: Рецепт успешно клонирован
+  clone_suffix: (Копия)
+  column_type:
+    category: Категория
+    datetime: Дата/Время
+    number: Число
+    text: Текст
+  columns_after: Столбцы
+  columns_before: Столбцы
+  columns_label: Столбцы
+  columns_label_short: Столбцы
+  columns_required: Пожалуйста, выберите хотя бы один столбец
+  create_error: Не удалось создать рецепт
+  create_success: Рецепт '{name}' успешно создан.
+  dataset_label: Набор данных
+  dataset_required: Пожалуйста, выберите набор данных
+  delete: Удалить
+  delete_button: Удалить
+  delete_confirmation: Вы уверены, что хотите удалить рецепт "{name}"? Это действие нельзя отменить.
+  delete_title: Удалить рецепт
+  description_label: Описание (необязательно)
+  description_placeholder: Описание этого рецепта
+  edit: Редактировать
+  execute: Выполнить
+  execute_button: Выполнить
+  execute_error: 'Не удалось выполнить рецепт: {error}'
+  execute_success: Рецепт успешно выполнен
+  execution_error: Ошибка
+  execution_load_error: 'Не удалось загрузить выполнение: {error}'
+  execution_not_found: Выполнение '{id}' не найдено
+  execution_progress: Прогресс
+  execution_stage_results: Результаты этапа
+  execution_started: Начато
+  execution_status: Статус
+  execution_title: Результаты выполнения
+  executions_title: Последние выполнения
+  export_results: Экспорт результатов
+  go_define: Перейти к определению
+  go_upload: Перейти к загрузке
+  group_by_hint: Группировать по категориальному столбцу для сравнения статистик по группам
+  group_by_label: Группировать по (необязательно)
+  list_load_error: Не удалось загрузить рецепты
+  load_datasets_error: 'Не удалось загрузить наборы данных: {error}'
+  load_error: 'Не удалось загрузить рецепты: {error}'
+  load_rules_error: Не удалось загрузить правила подготовки
+  loading_schema: Загрузка столбцов...
+  move_down: Переместить вниз
+  move_up: Переместить вверх
+  my_recipes: Мои рецепты
+  name_label: Название рецепта
+  name_placeholder: например, Анализ продаж
+  name_required: Название рецепта обязательно
+  new_button: Новый рецепт
+  new_title: Новый рецепт
+  no_datasets: Наборы данных не найдены. Пожалуйста, сначала загрузите или определите набор данных.
+  no_datasets_available: Нет доступных наборов данных. Пожалуйста, сначала загрузите набор данных.
+  no_datasets_found: Нет доступных наборов данных. Сначала загрузите набор данных.
+  no_group: Нет
+  no_group_options: Нет категориальных столбцов для группировки
+  no_preparation_rules: Для этого набора данных нет доступных правил подготовки.
+  no_recipes: Вы ещё не создали ни одного рецепта.
+  no_schema: Нет схемы для этого набора данных
+  no_stages: Рецепт должен содержать хотя бы один этап
+  no_visualisation: Нет
+  no_visualisation_data: Нет данных для визуализации
+  none: Нет
+  preparation_rules: Правила подготовки (необязательно)
+  preparation_rules_applied: Применённые правила подготовки
+  preparation_rules_applied_description: Правила были применены в указанном ниже порядке перед этапами анализа.
+  preparation_rules_applied_title: Применённые правила подготовки
+  preparation_rules_description: Выберите правила для применения по порядку. Правила применяются последовательно.
+  recipe_label: Рецепт
+  remove_rule: Удалить правило
+  rows_after: Строк после
+  rows_before: Строки
+  rows_label: Строки
+  rules_applied_label: '{count} правил применено:'
+  save_button: Сохранить рецепт
+  schema_error: 'Не удалось загрузить схему столбца: {error}'
+  schema_loaded: 'Схема загружена: найдено {count} столбцов'
+  select_dataset: Выберите набор данных
+  select_group: Выберите столбец для группировки
+  select_rule: Выберите правило для добавления
+  select_rule_placeholder: Выберите правило
+  select_technique: Выберите метод
+  select_visualisation: Выберите визуализацию
+  selected: выбрано
+  shared: Общий доступ
+  shared_badge: Общий доступ
+  shared_description: Сделайте этот рецепт доступным для других пользователей вашей группы.
+  shared_group_hint: 'Группа: {group} - {description}'
+  shared_label: Поделиться с группой
+  shared_with_group: Общий доступ для вашей группы
+  stage_data_selection: Выбор данных
+  stage_number: Этап {number}
+  stage_preparation: Подготовка данных
+  stage_statistics: Статистика
+  stage_visualisation: Визуализация
+  stages_title: Этапы
+  status:
+    cancelled: Отменено
+    completed: Завершено
+    failed: Не удалось
+    pending: Ожидание
+    running: Выполняется
+  step1_description: Укажите название и описание рецепта.
+  step1_title: Назовите ваш рецепт
+  step2_description: Выберите набор данных и столбцы для анализа.
+  step2_title: Выберите данные
+  step3_description: Выберите статистический метод для применения.
+  step3_title: Выберите анализ
+  step4_description: Добавьте визуализацию в ваш рецепт.
+  step4_title: Визуализация (необязательно)
+  step_analysis: Анализ
+  step_complete: Шаг {step} завершён
+  step_data: Данные
+  step_name: Название
+  step_visualise: Визуализировать
+  technique_anova_one_way: Однофакторный дисперсионный анализ
+  technique_anova_two_way: Двухфакторный дисперсионный анализ
+  technique_chi_square: Критерий хи-квадрат
+  technique_correlation: Корреляционная матрица
+  technique_descriptive: Описательная статистика
+  technique_hint: Описательная статистика показывает сводные показатели, такие как среднее, медиана и стандартное отклонение.
+  technique_label: Метод
+  technique_linear_regression: Линейная регрессия
+  technique_t_test_independent: t-критерий для независимых выборок
+  technique_t_test_paired: t-критерий для парных выборок
+  title: Статистические рецепты
+  total_rules_applied: Всего применено правил
+  unknown_user: Неизвестно
+  update_error: 'Не удалось обновить рецепт: {error}'
+  update_success: Рецепт '{id}' успешно обновлён.
+  updated_label: Обновлено
+  visualisation:
+    columns_label: Столбцы
+    data_points: Точки данных
+    distribution: Распределение
+    trend: Тренд
+    type_label: Тип
+  visualisation_bar: Столбчатая диаграмма
+  visualisation_hint: Диаграмма будет построена с использованием выбранных столбцов данных.
+  visualisation_label: Тип визуализации
+  visualisation_line: Линейная диаграмма
+  visualisation_pie: Круговая диаграмма
+  visualisation_raw_data: 'Данные визуализации:'
+  visualisation_scatter: Диаграмма рассеяния
+  dataset:
+    loading: Загрузка наборов данных...
+    columns_label: Столбцы
+    rows_label: строки
+    load_error: Не удалось загрузить наборы данных
+    placeholder: Выберите набор данных
+    no_datasets: Нет доступных наборов данных
+  editor:
+    save_success: Рецепт сохранён
+    name_hint: Для сохранения рецепта требуется имя.
+    new_recipe_name: Новый рецепт
+    save_error: Не удалось сохранить рецепт
+    component_output: Вывод
+    name_required: Требуется имя рецепта.
+    loading: Загрузка рецепта...
+    create_mode: Создать новый рецепт — редактор появится в Фазе 3.
+    run: Запустить
+    component_algorithm: Алгоритм
+    component_dataset: Набор данных / Преобразование
+    placeholder: Это ручной редактор статистических рецептов — рецепты являются сердцем Workbench. Ручной интерфейс быстрее, чем интерфейс ИИ, но если вы не уверены, что нужно сделать, вам, вероятно, нужен
+      редактор рецептов с ИИ. Это также учебник по статистике... но для его использования вам необходимо настроить рабочее ИИ-подключение в настройках. Выберите рецепт или создайте новый.
+    name_placeholder: Название рецепта
+    save: Сохранить рецепт
+  require:
+    responseColumn: Выберите столбец отклика для {algo}
+    xColumn: Выберите столбец X для {out}
+    second_response: Выберите второй столбец отклика
+    dataset: Выберите набор данных
+    yColumn: Выберите столбец Y для {out}
+    factorColumn: Выберите факторный столбец для {algo}
+    independentColumns: Выберите независимые столбцы
+    first_response: Выберите первый столбец отклика
+    categoryColumn: Выберите столбец категорий для {out}
+    algorithm: Выберите анализ
+    dependentColumn: Выберите зависимый столбец
+  algorithm:
+    response_column: Отклик (числовой)
+    placeholder: Выберите тип анализа
+    factor_column: Фактор (категориальный)
+    independent_columns: Независимые переменные
+    dependent_column: Зависимая переменная
+    group_by: Группировать по
+  visualisation_table: Таблица
+  output:
+    y_column: Столбец оси Y
+    category_column: Столбец категорий
+    placeholder: Выберите тип выходных данных
+    x_column: Столбец оси X
+  share:
+    read_only: Предоставлено пользователем {owner} — только для чтения
+    unshare: Отменить общий доступ
+    shared_badge: Общий
+    button: Поделиться
+    group_info: Группа {group} — {desc}
+  panel:
+    my_recipes: Мои рецепты
+    updated: Обновлено
+    search: Поиск рецептов...
+    shared_recipes: Общий
+    incomplete: Неполный
+    no_results: Нет рецептов, соответствующих вашему запросу
+    no_recipes: Рецептов пока нет
+    new_button: Новый рецепт
+    complete: Готово
+  transforms:
+    label: Преобразования
+    remove: Удалить
+    manage_button: Управление преобразованиями
+    no_transforms: Преобразования не применены
+    add: Добавить преобразование
+  execution:
+    running: Выполнение рецепта…
+    errors_label: 'Ошибки:'
+    request_failed: Ошибка выполнения
+    failed_start: Не удалось начать выполнение
+    results_label: 'Результаты:'
+    rules_count: '{count} правил подготовки применено.'
+    showing_rows: Показано {count} из {total} строк
+  needs_other_columns: (требуются другие столбцы)
+  visualisation_hbar: Горизонтальная столбчатая диаграмма
+  visualisation_donut: Кольцевая диаграмма
+  visualisation_area: Диаграмма с областями
+  ui:
+    delete_error: Не удалось удалить рецепт
+    delete_success: Рецепт удалён
+  visualisation_histogram: Гистограмма
+register:
+  confirm_password: Подтвердите пароль
+  creating: Создание учётной записи...
+  description: Создать новую учётную запись
+  email: Email
+  failed: Регистрация не удалась
+  have_account: Уже есть учётная запись?
+  language_description: Выберите предпочитаемый язык интерфейса.
+  login_link: Войти
+  name: Имя
+  password: Пароль
+  password_mismatch: Пароли не совпадают
+  submit: Зарегистрироваться
+  success_with_verification: Ваша учётная запись создана. Проверьте электронную почту и перейдите по ссылке для подтверждения, чтобы активировать учётную запись.
+  title: Зарегистрироваться
+  email_failed_use_resend: Регистрация прошла успешно, но не удалось отправить письмо для подтверждения. Пожалуйста, повторно отправьте его со страницы входа.
+  registration_disabled: Самостоятельная регистрация отключена. Обратитесь к администратору.
+  success_pending_approval: Ваша учётная запись создана и ожидает одобрения администратора. Вы сможете войти после её одобрения.
+  success_auto_verified: Ваша учётная запись создана и готова к использованию. Теперь вы можете войти.
+resend_verification:
+  back_to_login: Вернуться ко входу
+  check_spam: Если письмо не пришло в течение нескольких минут, проверьте папку «Спам».
+  description: Введите адрес электронной почты, чтобы получить новую ссылку для подтверждения.
+  error: Не удалось отправить письмо с подтверждением.
+  send_button: Отправить письмо для подтверждения
+  sent: Письмо с подтверждением отправлено. Проверьте входящие (и папку «Спам»).
+  sent_description: Если учётная запись с таким адресом существует, вы получите ссылку для подтверждения.
+  sent_title: Письмо отправлено
+  title: Отправить повторно письмо для подтверждения
+reset_password:
+  confirm_password: Подтвердите новый пароль
+  description: Введите новый пароль ниже.
+  failed: Не удалось сбросить пароль
+  login_button: Перейти ко входу
+  missing_token: Не предоставлен токен для сброса
+  new_password: Новый пароль
+  password_mismatch: Пароли не совпадают
+  submit: Сбросить пароль
+  success: Пароль успешно сброшен
+  success_description: Ваш пароль был сброшен. Перенаправление на страницу входа...
+  success_title: Сброс пароля
+  title: Сбросить пароль
+settings:
+  ai:
+    title: Соединения с ИИ
+  database:
+    title: Соединения с базами данных
+  profile:
+    title: Настройки
+  title: Настройки
+tools:
+  all_datasets: Все наборы данных
+  connect_database: Подключить базу данных
+  description: Дополнительные утилиты и инструменты анализа появятся здесь.
+  import_notebook: Импорт ноутбука
+  manage_data: Сбор данных
+  my_data: Мои данные
+  notebooks: Ноутбуки
+  placeholder: Страница инструментов скоро появится.
+  title: Другие инструменты
+  upload_csv_excel: Загрузить CSV / Excel
+  upload_data: Загрузить данные
+  uploads_list: Загрузки (csv, Excel)
+  visualize: Песочница визуализаций
+validation:
+  api_key_required: Для этого провайдера необходим API-ключ
+  database_required: Требуется имя базы данных
+  host_required: Требуется хост
+  name_required: Требуется имя соединения
+  password:
+    min_length: Пароль должен содержать не менее {min} символов.
+    require_digit: Пароль должен содержать хотя бы одну цифру.
+    require_lowercase: Пароль должен содержать хотя бы одну строчную букву.
+    require_special: Пароль должен содержать хотя бы один специальный символ.
+    require_uppercase: Пароль должен содержать хотя бы одну заглавную букву.
+    too_weak: Пароль слишком слабый. Выберите более надёжный пароль.
+  password_required: Требуется пароль
+  port_invalid: Порт должен быть в диапазоне от 1 до 65535
+  provider_required: Пожалуйста, выберите провайдера
+  username_required: Требуется имя пользователя
+  type_required: Пожалуйста, выберите тип базы данных
+verify_email:
+  error_description: Что-то пошло не так.
+  error_title: Проверка не удалась
+  expired_description: Ссылка для подтверждения истекла.
+  expired_message: Вы можете запросить новое письмо для подтверждения ниже.
+  expired_title: Ссылка устарела
+  invalid_token: Недействительная ссылка для подтверждения.
+  login_button: Перейти ко входу
+  missing_description: Не был предоставлен токен для подтверждения.
+  missing_title: Нет токена подтверждения
+  network_error: Ошибка сети. Пожалуйста, попробуйте ещё раз.
+  resend_button: Повторно отправить письмо для подтверждения
+  success_description: Ваш адрес электронной почты успешно подтверждён. Перенаправление на страницу входа...
+  success_title: Электронная почта подтверждена
+  unknown_error: Что-то пошло не так.
+virtual:
+  clone: Клонировать
+  deleted: Набор данных удалён
+  draft_badge: Черновик
+  edit: Редактировать
+  error: Произошла ошибка
+  existing_none: Нет
+  existing_title: Существующие наборы данных
+  loading: Загрузка...
+  more: ещё
+  new_chat: Новый виртуальный набор данных
+  placeholder: Опишите, что вы хотите сделать...
+  ready_badge: Готово
+  recent_chats: Недавние чаты
+  send: Отправить
+  stage: Этап
+  title: Виртуальные наборы данных
+  verbose: Подробный
+  welcome: Добро пожаловать в помощник виртуальных наборов данных. Если вы здесь впервые, возможно, вы захотите узнать, с чего начать.
+  preview_joins: Соединения
+  preview_columns: Выходные столбцы
+  preview_name: Название
+  preview_sources: Источники
+  preview_title: Предпросмотр набора данных
+  manual:
+    alias_label: Псевдоним
+    remove_join: Удалить это соединение
+    complete_join: Заполнить незавершённое соединение
+    remove: Убрать этот столбец из вывода
+    save_error: Не удалось сохранить виртуальный набор данных.
+    bridge: Мост
+    no_sources: Нет доступных подключений или наборов данных.
+    columns_error: Не удалось прочитать столбцы.
+    select_none: Не выбирать ничего
+    materialized_hint: Записывает таблицу вместо живого соединения. Не включайте во время прототипирования.
+    test_join: Проверить соединение
+    materialized_label: Материализовать результат
+    open_label: Открыть существующий набор данных
+    open_none: Пока нет виртуального набора данных для открытия.
+    new_dataset: Создать новый набор данных
+    name_label: Название набора данных
+    validate_errors: 'В определении есть проблемы:'
+    validate_ok: Определение структурно корректно.
+    bridge_no_columns: столбцы ещё не прочитаны — разверните источник или добавьте соединение и выберите их
+    preview_error: Не удалось выполнить соединение.
+    save_success: Виртуальный набор данных сохранён.
+    intro: Создайте виртуальный набор данных из выбранных вами столбцов или откройте существующий, чтобы изменить его.
+    description_label: Описание набора данных
+    alias_taken: Этот псевдоним уже используется другим источником.
+    update_dataset: Обновить этот набор данных
+    bridge_choose_columns: совпадающие столбцы не найдены — добавьте соединение и выберите их
+    move_down: Переместить этот столбец на одну позицию вниз
+    test_pulls_every_source: Проверка соединения полностью считывает каждый источник, поэтому может быть медленной.
+    no_match: Ничего не соответствует фильтру.
+    sources_title: Откуда поступают данные
+    need_columns: Отметьте хотя бы один столбец для включения.
+    loaded_note: Открыто существующее определение — при сохранении оно будет обновлено.
+    loading_columns: Чтение столбцов…
+    unattached_sources: 'Не соединены с остальным: {sources}. Добавьте соединение, которое их свяжет.'
+    preview_rows: 'Возвращено строк: {count}'
+    aggregation_note: Агрегация из старого определения сохраняется как есть, но соединение её не применяет.
+    add_join: Добавить соединение
+    validate: Проверить определение
+    need_join: Выбраны два источника, но между ними нет соединения.
+    joins_title: Как источники соединены
+    need_name: Присвойте набору данных имя перед сохранением.
+    incomplete_join: Завершите или удалите соединение, в котором ещё не выбраны столбцы.
+    suggested: Рекомендуемые
+    output_hint: Столбцы, которые будет предоставлять этот набор данных, по порядку.
+    column_placeholder: Выберите столбец
+    load_error: Не удалось загрузить определение этого набора данных.
+    preview_empty: Соединение не вернуло ни одной строки.
+    output_title: Что предоставляет набор данных
+    title: Редактор виртуального набора данных
+    sources_hint: Разверните подключение или набор данных, затем отметьте столбцы для включения.
+    move_up: Переместить этот столбец на одну позицию вверх
+    tables_error: Не удалось прочитать таблицы.
+    select_all: Выбрать все
+    joins_hint: Двум или более источникам требуется соединение между собой. Одному источнику соединение не требуется.
+    loaded_note_shared: Открыто существующее общее определение — только для чтения, обновление запрещено.
+    materialize_retry: Повторить
+    materialize_failed: 'Сохранено, но не удалось построить таблицу:'
+    materialize_done: Таблица построена.
+  panel:
+    collapse: Свернуть панель источника
+    expand: Показать панель источника
+  panel_fold_error: Не удалось сохранить свёрнутое состояние панели, поэтому в следующий раз она снова будет открыта.
+  chip_load_error: Не удалось обновить варианты, поэтому они могут быть устаревшими.
+  chip_error: Не удалось применить этот вариант.
+  progress_decided: '{decided} из {total} решено'
+  panel_columns: '{count} столб.'
+  panel_tick_error: Не удалось отметить этот столбец.
+  panel_tick_no_session: Сначала отправьте сообщение — дерево записывает ваши отметки в сеансе.
+  heading_materialised: Живое или материализованное?
+  heading_match_columns: Сопоставьте эти столбцы
+  heading_choose_columns: Выберите столбцы
+  heading_choose_table: Выберите таблицу
+  suggestion_applied: Применено
+  act:
+    join: Объединено {pair}
+    named: Присвоено имя «{name}»
+    sources_short: 'Принято таблиц: {count} — {tables}'
+    sources: 'Принято таблиц: {count}'
+    applied: Применено {piece}
+  selection_hint: Снимите флажки со всего, что вам не нужно, затем используйте их вместе.
+  confirm_selection: Используйте их
+  act_joins: Соединено {count} пар
+  joins_apply: Применить
+  joins_hint: Измените любой столбец или тип соединения, затем продолжите.
+  join_type_label: Тип соединения
+  joins_unsaved: Эти строки отличаются от набора данных. Примените их или сначала исправьте пустую строку.
+  joins_unjoined: 'Не соединено: {tables}'
+  joins_coverage: Подключено {connected} из {total} таблиц
+  name_suggestion_accept: Использовать это имя
+  name_suggestion_heading: Предложенное имя — при желании измените его
+visualize:
+  config: Конфигурация
+  data: Данные (JSON)
+  data_placeholder: Вставьте данные JSON сюда или сгенерируйте образец
+  description: Выберите тип визуализации, сгенерируйте образцы данных, настройте параметры и просмотрите предварительный просмотр.
+  download_error: Не удалось скачать таблицу
+  download_png: Скачать как PNG
+  download_success: Таблица скачана как PNG
+  generate_sample: Сгенерировать образец
+  invalid_data: Недопустимые данные для текстовой таблицы. Ожидаются столбцы и строки.
+  load_error: Не удалось загрузить типы визуализаций
+  no_data: Нет данных для визуализации. Сгенерируйте образцы данных или вставьте JSON.
+  no_types: Типы визуализаций не определены. Обратитесь к администратору.
+  parameters: Параметры
+  preview: Предпросмотр
+  sample_expenses: Расходы
+  sample_generated: Сгенерированы образцы данных
+  sample_item: Товар
+  sample_sales: Продажи
+  sample_value: Значение
+  save_error: Не удалось сохранить
+  save_instance: Сохранить экземпляр
+  save_no_data: Нет данных для сохранения. Пожалуйста, сгенерируйте или вставьте данные.
+  save_success: Визуализация успешно сохранена
+  select_type: Выберите тип
+  title: Песочница визуализаций
+  type: Тип визуализации
+  unsupported: Тип визуализации ещё не реализован
+  unsupported_parameter: Неподдерживаемый тип
+setup:
+  limits:
+    max_registrations:
+      hint: Установите лимит числа регистрируемых пользователей.
+      label: Максимальное число регистраций пользователей
+      users: пользователи
+      unlimited: Неограниченно
+      placeholder: Лимит
+    upload:
+      count_1000: '1000'
+      size_hint: Максимальный общий объем хранилища на пользователя (0 = без ограничений). Применяется к новым пользователям.
+      default_size_label: Максимальный размер загрузки на пользователя по умолчанию (МБ)
+      select_size: Выберите лимит
+      count_5: '5'
+      size_1_gb: 1 ГБ
+      count_50: '50'
+      default_count_label: Максимальное количество загрузок на пользователя по умолчанию
+      size_50_mb: 50 МБ
+      size_250_mb: 250 МБ
+      select_count: Выберите лимит
+      size_unlimited: Неограниченно
+      size_500_mb: 500 МБ
+      size_100_mb: 100 МБ
+      size_1_mb: 1 МБ
+      count_25: '25'
+      size_10_mb: 10 МБ
+      count_10: '10'
+      count_250: '250'
+      count_500: '500'
+      size_25_mb: 25 МБ
+      count_unlimited: Неограниченно
+      count_hint: Максимальное количество наборов данных на пользователя (0 = без ограничений). Применяется к новым пользователям.
+      count_1: '1'
+      size_5_mb: 5 МБ
+      count_100: '100'
+    title: Лимиты
+    save_success: Настройки лимитов сохранены
+    save_error: Не удалось сохранить настройки лимитов
+    grace_period:
+      hint: Часов до окончательного удаления мягко удалённых учётных записей.
+      label: Задержка удаления (часы)
+    email_timeout:
+      label: Тайм-аут проверки электронной почты (часы)
+      hint: Сколько часов ссылка для подтверждения email остаётся действительной.
+    load_error: Не удалось загрузить настройки ограничений
+    demo_mode:
+      description: При включении система работает в демонстрационном режиме — разрушительные действия заблокированы, и индикаторы отображаются в пользовательском интерфейсе.
+      label: Демо-режим
+    invalid_grace_period: Пожалуйста, введите действительное положительное число для задержки удаления (часы)
+    description: Операционные элементы управления для ограничений ресурсов, тайм-аутов и поведения системы. Безопасно настраивать в любое время.
+    save_button: Сохранить ограничения
+    invalid_registration_max: Пожалуйста, введите допустимое положительное число для максимального количества регистраций
+    invalid_timeout: Пожалуйста, введите допустимое положительное число для тайм-аута проверки (в часах)
+  options:
+    password_policy:
+      require_uppercase: Требовать заглавные буквы
+      require_special: Требовать специальный символ
+      min_length: Минимальная длина
+      medium: Средний (мин. 8 симв., заглавные, строчные, цифра)
+      select: Выберите политику
+      low: Низкий (мин. 6 символов)
+      min_strength: Минимальная сложность (оценка zxcvbn 0-4)
+      high: Высокий (мин. 10, заглавные, строчные, цифры, спецсимволы)
+      require_lowercase: Требовать строчные буквы
+      label: Политика паролей
+      custom: Пользовательский
+      require_digit: Требовать цифру
+      hint: Выберите требования к сложности паролей для регистрации пользователей и смены пароля.
+    save_error: Не удалось сохранить настройки параметров.
+    welcome:
+      hint: Это сообщение будет отображаться на странице входа. Оставьте пустым, чтобы скрыть.
+      placeholder: Введите приветственное сообщение для отображения на странице входа.
+      label: Приветственное сообщение
+    email_sender:
+      label: Адрес отправителя эл. почты
+      hint: Адрес эл. почты, с которого будут приходить письма подтверждения.
+    description: Настройки времени установки, определяющие идентичность и поведение этого развертывания. Изменяйте осторожно — они влияют на всех пользователей.
+    save_success: Настройки параметров сохранены
+    public_url:
+      label: Общедоступный URL
+      hint: Базовый URL, используемый в ссылках подтверждения email (например, https://workbench.example.com).
+    title: Параметры
+    load_error: Не удалось загрузить настройки параметров
+    save_button: Параметры сохранения
+    registration_mode:
+      mode_2: Самостоятельная регистрация с подтверждением администратором
+      hint: Выберите, как создаются и подтверждаются новые учётные записи.
+      mode_0: Самостоятельная регистрация с автоматическим подтверждением
+      mode_1: Администратор создаёт подтверждённых пользователей
+      label: Режим регистрации
+      mode_4: Самостоятельная регистрация с подтверждением по электронной почте
+      select: Выберите режим регистрации
+  internal:
+    licence:
+      tier: Уровень лицензии
+      title: Лицензия и возможности
+      expiry: Срок действия
+      description: Текущий уровень лицензии и включённые функции.
+      issued_to: Кому выдана
+      features: Включённые функции
+    system_status:
+      unavailable: Недоступно
+      shared_memory: Общая память
+      version: Версия
+      description: Индикаторы состояния серверных служб в реальном времени.
+      overall_health: Общее состояние
+      initialized: Инициализировано
+      unhealthy: Нездоровый
+      not_initialized: Не инициализировано
+      not_required: Не требуется
+      db_pool: Пул базы данных
+      title: Статус системы
+      available: Доступно
+      healthy: Исправен
+      db_cluster: Кластер базы данных
+    future:
+      debug_logging: Переключатель отладки / подробного журналирования
+      cache_config: Конфигурация кэша / сессий
+      pool_stats: Статистика пула базы данных
+      description: Дополнительная диагностика будет добавлена в будущих выпусках.
+      title: Скоро появится
+      email_transport: Статус транспорта электронной почты
+    load_error: Не удалось загрузить диагностику системы
+    title: Внутренний
+    description: Системная диагностика и внутренняя конфигурация. Индикаторы состояния только для чтения.
+  tuning:
+    preamble_detail: Каждый запрос ИИ использует эти значения, если соединение не переопределяет их. Изменение одного значения влияет на все модели, у которых нет собственных настроек; оно не меняет уже
+      настроенное соединение.
+    slow_threshold_hint: Тест модели, занявший больше этого времени, помечается как слишком медленный. Пользователи могут повысить собственный лимит; никто не может опустить его ниже 1.
+    invalid_probe_timeout: Тайм-аут теста должен быть целым числом секунд, не менее 1 и не более 1200.
+    load_error: Не удалось загрузить параметры настройки.
+    ai_timeout_hint: Сколько может выполняться один запрос ИИ, прежде чем его отбросят. Слишком мало — чат тихо завершится ошибкой; слишком много — зависшая модель займёт рабочий процесс. Локальные модели
+      на ЦП могут требовать несколько минут.
+    ai_section_label: Генерация ИИ
+    resetting: Сброс…
+    save_error: Не удалось сохранить параметры настройки.
+    reset_error: Не удалось сбросить параметры настройки.
+    ai_max_tokens_hint: Максимальная длина ответа, который может создать один запрос. Для описания нужно примерно 500 токенов; 4000 оставляет большой запас.
+    probe_timeout_hint: Сколько может выполняться один тест пригодности. Модель на ЦП занимает несколько минут, поэтому короткий лимит здесь зафиксирует ложный сбой, а не сэкономит время.
+    ai_temperature_hint: 'Насколько разнообразны ответы: 0 — максимально воспроизводимо, насколько позволяет модель, 2 — максимальное разнообразие. Значения вне диапазона от 0 до 2 отклоняются провайдером,
+      а не этой системой.'
+    slow_threshold_label: Порог медленной модели
+    forbidden: Только полный администратор может изменить эти настройки.
+    seconds: секунд
+    connect_timeout_hint: Сколько времени сеть может принимать соединение, прежде чем конечная точка считается недостижимой. Значение ниже необходимого сетевого времени превращает рабочую конечную точку
+      в мёртвую.
+    saving: Сохранение…
+    saved: Параметры настройки сохранены.
+    invalid_max_tokens: Пожалуйста, введите целое число токенов, не менее 1.
+    ai_tokens: токенов
+    invalid_model_test_seconds: Пожалуйста, введите целое число секунд, не менее 1.
+    reset_confirm_action: Сбросить
+    invalid_connect_timeout: Тайм-аут подключения должен быть целым числом секунд, не менее 1 и не более 60.
+    description: Значения по умолчанию для поведения ИИ и ограничений по времени. Обычно они подходят как есть — настройки уровня пользователя или уровня соединения могут отличаться, а значение здесь применяется,
+      когда ни то, ни другое не задано.
+    invalid_temperature: Температура должна быть числом от 0 до 2.
+    reset_confirm_body: Каждое значение на этой странице возвращается к исходному значению по умолчанию. Переопределения на уровне соединений не затрагиваются. Это действие необратимо, и все изменённые
+      вами значения придётся задавать заново.
+    ai_section_hint: Значения по умолчанию для каждого запроса ИИ. Отдельное соединение и модель могут переопределять их, когда настройка относится именно к этой паре.
+    save: Сохранить настройки
+    reset_done: Параметры тонкой настройки сброшены к значениям по умолчанию
+    reset_confirm_title: Сбросить эти шесть параметров к значениям по умолчанию?
+    invalid_ai_timeout: Лимит времени ИИ должен быть целым числом секунд, не менее 1.
+licence:
+  tier_label: Уровень
+  delete_error: Не удалось удалить лицензию.
+  delete_title: Удалить лицензию
+  install_button: Установить лицензию
+  details_label: Детали лицензии
+  preview_title: Просмотр лицензии
+  load_error: Не удалось загрузить информацию о лицензии.
+  preview_invalid: Неверный файл лицензии.
+  delete_confirm: Это вернёт систему в режим с открытым исходным кодом. Все закрытые функции будут отключены. Вы сможете восстановить их, установив новую лицензию.
+  delete_yes: Да, удалить лицензию
+  description: Текущая информация о лицензии на функции и уровне.
+  max_users_label: Лицензированные пользователи
+  title: Статус лицензии
+  delete_success: Лицензия удалена. Работа в режиме с открытым исходным кодом.
+  install_error: Не удалось установить лицензию.
+  delete_no: Отмена
+  issued_to_label: Кому выдано
+  preview_error: Не удалось проверить файл лицензии.
+  expires_at_label: Истекает
+  install_no_file: Файл не выбран.
+  upload_title: Загрузить файл лицензии
+  features_label: Включённые функции
+  issued_at_label: Выдан
+  install_success: Лицензия успешно установлена.
+  admin_required: Вы должны быть администратором, чтобы просматривать информацию о лицензии.
+  open_source_message: Эта установка работает в режиме открытого исходного кода. Свяжитесь с Sentuny для обновления до корпоративной лицензии.
+  no_features: Ни одна из функций с ограниченным доступом в настоящее время не включена.
+  delete_button: Удалить лицензию
+transforms:
+  op:
+    new_name_placeholder: Новое имя
+    method_placeholder: Метод
+    type:
+      fill_missing: Заполнить пропущенные значения
+      convert_type: Преобразовать тип
+      rename_column: Переименовать столбец
+      drop_duplicates: Удалить дубликаты
+      filter: Фильтровать строки
+      drop_column: Удалить столбец
+      encode_category: Закодировать категорию
+      normalize: Нормализовать
+      standardize: Стандартизировать
+    operator_placeholder: Оператор
+    value_placeholder: Значение
+    target_datetime: Дата и время
+    target_type_placeholder: Тип целевой переменной
+    target_string: Строка
+    operations_label: Операции
+    add: Добавить операцию
+    target_boolean: Логический
+    encoding_label: Метка
+    empty_hint: Добавьте операцию, чтобы начать создание преобразования.
+    type_placeholder: Тип операции
+    remove: Удалить
+    encoding_placeholder: Кодировка
+    target_numeric: Числовой
+    column_placeholder: Выберите столбец
+    encoding_onehot: One-hot
+  empty_state: Добавьте операцию, чтобы начать построение преобразования.
+  description_placeholder: Описание (необязательно)
+  disconnect_transform: Отключить от рецепта
+  delete_button: Удалить
+  back_to_data: Назад к Моим данным
+  empty_hint: Операции применяются в порядке списка при выполнении преобразования.
+  name_placeholder: Имя преобразования
+  filter:
+    op_neq: '!='
+    op_gt: '>'
+    op_eq: '='
+    op_lt: <
+    op_is_not_null: не является NULL
+    op_contains: содержит
+    op_is_null: является null
+  connect_error: Не удалось подключить преобразование
+  name_label: Имя
+  fill:
+    mode: Режим
+    constant: Константа
+    mean: Среднее
+    median: Медиана
+    drop_rows: Удалить строки
+  save_button: Сохранить
+  name_required: Имя преобразования обязательно.
+  load_error: Не удалось загрузить преобразование
+  description_label: Описание
+  empty_title: Выберите преобразование из списка или создайте новое.
+  connected_count: '{count} подключено'
+  no_search_results: Нет преобразований, соответствующих вашему поиску
+  no_transforms: Для этого набора данных не определены преобразования.
+  delete_confirm: Удалить это преобразование?
+  save_success: Преобразование сохранено.
+  for_recipe: 'Рецепт: {name}'
+  connect_transform: Подключиться к рецепту
+  delete_success: Преобразование удалено.
+  operations_count: '{count} операций'
+  search_placeholder: Поиск преобразований...
+  disconnect_error: Не удалось отключить преобразование
+  operations_heading: Операции
+  new_transform: Новое преобразование
+  back_to_recipe: 'Назад к рецепту: {name}'
+  connected_to_recipe: 'Подключено к: {name}'
