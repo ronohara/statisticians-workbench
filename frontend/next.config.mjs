@@ -4,10 +4,13 @@ const nextConfig = {
     serverActions: {
       bodySizeLimit: '50mb',
     },
-    // Next.js rewrite proxy defaults to 30s timeout. AI-augmented
-    // dbdesign analysis can take 60-250s with large schemas and slow
-    // LLM providers. 300s gives 2.5x headroom from 120s baseline.
-    proxyTimeout: 300_000,
+    // Next.js rewrite proxy defaults to 30s. The AI-test probe path allows a
+    // probe timeout of 300s per attempt with a retry budget of 3, so its worst
+    // case is 900s. This value must exceed that, or a slow model's verdict is
+    // recorded while the browser is told the request failed. Measured
+    // 2026-11-17: qwen3:14b passed `turn` at 498s and the page reported "The
+    // test could not run: 500", because the proxy at 300_000 gave up first.
+    proxyTimeout: 960_000,
   },
   allowedDevOrigins: ['x360.sentuny.com'],
   async rewrites() {
