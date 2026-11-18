@@ -1,0 +1,33 @@
+-- Drop "ProviderModel": the abandoned catalogue, keyed by provider code.
+--
+-- Plan: workbench-AI-models-testing-plan-v2.html, Item 33.
+-- Mirrors sawhorse/migrations/00009_drop_provider_model.sql, which is the deployed chain.
+--
+-- WHY IT GOES
+-- "ProviderModel" was keyed by (providerCode, modelName), and providerCode names the
+-- DRIVER rather than the service — two Ollama hosts are both `ollama-local`. A refresh
+-- through one host therefore pruned the other host's rows, measured 2026-10-30 when a
+-- refresh through macm5 removed leno's deepseek-r1:8b and the result recorded against
+-- it. The redesign replaces it with LLMModel plus two intersects; the AI-testing plan
+-- records the full account.
+--
+-- NOTHING READS OR WRITES IT ANY MORE, checked rather than assumed on 2026-11-02:
+--   * no foreign key anywhere points at it (pg_constraint returns 0), so the drop
+--     needs no cascade and breaks no reference;
+--   * Items 17, 18, 22, 31 and 32 removed the last readers and writers — the
+--     provider-wide fetch route, the admin router's three routes and its page;
+--   * the seeder stopped inserting into it in this same item (Item 33), because a
+--     seeder still writing to a dropped table fails the first install AFTER the
+--     migration, and the failure would appear at setup rather than at the drop.
+--
+-- THE ROWS GO WITH IT
+-- 426 rows, each recording a provider code and a model name and nothing that says
+-- which server produced it. That is the defect this redesign exists to fix, and the
+-- point of dropping rather than migrating: they cannot be attributed.
+--
+-- NO DOWN
+-- The development chain runs forward by hand; there is no reversal that restores data
+-- that no longer exists. A "Down" that recreated an empty table would be a worse lie
+-- than none, so this file has no corresponding undo.
+
+DROP TABLE IF EXISTS public."ProviderModel";

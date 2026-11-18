@@ -1,0 +1,50 @@
+# Statisticians Workbench — Python backend runtime dependencies
+#
+# This is the RUNTIME subset: the distributions imported by main.py and the
+# modules it reaches. It is deliberately shorter than the development
+# requirements, which also pin the test and tooling stack (scipy, statsmodels,
+# scikit-learn, tokenizers, tiktoken, huggingface_hub, ...). None of those are
+# imported by the running backend: the statistics under
+# src/routers/recipes/stats/ is dependency-free by design and is verified
+# against scipy golden values in the test suite, not at runtime.
+#
+# Every version below is the one the development environment runs, so a working
+# development install and this list agree.
+#
+# Two entries are here because a package's own rules do not cover them:
+#
+#   watchfiles     uvicorn ships it only in its "standard" extra, but main.py
+#                  starts uvicorn with reload=True, which needs it. Without it
+#                  the backend fails at startup, not at first use.
+#   PyMySQL        imported directly by src/routers/dbdesign/schema.py.
+#                  aiomysql would install it anyway, but a direct import must
+#                  not depend on another package's transitive requirement.
+#   python-multipart
+#                  required by FastAPI for UploadFile/File/Form, which
+#                  src/routers/notebooks/router.py uses.
+#
+# Install with:  python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
+
+aiomysql==0.3.2
+asyncpg==0.31.0
+bcrypt==5.0.0
+cryptography==49.0.0
+dbfread==2.0.7
+fastapi==0.137.0
+fpdf2==2.8.7
+httpx==0.28.1
+jsonschema==4.26.0
+openpyxl==3.1.5
+pandas==3.0.3
+psycopg2-binary>=2.9
+pydantic==2.13.4
+pymssql==2.3.2
+PyJWT==2.13.0
+PyMySQL==1.2.0
+python-dotenv==1.2.2
+python-multipart==0.0.32
+starlette==1.3.1
+uvicorn==0.49.0
+watchfiles==1.2.0
+xlrd==2.0.2
+zxcvbn==4.5.0
