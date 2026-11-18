@@ -134,9 +134,9 @@ rather than uncoordinated forks — though forking the code remains permitted un
 
 This repository includes a **golden screwdriver** feature-gating mechanism. Corporate-tier
 features such as the audit log, SSO integration, advanced analytics, and
-session management are:
+session management, where present, are:
 
-- **Present in the source code** — you can read, inspect, and understand how they work.
+- **Source-visible** — you can read, inspect, and understand how they work.
 - **Gated by a signed licence file** — they do not activate without a valid licence.
 - **Not covered by the MIT License** — the gating mechanism, licence verification
   logic, and the specific features it controls are proprietary (all rights reserved).
@@ -150,7 +150,7 @@ a licence is not permitted under the terms of this repository.
 | Component | License |
 |---|---|
 | Open-source features (datasets, recipes, AI chat, visualisation, etc.) | MIT |
-| Corporate features (audit log, SSO, session management, etc.) | Proprietary — all rights reserved |
+| Corporate features, where present (audit log, SSO, session management, etc.) | Proprietary — all rights reserved |
 | Feature-gating mechanism (licence verification, `FeatureGate` component) | Proprietary — all rights reserved |
 | Documentation (README, changelogs, guides, FAQ) | Copyright Ron O'Hara — all rights reserved |
 
@@ -162,4 +162,4 @@ a licence is not permitted under the terms of this repository.
 
 - NextAuth.js for authentication.
 
-Last updated: 15th November 2026
+Last updated: 19th November 2026
