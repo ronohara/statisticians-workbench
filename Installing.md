@@ -397,9 +397,15 @@ baseline is the schema; `db/migrations/` is the record of how it got there.
 
 ## 7. Seed the database
 
-The schema is empty. The application needs a first settings row and an
-administrator account before it can be used — without the settings row,
-registration fails.
+Two things fill an empty schema: the seed program, which creates the rows the
+application needs in order to run, and the translation import, which fills the
+`Translation` table so the interface can be used in languages other than
+English. Neither is optional for a complete installation.
+
+### 7a. Seed the application data
+
+The application needs a first settings row and an administrator account before
+it can be used — without the settings row, registration fails.
 
 ```bash
 cd ~/statisticians-workbench
@@ -435,6 +441,39 @@ visualization types.
 The seeded passwords are `admin123` for the administrator and `User1234#` for
 the example user. **Change the administrator password at first login** — it is
 published here and in the seed script.
+
+### 7b. Import the translations
+
+Without this the interface works but is English only, whatever language the
+user selects. Run it from the repository root — the script resolves its own
+paths from there:
+
+```bash
+cd ~/statisticians-workbench
+./scripts/import-all-translations.sh
+```
+
+It reads `frontend/locales/*.yaml` and `backend/locales/*-backend.yaml` and
+upserts them into the `Translation` table through
+`backend/scripts/import_translations.py`. It takes a couple of minutes and
+prints a line per language; the last line is
+`All translations imported successfully`.
+
+It needs `PyYAML`, which is in `requirements.txt` (step 4) and so already
+installed.
+
+**Check** — the table is no longer empty, and every language has the same number
+of keys:
+
+```bash
+psql -c 'SELECT language, count(*) FROM "Translation" GROUP BY language ORDER BY language;'
+```
+
+Expect **20 rows**, each with **2,870** keys — 57,400 in total. A language with
+a lower count means one of its files did not import; the script prints a line
+for every file it processes.
+
+The API check comes after the backend is started, in step 8.
 
 ---
 
@@ -491,6 +530,16 @@ curl -s http://localhost:8000/api/public-settings
 
 This returns the settings row you seeded in step 7 — `registrationMode`,
 `passwordPolicy`, `demoMode` and the welcome text.
+
+And confirm the translations imported in step 7b are being served:
+
+```bash
+curl -s 'http://localhost:8000/api/translations?language=de' | head -c 200
+```
+
+This returns German strings. Against an empty `Translation` table the same call
+returns `{}`, so this one request distinguishes "the import ran" from "the
+interface will still be English".
 
 ---
 

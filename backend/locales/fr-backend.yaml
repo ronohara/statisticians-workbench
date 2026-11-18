@@ -1,0 +1,1022 @@
+admin:
+  already_full_admin: L'utilisateur est déjà administrateur complet.
+  already_group_admin: L'utilisateur est déjà administrateur de groupe.
+  cannot_delete_self: Vous ne pouvez pas supprimer votre propre compte.
+  cannot_demote_full_admin: Impossible de rétrograder un administrateur complet.
+  cannot_demote_self: Vous ne pouvez pas vous rétrograder vous-même.
+  cannot_promote_example: Impossible de promouvoir un utilisateur exemple.
+  delete_error: Échec de la suppression de l'utilisateur.
+  demote_error: Échec de la rétrogradation de l'utilisateur.
+  description_required: La description ne peut pas être vide.
+  example_blocked: Les utilisateurs exemple ne peuvent pas effectuer d'actions d'administration.
+  group_not_found: Groupe introuvable.
+  group_users_load_error: Échec du chargement des utilisateurs du groupe.
+  groups_load_error: Échec du chargement des groupes.
+  groups_stats_error: Échec du chargement des statistiques du groupe.
+  insufficient_permissions: Permissions insuffisantes pour cette action.
+  invalid_group_id: group_id invalide. Doit être compris entre 00 et 99.
+  invalid_id: ID invalide.
+  invalid_upload_count: maxUploadCount doit être un entier non négatif (0 pour illimité).
+  invalid_upload_size: maxUploadSizeMB doit être un entier non négatif (0 pour illimité).
+  missing_fields: Champs obligatoires manquants.
+  missing_group_id: ID de groupe manquant.
+  missing_id: ID manquant.
+  missing_model_id: ID de modèle manquant.
+  missing_provider_code: Paramètre providerCode manquant.
+  missing_user_id: userId manquant.
+  model_update_error: Échec de la mise à jour du modèle.
+  models_load_error: Échec du chargement des modèles.
+  no_fields: Aucun champ valide à mettre à jour.
+  no_group: L'utilisateur n'a aucun groupe assigné.
+  not_group_admin: L'utilisateur n'est pas administrateur de groupe.
+  only_full_admin: Seuls les administrateurs complets peuvent effectuer cette action.
+  promote_error: Échec de la promotion de l'utilisateur.
+  provider_delete_error: Échec de la suppression du fournisseur.
+  provider_not_found: Fournisseur introuvable.
+  provider_update_error: Échec de la mise à jour du fournisseur.
+  providers_load_error: Échec du chargement des fournisseurs.
+  slug_exists: Le slug existe déjà.
+  update_error: Échec de la mise à jour de l'utilisateur.
+  user_load_error: Échec du chargement de l'utilisateur.
+  user_not_found: Utilisateur introuvable.
+  users_load_error: Échec du chargement des utilisateurs.
+  viz_type_create_error: Échec de la création du type de visualisation.
+  viz_type_delete_error: Échec de la suppression du type de visualisation.
+  viz_type_update_error: Échec de la mise à jour du type de visualisation.
+  viz_types_load_error: Échec du chargement des types de visualisation.
+api:
+  user:
+    connection_not_found: Connexion introuvable.
+    invalid_connection_id: Identifiant de connexion invalide
+    example_delete_ai: Les utilisateurs d'exemple ne peuvent pas supprimer les connexions IA
+    api_key_required: La clé API est requise pour ce fournisseur
+    invalid_port: Le port doit être un entier
+    connection_id_required: Identifiant de connexion requis
+    invalid_name: Le nom doit être une chaîne de caractères
+    missing_fields: Champs obligatoires manquants
+    example_blocked: Les utilisateurs d'exemple ne peuvent pas effectuer cette action
+    user_not_found: Utilisateur introuvable
+    connection_name_exists: Une connexion portant ce nom existe déjà
+    example_update_ai: Les utilisateurs d'exemple ne peuvent pas mettre à jour les connexions IA
+    internal_error: Erreur interne du serveur
+    invalid_current_password: Le mot de passe actuel est incorrect
+    example_create_ai: Les utilisateurs d'exemple ne peuvent pas créer de connexions IA
+    provider_not_found: Fournisseur « {provider} » introuvable
+    unknown_test_id: 'Test inconnu « {test} ». Tests enregistrés : {known}'
+    test_read_timeout: Le modèle a accepté la requête mais n'a pas répondu à temps. Il est peut-être trop lent pour cet hôte — un grand modèle sur un processeur peut prendre plusieurs minutes. Aucun verdict
+      de capacité n'a été enregistré ; la durée écoulée avant l'échec a été consignée.
+    tuning_model_not_found: Modèle introuvable.
+    test_other_failure: 'Le modèle n''a pas pu être joint, et la cause n''est pas reconnue par ce système. Aucun verdict de capacité n''a été enregistré : {detail}'
+    test_attribution_required: Un résultat de test doit indiquer qui l'a exécuté.
+    test_reason_required: Un résultat de test doit indiquer une raison.
+    discovery_complete: 'Découvert {seen} modèle(s) : {created} nouveau(x) ici, {refreshed} déjà connu(s), {pruned} plus servi(s).'
+    test_connect_timeout: Le point de terminaison n'a pas accepté de connexion à temps. L'hôte est peut-être hors service, ou un pare-feu a pu bloquer la requête. Aucun verdict de capacité n'a été enregistré
+      ; la durée écoulée avant l'échec a été consignée.
+    tuning_nothing_to_update: 'Fournissez au moins l''un des éléments suivants : temperature, maxTokens ou timeoutSeconds.'
+    test_http_status: 'Le fournisseur a répondu, et sa réponse était une erreur : {detail}. Aucun verdict de capacité n''a été enregistré ; ce que le fournisseur a dit est affiché afin que la cause soit
+      claire.'
+    tuning_invalid_max_tokens: La limite de sortie doit être un nombre entier de jetons, au moins 1.
+    model_not_served_by_connection: Cette connexion ne propose pas « {model} ». Ses modèles ont peut-être changé — actualisez la connexion ou choisissez un autre modèle.
+    model_not_found: Modèle « {model} » introuvable pour le fournisseur « {provider} ».
+    connect_timeout_exceeds_probe: Le délai d'expiration de connexion ({connect}s) ne peut pas être plus long que le délai d'expiration du test ({probe}s) — une connexion ne peut pas être autorisée à prendre
+      plus de temps pour s'établir que la durée totale d'exécution du test.
+    tuning_malformed_body: Le corps de la requête n'est pas un JSON valide.
+    tuning_invalid_temperature: La température doit être un nombre compris entre 0 et 2.
+    invalid_probe_timeout: Le délai d'expiration du test doit être un nombre entier de secondes, au moins 1 et au plus {ceiling}.
+    invalid_test_state: 'Résultat de test invalide « {state} ». Autorisés : {allowed}'
+    invalid_connect_timeout: Le délai d'expiration de connexion doit être un nombre entier de secondes, au moins 1 et au plus {ceiling}.
+    test_tls_failure: La connexion sécurisée n'a pas pu être établie — le point de terminaison est peut-être en simple http alors que https était attendu, ou son certificat a peut-être expiré. Aucun verdict
+      de capacité n'a été enregistré ; la durée écoulée avant l'échec a été consignée.
+    test_budget_exhausted: Le modèle n'a rien renvoyé car il a utilisé tout son budget de sortie avant de parvenir à une réponse. Aucun verdict de capacité n'a été enregistré ; la durée a été consignée.
+    tuning_connection_not_found: Aucune connexion d'IA de ce type.
+    test_dns_failure: Le nom d'hôte du point de terminaison n'a pas pu être résolu. Vérifiez que l'adresse ne contient pas de faute de frappe, ou qu'il ne s'agit pas d'un nom que seul ce réseau peut résoudre.
+      Aucun verdict de capacité n'a été enregistré ; la durée écoulée avant l'échec a été consignée.
+    test_not_implemented: Le test « {test} » est enregistré mais n'a pas encore de sonde.
+    tuning_invalid_ai_timeout: La limite de temps de l'IA doit être un nombre entier de secondes, au moins 1.
+    test_connect_refused: Rien n'écoute à cette adresse — le serveur est joignable mais aucun service n'a répondu. Vérifiez le port et que le serveur d'IA est en cours d'exécution. Aucun verdict de capacité
+      n'a été enregistré ; la durée écoulée avant l'échec a été consignée.
+  admin:
+    settings_invalid_email_sender: Format d'adresse e-mail de l'expéditeur invalide
+    settings_invalid_email_timeout: Le délai d'expiration de la vérification de l'e-mail doit être un nombre positif (heures)
+    cannot_delete_self: Impossible de supprimer votre propre compte
+    not_group_admin: L'utilisateur n'est pas administrateur de groupe
+    demote_error: Échec de la rétrogradation de l'utilisateur
+    missing_id: ID manquant
+    description_required: La description ne peut pas être vide
+    invalid_upload_size: maxUploadSizeMB doit être un entier positif ou nul (0 pour illimité)
+    groups_stats_error: Échec du chargement des statistiques du groupe
+    provider_update_error: Échec de la mise à jour du fournisseur
+    groups_load_error: Échec du chargement des groupes
+    settings_view_forbidden: Seuls les administrateurs complets peuvent consulter les paramètres globaux
+    invalid_upload_count: maxUploadCount doit être un entier positif ou nul (0 pour illimité)
+    cannot_promote_example: Impossible de promouvoir un utilisateur d'exemple
+    providers_load_error: Échec du chargement des fournisseurs
+    promote_error: Échec de la promotion de l'utilisateur
+    missing_group_id: ID de groupe manquant
+    group_users_load_error: Échec du chargement des utilisateurs du groupe
+    settings_invalid_max_registrations: Le nombre maximum d'inscriptions doit être un nombre positif ou illimité
+    missing_fields: Champs obligatoires manquants
+    settings_invalid_grace_period: La période de grâce d'inscription doit être un nombre positif (heures)
+    settings_load_error: Échec du chargement des paramètres globaux
+    model_update_error: Échec de la mise à jour du modèle
+    delete_error: Échec de la suppression de l'utilisateur
+    already_group_admin: L'utilisateur est déjà administrateur de groupe
+    invalid_group_id: group_id invalide. Doit être compris entre 00 et 99
+    settings_save_error: Échec de l'enregistrement des paramètres globaux
+    settings_invalid_public_url: Format d'URL publique invalide
+    cannot_demote_full_admin: Impossible de rétrograder un administrateur complet
+    only_full_admin: Seuls les administrateurs complets peuvent effectuer cette action
+    no_group: L'utilisateur n'a aucun groupe attribué
+    provider_not_found: Fournisseur introuvable
+    models_load_error: Échec du chargement des modèles
+    already_full_admin: L'utilisateur est déjà administrateur complet
+    insufficient_permissions: Permissions insuffisantes pour cette action
+    user_load_error: Impossible de charger l'utilisateur
+    no_fields: Aucun champ valide à mettre à jour
+    settings_invalid_upload_size: La taille maximale de téléversement par défaut doit être un entier non négatif (0 pour illimité).
+    update_error: Impossible de mettre à jour l'utilisateur
+    missing_user_id: Identifiant d'utilisateur manquant
+    missing_model_id: Identifiant de modèle manquant
+    settings_modify_forbidden: Seuls les administrateurs complets peuvent modifier les paramètres globaux
+    example_blocked: Les utilisateurs d'exemple ne peuvent pas effectuer d'actions d'administration
+    provider_delete_error: Impossible de supprimer le fournisseur
+    cannot_demote_self: Vous ne pouvez pas vous rétrograder vous-même
+    settings_invalid_upload_count: Le nombre maximal de téléversements par défaut doit être un entier non négatif (0 pour illimité).
+    model_not_found: Modèle introuvable
+    user_not_found: Utilisateur introuvable
+    invalid_viz_type_field: Valeur du champ de type de visualisation invalide
+    viz_type_not_found: Type de visualisation introuvable
+    demote_success: L'utilisateur {name} a été rétrogradé du rôle d'administrateur de groupe.
+    settings_invalid_platform_upload_size: La taille de téléversement maximale de la plateforme doit être un entier non négatif (0 pour illimité).
+    invalid_id: Identifiant invalide
+    promote_success: L'utilisateur {name} a été promu au rôle d'administrateur de groupe.
+    viz_type_update_error: Échec de la mise à jour du type de visualisation.
+    instance_exists: Impossible de supprimer le type car il a {count} instance(s) associée(s).
+    viz_types_load_error: Échec du chargement des types de visualisation.
+    viz_type_delete_error: Échec de la suppression du type de visualisation.
+    viz_type_create_error: Échec de la création du type de visualisation.
+    users_load_error: Échec du chargement des utilisateurs.
+    slug_exists: Le slug existe déjà.
+    instance_in_use: Impossible de supprimer le type car il possède des instances associées.
+    settings_demo_mode_requires_licence: Le mode démo ne peut pas être désactivé sans licence valide.
+    create_user_error: Échec de la création de l'utilisateur
+    invalid_email: Format d'e-mail invalide
+    settings_not_found: Paramètres globaux introuvables
+    email_exists: L'e-mail existe déjà
+    settings_invalid_registration_mode: 'Le mode d''inscription doit être l''un des suivants : 0, 1, 2 ou 4.'
+    users_demo_upload_size_limit: En mode démo, la taille maximale de téléversement pour un utilisateur doit être comprise entre 1 et 5 Mo.
+    users_demo_upload_count_limit: En mode démo, le nombre maximal de téléversements pour un utilisateur doit être compris entre 1 et 5.
+    settings_demo_upload_count_limit: En mode démo, le nombre maximal de téléversements par défaut doit être compris entre 1 et 5.
+    settings_demo_upload_size_limit: En mode démo, la taille maximale de téléversement par défaut doit être comprise entre 1 et 5 Mo.
+    invalid_admin_password: Le mot de passe de l'administrateur est incorrect
+    example_user_password_blocked: Les mots de passe des utilisateurs d'exemple ne peuvent pas être définis par un administrateur
+    settings_invalid_max_tokens: La limite de sortie doit être un nombre entier de jetons, au moins 1.
+    settings_invalid_ai_timeout: La limite de temps de l'IA doit être un nombre entier de secondes, au moins 1.
+    settings_invalid_slow_threshold: La limite des modèles lents doit être un nombre entier de secondes, au moins 1.
+    settings_invalid_probe_timeout: Le délai d'expiration par défaut du test doit être un nombre entier de secondes, au moins 1 et au plus {ceiling}.
+    settings_invalid_temperature: La température doit être un nombre compris entre 0 et 2.
+    settings_invalid_connect_timeout: Le délai d'expiration de connexion par défaut doit être un nombre entier de secondes, au moins 1 et au plus {ceiling}.
+    tuning_reset_error: Les valeurs par défaut de réglage de l'IA n'ont pas pu être réinitialisées.
+    field_not_owned: 'Ce champ n''est pas défini sur cette page. {endpoint}. Champs en cause : {fields}'
+  register:
+    invalid_email: Format d'e-mail invalide
+    missing_fields: Champs manquants
+    settings_not_found: Paramètres globaux introuvables
+    email_exists: Cet e-mail existe déjà
+    internal_error: Erreur interne du serveur
+    limit_reached: Limite d'inscription atteinte (maximum {max_reg} utilisateurs).
+    registration_disabled: L'auto-inscription est désactivée. Veuillez contacter un administrateur.
+  auth:
+    missing_fields: Champs manquants
+    example_user_reset_blocked: La réinitialisation du mot de passe est désactivée pour les utilisateurs d'exemple
+    token_expired: Le jeton a expiré
+    unauthorized: Non autorisé
+    example_user_forgot_blocked: La réinitialisation du mot de passe est désactivée pour les utilisateurs d'exemple
+    invalid_token: Jeton invalide ou expiré
+    email_already_verified: E-mail déjà vérifié
+    missing_email: E-mail requis
+    user_not_found: Utilisateur introuvable
+    internal_error: Erreur interne du serveur
+    invalid_current_password: Le mot de passe actuel est incorrect
+    example_user_blocked: Les changements de mot de passe sont désactivés pour les utilisateurs d'exemple
+    not_authenticated: Non authentifié.
+  profile:
+    invalid_name: Le nom doit être une chaîne de caractères
+    fetch_failed: Échec de la récupération du profil
+    name_required: Le nom est requis
+    update_failed: Échec de la mise à jour du profil
+  settings:
+    user_not_found: Utilisateur introuvable
+    load_failed: Échec du chargement des paramètres
+    example_blocked: Les utilisateurs d'exemple ne peuvent pas modifier les paramètres
+    save_failed: Échec de l'enregistrement des paramètres
+    invalid_default_ai_connection: Connexion IA par défaut invalide
+    invalid_slow_threshold: La limite des modèles lents doit être un nombre entier de secondes, au moins 1.
+  global_settings_load_error: Erreur interne du serveur
+  languages_load_error: Échec du chargement des langues.
+  translations_load_error: Échec du chargement des traductions.
+auth:
+  account_deleted: Ce compte a été supprimé.
+  email_not_verified: Email non vérifié. Veuillez vérifier votre boîte de réception et votre dossier SPAM.
+  example_user_blocked: Les fonctions de mot de passe sont désactivées pour les utilisateurs exemple.
+  example_user_forgot_blocked: La réinitialisation du mot de passe est désactivée pour les utilisateurs exemple.
+  example_user_reset_blocked: La réinitialisation du mot de passe est désactivée pour les utilisateurs exemple.
+  internal_error: Erreur interne du serveur.
+  invalid_credentials: Identifiants invalides.
+  invalid_current_password: Le mot de passe actuel est incorrect.
+  invalid_token: Jeton invalide ou expiré.
+  invalid_token_error: 'Jeton invalide : {error}'
+  invalid_token_missing_user_id: 'Jeton invalide : identifiant utilisateur manquant.'
+  missing_email: Email requis.
+  missing_fields: Champs manquants.
+  password_changed: Mot de passe changé avec succès.
+  password_validation_failed: Échec de la validation du mot de passe.
+  reset_email_sent: Email de réinitialisation du mot de passe envoyé.
+  token_expired: Le jeton a expiré.
+  unauthorized: Non autorisé.
+  user_not_found: Utilisateur introuvable.
+  login_invalid_credentials: E-mail ou mot de passe invalide
+chat:
+  ai_provider_error: 'Erreur du fournisseur IA : {error}'
+  connection_error: 'Erreur de connexion : {error}'
+  connection_not_found: Connexion IA introuvable ou inaccessible.
+  delete_failed: 'Échec de la suppression de la discussion : {error}'
+  generate_title_failed: 'Échec de la génération du titre : {error}'
+  get_failed: 'Échec de la récupération de la discussion : {error}'
+  internal_error: 'Erreur interne du serveur : {error}'
+  list_failed: 'Échec de la liste des discussions : {error}'
+  send_failed: 'Échec de l''envoi du message : {error}'
+  title_updated: Titre de la discussion mis à jour avec succès.
+  update_failed: 'Échec de la mise à jour de la discussion : {error}'
+  deleted: Chat « {id} » supprimé avec succès
+  not_found_or_not_owned: Chat « {id} » introuvable ou vous n'en êtes pas le propriétaire
+  not_found: Chat « {id} » introuvable
+  ai_timeout: Le modèle d’IA met trop de temps à répondre. Veuillez réessayer.
+  ai_service_failed: Le service d’IA n’a pas répondu. Veuillez réessayer.
+  ai_repeat_loop: Le modèle d’IA s’est bloqué et n’a pas pu terminer de répondre. Veuillez réessayer.
+  timeout_out_of_range: La limite de temps de l'IA doit être comprise entre 1 et {max_seconds} secondes.
+common:
+  back: Retour
+  cancel: Annuler
+  cannot_undo: Cette action ne peut pas être annulée.
+  clear: Effacer
+  copy: Copier
+  delete: Supprimer
+  deleting: Suppression en cours...
+  dismiss: Ignorer
+  edit: Modifier
+  generating: Génération en cours...
+  loading: Chargement...
+  next: Suivant
+  restoring: Restauration...
+  save: Enregistrer
+  saving: Enregistrement...
+  sending: Envoi en cours...
+  testing: Test en cours...
+  unknown: Inconnu
+  uploading: Téléversement en cours...
+  verifying: Vérification en cours...
+  view: Afficher
+database:
+  connection_failed: 'Échec de connexion à la base de données : {error}'
+  decryption_failed: 'Échec du déchiffrement du mot de passe de connexion : {error}'
+  insert_failed: 'Erreur de base de données : {error}'
+  pool_not_initialized: Pool de connexions à la base de données non initialisé
+  query_failed: 'Échec de la requête à la base de données : {error}'
+  type_not_supported: 'Type de base de données non pris en charge : {type}'
+  connection_not_found: Connexion à la base de données introuvable ou inaccessible.
+  feature_required: Ce type de base de données n'est pas activé par votre licence.
+datasets:
+  define:
+    connection_details_not_found: Détails de connexion introuvables
+    connection_not_found: Connexion à la base de données introuvable ou inaccessible
+    connection_required: connectionId est requis
+    connection_test_failed: Échec du test de connexion à la base de données
+    database_connection_failed: 'Échec de connexion à la base de données : {error}'
+    name_required: Le nom du jeu de données est requis
+    table_name_required: tableName est requis
+    verification_failed: 'Échec de la vérification de la table/vue : {error}'
+    dataset_created: Jeu de données « {name} » défini avec succès
+    preview_failed: 'Échec de la lecture des données de la table « {table} » : {error}'
+    invalid_source_type: sourceType doit être « table » ou « view ».
+    permission_denied: 'Permission refusée : l''utilisateur « {user} » n''a pas accès à la table « {table} ». Veuillez accorder l''autorisation SELECT.'
+    table_not_found: Table/vue « {table} » introuvable dans la base de données « {database} ».
+    table_access_failed: 'Échec de l''accès à la table « {table} » : {error}'
+    connection_successful: Connexion réussie.
+    connection_timed_out: La connexion a expiré après 15 secondes.
+    connection_missing_db_note: 'Remarque : PostgreSQL renvoie cette erreur pour les bases de données manquantes ET pour les autorisations insuffisantes. Si la base de données existe, vérifiez que l''utilisateur
+      dispose de l''autorisation CONNECT sur la base de données.'
+  delete:
+    success: Jeu de données « {id} » supprimé avec succès.
+  describe:
+    ai_connection_error: 'Erreur de connexion à l''IA : {error}'
+    empty_description: La description générée est vide. Veuillez vérifier la configuration du fournisseur d'IA.
+    generation_failed: 'Échec de la génération de la description : {error}'
+    description_generated: Description générée avec succès pour « {name} »
+    timeout_out_of_range: La limite de temps de l'IA doit être comprise entre 1 et {max_seconds} secondes.
+  example_blocked:
+    create: Les utilisateurs d'exemple ne peuvent pas créer de jeux de données
+    delete: Les utilisateurs d'exemple ne peuvent pas supprimer de jeux de données
+    update: Les utilisateurs d'exemple ne peuvent pas mettre à jour de jeux de données
+  list_error: Échec du chargement des jeux de données
+  not_found: Jeu de données introuvable
+  not_owner: Vous ne pouvez modifier que vos propres jeux de données
+  preparation:
+    duplicate_name: Une règle de préparation avec ce nom existe déjà pour ce jeu de données
+    no_updates: Aucun champ à mettre à jour
+    preview_failed: 'Échec de l''aperçu de la règle : {error}'
+    rule_deleted: Règle de préparation supprimée avec succès
+    rule_in_use: 'Cette règle de préparation est utilisée par {count} recette(s) : {names}. Supprimez d''abord les recettes.'
+    rule_not_found_or_not_owned: Règle de préparation introuvable ou vous n'en êtes pas propriétaire
+    rule_updated: Règle de préparation mise à jour avec succès
+    schema_failed: 'Échec de la lecture du schéma du jeu de données : {error}'
+    rule_not_found: Règle de préparation « {id} » introuvable pour ce jeu de données
+    rule_created: Règle de préparation '{name}' créée avec succès
+    already_exists: Une règle de préparation avec ces opérations existe déjà ('{name}')
+  schema:
+    external_failed: 'Échec de l''obtention du schéma depuis la base de données externe : {error}'
+    from_preview: Schéma dérivé des données d'aperçu (10 premières lignes)
+    load_error: 'Impossible de charger le schéma : {error}'
+    table_missing: La table n'existe plus. Veuillez réimporter le jeu de données.
+    not_implemented: La découverte de schéma pour ce type de jeu de données « {type} » n'est pas encore implémentée
+    connection_unreachable: 'La connexion {connection_id} est inaccessible : {error}'
+    row_count_not_computed: Le nombre de lignes n’est pas calculé pour un jeu de données virtuel sans exécuter la jointure.
+  share:
+    error: Échec de la mise à jour du partage
+    toggled: Partage du jeu de données « {id} » mis à jour avec succès
+  unknown_source: 'Type de source inconnu : {source_type}'
+  upload:
+    error: Échec du téléversement du jeu de données
+    file_processing_failed: 'Échec du traitement du fichier : {error}'
+    limit_reached_count: Limite de téléversement atteinte. Maximum {count} jeux de données autorisés.
+    limit_reached_size: Limite de taille de téléversement dépassée. Maximum {size} Mo de stockage total.
+    unsupported_file: 'Type de fichier non pris en charge. Veuillez téléverser un fichier parmi : {extensions}'
+    user_not_found: Utilisateur introuvable
+    success: Jeu de données « {name} » téléversé avec succès
+    dbf_memo_unsupported: Ce fichier .dbf contient des champs mémo. Leurs valeurs sont stockées dans un fichier séparé, qu’un envoi de fichier unique ne peut pas inclure.
+    dbf_field_unsupported: 'Ce fichier .dbf déclare des types de champs qui ne peuvent pas être lus : {types}'
+  transforms:
+    clone_forbidden: Vous n'avez pas l'autorisation de cloner cette transformation
+    duplicate_name: Une transformation portant ce nom existe déjà pour ce jeu de données
+    deleted: Transformation supprimée avec succès
+    no_updates: Aucun champ à mettre à jour
+    updated: Transformation mise à jour avec succès
+    not_found_or_not_owned: Transformation introuvable ou vous n'en êtes pas le propriétaire
+    in_use: 'Cette transformation est utilisée par {count} recette(s) : {names}. Supprimez d''abord les recettes.'
+    not_accessible: Jeu de données « {id} » introuvable ou inaccessible
+    cloned: Transformation clonée sous le nom « {name} »
+    not_owned: Jeu de données « {id} » introuvable ou vous n'en êtes pas le propriétaire
+    created: Transformation « {name} » créée avec succès
+    not_found: Transformation « {id} » introuvable pour ce jeu de données.
+    already_exists: Une transformation avec ces opérations existe déjà ('{name}')
+  not_found_2: Jeu de données introuvable
+  browse:
+    columns_failed: 'Échec de la récupération des colonnes : {error}'
+    preview_failed: 'Échec de l''aperçu de la table : {error}'
+    discover_failed: 'Échec de la découverte des tables : {error}'
+  auto_create:
+    connection_not_found: Connexion introuvable.
+    connection_id_required: Le champ connectionId est requis.
+    created: Jeux de données créés.
+    no_tables_discovered: Aucune table ou vue découverte. Vérifiez que le serveur de base de données est en cours d'exécution et accessible.
+  not_owned: Jeu de données « {id} » introuvable ou vous n'en êtes pas le propriétaire.
+  unread:
+    schema_error: La source a répondu, mais ses colonnes n'ont pas pu être lues.
+    no_database: Cette base de données n'existe pas sur le serveur.
+    incomplete: La vérification n'a pas abouti à temps. Réessayez ou augmentez le délai d'expiration de la connexion.
+    no_permission: Ce compte ne peut pas lire cette source.
+    unreachable: Impossible d'atteindre cette source. Vérifiez l'hôte et le port, puis réessayez.
+    auth_failed: La base de données a refusé les identifiants de ce compte.
+    definition_incomplete: Cette source ne désigne ni un jeu de données ni une table de connexion.
+    definition_too_deep: Ce jeu de données fait référence à lui-même à plus de cinq niveaux de profondeur.
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: Renommer la colonne en snake_case minuscule par souci de cohérence
+      rename_table_snake_case: Renommer la table en snake_case minuscule par souci de cohérence
+      rename_table_reserved: Renommez la table « {table} » pour éviter les conflits avec les mots réservés SQL
+      mixed_case_table: Le nom de table « {table} » utilise une casse mixte — snake_case recommandé
+      reserved_keyword_table: Le nom de table « {table} » est un mot-clé SQL réservé.
+      mixed_case_column: La colonne « {column} » utilise une casse mixte — snake_case recommandé
+      reserved_keyword_column: La colonne « {column} » est un mot-clé SQL réservé.
+      rename_column_reserved: Renommez la colonne '{column}' pour éviter les conflits avec les mots réservés SQL
+    normalisation:
+      multiple_address: Plusieurs colonnes liées aux adresses ({count}) détectées
+      repeating_group: 'Groupe répétitif détecté : {columns}'
+      separate_address_table: Envisagez de créer une table d'adresses séparée avec une clé étrangère vers {table}
+      create_separate_table: Créez une table distincte pour les valeurs « {base} » avec une clé étrangère vers {table}
+    semistructured:
+      controlled_vocab: La colonne {column} contient un vocabulaire contrôlé de {count} valeurs distinctes
+      create_ref_table: Créez une table de référence pour les valeurs de {column} afin de normaliser la table {table}
+    data_types:
+      unbounded_varchar: Colonne VARCHAR non bornée « {column} »
+      short_text_enum: La colonne de texte « {column} » a une longueur maximale de {max_len} — envisagez d'utiliser une contrainte ENUM ou CHECK
+      allows_null: La colonne « {column} » autorise NULL — envisagez une contrainte NOT NULL
+      add_not_null: Ajouter une contrainte NOT NULL à « {column} ».
+      set_max_length: Envisagez de définir une longueur maximale pour « {column} » afin d'éviter les données surdimensionnées.
+      add_check_constraint: Ajoutez une contrainte CHECK ou utilisez un type ENUM pour '{column}' avec des valeurs valides limitées
+    relationships:
+      missing_fk: La colonne « {column} » ressemble à une clé étrangère mais n'a pas de contrainte de clé étrangère.
+      add_fk: Envisagez d'ajouter une contrainte FK si '{column}' fait référence à une autre table
+    indexing:
+      missing_fk_index: La colonne de clé étrangère '{column}' n'a pas d'index
+  analyze_error: 'Échec de l''analyse de la base de données : {error}'
+  connection_error: 'Échec de connexion à la base de données : {error}'
+  description: Analysez et améliorez la conception de votre base de données à l'aide de l'IA.
+  no_connection: Aucune connexion à la base de données disponible. Veuillez d'abord vous connecter à une base de données.
+  not_implemented: Cette fonctionnalité arrive bientôt.
+  pdf:
+    categories: Catégories
+    code_systems: Systèmes de codes
+    col_default: Par défaut
+    col_name: Colonne
+    col_nullable: Nullable
+    col_pk: PK
+    col_type: Type
+    columns: Colonnes
+    confidence: Confiance
+    header: Rapport d'analyse de conception de base de données
+    high: Élevé
+    issues_count: Problèmes ({count})
+    issues_found: Problèmes trouvés
+    low: Faible
+    medium: Moyen
+    'no': NON
+    none: Aucun
+    normalisation_title: Suggestions de normalisation ({count})
+    page: Page {current}/{total}
+    pk: Clé primaire
+    proposed_table: Table proposée
+    risk_breakdown: Répartition des risques
+    rows: Lignes
+    schema_title: Schéma ({count} tables)
+    semi_structured_title: Analyse de données semi-structurées ({count} colonnes)
+    subtitle: 'Base de données : {db_name} ({db_type}) | Connexion : {conn_name} (ID : {conn_id})'
+    summary: Résumé
+    tables: Tables
+    title: Analyse de la conception de la base de données
+    top_keywords: Mots-clés principaux
+    top_recommendations: Principales recommandations
+    value: Valeur
+    'yes': OUI
+    code_systems_label: Systèmes de code détectés
+    proposed_ddl_label: DDL proposé
+    research_capabilities_label: Capacités de recherche
+    table_purposes_label: Finalités des tables
+    integration_title: Résultats de l'intégration IA
+    integration_subtitle: Relations implicites, capacités de recherche et dimensions manquantes détectées par l'IA d'intégration.
+    semantic_title: Analyse sémantique par IA
+    domain_label: Classifications de domaine ISIC
+    health_score_label: 'Score de santé de la base de données : {score}/100'
+    rationale_label: Justification
+    implicit_relationships_label: Relations implicites
+    unsupported_label: Non pris en charge
+    missing_dimensions_label: Dimensions manquantes
+    top_actions_label: Actions prioritaires principales
+    health_score_title: Score de santé
+    confidence_label: Confiance
+    relationship_label: Relation
+    semantic_subtitle: Significations de colonnes inférées par l'IA, classifications de domaine ISIC et détections de systèmes de code.
+    column_meanings_label: Significations des colonnes
+    supported_label: Pris en charge
+    ai_disclaimer: Analyse générée par l'IA — à examiner avant d'appliquer en production.
+    partial_label: Partiel
+    health_score_subtitle: Santé globale de la base de données évaluée par Schema AI. 0 = problèmes structurels critiques, 100 = prêt pour la production.
+    evidence_label: Preuve
+    ai_skipped_warning: Analyse IA ignorée
+  question_required: La question est obligatoire
+  report_data_required: Les données du rapport sont obligatoires
+  schema_error: 'Échec de l''extraction du schéma : {error}'
+  title: Assistant de conception de base de données
+  unsupported_type: Seules les bases de données PostgreSQL et MySQL sont prises en charge
+  pdf_error: 'Échec de la génération du PDF : {error}'
+  invalid_token: Jeton invalide
+  schema_error_2: 'Échec du déchiffrement du mot de passe de la base de données : {error}'
+  rag_error: 'Échec de la requête RAG : {error}'
+  rag_not_available: La recherche RAG n'est disponible que pour les bases de données PostgreSQL. La recherche de texte MySQL est prévue pour une version future.
+  unsupported_type_2: Seules les bases de données PostgreSQL, MySQL et MS SQL Server sont prises en charge.
+  email_pdf:
+    no_email: Aucune adresse e-mail trouvée pour votre compte
+    invalid_body: Corps de requête invalide
+    send_failed: Échec de l'envoi du rapport par e-mail. Veuillez réessayer.
+  llm:
+    unknown_error: Erreur LLM inconnue.
+    http_error: Le LLM a renvoyé HTTP {status_code}.
+    no_ai_provider: Aucun fournisseur d'IA configuré. Connectez un fournisseur d'IA dans Paramètres → Connexions IA.
+    timeout: La requête LLM a expiré après {timeout_seconds} s.
+    empty_content: Le LLM a renvoyé un contenu vide.
+    no_model: Aucun modèle d'IA configuré. Définissez un modèle par défaut sur la connexion IA ou passez un modèle explicite.
+  analysis_cancelled: Flux d'analyse annulé (client déconnecté)
+  stream_ai_semantic_start: 'IA sémantique : analyse de {tables} tables...'
+  stream_ai_schema_start: 'IA de schéma : analyse de {tables} tables...'
+  ai_skipped_reason: 'Ce rapport contient uniquement une analyse mécanique. L''analyse augmentée par IA a été ignorée car la base de données a généré {count} problèmes (limite : {limit}). Examinez les résultats
+    mécaniques ci-dessous, nettoyez la base de données, puis relancez avec l''IA pour obtenir des explications contextuelles, des informations sémantiques et des suggestions de normalisation.'
+  stream_extracting_schema: Extraction du schéma depuis {db_type}...
+  stream_ai_semantic_done: 'IA sémantique : {columns} significations de colonnes, {domains} domaines ISIC'
+  analysis_complete: Analyse terminée
+  stream_schema_done: 'Schéma extrait : {tables} tables, {columns} colonnes'
+  stream_mechanical_start: Exécution de l'analyse mécanique...
+  stream_normalisation_timeout: 'Normalisation : délai dépassé après 90 s'
+  stream_normalisation_done: 'Normalisation : {count} suggestions'
+  stream_normalisation_skipped: 'Normalisation : ignorée ({error})'
+  stream_analysis_failed: 'Échec de l''analyse : {error}'
+  stream_ai_integration_done: 'IA d''intégration : {relationships} relations, {capabilities} capacités'
+  stream_ai_schema_done: 'IA de schéma : score de santé {score}/100'
+  stream_ai_start: Démarrage de l'analyse IA — 3 spécialistes en parallèle...
+  stream_normalisation_start: Génération des suggestions de normalisation...
+  ai_skipped_message: 'Analyse IA ignorée — {count} problèmes détectés (limite : {limit}). Examinez les résultats mécaniques ci-dessous, nettoyez la base de données, puis relancez avec l''IA.'
+  stream_mechanical_done: 'Analyse mécanique : {count} problèmes trouvés'
+  stream_connecting: Connexion à la base de données...
+  stream_connected: 'Connecté à {db_type} : {db_name}'
+  stream_unsupported_type: 'Type de base de données non pris en charge : {db_type}'
+  stream_ai_done: 'Analyse IA terminée — statut : {status}'
+  stream_ai_integration_start: 'IA d''intégration : détection des relations...'
+  stream_semistructured_start: Analyse des colonnes semi-structurées...
+groups:
+  admin_required: Accès administrateur requis
+  cannot_delete_self: Impossible de supprimer votre propre compte
+  description_required: La description ne peut pas être vide
+  insufficient_permissions: Permissions insuffisantes pour gérer les groupes
+  invalid_group_id: Groupe d'utilisateurs invalide. Doit être compris entre 00 et 99
+  update_failed: Échec de la mise à jour du groupe
+  user_not_found: Utilisateur introuvable
+  update_success: Description du groupe « {id} » mise à jour
+  user_updated: Groupe de l'utilisateur mis à jour avec succès
+  not_found: Groupe « {id} » introuvable
+  not_authorized: Non autorisé à voir le groupe de cet utilisateur
+  missing_id: Identifiant de ressource manquant.
+  resource_not_found: Ressource introuvable.
+recipes:
+  columns_required: Veuillez sélectionner au moins une colonne
+  data_selection_error: 'Échec de la sélection des données : {error}'
+  dataset_not_found: Jeu de données introuvable
+  dataset_required: Veuillez sélectionner un jeu de données
+  delete_error: 'Échec de la suppression de la recette : {error}'
+  execute_error: 'Échec de l''exécution de la recette : {error}'
+  execution_completed: Exécution terminée avec succès
+  execution_failed: Échec de l'exécution
+  execution_load_error: 'Échec du chargement de l''exécution : {error}'
+  executions_load_error: 'Échec du chargement des exécutions : {error}'
+  invalid_stage: Étape invalide pour la recette
+  invalid_stage_type: 'Type d''étape invalide : {type}. Doit être l''un des suivants : {types}'
+  load_datasets_error: 'Échec du chargement des jeux de données : {error}'
+  load_error: 'Échec du chargement des recettes : {error}'
+  name_required: Le nom de la recette est requis
+  no_columns_exist: Aucune des colonnes sélectionnées n'existe dans le jeu de données
+  no_dataset: Aucun jeu de données associé à cette recette
+  no_stages: La recette doit comporter au moins une étape
+  no_updates: Aucun champ à mettre à jour
+  preparation:
+    no_db_pool: Le pool de base de données n'est pas disponible pour l'étape de préparation
+    rules_applied: '{count} règles de préparation appliquées'
+    all_rules_failed: 'Toutes les règles ont échoué : {errors}'
+    rule_not_found: Règle « {rule_id} » introuvable.
+    rule_failed: 'Règle ''{rule_id}'' : {error}'
+  scatter_two_columns: Le diagramme de dispersion nécessite au moins deux colonnes
+  scatter_two_numeric: Le diagramme de dispersion nécessite deux colonnes numériques
+  schema_error: 'Échec du chargement du schéma de colonne : {error}'
+  unknown_stage: 'Type d''étape inconnu : {stage_type}'
+  unsupported_chart_type: 'Type de graphique non pris en charge : {chart_type}'
+  update_error: 'Échec de la mise à jour de la recette : {error}'
+  visualisation_columns_required: Au moins une colonne est requise pour la visualisation
+  visualisation_error: 'Échec de la visualisation : {error}'
+  visualisation_generated: Visualisation générée avec succès
+  field_label:
+    categoryColumn: Colonne de catégorie (étiquettes)
+    yColumn: Colonne de l'axe Y
+    independentColumns: Colonnes indépendantes / prédictives
+    xColumn: Colonne de l'axe X
+    responseColumn2: Deuxième colonne de réponse (mesure appariée)
+    dependentColumn: Colonne dépendante / de résultat
+    responseColumn: Colonne de réponse (mesure numérique)
+    factorColumn: Colonne de facteur (variable de regroupement)
+    columns: Colonnes
+    factorColumn2: Colonne du second facteur (variable de regroupement)
+  requirement:
+    anova_two_way: 2 colonnes catégorielles (deux facteurs) et 1 colonne numérique (réponse)
+    correlation: au moins 2 colonnes numériques
+    t_test_independent: 1 colonne catégorielle (pour les groupes) et 1 colonne numérique (à comparer)
+    anova_one_way: 1 colonne catégorielle (facteur) et 1 colonne numérique (réponse)
+    t_test_paired: 2 colonnes numériques (mesures appariées)
+    distribution: 1 colonne numérique
+    scatter: 2 colonnes numériques (x et y)
+    table: Toutes les colonnes
+    linear_regression: au moins 2 colonnes numériques (prédicteurs et résultat)
+    histogram: 1 colonne numérique (axe des x)
+    descriptive: au moins 1 colonne numérique
+    none: aucune sortie requise
+    bar: 1 colonne catégorielle (axe des x) et 1 colonne numérique (axe des y)
+    chi_square: 2 colonnes catégorielles
+    line: 2 colonnes numériques (x et y)
+    pie: 1 colonne catégorielle (étiquettes)
+    area: 2 colonnes numériques (x et y)
+    hbar: 1 colonne catégorielle (axe y) et 1 colonne numérique (axe x)
+    donut: 1 colonne catégorielle (étiquettes)
+  column_type:
+    categorical: catégoriel
+    numeric: numérique
+  result_type:
+    tabular: tabulaire
+    numeric: numérique
+  execution:
+    error: 'Erreur d''exécution de la recette : {error}'
+    preparation_error: 'Étape de préparation échouée : {error}'
+    preparation_failed: Étape de préparation échouée
+    unknown_stage: 'Type d''étape inconnu : {stage_type}'
+  transforms:
+    connect_success: Transformation connectée à la recette
+    disconnect_success: Transformation déconnectée de la recette
+    load_error: Échec du chargement des transformations connectées
+    dataset_mismatch: La transformation '{id}' n'appartient pas au jeu de données '{dataset_id}'
+    not_found: La transformation '{id}' est introuvable ou n'appartient pas au jeu de données de cette recette
+  validation:
+    failed: 'Échec de la validation de la recette : {errors}'
+    unknown_columns: 'L''étape {stage} référence la ou les colonnes ''{columns}'' qui n''existent pas dans ce jeu de données. Colonnes disponibles : {available}. Sélectionnez parmi les colonnes disponibles.'
+    unknown_algorithm: '« {type} » n''est pas une méthode d''analyse reconnue. Choisissez l''une des options suivantes : {options}'
+    missing_output_field: Il manque à la sortie « {output} » son paramètre « {field} » ({label}). Sélectionnez une colonne pour « {field} » dans le panneau de sortie.
+    unknown_output: '« {type} » n''est pas un type de sortie reconnu. Choisissez l''une des options suivantes : {options}.'
+    incompatible_algo_output: 'L''analyse « {algo} » produit des résultats de type {result_type} et ne peut pas être affichée sous forme de graphique « {output} ». Remplacez le type de sortie par un type
+      compatible avec « {algo} » : {options}.'
+    insufficient_columns_output: 'Ce jeu de données n''a pas les bons types de colonnes pour « {output} » ({requirement}). Le jeu de données contient : {columns}. Choisissez un jeu de données avec {requirement},
+      ou basculez vers : {options}.'
+    missing_algo_field: Il manque le paramètre « {field} » ({label}) à l'analyse « {algo} ». Sélectionnez une colonne pour « {field} » dans le panneau d'analyse.
+    insufficient_columns_algo: 'Ce jeu de données n''a pas les bons types de colonnes pour ''{algo}'' ({requirement}). Le jeu de données contient : {columns}. Choisissez un jeu de données avec {requirement},
+      ou basculez vers : {options}.'
+    wrong_column_type: La colonne '{column}' doit être {expected} pour '{field}' ({label}).
+    algorithm_required: Aucune méthode d'analyse n'est sélectionnée. Choisissez-en une dans le panneau d'analyse — une recette nécessite une étape de statistiques avec un algorithme.
+    unknown_field: '« {field} » n’est pas un paramètre reconnu pour « {type} ». Paramètres reconnus : {options}.'
+  share:
+    enabled: Recette partagée avec succès
+    disabled: La recette est désormais privée
+  not_owned: Recette « {id} » introuvable ou vous n'en êtes pas le propriétaire
+  delete_success: Recette « {id} » supprimée avec succès
+  ai_session:
+    save_error: Échec de l'enregistrement de la recette depuis la session IA
+    not_found: Session de recette IA introuvable.
+    delete_error: Échec de la suppression de la session de recette IA.
+    unauthorized: Vous n'avez pas accès à cette session de recette IA.
+    load_error: Échec du chargement de la session de recette IA
+    create_error: Échec de la création de la session de recette IA
+  not_found: Recette « {id} » introuvable
+  update_success: Recette « {id} » mise à jour avec succès.
+  execution_not_found: Exécution « {id} » introuvable.
+  create_success: Recette '{name}' créée avec succès
+  technique_correlation: Matrice de corrélation
+  technique_t_test_paired: Test t apparié
+  technique_linear_regression: Régression linéaire
+  technique_chi_square: Test du khi-deux
+  technique_t_test_independent: Test t indépendant
+  technique_anova_two_way: ANOVA à deux facteurs
+  technique_descriptive: Statistiques descriptives
+  technique_anova_one_way: ANOVA à un facteur
+  histogram_no_columns: L'histogramme nécessite au moins une colonne.
+  distribution_no_columns: Le graphique de distribution nécessite au moins une colonne.
+  histogram_numeric: L'histogramme nécessite une colonne numérique.
+  stage_not_implemented: Étape {stage_type} à venir
+  scoreboard:
+    output_fields:
+      what: Choisissez les colonnes de sortie
+    dataset:
+      what: Sélectionnez un jeu de données
+    technique_unknown:
+      what: Choisissez une méthode d’analyse connue
+    technique_fields:
+      what: Choisissez les colonnes requises
+    name:
+      what: Nommez la recette
+    output:
+      what: Choisissez un type de sortie
+    output_incompatible:
+      what: Choisissez un type de sortie compatible
+    technique:
+      what: Choisissez une méthode d’analyse
+    output_unknown:
+      what: Choisissez un type de sortie connu
+  chip:
+    heading:
+      output: Quelle sortie ?
+      columns: Quelles colonnes ?
+      technique: Quelle méthode d’analyse ?
+statistics:
+  anova_computation_failed: 'Échec du calcul de l''ANOVA à deux facteurs : {error}'
+  anova_needs_three_groups: L'ANOVA à un facteur nécessite 3 groupes ou plus (trouvé {n}). Pour 2 groupes, utilisez le test t indépendant
+  compute_failed: 'Échec du calcul des statistiques : {error}'
+  each_group_two_observations: Chaque groupe doit comporter au moins 2 observations
+  group_column_required_anova: Une colonne de groupe catégorielle avec 3 niveaux ou plus est requise pour l'ANOVA à un facteur
+  group_column_required_ttest: Une colonne de groupe catégorielle avec exactement deux niveaux est requise pour le test t indépendant
+  need_five_observations_chi: Au moins 5 observations complètes sont nécessaires
+  need_observations_regression: Au moins {n} observations complètes sont nécessaires
+  need_ten_observations_anova: Au moins 10 observations complètes sont nécessaires pour l'ANOVA à deux facteurs
+  need_three_pairs: Au moins 3 paires complètes sont nécessaires pour le test t apparié
+  need_two_categories_chi: Les deux colonnes doivent comporter au moins 2 catégories
+  need_two_numeric_correlation: Au moins 2 colonnes numériques sont nécessaires pour la corrélation
+  need_two_valid_numeric: Au moins 2 colonnes numériques valides sont nécessaires
+  no_valid_data_after_dropna: Aucune donnée valide après suppression des NaN
+  no_valid_numeric: Aucune colonne numérique valide fournie
+  non_numeric_column: Colonne non numérique
+  not_computed: Non calculé
+  select_dependent_independent: 'Sélectionnez au moins 2 colonnes numériques : la première = dépendante, les autres = indépendantes'
+  select_dependent_var: Sélectionnez une colonne numérique de variable dépendante
+  select_one_numeric_ttest: Sélectionnez une colonne numérique pour le test t indépendant
+  select_two_categorical_chi: Sélectionnez exactement deux colonnes catégorielles
+  select_two_numeric_paired: Sélectionnez exactement deux colonnes numériques pour le test t apparié
+  two_factors_required: Deux facteurs sont requis pour l'ANOVA à deux facteurs
+  cache_cleared: Clé de cache « {key} » purgée
+  group_fewer_than_two: Le groupe « {group} » contient moins de 2 observations
+  group_must_have_two_levels: 'La colonne de groupe « {group} » doit avoir exactement 2 niveaux (trouvé(s) : {n})'
+  cache_not_found: Clé de cache « {key} » introuvable.
+  column_not_found: Colonne « {col} » introuvable.
+  column_must_be_numeric: La colonne « {col} » doit être numérique.
+  factor_column_not_found: Colonne '{col}' du facteur {factor} introuvable
+  computation_failed: 'Échec du calcul des statistiques : {error}'
+user:
+  api_key_required: Une clé API est requise pour ce fournisseur
+  connection_name_exists: Une connexion avec ce nom existe déjà
+  connection_not_found: Connexion introuvable
+  example_blocked: Les utilisateurs d'exemple ne peuvent pas effectuer cette action
+  internal_error: Erreur interne du serveur
+  missing_fields: Champs obligatoires manquants
+  provider_not_found: Fournisseur introuvable
+  user_not_found: Utilisateur introuvable
+  fetch_failed: Échec de la récupération
+  example_update_db: Les utilisateurs d'exemple ne peuvent pas mettre à jour les connexions de base de données
+  api_key_required_fetch: Une clé API est requise pour ce fournisseur
+  example_delete_db: Les utilisateurs d'exemple ne peuvent pas supprimer les connexions de base de données
+  example_create_db: Les utilisateurs d'exemple ne peuvent pas créer de connexions de base de données
+  no_endpoint: Aucun point de terminaison n'est configuré pour ce fournisseur
+  connection_timeout_local: Délai de connexion dépassé. {code} est-il en cours d'exécution à {baseUrl} ?
+  unknown_provider: 'Fournisseur inconnu : {code}'
+  connection_timeout_remote: Délai de connexion dépassé pour {code} à {baseUrl}
+  provider_returned: 'Le fournisseur a renvoyé {status} : {text}'
+  auto_create_default_detail: La création automatique du jeu de données a échoué. Le serveur de base de données est peut-être injoignable.
+  no_models_returned: Le fournisseur n'a renvoyé aucun modèle ; rien n'a été modifié.
+validation:
+  error: 'Erreur de validation : {count} problème(s) trouvé(s)'
+  password:
+    require_special: Le mot de passe doit contenir au moins un caractère spécial.
+    min_length: Le mot de passe doit comporter au moins {min} caractères.
+    require_uppercase: Le mot de passe doit contenir au moins une lettre majuscule.
+    too_weak: Le mot de passe est trop faible. Veuillez choisir un mot de passe plus fort.
+    require_digit: Le mot de passe doit contenir au moins un chiffre.
+    require_lowercase: Le mot de passe doit contenir au moins une lettre minuscule.
+notebooks_storage:
+  no_connection_details: Aucun détail de connexion fourni
+  failed_create_table_mssql: 'Échec de la création de la table : {error}'
+  failed_create_table: 'Échec de la création de la table « {table} » : {error}'
+  unsupported_storage_type: 'Type de stockage non pris en charge : {type}'
+  no_connection_details_short: Aucun détail de connexion
+  no_data_pool: Le pool de la base de données Data n'est pas initialisé
+notebooks:
+  example_blocked: Les utilisateurs d'exemple ne peuvent pas importer de notebooks
+  file_too_large: Le fichier notebook est trop volumineux. La taille maximale est de {max_size} Mo.
+  example_blocked_2: Les utilisateurs d'exemple ne peuvent pas modifier le partage de notebooks
+  delete_error: 'Échec de la suppression de l''import : {error}'
+  no_db_rights: Cette connexion ne dispose pas des droits de création de base de données.
+  no_table_rights: Cette connexion ne peut pas créer de tables — importation refusée.
+  import_failed: 'Échec de l''import du notebook : {error}'
+  system_db_blocked: Impossible d'importer dans la base de données système « {db} ». Veuillez utiliser une autre base de données ou en créer une nouvelle.
+  no_connection: Veuillez sélectionner une connexion à une base de données.
+  share_error: Seul le propriétaire peut modifier les paramètres de partage.
+  invalid_format_2: Format de notebook invalide. Seuls les fichiers .ipynb sont acceptés.
+  import_failed_2: 'Échec de la liste des imports : {error}'
+  import_failed_4: 'Échec de la récupération de l''import : {error}'
+  example_blocked_3: Les utilisateurs d'exemple ne peuvent pas supprimer de notebooks.
+  no_dataframes: Aucun DataFrame trouvé dans ce notebook
+  share_error_2: 'Échec de la mise à jour du partage : {error}'
+  import_failed_3: Importation introuvable
+  cells_not_list: 'Format de notebook invalide : « cells » n''est pas une liste'
+  untitled: Sans titre
+  unknown_error: Erreur inconnue
+  missing_cells: 'Format de notebook invalide : clé « cells » manquante'
+  too_many_cells: 'Trop de cellules ({count}). Max : {max_cells}'
+  invalid_json: 'JSON invalide : {error}'
+schema:
+  connection_not_found: Connexion à la base de données introuvable ou accès refusé
+  unsupported_source_type: 'source_type non pris en charge : {source_type}. Utilisez dataset, postgresql ou mysql.'
+  no_table_name: Le jeu de données n'a pas de nom de table (pas encore ingéré).
+  connection_and_table_required: connection_id et table_name sont requis pour les sources PostgreSQL/MySQL.
+  introspect_postgresql_failed: 'Échec de l''introspection PostgreSQL : {error}'
+  dataset_not_found: Jeu de données introuvable ou accès refusé.
+  introspect_mysql_failed: 'Échec de l''introspection MySQL : {error}'
+  dataset_id_required: dataset_id est requis pour source_type=dataset
+access:
+  connection_failed_detail: 'Échec de la connexion : {detail}'
+  connection_failed: Échec de la connexion
+  licence_required: Les connexions aux bases de données Access nécessitent une licence d'entreprise
+  connection_exists: La connexion « {name} » existe déjà
+  connected_in_ms: Connecté en {elapsed} ms.
+  file_path_required: file_path est requis.
+  connection_saved: Connexion enregistrée.
+  name_and_path_required: Les champs name et file_path sont requis.
+  db_pool_not_initialized: Pool de base de données non initialisé.
+  connection_deleted: Connexion supprimée.
+  connection_not_found: Connexion introuvable.
+  encryption_error: 'Erreur de chiffrement : {error}'
+  connection_params_required: L'hôte, le port, l'utilisateur et le mot de passe sont requis
+  table_not_found: 'Table « {table} » introuvable : {error}'
+  connection_unavailable: 'Impossible de se connecter à la base de données Access : {error}'
+  invalid_port: Le port doit être un entier
+virtual_chat:
+  chat_session_not_found: Session de chat introuvable
+  llm_returned_error: Le LLM a renvoyé HTTP {status_code}
+  connection_not_found: Connexion à la base de données introuvable ou accès refusé.
+  introspection_failed: 'Échec de l''introspection : {error}'
+  llm_call_failed: 'Échec de l''appel LLM : {error}'
+  save_draft_success: '✅ Jeu de données virtuel enregistré comme brouillon : **{name}**. Vous pouvez le consulter et le modifier sur la page des jeux de données. Utilisez l''onglet Définir pour affiner
+    le SQL, les jointures et les colonnes de sortie.'
+  save_no_sources: '⚠️ Impossible d''enregistrer : aucune source de données n''a été introspectée. Essayez de mentionner des noms de tables comme « products » ou « orders » dans vos messages précédents.'
+  empty_response: Je ne sais pas comment répondre à cela. Pourriez-vous reformuler ou donner plus de détails ?
+  save_success: ✅ Jeu de données **{name}** enregistré avec succès. Vous le trouverez dans la liste Jeux de données existants. Utilisez Modifier pour l'affiner ou Cloner pour créer une variante.
+  save_failed: '⚠️ Échec de l''enregistrement : {error}'
+  save_parse_error: '⚠️ Impossible d''enregistrer le jeu de données : {error}'
+execution:
+  not_found: Exécution introuvable
+  executing_stage: 'Exécution de l''étape : {stage}'
+  loading_dataset: Chargement du jeu de données...
+  starting_analysis: Démarrage des étapes d'analyse...
+  loaded_rows: Chargé {rows} lignes, {columns} colonnes
+error:
+  connection:
+    query_failed_5: 'Échec de la requête MSSQL : {error}'
+    query_failed: 'Échec de la requête sur la table/vue « {table} » : {error}'
+    query_failed_2: 'Échec de l''exécution du SQL compilé : {error}'
+    query_failed_3: 'Échec de la requête PostgreSQL : {error}'
+    query_failed_7: 'Échec de la requête de base de données : {error}'
+    failed: 'Échec de la connexion à la base de données : {error}'
+    type_not_supported_2: Le type de base de données « {type} » n'est pas encore pris en charge pour la découverte de schéma.
+    type_not_supported_3: 'Type de base de données non pris en charge : {type}'
+    connect_failed: 'Échec de la connexion MySQL : {error}'
+    type_not_supported: Le type de base de données « {type} » n'est pas encore pris en charge.
+    query_failed_6: 'Échec de la requête d''accès : {error}'
+    query_failed_4: 'Échec de la requête MySQL : {error}'
+    decryption_failed: 'Échec du déchiffrement du mot de passe de connexion : {error}'
+  dataset:
+    load_failed_2: 'Échec du chargement des données : {error}'
+    load_failed_3: Le jeu de données virtuel « {id} » n'a pas de définition SQL
+    not_found_2: Jeu de données « {id} » introuvable
+    not_found_4: Jeu de données « {id} » introuvable ou inaccessible.
+    load_failed_4: 'Échec du chargement du jeu de données virtuel « {id} » : {error}'
+    unknown_source: 'Type de source inconnu : {source_type}'
+    table_missing: La table '{table}' n'existe pas
+    delete_failed_2: 'Échec de la suppression du jeu de données : {error}'
+    not_found: Jeu de données « {id} » introuvable ou inaccessible.
+    load_failed: 'Échec du chargement du jeu de données : {error}'
+    not_found_5: Jeu de données '{id}' introuvable
+    not_found_3: 'Jeu de données introuvable ou inaccessible : {error}'
+    not_found_or_not_owned: Jeu de données '{id}' introuvable ou vous n'en êtes pas propriétaire
+  define:
+    connection_not_found: Connexion à la base de données introuvable ou inaccessible
+    connection_not_found_2: Connexion introuvable ou inaccessible
+    dataset_creation_failed: 'Échec de la création de l''enregistrement du jeu de données : {error}'
+  ai:
+    call_failed: 'Échec de l''appel IA : {error}'
+  database:
+    insert_failed: 'Erreur de base de données : {error}'
+    pool_not_initialized: Pool de base de données non initialisé.
+  describe:
+    ai_connection_error_2: 'Erreur de connexion IA : impossible de déchiffrer la clé API'
+    ai_connection_error: 'Erreur de connexion IA : aucune connexion disponible.'
+  execution:
+    cannot_cancel: Impossible d'annuler une exécution déjà {status}.
+  preparation:
+    rule_not_found_2: Règle de préparation « {id} » introuvable.
+    rule_not_found: Règle de préparation '{id}' introuvable pour ce jeu de données
+  groups:
+    invalid_group_id: group_id invalide. Il doit être compris entre 00 et 99
+ai_recipe:
+  message_required: Un message est requis
+  session_name_required: Un nom est requis
+  llm_error: 'Erreur du service IA : {error}'
+  invalid_decision: Décision invalide.
+system:
+  hello_world: Bonjour, le monde !
+  cache_cleanup_completed: 'Nettoyage du cache terminé : {removed} entrées supprimées'
+rag:
+  no_ai_provider: '{count} enregistrements correspondants trouvés. (Aucun fournisseur d''IA configuré pour les réponses en langage naturel.)'
+  ai_provider_error: 'Erreur du fournisseur d''IA : {error}'
+  no_tables: Aucune table trouvée dans le schéma pour la recherche.
+  no_matches: Aucun texte correspondant n'a été trouvé dans la base de données pour votre question. Essayez de reformuler ou de sélectionner une autre source de données.
+licence:
+  write_failed: 'Échec de l''écriture du fichier de licence : {error}'
+  missing_content: Champ « content » manquant.
+  delete_failed: 'Échec de la suppression du fichier de licence : {error}'
+  no_file_to_delete: Aucun fichier de licence à supprimer — déjà en mode open source.
+  delete_success: Licence supprimée. Fonctionnement en mode open source.
+  install_success: Licence installée avec succès.
+virtual:
+  execute_failed: 'Échec de l''exécution : {error}'
+  no_credentials_postgresql: Aucun identifiant trouvé pour la connexion PostgreSQL {conn_id}
+  no_credentials_mysql: Aucun identifiant trouvé pour la connexion MySQL {conn_id}
+  preview_failed: 'Échec de l''aperçu : {error}'
+  validate:
+    join_left_source_not_found: 'Jointure {j_idx} : source gauche ''{left_alias}'' introuvable'
+    connection_id_required: 'Source ''{alias}'' : connectionId requis pour la source {storage_type}'
+    column_source_not_found: 'Colonne {c_idx} : source ''{src_alias}'' introuvable'
+    dataset_id_required: 'Source ''{alias}'' : datasetId requis pour la source de jeu de données'
+    join_right_source_not_found: 'Jointure {j_idx} : source droite ''{right_alias}'' introuvable'
+    no_sources: Aucune source définie
+    connection_not_found: 'Source ''{alias}'' : connexion {conn_id} introuvable ou accès refusé'
+    dataset_not_found: 'Source ''{alias}'' : jeu de données {dataset_id} introuvable ou accès refusé'
+    join_column_not_found: 'Jointure {j_idx} : la source « {alias} » n''a pas de colonne « {column} »'
+    output_column_not_found: 'Colonne {c_idx} : la source « {src_alias} » n''a pas de colonne « {column} »'
+  scoreboard:
+    joins:
+      needs: Deux sources ou plus, avec leurs colonnes lues.
+      what: Comment les sources doivent-elles être jointes ?
+    name:
+      what: Comment ce jeu de données doit-il s'appeler ?
+    columns:
+      needs_empty: « {source} » n'a aucune colonne parmi lesquelles choisir.
+      needs_failed: Les colonnes de « {source} » n'ont pas pu être lues.
+      what: Que contient « {source} » ?
+    output_columns:
+      what: Quelles colonnes le résultat doit-il contenir ?
+      needs: Une source, avec ses colonnes lues.
+    sources:
+      what: À partir de quelle table ce jeu de données doit-il être construit ?
+    storage:
+      what: Doit-il s’agir d’une vue en direct ou d’une table enregistrée ?
+      table: Table enregistrée
+      live: Vue en direct
+  join_suggestions:
+    invalid_sources: Les suggestions de jointure nécessitent une liste de sources, chacune avec un alias et un nom ({error}).
+  panel:
+    collapsed_required: L'état replié du panneau doit être vrai ou faux.
+  decision:
+    unknown_piece: « {piece} » n'est pas une décision que ce point de terminaison peut appliquer.
+    missing_value: La décision « {piece} » nécessite une valeur.
+    no_connection: Votre choix a été enregistré. L'assistant n'a pas pu répondre car aucune connexion à l'IA n'est disponible.
+    model_failed: 'Votre choix a été enregistré. L''assistant n''a pas pu répondre : {error}'
+    invalid_value: 'La décision « {piece} » n''a pas pu être appliquée : {error}'
+    applied: Utilisez la sélection ci-dessus.
+    no_reply: Votre choix a été enregistré. L’assistant a épuisé ses cycles de travail sans produire de réponse — demandez-lui de continuer, ou consultez le brouillon dans l’arborescence.
+  column:
+    missing_source: 'Une colonne a besoin de sa source : un identifiant de jeu de données, ou une connexion et un nom de table.'
+    unknown_action: « {action} » n'est pas une action de colonne. Utilisez « cocher » ou « décocher ».
+    missing_column: Aucune colonne n'a été nommée.
+  save:
+    invalid_definition: 'Ce jeu de données ne peut pas être enregistré : {errors}'
+  tool:
+    no_sources_yet: Il n’y a pas de source nommée « {alias} » — le brouillon n’a encore aucune source. Appelez d’abord add_source.
+    no_source: 'Aucune source nommée « {alias} ». Les sources de ce brouillon : {aliases}.'
+audio_presets:
+  invalid_chat_type: 'Type de chat invalide : {chat_type}. Doit être l''un des suivants : {valid_types}.'
+ai_providers:
+  unauthorized: Non autorisé
+  failed_to_update_provider: Échec de la mise à jour du fournisseur
+  forbidden: Interdit
+  internal_error: Erreur interne du serveur
+  missing_id_or_enabled: ID ou indicateur d'activation manquant
+  failed_to_delete_provider: Échec de la suppression du fournisseur
+  provider_not_found: Fournisseur introuvable
+  missing_provider_id: ID de fournisseur manquant
+  invalid_provider_id: Identifiant de fournisseur invalide.
+visualization_types:
+  forbidden: Interdit
+  type_not_found: Type de visualisation introuvable
+  name_and_slug_required: Le nom et le slug sont requis
+  slug_already_exists: Ce slug existe déjà
+  internal_error: Erreur interne du serveur
+test_ai:
+  internal_error: Erreur interne du serveur
+  no_endpoint: Aucun point de terminaison n'est configuré pour ce fournisseur
+  responded_with_status: '{name} a répondu avec le statut {status}'
+  server_reachable: Le serveur {name} à {baseUrl} est joignable
+  unknown_provider: 'Fournisseur inconnu : {provider}'
+  endpoint_valid: Le point de terminaison à {baseUrl} est valide
+  api_key_required: Une clé API est requise pour {name}
+  fetch_failed: Échec de la récupération
+  connection_timeout_local: Délai de connexion dépassé. {name} est-il en cours d'exécution à {baseUrl} ?
+  connection_failed: 'Échec de la connexion : {msg}'
+  endpoint_v1_valid: Le point de terminaison à {baseUrl}/v1 est valide
+visualization_instances:
+  no_rendered_output: Aucun rendu disponible
+  viz_type_not_found: Type de visualisation introuvable
+  instance_not_found: Instance introuvable
+  invalid_instance_id: ID d'instance invalide
+  invalid_viz_type: Type de visualisation invalide
+  viz_type_id_required: visualizationTypeId requis
+  unauthorized: Non autorisé
+  internal_error: Erreur interne du serveur
+ai:
+  database:
+    email_sent: Rapport envoyé par e-mail avec succès
+columns_required: L'opération « {type} » nécessite un champ « columns ».
+filter_operator_required: L'opération de filtre nécessite un opérateur.
+invalid_fill_method: 'Méthode fill_missing invalide : {method}. Doit être l''une des suivantes : {methods}.'
+invalid_target_type: 'target_type invalide : {target_type}. Doit être l''un des suivants : {types}.'
+encode_column_required: L'opération d'encodage nécessite une colonne.
+rename_new_name_required: L'opération de renommage de colonne nécessite un nouveau nom.
+invalid_operation_type: 'Type d''opération invalide : {type}. Doit être l''un des suivants : {types}.'
+invalid_encoding: 'Encodage invalide : {encoding}. Doit être l''un des suivants : {types}.'
+column_required: L'opération « {type} » nécessite une colonne.
+filter_value_required: L'opération de filtre nécessite une valeur.
+dataclean_tools:
+  no_rules_to_apply: Aucune règle à appliquer
+  no_rules_to_preview: Aucune règle à prévisualiser
+dataclean_chat:
+  create_error: Échec de la création de la session de nettoyage de données
+  empty_response: Je n'ai pas pu générer de réponse. Veuillez réessayer.
+  dataset_id_required: datasetId est requis
+  chat_session_not_found: Session de chat de nettoyage de données introuvable
+  message_required: Le message est requis

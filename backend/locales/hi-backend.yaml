@@ -1,0 +1,1016 @@
+access:
+  connected_in_ms: '{elapsed}ms में कनेक्ट हुआ'
+  connection_deleted: कनेक्शन हटाया गया
+  connection_exists: कनेक्शन '{name}' पहले से मौजूद है
+  connection_failed: कनेक्शन विफल
+  connection_failed_detail: 'कनेक्शन विफल: {detail}'
+  connection_not_found: कनेक्शन नहीं मिला
+  connection_saved: कनेक्शन सहेजा गया
+  db_pool_not_initialized: डेटाबेस पूल आरंभीकृत नहीं है
+  encryption_error: 'एन्क्रिप्शन त्रुटि: {error}'
+  file_path_required: file_path आवश्यक है
+  licence_required: Access डेटाबेस कनेक्शन के लिए कॉर्पोरेट लाइसेंस आवश्यक है
+  name_and_path_required: name और file_path आवश्यक हैं
+  table_not_found: 'तालिका ''{table}'' नहीं मिली: {error}'
+  connection_unavailable: 'Access डेटाबेस से कनेक्ट नहीं किया जा सका: {error}'
+  connection_params_required: होस्ट, पोर्ट, उपयोगकर्ता और पासवर्ड आवश्यक हैं
+  invalid_port: पोर्ट एक पूर्णांक होना चाहिए
+admin:
+  already_full_admin: उपयोगकर्ता पहले से ही Full Admin है
+  already_group_admin: उपयोगकर्ता पहले से ही Group Admin है
+  cannot_delete_self: आप अपना खुद का खाता नहीं हटा सकते
+  cannot_demote_full_admin: Full Admin को डिमोट नहीं किया जा सकता
+  cannot_demote_self: आप स्वयं को डिमोट नहीं कर सकते
+  cannot_promote_example: Example User को प्रमोट नहीं किया जा सकता
+  delete_error: उपयोगकर्ता हटाने में विफल
+  demote_error: उपयोगकर्ता को डिमोट करने में विफल
+  description_required: विवरण खाली नहीं हो सकता
+  example_blocked: Example User खाते व्यवस्थापक कार्य नहीं कर सकते
+  group_not_found: समूह नहीं मिला
+  group_users_load_error: समूह उपयोगकर्ताओं को लोड करने में विफल
+  groups_load_error: समूह लोड करने में विफल
+  groups_stats_error: समूह आँकड़े लोड करने में विफल
+  insufficient_permissions: इस कार्य के लिए अपर्याप्त अनुमतियाँ
+  invalid_group_id: अमान्य group_id। 00-99 होना चाहिए
+  invalid_id: अमान्य id
+  invalid_upload_count: maxUploadCount एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 असीमित के लिए)।
+  invalid_upload_size: maxUploadSizeMB एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 असीमित के लिए)।
+  missing_fields: आवश्यक फ़ील्ड गुम हैं
+  missing_group_id: समूह ID गुम है
+  missing_id: id गुम है
+  missing_model_id: मॉडल id गुम है
+  missing_provider_code: providerCode पैरामीटर गुम है
+  missing_user_id: userId गुम है
+  model_update_error: मॉडल अद्यतन करने में विफल
+  models_load_error: मॉडल लोड करने में विफल
+  no_fields: अद्यतन करने के लिए कोई मान्य फ़ील्ड नहीं हैं
+  no_group: उपयोगकर्ता को कोई समूह असाइन नहीं किया गया है
+  not_group_admin: उपयोगकर्ता Group Admin नहीं है
+  only_full_admin: केवल Full Admin ही यह कार्य कर सकते हैं
+  promote_error: उपयोगकर्ता को प्रमोट करने में विफल
+  provider_delete_error: प्रदाता हटाने में विफल
+  provider_not_found: प्रदाता नहीं मिला
+  provider_update_error: प्रदाता अद्यतन करने में विफल
+  providers_load_error: प्रदाता लोड करने में विफल
+  slug_exists: Slug पहले से मौजूद है
+  update_error: उपयोगकर्ता अद्यतन करने में विफल
+  user_load_error: उपयोगकर्ता लोड करने में विफल
+  user_not_found: उपयोगकर्ता नहीं मिला
+  users_load_error: उपयोगकर्ता लोड करने में विफल
+  viz_type_create_error: विज़ुअलाइज़ेशन प्रकार बनाने में विफल
+  viz_type_delete_error: विज़ुअलाइज़ेशन प्रकार हटाने में विफल
+  viz_type_update_error: विज़ुअलाइज़ेशन प्रकार अद्यतन करने में विफल
+  viz_types_load_error: विज़ुअलाइज़ेशन प्रकार लोड करने में विफल
+ai_recipe:
+  llm_error: 'AI सेवा त्रुटि: {error}'
+  message_required: एक संदेश आवश्यक है
+  session_name_required: एक नाम आवश्यक है
+  invalid_decision: अमान्य निर्णय।
+api:
+  user:
+    connection_not_found: कनेक्शन नहीं मिला
+    example_delete_ai: उदाहरण उपयोगकर्ता AI कनेक्शन हटा नहीं सकते
+    api_key_required: इस प्रदाता के लिए API कुंजी आवश्यक है
+    provider_not_found: प्रदाता "{provider}" नहीं मिला
+    missing_fields: आवश्यक फ़ील्ड गुम हैं
+    connection_id_required: कनेक्शन ID आवश्यक है
+    example_create_ai: उदाहरण उपयोगकर्ता AI कनेक्शन नहीं बना सकते
+    invalid_current_password: वर्तमान पासवर्ड गलत है
+    invalid_port: पोर्ट एक पूर्णांक होना चाहिए
+    invalid_name: नाम एक स्ट्रिंग होना चाहिए
+    invalid_connection_id: अमान्य कनेक्शन ID
+    example_blocked: उदाहरण उपयोगकर्ता यह क्रिया नहीं कर सकते
+    connection_name_exists: इस नाम से एक कनेक्शन पहले से मौजूद है
+    user_not_found: उपयोगकर्ता नहीं मिला
+    internal_error: आंतरिक सर्वर त्रुटि
+    example_update_ai: उदाहरण उपयोगकर्ता AI कनेक्शन अपडेट नहीं कर सकते
+    model_not_served_by_connection: यह कनेक्शन "{model}" को सेवा नहीं देता। इसके मॉडल बदले जा सकते हैं — कनेक्शन रीफ़्रेश करें, या कोई अन्य मॉडल चुनें।
+    tuning_invalid_ai_timeout: AI समय सीमा सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1।
+    invalid_connect_timeout: कनेक्ट टाइमआउट सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1 और अधिकतम {ceiling}।
+    discovery_complete: '{seen} मॉडल खोजे गए: {created} यहाँ नए, {refreshed} पहले से ज्ञात, {pruned} अब सेवा में नहीं हैं।'
+    test_connect_timeout: एंडपॉइंट ने समय पर कनेक्शन स्वीकार नहीं किया। हो सकता है होस्ट डाउन हो, या फ़ायरवॉल अनुरोध को गिरा रहा हो। कोई क्षमता निर्णय दर्ज नहीं किया गया; विफल होने में लगा समय दर्ज किया
+      गया।
+    test_read_timeout: मॉडल ने अनुरोध स्वीकार कर लिया लेकिन समय पर उत्तर नहीं दिया। यह इस होस्ट के लिए बहुत धीमा हो सकता है — CPU पर बड़ा मॉडल कई मिनट ले सकता है। कोई क्षमता निर्णय दर्ज नहीं किया गया; विफल
+      होने में लगा समय दर्ज किया गया।
+    invalid_test_state: 'अमान्य परीक्षण परिणाम "{state}"। अनुमत: {allowed}'
+    tuning_invalid_max_tokens: आउटपुट सीमा टोकन की पूर्ण संख्या होनी चाहिए, कम से कम 1।
+    test_budget_exhausted: मॉडल ने कुछ भी नहीं लौटाया क्योंकि उत्तर तक पहुँचने से पहले उसने अपना पूरा आउटपुट बजट उपयोग कर लिया। कोई क्षमता निर्णय दर्ज नहीं किया गया; अवधि दर्ज की गई।
+    model_not_found: प्रदाता "{provider}" के लिए मॉडल "{model}" नहीं मिला।
+    tuning_invalid_temperature: तापमान 0 और 2 के बीच की संख्या होनी चाहिए।
+    test_attribution_required: परीक्षण परिणाम में यह अवश्य दर्ज होना चाहिए कि उसे किसने चलाया।
+    tuning_nothing_to_update: temperature, maxTokens या timeoutSeconds में से कम से कम एक प्रदान करें।
+    tuning_connection_not_found: ऐसा कोई AI कनेक्शन नहीं है।
+    test_not_implemented: परीक्षण "{test}" पंजीकृत है लेकिन उसके पास अभी तक कोई प्रोब नहीं है।
+    tuning_malformed_body: अनुरोध बॉडी मान्य JSON नहीं है।
+    tuning_model_not_found: ऐसा कोई मॉडल नहीं है।
+    unknown_test_id: 'अज्ञात परीक्षण "{test}"। पंजीकृत परीक्षण: {known}'
+    test_reason_required: परीक्षण परिणाम में कारण अवश्य दर्ज होना चाहिए।
+    test_tls_failure: सुरक्षित कनेक्शन स्थापित नहीं किया जा सका — हो सकता है एंडपॉइंट सादा http हो जहाँ https अपेक्षित था, या उसका प्रमाणपत्र समाप्त हो गया हो। कोई क्षमता निर्णय दर्ज नहीं किया गया; विफल
+      होने में लगा समय दर्ज किया गया।
+    invalid_probe_timeout: परीक्षण टाइमआउट सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1 और अधिकतम {ceiling}।
+    test_other_failure: 'मॉडल तक पहुँचा नहीं जा सका, और कारण ऐसा नहीं था जिसे यह सिस्टम पहचानता हो। कोई क्षमता निर्णय दर्ज नहीं किया गया: {detail}'
+    test_http_status: 'प्रदाता ने उत्तर दिया, और उसका उत्तर एक त्रुटि था: {detail}। कोई क्षमता निर्णय दर्ज नहीं किया गया; कारण स्पष्ट हो इसलिए प्रदाता ने जो कहा वह दिखाया गया है।'
+    test_connect_refused: उस पते पर कुछ भी सुन नहीं रहा है — सर्वर पहुँच योग्य है लेकिन किसी सेवा ने उत्तर नहीं दिया। पोर्ट जाँचें और देखें कि AI सर्वर चल रहा है। कोई क्षमता निर्णय दर्ज नहीं किया गया; विफल
+      होने में लगा समय दर्ज किया गया।
+    test_dns_failure: एंडपॉइंट का होस्टनाम रिज़ॉल्व नहीं किया जा सका। पते में टाइपो जाँचें, या ऐसा नाम देखें जिसे केवल यह नेटवर्क ही रिज़ॉल्व कर सकता है। कोई क्षमता निर्णय दर्ज नहीं किया गया; विफल होने
+      में लगा समय दर्ज किया गया।
+    connect_timeout_exceeds_probe: कनेक्ट टाइमआउट ({connect}s) परीक्षण टाइमआउट ({probe}s) से अधिक नहीं हो सकता — कनेक्शन को स्थापित होने में पूरे परीक्षण के चलने से अधिक समय लेने की अनुमति नहीं दी जा सकती।
+  admin:
+    settings_save_error: वैश्विक सेटिंग्स सहेजने में विफल
+    description_required: विवरण खाली नहीं हो सकता
+    invalid_upload_count: maxUploadCount एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 का अर्थ असीमित)।
+    update_error: उपयोगकर्ता अपडेट करने में विफल
+    already_full_admin: उपयोगकर्ता पहले से ही पूर्ण व्यवस्थापक है
+    settings_invalid_upload_size: डिफ़ॉल्ट अधिकतम अपलोड आकार एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 का अर्थ असीमित)।
+    settings_invalid_email_sender: प्रेषक ईमेल पते का प्रारूप अमान्य है
+    delete_error: उपयोगकर्ता हटाने में विफल
+    invalid_group_id: अमान्य group_id। यह 00-99 होना चाहिए
+    group_users_load_error: समूह उपयोगकर्ता लोड करने में विफल
+    settings_invalid_grace_period: पंजीकरण अनुग्रह अवधि एक धनात्मक संख्या होनी चाहिए (घंटे)
+    cannot_demote_full_admin: पूर्ण व्यवस्थापक को डिमोट नहीं किया जा सकता
+    cannot_delete_self: आप अपना खाता स्वयं नहीं हटा सकते
+    settings_load_error: वैश्विक सेटिंग्स लोड करने में विफल
+    missing_fields: आवश्यक फ़ील्ड गुम हैं
+    settings_invalid_max_registrations: अधिकतम पंजीकरण एक धनात्मक संख्या या असीमित होना चाहिए
+    already_group_admin: उपयोगकर्ता पहले से ही समूह व्यवस्थापक है
+    example_blocked: उदाहरण उपयोगकर्ता व्यवस्थापक कार्य नहीं कर सकते
+    settings_invalid_public_url: अमान्य सार्वजनिक URL प्रारूप
+    no_fields: अपडेट करने के लिए कोई मान्य फ़ील्ड नहीं है
+    no_group: उपयोगकर्ता को कोई समूह असाइन नहीं किया गया है
+    demote_error: उपयोगकर्ता को डिमोट करने में विफल
+    settings_view_forbidden: केवल पूर्ण व्यवस्थापक वैश्विक सेटिंग्स देख सकते हैं
+    providers_load_error: प्रदाता लोड करने में विफल
+    groups_load_error: समूह लोड करने में विफल
+    only_full_admin: केवल पूर्ण व्यवस्थापक यह कार्य कर सकते हैं
+    provider_delete_error: प्रदाता हटाने में विफल
+    models_load_error: मॉडल लोड करने में विफल
+    promote_error: उपयोगकर्ता को प्रमोट करने में विफल
+    groups_stats_error: समूह आँकड़े लोड करने में विफल
+    cannot_promote_example: उदाहरण उपयोगकर्ता को प्रमोट नहीं किया जा सकता
+    cannot_demote_self: आप स्वयं को डिमोट नहीं कर सकते
+    settings_modify_forbidden: केवल पूर्ण व्यवस्थापक वैश्विक सेटिंग्स संशोधित कर सकते हैं
+    user_load_error: उपयोगकर्ता लोड करने में विफल
+    invalid_upload_size: maxUploadSizeMB एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 का अर्थ असीमित)।
+    insufficient_permissions: इस कार्य के लिए अपर्याप्त अनुमतियाँ
+    settings_invalid_upload_count: डिफ़ॉल्ट अधिकतम अपलोड संख्या एक गैर-ऋणात्मक पूर्णांक होनी चाहिए (असीमित के लिए 0)।
+    provider_not_found: प्रदाता नहीं मिला
+    missing_user_id: userId गुम है
+    missing_group_id: समूह आईडी गुम है
+    provider_update_error: प्रदाता अपडेट करने में विफल
+    not_group_admin: उपयोगकर्ता समूह व्यवस्थापक नहीं है
+    model_update_error: मॉडल अपडेट करने में विफल
+    missing_model_id: मॉडल आईडी गुम है
+    missing_id: आईडी गुम है
+    settings_invalid_email_timeout: ईमेल सत्यापन टाइमआउट एक धनात्मक संख्या (घंटों में) होनी चाहिए
+    invalid_viz_type_field: अमान्य विज़ुअलाइज़ेशन प्रकार फ़ील्ड मान
+    user_not_found: उपयोगकर्ता नहीं मिला
+    model_not_found: मॉडल नहीं मिला
+    viz_type_not_found: विज़ुअलाइज़ेशन प्रकार नहीं मिला
+    promote_success: उपयोगकर्ता {name} को समूह व्यवस्थापक के रूप में पदोन्नत किया गया है।
+    settings_invalid_platform_upload_size: प्लेटफ़ॉर्म अधिकतम अपलोड आकार एक गैर-ऋणात्मक पूर्णांक होना चाहिए (0 असीमित के लिए)।
+    demote_success: उपयोगकर्ता {name} को समूह व्यवस्थापक पद से पदावनत कर दिया गया है।
+    invalid_id: अमान्य आईडी
+    viz_type_update_error: विज़ुअलाइज़ेशन प्रकार अपडेट करने में विफल।
+    viz_type_create_error: विज़ुअलाइज़ेशन प्रकार बनाने में विफल।
+    viz_types_load_error: विज़ुअलाइज़ेशन प्रकार लोड करने में विफल।
+    instance_exists: प्रकार को हटाया नहीं जा सकता क्योंकि इसके {count} संबंधित इंस्टेंस हैं।
+    users_load_error: उपयोगकर्ताओं को लोड करने में विफल।
+    viz_type_delete_error: विज़ुअलाइज़ेशन प्रकार हटाने में विफल।
+    slug_exists: स्लग पहले से मौजूद है।
+    instance_in_use: प्रकार को हटाया नहीं जा सकता क्योंकि इसके संबंधित इंस्टैंस हैं।
+    settings_demo_mode_requires_licence: वैध लाइसेंस के बिना डेमो मोड अक्षम नहीं किया जा सकता।
+    create_user_error: उपयोगकर्ता बनाने में विफल
+    invalid_email: अमान्य ईमेल प्रारूप
+    settings_not_found: वैश्विक सेटिंग्स नहीं मिलीं
+    email_exists: ईमेल पहले से मौजूद है
+    settings_invalid_registration_mode: पंजीकरण मोड 0, 1, 2, या 4 में से एक होना चाहिए।
+    settings_demo_upload_count_limit: डेमो मोड में, डिफ़ॉल्ट अधिकतम अपलोड गणना 1 से 5 के बीच होनी चाहिए।
+    users_demo_upload_size_limit: डेमो मोड में, किसी उपयोगकर्ता के लिए अधिकतम अपलोड आकार 1 से 5 एमबी के बीच होना चाहिए।
+    settings_demo_upload_size_limit: डेमो मोड में, डिफ़ॉल्ट अधिकतम अपलोड आकार 1 से 5 एमबी के बीच होना चाहिए।
+    users_demo_upload_count_limit: डेमो मोड में, किसी उपयोगकर्ता के लिए अधिकतम अपलोड गणना 1 से 5 के बीच होनी चाहिए।
+    example_user_password_blocked: उदाहरण उपयोगकर्ताओं के पासवर्ड किसी एडमिन द्वारा सेट नहीं किए जा सकते
+    invalid_admin_password: एडमिन पासवर्ड गलत है
+    tuning_reset_error: AI ट्यूनिंग के डिफ़ॉल्ट रीसेट नहीं किए जा सके।
+    settings_invalid_temperature: तापमान 0 और 2 के बीच की संख्या होनी चाहिए।
+    field_not_owned: 'यह फ़ील्ड इस पृष्ठ पर सेट नहीं है। {endpoint}। समस्याग्रस्त: {fields}'
+    settings_invalid_connect_timeout: डिफ़ॉल्ट कनेक्ट टाइमआउट सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1 और अधिकतम {ceiling}।
+    settings_invalid_probe_timeout: डिफ़ॉल्ट परीक्षण टाइमआउट सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1 और अधिकतम {ceiling}।
+    settings_invalid_slow_threshold: धीमे-मॉडल की सीमा सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1।
+    settings_invalid_max_tokens: आउटपुट सीमा टोकन की पूर्ण संख्या होनी चाहिए, कम से कम 1।
+    settings_invalid_ai_timeout: AI समय सीमा सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1।
+  auth:
+    missing_fields: फ़ील्ड गुम हैं
+    example_user_reset_blocked: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड रीसेट अक्षम है
+    missing_email: ईमेल आवश्यक है
+    email_already_verified: ईमेल पहले से सत्यापित है
+    user_not_found: उपयोगकर्ता नहीं मिला
+    token_expired: टोकन समाप्त हो गया है
+    invalid_token: अमान्य या समाप्त टोकन
+    example_user_forgot_blocked: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड रीसेट अक्षम है
+    unauthorized: अनधिकृत
+    example_user_blocked: उदाहरण उपयोगकर्ताओं के लिए पासवर्ड बदलाव अक्षम हैं
+    internal_error: आंतरिक सर्वर त्रुटि
+    invalid_current_password: वर्तमान पासवर्ड गलत है
+    not_authenticated: प्रमाणित नहीं है।
+  register:
+    missing_fields: फ़ील्ड गुम हैं
+    email_exists: ईमेल पहले से मौजूद है
+    internal_error: आंतरिक सर्वर त्रुटि
+    settings_not_found: वैश्विक सेटिंग्स नहीं मिलीं
+    invalid_email: अमान्य ईमेल प्रारूप
+    limit_reached: पंजीकरण सीमा पूरी हो गई (अधिकतम {max_reg} उपयोगकर्ता)।
+    registration_disabled: स्व-पंजीकरण अक्षम है। कृपया व्यवस्थापक से संपर्क करें।
+  profile:
+    update_failed: प्रोफ़ाइल अपडेट करने में विफल
+    name_required: नाम आवश्यक है
+    fetch_failed: प्रोफ़ाइल लाने में विफल
+    invalid_name: नाम एक स्ट्रिंग होना चाहिए
+  settings:
+    load_failed: सेटिंग्स लोड करने में विफल
+    user_not_found: उपयोगकर्ता नहीं मिला
+    example_blocked: उदाहरण उपयोगकर्ता सेटिंग्स संपादित नहीं कर सकते
+    save_failed: सेटिंग्स सहेजने में विफल
+    invalid_default_ai_connection: अमान्य डिफ़ॉल्ट AI कनेक्शन
+    invalid_slow_threshold: धीमे-मॉडल की सीमा सेकंड की पूर्ण संख्या होनी चाहिए, कम से कम 1।
+  global_settings_load_error: आंतरिक सर्वर त्रुटि
+  translations_load_error: अनुवाद लोड करने में विफल।
+  languages_load_error: भाषाएँ लोड करने में विफल।
+audio_presets:
+  invalid_chat_type: 'अमान्य चैट प्रकार: {chat_type}। इनमें से एक होना चाहिए: {valid_types}'
+auth:
+  account_deleted: यह खाता हटा दिया गया है।
+  email_not_verified: ईमेल सत्यापित नहीं है। कृपया अपना इनबॉक्स और SPAM फ़ोल्डर जाँचें।
+  example_user_blocked: Example User खातों के लिए पासवर्ड फ़ंक्शन अक्षम हैं
+  example_user_forgot_blocked: Example User खातों के लिए पासवर्ड रीसेट अक्षम है
+  example_user_reset_blocked: Example User खातों के लिए पासवर्ड रीसेट अक्षम है
+  internal_error: आंतरिक सर्वर त्रुटि
+  invalid_credentials: अमान्य क्रेडेंशियल
+  invalid_current_password: वर्तमान पासवर्ड गलत है
+  invalid_token: अमान्य या समाप्त टोकन
+  invalid_token_error: 'अमान्य टोकन: {error}'
+  invalid_token_missing_user_id: 'अमान्य टोकन: user id गुम है'
+  missing_email: ईमेल आवश्यक है
+  missing_fields: फ़ील्ड गुम हैं
+  password_changed: पासवर्ड सफलतापूर्वक बदला गया
+  password_validation_failed: पासवर्ड सत्यापन विफल
+  reset_email_sent: पासवर्ड रीसेट ईमेल भेजा गया
+  token_expired: टोकन समाप्त हो चुका है
+  unauthorized: अनधिकृत
+  user_not_found: उपयोगकर्ता नहीं मिला
+  login_invalid_credentials: अमान्य ईमेल या पासवर्ड।
+chat:
+  ai_provider_error: 'AI प्रदाता त्रुटि: {error}'
+  connection_error: 'कनेक्शन त्रुटि: {error}'
+  connection_not_found: AI कनेक्शन नहीं मिला या पहुँच योग्य नहीं है
+  delete_failed: 'चैट हटाने में विफल: {error}'
+  deleted: चैट '{id}' सफलतापूर्वक हटाई गई
+  generate_title_failed: 'शीर्षक बनाने में विफल: {error}'
+  get_failed: 'चैट प्राप्त करने में विफल: {error}'
+  internal_error: 'आंतरिक सर्वर त्रुटि: {error}'
+  list_failed: 'चैट सूचीबद्ध करने में विफल: {error}'
+  not_found: चैट '{id}' नहीं मिली
+  not_found_or_not_owned: चैट '{id}' नहीं मिली या आप उसके स्वामी नहीं हैं
+  send_failed: 'संदेश भेजने में विफल: {error}'
+  title_updated: चैट का शीर्षक सफलतापूर्वक अपडेट किया गया
+  update_failed: 'चैट अपडेट करने में विफल: {error}'
+  ai_repeat_loop: AI मॉडल अटक गया और प्रतिक्रिया पूरी नहीं कर सका। कृपया पुनः प्रयास करें।
+  ai_service_failed: AI सेवा प्रतिक्रिया देने में विफल रही। कृपया पुनः प्रयास करें।
+  ai_timeout: AI मॉडल को प्रतिक्रिया देने में बहुत समय लग रहा है। कृपया पुनः प्रयास करें।
+  timeout_out_of_range: AI समय सीमा 1 और {max_seconds} सेकंड के बीच होनी चाहिए।
+common:
+  back: वापस
+  cancel: रद्द करें
+  cannot_undo: यह क्रिया पूर्ववत नहीं की जा सकती।
+  clear: साफ़ करें
+  copy: कॉपी करें
+  delete: हटाएँ
+  deleting: हटाया जा रहा है...
+  dismiss: ख़ारिज करें
+  edit: संपादित करें
+  generating: जनरेट किया जा रहा है...
+  loading: लोड हो रहा है...
+  next: अगला
+  restoring: पुनर्स्थापित किया जा रहा है...
+  save: सहेजें
+  saving: सहेजा जा रहा है...
+  sending: भेजा जा रहा है...
+  testing: परीक्षण किया जा रहा है...
+  unknown: अज्ञात
+  uploading: अपलोड किया जा रहा है...
+  verifying: सत्यापित किया जा रहा है...
+  view: देखें
+database:
+  connection_failed: 'डेटाबेस से कनेक्ट करने में विफल: {error}'
+  connection_not_found: डेटाबेस कनेक्शन नहीं मिला या पहुँच योग्य नहीं है
+  decryption_failed: 'कनेक्शन पासवर्ड डिक्रिप्ट करने में विफल: {error}'
+  insert_failed: 'डेटाबेस त्रुटि: {error}'
+  pool_not_initialized: डेटाबेस पूल आरंभीकृत नहीं है
+  query_failed: 'डेटाबेस क्वेरी विफल: {error}'
+  type_not_supported: डेटाबेस प्रकार '{type}' अभी समर्थित नहीं है
+  feature_required: यह डेटाबेस प्रकार आपके लाइसेंस द्वारा सक्षम नहीं है।
+datasets:
+  auto_create:
+    connection_id_required: connectionId आवश्यक है
+    connection_not_found: कनेक्शन नहीं मिला
+    created: डेटासेट बनाए गए।
+    no_tables_discovered: कोई टेबल या व्यू नहीं मिला। जाँचें कि डेटाबेस सर्वर चल रहा है और पहुँच योग्य है।
+  browse:
+    columns_failed: 'कॉलम प्राप्त करने में विफल: {error}'
+    discover_failed: 'तालिकाएँ खोजने में विफल: {error}'
+    preview_failed: 'तालिका का पूर्वावलोकन करने में विफल: {error}'
+  define:
+    connection_details_not_found: कनेक्शन विवरण नहीं मिला
+    connection_not_found: डेटाबेस कनेक्शन नहीं मिला या पहुँच योग्य नहीं है
+    connection_required: connectionId आवश्यक है
+    connection_test_failed: डेटाबेस कनेक्शन परीक्षण विफल
+    database_connection_failed: 'डेटाबेस से कनेक्ट करने में विफल: {error}'
+    dataset_created: डेटासेट '{name}' सफलतापूर्वक परिभाषित किया गया
+    invalid_source_type: sourceType 'table' या 'view' होना चाहिए
+    name_required: डेटासेट का नाम आवश्यक है
+    permission_denied: 'अनुमति अस्वीकृत: उपयोगकर्ता ''{user}'' के पास तालिका ''{table}'' तक पहुँच नहीं है। कृपया SELECT अनुमति प्रदान करें।'
+    preview_failed: 'तालिका ''{table}'' से डेटा पढ़ने में विफल: {error}'
+    table_access_failed: 'तालिका ''{table}'' तक पहुँचने में विफल: {error}'
+    table_name_required: tableName आवश्यक है
+    table_not_found: तालिका/व्यू '{table}' डेटाबेस '{database}' में नहीं मिली
+    verification_failed: 'तालिका/व्यू सत्यापित करने में विफल: {error}'
+    connection_successful: कनेक्शन सफल रहा
+    connection_timed_out: 15 सेकंड के बाद कनेक्शन का समय समाप्त हो गया
+    connection_missing_db_note: 'नोट: PostgreSQL यह त्रुटि अनुपलब्ध डेटाबेस और अपर्याप्त अनुमतियों दोनों के लिए देता है। यदि डेटाबेस मौजूद है, तो जाँचें कि उपयोगकर्ता के पास डेटाबेस पर CONNECT अनुमति है।'
+  delete:
+    success: डेटासेट '{id}' सफलतापूर्वक हटाया गया
+  describe:
+    ai_connection_error: 'AI कनेक्शन त्रुटि: {error}'
+    description_generated: '''{name}'' के लिए विवरण सफलतापूर्वक जनरेट किया गया'
+    empty_description: जनरेट किया गया विवरण खाली है। कृपया AI प्रदाता कॉन्फ़िगरेशन जाँचें।
+    generation_failed: 'विवरण जनरेट करने में विफल: {error}'
+    timeout_out_of_range: AI समय सीमा 1 और {max_seconds} सेकंड के बीच होनी चाहिए।
+  example_blocked:
+    create: उदाहरण उपयोगकर्ता डेटासेट नहीं बना सकते
+    delete: उदाहरण उपयोगकर्ता डेटासेट नहीं हटा सकते
+    update: उदाहरण उपयोगकर्ता डेटासेट अपडेट नहीं कर सकते
+  list_error: डेटासेट लोड करने में विफल
+  not_found: डेटासेट '{id}' नहीं मिला या पहुँच योग्य नहीं है
+  not_found_2: डेटासेट नहीं मिला
+  not_owned: डेटासेट '{id}' नहीं मिला या आप इसके स्वामी नहीं हैं
+  not_owner: आप केवल अपने डेटासेट संपादित कर सकते हैं
+  preparation:
+    duplicate_name: इस डेटासेट के लिए इस नाम से एक तैयारी नियम पहले से मौजूद है
+    no_updates: अपडेट करने के लिए कोई फ़ील्ड नहीं
+    preview_failed: 'नियम का पूर्वावलोकन करने में विफल: {error}'
+    rule_created: तैयारी नियम '{name}' सफलतापूर्वक बनाया गया
+    rule_deleted: तैयारी नियम सफलतापूर्वक हटाया गया
+    rule_in_use: 'यह तैयारी नियम {count} रेसिपी में उपयोग किया जाता है: {names}। पहले रेसिपी हटाएँ।'
+    rule_not_found: इस डेटासेट के लिए तैयारी नियम '{id}' नहीं मिला
+    rule_not_found_or_not_owned: तैयारी नियम नहीं मिला या आप इसके स्वामी नहीं हैं
+    rule_updated: तैयारी नियम सफलतापूर्वक अपडेट किया गया
+    schema_failed: 'डेटासेट स्कीमा पढ़ने में विफल: {error}'
+    already_exists: इन संक्रियाओं वाला एक तैयारी नियम पहले से मौजूद है ('{name}')
+  schema:
+    external_failed: 'बाहरी डेटाबेस से स्कीमा प्राप्त करने में विफल: {error}'
+    from_preview: स्कीमा पूर्वावलोकन डेटा (पहली 10 पंक्तियाँ) से ली गई है
+    load_error: 'स्कीमा लोड नहीं हो सकी: {error}'
+    not_implemented: इस डेटासेट प्रकार '{type}' के लिए स्कीमा खोज अभी लागू नहीं की गई है
+    table_missing: तालिका अब मौजूद नहीं है। कृपया डेटासेट पुनः अपलोड करें।
+    connection_unreachable: 'कनेक्शन {connection_id} तक पहुँच नहीं हो सकी: {error}'
+    row_count_not_computed: जॉइन चलाए बिना वर्चुअल डेटासेट के लिए पंक्ति गणना नहीं की जाती है।
+  share:
+    error: साझाकरण अपडेट करने में विफल
+    toggled: डेटासेट '{id}' के लिए साझाकरण सफलतापूर्वक अपडेट किया गया
+  transforms:
+    clone_forbidden: आपके पास इस ट्रांसफ़ॉर्म को क्लोन करने की पहुँच नहीं है।
+    cloned: ट्रांसफ़ॉर्म '{name}' के रूप में क्लोन किया गया।
+    created: ट्रांसफ़ॉर्म '{name}' सफलतापूर्वक बनाया गया।
+    deleted: ट्रांसफ़ॉर्म सफलतापूर्वक हटाया गया।
+    duplicate_name: इस डेटासेट के लिए इस नाम से एक ट्रांसफ़ॉर्म पहले से मौजूद है।
+    in_use: 'यह ट्रांसफ़ॉर्म {count} रेसिपी(यों) में उपयोग किया जाता है: {names}। पहले रेसिपी हटाएँ।'
+    no_updates: अपडेट करने के लिए कोई फ़ील्ड नहीं है।
+    not_accessible: डेटासेट '{id}' नहीं मिला या पहुँच योग्य नहीं है।
+    not_found: इस डेटासेट के लिए ट्रांसफ़ॉर्म '{id}' नहीं मिला।
+    not_found_or_not_owned: ट्रांसफ़ॉर्म नहीं मिला या आप इसके स्वामी नहीं हैं।
+    not_owned: डेटासेट '{id}' नहीं मिला या आप इसके स्वामी नहीं हैं।
+    updated: ट्रांसफ़ॉर्म सफलतापूर्वक अपडेट किया गया।
+    already_exists: इन संक्रियाओं वाला एक ट्रांसफ़ॉर्म पहले से मौजूद है ('{name}')
+  unknown_source: 'अज्ञात स्रोत प्रकार: {source_type}'
+  upload:
+    error: डेटासेट अपलोड करने में विफल।
+    file_processing_failed: 'फ़ाइल संसाधित करने में विफल: {error}'
+    limit_reached_count: अपलोड सीमा पूरी हो गई। अधिकतम {count} डेटासेट की अनुमति है।
+    limit_reached_size: अपलोड आकार सीमा पार हो गई। अधिकतम कुल संग्रहण {size} MB है।
+    success: डेटासेट '{name}' सफलतापूर्वक अपलोड किया गया।
+    unsupported_file: 'असमर्थित फ़ाइल प्रकार। कृपया इनमें से एक अपलोड करें: {extensions}'
+    user_not_found: उपयोगकर्ता नहीं मिला।
+    dbf_memo_unsupported: इस .dbf फ़ाइल में मेमो फ़ील्ड हैं। उनके मान एक अलग फ़ाइल में संग्रहीत होते हैं, जिसे एकल-फ़ाइल अपलोड साथ नहीं ले जा सकता।
+    dbf_field_unsupported: 'यह .dbf फ़ाइल ऐसे फ़ील्ड प्रकार घोषित करती है जिन्हें पढ़ा नहीं जा सकता: {types}'
+  unread:
+    definition_too_deep: यह डेटासेट स्वयं को पाँच से अधिक स्तरों की गहराई तक संदर्भित करता है।
+    schema_error: स्रोत ने उत्तर दिया, लेकिन उसके कॉलम पढ़े नहीं जा सके।
+    unreachable: इस स्रोत तक नहीं पहुँचा जा सका। होस्ट और पोर्ट जाँचें, फिर पुनः प्रयास करें।
+    incomplete: जाँच समय पर पूरी नहीं हो सकी। पुनः प्रयास करें, या कनेक्शन टाइमआउट बढ़ाएँ।
+    definition_incomplete: यह स्रोत न तो किसी डेटासेट का नाम देता है और न ही किसी कनेक्शन तालिका का।
+    auth_failed: डेटाबेस ने इस खाते के क्रेडेंशियल अस्वीकार कर दिए।
+    no_permission: यह खाता उस स्रोत को नहीं पढ़ सकता।
+    no_database: वह डेटाबेस सर्वर पर मौजूद नहीं है।
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: '''{column}'' के लिए CHECK कंस्ट्रेंट जोड़ें या सीमित मान्य मानों वाले ENUM प्रकार का उपयोग करें।'
+      add_not_null: '''{column}'' में NOT NULL कंस्ट्रेंट जोड़ें।'
+      allows_null: कॉलम '{column}' NULL की अनुमति देता है — NOT NULL प्रतिबंध पर विचार करें
+      set_max_length: '''{column}'' के लिए अधिकतम लंबाई निर्धारित करने पर विचार करें ताकि अत्यधिक बड़ा डेटा रोका जा सके।'
+      short_text_enum: टेक्स्ट कॉलम '{column}' की अधिकतम लंबाई {max_len} है — ENUM या CHECK प्रतिबंध का उपयोग करने पर विचार करें
+      unbounded_varchar: असीमित VARCHAR कॉलम '{column}'।
+    indexing:
+      missing_fk_index: विदेशी कुंजी कॉलम '{column}' में कोई इंडेक्स नहीं है।
+    naming:
+      mixed_case_column: कॉलम '{column}' मिश्रित केस का उपयोग करता है — snake_case अनुशंसित है
+      mixed_case_table: तालिका नाम '{table}' मिश्रित केस का उपयोग करता है — snake_case अनुशंसित है
+      rename_column_reserved: SQL आरक्षित शब्द टकराव से बचने के लिए कॉलम '{column}' का नाम बदलें।
+      rename_column_snake_case: एकरूपता के लिए कॉलम का नाम lowercase snake_case में बदलें।
+      rename_table_reserved: SQL आरक्षित शब्द टकराव से बचने के लिए तालिका '{table}' का नाम बदलें।
+      rename_table_snake_case: एकरूपता के लिए तालिका का नाम lowercase snake_case में बदलें।
+      reserved_keyword_column: कॉलम '{column}' एक आरक्षित SQL कीवर्ड है।
+      reserved_keyword_table: तालिका नाम '{table}' एक आरक्षित SQL कीवर्ड है।
+    normalisation:
+      create_separate_table: '''{base}'' मानों के लिए {table} की FK के साथ एक अलग तालिका बनाएँ।'
+      multiple_address: कई पते-संबंधी कॉलम ({count}) पाए गए।
+      repeating_group: 'पुनरावृत्त समूह पाया गया: {columns}'
+      separate_address_table: '{table} की FK के साथ एक अलग पता तालिका बनाने पर विचार करें।'
+    relationships:
+      add_fk: यदि '{column}' किसी अन्य तालिका को संदर्भित करता है तो FK कंस्ट्रेंट जोड़ने पर विचार करें।
+      missing_fk: कॉलम '{column}' विदेशी कुंजी जैसा लगता है लेकिन इसमें कोई FK कंस्ट्रेंट नहीं है।
+    semistructured:
+      controlled_vocab: कॉलम {column} में {count} भिन्न मानों की नियंत्रित शब्दावली है।
+      create_ref_table: '{table} तालिका को सामान्यीकृत करने के लिए {column} मानों हेतु एक संदर्भ तालिका बनाएँ।'
+  analyze_error: 'डेटाबेस का विश्लेषण करने में विफल: {error}'
+  connection_error: 'डेटाबेस से कनेक्ट करने में विफल: {error}'
+  description: AI का उपयोग करके अपने डेटाबेस डिज़ाइन का विश्लेषण और सुधार करें।
+  invalid_token: अमान्य टोकन।
+  no_connection: कोई डेटाबेस कनेक्शन उपलब्ध नहीं है। कृपया पहले डेटाबेस से कनेक्ट करें।
+  not_implemented: यह सुविधा जल्द आ रही है।
+  pdf:
+    ai_disclaimer: AI-जनित विश्लेषण — उत्पादन में लागू करने से पहले समीक्षा करें।
+    categories: श्रेणियाँ
+    code_systems: कोड प्रणालियाँ
+    code_systems_label: पहचानी गई कोड प्रणालियाँ
+    col_default: डिफ़ॉल्ट
+    col_name: कॉलम
+    col_nullable: नल योग्य
+    col_pk: PK
+    col_type: प्रकार
+    column_meanings_label: कॉलम अर्थ
+    columns: कॉलम
+    confidence: विश्वास
+    confidence_label: विश्वास
+    domain_label: ISIC डोमेन वर्गीकरण
+    evidence_label: प्रमाण
+    header: डेटाबेस डिज़ाइन विश्लेषण रिपोर्ट
+    health_score_label: 'डेटाबेस स्वास्थ्य स्कोर: {score}/100'
+    health_score_subtitle: Schema AI द्वारा मूल्यांकित समग्र डेटाबेस स्वास्थ्य। 0 = गंभीर संरचनात्मक समस्याएँ, 100 = उत्पादन-तैयार।
+    health_score_title: स्वास्थ्य स्कोर
+    high: उच्च
+    implicit_relationships_label: अंतर्निहित संबंध
+    integration_subtitle: Integration AI द्वारा पहचाने गए अंतर्निहित संबंध, शोध क्षमताएँ और अनुपस्थित आयाम।
+    integration_title: AI एकीकरण निष्कर्ष
+    issues_count: समस्याएँ ({count})
+    issues_found: पाई गई समस्याएँ
+    low: निम्न
+    medium: मध्यम
+    missing_dimensions_label: अनुपस्थित आयाम
+    'no': नहीं
+    none: कोई नहीं
+    normalisation_title: सामान्यीकरण सुझाव ({count})
+    page: पृष्ठ {current}/{total}
+    partial_label: आंशिक
+    pk: PK
+    proposed_ddl_label: प्रस्तावित DDL
+    proposed_table: प्रस्तावित तालिका
+    rationale_label: औचित्य
+    relationship_label: संबंध
+    research_capabilities_label: शोध क्षमताएँ
+    risk_breakdown: जोखिम विश्लेषण
+    rows: पंक्तियाँ
+    schema_title: स्कीमा ({count} तालिकाएँ)
+    semantic_subtitle: AI-अनुमानित स्तंभ अर्थ, ISIC डोमेन वर्गीकरण, और कोड प्रणाली पहचान।
+    semantic_title: AI सिमेंटिक विश्लेषण
+    semi_structured_title: अर्ध-संरचित डेटा विश्लेषण ({count} स्तंभ)
+    subtitle: 'डेटाबेस: {db_name} ({db_type}) | कनेक्शन: {conn_name} (ID: {conn_id})'
+    summary: सारांश
+    supported_label: समर्थित
+    table_purposes_label: तालिका उद्देश्य
+    tables: तालिकाएँ
+    title: डेटाबेस डिज़ाइन विश्लेषण
+    top_actions_label: सर्वोच्च प्राथमिकता वाले कार्य
+    top_keywords: शीर्ष कीवर्ड
+    top_recommendations: शीर्ष अनुशंसाएँ
+    unsupported_label: समर्थित नहीं
+    value: मान
+    'yes': हाँ
+    ai_skipped_warning: AI विश्लेषण छोड़ा गया
+  pdf_error: 'PDF बनाने में विफल: {error}'
+  question_required: प्रश्न आवश्यक है
+  rag_error: 'RAG क्वेरी विफल: {error}'
+  rag_not_available: RAG खोज केवल PostgreSQL डेटाबेस के लिए उपलब्ध है। MySQL टेक्स्ट खोज भविष्य के रिलीज़ के लिए योजनाबद्ध है।
+  report_data_required: रिपोर्ट डेटा आवश्यक है
+  schema_error: 'स्कीमा निकालने में विफल: {error}'
+  schema_error_2: 'डेटाबेस पासवर्ड डिक्रिप्ट करने में विफल: {error}'
+  title: डेटाबेस डिज़ाइन सहायक
+  unsupported_type: केवल PostgreSQL, MySQL, MS SQL Server, और Microsoft Access डेटाबेस समर्थित हैं
+  unsupported_type_2: केवल PostgreSQL, MySQL, और MS SQL Server डेटाबेस समर्थित हैं
+  email_pdf:
+    invalid_body: अमान्य अनुरोध बॉडी
+    no_email: आपके खाते के लिए कोई ईमेल पता नहीं मिला
+    send_failed: रिपोर्ट ईमेल करने में विफल। कृपया पुनः प्रयास करें।
+  llm:
+    no_ai_provider: कोई AI प्रदाता कॉन्फ़िगर नहीं किया गया है। सेटिंग्स → AI कनेक्शन में AI प्रदाता कनेक्ट करें।
+    empty_content: LLM ने खाली सामग्री लौटाई।
+    http_error: LLM ने HTTP {status_code} लौटाया।
+    timeout: LLM अनुरोध {timeout_seconds} सेकंड के बाद समय समाप्त हो गया।
+    unknown_error: अज्ञात LLM त्रुटि।
+    no_model: कोई AI मॉडल कॉन्फ़िगर नहीं किया गया है। AI कनेक्शन पर एक डिफ़ॉल्ट मॉडल सेट करें या एक स्पष्ट मॉडल पास करें।
+  ai_skipped_reason: 'इस रिपोर्ट में केवल यांत्रिक विश्लेषण है। AI-संवर्धित विश्लेषण छोड़ दिया गया क्योंकि डेटाबेस ने {count} समस्याएँ उत्पन्न कीं (सीमा: {limit})। नीचे दिए गए यांत्रिक निष्कर्षों की समीक्षा
+    करें, डेटाबेस को साफ़ करें, फिर संदर्भ-जागरूक व्याख्याओं, सिमेंटिक अंतर्दृष्टि और सामान्यीकरण सुझावों के लिए AI के साथ पुनः चलाएँ।'
+  stream_schema_done: 'स्कीमा निकाली गई: {tables} टेबल, {columns} कॉलम'
+  stream_connecting: डेटाबेस से कनेक्ट हो रहा है...
+  stream_normalisation_start: सामान्यीकरण सुझाव बनाए जा रहे हैं...
+  stream_ai_integration_done: 'एकीकरण AI: {relationships} संबंध, {capabilities} क्षमताएँ'
+  ai_skipped_message: 'AI विश्लेषण छोड़ दिया गया — {count} समस्याएँ मिलीं (सीमा: {limit})। नीचे यांत्रिक निष्कर्षों की समीक्षा करें, डेटाबेस साफ़ करें, फिर AI के साथ पुनः चलाएँ।'
+  stream_ai_schema_start: 'स्कीमा AI: {tables} टेबलों का विश्लेषण हो रहा है...'
+  stream_unsupported_type: 'असमर्थित डेटाबेस प्रकार: {db_type}'
+  stream_normalisation_done: 'सामान्यीकरण: {count} सुझाव'
+  analysis_complete: विश्लेषण पूर्ण
+  stream_mechanical_done: 'यांत्रिक विश्लेषण: {count} समस्याएँ मिलीं'
+  stream_ai_schema_done: 'स्कीमा AI: स्वास्थ्य स्कोर {score}/100'
+  stream_ai_semantic_done: 'सिमेंटिक AI: {columns} कॉलम अर्थ, {domains} ISIC डोमेन'
+  stream_normalisation_skipped: 'सामान्यीकरण: छोड़ा गया ({error})'
+  stream_semistructured_start: अर्ध-संरचित कॉलमों का विश्लेषण हो रहा है...
+  stream_extracting_schema: '{db_type} से स्कीमा निकाली जा रही है...'
+  stream_analysis_failed: 'विश्लेषण विफल: {error}'
+  stream_mechanical_start: यांत्रिक विश्लेषण चल रहा है...
+  stream_ai_integration_start: 'एकीकरण AI: संबंधों का पता लगाया जा रहा है...'
+  analysis_cancelled: विश्लेषण स्ट्रीम रद्द कर दी गई (क्लाइंट डिस्कनेक्ट हो गया)
+  stream_normalisation_timeout: 'सामान्यीकरण: 90 सेकंड के बाद समय समाप्त'
+  stream_ai_start: AI विश्लेषण प्रारंभ हो रहा है — 3 विशेषज्ञ समानांतर रूप से...
+  stream_ai_semantic_start: 'सिमेंटिक AI: {tables} टेबलों का विश्लेषण हो रहा है...'
+  stream_ai_done: 'AI विश्लेषण पूर्ण — स्थिति: {status}'
+  stream_connected: '{db_type} से कनेक्ट हुआ: {db_name}'
+error:
+  ai:
+    call_failed: 'AI कॉल विफल: {error}'
+  connection:
+    connect_failed: 'MySQL कनेक्शन विफल: {error}'
+    decryption_failed: 'कनेक्शन पासवर्ड डिक्रिप्ट करने में विफल: {error}'
+    failed: 'डेटाबेस से कनेक्ट करने में विफल: {error}'
+    query_failed: 'तालिका/व्यू ''{table}'' क्वेरी करने में विफल: {error}'
+    query_failed_2: 'संकलित SQL निष्पादित करने में विफल: {error}'
+    query_failed_3: 'PostgreSQL क्वेरी विफल: {error}'
+    query_failed_4: 'MySQL क्वेरी विफल: {error}'
+    query_failed_5: 'MSSQL क्वेरी विफल: {error}'
+    query_failed_6: 'Access क्वेरी विफल: {error}'
+    query_failed_7: 'डेटाबेस क्वेरी विफल: {error}'
+    type_not_supported: डेटाबेस प्रकार '{type}' अभी तक समर्थित नहीं है
+    type_not_supported_2: स्कीमा खोज के लिए डेटाबेस प्रकार '{type}' अभी तक समर्थित नहीं है
+    type_not_supported_3: 'असमर्थित डेटाबेस प्रकार: {type}'
+  database:
+    insert_failed: 'डेटाबेस त्रुटि: {error}'
+    pool_not_initialized: डेटाबेस पूल आरंभ नहीं किया गया
+  dataset:
+    delete_failed_2: 'डेटासेट हटाने में विफल: {error}'
+    load_failed: 'डेटासेट लोड करने में विफल: {error}'
+    load_failed_2: 'डेटा लोड करने में विफल: {error}'
+    load_failed_3: वर्चुअल डेटासेट '{id}' की कोई SQL परिभाषा नहीं है
+    load_failed_4: 'वर्चुअल डेटासेट ''{id}'' लोड करने में विफल: {error}'
+    not_found: डेटासेट '{id}' नहीं मिला या पहुँच योग्य नहीं है
+    not_found_2: डेटासेट '{id}' नहीं मिला
+    not_found_3: 'डेटासेट नहीं मिला या पहुँच योग्य नहीं: {error}'
+    not_found_4: डेटासेट '{id}' नहीं मिला या पहुँच योग्य नहीं है
+    not_found_5: डेटासेट '{id}' नहीं मिला
+    not_found_or_not_owned: डेटासेट '{id}' नहीं मिला या आप इसके स्वामी नहीं हैं
+    table_missing: तालिका '{table}' मौजूद नहीं है
+    unknown_source: 'अज्ञात स्रोत प्रकार: {source_type}'
+  define:
+    connection_not_found: डेटाबेस कनेक्शन नहीं मिला या पहुँच योग्य नहीं है
+    connection_not_found_2: कनेक्शन नहीं मिला या पहुँच योग्य नहीं है
+    dataset_creation_failed: 'डेटासेट रिकॉर्ड बनाने में विफल: {error}'
+  describe:
+    ai_connection_error: 'AI कनेक्शन त्रुटि: कोई कनेक्शन उपलब्ध नहीं है'
+    ai_connection_error_2: 'AI कनेक्शन त्रुटि: API कुंजी डिक्रिप्ट करने में विफल'
+  execution:
+    cannot_cancel: पहले से {status} स्थिति वाले निष्पादन को रद्द नहीं कर सकते
+  groups:
+    invalid_group_id: अमान्य group_id। 00-99 होना चाहिए
+  preparation:
+    rule_not_found: इस डेटासेट के लिए तैयारी नियम '{id}' नहीं मिला
+    rule_not_found_2: तैयारी नियम '{id}' नहीं मिला
+execution:
+  executing_stage: 'चरण निष्पादित किया जा रहा है: {stage}'
+  loaded_rows: '{rows} पंक्तियाँ, {columns} स्तंभ लोड किए गए'
+  loading_dataset: डेटासेट लोड हो रहा है...
+  not_found: निष्पादन नहीं मिला
+  starting_analysis: विश्लेषण चरण प्रारंभ हो रहे हैं...
+groups:
+  admin_required: व्यवस्थापक पहुँच आवश्यक है
+  cannot_delete_self: आप अपना खाता स्वयं नहीं हटा सकते
+  description_required: विवरण खाली नहीं हो सकता
+  insufficient_permissions: समूहों का प्रबंधन करने के लिए अपर्याप्त अनुमतियाँ
+  invalid_group_id: अमान्य user_group। 00-99 होना चाहिए
+  not_authorized: इस उपयोगकर्ता का समूह देखने के लिए अधिकृत नहीं हैं
+  not_found: समूह '{id}' नहीं मिला
+  update_failed: समूह अद्यतन करने में विफल
+  update_success: समूह '{id}' का विवरण अद्यतन किया गया
+  user_not_found: उपयोगकर्ता नहीं मिला
+  user_updated: उपयोगकर्ता का समूह सफलतापूर्वक अद्यतन किया गया
+  missing_id: संसाधन आईडी गुम है।
+  resource_not_found: संसाधन नहीं मिला।
+licence:
+  delete_failed: 'लाइसेंस फ़ाइल हटाने में विफल: {error}'
+  missing_content: '''content'' फ़ील्ड गायब है'
+  write_failed: 'लाइसेंस फ़ाइल लिखने में विफल: {error}'
+  no_file_to_delete: हटाने के लिए कोई लाइसेंस फ़ाइल नहीं — पहले से ओपन-सोर्स मोड में है।
+  install_success: लाइसेंस सफलतापूर्वक स्थापित हो गया।
+  delete_success: लाइसेंस हटा दिया गया। ओपन-सोर्स मोड में चल रहा है।
+notebooks:
+  delete_error: 'आयात हटाने में विफल: {error}'
+  example_blocked: उदाहरण उपयोगकर्ता नोटबुक आयात नहीं कर सकते।
+  example_blocked_2: उदाहरण उपयोगकर्ता नोटबुक साझाकरण संशोधित नहीं कर सकते।
+  example_blocked_3: उदाहरण उपयोगकर्ता नोटबुक हटा नहीं सकते।
+  file_too_large: नोटबुक फ़ाइल बहुत बड़ी है। अधिकतम आकार {max_size} MB है।
+  import_failed: 'नोटबुक आयात विफल: {error}'
+  import_failed_2: 'आयात सूचीबद्ध करने में विफल: {error}'
+  import_failed_3: आयात नहीं मिला
+  import_failed_4: 'आयात प्राप्त करने में विफल: {error}'
+  invalid_format_2: अमान्य नोटबुक प्रारूप। केवल .ipynb फ़ाइलें स्वीकार की जाती हैं।
+  no_connection: कृपया एक डेटाबेस कनेक्शन चुनें।
+  no_dataframes: इस नोटबुक में कोई डेटाफ़्रेम नहीं मिला
+  no_db_rights: इस कनेक्शन के पास डेटाबेस बनाने के अधिकार नहीं हैं।
+  no_table_rights: यह कनेक्शन तालिकाएँ नहीं बना सकता — आयात अस्वीकृत।
+  share_error: केवल स्वामी ही साझाकरण सेटिंग बदल सकता है।
+  share_error_2: 'साझाकरण अपडेट करने में विफल: {error}'
+  system_db_blocked: सिस्टम डेटाबेस '{db}' में आयात नहीं कर सकते। कृपया कोई अन्य डेटाबेस उपयोग करें या नया बनाएँ।
+  cells_not_list: 'अमान्य नोटबुक प्रारूप: ''cells'' एक सूची नहीं है'
+  unknown_error: अज्ञात त्रुटि
+  too_many_cells: 'बहुत अधिक सेल ({count})। अधिकतम: {max_cells}'
+  untitled: शीर्षकहीन
+  invalid_json: 'अमान्य JSON: {error}'
+  missing_cells: 'अमान्य नोटबुक प्रारूप: ''cells'' कुंजी मौजूद नहीं है'
+notebooks_storage:
+  failed_create_table: 'तालिका {table} बनाने में विफल: {error}'
+  failed_create_table_mssql: 'तालिका बनाने में विफल: {error}'
+  no_connection_details: कोई कनेक्शन विवरण प्रदान नहीं किया गया
+  no_connection_details_short: कोई कनेक्शन विवरण नहीं
+  unsupported_storage_type: 'असमर्थित संग्रहण प्रकार: {type}'
+  no_data_pool: डेटा डेटाबेस पूल आरंभीकृत नहीं है
+rag:
+  ai_provider_error: 'AI प्रदाता त्रुटि: {error}'
+  no_ai_provider: '{count} मिलान रिकॉर्ड मिले। (प्राकृतिक-भाषा उत्तरों के लिए कोई AI प्रदाता कॉन्फ़िगर नहीं किया गया है।)'
+  no_matches: आपके प्रश्न के लिए डेटाबेस में कोई मिलान पाठ नहीं मिला। फिर से लिखने का प्रयास करें या कोई भिन्न डेटा स्रोत चुनें।
+  no_tables: खोजने के लिए स्कीमा में कोई तालिका नहीं मिली।
+recipes:
+  ai_session:
+    create_error: AI रेसिपी सत्र बनाने में विफल
+    delete_error: AI रेसिपी सत्र हटाने में विफल
+    load_error: AI रेसिपी सत्र लोड करने में विफल
+    not_found: AI रेसिपी सत्र नहीं मिला
+    save_error: AI सत्र से रेसिपी सहेजने में विफल
+    unauthorized: आपके पास इस AI रेसिपी सत्र तक पहुँच नहीं है
+  column_type:
+    categorical: श्रेणीबद्ध
+    numeric: संख्यात्मक
+  columns_required: कृपया कम से कम एक कॉलम चुनें
+  create_success: रेसिपी '{name}' सफलतापूर्वक बनाई गई
+  data_selection_error: 'डेटा चयन विफल: {error}'
+  dataset_not_found: डेटासेट नहीं मिला
+  dataset_required: कृपया एक डेटासेट चुनें
+  delete_error: 'रेसिपी हटाने में विफल: {error}'
+  delete_success: रेसिपी '{id}' सफलतापूर्वक हटाई गई
+  execute_error: 'रेसिपी निष्पादित करने में विफल: {error}'
+  execution:
+    error: 'रेसिपी निष्पादन त्रुटि: {error}'
+    preparation_error: 'तैयारी चरण विफल: {error}'
+    preparation_failed: तैयारी चरण विफल
+    unknown_stage: 'अज्ञात चरण प्रकार: {stage_type}'
+  execution_completed: निष्पादन सफलतापूर्वक पूर्ण हुआ
+  execution_failed: निष्पादन विफल
+  execution_load_error: 'निष्पादन लोड करने में विफल: {error}'
+  execution_not_found: निष्पादन '{id}' नहीं मिला
+  executions_load_error: 'निष्पादन लोड करने में विफल: {error}'
+  field_label:
+    categoryColumn: श्रेणी स्तंभ (लेबल)
+    dependentColumn: आश्रित / परिणाम स्तंभ
+    factorColumn: कारक स्तंभ (समूहीकरण चर)
+    independentColumns: स्वतंत्र / भविष्यवक्ता स्तंभ
+    responseColumn: प्रतिक्रिया स्तंभ (संख्यात्मक माप)
+    responseColumn2: द्वितीय प्रतिक्रिया स्तंभ (युग्मित माप)
+    xColumn: X-अक्ष स्तंभ
+    yColumn: Y-अक्ष स्तंभ
+    columns: स्तंभ
+    factorColumn2: द्वितीय कारक स्तंभ (समूहीकरण चर)
+  invalid_stage: रेसिपी के लिए अमान्य चरण
+  invalid_stage_type: 'अमान्य चरण प्रकार: {type}. इनमें से एक होना चाहिए: {types}'
+  load_datasets_error: 'डेटासेट लोड करने में विफल: {error}'
+  load_error: 'रेसिपी लोड करने में विफल: {error}'
+  name_required: रेसिपी का नाम आवश्यक है
+  no_columns_exist: चयनित स्तंभों में से कोई भी डेटासेट में मौजूद नहीं है
+  no_dataset: इस रेसिपी के साथ कोई डेटासेट संबद्ध नहीं है
+  no_stages: रेसिपी में कम से कम एक चरण होना चाहिए
+  no_updates: अपडेट करने के लिए कोई फ़ील्ड नहीं
+  not_found: रेसिपी '{id}' नहीं मिली
+  not_owned: रेसिपी '{id}' नहीं मिली या आप इसके स्वामी नहीं हैं
+  preparation:
+    all_rules_failed: 'सभी नियम विफल रहे: {errors}'
+    no_db_pool: तैयारी चरण के लिए डेटाबेस पूल उपलब्ध नहीं है
+    rule_failed: 'नियम ''{rule_id}'': {error}'
+    rule_not_found: नियम '{rule_id}' नहीं मिला
+    rules_applied: '{count} तैयारी नियम लागू किए गए'
+  requirement:
+    anova_one_way: 1 श्रेणीबद्ध स्तंभ (कारक) और 1 संख्यात्मक स्तंभ (प्रतिक्रिया)
+    anova_two_way: 2 श्रेणीबद्ध स्तंभ (दो कारक) और 1 संख्यात्मक स्तंभ (प्रतिक्रिया)
+    bar: 1 श्रेणीबद्ध स्तंभ (x-अक्ष) और 1 संख्यात्मक स्तंभ (y-अक्ष)
+    chi_square: 2 श्रेणीबद्ध स्तंभ
+    correlation: कम से कम 2 संख्यात्मक स्तंभ
+    descriptive: कम से कम 1 संख्यात्मक स्तंभ
+    distribution: 1 संख्यात्मक स्तंभ
+    histogram: 1 संख्यात्मक स्तंभ (x-अक्ष)
+    line: 2 संख्यात्मक स्तंभ (x और y)
+    linear_regression: कम से कम 2 संख्यात्मक स्तंभ (पूर्वानुमानकर्ता और परिणाम)
+    none: कोई आउटपुट आवश्यक नहीं
+    pie: 1 श्रेणीबद्ध स्तंभ (लेबल)
+    scatter: 2 संख्यात्मक स्तंभ (x और y)
+    t_test_independent: 1 श्रेणीबद्ध स्तंभ (समूहों के लिए) और 1 संख्यात्मक स्तंभ (तुलना के लिए)
+    t_test_paired: 2 संख्यात्मक स्तंभ (युग्मित माप)
+    table: कोई भी स्तंभ
+    area: 2 संख्यात्मक कॉलम (x और y)
+    donut: 1 श्रेणीबद्ध कॉलम (लेबल)
+    hbar: 1 श्रेणीबद्ध कॉलम (y-अक्ष) और 1 संख्यात्मक कॉलम (x-अक्ष)
+  result_type:
+    numeric: संख्यात्मक
+    tabular: सारणीबद्ध
+  scatter_two_columns: स्कैटर प्लॉट के लिए कम से कम दो स्तंभ आवश्यक हैं
+  scatter_two_numeric: स्कैटर प्लॉट के लिए दो संख्यात्मक स्तंभ आवश्यक हैं
+  schema_error: 'स्तंभ स्कीमा लोड करने में विफल: {error}'
+  share:
+    disabled: रेसिपी अब निजी है
+    enabled: रेसिपी सफलतापूर्वक साझा की गई
+  transforms:
+    connect_success: रूपांतरण रेसिपी से जुड़ा है
+    dataset_mismatch: रूपांतरण '{id}' डेटासेट '{dataset_id}' से संबंधित नहीं है
+    disconnect_success: रूपांतरण रेसिपी से अलग किया गया
+    load_error: जुड़े हुए रूपांतरण लोड करने में विफल
+    not_found: रूपांतरण '{id}' नहीं मिला या यह इस रेसिपी के डेटासेट से संबंधित नहीं है
+  unknown_stage: 'अज्ञात चरण प्रकार: {stage_type}'
+  unsupported_chart_type: 'असमर्थित चार्ट प्रकार: {chart_type}'
+  update_error: 'रेसिपी अपडेट करने में विफल: {error}'
+  update_success: रेसिपी '{id}' सफलतापूर्वक अपडेट की गई
+  validation:
+    failed: 'रेसिपी सत्यापन विफल:'
+    incompatible_algo_output: 'विश्लेषण ''{algo}'' {result_type} परिणाम उत्पन्न करता है और इसे ''{output}'' चार्ट के रूप में नहीं दिखाया जा सकता। आउटपुट प्रकार को ''{algo}'' के साथ संगत किसी एक में बदलें:
+      {options}।'
+    insufficient_columns_algo: 'इस डेटासेट में ''{algo}'' के लिए उपयुक्त स्तंभ प्रकार नहीं हैं ({requirement})। डेटासेट में हैं: {columns}। {requirement} वाला डेटासेट चुनें, या इन पर स्विच करें: {options}।'
+    insufficient_columns_output: 'इस डेटासेट में ''{output}'' के लिए उपयुक्त स्तंभ प्रकार नहीं हैं ({requirement})। डेटासेट में हैं: {columns}। {requirement} वाला डेटासेट चुनें, या इन पर स्विच करें: {options}।'
+    missing_algo_field: विश्लेषण '{algo}' में इसकी '{field}' सेटिंग ({label}) मौजूद नहीं है। विश्लेषण पैनल में '{field}' के लिए एक स्तंभ चुनें।
+    missing_output_field: आउटपुट '{output}' में इसकी '{field}' सेटिंग ({label}) मौजूद नहीं है। आउटपुट पैनल में '{field}' के लिए एक स्तंभ चुनें।
+    unknown_algorithm: '''{type}'' एक मान्यता प्राप्त विश्लेषण विधि नहीं है। इनमें से एक चुनें: {options}।'
+    unknown_columns: '{stage} चरण ऐसे स्तंभ(ों) ''{columns}'' का संदर्भ देता है जो इस डेटासेट में मौजूद नहीं हैं। उपलब्ध स्तंभ: {available}। उपलब्ध स्तंभों में से चुनें।'
+    unknown_output: '''{type}'' एक मान्यता प्राप्त आउटपुट प्रकार नहीं है। इनमें से एक चुनें: {options}।'
+    wrong_column_type: स्तंभ '{column}' को '{field}' ({label}) के लिए {expected} होना चाहिए।
+    algorithm_required: कोई विश्लेषण विधि चयनित नहीं है। विश्लेषण पैनल में एक चुनें — किसी रेसिपी में एल्गोरिदम के साथ एक सांख्यिकी चरण आवश्यक है।
+    unknown_field: '''{field}'' ''{type}'' के लिए मान्य सेटिंग नहीं है। मान्य सेटिंग्स: {options}.'
+  visualisation_columns_required: विज़ुअलाइज़ेशन के लिए कम से कम एक स्तंभ आवश्यक है
+  visualisation_error: 'विज़ुअलाइज़ेशन विफल: {error}'
+  visualisation_generated: विज़ुअलाइज़ेशन सफलतापूर्वक उत्पन्न हुआ
+  technique_linear_regression: रैखिक प्रतिगमन
+  technique_correlation: सहसंबंध मैट्रिक्स
+  technique_t_test_paired: युग्मित टी-परीक्षण
+  technique_descriptive: वर्णनात्मक सांख्यिकी
+  technique_t_test_independent: स्वतंत्र टी-परीक्षण
+  technique_chi_square: काई-वर्ग परीक्षण
+  technique_anova_two_way: द्वि-मार्गी ANOVA
+  technique_anova_one_way: एक-मार्गी ANOVA
+  histogram_no_columns: हिस्टोग्राम के लिए कम से कम एक कॉलम आवश्यक है
+  histogram_numeric: हिस्टोग्राम के लिए एक संख्यात्मक कॉलम आवश्यक है
+  distribution_no_columns: वितरण चार्ट के लिए कम से कम एक कॉलम आवश्यक है
+  stage_not_implemented: '{stage_type} चरण जल्द आ रहा है'
+  scoreboard:
+    technique_unknown:
+      what: एक ज्ञात विश्लेषण विधि चुनें
+    output_fields:
+      what: आउटपुट कॉलम चुनें
+    technique:
+      what: एक विश्लेषण विधि चुनें
+    name:
+      what: रेसिपी को नाम दें
+    dataset:
+      what: एक डेटासेट चुनें
+    technique_fields:
+      what: आवश्यक कॉलम चुनें
+    output_unknown:
+      what: एक ज्ञात आउटपुट प्रकार चुनें
+    output_incompatible:
+      what: एक संगत आउटपुट प्रकार चुनें
+    output:
+      what: एक आउटपुट प्रकार चुनें
+  chip:
+    heading:
+      output: कौन सा आउटपुट?
+      technique: कौन सी विश्लेषण विधि?
+      columns: कौन से कॉलम?
+schema:
+  connection_and_table_required: PostgreSQL/MySQL स्रोतों के लिए connection_id और table_name आवश्यक हैं
+  connection_not_found: डेटाबेस कनेक्शन नहीं मिला या पहुँच अस्वीकृत
+  dataset_id_required: source_type=dataset के लिए dataset_id आवश्यक है
+  dataset_not_found: डेटासेट नहीं मिला या पहुँच अस्वीकृत
+  introspect_mysql_failed: 'MySQL का निरीक्षण करने में विफल: {error}'
+  introspect_postgresql_failed: 'PostgreSQL का निरीक्षण करने में विफल: {error}'
+  no_table_name: डेटासेट का कोई तालिका नाम नहीं है (अभी तक इनजेस्ट नहीं किया गया)
+  unsupported_source_type: 'असमर्थित source_type: {source_type}। dataset, postgresql, या mysql का उपयोग करें।'
+statistics:
+  anova_computation_failed: 'टू-वे एनोवा गणना विफल: {error}'
+  anova_needs_three_groups: वन-वे एनोवा के लिए 3 या अधिक समूह आवश्यक हैं ({n} मिले)। 2 समूहों के लिए स्वतंत्र टी-टेस्ट का उपयोग करें।
+  cache_cleared: कैश कुंजी '{key}' साफ़ की गई
+  cache_not_found: कैश कुंजी '{key}' नहीं मिली
+  column_must_be_numeric: स्तंभ '{col}' संख्यात्मक होना चाहिए
+  column_not_found: स्तंभ '{col}' नहीं मिला
+  computation_failed: 'सांख्यिकी गणना विफल: {error}'
+  compute_failed: 'सांख्यिकी गणना करने में विफल: {error}'
+  each_group_two_observations: प्रत्येक समूह में कम से कम 2 अवलोकन होने चाहिए
+  factor_column_not_found: कारक {factor} स्तंभ '{col}' नहीं मिला
+  group_column_required_anova: वन-वे एनोवा के लिए 3 या अधिक स्तरों वाला श्रेणीबद्ध समूह स्तंभ आवश्यक है
+  group_column_required_ttest: स्वतंत्र टी-टेस्ट के लिए ठीक दो स्तरों वाला श्रेणीबद्ध समूह स्तंभ आवश्यक है
+  group_fewer_than_two: समूह '{group}' में 2 से कम अवलोकन हैं
+  group_must_have_two_levels: समूह स्तंभ '{group}' में ठीक 2 स्तर होने चाहिए ({n} मिले)
+  need_five_observations_chi: कम से कम 5 पूर्ण अवलोकन आवश्यक हैं
+  need_observations_regression: कम से कम {n} पूर्ण अवलोकन आवश्यक हैं
+  need_ten_observations_anova: टू-वे एनोवा के लिए कम से कम 10 पूर्ण अवलोकन आवश्यक हैं
+  need_three_pairs: युग्मित टी-टेस्ट के लिए कम से कम 3 पूर्ण युग्म आवश्यक हैं
+  need_two_categories_chi: दोनों स्तंभों में कम से कम 2 श्रेणियाँ होनी चाहिए
+  need_two_numeric_correlation: सहसंबंध के लिए कम से कम 2 संख्यात्मक स्तंभ आवश्यक हैं
+  need_two_valid_numeric: कम से कम 2 मान्य संख्यात्मक स्तंभ आवश्यक हैं
+  no_valid_data_after_dropna: NaN हटाने के बाद कोई मान्य डेटा नहीं बचा
+  no_valid_numeric: कोई मान्य संख्यात्मक स्तंभ प्रदान नहीं किया गया
+  non_numeric_column: गैर-संख्यात्मक स्तंभ
+  not_computed: गणना नहीं की गई
+  select_dependent_independent: 'कम से कम 2 संख्यात्मक स्तंभ चुनें: पहला = आश्रित, शेष = स्वतंत्र'
+  select_dependent_var: एक संख्यात्मक आश्रित चर स्तंभ चुनें
+  select_one_numeric_ttest: स्वतंत्र टी-टेस्ट के लिए एक संख्यात्मक स्तंभ चुनें
+  select_two_categorical_chi: ठीक दो श्रेणीबद्ध स्तंभ चुनें
+  select_two_numeric_paired: युग्मित टी-टेस्ट के लिए ठीक दो संख्यात्मक स्तंभ चुनें
+  two_factors_required: टू-वे एनोवा के लिए दो कारक आवश्यक हैं
+system:
+  cache_cleanup_completed: 'कैश सफाई पूर्ण: {removed} प्रविष्टियाँ हटाई गईं'
+  hello_world: नमस्ते, दुनिया!
+user:
+  api_key_required: इस प्रदाता के लिए API कुंजी आवश्यक है
+  connection_name_exists: इस नाम से कनेक्शन पहले से मौजूद है
+  connection_not_found: कनेक्शन नहीं मिला
+  example_blocked: उदाहरण उपयोगकर्ता यह क्रिया नहीं कर सकते
+  internal_error: आंतरिक सर्वर त्रुटि
+  missing_fields: आवश्यक फ़ील्ड मौजूद नहीं हैं
+  provider_not_found: प्रदाता नहीं मिला
+  user_not_found: उपयोगकर्ता नहीं मिला
+  example_update_db: उदाहरण उपयोगकर्ता डेटाबेस कनेक्शन अपडेट नहीं कर सकते
+  fetch_failed: फ़ेच विफल
+  no_endpoint: इस प्रदाता के लिए कोई एंडपॉइंट कॉन्फ़िगर नहीं किया गया है।
+  api_key_required_fetch: इस प्रदाता के लिए API कुंजी आवश्यक है।
+  example_delete_db: उदाहरण उपयोगकर्ता डेटाबेस कनेक्शन हटा नहीं सकते
+  connection_timeout_local: कनेक्शन टाइमआउट। क्या {code} {baseUrl} पर चल रहा है?
+  unknown_provider: 'अज्ञात प्रदाता: {code}'
+  provider_returned: 'प्रदाता ने {status} लौटाया: {text}'
+  auto_create_default_detail: डेटासेट स्वतः निर्माण विफल रहा। डेटाबेस सर्वर अनुपलब्ध हो सकता है।
+  connection_timeout_remote: '{baseUrl} पर {code} के लिए कनेक्शन टाइमआउट'
+  example_create_db: उदाहरण उपयोगकर्ता डेटाबेस कनेक्शन नहीं बना सकते
+  no_models_returned: प्रदाता ने कोई मॉडल नहीं लौटाया; कुछ भी नहीं बदला गया।
+validation:
+  error: 'सत्यापन त्रुटि: {count} समस्या(एँ) पाई गईं'
+  password:
+    require_digit: पासवर्ड में कम से कम एक अंक होना चाहिए।
+    too_weak: पासवर्ड बहुत कमज़ोर है। कृपया एक मज़बूत पासवर्ड चुनें।
+    min_length: पासवर्ड कम से कम {min} वर्ण लंबा होना चाहिए।
+    require_uppercase: पासवर्ड में कम से कम एक बड़ा अक्षर होना चाहिए।
+    require_special: पासवर्ड में कम से कम एक विशेष वर्ण होना चाहिए।
+    require_lowercase: पासवर्ड में कम से कम एक छोटा अक्षर होना चाहिए।
+virtual:
+  execute_failed: 'निष्पादन विफल: {error}'
+  no_credentials_mysql: MySQL कनेक्शन {conn_id} के लिए कोई क्रेडेंशियल नहीं मिला
+  no_credentials_postgresql: PostgreSQL कनेक्शन {conn_id} के लिए कोई क्रेडेंशियल नहीं मिला
+  preview_failed: 'पूर्वावलोकन विफल: {error}'
+  validate:
+    no_sources: कोई स्रोत परिभाषित नहीं हैं
+    join_right_source_not_found: 'जॉइन {j_idx}: दायाँ स्रोत ''{right_alias}'' नहीं मिला'
+    dataset_not_found: 'स्रोत ''{alias}'': डेटासेट {dataset_id} नहीं मिला या पहुँच अस्वीकृत है'
+    connection_not_found: 'स्रोत ''{alias}'': कनेक्शन {conn_id} नहीं मिला या पहुँच अस्वीकृत है'
+    dataset_id_required: 'स्रोत ''{alias}'': डेटासेट स्रोत के लिए datasetId आवश्यक है'
+    join_left_source_not_found: 'जॉइन {j_idx}: बायाँ स्रोत ''{left_alias}'' नहीं मिला'
+    column_source_not_found: 'स्तंभ {c_idx}: स्रोत ''{src_alias}'' नहीं मिला'
+    connection_id_required: 'स्रोत ''{alias}'': {storage_type} स्रोत के लिए connectionId आवश्यक है'
+    join_column_not_found: 'जॉइन {j_idx}: स्रोत ''{alias}'' में स्तंभ ''{column}'' नहीं है'
+    output_column_not_found: 'स्तंभ {c_idx}: स्रोत ''{src_alias}'' में स्तंभ ''{column}'' नहीं है'
+  panel:
+    collapsed_required: पैनल की फ़ोल्डेड स्थिति सत्य या असत्य होनी चाहिए।
+  scoreboard:
+    output_columns:
+      what: परिणाम में कौन-से स्तंभ होने चाहिए?
+      needs: एक स्रोत, जिसके स्तंभ पढ़े जा चुके हैं।
+    columns:
+      needs_failed: '''{source}'' के स्तंभ पढ़े नहीं जा सके।'
+      what: '''{source}'' के अंदर क्या है?'
+      needs_empty: '''{source}'' में चुनने के लिए कोई स्तंभ नहीं हैं।'
+    joins:
+      needs: दो या अधिक स्रोत, जिनके स्तंभ पढ़े जा चुके हैं।
+      what: स्रोतों को कैसे जॉइन किया जाना चाहिए?
+    name:
+      what: इस डेटासेट को क्या नाम दिया जाना चाहिए?
+    sources:
+      what: यह डेटासेट किस तालिका से बनाया जाना चाहिए?
+    storage:
+      live: लाइव व्यू
+      what: क्या यह एक लाइव व्यू होना चाहिए, या एक सहेजी गई तालिका?
+      table: सहेजी गई तालिका
+  decision:
+    unknown_piece: '''{piece}'' ऐसा निर्णय नहीं है जिसे यह एंडपॉइंट लागू कर सकता है।'
+    invalid_value: '''{piece}'' निर्णय लागू नहीं किया जा सका: {error}'
+    missing_value: '''{piece}'' निर्णय के लिए एक मान आवश्यक है।'
+    model_failed: 'आपका चयन सहेज लिया गया। सहायक प्रतिक्रिया नहीं दे सका: {error}'
+    no_connection: आपका चयन सहेज लिया गया। सहायक प्रतिक्रिया नहीं दे सका क्योंकि कोई एआई कनेक्शन उपलब्ध नहीं है।
+    no_reply: आपका चयन सहेज लिया गया। सहायक ने बिना कोई उत्तर दिए अपने कार्य चक्र समाप्त कर लिए — इसे जारी रखने के लिए कहें, या ट्री में ड्राफ़्ट देखें।
+    applied: ऊपर दिए गए चयन का उपयोग करें।
+  column:
+    unknown_action: '''{action}'' कोई स्तंभ कार्रवाई नहीं है। टिक या अनटिक का उपयोग करें।'
+    missing_column: कोई स्तंभ नामित नहीं किया गया।
+    missing_source: 'एक स्तंभ को उसके स्रोत की आवश्यकता है: एक डेटासेट आईडी, या एक कनेक्शन और एक तालिका का नाम।'
+  join_suggestions:
+    invalid_sources: जॉइन सुझावों को स्रोतों की एक सूची की आवश्यकता है, जिसमें प्रत्येक का एक उपनाम और एक नाम हो ({error})।
+  save:
+    invalid_definition: 'यह डेटासेट सहेजा नहीं जा सकता: {errors}'
+  tool:
+    no_sources_yet: '''{alias}'' नामक कोई स्रोत नहीं है — ड्राफ़्ट में अभी तक कोई स्रोत नहीं है। पहले add_source कॉल करें।'
+    no_source: '''{alias}'' नामक कोई स्रोत नहीं है। इस ड्राफ़्ट के स्रोत: {aliases}।'
+virtual_chat:
+  chat_session_not_found: चैट सत्र नहीं मिला
+  connection_not_found: डेटाबेस कनेक्शन नहीं मिला या पहुँच अस्वीकृत है
+  introspection_failed: 'इंट्रोस्पेक्शन विफल: {error}'
+  llm_call_failed: 'LLM कॉल विफल: {error}'
+  llm_returned_error: LLM ने HTTP {status_code} लौटाया
+  save_draft_success: '✅ वर्चुअल डेटासेट ड्राफ़्ट के रूप में सहेजा गया: **{name}**।'
+  save_parse_error: '⚠️ डेटासेट सहेजा नहीं जा सका: {error}'
+  empty_response: मुझे समझ नहीं आ रहा कि इस पर कैसे उत्तर दूँ। क्या आप इसे दोबारा लिख सकते हैं या अधिक जानकारी दे सकते हैं?
+  save_failed: '⚠️ सहेजना विफल रहा: {error}'
+  save_no_sources: '⚠️ सहेजने में असमर्थ: कोई डेटा स्रोत इंट्रोस्पेक्ट नहीं किया गया। अपने पिछले संदेशों में ''products'' या ''orders'' जैसे टेबल नामों का उल्लेख करने का प्रयास करें।'
+  save_success: ✅ डेटासेट **{name}** सफलतापूर्वक सहेजा गया। आप इसे Existing Datasets सूची में पा सकते हैं। इसे परिष्कृत करने के लिए Edit का उपयोग करें या एक रूपांतर बनाने के लिए Clone का उपयोग करें।
+visualization_types:
+  name_and_slug_required: नाम और स्लग आवश्यक हैं
+  type_not_found: विज़ुअलाइज़ेशन प्रकार नहीं मिला
+  slug_already_exists: स्लग पहले से मौजूद है
+  internal_error: आंतरिक सर्वर त्रुटि
+  forbidden: निषिद्ध
+visualization_instances:
+  instance_not_found: इंस्टेंस नहीं मिला
+  viz_type_id_required: visualizationTypeId आवश्यक है
+  invalid_viz_type: अमान्य विज़ुअलाइज़ेशन प्रकार
+  invalid_instance_id: अमान्य इंस्टेंस id
+  internal_error: आंतरिक सर्वर त्रुटि
+  viz_type_not_found: विज़ुअलाइज़ेशन प्रकार नहीं मिला
+  no_rendered_output: कोई रेंडर किया गया आउटपुट उपलब्ध नहीं है
+  unauthorized: अनधिकृत
+ai_providers:
+  missing_id_or_enabled: id या enabled फ़्लैग गुम है
+  provider_not_found: प्रदाता नहीं मिला
+  internal_error: आंतरिक सर्वर त्रुटि
+  failed_to_update_provider: प्रदाता अपडेट करने में विफल
+  forbidden: निषिद्ध
+  failed_to_delete_provider: प्रदाता हटाने में विफल
+  unauthorized: अनधिकृत
+  missing_provider_id: प्रदाता id गुम है
+  invalid_provider_id: अमान्य प्रदाता आईडी।
+test_ai:
+  no_endpoint: इस प्रदाता के लिए कोई एंडपॉइंट कॉन्फ़िगर नहीं किया गया है।
+  internal_error: आंतरिक सर्वर त्रुटि
+  endpoint_v1_valid: '{baseUrl}/v1 पर एंडपॉइंट मान्य है।'
+  connection_failed: 'कनेक्शन विफल: {msg}'
+  api_key_required: '{name} के लिए API कुंजी आवश्यक है।'
+  responded_with_status: '{name} ने स्थिति {status} के साथ प्रतिक्रिया दी'
+  unknown_provider: 'अज्ञात प्रदाता: {provider}'
+  fetch_failed: फ़ेच विफल
+  server_reachable: '{baseUrl} पर {name} सर्वर पहुंच योग्य है।'
+  endpoint_valid: '{baseUrl} पर एंडपॉइंट मान्य है।'
+  connection_timeout_local: कनेक्शन टाइमआउट। क्या {name} {baseUrl} पर चल रहा है?
+ai:
+  database:
+    email_sent: रिपोर्ट सफलतापूर्वक ईमेल की गई
+filter_operator_required: फ़िल्टर ऑपरेशन के लिए एक ऑपरेटर आवश्यक है।
+columns_required: ऑपरेशन '{type}' के लिए columns फ़ील्ड आवश्यक है।
+invalid_target_type: 'अमान्य target_type: {target_type}। इनमें से एक होना चाहिए: {types}'
+filter_value_required: फ़िल्टर ऑपरेशन के लिए एक मान आवश्यक है।
+invalid_operation_type: 'अमान्य ऑपरेशन प्रकार: {type}। इनमें से एक होना चाहिए: {types}'
+invalid_fill_method: 'अमान्य fill_missing विधि: {method}। इनमें से एक होनी चाहिए: {methods}'
+column_required: ऑपरेशन '{type}' के लिए एक कॉलम आवश्यक है।
+invalid_encoding: 'अमान्य एन्कोडिंग: {encoding}। इनमें से एक होनी चाहिए: {types}'
+rename_new_name_required: कॉलम का नाम बदलने के ऑपरेशन के लिए नया नाम आवश्यक है।
+encode_column_required: एन्कोड ऑपरेशन के लिए एक कॉलम आवश्यक है।
+dataclean_chat:
+  empty_response: मैं प्रतिक्रिया उत्पन्न नहीं कर सका। कृपया पुनः प्रयास करें।
+  chat_session_not_found: डेटा सफाई चैट सत्र नहीं मिला
+  dataset_id_required: datasetId आवश्यक है
+  create_error: डेटा सफाई सत्र बनाने में विफल
+  message_required: संदेश आवश्यक है
+dataclean_tools:
+  no_rules_to_preview: पूर्वावलोकन के लिए कोई नियम नहीं
+  no_rules_to_apply: लागू करने के लिए कोई नियम नहीं

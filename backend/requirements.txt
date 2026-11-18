@@ -1,17 +1,17 @@
 # Statisticians Workbench — Python backend runtime dependencies
 #
 # This is the RUNTIME subset: the distributions imported by main.py and the
-# modules it reaches. It is deliberately shorter than the development
-# requirements, which also pin the test and tooling stack (scipy, statsmodels,
-# scikit-learn, tokenizers, tiktoken, huggingface_hub, ...). None of those are
-# imported by the running backend: the statistics under
-# src/routers/recipes/stats/ is dependency-free by design and is verified
-# against scipy golden values in the test suite, not at runtime.
+# modules it reaches, plus one used by an install-time script. It is
+# deliberately shorter than the development requirements, which also pin the
+# test and tooling stack (scipy, statsmodels, scikit-learn, tokenizers, tiktoken,
+# huggingface_hub, ...). None of those are imported by the running backend: the
+# statistics under src/routers/recipes/stats/ is dependency-free by design and is
+# verified against scipy golden values in the test suite, not at runtime.
 #
 # Every version below is the one the development environment runs, so a working
 # development install and this list agree.
 #
-# Two entries are here because a package's own rules do not cover them:
+# Four entries are here because a package's own rules do not cover them:
 #
 #   watchfiles     uvicorn ships it only in its "standard" extra, but main.py
 #                  starts uvicorn with reload=True, which needs it. Without it
@@ -22,6 +22,11 @@
 #   python-multipart
 #                  required by FastAPI for UploadFile/File/Form, which
 #                  src/routers/notebooks/router.py uses.
+#   PyYAML         not imported by the backend at all. It is needed by
+#                  backend/scripts/import_translations.py, which loads the
+#                  translation files; that script runs once per language at
+#                  install time, so the dependency belongs here rather than in
+#                  the application's own imports.
 #
 # Install with:  python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
 
@@ -43,6 +48,7 @@ PyJWT==2.13.0
 PyMySQL==1.2.0
 python-dotenv==1.2.2
 python-multipart==0.0.32
+PyYAML==6.0.3
 starlette==1.3.1
 uvicorn==0.49.0
 watchfiles==1.2.0

@@ -1,0 +1,1076 @@
+access.connected_in_ms: Connected in {elapsed}ms
+access.connection_deleted: Connection deleted
+access.connection_exists: Connection '{name}' already exists
+access.connection_failed: Connection failed
+access.connection_failed_detail: 'Connection failed: {detail}'
+access.connection_not_found: Connection not found
+access.connection_params_required: host, port, user and password are required
+access.connection_saved: Connection saved
+access.connection_unavailable: 'Could not connect to the Access database: {error}'
+access.db_pool_not_initialized: Database pool not initialized
+access.encryption_error: 'Encryption error: {error}'
+access.file_path_required: file_path is required
+access.invalid_port: Port must be an integer
+access.licence_required: Access database connections require a corporate licence
+access.name_and_path_required: name and file_path are required
+access.table_not_found: 'Table ''{table}'' not found: {error}'
+admin.already_full_admin: User is already a Full Admin
+admin.already_group_admin: User is already a Group Admin
+admin.cannot_delete_self: Cannot delete your own account
+admin.cannot_demote_full_admin: Cannot demote a Full Admin
+admin.cannot_demote_self: You cannot demote yourself
+admin.cannot_promote_example: Cannot promote an Example User
+admin.delete_error: Failed to delete user
+admin.demote_error: Failed to demote user
+admin.description_required: Description cannot be empty
+admin.example_blocked: Example users cannot perform admin actions
+admin.group_not_found: Group not found
+admin.group_users_load_error: Failed to load group users
+admin.groups_load_error: Failed to load groups
+admin.groups_stats_error: Failed to load group statistics
+admin.insufficient_permissions: Insufficient permissions for this action
+admin.invalid_group_id: Invalid group_id. Must be 00-99
+admin.invalid_id: Invalid id
+admin.invalid_upload_count: maxUploadCount must be a non-negative integer (0 for unlimited).
+admin.invalid_upload_size: maxUploadSizeMB must be a non-negative integer (0 for unlimited).
+admin.missing_fields: Missing required fields
+admin.missing_group_id: Missing group ID
+admin.missing_id: Missing id
+admin.missing_model_id: Missing model id
+admin.missing_provider_code: Missing providerCode parameter
+admin.missing_user_id: Missing userId
+admin.model_update_error: Failed to update model
+admin.models_load_error: Failed to load models
+admin.no_fields: No valid fields to update
+admin.no_group: User has no group assigned
+admin.not_group_admin: User is not a Group Admin
+admin.only_full_admin: Only Full Admins can perform this action
+admin.promote_error: Failed to promote user
+admin.provider_delete_error: Failed to delete provider
+admin.provider_not_found: Provider not found
+admin.provider_update_error: Failed to update provider
+admin.providers_load_error: Failed to load providers
+admin.slug_exists: Slug already exists
+admin.update_error: Failed to update user
+admin.user_load_error: Failed to load user
+admin.user_not_found: User not found
+admin.users_load_error: Failed to load users
+admin.viz_type_create_error: Failed to create visualization type
+admin.viz_type_delete_error: Failed to delete visualization type
+admin.viz_type_update_error: Failed to update visualization type
+admin.viz_types_load_error: Failed to load visualization types
+ai.database.email_sent: Report emailed successfully
+ai_providers.failed_to_delete_provider: Failed to delete provider
+ai_providers.failed_to_update_provider: Failed to update provider
+ai_providers.forbidden: Forbidden
+ai_providers.internal_error: Internal server error
+ai_providers.invalid_provider_id: Invalid provider id
+ai_providers.missing_id_or_enabled: Missing id or enabled flag
+ai_providers.missing_provider_id: Missing provider id
+ai_providers.provider_not_found: Provider not found
+ai_providers.unauthorized: Unauthorized
+ai_recipe.invalid_decision: Invalid decision.
+ai_recipe.llm_error: 'AI service error: {error}'
+ai_recipe.message_required: A message is required
+ai_recipe.session_name_required: A name is required
+api.admin.already_full_admin: User is already a Full Admin
+api.admin.already_group_admin: User is already a Group Admin
+api.admin.cannot_delete_self: Cannot delete your own account
+api.admin.cannot_demote_full_admin: Cannot demote a Full Admin
+api.admin.cannot_demote_self: You cannot demote yourself
+api.admin.cannot_promote_example: Cannot promote an Example User
+api.admin.create_user_error: Failed to create user
+api.admin.delete_error: Failed to delete user
+api.admin.demote_error: Failed to demote user
+api.admin.demote_success: User {name} has been demoted from Group Admin
+api.admin.description_required: Description cannot be empty
+api.admin.email_exists: Email already exists
+api.admin.example_blocked: Example users cannot perform admin actions
+api.admin.example_user_password_blocked: Example users' passwords cannot be set by
+  an administrator
+api.admin.field_not_owned: 'This field is not set on this page. {endpoint}. Offending:
+  {fields}'
+api.admin.group_users_load_error: Failed to load group users
+api.admin.groups_load_error: Failed to load groups
+api.admin.groups_stats_error: Failed to load group statistics
+api.admin.instance_exists: Cannot delete type because it has {count} associated instance(s).
+api.admin.instance_in_use: Cannot delete type because it has associated instances.
+api.admin.insufficient_permissions: Insufficient permissions for this action
+api.admin.invalid_admin_password: Admin password is incorrect
+api.admin.invalid_email: Invalid email format
+api.admin.invalid_group_id: Invalid group_id. Must be 00-99
+api.admin.invalid_id: Invalid id
+api.admin.invalid_upload_count: maxUploadCount must be a non-negative integer (0 for
+  unlimited).
+api.admin.invalid_upload_size: maxUploadSizeMB must be a non-negative integer (0 for
+  unlimited).
+api.admin.invalid_viz_type_field: Invalid visualization type field value
+api.admin.missing_fields: Missing required fields
+api.admin.missing_group_id: Missing group ID
+api.admin.missing_id: Missing id
+api.admin.missing_model_id: Missing model id
+api.admin.missing_user_id: Missing userId
+api.admin.model_not_found: Model not found
+api.admin.model_update_error: Failed to update model
+api.admin.models_load_error: Failed to load models
+api.admin.no_fields: No valid fields to update
+api.admin.no_group: User has no group assigned
+api.admin.not_group_admin: User is not a Group Admin
+api.admin.only_full_admin: Only Full Admins can perform this action
+api.admin.promote_error: Failed to promote user
+api.admin.promote_success: User {name} has been promoted to Group Admin
+api.admin.provider_delete_error: Failed to delete provider
+api.admin.provider_not_found: Provider not found
+api.admin.provider_update_error: Failed to update provider
+api.admin.providers_load_error: Failed to load providers
+api.admin.settings_demo_mode_requires_licence: Demo mode cannot be disabled without
+  a valid licence.
+api.admin.settings_demo_upload_count_limit: In demo mode, the default max upload count
+  must be between 1 and 5.
+api.admin.settings_demo_upload_size_limit: In demo mode, the default max upload size
+  must be between 1 and 5 MB.
+api.admin.settings_invalid_ai_timeout: The AI time limit must be a whole number of
+  seconds, at least 1
+api.admin.settings_invalid_connect_timeout: The default connect timeout must be a
+  whole number of seconds, at least 1 and at most {ceiling}
+api.admin.settings_invalid_email_sender: Invalid sender email address format
+api.admin.settings_invalid_email_timeout: Email verification timeout must be a positive
+  number (hours)
+api.admin.settings_invalid_grace_period: Registration grace period must be a positive
+  number (hours)
+api.admin.settings_invalid_max_registrations: Max registrations must be a positive
+  number or unlimited
+api.admin.settings_invalid_max_tokens: The output limit must be a whole number of
+  tokens, at least 1
+api.admin.settings_invalid_platform_upload_size: Platform max upload size must be
+  a non-negative integer (0 for unlimited).
+api.admin.settings_invalid_probe_timeout: The default test timeout must be a whole
+  number of seconds, at least 1 and at most {ceiling}
+api.admin.settings_invalid_public_url: Invalid public URL format
+api.admin.settings_invalid_registration_mode: Registration mode must be one of 0,
+  1, 2, or 4.
+api.admin.settings_invalid_slow_threshold: The slow-model limit must be a whole number
+  of seconds, at least 1
+api.admin.settings_invalid_temperature: Temperature must be a number between 0 and
+  2
+api.admin.settings_invalid_upload_count: Default max upload count must be a non-negative
+  integer (0 for unlimited).
+api.admin.settings_invalid_upload_size: Default max upload size must be a non-negative
+  integer (0 for unlimited).
+api.admin.settings_load_error: Failed to load global settings
+api.admin.settings_modify_forbidden: Only Full Admins can modify global settings
+api.admin.settings_not_found: Global settings not found
+api.admin.settings_save_error: Failed to save global settings
+api.admin.settings_view_forbidden: Only Full Admins can view global settings
+api.admin.slug_exists: Slug already exists
+api.admin.tuning_reset_error: The AI tuning defaults could not be reset
+api.admin.update_error: Failed to update user
+api.admin.user_load_error: Failed to load user
+api.admin.user_not_found: User not found
+api.admin.users_demo_upload_count_limit: In demo mode, the max upload count for a
+  user must be between 1 and 5.
+api.admin.users_demo_upload_size_limit: In demo mode, the max upload size for a user
+  must be between 1 and 5 MB.
+api.admin.users_load_error: Failed to load users
+api.admin.viz_type_create_error: Failed to create visualization type
+api.admin.viz_type_delete_error: Failed to delete visualization type
+api.admin.viz_type_not_found: Visualization type not found
+api.admin.viz_type_update_error: Failed to update visualization type
+api.admin.viz_types_load_error: Failed to load visualization types
+api.auth.email_already_verified: Email already verified
+api.auth.example_user_blocked: Password changes are disabled for example users
+api.auth.example_user_forgot_blocked: Password reset is disabled for example users
+api.auth.example_user_reset_blocked: Password reset is disabled for example users
+api.auth.internal_error: Internal server error
+api.auth.invalid_current_password: Current password is incorrect
+api.auth.invalid_token: Invalid or expired token
+api.auth.missing_email: Email required
+api.auth.missing_fields: Missing fields
+api.auth.not_authenticated: Not authenticated
+api.auth.token_expired: Token has expired
+api.auth.unauthorized: Unauthorized
+api.auth.user_not_found: User not found
+api.global_settings_load_error: Internal server error
+api.languages_load_error: Failed to load languages
+api.profile.fetch_failed: Failed to fetch profile
+api.profile.invalid_name: Name must be a string
+api.profile.name_required: Name is required
+api.profile.update_failed: Failed to update profile
+api.register.email_exists: Email already exists
+api.register.internal_error: Internal server error
+api.register.invalid_email: Invalid email format
+api.register.limit_reached: Registration limit reached (maximum {max_reg} users).
+api.register.missing_fields: Missing fields
+api.register.registration_disabled: Self-registration is disabled. Please contact
+  an administrator.
+api.register.settings_not_found: Global settings not found
+api.settings.example_blocked: Example users cannot edit settings
+api.settings.invalid_default_ai_connection: Invalid default AI connection
+api.settings.invalid_slow_threshold: The slow-model limit must be a whole number of
+  seconds, at least 1
+api.settings.load_failed: Failed to load settings
+api.settings.save_failed: Failed to save settings
+api.settings.user_not_found: User not found
+api.translations_load_error: Failed to load translations
+api.user.api_key_required: API key is required for this provider
+api.user.connect_timeout_exceeds_probe: The connect timeout ({connect}s) cannot be
+  longer than the test timeout ({probe}s) — a connection cannot be allowed to take
+  longer to establish than the whole test may run
+api.user.connection_id_required: Connection id required
+api.user.connection_name_exists: A connection with this name already exists
+api.user.connection_not_found: Connection not found
+api.user.discovery_complete: 'Discovered {seen} model(s): {created} new here, {refreshed}
+  already known, {pruned} no longer served.'
+api.user.example_blocked: Example users cannot perform this action
+api.user.example_create_ai: Example users cannot create AI connections
+api.user.example_delete_ai: Example users cannot delete AI connections
+api.user.example_update_ai: Example users cannot update AI connections
+api.user.internal_error: Internal server error
+api.user.invalid_connect_timeout: The connect timeout must be a whole number of seconds,
+  at least 1 and at most {ceiling}
+api.user.invalid_connection_id: Invalid connection id
+api.user.invalid_current_password: Current password is incorrect
+api.user.invalid_name: Name must be a string
+api.user.invalid_port: Port must be an integer
+api.user.invalid_probe_timeout: The test timeout must be a whole number of seconds,
+  at least 1 and at most {ceiling}
+api.user.invalid_test_state: 'Invalid test result "{state}". Allowed: {allowed}'
+api.user.missing_fields: Missing required fields
+api.user.model_not_found: Model "{model}" not found for provider "{provider}"
+api.user.model_not_served_by_connection: This connection does not serve "{model}".
+  Its models may have changed — refresh the connection, or choose another model.
+api.user.provider_not_found: Provider "{provider}" not found
+api.user.test_attribution_required: A test result must record who ran it
+api.user.test_budget_exhausted: The model returned nothing because it used its whole
+  output budget before reaching an answer. No capability verdict was recorded; the
+  duration was.
+api.user.test_connect_refused: Nothing is listening at that address — the server is
+  reachable but no service answered. Check the port and that the AI server is running.
+  No capability verdict was recorded; how long it took to fail was.
+api.user.test_connect_timeout: The endpoint did not accept a connection in time. The
+  host may be down, or a firewall may be dropping the request. No capability verdict
+  was recorded; how long it took to fail was.
+api.user.test_dns_failure: The endpoint's hostname could not be resolved. Check the
+  address for a typo, or for a name only this network can resolve. No capability verdict
+  was recorded; how long it took to fail was.
+api.user.test_http_status: 'The provider answered, and its answer was an error: {detail}.
+  No capability verdict was recorded; what the provider said is shown so the cause
+  is clear.'
+api.user.test_not_implemented: The test "{test}" is registered but has no probe yet
+api.user.test_other_failure: 'The model could not be reached, and the cause was not
+  one this system recognises. No capability verdict was recorded: {detail}'
+api.user.test_read_timeout: The model accepted the request but did not answer in time.
+  It may be too slow for this host — a large model on a CPU can take several minutes.
+  No capability verdict was recorded; how long it took to fail was.
+api.user.test_reason_required: A test result must record a reason
+api.user.test_tls_failure: The secure connection could not be established — the endpoint
+  may be plain http where https was expected, or its certificate may have expired.
+  No capability verdict was recorded; how long it took to fail was.
+api.user.tuning_connection_not_found: No such AI connection
+api.user.tuning_invalid_ai_timeout: The AI time limit must be a whole number of seconds,
+  at least 1
+api.user.tuning_invalid_max_tokens: The output limit must be a whole number of tokens,
+  at least 1
+api.user.tuning_invalid_temperature: Temperature must be a number between 0 and 2
+api.user.tuning_malformed_body: The request body is not valid JSON
+api.user.tuning_model_not_found: No such model
+api.user.tuning_nothing_to_update: Supply at least one of temperature, maxTokens or
+  timeoutSeconds
+api.user.unknown_test_id: 'Unknown test "{test}". Registered tests: {known}'
+api.user.user_not_found: User not found
+audio_presets.invalid_chat_type: 'Invalid chat type: {chat_type}. Must be one of:
+  {valid_types}'
+auth.account_deleted: This account has been deleted.
+auth.email_not_verified: Email not verified. Please check your inbox and SPAM folder.
+auth.example_user_blocked: Password functions are disabled for example users
+auth.example_user_forgot_blocked: Password reset is disabled for example users
+auth.example_user_reset_blocked: Password reset is disabled for example users
+auth.internal_error: Internal server error
+auth.invalid_credentials: Invalid credentials
+auth.invalid_current_password: Current password is incorrect
+auth.invalid_token: Invalid or expired token
+auth.invalid_token_error: 'Invalid token: {error}'
+auth.invalid_token_missing_user_id: 'Invalid token: missing user id'
+auth.login_invalid_credentials: Invalid email or password.
+auth.missing_email: Email required
+auth.missing_fields: Missing fields
+auth.password_changed: Password changed successfully
+auth.password_validation_failed: Password validation failed
+auth.reset_email_sent: Password reset email sent
+auth.token_expired: Token has expired
+auth.unauthorized: Unauthorized
+auth.user_not_found: User not found
+chat.ai_provider_error: 'AI provider error: {error}'
+chat.ai_repeat_loop: The AI model got stuck and couldn't finish responding. Please
+  try again.
+chat.ai_service_failed: The AI service failed to respond. Please try again.
+chat.ai_timeout: The AI model is taking too long to respond. Please try again.
+chat.connection_error: 'Connection error: {error}'
+chat.connection_not_found: AI connection not found or not accessible
+chat.delete_failed: 'Failed to delete chat: {error}'
+chat.deleted: Chat '{id}' deleted successfully
+chat.generate_title_failed: 'Failed to generate title: {error}'
+chat.get_failed: 'Failed to get chat: {error}'
+chat.internal_error: 'Internal server error: {error}'
+chat.list_failed: 'Failed to list chats: {error}'
+chat.not_found: Chat '{id}' not found
+chat.not_found_or_not_owned: Chat '{id}' not found or you do not own it
+chat.send_failed: 'Failed to send message: {error}'
+chat.timeout_out_of_range: The AI time limit must be between 1 and {max_seconds} seconds
+chat.title_updated: Chat title updated successfully
+chat.update_failed: 'Failed to update chat: {error}'
+column_required: Operation '{type}' requires a column
+columns_required: Operation '{type}' requires a columns field
+common.back: Back
+common.cancel: Cancel
+common.cannot_undo: This action cannot be undone.
+common.clear: Clear
+common.copy: Copy
+common.delete: Delete
+common.deleting: Deleting...
+common.dismiss: Dismiss
+common.edit: Edit
+common.generating: Generating...
+common.loading: Loading...
+common.next: Next
+common.restoring: Restoring...
+common.save: Save
+common.saving: Saving...
+common.sending: Sending...
+common.testing: Testing...
+common.unknown: Unknown
+common.uploading: Uploading...
+common.verifying: Verifying...
+common.view: View
+database.connection_failed: 'Failed to connect to database: {error}'
+database.connection_not_found: Database connection not found or not accessible
+database.decryption_failed: 'Failed to decrypt connection password: {error}'
+database.feature_required: This database type is not enabled by your licence.
+database.insert_failed: 'Database error: {error}'
+database.pool_not_initialized: Database pool not initialized
+database.query_failed: 'Database query failed: {error}'
+database.type_not_supported: Database type '{type}' is not yet supported
+dataclean_chat.chat_session_not_found: Data cleaning chat session not found
+dataclean_chat.create_error: Failed to create data cleaning session
+dataclean_chat.dataset_id_required: datasetId is required
+dataclean_chat.empty_response: I couldn't generate a response. Please try again.
+dataclean_chat.message_required: Message is required
+dataclean_tools.no_rules_to_apply: No rules to apply
+dataclean_tools.no_rules_to_preview: No rules to preview
+datasets.auto_create.connection_id_required: connectionId is required
+datasets.auto_create.connection_not_found: Connection not found
+datasets.auto_create.created: Datasets created
+datasets.auto_create.no_tables_discovered: No tables or views discovered. Check that
+  the database server is running and accessible.
+datasets.browse.columns_failed: 'Failed to get columns: {error}'
+datasets.browse.discover_failed: 'Failed to discover tables: {error}'
+datasets.browse.preview_failed: 'Failed to preview table: {error}'
+datasets.define.connection_details_not_found: Connection details not found
+datasets.define.connection_missing_db_note: 'Note: PostgreSQL returns this error for
+  missing databases AND for insufficient permissions. If the database exists, check
+  that the user has CONNECT permission on the database.'
+datasets.define.connection_not_found: Database connection not found or not accessible
+datasets.define.connection_required: connectionId is required
+datasets.define.connection_successful: Connection successful
+datasets.define.connection_test_failed: Database connection test failed
+datasets.define.connection_timed_out: Connection timed out after 15 seconds
+datasets.define.database_connection_failed: 'Failed to connect to database: {error}'
+datasets.define.dataset_created: Dataset '{name}' defined successfully
+datasets.define.invalid_source_type: sourceType must be 'table' or 'view'
+datasets.define.name_required: Dataset name is required
+datasets.define.permission_denied: 'Permission denied: User ''{user}'' does not have
+  access to table ''{table}''. Please grant SELECT permission.'
+datasets.define.preview_failed: 'Failed to read data from table ''{table}'': {error}'
+datasets.define.table_access_failed: 'Failed to access table ''{table}'': {error}'
+datasets.define.table_name_required: tableName is required
+datasets.define.table_not_found: Table/view '{table}' not found in database '{database}'
+datasets.define.verification_failed: 'Failed to verify table/view: {error}'
+datasets.delete.success: Dataset '{id}' deleted successfully
+datasets.describe.ai_connection_error: 'AI connection error: {error}'
+datasets.describe.description_generated: Description generated successfully for '{name}'
+datasets.describe.empty_description: Generated description is empty. Please check
+  the AI provider configuration.
+datasets.describe.generation_failed: 'Description generation failed: {error}'
+datasets.describe.timeout_out_of_range: The AI time limit must be between 1 and {max_seconds}
+  seconds
+datasets.example_blocked.create: Example users cannot create datasets
+datasets.example_blocked.delete: Example users cannot delete datasets
+datasets.example_blocked.update: Example users cannot update datasets
+datasets.list_error: Failed to load datasets
+datasets.not_found: Dataset '{id}' not found or not accessible
+datasets.not_found_2: Dataset not found
+datasets.not_owned: Dataset '{id}' not found or you do not own it
+datasets.not_owner: You can only edit your own datasets
+datasets.preparation.already_exists: A preparation rule with these operations already
+  exists ('{name}')
+datasets.preparation.duplicate_name: A preparation rule with this name already exists
+  for this dataset
+datasets.preparation.no_updates: No fields to update
+datasets.preparation.preview_failed: 'Failed to preview rule: {error}'
+datasets.preparation.rule_created: Preparation rule '{name}' created successfully
+datasets.preparation.rule_deleted: Preparation rule deleted successfully
+datasets.preparation.rule_in_use: 'This preparation rule is used by {count} recipe(s):
+  {names}. Delete the recipes first.'
+datasets.preparation.rule_not_found: Preparation rule '{id}' not found for this dataset
+datasets.preparation.rule_not_found_or_not_owned: Preparation rule not found or you
+  do not own it
+datasets.preparation.rule_updated: Preparation rule updated successfully
+datasets.preparation.schema_failed: 'Failed to read dataset schema: {error}'
+datasets.schema.connection_unreachable: 'Connection {connection_id} is unreachable:
+  {error}'
+datasets.schema.external_failed: 'Failed to get schema from external database: {error}'
+datasets.schema.from_preview: Schema derived from preview data (first 10 rows)
+datasets.schema.load_error: 'Could not load schema: {error}'
+datasets.schema.not_implemented: Schema discovery for this dataset type '{type}' is
+  not yet implemented
+datasets.schema.row_count_not_computed: Row count is not computed for a virtual dataset
+  without running the join.
+datasets.schema.table_missing: Table no longer exists. Please re-upload the dataset.
+datasets.share.error: Failed to update sharing
+datasets.share.toggled: Sharing for dataset '{id}' updated successfully
+datasets.transforms.already_exists: A transform with these operations already exists
+  ('{name}')
+datasets.transforms.clone_forbidden: You do not have access to clone this transform
+datasets.transforms.cloned: Transform cloned as '{name}'
+datasets.transforms.created: Transform '{name}' created successfully
+datasets.transforms.deleted: Transform deleted successfully
+datasets.transforms.duplicate_name: A transform with this name already exists for
+  this dataset
+datasets.transforms.in_use: 'This transform is used by {count} recipe(s): {names}.
+  Delete the recipes first.'
+datasets.transforms.no_updates: No fields to update
+datasets.transforms.not_accessible: Dataset '{id}' not found or not accessible
+datasets.transforms.not_found: Transform '{id}' not found for this dataset
+datasets.transforms.not_found_or_not_owned: Transform not found or you do not own
+  it
+datasets.transforms.not_owned: Dataset '{id}' not found or you do not own it
+datasets.transforms.updated: Transform updated successfully
+datasets.unknown_source: 'Unknown source type: {source_type}'
+datasets.unread.auth_failed: The database refused this account's credentials.
+datasets.unread.definition_incomplete: This source names neither a dataset nor a connection
+  table.
+datasets.unread.definition_too_deep: This dataset references itself more than five
+  levels deep.
+datasets.unread.incomplete: The check did not finish in time. Try again, or raise
+  the connection timeout.
+datasets.unread.no_database: That database does not exist on the server.
+datasets.unread.no_permission: This account cannot read that source.
+datasets.unread.schema_error: The source answered, but its columns could not be read.
+datasets.unread.unreachable: Could not reach this source. Check the host and port,
+  then try again.
+datasets.upload.dbf_field_unsupported: 'This .dbf file declares field types that cannot
+  be read: {types}'
+datasets.upload.dbf_memo_unsupported: This .dbf file contains memo fields. Their values
+  are stored in a separate file, which a single-file upload cannot carry.
+datasets.upload.error: Failed to upload dataset
+datasets.upload.file_processing_failed: 'Failed to process file: {error}'
+datasets.upload.limit_reached_count: Upload limit reached. Maximum {count} datasets
+  allowed.
+datasets.upload.limit_reached_size: Upload size limit exceeded. Maximum {size} MB
+  total storage.
+datasets.upload.success: Dataset '{name}' uploaded successfully
+datasets.upload.unsupported_file: 'Unsupported file type. Please upload one of: {extensions}'
+datasets.upload.user_not_found: User not found
+dbdesign.ai_skipped_message: 'AI analysis skipped — {count} issues found (limit: {limit}).
+  Review mechanical findings below, clean up the database, then re-run with AI.'
+dbdesign.ai_skipped_reason: 'This report contains mechanical analysis only. AI-augmented
+  analysis was skipped because the database generated {count} issues (limit: {limit}).
+  Review the mechanical findings below, clean up the database, then re-run with AI
+  for context-aware explanations, semantic insights, and normalisation suggestions.'
+dbdesign.analysis.data_types.add_check_constraint: Add a CHECK constraint or use an
+  ENUM type for '{column}' with limited valid values
+dbdesign.analysis.data_types.add_not_null: Add NOT NULL constraint to '{column}'
+dbdesign.analysis.data_types.allows_null: Column '{column}' allows NULL — consider
+  NOT NULL constraint
+dbdesign.analysis.data_types.set_max_length: Consider setting a max length for '{column}'
+  to prevent oversized data
+dbdesign.analysis.data_types.short_text_enum: Text column '{column}' has max length
+  of {max_len} — consider using ENUM or CHECK constraint
+dbdesign.analysis.data_types.unbounded_varchar: Unbounded VARCHAR column '{column}'
+dbdesign.analysis.indexing.missing_fk_index: Foreign key column '{column}' has no
+  index
+dbdesign.analysis.naming.mixed_case_column: Column '{column}' uses mixed case — snake_case
+  recommended
+dbdesign.analysis.naming.mixed_case_table: Table name '{table}' uses mixed case —
+  snake_case recommended
+dbdesign.analysis.naming.rename_column_reserved: Rename column '{column}' to avoid
+  SQL reserved word conflicts
+dbdesign.analysis.naming.rename_column_snake_case: Rename column to lowercase snake_case
+  for consistency
+dbdesign.analysis.naming.rename_table_reserved: Rename table '{table}' to avoid SQL
+  reserved word conflicts
+dbdesign.analysis.naming.rename_table_snake_case: Rename table to lowercase snake_case
+  for consistency
+dbdesign.analysis.naming.reserved_keyword_column: Column '{column}' is a reserved
+  SQL keyword
+dbdesign.analysis.naming.reserved_keyword_table: Table name '{table}' is a reserved
+  SQL keyword
+dbdesign.analysis.normalisation.create_separate_table: Create a separate table for
+  '{base}' values with a FK to {table}
+dbdesign.analysis.normalisation.multiple_address: Multiple address-related columns
+  ({count}) detected
+dbdesign.analysis.normalisation.repeating_group: 'Repeating group detected: {columns}'
+dbdesign.analysis.normalisation.separate_address_table: Consider creating a separate
+  address table with FK to {table}
+dbdesign.analysis.relationships.add_fk: Consider adding a FK constraint if '{column}'
+  references another table
+dbdesign.analysis.relationships.missing_fk: Column '{column}' looks like a foreign
+  key but has no FK constraint
+dbdesign.analysis.semistructured.controlled_vocab: Column {column} contains a controlled
+  vocabulary of {count} distinct values
+dbdesign.analysis.semistructured.create_ref_table: Create a reference table for {column}
+  values to normalize the {table} table
+dbdesign.analysis_cancelled: Analysis stream cancelled (client disconnected)
+dbdesign.analysis_complete: Analysis complete
+dbdesign.analyze_error: 'Failed to analyze database: {error}'
+dbdesign.connection_error: 'Failed to connect to database: {error}'
+dbdesign.description: Analyze and improve your database design using AI.
+dbdesign.email_pdf.invalid_body: Invalid request body
+dbdesign.email_pdf.no_email: No email address found for your account
+dbdesign.email_pdf.send_failed: Failed to email the report. Please try again.
+dbdesign.invalid_token: Invalid token
+dbdesign.llm.empty_content: LLM returned empty content
+dbdesign.llm.http_error: LLM returned HTTP {status_code}
+dbdesign.llm.no_ai_provider: No AI provider configured. Connect an AI provider in
+  Settings → AI Connections.
+dbdesign.llm.no_model: No AI model configured. Set a default model on the AI connection
+  or pass an explicit model.
+dbdesign.llm.timeout: LLM request timed out after {timeout_seconds}s
+dbdesign.llm.unknown_error: Unknown LLM error
+dbdesign.no_connection: No database connection available. Please connect to a database
+  first.
+dbdesign.not_implemented: This feature is coming soon.
+dbdesign.pdf.ai_disclaimer: AI-generated analysis — review before applying to production.
+dbdesign.pdf.ai_skipped_warning: AI Analysis Skipped
+dbdesign.pdf.categories: Categories
+dbdesign.pdf.code_systems: Code Systems
+dbdesign.pdf.code_systems_label: Detected Code Systems
+dbdesign.pdf.col_default: Default
+dbdesign.pdf.col_name: Column
+dbdesign.pdf.col_nullable: Nullable
+dbdesign.pdf.col_pk: PK
+dbdesign.pdf.col_type: Type
+dbdesign.pdf.column_meanings_label: Column Meanings
+dbdesign.pdf.columns: Columns
+dbdesign.pdf.confidence: Confidence
+dbdesign.pdf.confidence_label: Confidence
+dbdesign.pdf.domain_label: ISIC Domain Classifications
+dbdesign.pdf.evidence_label: Evidence
+dbdesign.pdf.header: Database Design Analysis Report
+dbdesign.pdf.health_score_label: 'Database Health Score: {score}/100'
+dbdesign.pdf.health_score_subtitle: Overall database health assessed by Schema AI.
+  0 = critical structural problems, 100 = production-ready.
+dbdesign.pdf.health_score_title: Health Score
+dbdesign.pdf.high: High
+dbdesign.pdf.implicit_relationships_label: Implicit Relationships
+dbdesign.pdf.integration_subtitle: Implicit relationships, research capabilities,
+  and missing dimensions detected by Integration AI.
+dbdesign.pdf.integration_title: AI Integration Findings
+dbdesign.pdf.issues_count: Issues ({count})
+dbdesign.pdf.issues_found: Issues Found
+dbdesign.pdf.low: Low
+dbdesign.pdf.medium: Medium
+dbdesign.pdf.missing_dimensions_label: Missing Dimensions
+dbdesign.pdf.no: 'NO'
+dbdesign.pdf.none: None
+dbdesign.pdf.normalisation_title: Normalisation Suggestions ({count})
+dbdesign.pdf.page: Page {current}/{total}
+dbdesign.pdf.partial_label: Partial
+dbdesign.pdf.pk: PK
+dbdesign.pdf.proposed_ddl_label: Proposed DDL
+dbdesign.pdf.proposed_table: Proposed table
+dbdesign.pdf.rationale_label: Rationale
+dbdesign.pdf.relationship_label: Relationship
+dbdesign.pdf.research_capabilities_label: Research Capabilities
+dbdesign.pdf.risk_breakdown: Risk Breakdown
+dbdesign.pdf.rows: Rows
+dbdesign.pdf.schema_title: Schema ({count} tables)
+dbdesign.pdf.semantic_subtitle: AI-inferred column meanings, ISIC domain classifications,
+  and code system detections.
+dbdesign.pdf.semantic_title: AI Semantic Analysis
+dbdesign.pdf.semi_structured_title: Semi-Structured Data Analysis ({count} columns)
+dbdesign.pdf.subtitle: 'Database: {db_name} ({db_type}) | Connection: {conn_name}
+  (ID: {conn_id})'
+dbdesign.pdf.summary: Summary
+dbdesign.pdf.supported_label: Supported
+dbdesign.pdf.table_purposes_label: Table Purposes
+dbdesign.pdf.tables: Tables
+dbdesign.pdf.title: Database Design Analysis
+dbdesign.pdf.top_actions_label: Top Priority Actions
+dbdesign.pdf.top_keywords: Top keywords
+dbdesign.pdf.top_recommendations: Top Recommendations
+dbdesign.pdf.unsupported_label: Not Supported
+dbdesign.pdf.value: Value
+dbdesign.pdf.yes: 'YES'
+dbdesign.pdf_error: 'Failed to generate PDF: {error}'
+dbdesign.question_required: Question is required
+dbdesign.rag_error: 'RAG query failed: {error}'
+dbdesign.rag_not_available: RAG search is only available for PostgreSQL databases.
+  MySQL text search is planned for a future release.
+dbdesign.report_data_required: Report data is required
+dbdesign.schema_error: 'Failed to extract schema: {error}'
+dbdesign.schema_error_2: 'Failed to decrypt database password: {error}'
+dbdesign.stream_ai_done: 'AI analysis complete — status: {status}'
+dbdesign.stream_ai_integration_done: 'Integration AI: {relationships} relationships,
+  {capabilities} capabilities'
+dbdesign.stream_ai_integration_start: 'Integration AI: detecting relationships...'
+dbdesign.stream_ai_schema_done: 'Schema AI: health score {score}/100'
+dbdesign.stream_ai_schema_start: 'Schema AI: analysing {tables} tables...'
+dbdesign.stream_ai_semantic_done: 'Semantic AI: {columns} column meanings, {domains}
+  ISIC domains'
+dbdesign.stream_ai_semantic_start: 'Semantic AI: analysing {tables} tables...'
+dbdesign.stream_ai_start: Starting AI analysis — 3 specialists in parallel...
+dbdesign.stream_analysis_failed: 'Analysis failed: {error}'
+dbdesign.stream_connected: 'Connected to {db_type}: {db_name}'
+dbdesign.stream_connecting: Connecting to database...
+dbdesign.stream_extracting_schema: Extracting schema from {db_type}...
+dbdesign.stream_mechanical_done: 'Mechanical analysis: {count} issues found'
+dbdesign.stream_mechanical_start: Running mechanical analysis...
+dbdesign.stream_normalisation_done: 'Normalisation: {count} suggestions'
+dbdesign.stream_normalisation_skipped: 'Normalisation: skipped ({error})'
+dbdesign.stream_normalisation_start: Generating normalisation suggestions...
+dbdesign.stream_normalisation_timeout: 'Normalisation: timed out after 90s'
+dbdesign.stream_schema_done: 'Schema extracted: {tables} tables, {columns} columns'
+dbdesign.stream_semistructured_start: Analysing semi-structured columns...
+dbdesign.stream_unsupported_type: 'Unsupported database type: {db_type}'
+dbdesign.title: Database Design Assistant
+dbdesign.unsupported_type: Only PostgreSQL, MySQL, MS SQL Server, and Microsoft Access
+  databases are supported
+dbdesign.unsupported_type_2: Only PostgreSQL, MySQL, and MS SQL Server databases are
+  supported
+encode_column_required: Encode operation requires a column
+error.ai.call_failed: 'AI call failed: {error}'
+error.connection.connect_failed: 'MySQL connection failed: {error}'
+error.connection.decryption_failed: 'Failed to decrypt connection password: {error}'
+error.connection.failed: 'Failed to connect to database: {error}'
+error.connection.query_failed: 'Failed to query table/view ''{table}'': {error}'
+error.connection.query_failed_2: 'Failed to execute compiled SQL: {error}'
+error.connection.query_failed_3: 'PostgreSQL query failed: {error}'
+error.connection.query_failed_4: 'MySQL query failed: {error}'
+error.connection.query_failed_5: 'MSSQL query failed: {error}'
+error.connection.query_failed_6: 'Access query failed: {error}'
+error.connection.query_failed_7: 'Database query failed: {error}'
+error.connection.type_not_supported: Database type '{type}' is not yet supported
+error.connection.type_not_supported_2: Database type '{type}' is not yet supported
+  for schema discovery
+error.connection.type_not_supported_3: 'Unsupported database type: {type}'
+error.database.insert_failed: 'Database error: {error}'
+error.database.pool_not_initialized: Database pool not initialized
+error.dataset.delete_failed_2: 'Failed to delete dataset: {error}'
+error.dataset.load_failed: 'Failed to load dataset: {error}'
+error.dataset.load_failed_2: 'Failed to load data: {error}'
+error.dataset.load_failed_3: Virtual dataset '{id}' has no SQL definition
+error.dataset.load_failed_4: 'Failed to load virtual dataset ''{id}'': {error}'
+error.dataset.not_found: Dataset '{id}' not found or not accessible
+error.dataset.not_found_2: Dataset '{id}' not found
+error.dataset.not_found_3: 'Dataset not found or not accessible: {error}'
+error.dataset.not_found_4: Dataset '{id}' not found or not accessible
+error.dataset.not_found_5: Dataset '{id}' not found
+error.dataset.not_found_or_not_owned: Dataset '{id}' not found or you do not own it
+error.dataset.table_missing: Table '{table}' does not exist
+error.dataset.unknown_source: 'Unknown source type: {source_type}'
+error.define.connection_not_found: Database connection not found or not accessible
+error.define.connection_not_found_2: Connection not found or not accessible
+error.define.dataset_creation_failed: 'Failed to create dataset record: {error}'
+error.describe.ai_connection_error: 'AI connection error: No connection available'
+error.describe.ai_connection_error_2: 'AI connection error: Failed to decrypt API
+  key'
+error.execution.cannot_cancel: Cannot cancel an execution that is already {status}
+error.groups.invalid_group_id: Invalid group_id. Must be 00-99
+error.preparation.rule_not_found: Preparation rule '{id}' not found for this dataset
+error.preparation.rule_not_found_2: Preparation rule '{id}' not found
+execution.executing_stage: 'Executing stage: {stage}'
+execution.loaded_rows: Loaded {rows} rows, {columns} columns
+execution.loading_dataset: Loading dataset...
+execution.not_found: Execution not found
+execution.starting_analysis: Starting analysis stages...
+filter_operator_required: Filter operation requires an operator
+filter_value_required: Filter operation requires a value
+groups.admin_required: Admin access required
+groups.cannot_delete_self: Cannot delete your own account
+groups.description_required: Description cannot be empty
+groups.insufficient_permissions: Insufficient permissions to manage groups
+groups.invalid_group_id: Invalid user_group. Must be 00-99
+groups.missing_id: Missing resource id
+groups.not_authorized: Not authorized to view this user's group
+groups.not_found: Group '{id}' not found
+groups.resource_not_found: Resource not found
+groups.update_failed: Failed to update group
+groups.update_success: Group '{id}' description updated
+groups.user_not_found: User not found
+groups.user_updated: User's group updated successfully
+invalid_encoding: 'Invalid encoding: {encoding}. Must be one of: {types}'
+invalid_fill_method: 'Invalid fill_missing method: {method}. Must be one of: {methods}'
+invalid_operation_type: 'Invalid operation type: {type}. Must be one of: {types}'
+invalid_target_type: 'Invalid target_type: {target_type}. Must be one of: {types}'
+licence.delete_failed: 'Failed to delete licence file: {error}'
+licence.delete_success: Licence removed. Running in open-source mode.
+licence.install_success: Licence installed successfully.
+licence.missing_content: Missing 'content' field
+licence.no_file_to_delete: No licence file to delete — already in open-source mode.
+licence.write_failed: 'Failed to write licence file: {error}'
+notebooks.cells_not_list: 'Invalid notebook format: ''cells'' is not a list'
+notebooks.delete_error: 'Failed to delete import: {error}'
+notebooks.example_blocked: Example users cannot import notebooks.
+notebooks.example_blocked_2: Example users cannot modify notebook sharing.
+notebooks.example_blocked_3: Example users cannot delete notebooks.
+notebooks.file_too_large: Notebook file is too large. Maximum size is {max_size} MB.
+notebooks.import_failed: 'Notebook import failed: {error}'
+notebooks.import_failed_2: 'Failed to list imports: {error}'
+notebooks.import_failed_3: Import not found
+notebooks.import_failed_4: 'Failed to fetch import: {error}'
+notebooks.invalid_format_2: Invalid notebook format. Only .ipynb files are accepted.
+notebooks.invalid_json: 'Invalid JSON: {error}'
+notebooks.missing_cells: 'Invalid notebook format: missing ''cells'' key'
+notebooks.no_connection: Please select a database connection.
+notebooks.no_dataframes: No DataFrames found in this notebook
+notebooks.no_db_rights: This connection does not have database creation rights.
+notebooks.no_table_rights: This connection cannot create tables — import denied.
+notebooks.share_error: Only the owner can change sharing settings.
+notebooks.share_error_2: 'Failed to update sharing: {error}'
+notebooks.system_db_blocked: Cannot import into system database '{db}'. Please use
+  a different database or create a new one.
+notebooks.too_many_cells: 'Too many cells ({count}). Max: {max_cells}'
+notebooks.unknown_error: Unknown error
+notebooks.untitled: Untitled
+notebooks_storage.failed_create_table: 'Failed to create table {table}: {error}'
+notebooks_storage.failed_create_table_mssql: 'Failed to create table: {error}'
+notebooks_storage.no_connection_details: No connection details provided
+notebooks_storage.no_connection_details_short: No connection details
+notebooks_storage.no_data_pool: Data database pool is not initialised
+notebooks_storage.unsupported_storage_type: 'Unsupported storage type: {type}'
+rag.ai_provider_error: 'AI provider error: {error}'
+rag.no_ai_provider: Found {count} matching records. (No AI provider configured for
+  natural-language answers.)
+rag.no_matches: No matching text found in the database for your question. Try rephrasing
+  or selecting a different data source.
+rag.no_tables: No tables found in the schema to search.
+recipes.ai_session.create_error: Failed to create AI recipe session
+recipes.ai_session.delete_error: Failed to delete AI recipe session
+recipes.ai_session.load_error: Failed to load AI recipe session
+recipes.ai_session.not_found: AI recipe session not found
+recipes.ai_session.save_error: Failed to save recipe from AI session
+recipes.ai_session.unauthorized: You do not have access to this AI recipe session
+recipes.chip.heading.columns: Which columns?
+recipes.chip.heading.output: Which output?
+recipes.chip.heading.technique: Which analysis method?
+recipes.column_type.categorical: categorical
+recipes.column_type.numeric: numeric
+recipes.columns_required: Please select at least one column
+recipes.create_success: Recipe '{name}' created successfully
+recipes.data_selection_error: 'Data selection failed: {error}'
+recipes.dataset_not_found: Dataset not found
+recipes.dataset_required: Please select a dataset
+recipes.delete_error: 'Failed to delete recipe: {error}'
+recipes.delete_success: Recipe '{id}' deleted successfully
+recipes.distribution_no_columns: Distribution chart requires at least one column
+recipes.execute_error: 'Failed to execute recipe: {error}'
+recipes.execution.error: 'Recipe execution error: {error}'
+recipes.execution.preparation_error: 'Preparation stage failed: {error}'
+recipes.execution.preparation_failed: Preparation stage failed
+recipes.execution.unknown_stage: 'Unknown stage type: {stage_type}'
+recipes.execution_completed: Execution completed successfully
+recipes.execution_failed: Execution failed
+recipes.execution_load_error: 'Failed to load execution: {error}'
+recipes.execution_not_found: Execution '{id}' not found
+recipes.executions_load_error: 'Failed to load executions: {error}'
+recipes.field_label.categoryColumn: Category column (labels)
+recipes.field_label.columns: Columns
+recipes.field_label.dependentColumn: Dependent / outcome column
+recipes.field_label.factorColumn: Factor column (grouping variable)
+recipes.field_label.factorColumn2: Second factor column (grouping variable)
+recipes.field_label.independentColumns: Independent / predictor columns
+recipes.field_label.responseColumn: Response column (numeric measurement)
+recipes.field_label.responseColumn2: Second response column (paired measurement)
+recipes.field_label.xColumn: X-axis column
+recipes.field_label.yColumn: Y-axis column
+recipes.histogram_no_columns: Histogram requires at least one column
+recipes.histogram_numeric: Histogram requires a numeric column
+recipes.invalid_stage: Invalid stage for recipe
+recipes.invalid_stage_type: 'Invalid stage type: {type}. Must be one of: {types}'
+recipes.load_datasets_error: 'Failed to load datasets: {error}'
+recipes.load_error: 'Failed to load recipes: {error}'
+recipes.name_required: Recipe name is required
+recipes.no_columns_exist: None of the selected columns exist in the dataset
+recipes.no_dataset: No dataset associated with this recipe
+recipes.no_stages: Recipe must have at least one stage
+recipes.no_updates: No fields to update
+recipes.not_found: Recipe '{id}' not found
+recipes.not_owned: Recipe '{id}' not found or you do not own it
+recipes.preparation.all_rules_failed: 'All rules failed: {errors}'
+recipes.preparation.no_db_pool: Database pool not available for preparation stage
+recipes.preparation.rule_failed: 'Rule ''{rule_id}'': {error}'
+recipes.preparation.rule_not_found: Rule '{rule_id}' not found
+recipes.preparation.rules_applied: Applied {count} preparation rules
+recipes.requirement.anova_one_way: 1 categorical column (factor) and 1 numeric column
+  (response)
+recipes.requirement.anova_two_way: 2 categorical columns (two factors) and 1 numeric
+  column (response)
+recipes.requirement.area: 2 numeric columns (x and y)
+recipes.requirement.bar: 1 categorical column (x-axis) and 1 numeric column (y-axis)
+recipes.requirement.chi_square: 2 categorical columns
+recipes.requirement.correlation: at least 2 numeric columns
+recipes.requirement.descriptive: at least 1 numeric column
+recipes.requirement.distribution: 1 numeric column
+recipes.requirement.donut: 1 categorical column (labels)
+recipes.requirement.hbar: 1 categorical column (y-axis) and 1 numeric column (x-axis)
+recipes.requirement.histogram: 1 numeric column (x-axis)
+recipes.requirement.line: 2 numeric columns (x and y)
+recipes.requirement.linear_regression: at least 2 numeric columns (predictors and
+  outcome)
+recipes.requirement.none: no output required
+recipes.requirement.pie: 1 categorical column (labels)
+recipes.requirement.scatter: 2 numeric columns (x and y)
+recipes.requirement.t_test_independent: 1 categorical column (for groups) and 1 numeric
+  column (to compare)
+recipes.requirement.t_test_paired: 2 numeric columns (paired measurements)
+recipes.requirement.table: any columns
+recipes.result_type.numeric: numeric
+recipes.result_type.tabular: tabular
+recipes.scatter_two_columns: Scatter plot requires at least two columns
+recipes.scatter_two_numeric: Scatter plot requires two numeric columns
+recipes.schema_error: 'Failed to load column schema: {error}'
+recipes.scoreboard.dataset.what: Select a dataset
+recipes.scoreboard.name.what: Name the recipe
+recipes.scoreboard.output.what: Choose an output type
+recipes.scoreboard.output_fields.what: Choose the output columns
+recipes.scoreboard.output_incompatible.what: Choose a compatible output type
+recipes.scoreboard.output_unknown.what: Choose a known output type
+recipes.scoreboard.technique.what: Choose an analysis method
+recipes.scoreboard.technique_fields.what: Choose the required columns
+recipes.scoreboard.technique_unknown.what: Choose a known analysis method
+recipes.share.disabled: Recipe is now private
+recipes.share.enabled: Recipe shared successfully
+recipes.stage_not_implemented: '{stage_type} stage coming soon'
+recipes.technique_anova_one_way: One-way ANOVA
+recipes.technique_anova_two_way: Two-way ANOVA
+recipes.technique_chi_square: Chi-square Test
+recipes.technique_correlation: Correlation Matrix
+recipes.technique_descriptive: Descriptive Statistics
+recipes.technique_linear_regression: Linear Regression
+recipes.technique_t_test_independent: Independent t-test
+recipes.technique_t_test_paired: Paired t-test
+recipes.transforms.connect_success: Transform connected to recipe
+recipes.transforms.dataset_mismatch: Transform '{id}' does not belong to dataset '{dataset_id}'
+recipes.transforms.disconnect_success: Transform disconnected from recipe
+recipes.transforms.load_error: Failed to load connected transforms
+recipes.transforms.not_found: Transform '{id}' not found or does not belong to this
+  recipe's dataset
+recipes.unknown_stage: 'Unknown stage type: {stage_type}'
+recipes.unsupported_chart_type: 'Unsupported chart type: {chart_type}'
+recipes.update_error: 'Failed to update recipe: {error}'
+recipes.update_success: Recipe '{id}' updated successfully
+recipes.validation.algorithm_required: No analysis method is selected. Choose one
+  in the analysis panel — a recipe needs a statistics stage with an algorithm.
+recipes.validation.failed: 'Recipe validation failed:
+
+  {errors}'
+recipes.validation.incompatible_algo_output: 'Analysis ''{algo}'' produces {result_type}
+  results and cannot be displayed as a ''{output}'' chart. Change the output type
+  to one compatible with ''{algo}'': {options}.'
+recipes.validation.insufficient_columns_algo: 'This dataset doesn''t have the right
+  column types for ''{algo}'' ({requirement}). Dataset has: {columns}. Choose a dataset
+  with {requirement}, or switch to: {options}.'
+recipes.validation.insufficient_columns_output: 'This dataset doesn''t have the right
+  column types for ''{output}'' ({requirement}). Dataset has: {columns}. Choose a
+  dataset with {requirement}, or switch to: {options}.'
+recipes.validation.missing_algo_field: Analysis '{algo}' is missing its '{field}'
+  setting ({label}). Select a column for '{field}' in the analysis panel.
+recipes.validation.missing_output_field: Output '{output}' is missing its '{field}'
+  setting ({label}). Select a column for '{field}' in the output panel.
+recipes.validation.unknown_algorithm: '''{type}'' is not a recognised analysis method.
+  Choose one of: {options}.'
+recipes.validation.unknown_columns: 'The {stage} stage references column(s) ''{columns}''
+  that don''t exist in this dataset. Available columns: {available}. Select from the
+  available ones.'
+recipes.validation.unknown_field: '''{field}'' is not a recognised setting for ''{type}''.
+  Recognised settings: {options}.'
+recipes.validation.unknown_output: '''{type}'' is not a recognised output type. Choose
+  one of: {options}.'
+recipes.validation.wrong_column_type: Column '{column}' must be {expected} for '{field}'
+  ({label}).
+recipes.visualisation_columns_required: At least one column is required for visualisation
+recipes.visualisation_error: 'Visualisation failed: {error}'
+recipes.visualisation_generated: Visualisation generated successfully
+rename_new_name_required: Rename column operation requires a new name
+schema.connection_and_table_required: connection_id and table_name are required for
+  PostgreSQL/MySQL sources
+schema.connection_not_found: Database connection not found or access denied
+schema.dataset_id_required: dataset_id is required for source_type=dataset
+schema.dataset_not_found: Dataset not found or access denied
+schema.introspect_mysql_failed: 'Failed to introspect MySQL: {error}'
+schema.introspect_postgresql_failed: 'Failed to introspect PostgreSQL: {error}'
+schema.no_table_name: Dataset has no table name (not yet ingested)
+schema.unsupported_source_type: 'Unsupported source_type: {source_type}. Use dataset,
+  postgresql, or mysql.'
+statistics.anova_computation_failed: 'Two-way ANOVA computation failed: {error}'
+statistics.anova_needs_three_groups: One-way ANOVA requires 3 or more groups (found
+  {n}). For 2 groups, use the independent t-test.
+statistics.cache_cleared: Cache key '{key}' cleared
+statistics.cache_not_found: Cache key '{key}' not found
+statistics.column_must_be_numeric: Column '{col}' must be numeric
+statistics.column_not_found: Column '{col}' not found
+statistics.computation_failed: 'Statistics computation failed: {error}'
+statistics.compute_failed: 'Failed to compute statistics: {error}'
+statistics.each_group_two_observations: Each group must have at least 2 observations
+statistics.factor_column_not_found: Factor {factor} column '{col}' not found
+statistics.group_column_required_anova: A categorical group column with 3 or more
+  levels is required for one-way ANOVA
+statistics.group_column_required_ttest: A categorical group column with exactly two
+  levels is required for independent t-test
+statistics.group_fewer_than_two: Group '{group}' has fewer than 2 observations
+statistics.group_must_have_two_levels: Group column '{group}' must have exactly 2
+  levels (found {n})
+statistics.need_five_observations_chi: Need at least 5 complete observations
+statistics.need_observations_regression: Need at least {n} complete observations
+statistics.need_ten_observations_anova: Need at least 10 complete observations for
+  two-way ANOVA
+statistics.need_three_pairs: Need at least 3 complete pairs for paired t-test
+statistics.need_two_categories_chi: Both columns need at least 2 categories
+statistics.need_two_numeric_correlation: Need at least 2 numeric columns for correlation
+statistics.need_two_valid_numeric: Need at least 2 valid numeric columns
+statistics.no_valid_data_after_dropna: No valid data after dropping NaN
+statistics.no_valid_numeric: No valid numeric columns provided
+statistics.non_numeric_column: Non-numeric column
+statistics.not_computed: Not computed
+statistics.select_dependent_independent: 'Select at least 2 numeric columns: first
+  = dependent, remaining = independent'
+statistics.select_dependent_var: Select one numeric dependent variable column
+statistics.select_one_numeric_ttest: Select one numeric column for the independent
+  t-test
+statistics.select_two_categorical_chi: Select exactly two categorical columns
+statistics.select_two_numeric_paired: Select exactly two numeric columns for the paired
+  t-test
+statistics.two_factors_required: Two factors are required for two-way ANOVA
+system.cache_cleanup_completed: 'Cache cleanup completed: {removed} entries removed'
+system.hello_world: Hello, World!
+test_ai.api_key_required: API key is required for {name}.
+test_ai.connection_failed: 'Connection failed: {msg}'
+test_ai.connection_timeout_local: Connection timeout. Is {name} running at {baseUrl}?
+test_ai.endpoint_v1_valid: Endpoint at {baseUrl}/v1 is valid.
+test_ai.endpoint_valid: Endpoint at {baseUrl} is valid.
+test_ai.fetch_failed: fetch failed
+test_ai.internal_error: Internal server error
+test_ai.no_endpoint: No endpoint configured for this provider.
+test_ai.responded_with_status: '{name} responded with status {status}'
+test_ai.server_reachable: '{name} server at {baseUrl} is reachable.'
+test_ai.unknown_provider: 'Unknown provider: {provider}'
+user.api_key_required: API key is required for this provider
+user.api_key_required_fetch: API key is required for this provider.
+user.auto_create_default_detail: Dataset auto-creation failed. The database server
+  may be unreachable.
+user.connection_name_exists: A connection with this name already exists
+user.connection_not_found: Connection not found
+user.connection_timeout_local: Connection timeout. Is {code} running at {baseUrl}?
+user.connection_timeout_remote: Connection timeout for {code} at {baseUrl}
+user.example_blocked: Example users cannot perform this action
+user.example_create_db: Example users cannot create database connections
+user.example_delete_db: Example users cannot delete database connections
+user.example_update_db: Example users cannot update database connections
+user.fetch_failed: fetch failed
+user.internal_error: Internal server error
+user.missing_fields: Missing required fields
+user.no_endpoint: No endpoint configured for this provider.
+user.no_models_returned: Provider returned no models; nothing was changed
+user.provider_not_found: Provider not found
+user.provider_returned: 'Provider returned {status}: {text}'
+user.unknown_provider: 'Unknown provider: {code}'
+user.user_not_found: User not found
+validation.error: 'Validation error: {count} issue(s) found'
+validation.password.min_length: Password must be at least {min} characters long.
+validation.password.require_digit: Password must contain at least one digit.
+validation.password.require_lowercase: Password must contain at least one lowercase
+  letter.
+validation.password.require_special: Password must contain at least one special character.
+validation.password.require_uppercase: Password must contain at least one uppercase
+  letter.
+validation.password.too_weak: Password is too weak. Please choose a stronger password.
+virtual.column.missing_column: No column was named.
+virtual.column.missing_source: 'A column needs its source: a dataset id, or a connection
+  and a table name.'
+virtual.column.unknown_action: '''{action}'' is not a column action. Use tick or untick.'
+virtual.decision.applied: Use the selection above.
+virtual.decision.invalid_value: 'The ''{piece}'' decision could not be applied: {error}'
+virtual.decision.missing_value: The '{piece}' decision needs a value.
+virtual.decision.model_failed: 'Your choice was saved. The assistant could not respond:
+  {error}'
+virtual.decision.no_connection: Your choice was saved. The assistant could not respond
+  because no AI connection is available.
+virtual.decision.no_reply: Your choice was saved. The assistant used up its working
+  rounds without producing a reply — ask it to continue, or check the draft in the
+  tree.
+virtual.decision.unknown_piece: '''{piece}'' is not a decision this endpoint can apply.'
+virtual.execute_failed: 'Execution failed: {error}'
+virtual.join_suggestions.invalid_sources: Join suggestions need a list of sources,
+  each with an alias and a name ({error}).
+virtual.no_credentials_mysql: No credentials found for MySQL connection {conn_id}
+virtual.no_credentials_postgresql: No credentials found for PostgreSQL connection
+  {conn_id}
+virtual.panel.collapsed_required: The panel's folded state must be true or false.
+virtual.preview_failed: 'Preview failed: {error}'
+virtual.save.invalid_definition: 'This dataset cannot be saved: {errors}'
+virtual.scoreboard.columns.needs_empty: '''{source}'' has no columns to choose from.'
+virtual.scoreboard.columns.needs_failed: The columns of '{source}' could not be read.
+virtual.scoreboard.columns.what: What is inside '{source}'?
+virtual.scoreboard.joins.needs: Two or more sources, with their columns read.
+virtual.scoreboard.joins.what: How should the sources be joined?
+virtual.scoreboard.name.what: What should this dataset be called?
+virtual.scoreboard.output_columns.needs: One source, with its columns read.
+virtual.scoreboard.output_columns.what: Which columns should the result contain?
+virtual.scoreboard.sources.what: Which table should this dataset be built from?
+virtual.scoreboard.storage.live: Live view
+virtual.scoreboard.storage.table: Saved table
+virtual.scoreboard.storage.what: Should this be a live view, or a saved table?
+virtual.tool.no_source: 'No source named ''{alias}''. This draft''s sources: {aliases}.'
+virtual.tool.no_sources_yet: There is no source named '{alias}' — the draft has no
+  sources yet. Call add_source first.
+virtual.validate.column_source_not_found: 'Column {c_idx}: source ''{src_alias}''
+  not found'
+virtual.validate.connection_id_required: 'Source ''{alias}'': connectionId required
+  for {storage_type} source'
+virtual.validate.connection_not_found: 'Source ''{alias}'': connection {conn_id} not
+  found or access denied'
+virtual.validate.dataset_id_required: 'Source ''{alias}'': datasetId required for
+  dataset source'
+virtual.validate.dataset_not_found: 'Source ''{alias}'': dataset {dataset_id} not
+  found or access denied'
+virtual.validate.join_column_not_found: 'Join {j_idx}: source ''{alias}'' has no column
+  ''{column}'''
+virtual.validate.join_left_source_not_found: 'Join {j_idx}: left source ''{left_alias}''
+  not found'
+virtual.validate.join_right_source_not_found: 'Join {j_idx}: right source ''{right_alias}''
+  not found'
+virtual.validate.no_sources: No sources defined
+virtual.validate.output_column_not_found: 'Column {c_idx}: source ''{src_alias}''
+  has no column ''{column}'''
+virtual_chat.chat_session_not_found: Chat session not found
+virtual_chat.connection_not_found: Database connection not found or access denied
+virtual_chat.empty_response: I'm not sure how to respond to that. Could you rephrase
+  or provide more detail?
+virtual_chat.introspection_failed: 'Introspection failed: {error}'
+virtual_chat.llm_call_failed: 'LLM call failed: {error}'
+virtual_chat.llm_returned_error: LLM returned HTTP {status_code}
+virtual_chat.save_draft_success: '✅ Virtual dataset saved as draft: **{name}**.
+
+
+  You can view and edit it on the Datasets page. Use the Define tab to refine the
+  SQL, joins, and output columns.'
+virtual_chat.save_failed: '⚠️ Save failed: {error}'
+virtual_chat.save_no_sources: '⚠️ Unable to save: no data sources were introspected.
+  Try mentioning table names like ''products'' or ''orders'' in your earlier messages.'
+virtual_chat.save_parse_error: '⚠️ Could not save dataset: {error}'
+virtual_chat.save_success: ✅ Dataset **{name}** saved successfully. You can find it
+  in the Existing Datasets list. Use Edit to refine it or Clone to create a variation.
+visualization_instances.instance_not_found: Instance not found
+visualization_instances.internal_error: Internal server error
+visualization_instances.invalid_instance_id: Invalid instance id
+visualization_instances.invalid_viz_type: Invalid visualization type
+visualization_instances.no_rendered_output: No rendered output available
+visualization_instances.unauthorized: Unauthorized
+visualization_instances.viz_type_id_required: visualizationTypeId required
+visualization_instances.viz_type_not_found: Visualization type not found
+visualization_types.forbidden: Forbidden
+visualization_types.internal_error: Internal server error
+visualization_types.name_and_slug_required: Name and slug are required
+visualization_types.slug_already_exists: Slug already exists
+visualization_types.type_not_found: Visualization type not found

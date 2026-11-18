@@ -1,0 +1,1026 @@
+admin:
+  already_full_admin: Benutzer ist bereits ein vollständiger Administrator
+  already_group_admin: Benutzer ist bereits ein Gruppenadministrator
+  cannot_delete_self: Eigenes Konto kann nicht gelöscht werden
+  cannot_demote_full_admin: Ein vollständiger Administrator kann nicht degradiert werden
+  cannot_demote_self: Sie können sich nicht selbst degradieren
+  cannot_promote_example: Ein Beispiel-Benutzer kann nicht heraufgestuft werden
+  delete_error: Löschen des Benutzers fehlgeschlagen
+  demote_error: Degradierung des Benutzers fehlgeschlagen
+  description_required: Beschreibung darf nicht leer sein
+  example_blocked: Beispiel-Benutzer können keine Administratoraktionen ausführen
+  group_not_found: Gruppe nicht gefunden
+  group_users_load_error: Laden der Gruppenbenutzer fehlgeschlagen
+  groups_load_error: Laden der Gruppen fehlgeschlagen
+  groups_stats_error: Laden der Gruppenstatistiken fehlgeschlagen
+  insufficient_permissions: Unzureichende Berechtigungen für diese Aktion
+  invalid_group_id: Ungültige group_id. Muss im Bereich 00-99 liegen
+  invalid_id: Ungültige ID
+  invalid_upload_count: maxUploadCount muss eine nicht-negative Ganzzahl sein (0 für unbegrenzt).
+  invalid_upload_size: maxUploadSizeMB muss eine nicht-negative Ganzzahl sein (0 für unbegrenzt).
+  missing_fields: Erforderliche Felder fehlen
+  missing_group_id: Gruppen-ID fehlt
+  missing_id: ID fehlt
+  missing_model_id: Modell-ID fehlt
+  missing_provider_code: Parameter providerCode fehlt
+  missing_user_id: userId fehlt
+  model_update_error: Aktualisierung des Modells fehlgeschlagen
+  models_load_error: Laden der Modelle fehlgeschlagen
+  no_fields: Keine gültigen Felder zum Aktualisieren
+  no_group: Benutzer hat keine Gruppe zugewiesen
+  not_group_admin: Benutzer ist kein Gruppenadministrator
+  only_full_admin: Nur vollständige Administratoren können diese Aktion ausführen
+  promote_error: Heraufstufung des Benutzers fehlgeschlagen
+  provider_delete_error: Löschen des Anbieters fehlgeschlagen
+  provider_not_found: Anbieter nicht gefunden
+  provider_update_error: Aktualisierung des Anbieters fehlgeschlagen
+  providers_load_error: Laden der Anbieter fehlgeschlagen
+  slug_exists: Slug existiert bereits
+  update_error: Aktualisierung des Benutzers fehlgeschlagen
+  user_load_error: Laden des Benutzers fehlgeschlagen
+  user_not_found: Benutzer nicht gefunden
+  users_load_error: Laden der Benutzer fehlgeschlagen
+  viz_type_create_error: Erstellen des Visualisierungstyps fehlgeschlagen
+  viz_type_delete_error: Löschen des Visualisierungstyps fehlgeschlagen
+  viz_type_update_error: Aktualisierung des Visualisierungstyps fehlgeschlagen
+  viz_types_load_error: Laden der Visualisierungstypen fehlgeschlagen
+api:
+  user:
+    connection_not_found: Verbindung nicht gefunden
+    missing_fields: Erforderliche Felder fehlen
+    example_update_ai: Beispielbenutzer können KI-Verbindungen nicht aktualisieren
+    invalid_connection_id: Ungültige Verbindungs-ID
+    connection_name_exists: Eine Verbindung mit diesem Namen existiert bereits
+    invalid_current_password: Das aktuelle Passwort ist falsch
+    user_not_found: Benutzer nicht gefunden
+    invalid_port: Port muss eine Ganzzahl sein
+    provider_not_found: Anbieter „{provider}“ nicht gefunden
+    example_delete_ai: Beispielbenutzer können KI-Verbindungen nicht löschen
+    example_blocked: Beispielbenutzer können diese Aktion nicht ausführen
+    connection_id_required: Verbindungs-ID ist erforderlich
+    internal_error: Interner Serverfehler
+    invalid_name: Name muss eine Zeichenfolge sein
+    api_key_required: API-Schlüssel ist für diesen Anbieter erforderlich
+    example_create_ai: Beispielbenutzer können KI-Verbindungen nicht erstellen
+    tuning_malformed_body: Der Request-Body ist kein gültiges JSON
+    model_not_found: Modell „{model}“ wurde für Anbieter „{provider}“ nicht gefunden
+    test_read_timeout: Das Modell hat die Anfrage angenommen, aber nicht rechtzeitig geantwortet. Es ist möglicherweise zu langsam für diesen Host – ein großes Modell auf einer CPU kann mehrere Minuten
+      dauern. Es wurde kein Fähigkeitsurteil aufgezeichnet; aufgezeichnet wurde, wie lange es bis zum Fehlschlag gedauert hat.
+    tuning_model_not_found: Kein solches Modell
+    test_connect_timeout: Der Endpunkt hat nicht rechtzeitig eine Verbindung angenommen. Der Host ist möglicherweise ausgefallen, oder eine Firewall verwirft die Anfrage. Es wurde kein Fähigkeitsurteil
+      aufgezeichnet; aufgezeichnet wurde, wie lange es bis zum Fehlschlag gedauert hat.
+    tuning_nothing_to_update: Geben Sie mindestens eines von temperature, maxTokens oder timeoutSeconds an
+    discovery_complete: '{seen} Modell(e) entdeckt: {created} neu hier, {refreshed} bereits bekannt, {pruned} nicht mehr bereitgestellt'
+    test_tls_failure: Die sichere Verbindung konnte nicht hergestellt werden – der Endpunkt ist möglicherweise einfaches HTTP, wo HTTPS erwartet wurde, oder sein Zertifikat ist möglicherweise abgelaufen.
+      Es wurde kein Fähigkeitsurteil aufgezeichnet; aufgezeichnet wurde, wie lange es bis zum Fehlschlag gedauert hat.
+    model_not_served_by_connection: Diese Verbindung stellt „{model}“ nicht bereit. Ihre Modelle haben sich möglicherweise geändert – aktualisieren Sie die Verbindung, oder wählen Sie ein anderes Modell.
+    test_dns_failure: Der Hostname des Endpunkts konnte nicht aufgelöst werden. Prüfen Sie die Adresse auf Tippfehler oder auf einen Namen, den nur dieses Netzwerk auflösen kann. Es wurde kein Fähigkeitsurteil
+      aufgezeichnet; aufgezeichnet wurde, wie lange es bis zum Fehlschlag gedauert hat.
+    test_attribution_required: Ein Testergebnis muss festhalten, wer es ausgeführt hat
+    invalid_connect_timeout: Das Verbindungs-Timeout muss eine Ganzzahl von Sekunden sein, mindestens 1 und höchstens {ceiling}
+    test_other_failure: 'Das Modell konnte nicht erreicht werden, und die Ursache war keine, die dieses System erkennt. Es wurde kein Fähigkeitsurteil aufgezeichnet: {detail}'
+    test_reason_required: Ein Testergebnis muss einen Grund festhalten
+    test_budget_exhausted: Das Modell gab nichts zurück, weil es sein gesamtes Ausgabebudget aufgebraucht hat, bevor es eine Antwort erreichte. Es wurde kein Fähigkeitsurteil aufgezeichnet; die Dauer wurde
+      aufgezeichnet.
+    unknown_test_id: 'Unbekannter Test „{test}“. Registrierte Tests: {known}'
+    tuning_invalid_max_tokens: Das Ausgabelimit muss eine Ganzzahl von Tokens sein, mindestens 1
+    test_connect_refused: An dieser Adresse wartet nichts auf Verbindungen – der Server ist erreichbar, aber kein Dienst hat geantwortet. Prüfen Sie den Port und ob der KI-Server läuft. Es wurde kein Fähigkeitsurteil
+      aufgezeichnet; aufgezeichnet wurde, wie lange es bis zum Fehlschlag gedauert hat.
+    invalid_test_state: 'Ungültiges Testergebnis „{state}“. Erlaubt: {allowed}'
+    tuning_connection_not_found: Keine solche KI-Verbindung
+    test_not_implemented: Der Test „{test}“ ist registriert, hat aber noch keine Prüfsonde
+    tuning_invalid_ai_timeout: Das KI-Zeitlimit muss eine Ganzzahl von Sekunden sein, mindestens 1
+    invalid_probe_timeout: Das Test-Timeout muss eine Ganzzahl von Sekunden sein, mindestens 1 und höchstens {ceiling}
+    tuning_invalid_temperature: Die Temperatur muss eine Zahl zwischen 0 und 2 sein
+    test_http_status: 'Der Anbieter hat geantwortet, und seine Antwort war ein Fehler: {detail}. Es wurde kein Fähigkeitsurteil aufgezeichnet; was der Anbieter gesagt hat, wird angezeigt, damit die Ursache
+      klar ist.'
+    connect_timeout_exceeds_probe: The connect timeout ({connect}s) cannot be longer than the test timeout ({probe}s) — a connection cannot be allowed to take longer to establish than the whole test may
+      run
+  register:
+    email_exists: E-Mail bereits vorhanden
+    invalid_email: Ungültiges E-Mail-Format
+    internal_error: Interner Serverfehler
+    settings_not_found: Globale Einstellungen nicht gefunden
+    missing_fields: Fehlende Felder
+    limit_reached: Registrierungslimit erreicht (maximal {max_reg} Benutzer).
+    registration_disabled: Die Selbstregistrierung ist deaktiviert. Bitte wenden Sie sich an einen Administrator.
+  admin:
+    not_group_admin: Benutzer ist kein Gruppenadministrator
+    invalid_group_id: Ungültige group_id. Muss 00-99 sein
+    example_blocked: Beispielbenutzer können keine Administratoraktionen ausführen
+    settings_modify_forbidden: Nur Volladministratoren können globale Einstellungen ändern
+    insufficient_permissions: Unzureichende Berechtigungen für diese Aktion
+    settings_invalid_email_timeout: E-Mail-Verifizierungs-Timeout muss eine positive Zahl sein (Stunden)
+    models_load_error: Modelle konnten nicht geladen werden
+    settings_save_error: Globale Einstellungen konnten nicht gespeichert werden
+    no_group: Benutzer ist keiner Gruppe zugewiesen
+    settings_invalid_grace_period: Registrierungsschonfrist muss eine positive Zahl sein (Stunden)
+    delete_error: Benutzer konnte nicht gelöscht werden
+    provider_not_found: Anbieter nicht gefunden
+    missing_group_id: Fehlende Gruppen-ID
+    settings_view_forbidden: Nur Volladministratoren können globale Einstellungen anzeigen
+    provider_delete_error: Anbieter konnte nicht gelöscht werden
+    cannot_demote_self: Sie können sich nicht selbst herabstufen
+    groups_load_error: Gruppen konnten nicht geladen werden
+    invalid_upload_count: maxUploadCount muss eine nicht negative Ganzzahl sein (0 für unbegrenzt)
+    settings_invalid_upload_size: Standardmäßige maximale Upload-Größe muss eine nicht negative Ganzzahl sein (0 für unbegrenzt)
+    invalid_upload_size: maxUploadSizeMB muss eine nicht negative Ganzzahl sein (0 für unbegrenzt)
+    user_load_error: Benutzer konnte nicht geladen werden
+    settings_invalid_max_registrations: Maximale Registrierungsanzahl muss eine positive Zahl oder unbegrenzt sein
+    providers_load_error: Anbieter konnten nicht geladen werden
+    missing_fields: Fehlende erforderliche Felder
+    already_group_admin: Benutzer ist bereits Gruppenadministrator
+    description_required: Beschreibung darf nicht leer sein
+    cannot_demote_full_admin: Ein Volladministrator kann nicht herabgestuft werden
+    only_full_admin: Nur Volladministratoren können diese Aktion ausführen
+    already_full_admin: Benutzer ist bereits Volladministrator
+    cannot_delete_self: Sie können Ihr eigenes Konto nicht löschen
+    demote_error: Benutzer konnte nicht herabgestuft werden
+    promote_error: Benutzer konnte nicht hochgestuft werden
+    missing_model_id: Fehlende Modell-ID
+    model_update_error: Modell konnte nicht aktualisiert werden
+    no_fields: Keine gültigen Felder zum Aktualisieren
+    settings_invalid_upload_count: Standardmäßige maximale Upload-Anzahl muss eine nicht negative Ganzzahl sein (0 für unbegrenzt)
+    provider_update_error: Anbieter konnte nicht aktualisiert werden
+    missing_user_id: Fehlende userId
+    settings_invalid_public_url: Ungültiges Format der öffentlichen URL
+    group_users_load_error: Fehler beim Laden der Gruppenbenutzer
+    settings_load_error: Fehler beim Laden der globalen Einstellungen
+    settings_invalid_email_sender: Ungültiges Format der Absender-E-Mail-Adresse
+    update_error: Fehler beim Aktualisieren des Benutzers
+    groups_stats_error: Fehler beim Laden der Gruppenstatistiken
+    missing_id: Fehlende ID
+    cannot_promote_example: Ein Beispielbenutzer kann nicht befördert werden
+    invalid_viz_type_field: Ungültiger Wert im Feld Visualisierungstyp
+    viz_type_not_found: Visualisierungstyp nicht gefunden
+    model_not_found: Modell nicht gefunden
+    user_not_found: Benutzer nicht gefunden
+    promote_success: Benutzer {name} wurde zum Gruppenadministrator befördert.
+    demote_success: Benutzer {name} wurde als Gruppenadministrator herabgestuft.
+    settings_invalid_platform_upload_size: Die maximale Upload-Größe der Plattform muss eine nicht-negative Ganzzahl sein (0 für unbegrenzt).
+    invalid_id: Ungültige ID.
+    slug_exists: Slug bereits vorhanden.
+    users_load_error: Benutzer konnten nicht geladen werden.
+    viz_types_load_error: Visualisierungstypen konnten nicht geladen werden.
+    viz_type_delete_error: Visualisierungstyp konnte nicht gelöscht werden.
+    viz_type_create_error: Visualisierungstyp konnte nicht erstellt werden.
+    instance_exists: Typ kann nicht gelöscht werden, da es {count} zugehörige Instanz(en) gibt.
+    viz_type_update_error: Visualisierungstyp konnte nicht aktualisiert werden.
+    instance_in_use: Typ kann nicht gelöscht werden, da ihm Instanzen zugeordnet sind.
+    settings_demo_mode_requires_licence: Der Demo-Modus kann ohne gültige Lizenz nicht deaktiviert werden.
+    email_exists: E-Mail existiert bereits.
+    settings_not_found: Globale Einstellungen nicht gefunden.
+    settings_invalid_registration_mode: Der Registrierungsmodus muss einer der Werte 0, 1, 2 oder 4 sein.
+    invalid_email: Ungültiges E-Mail-Format.
+    create_user_error: Benutzer konnte nicht erstellt werden.
+    settings_demo_upload_count_limit: Im Demo-Modus muss die standardmäßige maximale Upload-Anzahl zwischen 1 und 5 liegen.
+    settings_demo_upload_size_limit: Im Demo-Modus muss die standardmäßige maximale Upload-Größe zwischen 1 und 5 MB liegen.
+    users_demo_upload_size_limit: Im Demo-Modus muss die maximale Upload-Größe für einen Benutzer zwischen 1 und 5 MB liegen.
+    users_demo_upload_count_limit: Im Demo-Modus muss die maximale Upload-Anzahl für einen Benutzer zwischen 1 und 5 liegen.
+    example_user_password_blocked: Die Passwörter der Beispielbenutzer können nicht von einem Administrator festgelegt werden.
+    invalid_admin_password: Das Admin-Passwort ist falsch.
+    settings_invalid_ai_timeout: Das KI-Zeitlimit muss eine Ganzzahl von Sekunden sein, mindestens 1
+    settings_invalid_probe_timeout: Das Standard-Test-Timeout muss eine Ganzzahl von Sekunden sein, mindestens 1 und höchstens {ceiling}
+    settings_invalid_connect_timeout: Das Standard-Verbindungs-Timeout muss eine Ganzzahl von Sekunden sein, mindestens 1 und höchstens {ceiling}
+    settings_invalid_max_tokens: Das Ausgabelimit muss eine Ganzzahl von Tokens sein, mindestens 1
+    settings_invalid_temperature: Die Temperatur muss eine Zahl zwischen 0 und 2 sein
+    settings_invalid_slow_threshold: Das Limit für langsame Modelle muss eine Ganzzahl von Sekunden sein, mindestens 1
+    tuning_reset_error: Die KI-Tuning-Standardwerte konnten nicht zurückgesetzt werden
+    field_not_owned: 'Dieses Feld ist auf dieser Seite nicht gesetzt. {endpoint}. Fehlerhaft: {fields}'
+  auth:
+    unauthorized: Nicht autorisiert
+    user_not_found: Benutzer nicht gefunden
+    invalid_token: Ungültiges oder abgelaufenes Token
+    example_user_forgot_blocked: Passwortzurücksetzung ist für Beispielbenutzer deaktiviert
+    missing_email: E-Mail erforderlich
+    example_user_reset_blocked: Passwortzurücksetzung ist für Beispielbenutzer deaktiviert
+    token_expired: Token ist abgelaufen
+    email_already_verified: E-Mail bereits verifiziert
+    missing_fields: Fehlende Felder
+    internal_error: Interner Serverfehler
+    example_user_blocked: Passwortänderungen sind für Beispielbenutzer deaktiviert
+    invalid_current_password: Das aktuelle Passwort ist falsch
+    not_authenticated: Nicht authentifiziert.
+  settings:
+    example_blocked: Beispielbenutzer können Einstellungen nicht bearbeiten
+    load_failed: Einstellungen konnten nicht geladen werden
+    invalid_default_ai_connection: Ungültige Standard-KI-Verbindung
+    save_failed: Einstellungen konnten nicht gespeichert werden
+    user_not_found: Benutzer nicht gefunden
+    invalid_slow_threshold: Das Limit für langsame Modelle muss eine Ganzzahl von Sekunden sein, mindestens 1
+  profile:
+    fetch_failed: Profil konnte nicht abgerufen werden
+    update_failed: Profil konnte nicht aktualisiert werden
+    invalid_name: Name muss eine Zeichenfolge sein
+    name_required: Name ist erforderlich
+  global_settings_load_error: Interner Serverfehler.
+  languages_load_error: Sprachen konnten nicht geladen werden.
+  translations_load_error: Übersetzungen konnten nicht geladen werden.
+auth:
+  account_deleted: Dieses Konto wurde gelöscht.
+  email_not_verified: E-Mail nicht verifiziert. Bitte überprüfen Sie Ihren Posteingang und SPAM-Ordner.
+  example_user_blocked: Passwortfunktionen sind für Beispiel-Benutzer deaktiviert
+  example_user_forgot_blocked: Passwortzurücksetzung ist für Beispiel-Benutzer deaktiviert
+  example_user_reset_blocked: Passwortzurücksetzung ist für Beispiel-Benutzer deaktiviert
+  internal_error: Interner Serverfehler
+  invalid_credentials: Ungültige Anmeldedaten
+  invalid_current_password: Aktuelles Passwort ist falsch
+  invalid_token: Ungültiger oder abgelaufener Token
+  invalid_token_error: 'Ungültiger Token: {error}'
+  invalid_token_missing_user_id: 'Ungültiger Token: Benutzer-ID fehlt'
+  missing_email: E-Mail erforderlich
+  missing_fields: Felder fehlen
+  password_changed: Passwort erfolgreich geändert
+  password_validation_failed: Passwortvalidierung fehlgeschlagen
+  reset_email_sent: E-Mail zum Zurücksetzen des Passworts gesendet
+  token_expired: Token ist abgelaufen
+  unauthorized: Nicht autorisiert
+  user_not_found: Benutzer nicht gefunden
+  login_invalid_credentials: Ungültige E-Mail oder ungültiges Passwort
+chat:
+  ai_provider_error: 'KI-Anbieter-Fehler: {error}'
+  connection_error: 'Verbindungsfehler: {error}'
+  connection_not_found: KI-Verbindung nicht gefunden oder nicht zugänglich
+  delete_failed: 'Löschen des Chats fehlgeschlagen: {error}'
+  generate_title_failed: 'Generieren des Titels fehlgeschlagen: {error}'
+  get_failed: 'Abrufen des Chats fehlgeschlagen: {error}'
+  internal_error: 'Interner Serverfehler: {error}'
+  list_failed: 'Auflisten der Chats fehlgeschlagen: {error}'
+  send_failed: 'Senden der Nachricht fehlgeschlagen: {error}'
+  title_updated: Chat-Titel erfolgreich aktualisiert
+  update_failed: 'Aktualisierung des Chats fehlgeschlagen: {error}'
+  deleted: Chat '{id}' erfolgreich gelöscht
+  not_found: Chat '{id}' nicht gefunden
+  not_found_or_not_owned: Chat '{id}' nicht gefunden oder Sie besitzen ihn nicht
+  ai_repeat_loop: Das KI-Modell ist hängen geblieben und konnte die Antwort nicht abschließen. Bitte versuchen Sie es erneut.
+  ai_timeout: Das KI-Modell braucht zu lange, um zu antworten. Bitte versuchen Sie es erneut.
+  ai_service_failed: Der KI-Dienst hat nicht reagiert. Bitte versuchen Sie es erneut.
+  timeout_out_of_range: Das KI-Zeitlimit muss zwischen 1 und {max_seconds} Sekunden liegen
+common:
+  back: Zurück
+  cancel: Abbrechen
+  cannot_undo: Diese Aktion kann nicht rückgängig gemacht werden.
+  clear: Leeren
+  copy: Kopieren
+  delete: Löschen
+  deleting: Löschen...
+  dismiss: Ausblenden
+  edit: Bearbeiten
+  generating: Generieren...
+  loading: Laden...
+  next: Weiter
+  restoring: Wiederherstellen...
+  save: Speichern
+  saving: Speichern...
+  sending: Senden...
+  testing: Testen...
+  unknown: Unbekannt
+  uploading: Hochladen...
+  verifying: Überprüfen...
+  view: Anzeigen
+database:
+  connection_failed: 'Verbindung zur Datenbank fehlgeschlagen: {error}'
+  decryption_failed: 'Entschlüsselung des Verbindungspassworts fehlgeschlagen: {error}'
+  insert_failed: 'Datenbankfehler: {error}'
+  pool_not_initialized: Datenbank-Pool nicht initialisiert
+  query_failed: 'Datenbankabfrage fehlgeschlagen: {error}'
+  type_not_supported: 'Nicht unterstützter Datenbanktyp: {type}'
+  connection_not_found: Datenbankverbindung nicht gefunden oder nicht zugänglich
+  feature_required: Dieser Datenbanktyp ist durch Ihre Lizenz nicht aktiviert.
+datasets:
+  define:
+    connection_details_not_found: Verbindungsdetails nicht gefunden
+    connection_not_found: Datenbankverbindung nicht gefunden oder nicht zugänglich
+    connection_required: connectionId ist erforderlich
+    connection_test_failed: Test der Datenbankverbindung fehlgeschlagen
+    database_connection_failed: 'Verbindung zur Datenbank fehlgeschlagen: {error}'
+    name_required: Datensatzname ist erforderlich
+    table_name_required: tableName ist erforderlich
+    verification_failed: 'Überprüfung der Tabelle/Ansicht fehlgeschlagen: {error}'
+    dataset_created: Datensatz '{name}' erfolgreich definiert
+    permission_denied: 'Zugriff verweigert: Benutzer ''{user}'' hat keinen Zugriff auf Tabelle ''{table}''. Bitte erteilen Sie die SELECT-Berechtigung.'
+    table_access_failed: 'Fehler beim Zugriff auf Tabelle ''{table}'': {error}'
+    preview_failed: 'Fehler beim Lesen von Daten aus Tabelle ''{table}'': {error}'
+    table_not_found: Tabelle/Sicht '{table}' in Datenbank '{database}' nicht gefunden
+    invalid_source_type: sourceType muss 'table' oder 'view' sein.
+    connection_timed_out: Zeitüberschreitung der Verbindung nach 15 Sekunden
+    connection_missing_db_note: 'Hinweis: PostgreSQL gibt diesen Fehler bei fehlenden Datenbanken UND bei unzureichenden Berechtigungen zurück. Wenn die Datenbank existiert, überprüfen Sie, ob der Benutzer
+      die CONNECT-Berechtigung für die Datenbank besitzt.'
+    connection_successful: Verbindung erfolgreich
+  delete:
+    success: Datensatz '{id}' erfolgreich gelöscht
+  describe:
+    ai_connection_error: 'KI-Verbindungsfehler: {error}'
+    empty_description: Generierte Beschreibung ist leer. Bitte überprüfen Sie die Konfiguration des KI-Anbieters.
+    generation_failed: 'Erstellung der Beschreibung fehlgeschlagen: {error}'
+    description_generated: Beschreibung für '{name}' erfolgreich generiert
+    timeout_out_of_range: Das KI-Zeitlimit muss zwischen 1 und {max_seconds} Sekunden liegen
+  example_blocked:
+    create: Beispielbenutzer können keine Datensätze erstellen
+    delete: Beispielbenutzer können keine Datensätze löschen
+    update: Beispielbenutzer können keine Datensätze aktualisieren
+  list_error: Laden der Datensätze fehlgeschlagen
+  not_found: Datensatz nicht gefunden
+  not_owner: Sie können nur Ihre eigenen Datensätze bearbeiten
+  preparation:
+    duplicate_name: Eine Vorbereitungsregel mit diesem Namen existiert bereits für diesen Datensatz
+    no_updates: Keine Felder zum Aktualisieren
+    preview_failed: 'Vorschau der Regel fehlgeschlagen: {error}'
+    rule_deleted: Vorbereitungsregel erfolgreich gelöscht
+    rule_in_use: 'Diese Vorbereitungsregel wird von {count} Rezept(en) verwendet: {names}. Löschen Sie zuerst die Rezepte.'
+    rule_not_found_or_not_owned: Vorbereitungsregel nicht gefunden oder Sie sind nicht deren Besitzer
+    rule_updated: Vorbereitungsregel erfolgreich aktualisiert
+    schema_failed: 'Lesen des Datensatzschemas fehlgeschlagen: {error}'
+    rule_not_found: Vorbereitungsregel '{id}' für diesen Datensatz nicht gefunden
+    rule_created: Vorbereitungsregel '{name}' erfolgreich erstellt
+    already_exists: Eine Vorbereitungsregel mit diesen Operationen existiert bereits ('{name}')
+  schema:
+    external_failed: 'Abrufen des Schemas aus der externen Datenbank fehlgeschlagen: {error}'
+    from_preview: Schema aus Vorschaudaten abgeleitet (erste 10 Zeilen)
+    load_error: 'Schema konnte nicht geladen werden: {error}'
+    table_missing: Tabelle existiert nicht mehr. Bitte laden Sie den Datensatz erneut hoch.
+    not_implemented: Schemaerkennung für diesen Datensatztyp '{type}' ist noch nicht implementiert.
+    row_count_not_computed: Die Zeilenanzahl wird für ein virtuelles Dataset nicht berechnet, ohne den Join auszuführen.
+    connection_unreachable: 'Verbindung {connection_id} ist nicht erreichbar: {error}'
+  share:
+    error: Aktualisieren der Freigabe fehlgeschlagen
+    toggled: Freigabe für Datensatz '{id}' erfolgreich aktualisiert.
+  unknown_source: 'Unbekannter Quelltyp: {source_type}'
+  upload:
+    error: Hochladen des Datensatzes fehlgeschlagen
+    file_processing_failed: 'Verarbeitung der Datei fehlgeschlagen: {error}'
+    limit_reached_count: Upload-Limit erreicht. Maximal {count} Datensätze erlaubt.
+    limit_reached_size: Upload-Größenlimit überschritten. Maximal {size} MB Gesamtspeicher.
+    unsupported_file: 'Nicht unterstützter Dateityp. Bitte laden Sie eine der folgenden Dateien hoch: {extensions}'
+    user_not_found: Benutzer nicht gefunden
+    success: Datensatz '{name}' erfolgreich hochgeladen
+    dbf_memo_unsupported: Diese .dbf-Datei enthält Memofelder. Deren Werte werden in einer separaten Datei gespeichert, die ein Einzeldatei-Upload nicht übertragen kann.
+    dbf_field_unsupported: 'Diese .dbf-Datei deklariert Feldtypen, die nicht gelesen werden können: {types}'
+  transforms:
+    deleted: Transformation erfolgreich gelöscht
+    in_use: 'Diese Transformation wird von {count} Rezept(en) verwendet: {names}. Löschen Sie zuerst die Rezepte.'
+    duplicate_name: Eine Transformation mit diesem Namen existiert bereits für diesen Datensatz
+    no_updates: Keine Felder zum Aktualisieren
+    clone_forbidden: Sie haben keine Berechtigung zum Klonen dieser Transformation
+    not_found_or_not_owned: Transformation nicht gefunden oder Sie besitzen diese nicht
+    updated: Transformation erfolgreich aktualisiert
+    created: Transformation '{name}' erfolgreich erstellt
+    not_owned: Datensatz '{id}' nicht gefunden oder Sie besitzen ihn nicht.
+    cloned: Transformation als '{name}' geklont
+    not_accessible: Datensatz '{id}' nicht gefunden oder nicht zugänglich
+    not_found: Transformation '{id}' für diesen Datensatz nicht gefunden.
+    already_exists: Eine Transformation mit diesen Operationen existiert bereits ('{name}')
+  not_found_2: Datensatz nicht gefunden
+  auto_create:
+    connection_not_found: Verbindung nicht gefunden
+    connection_id_required: connectionId ist erforderlich
+    no_tables_discovered: Keine Tabellen oder Ansichten gefunden. Überprüfen Sie, ob der Datenbankserver läuft und erreichbar ist.
+    created: Datensätze erstellt.
+  not_owned: Datensatz '{id}' nicht gefunden oder Sie besitzen ihn nicht
+  browse:
+    preview_failed: 'Fehler bei der Tabellenvorschau: {error}'
+    columns_failed: 'Fehler beim Abrufen der Spalten: {error}'
+    discover_failed: 'Fehler beim Ermitteln der Tabellen: {error}'
+  unread:
+    no_database: Diese Datenbank existiert nicht auf dem Server.
+    unreachable: Diese Quelle konnte nicht erreicht werden. Überprüfen Sie den Host und den Port und versuchen Sie es erneut.
+    no_permission: Dieses Konto kann diese Quelle nicht lesen.
+    auth_failed: Die Datenbank hat die Zugangsdaten dieses Kontos abgelehnt.
+    schema_error: Die Quelle hat geantwortet, aber ihre Spalten konnten nicht gelesen werden.
+    definition_incomplete: Diese Quelle benennt weder einen Datensatz noch eine Verbindungstabelle.
+    definition_too_deep: Dieser Datensatz verweist mehr als fünf Ebenen tief auf sich selbst.
+    incomplete: Die Prüfung wurde nicht rechtzeitig abgeschlossen. Versuchen Sie es erneut oder erhöhen Sie das Verbindungs-Timeout.
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: Spalte in Kleinbuchstaben mit snake_case umbenennen, für Konsistenz
+      rename_table_snake_case: Tabelle in Kleinbuchstaben mit snake_case umbenennen, für Konsistenz
+      rename_table_reserved: Tabelle '{table}' umbenennen, um Konflikte mit reservierten SQL-Wörtern zu vermeiden.
+      reserved_keyword_column: Spalte '{column}' ist ein reserviertes SQL-Schlüsselwort
+      reserved_keyword_table: Tabellenname '{table}' ist ein reserviertes SQL-Schlüsselwort
+      mixed_case_table: Tabellenname '{table}' verwendet gemischte Groß-/Kleinschreibung – snake_case empfohlen.
+      rename_column_reserved: Spalte '{column}' umbenennen, um Konflikte mit reservierten SQL-Wörtern zu vermeiden
+      mixed_case_column: Spalte '{column}' verwendet gemischte Groß-/Kleinschreibung – snake_case empfohlen.
+    normalisation:
+      multiple_address: Mehrere adressbezogene Spalten ({count}) erkannt
+      repeating_group: 'Sich wiederholende Gruppe erkannt: {columns}'
+      separate_address_table: Erwägen Sie die Erstellung einer separaten Adresstabelle mit Fremdschlüssel zu {table}
+      create_separate_table: Erstellen Sie eine separate Tabelle für '{base}'-Werte mit einem Fremdschlüssel auf {table}.
+    semistructured:
+      controlled_vocab: Spalte {column} enthält ein kontrolliertes Vokabular mit {count} unterschiedlichen Werten
+      create_ref_table: Erstellen Sie eine Referenztabelle für die Werte aus {column}, um die Tabelle {table} zu normalisieren
+    data_types:
+      short_text_enum: Textspalte '{column}' hat eine maximale Länge von {max_len} – Verwendung von ENUM oder CHECK-Constraint in Betracht ziehen.
+      unbounded_varchar: Unbegrenzte VARCHAR-Spalte '{column}'
+      add_check_constraint: Fügen Sie einen CHECK-Constraint hinzu oder verwenden Sie einen ENUM-Typ für '{column}' mit begrenzten gültigen Werten.
+      set_max_length: Erwägen Sie, für '{column}' eine maximale Länge festzulegen, um übergroße Daten zu vermeiden
+      allows_null: Spalte '{column}' erlaubt NULL – NOT-NULL-Constraint in Betracht ziehen.
+      add_not_null: NOT NULL-Constraint zu '{column}' hinzufügen.
+    indexing:
+      missing_fk_index: Fremdschlüsselspalte '{column}' hat keinen Index
+    relationships:
+      missing_fk: Spalte '{column}' sieht wie ein Fremdschlüssel aus, hat aber keine FK-Einschränkung.
+      add_fk: Erwägen Sie das Hinzufügen einer FK-Einschränkung, falls '{column}' auf eine andere Tabelle verweist.
+  analyze_error: 'Analyse der Datenbank fehlgeschlagen: {error}'
+  connection_error: 'Verbindung zur Datenbank fehlgeschlagen: {error}'
+  description: Analysieren und verbessern Sie Ihr Datenbankdesign mit KI.
+  no_connection: Keine Datenbankverbindung verfügbar. Stellen Sie zuerst eine Verbindung zu einer Datenbank her.
+  not_implemented: Diese Funktion wird in Kürze verfügbar sein.
+  pdf:
+    ai_disclaimer: KI-generierte Analyse — vor der Anwendung in der Produktion überprüfen.
+    categories: Kategorien
+    code_systems: Code-Systeme
+    code_systems_label: Erkannte Code-Systeme
+    col_default: Standard
+    col_name: Spalte
+    col_nullable: Nullable
+    col_pk: PK
+    col_type: Typ
+    column_meanings_label: Spaltenbedeutungen
+    columns: Spalten
+    confidence: Konfidenz
+    confidence_label: Konfidenz
+    domain_label: ISIC-Domänenklassifikationen
+    evidence_label: Evidenz
+    header: Datenbankdesign-Analysebericht
+    health_score_label: 'Datenbank-Gesundheitswert: {score}/100'
+    health_score_subtitle: Gesamte Datenbankgesundheit, bewertet durch Schema AI. 0 = kritische strukturelle Probleme, 100 = produktionsbereit.
+    health_score_title: Gesundheitsbewertung
+    high: Hoch
+    implicit_relationships_label: Implizite Beziehungen
+    integration_subtitle: Implizite Beziehungen, Recherchefähigkeiten und fehlende Dimensionen, erkannt von Integration AI.
+    integration_title: KI-Integrationsergebnisse
+    issues_count: Probleme ({count})
+    issues_found: Gefundene Probleme
+    low: Niedrig
+    medium: Mittel
+    missing_dimensions_label: Fehlende Dimensionen
+    'no': NEIN
+    none: Keine
+    normalisation_title: Normalisierungsvorschläge ({count})
+    page: Seite {current}/{total}
+    partial_label: Teilweise
+    pk: PK
+    proposed_ddl_label: Vorgeschlagene DDL
+    proposed_table: Vorgeschlagene Tabelle
+    rationale_label: Begründung
+    relationship_label: Beziehung
+    research_capabilities_label: Recherchefähigkeiten
+    risk_breakdown: Risikoaufschlüsselung
+    rows: Zeilen
+    schema_title: Schema ({count} Tabellen)
+    semantic_subtitle: KI-abgeleitete Spaltenbedeutungen, ISIC-Domänenklassifikationen und Erkennungen von Codesystemen.
+    semantic_title: KI-Semantikanalyse
+    semi_structured_title: Analyse halbstrukturierter Daten ({count} Spalten)
+    subtitle: 'Datenbank: {db_name} ({db_type}) | Verbindung: {conn_name} (ID: {conn_id})'
+    summary: Zusammenfassung
+    supported_label: Unterstützt
+    table_purposes_label: Tabellenzwecke
+    tables: Tabellen
+    title: Datenbankentwurfsanalyse
+    top_actions_label: Aktionen mit höchster Priorität
+    top_keywords: Top-Schlüsselwörter
+    top_recommendations: Wichtigste Empfehlungen
+    unsupported_label: Nicht unterstützt
+    value: Wert
+    'yes': JA
+    ai_skipped_warning: KI-Analyse übersprungen
+  question_required: Frage ist erforderlich
+  report_data_required: Berichtsdaten sind erforderlich
+  schema_error: 'Fehler beim Extrahieren des Schemas: {error}'
+  title: Assistent für Datenbankentwurf
+  unsupported_type: Nur PostgreSQL-, MySQL-, MS SQL Server- und Microsoft Access-Datenbanken werden unterstützt
+  unsupported_type_2: Nur PostgreSQL-, MySQL- und MS SQL Server-Datenbanken werden unterstützt.
+  invalid_token: Ungültiges Token
+  rag_error: 'RAG-Abfrage fehlgeschlagen: {error}'
+  schema_error_2: 'Fehler beim Entschlüsseln des Datenbankpassworts: {error}'
+  rag_not_available: RAG-Suche ist nur für PostgreSQL-Datenbanken verfügbar. MySQL-Volltextsuche ist für eine zukünftige Version geplant.
+  pdf_error: 'Fehler beim Erstellen der PDF-Datei: {error}'
+  email_pdf:
+    no_email: Keine E-Mail-Adresse für Ihr Konto gefunden
+    invalid_body: Ungültiger Anforderungstext
+    send_failed: Der Bericht konnte nicht per E-Mail gesendet werden. Bitte versuchen Sie es erneut.
+  llm:
+    no_ai_provider: Kein KI-Anbieter konfiguriert. Verbinden Sie einen KI-Anbieter unter Einstellungen → KI-Verbindungen.
+    unknown_error: Unbekannter LLM-Fehler.
+    http_error: LLM hat HTTP {status_code} zurückgegeben.
+    timeout: LLM-Anfrage hat nach {timeout_seconds}s das Zeitlimit überschritten.
+    empty_content: LLM hat leeren Inhalt zurückgegeben.
+    no_model: Kein KI-Modell konfiguriert. Legen Sie ein Standardmodell für die KI-Verbindung fest oder übergeben Sie ein explizites Modell.
+  ai_skipped_message: 'KI-Analyse übersprungen – {count} Probleme gefunden (Limit: {limit}). Überprüfen Sie die mechanischen Befunde unten, bereinigen Sie die Datenbank und führen Sie die Analyse anschließend
+    mit KI erneut aus.'
+  stream_ai_semantic_done: 'Semantische KI: {columns} Spaltenbedeutungen, {domains} ISIC-Domänen'
+  stream_normalisation_start: Normalisierungsvorschläge werden generiert...
+  stream_ai_start: KI-Analyse wird gestartet – 3 Spezialisten parallel...
+  stream_ai_done: 'KI-Analyse abgeschlossen – Status: {status}'
+  stream_extracting_schema: Schema wird aus {db_type} extrahiert...
+  stream_normalisation_skipped: 'Normalisierung: übersprungen ({error})'
+  stream_ai_integration_done: 'Integrations-KI: {relationships} Beziehungen, {capabilities} Fähigkeiten'
+  stream_semistructured_start: Halbstrukturierte Spalten werden analysiert...
+  stream_ai_semantic_start: 'Semantische KI: analysiert {tables} Tabellen...'
+  stream_connected: 'Verbunden mit {db_type}: {db_name}'
+  stream_connecting: Verbindung mit Datenbank wird hergestellt...
+  stream_ai_schema_start: 'Schema-KI: analysiert {tables} Tabellen...'
+  stream_schema_done: 'Schema extrahiert: {tables} Tabellen, {columns} Spalten'
+  stream_normalisation_done: 'Normalisierung: {count} Vorschläge'
+  stream_ai_schema_done: 'Schema-KI: Zustandswert {score}/100'
+  stream_ai_integration_start: 'Integrations-KI: erkennt Beziehungen...'
+  stream_unsupported_type: 'Nicht unterstützter Datenbanktyp: {db_type}'
+  stream_mechanical_done: 'Mechanische Analyse: {count} Probleme gefunden'
+  stream_normalisation_timeout: 'Normalisierung: Zeitüberschreitung nach 90 Sekunden'
+  analysis_complete: Analyse abgeschlossen
+  analysis_cancelled: Analyse-Stream abgebrochen (Client getrennt)
+  ai_skipped_reason: 'Dieser Bericht enthält nur die mechanische Analyse. Die KI-gestützte Analyse wurde übersprungen, da die Datenbank {count} Probleme erzeugt hat (Limit: {limit}). Überprüfen Sie die
+    mechanischen Befunde unten, bereinigen Sie die Datenbank und führen Sie die Analyse anschließend mit KI erneut aus, um kontextbezogene Erklärungen, semantische Einblicke und Normalisierungsvorschläge
+    zu erhalten.'
+  stream_mechanical_start: Mechanische Analyse wird ausgeführt...
+  stream_analysis_failed: 'Analyse fehlgeschlagen: {error}'
+groups:
+  admin_required: Administratorzugriff erforderlich
+  cannot_delete_self: Eigenes Konto kann nicht gelöscht werden
+  description_required: Beschreibung darf nicht leer sein
+  insufficient_permissions: Unzureichende Berechtigungen zum Verwalten von Gruppen
+  invalid_group_id: Ungültige Benutzergruppe. Muss zwischen 00 und 99 liegen
+  update_failed: Fehler beim Aktualisieren der Gruppe
+  user_not_found: Benutzer nicht gefunden
+  user_updated: Benutzergruppe erfolgreich aktualisiert
+  not_found: Gruppe '{id}' nicht gefunden
+  not_authorized: Nicht berechtigt, die Gruppe dieses Benutzers anzuzeigen
+  update_success: Beschreibung der Gruppe '{id}' aktualisiert.
+  resource_not_found: Ressource nicht gefunden.
+  missing_id: Ressourcen-ID fehlt.
+recipes:
+  columns_required: Bitte wählen Sie mindestens eine Spalte aus
+  data_selection_error: 'Datenauswahl fehlgeschlagen: {error}'
+  dataset_not_found: Datensatz nicht gefunden
+  dataset_required: Bitte wählen Sie einen Datensatz aus
+  delete_error: 'Fehler beim Löschen des Rezepts: {error}'
+  execute_error: 'Fehler beim Ausführen des Rezepts: {error}'
+  execution_completed: Ausführung erfolgreich abgeschlossen
+  execution_failed: Ausführung fehlgeschlagen
+  execution_load_error: 'Fehler beim Laden der Ausführung: {error}'
+  executions_load_error: 'Fehler beim Laden der Ausführungen: {error}'
+  invalid_stage: Ungültiger Schritt für Rezept
+  invalid_stage_type: 'Ungültiger Schritttyp: {type}. Muss einer von folgendem sein: {types}'
+  load_datasets_error: 'Fehler beim Laden der Datensätze: {error}'
+  load_error: 'Fehler beim Laden der Rezepte: {error}'
+  name_required: Rezeptname ist erforderlich
+  no_columns_exist: Keine der ausgewählten Spalten existiert im Datensatz
+  no_dataset: Kein Datensatz mit diesem Rezept verknüpft
+  no_stages: Rezept muss mindestens einen Schritt haben
+  no_updates: Keine Felder zum Aktualisieren
+  preparation:
+    no_db_pool: Datenbank-Pool für Vorbereitungsschritt nicht verfügbar
+    rules_applied: '{count} Vorbereitungsregeln angewendet'
+    all_rules_failed: 'Alle Regeln fehlgeschlagen: {errors}'
+    rule_not_found: Regel '{rule_id}' nicht gefunden
+    rule_failed: 'Regel ''{rule_id}'': {error}'
+  scatter_two_columns: Streudiagramm erfordert mindestens zwei Spalten
+  scatter_two_numeric: Streudiagramm erfordert zwei numerische Spalten
+  schema_error: 'Fehler beim Laden des Spaltenschemas: {error}'
+  unknown_stage: 'Unbekannter Schritttyp: {stage_type}'
+  unsupported_chart_type: 'Nicht unterstützter Diagrammtyp: {chart_type}'
+  update_error: 'Fehler beim Aktualisieren des Rezepts: {error}'
+  visualisation_columns_required: Mindestens eine Spalte ist für die Visualisierung erforderlich
+  visualisation_error: 'Visualisierung fehlgeschlagen: {error}'
+  visualisation_generated: Visualisierung erfolgreich generiert
+  field_label:
+    dependentColumn: Abhängige / Ergebnis-Spalte
+    yColumn: Y-Achsenspalte
+    independentColumns: Unabhängige / Prädiktor-Spalten
+    factorColumn: Faktorspalte (Gruppierungsvariable)
+    categoryColumn: Kategoriespalte (Labels)
+    xColumn: X-Achsenspalte
+    responseColumn2: Zweite Zielspalte (gepaarte Messung)
+    responseColumn: Zielspalte (numerische Messung)
+    columns: Spalten
+    factorColumn2: Zweite Faktorspalte (Gruppierungsvariable)
+  execution:
+    preparation_failed: Vorbereitungsphase fehlgeschlagen
+    preparation_error: 'Vorbereitungsphase fehlgeschlagen: {error}'
+    error: 'Fehler bei der Rezeptausführung: {error}'
+    unknown_stage: 'Unbekannter Phasentyp: {stage_type}'
+  transforms:
+    load_error: Laden verbundener Transformationen fehlgeschlagen
+    connect_success: Transformation mit Rezept verbunden
+    disconnect_success: Transformation von Rezept getrennt
+    dataset_mismatch: Transformation '{id}' gehört nicht zum Datensatz '{dataset_id}'
+    not_found: Transformation '{id}' nicht gefunden oder gehört nicht zum Datensatz dieses Rezepts
+  requirement:
+    anova_two_way: 2 kategoriale Spalten (zwei Faktoren) und 1 numerische Spalte (Zielvariable)
+    scatter: 2 numerische Spalten (x und y)
+    bar: 1 kategoriale Spalte (X-Achse) und 1 numerische Spalte (Y-Achse)
+    table: beliebige Spalten
+    correlation: mindestens 2 numerische Spalten
+    none: keine Ausgabe erforderlich
+    t_test_independent: 1 kategoriale Spalte (für Gruppen) und 1 numerische Spalte (zum Vergleichen)
+    pie: 1 kategoriale Spalte (Labels)
+    descriptive: mindestens 1 numerische Spalte
+    distribution: 1 numerische Spalte
+    t_test_paired: 2 numerische Spalten (gepaarte Messungen)
+    line: 2 numerische Spalten (x und y)
+    chi_square: 2 kategoriale Spalten
+    histogram: 1 numerische Spalte (X-Achse)
+    linear_regression: mindestens 2 numerische Spalten (Prädiktoren und Zielvariable)
+    anova_one_way: 1 kategoriale Spalte (Faktor) und 1 numerische Spalte (Zielvariable)
+    area: 2 numerische Spalten (x und y)
+    donut: 1 kategoriale Spalte (Beschriftungen)
+    hbar: 1 kategoriale Spalte (y-Achse) und 1 numerische Spalte (x-Achse)
+  column_type:
+    numeric: numerisch
+    categorical: kategorial
+  validation:
+    failed: 'Rezeptvalidierung fehlgeschlagen: {errors}'
+    unknown_columns: 'Die Phase ''{stage}'' verweist auf Spalte(n) ''{columns}'', die in diesem Datensatz nicht existieren. Verfügbare Spalten: {available}. Wählen Sie aus den verfügbaren aus.'
+    unknown_algorithm: '''{type}'' ist keine gültige Analysemethode. Wählen Sie eine der folgenden: {options}.'
+    insufficient_columns_output: 'Dieser Datensatz hat nicht die richtigen Spaltentypen für ''{output}'' ({requirement}). Der Datensatz hat: {columns}. Wählen Sie einen Datensatz mit {requirement} oder
+      wechseln Sie zu: {options}.'
+    unknown_output: '''{type}'' ist kein gültiger Ausgabetyp. Wählen Sie einen der folgenden: {options}.'
+    incompatible_algo_output: 'Die Analyse ''{algo}'' liefert {result_type}-Ergebnisse und kann nicht als ''{output}''-Diagramm angezeigt werden. Ändern Sie den Ausgabetyp in einen mit ''{algo}'' kompatiblen
+      Typ: {options}.'
+    missing_algo_field: Bei der Analyse '{algo}' fehlt die Einstellung '{field}' ({label}). Wählen Sie im Analysepanel eine Spalte für '{field}' aus.
+    missing_output_field: Beim Output '{output}' fehlt die Einstellung '{field}' ({label}). Wählen Sie im Output-Panel eine Spalte für '{field}'.
+    insufficient_columns_algo: 'Dieser Datensatz hat nicht die richtigen Spaltentypen für ''{algo}'' ({requirement}). Der Datensatz enthält: {columns}. Wählen Sie einen Datensatz mit {requirement} oder
+      wechseln Sie zu: {options}.'
+    wrong_column_type: Spalte '{column}' muss für '{field}' ({label}) {expected} sein.
+    algorithm_required: Keine Analysemethode ist ausgewählt. Wählen Sie eine im Analyse-Panel aus – ein Rezept benötigt eine Statistikphase mit einem Algorithmus.
+    unknown_field: '''{field}'' ist keine anerkannte Einstellung für ''{type}''. Anerkannte Einstellungen: {options}.'
+  result_type:
+    numeric: numerisch
+    tabular: tabellarisch
+  not_owned: Rezept '{id}' nicht gefunden oder Sie besitzen es nicht.
+  share:
+    disabled: Rezept ist jetzt privat
+    enabled: Rezept erfolgreich geteilt
+  ai_session:
+    unauthorized: Sie haben keinen Zugriff auf diese KI-Rezept-Sitzung.
+    load_error: Fehler beim Laden der KI-Rezept-Sitzung
+    delete_error: Fehler beim Löschen der KI-Rezept-Sitzung
+    create_error: Fehler beim Erstellen der KI-Rezept-Sitzung
+    save_error: Rezept aus KI-Sitzung konnte nicht gespeichert werden
+    not_found: KI-Rezept-Sitzung nicht gefunden.
+  create_success: Rezept '{name}' erfolgreich erstellt
+  not_found: Rezept '{id}' nicht gefunden
+  execution_not_found: Ausführung '{id}' nicht gefunden
+  delete_success: Rezept '{id}' erfolgreich gelöscht
+  update_success: Rezept '{id}' erfolgreich aktualisiert.
+  technique_correlation: Korrelationsmatrix
+  technique_t_test_paired: Gepaarter t-Test
+  technique_chi_square: Chi-Quadrat-Test
+  technique_anova_one_way: Einfaktorielle ANOVA
+  technique_linear_regression: Lineare Regression
+  technique_t_test_independent: Unabhängiger t-Test
+  technique_descriptive: Deskriptive Statistik
+  technique_anova_two_way: Zweifaktorielle ANOVA
+  histogram_no_columns: Histogramm benötigt mindestens eine Spalte
+  histogram_numeric: Histogramm benötigt eine numerische Spalte
+  distribution_no_columns: Verteilungsdiagramm benötigt mindestens eine Spalte
+  stage_not_implemented: '{stage_type}-Phase kommt bald'
+  scoreboard:
+    output_unknown:
+      what: Einen bekannten Ausgabetyp wählen
+    technique_fields:
+      what: Die erforderlichen Spalten wählen
+    output_fields:
+      what: Die Ausgabespalten wählen
+    dataset:
+      what: Einen Datensatz auswählen
+    technique:
+      what: Eine Analysemethode wählen
+    name:
+      what: Das Rezept benennen
+    output:
+      what: Einen Ausgabetyp wählen
+    technique_unknown:
+      what: Eine bekannte Analysemethode wählen
+    output_incompatible:
+      what: Einen kompatiblen Ausgabetyp wählen
+  chip:
+    heading:
+      columns: Welche Spalten?
+      technique: Welche Analysemethode?
+      output: Welche Ausgabe?
+statistics:
+  anova_computation_failed: 'Berechnung der zweifachen ANOVA fehlgeschlagen: {error}'
+  anova_needs_three_groups: Einfache ANOVA erfordert 3 oder mehr Gruppen ({n} gefunden). Verwenden Sie für 2 Gruppen den unabhängigen t-Test.
+  compute_failed: 'Fehler beim Berechnen der Statistiken: {error}'
+  each_group_two_observations: Jede Gruppe muss mindestens 2 Beobachtungen haben
+  group_column_required_anova: Eine kategoriale Gruppenspalte mit 3 oder mehr Stufen ist für die einfache ANOVA erforderlich
+  group_column_required_ttest: Eine kategoriale Gruppenspalte mit genau zwei Stufen ist für den unabhängigen t-Test erforderlich
+  need_five_observations_chi: Mindestens 5 vollständige Beobachtungen erforderlich
+  need_observations_regression: Mindestens {n} vollständige Beobachtungen erforderlich
+  need_ten_observations_anova: Mindestens 10 vollständige Beobachtungen für die zweifache ANOVA erforderlich
+  need_three_pairs: Mindestens 3 vollständige Paare für den gepaarten t-Test erforderlich
+  need_two_categories_chi: Beide Spalten benötigen mindestens 2 Kategorien
+  need_two_numeric_correlation: Mindestens 2 numerische Spalten für Korrelation erforderlich
+  need_two_valid_numeric: Mindestens 2 gültige numerische Spalten erforderlich
+  no_valid_data_after_dropna: Keine gültigen Daten nach dem Entfernen von NaN
+  no_valid_numeric: Keine gültigen numerischen Spalten angegeben
+  non_numeric_column: Nicht-numerische Spalte
+  not_computed: Nicht berechnet
+  select_dependent_independent: 'Wählen Sie mindestens 2 numerische Spalten aus: erste = abhängige Variable, übrige = unabhängige Variablen'
+  select_dependent_var: Wählen Sie eine numerische abhängige Variable aus
+  select_one_numeric_ttest: Wählen Sie eine numerische Spalte für den unabhängigen t-Test.
+  select_two_categorical_chi: Wählen Sie genau zwei kategoriale Spalten.
+  select_two_numeric_paired: Wählen Sie genau zwei numerische Spalten für den gepaarten t-Test.
+  two_factors_required: Für die zweifaktorielle ANOVA sind zwei Faktoren erforderlich.
+  group_must_have_two_levels: 'Die Gruppenspalte ''{group}'' muss genau 2 Stufen haben (gefunden: {n}).'
+  group_fewer_than_two: Gruppe '{group}' hat weniger als 2 Beobachtungen
+  cache_cleared: Cache-Schlüssel '{key}' geleert
+  cache_not_found: Cache-Schlüssel '{key}' nicht gefunden
+  factor_column_not_found: Spalte '{col}' für Faktor {factor} nicht gefunden
+  column_not_found: Spalte '{col}' nicht gefunden
+  computation_failed: 'Statistikberechnung fehlgeschlagen: {error}'
+  column_must_be_numeric: Spalte '{col}' muss numerisch sein.
+user:
+  api_key_required: Für diesen Anbieter ist ein API-Schlüssel erforderlich.
+  connection_name_exists: Eine Verbindung mit diesem Namen existiert bereits.
+  connection_not_found: Verbindung nicht gefunden.
+  example_blocked: Beispielbenutzer können diese Aktion nicht ausführen.
+  internal_error: Interner Serverfehler.
+  missing_fields: Fehlende Pflichtfelder.
+  provider_not_found: Anbieter nicht gefunden.
+  user_not_found: Benutzer nicht gefunden.
+  example_delete_db: Beispielbenutzer können keine Datenbankverbindungen löschen
+  unknown_provider: 'Unbekannter Anbieter: {code}'
+  fetch_failed: Abruf fehlgeschlagen
+  no_endpoint: Für diesen Anbieter ist kein Endpunkt konfiguriert
+  auto_create_default_detail: Automatische Datensatzerstellung fehlgeschlagen. Der Datenbankserver ist möglicherweise nicht erreichbar
+  api_key_required_fetch: API-Schlüssel ist für diesen Anbieter erforderlich
+  example_create_db: Beispielbenutzer können keine Datenbankverbindungen erstellen
+  connection_timeout_local: Verbindungs-Timeout. Läuft {code} unter {baseUrl}?
+  example_update_db: Beispielbenutzer können keine Datenbankverbindungen aktualisieren
+  provider_returned: 'Anbieter gab {status} zurück: {text}'
+  connection_timeout_remote: Zeitüberschreitung der Verbindung für {code} unter {baseUrl}
+  no_models_returned: Der Anbieter hat keine Modelle zurückgegeben; es wurde nichts geändert
+validation:
+  error: 'Validierungsfehler: {count} Problem(e) gefunden.'
+  password:
+    require_digit: Das Passwort muss mindestens eine Ziffer enthalten.
+    min_length: Das Passwort muss mindestens {min} Zeichen lang sein.
+    require_lowercase: Das Passwort muss mindestens einen Kleinbuchstaben enthalten.
+    too_weak: Das Passwort ist zu schwach. Bitte wählen Sie ein stärkeres Passwort.
+    require_special: Das Passwort muss mindestens ein Sonderzeichen enthalten.
+    require_uppercase: Das Passwort muss mindestens einen Großbuchstaben enthalten.
+notebooks:
+  example_blocked_2: Beispielbenutzer können die Notebook-Freigabe nicht ändern.
+  share_error_2: 'Fehler beim Aktualisieren der Freigabe: {error}'
+  delete_error: 'Fehler beim Löschen des Imports: {error}'
+  example_blocked_3: Beispielbenutzer können keine Notebooks löschen.
+  no_table_rights: Diese Verbindung kann keine Tabellen erstellen – Import verweigert.
+  no_connection: Bitte wählen Sie eine Datenbankverbindung aus.
+  import_failed_2: 'Fehler beim Auflisten der Importe: {error}'
+  no_dataframes: Keine DataFrames in diesem Notebook gefunden
+  invalid_format_2: Ungültiges Notebook-Format. Nur .ipynb-Dateien werden akzeptiert.
+  system_db_blocked: Import in die Systemdatenbank '{db}' ist nicht möglich. Bitte verwenden Sie eine andere Datenbank oder erstellen Sie eine neue.
+  import_failed_3: Import nicht gefunden
+  import_failed: 'Notebook-Import fehlgeschlagen: {error}'
+  no_db_rights: Diese Verbindung hat keine Rechte zum Erstellen von Datenbanken
+  import_failed_4: 'Fehler beim Abrufen des Imports: {error}'
+  share_error: Nur der Eigentümer kann die Freigabeeinstellungen ändern
+  file_too_large: Notebook-Datei ist zu groß. Maximale Größe ist {max_size} MB.
+  example_blocked: Beispielbenutzer können keine Notebooks importieren.
+  cells_not_list: 'Ungültiges Notebook-Format: ''cells'' ist keine Liste'
+  untitled: Unbenannt
+  too_many_cells: 'Zu viele Zellen ({count}). Maximal: {max_cells}'
+  invalid_json: 'Ungültiges JSON: {error}'
+  missing_cells: 'Ungültiges Notebook-Format: Schlüssel ''cells'' fehlt'
+  unknown_error: Unbekannter Fehler
+notebooks_storage:
+  unsupported_storage_type: 'Nicht unterstützter Speichertyp: {type}'
+  failed_create_table: 'Fehler beim Erstellen der Tabelle {table}: {error}'
+  failed_create_table_mssql: 'Fehler beim Erstellen der Tabelle: {error}'
+  no_connection_details_short: Keine Verbindungsdetails
+  no_connection_details: Keine Verbindungsdaten angegeben.
+  no_data_pool: Der Daten-Datenbankpool ist nicht initialisiert.
+rag:
+  no_matches: Kein passender Text für Ihre Frage in der Datenbank gefunden. Versuchen Sie, die Frage umzuformulieren oder eine andere Datenquelle auszuwählen.
+  no_tables: Keine Tabellen im Schema gefunden, die durchsucht werden können.
+  ai_provider_error: 'KI-Anbieter-Fehler: {error}'
+  no_ai_provider: '{count} übereinstimmende Einträge gefunden. (Kein KI-Anbieter für natürlichsprachliche Antworten konfiguriert.)'
+error:
+  dataset:
+    not_found_2: Datensatz '{id}' nicht gefunden
+    load_failed_2: 'Fehler beim Laden der Daten: {error}'
+    table_missing: Tabelle '{table}' existiert nicht
+    not_found: Datensatz '{id}' nicht gefunden oder nicht zugänglich
+    not_found_3: 'Datensatz nicht gefunden oder nicht zugänglich: {error}'
+    unknown_source: 'Unbekannter Quelltyp: {source_type}'
+    not_found_or_not_owned: Datensatz '{id}' nicht gefunden oder Sie besitzen ihn nicht.
+    delete_failed_2: 'Fehler beim Löschen des Datensatzes: {error}'
+    load_failed_3: Virtueller Datensatz '{id}' hat keine SQL-Definition
+    load_failed_4: 'Fehler beim Laden des virtuellen Datensatzes ''{id}'': {error}'
+    load_failed: 'Fehler beim Laden des Datensatzes: {error}'
+    not_found_4: Datensatz '{id}' nicht gefunden oder nicht zugänglich
+    not_found_5: Datensatz '{id}' nicht gefunden
+  connection:
+    query_failed: 'Fehler beim Abfragen der Tabelle/Ansicht ''{table}'': {error}'
+    type_not_supported: Datenbanktyp '{type}' wird noch nicht unterstützt
+    query_failed_3: 'PostgreSQL-Abfrage fehlgeschlagen: {error}'
+    query_failed_4: 'MySQL-Abfrage fehlgeschlagen: {error}'
+    query_failed_5: 'MSSQL-Abfrage fehlgeschlagen: {error}'
+    failed: 'Fehler beim Verbinden mit der Datenbank: {error}'
+    query_failed_7: 'Datenbankabfrage fehlgeschlagen: {error}'
+    type_not_supported_2: Datenbanktyp '{type}' wird für die Schemaerkennung noch nicht unterstützt
+    connect_failed: 'MySQL-Verbindung fehlgeschlagen: {error}'
+    query_failed_2: 'Fehler beim Ausführen des kompilierten SQL: {error}'
+    decryption_failed: 'Fehler beim Entschlüsseln des Verbindungspassworts: {error}'
+    query_failed_6: 'Access-Abfrage fehlgeschlagen: {error}'
+    type_not_supported_3: 'Nicht unterstützter Datenbanktyp: {type}'
+  define:
+    connection_not_found_2: Verbindung nicht gefunden oder nicht zugänglich
+    connection_not_found: Datenbankverbindung nicht gefunden oder nicht zugänglich
+    dataset_creation_failed: 'Fehler beim Erstellen des Datensatz-Eintrags: {error}'
+  groups:
+    invalid_group_id: Ungültige group_id. Sie muss 00–99 sein.
+  describe:
+    ai_connection_error_2: 'Fehler bei der KI-Verbindung: API-Schlüssel konnte nicht entschlüsselt werden.'
+    ai_connection_error: 'KI-Verbindungsfehler: Keine Verbindung verfügbar'
+  database:
+    insert_failed: 'Datenbankfehler: {error}'
+    pool_not_initialized: Datenbank-Pool nicht initialisiert.
+  ai:
+    call_failed: 'KI-Aufruf fehlgeschlagen: {error}'
+  preparation:
+    rule_not_found: Vorbereitungsregel '{id}' für diesen Datensatz nicht gefunden.
+    rule_not_found_2: Vorbereitungsregel '{id}' nicht gefunden.
+  execution:
+    cannot_cancel: Eine Ausführung, die bereits {status} ist, kann nicht abgebrochen werden.
+access:
+  connection_saved: Verbindung gespeichert
+  connection_exists: Verbindung '{name}' existiert bereits
+  connection_failed_detail: 'Verbindung fehlgeschlagen: {detail}'
+  connection_failed: Verbindung fehlgeschlagen
+  licence_required: Access-Datenbankverbindungen erfordern eine Unternehmenslizenz
+  connection_not_found: Verbindung nicht gefunden
+  connection_deleted: Verbindung gelöscht
+  encryption_error: 'Verschlüsselungsfehler: {error}'
+  db_pool_not_initialized: Datenbank-Pool nicht initialisiert
+  name_and_path_required: name und file_path sind erforderlich
+  connected_in_ms: Verbunden in {elapsed} ms.
+  file_path_required: file_path ist erforderlich.
+  table_not_found: 'Tabelle ''{table}'' nicht gefunden: {error}'
+  connection_unavailable: 'Verbindung zur Access-Datenbank konnte nicht hergestellt werden: {error}'
+  invalid_port: Port muss eine Ganzzahl sein
+  connection_params_required: Host, Port, Benutzer und Passwort sind erforderlich
+execution:
+  loaded_rows: '{rows} Zeilen, {columns} Spalten geladen'
+  starting_analysis: Analysephasen werden gestartet ...
+  not_found: Ausführung nicht gefunden
+  loading_dataset: Datensatz wird geladen...
+  executing_stage: 'Stufe wird ausgeführt: {stage}'
+schema:
+  no_table_name: Datensatz hat keinen Tabellennamen (noch nicht übernommen).
+  dataset_id_required: dataset_id ist für source_type=dataset erforderlich
+  connection_and_table_required: connection_id und table_name sind für PostgreSQL-/MySQL-Quellen erforderlich
+  introspect_mysql_failed: 'Fehler bei der MySQL-Introspektion: {error}'
+  connection_not_found: Datenbankverbindung nicht gefunden oder Zugriff verweigert
+  dataset_not_found: Datensatz nicht gefunden oder Zugriff verweigert
+  introspect_postgresql_failed: 'Fehler bei der PostgreSQL-Introspektion: {error}'
+  unsupported_source_type: 'Nicht unterstützter source_type: {source_type}. Verwenden Sie dataset, postgresql oder mysql.'
+licence:
+  write_failed: 'Fehler beim Schreiben der Lizenzdatei: {error}'
+  missing_content: Feld 'content' fehlt
+  delete_failed: 'Fehler beim Löschen der Lizenzdatei: {error}'
+  no_file_to_delete: Keine Lizenzdatei zum Löschen vorhanden — bereits im Open-Source-Modus.
+  install_success: Lizenz erfolgreich installiert.
+  delete_success: Lizenz entfernt. Läuft im Open-Source-Modus.
+virtual_chat:
+  chat_session_not_found: Chat-Sitzung nicht gefunden
+  connection_not_found: Datenbankverbindung nicht gefunden oder Zugriff verweigert
+  llm_call_failed: 'LLM-Aufruf fehlgeschlagen: {error}'
+  llm_returned_error: LLM hat HTTP {status_code} zurückgegeben.
+  introspection_failed: 'Introspektion fehlgeschlagen: {error}'
+  save_draft_success: '✅ Virtueller Datensatz als Entwurf gespeichert: **{name}**. Sie können ihn auf der Seite „Datensätze“ ansehen und bearbeiten. Verwenden Sie den Tab „Definieren“, um SQL, Joins und
+    Ausgabespalten zu verfeinern.'
+  empty_response: Ich bin mir nicht sicher, wie ich darauf antworten soll. Könnten Sie das umformulieren oder nähere Details angeben?
+  save_no_sources: '⚠️ Speichern nicht möglich: Es wurden keine Datenquellen untersucht. Versuchen Sie, in Ihren vorherigen Nachrichten Tabellennamen wie „products“ oder „orders“ zu erwähnen.'
+  save_parse_error: '⚠️ Datensatz konnte nicht gespeichert werden: {error}'
+  save_success: ✅ Datensatz **{name}** erfolgreich gespeichert. Sie finden ihn in der Liste „Vorhandene Datensätze“. Verwenden Sie „Bearbeiten“, um ihn zu verfeinern, oder „Klonen“, um eine Variante zu
+    erstellen.
+  save_failed: '⚠️ Speichern fehlgeschlagen: {error}'
+ai_recipe:
+  llm_error: 'Fehler beim KI-Dienst: {error}'
+  message_required: Eine Nachricht ist erforderlich
+  session_name_required: Ein Name ist erforderlich.
+  invalid_decision: Ungültige Entscheidung.
+system:
+  cache_cleanup_completed: 'Cache-Bereinigung abgeschlossen: {removed} Einträge entfernt'
+  hello_world: Hallo, Welt!
+audio_presets:
+  invalid_chat_type: 'Ungültiger Chat-Typ: {chat_type}. Muss einer der folgenden sein: {valid_types}'
+virtual:
+  execute_failed: 'Ausführung fehlgeschlagen: {error}'
+  preview_failed: 'Vorschau fehlgeschlagen: {error}'
+  no_credentials_mysql: Keine Anmeldedaten für MySQL-Verbindung {conn_id} gefunden.
+  no_credentials_postgresql: Keine Anmeldedaten für PostgreSQL-Verbindung {conn_id} gefunden.
+  validate:
+    dataset_id_required: 'Quelle ''{alias}'': datasetId ist für eine Datensatz-Quelle erforderlich.'
+    dataset_not_found: 'Quelle ''{alias}'': Datensatz {dataset_id} nicht gefunden oder Zugriff verweigert.'
+    join_left_source_not_found: 'Join {j_idx}: linke Quelle ''{left_alias}'' nicht gefunden'
+    column_source_not_found: 'Spalte {c_idx}: Quelle ''{src_alias}'' nicht gefunden'
+    connection_id_required: 'Quelle ''{alias}'': connectionId ist für eine {storage_type}-Quelle erforderlich.'
+    connection_not_found: 'Quelle ''{alias}'': Verbindung {conn_id} nicht gefunden oder Zugriff verweigert.'
+    no_sources: Keine Quellen definiert.
+    join_right_source_not_found: 'Join {j_idx}: rechte Quelle ''{right_alias}'' nicht gefunden'
+    output_column_not_found: 'Spalte {c_idx}: Quelle ''{src_alias}'' hat keine Spalte ''{column}'''
+    join_column_not_found: 'Join {j_idx}: Quelle ''{alias}'' hat keine Spalte ''{column}'''
+  scoreboard:
+    columns:
+      needs_failed: Die Spalten von '{source}' konnten nicht gelesen werden.
+      what: Was ist in '{source}' enthalten?
+      needs_empty: '''{source}'' hat keine Spalten zur Auswahl.'
+    name:
+      what: Wie soll dieser Datensatz heißen?
+    joins:
+      needs: Zwei oder mehr Quellen, deren Spalten gelesen wurden.
+      what: Wie sollen die Quellen verknüpft werden?
+    sources:
+      what: Aus welcher Tabelle soll dieser Datensatz erstellt werden?
+    output_columns:
+      what: Welche Spalten soll das Ergebnis enthalten?
+      needs: Eine Quelle, deren Spalten gelesen wurden.
+    storage:
+      live: Live-Ansicht
+      table: Gespeicherte Tabelle
+      what: Soll dies eine Live-Ansicht oder eine gespeicherte Tabelle sein?
+  decision:
+    unknown_piece: '''{piece}'' ist keine Entscheidung, die dieser Endpunkt anwenden kann.'
+    missing_value: Die '{piece}'-Entscheidung benötigt einen Wert.
+    no_connection: Ihre Auswahl wurde gespeichert. Der Assistent konnte nicht antworten, da keine KI-Verbindung verfügbar ist.
+    model_failed: 'Ihre Auswahl wurde gespeichert. Der Assistent konnte nicht antworten: {error}'
+    invalid_value: 'Die ''{piece}''-Entscheidung konnte nicht angewendet werden: {error}'
+    applied: Verwenden Sie die obige Auswahl.
+    no_reply: Ihre Auswahl wurde gespeichert. Der Assistent hat seine Arbeitsrunden aufgebraucht, ohne eine Antwort zu liefern – bitten Sie ihn, fortzufahren, oder überprüfen Sie den Entwurf im Baum.
+  join_suggestions:
+    invalid_sources: Join-Vorschläge benötigen eine Liste von Quellen, jeweils mit einem Alias und einem Namen ({error}).
+  column:
+    unknown_action: '''{action}'' ist keine Spaltenaktion. Verwenden Sie tick oder untick.'
+    missing_column: Keine Spalte wurde benannt.
+    missing_source: 'Eine Spalte benötigt ihre Quelle: eine Datensatz-ID oder eine Verbindung und einen Tabellennamen.'
+  save:
+    invalid_definition: 'Dieser Datensatz kann nicht gespeichert werden: {errors}'
+  panel:
+    collapsed_required: Der eingeklappte Zustand des Panels muss true oder false sein.
+  tool:
+    no_sources_yet: Es gibt keine Quelle namens '{alias}' – der Entwurf hat noch keine Quellen. Rufen Sie zuerst add_source auf.
+    no_source: 'Keine Quelle namens ''{alias}''. Die Quellen dieses Entwurfs: {aliases}.'
+visualization_types:
+  slug_already_exists: Slug bereits vorhanden
+  internal_error: Interner Serverfehler
+  forbidden: Verboten
+  type_not_found: Visualisierungstyp nicht gefunden
+  name_and_slug_required: Name und Slug sind erforderlich
+test_ai:
+  connection_failed: 'Verbindung fehlgeschlagen: {msg}'
+  no_endpoint: Für diesen Anbieter ist kein Endpunkt konfiguriert
+  internal_error: Interner Serverfehler
+  responded_with_status: '{name} antwortete mit Status {status}'
+  api_key_required: API-Schlüssel ist für {name} erforderlich
+  endpoint_valid: Endpunkt unter {baseUrl} ist gültig
+  fetch_failed: Abruf fehlgeschlagen
+  endpoint_v1_valid: Endpunkt unter {baseUrl}/v1 ist gültig
+  connection_timeout_local: Verbindungs-Timeout. Läuft {name} unter {baseUrl}?
+  unknown_provider: 'Unbekannter Anbieter: {provider}'
+  server_reachable: Der {name}-Server unter {baseUrl} ist erreichbar.
+visualization_instances:
+  viz_type_not_found: Visualisierungstyp nicht gefunden
+  no_rendered_output: Keine gerenderte Ausgabe verfügbar
+  instance_not_found: Instanz nicht gefunden
+  internal_error: Interner Serverfehler
+  viz_type_id_required: visualizationTypeId erforderlich
+  unauthorized: Nicht autorisiert
+  invalid_instance_id: Ungültige Instanz-ID
+  invalid_viz_type: Ungültiger Visualisierungstyp
+ai_providers:
+  forbidden: Verboten
+  provider_not_found: Anbieter nicht gefunden
+  unauthorized: Nicht autorisiert
+  failed_to_update_provider: Anbieter konnte nicht aktualisiert werden
+  missing_id_or_enabled: Fehlende ID oder enabled-Flag
+  internal_error: Interner Serverfehler
+  failed_to_delete_provider: Anbieter konnte nicht gelöscht werden
+  missing_provider_id: Fehlende Anbieter-ID
+  invalid_provider_id: Ungültige Anbieter-ID.
+ai:
+  database:
+    email_sent: Bericht erfolgreich per E-Mail versendet
+column_required: Operation '{type}' erfordert eine Spalte.
+encode_column_required: Encode-Operation erfordert eine Spalte.
+invalid_encoding: 'Ungültige Kodierung: {encoding}. Muss eine der folgenden sein: {types}'
+invalid_fill_method: 'Ungültige fill_missing-Methode: {method}. Muss eine der folgenden sein: {methods}'
+rename_new_name_required: Die Operation zum Umbenennen einer Spalte erfordert einen neuen Namen.
+columns_required: Operation '{type}' erfordert ein columns-Feld.
+filter_value_required: Filter-Operation erfordert einen Wert.
+invalid_operation_type: 'Ungültiger Operationstyp: {type}. Muss einer der folgenden sein: {types}'
+filter_operator_required: Filter-Operation erfordert einen Operator.
+invalid_target_type: 'Ungültiger target_type: {target_type}. Muss einer der folgenden sein: {types}'
+dataclean_chat:
+  dataset_id_required: datasetId ist erforderlich.
+  message_required: Nachricht ist erforderlich.
+  empty_response: Ich konnte keine Antwort generieren. Bitte versuchen Sie es erneut.
+  chat_session_not_found: Chat-Sitzung zur Datenbereinigung nicht gefunden
+  create_error: Fehler beim Erstellen der Datenbereinigungs-Sitzung.
+dataclean_tools:
+  no_rules_to_preview: Keine Regeln für die Vorschau vorhanden.
+  no_rules_to_apply: Keine Regeln zum Anwenden vorhanden.

@@ -1,0 +1,1016 @@
+admin:
+  already_full_admin: کاربر در حال حاضر ادمین کامل است
+  already_group_admin: کاربر در حال حاضر ادمین گروه است
+  cannot_delete_self: نمی‌توانید حساب کاربری خود را حذف کنید
+  cannot_demote_full_admin: نمی‌توان یک ادمین کامل را تنزل مقام داد
+  cannot_demote_self: نمی‌توانید خودتان را تنزل مقام دهید
+  cannot_promote_example: نمی‌توان کاربر نمونه را ارتقا داد
+  delete_error: حذف کاربر ناموفق بود
+  demote_error: تنزل مقام کاربر ناموفق بود
+  description_required: توضیحات نمی‌تواند خالی باشد
+  example_blocked: کاربران نمونه نمی‌توانند اقدامات مدیریتی انجام دهند
+  group_not_found: گروه یافت نشد
+  group_users_load_error: بارگیری کاربران گروه ناموفق بود
+  groups_load_error: بارگیری گروه‌ها ناموفق بود
+  groups_stats_error: بارگیری آمار گروه ناموفق بود
+  insufficient_permissions: مجوزهای کافی برای این اقدام وجود ندارد
+  invalid_group_id: group_id نامعتبر است. باید 00-99 باشد
+  invalid_id: شناسه نامعتبر است
+  invalid_upload_count: maxUploadCount باید یک عدد صحیح نامنفی باشد (0 برای نامحدود).
+  invalid_upload_size: maxUploadSizeMB باید یک عدد صحیح نامنفی باشد (0 برای نامحدود).
+  missing_fields: فیلدهای الزامی موجود نیستند
+  missing_group_id: شناسه گروه موجود نیست
+  missing_id: شناسه موجود نیست
+  missing_model_id: شناسه مدل موجود نیست
+  missing_provider_code: پارامتر providerCode موجود نیست
+  missing_user_id: userId موجود نیست
+  model_update_error: به‌روزرسانی مدل ناموفق بود
+  models_load_error: بارگیری مدل‌ها ناموفق بود
+  no_fields: هیچ فیلد معتبری برای به‌روزرسانی وجود ندارد
+  no_group: کاربر به هیچ گروهی اختصاص داده نشده است
+  not_group_admin: کاربر ادمین گروه نیست
+  only_full_admin: فقط ادمین‌های کامل می‌توانند این اقدام را انجام دهند
+  promote_error: ارتقای کاربر ناموفق بود
+  provider_delete_error: حذف ارائه‌دهنده ناموفق بود
+  provider_not_found: ارائه‌دهنده یافت نشد
+  provider_update_error: به‌روزرسانی ارائه‌دهنده ناموفق بود
+  providers_load_error: بارگیری ارائه‌دهنده‌ها ناموفق بود
+  slug_exists: اسلاگ از قبل وجود دارد
+  update_error: به‌روزرسانی کاربر ناموفق بود
+  user_load_error: بارگیری کاربر ناموفق بود
+  user_not_found: کاربر یافت نشد
+  users_load_error: بارگیری کاربران ناموفق بود
+  viz_type_create_error: ایجاد نوع بصری‌سازی ناموفق بود
+  viz_type_delete_error: حذف نوع بصری‌سازی ناموفق بود
+  viz_type_update_error: به‌روزرسانی نوع بصری‌سازی ناموفق بود
+  viz_types_load_error: بارگیری انواع بصری‌سازی ناموفق بود
+api:
+  user:
+    connection_not_found: اتصال یافت نشد
+    provider_not_found: ارائه‌دهنده «{provider}» یافت نشد
+    missing_fields: فیلدهای الزامی وجود ندارد
+    invalid_connection_id: شناسه اتصال نامعتبر است
+    invalid_name: نام باید رشته باشد
+    example_update_ai: کاربران نمونه نمی‌توانند اتصالات هوش مصنوعی را به‌روزرسانی کنند
+    internal_error: خطای داخلی سرور
+    api_key_required: کلید API برای این ارائه‌دهنده الزامی است
+    invalid_port: پورت باید عدد صحیح باشد
+    example_blocked: کاربران نمونه نمی‌توانند این عمل را انجام دهند
+    example_create_ai: کاربران نمونه نمی‌توانند اتصالات هوش مصنوعی ایجاد کنند
+    example_delete_ai: کاربران نمونه نمی‌توانند اتصالات هوش مصنوعی را حذف کنند
+    connection_name_exists: اتصالی با این نام از قبل وجود دارد
+    connection_id_required: شناسه اتصال الزامی است
+    user_not_found: کاربر یافت نشد
+    invalid_current_password: رمز عبور فعلی اشتباه است
+    tuning_nothing_to_update: حداقل یکی از مقادیر temperature، maxTokens یا timeoutSeconds را مشخص کنید.
+    discovery_complete: '{seen} مدل کشف شد: {created} مدل جدید در اینجا، {refreshed} مدل از قبل شناختهشده، {pruned} مدل که دیگر ارائه نمیشوند.'
+    test_budget_exhausted: مدل چیزی برنگرداند زیرا تمام بودجه خروجی خود را پیش از رسیدن به پاسخ مصرف کرد. هیچ رأی قابلیتی ثبت نشد؛ مدت زمان ثبت شد.
+    test_tls_failure: اتصال امن برقرار نشد — نقطه پایانی ممکن است http ساده باشد در جایی که https انتظار میرفت، یا گواهی آن منقضی شده باشد. هیچ رأی قابلیتی ثبت نشد؛ مدت زمان شکست ثبت شد.
+    test_not_implemented: آزمون «{test}» ثبت شده است اما هنوز کاوشگری ندارد.
+    test_http_status: 'ارائهدهنده پاسخ داد و پاسخ آن خطا بود: {detail}. هیچ رأی قابلیتی ثبت نشد؛ آنچه ارائهدهنده گفت نشان داده شده است تا علت مشخص باشد.'
+    test_dns_failure: نام میزبان نقطه پایانی حل نشد. نشانی را برای اشتباه تایپی یا برای نامی که فقط این شبکه میتواند حل کند بررسی کنید. هیچ رأی قابلیتی ثبت نشد؛ مدت زمان شکست ثبت شد.
+    model_not_found: مدل «{model}» برای ارائهدهنده «{provider}» پیدا نشد.
+    tuning_model_not_found: چنین مدلی وجود ندارد.
+    tuning_malformed_body: بدنه درخواست JSON معتبر نیست.
+    invalid_probe_timeout: مهلت آزمون باید عدد صحیحی از ثانیه، حداقل ۱ و حداکثر {ceiling} باشد.
+    invalid_connect_timeout: مهلت اتصال باید عدد صحیحی از ثانیه، حداقل ۱ و حداکثر {ceiling} باشد.
+    test_other_failure: 'مدل در دسترس نبود و علت آن از مواردی نبود که این سیستم تشخیص میدهد. هیچ رأی قابلیتی ثبت نشد: {detail}'
+    connect_timeout_exceeds_probe: مهلت اتصال ({connect} ثانیه) نمیتواند طولانیتر از مهلت آزمون ({probe} ثانیه) باشد — نمیتوان اجازه داد برقراری اتصال بیشتر از کل زمان اجرای آزمون طول بکشد.
+    model_not_served_by_connection: این اتصال، مدل «{model}» را ارائه نمیدهد. ممکن است مدلهای آن تغییر کرده باشند — اتصال را تازهسازی کنید یا مدل دیگری انتخاب کنید.
+    test_reason_required: نتیجه آزمون باید دلیل را ثبت کند.
+    invalid_test_state: 'نتیجه آزمون نامعتبر «{state}». موارد مجاز: {allowed}'
+    tuning_invalid_temperature: مقدار temperature باید عددی بین ۰ و ۲ باشد.
+    tuning_connection_not_found: چنین اتصال هوش مصنوعی وجود ندارد.
+    tuning_invalid_ai_timeout: محدودیت زمانی هوش مصنوعی باید عدد صحیحی از ثانیه و حداقل ۱ باشد.
+    unknown_test_id: 'آزمون ناشناخته «{test}». آزمونهای ثبتشده: {known}'
+    test_connect_refused: هیچ چیزی در آن نشانی گوش نمیدهد — سرور در دسترس است اما هیچ سرویسی پاسخ نداد. پورت را بررسی کنید و مطمئن شوید سرور هوش مصنوعی در حال اجراست. هیچ رأی قابلیتی ثبت نشد؛ مدت زمان شکست
+      ثبت شد.
+    test_attribution_required: نتیجه آزمون باید مجری خود را ثبت کند.
+    test_connect_timeout: نقطه پایانی بهموقع اتصال را نپذیرفت. ممکن است میزبان خاموش باشد یا دیوار آتش درخواست را مسدود کند. هیچ رأی قابلیتی ثبت نشد؛ مدت زمان شکست ثبت شد.
+    test_read_timeout: مدل درخواست را پذیرفت اما بهموقع پاسخ نداد. ممکن است برای این میزبان بیش از حد کند باشد — یک مدل بزرگ روی CPU ممکن است چند دقیقه طول بکشد. هیچ رأی قابلیتی ثبت نشد؛ مدت زمان شکست ثبت
+      شد.
+    tuning_invalid_max_tokens: سقف خروجی باید عدد صحیحی از توکن و حداقل ۱ باشد.
+  admin:
+    no_fields: هیچ فیلد معتبری برای بهروزرسانی وجود ندارد.
+    providers_load_error: بارگذاری ارائهدهندهها ناموفق بود.
+    provider_update_error: بهروزرسانی ارائهدهنده ناموفق بود.
+    settings_invalid_upload_size: حداکثر اندازه پیشفرض آپلود باید یک عدد صحیح غیرمنفی باشد (۰ برای نامحدود).
+    settings_invalid_public_url: قالب URL عمومی نامعتبر است.
+    groups_stats_error: بارگذاری آمار گروه ناموفق بود.
+    invalid_group_id: group_id نامعتبر است. باید بین ۰۰ تا ۹۹ باشد.
+    promote_error: ارتقای کاربر ناموفق بود.
+    delete_error: حذف کاربر ناموفق بود.
+    settings_invalid_grace_period: دوره مهلت ثبتنام باید عددی مثبت (ساعت) باشد.
+    only_full_admin: فقط مدیران کامل میتوانند این عمل را انجام دهند.
+    provider_not_found: ارائهدهنده یافت نشد.
+    models_load_error: بارگذاری مدلها ناموفق بود.
+    missing_model_id: شناسه مدل موجود نیست.
+    missing_fields: فیلدهای ضروری موجود نیستند.
+    invalid_upload_count: maxUploadCount باید یک عدد صحیح غیرمنفی باشد (۰ برای نامحدود).
+    example_blocked: کاربران نمونه نمیتوانند اقدامات مدیریتی انجام دهند.
+    model_update_error: بهروزرسانی مدل ناموفق بود.
+    description_required: توضیحات نمیتواند خالی باشد.
+    cannot_demote_self: نمیتوانید خودتان را تنزل دهید.
+    settings_save_error: ذخیره تنظیمات سراسری ناموفق بود.
+    settings_view_forbidden: فقط مدیران کامل میتوانند تنظیمات سراسری را مشاهده کنند.
+    already_group_admin: کاربر در حال حاضر مدیر گروه است.
+    missing_group_id: شناسه گروه موجود نیست.
+    group_users_load_error: بارگذاری کاربران گروه ناموفق بود.
+    missing_id: شناسه موجود نیست.
+    no_group: هیچ گروهی به کاربر اختصاص داده نشده است.
+    cannot_promote_example: نمیتوان کاربر نمونه را ارتقا داد.
+    provider_delete_error: حذف ارائهدهنده ناموفق بود.
+    invalid_upload_size: maxUploadSizeMB باید یک عدد صحیح غیرمنفی باشد (۰ برای نامحدود).
+    settings_modify_forbidden: فقط مدیران کامل میتوانند تنظیمات سراسری را تغییر دهند.
+    demote_error: تنزل کاربر ناموفق بود.
+    settings_invalid_email_sender: قالب آدرس ایمیل فرستنده نامعتبر است.
+    not_group_admin: کاربر مدیر گروه نیست.
+    cannot_demote_full_admin: نمیتوان مدیر کامل را تنزل داد.
+    settings_invalid_upload_count: حداکثر تعداد پیشفرض آپلود باید یک عدد صحیح غیرمنفی باشد (۰ برای نامحدود).
+    already_full_admin: کاربر در حال حاضر مدیر کامل است.
+    settings_load_error: بارگذاری تنظیمات سراسری ناموفق بود.
+    user_load_error: بارگذاری کاربر ناموفق بود.
+    settings_invalid_max_registrations: حداکثر تعداد ثبتنام باید عددی مثبت یا نامحدود باشد.
+    cannot_delete_self: نمیتوانید حساب کاربری خود را حذف کنید.
+    groups_load_error: بارگذاری گروه‌ها ناموفق بود.
+    settings_invalid_email_timeout: مهلت تأیید ایمیل باید عددی مثبت (بر حسب ساعت) باشد.
+    missing_user_id: شناسه کاربری (userId) ارائه نشده است.
+    update_error: به‌روزرسانی کاربر ناموفق بود.
+    insufficient_permissions: مجوز کافی برای این عملیات وجود ندارد.
+    user_not_found: کاربر یافت نشد
+    viz_type_not_found: نوع مصورسازی یافت نشد
+    invalid_viz_type_field: مقدار فیلد نوع مصورسازی نامعتبر است
+    model_not_found: مدل یافت نشد
+    settings_invalid_platform_upload_size: حداکثر اندازه آپلود پلتفرم باید یک عدد صحیح غیرمنفی باشد (0 برای نامحدود).
+    invalid_id: شناسه نامعتبر
+    demote_success: کاربر {name} از مدیر گروه تنزل یافت.
+    promote_success: کاربر {name} به مدیر گروه ارتقا یافت.
+    users_load_error: بارگیری کاربران ناموفق بود
+    instance_exists: امکان حذف نوع وجود ندارد زیرا {count} نمونه مرتبط دارد.
+    viz_types_load_error: بارگیری انواع مصورسازی ناموفق بود
+    slug_exists: نامک از قبل وجود دارد
+    viz_type_update_error: به‌روزرسانی نوع مصورسازی ناموفق بود
+    viz_type_delete_error: حذف نوع مصورسازی ناموفق بود
+    viz_type_create_error: ایجاد نوع مصورسازی ناموفق بود
+    instance_in_use: حذف نوع ممکن نیست زیرا نمونه‌های مرتبط دارد.
+    settings_demo_mode_requires_licence: حالت دمو بدون مجوز معتبر غیرفعال نمی‌شود.
+    email_exists: ایمیل از قبل وجود دارد
+    invalid_email: قالب ایمیل نامعتبر است
+    settings_invalid_registration_mode: حالت ثبت‌نام باید یکی از ۰، ۱، ۲ یا ۴ باشد.
+    create_user_error: ایجاد کاربر ناموفق بود
+    settings_not_found: تنظیمات سراسری یافت نشد
+    settings_demo_upload_size_limit: در حالت دمو، حداکثر حجم بارگذاری پیش‌فرض باید بین ۱ تا ۵ مگابایت باشد.
+    users_demo_upload_count_limit: در حالت دمو، حداکثر تعداد بارگذاری برای هر کاربر باید بین ۱ تا ۵ باشد.
+    users_demo_upload_size_limit: در حالت دمو، حداکثر حجم بارگذاری برای هر کاربر باید بین ۱ تا ۵ مگابایت باشد.
+    settings_demo_upload_count_limit: در حالت دمو، حداکثر تعداد بارگذاری پیش‌فرض باید بین ۱ تا ۵ باشد.
+    invalid_admin_password: رمز عبور مدیر اشتباه است
+    example_user_password_blocked: رمزهای عبور کاربران نمونه توسط مدیر قابل تنظیم نیستند
+    settings_invalid_temperature: مقدار temperature باید عددی بین ۰ و ۲ باشد.
+    field_not_owned: 'این فیلد در این صفحه تنظیم نشده است. {endpoint}. فیلدهای خطادار: {fields}'
+    tuning_reset_error: پیشفرضهای تنظیم هوش مصنوعی بازنشانی نشدند.
+    settings_invalid_probe_timeout: مهلت پیشفرض آزمون باید عدد صحیحی از ثانیه، حداقل ۱ و حداکثر {ceiling} باشد.
+    settings_invalid_ai_timeout: محدودیت زمانی هوش مصنوعی باید عدد صحیحی از ثانیه و حداقل ۱ باشد.
+    settings_invalid_slow_threshold: حد مجاز مدل کند باید عدد صحیحی از ثانیه و حداقل ۱ باشد.
+    settings_invalid_connect_timeout: مهلت پیشفرض اتصال باید عدد صحیحی از ثانیه، حداقل ۱ و حداکثر {ceiling} باشد.
+    settings_invalid_max_tokens: سقف خروجی باید عدد صحیحی از توکن و حداقل ۱ باشد.
+  auth:
+    example_user_reset_blocked: بازنشانی رمز عبور برای کاربران نمونه غیرفعال است.
+    example_user_forgot_blocked: بازنشانی رمز عبور برای کاربران نمونه غیرفعال است.
+    token_expired: توکن منقضی شده است.
+    invalid_token: توکن نامعتبر یا منقضی شده است.
+    missing_email: ایمیل لازم است.
+    email_already_verified: ایمیل قبلاً تأیید شده است.
+    user_not_found: کاربر یافت نشد.
+    unauthorized: غیرمجاز.
+    missing_fields: فیلدهای الزامی تکمیل نشده‌اند.
+    internal_error: خطای داخلی سرور
+    invalid_current_password: رمز عبور فعلی اشتباه است
+    example_user_blocked: تغییر رمز عبور برای کاربران نمونه غیرفعال است
+    not_authenticated: احراز هویت نشده است
+  register:
+    missing_fields: فیلدها موجود نیستند.
+    invalid_email: قالب ایمیل نامعتبر است.
+    internal_error: خطای داخلی سرور.
+    email_exists: این ایمیل قبلاً ثبت شده است.
+    settings_not_found: تنظیمات سراسری یافت نشد.
+    limit_reached: به سقف ثبت‌نام رسید (حداکثر {max_reg} کاربر).
+    registration_disabled: ثبت‌نام خودکار غیرفعال است. لطفاً با مدیر تماس بگیرید.
+  profile:
+    fetch_failed: دریافت نمایه ناموفق بود
+    invalid_name: نام باید رشته باشد
+    name_required: نام الزامی است
+    update_failed: به‌روزرسانی نمایه ناموفق بود
+  settings:
+    invalid_default_ai_connection: اتصال پیش‌فرض هوش مصنوعی نامعتبر است
+    example_blocked: کاربران نمونه نمی‌توانند تنظیمات را ویرایش کنند
+    user_not_found: کاربر یافت نشد
+    load_failed: بارگیری تنظیمات ناموفق بود
+    save_failed: ذخیره تنظیمات ناموفق بود
+    invalid_slow_threshold: حد مجاز مدل کند باید عدد صحیحی از ثانیه و حداقل ۱ باشد.
+  global_settings_load_error: خطای داخلی سرور
+  languages_load_error: بارگیری زبان‌ها ناموفق بود
+  translations_load_error: بارگیری ترجمه‌ها ناموفق بود
+auth:
+  account_deleted: این حساب کاربری حذف شده است.
+  email_not_verified: ایمیل تأیید نشده است. لطفاً صندوق ورودی و پوشه هرزنامه را بررسی کنید.
+  example_user_blocked: توابع رمز عبور برای کاربران نمونه غیرفعال است
+  example_user_forgot_blocked: بازنشانی رمز عبور برای کاربران نمونه غیرفعال است
+  example_user_reset_blocked: بازنشانی رمز عبور برای کاربران نمونه غیرفعال است
+  internal_error: خطای داخلی سرور
+  invalid_credentials: اعتبارنامه نامعتبر است
+  invalid_current_password: رمز عبور فعلی اشتباه است
+  invalid_token: توکن نامعتبر یا منقضی‌شده است
+  invalid_token_error: 'توکن نامعتبر: {error}'
+  invalid_token_missing_user_id: 'توکن نامعتبر: شناسه کاربر وارد نشده است'
+  missing_email: ایمیل الزامی است
+  missing_fields: فیلدها وارد نشده‌اند
+  password_changed: رمز عبور با موفقیت تغییر کرد
+  password_validation_failed: اعتبارسنجی رمز عبور ناموفق بود
+  reset_email_sent: ایمیل بازنشانی رمز عبور ارسال شد
+  token_expired: توکن منقضی شده است
+  unauthorized: غیرمجاز
+  user_not_found: کاربر یافت نشد
+  login_invalid_credentials: ایمیل یا رمز عبور نامعتبر است.
+chat:
+  ai_provider_error: 'خطای ارائه‌دهنده هوش مصنوعی: {error}'
+  connection_error: 'خطای اتصال: {error}'
+  connection_not_found: اتصال هوش مصنوعی یافت نشد یا در دسترس نیست
+  delete_failed: 'حذف گفتگو ناموفق بود: {error}'
+  generate_title_failed: 'تولید عنوان ناموفق بود: {error}'
+  get_failed: 'دریافت گفتگو ناموفق بود: {error}'
+  internal_error: 'خطای داخلی سرور: {error}'
+  list_failed: 'دریافت فهرست گفتگوها ناموفق بود: {error}'
+  send_failed: 'ارسال پیام ناموفق بود: {error}'
+  title_updated: عنوان گفتگو با موفقیت به‌روزرسانی شد
+  update_failed: 'به‌روزرسانی گفتگو ناموفق بود: {error}'
+  not_found: چت «{id}» یافت نشد
+  deleted: چت «{id}» با موفقیت حذف شد
+  not_found_or_not_owned: چت «{id}» یافت نشد یا شما مالک آن نیستید
+  ai_repeat_loop: مدل هوش مصنوعی متوقف شد و نتوانست پاسخ را کامل کند. لطفاً دوباره تلاش کنید.
+  ai_timeout: پاسخ‌دهی مدل هوش مصنوعی بیش از حد طول کشیده است. لطفاً دوباره تلاش کنید.
+  ai_service_failed: سرویس هوش مصنوعی در پاسخ‌دهی ناموفق بود. لطفاً دوباره تلاش کنید.
+  timeout_out_of_range: محدودیت زمانی هوش مصنوعی باید بین ۱ تا {max_seconds} ثانیه باشد.
+common:
+  back: بازگشت
+  cancel: انصراف
+  cannot_undo: این اقدام قابل بازگشت نیست.
+  clear: پاک کردن
+  copy: کپی
+  delete: حذف
+  deleting: در حال حذف...
+  dismiss: بستن
+  edit: ویرایش
+  generating: در حال تولید...
+  loading: در حال بارگیری...
+  next: بعدی
+  restoring: در حال بازیابی...
+  save: ذخیره
+  saving: در حال ذخیره...
+  sending: در حال ارسال...
+  testing: در حال آزمایش...
+  unknown: ناشناخته
+  uploading: در حال بارگذاری...
+  verifying: در حال تأیید...
+  view: مشاهده
+database:
+  connection_failed: 'اتصال به پایگاه داده ناموفق بود: {error}'
+  decryption_failed: 'رمزگشایی رمز عبور اتصال ناموفق بود: {error}'
+  insert_failed: 'خطای پایگاه داده: {error}'
+  pool_not_initialized: استخر اتصال پایگاه داده مقداردهی اولیه نشده است
+  query_failed: 'پرس‌وجوی پایگاه داده ناموفق بود: {error}'
+  type_not_supported: نوع پایگاه‌داده '{type}' هنوز پشتیبانی نمی‌شود
+  connection_not_found: اتصال پایگاه‌داده یافت نشد یا قابل دسترسی نیست
+  feature_required: این نوع پایگاه‌داده با مجوز شما فعال نشده است.
+datasets:
+  define:
+    connection_details_not_found: جزئیات اتصال یافت نشد
+    connection_not_found: اتصال پایگاه داده یافت نشد یا در دسترس نیست
+    connection_required: شناسه اتصال (connectionId) الزامی است
+    connection_test_failed: آزمایش اتصال پایگاه داده ناموفق بود
+    database_connection_failed: 'اتصال به پایگاه داده ناموفق بود: {error}'
+    name_required: نام مجموعه‌داده الزامی است
+    table_name_required: نام جدول (tableName) الزامی است
+    verification_failed: 'تأیید جدول/نما ناموفق بود: {error}'
+    dataset_created: مجموعه‌داده «{name}» با موفقیت تعریف شد
+    table_access_failed: 'دسترسی به جدول «{table}» ناموفق بود: {error}'
+    preview_failed: 'خواندن داده از جدول «{table}» ناموفق بود: {error}'
+    table_not_found: جدول/نما «{table}» در پایگاه داده «{database}» یافت نشد
+    permission_denied: 'دسترسی رد شد: کاربر ''{user}'' به جدول ''{table}'' دسترسی ندارد. لطفاً مجوز SELECT را اعطا کنید.'
+    invalid_source_type: sourceType باید 'table' یا 'view' باشد
+    connection_successful: اتصال با موفقیت برقرار شد
+    connection_missing_db_note: 'نکته: PostgreSQL این خطا را هم برای پایگاه‌داده‌های ناموجود و هم برای مجوزهای ناکافی برمی‌گرداند. اگر پایگاه‌داده وجود دارد، بررسی کنید که کاربر مجوز CONNECT روی پایگاه‌داده
+      داشته باشد.'
+    connection_timed_out: اتصال پس از ۱۵ ثانیه با خطای مهلت زمانی مواجه شد.
+  delete:
+    success: مجموعه‌داده «{id}» با موفقیت حذف شد
+  describe:
+    ai_connection_error: 'خطای اتصال هوش مصنوعی: {error}'
+    empty_description: توضیحات تولیدشده خالی است. لطفاً پیکربندی ارائه‌دهنده هوش مصنوعی را بررسی کنید.
+    generation_failed: 'تولید توضیحات ناموفق بود: {error}'
+    description_generated: توضیحات برای «{name}» با موفقیت تولید شد
+    timeout_out_of_range: محدودیت زمانی هوش مصنوعی باید بین ۱ تا {max_seconds} ثانیه باشد.
+  example_blocked:
+    create: کاربران نمونه نمی‌توانند مجموعه‌داده ایجاد کنند
+    delete: کاربران نمونه نمی‌توانند مجموعه‌داده‌ها را حذف کنند
+    update: کاربران نمونه نمی‌توانند مجموعه‌داده‌ها را به‌روزرسانی کنند
+  list_error: بارگیری مجموعه‌داده‌ها ناموفق بود
+  not_found: مجموعه‌داده '{id}' یافت نشد یا قابل دسترسی نیست
+  not_owner: شما فقط می‌توانید مجموعه‌داده‌های خود را ویرایش کنید
+  preparation:
+    duplicate_name: یک قانون آماده‌سازی با این نام برای این مجموعه‌داده وجود دارد
+    no_updates: هیچ فیلدی برای به‌روزرسانی وجود ندارد
+    preview_failed: 'پیش‌نمایش قانون ناموفق بود: {error}'
+    rule_deleted: قانون آماده‌سازی با موفقیت حذف شد
+    rule_in_use: 'این قانون آماده‌سازی توسط {count} دستور پخت استفاده می‌شود: {names}. ابتدا دستورهای پخت را حذف کنید.'
+    rule_not_found_or_not_owned: قانون آماده‌سازی یافت نشد یا شما مالک آن نیستید
+    rule_updated: قانون آماده‌سازی با موفقیت به‌روزرسانی شد
+    schema_failed: 'خواندن طرح‌واره مجموعه‌داده ناموفق بود: {error}'
+    rule_not_found: قانون آماده‌سازی «{id}» برای این مجموعه‌داده یافت نشد
+    rule_created: قانون آماده‌سازی «{name}» با موفقیت ایجاد شد
+    already_exists: یک قانون آماده‌سازی با این عملیات‌ها از قبل وجود دارد («{name}»)
+  schema:
+    external_failed: 'دریافت طرح‌واره از پایگاه داده خارجی ناموفق بود: {error}'
+    from_preview: طرح‌واره از داده‌های پیش‌نمایش استخراج شده است (۱۰ ردیف اول)
+    load_error: 'بارگیری طرح‌واره ممکن نبود: {error}'
+    table_missing: جدول دیگر وجود ندارد. لطفاً مجموعه‌داده را دوباره بارگذاری کنید.
+    not_implemented: کشف طرحواره برای این نوع مجموعه‌داده «{type}» هنوز پیاده‌سازی نشده است
+    row_count_not_computed: تعداد سطرها برای یک مجموعه داده مجازی بدون اجرای پیوند محاسبه نمی‌شود.
+    connection_unreachable: 'اتصال {connection_id} در دسترس نیست: {error}'
+  share:
+    error: به‌روزرسانی اشتراک‌گذاری ناموفق بود
+    toggled: اشتراک‌گذاری مجموعه‌داده '{id}' با موفقیت به‌روزرسانی شد
+  transforms:
+    clone_forbidden: شما دسترسی کپی‌برداری از این تبدیل را ندارید
+    deleted: تبدیل با موفقیت حذف شد
+    duplicate_name: یک تبدیل با این نام برای این مجموعه‌داده وجود دارد
+    in_use: 'این تبدیل توسط {count} دستور پخت استفاده می‌شود: {names}. ابتدا دستورهای پخت را حذف کنید.'
+    no_updates: هیچ فیلدی برای به‌روزرسانی وجود ندارد
+    not_found_or_not_owned: تبدیل یافت نشد یا شما مالک آن نیستید
+    updated: تبدیل با موفقیت به‌روزرسانی شد
+    not_accessible: مجموعه‌داده «{id}» یافت نشد یا قابل دسترسی نیست
+    not_found: تبدیل «{id}» برای این مجموعه‌داده یافت نشد
+    created: تبدیل «{name}» با موفقیت ایجاد شد
+    not_owned: مجموعه‌داده «{id}» یافت نشد یا مالک آن نیستید
+    cloned: تبدیل با نام '{name}' کپی شد
+    already_exists: یک تبدیل با این عملیات‌ها از قبل وجود دارد («{name}»)
+  unknown_source: 'نوع منبع ناشناخته: {source_type}'
+  upload:
+    error: بارگذاری مجموعه‌داده ناموفق بود
+    file_processing_failed: 'پردازش فایل ناموفق بود: {error}'
+    limit_reached_count: محدودیت بارگذاری فرا رسید. حداکثر {count} مجموعه‌داده مجاز است.
+    limit_reached_size: از محدودیت حجم بارگذاری فراتر رفت. حداکثر {size} مگابایت فضای ذخیره‌سازی کل.
+    unsupported_file: 'نوع فایل پشتیبانی نمی‌شود. لطفاً یکی از موارد زیر را بارگذاری کنید: {extensions}'
+    user_not_found: کاربر یافت نشد
+    success: مجموعه‌داده «{name}» با موفقیت بارگذاری شد
+    dbf_field_unsupported: 'این فایل .dbf انواع فیلدهایی را اعلام می‌کند که قابل خواندن نیستند: {types}'
+    dbf_memo_unsupported: این فایل .dbf شامل فیلدهای memo است. مقادیر آن‌ها در فایلی جداگانه ذخیره می‌شوند که بارگذاری تک‌فایل نمی‌تواند آن‌ها را منتقل کند.
+  not_owned: مجموعه‌داده «{id}» یافت نشد یا مالک آن نیستید
+  browse:
+    discover_failed: 'شناسایی جدول‌ها ناموفق بود: {error}'
+    columns_failed: 'دریافت ستون‌ها ناموفق بود: {error}'
+    preview_failed: 'پیش‌نمایش جدول ناموفق بود: {error}'
+  not_found_2: مجموعه‌داده یافت نشد
+  auto_create:
+    connection_id_required: connectionId الزامی است
+    connection_not_found: اتصال یافت نشد
+    created: مجموعه داده‌ها ایجاد شدند
+    no_tables_discovered: هیچ جدول یا نمایی یافت نشد. بررسی کنید که سرور پایگاه داده در حال اجرا و در دسترس است.
+  unread:
+    schema_error: منبع پاسخ داد، اما ستونهای آن قابل خواندن نبودند.
+    unreachable: دسترسی به این منبع ممکن نشد. میزبان و پورت را بررسی کنید، سپس دوباره تلاش کنید.
+    no_permission: این حساب نمیتواند آن منبع را بخواند.
+    no_database: آن پایگاهداده روی سرور وجود ندارد.
+    auth_failed: پایگاهداده اعتبارنامههای این حساب را نپذیرفت.
+    definition_incomplete: این منبع نه یک مجموعهداده را نام میبرد و نه یک جدول اتصال را.
+    incomplete: بررسی بهموقع تمام نشد. دوباره تلاش کنید یا مهلت اتصال را افزایش دهید.
+    definition_too_deep: این مجموعهداده بیش از پنج سطح به خودش ارجاع میدهد.
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: برای یکپارچگی، نام ستون را به snake_case با حروف کوچک تغییر دهید
+      rename_table_snake_case: برای یکپارچگی، نام جدول را به snake_case با حروف کوچک تغییر دهید
+      rename_column_reserved: برای جلوگیری از تداخل با کلمات رزروشده SQL، نام ستون «{column}» را تغییر دهید
+      rename_table_reserved: برای جلوگیری از تداخل با کلمات رزروشده SQL، نام جدول «{table}» را تغییر دهید
+      reserved_keyword_table: نام جدول «{table}» یک کلمه کلیدی رزروشده SQL است
+      mixed_case_table: نام جدول '{table}' از حروف بزرگ و کوچک ترکیبی استفاده می‌کند — snake_case توصیه می‌شود.
+      mixed_case_column: ستون '{column}' از حروف بزرگ و کوچک ترکیبی استفاده می‌کند — snake_case توصیه می‌شود.
+      reserved_keyword_column: ستون «{column}» یک کلمه کلیدی رزروشده SQL است
+    normalisation:
+      multiple_address: چندین ستون مرتبط با آدرس ({count}) شناسایی شد
+      repeating_group: 'گروه تکرارشونده شناسایی شد: {columns}'
+      separate_address_table: ایجاد یک جدول آدرس جداگانه با کلید خارجی به {table} را در نظر بگیرید
+      create_separate_table: برای مقادیر «{base}» یک جدول جداگانه با کلید خارجی به {table} ایجاد کنید
+    semistructured:
+      controlled_vocab: ستون {column} شامل یک واژگان کنترل‌شده با {count} مقدار متمایز است
+      create_ref_table: یک جدول مرجع برای مقادیر {column} ایجاد کنید تا جدول {table} نرمال‌سازی شود
+    data_types:
+      add_not_null: افزودن محدودیت NOT NULL به «{column}»
+      set_max_length: برای جلوگیری از داده‌های بیش‌ازحد بزرگ، تعیین حداکثر طول برای «{column}» را در نظر بگیرید
+      unbounded_varchar: ستون VARCHAR بدون محدودیت طول «{column}»
+      short_text_enum: ستون متنی '{column}' حداکثر طول {max_len} دارد — استفاده از ENUM یا محدودیت CHECK را در نظر بگیرید.
+      allows_null: ستون '{column}' مقدار NULL را می‌پذیرد — محدودیت NOT NULL را در نظر بگیرید.
+      add_check_constraint: برای «{column}» که مقادیر معتبر محدودی دارد، محدودیت CHECK اضافه کنید یا از نوع ENUM استفاده کنید
+    relationships:
+      missing_fk: ستون «{column}» شبیه کلید خارجی است اما محدودیت کلید خارجی ندارد
+      add_fk: اگر «{column}» به جدول دیگری ارجاع میدهد، افزودن محدودیت کلید خارجی را در نظر بگیرید
+    indexing:
+      missing_fk_index: ستون کلید خارجی «{column}» ایندکس ندارد
+  analyze_error: 'تحلیل پایگاه داده ناموفق بود: {error}'
+  connection_error: 'اتصال به پایگاه داده ناموفق بود: {error}'
+  description: طراحی پایگاه داده خود را با استفاده از هوش مصنوعی تحلیل و بهبود دهید.
+  no_connection: هیچ اتصال پایگاه داده‌ای در دسترس نیست. لطفاً ابتدا به یک پایگاه داده متصل شوید.
+  not_implemented: این قابلیت به‌زودی ارائه می‌شود.
+  pdf:
+    ai_disclaimer: تحلیل تولیدشده با هوش مصنوعی — پیش از اعمال در محیط عملیاتی بررسی کنید.
+    categories: دسته‌ها
+    code_systems: سیستم‌های کد
+    code_systems_label: سیستم‌های کد شناسایی‌شده
+    col_default: پیش‌فرض
+    col_name: ستون
+    col_nullable: نال‌پذیر
+    col_pk: کلید اصلی
+    col_type: نوع
+    column_meanings_label: معانی ستون
+    columns: ستون‌ها
+    confidence: اطمینان
+    confidence_label: اطمینان
+    domain_label: طبقه‌بندی‌های حوزه ISIC
+    evidence_label: شواهد
+    header: گزارش تحلیل طراحی پایگاه داده
+    health_score_label: 'امتیاز سلامت پایگاه داده: {score}/100'
+    health_score_subtitle: سلامت کلی پایگاه داده توسط Schema AI ارزیابی شد. 0 = مشکلات ساختاری بحرانی، 100 = آماده تولید.
+    health_score_title: امتیاز سلامت
+    high: بالا
+    implicit_relationships_label: روابط ضمنی
+    integration_subtitle: روابط ضمنی، قابلیت‌های پژوهشی و ابعاد گمشده شناسایی‌شده توسط هوش مصنوعی یکپارچه‌سازی.
+    integration_title: یافته‌های یکپارچه‌سازی هوش مصنوعی
+    issues_count: مشکلات ({count})
+    issues_found: مشکلات یافت‌شده
+    low: پایین
+    medium: متوسط
+    missing_dimensions_label: ابعاد گمشده
+    'no': خیر
+    none: هیچ‌کدام
+    normalisation_title: پیشنهادهای نرمال‌سازی ({count})
+    page: صفحه {current}/{total}
+    partial_label: جزئی
+    pk: کلید اصلی
+    proposed_ddl_label: DDL پیشنهادی
+    proposed_table: جدول پیشنهادی
+    rationale_label: منطق
+    relationship_label: رابطه
+    research_capabilities_label: قابلیت‌های پژوهشی
+    risk_breakdown: تفکیک ریسک
+    rows: ردیف‌ها
+    schema_title: طرحواره ({count} جدول)
+    semantic_subtitle: معانی ستون استنباط‌شده توسط هوش مصنوعی، طبقه‌بندی‌های حوزه ISIC و شناسایی سیستم‌های کد.
+    semantic_title: تحلیل معنایی هوش مصنوعی
+    semi_structured_title: تحلیل داده‌های نیمه‌ساخت‌یافته ({count} ستون)
+    subtitle: 'پایگاه داده: {db_name} ({db_type}) | اتصال: {conn_name} (شناسه: {conn_id})'
+    summary: خلاصه
+    supported_label: پشتیبانی می‌شود
+    table_purposes_label: اهداف جدول
+    tables: جدول‌ها
+    title: تحلیل طراحی پایگاه داده
+    top_actions_label: اقدامات دارای بالاترین اولویت
+    top_keywords: کلیدواژه‌های برتر
+    top_recommendations: توصیه‌های برتر
+    unsupported_label: پشتیبانی نمی‌شود
+    value: مقدار
+    'yes': بله
+    ai_skipped_warning: تحلیل هوش مصنوعی انجام نشد
+  question_required: سؤال الزامی است
+  report_data_required: داده گزارش الزامی است
+  schema_error: 'استخراج طرحواره ناموفق بود: {error}'
+  title: دستیار طراحی پایگاه داده
+  unsupported_type: فقط پایگاه‌های داده PostgreSQL، MySQL، MS SQL Server و Microsoft Access پشتیبانی می‌شوند
+  rag_not_available: جستجوی RAG فقط برای پایگاه‌داده‌های PostgreSQL در دسترس است. جستجوی متنی MySQL برای نسخه آینده برنامه‌ریزی شده است.
+  pdf_error: 'تولید PDF ناموفق بود: {error}'
+  rag_error: 'پرس‌وجوی RAG ناموفق بود: {error}'
+  schema_error_2: 'رمزگشایی رمز عبور پایگاه داده ناموفق بود: {error}'
+  invalid_token: توکن نامعتبر
+  unsupported_type_2: فقط پایگاه‌داده‌های PostgreSQL، MySQL و MS SQL Server پشتیبانی می‌شوند
+  email_pdf:
+    invalid_body: بدنه درخواست نامعتبر است.
+    no_email: هیچ آدرس ایمیلی برای حساب شما یافت نشد.
+    send_failed: ارسال گزارش از طریق ایمیل ناموفق بود. لطفاً دوباره تلاش کنید.
+  llm:
+    unknown_error: خطای ناشناخته LLM
+    empty_content: LLM محتوای خالی برگرداند
+    http_error: LLM کد HTTP {status_code} برگرداند
+    timeout: مهلت درخواست LLM پس از {timeout_seconds} ثانیه به پایان رسید
+    no_ai_provider: هیچ ارائه‌دهنده هوش مصنوعی پیکربندی نشده است. یک ارائه‌دهنده هوش مصنوعی را در تنظیمات ← اتصالات هوش مصنوعی متصل کنید.
+    no_model: هیچ مدل هوش مصنوعی پیکربندی نشده است. یک مدل پیش‌فرض روی اتصال هوش مصنوعی تنظیم کنید یا یک مدل مشخص ارسال کنید.
+  stream_normalisation_timeout: 'نرمال‌سازی: مهلت زمانی پس از ۹۰ ثانیه پایان یافت.'
+  stream_ai_integration_start: 'هوش مصنوعی یکپارچه‌سازی: در حال شناسایی روابط...'
+  stream_ai_done: 'تحلیل هوش مصنوعی تکمیل شد — وضعیت: {status}'
+  analysis_complete: تحلیل کامل شد.
+  stream_normalisation_done: 'نرمال‌سازی: {count} پیشنهاد'
+  stream_ai_start: شروع تحلیل هوش مصنوعی — ۳ متخصص به‌صورت موازی...
+  stream_ai_semantic_done: 'هوش مصنوعی معنایی: {columns} معنای ستون، {domains} دامنه ISIC'
+  stream_analysis_failed: 'تحلیل ناموفق بود: {error}'
+  ai_skipped_message: 'تحلیل هوش مصنوعی نادیده گرفته شد — {count} مشکل یافت شد (محدودیت: {limit}). یافته‌های مکانیکی زیر را بررسی کنید، پایگاه داده را پاکسازی کنید، سپس دوباره با هوش مصنوعی اجرا کنید.'
+  stream_mechanical_done: 'تحلیل مکانیکی: {count} مشکل یافت شد'
+  stream_normalisation_start: در حال تولید پیشنهادهای نرمال‌سازی...
+  stream_unsupported_type: 'نوع پایگاه‌داده پشتیبانی‌نشده: {db_type}'
+  stream_ai_integration_done: 'هوش مصنوعی یکپارچه‌سازی: {relationships} رابطه، {capabilities} قابلیت'
+  stream_connected: 'متصل به {db_type}: {db_name}'
+  stream_connecting: در حال اتصال به پایگاه‌داده...
+  stream_mechanical_start: در حال اجرای تحلیل مکانیکی...
+  analysis_cancelled: جریان تحلیل لغو شد (اتصال کلاینت قطع شد)
+  ai_skipped_reason: 'این گزارش فقط شامل تحلیل مکانیکی است. تحلیل تقویت‌شده با هوش مصنوعی انجام نشد زیرا {count} مشکل در پایگاه‌داده یافت شد (محدودیت: {limit}). یافته‌های مکانیکی زیر را بررسی کنید، پایگاه‌داده
+    را پاکسازی کنید، سپس برای دریافت توضیحات زمینه‌آگاه، بینش‌های معنایی و پیشنهادهای نرمال‌سازی، دوباره با هوش مصنوعی اجرا کنید.'
+  stream_semistructured_start: در حال تحلیل ستون‌های نیمه‌ساخت‌یافته...
+  stream_ai_schema_start: 'هوش مصنوعی اسکیما: در حال تحلیل {tables} جدول...'
+  stream_ai_semantic_start: 'هوش مصنوعی معنایی: در حال تحلیل {tables} جدول...'
+  stream_extracting_schema: در حال استخراج اسکیما از {db_type}...
+  stream_schema_done: 'اسکیما استخراج شد: {tables} جدول، {columns} ستون'
+  stream_ai_schema_done: 'هوش مصنوعی اسکیما: امتیاز سلامت {score}/۱۰۰'
+  stream_normalisation_skipped: 'نرمال‌سازی: انجام نشد ({error})'
+groups:
+  admin_required: دسترسی مدیر لازم است
+  cannot_delete_self: نمی‌توانید حساب کاربری خود را حذف کنید
+  description_required: توضیحات نمی‌تواند خالی باشد
+  insufficient_permissions: مجوزهای کافی برای مدیریت گروه‌ها وجود ندارد
+  invalid_group_id: گروه کاربری نامعتبر. باید 00-99 باشد
+  update_failed: به‌روزرسانی گروه ناموفق بود
+  user_not_found: کاربر یافت نشد
+  update_success: توضیحات گروه «{id}» به‌روزرسانی شد
+  user_updated: گروه کاربر با موفقیت به‌روزرسانی شد
+  not_authorized: شما مجاز به مشاهده گروه این کاربر نیستید
+  not_found: گروه «{id}» یافت نشد
+  resource_not_found: منبع یافت نشد
+  missing_id: شناسه منبع وجود ندارد
+recipes:
+  ai_session:
+    create_error: ایجاد نشست دستور پخت هوش مصنوعی ناموفق بود
+    delete_error: حذف نشست دستور پخت هوش مصنوعی ناموفق بود
+    load_error: بارگذاری نشست دستور پخت هوش مصنوعی ناموفق بود
+    not_found: نشست دستور پخت هوش مصنوعی یافت نشد
+    save_error: ذخیره دستور پخت از نشست هوش مصنوعی ناموفق بود
+    unauthorized: شما به این نشست دستور پخت هوش مصنوعی دسترسی ندارید
+  column_type:
+    categorical: مقوله‌ای
+    numeric: عددی
+  columns_required: لطفاً حداقل یک ستون را انتخاب کنید
+  data_selection_error: 'انتخاب داده ناموفق بود: {error}'
+  dataset_not_found: مجموعه داده یافت نشد
+  dataset_required: لطفاً یک مجموعهداده را انتخاب کنید
+  delete_error: 'حذف دستور پخت ناموفق بود: {error}'
+  execute_error: 'اجرای دستور پخت ناموفق بود: {error}'
+  execution:
+    error: 'خطای اجرای دستور پخت: {error}'
+    preparation_error: 'مرحله آماده‌سازی ناموفق بود: {error}'
+    preparation_failed: مرحله آماده‌سازی ناموفق بود
+    unknown_stage: 'نوع مرحله ناشناخته: {stage_type}'
+  execution_completed: اجرا با موفقیت کامل شد
+  execution_failed: اجرا ناموفق بود
+  execution_load_error: 'بارگذاری اجرا ناموفق بود: {error}'
+  executions_load_error: 'بارگذاری اجراها ناموفق بود: {error}'
+  field_label:
+    categoryColumn: ستون دسته (برچسب‌ها)
+    dependentColumn: ستون وابسته / پیامد
+    factorColumn: ستون عامل (متغیر گروه‌بندی)
+    independentColumns: ستون‌های مستقل / پیش‌بین
+    responseColumn: ستون پاسخ (اندازه‌گیری عددی)
+    responseColumn2: ستون پاسخ دوم (اندازه‌گیری زوجی)
+    xColumn: ستون محور X
+    yColumn: ستون محور Y
+    factorColumn2: ستون عامل دوم (متغیر گروه‌بندی)
+    columns: ستون‌ها
+  invalid_stage: مرحله نامعتبر برای دستور پخت
+  invalid_stage_type: 'نوع مرحله نامعتبر: {type}. باید یکی از موارد زیر باشد: {types}'
+  load_datasets_error: 'بارگذاری مجموعه‌داده‌ها ناموفق بود: {error}'
+  load_error: 'بارگیری دستورالعمل‌ها ناموفق بود: {error}'
+  name_required: نام دستورالعمل الزامی است
+  no_columns_exist: هیچ‌یک از ستون‌های انتخاب‌شده در مجموعه داده وجود ندارد
+  no_dataset: هیچ مجموعه‌داده‌ای با این دستورالعمل مرتبط نیست
+  no_stages: دستورالعمل باید حداقل یک مرحله داشته باشد
+  no_updates: هیچ فیلدی برای به‌روزرسانی وجود ندارد
+  preparation:
+    all_rules_failed: 'همه قوانین ناموفق بودند: {errors}'
+    no_db_pool: استخر پایگاه‌داده برای مرحله آماده‌سازی در دسترس نیست
+    rules_applied: '{count} قانون آماده‌سازی اعمال شد'
+    rule_not_found: قانون «{rule_id}» یافت نشد
+    rule_failed: 'قانون ''{rule_id}'': {error}'
+  requirement:
+    anova_one_way: ۱ ستون مقوله‌ای (عامل) و ۱ ستون عددی (پاسخ)
+    anova_two_way: ۲ ستون مقوله‌ای (دو عامل) و ۱ ستون عددی (پاسخ)
+    bar: ۱ ستون مقوله‌ای (محور x) و ۱ ستون عددی (محور y)
+    chi_square: ۲ ستون مقوله‌ای
+    correlation: حداقل ۲ ستون عددی
+    descriptive: حداقل ۱ ستون عددی
+    distribution: ۱ ستون عددی
+    histogram: ۱ ستون عددی (محور x)
+    line: ۲ ستون عددی (x و y)
+    linear_regression: حداقل ۲ ستون عددی (پیش‌بینی‌کننده‌ها و نتیجه)
+    none: خروجی مورد نیاز نیست
+    pie: ۱ ستون مقوله‌ای (برچسب‌ها)
+    scatter: ۲ ستون عددی (x و y)
+    t_test_independent: ۱ ستون مقوله‌ای (برای گروه‌ها) و ۱ ستون عددی (برای مقایسه)
+    t_test_paired: ۲ ستون عددی (اندازه‌گیری‌های زوجی)
+    table: هر ستونی
+    hbar: ۱ ستون طبق‌ای (محور y) و ۱ ستون عددی (محور x)
+    donut: ۱ ستون طبق‌ای (برچسب‌ها)
+    area: ۲ ستون عددی (x و y)
+  result_type:
+    numeric: عددی
+    tabular: جدولی
+  scatter_two_columns: نمودار پراکندگی حداقل به دو ستون نیاز دارد
+  scatter_two_numeric: نمودار پراکندگی به دو ستون عددی نیاز دارد
+  schema_error: 'بارگیری طرح‌واره ستون ناموفق بود: {error}'
+  transforms:
+    connect_success: تبدیل به دستورالعمل متصل شد
+    disconnect_success: تبدیل از دستورالعمل جدا شد
+    load_error: بارگیری تبدیل‌های متصل ناموفق بود
+    dataset_mismatch: تبدیل «{id}» به مجموعه‌داده «{dataset_id}» تعلق ندارد
+    not_found: تبدیل «{id}» یافت نشد یا به مجموعه‌داده این دستور تعلق ندارد
+  unknown_stage: 'نوع مرحله ناشناخته: {stage_type}'
+  unsupported_chart_type: 'نوع نمودار پشتیبانی‌نشده: {chart_type}'
+  update_error: 'به‌روزرسانی دستورالعمل ناموفق بود: {error}'
+  validation:
+    failed: 'اعتبارسنجی دستور پخت ناموفق بود: {errors}'
+    unknown_algorithm: '«{type}» یک روش تحلیل شناخته‌شده نیست. یکی از موارد زیر را انتخاب کنید: {options}.'
+    insufficient_columns_output: 'این مجموعه‌داده انواع ستون مناسب برای «{output}» ({requirement}) را ندارد. مجموعه‌داده شامل: {columns} است. یک مجموعه‌داده با {requirement} انتخاب کنید یا به موارد زیر
+      تغییر دهید: {options}.'
+    missing_output_field: خروجی «{output}» تنظیم «{field}» خود را ندارد ({label}). در پنل خروجی ستونی برای «{field}» انتخاب کنید.
+    unknown_columns: 'مرحله {stage} به ستون(‌های) «{columns}» ارجاع می‌دهد که در این مجموعه‌داده وجود ندارند. ستون‌های موجود: {available}. از بین ستون‌های موجود انتخاب کنید.'
+    insufficient_columns_algo: 'این مجموعه‌داده انواع ستون مناسب برای «{algo}» را ندارد ({requirement}). مجموعه‌داده شامل: {columns}. یک مجموعه‌داده با {requirement} انتخاب کنید یا به موارد زیر تغییر دهید:
+      {options}.'
+    incompatible_algo_output: 'تحلیل «{algo}» نتایج {result_type} تولید میکند و نمیتواند به‌صورت نمودار «{output}» نمایش داده شود. نوع خروجی را به یکی از انواع سازگار با «{algo}» تغییر دهید: {options}.'
+    unknown_output: '«{type}» یک نوع خروجی شناخته‌شده نیست. یکی از موارد زیر را انتخاب کنید: {options}.'
+    missing_algo_field: تحلیل «{algo}» تنظیم «{field}» خود را ندارد ({label}). در پنل تحلیل ستونی برای «{field}» انتخاب کنید.
+    wrong_column_type: ستون «{column}» باید برای «{field}» ({label}) {expected} باشد.
+    algorithm_required: هیچ روش تحلیلی انتخاب نشده است. یکی را در پنل تحلیل انتخاب کنید — یک دستور پخت به یک مرحله آماری با یک الگوریتم نیاز دارد.
+    unknown_field: '«{field}» یک تنظیم شناخته‌شده برای «{type}» نیست. تنظیمات شناخته‌شده: {options}.'
+  visualisation_columns_required: حداقل یک ستون برای بصری‌سازی لازم است
+  visualisation_error: 'بصری‌سازی ناموفق بود: {error}'
+  visualisation_generated: بصری‌سازی با موفقیت تولید شد
+  not_owned: دستورالعمل «{id}» یافت نشد یا مالک آن نیستید
+  create_success: دستورالعمل «{name}» با موفقیت ایجاد شد
+  share:
+    enabled: دستورالعمل با موفقیت به اشتراک گذاشته شد
+    disabled: دستور اکنون خصوصی است
+  delete_success: دستورالعمل «{id}» با موفقیت حذف شد
+  not_found: دستورالعمل «{id}» یافت نشد
+  update_success: دستور «{id}» با موفقیت به‌روزرسانی شد
+  execution_not_found: اجرای '{id}' یافت نشد
+  technique_chi_square: آزمون کای دو
+  technique_correlation: ماتریس همبستگی
+  technique_anova_one_way: تحلیل واریانس یک‌طرفه
+  technique_anova_two_way: تحلیل واریانس دوطرفه
+  technique_descriptive: آمار توصیفی
+  technique_linear_regression: رگرسیون خطی
+  technique_t_test_independent: آزمون تی مستقل
+  technique_t_test_paired: آزمون تی زوجی
+  histogram_numeric: نمودار هیستوگرام به یک ستون عددی نیاز دارد
+  distribution_no_columns: نمودار توزیع به حداقل یک ستون نیاز دارد
+  histogram_no_columns: نمودار هیستوگرام به حداقل یک ستون نیاز دارد
+  stage_not_implemented: مرحله {stage_type} بهزودی میآید
+  scoreboard:
+    output_fields:
+      what: ستون‌های خروجی را انتخاب کنید
+    dataset:
+      what: یک مجموعه داده انتخاب کنید
+    name:
+      what: دستورالعمل را نام‌گذاری کنید
+    output_unknown:
+      what: یک نوع خروجی شناخته‌شده انتخاب کنید
+    output_incompatible:
+      what: یک نوع خروجی سازگار انتخاب کنید
+    technique_unknown:
+      what: یک روش تحلیل شناخته‌شده انتخاب کنید
+    technique:
+      what: یک روش تحلیل انتخاب کنید
+    output:
+      what: یک نوع خروجی انتخاب کنید
+    technique_fields:
+      what: ستون‌های مورد نیاز را انتخاب کنید
+  chip:
+    heading:
+      technique: کدام روش تحلیل؟
+      output: کدام خروجی؟
+      columns: کدام ستون‌ها؟
+statistics:
+  anova_computation_failed: 'محاسبه تحلیل واریانس دوطرفه ناموفق بود: {error}'
+  anova_needs_three_groups: تحلیل واریانس یک‌طرفه به ۳ گروه یا بیشتر نیاز دارد ({n} گروه یافت شد). برای ۲ گروه، از آزمون تی مستقل استفاده کنید.
+  compute_failed: 'محاسبه آمار ناموفق بود: {error}'
+  each_group_two_observations: هر گروه باید حداقل ۲ مشاهده داشته باشد
+  group_column_required_anova: برای تحلیل واریانس یک‌طرفه، یک ستون مقوله‌ای گروه با ۳ سطح یا بیشتر لازم است
+  group_column_required_ttest: برای آزمون تی مستقل، یک ستون مقوله‌ای گروه با دقیقاً دو سطح لازم است
+  need_five_observations_chi: حداقل ۵ مشاهده کامل لازم است
+  need_observations_regression: حداقل {n} مشاهده کامل لازم است
+  need_ten_observations_anova: برای تحلیل واریانس دوطرفه حداقل ۱۰ مشاهده کامل لازم است
+  need_three_pairs: برای آزمون تی زوجی حداقل ۳ جفت کامل لازم است
+  need_two_categories_chi: هر دو ستون حداقل به ۲ دسته نیاز دارند
+  need_two_numeric_correlation: برای همبستگی حداقل ۲ ستون عددی لازم است
+  need_two_valid_numeric: حداقل ۲ ستون عددی معتبر لازم است
+  no_valid_data_after_dropna: پس از حذف NaN هیچ داده معتبری وجود ندارد
+  no_valid_numeric: هیچ ستون عددی معتبری ارائه نشده است
+  non_numeric_column: ستون غیرعددی
+  not_computed: محاسبه نشده است
+  select_dependent_independent: 'حداقل ۲ ستون عددی انتخاب کنید: اولی = وابسته، بقیه = مستقل'
+  select_dependent_var: یک ستون عددی به‌عنوان متغیر وابسته انتخاب کنید
+  select_one_numeric_ttest: یک ستون عددی برای آزمون تی مستقل انتخاب کنید
+  select_two_categorical_chi: دقیقاً دو ستون مقوله‌ای انتخاب کنید
+  select_two_numeric_paired: دقیقاً دو ستون عددی برای آزمون تی زوجی انتخاب کنید
+  two_factors_required: برای تحلیل واریانس دوطرفه دو عامل لازم است
+  cache_cleared: کلید کش «{key}» پاک شد
+  factor_column_not_found: ستون «{col}» برای عامل {factor} یافت نشد
+  computation_failed: 'محاسبه آمار ناموفق بود: {error}'
+  group_must_have_two_levels: ستون گروه «{group}» باید دقیقاً ۲ سطح داشته باشد (یافت شد {n})
+  group_fewer_than_two: گروه «{group}» کمتر از ۲ مشاهده دارد
+  column_must_be_numeric: ستون «{col}» باید عددی باشد
+  cache_not_found: کلید کش «{key}» یافت نشد
+  column_not_found: ستون '{col}' یافت نشد
+user:
+  api_key_required: کلید API برای این ارائه‌دهنده لازم است
+  connection_name_exists: اتصالی با این نام از قبل وجود دارد
+  connection_not_found: اتصال یافت نشد
+  example_blocked: کاربران نمونه نمی‌توانند این عمل را انجام دهند
+  internal_error: خطای داخلی سرور
+  missing_fields: فیلدهای الزامی یافت نشد
+  provider_not_found: ارائه‌دهنده یافت نشد
+  user_not_found: کاربر یافت نشد
+  connection_timeout_local: مهلت اتصال پایان یافت. آیا {code} در {baseUrl} در حال اجراست؟
+  no_endpoint: هیچ نقطه پایانی برای این ارائهدهنده پیکربندی نشده است.
+  provider_returned: 'ارائهدهنده {status} را بازگرداند: {text}'
+  fetch_failed: واکشی ناموفق بود.
+  unknown_provider: 'ارائهدهنده ناشناخته: {code}'
+  example_update_db: کاربران نمونه نمیتوانند اتصالات پایگاهداده را بهروزرسانی کنند.
+  api_key_required_fetch: کلید API برای این ارائهدهنده لازم است.
+  connection_timeout_remote: مهلت اتصال برای {code} در {baseUrl} پایان یافت.
+  auto_create_default_detail: ایجاد خودکار مجموعهداده ناموفق بود. سرور پایگاهداده ممکن است در دسترس نباشد.
+  example_create_db: کاربران نمونه نمی‌توانند اتصالات پایگاه داده ایجاد کنند.
+  example_delete_db: کاربران نمونه نمی‌توانند اتصالات پایگاه داده را حذف کنند.
+  no_models_returned: ارائهدهنده هیچ مدلی برنگرداند؛ چیزی تغییر نکرد.
+validation:
+  error: 'خطای اعتبارسنجی: {count} مورد یافت شد'
+  password:
+    require_digit: رمز عبور باید حداقل شامل یک رقم باشد.
+    min_length: رمز عبور باید حداقل {min} کاراکتر باشد.
+    too_weak: رمز عبور بسیار ضعیف است. لطفاً رمز عبور قوی‌تری انتخاب کنید.
+    require_lowercase: رمز عبور باید حداقل شامل یک حرف کوچک باشد.
+    require_uppercase: رمز عبور باید حداقل شامل یک حرف بزرگ باشد.
+    require_special: رمز عبور باید حداقل شامل یک نویسه ویژه باشد.
+notebooks:
+  import_failed_4: 'واکشی ایمپورت ناموفق بود: {error}'
+  invalid_format_2: قالب نوتبوک نامعتبر است. فقط فایل‌های .ipynb پذیرفته می‌شوند.
+  example_blocked_2: کاربران نمونه نمی‌توانند اشتراک‌گذاری نوتبوک را تغییر دهند.
+  share_error: فقط مالک می‌تواند تنظیمات اشتراک‌گذاری را تغییر دهد.
+  system_db_blocked: نمی‌توان به پایگاه‌داده سیستمی «{db}» داده وارد کرد. لطفاً از پایگاه‌داده دیگری استفاده کنید یا پایگاه‌داده جدیدی بسازید.
+  import_failed_3: ایمپورت یافت نشد
+  no_dataframes: هیچ DataFrameای در این نوتبوک یافت نشد
+  file_too_large: فایل نوتبوک بیش از حد بزرگ است. حداکثر اندازه {max_size} مگابایت است.
+  share_error_2: 'به‌روزرسانی اشتراک‌گذاری ناموفق بود: {error}'
+  example_blocked_3: کاربران نمونه نمیتوانند نوتبوکها را حذف کنند.
+  delete_error: 'حذف ورود داده ناموفق بود: {error}'
+  import_failed: 'ورود نوتبوک ناموفق بود: {error}'
+  import_failed_2: 'فهرست کردن ورودهای داده ناموفق بود: {error}'
+  example_blocked: کاربران نمونه نمیتوانند نوتبوک وارد کنند.
+  no_db_rights: این اتصال حق ایجاد پایگاه داده را ندارد.
+  no_table_rights: این اتصال نمی‌تواند جدول ایجاد کند — ایمپورت رد شد.
+  no_connection: لطفاً یک اتصال پایگاه داده انتخاب کنید.
+  too_many_cells: 'تعداد سلول‌ها بیش از حد مجاز است ({count}). حداکثر: {max_cells}'
+  unknown_error: خطای ناشناخته
+  missing_cells: 'قالب نوت‌بوک نامعتبر است: کلید ''cells'' وجود ندارد'
+  invalid_json: 'JSON نامعتبر: {error}'
+  cells_not_list: 'قالب نوت‌بوک نامعتبر است: ''cells'' یک لیست نیست'
+  untitled: بی‌نام
+access:
+  licence_required: اتصالات پایگاه‌داده Access به مجوز سازمانی نیاز دارند
+  connection_failed_detail: 'اتصال ناموفق بود: {detail}'
+  name_and_path_required: name و file_path الزامی هستند
+  connection_not_found: اتصال یافت نشد
+  connected_in_ms: اتصال در {elapsed} میلی‌ثانیه برقرار شد
+  connection_failed: اتصال ناموفق بود
+  connection_saved: اتصال ذخیره شد
+  file_path_required: file_path الزامی است
+  db_pool_not_initialized: استخر پایگاه داده مقداردهی اولیه نشده است
+  encryption_error: 'خطای رمزنگاری: {error}'
+  connection_deleted: اتصال حذف شد
+  connection_exists: اتصال '{name}' از قبل وجود دارد
+  connection_unavailable: 'اتصال به پایگاه‌داده Access ممکن نشد: {error}'
+  table_not_found: 'جدول ''{table}'' یافت نشد: {error}'
+  connection_params_required: میزبان، پورت، کاربر و رمز عبور الزامی هستند
+  invalid_port: پورت باید یک عدد صحیح باشد
+error:
+  describe:
+    ai_connection_error: 'خطای اتصال هوش مصنوعی: هیچ اتصالی در دسترس نیست'
+    ai_connection_error_2: 'خطای اتصال هوش مصنوعی: رمزگشایی کلید API ناموفق بود'
+  connection:
+    query_failed_3: 'پرس‌وجوی PostgreSQL ناموفق بود: {error}'
+    type_not_supported: نوع پایگاه داده «{type}» هنوز پشتیبانی نمیشود
+    decryption_failed: 'رمزگشایی رمز عبور اتصال ناموفق بود: {error}'
+    query_failed_2: 'اجرای SQL کامپایل‌شده ناموفق بود: {error}'
+    query_failed_4: 'پرس‌وجوی MySQL ناموفق بود: {error}'
+    query_failed_7: 'پرس‌وجوی پایگاه داده ناموفق بود: {error}'
+    query_failed: 'پرس‌وجوی جدول/نما «{table}» ناموفق بود: {error}'
+    query_failed_6: 'پرس‌وجوی دسترسی ناموفق بود: {error}'
+    type_not_supported_3: 'نوع پایگاه داده پشتیبانی‌نشده: {type}'
+    query_failed_5: 'پرس‌وجوی MSSQL ناموفق بود: {error}'
+    type_not_supported_2: نوع پایگاه‌داده '{type}' هنوز برای کشف طرح‌واره پشتیبانی نمی‌شود
+    connect_failed: 'اتصال MySQL ناموفق بود: {error}'
+    failed: 'اتصال به پایگاه‌داده ناموفق بود: {error}'
+  ai:
+    call_failed: 'فراخوانی هوش مصنوعی ناموفق بود: {error}'
+  define:
+    connection_not_found: اتصال پایگاه‌داده یافت نشد یا قابل دسترسی نیست
+    connection_not_found_2: اتصال یافت نشد یا قابل دسترسی نیست
+    dataset_creation_failed: 'ایجاد رکورد مجموعه‌داده ناموفق بود: {error}'
+  dataset:
+    load_failed_3: مجموعه‌داده مجازی «{id}» تعریف SQL ندارد
+    not_found_3: 'مجموعه‌داده یافت نشد یا قابل دسترسی نیست: {error}'
+    load_failed_2: 'بارگذاری داده‌ها ناموفق بود: {error}'
+    not_found_5: مجموعه‌داده «{id}» یافت نشد
+    table_missing: جدول «{table}» وجود ندارد.
+    not_found_or_not_owned: مجموعه‌داده «{id}» یافت نشد یا مالک آن نیستید
+    not_found_4: مجموعه‌داده «{id}» یافت نشد یا قابل دسترسی نیست
+    load_failed: 'بارگذاری مجموعه‌داده ناموفق بود: {error}'
+    load_failed_4: 'بارگذاری مجموعه‌داده مجازی «{id}» ناموفق بود: {error}'
+    delete_failed_2: 'حذف مجموعه‌داده ناموفق بود: {error}'
+    not_found_2: مجموعه‌داده «{id}» یافت نشد
+    not_found: مجموعه‌داده '{id}' یافت نشد یا قابل دسترسی نیست
+    unknown_source: 'نوع منبع ناشناخته: {source_type}'
+  groups:
+    invalid_group_id: group_id نامعتبر است. باید بین 00 تا 99 باشد
+  database:
+    insert_failed: 'خطای پایگاه‌داده: {error}'
+    pool_not_initialized: استخر پایگاه داده مقداردهی اولیه نشده است
+  preparation:
+    rule_not_found_2: قانون آمادهسازی «{id}» یافت نشد
+    rule_not_found: قانون آمادهسازی «{id}» برای این مجموعه‌داده یافت نشد
+  execution:
+    cannot_cancel: نمیتوان اجرایی را که در حال حاضر {status} است لغو کرد
+execution:
+  not_found: اجرا یافت نشد
+  loaded_rows: '{rows} سطر و {columns} ستون بارگیری شد'
+  loading_dataset: در حال بارگیری مجموعه‌داده...
+  starting_analysis: در حال شروع مراحل تحلیل...
+  executing_stage: 'در حال اجرای مرحله: {stage}'
+ai_recipe:
+  llm_error: 'خطای سرویس هوش مصنوعی: {error}'
+  message_required: پیام الزامی است
+  session_name_required: نام الزامی است
+  invalid_decision: تصمیم نامعتبر
+virtual:
+  no_credentials_postgresql: هیچ اعتبارنامه‌ای برای اتصال PostgreSQL با شناسه {conn_id} یافت نشد
+  no_credentials_mysql: هیچ اعتبارنامه‌ای برای اتصال MySQL با شناسه {conn_id} یافت نشد
+  preview_failed: 'پیش‌نمایش ناموفق بود: {error}'
+  execute_failed: 'اجرا ناموفق بود: {error}'
+  validate:
+    dataset_id_required: 'منبع «{alias}»: datasetId برای منبع داده لازم است.'
+    no_sources: هیچ منبعی تعریف نشده است.
+    connection_id_required: 'منبع «{alias}»: برای منبع {storage_type}، connectionId لازم است.'
+    dataset_not_found: 'منبع «{alias}»: مجموعه‌داده {dataset_id} یافت نشد یا دسترسی مجاز نیست.'
+    column_source_not_found: 'ستون {c_idx}: منبع «{src_alias}» یافت نشد.'
+    join_left_source_not_found: 'پیوند {j_idx}: منبع سمت چپ «{left_alias}» یافت نشد.'
+    join_right_source_not_found: 'پیوند {j_idx}: منبع سمت راست «{right_alias}» یافت نشد.'
+    connection_not_found: 'منبع «{alias}»: اتصال {conn_id} یافت نشد یا دسترسی مجاز نیست.'
+    output_column_not_found: 'ستون {c_idx}: منبع «{src_alias}» ستونی به نام «{column}» ندارد.'
+    join_column_not_found: 'Join {j_idx}: منبع «{alias}» ستونی به نام «{column}» ندارد.'
+  decision:
+    invalid_value: 'تصمیم «{piece}» قابل اعمال نبود: {error}'
+    model_failed: 'انتخاب شما ذخیره شد. دستیار نتوانست پاسخ دهد: {error}'
+    missing_value: تصمیم «{piece}» به یک مقدار نیاز دارد.
+    no_connection: انتخاب شما ذخیره شد. دستیار نتوانست پاسخ دهد زیرا هیچ اتصال هوش مصنوعی در دسترس نیست.
+    unknown_piece: «{piece}» تصمیمی نیست که این endpoint بتواند اعمال کند.
+    no_reply: انتخاب شما ذخیره شد. دستیار دورهای کاری خود را بدون تولید پاسخ به پایان رساند — از آن بخواهید ادامه دهد، یا پیش‌نویس را در درخت بررسی کنید.
+    applied: از انتخاب بالا استفاده کنید.
+  scoreboard:
+    columns:
+      what: درون «{source}» چیست؟
+      needs_empty: «{source}» ستونی برای انتخاب ندارد.
+      needs_failed: ستون‌های «{source}» قابل خواندن نبودند.
+    output_columns:
+      what: نتیجه باید شامل کدام ستون‌ها باشد؟
+      needs: یک منبع، به‌همراه ستون‌های خوانده‌شده.
+    name:
+      what: این مجموعه‌داده چه نامی داشته باشد؟
+    joins:
+      what: منابع چگونه باید پیوند داده شوند؟
+      needs: دو یا چند منبع، به‌همراه ستون‌های خوانده‌شده.
+    sources:
+      what: این مجموعه‌داده باید از کدام جدول ساخته شود؟
+    storage:
+      live: نمای زنده
+      table: جدول ذخیره‌شده
+      what: آیا این باید نمای زنده باشد یا جدول ذخیره‌شده؟
+  column:
+    unknown_action: «{action}» یک عملیات ستونی نیست. از tick یا untick استفاده کنید.
+    missing_column: نام هیچ ستونی برده نشد.
+    missing_source: 'یک ستون به منبع خود نیاز دارد: یک شناسهٔ مجموعه‌داده، یا یک اتصال و یک نام جدول.'
+  join_suggestions:
+    invalid_sources: پیشنهادهای Join به فهرستی از منابع نیاز دارند که هر یک نام مستعار و نام داشته باشند ({error}).
+  panel:
+    collapsed_required: وضعیت تاشدهٔ پنل باید true یا false باشد.
+  save:
+    invalid_definition: 'این مجموعه‌داده قابل ذخیره نیست: {errors}'
+  tool:
+    no_source: 'هیچ منبعی با نام ''{alias}'' وجود ندارد. منابع این پیش‌نویس: {aliases}.'
+    no_sources_yet: هیچ منبعی با نام '{alias}' وجود ندارد — پیش‌نویس هنوز منبعی ندارد. ابتدا add_source را فراخوانی کنید.
+schema:
+  introspect_postgresql_failed: 'بررسی ساختار PostgreSQL ناموفق بود: {error}'
+  introspect_mysql_failed: 'بررسی MySQL ناموفق بود: {error}'
+  dataset_not_found: مجموعه‌داده یافت نشد یا دسترسی رد شد
+  connection_not_found: اتصال پایگاه داده یافت نشد یا دسترسی رد شد
+  unsupported_source_type: 'source_type پشتیبانی‌نشده: {source_type}. از dataset، postgresql یا mysql استفاده کنید.'
+  dataset_id_required: برای source_type=dataset فیلد dataset_id الزامی است
+  no_table_name: مجموعه‌داده نام جدول ندارد (هنوز وارد نشده است)
+  connection_and_table_required: connection_id و table_name برای منابع PostgreSQL/MySQL الزامی هستند
+rag:
+  no_matches: هیچ متن منطبقی برای سؤال شما در پایگاه‌داده یافت نشد. بازنویسی سؤال یا انتخاب منبع داده دیگری را امتحان کنید.
+  no_tables: هیچ جدولی در این طرحواره برای جستوجو یافت نشد.
+  no_ai_provider: '{count} رکورد منطبق یافت شد. (هیچ ارائه‌دهنده هوش مصنوعی برای پاسخ‌های زبان طبیعی پیکربندی نشده است.)'
+  ai_provider_error: 'خطای ارائه‌دهنده هوش مصنوعی: {error}'
+licence:
+  delete_failed: 'حذف فایل مجوز ناموفق بود: {error}'
+  write_failed: 'نوشتن فایل مجوز ناموفق بود: {error}'
+  missing_content: فیلد «content» موجود نیست
+  no_file_to_delete: هیچ فایل مجوزی برای حذف وجود ندارد — هم‌اکنون در حالت متن‌باز است.
+  delete_success: مجوز حذف شد. در حالت متن‌باز در حال اجراست.
+  install_success: مجوز با موفقیت نصب شد.
+virtual_chat:
+  llm_returned_error: LLM کد HTTP {status_code} را برگرداند
+  llm_call_failed: 'فراخوانی LLM ناموفق بود: {error}'
+  chat_session_not_found: جلسه چت یافت نشد
+  connection_not_found: اتصال پایگاه داده یافت نشد یا دسترسی رد شد
+  introspection_failed: 'درون‌نگری ناموفق بود: {error}'
+  save_draft_success: '✅ مجموعه داده مجازی به‌عنوان پیش‌نویس ذخیره شد: **{name}**. می‌توانید آن را در صفحه مجموعه داده‌ها مشاهده و ویرایش کنید. از تب Define برای اصلاح SQL، پیوندها و ستون‌های خروجی استفاده
+    کنید.'
+  empty_response: مطمئن نیستم چگونه به آن پاسخ دهم. میتوانید آن را بازنویسی کنید یا جزئیات بیشتری بدهید؟
+  save_no_sources: '⚠️ ذخیره ممکن نشد: هیچ منبع دادهای بررسی نشد. سعی کنید در پیامهای قبلی خود به نام جدولهایی مانند «products» یا «orders» اشاره کنید.'
+  save_success: ✅ مجموعهداده **{name}** با موفقیت ذخیره شد. میتوانید آن را در فهرست مجموعهدادههای موجود پیدا کنید. برای اصلاح آن از Edit و برای ایجاد نسخهای متفاوت از Clone استفاده کنید.
+  save_failed: '⚠️ ذخیرهسازی ناموفق بود: {error}'
+  save_parse_error: '⚠️ نتوانستیم مجموعهداده را ذخیره کنیم: {error}'
+notebooks_storage:
+  failed_create_table_mssql: 'ایجاد جدول ناموفق بود: {error}'
+  no_connection_details: جزئیات اتصال ارائه نشده است
+  no_connection_details_short: جزئیات اتصال موجود نیست
+  failed_create_table: 'ایجاد جدول {table} ناموفق بود: {error}'
+  unsupported_storage_type: 'نوع ذخیره‌سازی پشتیبانی‌نشده: {type}'
+  no_data_pool: استخر پایگاه داده داده‌ها مقداردهی اولیه نشده است.
+system:
+  hello_world: سلام، دنیا!
+  cache_cleanup_completed: 'پاکسازی کش کامل شد: {removed} ورودی حذف شد'
+audio_presets:
+  invalid_chat_type: 'نوع چت نامعتبر است: {chat_type}. باید یکی از موارد زیر باشد: {valid_types}'
+test_ai:
+  api_key_required: کلید API برای {name} لازم است.
+  endpoint_v1_valid: نقطه پایانی در {baseUrl}/v1 معتبر است.
+  no_endpoint: هیچ نقطه پایانی برای این ارائهدهنده پیکربندی نشده است.
+  server_reachable: سرور {name} در {baseUrl} در دسترس است.
+  unknown_provider: 'ارائهدهنده ناشناخته: {provider}'
+  responded_with_status: '{name} با وضعیت {status} پاسخ داد.'
+  connection_failed: 'اتصال ناموفق بود: {msg}'
+  connection_timeout_local: مهلت اتصال پایان یافت. آیا {name} در {baseUrl} در حال اجراست؟
+  endpoint_valid: نقطه پایانی در {baseUrl} معتبر است.
+  internal_error: خطای داخلی سرور.
+  fetch_failed: واکشی ناموفق بود.
+ai_providers:
+  missing_provider_id: شناسه ارائهدهنده موجود نیست.
+  provider_not_found: ارائهدهنده یافت نشد.
+  failed_to_delete_provider: حذف ارائهدهنده ناموفق بود.
+  failed_to_update_provider: بهروزرسانی ارائهدهنده ناموفق بود.
+  unauthorized: غیرمجاز.
+  missing_id_or_enabled: شناسه یا پرچم فعال بودن موجود نیست.
+  internal_error: خطای داخلی سرور.
+  forbidden: دسترسی ممنوع است.
+  invalid_provider_id: شناسه ارائه‌دهنده نامعتبر است
+visualization_instances:
+  instance_not_found: نمونه یافت نشد.
+  invalid_viz_type: نوع مصورسازی نامعتبر است.
+  no_rendered_output: هیچ خروجی رندرشدهای در دسترس نیست.
+  unauthorized: غیرمجاز.
+  viz_type_id_required: visualizationTypeId لازم است.
+  invalid_instance_id: شناسه نمونه نامعتبر است.
+  viz_type_not_found: نوع مصورسازی یافت نشد.
+  internal_error: خطای داخلی سرور.
+visualization_types:
+  internal_error: خطای داخلی سرور.
+  type_not_found: نوع مصورسازی یافت نشد.
+  slug_already_exists: نامک از قبل وجود دارد.
+  name_and_slug_required: نام و نامک لازم هستند.
+  forbidden: دسترسی ممنوع است.
+ai:
+  database:
+    email_sent: گزارش با موفقیت از طریق ایمیل ارسال شد.
+invalid_target_type: 'target_type نامعتبر: {target_type}. باید یکی از موارد زیر باشد: {types}'
+rename_new_name_required: عملیات تغییر نام ستون به یک نام جدید نیاز دارد
+encode_column_required: عملیات کدگذاری به یک ستون نیاز دارد
+invalid_operation_type: 'نوع عملیات نامعتبر: {type}. باید یکی از موارد زیر باشد: {types}'
+filter_operator_required: عملیات فیلتر به یک عملگر نیاز دارد
+columns_required: عملیات «{type}» به یک فیلد columns نیاز دارد
+invalid_encoding: 'کدگذاری نامعتبر: {encoding}. باید یکی از موارد زیر باشد: {types}'
+column_required: عملیات «{type}» به یک ستون نیاز دارد
+invalid_fill_method: 'روش fill_missing نامعتبر: {method}. باید یکی از موارد زیر باشد: {methods}'
+filter_value_required: عملیات فیلتر به یک مقدار نیاز دارد
+dataclean_tools:
+  no_rules_to_preview: قاعده‌ای برای پیش‌نمایش وجود ندارد.
+  no_rules_to_apply: قاعده‌ای برای اعمال وجود ندارد.
+dataclean_chat:
+  dataset_id_required: datasetId لازم است.
+  empty_response: نتوانستم پاسخی تولید کنم. لطفاً دوباره تلاش کنید.
+  chat_session_not_found: نشست گفتگوی پاکسازی داده یافت نشد.
+  create_error: ایجاد نشست پاکسازی داده ناموفق بود.
+  message_required: پیام لازم است.

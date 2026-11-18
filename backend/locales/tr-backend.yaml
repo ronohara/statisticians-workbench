@@ -1,0 +1,1016 @@
+access:
+  connected_in_ms: '{elapsed} ms içinde bağlanıldı'
+  connection_deleted: Bağlantı silindi
+  connection_exists: '''{name}'' bağlantısı zaten mevcut'
+  connection_failed: Bağlantı başarısız oldu
+  connection_failed_detail: 'Bağlantı başarısız oldu: {detail}'
+  connection_not_found: Bağlantı bulunamadı
+  connection_saved: Bağlantı kaydedildi
+  db_pool_not_initialized: Veritabanı havuzu başlatılmadı
+  encryption_error: 'Şifreleme hatası: {error}'
+  file_path_required: file_path zorunludur
+  licence_required: Access veritabanı bağlantıları kurumsal lisans gerektirir
+  name_and_path_required: name ve file_path zorunludur
+  connection_params_required: host, port, kullanıcı adı ve parola gereklidir
+  invalid_port: Port bir tam sayı olmalıdır
+  connection_unavailable: 'Access veritabanına bağlanılamadı: {error}'
+  table_not_found: 'Tablo ''{table}'' bulunamadı: {error}'
+admin:
+  already_full_admin: Kullanıcı zaten Tam Yönetici
+  already_group_admin: Kullanıcı zaten Grup Yöneticisi
+  cannot_delete_self: Kendi hesabınızı silemezsiniz
+  cannot_demote_full_admin: Tam Yönetici rütbesi düşürülemez
+  cannot_demote_self: Kendi rütbenizi düşüremezsiniz
+  cannot_promote_example: Örnek Kullanıcı yükseltilemez
+  delete_error: Kullanıcı silinemedi
+  demote_error: Kullanıcının rütbesi düşürülemedi
+  description_required: Açıklama boş olamaz
+  example_blocked: Örnek kullanıcılar yönetici eylemleri gerçekleştiremez
+  group_not_found: Grup bulunamadı
+  group_users_load_error: Grup kullanıcıları yüklenemedi
+  groups_load_error: Gruplar yüklenemedi
+  groups_stats_error: Grup istatistikleri yüklenemedi
+  insufficient_permissions: Bu eylem için yetersiz izinler
+  invalid_group_id: Geçersiz group_id. 00-99 arasında olmalıdır
+  invalid_id: Geçersiz id
+  invalid_upload_count: maxUploadCount negatif olmayan bir tam sayı olmalıdır (sınırsız için 0).
+  invalid_upload_size: maxUploadSizeMB negatif olmayan bir tam sayı olmalıdır (sınırsız için 0).
+  missing_fields: Zorunlu alanlar eksik
+  missing_group_id: Grup kimliği eksik
+  missing_id: id eksik
+  missing_model_id: Model kimliği eksik
+  missing_provider_code: providerCode parametresi eksik
+  missing_user_id: userId eksik
+  model_update_error: Model güncellenemedi
+  models_load_error: Modeller yüklenemedi
+  no_fields: Güncellenecek geçerli alan yok
+  no_group: Kullanıcıya atanmış grup yok
+  not_group_admin: Kullanıcı Grup Yöneticisi değil
+  only_full_admin: Bu eylemi yalnızca Tam Yöneticiler gerçekleştirebilir
+  promote_error: Kullanıcı yükseltilemedi
+  provider_delete_error: Sağlayıcı silinemedi
+  provider_not_found: Sağlayıcı bulunamadı
+  provider_update_error: Sağlayıcı güncellenemedi
+  providers_load_error: Sağlayıcılar yüklenemedi
+  slug_exists: Slug zaten mevcut
+  update_error: Kullanıcı güncellenemedi
+  user_load_error: Kullanıcı yüklenemedi
+  user_not_found: Kullanıcı bulunamadı
+  users_load_error: Kullanıcılar yüklenemedi
+  viz_type_create_error: Görselleştirme türü oluşturulamadı
+  viz_type_delete_error: Görselleştirme türü silinemedi
+  viz_type_update_error: Görselleştirme türü güncellenemedi
+  viz_types_load_error: Görselleştirme türleri yüklenemedi
+ai_recipe:
+  llm_error: 'AI hizmeti hatası: {error}'
+  message_required: Bir mesaj zorunludur
+  session_name_required: Bir ad zorunludur
+  invalid_decision: Geçersiz karar.
+api:
+  user:
+    connection_not_found: Bağlantı bulunamadı
+    invalid_name: Ad bir dize olmalıdır
+    example_create_ai: Örnek kullanıcılar AI bağlantıları oluşturamaz
+    invalid_connection_id: Geçersiz bağlantı kimliği
+    example_blocked: Örnek kullanıcılar bu eylemi gerçekleştiremez
+    missing_fields: Gerekli alanlar eksik
+    connection_name_exists: Bu ada sahip bir bağlantı zaten mevcut
+    invalid_port: Port bir tam sayı olmalıdır
+    user_not_found: Kullanıcı bulunamadı
+    internal_error: Dahili sunucu hatası
+    connection_id_required: Bağlantı kimliği gereklidir
+    example_delete_ai: Örnek kullanıcılar AI bağlantılarını silemez
+    example_update_ai: Örnek kullanıcılar AI bağlantılarını güncelleyemez
+    api_key_required: Bu sağlayıcı için API anahtarı gereklidir
+    invalid_current_password: Mevcut şifre hatalı
+    provider_not_found: Sağlayıcı "{provider}" bulunamadı
+    test_dns_failure: Uç noktanın ana makine adı çözümlenemedi. Adreste yazım hatası olup olmadığını veya yalnızca bu ağın çözümleyebileceği bir ad olup olmadığını kontrol edin. Yetenek kararı kaydedilmedi;
+      başarısız olma süresi kaydedildi.
+    tuning_malformed_body: İstek gövdesi geçerli JSON değil.
+    tuning_invalid_temperature: Sıcaklık 0 ile 2 arasında bir sayı olmalıdır.
+    test_budget_exhausted: Model, bir yanıta ulaşamadan tüm çıktı bütçesini kullandığı için hiçbir şey döndürmedi. Yetenek kararı kaydedilmedi; süre kaydedildi.
+    test_tls_failure: Güvenli bağlantı kurulamadı — uç nokta, https beklenen yerde düz http olabilir veya sertifikasının süresi dolmuş olabilir. Yetenek kararı kaydedilmedi; başarısız olma süresi kaydedildi.
+    discovery_complete: '{seen} model keşfedildi: {created} burada yeni, {refreshed} zaten biliniyor, {pruned} artık sunulmuyor.'
+    tuning_connection_not_found: Böyle bir AI bağlantısı yok.
+    unknown_test_id: 'Bilinmeyen test "{test}". Kayıtlı testler: {known}'
+    test_http_status: 'Sağlayıcı yanıt verdi ve yanıtı bir hataydı: {detail}. Yetenek kararı kaydedilmedi; nedenin açık olması için sağlayıcının söylediği gösteriliyor.'
+    model_not_found: Model "{model}", "{provider}" sağlayıcısı için bulunamadı.
+    tuning_model_not_found: Böyle bir model yok.
+    invalid_probe_timeout: Test zaman aşımı tam sayı saniye olmalı, en az 1 ve en çok {ceiling} olmalıdır.
+    test_reason_required: Bir test sonucu bir neden kaydetmelidir.
+    model_not_served_by_connection: Bu bağlantı "{model}" modelini sunmuyor. Modelleri değişmiş olabilir — bağlantıyı yenileyin veya başka bir model seçin.
+    test_other_failure: 'Modele ulaşılamadı ve neden, bu sistemin tanımadığı bir nedendi. Yetenek kararı kaydedilmedi: {detail}'
+    test_read_timeout: Model isteği kabul etti ancak zamanında yanıt vermedi. Bu ana makine için çok yavaş olabilir — CPU üzerindeki büyük bir model birkaç dakika sürebilir. Yetenek kararı kaydedilmedi;
+      başarısız olma süresi kaydedildi.
+    test_not_implemented: Test "{test}" kayıtlı ancak henüz bir probu yok.
+    tuning_nothing_to_update: temperature, maxTokens veya timeoutSeconds alanlarından en az birini sağlayın.
+    test_connect_refused: Bu adreste dinleyen hiçbir şey yok — sunucuya ulaşılabiliyor ancak hiçbir hizmet yanıt vermedi. Bağlantı noktasını ve AI sunucusunun çalıştığını kontrol edin. Yetenek kararı kaydedilmedi;
+      başarısız olma süresi kaydedildi.
+    invalid_connect_timeout: Bağlantı zaman aşımı tam sayı saniye olmalı, en az 1 ve en çok {ceiling} olmalıdır.
+    invalid_test_state: 'Geçersiz test sonucu "{state}". İzin verilenler: {allowed}'
+    tuning_invalid_ai_timeout: AI süre sınırı tam sayı saniye olmalı ve en az 1 olmalıdır.
+    test_attribution_required: Bir test sonucu, onu kimin çalıştırdığını kaydetmelidir.
+    tuning_invalid_max_tokens: Çıktı sınırı tam sayı token olmalı ve en az 1 olmalıdır.
+    test_connect_timeout: Uç nokta, zamanında bir bağlantı kabul etmedi. Ana makine kapalı olabilir veya bir güvenlik duvarı isteği düşürüyor olabilir. Yetenek kararı kaydedilmedi; başarısız olma süresi
+      kaydedildi.
+    connect_timeout_exceeds_probe: Bağlantı zaman aşımı ({connect}s), test zaman aşımından ({probe}s) daha uzun olamaz — bir bağlantının kurulması, tüm testin çalışabileceği süreden daha uzun süremez.
+  auth:
+    user_not_found: Kullanıcı bulunamadı
+    invalid_token: Geçersiz veya süresi dolmuş belirteç
+    unauthorized: Yetkisiz
+    missing_fields: Alanlar eksik
+    example_user_reset_blocked: Örnek kullanıcılar için parola sıfırlama devre dışıdır
+    token_expired: Belirtecin süresi doldu
+    missing_email: E-posta gereklidir
+    example_user_forgot_blocked: Örnek kullanıcılar için parola sıfırlama devre dışıdır
+    email_already_verified: E-posta zaten doğrulanmış
+    example_user_blocked: Örnek kullanıcılar için şifre değişiklikleri devre dışıdır
+    invalid_current_password: Mevcut şifre hatalı
+    internal_error: Dahili sunucu hatası
+    not_authenticated: Kimlik doğrulaması yapılmadı
+  admin:
+    settings_invalid_public_url: Geçersiz genel URL biçimi
+    provider_not_found: Sağlayıcı bulunamadı
+    user_load_error: Kullanıcı yüklenemedi
+    group_users_load_error: Grup kullanıcıları yüklenemedi
+    settings_invalid_max_registrations: Maksimum kayıt sayısı pozitif bir sayı veya sınırsız olmalıdır
+    groups_load_error: Gruplar yüklenemedi
+    settings_invalid_upload_size: Varsayılan maksimum yükleme boyutu negatif olmayan bir tam sayı olmalıdır (0 sınırsızdır).
+    already_full_admin: Kullanıcı zaten bir Tam Yönetici
+    insufficient_permissions: Bu işlem için yetersiz izinler
+    model_update_error: Model güncellenemedi
+    missing_model_id: Model kimliği eksik
+    already_group_admin: Kullanıcı zaten bir Grup Yöneticisi
+    not_group_admin: Kullanıcı bir Grup Yöneticisi değil
+    settings_save_error: Genel ayarlar kaydedilemedi
+    settings_view_forbidden: Genel ayarları yalnızca Tam Yöneticiler görüntüleyebilir
+    missing_fields: Gerekli alanlar eksik
+    provider_update_error: Sağlayıcı güncellenemedi
+    provider_delete_error: Sağlayıcı silinemedi
+    update_error: Kullanıcı güncellenemedi
+    only_full_admin: Bu işlemi yalnızca Tam Yöneticiler gerçekleştirebilir
+    example_blocked: Örnek kullanıcılar yönetici işlemleri gerçekleştiremez
+    delete_error: Kullanıcı silinemedi
+    providers_load_error: Sağlayıcılar yüklenemedi
+    invalid_upload_count: maxUploadCount negatif olmayan bir tam sayı olmalıdır (0 sınırsızdır).
+    missing_user_id: userId eksik
+    missing_id: id eksik
+    missing_group_id: Grup kimliği eksik
+    settings_modify_forbidden: Genel ayarları yalnızca Tam Yöneticiler değiştirebilir
+    no_group: Kullanıcıya atanmış grup yok
+    cannot_demote_self: Kendi rolünüzü düşüremezsiniz
+    cannot_demote_full_admin: Bir Tam Yöneticinin rolü düşürülemez
+    cannot_promote_example: Bir Örnek Kullanıcı terfi ettirilemez
+    models_load_error: Modeller yüklenemedi
+    settings_load_error: Genel ayarlar yüklenemedi
+    settings_invalid_upload_count: Varsayılan maksimum yükleme sayısı negatif olmayan bir tam sayı olmalıdır (0 sınırsızdır).
+    settings_invalid_email_timeout: E-posta doğrulama zaman aşımı pozitif bir sayı olmalıdır (saat)
+    promote_error: Kullanıcı terfi ettirilemedi
+    groups_stats_error: Grup istatistikleri yüklenemedi
+    invalid_upload_size: maxUploadSizeMB negatif olmayan bir tam sayı olmalıdır (sınırsız için 0)
+    invalid_group_id: Geçersiz group_id. 00-99 arasında olmalıdır
+    cannot_delete_self: Kendi hesabınızı silemezsiniz
+    settings_invalid_grace_period: Kayıt ek süresi pozitif bir sayı olmalıdır (saat)
+    no_fields: Güncellenecek geçerli alan yok
+    demote_error: Kullanıcının rütbesi düşürülemedi
+    description_required: Açıklama boş olamaz
+    settings_invalid_email_sender: Geçersiz gönderen e-posta adresi biçimi
+    invalid_viz_type_field: Geçersiz görselleştirme türü alan değeri
+    viz_type_not_found: Görselleştirme türü bulunamadı
+    model_not_found: Model bulunamadı
+    user_not_found: Kullanıcı bulunamadı
+    settings_invalid_platform_upload_size: Platform maksimum yükleme boyutu negatif olmayan bir tam sayı olmalıdır (sınırsız için 0).
+    demote_success: Kullanıcı {name} Grup Yöneticiliğinden düşürüldü.
+    invalid_id: Geçersiz kimlik.
+    promote_success: Kullanıcı {name} Grup Yöneticiliğine yükseltildi.
+    viz_types_load_error: Görselleştirme türleri yüklenemedi
+    viz_type_create_error: Görselleştirme türü oluşturulamadı
+    users_load_error: Kullanıcılar yüklenemedi
+    slug_exists: Slug zaten mevcut
+    viz_type_update_error: Görselleştirme türü güncellenemedi
+    viz_type_delete_error: Görselleştirme türü silinemedi
+    instance_exists: Tür silinemiyor çünkü {count} ilişkili örneği var.
+    instance_in_use: Tür, ilişkili örnekleri olduğu için silinemiyor.
+    settings_demo_mode_requires_licence: Demo modu geçerli bir lisans olmadan devre dışı bırakılamaz.
+    invalid_email: Geçersiz e-posta formatı.
+    email_exists: E-posta zaten mevcut.
+    settings_not_found: Genel ayarlar bulunamadı.
+    settings_invalid_registration_mode: Kayıt modu 0, 1, 2 veya 4'ten biri olmalıdır.
+    create_user_error: Kullanıcı oluşturulamadı.
+    settings_demo_upload_count_limit: Demo modunda, varsayılan maksimum yükleme sayısı 1 ile 5 arasında olmalıdır.
+    users_demo_upload_count_limit: Demo modunda, bir kullanıcı için maksimum yükleme sayısı 1 ile 5 arasında olmalıdır.
+    settings_demo_upload_size_limit: Demo modunda, varsayılan maksimum yükleme boyutu 1 ile 5 MB arasında olmalıdır.
+    users_demo_upload_size_limit: Demo modunda, bir kullanıcı için maksimum yükleme boyutu 1 ile 5 MB arasında olmalıdır.
+    example_user_password_blocked: Örnek kullanıcıların parolaları bir yönetici tarafından ayarlanamaz
+    invalid_admin_password: Yönetici parolası yanlış
+    tuning_reset_error: AI ayar varsayılanları sıfırlanamadı.
+    settings_invalid_ai_timeout: AI süre sınırı tam sayı saniye olmalı ve en az 1 olmalıdır.
+    settings_invalid_slow_threshold: Yavaş model sınırı tam sayı saniye olmalı ve en az 1 olmalıdır.
+    field_not_owned: 'Bu alan bu sayfada ayarlanmamış. {endpoint}. Sorunlu alanlar: {fields}'
+    settings_invalid_probe_timeout: Varsayılan test zaman aşımı tam sayı saniye olmalı, en az 1 ve en çok {ceiling} olmalıdır.
+    settings_invalid_max_tokens: Çıktı sınırı tam sayı token olmalı ve en az 1 olmalıdır.
+    settings_invalid_temperature: Sıcaklık 0 ile 2 arasında bir sayı olmalıdır.
+    settings_invalid_connect_timeout: Varsayılan bağlantı zaman aşımı tam sayı saniye olmalı, en az 1 ve en çok {ceiling} olmalıdır.
+  register:
+    settings_not_found: Genel ayarlar bulunamadı
+    invalid_email: Geçersiz e-posta biçimi
+    email_exists: E-posta zaten mevcut
+    internal_error: İç sunucu hatası
+    missing_fields: Alanlar eksik
+    limit_reached: Kayıt limitine ulaşıldı (en fazla {max_reg} kullanıcı).
+    registration_disabled: Kendi kendine kayıt devre dışıdır. Lütfen bir yöneticiyle iletişime geçin.
+  profile:
+    update_failed: Profil güncellenemedi
+    fetch_failed: Profil getirilemedi
+    invalid_name: Ad bir dize olmalıdır
+    name_required: Ad zorunludur
+  settings:
+    save_failed: Ayarlar kaydedilemedi
+    invalid_default_ai_connection: Geçersiz varsayılan AI bağlantısı
+    example_blocked: Örnek kullanıcılar ayarları düzenleyemez
+    user_not_found: Kullanıcı bulunamadı
+    load_failed: Ayarlar yüklenemedi
+    invalid_slow_threshold: Yavaş model sınırı tam sayı saniye olmalı ve en az 1 olmalıdır.
+  global_settings_load_error: Dahili sunucu hatası.
+  translations_load_error: Çeviriler yüklenemedi
+  languages_load_error: Diller yüklenemedi
+audio_presets:
+  invalid_chat_type: 'Geçersiz sohbet türü: {chat_type}. Şunlardan biri olmalıdır: {valid_types}'
+auth:
+  account_deleted: Bu hesap silinmiştir.
+  email_not_verified: E-posta doğrulanmadı. Lütfen gelen kutunuzu ve SPAM klasörünü kontrol edin.
+  example_user_blocked: Örnek kullanıcılar için parola işlevleri devre dışıdır
+  example_user_forgot_blocked: Örnek kullanıcılar için parola sıfırlama devre dışıdır
+  example_user_reset_blocked: Örnek kullanıcılar için parola sıfırlama devre dışıdır
+  internal_error: Dahili sunucu hatası
+  invalid_credentials: Geçersiz kimlik bilgileri
+  invalid_current_password: Mevcut parola yanlış
+  invalid_token: Geçersiz veya süresi dolmuş token
+  invalid_token_error: 'Geçersiz token: {error}'
+  invalid_token_missing_user_id: 'Geçersiz token: kullanıcı kimliği eksik'
+  missing_email: E-posta zorunludur
+  missing_fields: Eksik alanlar
+  password_changed: Parola başarıyla değiştirildi
+  password_validation_failed: Parola doğrulaması başarısız oldu
+  reset_email_sent: Parola sıfırlama e-postası gönderildi
+  token_expired: Token süresi doldu
+  unauthorized: Yetkisiz
+  user_not_found: Kullanıcı bulunamadı
+  login_invalid_credentials: Geçersiz e-posta veya parola.
+chat:
+  ai_provider_error: 'AI sağlayıcı hatası: {error}'
+  connection_error: 'Bağlantı hatası: {error}'
+  connection_not_found: AI bağlantısı bulunamadı veya erişilemiyor
+  delete_failed: 'Sohbet silinemedi: {error}'
+  deleted: '''{id}'' sohbeti başarıyla silindi'
+  generate_title_failed: 'Başlık oluşturulamadı: {error}'
+  get_failed: 'Sohbet alınamadı: {error}'
+  internal_error: 'Dahili sunucu hatası: {error}'
+  list_failed: 'Sohbetler listelenemedi: {error}'
+  not_found: '''{id}'' sohbeti bulunamadı'
+  not_found_or_not_owned: '''{id}'' sohbeti bulunamadı veya size ait değil'
+  send_failed: 'Mesaj gönderilemedi: {error}'
+  title_updated: Sohbet başlığı başarıyla güncellendi
+  update_failed: 'Sohbet güncellenemedi: {error}'
+  ai_service_failed: AI hizmeti yanıt veremedi. Lütfen tekrar deneyin.
+  ai_repeat_loop: AI modeli takıldı ve yanıtı tamamlayamadı. Lütfen tekrar deneyin.
+  ai_timeout: AI modeli yanıt vermekte çok uzun sürüyor. Lütfen tekrar deneyin.
+  timeout_out_of_range: AI süre sınırı 1 ile {max_seconds} saniye arasında olmalıdır.
+common:
+  back: Geri
+  cancel: İptal
+  cannot_undo: Bu işlem geri alınamaz.
+  clear: Temizle
+  copy: Kopyala
+  delete: Sil
+  deleting: Siliniyor...
+  dismiss: Kapat
+  edit: Düzenle
+  generating: Oluşturuluyor...
+  loading: Yükleniyor...
+  next: İleri
+  restoring: Geri yükleniyor...
+  save: Kaydet
+  saving: Kaydediliyor...
+  sending: Gönderiliyor...
+  testing: Test ediliyor...
+  unknown: Bilinmiyor
+  uploading: Yükleniyor...
+  verifying: Doğrulanıyor...
+  view: Görüntüle
+database:
+  connection_failed: 'Veritabanına bağlanılamadı: {error}'
+  connection_not_found: Veritabanı bağlantısı bulunamadı veya erişilemiyor
+  decryption_failed: 'Bağlantı parolası çözülemedi: {error}'
+  insert_failed: 'Veritabanı hatası: {error}'
+  pool_not_initialized: Veritabanı havuzu başlatılmadı
+  query_failed: 'Veritabanı sorgusu başarısız oldu: {error}'
+  type_not_supported: '''{type}'' veritabanı türü henüz desteklenmiyor'
+  feature_required: Bu veritabanı türü lisansınız kapsamında etkin değildir.
+datasets:
+  auto_create:
+    connection_id_required: Bağlantı kimliği gereklidir
+    connection_not_found: Bağlantı bulunamadı
+    created: Veri setleri oluşturuldu
+    no_tables_discovered: Hiçbir tablo veya görünüm bulunamadı. Veritabanı sunucusunun çalıştığını ve erişilebilir olduğunu kontrol edin.
+  browse:
+    columns_failed: 'Sütunlar alınamadı: {error}'
+    discover_failed: 'Tablolar keşfedilemedi: {error}'
+    preview_failed: 'Tablo önizlenemedi: {error}'
+  define:
+    connection_details_not_found: Bağlantı ayrıntıları bulunamadı
+    connection_not_found: Veritabanı bağlantısı bulunamadı veya erişilemiyor
+    connection_required: Bağlantı kimliği gereklidir
+    connection_test_failed: Veritabanı bağlantı testi başarısız oldu
+    database_connection_failed: 'Veritabanına bağlanılamadı: {error}'
+    dataset_created: '''{name}'' veri seti başarıyla tanımlandı'
+    invalid_source_type: sourceType 'table' veya 'view' olmalıdır
+    name_required: Veri seti adı gereklidir
+    permission_denied: 'Erişim reddedildi: ''{user}'' kullanıcısının ''{table}'' tablosuna erişimi yok. Lütfen SELECT izni verin.'
+    preview_failed: '''{table}'' tablosundan veri okunamadı: {error}'
+    table_access_failed: '''{table}'' tablosuna erişilemedi: {error}'
+    table_name_required: Tablo adı gereklidir
+    table_not_found: '''{database}'' veritabanında ''{table}'' tablosu/görünümü bulunamadı'
+    verification_failed: 'Tablo/görünüm doğrulanamadı: {error}'
+    connection_timed_out: Bağlantı 15 saniye sonra zaman aşımına uğradı.
+    connection_successful: Bağlantı başarılı.
+    connection_missing_db_note: 'Not: PostgreSQL bu hatayı eksik veritabanları VE yetersiz izinler için döndürür. Veritabanı mevcutsa, kullanıcının veritabanında CONNECT iznine sahip olduğunu kontrol edin.'
+  delete:
+    success: '''{id}'' veri seti başarıyla silindi'
+  describe:
+    ai_connection_error: 'Yapay zeka bağlantı hatası: {error}'
+    description_generated: '''{name}'' için açıklama başarıyla oluşturuldu'
+    empty_description: Oluşturulan açıklama boş. Lütfen yapay zeka sağlayıcı yapılandırmasını kontrol edin.
+    generation_failed: 'Açıklama oluşturma başarısız oldu: {error}'
+    timeout_out_of_range: AI süre sınırı 1 ile {max_seconds} saniye arasında olmalıdır.
+  example_blocked:
+    create: Örnek kullanıcılar veri seti oluşturamaz
+    delete: Örnek kullanıcılar veri seti silemez
+    update: Örnek kullanıcılar veri setlerini güncelleyemez
+  list_error: Veri setleri yüklenemedi
+  not_found: '''{id}'' veri seti bulunamadı veya erişilemiyor'
+  not_found_2: Veri seti bulunamadı
+  not_owned: '''{id}'' veri seti bulunamadı veya size ait değil'
+  not_owner: Yalnızca kendi veri setlerinizi düzenleyebilirsiniz
+  preparation:
+    duplicate_name: Bu veri seti için bu ada sahip bir hazırlık kuralı zaten var
+    no_updates: Güncellenecek alan yok
+    preview_failed: 'Kural önizlenemedi: {error}'
+    rule_created: '''{name}'' hazırlık kuralı başarıyla oluşturuldu'
+    rule_deleted: Hazırlık kuralı başarıyla silindi
+    rule_in_use: 'Bu hazırlık kuralı {count} tarif tarafından kullanılıyor: {names}. Önce tarifleri silin.'
+    rule_not_found: Bu veri seti için '{id}' hazırlık kuralı bulunamadı
+    rule_not_found_or_not_owned: Hazırlık kuralı bulunamadı veya size ait değil
+    rule_updated: Hazırlık kuralı başarıyla güncellendi
+    schema_failed: 'Veri seti şeması okunamadı: {error}'
+    already_exists: Bu işlemleri içeren bir hazırlık kuralı zaten mevcut ('{name}')
+  schema:
+    external_failed: 'Harici veritabanından şema alınamadı: {error}'
+    from_preview: Şema önizleme verilerinden türetildi (ilk 10 satır)
+    load_error: 'Şema yüklenemedi: {error}'
+    not_implemented: Bu veri seti türü '{type}' için şema keşfi henüz uygulanmadı
+    table_missing: Tablo artık mevcut değil. Lütfen veri kümesini yeniden yükleyin.
+    row_count_not_computed: Sanal veri kümesi için join çalıştırılmadan satır sayısı hesaplanmaz.
+    connection_unreachable: 'Bağlantı {connection_id} erişilemez: {error}'
+  share:
+    error: Paylaşım güncellenemedi
+    toggled: '''{id}'' veri seti için paylaşım başarıyla güncellendi'
+  transforms:
+    clone_forbidden: Bu dönüşümü klonlama yetkiniz yok
+    cloned: Dönüşüm '{name}' adıyla klonlandı
+    created: Dönüşüm '{name}' başarıyla oluşturuldu
+    deleted: Dönüşüm başarıyla silindi
+    duplicate_name: Bu veri seti için bu ada sahip bir dönüşüm zaten mevcut
+    in_use: 'Bu dönüşüm {count} tarif tarafından kullanılıyor: {names}. Önce tarifleri silin'
+    no_updates: Güncellenecek alan yok
+    not_accessible: Veri seti '{id}' bulunamadı veya erişilebilir değil
+    not_found: Bu veri seti için dönüşüm '{id}' bulunamadı
+    not_found_or_not_owned: Dönüşüm bulunamadı veya size ait değil
+    not_owned: Veri seti '{id}' bulunamadı veya size ait değil
+    updated: Dönüşüm başarıyla güncellendi
+    already_exists: Bu işlemleri içeren bir dönüşüm zaten mevcut ('{name}')
+  unknown_source: 'Bilinmeyen kaynak türü: {source_type}'
+  upload:
+    error: Veri seti yüklenemedi
+    file_processing_failed: 'Dosya işlenemedi: {error}'
+    limit_reached_count: Yükleme sınırına ulaşıldı. En fazla {count} veri seti yüklenebilir
+    limit_reached_size: Yükleme boyutu sınırı aşıldı. Maksimum toplam depolama {size} MB
+    success: Veri seti '{name}' başarıyla yüklendi
+    unsupported_file: 'Desteklenmeyen dosya türü. Lütfen şunlardan birini yükleyin: {extensions}'
+    user_not_found: Kullanıcı bulunamadı
+    dbf_field_unsupported: 'Bu .dbf dosyası okunamayan alan türleri bildiriyor: {types}'
+    dbf_memo_unsupported: Bu .dbf dosyası memo alanları içerir. Bu alanların değerleri ayrı bir dosyada saklanır ve tek dosyalık yükleme bunları taşıyamaz.
+  unread:
+    no_permission: Bu hesap bu kaynağı okuyamıyor.
+    unreachable: Bu kaynağa erişilemedi. Sunucu adını ve bağlantı noktasını kontrol edip yeniden deneyin.
+    incomplete: Denetim zamanında tamamlanmadı. Yeniden deneyin veya bağlantı zaman aşımını artırın.
+    schema_error: Kaynak yanıt verdi ancak sütunları okunamadı.
+    no_database: Bu veritabanı sunucuda mevcut değil.
+    auth_failed: Veritabanı bu hesabın kimlik bilgilerini reddetti.
+    definition_incomplete: Bu kaynak ne bir veri kümesi ne de bir bağlantı tablosu belirtiyor.
+    definition_too_deep: Bu veri kümesi kendine beş düzeyden daha derin başvuruyor.
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: Sınırlı geçerli değerlere sahip '{column}' için bir CHECK kısıtlaması ekleyin veya ENUM türü kullanın
+      add_not_null: '''{column}'' sütununa NOT NULL kısıtlaması ekleyin'
+      allows_null: Sütun '{column}' NULL değerine izin veriyor — NOT NULL kısıtı kullanmayı değerlendirin.
+      set_max_length: Aşırı büyük verileri önlemek amacıyla '{column}' için bir maksimum uzunluk ayarlamayı değerlendirin
+      short_text_enum: Metin sütunu '{column}' en fazla {max_len} uzunluğunda — ENUM veya CHECK kısıtı kullanmayı değerlendirin.
+      unbounded_varchar: Sınırsız VARCHAR sütunu '{column}'
+    indexing:
+      missing_fk_index: Yabancı anahtar sütunu '{column}' için dizin yok
+    naming:
+      mixed_case_column: Sütun '{column}' karışık büyük/küçük harf kullanıyor — snake_case önerilir.
+      mixed_case_table: Tablo adı '{table}' karışık büyük/küçük harf kullanıyor — snake_case önerilir.
+      rename_column_reserved: SQL ayrılmış sözcük çakışmalarını önlemek için '{column}' sütununu yeniden adlandırın
+      rename_column_snake_case: Tutarlılık için sütunu küçük harfli snake_case olarak yeniden adlandırın
+      rename_table_reserved: SQL ayrılmış sözcük çakışmalarını önlemek için '{table}' tablosunu yeniden adlandırın
+      rename_table_snake_case: Tutarlılık için tabloyu küçük harfli snake_case olarak yeniden adlandırın
+      reserved_keyword_column: '''{column}'' sütunu ayrılmış bir SQL anahtar sözcüğüdür'
+      reserved_keyword_table: '''{table}'' tablo adı ayrılmış bir SQL anahtar sözcüğüdür'
+    normalisation:
+      create_separate_table: '''{base}'' değerleri için {table} tablosuna FK içeren ayrı bir tablo oluşturun'
+      multiple_address: Adresle ilgili birden çok sütun ({count}) tespit edildi
+      repeating_group: 'Tekrarlayan grup tespit edildi: {columns}'
+      separate_address_table: '{table} tablosuna FK içeren ayrı bir adres tablosu oluşturmayı değerlendirin'
+    relationships:
+      add_fk: '''{column}'' başka bir tabloya başvuruyorsa bir FK kısıtlaması eklemeyi değerlendirin'
+      missing_fk: '''{column}'' sütunu bir yabancı anahtar gibi görünüyor ancak FK kısıtlaması yok'
+    semistructured:
+      controlled_vocab: '{column} sütunu {count} farklı değerden oluşan kontrollü bir sözlük içeriyor'
+      create_ref_table: '{table} tablosunu normalleştirmek amacıyla {column} değerleri için bir referans tablosu oluşturun'
+  analyze_error: 'Veritabanı analiz edilemedi: {error}'
+  connection_error: 'Veritabanına bağlanılamadı: {error}'
+  description: Yapay zeka kullanarak veritabanı tasarımınızı analiz edin ve iyileştirin
+  invalid_token: Geçersiz belirteç
+  no_connection: Kullanılabilir veritabanı bağlantısı yok. Lütfen önce bir veritabanına bağlanın
+  not_implemented: Bu özellik yakında kullanıma sunulacak
+  pdf:
+    ai_disclaimer: Yapay zeka tarafından oluşturulan analiz — üretime uygulamadan önce gözden geçirin
+    categories: Kategoriler
+    code_systems: Kod Sistemleri
+    code_systems_label: Tespit Edilen Kod Sistemleri
+    col_default: Varsayılan
+    col_name: Sütun
+    col_nullable: Null olabilir
+    col_pk: PK
+    col_type: Tür
+    column_meanings_label: Sütun Anlamları
+    columns: Sütunlar
+    confidence: Güven
+    confidence_label: Güven
+    domain_label: ISIC Alan Sınıflandırmaları
+    evidence_label: Kanıt
+    header: Veritabanı Tasarımı Analiz Raporu
+    health_score_label: 'Veritabanı Sağlık Puanı: {score}/100'
+    health_score_subtitle: Schema AI tarafından değerlendirilen genel veritabanı sağlığı. 0 = kritik yapısal sorunlar, 100 = üretime hazır
+    health_score_title: Sağlık Puanı
+    high: Yüksek
+    implicit_relationships_label: Örtük İlişkiler
+    integration_subtitle: Integration AI tarafından tespit edilen örtük ilişkiler, araştırma yetenekleri ve eksik boyutlar
+    integration_title: Yapay Zeka Entegrasyon Bulguları
+    issues_count: Sorunlar ({count})
+    issues_found: Bulunan Sorunlar
+    low: Düşük
+    medium: Orta
+    missing_dimensions_label: Eksik Boyutlar
+    'no': HAYIR
+    none: Yok
+    normalisation_title: Normalleştirme Önerileri ({count})
+    page: Sayfa {current}/{total}
+    partial_label: Kısmi
+    pk: PK
+    proposed_ddl_label: Önerilen DDL
+    proposed_table: Önerilen tablo
+    rationale_label: Gerekçe
+    relationship_label: İlişki
+    research_capabilities_label: Araştırma Yetenekleri
+    risk_breakdown: Risk Dağılımı
+    rows: Satırlar
+    schema_title: Şema ({count} tablo)
+    semantic_subtitle: Yapay zekâ ile çıkarılan sütun anlamları, ISIC alan sınıflandırmaları ve kod sistemi tespitleri.
+    semantic_title: Yapay Zekâ Semantik Analizi
+    semi_structured_title: Yarı Yapılandırılmış Veri Analizi ({count} sütun)
+    subtitle: 'Veritabanı: {db_name} ({db_type}) | Bağlantı: {conn_name} (ID: {conn_id})'
+    summary: Özet
+    supported_label: Destekleniyor
+    table_purposes_label: Tablo Amaçları
+    tables: Tablolar
+    title: Veritabanı Tasarım Analizi
+    top_actions_label: Öncelikli Eylemler
+    top_keywords: Başlıca anahtar kelimeler
+    top_recommendations: Başlıca Öneriler
+    unsupported_label: Desteklenmiyor
+    value: Değer
+    'yes': EVET
+    ai_skipped_warning: AI analizi atlandı
+  pdf_error: 'PDF oluşturulamadı: {error}'
+  question_required: Soru zorunludur
+  rag_error: 'RAG sorgusu başarısız oldu: {error}'
+  rag_not_available: RAG araması yalnızca PostgreSQL veritabanları için kullanılabilir. MySQL metin araması gelecekteki bir sürüm için planlanmıştır.
+  report_data_required: Rapor verisi zorunludur
+  schema_error: 'Şema çıkarılamadı: {error}'
+  schema_error_2: 'Veritabanı parolası çözülemedi: {error}'
+  title: Veritabanı Tasarım Asistanı
+  unsupported_type: Yalnızca PostgreSQL, MySQL, MS SQL Server ve Microsoft Access veritabanları desteklenir
+  unsupported_type_2: Yalnızca PostgreSQL, MySQL ve MS SQL Server veritabanları desteklenir
+  email_pdf:
+    invalid_body: Geçersiz istek gövdesi
+    no_email: Hesabınız için e-posta adresi bulunamadı
+    send_failed: Rapor e-postayla gönderilemedi. Lütfen tekrar deneyin.
+  llm:
+    timeout: LLM isteği {timeout_seconds} saniye sonra zaman aşımına uğradı.
+    http_error: LLM HTTP {status_code} döndürdü
+    empty_content: LLM boş içerik döndürdü
+    unknown_error: Bilinmeyen LLM hatası
+    no_ai_provider: Yapılandırılmış bir AI sağlayıcısı yok. Ayarlar → AI Bağlantıları bölümünden bir AI sağlayıcısı bağlayın.
+    no_model: AI modeli yapılandırılmamış. AI bağlantısında varsayılan bir model ayarlayın veya açıkça bir model belirtin.
+  stream_ai_semantic_start: 'Semantik AI: {tables} tablo analiz ediliyor...'
+  analysis_complete: Analiz tamamlandı
+  stream_mechanical_start: Mekanik analiz çalıştırılıyor...
+  stream_normalisation_skipped: 'Normalizasyon: atlandı ({error})'
+  stream_normalisation_start: Normalizasyon önerileri oluşturuluyor...
+  stream_ai_integration_done: 'Entegrasyon AI: {relationships} ilişki, {capabilities} yetenek'
+  analysis_cancelled: Analiz akışı iptal edildi (istemci bağlantısı kesildi)
+  ai_skipped_reason: 'Bu rapor yalnızca mekanik analiz içerir. Veritabanı {count} sorun ürettiği için yapay zeka destekli analiz atlandı (limit: {limit}). Aşağıdaki mekanik bulguları inceleyin, veritabanını
+    temizleyin ve ardından bağlama duyarlı açıklamalar, semantik içgörüler ve normalizasyon önerileri için AI ile yeniden çalıştırın.'
+  stream_normalisation_timeout: 'Normalizasyon: 90 sn sonra zaman aşımına uğradı'
+  stream_ai_schema_done: 'Şema AI: sağlık puanı {score}/100'
+  stream_normalisation_done: 'Normalizasyon: {count} öneri'
+  stream_ai_semantic_done: 'Semantik AI: {columns} sütun anlamı, {domains} ISIC alanı'
+  stream_ai_done: 'AI analizi tamamlandı — durum: {status}'
+  stream_connected: '{db_type} veritabanına bağlanıldı: {db_name}'
+  stream_mechanical_done: 'Mekanik analiz: {count} sorun bulundu'
+  stream_unsupported_type: 'Desteklenmeyen veritabanı türü: {db_type}'
+  stream_analysis_failed: 'Analiz başarısız oldu: {error}'
+  stream_connecting: Veritabanına bağlanılıyor...
+  stream_schema_done: 'Şema çıkarıldı: {tables} tablo, {columns} sütun'
+  stream_semistructured_start: Yarı yapılandırılmış sütunlar analiz ediliyor...
+  stream_ai_integration_start: 'Entegrasyon AI: ilişkiler algılanıyor...'
+  stream_ai_schema_start: 'Şema AI: {tables} tablo analiz ediliyor...'
+  stream_extracting_schema: '{db_type} veritabanından şema çıkarılıyor...'
+  ai_skipped_message: 'AI analizi atlandı — {count} sorun bulundu (sınır: {limit}). Aşağıdaki mekanik bulguları inceleyin, veritabanını temizleyin ve ardından AI ile yeniden çalıştırın.'
+  stream_ai_start: AI analizi başlatılıyor — 3 uzman paralel olarak çalışıyor...
+error:
+  ai:
+    call_failed: 'Yapay zekâ çağrısı başarısız oldu: {error}'
+  connection:
+    connect_failed: 'MySQL bağlantısı başarısız oldu: {error}'
+    decryption_failed: 'Bağlantı parolası çözülemedi: {error}'
+    failed: 'Veritabanına bağlanılamadı: {error}'
+    query_failed: 'Tablo/görünüm ''{table}'' sorgulanamadı: {error}'
+    query_failed_2: 'Derlenmiş SQL yürütülemedi: {error}'
+    query_failed_3: 'PostgreSQL sorgusu başarısız oldu: {error}'
+    query_failed_4: 'MySQL sorgusu başarısız oldu: {error}'
+    query_failed_5: 'MSSQL sorgusu başarısız oldu: {error}'
+    query_failed_6: 'Access sorgusu başarısız oldu: {error}'
+    query_failed_7: 'Veritabanı sorgusu başarısız oldu: {error}'
+    type_not_supported: Veritabanı türü '{type}' henüz desteklenmiyor
+    type_not_supported_2: Veritabanı türü '{type}' şema keşfi için henüz desteklenmiyor
+    type_not_supported_3: 'Desteklenmeyen veritabanı türü: {type}'
+  database:
+    insert_failed: 'Veritabanı hatası: {error}'
+    pool_not_initialized: Veritabanı havuzu başlatılmadı
+  dataset:
+    delete_failed_2: 'Veri kümesi silinemedi: {error}'
+    load_failed: 'Veri kümesi yüklenemedi: {error}'
+    load_failed_2: 'Veri yüklenemedi: {error}'
+    load_failed_3: Sanal veri kümesi '{id}' için SQL tanımı yok
+    load_failed_4: 'Sanal veri kümesi ''{id}'' yüklenemedi: {error}'
+    not_found: Veri kümesi '{id}' bulunamadı veya erişilemiyor
+    not_found_2: Veri kümesi '{id}' bulunamadı
+    not_found_3: 'Veri kümesi bulunamadı veya erişilemiyor: {error}'
+    not_found_4: Veri kümesi '{id}' bulunamadı veya erişilemiyor
+    not_found_5: Veri kümesi '{id}' bulunamadı
+    not_found_or_not_owned: Veri kümesi '{id}' bulunamadı veya size ait değil
+    table_missing: '''{table}'' tablosu mevcut değil'
+    unknown_source: 'Bilinmeyen kaynak türü: {source_type}'
+  define:
+    connection_not_found: Veritabanı bağlantısı bulunamadı veya erişilemiyor
+    connection_not_found_2: Bağlantı bulunamadı veya erişilemiyor
+    dataset_creation_failed: 'Veri kümesi kaydı oluşturulamadı: {error}'
+  describe:
+    ai_connection_error: 'Yapay zekâ bağlantı hatası: Kullanılabilir bağlantı yok'
+    ai_connection_error_2: 'Yapay zekâ bağlantı hatası: API anahtarı çözülemedi'
+  execution:
+    cannot_cancel: Zaten {status} durumundaki bir yürütme iptal edilemez
+  groups:
+    invalid_group_id: Geçersiz group_id. 00-99 arasında olmalıdır
+  preparation:
+    rule_not_found: Bu veri kümesi için hazırlık kuralı '{id}' bulunamadı
+    rule_not_found_2: Hazırlık kuralı '{id}' bulunamadı
+execution:
+  executing_stage: 'Aşama yürütülüyor: {stage}'
+  loaded_rows: '{rows} satır, {columns} sütun yüklendi'
+  loading_dataset: Veri kümesi yükleniyor...
+  not_found: Yürütme bulunamadı
+  starting_analysis: Analiz aşamaları başlatılıyor...
+groups:
+  admin_required: Yönetici erişimi gereklidir
+  cannot_delete_self: Kendi hesabınızı silemezsiniz
+  description_required: Açıklama boş olamaz
+  insufficient_permissions: Grupları yönetmek için yetersiz izinler
+  invalid_group_id: Geçersiz user_group. 00-99 arasında olmalıdır
+  not_authorized: Bu kullanıcının grubunu görüntüleme yetkiniz yok
+  not_found: Grup '{id}' bulunamadı
+  update_failed: Grup güncellenemedi
+  update_success: Grup '{id}' açıklaması güncellendi
+  user_not_found: Kullanıcı bulunamadı
+  user_updated: Kullanıcının grubu başarıyla güncellendi
+  resource_not_found: Kaynak bulunamadı
+  missing_id: Kaynak kimliği eksik
+licence:
+  delete_failed: 'Lisans dosyası silinemedi: {error}'
+  missing_content: '''content'' alanı eksik'
+  write_failed: 'Lisans dosyası yazılamadı: {error}'
+  no_file_to_delete: Silinecek lisans dosyası yok — zaten açık kaynak modundasınız.
+  delete_success: Lisans kaldırıldı. Açık kaynak modunda çalışıyor.
+  install_success: Lisans başarıyla kuruldu.
+notebooks:
+  delete_error: 'İçe aktarma silinemedi: {error}'
+  example_blocked: Örnek kullanıcılar not defterlerini içe aktaramaz.
+  example_blocked_2: Örnek kullanıcılar not defteri paylaşımını değiştiremez.
+  example_blocked_3: Örnek kullanıcılar not defterlerini silemez.
+  file_too_large: Not defteri dosyası çok büyük. Maksimum boyut {max_size} MB.
+  import_failed: 'Not defteri içe aktarılamadı: {error}'
+  import_failed_2: 'İçe aktarmalar listelenemedi: {error}'
+  import_failed_3: İçe aktarma bulunamadı
+  import_failed_4: 'İçe aktarma getirilemedi: {error}'
+  invalid_format_2: Geçersiz not defteri biçimi. Yalnızca .ipynb dosyaları kabul edilir.
+  no_connection: Lütfen bir veritabanı bağlantısı seçin.
+  no_dataframes: Bu not defterinde hiçbir DataFrame bulunamadı.
+  no_db_rights: Bu bağlantının veritabanı oluşturma yetkisi yok.
+  no_table_rights: Bu bağlantı tablo oluşturamıyor — içe aktarma reddedildi.
+  share_error: Paylaşım ayarlarını yalnızca sahibi değiştirebilir.
+  share_error_2: 'Paylaşım güncellenemedi: {error}'
+  system_db_blocked: Sistem veritabanına '{db}' içe aktarılamaz. Lütfen farklı bir veritabanı kullanın veya yeni bir tane oluşturun.
+  too_many_cells: 'Çok fazla hücre ({count}). Maks: {max_cells}'
+  unknown_error: Bilinmeyen hata
+  cells_not_list: 'Geçersiz not defteri biçimi: ''cells'' bir liste değil'
+  untitled: Adsız
+  missing_cells: 'Geçersiz not defteri biçimi: ''cells'' anahtarı eksik'
+  invalid_json: 'Geçersiz JSON: {error}'
+notebooks_storage:
+  failed_create_table: '{table} tablosu oluşturulamadı: {error}'
+  failed_create_table_mssql: 'Tablo oluşturulamadı: {error}'
+  no_connection_details: Bağlantı ayrıntıları sağlanmadı
+  no_connection_details_short: Bağlantı ayrıntısı yok
+  unsupported_storage_type: 'Desteklenmeyen depolama türü: {type}'
+  no_data_pool: Veri veritabanı havuzu başlatılmadı
+rag:
+  ai_provider_error: 'AI sağlayıcı hatası: {error}'
+  no_ai_provider: '{count} eşleşen kayıt bulundu. (Doğal dil yanıtları için AI sağlayıcı yapılandırılmamış.)'
+  no_matches: Sorunuzla eşleşen metin veritabanında bulunamadı. Farklı bir ifadeyle sormayı deneyin veya farklı bir veri kaynağı seçin.
+  no_tables: Şemada aranacak tablo bulunamadı.
+recipes:
+  ai_session:
+    create_error: AI tarif oturumu oluşturulamadı
+    delete_error: AI tarif oturumu silinemedi
+    load_error: AI tarif oturumu yüklenemedi
+    not_found: AI tarif oturumu bulunamadı
+    save_error: AI oturumundan tarif kaydedilemedi
+    unauthorized: Bu AI tarif oturumuna erişiminiz yok
+  column_type:
+    categorical: kategorik
+    numeric: sayısal
+  columns_required: Lütfen en az bir sütun seçin.
+  create_success: '''{name}'' tarifi başarıyla oluşturuldu'
+  data_selection_error: 'Veri seçimi başarısız oldu: {error}'
+  dataset_not_found: Veri kümesi bulunamadı
+  dataset_required: Lütfen bir veri seti seçin.
+  delete_error: 'Tarif silinemedi: {error}'
+  delete_success: '''{id}'' tarifi başarıyla silindi'
+  execute_error: 'Tarif çalıştırılamadı: {error}'
+  execution:
+    error: 'Tarif çalıştırma hatası: {error}'
+    preparation_error: 'Hazırlık aşaması başarısız oldu: {error}'
+    preparation_failed: Hazırlık aşaması başarısız oldu
+    unknown_stage: 'Bilinmeyen aşama türü: {stage_type}'
+  execution_completed: Çalıştırma başarıyla tamamlandı
+  execution_failed: Çalıştırma başarısız oldu
+  execution_load_error: 'Çalıştırma yüklenemedi: {error}'
+  execution_not_found: '''{id}'' çalıştırması bulunamadı'
+  executions_load_error: 'Çalıştırmalar yüklenemedi: {error}'
+  field_label:
+    categoryColumn: Kategori sütunu (etiketler)
+    dependentColumn: Bağımlı / sonuç sütunu
+    factorColumn: Faktör sütunu (gruplama değişkeni)
+    independentColumns: Bağımsız / yordayıcı sütunlar
+    responseColumn: Yanıt sütunu (sayısal ölçüm)
+    responseColumn2: İkinci yanıt sütunu (eşleştirilmiş ölçüm)
+    xColumn: X ekseni sütunu
+    yColumn: Y ekseni sütunu
+    factorColumn2: İkinci faktör sütunu (gruplama değişkeni)
+    columns: Sütunlar
+  invalid_stage: Tarif için geçersiz aşama
+  invalid_stage_type: 'Geçersiz aşama türü: {type}. Şunlardan biri olmalıdır: {types}'
+  load_datasets_error: 'Veri kümeleri yüklenemedi: {error}'
+  load_error: 'Tarifler yüklenemedi: {error}'
+  name_required: Tarif adı gereklidir.
+  no_columns_exist: Seçilen sütunların hiçbiri veri kümesinde yok
+  no_dataset: Bu tarifle ilişkili veri kümesi yok
+  no_stages: Tarif en az bir aşama içermelidir
+  no_updates: Güncellenecek alan yok
+  not_found: '''{id}'' tarifi bulunamadı'
+  not_owned: '''{id}'' tarifi bulunamadı veya sahibi değilsiniz'
+  preparation:
+    all_rules_failed: 'Tüm kurallar başarısız oldu: {errors}'
+    no_db_pool: Hazırlık aşaması için veritabanı havuzu kullanılamıyor
+    rule_failed: 'Kural ''{rule_id}'': {error}'
+    rule_not_found: '''{rule_id}'' kuralı bulunamadı'
+    rules_applied: '{count} hazırlık kuralı uygulandı'
+  requirement:
+    anova_one_way: 1 kategorik sütun (faktör) ve 1 sayısal sütun (yanıt)
+    anova_two_way: 2 kategorik sütun (iki faktör) ve 1 sayısal sütun (yanıt)
+    bar: 1 kategorik sütun (x ekseni) ve 1 sayısal sütun (y ekseni)
+    chi_square: 2 kategorik sütun
+    correlation: en az 2 sayısal sütun
+    descriptive: en az 1 sayısal sütun
+    distribution: 1 sayısal sütun
+    histogram: 1 sayısal sütun (x ekseni)
+    line: 2 sayısal sütun (x ve y)
+    linear_regression: en az 2 sayısal sütun (yordayıcılar ve sonuç)
+    none: çıktı gerekmiyor
+    pie: 1 kategorik sütun (etiketler)
+    scatter: 2 sayısal sütun (x ve y)
+    t_test_independent: 1 kategorik sütun (gruplar için) ve 1 sayısal sütun (karşılaştırmak için)
+    t_test_paired: 2 sayısal sütun (eşleştirilmiş ölçümler)
+    table: herhangi bir sütun
+    area: 2 sayısal sütun (x ve y)
+    hbar: 1 kategorik sütun (y ekseni) ve 1 sayısal sütun (x ekseni)
+    donut: 1 kategorik sütun (etiketler)
+  result_type:
+    numeric: sayısal
+    tabular: tablosal
+  scatter_two_columns: Dağılım grafiği en az iki sütun gerektirir
+  scatter_two_numeric: Dağılım grafiği iki sayısal sütun gerektirir
+  schema_error: 'Sütun şeması yüklenemedi: {error}'
+  share:
+    disabled: Tarif artık gizli
+    enabled: Tarif başarıyla paylaşıldı
+  transforms:
+    connect_success: Dönüşüm tarife bağlandı
+    dataset_mismatch: Dönüşüm '{id}', '{dataset_id}' veri kümesine ait değil
+    disconnect_success: Dönüşümün tarifle bağlantısı kesildi
+    load_error: Bağlı dönüşümler yüklenemedi
+    not_found: Dönüşüm '{id}' bulunamadı veya bu tarifin veri kümesine ait değil
+  unknown_stage: 'Bilinmeyen aşama türü: {stage_type}'
+  unsupported_chart_type: 'Desteklenmeyen grafik türü: {chart_type}'
+  update_error: 'Tarif güncellenemedi: {error}'
+  update_success: Tarif '{id}' başarıyla güncellendi
+  validation:
+    failed: 'Tarif doğrulaması başarısız oldu:'
+    incompatible_algo_output: '''{algo}'' analizi {result_type} sonuçları üretir ve ''{output}'' grafiği olarak görüntülenemez. Çıktı türünü ''{algo}'' ile uyumlu bir seçenekle değiştirin: {options}'
+    insufficient_columns_algo: 'Bu veri kümesi ''{algo}'' için doğru sütun türlerine sahip değil ({requirement}). Veri kümesinde bulunanlar: {columns}. {requirement} olan bir veri kümesi seçin veya şuna
+      geçin: {options}'
+    insufficient_columns_output: 'Bu veri kümesi ''{output}'' için doğru sütun türlerine sahip değil ({requirement}). Veri kümesinde bulunanlar: {columns}. {requirement} olan bir veri kümesi seçin veya
+      şuna geçin: {options}'
+    missing_algo_field: '''{algo}'' analizinin ''{field}'' ayarı ({label}) eksik. Analiz panelinde ''{field}'' için bir sütun seçin'
+    missing_output_field: '''{output}'' çıktısının ''{field}'' ayarı ({label}) eksik. Çıktı panelinde ''{field}'' için bir sütun seçin'
+    unknown_algorithm: '''{type}'' tanınan bir analiz yöntemi değil. Şunlardan birini seçin: {options}'
+    unknown_columns: '{stage} aşaması, bu veri kümesinde bulunmayan ''{columns}'' sütunlarını kullanıyor. Mevcut sütunlar: {available}. Mevcut olanlardan seçin.'
+    unknown_output: '''{type}'' tanınan bir çıktı türü değil. Şunlardan birini seçin: {options}'
+    wrong_column_type: Sütun '{column}', '{field}' ({label}) için {expected} olmalıdır.
+    algorithm_required: Analiz yöntemi seçilmedi. Analiz panelinden birini seçin — bir tarifin algoritma içeren bir istatistik aşamasına ihtiyacı vardır.
+    unknown_field: '''{field}'', ''{type}'' için tanınan bir ayar değil. Tanınan ayarlar: {options}.'
+  visualisation_columns_required: Görselleştirme için en az bir sütun gereklidir
+  visualisation_error: 'Görselleştirme başarısız oldu: {error}'
+  visualisation_generated: Görselleştirme başarıyla oluşturuldu
+  technique_linear_regression: Doğrusal Regresyon
+  technique_t_test_independent: Bağımsız t-testi
+  technique_chi_square: Ki-kare Testi
+  technique_descriptive: Tanımlayıcı İstatistikler
+  technique_correlation: Korelasyon Matrisi
+  technique_anova_two_way: İki yönlü ANOVA
+  technique_anova_one_way: Tek yönlü ANOVA
+  technique_t_test_paired: Eşleştirilmiş t-testi
+  histogram_numeric: Histogram sayısal bir sütun gerektirir.
+  distribution_no_columns: Dağılım grafiği en az bir sütun gerektirir.
+  histogram_no_columns: Histogram en az bir sütun gerektirir.
+  stage_not_implemented: '{stage_type} aşaması yakında geliyor'
+  scoreboard:
+    output_incompatible:
+      what: Uyumlu bir çıktı türü seçin
+    name:
+      what: Tarifi adlandırın
+    output_fields:
+      what: Çıktı sütunlarını seçin
+    technique:
+      what: Bir analiz yöntemi seçin
+    technique_unknown:
+      what: Bilinen bir analiz yöntemi seçin
+    output_unknown:
+      what: Bilinen bir çıktı türü seçin
+    dataset:
+      what: Bir veri kümesi seçin
+    technique_fields:
+      what: Gerekli sütunları seçin
+    output:
+      what: Bir çıktı türü seçin
+  chip:
+    heading:
+      columns: Hangi sütunlar?
+      output: Hangi çıktı?
+      technique: Hangi analiz yöntemi?
+schema:
+  connection_and_table_required: PostgreSQL/MySQL kaynakları için connection_id ve table_name gereklidir
+  connection_not_found: Veritabanı bağlantısı bulunamadı veya erişim reddedildi
+  dataset_id_required: source_type=dataset için dataset_id gereklidir
+  dataset_not_found: Veri kümesi bulunamadı veya erişim reddedildi
+  introspect_mysql_failed: 'MySQL incelenemedi: {error}'
+  introspect_postgresql_failed: 'PostgreSQL incelenemedi: {error}'
+  no_table_name: Veri kümesinin tablo adı yok (henüz içe aktarılmamış)
+  unsupported_source_type: 'Desteklenmeyen source_type: {source_type}. dataset, postgresql veya mysql kullanın'
+statistics:
+  anova_computation_failed: 'İki yönlü ANOVA hesaplaması başarısız oldu: {error}'
+  anova_needs_three_groups: Tek yönlü ANOVA 3 veya daha fazla grup gerektirir ({n} bulundu). 2 grup için bağımsız t-testini kullanın
+  cache_cleared: Önbellek anahtarı '{key}' temizlendi
+  cache_not_found: Önbellek anahtarı '{key}' bulunamadı
+  column_must_be_numeric: Sütun '{col}' sayısal olmalıdır
+  column_not_found: Sütun '{col}' bulunamadı
+  computation_failed: 'İstatistik hesaplaması başarısız oldu: {error}'
+  compute_failed: 'İstatistikler hesaplanamadı: {error}'
+  each_group_two_observations: Her grup en az 2 gözleme sahip olmalıdır
+  factor_column_not_found: Faktör {factor} sütunu '{col}' bulunamadı
+  group_column_required_anova: Tek yönlü ANOVA için 3 veya daha fazla düzeye sahip kategorik bir grup sütunu gereklidir
+  group_column_required_ttest: Bağımsız t-testi için tam olarak iki düzeye sahip kategorik bir grup sütunu gereklidir
+  group_fewer_than_two: Grup '{group}' 2'den az gözleme sahip
+  group_must_have_two_levels: Grup sütunu '{group}' tam olarak 2 düzeye sahip olmalıdır ({n} bulundu)
+  need_five_observations_chi: En az 5 tam gözlem gereklidir
+  need_observations_regression: En az {n} tam gözlem gereklidir
+  need_ten_observations_anova: İki yönlü ANOVA için en az 10 tam gözlem gereklidir
+  need_three_pairs: Eşleştirilmiş t-testi için en az 3 tam çift gereklidir
+  need_two_categories_chi: Her iki sütun da en az 2 kategoriye sahip olmalıdır
+  need_two_numeric_correlation: Korelasyon için en az 2 sayısal sütun gereklidir
+  need_two_valid_numeric: En az 2 geçerli sayısal sütun gereklidir
+  no_valid_data_after_dropna: NaN değerler çıkarıldıktan sonra geçerli veri yok
+  no_valid_numeric: Geçerli sayısal sütun sağlanmadı
+  non_numeric_column: Sayısal olmayan sütun
+  not_computed: Hesaplanmadı
+  select_dependent_independent: 'En az 2 sayısal sütun seçin: ilk = bağımlı, diğerleri = bağımsız'
+  select_dependent_var: Bir sayısal bağımlı değişken sütunu seçin
+  select_one_numeric_ttest: Bağımsız t-testi için bir sayısal sütun seçin
+  select_two_categorical_chi: Tam olarak iki kategorik sütun seçin
+  select_two_numeric_paired: Eşleştirilmiş t-testi için tam olarak iki sayısal sütun seçin
+  two_factors_required: İki yönlü ANOVA için iki faktör gereklidir
+system:
+  cache_cleanup_completed: 'Önbellek temizliği tamamlandı: {removed} girdi kaldırıldı'
+  hello_world: Merhaba, Dünya!
+user:
+  api_key_required: Bu sağlayıcı için API anahtarı gereklidir
+  connection_name_exists: Bu ada sahip bir bağlantı zaten var
+  connection_not_found: Bağlantı bulunamadı
+  example_blocked: Örnek kullanıcılar bu eylemi gerçekleştiremez
+  internal_error: Dahili sunucu hatası
+  missing_fields: Gerekli alanlar eksik
+  provider_not_found: Sağlayıcı bulunamadı
+  user_not_found: Kullanıcı bulunamadı
+  unknown_provider: 'Bilinmeyen sağlayıcı: {code}'
+  connection_timeout_local: Bağlantı zaman aşımı. {code}, {baseUrl} adresinde çalışıyor mu?
+  auto_create_default_detail: Veri kümesi otomatik olarak oluşturulamadı. Veritabanı sunucusuna erişilemiyor olabilir.
+  fetch_failed: getirme başarısız oldu
+  example_create_db: Örnek kullanıcılar veritabanı bağlantıları oluşturamaz
+  connection_timeout_remote: '{baseUrl} adresindeki {code} için bağlantı zaman aşımı'
+  provider_returned: 'Sağlayıcı {status} durumunu döndürdü: {text}'
+  api_key_required_fetch: Bu sağlayıcı için API anahtarı gereklidir.
+  example_delete_db: Örnek kullanıcılar veritabanı bağlantılarını silemez
+  example_update_db: Örnek kullanıcılar veritabanı bağlantılarını güncelleyemez
+  no_endpoint: Bu sağlayıcı için uç nokta yapılandırılmamış
+  no_models_returned: Sağlayıcı hiç model döndürmedi; hiçbir şey değiştirilmedi.
+validation:
+  error: 'Doğrulama hatası: {count} sorun bulundu'
+  password:
+    require_digit: Şifre en az bir rakam içermelidir.
+    too_weak: Şifre çok zayıf. Lütfen daha güçlü bir şifre seçin.
+    require_lowercase: Şifre en az bir küçük harf içermelidir.
+    require_special: Şifre en az bir özel karakter içermelidir.
+    require_uppercase: Şifre en az bir büyük harf içermelidir.
+    min_length: Şifre en az {min} karakter uzunluğunda olmalıdır.
+virtual:
+  execute_failed: 'Yürütme başarısız oldu: {error}'
+  no_credentials_mysql: MySQL bağlantısı {conn_id} için kimlik bilgileri bulunamadı
+  no_credentials_postgresql: PostgreSQL bağlantısı {conn_id} için kimlik bilgileri bulunamadı
+  preview_failed: 'Önizleme başarısız oldu: {error}'
+  validate:
+    connection_id_required: 'Kaynak ''{alias}'': {storage_type} kaynağı için connectionId gereklidir'
+    join_left_source_not_found: 'Birleştirme {j_idx}: sol kaynak ''{left_alias}'' bulunamadı'
+    column_source_not_found: 'Sütun {c_idx}: ''{src_alias}'' kaynağı bulunamadı'
+    no_sources: Tanımlı kaynak yok
+    connection_not_found: 'Kaynak ''{alias}'': {conn_id} bağlantısı bulunamadı veya erişim reddedildi'
+    join_right_source_not_found: 'Birleştirme {j_idx}: sağ kaynak ''{right_alias}'' bulunamadı'
+    dataset_id_required: 'Kaynak ''{alias}'': veri kümesi kaynağı için datasetId gereklidir'
+    dataset_not_found: 'Kaynak ''{alias}'': {dataset_id} veri kümesi bulunamadı veya erişim reddedildi'
+    output_column_not_found: 'Sütun {c_idx}: ''{src_alias}'' kaynağında ''{column}'' sütunu yok'
+    join_column_not_found: 'Birleştirme {j_idx}: ''{alias}'' kaynağında ''{column}'' sütunu yok'
+  scoreboard:
+    joins:
+      needs: İki veya daha fazla kaynak, sütunları okunmuş.
+      what: Kaynaklar nasıl birleştirilmeli?
+    sources:
+      what: Bu veri kümesi hangi tablodan oluşturulmalı?
+    name:
+      what: Bu veri kümesinin adı ne olmalı?
+    columns:
+      what: '''{source}'' içinde ne var?'
+      needs_empty: '''{source}'' kaynağının seçilebilecek sütunu yok.'
+      needs_failed: '''{source}'' kaynağının sütunları okunamadı.'
+    output_columns:
+      what: Sonuç hangi sütunları içermeli?
+      needs: Tek kaynak, sütunları okunmuş.
+    storage:
+      live: Canlı görünüm
+      what: Bu bir canlı görünüm mü olmalı, yoksa kayıtlı bir tablo mu?
+      table: Kayıtlı tablo
+  decision:
+    missing_value: '''{piece}'' kararının bir değere ihtiyacı var.'
+    unknown_piece: '''{piece}'', bu uç noktanın uygulayabileceği bir karar değil.'
+    invalid_value: '''{piece}'' kararı uygulanamadı: {error}'
+    model_failed: 'Seçiminiz kaydedildi. Asistan yanıt veremedi: {error}'
+    no_connection: Seçiminiz kaydedildi. Kullanılabilir bir yapay zeka bağlantısı olmadığından asistan yanıt veremedi.
+    no_reply: Seçiminiz kaydedildi. Asistan, yanıt üretmeden çalışma turlarını tüketti — devam etmesini isteyin veya ağaçtaki taslağı kontrol edin.
+    applied: Yukarıdaki seçimi kullanın.
+  save:
+    invalid_definition: 'Bu veri kümesi kaydedilemiyor: {errors}'
+  join_suggestions:
+    invalid_sources: Birleştirme önerileri için her biri bir takma ada ve ada sahip kaynakların listesi gerekir ({error}).
+  column:
+    missing_column: Hiçbir sütun adlandırılmadı.
+    unknown_action: '''{action}'' bir sütun eylemi değil. tick veya untick kullanın.'
+    missing_source: 'Bir sütunun kaynağı gereklidir: bir veri kümesi kimliği ya da bir bağlantı ve tablo adı.'
+  panel:
+    collapsed_required: Panelin katlanmış durumu true veya false olmalıdır.
+  tool:
+    no_source: '''{alias}'' adında kaynak yok. Bu taslağın kaynakları: {aliases}.'
+    no_sources_yet: '''{alias}'' adında kaynak yok — taslağın henüz kaynağı yok. Önce add_source çağırın.'
+virtual_chat:
+  chat_session_not_found: Sohbet oturumu bulunamadı
+  connection_not_found: Veritabanı bağlantısı bulunamadı veya erişim reddedildi
+  introspection_failed: 'İç gözlem başarısız oldu: {error}'
+  llm_call_failed: 'LLM çağrısı başarısız oldu: {error}'
+  llm_returned_error: LLM HTTP {status_code} döndürdü
+  save_no_sources: '⚠️ Kaydedilemedi: hiçbir veri kaynağı incelenmedi. Önceki mesajlarınızda ''products'' veya ''orders'' gibi tablo adlarını belirtmeyi deneyin.'
+  save_failed: '⚠️ Kaydetme başarısız oldu: {error}'
+  save_parse_error: '⚠️ Veri seti kaydedilemedi: {error}'
+  empty_response: Buna nasıl yanıt vereceğimden emin değilim. Yeniden ifade edebilir veya daha fazla ayrıntı verebilir misiniz?
+  save_draft_success: '✅ Sanal veri kümesi taslak olarak kaydedildi: **{name}**.'
+  save_success: ✅ **{name}** veri seti başarıyla kaydedildi. Mevcut Veri Setleri listesinde bulabilirsiniz. İyileştirmek için Düzenle'yi, bir varyasyon oluşturmak için Klonla'yı kullanın.
+test_ai:
+  api_key_required: '{name} için API anahtarı gereklidir.'
+  responded_with_status: '{name}, {status} durumuyla yanıt verdi.'
+  connection_timeout_local: Bağlantı zaman aşımı. {name}, {baseUrl} adresinde çalışıyor mu?
+  endpoint_v1_valid: '{baseUrl}/v1 adresindeki uç nokta geçerli.'
+  endpoint_valid: '{baseUrl} adresindeki uç nokta geçerli.'
+  unknown_provider: 'Bilinmeyen sağlayıcı: {provider}'
+  server_reachable: '{baseUrl} adresindeki {name} sunucusuna erişilebilir.'
+  no_endpoint: Bu sağlayıcı için uç nokta yapılandırılmamış.
+  fetch_failed: getirme başarısız oldu
+  internal_error: İç sunucu hatası
+  connection_failed: 'Bağlantı başarısız oldu: {msg}'
+visualization_instances:
+  invalid_instance_id: Geçersiz örnek kimliği
+  invalid_viz_type: Geçersiz görselleştirme türü
+  viz_type_id_required: visualizationTypeId gereklidir
+  viz_type_not_found: Görselleştirme türü bulunamadı
+  internal_error: İç sunucu hatası
+  unauthorized: Yetkisiz
+  instance_not_found: Örnek bulunamadı
+  no_rendered_output: İşlenmiş çıktı mevcut değil
+ai:
+  database:
+    email_sent: Rapor e-postayla başarıyla gönderildi
+ai_providers:
+  unauthorized: Yetkisiz
+  provider_not_found: Sağlayıcı bulunamadı
+  failed_to_update_provider: Sağlayıcı güncellenemedi
+  internal_error: İç sunucu hatası
+  failed_to_delete_provider: Sağlayıcı silinemedi
+  missing_provider_id: Sağlayıcı kimliği eksik
+  missing_id_or_enabled: id veya enabled bayrağı eksik
+  forbidden: Yasak
+  invalid_provider_id: Geçersiz sağlayıcı kimliği
+visualization_types:
+  type_not_found: Görselleştirme türü bulunamadı
+  forbidden: Yasaklandı
+  internal_error: İç sunucu hatası
+  name_and_slug_required: Ad ve slug gereklidir
+  slug_already_exists: Slug zaten mevcut
+rename_new_name_required: Sütun yeniden adlandırma işlemi yeni bir ad gerektirir
+invalid_operation_type: 'Geçersiz işlem türü: {type}. Şunlardan biri olmalı: {types}'
+filter_value_required: Filtre işlemi bir değer gerektirir
+invalid_target_type: 'Geçersiz hedef türü: {target_type}. Şunlardan biri olmalı: {types}'
+encode_column_required: Kodlama işlemi bir sütun gerektirir
+columns_required: '''{type}'' işlemi bir columns alanı gerektirir'
+filter_operator_required: Filtre işlemi bir operatör gerektirir
+invalid_encoding: 'Geçersiz kodlama: {encoding}. Şunlardan biri olmalı: {types}'
+invalid_fill_method: 'Geçersiz fill_missing yöntemi: {method}. Şunlardan biri olmalı: {methods}'
+column_required: '''{type}'' işlemi bir sütun gerektirir'
+dataclean_tools:
+  no_rules_to_preview: Önizlenecek kural yok
+  no_rules_to_apply: Uygulanacak kural yok
+dataclean_chat:
+  empty_response: Bir yanıt oluşturamadım. Lütfen tekrar deneyin.
+  create_error: Veri temizleme oturumu oluşturulamadı
+  chat_session_not_found: Veri temizleme sohbet oturumu bulunamadı
+  dataset_id_required: datasetId gereklidir
+  message_required: Mesaj gereklidir

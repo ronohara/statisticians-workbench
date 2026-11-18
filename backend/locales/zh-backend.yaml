@@ -1,0 +1,1009 @@
+admin:
+  already_full_admin: 用户已是完全管理员
+  already_group_admin: 用户已是组管理员
+  cannot_delete_self: 无法删除自己的账户
+  cannot_demote_full_admin: 不能降级完全管理员
+  cannot_demote_self: 您不能降级自己
+  cannot_promote_example: 不能提升示例用户
+  delete_error: 删除用户失败
+  demote_error: 降级用户失败
+  description_required: 描述不能为空
+  example_blocked: 示例用户不能执行管理员操作
+  group_not_found: 未找到组
+  group_users_load_error: 加载组用户失败
+  groups_load_error: 加载组失败
+  groups_stats_error: 加载组统计信息失败
+  insufficient_permissions: 权限不足，无法执行此操作
+  invalid_group_id: 无效的 group_id。必须为 00-99
+  invalid_id: 无效的 id
+  invalid_upload_count: maxUploadCount 必须是非负整数（0 表示无限制）。
+  invalid_upload_size: maxUploadSizeMB 必须是非负整数（0 表示无限制）。
+  missing_fields: 缺少必填字段
+  missing_group_id: 缺少组 ID
+  missing_id: 缺少 id
+  missing_model_id: 缺少模型 id
+  missing_provider_code: 缺少 providerCode 参数
+  missing_user_id: 缺少 userId
+  model_update_error: 更新模型失败
+  models_load_error: 加载模型失败
+  no_fields: 没有有效字段可更新
+  no_group: 用户未分配组
+  not_group_admin: 用户不是组管理员
+  only_full_admin: 仅完全管理员可执行此操作
+  promote_error: 提升用户失败
+  provider_delete_error: 删除提供程序失败
+  provider_not_found: 未找到提供程序
+  provider_update_error: 更新提供程序失败
+  providers_load_error: 加载提供程序失败
+  slug_exists: Slug 已存在
+  update_error: 更新用户失败
+  user_load_error: 加载用户失败
+  user_not_found: 未找到用户
+  users_load_error: 加载用户失败
+  viz_type_create_error: 创建可视化类型失败
+  viz_type_delete_error: 删除可视化类型失败
+  viz_type_update_error: 更新可视化类型失败
+  viz_types_load_error: 加载可视化类型失败
+api:
+  user:
+    connection_not_found: 未找到连接
+    example_blocked: 示例用户无法执行此操作
+    connection_name_exists: 已存在同名连接
+    missing_fields: 缺少必填字段
+    example_delete_ai: 示例用户无法删除 AI 连接
+    internal_error: 内部服务器错误
+    invalid_current_password: 当前密码不正确
+    user_not_found: 未找到用户
+    provider_not_found: 未找到提供商“{provider}”
+    example_update_ai: 示例用户无法更新 AI 连接
+    connection_id_required: 连接 ID 为必填项
+    invalid_name: 名称必须是字符串
+    invalid_connection_id: 无效的连接 ID
+    example_create_ai: 示例用户无法创建 AI 连接
+    api_key_required: 此提供商需要 API 密钥
+    invalid_port: 端口必须是整数
+    model_not_found: 未找到提供商“{provider}”的模型“{model}”。
+    test_budget_exhausted: 模型未返回任何内容，因为它在得到答案之前已用完了全部输出预算。未记录能力判定；记录的是持续时间。
+    discovery_complete: 发现 {seen} 个模型：{created} 个为本次新增，{refreshed} 个为已知并已刷新，{pruned} 个已不再提供服务。
+    invalid_connect_timeout: 连接超时必须为整数秒，至少为 1，最多为 {ceiling}。
+    tuning_invalid_ai_timeout: AI 时间限制必须为整数秒，至少为 1。
+    test_attribution_required: 测试结果必须记录运行者。
+    test_other_failure: 无法访问该模型，且原因不属于本系统可识别的类型。未记录能力判定：{detail}
+    test_connect_refused: 该地址上没有服务在监听——服务器可达，但没有服务应答。请检查端口以及 AI 服务器是否正在运行。未记录能力判定；记录的是失败所用时间。
+    test_not_implemented: 测试“{test}”已注册，但尚无探针。
+    tuning_model_not_found: 无此模型。
+    invalid_probe_timeout: 测试超时必须为整数秒，至少为 1，最多为 {ceiling}。
+    connect_timeout_exceeds_probe: 连接超时（{connect} 秒）不能超过测试超时（{probe} 秒）——不能允许建立连接所需的时间比整个测试可运行的时间更长。
+    test_read_timeout: 模型接受了请求，但未及时回答。它对于此主机来说可能太慢——在 CPU 上运行大型模型可能需要几分钟。未记录能力判定；记录的是失败所用时间。
+    model_not_served_by_connection: 此连接不提供“{model}”服务。其模型可能已更改——请刷新连接，或选择其他模型。
+    tuning_invalid_temperature: 温度必须是 0 到 2 之间的数字。
+    test_connect_timeout: 端点未能及时接受连接。主机可能已宕机，或防火墙可能丢弃了请求。未记录能力判定；记录的是失败所用时间。
+    tuning_nothing_to_update: 至少提供 temperature、maxTokens 或 timeoutSeconds 之一。
+    tuning_connection_not_found: 无此 AI 连接。
+    test_dns_failure: 无法解析端点的主机名。请检查地址是否有拼写错误，或是否为仅此网络可解析的名称。未记录能力判定；记录的是失败所用时间。
+    test_http_status: 提供商作出了响应，但其响应为错误：{detail}。未记录能力判定；提供商的回复已显示，以便明确原因。
+    unknown_test_id: 未知测试“{test}”。已注册的测试：{known}
+    test_tls_failure: 无法建立安全连接——端点可能在预期为 https 的地方使用了普通 http，或者其证书可能已过期。未记录能力判定；记录的是失败所用时间。
+    test_reason_required: 测试结果必须记录原因。
+    tuning_invalid_max_tokens: 输出限制必须为整数个 token，至少为 1。
+    invalid_test_state: 测试结果“{state}”无效。允许的值：{allowed}
+    tuning_malformed_body: 请求正文不是有效的 JSON。
+  admin:
+    description_required: 描述不能为空
+    missing_fields: 缺少必填字段
+    delete_error: 删除用户失败
+    provider_delete_error: 删除提供程序失败
+    provider_not_found: 未找到提供程序
+    invalid_upload_count: maxUploadCount 必须是非负整数（0 表示无限制）。
+    settings_load_error: 加载全局设置失败
+    provider_update_error: 更新提供程序失败
+    already_full_admin: 用户已经是完全管理员
+    settings_invalid_max_registrations: 最大注册数必须为正数或无限制
+    invalid_upload_size: maxUploadSizeMB 必须是非负整数（0 表示无限制）。
+    user_load_error: 加载用户失败
+    models_load_error: 加载模型失败
+    settings_save_error: 保存全局设置失败
+    already_group_admin: 用户已经是组管理员
+    settings_modify_forbidden: 只有完全管理员可以修改全局设置
+    missing_model_id: 缺少模型 ID
+    cannot_demote_self: 您不能将自己降级
+    groups_load_error: 加载组失败
+    only_full_admin: 只有完全管理员可以执行此操作
+    missing_id: 缺少 ID
+    group_users_load_error: 加载组用户失败
+    settings_invalid_upload_count: 默认最大上传数量必须是非负整数（0 表示无限制）。
+    groups_stats_error: 加载组统计信息失败
+    no_group: 用户未分配组
+    promote_error: 提升用户失败
+    model_update_error: 更新模型失败
+    settings_invalid_email_timeout: 邮箱验证超时时间必须为正数（小时）
+    missing_group_id: 缺少组 ID
+    settings_invalid_upload_size: 默认最大上传大小必须是非负整数（0 表示无限制）。
+    settings_invalid_public_url: 公共 URL 格式无效
+    cannot_delete_self: 无法删除自己的账户
+    missing_user_id: 缺少 userId
+    settings_invalid_grace_period: 注册宽限期必须为正数（小时）
+    no_fields: 没有可更新的有效字段
+    demote_error: 降级用户失败
+    update_error: 更新用户失败
+    settings_invalid_email_sender: 发件人电子邮件地址格式无效
+    providers_load_error: 加载提供程序失败
+    example_blocked: 示例用户无法执行管理员操作
+    invalid_group_id: 无效的 group_id。必须为 00-99
+    cannot_promote_example: 无法提升示例用户
+    cannot_demote_full_admin: 无法降级完全管理员
+    insufficient_permissions: 权限不足，无法执行此操作
+    settings_view_forbidden: 只有完全管理员可以查看全局设置
+    not_group_admin: 用户不是群组管理员
+    viz_type_not_found: 未找到可视化类型
+    model_not_found: 未找到模型
+    invalid_viz_type_field: 无效的可视化类型字段值
+    user_not_found: 未找到用户
+    demote_success: 用户 {name} 已被撤销群组管理员身份
+    promote_success: 用户 {name} 已被提升为群组管理员
+    settings_invalid_platform_upload_size: 平台最大上传大小必须为非负整数（0 表示不限）
+    invalid_id: 无效 ID
+    instance_exists: 无法删除类型，因为它有 {count} 个关联实例。
+    slug_exists: Slug 已存在
+    users_load_error: 加载用户失败
+    viz_type_create_error: 创建可视化类型失败
+    viz_types_load_error: 加载可视化类型失败
+    viz_type_update_error: 更新可视化类型失败
+    viz_type_delete_error: 删除可视化类型失败
+    instance_in_use: 无法删除类型，因为它有关联实例。
+    settings_demo_mode_requires_licence: 没有有效许可证，无法禁用演示模式。
+    settings_not_found: 未找到全局设置
+    email_exists: 电子邮件已存在
+    invalid_email: 无效的电子邮件格式
+    create_user_error: 创建用户失败
+    settings_invalid_registration_mode: 注册模式必须是 0、1、2 或 4 之一。
+    settings_demo_upload_count_limit: 在演示模式下，默认最大上传数量必须介于 1 到 5 之间。
+    users_demo_upload_count_limit: 在演示模式下，用户的最大上传数量必须介于 1 到 5 之间。
+    settings_demo_upload_size_limit: 在演示模式下，默认最大上传大小必须介于 1 到 5 MB 之间。
+    users_demo_upload_size_limit: 在演示模式下，用户的最大上传大小必须介于 1 到 5 MB 之间。
+    invalid_admin_password: 管理员密码不正确
+    example_user_password_blocked: 示例用户的密码不能由管理员设置
+    settings_invalid_slow_threshold: 慢模型限制必须为整数秒，至少为 1。
+    settings_invalid_probe_timeout: 默认测试超时必须为整数秒，至少为 1，最多为 {ceiling}。
+    settings_invalid_ai_timeout: AI 时间限制必须为整数秒，至少为 1。
+    settings_invalid_temperature: 温度必须是 0 到 2 之间的数字。
+    field_not_owned: 此字段未在此页面上设置。{endpoint}。违规字段：{fields}
+    settings_invalid_connect_timeout: 默认连接超时必须为整数秒，至少为 1，最多为 {ceiling}。
+    tuning_reset_error: 无法重置 AI 调优默认值。
+    settings_invalid_max_tokens: 输出限制必须为整数个 token，至少为 1。
+  register:
+    missing_fields: 缺少字段
+    internal_error: 内部服务器错误
+    settings_not_found: 未找到全局设置
+    invalid_email: 电子邮件格式无效
+    email_exists: 邮箱已存在
+    limit_reached: 已达到注册限制（最多 {max_reg} 个用户）。
+    registration_disabled: 自助注册已禁用。请联系管理员。
+  auth:
+    missing_fields: 缺少字段
+    invalid_token: 令牌无效或已过期
+    user_not_found: 未找到用户
+    email_already_verified: 电子邮件已验证
+    example_user_forgot_blocked: 示例用户禁用密码重置
+    example_user_reset_blocked: 示例用户禁用密码重置
+    token_expired: 令牌已过期
+    missing_email: 邮箱为必填项
+    unauthorized: 未授权
+    example_user_blocked: 示例用户的密码更改功能已禁用
+    internal_error: 内部服务器错误
+    invalid_current_password: 当前密码不正确
+    not_authenticated: 未认证
+  profile:
+    name_required: 名称为必填项
+    update_failed: 更新个人资料失败
+    fetch_failed: 获取个人资料失败
+    invalid_name: 名称必须是字符串
+  settings:
+    invalid_default_ai_connection: 无效的默认 AI 连接
+    save_failed: 保存设置失败
+    load_failed: 加载设置失败
+    example_blocked: 示例用户无法编辑设置
+    user_not_found: 未找到用户
+    invalid_slow_threshold: 慢模型限制必须为整数秒，至少为 1。
+  global_settings_load_error: 内部服务器错误
+  languages_load_error: 加载语言失败
+  translations_load_error: 加载翻译失败
+auth:
+  account_deleted: 此账户已被删除。
+  email_not_verified: 电子邮件未验证。请检查收件箱和垃圾邮件文件夹。
+  example_user_blocked: 示例用户禁用密码功能
+  example_user_forgot_blocked: 示例用户禁用密码重置
+  example_user_reset_blocked: 示例用户禁用密码重置
+  internal_error: 内部服务器错误
+  invalid_credentials: 无效的凭据
+  invalid_current_password: 当前密码不正确
+  invalid_token: 无效或过期的令牌
+  invalid_token_error: 无效令牌：{error}
+  invalid_token_missing_user_id: 无效令牌：缺少用户 id
+  missing_email: 需要电子邮件
+  missing_fields: 缺少字段
+  password_changed: 密码更改成功
+  password_validation_failed: 密码验证失败
+  reset_email_sent: 密码重置邮件已发送
+  token_expired: 令牌已过期
+  unauthorized: 未授权
+  user_not_found: 未找到用户
+  login_invalid_credentials: 电子邮件或密码无效。
+chat:
+  ai_provider_error: AI 提供程序错误：{error}
+  connection_error: 连接错误：{error}
+  connection_not_found: 未找到或无权访问 AI 连接
+  delete_failed: 删除聊天失败：{error}
+  generate_title_failed: 生成标题失败：{error}
+  get_failed: 获取聊天失败：{error}
+  internal_error: 内部服务器错误：{error}
+  list_failed: 列出聊天失败：{error}
+  send_failed: 发送消息失败：{error}
+  title_updated: 聊天标题更新成功
+  update_failed: 更新聊天失败：{error}
+  not_found_or_not_owned: 聊天 '{id}' 未找到或您不拥有它
+  not_found: 未找到聊天“{id}”
+  deleted: 聊天“{id}”删除成功
+  ai_repeat_loop: AI 模型卡住了，无法完成回复。请重试。
+  ai_timeout: AI 模型响应时间过长。请重试。
+  ai_service_failed: AI 服务未能响应。请重试。
+  timeout_out_of_range: AI 时间限制必须在 1 到 {max_seconds} 秒之间。
+common:
+  back: 返回
+  cancel: 取消
+  cannot_undo: 此操作无法撤消。
+  clear: 清除
+  copy: 复制
+  delete: 删除
+  deleting: 正在删除...
+  dismiss: 关闭
+  edit: 编辑
+  generating: 正在生成...
+  loading: 加载中...
+  next: 下一步
+  restoring: 正在恢复...
+  save: 保存
+  saving: 正在保存...
+  sending: 正在发送...
+  testing: 正在测试...
+  unknown: 未知
+  uploading: 正在上传...
+  verifying: 正在验证...
+  view: 查看
+database:
+  connection_failed: 无法连接到数据库：{error}
+  decryption_failed: 无法解密连接密码：{error}
+  insert_failed: 数据库错误：{error}
+  pool_not_initialized: 数据库连接池未初始化
+  query_failed: 数据库查询失败：{error}
+  type_not_supported: 不支持的数据库类型：{type}
+  connection_not_found: 未找到数据库连接或无法访问
+  feature_required: 此数据库类型未被您的许可证启用。
+datasets:
+  define:
+    connection_details_not_found: 未找到连接详情
+    connection_not_found: 数据库连接未找到或无法访问
+    connection_required: connectionId 是必需的
+    connection_test_failed: 数据库连接测试失败
+    database_connection_failed: 无法连接到数据库：{error}
+    name_required: 数据集名称是必需的
+    table_name_required: tableName 是必需的
+    verification_failed: 验证表/视图失败：{error}
+    preview_failed: 从表 '{table}' 读取数据失败：{error}
+    table_access_failed: 访问表 '{table}' 失败：{error}
+    permission_denied: 权限被拒绝：用户“{user}”无权访问表“{table}”。请授予 SELECT 权限。
+    dataset_created: 数据集“{name}”定义成功
+    table_not_found: 在数据库“{database}”中未找到表/视图“{table}”
+    invalid_source_type: sourceType 必须为 'table' 或 'view'
+    connection_missing_db_note: 注意：PostgreSQL 在数据库缺失以及权限不足时都会返回此错误。如果数据库存在，请检查用户是否具有该数据库的 CONNECT 权限。
+    connection_successful: 连接成功
+    connection_timed_out: 连接在 15 秒后超时
+  delete:
+    success: 数据集“{id}”删除成功
+  describe:
+    ai_connection_error: AI 连接错误：{error}
+    empty_description: 生成的描述为空。请检查 AI 提供者配置。
+    generation_failed: 描述生成失败：{error}
+    description_generated: 已为 '{name}' 生成描述
+    timeout_out_of_range: AI 时间限制必须在 1 到 {max_seconds} 秒之间。
+  example_blocked:
+    create: 示例用户无法创建数据集
+    delete: 示例用户无法删除数据集
+    update: 示例用户无法更新数据集
+  list_error: 加载数据集失败
+  not_found: 未找到数据集
+  not_owner: 您只能编辑自己的数据集
+  preparation:
+    duplicate_name: 该数据集已存在同名的准备规则
+    no_updates: 没有要更新的字段
+    preview_failed: 预览规则失败：{error}
+    rule_deleted: 准备规则已成功删除
+    rule_in_use: 此准备规则被 {count} 个配方使用：{names}。请先删除配方。
+    rule_not_found_or_not_owned: 未找到准备规则或您不拥有它
+    rule_updated: 准备规则已成功更新
+    schema_failed: 读取数据集模式失败：{error}
+    rule_created: 准备规则 '{name}' 创建成功
+    rule_not_found: 未找到此数据集的准备规则“{id}”
+    already_exists: 已存在具有这些操作的数据准备规则（“{name}”）
+  schema:
+    external_failed: 从外部数据库获取模式失败：{error}
+    from_preview: 从预览数据（前10行）派生的模式
+    load_error: 无法加载模式：{error}
+    table_missing: 表已不存在。请重新上传数据集。
+    not_implemented: 此数据集类型“{type}”的架构发现尚未实现
+    row_count_not_computed: 虚拟数据集在未运行联接时不会计算行数。
+    connection_unreachable: 连接 {connection_id} 无法访问：{error}
+  share:
+    error: 更新共享失败
+    toggled: 数据集 '{id}' 的共享设置已更新成功
+  unknown_source: 未知的数据源类型：{source_type}
+  upload:
+    error: 上传数据集失败
+    file_processing_failed: 处理文件失败：{error}
+    limit_reached_count: 达到上传限制。最多允许 {count} 个数据集。
+    limit_reached_size: 超出上传大小限制。总存储最大为 {size} MB。
+    unsupported_file: 不支持的文件类型。请上传以下类型之一：{extensions}
+    user_not_found: 未找到用户
+    success: 数据集 '{name}' 上传成功
+    dbf_memo_unsupported: 此 .dbf 文件包含备注字段。其值存储在单独的文件中，单文件上传无法携带。
+    dbf_field_unsupported: 此 .dbf 文件声明了无法读取的字段类型：{types}
+  transforms:
+    no_updates: 没有需要更新的字段
+    clone_forbidden: 您没有克隆此转换操作的权限
+    deleted: 转换操作已成功删除
+    not_found_or_not_owned: 未找到转换操作或您不是所有者
+    duplicate_name: 该数据集已存在同名转换操作
+    updated: 转换操作已成功更新
+    in_use: 此转换操作被 {count} 个配方使用：{names}。请先删除这些配方
+    not_found: 未找到此数据集的转换 '{id}'
+    not_accessible: 未找到数据集“{id}”或无法访问
+    created: 转换“{name}”创建成功
+    not_owned: 未找到数据集“{id}”，或您不是其所有者
+    cloned: 转换已克隆为“{name}”
+    already_exists: 已存在具有这些操作的转换（“{name}”）
+  auto_create:
+    connection_not_found: 连接未找到
+    connection_id_required: connectionId 为必填项
+    created: 数据集已创建
+    no_tables_discovered: 未发现任何表或视图。请检查数据库服务器是否正在运行且可访问。
+  browse:
+    columns_failed: 获取列失败：{error}
+    discover_failed: 发现表失败：{error}
+    preview_failed: 预览表失败：{error}
+  not_owned: 数据集 '{id}' 未找到或您不拥有它
+  not_found_2: 未找到数据集
+  unread:
+    definition_incomplete: 此数据源既未指定数据集，也未指定连接表。
+    definition_too_deep: 该数据集自引用的深度超过五层。
+    auth_failed: 数据库拒绝了此账户的凭据。
+    schema_error: 数据源已响应，但无法读取其列。
+    unreachable: 无法访问此数据源。请检查主机和端口，然后重试。
+    incomplete: 检查未及时完成。请重试，或增加连接超时时间。
+    no_database: 服务器上不存在该数据库。
+    no_permission: 此账户无法读取该数据源。
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: 为保持一致性，将列重命名为小写蛇形命名法
+      rename_table_snake_case: 为保持一致性，将表重命名为小写蛇形命名法
+      mixed_case_table: 表名“{table}”使用了大小写混合——建议使用 snake_case
+      rename_column_reserved: 重命名列 '{column}' 以避免 SQL 保留字冲突
+      reserved_keyword_table: 表名 '{table}' 是 SQL 保留关键字
+      reserved_keyword_column: 列 '{column}' 是 SQL 保留关键字
+      rename_table_reserved: 请重命名表“{table}”以避免 SQL 保留字冲突
+      mixed_case_column: 列“{column}”使用了大小写混合——建议使用 snake_case
+    normalisation:
+      multiple_address: 检测到多个地址相关列（{count} 个）
+      repeating_group: 检测到重复组：{columns}
+      separate_address_table: 考虑创建一个单独的地址表，并添加外键指向 {table}
+      create_separate_table: 为 '{base}' 值创建一个单独的表，并添加指向 {table} 的外键
+    semistructured:
+      controlled_vocab: 列 {column} 包含一个包含 {count} 个不同值的受控词汇表
+      create_ref_table: 为 {column} 的值创建一个参考表，以规范化 {table} 表
+    data_types:
+      short_text_enum: 文本列“{column}”的最大长度为 {max_len}——建议考虑使用 ENUM 或 CHECK 约束
+      add_check_constraint: 为 '{column}' 添加 CHECK 约束或使用 ENUM 类型，以限制有效值
+      add_not_null: 为“{column}”添加 NOT NULL 约束
+      set_max_length: 考虑为“{column}”设置最大长度以防止数据过大
+      unbounded_varchar: 无界 VARCHAR 列“{column}”
+      allows_null: 列“{column}”允许 NULL——建议考虑 NOT NULL 约束
+    relationships:
+      add_fk: 如果 '{column}' 引用另一个表，请考虑添加外键约束
+      missing_fk: 列“{column}”看起来像外键但没有 FK 约束
+    indexing:
+      missing_fk_index: 外键列 '{column}' 没有索引
+  analyze_error: 分析数据库失败：{error}
+  connection_error: 无法连接到数据库：{error}
+  description: 使用 AI 分析并改进您的数据库设计。
+  no_connection: 无可用数据库连接。请先连接到数据库。
+  not_implemented: 此功能即将推出。
+  pdf:
+    categories: 类别
+    code_systems: 代码系统
+    col_default: 默认
+    col_name: 列
+    col_nullable: 可为空
+    col_pk: 主键
+    col_type: 类型
+    columns: 列
+    confidence: 置信度
+    header: 数据库设计分析报告
+    high: 高
+    issues_count: 问题（{count}）
+    issues_found: 发现的问题
+    low: 低
+    medium: 中
+    'no': 否
+    none: 无
+    normalisation_title: 规范化建议 ({count})
+    page: 页面 {current}/{total}
+    pk: 主键
+    proposed_table: 建议的表
+    risk_breakdown: 风险细分
+    rows: 行
+    schema_title: 模式 ({count} 个表)
+    semi_structured_title: 半结构化数据分析 ({count} 列)
+    subtitle: '数据库：{db_name} ({db_type}) | 连接：{conn_name} (ID: {conn_id})'
+    summary: 摘要
+    tables: 表
+    title: 数据库设计分析
+    top_keywords: 热门关键词
+    top_recommendations: 首要推荐
+    value: 值
+    'yes': 是
+    implicit_relationships_label: 隐式关系
+    unsupported_label: 不支持
+    integration_subtitle: AI集成检测到的隐式关系、研究能力及缺失维度
+    top_actions_label: 优先处理事项
+    semantic_title: AI语义分析
+    health_score_title: 健康评分
+    ai_disclaimer: AI生成的分析——在应用到生产环境前请先审核
+    proposed_ddl_label: 建议的DDL
+    partial_label: 部分
+    column_meanings_label: 列含义
+    health_score_label: 数据库健康评分：{score}/100
+    confidence_label: 置信度
+    supported_label: 支持
+    research_capabilities_label: 研究能力
+    domain_label: ISIC领域分类
+    semantic_subtitle: AI推断的列含义、ISIC领域分类及编码系统检测
+    health_score_subtitle: 由Schema AI评估的整体数据库健康度，0表示存在严重结构问题，100表示可用于生产环境
+    missing_dimensions_label: 缺失维度
+    code_systems_label: 检测到的编码系统
+    table_purposes_label: 表用途
+    rationale_label: 理由
+    evidence_label: 证据
+    relationship_label: 关系
+    integration_title: AI集成发现
+    ai_skipped_warning: AI 分析已跳过
+  question_required: 问题为必填项
+  report_data_required: 报告数据为必填项
+  schema_error: 提取模式失败：{error}
+  title: 数据库设计助手
+  unsupported_type: 仅支持 PostgreSQL 和 MySQL 数据库
+  rag_error: RAG 查询失败：{error}
+  pdf_error: 生成 PDF 失败：{error}
+  invalid_token: 令牌无效
+  unsupported_type_2: 仅支持 PostgreSQL、MySQL 和 MS SQL Server 数据库
+  schema_error_2: 解密数据库密码失败：{error}
+  rag_not_available: RAG 搜索仅适用于 PostgreSQL 数据库。MySQL 文本搜索计划在未来的版本中提供。
+  email_pdf:
+    invalid_body: 请求体无效
+    no_email: 未找到您账户的电子邮件地址
+    send_failed: 通过电子邮件发送报告失败。请重试。
+  llm:
+    empty_content: LLM 返回了空内容
+    unknown_error: 未知的 LLM 错误
+    no_ai_provider: 未配置 AI 提供程序。请在 设置 → AI 连接 中连接 AI 提供程序。
+    http_error: LLM 返回了 HTTP {status_code}
+    timeout: LLM 请求在 {timeout_seconds} 秒后超时
+    no_model: 未配置 AI 模型。请在 AI 连接上设置默认模型，或传入显式模型。
+  stream_ai_integration_done: 集成 AI：{relationships} 个关系，{capabilities} 项能力
+  stream_ai_schema_done: Schema AI：健康评分 {score}/100
+  ai_skipped_reason: 此报告仅包含机械分析。由于数据库产生了 {count} 个问题（上限：{limit}），已跳过 AI 增强分析。请查看下方的机械分析结果，清理数据库，然后使用 AI 重新运行，以获取上下文感知解释、语义洞察和规范化建议。
+  ai_skipped_message: 已跳过 AI 分析——发现 {count} 个问题（限制：{limit}）。请查看下方的机械检查结果，清理数据库，然后重新运行 AI 分析。
+  analysis_cancelled: 分析流已取消（客户端已断开连接）
+  stream_mechanical_done: 机械分析：发现 {count} 个问题
+  stream_normalisation_skipped: 规范化：已跳过（{error}）
+  stream_connecting: 正在连接数据库...
+  stream_normalisation_done: 规范化：{count} 条建议
+  stream_normalisation_timeout: 规范化：90 秒后超时
+  stream_analysis_failed: 分析失败：{error}
+  stream_ai_schema_start: Schema AI：正在分析 {tables} 张表...
+  analysis_complete: 分析完成
+  stream_ai_done: AI 分析完成——状态：{status}
+  stream_ai_integration_start: 集成 AI：正在检测关系...
+  stream_schema_done: Schema 已提取：{tables} 张表，{columns} 列
+  stream_extracting_schema: 正在从 {db_type} 提取 Schema...
+  stream_unsupported_type: 不支持的数据库类型：{db_type}
+  stream_mechanical_start: 正在运行机械分析...
+  stream_ai_semantic_done: 语义 AI：{columns} 个列含义，{domains} 个 ISIC 领域
+  stream_ai_semantic_start: 语义 AI：正在分析 {tables} 张表...
+  stream_ai_start: 正在启动 AI 分析——3 个专家并行处理……
+  stream_connected: 已连接到 {db_type}：{db_name}
+  stream_semistructured_start: 正在分析半结构化列...
+  stream_normalisation_start: 正在生成规范化建议...
+groups:
+  admin_required: 需要管理员权限
+  cannot_delete_self: 无法删除自己的账户
+  description_required: 描述不能为空
+  insufficient_permissions: 管理群组的权限不足
+  invalid_group_id: 无效的用户组。必须为 00-99
+  update_failed: 更新群组失败
+  user_not_found: 未找到用户
+  not_authorized: 无权查看此用户的组
+  update_success: 组 '{id}' 描述已更新
+  user_updated: 用户组已更新成功
+  not_found: 找不到组“{id}”
+  missing_id: 缺少资源 ID
+  resource_not_found: 未找到资源
+recipes:
+  columns_required: 请至少选择一列
+  data_selection_error: 数据选择失败：{error}
+  dataset_not_found: 找不到数据集
+  dataset_required: 请选择一个数据集
+  delete_error: 删除配方失败：{error}
+  execute_error: 执行配方失败：{error}
+  execution_completed: 执行成功完成
+  execution_failed: 执行失败
+  execution_load_error: 加载执行失败：{error}
+  executions_load_error: 加载执行列表失败：{error}
+  invalid_stage: 配方的阶段无效
+  invalid_stage_type: 无效的阶段类型：{type}。必须为以下之一：{types}
+  load_datasets_error: 加载数据集失败：{error}
+  load_error: 加载配方失败：{error}
+  name_required: 配方名称必填
+  no_columns_exist: 所选列均不存在于数据集中
+  no_dataset: 此配方未关联数据集
+  no_stages: 配方必须至少有一个阶段
+  no_updates: 没有需要更新的字段
+  preparation:
+    no_db_pool: 准备阶段数据库连接池不可用
+    all_rules_failed: 所有规则均失败：{errors}
+    rules_applied: 已应用 {count} 条准备规则
+    rule_failed: 规则 '{rule_id}'：{error}
+    rule_not_found: 未找到规则“{rule_id}”
+  scatter_two_columns: 散点图需要至少两个列
+  scatter_two_numeric: 散点图需要两个数值列
+  schema_error: 加载列模式失败：{error}
+  unknown_stage: 未知的阶段类型：{stage_type}
+  unsupported_chart_type: 不支持的图表类型：{chart_type}
+  update_error: 更新配方失败：{error}
+  visualisation_columns_required: 可视化需要至少一个列
+  visualisation_error: 可视化失败：{error}
+  visualisation_generated: 可视化生成成功
+  transforms:
+    disconnect_success: 转换操作已与配方断开连接
+    load_error: 加载关联转换操作失败
+    connect_success: 转换操作已连接到配方
+    dataset_mismatch: 转换“{id}”不属于数据集“{dataset_id}”
+    not_found: 找不到转换“{id}”，或它不属于此配方的数据集
+  field_label:
+    responseColumn: 响应列（数值测量）
+    factorColumn: 因子列（分组变量）
+    yColumn: Y轴列
+    independentColumns: 自变量/预测变量列
+    dependentColumn: 因变量/结果列
+    xColumn: X轴列
+    categoryColumn: 类别列（标签）
+    responseColumn2: 第二响应列（配对测量）
+    columns: 列
+    factorColumn2: 第二因子列（分组变量）
+  requirement:
+    table: 任意列
+    none: 无需输出
+    histogram: 1个数值列（X轴）
+    pie: 1个分类列（标签）
+    anova_two_way: 2个分类列（两个因子）和1个数值列（响应）
+    linear_regression: 至少2个数值列（预测变量和结果）
+    scatter: 2个数值列（X和Y）
+    chi_square: 2个分类列
+    line: 2个数值列（X和Y）
+    t_test_paired: 2个数值列（配对测量）
+    distribution: 1个数值列
+    anova_one_way: 1个分类列（因子）和1个数值列（响应）
+    correlation: 至少2个数值列
+    t_test_independent: 1个分类列（用于分组）和1个数值列（用于比较）
+    bar: 1个分类列（X轴）和1个数值列（Y轴）
+    descriptive: 至少1个数值列
+    area: 2 个数值列（x 和 y）
+    hbar: 1 个分类列（y 轴）和 1 个数值列（x 轴）
+    donut: 1 个分类列（标签）
+  result_type:
+    numeric: 数值
+    tabular: 表格
+  execution:
+    error: 配方执行错误：{error}
+    preparation_failed: 准备阶段失败
+    preparation_error: 准备阶段失败：{error}
+    unknown_stage: 未知的阶段类型：{stage_type}
+  validation:
+    failed: 配方验证失败：
+    unknown_columns: '{stage} 阶段引用了此数据集中不存在的列“{columns}”。可用列：{available}。请从可用列中选择。'
+    incompatible_algo_output: 分析 '{algo}' 生成 {result_type} 结果，无法显示为 '{output}' 图表。请将输出类型更改为与 '{algo}' 兼容的类型：{options}。
+    unknown_output: '''{type}'' 不是可识别的输出类型。请选择以下之一：{options}。'
+    insufficient_columns_output: 此数据集没有适合“{output}”的列类型（{requirement}）。数据集包含：{columns}。请选择满足{requirement}的数据集，或切换到：{options}。
+    missing_algo_field: 分析“{algo}”缺少“{field}”设置（{label}）。请在分析面板中为“{field}”选择一列。
+    missing_output_field: 输出“{output}”缺少其“{field}”设置（{label}）。请在输出面板中为“{field}”选择一列。
+    unknown_algorithm: “{type}”不是可识别的分析方法。请选择以下之一：{options}。
+    insufficient_columns_algo: 此数据集不具备“{algo}”所需的正确列类型（{requirement}）。数据集包含：{columns}。请选择满足{requirement}的数据集，或切换为：{options}。
+    wrong_column_type: 列“{column}”对于“{field}”（{label}）必须为 {expected}。
+    algorithm_required: 未选择分析方法。请在分析面板中选择一个——配方需要带有算法的统计阶段。
+    unknown_field: “{field}”不是“{type}”可识别的设置。可识别的设置：{options}。
+  column_type:
+    numeric: 数值
+    categorical: 分类
+  ai_session:
+    not_found: AI 配方会话未找到
+    create_error: 创建 AI 配方会话失败
+    save_error: 从 AI 会话保存配方失败
+    load_error: 加载 AI 配方会话失败
+    delete_error: 删除 AI 配方会话失败
+    unauthorized: 您无权访问此 AI 配方会话
+  not_found: 配方 '{id}' 未找到
+  create_success: 配方 '{name}' 创建成功
+  delete_success: 配方“{id}”删除成功
+  share:
+    enabled: 配方共享成功
+    disabled: 配方现已设为私有
+  not_owned: 未找到配方“{id}”，或您不是其所有者
+  update_success: 配方“{id}”更新成功
+  execution_not_found: 找不到执行“{id}”
+  technique_t_test_independent: 独立样本 t 检验
+  technique_descriptive: 描述性统计
+  technique_anova_two_way: 双因素方差分析
+  technique_correlation: 相关矩阵
+  technique_anova_one_way: 单因素方差分析
+  technique_linear_regression: 线性回归
+  technique_t_test_paired: 配对样本 t 检验
+  technique_chi_square: 卡方检验
+  distribution_no_columns: 分布图至少需要一列
+  histogram_no_columns: 直方图至少需要一列
+  histogram_numeric: 直方图需要数值列
+  stage_not_implemented: '{stage_type}阶段即将推出'
+  chip:
+    heading:
+      output: 哪个输出？
+      technique: 哪种分析方法？
+      columns: 哪些列？
+  scoreboard:
+    output_unknown:
+      what: 选择已知的输出类型
+    technique_unknown:
+      what: 选择已知的分析方法
+    technique_fields:
+      what: 选择所需的列
+    output_incompatible:
+      what: 选择兼容的输出类型
+    technique:
+      what: 选择一种分析方法
+    output_fields:
+      what: 选择输出列
+    output:
+      what: 选择一种输出类型
+    name:
+      what: 命名配方
+    dataset:
+      what: 选择数据集
+statistics:
+  anova_computation_failed: 双因素方差分析计算失败：{error}
+  anova_needs_three_groups: 单因素方差分析需要 3 个或更多组（发现 {n} 个）。对于两组情况，请使用独立样本 t 检验。
+  compute_failed: 统计计算失败：{error}
+  each_group_two_observations: 每个组必须至少包含 2 个观测值
+  group_column_required_anova: 单因素方差分析需要一个具有 3 个或更多水平的分类组列
+  group_column_required_ttest: 独立样本 t 检验需要一个具有恰好两个水平的分类组列
+  need_five_observations_chi: 至少需要 5 个完整观测值
+  need_observations_regression: 至少需要 {n} 个完整观测值
+  need_ten_observations_anova: 双因素方差分析至少需要 10 个完整观测值
+  need_three_pairs: 配对 t 检验至少需要 3 个完整配对
+  need_two_categories_chi: 两列都需要至少两个类别
+  need_two_numeric_correlation: 相关性分析至少需要两个数值列
+  need_two_valid_numeric: 至少需要两个有效的数值列
+  no_valid_data_after_dropna: 删除缺失值后没有有效数据
+  no_valid_numeric: 未提供有效的数值列
+  non_numeric_column: 非数值列
+  not_computed: 未计算
+  select_dependent_independent: 至少选择两个数值列：第一个为因变量，其余为自变量
+  select_dependent_var: 选择一个数值型因变量列
+  select_one_numeric_ttest: 为独立样本 t 检验选择一个数值列
+  select_two_categorical_chi: 恰好选择两个分类列
+  select_two_numeric_paired: 为配对 t 检验恰好选择两个数值列
+  two_factors_required: 双因素方差分析需要两个因子
+  group_must_have_two_levels: 分组列 '{group}' 必须恰好有 2 个水平（当前为 {n}）
+  group_fewer_than_two: 组 '{group}' 的观测值少于 2 个
+  computation_failed: 统计信息计算失败：{error}
+  factor_column_not_found: 未找到因子 {factor} 的列“{col}”
+  column_not_found: 找不到列“{col}”
+  cache_cleared: 缓存键“{key}”已清除
+  cache_not_found: 找不到缓存键“{key}”
+  column_must_be_numeric: 列“{col}”必须为数值类型
+user:
+  api_key_required: 此提供者需要 API 密钥
+  connection_name_exists: 此名称的连接已存在
+  connection_not_found: 未找到连接
+  example_blocked: 示例用户无法执行此操作
+  internal_error: 服务器内部错误
+  missing_fields: 缺少必填字段
+  provider_not_found: 未找到提供者
+  user_not_found: 未找到用户
+  example_create_db: 示例用户无法创建数据库连接
+  api_key_required_fetch: 此提供程序需要 API 密钥。
+  auto_create_default_detail: 数据集自动创建失败。数据库服务器可能无法访问。
+  no_endpoint: 未为此提供程序配置端点。
+  example_update_db: 示例用户无法更新数据库连接
+  unknown_provider: 未知提供程序：{code}
+  provider_returned: 提供程序返回 {status}：{text}
+  connection_timeout_local: 连接超时。{code} 是否正在 {baseUrl} 运行？
+  connection_timeout_remote: 在 {baseUrl} 连接 {code} 超时
+  example_delete_db: 示例用户无法删除数据库连接
+  fetch_failed: 获取失败
+  no_models_returned: 提供商未返回任何模型；未做任何更改。
+validation:
+  error: 验证错误：发现 {count} 个问题
+  password:
+    min_length: 密码长度必须至少为 {min} 个字符。
+    require_special: 密码必须包含至少一个特殊字符。
+    require_uppercase: 密码必须包含至少一个大写字母。
+    require_lowercase: 密码必须包含至少一个小写字母。
+    too_weak: 密码太弱。请选择更强的密码。
+    require_digit: 密码必须包含至少一个数字。
+virtual_chat:
+  llm_call_failed: LLM 调用失败：{error}
+  connection_not_found: 数据库连接未找到或访问被拒绝
+  chat_session_not_found: 聊天会话未找到
+  llm_returned_error: LLM 返回 HTTP {status_code}
+  introspection_failed: 内省失败：{error}
+  save_failed: ⚠️ 保存失败：{error}
+  save_parse_error: ⚠️ 无法保存数据集：{error}
+  save_draft_success: ✅ 虚拟数据集已保存为草稿：**{name}**。
+  empty_response: 我不确定该如何回应。你能换个说法或提供更多细节吗？
+  save_no_sources: ⚠️ 无法保存：未能内省到任何数据源。请尝试在你之前的消息中提到表名，如 'products' 或 'orders'。
+  save_success: ✅ 数据集 **{name}** 已成功保存。你可以在“现有数据集”列表中找到它。使用“编辑”进行调整，或使用“克隆”来创建一个变体。
+error:
+  dataset:
+    not_found: 数据集 '{id}' 未找到或不可访问
+    not_found_2: 数据集 '{id}' 未找到
+    not_found_3: 数据集未找到或不可访问：{error}
+    load_failed: 加载数据集失败：{error}
+    table_missing: 表“{table}”不存在
+    not_found_5: 未找到数据集“{id}”
+    load_failed_2: 加载数据失败：{error}
+    not_found_4: 未找到数据集“{id}”或无法访问
+    load_failed_3: 虚拟数据集“{id}”没有 SQL 定义
+    unknown_source: 未知的来源类型：{source_type}
+    load_failed_4: 加载虚拟数据集“{id}”失败：{error}
+    delete_failed_2: 删除数据集失败：{error}
+    not_found_or_not_owned: 找不到数据集“{id}”，或您不是其所有者
+  connection:
+    failed: 连接数据库失败：{error}
+    query_failed_3: PostgreSQL 查询失败：{error}
+    query_failed: 查询表/视图 '{table}' 失败：{error}
+    query_failed_5: MSSQL 查询失败：{error}
+    connect_failed: MySQL 连接失败：{error}
+    query_failed_7: 数据库查询失败：{error}
+    query_failed_6: Access 查询失败：{error}
+    decryption_failed: 解密连接密码失败：{error}
+    type_not_supported_3: 不支持的数据库类型：{type}
+    query_failed_2: 执行编译后的 SQL 失败：{error}
+    query_failed_4: MySQL 查询失败：{error}
+    type_not_supported_2: 尚不支持对数据库类型“{type}”进行模式发现
+    type_not_supported: 数据库类型“{type}”尚不支持
+  preparation:
+    rule_not_found: 此数据集未找到准备规则 '{id}'
+    rule_not_found_2: 准备规则 '{id}' 未找到
+  database:
+    pool_not_initialized: 数据库连接池未初始化
+    insert_failed: 数据库错误：{error}
+  describe:
+    ai_connection_error: AI 连接错误：无可用连接
+    ai_connection_error_2: AI 连接错误：无法解密 API 密钥
+  define:
+    dataset_creation_failed: 创建数据集记录失败：{error}
+    connection_not_found: 未找到数据库连接或无法访问
+    connection_not_found_2: 连接未找到或不可访问
+  execution:
+    cannot_cancel: 无法取消已处于{status}状态的执行
+  ai:
+    call_failed: AI 调用失败：{error}
+  groups:
+    invalid_group_id: 无效的 group_id。必须为 00-99
+notebooks:
+  import_failed_2: 列出导入失败：{error}
+  import_failed: Notebook 导入失败：{error}
+  import_failed_3: 导入未找到
+  no_db_rights: 此连接没有数据库创建权限。
+  invalid_format_2: Notebook 格式无效。仅接受 .ipynb 文件。
+  no_table_rights: 此连接无法创建表——导入被拒绝。
+  example_blocked_2: 示例用户无法修改 Notebook 共享。
+  file_too_large: Notebook 文件过大。最大大小为 {max_size} MB。
+  system_db_blocked: 无法导入到系统数据库 '{db}'。请使用其他数据库或创建新数据库。
+  delete_error: 删除导入失败：{error}
+  example_blocked: 示例用户无法导入笔记本。
+  example_blocked_3: 示例用户无法删除笔记本。
+  no_dataframes: 此笔记本中未找到 DataFrame
+  no_connection: 请选择数据库连接。
+  share_error: 只有所有者可以更改共享设置。
+  import_failed_4: 获取导入失败：{error}
+  share_error_2: 更新共享失败：{error}
+  unknown_error: 未知错误
+  cells_not_list: 笔记本格式无效：'cells' 不是列表
+  untitled: 无标题
+  invalid_json: 无效的 JSON：{error}
+  too_many_cells: 单元格过多（{count}）。最大值：{max_cells}
+  missing_cells: 笔记本格式无效：缺少 'cells' 键
+access:
+  file_path_required: file_path 为必填项
+  connection_deleted: 连接已删除
+  licence_required: 访问数据库连接需要企业版许可证
+  encryption_error: 加密错误：{error}
+  name_and_path_required: name 和 file_path 为必填项
+  connection_saved: 连接已保存
+  connection_not_found: 未找到连接
+  db_pool_not_initialized: 数据库连接池未初始化
+  connected_in_ms: 连接成功，耗时 {elapsed} 毫秒
+  connection_exists: 连接“{name}”已存在
+  connection_failed: 连接失败
+  connection_failed_detail: 连接失败：{detail}
+  connection_unavailable: 无法连接到 Access 数据库：{error}
+  invalid_port: 端口必须是整数
+  table_not_found: 找不到表“{table}”：{error}
+  connection_params_required: 需要填写主机、端口、用户和密码
+notebooks_storage:
+  failed_create_table: 创建表 {table} 失败：{error}
+  no_connection_details_short: 没有连接详细信息
+  unsupported_storage_type: 不支持的存储类型：{type}
+  failed_create_table_mssql: 创建表失败：{error}
+  no_connection_details: 未提供连接详细信息
+  no_data_pool: 数据数据库连接池未初始化
+execution:
+  starting_analysis: 正在启动分析阶段...
+  loaded_rows: 已加载 {rows} 行，{columns} 列
+  executing_stage: 正在执行阶段：{stage}
+  loading_dataset: 正在加载数据集...
+  not_found: 未找到执行
+ai_recipe:
+  llm_error: AI 服务错误：{error}
+  message_required: 消息为必填项
+  session_name_required: 名称是必填项
+  invalid_decision: 无效决定。
+licence:
+  missing_content: 缺少 'content' 字段
+  delete_failed: 删除许可证文件失败：{error}
+  write_failed: 写入许可证文件失败：{error}
+  delete_success: 已移除许可证。正在以开源模式运行。
+  no_file_to_delete: 没有可删除的许可证文件——已处于开源模式。
+  install_success: 许可证安装成功。
+rag:
+  no_ai_provider: 找到 {count} 条匹配记录。（未配置用于自然语言回答的 AI 提供程序。）
+  ai_provider_error: AI 提供程序错误：{error}
+  no_tables: 在模式中未找到可搜索的表。
+  no_matches: 数据库中未找到与您问题匹配的文本。请尝试改写问题或选择其他数据源。
+schema:
+  connection_not_found: 数据库连接未找到或访问被拒绝
+  dataset_not_found: 数据集未找到或访问被拒绝
+  dataset_id_required: source_type=dataset 时 dataset_id 为必填项
+  unsupported_source_type: 不支持的 source_type：{source_type}。请使用 dataset、postgresql 或 mysql。
+  connection_and_table_required: PostgreSQL/MySQL 来源需要 connection_id 和 table_name
+  no_table_name: 数据集没有表名（尚未摄取）
+  introspect_postgresql_failed: PostgreSQL 内省失败：{error}
+  introspect_mysql_failed: MySQL 内省失败：{error}
+system:
+  hello_world: 你好，世界！
+  cache_cleanup_completed: 缓存清理完成：已移除 {removed} 个条目
+virtual:
+  no_credentials_mysql: 未找到 MySQL 连接 {conn_id} 的凭据
+  execute_failed: 执行失败：{error}
+  preview_failed: 预览失败：{error}
+  no_credentials_postgresql: 找不到 PostgreSQL 连接 {conn_id} 的凭据
+  validate:
+    dataset_id_required: 数据源“{alias}”：数据集数据源需要 datasetId
+    no_sources: 未定义数据源
+    connection_not_found: 数据源“{alias}”：未找到连接 {conn_id} 或访问被拒绝
+    join_right_source_not_found: 连接 {j_idx}：未找到右侧数据源“{right_alias}”
+    connection_id_required: 数据源“{alias}”：{storage_type} 数据源需要 connectionId
+    join_left_source_not_found: 连接 {j_idx}：未找到左侧数据源“{left_alias}”
+    column_source_not_found: 列 {c_idx}：未找到数据源“{src_alias}”
+    dataset_not_found: 数据源“{alias}”：未找到数据集 {dataset_id} 或访问被拒绝
+    output_column_not_found: 列 {c_idx}：数据源“{src_alias}”没有列“{column}”
+    join_column_not_found: 联接 {j_idx}：数据源“{alias}”没有列“{column}”
+  scoreboard:
+    columns:
+      needs_failed: 无法读取数据源“{source}”的列。
+      what: 数据源“{source}”中有什么？
+      needs_empty: 数据源“{source}”没有可供选择的列。
+    output_columns:
+      what: 结果应包含哪些列？
+      needs: 一个数据源，已读取其列。
+    joins:
+      what: 这些数据源应如何联接？
+      needs: 两个或更多数据源，已读取其列。
+    sources:
+      what: 此数据集应基于哪个表构建？
+    name:
+      what: 此数据集应如何命名？
+    storage:
+      table: 已保存的表
+      live: 实时视图
+      what: 应该是实时视图，还是已保存的表？
+  save:
+    invalid_definition: 无法保存此数据集：{errors}
+  decision:
+    unknown_piece: “{piece}”不是此端点可以应用的决策。
+    no_connection: 您的选择已保存。由于没有可用的 AI 连接，助手无法回复。
+    invalid_value: 无法应用“{piece}”决策：{error}
+    missing_value: “{piece}”决策需要一个值。
+    model_failed: 您的选择已保存。助手无法回复：{error}
+    applied: 使用上面的选择。
+    no_reply: 您的选择已保存。助手在工作轮次中耗尽而未生成回复——请让它继续，或检查树中的草稿。
+  column:
+    missing_source: 列需要其数据源：数据集 ID，或连接和表名。
+    unknown_action: “{action}”不是列操作。请使用 tick（勾选）或 untick（取消勾选）。
+    missing_column: 未命名任何列。
+  panel:
+    collapsed_required: 面板的折叠状态必须为 true 或 false。
+  join_suggestions:
+    invalid_sources: 联接建议需要一个数据源列表，每个数据源均有一个别名和一个名称（{error}）。
+  tool:
+    no_source: 没有名为“{alias}”的数据源。此草稿的数据源：{aliases}。
+    no_sources_yet: 没有名为“{alias}”的数据源——该草稿还没有数据源。请先调用 add_source。
+audio_presets:
+  invalid_chat_type: 无效的聊天类型：{chat_type}。必须是以下之一：{valid_types}
+ai_providers:
+  missing_id_or_enabled: 缺少 id 或 enabled 标志
+  provider_not_found: 未找到提供程序
+  forbidden: 禁止访问
+  internal_error: 内部服务器错误
+  failed_to_update_provider: 更新提供程序失败
+  missing_provider_id: 缺少提供程序 ID
+  unauthorized: 未授权
+  failed_to_delete_provider: 删除提供程序失败
+  invalid_provider_id: 无效的提供程序 ID
+test_ai:
+  no_endpoint: 未为此提供程序配置端点。
+  connection_timeout_local: 连接超时。{name} 是否正在 {baseUrl} 运行？
+  fetch_failed: 获取失败
+  endpoint_valid: '{baseUrl} 的端点有效。'
+  responded_with_status: '{name} 响应了状态码 {status}'
+  endpoint_v1_valid: '{baseUrl}/v1 的端点有效。'
+  unknown_provider: 未知提供程序：{provider}
+  api_key_required: '{name} 需要 API 密钥。'
+  server_reachable: '{baseUrl} 的 {name} 服务器可以访问。'
+  connection_failed: 连接失败：{msg}
+  internal_error: 内部服务器错误
+visualization_instances:
+  invalid_instance_id: 实例 ID 无效
+  viz_type_id_required: visualizationTypeId 为必填项
+  no_rendered_output: 没有可用的渲染输出
+  invalid_viz_type: 可视化类型无效
+  instance_not_found: 未找到实例
+  unauthorized: 未经授权
+  internal_error: 内部服务器错误
+  viz_type_not_found: 未找到可视化类型
+visualization_types:
+  type_not_found: 未找到可视化类型
+  slug_already_exists: Slug 已存在
+  internal_error: 内部服务器错误
+  forbidden: 禁止访问
+  name_and_slug_required: 名称和 slug 为必填项
+ai:
+  database:
+    email_sent: 报告已通过电子邮件发送成功
+encode_column_required: 编码操作需要一个列
+column_required: 操作“{type}”需要一个列
+columns_required: 操作“{type}”需要一个 columns 字段
+invalid_target_type: 无效的 target_type：{target_type}。必须是以下之一：{types}
+invalid_encoding: 无效的编码：{encoding}。必须是以下之一：{types}
+filter_value_required: 筛选操作需要一个值
+filter_operator_required: 筛选操作需要一个操作符
+invalid_fill_method: 无效的 fill_missing 方法：{method}。必须是以下之一：{methods}
+invalid_operation_type: 无效的操作类型：{type}。必须是以下之一：{types}
+rename_new_name_required: 重命名列操作需要新名称
+dataclean_chat:
+  chat_session_not_found: 未找到数据清洗聊天会话
+  create_error: 创建数据清洗会话失败
+  dataset_id_required: datasetId 为必填项
+  empty_response: 我无法生成回复。请重试。
+  message_required: 消息为必填项
+dataclean_tools:
+  no_rules_to_preview: 没有可预览的规则
+  no_rules_to_apply: 没有可应用的规则

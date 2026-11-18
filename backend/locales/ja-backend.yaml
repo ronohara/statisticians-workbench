@@ -1,0 +1,1009 @@
+admin:
+  already_full_admin: ユーザーは既にフル管理者です。
+  already_group_admin: ユーザーは既にグループ管理者です。
+  cannot_delete_self: 自分のアカウントは削除できません。
+  cannot_demote_full_admin: フル管理者を降格することはできません。
+  cannot_demote_self: 自分自身を降格することはできません。
+  cannot_promote_example: サンプルユーザーを昇格することはできません。
+  delete_error: ユーザーの削除に失敗しました。
+  demote_error: ユーザーの降格に失敗しました。
+  description_required: 説明を空にすることはできません。
+  example_blocked: サンプルユーザーは管理者アクションを実行できません。
+  group_not_found: グループが見つかりません。
+  group_users_load_error: グループユーザーの読み込みに失敗しました。
+  groups_load_error: グループの読み込みに失敗しました。
+  groups_stats_error: グループ統計の読み込みに失敗しました。
+  insufficient_permissions: このアクションに対する権限が不足しています。
+  invalid_group_id: 無効な group_id です。00～99の範囲で指定してください。
+  invalid_id: 無効な ID です。
+  invalid_upload_count: maxUploadCount には負でない整数を指定してください（0で無制限）。
+  invalid_upload_size: maxUploadSizeMB には負でない整数を指定してください（0で無制限）。
+  missing_fields: 必須フィールドが不足しています。
+  missing_group_id: グループIDがありません。
+  missing_id: IDがありません。
+  missing_model_id: モデルIDがありません。
+  missing_provider_code: providerCode パラメータがありません。
+  missing_user_id: userId がありません。
+  model_update_error: モデルの更新に失敗しました。
+  models_load_error: モデルの読み込みに失敗しました。
+  no_fields: 更新する有効なフィールドがありません。
+  no_group: ユーザーにグループが割り当てられていません。
+  not_group_admin: ユーザーはグループ管理者ではありません。
+  only_full_admin: このアクションを実行できるのはフル管理者のみです。
+  promote_error: ユーザーの昇格に失敗しました。
+  provider_delete_error: プロバイダの削除に失敗しました。
+  provider_not_found: プロバイダが見つかりません。
+  provider_update_error: プロバイダの更新に失敗しました。
+  providers_load_error: プロバイダの読み込みに失敗しました。
+  slug_exists: スラッグは既に存在します。
+  update_error: ユーザーの更新に失敗しました。
+  user_load_error: ユーザーの読み込みに失敗しました。
+  user_not_found: ユーザーが見つかりません。
+  users_load_error: ユーザーの読み込みに失敗しました。
+  viz_type_create_error: 可視化タイプの作成に失敗しました。
+  viz_type_delete_error: 可視化タイプの削除に失敗しました。
+  viz_type_update_error: 可視化タイプの更新に失敗しました。
+  viz_types_load_error: 可視化タイプの読み込みに失敗しました。
+api:
+  user:
+    connection_not_found: 接続が見つかりません。
+    example_blocked: サンプルユーザーはこの操作を実行できません
+    example_delete_ai: サンプルユーザーはAI接続を削除できません
+    invalid_connection_id: 接続IDが無効です
+    connection_id_required: 接続IDは必須です
+    internal_error: 内部サーバーエラー
+    example_update_ai: サンプルユーザーはAI接続を更新できません
+    api_key_required: このプロバイダーにはAPIキーが必要です
+    invalid_current_password: 現在のパスワードが正しくありません
+    user_not_found: ユーザーが見つかりません
+    invalid_port: ポートは整数である必要があります
+    connection_name_exists: この名前の接続は既に存在します
+    example_create_ai: サンプルユーザーはAI接続を作成できません
+    provider_not_found: プロバイダー「{provider}」が見つかりません
+    missing_fields: 必須項目が不足しています
+    invalid_name: 名前は文字列である必要があります
+    test_attribution_required: テスト結果には、誰が実行したかを記録する必要があります。
+    test_read_timeout: モデルはリクエストを受け付けましたが、時間内に回答しませんでした。このホストには遅すぎる可能性があります。CPU上の大規模モデルでは数分かかることがあります。能力判定は記録されず、失敗するまでにかかった時間が記録されました。
+    test_connect_timeout: エンドポイントが時間内に接続を受け付けませんでした。ホストが停止しているか、ファイアウォールがリクエストを破棄している可能性があります。能力判定は記録されず、失敗するまでにかかった時間が記録されました。
+    connect_timeout_exceeds_probe: 接続タイムアウト（{connect}秒）はテストタイムアウト（{probe}秒）より長くできません。接続の確立に、テスト全体の実行時間より長くかけることは許可されません。
+    test_budget_exhausted: モデルは回答に到達する前に出力予算をすべて使い切ったため、何も返しませんでした。能力判定は記録されず、所要時間が記録されました。
+    test_tls_failure: セキュアな接続を確立できませんでした。httpsが期待される場所でエンドポイントが平文のhttpであるか、証明書の有効期限が切れている可能性があります。能力判定は記録されず、失敗するまでにかかった時間が記録されました。
+    model_not_served_by_connection: この接続は「{model}」を提供していません。モデルが変更されている可能性があります。接続を更新するか、別のモデルを選択してください。
+    invalid_connect_timeout: 接続タイムアウトは、1秒以上{ceiling}秒以下の整数の秒数でなければなりません。
+    model_not_found: プロバイダー「{provider}」にモデル「{model}」が見つかりません。
+    tuning_invalid_max_tokens: 出力上限は、1以上の整数のトークン数でなければなりません。
+    discovery_complete: '{seen}件のモデルを検出しました：新規{created}件、既知で更新{refreshed}件、提供終了で整理{pruned}件。'
+    test_not_implemented: テスト「{test}」は登録されていますが、まだプローブがありません。
+    test_connect_refused: そのアドレスでは何も待ち受けていません。サーバーには到達できますが、サービスが応答しませんでした。ポートと、AIサーバーが実行中であることを確認してください。能力判定は記録されず、失敗するまでにかかった時間が記録されました。
+    invalid_test_state: '無効なテスト結果「{state}」です。許可されている値: {allowed}'
+    tuning_nothing_to_update: temperature、maxTokens、timeoutSecondsの少なくとも1つを指定してください。
+    test_reason_required: テスト結果には理由を記録する必要があります。
+    tuning_connection_not_found: そのようなAI接続はありません。
+    tuning_invalid_ai_timeout: AIの制限時間は、1秒以上の整数の秒数でなければなりません。
+    unknown_test_id: '不明なテスト「{test}」です。登録済みテスト: {known}'
+    test_dns_failure: エンドポイントのホスト名を解決できませんでした。アドレスに誤字がないか、このネットワークでのみ解決できる名前でないか確認してください。能力判定は記録されず、失敗するまでにかかった時間が記録されました。
+    test_http_status: 'プロバイダーは応答し、その応答はエラーでした: {detail}。能力判定は記録されず、原因を明確にするためにプロバイダーが返した内容が表示されています。'
+    invalid_probe_timeout: テストタイムアウトは、1秒以上{ceiling}秒以下の整数の秒数でなければなりません。
+    tuning_invalid_temperature: temperatureは0以上2以下の数値でなければなりません。
+    tuning_model_not_found: そのようなモデルはありません。
+    tuning_malformed_body: リクエストボディが有効なJSONではありません。
+    test_other_failure: 'モデルに到達できず、原因はこのシステムが認識するものではありませんでした。能力判定は記録されませんでした: {detail}'
+  register:
+    internal_error: 内部サーバーエラー
+    email_exists: メールアドレスは既に存在します
+    invalid_email: メールアドレスの形式が無効です
+    missing_fields: フィールドが不足しています
+    settings_not_found: グローバル設定が見つかりません
+    limit_reached: 登録制限に達しました（最大 {max_reg} ユーザー）。
+    registration_disabled: 自己登録は無効です。管理者に連絡してください。
+  admin:
+    delete_error: ユーザーの削除に失敗しました
+    groups_load_error: グループの読み込みに失敗しました
+    settings_invalid_upload_count: デフォルトの最大アップロード数は0以上の整数でなければなりません（0は無制限）。
+    user_load_error: ユーザーの読み込みに失敗しました
+    settings_save_error: グローバル設定の保存に失敗しました
+    no_fields: 更新する有効なフィールドがありません
+    not_group_admin: ユーザーはグループ管理者ではありません
+    settings_view_forbidden: グローバル設定を表示できるのは完全管理者のみです
+    only_full_admin: この操作を実行できるのは完全管理者のみです
+    missing_fields: 必須フィールドが不足しています
+    cannot_delete_self: 自分のアカウントは削除できません
+    invalid_upload_size: maxUploadSizeMBは0以上の整数でなければなりません（0は無制限）。
+    missing_id: IDがありません
+    settings_invalid_email_sender: 送信者メールアドレスの形式が無効です
+    missing_group_id: グループIDがありません
+    provider_not_found: プロバイダーが見つかりません
+    missing_model_id: モデルIDがありません
+    provider_update_error: プロバイダーの更新に失敗しました
+    no_group: ユーザーにグループが割り当てられていません
+    settings_load_error: グローバル設定の読み込みに失敗しました
+    model_update_error: モデルの更新に失敗しました
+    settings_invalid_upload_size: デフォルトの最大アップロードサイズは0以上の整数でなければなりません（0は無制限）。
+    cannot_demote_self: 自分自身を降格することはできません
+    insufficient_permissions: この操作に対する権限が不足しています
+    settings_invalid_grace_period: 登録猶予期間は正の数（時間）でなければなりません
+    promote_error: ユーザーの昇格に失敗しました
+    models_load_error: モデルの読み込みに失敗しました
+    description_required: 説明は空にできません
+    settings_invalid_public_url: 公開URLの形式が無効です
+    group_users_load_error: グループユーザーの読み込みに失敗しました
+    invalid_group_id: 無効なgroup_idです。00〜99でなければなりません
+    groups_stats_error: グループ統計の読み込みに失敗しました
+    settings_invalid_max_registrations: 最大登録数は正の数または無制限でなければなりません
+    invalid_upload_count: maxUploadCountは0以上の整数でなければなりません（0は無制限）。
+    cannot_promote_example: サンプルユーザーを昇格することはできません
+    update_error: ユーザーの更新に失敗しました
+    already_full_admin: ユーザーは既に完全管理者です
+    demote_error: ユーザーの降格に失敗しました
+    example_blocked: サンプルユーザーは管理者操作を実行できません
+    missing_user_id: userId がありません
+    cannot_demote_full_admin: フル管理者を降格することはできません
+    provider_delete_error: プロバイダーの削除に失敗しました
+    settings_invalid_email_timeout: メール確認のタイムアウトは正の数（時間）でなければなりません
+    settings_modify_forbidden: グローバル設定を変更できるのはフル管理者のみです
+    already_group_admin: ユーザーは既にグループ管理者です
+    providers_load_error: プロバイダーの読み込みに失敗しました
+    user_not_found: ユーザーが見つかりません
+    viz_type_not_found: 可視化タイプが見つかりません
+    model_not_found: モデルが見つかりません
+    invalid_viz_type_field: 可視化タイプのフィールド値が無効です
+    demote_success: ユーザー {name} がグループ管理者から降格されました。
+    settings_invalid_platform_upload_size: プラットフォームの最大アップロードサイズは0以上の整数でなければなりません（0の場合は無制限）。
+    promote_success: ユーザー {name} がグループ管理者に昇格されました。
+    invalid_id: 無効なID
+    viz_type_create_error: 可視化タイプの作成に失敗しました
+    slug_exists: スラッグは既に存在します
+    users_load_error: ユーザーの読み込みに失敗しました
+    viz_type_delete_error: 可視化タイプの削除に失敗しました
+    viz_type_update_error: 可視化タイプの更新に失敗しました
+    viz_types_load_error: 可視化タイプの読み込みに失敗しました
+    instance_exists: 関連するインスタンスが{count}件あるため、タイプを削除できません。
+    instance_in_use: 関連するインスタンスがあるため、タイプを削除できません。
+    settings_demo_mode_requires_licence: 有効なライセンスがないとデモモードを無効にできません。
+    settings_not_found: グローバル設定が見つかりません
+    invalid_email: メールアドレスの形式が無効です
+    create_user_error: ユーザーの作成に失敗しました
+    email_exists: メールアドレスは既に存在します
+    settings_invalid_registration_mode: 登録モードは0、1、2、または4のいずれかである必要があります
+    users_demo_upload_size_limit: デモモードでは、ユーザーごとの最大アップロードサイズは1～5 MBの範囲内である必要があります。
+    settings_demo_upload_size_limit: デモモードでは、デフォルトの最大アップロードサイズは1～5 MBの範囲内である必要があります。
+    users_demo_upload_count_limit: デモモードでは、ユーザーごとの最大アップロード数は1～5の範囲内である必要があります。
+    settings_demo_upload_count_limit: デモモードでは、デフォルトの最大アップロード数は1～5の範囲内である必要があります。
+    example_user_password_blocked: サンプルユーザーのパスワードは管理者が設定することはできません。
+    invalid_admin_password: 管理者パスワードが正しくありません。
+    settings_invalid_ai_timeout: AIの制限時間は、1秒以上の整数の秒数でなければなりません。
+    settings_invalid_probe_timeout: デフォルトのテストタイムアウトは、1秒以上{ceiling}秒以下の整数の秒数でなければなりません。
+    settings_invalid_temperature: temperatureは0以上2以下の数値でなければなりません。
+    settings_invalid_max_tokens: 出力上限は、1以上の整数のトークン数でなければなりません。
+    settings_invalid_slow_threshold: 低速モデルの制限は、1秒以上の整数の秒数でなければなりません。
+    tuning_reset_error: AIチューニングのデフォルトをリセットできませんでした。
+    field_not_owned: 'このフィールドはこのページでは設定されていません。{endpoint}。問題のあるフィールド: {fields}'
+    settings_invalid_connect_timeout: デフォルトの接続タイムアウトは、1秒以上{ceiling}秒以下の整数の秒数でなければなりません。
+  auth:
+    missing_email: メールアドレスが必要です
+    example_user_reset_blocked: サンプルユーザーはパスワードリセットが無効です
+    unauthorized: 認証されていません
+    missing_fields: フィールドが不足しています
+    token_expired: トークンの有効期限が切れています
+    example_user_forgot_blocked: サンプルユーザーはパスワードリセットが無効です
+    user_not_found: ユーザーが見つかりません
+    invalid_token: トークンが無効または期限切れです
+    email_already_verified: メールは既に確認済みです
+    example_user_blocked: サンプルユーザーのパスワード変更は無効です
+    internal_error: 内部サーバーエラー
+    invalid_current_password: 現在のパスワードが正しくありません
+    not_authenticated: 認証されていません
+  settings:
+    example_blocked: サンプルユーザーは設定を編集できません
+    invalid_default_ai_connection: デフォルトAI接続が無効です
+    load_failed: 設定の読み込みに失敗しました
+    user_not_found: ユーザーが見つかりません
+    save_failed: 設定の保存に失敗しました
+    invalid_slow_threshold: 低速モデルの制限は、1秒以上の整数の秒数でなければなりません。
+  profile:
+    update_failed: プロフィールの更新に失敗しました
+    fetch_failed: プロフィールの取得に失敗しました
+    name_required: 名前は必須です
+    invalid_name: 名前は文字列である必要があります
+  global_settings_load_error: 内部サーバーエラー
+  translations_load_error: 翻訳の読み込みに失敗しました
+  languages_load_error: 言語の読み込みに失敗しました
+auth:
+  account_deleted: このアカウントは削除されています。
+  email_not_verified: メールが確認されていません。受信トレイと迷惑メールフォルダを確認してください。
+  example_user_blocked: サンプルユーザーではパスワード機能が無効です。
+  example_user_forgot_blocked: サンプルユーザーではパスワードリセットが無効です。
+  example_user_reset_blocked: サンプルユーザーではパスワードリセットが無効です。
+  internal_error: 内部サーバーエラー
+  invalid_credentials: 認証情報が無効です。
+  invalid_current_password: 現在のパスワードが間違っています。
+  invalid_token: 無効または期限切れのトークンです。
+  invalid_token_error: '無効なトークン: {error}'
+  invalid_token_missing_user_id: '無効なトークン: ユーザーIDがありません。'
+  missing_email: メールアドレスが必要です。
+  missing_fields: フィールドが不足しています。
+  password_changed: パスワードが正常に変更されました。
+  password_validation_failed: パスワードの検証に失敗しました。
+  reset_email_sent: パスワードリセットのメールを送信しました。
+  token_expired: トークンの有効期限が切れています。
+  unauthorized: 認証されていません。
+  user_not_found: ユーザーが見つかりません。
+  login_invalid_credentials: メールアドレスまたはパスワードが無効です。
+chat:
+  ai_provider_error: 'AIプロバイダエラー: {error}'
+  connection_error: '接続エラー: {error}'
+  connection_not_found: AI接続が見つからないか、アクセスできません。
+  delete_failed: 'チャットの削除に失敗しました: {error}'
+  generate_title_failed: 'タイトルの生成に失敗しました: {error}'
+  get_failed: 'チャットの取得に失敗しました: {error}'
+  internal_error: '内部サーバーエラー: {error}'
+  list_failed: 'チャット一覧の取得に失敗しました: {error}'
+  send_failed: 'メッセージの送信に失敗しました: {error}'
+  title_updated: チャットタイトルが正常に更新されました。
+  update_failed: 'チャットの更新に失敗しました: {error}'
+  not_found_or_not_owned: チャット '{id}' が見つからないか、所有していません
+  not_found: チャット '{id}' が見つかりません
+  deleted: チャット '{id}' を正常に削除しました
+  ai_service_failed: AIサービスが応答できませんでした。もう一度お試しください。
+  ai_repeat_loop: AIモデルが途中で停止し、応答を完了できませんでした。もう一度お試しください。
+  ai_timeout: AIモデルの応答に時間がかかりすぎています。もう一度お試しください。
+  timeout_out_of_range: AIの制限時間は1秒から{max_seconds}秒の間でなければなりません。
+common:
+  back: 戻る
+  cancel: キャンセル
+  cannot_undo: この操作は元に戻せません。
+  clear: クリア
+  copy: コピー
+  delete: 削除
+  deleting: 削除中...
+  dismiss: 閉じる
+  edit: 編集
+  generating: 生成中...
+  loading: 読み込み中...
+  next: 読み込み中...
+  restoring: 復元中...
+  save: 保存
+  saving: 保存中...
+  sending: 送信中...
+  testing: テスト中...
+  unknown: 不明
+  uploading: アップロード中...
+  verifying: 検証中...
+  view: 表示
+database:
+  connection_failed: 'データベースへの接続に失敗しました: {error}'
+  decryption_failed: '接続パスワードの復号に失敗しました: {error}'
+  insert_failed: 'データベースエラー: {error}'
+  pool_not_initialized: データベースプールが初期化されていません
+  query_failed: 'データベースクエリに失敗しました: {error}'
+  type_not_supported: 'サポートされていないデータベースタイプです: {type}'
+  connection_not_found: データベース接続が見つからないか、アクセスできません
+  feature_required: このデータベースタイプはライセンスで有効になっていません。
+datasets:
+  define:
+    connection_details_not_found: 接続の詳細が見つかりません
+    connection_not_found: データベース接続が見つからないか、アクセスできません
+    connection_required: connectionId は必須です
+    connection_test_failed: データベース接続テストに失敗しました
+    database_connection_failed: 'データベースへの接続に失敗しました: {error}'
+    name_required: データセット名は必須です
+    table_name_required: tableName は必須です
+    verification_failed: 'テーブル/ビューの検証に失敗しました: {error}'
+    table_not_found: データベース '{database}' にテーブル/ビュー '{table}' が見つかりません
+    permission_denied: '権限が拒否されました: ユーザー ''{user}'' にはテーブル ''{table}'' へのアクセス権がありません。SELECT権限を付与してください。'
+    preview_failed: 'テーブル「{table}」からのデータ読み取りに失敗しました: {error}'
+    invalid_source_type: sourceTypeは「table」または「view」である必要があります。
+    dataset_created: データセット「{name}」を定義しました。
+    table_access_failed: 'テーブル ''{table}'' へのアクセスに失敗しました: {error}'
+    connection_timed_out: 接続が15秒でタイムアウトしました。
+    connection_missing_db_note: '注意: PostgreSQLは、データベースが存在しない場合と権限が不十分な場合の両方でこのエラーを返します。データベースが存在する場合は、ユーザーがそのデータベースに対するCONNECT権限を持っているか確認してください。'
+    connection_successful: 接続成功
+  delete:
+    success: データセット '{id}' が正常に削除されました
+  describe:
+    ai_connection_error: 'AI接続エラー: {error}'
+    empty_description: 生成された説明が空です。AIプロバイダーの設定を確認してください。
+    generation_failed: '説明の生成に失敗しました: {error}'
+    description_generated: '''{name}'' の説明が正常に生成されました'
+    timeout_out_of_range: AIの制限時間は1秒から{max_seconds}秒の間でなければなりません。
+  example_blocked:
+    create: サンプルユーザーはデータセットを作成できません
+    delete: サンプルユーザーはデータセットを削除できません
+    update: サンプルユーザーはデータセットを更新できません
+  list_error: データセットの読み込みに失敗しました
+  not_found: データセットが見つかりません
+  not_owner: 自分のデータセットのみ編集できます
+  preparation:
+    duplicate_name: この名前の準備ルールは既にこのデータセットに存在します
+    no_updates: 更新するフィールドがありません
+    preview_failed: 'ルールのプレビューに失敗しました: {error}'
+    rule_deleted: 準備ルールが正常に削除されました
+    rule_in_use: 'この準備ルールは{count}個のレシピで使用されています: {names}。先にレシピを削除してください。'
+    rule_not_found_or_not_owned: 準備ルールが見つからないか、所有していません
+    rule_updated: 準備ルールが正常に更新されました
+    schema_failed: 'データセットスキーマの読み取りに失敗しました: {error}'
+    rule_created: 前処理ルール「{name}」を作成しました。
+    rule_not_found: このデータセットには準備ルール '{id}' が見つかりません
+    already_exists: これらの操作を含む準備ルールが既に存在します（'{name}'）
+  schema:
+    external_failed: '外部データベースからスキーマを取得できませんでした: {error}'
+    from_preview: プレビューデータから導出されたスキーマ（先頭10行）
+    load_error: 'スキーマを読み込めませんでした: {error}'
+    table_missing: テーブルは存在しなくなりました。データセットを再アップロードしてください。
+    not_implemented: このデータセットタイプ '{type}' のスキーマ検出はまだ実装されていません
+    row_count_not_computed: 仮想データセットでは、結合を実行しないと行数は計算されません。
+    connection_unreachable: '接続 {connection_id} に到達できません: {error}'
+  share:
+    error: 共有の更新に失敗しました
+    toggled: データセット '{id}' の共有が正常に更新されました
+  unknown_source: '不明なソースタイプ: {source_type}'
+  upload:
+    error: データセットのアップロードに失敗しました
+    file_processing_failed: 'ファイルの処理に失敗しました: {error}'
+    limit_reached_count: アップロード制限に達しました。最大{count}個のデータセットが許可されています。
+    limit_reached_size: アップロードサイズ制限を超えました。最大{size}MBの総ストレージが許可されています。
+    unsupported_file: 'サポートされていないファイル形式です。次のいずれかをアップロードしてください: {extensions}'
+    user_not_found: ユーザーが見つかりません
+    success: データセット '{name}' が正常にアップロードされました
+    dbf_memo_unsupported: この .dbf ファイルにはメモフィールドが含まれています。その値は別ファイルに保存されているため、単一ファイルのアップロードでは取り込めません。
+    dbf_field_unsupported: 'この .dbf ファイルには、読み取れないフィールド型が宣言されています: {types}'
+  transforms:
+    clone_forbidden: この変換を複製するアクセス権がありません
+    deleted: 変換が正常に削除されました
+    duplicate_name: この名前の変換はこのデータセットに既に存在します
+    in_use: この変換は{count}個のレシピ（{names}）で使用されています。先にレシピを削除してください。
+    updated: 変換が正常に更新されました
+    not_found_or_not_owned: 変換が見つからないか、所有者ではありません
+    no_updates: 更新するフィールドがありません
+    created: 変換 '{name}' が正常に作成されました
+    not_found: このデータセットに対する変換 '{id}' が見つかりません
+    not_owned: データセット '{id}' が見つからないか、所有していません
+    cloned: 変換を「{name}」として複製しました。
+    not_accessible: データセット「{id}」が見つからないか、アクセスできません。
+    already_exists: これらの操作を含む変換が既に存在します（'{name}'）
+  browse:
+    columns_failed: '列の取得に失敗しました: {error}'
+    preview_failed: 'テーブルのプレビューに失敗しました: {error}'
+    discover_failed: 'テーブルの検出に失敗しました: {error}'
+  not_owned: データセット '{id}' が見つからないか、所有していません
+  not_found_2: データセットが見つかりません
+  auto_create:
+    connection_not_found: 接続が見つかりません
+    connection_id_required: connectionIdは必須です。
+    created: データセットが作成されました
+    no_tables_discovered: テーブルまたはビューが見つかりませんでした。データベースサーバーが実行中でアクセス可能であることを確認してください。
+  unread:
+    auth_failed: データベースがこのアカウントの資格情報を拒否しました。
+    incomplete: チェックが時間内に完了しませんでした。再試行するか、接続タイムアウトを延長してください。
+    unreachable: このソースに到達できませんでした。ホストとポートを確認して、もう一度お試しください。
+    no_database: そのデータベースはサーバー上に存在しません。
+    definition_too_deep: このデータセットは、5レベルを超えて自身を参照しています。
+    schema_error: ソースは応答しましたが、そのカラムを読み取ることができませんでした。
+    definition_incomplete: このソースは、データセットも接続テーブルも指定していません。
+    no_permission: このアカウントはそのソースを読み取ることができません。
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: 一貫性のために、カラム名を小文字のスネークケースに変更してください
+      rename_table_snake_case: 一貫性のために、テーブル名を小文字のスネークケースに変更してください
+      reserved_keyword_table: テーブル名 '{table}' は予約済みSQLキーワードです
+      reserved_keyword_column: 列 '{column}' は予約済みSQLキーワードです
+      rename_table_reserved: SQL予約語との競合を避けるため、テーブル '{table}' の名前を変更してください
+      mixed_case_table: テーブル名 '{table}' は大文字小文字が混在しています — snake_caseを推奨
+      mixed_case_column: 列 '{column}' は大文字小文字が混在しています — snake_caseを推奨
+      rename_column_reserved: SQL予約語との競合を避けるため、カラム '{column}' の名前を変更してください
+    normalisation:
+      multiple_address: 住所関連のカラムが複数（{count}個）検出されました
+      repeating_group: '繰り返しグループが検出されました: {columns}'
+      separate_address_table: 別の住所テーブルを作成し、{table}への外部キーを追加することを検討してください
+      create_separate_table: 「{base}」の値を保持する別テーブルを作成し、{table}への外部キーを設定してください。
+    semistructured:
+      controlled_vocab: カラム{column}には、{count}個の異なる値からなる統制語彙が含まれています
+      create_ref_table: '{table}テーブルを正規化するために、{column}の値の参照テーブルを作成してください'
+    data_types:
+      short_text_enum: テキスト列 '{column}' の最大長は {max_len} です — ENUMまたはCHECK制約の使用を検討してください
+      unbounded_varchar: 上限のないVARCHAR列 '{column}'
+      add_check_constraint: '''{column}'' に CHECK 制約を追加するか、有効な値を限定した ENUM 型を使用してください'
+      add_not_null: '''{column}'' に NOT NULL 制約を追加してください'
+      allows_null: 列 '{column}' はNULLを許可しています — NOT NULL制約を検討してください
+      set_max_length: 過大なデータを防ぐため、'{column}' に最大長を設定することを検討してください
+    relationships:
+      missing_fk: 列「{column}」は外部キーのように見えますが、FK制約がありません。
+      add_fk: カラム '{column}' が別のテーブルを参照している場合は、FK制約の追加を検討してください
+    indexing:
+      missing_fk_index: 外部キー列「{column}」にインデックスがありません。
+  analyze_error: 'データベースの分析に失敗しました: {error}'
+  connection_error: 'データベースへの接続に失敗しました: {error}'
+  description: AIを使用してデータベース設計を分析・改善します。
+  no_connection: 利用可能なデータベース接続がありません。最初にデータベースに接続してください。
+  not_implemented: この機能は近日公開予定です。
+  pdf:
+    categories: カテゴリ
+    code_systems: コード体系
+    col_default: デフォルト
+    col_name: カラム
+    col_nullable: Null許容
+    col_pk: PK
+    col_type: 型
+    columns: カラム
+    confidence: 確信度
+    header: データベース設計分析レポート
+    high: 高
+    issues_count: 問題 ({count})
+    issues_found: 発見された問題
+    low: 低
+    medium: 中
+    'no': いいえ
+    none: なし
+    normalisation_title: 正規化の提案 ({count})
+    page: ページ {current}/{total}
+    pk: PK
+    proposed_table: 提案されたテーブル
+    risk_breakdown: リスク内訳
+    rows: 行
+    schema_title: スキーマ（{count}テーブル）
+    semi_structured_title: 半構造化データ分析（{count}列）
+    subtitle: 'データベース: {db_name} ({db_type}) | 接続: {conn_name} (ID: {conn_id})'
+    summary: 概要
+    tables: テーブル
+    title: データベース設計分析
+    top_keywords: トップキーワード
+    top_recommendations: 上位の推奨事項
+    value: 値
+    'yes': はい
+    confidence_label: 信頼度
+    integration_subtitle: Integration AIによって検出された暗黙的関係、研究能力、および不足している次元。
+    missing_dimensions_label: 不足している次元
+    health_score_label: 'データベース健全性スコア: {score}/100'
+    semantic_title: AI意味分析
+    code_systems_label: 検出されたコード体系
+    table_purposes_label: テーブルの目的
+    implicit_relationships_label: 暗黙的関係
+    domain_label: ISICドメイン分類
+    evidence_label: エビデンス
+    proposed_ddl_label: 提案されたDDL
+    ai_disclaimer: AI生成分析 — 本番環境に適用する前に確認してください。
+    health_score_title: 健全性スコア
+    partial_label: 部分的
+    rationale_label: 根拠
+    research_capabilities_label: 研究能力
+    health_score_subtitle: Schema AIによる総合的なデータベース健全性評価。0 = 重大な構造的問題、100 = 本番環境対応済み。
+    relationship_label: 関係
+    integration_title: AI統合の結果
+    supported_label: サポート対象
+    column_meanings_label: 列の意味
+    unsupported_label: サポート対象外
+    semantic_subtitle: AIが推論した列の意味、ISICドメイン分類、およびコード体系の検出。
+    top_actions_label: 最優先アクション
+    ai_skipped_warning: AI分析はスキップされました
+  question_required: 質問は必須です
+  report_data_required: レポートデータは必須です
+  schema_error: 'スキーマの抽出に失敗しました: {error}'
+  title: データベース設計アシスタント
+  unsupported_type: PostgreSQLとMySQLデータベースのみがサポートされています
+  rag_not_available: RAG検索はPostgreSQLデータベースでのみ利用可能です。MySQLのテキスト検索は将来のリリースで予定されています。
+  rag_error: 'RAGクエリが失敗しました: {error}'
+  pdf_error: 'PDFの生成に失敗しました: {error}'
+  invalid_token: 無効なトークンです
+  unsupported_type_2: PostgreSQL、MySQL、MS SQL Serverデータベースのみがサポートされています。
+  schema_error_2: 'データベースパスワードの復号に失敗しました: {error}'
+  email_pdf:
+    no_email: アカウントにメールアドレスが見つかりません
+    invalid_body: リクエストボディが無効です
+    send_failed: レポートをメールで送信できませんでした。もう一度お試しください。
+  llm:
+    http_error: LLMがHTTP {status_code}を返しました
+    no_ai_provider: AIプロバイダーが設定されていません。[設定] → [AI接続] でAIプロバイダーを接続してください。
+    timeout: LLMリクエストが{timeout_seconds}秒後にタイムアウトしました
+    unknown_error: 不明なLLMエラー
+    empty_content: LLMが空のコンテンツを返しました
+    no_model: AIモデルが設定されていません。AI接続にデフォルトモデルを設定するか、明示的なモデルを渡してください。
+  stream_connecting: データベースに接続中...
+  stream_semistructured_start: 半構造化カラムを分析中...
+  stream_schema_done: 'スキーマを抽出しました: {tables} テーブル、{columns} カラム'
+  stream_ai_done: 'AI分析が完了しました — ステータス: {status}'
+  stream_unsupported_type: 'サポートされていないデータベース種別: {db_type}'
+  stream_mechanical_done: '機械的分析: {count} 件の問題が見つかりました'
+  stream_mechanical_start: 機械的分析を実行中...
+  analysis_cancelled: 分析ストリームがキャンセルされました（クライアント切断）
+  stream_ai_semantic_start: 'セマンティックAI: {tables} テーブルを分析中...'
+  ai_skipped_reason: 'このレポートには機械的分析のみが含まれています。データベースで {count} 件の問題が検出されたため（上限: {limit}）、AI拡張分析はスキップされました。以下の機械的分析の結果を確認してデータベースを修正してから、文脈を考慮した説明、セマンティックインサイト、正規化提案を得るためにAIで再実行してください。'
+  stream_ai_integration_done: '統合AI: リレーションシップ {relationships}、機能 {capabilities}'
+  stream_connected: '{db_type} に接続しました: {db_name}'
+  stream_ai_schema_start: 'スキーマAI: {tables} テーブルを分析中...'
+  ai_skipped_message: 'AI分析をスキップしました — {count}件の問題が見つかりました（上限: {limit}）。以下の機械的検出結果を確認し、データベースをクリーンアップしてから、AIで再実行してください。'
+  analysis_complete: 分析が完了しました
+  stream_analysis_failed: '分析に失敗しました: {error}'
+  stream_ai_schema_done: 'スキーマAI: ヘルススコア {score}/100'
+  stream_extracting_schema: '{db_type} からスキーマを抽出中...'
+  stream_ai_integration_start: '統合AI: リレーションシップを検出中...'
+  stream_normalisation_timeout: '正規化: 90秒後にタイムアウトしました'
+  stream_ai_semantic_done: 'セマンティックAI: カラムの意味 {columns} 件、ISICドメイン {domains} 件'
+  stream_normalisation_start: 正規化提案を生成中...
+  stream_normalisation_done: '正規化: {count} 件の提案'
+  stream_normalisation_skipped: '正規化: スキップされました（{error}）'
+  stream_ai_start: AI分析を開始しています — 3人のスペシャリストが並行して処理中...
+groups:
+  admin_required: 管理者アクセスが必要です
+  cannot_delete_self: 自分のアカウントを削除することはできません
+  description_required: 説明は空にできません
+  insufficient_permissions: グループを管理する権限が不十分です
+  invalid_group_id: 無効なuser_groupです。00～99の範囲で指定してください
+  update_failed: グループの更新に失敗しました
+  user_not_found: ユーザーが見つかりません
+  update_success: グループ '{id}' の説明が更新されました
+  not_found: グループ '{id}' が見つかりません
+  user_updated: ユーザーのグループが正常に更新されました
+  not_authorized: このユーザーのグループを表示する権限がありません
+  resource_not_found: リソースが見つかりません
+  missing_id: リソースIDがありません
+recipes:
+  columns_required: 少なくとも1つの列を選択してください
+  data_selection_error: 'データの選択に失敗しました: {error}'
+  dataset_not_found: データセットが見つかりません
+  dataset_required: データセットを選択してください
+  delete_error: 'レシピの削除に失敗しました: {error}'
+  execute_error: 'レシピの実行に失敗しました: {error}'
+  execution_completed: 実行が正常に完了しました
+  execution_failed: 実行に失敗しました
+  execution_load_error: '実行の読み込みに失敗しました: {error}'
+  executions_load_error: '実行の一覧の読み込みに失敗しました: {error}'
+  invalid_stage: レシピの無効なステージです
+  invalid_stage_type: '無効なステージタイプ: {type}。次のいずれかである必要があります: {types}'
+  load_datasets_error: 'データセットの読み込みに失敗しました: {error}'
+  load_error: 'レシピの読み込みに失敗しました: {error}'
+  name_required: レシピ名は必須です
+  no_columns_exist: 選択された列はデータセットに存在しません
+  no_dataset: このレシピに関連付けられたデータセットがありません
+  no_stages: レシピには少なくとも1つのステージが必要です
+  no_updates: 更新するフィールドがありません
+  preparation:
+    no_db_pool: 準備ステージではデータベースプールが利用できません
+    all_rules_failed: 'すべてのルールが失敗しました: {errors}'
+    rules_applied: '{count}個の準備ルールを適用しました'
+    rule_failed: 'ルール「{rule_id}」: {error}'
+    rule_not_found: ルール '{rule_id}' が見つかりません
+  scatter_two_columns: 散布図には少なくとも2つの列が必要です
+  scatter_two_numeric: 散布図には2つの数値列が必要です
+  schema_error: '列スキーマの読み込みに失敗しました: {error}'
+  unknown_stage: '不明なステージタイプ: {stage_type}'
+  unsupported_chart_type: 'サポートされていないチャートタイプ: {chart_type}'
+  update_error: 'レシピの更新に失敗しました: {error}'
+  visualisation_columns_required: 可視化には少なくとも1つの列が必要です
+  visualisation_error: '可視化に失敗しました: {error}'
+  visualisation_generated: 可視化が正常に生成されました
+  requirement:
+    line: 2つの数値列（xとy）
+    t_test_paired: 2つの数値列（対の測定値）
+    linear_regression: 少なくとも2つの数値列（予測変数と結果変数）
+    scatter: 2つの数値列（xとy）
+    histogram: 1つの数値列（x軸）
+    none: 出力不要
+    anova_two_way: 2つのカテゴリ列（2つの因子）と1つの数値列（応答変数）
+    anova_one_way: 1つのカテゴリ列（因子）と1つの数値列（応答変数）
+    t_test_independent: 1つのカテゴリ列（グループ用）と1つの数値列（比較用）
+    descriptive: 少なくとも1つの数値列
+    bar: 1つのカテゴリ列（x軸）と1つの数値列（y軸）
+    table: 任意の列
+    correlation: 少なくとも2つの数値列
+    pie: 1つのカテゴリ列（ラベル）
+    distribution: 1つの数値列
+    chi_square: 2つのカテゴリ列
+    hbar: カテゴリ列1つ（y軸）と数値列1つ（x軸）
+    area: 数値列2つ（xとy）
+    donut: カテゴリ列1つ（ラベル）
+  validation:
+    failed: 'レシピの検証に失敗しました: {errors}'
+    incompatible_algo_output: '分析 ''{algo}'' は {result_type} の結果を生成するため、''{output}'' チャートとして表示できません。出力タイプを ''{algo}'' と互換性のあるものに変更してください: {options}。'
+    missing_algo_field: 分析 '{algo}' に '{field}' 設定（{label}）がありません。分析パネルで '{field}' の列を選択してください。
+    unknown_columns: '{stage} ステージは、このデータセットに存在しない列 ''{columns}'' を参照しています。利用可能な列: {available}。利用可能な列から選択してください。'
+    unknown_algorithm: '''{type}'' は認識されている分析手法ではありません。次のいずれかを選択してください: {options}。'
+    insufficient_columns_algo: 'このデータセットは「{algo}」に適した列型（{requirement}）を持っていません。データセットの列: {columns}。{requirement}を満たすデータセットを選択するか、{options}に切り替えてください。'
+    missing_output_field: 出力「{output}」には「{field}」設定（{label}）がありません。出力パネルで「{field}」の列を選択してください。
+    unknown_output: 「{type}」は認識できる出力タイプではありません。{options}のいずれかを選択してください。
+    insufficient_columns_output: 'このデータセットには ''{output}'' に適切なカラム型がありません（{requirement}）。データセットのカラム: {columns}。{requirement} を満たすデータセットを選択するか、{options} に切り替えてください。'
+    wrong_column_type: 列 '{column}' は '{field}'（{label}）に対して {expected} である必要があります。
+    algorithm_required: 分析メソッドが選択されていません。分析パネルで1つ選択してください — レシピにはアルゴリズムを伴う統計ステージが必要です。
+    unknown_field: '''{field}''は''{type}''の認識された設定ではありません。認識されている設定: {options}。'
+  field_label:
+    independentColumns: 独立変数 / 予測変数列
+    yColumn: Y軸の列
+    xColumn: X軸の列
+    responseColumn: 応答列（数値測定）
+    factorColumn: 因子列（グループ化変数）
+    categoryColumn: カテゴリ列（ラベル）
+    dependentColumn: 従属変数 / 結果変数列
+    responseColumn2: 2番目の応答列（対の測定値）
+    factorColumn2: 2番目の因子列（グループ化変数）
+    columns: 列
+  transforms:
+    connect_success: 変換がレシピに接続されました
+    disconnect_success: 変換がレシピから切断されました
+    load_error: 接続された変換の読み込みに失敗しました
+    dataset_mismatch: 変換「{id}」はデータセット「{dataset_id}」に属していません。
+    not_found: 変換 '{id}' が見つからないか、このレシピのデータセットに属していません
+  execution:
+    unknown_stage: '不明なステージタイプ: {stage_type}'
+    preparation_error: '準備ステージが失敗しました: {error}'
+    preparation_failed: 準備ステージが失敗しました
+    error: 'レシピ実行エラー: {error}'
+  result_type:
+    numeric: 数値
+    tabular: 表形式
+  column_type:
+    numeric: 数値
+    categorical: カテゴリ
+  ai_session:
+    not_found: AIレシピセッションが見つかりません
+    delete_error: AIレシピセッションの削除に失敗しました
+    load_error: AIレシピセッションの読み込みに失敗しました
+    create_error: AIレシピセッションの作成に失敗しました
+    save_error: AIセッションからレシピを保存できませんでした。
+    unauthorized: このAIレシピセッションへのアクセス権がありません。
+  delete_success: レシピ '{id}' が正常に削除されました
+  update_success: レシピ '{id}' が正常に更新されました
+  not_owned: レシピ「{id}」が見つからないか、所有していません。
+  share:
+    enabled: レシピを共有しました。
+    disabled: レシピは非公開になりました。
+  execution_not_found: 実行「{id}」が見つかりません。
+  create_success: レシピ「{name}」を作成しました。
+  not_found: レシピ「{id}」が見つかりません。
+  technique_chi_square: カイ二乗検定
+  technique_anova_two_way: 二元配置分散分析
+  technique_t_test_independent: 独立標本t検定
+  technique_correlation: 相関行列
+  technique_t_test_paired: 対応のあるt検定
+  technique_linear_regression: 線形回帰
+  technique_anova_one_way: 一元配置分散分析
+  technique_descriptive: 記述統計
+  histogram_numeric: ヒストグラムには数値列が必要です。
+  histogram_no_columns: ヒストグラムには少なくとも1つの列が必要です。
+  distribution_no_columns: 分布図には少なくとも1つの列が必要です。
+  stage_not_implemented: '{stage_type}ステージ 近日登場'
+  scoreboard:
+    technique:
+      what: 分析手法を選択
+    output_unknown:
+      what: 既知の出力タイプを選択
+    output_fields:
+      what: 出力列を選択
+    technique_unknown:
+      what: 既知の分析手法を選択
+    name:
+      what: レシピに名前を付ける
+    output:
+      what: 出力タイプを選択
+    dataset:
+      what: データセットを選択
+    output_incompatible:
+      what: 互換性のある出力タイプを選択
+    technique_fields:
+      what: 必須の列を選択
+  chip:
+    heading:
+      columns: どの列ですか？
+      output: どの出力ですか？
+      technique: どの分析手法ですか？
+statistics:
+  anova_computation_failed: '二元配置分散分析の計算に失敗しました: {error}'
+  anova_needs_three_groups: 一元配置分散分析には3つ以上のグループが必要です（{n}個見つかりました）。2グループの場合は、独立したt検定を使用してください。
+  compute_failed: '統計量の計算に失敗しました: {error}'
+  each_group_two_observations: 各グループには少なくとも2つの観測値が必要です
+  group_column_required_anova: 一元配置分散分析には、3つ以上の水準を持つカテゴリカルグループ列が必要です
+  group_column_required_ttest: 独立したt検定には、ちょうど2つの水準を持つカテゴリカルグループ列が必要です
+  need_five_observations_chi: 少なくとも5つの完全な観測値が必要です
+  need_observations_regression: 少なくとも{n}個の完全な観測値が必要です
+  need_ten_observations_anova: 二元配置分散分析には少なくとも10個の完全な観測値が必要です
+  need_three_pairs: 対応のあるt検定には少なくとも3組の完全なペアが必要です
+  need_two_categories_chi: 両方の列に少なくとも2つのカテゴリが必要です
+  need_two_numeric_correlation: 相関分析には少なくとも2つの数値列が必要です
+  need_two_valid_numeric: 少なくとも2つの有効な数値列が必要です
+  no_valid_data_after_dropna: NaNを除去した後、有効なデータがありません
+  no_valid_numeric: 有効な数値列が提供されていません
+  non_numeric_column: 非数値列
+  not_computed: 計算されていません
+  select_dependent_independent: '少なくとも2つの数値列を選択してください: 最初の列が従属変数、残りが独立変数です'
+  select_dependent_var: 数値の従属変数列を1つ選択してください
+  select_one_numeric_ttest: 独立したt検定のために数値列を1つ選択してください
+  select_two_categorical_chi: ちょうど2つのカテゴリカル列を選択してください
+  select_two_numeric_paired: 対応のあるt検定のためにちょうど2つの数値列を選択してください
+  two_factors_required: 二元配置分散分析には2つの因子が必要です
+  computation_failed: '統計量の計算に失敗しました: {error}'
+  group_fewer_than_two: グループ '{group}' の観測数が2未満です
+  column_must_be_numeric: 列 '{col}' は数値である必要があります
+  group_must_have_two_levels: グループ列 '{group}' はちょうど2つの水準を持つ必要があります（{n} 個見つかりました）
+  column_not_found: 列「{col}」が見つかりません。
+  factor_column_not_found: 因子「{factor}」の列「{col}」が見つかりません。
+  cache_cleared: キャッシュキー「{key}」をクリアしました。
+  cache_not_found: キャッシュキー '{key}' が見つかりません
+user:
+  api_key_required: このプロバイダーにはAPIキーが必要です
+  connection_name_exists: この名前の接続は既に存在します
+  connection_not_found: 接続が見つかりません
+  example_blocked: サンプルユーザーはこのアクションを実行できません
+  internal_error: 内部サーバーエラー
+  missing_fields: 必須フィールドが不足しています
+  provider_not_found: プロバイダーが見つかりません
+  user_not_found: ユーザーが見つかりません
+  example_delete_db: サンプルユーザーはデータベース接続を削除できません
+  provider_returned: 'プロバイダーが {status}: {text} を返しました'
+  fetch_failed: フェッチに失敗しました
+  no_endpoint: このプロバイダーにはエンドポイントが設定されていません。
+  unknown_provider: '不明なプロバイダー: {code}'
+  connection_timeout_local: 接続がタイムアウトしました。{code} は {baseUrl} で実行されていますか？
+  connection_timeout_remote: '{baseUrl} での {code} への接続がタイムアウトしました'
+  api_key_required_fetch: このプロバイダーにはAPIキーが必要です。
+  example_create_db: サンプルユーザーはデータベース接続を作成できません
+  example_update_db: サンプルユーザーはデータベース接続を更新できません
+  auto_create_default_detail: データセットの自動作成に失敗しました。データベースサーバーに到達できない可能性があります。
+  no_models_returned: プロバイダーはモデルを返しませんでした。何も変更されませんでした。
+validation:
+  error: '検証エラー: {count}件の問題が見つかりました'
+  password:
+    require_digit: パスワードには少なくとも1つの数字を含める必要があります。
+    min_length: パスワードは{min}文字以上である必要があります。
+    require_special: パスワードには少なくとも1つの特殊文字を含める必要があります。
+    require_lowercase: パスワードには少なくとも1つの小文字を含める必要があります。
+    require_uppercase: パスワードには少なくとも1つの大文字を含める必要があります。
+    too_weak: パスワードが弱すぎます。より強力なパスワードを選択してください。
+rag:
+  ai_provider_error: 'AIプロバイダーエラー: {error}'
+  no_tables: スキーマに検索対象のテーブルが見つかりません。
+  no_matches: データベース内に質問に一致するテキストが見つかりません。表現を変えるか、別のデータソースを選択してください。
+  no_ai_provider: '{count}件の一致するレコードが見つかりました。（自然言語回答用のAIプロバイダーが設定されていません。）'
+error:
+  dataset:
+    not_found_5: データセット '{id}' が見つかりません
+    not_found_3: 'データセットが見つからないか、アクセスできません: {error}'
+    load_failed_2: 'データの読み込みに失敗しました: {error}'
+    not_found_4: データセット '{id}' が見つからないか、アクセスできません
+    delete_failed_2: 'データセットの削除に失敗しました: {error}'
+    not_found: データセット '{id}' が見つからないか、アクセスできません
+    not_found_2: データセット「{id}」が見つかりません。
+    not_found_or_not_owned: データセット「{id}」が見つからないか、所有していません。
+    unknown_source: '不明なソースタイプです: {source_type}'
+    load_failed: 'データセットの読み込みに失敗しました: {error}'
+    load_failed_3: 仮想データセット「{id}」にSQL定義がありません。
+    table_missing: テーブル '{table}' は存在しません
+    load_failed_4: '仮想データセット ''{id}'' の読み込みに失敗しました: {error}'
+  database:
+    insert_failed: 'データベースエラー: {error}'
+    pool_not_initialized: データベースプールが初期化されていません
+  connection:
+    query_failed_7: 'データベースクエリが失敗しました: {error}'
+    type_not_supported_2: データベースタイプ '{type}' はスキーマ検出でまだサポートされていません
+    failed: 'データベースへの接続に失敗しました: {error}'
+    query_failed: 'テーブル/ビュー ''{table}'' のクエリに失敗しました: {error}'
+    query_failed_2: 'コンパイル済みSQLの実行に失敗しました: {error}'
+    type_not_supported_3: 'サポートされていないデータベース種別です: {type}'
+    query_failed_5: 'MSSQLクエリが失敗しました: {error}'
+    type_not_supported: データベース種別「{type}」はまだサポートされていません。
+    query_failed_6: 'Accessクエリが失敗しました: {error}'
+    decryption_failed: '接続パスワードの復号に失敗しました: {error}'
+    query_failed_3: 'PostgreSQLクエリが失敗しました: {error}'
+    query_failed_4: 'MySQLクエリが失敗しました: {error}'
+    connect_failed: 'MySQL接続に失敗しました: {error}'
+  execution:
+    cannot_cancel: 既に {status} の実行はキャンセルできません
+  groups:
+    invalid_group_id: 無効なgroup_idです。00～99で指定してください。
+  ai:
+    call_failed: 'AI呼び出しに失敗しました: {error}'
+  define:
+    connection_not_found: データベース接続が見つからないか、アクセスできません。
+    connection_not_found_2: 接続が見つからないか、アクセスできません。
+    dataset_creation_failed: 'データセットレコードの作成に失敗しました: {error}'
+  describe:
+    ai_connection_error: 'AI接続エラー: 利用可能な接続がありません。'
+    ai_connection_error_2: 'AI接続エラー: APIキーを復号できませんでした'
+  preparation:
+    rule_not_found: このデータセットに前処理ルール「{id}」が見つかりません。
+    rule_not_found_2: 準備ルール '{id}' が見つかりません
+notebooks:
+  import_failed_4: 'インポートの取得に失敗しました: {error}'
+  no_connection: データベース接続を選択してください。
+  example_blocked_3: サンプルユーザーはノートブックを削除できません。
+  system_db_blocked: システムデータベース '{db}' にはインポートできません。別のデータベースを使用するか、新しいデータベースを作成してください。
+  example_blocked_2: サンプルユーザーはノートブックの共有を変更できません。
+  share_error_2: '共有の更新に失敗しました: {error}'
+  invalid_format_2: 無効なノートブック形式です。.ipynb ファイルのみ受け付けられます。
+  share_error: 所有者のみが共有設定を変更できます。
+  no_db_rights: この接続にはデータベース作成権限がありません。
+  import_failed: 'ノートブックのインポートに失敗しました: {error}'
+  no_dataframes: このノートブックにはデータフレームが見つかりません
+  import_failed_3: インポートが見つかりません。
+  file_too_large: ノートブックファイルが大きすぎます。最大サイズは{max_size} MBです。
+  no_table_rights: この接続ではテーブルを作成できません — インポートは拒否されました。
+  import_failed_2: 'インポートの一覧表示に失敗しました: {error}'
+  example_blocked: サンプルユーザーはノートブックをインポートできません。
+  delete_error: 'インポートの削除に失敗しました: {error}'
+  invalid_json: '無効なJSON: {error}'
+  cells_not_list: '無効なノートブック形式: ''cells'' がリストではありません'
+  missing_cells: '無効なノートブック形式: ''cells'' キーがありません'
+  unknown_error: 不明なエラー
+  untitled: 無題
+  too_many_cells: 'セルが多すぎます（{count}）。最大: {max_cells}'
+virtual:
+  no_credentials_mysql: MySQL接続 {conn_id} の認証情報が見つかりません
+  preview_failed: 'プレビューに失敗しました: {error}'
+  execute_failed: '実行に失敗しました: {error}'
+  no_credentials_postgresql: PostgreSQL接続「{conn_id}」の認証情報が見つかりません。
+  validate:
+    dataset_id_required: 'ソース ''{alias}'': データセットソースには datasetId が必要です'
+    column_source_not_found: '列 {c_idx}: ソース ''{src_alias}'' が見つかりません'
+    no_sources: ソースが定義されていません
+    connection_not_found: 'ソース ''{alias}'': 接続 {conn_id} が見つからないか、アクセスが拒否されました'
+    join_right_source_not_found: '結合 {j_idx}: 右ソース ''{right_alias}'' が見つかりません'
+    connection_id_required: 'ソース ''{alias}'': {storage_type} ソースには connectionId が必要です'
+    dataset_not_found: 'ソース ''{alias}'': データセット {dataset_id} が見つからないか、アクセスが拒否されました'
+    join_left_source_not_found: '結合 {j_idx}: 左ソース ''{left_alias}'' が見つかりません'
+    join_column_not_found: '結合 {j_idx}: ソース「{alias}」にカラム「{column}」がありません。'
+    output_column_not_found: 'カラム {c_idx}: ソース「{src_alias}」にカラム「{column}」がありません。'
+  decision:
+    missing_value: 「{piece}」の決定には値が必要です。
+    invalid_value: '「{piece}」の決定を適用できませんでした: {error}'
+    unknown_piece: 「{piece}」はこのエンドポイントが適用できる決定ではありません。
+    model_failed: '選択内容は保存されました。アシスタントが応答できませんでした: {error}'
+    no_connection: 選択内容は保存されました。利用可能なAI接続がないため、アシスタントが応答できませんでした。
+    no_reply: 選択内容は保存されました。アシスタントは返信を生成しないまま作業ラウンドを使い切りました。続行を依頼するか、ツリー内の下書きを確認してください。
+    applied: 上記の選択を使用してください。
+  column:
+    missing_column: カラムが指定されていません。
+    unknown_action: 「{action}」はカラムアクションではありません。チェックまたはチェック解除を使用してください。
+    missing_source: 'カラムにはソースが必要です: データセットID、または接続とテーブル名。'
+  scoreboard:
+    columns:
+      needs_failed: 「{source}」のカラムを読み取れませんでした。
+      needs_empty: 「{source}」には選択できるカラムがありません。
+      what: 「{source}」の中身は何ですか？
+    joins:
+      needs: 2つ以上のソース（カラム読み取り済み）。
+      what: ソースをどのように結合しますか？
+    output_columns:
+      what: 結果にはどのカラムを含めますか？
+      needs: 1つのソース（カラム読み取り済み）。
+    name:
+      what: このデータセットにはどのような名前を付けますか？
+    sources:
+      what: このデータセットはどのテーブルから作成しますか？
+    storage:
+      what: これはライブビューにしますか、保存されたテーブルにしますか？
+      table: 保存されたテーブル
+      live: ライブビュー
+  join_suggestions:
+    invalid_sources: 結合の提案には、それぞれがエイリアスと名前を持つソースのリストが必要です（{error}）。
+  panel:
+    collapsed_required: パネルの折りたたみ状態は true または false である必要があります。
+  save:
+    invalid_definition: 'このデータセットを保存できません: {errors}'
+  tool:
+    no_sources_yet: 「{alias}」という名前のソースはありません — 下書きにはまだソースがありません。先に add_source を呼び出してください。
+    no_source: '「{alias}」という名前のソースはありません。この下書きのソース: {aliases}。'
+access:
+  connection_not_found: 接続が見つかりません
+  connection_deleted: 接続が削除されました
+  connection_saved: 接続が保存されました
+  connected_in_ms: '{elapsed} ミリ秒で接続しました'
+  connection_failed: 接続に失敗しました
+  connection_exists: 接続「{name}」は既に存在します。
+  encryption_error: '暗号化エラー: {error}'
+  db_pool_not_initialized: データベースプールが初期化されていません。
+  name_and_path_required: nameとfile_pathは必須です。
+  connection_failed_detail: '接続に失敗しました: {detail}'
+  licence_required: Accessデータベース接続には法人ライセンスが必要です。
+  file_path_required: file_pathは必須です。
+  connection_unavailable: 'Accessデータベースに接続できませんでした: {error}'
+  table_not_found: 'テーブル ''{table}'' が見つかりません: {error}'
+  invalid_port: ポートは整数でなければなりません
+  connection_params_required: host、port、user、passwordは必須です
+audio_presets:
+  invalid_chat_type: '無効なチャットタイプです: {chat_type}。次のいずれかである必要があります: {valid_types}'
+execution:
+  loading_dataset: データセットを読み込み中...
+  executing_stage: 'ステージを実行中: {stage}'
+  not_found: 実行が見つかりません
+  starting_analysis: 分析ステージを開始しています...
+  loaded_rows: '{rows} 行、{columns} 列を読み込みました'
+schema:
+  unsupported_source_type: '未対応の source_type: {source_type}。dataset、postgresql、mysql を使用してください。'
+  no_table_name: データセットにテーブル名がありません（まだ取り込まれていません）
+  connection_not_found: データベース接続が見つからないか、アクセスが拒否されました
+  connection_and_table_required: PostgreSQL/MySQLソースではconnection_idとtable_nameが必須です。
+  introspect_mysql_failed: 'MySQLのイントロスペクションに失敗しました: {error}'
+  dataset_id_required: source_type=dataset の場合、dataset_id は必須です
+  introspect_postgresql_failed: 'PostgreSQLのイントロスペクションに失敗しました: {error}'
+  dataset_not_found: データセットが見つからないか、アクセスが拒否されました
+ai_recipe:
+  message_required: メッセージが必要です
+  session_name_required: 名前が必要です
+  llm_error: 'AIサービスエラー: {error}'
+  invalid_decision: 無効な決定。
+virtual_chat:
+  connection_not_found: データベース接続が見つからないか、アクセスが拒否されました。
+  chat_session_not_found: チャットセッションが見つかりません。
+  llm_returned_error: LLMがHTTP {status_code} を返しました
+  introspection_failed: 'イントロスペクションに失敗しました: {error}'
+  llm_call_failed: 'LLMの呼び出しに失敗しました: {error}'
+  save_no_sources: '⚠️ 保存できません: データソースのイントロスペクションが行われていません。以前のメッセージで「products」や「orders」のようなテーブル名を指定してみてください。'
+  save_draft_success: '✅ 仮想データセットを下書きとして保存しました: **{name}**。データセットページで表示・編集できます。Defineタブを使用して、SQL、結合、出力列を調整してください。'
+  save_failed: '⚠️ 保存に失敗しました: {error}'
+  save_success: ✅ データセット **{name}** が正常に保存されました。既存のデータセット一覧で確認できます。「編集」で調整するか、「クローン」でバリエーションを作成できます。
+  empty_response: それについてどのように回答すればよいか分かりません。言い換えていただくか、詳細を教えていただけますか？
+  save_parse_error: '⚠️ データセットを保存できませんでした: {error}'
+system:
+  hello_world: こんにちは、世界！
+  cache_cleanup_completed: 'キャッシュクリーンアップが完了しました: {removed} 件を削除しました'
+licence:
+  delete_failed: 'ライセンスファイルの削除に失敗しました: {error}'
+  missing_content: '''content'' フィールドがありません'
+  write_failed: 'ライセンスファイルの書き込みに失敗しました: {error}'
+  delete_success: ライセンスが削除されました。オープンソースモードで動作しています。
+  no_file_to_delete: 削除するライセンスファイルがありません — すでにオープンソースモードです。
+  install_success: ライセンスが正常にインストールされました。
+notebooks_storage:
+  failed_create_table: 'テーブル「{table}」の作成に失敗しました: {error}'
+  unsupported_storage_type: 'サポートされていないストレージタイプです: {type}'
+  no_connection_details: 接続詳細が指定されていません。
+  no_connection_details_short: 接続詳細がありません
+  failed_create_table_mssql: 'テーブルの作成に失敗しました: {error}'
+  no_data_pool: データベースプールが初期化されていません
+visualization_instances:
+  viz_type_not_found: 可視化タイプが見つかりません
+  unauthorized: 認証されていません
+  invalid_viz_type: 無効な可視化タイプです
+  viz_type_id_required: visualizationTypeIdが必要です
+  no_rendered_output: レンダリングされた出力はありません
+  instance_not_found: インスタンスが見つかりません
+  invalid_instance_id: 無効なインスタンスIDです
+  internal_error: 内部サーバーエラー
+visualization_types:
+  internal_error: 内部サーバーエラー
+  slug_already_exists: スラッグは既に存在します
+  forbidden: 禁止されています
+  type_not_found: 可視化タイプが見つかりません
+  name_and_slug_required: 名前とスラッグが必要です
+test_ai:
+  no_endpoint: このプロバイダーにはエンドポイントが設定されていません。
+  endpoint_valid: '{baseUrl} のエンドポイントは有効です。'
+  unknown_provider: '不明なプロバイダー: {provider}'
+  fetch_failed: フェッチに失敗しました
+  responded_with_status: '{name} はステータス {status} で応答しました'
+  endpoint_v1_valid: '{baseUrl}/v1 のエンドポイントは有効です。'
+  connection_failed: '接続に失敗しました: {msg}'
+  api_key_required: '{name} にはAPIキーが必要です。'
+  server_reachable: '{baseUrl} の {name} サーバーは到達可能です。'
+  internal_error: 内部サーバーエラー
+  connection_timeout_local: 接続がタイムアウトしました。{name} は {baseUrl} で実行されていますか？
+ai_providers:
+  failed_to_delete_provider: プロバイダーの削除に失敗しました
+  failed_to_update_provider: プロバイダーの更新に失敗しました
+  missing_provider_id: プロバイダーIDがありません
+  missing_id_or_enabled: IDまたは有効フラグがありません
+  unauthorized: 認証されていません
+  forbidden: 禁止されています
+  provider_not_found: プロバイダーが見つかりません
+  internal_error: 内部サーバーエラー
+  invalid_provider_id: 無効なプロバイダーIDです
+ai:
+  database:
+    email_sent: レポートをメールで送信しました
+invalid_fill_method: '無効な fill_missing メソッドです: {method}。次のいずれかである必要があります: {methods}'
+column_required: 操作 '{type}' には列が必要です
+rename_new_name_required: 列名変更操作には新しい名前が必要です
+filter_operator_required: フィルター操作には演算子が必要です
+invalid_operation_type: '無効な操作タイプです: {type}。次のいずれかである必要があります: {types}'
+encode_column_required: エンコード操作には列が必要です
+invalid_target_type: '無効な target_type です: {target_type}。次のいずれかである必要があります: {types}'
+invalid_encoding: '無効なエンコーディングです: {encoding}。次のいずれかである必要があります: {types}'
+columns_required: 操作 '{type}' には columns フィールドが必要です
+filter_value_required: フィルター操作には値が必要です
+dataclean_chat:
+  message_required: メッセージは必須です
+  empty_response: 応答を生成できませんでした。もう一度お試しください。
+  dataset_id_required: datasetId は必須です
+  chat_session_not_found: データクリーニングチャットセッションが見つかりません
+  create_error: データクリーニングセッションの作成に失敗しました
+dataclean_tools:
+  no_rules_to_apply: 適用するルールがありません
+  no_rules_to_preview: プレビューするルールがありません

@@ -1,0 +1,1009 @@
+access:
+  connected_in_ms: '{elapsed}ms 만에 연결되었습니다'
+  connection_deleted: 연결이 삭제되었습니다
+  connection_exists: '''{name}'' 연결이 이미 존재합니다'
+  connection_failed: 연결에 실패했습니다
+  connection_failed_detail: '연결 실패: {detail}'
+  connection_not_found: 연결을 찾을 수 없습니다
+  connection_saved: 연결이 저장되었습니다
+  db_pool_not_initialized: 데이터베이스 풀이 초기화되지 않았습니다
+  encryption_error: '암호화 오류: {error}'
+  file_path_required: file_path가 필요합니다
+  licence_required: Access 데이터베이스 연결에는 기업용 라이선스가 필요합니다
+  name_and_path_required: name과 file_path가 필요합니다
+  invalid_port: 포트는 정수여야 합니다.
+  connection_params_required: host, port, user 및 password는 필수입니다.
+  table_not_found: '테이블 ''{table}''을(를) 찾을 수 없습니다: {error}'
+  connection_unavailable: 'Access 데이터베이스에 연결할 수 없습니다: {error}'
+admin:
+  already_full_admin: 사용자는 이미 전체 관리자입니다
+  already_group_admin: 사용자는 이미 그룹 관리자입니다
+  cannot_delete_self: 자신의 계정은 삭제할 수 없습니다
+  cannot_demote_full_admin: 전체 관리자는 강등할 수 없습니다
+  cannot_demote_self: 자신을 강등할 수 없습니다
+  cannot_promote_example: 예시 사용자는 승격할 수 없습니다
+  delete_error: 사용자 삭제 실패
+  demote_error: 사용자 강등 실패
+  description_required: 설명은 비어 있을 수 없습니다
+  example_blocked: 예시 사용자는 관리자 작업을 수행할 수 없습니다
+  group_not_found: 그룹을 찾을 수 없습니다
+  group_users_load_error: 그룹 사용자 로드 실패
+  groups_load_error: 그룹 로드 실패
+  groups_stats_error: 그룹 통계 로드 실패
+  insufficient_permissions: 이 작업에 대한 권한이 부족합니다
+  invalid_group_id: 잘못된 group_id입니다. 00-99여야 합니다
+  invalid_id: 잘못된 id입니다
+  invalid_upload_count: maxUploadCount는 0 이상의 정수여야 합니다(0은 무제한).
+  invalid_upload_size: maxUploadSizeMB는 0 이상의 정수여야 합니다(0은 무제한).
+  missing_fields: 필수 필드가 누락되었습니다
+  missing_group_id: 그룹 ID가 누락되었습니다
+  missing_id: id가 누락되었습니다
+  missing_model_id: 모델 id가 누락되었습니다
+  missing_provider_code: providerCode 매개변수가 누락되었습니다
+  missing_user_id: userId가 누락되었습니다
+  model_update_error: 모델 업데이트 실패
+  models_load_error: 모델 로드 실패
+  no_fields: 업데이트할 유효한 필드가 없습니다
+  no_group: 사용자에게 그룹이 할당되지 않았습니다
+  not_group_admin: 사용자가 그룹 관리자가 아닙니다
+  only_full_admin: 전체 관리자만 이 작업을 수행할 수 있습니다
+  promote_error: 사용자 승격 실패
+  provider_delete_error: 공급자 삭제 실패
+  provider_not_found: 공급자를 찾을 수 없습니다
+  provider_update_error: 공급자 업데이트 실패
+  providers_load_error: 공급자 로드 실패
+  slug_exists: 슬러그가 이미 존재합니다
+  update_error: 사용자 업데이트 실패
+  user_load_error: 사용자 로드 실패
+  user_not_found: 사용자를 찾을 수 없습니다
+  users_load_error: 사용자 로드 실패
+  viz_type_create_error: 시각화 유형 생성 실패
+  viz_type_delete_error: 시각화 유형 삭제 실패
+  viz_type_update_error: 시각화 유형 업데이트 실패
+  viz_types_load_error: 시각화 유형 로드 실패
+ai_recipe:
+  llm_error: 'AI 서비스 오류: {error}'
+  message_required: 메시지가 필요합니다
+  session_name_required: 이름이 필요합니다
+  invalid_decision: 잘못된 결정.
+api:
+  user:
+    connection_not_found: 연결을 찾을 수 없습니다
+    invalid_name: 이름은 문자열이어야 합니다.
+    example_blocked: 예제 사용자는 이 작업을 수행할 수 없습니다.
+    invalid_port: 포트는 정수여야 합니다.
+    invalid_connection_id: 잘못된 연결 ID입니다.
+    user_not_found: 사용자를 찾을 수 없습니다.
+    missing_fields: 필수 입력란이 누락되었습니다.
+    connection_name_exists: 이 이름을 가진 연결이 이미 존재합니다.
+    api_key_required: 이 공급자에는 API 키가 필요합니다.
+    example_delete_ai: 예제 사용자는 AI 연결을 삭제할 수 없습니다.
+    example_create_ai: 예제 사용자는 AI 연결을 만들 수 없습니다.
+    connection_id_required: 연결 ID가 필요합니다.
+    internal_error: 내부 서버 오류입니다.
+    provider_not_found: 공급자 "{provider}"을(를) 찾을 수 없습니다.
+    example_update_ai: 예제 사용자는 AI 연결을 업데이트할 수 없습니다.
+    invalid_current_password: 현재 비밀번호가 올바르지 않습니다.
+    invalid_test_state: '잘못된 테스트 결과 "{state}"입니다. 허용되는 값: {allowed}'
+    test_not_implemented: 테스트 "{test}"이(가) 등록되었지만 아직 프로브가 없습니다.
+    tuning_connection_not_found: 해당 AI 연결이 없습니다.
+    model_not_served_by_connection: 이 연결은 "{model}" 모델을 제공하지 않습니다. 해당 연결의 모델이 변경되었을 수 있으니 연결을 새로 고치거나 다른 모델을 선택하십시오.
+    unknown_test_id: '알 수 없는 테스트 "{test}"입니다. 등록된 테스트: {known}'
+    tuning_nothing_to_update: temperature, maxTokens, timeoutSeconds 중 하나 이상을 지정하십시오.
+    test_tls_failure: 보안 연결을 수립할 수 없습니다. 엔드포인트가 https여야 하는데 평문 http이거나 인증서가 만료되었을 수 있습니다. 기능 판정은 기록되지 않았고, 실패까지 걸린 시간만 기록되었습니다.
+    test_connect_refused: 해당 주소에서 수신 대기 중인 것이 없습니다. 서버에는 도달할 수 있지만 서비스가 응답하지 않았습니다. 포트와 AI 서버 실행 여부를 확인하십시오. 기능 판정은 기록되지 않았고, 실패까지 걸린 시간만 기록되었습니다.
+    tuning_invalid_temperature: Temperature는 0과 2 사이의 숫자여야 합니다.
+    test_connect_timeout: 엔드포인트가 제시간에 연결을 수락하지 않았습니다. 호스트가 다운되었거나 방화벽이 요청을 차단하고 있을 수 있습니다. 기능 판정은 기록되지 않았고, 실패까지 걸린 시간만 기록되었습니다.
+    test_attribution_required: 테스트 결과에는 실행한 사람이 기록되어야 합니다.
+    invalid_probe_timeout: 테스트 시간 제한은 1 이상 {ceiling} 이하의 정수 초 단위여야 합니다.
+    discovery_complete: '모델 {seen}개 발견: 새로 추가 {created}개, 기존에 알려짐 {refreshed}개, 더 이상 제공되지 않아 제거 {pruned}개.'
+    tuning_invalid_ai_timeout: AI 시간 제한은 1 이상의 정수 초 단위여야 합니다.
+    test_reason_required: 테스트 결과에는 이유가 기록되어야 합니다.
+    tuning_invalid_max_tokens: 출력 제한은 1 이상의 정수 토큰 단위여야 합니다.
+    connect_timeout_exceeds_probe: 연결 시간 제한({connect}초)은 테스트 시간 제한({probe}초)보다 길 수 없습니다. 연결 수립이 전체 테스트 실행 시간보다 오래 걸리도록 허용할 수 없습니다.
+    test_other_failure: '모델에 연결할 수 없었고, 원인은 이 시스템이 인식하지 못하는 유형입니다. 기능 판정은 기록되지 않았습니다: {detail}'
+    tuning_model_not_found: 해당 모델이 없습니다.
+    invalid_connect_timeout: 연결 시간 제한은 1 이상 {ceiling} 이하의 정수 초 단위여야 합니다.
+    test_read_timeout: 모델이 요청을 수락했지만 제시간에 응답하지 않았습니다. 이 호스트에 비해 너무 느릴 수 있습니다. CPU에서 대형 모델은 몇 분이 걸릴 수 있습니다. 기능 판정은 기록되지 않았고, 실패까지 걸린 시간만 기록되었습니다.
+    test_http_status: '공급자가 응답했지만 오류 응답이었습니다: {detail}. 기능 판정은 기록되지 않았고, 원인이 명확하도록 공급자가 반환한 내용이 표시됩니다.'
+    test_budget_exhausted: 모델이 답변에 도달하기 전에 출력 예산을 모두 사용하여 아무것도 반환하지 않았습니다. 기능 판정은 기록되지 않았고, 소요 시간만 기록되었습니다.
+    test_dns_failure: 엔드포인트의 호스트 이름을 확인할 수 없습니다. 주소에 오타가 있는지, 이 네트워크에서만 확인 가능한 이름인지 확인하십시오. 기능 판정은 기록되지 않았고, 실패까지 걸린 시간만 기록되었습니다.
+    model_not_found: 모델 "{model}"을(를) 공급자 "{provider}"에서 찾을 수 없습니다.
+    tuning_malformed_body: 요청 본문이 유효한 JSON이 아닙니다.
+  admin:
+    settings_modify_forbidden: 전체 관리자만 전역 설정을 수정할 수 있습니다.
+    provider_delete_error: 프로바이더 삭제에 실패했습니다.
+    settings_invalid_grace_period: 등록 유예 기간은 양수(시간)여야 합니다.
+    settings_invalid_upload_size: 기본 최대 업로드 크기는 0 이상의 정수여야 합니다(0은 무제한).
+    settings_view_forbidden: 전체 관리자만 전역 설정을 볼 수 있습니다.
+    demote_error: 사용자 강등에 실패했습니다.
+    description_required: 설명은 비워둘 수 없습니다.
+    example_blocked: 예시 사용자는 관리자 작업을 수행할 수 없습니다.
+    only_full_admin: 전체 관리자만 이 작업을 수행할 수 있습니다.
+    cannot_delete_self: 자신의 계정을 삭제할 수 없습니다.
+    settings_load_error: 전역 설정을 불러오지 못했습니다.
+    missing_group_id: 그룹 ID가 없습니다.
+    missing_id: ID가 없습니다.
+    models_load_error: 모델을 불러오지 못했습니다.
+    delete_error: 사용자 삭제에 실패했습니다.
+    already_full_admin: 사용자가 이미 전체 관리자입니다.
+    promote_error: 사용자 승급에 실패했습니다.
+    user_load_error: 사용자를 불러오지 못했습니다.
+    invalid_group_id: 잘못된 group_id입니다. 00-99여야 합니다.
+    settings_invalid_public_url: 잘못된 공개 URL 형식입니다.
+    provider_not_found: 프로바이더를 찾을 수 없습니다.
+    cannot_demote_self: 자신을 강등할 수 없습니다.
+    model_update_error: 모델 업데이트에 실패했습니다.
+    settings_save_error: 전역 설정 저장에 실패했습니다.
+    groups_load_error: 그룹을 불러오지 못했습니다.
+    group_users_load_error: 그룹 사용자를 불러오지 못했습니다.
+    settings_invalid_upload_count: 기본 최대 업로드 수는 0 이상의 정수여야 합니다(0은 무제한).
+    cannot_promote_example: 예시 사용자를 승급할 수 없습니다.
+    settings_invalid_max_registrations: 최대 등록 수는 양수이거나 무제한이어야 합니다.
+    invalid_upload_size: maxUploadSizeMB는 0 이상의 정수여야 합니다(0은 무제한).
+    missing_user_id: userId가 없습니다.
+    no_fields: 업데이트할 유효한 필드가 없습니다.
+    update_error: 사용자 업데이트에 실패했습니다.
+    provider_update_error: 프로바이더 업데이트에 실패했습니다.
+    already_group_admin: 사용자가 이미 그룹 관리자입니다.
+    missing_fields: 필수 필드가 누락되었습니다.
+    providers_load_error: 프로바이더를 불러오지 못했습니다.
+    cannot_demote_full_admin: 전체 관리자를 강등할 수 없습니다.
+    not_group_admin: 사용자가 그룹 관리자가 아닙니다.
+    insufficient_permissions: 이 작업에 대한 권한이 부족합니다.
+    no_group: 사용자에게 할당된 그룹이 없습니다
+    missing_model_id: 모델 ID가 누락되었습니다
+    settings_invalid_email_sender: 발신자 이메일 주소 형식이 잘못되었습니다
+    settings_invalid_email_timeout: 이메일 인증 시간 초과는 양수(시간)여야 합니다
+    invalid_upload_count: maxUploadCount는 0 이상의 정수여야 합니다(0은 무제한).
+    groups_stats_error: 그룹 통계를 불러오지 못했습니다
+    model_not_found: 모델을 찾을 수 없습니다.
+    user_not_found: 사용자를 찾을 수 없습니다.
+    viz_type_not_found: 시각화 유형을 찾을 수 없습니다.
+    invalid_viz_type_field: 잘못된 시각화 유형 필드 값입니다.
+    demote_success: 사용자 {name}님이 그룹 관리자에서 강등되었습니다.
+    invalid_id: 잘못된 ID입니다.
+    promote_success: 사용자 {name}님이 그룹 관리자로 승격되었습니다.
+    settings_invalid_platform_upload_size: 플랫폼 최대 업로드 크기는 음이 아닌 정수여야 합니다(0은 무제한).
+    instance_exists: 연결된 인스턴스가 {count}개 있으므로 유형을 삭제할 수 없습니다.
+    viz_type_delete_error: 시각화 유형을 삭제하지 못했습니다.
+    users_load_error: 사용자를 불러오지 못했습니다.
+    viz_type_update_error: 시각화 유형을 업데이트하지 못했습니다.
+    viz_type_create_error: 시각화 유형을 생성하지 못했습니다.
+    viz_types_load_error: 시각화 유형을 불러오지 못했습니다.
+    slug_exists: 슬러그가 이미 존재합니다.
+    instance_in_use: 연결된 인스턴스가 있어 유형을 삭제할 수 없습니다.
+    settings_demo_mode_requires_licence: 데모 모드는 유효한 라이선스 없이는 비활성화할 수 없습니다.
+    email_exists: 이메일이 이미 존재합니다.
+    invalid_email: 잘못된 이메일 형식입니다.
+    settings_not_found: 전역 설정을 찾을 수 없습니다.
+    settings_invalid_registration_mode: 등록 모드는 0, 1, 2 또는 4 중 하나여야 합니다.
+    create_user_error: 사용자 생성에 실패했습니다.
+    settings_demo_upload_count_limit: 데모 모드에서 기본 최대 업로드 횟수는 1에서 5 사이여야 합니다.
+    users_demo_upload_size_limit: 데모 모드에서 사용자의 최대 업로드 크기는 1MB에서 5MB 사이여야 합니다.
+    users_demo_upload_count_limit: 데모 모드에서 사용자의 최대 업로드 횟수는 1에서 5 사이여야 합니다.
+    settings_demo_upload_size_limit: 데모 모드에서 기본 최대 업로드 크기는 1MB에서 5MB 사이여야 합니다.
+    example_user_password_blocked: 예시 사용자의 비밀번호는 관리자가 설정할 수 없습니다.
+    invalid_admin_password: 관리자 비밀번호가 올바르지 않습니다.
+    settings_invalid_max_tokens: 출력 제한은 1 이상의 정수 토큰 단위여야 합니다.
+    field_not_owned: '이 필드는 이 페이지에 설정되어 있지 않습니다. {endpoint}. 문제 필드: {fields}'
+    settings_invalid_probe_timeout: 기본 테스트 시간 제한은 1 이상 {ceiling} 이하의 정수 초 단위여야 합니다.
+    tuning_reset_error: AI 튜닝 기본값을 초기화할 수 없습니다.
+    settings_invalid_connect_timeout: 기본 연결 시간 제한은 1 이상 {ceiling} 이하의 정수 초 단위여야 합니다.
+    settings_invalid_ai_timeout: AI 시간 제한은 1 이상의 정수 초 단위여야 합니다.
+    settings_invalid_slow_threshold: 느린 모델 제한은 1 이상의 정수 초 단위여야 합니다.
+    settings_invalid_temperature: Temperature는 0과 2 사이의 숫자여야 합니다.
+  auth:
+    email_already_verified: 이메일이 이미 인증되었습니다.
+    token_expired: 토큰이 만료되었습니다.
+    example_user_forgot_blocked: 예시 사용자는 비밀번호 재설정이 비활성화되어 있습니다.
+    user_not_found: 사용자를 찾을 수 없습니다.
+    invalid_token: 잘못되었거나 만료된 토큰
+    example_user_reset_blocked: 예시 사용자는 비밀번호 재설정이 비활성화되어 있습니다.
+    missing_fields: 필드가 누락되었습니다.
+    unauthorized: 인증되지 않았습니다.
+    missing_email: 이메일이 필요합니다
+    example_user_blocked: 예제 사용자는 비밀번호 변경이 비활성화되어 있습니다.
+    internal_error: 내부 서버 오류입니다.
+    invalid_current_password: 현재 비밀번호가 올바르지 않습니다.
+    not_authenticated: 인증되지 않았습니다.
+  register:
+    missing_fields: 필드가 누락되었습니다.
+    invalid_email: 잘못된 이메일 형식입니다.
+    settings_not_found: 전역 설정을 찾을 수 없습니다
+    internal_error: 내부 서버 오류
+    email_exists: 이메일이 이미 존재합니다
+    limit_reached: 등록 한도에 도달했습니다(최대 {max_reg}명).
+    registration_disabled: 자체 등록이 비활성화되어 있습니다. 관리자에게 문의하십시오.
+  settings:
+    example_blocked: 예제 사용자는 설정을 편집할 수 없습니다.
+    invalid_default_ai_connection: 기본 AI 연결이 잘못되었습니다.
+    load_failed: 설정을 불러오지 못했습니다.
+    save_failed: 설정 저장에 실패했습니다.
+    user_not_found: 사용자를 찾을 수 없습니다.
+    invalid_slow_threshold: 느린 모델 제한은 1 이상의 정수 초 단위여야 합니다.
+  profile:
+    update_failed: 프로필 업데이트에 실패했습니다.
+    invalid_name: 이름은 문자열이어야 합니다.
+    name_required: 이름은 필수입니다.
+    fetch_failed: 프로필을 가져오지 못했습니다.
+  global_settings_load_error: 내부 서버 오류
+  translations_load_error: 번역을 불러오지 못했습니다.
+  languages_load_error: 언어를 불러오지 못했습니다.
+audio_presets:
+  invalid_chat_type: '잘못된 채팅 유형입니다: {chat_type}. 다음 중 하나여야 합니다: {valid_types}'
+auth:
+  account_deleted: 이 계정은 삭제되었습니다.
+  email_not_verified: 이메일이 확인되지 않았습니다. 받은 편지함과 스팸 폴더를 확인하세요.
+  example_user_blocked: 예시 사용자는 비밀번호 기능이 비활성화되어 있습니다
+  example_user_forgot_blocked: 예시 사용자는 비밀번호 재설정이 비활성화되어 있습니다
+  example_user_reset_blocked: 예시 사용자는 비밀번호 재설정이 비활성화되어 있습니다
+  internal_error: 내부 서버 오류
+  invalid_credentials: 잘못된 자격 증명
+  invalid_current_password: 현재 비밀번호가 올바르지 않습니다
+  invalid_token: 잘못되었거나 만료된 토큰
+  invalid_token_error: '잘못된 토큰: {error}'
+  invalid_token_missing_user_id: '잘못된 토큰: 사용자 id 누락'
+  missing_email: 이메일이 필요합니다
+  missing_fields: 필드가 누락되었습니다
+  password_changed: 비밀번호가 성공적으로 변경되었습니다
+  password_validation_failed: 비밀번호 검증 실패
+  reset_email_sent: 비밀번호 재설정 이메일이 전송되었습니다
+  token_expired: 토큰이 만료되었습니다
+  unauthorized: 인증되지 않았습니다
+  user_not_found: 사용자를 찾을 수 없습니다
+  login_invalid_credentials: 이메일 또는 비밀번호가 잘못되었습니다.
+chat:
+  ai_provider_error: 'AI 공급자 오류: {error}'
+  connection_error: '연결 오류: {error}'
+  connection_not_found: AI 연결을 찾을 수 없거나 접근할 수 없습니다
+  delete_failed: '채팅 삭제 실패: {error}'
+  deleted: '''{id}'' 채팅이 성공적으로 삭제되었습니다'
+  generate_title_failed: '제목 생성 실패: {error}'
+  get_failed: '채팅 가져오기 실패: {error}'
+  internal_error: '내부 서버 오류: {error}'
+  list_failed: '채팅 목록 로드 실패: {error}'
+  not_found: '''{id}'' 채팅을 찾을 수 없습니다'
+  not_found_or_not_owned: '''{id}'' 채팅을 찾을 수 없거나 소유하지 않았습니다'
+  send_failed: '메시지 전송 실패: {error}'
+  title_updated: 채팅 제목이 성공적으로 업데이트되었습니다
+  update_failed: '채팅 업데이트 실패: {error}'
+  ai_repeat_loop: AI 모델이 멈춰서 응답을 완료하지 못했습니다. 다시 시도해 주세요.
+  ai_timeout: AI 모델이 응답하는 데 시간이 너무 오래 걸리고 있습니다. 다시 시도해 주세요.
+  ai_service_failed: AI 서비스가 응답하지 못했습니다. 다시 시도해 주세요.
+  timeout_out_of_range: AI 시간 제한은 1초에서 {max_seconds}초 사이여야 합니다.
+common:
+  back: 뒤로
+  cancel: 취소
+  cannot_undo: 이 작업은 되돌릴 수 없습니다.
+  clear: 지우기
+  copy: 복사
+  delete: 삭제
+  deleting: 삭제 중...
+  dismiss: 닫기
+  edit: 편집
+  generating: 생성 중...
+  loading: 로딩 중...
+  next: 다음
+  restoring: 복원 중...
+  save: 저장
+  saving: 저장 중...
+  sending: 전송 중...
+  testing: 테스트 중...
+  unknown: 알 수 없음
+  uploading: 업로드 중...
+  verifying: 확인 중...
+  view: 보기
+database:
+  connection_failed: '데이터베이스 연결 실패: {error}'
+  connection_not_found: 데이터베이스 연결을 찾을 수 없거나 접근할 수 없습니다
+  decryption_failed: '연결 비밀번호 복호화 실패: {error}'
+  insert_failed: '데이터베이스 오류: {error}'
+  pool_not_initialized: 데이터베이스 풀이 초기화되지 않았습니다
+  query_failed: '데이터베이스 쿼리 실패: {error}'
+  type_not_supported: 데이터베이스 유형 '{type}'은(는) 아직 지원되지 않습니다
+  feature_required: 이 데이터베이스 유형은 라이선스에 의해 활성화되지 않았습니다.
+datasets:
+  auto_create:
+    connection_id_required: connectionId가 필요합니다
+    connection_not_found: 연결을 찾을 수 없습니다
+    no_tables_discovered: 테이블 또는 뷰를 찾을 수 없습니다. 데이터베이스 서버가 실행 중이고 접근 가능한지 확인하세요.
+    created: 데이터세트가 생성되었습니다.
+  browse:
+    columns_failed: '열 정보 가져오기 실패: {error}'
+    discover_failed: '테이블 탐색 실패: {error}'
+    preview_failed: '테이블 미리보기 실패: {error}'
+  define:
+    connection_details_not_found: 연결 세부 정보를 찾을 수 없습니다
+    connection_not_found: 데이터베이스 연결을 찾을 수 없거나 접근할 수 없습니다
+    connection_required: connectionId가 필요합니다
+    connection_test_failed: 데이터베이스 연결 테스트 실패
+    database_connection_failed: '데이터베이스 연결 실패: {error}'
+    dataset_created: 데이터셋 '{name}'이(가) 성공적으로 정의되었습니다
+    invalid_source_type: sourceType은 'table' 또는 'view'여야 합니다
+    name_required: 데이터셋 이름이 필요합니다
+    permission_denied: '권한 거부됨: 사용자 ''{user}''은(는) 테이블 ''{table}''에 접근할 수 없습니다. SELECT 권한을 부여하세요.'
+    preview_failed: '테이블 ''{table}''에서 데이터 읽기 실패: {error}'
+    table_access_failed: '테이블 ''{table}'' 접근 실패: {error}'
+    table_name_required: tableName이 필요합니다
+    table_not_found: 테이블/뷰 '{table}'을(를) 데이터베이스 '{database}'에서 찾을 수 없습니다
+    verification_failed: '테이블/뷰 확인 실패: {error}'
+    connection_timed_out: 15초 후 연결 시간이 초과되었습니다.
+    connection_missing_db_note: '참고: PostgreSQL은 데이터베이스가 없는 경우와 권한이 부족한 경우 모두 이 오류를 반환합니다. 데이터베이스가 존재한다면 사용자에게 해당 데이터베이스에 대한 CONNECT 권한이 있는지 확인하세요.'
+    connection_successful: 연결 성공
+  delete:
+    success: 데이터셋 '{id}'이(가) 성공적으로 삭제되었습니다
+  describe:
+    ai_connection_error: 'AI 연결 오류: {error}'
+    description_generated: '''{name}''에 대한 설명이 성공적으로 생성되었습니다'
+    empty_description: 생성된 설명이 비어 있습니다. AI 공급자 구성을 확인하세요.
+    generation_failed: '설명 생성 실패: {error}'
+    timeout_out_of_range: AI 시간 제한은 1초에서 {max_seconds}초 사이여야 합니다.
+  example_blocked:
+    create: 예제 사용자는 데이터셋을 만들 수 없습니다
+    delete: 예제 사용자는 데이터셋을 삭제할 수 없습니다
+    update: 예제 사용자는 데이터셋을 업데이트할 수 없습니다
+  list_error: 데이터셋 로드 실패
+  not_found: 데이터셋 '{id}'을(를) 찾을 수 없거나 접근할 수 없습니다
+  not_found_2: 데이터셋을 찾을 수 없습니다
+  not_owned: 데이터셋 '{id}'을(를) 찾을 수 없거나 소유하고 있지 않습니다
+  not_owner: 자신의 데이터셋만 편집할 수 있습니다
+  preparation:
+    duplicate_name: 이 데이터셋에 같은 이름의 준비 규칙이 이미 존재합니다
+    no_updates: 업데이트할 필드가 없습니다
+    preview_failed: '규칙 미리보기 실패: {error}'
+    rule_created: 준비 규칙 '{name}'이(가) 성공적으로 생성되었습니다
+    rule_deleted: 준비 규칙이 성공적으로 삭제되었습니다
+    rule_in_use: '이 준비 규칙은 {count}개의 레시피에서 사용 중입니다: {names}. 먼저 레시피를 삭제하세요.'
+    rule_not_found: 이 데이터셋에서 준비 규칙 '{id}'을(를) 찾을 수 없습니다
+    rule_not_found_or_not_owned: 준비 규칙을 찾을 수 없거나 소유하고 있지 않습니다
+    rule_updated: 준비 규칙이 성공적으로 업데이트되었습니다
+    schema_failed: '데이터셋 스키마 읽기 실패: {error}'
+    already_exists: 이러한 작업이 포함된 준비 규칙이 이미 있습니다('{name}').
+  schema:
+    external_failed: '외부 데이터베이스에서 스키마 가져오기 실패: {error}'
+    from_preview: 미리보기 데이터(처음 10행)에서 파생된 스키마
+    load_error: '스키마를 로드할 수 없습니다: {error}'
+    not_implemented: 이 데이터셋 유형 '{type}'에 대한 스키마 검색은 아직 구현되지 않았습니다
+    table_missing: 테이블이 더 이상 존재하지 않습니다. 데이터세트를 다시 업로드해 주세요.
+    connection_unreachable: '연결 {connection_id}에 연결할 수 없습니다: {error}'
+    row_count_not_computed: 가상 데이터셋의 행 수는 조인을 실행하지 않으면 계산되지 않습니다.
+  share:
+    error: 공유 업데이트 실패
+    toggled: 데이터셋 '{id}'의 공유가 성공적으로 업데이트되었습니다
+  transforms:
+    clone_forbidden: 이 변환을 복제할 권한이 없습니다
+    cloned: 변환이 '{name}'(으)로 복제되었습니다
+    created: 변환 '{name}'이(가) 성공적으로 생성되었습니다
+    deleted: 변환이 성공적으로 삭제되었습니다
+    duplicate_name: 이 데이터셋에 같은 이름의 변환이 이미 존재합니다
+    in_use: '이 변환은 {count}개의 레시피에서 사용 중입니다: {names}. 먼저 레시피를 삭제하세요.'
+    no_updates: 업데이트할 필드가 없습니다
+    not_accessible: 데이터셋 '{id}'을(를) 찾을 수 없거나 접근할 수 없습니다
+    not_found: 이 데이터셋에서 변환 '{id}'을(를) 찾을 수 없습니다
+    not_found_or_not_owned: 변환을 찾을 수 없거나 소유하지 않았습니다
+    not_owned: 데이터셋 '{id}'을(를) 찾을 수 없거나 소유하지 않았습니다
+    updated: 변환이 성공적으로 업데이트되었습니다
+    already_exists: 이러한 작업이 포함된 변환이 이미 있습니다('{name}').
+  unknown_source: '알 수 없는 소스 유형: {source_type}'
+  upload:
+    error: 데이터셋 업로드에 실패했습니다
+    file_processing_failed: '파일 처리에 실패했습니다: {error}'
+    limit_reached_count: 업로드 한도에 도달했습니다. 최대 {count}개의 데이터셋이 허용됩니다.
+    limit_reached_size: 업로드 크기 한도를 초과했습니다. 최대 총 저장 용량은 {size} MB입니다.
+    success: 데이터셋 '{name}'이(가) 성공적으로 업로드되었습니다
+    unsupported_file: '지원되지 않는 파일 형식입니다. 다음 중 하나를 업로드하세요: {extensions}'
+    user_not_found: 사용자를 찾을 수 없습니다
+    dbf_memo_unsupported: 이 .dbf 파일에는 메모 필드가 포함되어 있습니다. 해당 값은 별도의 파일에 저장되므로 단일 파일 업로드로는 가져올 수 없습니다.
+    dbf_field_unsupported: '이 .dbf 파일은 읽을 수 없는 필드 유형을 선언합니다: {types}'
+  unread:
+    auth_failed: 데이터베이스가 이 계정의 자격 증명을 거부했습니다.
+    no_database: 해당 데이터베이스가 서버에 존재하지 않습니다.
+    unreachable: 이 소스에 연결할 수 없습니다. 호스트와 포트를 확인한 후 다시 시도하세요.
+    definition_incomplete: 이 소스는 데이터셋도 연결 테이블도 지정하지 않습니다.
+    incomplete: 검사가 제시간에 완료되지 않았습니다. 다시 시도하거나 연결 시간 초과 값을 늘리세요.
+    no_permission: 이 계정은 해당 소스를 읽을 수 없습니다.
+    schema_error: 소스가 응답했지만 해당 열을 읽을 수 없습니다.
+    definition_too_deep: 이 데이터셋은 5단계 이상으로 자기 자신을 참조합니다.
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: 유효 값이 제한된 '{column}'에 CHECK 제약 조건을 추가하거나 ENUM 유형을 사용하세요
+      add_not_null: '''{column}''에 NOT NULL 제약 조건을 추가하세요'
+      allows_null: '''{column}'' 열은 NULL을 허용합니다 — NOT NULL 제약 조건을 고려하세요.'
+      set_max_length: 과도한 데이터를 방지하려면 '{column}'에 최대 길이를 설정하는 것을 고려하세요
+      short_text_enum: 텍스트 열 '{column}'의 최대 길이는 {max_len}입니다 — ENUM 또는 CHECK 제약 조건 사용을 고려하세요.
+      unbounded_varchar: 길이 제한이 없는 VARCHAR 열 '{column}'
+    indexing:
+      missing_fk_index: 외래 키 열 '{column}'에 인덱스가 없습니다
+    naming:
+      mixed_case_column: 열 '{column}'에 대소문자가 혼합되어 있습니다 — snake_case를 권장합니다.
+      mixed_case_table: 테이블 이름 '{table}'에 대소문자가 혼합되어 있습니다 — snake_case를 권장합니다.
+      rename_column_reserved: SQL 예약어 충돌을 피하려면 '{column}' 열의 이름을 바꾸세요
+      rename_column_snake_case: 일관성을 위해 열 이름을 소문자 snake_case로 바꾸세요
+      rename_table_reserved: SQL 예약어 충돌을 피하려면 '{table}' 테이블 이름을 바꾸세요
+      rename_table_snake_case: 일관성을 위해 테이블 이름을 소문자 snake_case로 바꾸세요
+      reserved_keyword_column: '''{column}'' 열은 SQL 예약 키워드입니다'
+      reserved_keyword_table: 테이블 이름 '{table}'은(는) SQL 예약 키워드입니다
+    normalisation:
+      create_separate_table: '{table}에 대한 FK를 사용하여 ''{base}'' 값을 위한 별도 테이블을 만드세요'
+      multiple_address: 여러 주소 관련 열({count}개)이 감지되었습니다
+      repeating_group: '반복 그룹이 감지되었습니다: {columns}'
+      separate_address_table: '{table}에 대한 FK를 사용하여 별도 주소 테이블을 만드는 것을 고려하세요'
+    relationships:
+      add_fk: '''{column}''이(가) 다른 테이블을 참조하는 경우 FK 제약 조건 추가를 고려하세요'
+      missing_fk: '''{column}'' 열은 외래 키처럼 보이지만 FK 제약 조건이 없습니다'
+    semistructured:
+      controlled_vocab: '{column} 열에는 {count}개의 고유 값으로 구성된 통제 어휘가 포함되어 있습니다'
+      create_ref_table: '{table} 테이블을 정규화하려면 {column} 값에 대한 참조 테이블을 만드세요'
+  analyze_error: '데이터베이스 분석에 실패했습니다: {error}'
+  connection_error: '데이터베이스 연결에 실패했습니다: {error}'
+  description: AI를 사용하여 데이터베이스 설계를 분석하고 개선하세요.
+  invalid_token: 잘못된 토큰
+  no_connection: 사용 가능한 데이터베이스 연결이 없습니다. 먼저 데이터베이스에 연결하세요.
+  not_implemented: 이 기능은 곧 제공될 예정입니다.
+  pdf:
+    ai_disclaimer: AI 생성 분석 — 프로덕션에 적용하기 전에 검토하세요.
+    categories: 범주
+    code_systems: 코드 시스템
+    code_systems_label: 감지된 코드 시스템
+    col_default: 기본값
+    col_name: 열
+    col_nullable: Null 허용
+    col_pk: PK
+    col_type: 유형
+    column_meanings_label: 열 의미
+    columns: 열
+    confidence: 신뢰도
+    confidence_label: 신뢰도
+    domain_label: ISIC 도메인 분류
+    evidence_label: 근거
+    header: 데이터베이스 설계 분석 보고서
+    health_score_label: '데이터베이스 상태 점수: {score}/100'
+    health_score_subtitle: Schema AI가 평가한 전반적인 데이터베이스 상태입니다. 0 = 심각한 구조적 문제, 100 = 프로덕션 준비 완료.
+    health_score_title: 상태 점수
+    high: 높음
+    implicit_relationships_label: 암시적 관계
+    integration_subtitle: Integration AI가 감지한 암시적 관계, 연구 기능, 누락된 차원입니다.
+    integration_title: AI 통합 결과
+    issues_count: 문제({count}개)
+    issues_found: 발견된 문제
+    low: 낮음
+    medium: 중간
+    missing_dimensions_label: 누락된 차원
+    'no': 아니요
+    none: 없음
+    normalisation_title: 정규화 제안({count}개)
+    page: 페이지 {current}/{total}
+    partial_label: 부분
+    pk: PK
+    proposed_ddl_label: 제안된 DDL
+    proposed_table: 제안된 테이블
+    rationale_label: 근거
+    relationship_label: 관계
+    research_capabilities_label: 연구 기능
+    risk_breakdown: 위험 분석
+    rows: 행
+    schema_title: 스키마 (테이블 {count}개)
+    semantic_subtitle: AI 추론 열 의미, ISIC 도메인 분류 및 코드 시스템 감지.
+    semantic_title: AI 의미 분석
+    semi_structured_title: 반정형 데이터 분석 (열 {count}개)
+    subtitle: '데이터베이스: {db_name} ({db_type}) | 연결: {conn_name} (ID: {conn_id})'
+    summary: 요약
+    supported_label: 지원됨
+    table_purposes_label: 테이블 목적
+    tables: 테이블
+    title: 데이터베이스 설계 분석
+    top_actions_label: 최우선 조치
+    top_keywords: 상위 키워드
+    top_recommendations: 상위 권장 사항
+    unsupported_label: 지원되지 않음
+    value: 값
+    'yes': 예
+    ai_skipped_warning: AI 분석 건너뜀
+  pdf_error: 'PDF 생성 실패: {error}'
+  question_required: 질문은 필수입니다.
+  rag_error: 'RAG 쿼리 실패: {error}'
+  rag_not_available: RAG 검색은 PostgreSQL 데이터베이스에서만 사용할 수 있습니다. MySQL 텍스트 검색은 향후 릴리스에서 제공될 예정입니다.
+  report_data_required: 보고서 데이터는 필수입니다.
+  schema_error: '스키마 추출 실패: {error}'
+  schema_error_2: '데이터베이스 비밀번호 복호화 실패: {error}'
+  title: 데이터베이스 설계 도우미
+  unsupported_type: PostgreSQL, MySQL, MS SQL Server 및 Microsoft Access 데이터베이스만 지원됩니다.
+  unsupported_type_2: PostgreSQL, MySQL 및 MS SQL Server 데이터베이스만 지원됩니다.
+  email_pdf:
+    invalid_body: 잘못된 요청 본문입니다.
+    no_email: 계정에 이메일 주소가 없습니다.
+    send_failed: 보고서를 이메일로 보내지 못했습니다. 다시 시도해 주세요.
+  llm:
+    no_ai_provider: AI 공급자가 구성되어 있지 않습니다. 설정 → AI 연결에서 AI 공급자를 연결하세요.
+    http_error: LLM이 HTTP {status_code}을(를) 반환했습니다.
+    unknown_error: 알 수 없는 LLM 오류가 발생했습니다.
+    empty_content: LLM이 빈 콘텐츠를 반환했습니다.
+    timeout: LLM 요청이 {timeout_seconds}초 후 타임아웃되었습니다.
+    no_model: 구성된 AI 모델이 없습니다. AI 연결에 기본 모델을 설정하거나 명시적인 모델을 전달하세요.
+  stream_ai_start: AI 분석 시작 — 3명의 전문가가 병렬로...
+  stream_normalisation_start: 정규화 제안 생성 중...
+  stream_ai_semantic_start: '시맨틱 AI: 테이블 {tables}개 분석 중...'
+  stream_ai_integration_done: '통합 AI: 관계 {relationships}개, 기능 {capabilities}개'
+  stream_connected: '{db_type}에 연결됨: {db_name}'
+  stream_ai_semantic_done: '시맨틱 AI: 컬럼 의미 {columns}개, ISIC 도메인 {domains}개'
+  analysis_complete: 분석 완료
+  stream_ai_schema_done: '스키마 AI: 건강 점수 {score}/100'
+  stream_mechanical_done: '기계적 분석: 문제 {count}개 발견'
+  stream_unsupported_type: '지원되지 않는 데이터베이스 유형: {db_type}'
+  stream_semistructured_start: 반정형 컬럼 분석 중...
+  stream_extracting_schema: '{db_type}에서 스키마 추출 중...'
+  stream_mechanical_start: 기계적 분석 실행 중...
+  stream_connecting: 데이터베이스에 연결 중...
+  analysis_cancelled: 분석 스트림 취소됨(클라이언트 연결 끊김)
+  ai_skipped_message: 'AI 분석 건너뜀 — {count}개의 문제 발견 (제한: {limit}). 아래 기계적 검토 결과를 확인하고 데이터베이스를 정리한 후 AI로 다시 실행하세요.'
+  stream_ai_integration_start: '통합 AI: 관계 감지 중...'
+  ai_skipped_reason: '이 보고서에는 기계적 분석만 포함되어 있습니다. 데이터베이스가 {count}개 문제를 생성하여(제한: {limit}) AI 강화 분석을 건너뛰었습니다. 아래 기계적 분석 결과를 검토하고 데이터베이스를 정리한 후, 맥락 인식 설명, 시맨틱 인사이트, 정규화 제안을 위해 AI로 다시 실행하세요.'
+  stream_ai_schema_start: '스키마 AI: 테이블 {tables}개 분석 중...'
+  stream_normalisation_skipped: '정규화: 건너뜀({error})'
+  stream_analysis_failed: '분석 실패: {error}'
+  stream_normalisation_timeout: '정규화: 90초 후 시간 초과'
+  stream_schema_done: '스키마 추출됨: 테이블 {tables}개, 컬럼 {columns}개'
+  stream_ai_done: 'AI 분석 완료 — 상태: {status}'
+  stream_normalisation_done: '정규화: 제안 {count}개'
+error:
+  ai:
+    call_failed: 'AI 호출 실패: {error}'
+  connection:
+    connect_failed: 'MySQL 연결 실패: {error}'
+    decryption_failed: '연결 비밀번호 복호화 실패: {error}'
+    failed: '데이터베이스 연결 실패: {error}'
+    query_failed: '테이블/뷰 ''{table}'' 쿼리 실패: {error}'
+    query_failed_2: '컴파일된 SQL을 실행하지 못했습니다: {error}'
+    query_failed_3: 'PostgreSQL 쿼리 실패: {error}'
+    query_failed_4: 'MySQL 쿼리 실패: {error}'
+    query_failed_5: 'MSSQL 쿼리 실패: {error}'
+    query_failed_6: 'Access 쿼리 실패: {error}'
+    query_failed_7: '데이터베이스 쿼리 실패: {error}'
+    type_not_supported: 데이터베이스 유형 '{type}'은(는) 아직 지원되지 않습니다.
+    type_not_supported_2: 데이터베이스 유형 '{type}'은(는) 스키마 검색에 아직 지원되지 않습니다.
+    type_not_supported_3: '지원되지 않는 데이터베이스 유형: {type}'
+  database:
+    insert_failed: '데이터베이스 오류: {error}'
+    pool_not_initialized: 데이터베이스 풀이 초기화되지 않았습니다.
+  dataset:
+    delete_failed_2: '데이터세트를 삭제하지 못했습니다: {error}'
+    load_failed: '데이터세트 로드 실패: {error}'
+    load_failed_2: '데이터를 로드하지 못했습니다: {error}'
+    load_failed_3: 가상 데이터세트 '{id}'에 SQL 정의가 없습니다.
+    load_failed_4: '가상 데이터세트 ''{id}'' 로드 실패: {error}'
+    not_found: 데이터세트 '{id}'을(를) 찾을 수 없거나 접근할 수 없습니다.
+    not_found_2: 데이터세트 '{id}'을(를) 찾을 수 없습니다.
+    not_found_3: '데이터세트를 찾을 수 없거나 접근할 수 없습니다: {error}'
+    not_found_4: 데이터세트 '{id}'을(를) 찾을 수 없거나 접근할 수 없습니다.
+    not_found_5: 데이터세트 '{id}'을(를) 찾을 수 없습니다.
+    not_found_or_not_owned: 데이터세트 '{id}'을(를) 찾을 수 없거나 소유하지 않습니다.
+    table_missing: 테이블 '{table}'이(가) 존재하지 않습니다.
+    unknown_source: '알 수 없는 소스 유형: {source_type}'
+  define:
+    connection_not_found: 데이터베이스 연결을 찾을 수 없거나 접근할 수 없습니다.
+    connection_not_found_2: 연결을 찾을 수 없거나 접근할 수 없습니다.
+    dataset_creation_failed: '데이터세트 레코드 생성 실패: {error}'
+  describe:
+    ai_connection_error: 'AI 연결 오류: 사용 가능한 연결이 없습니다.'
+    ai_connection_error_2: 'AI 연결 오류: API 키 복호화 실패'
+  execution:
+    cannot_cancel: 이미 {status} 상태인 실행은 취소할 수 없습니다.
+  groups:
+    invalid_group_id: 잘못된 group_id입니다. 00-99여야 합니다.
+  preparation:
+    rule_not_found: 이 데이터세트에 대한 준비 규칙 '{id}'을(를) 찾을 수 없습니다.
+    rule_not_found_2: 준비 규칙 '{id}'을(를) 찾을 수 없습니다.
+execution:
+  executing_stage: '단계 실행 중: {stage}'
+  loaded_rows: '{rows}개 행, {columns}개 열을 로드했습니다.'
+  loading_dataset: 데이터세트 로드 중...
+  not_found: 실행을 찾을 수 없습니다.
+  starting_analysis: 분석 단계 시작 중...
+groups:
+  admin_required: 관리자 권한이 필요합니다.
+  cannot_delete_self: 자신의 계정은 삭제할 수 없습니다.
+  description_required: 설명은 비워둘 수 없습니다.
+  insufficient_permissions: 그룹을 관리할 권한이 없습니다.
+  invalid_group_id: 잘못된 user_group입니다. 00-99여야 합니다.
+  not_authorized: 이 사용자의 그룹을 볼 권한이 없습니다.
+  not_found: 그룹 '{id}'을(를) 찾을 수 없습니다.
+  update_failed: 그룹 업데이트 실패
+  update_success: 그룹 '{id}' 설명이 업데이트되었습니다.
+  user_not_found: 사용자를 찾을 수 없습니다.
+  user_updated: 사용자 그룹이 성공적으로 업데이트되었습니다.
+  missing_id: 리소스 ID가 누락되었습니다.
+  resource_not_found: 리소스를 찾을 수 없습니다.
+licence:
+  delete_failed: '라이선스 파일 삭제 실패: {error}'
+  missing_content: '''content'' 필드가 누락되었습니다.'
+  write_failed: '라이선스 파일 쓰기 실패: {error}'
+  delete_success: 라이선스가 제거되었습니다. 오픈소스 모드로 실행 중입니다.
+  no_file_to_delete: 삭제할 라이선스 파일이 없습니다. 이미 오픈소스 모드입니다.
+  install_success: 라이선스가 성공적으로 설치되었습니다.
+notebooks:
+  delete_error: '가져오기 삭제 실패: {error}'
+  example_blocked: 예시 사용자는 노트북을 가져올 수 없습니다.
+  example_blocked_2: 예시 사용자는 노트북 공유 설정을 변경할 수 없습니다.
+  example_blocked_3: 예시 사용자는 노트북을 삭제할 수 없습니다.
+  file_too_large: 노트북 파일이 너무 큽니다. 최대 크기는 {max_size}MB입니다.
+  import_failed: '노트북 가져오기 실패: {error}'
+  import_failed_2: '가져오기 목록을 불러오지 못했습니다: {error}'
+  import_failed_3: 가져오기를 찾을 수 없습니다
+  import_failed_4: '가져오기를 불러오지 못했습니다: {error}'
+  invalid_format_2: 잘못된 노트북 형식입니다. .ipynb 파일만 허용됩니다.
+  no_connection: 데이터베이스 연결을 선택하십시오.
+  no_dataframes: 이 노트북에서 데이터프레임을 찾을 수 없습니다
+  no_db_rights: 이 연결에는 데이터베이스 생성 권한이 없습니다.
+  no_table_rights: 이 연결은 테이블을 생성할 수 없습니다 — 가져오기가 거부되었습니다.
+  share_error: 소유자만 공유 설정을 변경할 수 있습니다.
+  share_error_2: '공유 설정을 업데이트하지 못했습니다: {error}'
+  system_db_blocked: 시스템 데이터베이스 '{db}'에는 가져올 수 없습니다. 다른 데이터베이스를 사용하거나 새로 만드십시오.
+  cells_not_list: '잘못된 노트북 형식: ''cells''이(가) 목록이 아닙니다.'
+  untitled: 제목 없음
+  too_many_cells: '셀이 너무 많습니다({count}). 최대: {max_cells}'
+  missing_cells: '잘못된 노트북 형식: ''cells'' 키가 없습니다.'
+  invalid_json: '잘못된 JSON: {error}'
+  unknown_error: 알 수 없는 오류
+notebooks_storage:
+  failed_create_table: '테이블 {table} 생성 실패: {error}'
+  failed_create_table_mssql: '테이블 생성 실패: {error}'
+  no_connection_details: 연결 정보가 제공되지 않았습니다
+  no_connection_details_short: 연결 정보 없음
+  unsupported_storage_type: '지원되지 않는 저장소 유형: {type}'
+  no_data_pool: 데이터 데이터베이스 풀이 초기화되지 않았습니다.
+rag:
+  ai_provider_error: 'AI 공급자 오류: {error}'
+  no_ai_provider: 일치하는 레코드 {count}개를 찾았습니다. (자연어 응답을 위한 AI 공급자가 구성되어 있지 않습니다.)
+  no_matches: 데이터베이스에서 질문과 일치하는 텍스트를 찾지 못했습니다. 표현을 바꾸거나 다른 데이터 소스를 선택해 보십시오.
+  no_tables: 스키마에 검색할 테이블이 없습니다.
+recipes:
+  ai_session:
+    create_error: AI 레시피 세션을 생성하지 못했습니다
+    delete_error: AI 레시피 세션을 삭제하지 못했습니다
+    load_error: AI 레시피 세션을 불러오지 못했습니다
+    not_found: AI 레시피 세션을 찾을 수 없습니다
+    save_error: AI 세션에서 레시피를 저장하지 못했습니다
+    unauthorized: 이 AI 레시피 세션에 접근할 수 없습니다
+  column_type:
+    categorical: 범주형
+    numeric: 수치형
+  columns_required: 최소한 하나의 열을 선택하세요
+  create_success: 레시피 '{name}'이(가) 성공적으로 생성되었습니다
+  data_selection_error: '데이터 선택 실패: {error}'
+  dataset_not_found: 데이터셋을 찾을 수 없습니다
+  dataset_required: 데이터셋을 선택하세요
+  delete_error: '레시피를 삭제하지 못했습니다: {error}'
+  delete_success: 레시피 '{id}'이(가) 성공적으로 삭제되었습니다
+  execute_error: '레시피를 실행하지 못했습니다: {error}'
+  execution:
+    error: '레시피 실행 오류: {error}'
+    preparation_error: '준비 단계 실패: {error}'
+    preparation_failed: 준비 단계 실패
+    unknown_stage: '알 수 없는 단계 유형: {stage_type}'
+  execution_completed: 실행이 성공적으로 완료되었습니다
+  execution_failed: 실행 실패
+  execution_load_error: '실행을 불러오지 못했습니다: {error}'
+  execution_not_found: 실행 '{id}'을(를) 찾을 수 없습니다
+  executions_load_error: '실행 목록을 불러오지 못했습니다: {error}'
+  field_label:
+    categoryColumn: 범주 열(레이블)
+    dependentColumn: 종속/결과 열
+    factorColumn: 요인 열(그룹 변수)
+    independentColumns: 독립/예측 변수 열
+    responseColumn: 반응 열(수치 측정값)
+    responseColumn2: 두 번째 반응 열(대응 측정값)
+    xColumn: X축 열
+    yColumn: Y축 열
+    factorColumn2: 두 번째 요인 열(그룹 변수)
+    columns: 열
+  invalid_stage: 레시피에 잘못된 단계입니다
+  invalid_stage_type: '잘못된 단계 유형: {type}. 다음 중 하나여야 합니다: {types}'
+  load_datasets_error: '데이터셋 목록을 불러오지 못했습니다: {error}'
+  load_error: '레시피 목록을 불러오지 못했습니다: {error}'
+  name_required: 레시피 이름은 필수입니다
+  no_columns_exist: 선택한 열이 데이터셋에 하나도 없습니다
+  no_dataset: 이 레시피와 연결된 데이터셋이 없습니다
+  no_stages: 레시피에는 단계가 하나 이상 있어야 합니다
+  no_updates: 업데이트할 필드가 없습니다
+  not_found: 레시피 '{id}'을(를) 찾을 수 없습니다
+  not_owned: 레시피 '{id}'을(를) 찾을 수 없거나 소유자가 아닙니다
+  preparation:
+    all_rules_failed: '모든 규칙이 실패했습니다: {errors}'
+    no_db_pool: 준비 단계에 데이터베이스 풀을 사용할 수 없습니다
+    rule_failed: '규칙 ''{rule_id}'': {error}'
+    rule_not_found: 규칙 '{rule_id}'을(를) 찾을 수 없습니다
+    rules_applied: 준비 규칙 {count}개 적용됨
+  requirement:
+    anova_one_way: 범주형 열(요인) 1개와 수치형 열(반응) 1개
+    anova_two_way: 범주형 열 2개(두 요인)와 수치형 열 1개(반응 변수)
+    bar: 범주형 열 1개(x축)와 수치형 열 1개(y축)
+    chi_square: 범주형 열 2개
+    correlation: 수치형 열 최소 2개
+    descriptive: 수치형 열 최소 1개
+    distribution: 수치형 열 1개
+    histogram: 수치형 열 1개(x축)
+    line: 수치형 열 2개(x 및 y)
+    linear_regression: 수치형 열 최소 2개(예측 변수 및 결과 변수)
+    none: 출력 불필요
+    pie: 범주형 열 1개(라벨)
+    scatter: 수치형 열 2개(x 및 y)
+    t_test_independent: 범주형 열 1개(그룹용)와 수치형 열 1개(비교용)
+    t_test_paired: 수치형 열 2개(짝지어진 측정값)
+    table: 임의의 열
+    donut: 범주형 열 1개(레이블)
+    area: 숫자 열 2개(x 및 y)
+    hbar: 범주형 열 1개(y축) 및 숫자 열 1개(x축)
+  result_type:
+    numeric: 수치형
+    tabular: 표 형식
+  scatter_two_columns: 산점도에는 최소 두 개의 열이 필요합니다
+  scatter_two_numeric: 산점도에는 수치형 열 두 개가 필요합니다
+  schema_error: '열 스키마를 불러오지 못했습니다: {error}'
+  share:
+    disabled: 레시피가 비공개로 전환되었습니다
+    enabled: 레시피가 성공적으로 공유되었습니다
+  transforms:
+    connect_success: 변환이 레시피에 연결되었습니다
+    dataset_mismatch: 변환 '{id}'은(는) 데이터셋 '{dataset_id}'에 속하지 않습니다
+    disconnect_success: 변환이 레시피에서 연결 해제되었습니다
+    load_error: 연결된 변환을 불러오지 못했습니다
+    not_found: 변환 '{id}'을(를) 찾을 수 없거나 이 레시피의 데이터셋에 속하지 않습니다
+  unknown_stage: '알 수 없는 단계 유형: {stage_type}'
+  unsupported_chart_type: '지원되지 않는 차트 유형: {chart_type}'
+  update_error: '레시피 업데이트에 실패했습니다: {error}'
+  update_success: 레시피 '{id}'이(가) 성공적으로 업데이트되었습니다
+  validation:
+    failed: '레시피 검증 실패: {errors}'
+    incompatible_algo_output: 분석 '{algo}'은(는) {result_type} 결과를 생성하므로 '{output}' 차트로 표시할 수 없습니다. 출력 유형을 '{algo}'과(와) 호환되는 유형({options})으로 변경하세요.
+    insufficient_columns_algo: '이 데이터셋에는 ''{algo}''({requirement})에 적합한 열 유형이 없습니다. 데이터셋 열: {columns}. {requirement}을(를) 갖춘 데이터셋을 선택하거나 다음으로 전환하세요: {options}.'
+    insufficient_columns_output: '이 데이터셋에는 ''{output}''({requirement})에 적합한 열 유형이 없습니다. 데이터셋 열: {columns}. {requirement}을(를) 갖춘 데이터셋을 선택하거나 다음으로 전환하세요: {options}.'
+    missing_algo_field: 분석 '{algo}'에 '{field}' 설정({label})이(가) 없습니다. 분석 패널에서 '{field}'에 대한 열을 선택하세요.
+    missing_output_field: 출력 '{output}'에 '{field}' 설정({label})이(가) 없습니다. 출력 패널에서 '{field}'에 대한 열을 선택하세요.
+    unknown_algorithm: '''{type}''은(는) 인식된 분석 방법이 아닙니다. {options} 중 하나를 선택하세요.'
+    unknown_columns: '{stage} 단계가 이 데이터세트에 없는 열 ''{columns}''을(를) 참조합니다. 사용 가능한 열: {available}. 사용 가능한 열 중에서 선택하세요.'
+    unknown_output: '''{type}''은(는) 인식된 출력 유형이 아닙니다. {options} 중 하나를 선택하세요.'
+    wrong_column_type: 열 '{column}'은(는) '{field}'({label})에 대해 {expected}이어야 합니다.
+    algorithm_required: 분석 방법이 선택되지 않았습니다. 분석 패널에서 하나를 선택하세요 — 레시피에는 알고리즘이 있는 통계 단계가 필요합니다.
+    unknown_field: '''{field}''은(는) ''{type}''에 대해 인식할 수 없는 설정입니다. 인식 가능한 설정: {options}.'
+  visualisation_columns_required: 시각화에는 최소 하나의 열이 필요합니다
+  visualisation_error: '시각화에 실패했습니다: {error}'
+  visualisation_generated: 시각화가 성공적으로 생성되었습니다
+  technique_linear_regression: 선형 회귀
+  technique_anova_two_way: 이원 분산 분석
+  technique_t_test_paired: 대응 표본 t-검정
+  technique_anova_one_way: 일원 분산 분석
+  technique_correlation: 상관관계 행렬
+  technique_chi_square: 카이제곱 검정
+  technique_t_test_independent: 독립 표본 t-검정
+  technique_descriptive: 기술 통계
+  histogram_numeric: 히스토그램에는 숫자 열이 필요합니다.
+  histogram_no_columns: 히스토그램에는 최소한 하나의 열이 필요합니다.
+  distribution_no_columns: 분포 차트에는 최소한 하나의 열이 필요합니다.
+  stage_not_implemented: '{stage_type} 스테이지가 곧 출시됩니다.'
+  scoreboard:
+    output_fields:
+      what: 출력 열을 선택하세요
+    name:
+      what: 레시피 이름을 지정하세요
+    technique:
+      what: 분석 방법을 선택하세요
+    technique_unknown:
+      what: 알려진 분석 방법을 선택하세요
+    technique_fields:
+      what: 필요한 열을 선택하세요
+    output:
+      what: 출력 유형을 선택하세요
+    output_incompatible:
+      what: 호환되는 출력 유형을 선택하세요
+    output_unknown:
+      what: 알려진 출력 유형을 선택하세요
+    dataset:
+      what: 데이터셋을 선택하세요
+  chip:
+    heading:
+      output: 어떤 출력인가요?
+      columns: 어떤 열인가요?
+      technique: 어떤 분석 방법인가요?
+schema:
+  connection_and_table_required: PostgreSQL/MySQL 소스에는 connection_id와 table_name이 필요합니다
+  connection_not_found: 데이터베이스 연결을 찾을 수 없거나 접근이 거부되었습니다
+  dataset_id_required: source_type=dataset에는 dataset_id가 필요합니다
+  dataset_not_found: 데이터셋을 찾을 수 없거나 접근이 거부되었습니다
+  introspect_mysql_failed: 'MySQL 인트로스펙션에 실패했습니다: {error}'
+  introspect_postgresql_failed: 'PostgreSQL 인트로스펙션에 실패했습니다: {error}'
+  no_table_name: 데이터셋에 테이블 이름이 없습니다(아직 인제스트되지 않음)
+  unsupported_source_type: '지원되지 않는 source_type: {source_type}. dataset, postgresql 또는 mysql을 사용하세요.'
+statistics:
+  anova_computation_failed: '이원 분산 분석 계산에 실패했습니다: {error}'
+  anova_needs_three_groups: 일원 분산 분석에는 3개 이상의 그룹이 필요합니다({n}개 발견). 2개 그룹인 경우 독립 t-검정을 사용하세요.
+  cache_cleared: 캐시 키 '{key}'이(가) 삭제되었습니다
+  cache_not_found: 캐시 키 '{key}'을(를) 찾을 수 없습니다
+  column_must_be_numeric: 열 '{col}'은(는) 수치형이어야 합니다
+  column_not_found: 열 '{col}'을(를) 찾을 수 없습니다
+  computation_failed: '통계 계산에 실패했습니다: {error}'
+  compute_failed: '통계를 계산하지 못했습니다: {error}'
+  each_group_two_observations: 각 그룹에는 최소 2개의 관측값이 있어야 합니다
+  factor_column_not_found: 요인 {factor} 열 '{col}'을(를) 찾을 수 없습니다
+  group_column_required_anova: 일원 분산 분석에는 수준이 3개 이상인 범주형 그룹 열이 필요합니다
+  group_column_required_ttest: 독립 t-검정에는 수준이 정확히 2개인 범주형 그룹 열이 필요합니다
+  group_fewer_than_two: 그룹 '{group}'은(는) 관측값이 2개 미만입니다
+  group_must_have_two_levels: 그룹 열 '{group}'은(는) 정확히 2개의 수준을 가져야 합니다({n}개 발견)
+  need_five_observations_chi: 최소 5개의 완전한 관측값이 필요합니다
+  need_observations_regression: 최소 {n}개의 완전한 관측값이 필요합니다
+  need_ten_observations_anova: 이원 분산 분석에는 최소 10개의 완전한 관측값이 필요합니다
+  need_three_pairs: 대응 t-검정에는 최소 3개의 완전한 짝이 필요합니다
+  need_two_categories_chi: 두 열 모두 최소 2개의 범주가 필요합니다
+  need_two_numeric_correlation: 상관관계 분석에는 최소 2개의 수치형 열이 필요합니다
+  need_two_valid_numeric: 유효한 수치형 열이 최소 2개 필요합니다
+  no_valid_data_after_dropna: NaN 제거 후 유효한 데이터가 없습니다
+  no_valid_numeric: 유효한 수치형 열이 제공되지 않았습니다
+  non_numeric_column: 수치형이 아닌 열
+  not_computed: 계산되지 않음
+  select_dependent_independent: '수치형 열을 최소 2개 선택하세요: 첫 번째 = 종속 변수, 나머지 = 독립 변수'
+  select_dependent_var: 수치형 종속 변수 열을 하나 선택하세요
+  select_one_numeric_ttest: 독립 t-검정을 위한 수치형 열을 하나 선택하세요
+  select_two_categorical_chi: 범주형 열을 정확히 두 개 선택하세요
+  select_two_numeric_paired: 대응 t-검정을 위해 수치형 열을 정확히 두 개 선택하세요
+  two_factors_required: 이원 분산 분석에는 두 개의 요인이 필요합니다
+system:
+  cache_cleanup_completed: '캐시 정리가 완료되었습니다: {removed}개 항목 제거됨'
+  hello_world: 안녕, 세계!
+user:
+  api_key_required: 이 제공자에는 API 키가 필요합니다
+  connection_name_exists: 이 이름의 연결이 이미 존재합니다
+  connection_not_found: 연결을 찾을 수 없습니다
+  example_blocked: 예제 사용자는 이 작업을 수행할 수 없습니다
+  internal_error: 내부 서버 오류
+  missing_fields: 필수 필드가 누락되었습니다
+  provider_not_found: 제공자를 찾을 수 없습니다
+  user_not_found: 사용자를 찾을 수 없습니다
+  example_create_db: 예시 사용자는 데이터베이스 연결을 만들 수 없습니다.
+  connection_timeout_remote: '{baseUrl}의 {code} 연결 시간이 초과되었습니다.'
+  auto_create_default_detail: 데이터셋 자동 생성에 실패했습니다. 데이터베이스 서버에 연결할 수 없을 수 있습니다.
+  provider_returned: '프로바이더가 {status} 상태를 반환했습니다: {text}'
+  api_key_required_fetch: 이 프로바이더에는 API 키가 필요합니다.
+  fetch_failed: fetch 실패
+  unknown_provider: '알 수 없는 프로바이더: {code}'
+  no_endpoint: 이 프로바이더에 구성된 엔드포인트가 없습니다.
+  example_delete_db: 예시 사용자는 데이터베이스 연결을 삭제할 수 없습니다.
+  connection_timeout_local: 연결 시간 초과. {code}이(가) {baseUrl}에서 실행 중인가요?
+  example_update_db: 예제 사용자는 데이터베이스 연결을 업데이트할 수 없습니다
+  no_models_returned: 공급자가 모델을 반환하지 않았습니다. 변경된 사항은 없습니다.
+validation:
+  error: '유효성 검사 오류: {count}개 문제 발견'
+  password:
+    too_weak: 비밀번호가 너무 약합니다. 더 강력한 비밀번호를 선택하세요.
+    require_lowercase: 비밀번호에는 소문자가 하나 이상 포함되어야 합니다.
+    min_length: 비밀번호는 {min}자 이상이어야 합니다.
+    require_special: 비밀번호에는 특수 문자가 하나 이상 포함되어야 합니다.
+    require_digit: 비밀번호에는 숫자가 하나 이상 포함되어야 합니다.
+    require_uppercase: 비밀번호에는 대문자가 하나 이상 포함되어야 합니다.
+virtual:
+  execute_failed: '실행에 실패했습니다: {error}'
+  no_credentials_mysql: MySQL 연결 {conn_id}에 대한 자격 증명을 찾을 수 없습니다
+  no_credentials_postgresql: PostgreSQL 연결 {conn_id}에 대한 자격 증명을 찾을 수 없습니다
+  preview_failed: '미리보기에 실패했습니다: {error}'
+  validate:
+    join_right_source_not_found: '조인 {j_idx}: 오른쪽 소스 ''{right_alias}''을(를) 찾을 수 없습니다.'
+    column_source_not_found: '열 {c_idx}: 소스 ''{src_alias}''을(를) 찾을 수 없습니다.'
+    dataset_not_found: '소스 ''{alias}'': 데이터세트 {dataset_id}을(를) 찾을 수 없거나 액세스가 거부되었습니다.'
+    connection_not_found: '소스 ''{alias}'': 연결 {conn_id}을(를) 찾을 수 없거나 액세스가 거부되었습니다.'
+    join_left_source_not_found: '조인 {j_idx}: 왼쪽 소스 ''{left_alias}''을(를) 찾을 수 없습니다.'
+    no_sources: 정의된 소스가 없습니다.
+    connection_id_required: '소스 ''{alias}'': {storage_type} 소스에는 connectionId가 필요합니다.'
+    dataset_id_required: '소스 ''{alias}'': 데이터세트 소스에는 datasetId가 필요합니다.'
+    output_column_not_found: '열 {c_idx}: 소스 ''{src_alias}''에 ''{column}'' 열이 없습니다.'
+    join_column_not_found: '조인 {j_idx}: 소스 ''{alias}''에 ''{column}'' 열이 없습니다.'
+  scoreboard:
+    name:
+      what: 이 데이터셋의 이름은 무엇으로 해야 하나요?
+    output_columns:
+      what: 결과에는 어떤 열이 포함되어야 하나요?
+      needs: 소스 1개, 해당 열 읽음.
+    joins:
+      what: 소스를 어떻게 조인해야 하나요?
+      needs: 소스 2개 이상, 해당 열 읽음.
+    columns:
+      needs_empty: '''{source}''에는 선택할 열이 없습니다.'
+      what: '''{source}'' 안에는 무엇이 있나요?'
+      needs_failed: '''{source}''의 열을 읽을 수 없습니다.'
+    sources:
+      what: 이 데이터셋은 어떤 테이블에서 만들어야 하나요?
+    storage:
+      what: 이것을 라이브 뷰로 할까요, 아니면 저장된 테이블로 할까요?
+      live: 라이브 뷰
+      table: 저장된 테이블
+  decision:
+    model_failed: '선택이 저장되었습니다. 어시스턴트가 응답할 수 없습니다: {error}'
+    invalid_value: '''{piece}'' 결정을 적용할 수 없습니다: {error}'
+    unknown_piece: '''{piece}''은(는) 이 엔드포인트가 적용할 수 있는 결정이 아닙니다.'
+    no_connection: 선택이 저장되었습니다. 사용 가능한 AI 연결이 없어 어시스턴트가 응답할 수 없습니다.
+    missing_value: '''{piece}'' 결정에는 값이 필요합니다.'
+    no_reply: 선택 사항이 저장되었습니다. 어시스턴트가 응답을 생성하지 않은 채 작업 라운드를 모두 소진했습니다. 계속하도록 요청하거나 트리에서 초안을 확인하세요.
+    applied: 위의 선택 항목을 사용하세요.
+  column:
+    missing_column: 열 이름이 지정되지 않았습니다.
+    missing_source: '열에는 소스가 필요합니다: 데이터셋 ID 또는 연결 및 테이블 이름.'
+    unknown_action: '''{action}''은(는) 열 작업이 아닙니다. tick 또는 untick을 사용하세요.'
+  join_suggestions:
+    invalid_sources: 조인 제안에는 각각 별칭과 이름이 있는 소스 목록이 필요합니다 ({error}).
+  save:
+    invalid_definition: '이 데이터셋을 저장할 수 없습니다: {errors}'
+  panel:
+    collapsed_required: 패널의 접힘 상태는 true 또는 false여야 합니다.
+  tool:
+    no_sources_yet: '''{alias}''라는 이름의 소스가 없습니다 — 초안에 아직 소스가 없습니다. 먼저 add_source를 호출하세요.'
+    no_source: '''{alias}''라는 이름의 소스가 없습니다. 이 초안의 소스: {aliases}.'
+virtual_chat:
+  chat_session_not_found: 채팅 세션을 찾을 수 없습니다
+  connection_not_found: 데이터베이스 연결을 찾을 수 없거나 접근이 거부되었습니다.
+  introspection_failed: '인트로스펙션 실패: {error}'
+  llm_call_failed: 'LLM 호출 실패: {error}'
+  llm_returned_error: LLM이 HTTP {status_code} 코드를 반환했습니다.
+  empty_response: 어떻게 응답해야 할지 잘 모르겠습니다. 다시 말씀해 주시거나 자세한 내용을 제공해 주시겠어요?
+  save_parse_error: '⚠️ 데이터셋을 저장할 수 없습니다: {error}'
+  save_failed: '⚠️ 저장 실패: {error}'
+  save_no_sources: '⚠️ 저장할 수 없습니다: 데이터 소스가 검사되지 않았습니다. 이전 메시지에서 ''products''나 ''orders'' 같은 테이블 이름을 언급해 보세요.'
+  save_draft_success: '✅ 가상 데이터셋이 초안으로 저장되었습니다: **{name}**. 데이터셋 페이지에서 확인하고 편집할 수 있습니다. Define 탭을 사용하여 SQL, 조인, 출력 열을 다듬으세요.'
+  save_success: ✅ 데이터셋 **{name}**이(가) 성공적으로 저장되었습니다. 기존 데이터셋 목록에서 찾을 수 있습니다. 편집(Edit)을 사용해 다듬거나 복제(Clone)를 사용해 변형을 만들 수 있습니다.
+test_ai:
+  responded_with_status: '{name}이(가) {status} 상태로 응답했습니다.'
+  unknown_provider: '알 수 없는 프로바이더: {provider}'
+  connection_timeout_local: 연결 시간 초과. {name}이(가) {baseUrl}에서 실행 중인가요?
+  endpoint_v1_valid: '{baseUrl}/v1의 엔드포인트가 유효합니다.'
+  connection_failed: '연결 실패: {msg}'
+  internal_error: 내부 서버 오류
+  endpoint_valid: '{baseUrl}의 엔드포인트가 유효합니다.'
+  server_reachable: '{baseUrl}의 {name} 서버에 연결할 수 있습니다.'
+  fetch_failed: fetch 실패
+  no_endpoint: 이 프로바이더에 구성된 엔드포인트가 없습니다.
+  api_key_required: '{name}에 API 키가 필요합니다.'
+visualization_instances:
+  instance_not_found: 인스턴스를 찾을 수 없습니다.
+  unauthorized: 인증되지 않았습니다.
+  invalid_instance_id: 잘못된 인스턴스 ID입니다.
+  internal_error: 내부 서버 오류
+  no_rendered_output: 렌더링된 출력이 없습니다.
+  viz_type_id_required: visualizationTypeId가 필요합니다.
+  invalid_viz_type: 잘못된 시각화 유형입니다.
+  viz_type_not_found: 시각화 유형을 찾을 수 없습니다
+ai_providers:
+  failed_to_delete_provider: 프로바이더 삭제에 실패했습니다.
+  missing_provider_id: 프로바이더 ID가 없습니다.
+  unauthorized: 인증되지 않았습니다.
+  internal_error: 내부 서버 오류
+  provider_not_found: 프로바이더를 찾을 수 없습니다.
+  missing_id_or_enabled: ID 또는 enabled 플래그가 없습니다.
+  forbidden: 금지됨
+  failed_to_update_provider: 공급자 업데이트에 실패했습니다
+  invalid_provider_id: 유효하지 않은 공급자 ID입니다.
+visualization_types:
+  slug_already_exists: 슬러그가 이미 존재합니다.
+  internal_error: 내부 서버 오류
+  forbidden: 금지됨
+  name_and_slug_required: 이름과 슬러그는 필수입니다
+  type_not_found: 시각화 유형을 찾을 수 없습니다
+ai:
+  database:
+    email_sent: 보고서가 이메일로 성공적으로 전송되었습니다
+rename_new_name_required: 열 이름 바꾸기 작업에는 새 이름이 필요합니다.
+invalid_fill_method: '유효하지 않은 fill_missing 메서드: {method}. 다음 중 하나여야 합니다: {methods}'
+invalid_target_type: '유효하지 않은 target_type: {target_type}. 다음 중 하나여야 합니다: {types}'
+encode_column_required: 인코딩 작업에는 열이 필요합니다.
+filter_operator_required: 필터 작업에는 연산자가 필요합니다.
+column_required: '''{type}'' 작업에는 열이 필요합니다.'
+invalid_encoding: '유효하지 않은 인코딩: {encoding}. 다음 중 하나여야 합니다: {types}'
+invalid_operation_type: '유효하지 않은 작업 유형: {type}. 다음 중 하나여야 합니다: {types}'
+filter_value_required: 필터 작업에는 값이 필요합니다.
+columns_required: '''{type}'' 작업에는 columns 필드가 필요합니다.'
+dataclean_chat:
+  dataset_id_required: datasetId는 필수입니다.
+  empty_response: 응답을 생성할 수 없습니다. 다시 시도해 주세요.
+  chat_session_not_found: 데이터 정리 채팅 세션을 찾을 수 없습니다.
+  create_error: 데이터 정리 세션을 생성하지 못했습니다.
+  message_required: 메시지는 필수입니다.
+dataclean_tools:
+  no_rules_to_preview: 미리 볼 규칙이 없습니다.
+  no_rules_to_apply: 적용할 규칙이 없습니다.

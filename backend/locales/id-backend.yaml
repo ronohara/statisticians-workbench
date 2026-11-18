@@ -1,0 +1,1017 @@
+access:
+  connected_in_ms: Terhubung dalam {elapsed} ms
+  connection_deleted: Koneksi dihapus
+  connection_exists: Koneksi '{name}' sudah ada
+  connection_failed: Koneksi gagal
+  connection_failed_detail: 'Koneksi gagal: {detail}'
+  connection_not_found: Koneksi tidak ditemukan
+  connection_saved: Koneksi disimpan
+  db_pool_not_initialized: Pool database belum diinisialisasi
+  encryption_error: 'Kesalahan enkripsi: {error}'
+  file_path_required: file_path wajib diisi
+  licence_required: Koneksi database Access memerlukan lisensi korporat
+  name_and_path_required: name dan file_path wajib diisi
+  connection_unavailable: 'Tidak dapat terhubung ke database Access: {error}'
+  connection_params_required: host, port, user, dan password wajib diisi
+  invalid_port: Port harus berupa bilangan bulat
+  table_not_found: 'Tabel ''{table}'' tidak ditemukan: {error}'
+admin:
+  already_full_admin: Pengguna sudah menjadi Admin Penuh
+  already_group_admin: Pengguna sudah menjadi Admin Grup
+  cannot_delete_self: Tidak dapat menghapus akun Anda sendiri
+  cannot_demote_full_admin: Tidak dapat menurunkan Admin Penuh
+  cannot_demote_self: Anda tidak dapat menurunkan diri sendiri
+  cannot_promote_example: Tidak dapat mempromosikan Pengguna Contoh
+  delete_error: Gagal menghapus pengguna
+  demote_error: Gagal menurunkan pengguna
+  description_required: Deskripsi tidak boleh kosong
+  example_blocked: Pengguna contoh tidak dapat melakukan tindakan admin
+  group_not_found: Grup tidak ditemukan
+  group_users_load_error: Gagal memuat pengguna grup
+  groups_load_error: Gagal memuat grup
+  groups_stats_error: Gagal memuat statistik grup
+  insufficient_permissions: Izin tidak cukup untuk tindakan ini
+  invalid_group_id: group_id tidak valid. Harus 00-99
+  invalid_id: id tidak valid
+  invalid_upload_count: maxUploadCount harus bilangan bulat non-negatif (0 untuk tak terbatas).
+  invalid_upload_size: maxUploadSizeMB harus bilangan bulat non-negatif (0 untuk tak terbatas).
+  missing_fields: Bidang yang wajib diisi tidak ada
+  missing_group_id: ID grup tidak ada
+  missing_id: id tidak ada
+  missing_model_id: id model tidak ada
+  missing_provider_code: Parameter providerCode tidak ada
+  missing_user_id: userId tidak ada
+  model_update_error: Gagal memperbarui model
+  models_load_error: Gagal memuat model
+  no_fields: Tidak ada bidang valid untuk diperbarui
+  no_group: Pengguna tidak memiliki grup yang ditetapkan
+  not_group_admin: Pengguna bukan Admin Grup
+  only_full_admin: Hanya Admin Penuh yang dapat melakukan tindakan ini
+  promote_error: Gagal mempromosikan pengguna
+  provider_delete_error: Gagal menghapus penyedia
+  provider_not_found: Penyedia tidak ditemukan
+  provider_update_error: Gagal memperbarui penyedia
+  providers_load_error: Gagal memuat penyedia
+  slug_exists: Slug sudah ada
+  update_error: Gagal memperbarui pengguna
+  user_load_error: Gagal memuat pengguna
+  user_not_found: Pengguna tidak ditemukan
+  users_load_error: Gagal memuat pengguna
+  viz_type_create_error: Gagal membuat tipe visualisasi
+  viz_type_delete_error: Gagal menghapus tipe visualisasi
+  viz_type_update_error: Gagal memperbarui tipe visualisasi
+  viz_types_load_error: Gagal memuat tipe visualisasi
+ai_recipe:
+  llm_error: 'Kesalahan layanan AI: {error}'
+  message_required: Pesan wajib diisi
+  session_name_required: Nama wajib diisi
+  invalid_decision: Keputusan tidak valid.
+api:
+  user:
+    connection_not_found: Koneksi tidak ditemukan
+    user_not_found: Pengguna tidak ditemukan
+    invalid_connection_id: ID koneksi tidak valid
+    internal_error: Kesalahan server internal
+    api_key_required: Kunci API diperlukan untuk penyedia ini
+    example_update_ai: Pengguna contoh tidak dapat memperbarui koneksi AI
+    invalid_port: Port harus berupa bilangan bulat
+    provider_not_found: Penyedia "{provider}" tidak ditemukan
+    connection_name_exists: Koneksi dengan nama ini sudah ada
+    example_blocked: Pengguna contoh tidak dapat melakukan tindakan ini
+    example_create_ai: Pengguna contoh tidak dapat membuat koneksi AI
+    invalid_name: Nama harus berupa string
+    example_delete_ai: Pengguna contoh tidak dapat menghapus koneksi AI
+    missing_fields: Kolom yang wajib diisi belum lengkap
+    connection_id_required: ID koneksi wajib diisi
+    invalid_current_password: Kata sandi saat ini salah
+    test_reason_required: Hasil tes harus mencatat alasan
+    test_other_failure: 'Model tidak dapat dihubungi, dan penyebabnya bukan salah satu yang dikenali sistem ini. Tidak ada putusan kemampuan yang dicatat: {detail}'
+    test_connect_timeout: Endpoint tidak menerima koneksi tepat waktu. Host mungkin mati, atau firewall mungkin memblokir permintaan. Tidak ada putusan kemampuan yang dicatat; yang dicatat adalah berapa
+      lama waktu yang dibutuhkan hingga gagal.
+    tuning_invalid_temperature: Temperatur harus berupa angka antara 0 dan 2
+    tuning_connection_not_found: Tidak ada koneksi AI seperti itu
+    model_not_served_by_connection: Koneksi ini tidak melayani "{model}". Model-modelnya mungkin telah berubah — segarkan koneksi, atau pilih model lain.
+    invalid_connect_timeout: Timeout koneksi harus berupa bilangan bulat detik, minimal 1 dan maksimal {ceiling}
+    test_read_timeout: Model menerima permintaan tetapi tidak menjawab tepat waktu. Mungkin terlalu lambat untuk host ini — model besar pada CPU dapat memerlukan beberapa menit. Tidak ada putusan kemampuan
+      yang dicatat; yang dicatat adalah berapa lama waktu yang dibutuhkan hingga gagal.
+    test_connect_refused: Tidak ada yang mendengarkan di alamat itu — server dapat dijangkau tetapi tidak ada layanan yang menjawab. Periksa port dan pastikan server AI berjalan. Tidak ada putusan kemampuan
+      yang dicatat; yang dicatat adalah berapa lama waktu yang dibutuhkan hingga gagal.
+    unknown_test_id: 'Tes tidak dikenal "{test}". Tes yang terdaftar: {known}'
+    tuning_invalid_ai_timeout: Batas waktu AI harus berupa bilangan bulat detik, minimal 1
+    tuning_malformed_body: Isi permintaan bukan JSON yang valid
+    test_http_status: 'Penyedia menjawab, dan jawabannya adalah kesalahan: {detail}. Tidak ada putusan kemampuan yang dicatat; apa yang dikatakan penyedia ditampilkan agar penyebabnya jelas.'
+    test_attribution_required: Hasil tes harus mencatat siapa yang menjalankannya
+    test_not_implemented: Tes "{test}" terdaftar tetapi belum memiliki probe
+    test_tls_failure: Koneksi aman tidak dapat dibuat — endpoint mungkin http biasa padahal https diharapkan, atau sertifikatnya mungkin telah kedaluwarsa. Tidak ada putusan kemampuan yang dicatat; yang
+      dicatat adalah berapa lama waktu yang dibutuhkan hingga gagal.
+    test_dns_failure: Nama host endpoint tidak dapat di-resolve. Periksa alamat untuk kesalahan ketik, atau untuk nama yang hanya dapat di-resolve oleh jaringan ini. Tidak ada putusan kemampuan yang dicatat;
+      yang dicatat adalah berapa lama waktu yang dibutuhkan hingga gagal.
+    tuning_model_not_found: Tidak ada model seperti itu
+    discovery_complete: 'Menemukan {seen} model: {created} baru di sini, {refreshed} sudah dikenal, {pruned} tidak lagi dilayani.'
+    model_not_found: Model "{model}" tidak ditemukan untuk penyedia "{provider}"
+    invalid_probe_timeout: Timeout tes harus berupa bilangan bulat detik, minimal 1 dan maksimal {ceiling}
+    connect_timeout_exceeds_probe: Timeout koneksi ({connect} detik) tidak boleh lebih lama daripada timeout tes ({probe} detik) — koneksi tidak boleh diizinkan membutuhkan waktu lebih lama untuk dibuat
+      daripada keseluruhan tes dapat berjalan.
+    tuning_nothing_to_update: Berikan setidaknya salah satu dari temperature, maxTokens, atau timeoutSeconds
+    test_budget_exhausted: Model tidak mengembalikan apa pun karena menghabiskan seluruh anggaran outputnya sebelum mencapai jawaban. Tidak ada putusan kemampuan yang dicatat; yang dicatat adalah durasinya.
+    invalid_test_state: 'Hasil tes tidak valid "{state}". Diizinkan: {allowed}'
+    tuning_invalid_max_tokens: Batas output harus berupa bilangan bulat token, minimal 1
+  admin:
+    groups_stats_error: Gagal memuat statistik grup
+    settings_invalid_upload_count: Jumlah unggahan maksimum default harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    settings_invalid_email_sender: Format alamat email pengirim tidak valid
+    no_group: Pengguna tidak memiliki grup yang ditetapkan
+    provider_update_error: Gagal memperbarui penyedia
+    not_group_admin: Pengguna bukan Admin Grup
+    insufficient_permissions: Izin tidak cukup untuk tindakan ini
+    provider_not_found: Penyedia tidak ditemukan
+    settings_invalid_public_url: Format URL publik tidak valid
+    settings_load_error: Gagal memuat pengaturan global
+    invalid_group_id: group_id tidak valid. Harus 00-99
+    delete_error: Gagal menghapus pengguna
+    description_required: Deskripsi tidak boleh kosong
+    settings_invalid_upload_size: Ukuran unggahan maksimum default harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    provider_delete_error: Gagal menghapus penyedia
+    settings_view_forbidden: Hanya Admin Penuh yang dapat melihat pengaturan global
+    update_error: Gagal memperbarui pengguna
+    cannot_promote_example: Tidak dapat mempromosikan Pengguna Contoh
+    missing_id: ID tidak ada
+    missing_group_id: ID grup tidak ada
+    group_users_load_error: Gagal memuat pengguna grup
+    already_full_admin: Pengguna sudah menjadi Admin Penuh
+    missing_fields: Bidang wajib tidak ada
+    missing_user_id: userId tidak ada
+    model_update_error: Gagal memperbarui model
+    groups_load_error: Gagal memuat grup
+    cannot_demote_full_admin: Tidak dapat menurunkan Admin Penuh
+    promote_error: Gagal mempromosikan pengguna
+    no_fields: Tidak ada bidang valid untuk diperbarui
+    settings_modify_forbidden: Hanya Admin Penuh yang dapat mengubah pengaturan global
+    invalid_upload_size: maxUploadSizeMB harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    invalid_upload_count: maxUploadCount harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    cannot_demote_self: Anda tidak dapat menurunkan diri sendiri
+    demote_error: Gagal menurunkan pengguna
+    user_load_error: Gagal memuat pengguna
+    settings_invalid_max_registrations: Registrasi maksimum harus berupa angka positif atau tanpa batas
+    only_full_admin: Hanya Admin Penuh yang dapat melakukan tindakan ini
+    settings_invalid_grace_period: Masa tenggang registrasi harus berupa angka positif (jam)
+    models_load_error: Gagal memuat model
+    example_blocked: Pengguna contoh tidak dapat melakukan tindakan admin
+    settings_invalid_email_timeout: Batas waktu verifikasi email harus berupa angka positif (jam)
+    already_group_admin: Pengguna sudah menjadi Admin Grup
+    settings_save_error: Gagal menyimpan pengaturan global
+    missing_model_id: ID model hilang
+    cannot_delete_self: Tidak dapat menghapus akun Anda sendiri
+    providers_load_error: Gagal memuat penyedia
+    viz_type_not_found: Jenis visualisasi tidak ditemukan
+    invalid_viz_type_field: Nilai kolom jenis visualisasi tidak valid
+    model_not_found: Model tidak ditemukan
+    user_not_found: Pengguna tidak ditemukan
+    invalid_id: ID tidak valid.
+    settings_invalid_platform_upload_size: Ukuran unggahan maksimum platform harus berupa bilangan bulat non-negatif (0 untuk tanpa batas).
+    demote_success: Pengguna {name} telah diturunkan dari Admin Grup.
+    promote_success: Pengguna {name} telah dipromosikan menjadi Admin Grup.
+    slug_exists: Slug sudah ada
+    viz_type_create_error: Gagal membuat tipe visualisasi
+    instance_exists: Tidak dapat menghapus tipe karena memiliki {count} instance terkait.
+    viz_types_load_error: Gagal memuat tipe visualisasi
+    viz_type_delete_error: Gagal menghapus tipe visualisasi
+    viz_type_update_error: Gagal memperbarui tipe visualisasi
+    users_load_error: Gagal memuat pengguna
+    instance_in_use: Tidak dapat menghapus tipe karena memiliki instance terkait.
+    settings_demo_mode_requires_licence: Mode demo tidak dapat dinonaktifkan tanpa lisensi yang valid.
+    settings_not_found: Pengaturan global tidak ditemukan
+    email_exists: Email sudah ada
+    create_user_error: Gagal membuat pengguna
+    invalid_email: Format email tidak valid
+    settings_invalid_registration_mode: Mode registrasi harus salah satu dari 0, 1, 2, atau 4.
+    users_demo_upload_size_limit: Dalam mode demo, ukuran unggah maksimum untuk pengguna harus antara 1 dan 5 MB.
+    settings_demo_upload_count_limit: Dalam mode demo, jumlah unggahan maksimum bawaan harus antara 1 dan 5.
+    users_demo_upload_count_limit: Dalam mode demo, jumlah unggahan maksimum untuk pengguna harus antara 1 dan 5.
+    settings_demo_upload_size_limit: Dalam mode demo, ukuran unggah maksimum bawaan harus antara 1 dan 5 MB.
+    example_user_password_blocked: Kata sandi pengguna contoh tidak dapat diatur oleh administrator
+    invalid_admin_password: Kata sandi admin salah
+    settings_invalid_probe_timeout: Timeout tes bawaan harus berupa bilangan bulat detik, minimal 1 dan maksimal {ceiling}
+    field_not_owned: 'Kolom ini tidak diatur pada halaman ini. {endpoint}. Bermasalah: {fields}'
+    settings_invalid_connect_timeout: Timeout koneksi bawaan harus berupa bilangan bulat detik, minimal 1 dan maksimal {ceiling}
+    tuning_reset_error: Bawaan penyetelan AI tidak dapat diatur ulang
+    settings_invalid_slow_threshold: Batas model lambat harus berupa bilangan bulat detik, minimal 1
+    settings_invalid_ai_timeout: Batas waktu AI harus berupa bilangan bulat detik, minimal 1
+    settings_invalid_temperature: Temperatur harus berupa angka antara 0 dan 2
+    settings_invalid_max_tokens: Batas output harus berupa bilangan bulat token, minimal 1
+  auth:
+    token_expired: Token telah kedaluwarsa
+    missing_email: Email diperlukan
+    invalid_token: Token tidak valid atau kedaluwarsa
+    unauthorized: Tidak diizinkan
+    example_user_reset_blocked: Reset kata sandi dinonaktifkan untuk pengguna contoh
+    user_not_found: Pengguna tidak ditemukan
+    example_user_forgot_blocked: Reset kata sandi dinonaktifkan untuk pengguna contoh
+    email_already_verified: Email sudah terverifikasi
+    missing_fields: Bidang tidak lengkap
+    example_user_blocked: Perubahan kata sandi dinonaktifkan untuk pengguna contoh
+    internal_error: Kesalahan server internal
+    invalid_current_password: Kata sandi saat ini salah
+    not_authenticated: Tidak terautentikasi
+  register:
+    settings_not_found: Pengaturan global tidak ditemukan
+    missing_fields: Bidang tidak lengkap
+    invalid_email: Format email tidak valid
+    internal_error: Kesalahan server internal
+    email_exists: Email sudah ada
+    limit_reached: Batas registrasi tercapai (maksimal {max_reg} pengguna).
+    registration_disabled: Registrasi mandiri dinonaktifkan. Silakan hubungi administrator.
+  settings:
+    user_not_found: Pengguna tidak ditemukan
+    save_failed: Gagal menyimpan pengaturan
+    example_blocked: Pengguna contoh tidak dapat mengedit pengaturan
+    invalid_default_ai_connection: Koneksi AI default tidak valid
+    load_failed: Gagal memuat pengaturan
+    invalid_slow_threshold: Batas model lambat harus berupa bilangan bulat detik, minimal 1
+  profile:
+    update_failed: Gagal memperbarui profil
+    name_required: Nama wajib diisi
+    invalid_name: Nama harus berupa string
+    fetch_failed: Gagal mengambil profil
+  global_settings_load_error: Kesalahan server internal.
+  translations_load_error: Gagal memuat terjemahan
+  languages_load_error: Gagal memuat bahasa
+audio_presets:
+  invalid_chat_type: 'Tipe chat tidak valid: {chat_type}. Harus salah satu dari: {valid_types}'
+auth:
+  account_deleted: Akun ini telah dihapus.
+  email_not_verified: Email belum diverifikasi. Silakan periksa kotak masuk dan folder SPAM Anda.
+  example_user_blocked: Fungsi kata sandi dinonaktifkan untuk pengguna contoh
+  example_user_forgot_blocked: Reset kata sandi dinonaktifkan untuk pengguna contoh
+  example_user_reset_blocked: Reset kata sandi dinonaktifkan untuk pengguna contoh
+  internal_error: Kesalahan server internal
+  invalid_credentials: Kredensial tidak valid
+  invalid_current_password: Kata sandi saat ini salah
+  invalid_token: Token tidak valid atau kedaluwarsa
+  invalid_token_error: 'Token tidak valid: {error}'
+  invalid_token_missing_user_id: 'Token tidak valid: id pengguna tidak ada'
+  missing_email: Email wajib diisi
+  missing_fields: Bidang tidak ada
+  password_changed: Kata sandi berhasil diubah
+  password_validation_failed: Validasi kata sandi gagal
+  reset_email_sent: Email reset kata sandi terkirim
+  token_expired: Token telah kedaluwarsa
+  unauthorized: Tidak diotorisasi
+  user_not_found: Pengguna tidak ditemukan
+  login_invalid_credentials: Email atau kata sandi tidak valid.
+chat:
+  ai_provider_error: 'Kesalahan penyedia AI: {error}'
+  connection_error: 'Kesalahan koneksi: {error}'
+  connection_not_found: Koneksi AI tidak ditemukan atau tidak dapat diakses
+  delete_failed: 'Gagal menghapus chat: {error}'
+  deleted: Chat '{id}' berhasil dihapus
+  generate_title_failed: 'Gagal membuat judul: {error}'
+  get_failed: 'Gagal mendapatkan chat: {error}'
+  internal_error: 'Kesalahan server internal: {error}'
+  list_failed: 'Gagal menampilkan daftar chat: {error}'
+  not_found: Chat '{id}' tidak ditemukan
+  not_found_or_not_owned: Chat '{id}' tidak ditemukan atau Anda tidak memilikinya
+  send_failed: 'Gagal mengirim pesan: {error}'
+  title_updated: Judul obrolan berhasil diperbarui
+  update_failed: 'Gagal memperbarui obrolan: {error}'
+  ai_service_failed: Layanan AI gagal merespons. Silakan coba lagi.
+  ai_timeout: Model AI membutuhkan waktu terlalu lama untuk merespons. Silakan coba lagi.
+  ai_repeat_loop: Model AI macet dan tidak dapat menyelesaikan respons. Silakan coba lagi.
+  timeout_out_of_range: Batas waktu AI harus antara 1 dan {max_seconds} detik
+common:
+  back: Kembali
+  cancel: Batal
+  cannot_undo: Tindakan ini tidak dapat dibatalkan.
+  clear: Bersihkan
+  copy: Salin
+  delete: Hapus
+  deleting: Menghapus...
+  dismiss: Tutup
+  edit: Edit
+  generating: Menghasilkan...
+  loading: Memuat...
+  next: Berikutnya
+  restoring: Memulihkan...
+  save: Simpan
+  saving: Menyimpan...
+  sending: Mengirim...
+  testing: Menguji...
+  unknown: Tidak diketahui
+  uploading: Mengunggah...
+  verifying: Memverifikasi...
+  view: Lihat
+database:
+  connection_failed: 'Gagal terhubung ke database: {error}'
+  connection_not_found: Koneksi database tidak ditemukan atau tidak dapat diakses
+  decryption_failed: 'Gagal mendekripsi kata sandi koneksi: {error}'
+  insert_failed: 'Kesalahan database: {error}'
+  pool_not_initialized: Pool database belum diinisialisasi
+  query_failed: 'Kueri database gagal: {error}'
+  type_not_supported: Tipe database '{type}' belum didukung
+  feature_required: Jenis basis data ini tidak diaktifkan oleh lisensi Anda.
+datasets:
+  auto_create:
+    connection_id_required: connectionId diperlukan
+    connection_not_found: Koneksi tidak ditemukan
+    no_tables_discovered: Tidak ada tabel atau view yang ditemukan. Periksa bahwa server database berjalan dan dapat diakses.
+    created: Dataset dibuat
+  browse:
+    columns_failed: 'Gagal mendapatkan kolom: {error}'
+    discover_failed: 'Gagal menemukan tabel: {error}'
+    preview_failed: 'Gagal mempratinjau tabel: {error}'
+  define:
+    connection_details_not_found: Detail koneksi tidak ditemukan
+    connection_not_found: Koneksi database tidak ditemukan atau tidak dapat diakses
+    connection_required: connectionId diperlukan
+    connection_test_failed: Uji koneksi database gagal
+    database_connection_failed: 'Gagal terhubung ke database: {error}'
+    dataset_created: Dataset '{name}' berhasil didefinisikan
+    invalid_source_type: sourceType harus 'table' atau 'view'
+    name_required: Nama dataset diperlukan
+    permission_denied: 'Izin ditolak: Pengguna ''{user}'' tidak memiliki akses ke tabel ''{table}''. Harap berikan izin SELECT.'
+    preview_failed: 'Gagal membaca data dari tabel ''{table}'': {error}'
+    table_access_failed: 'Gagal mengakses tabel ''{table}'': {error}'
+    table_name_required: tableName diperlukan
+    table_not_found: Tabel/view '{table}' tidak ditemukan di database '{database}'
+    verification_failed: 'Gagal memverifikasi tabel/view: {error}'
+    connection_successful: Koneksi berhasil
+    connection_missing_db_note: 'Catatan: PostgreSQL mengembalikan kesalahan ini untuk basis data yang tidak ada DAN untuk izin yang tidak memadai. Jika basis data ada, periksa bahwa pengguna memiliki izin
+      CONNECT pada basis data tersebut.'
+    connection_timed_out: Koneksi waktu habis setelah 15 detik
+  delete:
+    success: Dataset '{id}' berhasil dihapus
+  describe:
+    ai_connection_error: 'Kesalahan koneksi AI: {error}'
+    description_generated: Deskripsi berhasil dibuat untuk '{name}'
+    empty_description: Deskripsi yang dihasilkan kosong. Harap periksa konfigurasi penyedia AI.
+    generation_failed: 'Pembuatan deskripsi gagal: {error}'
+    timeout_out_of_range: Batas waktu AI harus antara 1 dan {max_seconds} detik
+  example_blocked:
+    create: Pengguna contoh tidak dapat membuat dataset
+    delete: Pengguna contoh tidak dapat menghapus dataset
+    update: Pengguna contoh tidak dapat memperbarui dataset
+  list_error: Gagal memuat dataset
+  not_found: Dataset '{id}' tidak ditemukan atau tidak dapat diakses
+  not_found_2: Dataset tidak ditemukan
+  not_owned: Dataset '{id}' tidak ditemukan atau Anda tidak memilikinya
+  not_owner: Anda hanya dapat mengedit dataset milik Anda sendiri
+  preparation:
+    duplicate_name: Aturan persiapan dengan nama ini sudah ada untuk dataset ini
+    no_updates: Tidak ada field untuk diperbarui
+    preview_failed: 'Gagal mempratinjau aturan: {error}'
+    rule_created: Aturan persiapan '{name}' berhasil dibuat
+    rule_deleted: Aturan persiapan berhasil dihapus
+    rule_in_use: 'Aturan persiapan ini digunakan oleh {count} resep: {names}. Hapus resepnya terlebih dahulu.'
+    rule_not_found: Aturan persiapan '{id}' tidak ditemukan untuk dataset ini
+    rule_not_found_or_not_owned: Aturan persiapan tidak ditemukan atau Anda tidak memilikinya
+    rule_updated: Aturan persiapan berhasil diperbarui
+    schema_failed: 'Gagal membaca skema dataset: {error}'
+    already_exists: Aturan persiapan dengan operasi ini sudah ada ('{name}')
+  schema:
+    external_failed: 'Gagal mendapatkan skema dari database eksternal: {error}'
+    from_preview: Skema diturunkan dari data pratinjau (10 baris pertama)
+    load_error: 'Tidak dapat memuat skema: {error}'
+    not_implemented: Penemuan skema untuk tipe dataset '{type}' belum diimplementasikan
+    table_missing: Tabel tidak lagi ada. Silakan unggah ulang dataset.
+    connection_unreachable: 'Koneksi {connection_id} tidak dapat dijangkau: {error}'
+    row_count_not_computed: Jumlah baris tidak dihitung untuk dataset virtual tanpa menjalankan join.
+  share:
+    error: Gagal memperbarui pembagian
+    toggled: Pembagian untuk dataset '{id}' berhasil diperbarui
+  transforms:
+    clone_forbidden: Anda tidak memiliki akses untuk mengkloning transformasi ini
+    cloned: Transformasi dikloning sebagai '{name}'
+    created: Transformasi '{name}' berhasil dibuat
+    deleted: Transformasi berhasil dihapus
+    duplicate_name: Transformasi dengan nama ini sudah ada untuk dataset ini
+    in_use: 'Transformasi ini digunakan oleh {count} resep: {names}. Hapus resep tersebut terlebih dahulu'
+    no_updates: Tidak ada field untuk diperbarui
+    not_accessible: Dataset '{id}' tidak ditemukan atau tidak dapat diakses
+    not_found: Transformasi '{id}' tidak ditemukan untuk dataset ini
+    not_found_or_not_owned: Transformasi tidak ditemukan atau Anda bukan pemiliknya
+    not_owned: Dataset '{id}' tidak ditemukan atau Anda bukan pemiliknya
+    updated: Transformasi berhasil diperbarui
+    already_exists: Transformasi dengan operasi ini sudah ada ('{name}')
+  unknown_source: 'Tipe sumber tidak diketahui: {source_type}'
+  upload:
+    error: Gagal mengunggah dataset
+    file_processing_failed: 'Gagal memproses file: {error}'
+    limit_reached_count: Batas unggah tercapai. Maksimum {count} dataset diizinkan
+    limit_reached_size: Batas ukuran unggah terlampaui. Maksimum {size} MB total penyimpanan
+    success: Dataset '{name}' berhasil diunggah
+    unsupported_file: 'Tipe file tidak didukung. Silakan unggah salah satu dari: {extensions}'
+    user_not_found: Pengguna tidak ditemukan
+    dbf_field_unsupported: 'File .dbf ini mendeklarasikan tipe field yang tidak dapat dibaca: {types}'
+    dbf_memo_unsupported: File .dbf ini berisi field memo. Nilai-nilainya disimpan dalam file terpisah, yang tidak dapat dibawa oleh unggahan file tunggal.
+  unread:
+    schema_error: Sumber merespons, tetapi kolomnya tidak dapat dibaca.
+    incomplete: Pemeriksaan tidak selesai tepat waktu. Coba lagi, atau naikkan batas waktu koneksi.
+    definition_too_deep: Dataset ini merujuk ke dirinya sendiri lebih dari lima tingkat ke dalam.
+    unreachable: Tidak dapat menjangkau sumber ini. Periksa host dan port, lalu coba lagi.
+    no_database: Database tersebut tidak ada di server.
+    no_permission: Akun ini tidak dapat membaca sumber tersebut.
+    definition_incomplete: Sumber ini tidak menyebutkan baik dataset maupun tabel koneksi.
+    auth_failed: Database menolak kredensial akun ini.
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: Tambahkan constraint CHECK atau gunakan tipe ENUM untuk '{column}' dengan nilai valid terbatas
+      add_not_null: Tambahkan constraint NOT NULL ke '{column}'
+      allows_null: Kolom '{column}' mengizinkan NULL — pertimbangkan untuk menggunakan constraint NOT NULL
+      set_max_length: Pertimbangkan menetapkan panjang maksimum untuk '{column}' untuk mencegah data berukuran berlebihan
+      short_text_enum: Kolom teks '{column}' memiliki panjang maksimum {max_len} — pertimbangkan untuk menggunakan ENUM atau constraint CHECK
+      unbounded_varchar: Kolom VARCHAR tanpa batas '{column}'
+    indexing:
+      missing_fk_index: Kolom foreign key '{column}' tidak memiliki indeks
+    naming:
+      mixed_case_column: Kolom '{column}' menggunakan huruf campuran — disarankan menggunakan snake_case
+      mixed_case_table: Nama tabel '{table}' menggunakan huruf campuran — disarankan menggunakan snake_case
+      rename_column_reserved: Ganti nama kolom '{column}' untuk menghindari konflik kata kunci cadangan SQL
+      rename_column_snake_case: Ganti nama kolom menjadi snake_case huruf kecil untuk konsistensi
+      rename_table_reserved: Ganti nama tabel '{table}' untuk menghindari konflik kata kunci cadangan SQL
+      rename_table_snake_case: Ganti nama tabel menjadi snake_case huruf kecil untuk konsistensi
+      reserved_keyword_column: Kolom '{column}' adalah kata kunci cadangan SQL
+      reserved_keyword_table: Nama tabel '{table}' adalah kata kunci cadangan SQL
+    normalisation:
+      create_separate_table: Buat tabel terpisah untuk nilai '{base}' dengan FK ke {table}
+      multiple_address: Terdeteksi beberapa kolom terkait alamat ({count})
+      repeating_group: 'Grup berulang terdeteksi: {columns}'
+      separate_address_table: Pertimbangkan membuat tabel alamat terpisah dengan FK ke {table}
+    relationships:
+      add_fk: Pertimbangkan menambahkan constraint FK jika '{column}' mereferensikan tabel lain
+      missing_fk: Kolom '{column}' tampak seperti foreign key tetapi tidak memiliki constraint FK
+    semistructured:
+      controlled_vocab: Kolom {column} berisi kosakata terkontrol dengan {count} nilai berbeda
+      create_ref_table: Buat tabel referensi untuk nilai {column} untuk menormalkan tabel {table}
+  analyze_error: 'Gagal menganalisis database: {error}'
+  connection_error: 'Gagal terhubung ke database: {error}'
+  description: Analisis dan tingkatkan desain database Anda menggunakan AI
+  invalid_token: Token tidak valid
+  no_connection: Tidak ada koneksi database yang tersedia. Silakan hubungkan ke database terlebih dahulu
+  not_implemented: Fitur ini akan segera hadir
+  pdf:
+    ai_disclaimer: Analisis yang dihasilkan AI — tinjau sebelum diterapkan ke produksi
+    categories: Kategori
+    code_systems: Sistem Kode
+    code_systems_label: Sistem Kode Terdeteksi
+    col_default: Bawaan
+    col_name: Kolom
+    col_nullable: Boleh Null
+    col_pk: PK
+    col_type: Tipe
+    column_meanings_label: Makna Kolom
+    columns: Kolom
+    confidence: Keyakinan
+    confidence_label: Keyakinan
+    domain_label: Klasifikasi Domain ISIC
+    evidence_label: Bukti
+    header: Laporan Analisis Desain Database
+    health_score_label: 'Skor Kesehatan Database: {score}/100'
+    health_score_subtitle: Kesehatan database secara keseluruhan dinilai oleh Schema AI. 0 = masalah struktural kritis, 100 = siap produksi
+    health_score_title: Skor Kesehatan
+    high: Tinggi
+    implicit_relationships_label: Relasi Implisit
+    integration_subtitle: Relasi implisit, kemampuan riset, dan dimensi yang hilang terdeteksi oleh Integration AI
+    integration_title: Temuan Integrasi AI
+    issues_count: Masalah ({count})
+    issues_found: Masalah Ditemukan
+    low: Rendah
+    medium: Sedang
+    missing_dimensions_label: Dimensi yang Hilang
+    'no': TIDAK
+    none: Tidak Ada
+    normalisation_title: Saran Normalisasi ({count})
+    page: Halaman {current}/{total}
+    partial_label: Parsial
+    pk: PK
+    proposed_ddl_label: DDL yang Diusulkan
+    proposed_table: Tabel yang Diusulkan
+    rationale_label: Alasan
+    relationship_label: Relasi
+    research_capabilities_label: Kemampuan Riset
+    risk_breakdown: Rincian Risiko
+    rows: Baris
+    schema_title: Skema ({count} tabel)
+    semantic_subtitle: Makna kolom yang disimpulkan AI, klasifikasi domain ISIC, dan deteksi sistem kode.
+    semantic_title: Analisis Semantik AI
+    semi_structured_title: Analisis Data Semi-Terstruktur ({count} kolom)
+    subtitle: 'Database: {db_name} ({db_type}) | Koneksi: {conn_name} (ID: {conn_id})'
+    summary: Ringkasan
+    supported_label: Didukung
+    table_purposes_label: Tujuan Tabel
+    tables: Tabel
+    title: Analisis Desain Database
+    top_actions_label: Tindakan Prioritas Utama
+    top_keywords: Kata kunci teratas
+    top_recommendations: Rekomendasi Utama
+    unsupported_label: Tidak Didukung
+    value: Nilai
+    'yes': YA
+    ai_skipped_warning: Analisis AI Dilewati
+  pdf_error: 'Gagal membuat PDF: {error}'
+  question_required: Pertanyaan wajib diisi
+  rag_error: 'Kueri RAG gagal: {error}'
+  rag_not_available: Pencarian RAG hanya tersedia untuk database PostgreSQL. Pencarian teks MySQL direncanakan untuk rilis mendatang.
+  report_data_required: Data laporan wajib diisi
+  schema_error: 'Gagal mengekstrak skema: {error}'
+  schema_error_2: 'Gagal mendekripsi kata sandi database: {error}'
+  title: Asisten Desain Database
+  unsupported_type: Hanya database PostgreSQL, MySQL, MS SQL Server, dan Microsoft Access yang didukung
+  unsupported_type_2: Hanya database PostgreSQL, MySQL, dan MS SQL Server yang didukung
+  email_pdf:
+    invalid_body: Isi permintaan tidak valid
+    no_email: Tidak ditemukan alamat email untuk akun Anda
+    send_failed: Gagal mengirim laporan melalui email. Silakan coba lagi.
+  llm:
+    empty_content: LLM mengembalikan konten kosong
+    unknown_error: Kesalahan LLM tidak diketahui
+    timeout: Permintaan LLM kehabisan waktu setelah {timeout_seconds} detik
+    no_ai_provider: Tidak ada penyedia AI yang dikonfigurasi. Hubungkan penyedia AI di Pengaturan → Koneksi AI.
+    http_error: LLM mengembalikan HTTP {status_code}
+    no_model: Tidak ada model AI yang dikonfigurasi. Atur model default pada koneksi AI atau teruskan model eksplisit.
+  stream_normalisation_start: Menghasilkan saran normalisasi...
+  analysis_cancelled: Aliran analisis dibatalkan (klien terputus)
+  stream_extracting_schema: Mengekstrak skema dari {db_type}...
+  stream_ai_integration_done: 'AI Integrasi: {relationships} relasi, {capabilities} kapabilitas'
+  stream_normalisation_done: 'Normalisasi: {count} saran'
+  stream_connected: 'Terhubung ke {db_type}: {db_name}'
+  ai_skipped_reason: 'Laporan ini hanya berisi analisis mekanis. Analisis dengan bantuan AI dilewati karena basis data menghasilkan {count} masalah (batas: {limit}). Tinjau temuan mekanis di bawah, bersihkan
+    basis data, lalu jalankan ulang dengan AI untuk penjelasan kontekstual, wawasan semantik, dan saran normalisasi.'
+  stream_ai_integration_start: 'AI Integrasi: mendeteksi relasi...'
+  stream_semistructured_start: Menganalisis kolom semi-terstruktur...
+  analysis_complete: Analisis selesai
+  stream_normalisation_timeout: 'Normalisasi: waktu habis setelah 90 detik'
+  stream_schema_done: 'Skema diekstrak: {tables} tabel, {columns} kolom'
+  stream_mechanical_done: 'Analisis mekanis: {count} masalah ditemukan'
+  ai_skipped_message: 'Analisis AI dilewati — {count} masalah ditemukan (batas: {limit}). Tinjau temuan mekanis di bawah, bersihkan basis data, lalu jalankan ulang dengan AI.'
+  stream_ai_start: Memulai analisis AI — 3 spesialis secara paralel...
+  stream_ai_schema_start: 'AI Skema: menganalisis {tables} tabel...'
+  stream_unsupported_type: 'Tipe basis data tidak didukung: {db_type}'
+  stream_ai_semantic_done: 'AI Semantik: {columns} makna kolom, {domains} domain ISIC'
+  stream_ai_schema_done: 'AI Skema: skor kesehatan {score}/100'
+  stream_analysis_failed: 'Analisis gagal: {error}'
+  stream_ai_semantic_start: 'AI Semantik: menganalisis {tables} tabel...'
+  stream_normalisation_skipped: 'Normalisasi: dilewati ({error})'
+  stream_ai_done: 'Analisis AI selesai — status: {status}'
+  stream_mechanical_start: Menjalankan analisis mekanis...
+  stream_connecting: Menghubungkan ke basis data...
+error:
+  ai:
+    call_failed: 'Panggilan AI gagal: {error}'
+  connection:
+    connect_failed: 'Koneksi MySQL gagal: {error}'
+    decryption_failed: 'Gagal mendekripsi kata sandi koneksi: {error}'
+    failed: 'Gagal terhubung ke database: {error}'
+    query_failed: 'Gagal menjalankan kueri pada tabel/view ''{table}'': {error}'
+    query_failed_2: 'Gagal mengeksekusi SQL terkompilasi: {error}'
+    query_failed_3: 'Kueri PostgreSQL gagal: {error}'
+    query_failed_4: 'Kueri MySQL gagal: {error}'
+    query_failed_5: 'Kueri MSSQL gagal: {error}'
+    query_failed_6: 'Kueri Access gagal: {error}'
+    query_failed_7: 'Kueri database gagal: {error}'
+    type_not_supported: Tipe database '{type}' belum didukung
+    type_not_supported_2: Tipe database '{type}' belum didukung untuk penemuan skema
+    type_not_supported_3: 'Tipe database tidak didukung: {type}'
+  database:
+    insert_failed: 'Kesalahan database: {error}'
+    pool_not_initialized: Pool database belum diinisialisasi
+  dataset:
+    delete_failed_2: 'Gagal menghapus dataset: {error}'
+    load_failed: 'Gagal memuat dataset: {error}'
+    load_failed_2: 'Gagal memuat data: {error}'
+    load_failed_3: Dataset virtual '{id}' tidak memiliki definisi SQL
+    load_failed_4: 'Gagal memuat dataset virtual ''{id}'': {error}'
+    not_found: Dataset '{id}' tidak ditemukan atau tidak dapat diakses
+    not_found_2: Dataset '{id}' tidak ditemukan
+    not_found_3: 'Dataset tidak ditemukan atau tidak dapat diakses: {error}'
+    not_found_4: Dataset '{id}' tidak ditemukan atau tidak dapat diakses
+    not_found_5: Dataset '{id}' tidak ditemukan
+    not_found_or_not_owned: Dataset '{id}' tidak ditemukan atau Anda tidak memilikinya
+    table_missing: Tabel '{table}' tidak ada
+    unknown_source: 'Tipe sumber tidak dikenal: {source_type}'
+  define:
+    connection_not_found: Koneksi database tidak ditemukan atau tidak dapat diakses
+    connection_not_found_2: Koneksi tidak ditemukan atau tidak dapat diakses
+    dataset_creation_failed: 'Gagal membuat catatan dataset: {error}'
+  describe:
+    ai_connection_error: 'Kesalahan koneksi AI: Tidak ada koneksi tersedia'
+    ai_connection_error_2: 'Kesalahan koneksi AI: Gagal mendekripsi kunci API'
+  execution:
+    cannot_cancel: Tidak dapat membatalkan eksekusi yang sudah {status}
+  groups:
+    invalid_group_id: group_id tidak valid. Harus 00-99
+  preparation:
+    rule_not_found: Aturan persiapan '{id}' tidak ditemukan untuk dataset ini
+    rule_not_found_2: Aturan persiapan '{id}' tidak ditemukan
+execution:
+  executing_stage: 'Menjalankan tahap: {stage}'
+  loaded_rows: Memuat {rows} baris, {columns} kolom
+  loading_dataset: Memuat dataset...
+  not_found: Eksekusi tidak ditemukan
+  starting_analysis: Memulai tahap analisis...
+groups:
+  admin_required: Diperlukan akses admin
+  cannot_delete_self: Tidak dapat menghapus akun Anda sendiri
+  description_required: Deskripsi tidak boleh kosong
+  insufficient_permissions: Izin tidak cukup untuk mengelola grup
+  invalid_group_id: user_group tidak valid. Harus 00-99
+  not_authorized: Tidak berwenang melihat grup pengguna ini
+  not_found: Grup '{id}' tidak ditemukan
+  update_failed: Gagal memperbarui grup
+  update_success: Deskripsi grup '{id}' diperbarui
+  user_not_found: Pengguna tidak ditemukan
+  user_updated: Grup pengguna berhasil diperbarui
+  missing_id: ID sumber daya tidak ada
+  resource_not_found: Sumber daya tidak ditemukan
+licence:
+  delete_failed: 'Gagal menghapus file lisensi: {error}'
+  missing_content: Field 'content' tidak ada
+  write_failed: 'Gagal menulis file lisensi: {error}'
+  install_success: Lisensi berhasil diinstal.
+  delete_success: Lisensi dihapus. Berjalan dalam mode open-source.
+  no_file_to_delete: Tidak ada file lisensi untuk dihapus — sudah dalam mode open-source.
+notebooks:
+  delete_error: 'Gagal menghapus impor: {error}'
+  example_blocked: Pengguna contoh tidak dapat mengimpor notebook.
+  example_blocked_2: Pengguna contoh tidak dapat mengubah berbagi notebook.
+  example_blocked_3: Pengguna contoh tidak dapat menghapus notebook.
+  file_too_large: File notebook terlalu besar. Ukuran maksimum adalah {max_size} MB.
+  import_failed: 'Impor notebook gagal: {error}'
+  import_failed_2: 'Gagal menampilkan daftar impor: {error}'
+  import_failed_3: Impor tidak ditemukan
+  import_failed_4: 'Gagal mengambil impor: {error}'
+  invalid_format_2: Format notebook tidak valid. Hanya file .ipynb yang diterima.
+  no_connection: Silakan pilih koneksi database.
+  no_dataframes: Tidak ada DataFrame yang ditemukan di notebook ini
+  no_db_rights: Koneksi ini tidak memiliki hak pembuatan database.
+  no_table_rights: Koneksi ini tidak dapat membuat tabel — impor ditolak.
+  share_error: Hanya pemilik yang dapat mengubah pengaturan berbagi.
+  share_error_2: 'Gagal memperbarui berbagi: {error}'
+  system_db_blocked: Tidak dapat mengimpor ke database sistem '{db}'. Gunakan database lain atau buat yang baru.
+  invalid_json: 'JSON tidak valid: {error}'
+  untitled: Tanpa judul
+  cells_not_list: 'Format notebook tidak valid: ''cells'' bukan berupa daftar'
+  unknown_error: Kesalahan tidak diketahui
+  too_many_cells: 'Terlalu banyak sel ({count}). Maks: {max_cells}'
+  missing_cells: 'Format notebook tidak valid: kunci ''cells'' hilang'
+notebooks_storage:
+  failed_create_table: 'Gagal membuat tabel {table}: {error}'
+  failed_create_table_mssql: 'Gagal membuat tabel: {error}'
+  no_connection_details: Tidak ada detail koneksi yang diberikan
+  no_connection_details_short: Tidak ada detail koneksi
+  unsupported_storage_type: 'Tipe penyimpanan tidak didukung: {type}'
+  no_data_pool: Pool database data tidak diinisialisasi
+rag:
+  ai_provider_error: 'Kesalahan penyedia AI: {error}'
+  no_ai_provider: Ditemukan {count} catatan yang cocok. (Tidak ada penyedia AI yang dikonfigurasi untuk jawaban bahasa alami.)
+  no_matches: Tidak ditemukan teks yang cocok di database untuk pertanyaan Anda. Coba susun ulang kalimat atau pilih sumber data lain.
+  no_tables: Tidak ada tabel ditemukan di skema untuk dicari.
+recipes:
+  ai_session:
+    create_error: Gagal membuat sesi resep AI
+    delete_error: Gagal menghapus sesi resep AI
+    load_error: Gagal memuat sesi resep AI
+    not_found: Sesi resep AI tidak ditemukan
+    save_error: Gagal menyimpan resep dari sesi AI
+    unauthorized: Anda tidak memiliki akses ke sesi resep AI ini
+  column_type:
+    categorical: kategorikal
+    numeric: numerik
+  columns_required: Silakan pilih setidaknya satu kolom
+  create_success: Resep '{name}' berhasil dibuat
+  data_selection_error: 'Pemilihan data gagal: {error}'
+  dataset_not_found: Dataset tidak ditemukan
+  dataset_required: Silakan pilih dataset
+  delete_error: 'Gagal menghapus resep: {error}'
+  delete_success: Resep '{id}' berhasil dihapus
+  execute_error: 'Gagal mengeksekusi resep: {error}'
+  execution:
+    error: 'Kesalahan eksekusi resep: {error}'
+    preparation_error: 'Tahap persiapan gagal: {error}'
+    preparation_failed: Tahap persiapan gagal
+    unknown_stage: 'Tipe tahap tidak dikenal: {stage_type}'
+  execution_completed: Eksekusi berhasil diselesaikan
+  execution_failed: Eksekusi gagal
+  execution_load_error: 'Gagal memuat eksekusi: {error}'
+  execution_not_found: Eksekusi '{id}' tidak ditemukan
+  executions_load_error: 'Gagal memuat daftar eksekusi: {error}'
+  field_label:
+    categoryColumn: Kolom kategori (label)
+    dependentColumn: Kolom dependen / hasil
+    factorColumn: Kolom faktor (variabel pengelompokan)
+    independentColumns: Kolom independen / prediktor
+    responseColumn: Kolom respons (pengukuran numerik)
+    responseColumn2: Kolom respons kedua (pengukuran berpasangan)
+    xColumn: Kolom sumbu X
+    yColumn: Kolom sumbu Y
+    columns: Kolom
+    factorColumn2: Kolom faktor kedua (variabel pengelompokan)
+  invalid_stage: Tahap tidak valid untuk resep
+  invalid_stage_type: 'Tipe tahap tidak valid: {type}. Harus salah satu dari: {types}'
+  load_datasets_error: 'Gagal memuat dataset: {error}'
+  load_error: 'Gagal memuat resep: {error}'
+  name_required: Nama resep wajib diisi
+  no_columns_exist: Tidak ada kolom yang dipilih yang ada di dataset
+  no_dataset: Tidak ada dataset yang terkait dengan resep ini
+  no_stages: Resep harus memiliki setidaknya satu tahap
+  no_updates: Tidak ada bidang untuk diperbarui
+  not_found: Resep '{id}' tidak ditemukan
+  not_owned: Resep '{id}' tidak ditemukan atau Anda bukan pemiliknya
+  preparation:
+    all_rules_failed: 'Semua aturan gagal: {errors}'
+    no_db_pool: Pool database tidak tersedia untuk tahap persiapan
+    rule_failed: 'Aturan ''{rule_id}'': {error}'
+    rule_not_found: Aturan '{rule_id}' tidak ditemukan
+    rules_applied: Menerapkan {count} aturan persiapan
+  requirement:
+    anova_one_way: 1 kolom kategorikal (faktor) dan 1 kolom numerik (respons)
+    anova_two_way: 2 kolom kategorikal (dua faktor) dan 1 kolom numerik (respons)
+    bar: 1 kolom kategorikal (sumbu x) dan 1 kolom numerik (sumbu y)
+    chi_square: 2 kolom kategorikal
+    correlation: minimal 2 kolom numerik
+    descriptive: minimal 1 kolom numerik
+    distribution: 1 kolom numerik
+    histogram: 1 kolom numerik (sumbu x)
+    line: 2 kolom numerik (x dan y)
+    linear_regression: minimal 2 kolom numerik (prediktor dan luaran)
+    none: tidak ada output yang diperlukan
+    pie: 1 kolom kategorikal (label)
+    scatter: 2 kolom numerik (x dan y)
+    t_test_independent: 1 kolom kategorikal (untuk kelompok) dan 1 kolom numerik (untuk dibandingkan)
+    t_test_paired: 2 kolom numerik (pengukuran berpasangan)
+    table: kolom apa saja
+    hbar: 1 kolom kategorikal (sumbu-y) dan 1 kolom numerik (sumbu-x)
+    donut: 1 kolom kategorikal (label)
+    area: 2 kolom numerik (x dan y)
+  result_type:
+    numeric: numerik
+    tabular: tabular
+  scatter_two_columns: Diagram pencar memerlukan minimal dua kolom
+  scatter_two_numeric: Diagram pencar memerlukan dua kolom numerik
+  schema_error: 'Gagal memuat skema kolom: {error}'
+  share:
+    disabled: Resep sekarang privat
+    enabled: Resep berhasil dibagikan
+  transforms:
+    connect_success: Transformasi terhubung ke resep
+    dataset_mismatch: Transformasi '{id}' tidak termasuk dalam dataset '{dataset_id}'
+    disconnect_success: Transformasi diputuskan dari resep
+    load_error: Gagal memuat transformasi yang terhubung
+    not_found: Transformasi '{id}' tidak ditemukan atau tidak termasuk dalam dataset resep ini
+  unknown_stage: 'Tipe tahap tidak dikenal: {stage_type}'
+  unsupported_chart_type: 'Tipe bagan tidak didukung: {chart_type}'
+  update_error: 'Gagal memperbarui resep: {error}'
+  update_success: Resep '{id}' berhasil diperbarui
+  validation:
+    failed: 'Validasi resep gagal: {errors}'
+    incompatible_algo_output: 'Analisis ''{algo}'' menghasilkan hasil {result_type} dan tidak dapat ditampilkan sebagai bagan ''{output}''. Ubah tipe output ke yang kompatibel dengan ''{algo}'': {options}.'
+    insufficient_columns_algo: 'Dataset ini tidak memiliki tipe kolom yang tepat untuk ''{algo}'' ({requirement}). Dataset memiliki: {columns}. Pilih dataset dengan {requirement}, atau beralih ke: {options}.'
+    insufficient_columns_output: 'Dataset ini tidak memiliki tipe kolom yang tepat untuk ''{output}'' ({requirement}). Dataset memiliki: {columns}. Pilih dataset dengan {requirement}, atau beralih ke: {options}.'
+    missing_algo_field: Analisis '{algo}' tidak memiliki pengaturan '{field}'-nya ({label}). Pilih kolom untuk '{field}' di panel analisis.
+    missing_output_field: Output '{output}' tidak memiliki pengaturan '{field}'-nya ({label}). Pilih kolom untuk '{field}' di panel output.
+    unknown_algorithm: '''{type}'' bukan metode analisis yang dikenali. Pilih salah satu dari: {options}.'
+    unknown_columns: 'Tahap {stage} merujuk pada kolom ''{columns}'' yang tidak ada dalam dataset ini. Kolom yang tersedia: {available}. Pilih dari yang tersedia.'
+    unknown_output: '''{type}'' bukan tipe output yang dikenali. Pilih salah satu dari: {options}.'
+    wrong_column_type: Kolom '{column}' harus {expected} untuk '{field}' ({label}).
+    algorithm_required: Tidak ada metode analisis yang dipilih. Pilih salah satu di panel analisis — resep memerlukan tahap statistik dengan algoritma.
+    unknown_field: '''{field}'' bukan pengaturan yang dikenal untuk ''{type}''. Pengaturan yang dikenal: {options}.'
+  visualisation_columns_required: Minimal satu kolom diperlukan untuk visualisasi
+  visualisation_error: 'Visualisasi gagal: {error}'
+  visualisation_generated: Visualisasi berhasil dibuat
+  technique_chi_square: Uji Chi-square
+  technique_anova_two_way: ANOVA dua arah
+  technique_linear_regression: Regresi Linear
+  technique_t_test_independent: Uji-t independen
+  technique_anova_one_way: ANOVA satu arah
+  technique_correlation: Matriks Korelasi
+  technique_t_test_paired: Uji-t berpasangan
+  technique_descriptive: Statistik Deskriptif
+  distribution_no_columns: Bagan distribusi memerlukan setidaknya satu kolom
+  histogram_no_columns: Histogram memerlukan setidaknya satu kolom
+  histogram_numeric: Histogram memerlukan kolom numerik
+  stage_not_implemented: Tahap {stage_type} segera hadir
+  scoreboard:
+    output_fields:
+      what: Pilih kolom keluaran
+    name:
+      what: Beri nama resep
+    output:
+      what: Pilih jenis keluaran
+    technique:
+      what: Pilih metode analisis
+    technique_unknown:
+      what: Pilih metode analisis yang diketahui
+    dataset:
+      what: Pilih dataset
+    technique_fields:
+      what: Pilih kolom yang diperlukan
+    output_incompatible:
+      what: Pilih jenis keluaran yang kompatibel
+    output_unknown:
+      what: Pilih jenis keluaran yang diketahui
+  chip:
+    heading:
+      technique: Metode analisis yang mana?
+      columns: Kolom yang mana?
+      output: Keluaran yang mana?
+schema:
+  connection_and_table_required: connection_id dan table_name diperlukan untuk sumber PostgreSQL/MySQL
+  connection_not_found: Koneksi database tidak ditemukan atau akses ditolak
+  dataset_id_required: dataset_id diperlukan untuk source_type=dataset
+  dataset_not_found: Dataset tidak ditemukan atau akses ditolak
+  introspect_mysql_failed: 'Gagal melakukan introspeksi MySQL: {error}'
+  introspect_postgresql_failed: 'Gagal melakukan introspeksi PostgreSQL: {error}'
+  no_table_name: Dataset tidak memiliki nama tabel (belum di-ingest)
+  unsupported_source_type: 'source_type tidak didukung: {source_type}. Gunakan dataset, postgresql, atau mysql.'
+statistics:
+  anova_computation_failed: 'Komputasi ANOVA dua arah gagal: {error}'
+  anova_needs_three_groups: ANOVA satu arah memerlukan 3 kelompok atau lebih (ditemukan {n}). Untuk 2 kelompok, gunakan uji-t independen.
+  cache_cleared: Kunci cache '{key}' dibersihkan
+  cache_not_found: Kunci cache '{key}' tidak ditemukan
+  column_must_be_numeric: Kolom '{col}' harus numerik
+  column_not_found: Kolom '{col}' tidak ditemukan
+  computation_failed: 'Komputasi statistik gagal: {error}'
+  compute_failed: 'Gagal menghitung statistik: {error}'
+  each_group_two_observations: Setiap kelompok harus memiliki minimal 2 observasi
+  factor_column_not_found: Kolom '{col}' untuk faktor {factor} tidak ditemukan
+  group_column_required_anova: Kolom kelompok kategorikal dengan 3 level atau lebih diperlukan untuk ANOVA satu arah
+  group_column_required_ttest: Kolom kelompok kategorikal dengan tepat dua level diperlukan untuk uji-t independen
+  group_fewer_than_two: Kelompok '{group}' memiliki kurang dari 2 observasi
+  group_must_have_two_levels: Kolom kelompok '{group}' harus memiliki tepat 2 level (ditemukan {n})
+  need_five_observations_chi: Memerlukan minimal 5 observasi lengkap
+  need_observations_regression: Memerlukan minimal {n} observasi lengkap
+  need_ten_observations_anova: Memerlukan minimal 10 observasi lengkap untuk ANOVA dua arah
+  need_three_pairs: Memerlukan minimal 3 pasangan lengkap untuk uji-t berpasangan
+  need_two_categories_chi: Kedua kolom memerlukan minimal 2 kategori
+  need_two_numeric_correlation: Memerlukan minimal 2 kolom numerik untuk korelasi
+  need_two_valid_numeric: Memerlukan minimal 2 kolom numerik yang valid
+  no_valid_data_after_dropna: Tidak ada data valid setelah membuang NaN
+  no_valid_numeric: Tidak ada kolom numerik valid yang diberikan
+  non_numeric_column: Kolom non-numerik
+  not_computed: Tidak dihitung
+  select_dependent_independent: 'Pilih minimal 2 kolom numerik: pertama = dependen, sisanya = independen'
+  select_dependent_var: Pilih satu kolom variabel dependen numerik
+  select_one_numeric_ttest: Pilih satu kolom numerik untuk uji-t independen
+  select_two_categorical_chi: Pilih tepat dua kolom kategorikal
+  select_two_numeric_paired: Pilih tepat dua kolom numerik untuk uji-t berpasangan
+  two_factors_required: Dua faktor diperlukan untuk ANOVA dua arah
+system:
+  cache_cleanup_completed: 'Pembersihan cache selesai: {removed} entri dihapus'
+  hello_world: Halo, Dunia!
+user:
+  api_key_required: Kunci API diperlukan untuk penyedia ini
+  connection_name_exists: Koneksi dengan nama ini sudah ada
+  connection_not_found: Koneksi tidak ditemukan
+  example_blocked: Pengguna contoh tidak dapat melakukan tindakan ini
+  internal_error: Kesalahan server internal
+  missing_fields: Field yang diperlukan tidak ada
+  provider_not_found: Penyedia tidak ditemukan
+  user_not_found: Pengguna tidak ditemukan
+  provider_returned: 'Penyedia mengembalikan {status}: {text}'
+  auto_create_default_detail: Pembuatan dataset otomatis gagal. Server database mungkin tidak dapat dijangkau.
+  fetch_failed: Gagal mengambil data
+  connection_timeout_remote: Waktu koneksi habis untuk {code} di {baseUrl}
+  no_endpoint: Tidak ada endpoint yang dikonfigurasi untuk penyedia ini.
+  api_key_required_fetch: Kunci API diperlukan untuk penyedia ini.
+  connection_timeout_local: Waktu koneksi habis. Apakah {code} berjalan di {baseUrl}?
+  example_update_db: Pengguna contoh tidak dapat memperbarui koneksi database
+  example_delete_db: Pengguna contoh tidak dapat menghapus koneksi database
+  example_create_db: Pengguna contoh tidak dapat membuat koneksi database
+  unknown_provider: 'Penyedia tidak dikenal: {code}'
+  no_models_returned: Penyedia tidak mengembalikan model apa pun; tidak ada yang diubah
+validation:
+  error: 'Kesalahan validasi: {count} masalah ditemukan'
+  password:
+    require_special: Kata sandi harus mengandung setidaknya satu karakter khusus.
+    min_length: Kata sandi harus memiliki panjang minimal {min} karakter.
+    require_digit: Kata sandi harus mengandung setidaknya satu angka.
+    too_weak: Kata sandi terlalu lemah. Silakan pilih kata sandi yang lebih kuat.
+    require_lowercase: Kata sandi harus mengandung setidaknya satu huruf kecil.
+    require_uppercase: Kata sandi harus mengandung setidaknya satu huruf besar.
+virtual:
+  execute_failed: 'Eksekusi gagal: {error}'
+  no_credentials_mysql: Kredensial tidak ditemukan untuk koneksi MySQL {conn_id}
+  no_credentials_postgresql: Kredensial tidak ditemukan untuk koneksi PostgreSQL {conn_id}
+  preview_failed: 'Pratinjau gagal: {error}'
+  validate:
+    connection_not_found: 'Sumber ''{alias}'': koneksi {conn_id} tidak ditemukan atau akses ditolak'
+    column_source_not_found: 'Kolom {c_idx}: sumber ''{src_alias}'' tidak ditemukan'
+    join_left_source_not_found: 'Join {j_idx}: sumber kiri ''{left_alias}'' tidak ditemukan'
+    join_right_source_not_found: 'Join {j_idx}: sumber kanan ''{right_alias}'' tidak ditemukan'
+    no_sources: Tidak ada sumber yang ditentukan
+    dataset_not_found: 'Sumber ''{alias}'': dataset {dataset_id} tidak ditemukan atau akses ditolak'
+    connection_id_required: 'Sumber ''{alias}'': connectionId wajib diisi untuk sumber {storage_type}'
+    dataset_id_required: 'Sumber ''{alias}'': datasetId wajib diisi untuk sumber dataset'
+    join_column_not_found: 'Join {j_idx}: sumber ''{alias}'' tidak memiliki kolom ''{column}'''
+    output_column_not_found: 'Kolom {c_idx}: sumber ''{src_alias}'' tidak memiliki kolom ''{column}'''
+  scoreboard:
+    output_columns:
+      needs: Satu sumber, dengan kolom-kolomnya telah dibaca.
+      what: Kolom mana yang harus ada dalam hasil?
+    columns:
+      what: Apa yang ada di dalam '{source}'?
+      needs_failed: Kolom-kolom dari '{source}' tidak dapat dibaca.
+      needs_empty: '''{source}'' tidak memiliki kolom untuk dipilih.'
+    name:
+      what: Apa nama dataset ini?
+    joins:
+      what: Bagaimana sumber-sumber harus digabungkan?
+      needs: Dua sumber atau lebih, dengan kolom-kolomnya telah dibaca.
+    sources:
+      what: Dari tabel mana dataset ini harus dibuat?
+    storage:
+      live: Tampilan langsung
+      table: Tabel tersimpan
+      what: Haruskah ini menjadi tampilan langsung atau tabel tersimpan?
+  save:
+    invalid_definition: 'Dataset ini tidak dapat disimpan: {errors}'
+  decision:
+    model_failed: 'Pilihan Anda telah disimpan. Asisten tidak dapat merespons: {error}'
+    invalid_value: 'Keputusan ''{piece}'' tidak dapat diterapkan: {error}'
+    unknown_piece: '''{piece}'' bukan keputusan yang dapat diterapkan oleh endpoint ini.'
+    no_connection: Pilihan Anda telah disimpan. Asisten tidak dapat merespons karena tidak ada koneksi AI yang tersedia.
+    missing_value: Keputusan '{piece}' memerlukan nilai.
+    no_reply: Pilihan Anda telah disimpan. Asisten telah menghabiskan jatah ronde kerjanya tanpa menghasilkan balasan — minta asisten untuk melanjutkan, atau periksa draf di pohon.
+    applied: Gunakan pilihan di atas.
+  column:
+    missing_source: 'Sebuah kolom memerlukan sumbernya: ID dataset, atau koneksi dan nama tabel.'
+    unknown_action: '''{action}'' bukan tindakan kolom. Gunakan centang atau hapus centang.'
+    missing_column: Tidak ada kolom yang disebutkan.
+  panel:
+    collapsed_required: Status terlipat panel harus true atau false.
+  join_suggestions:
+    invalid_sources: Saran join memerlukan daftar sumber, masing-masing dengan alias dan nama ({error}).
+  tool:
+    no_source: 'Tidak ada sumber bernama ''{alias}''. Sumber draf ini: {aliases}.'
+    no_sources_yet: Tidak ada sumber bernama '{alias}' — draf ini belum memiliki sumber. Panggil add_source terlebih dahulu.
+virtual_chat:
+  chat_session_not_found: Sesi chat tidak ditemukan
+  connection_not_found: Koneksi database tidak ditemukan atau akses ditolak
+  introspection_failed: 'Introspeksi gagal: {error}'
+  llm_call_failed: 'Panggilan LLM gagal: {error}'
+  llm_returned_error: LLM mengembalikan HTTP {status_code}
+  save_parse_error: '⚠️ Tidak dapat menyimpan dataset: {error}'
+  save_failed: '⚠️ Penyimpanan gagal: {error}'
+  save_no_sources: '⚠️ Tidak dapat menyimpan: tidak ada sumber data yang diintrospeksi. Coba sebutkan nama tabel seperti ''products'' atau ''orders'' di pesan Anda sebelumnya.'
+  empty_response: Saya tidak yakin bagaimana menanggapinya. Bisakah Anda mengulanginya atau memberikan lebih detail?
+  save_draft_success: '✅ Dataset virtual disimpan sebagai draf: **{name}**. Anda dapat melihat dan mengeditnya di halaman Datasets. Gunakan tab Define untuk menyempurnakan SQL, join, dan kolom output.'
+  save_success: ✅ Dataset **{name}** berhasil disimpan. Anda dapat menemukannya di daftar Dataset yang Ada. Gunakan Edit untuk menyempurnakannya atau Clone untuk membuat variasi.
+test_ai:
+  internal_error: Kesalahan server internal
+  connection_timeout_local: Waktu koneksi habis. Apakah {name} berjalan di {baseUrl}?
+  api_key_required: Kunci API diperlukan untuk {name}.
+  fetch_failed: Gagal mengambil data
+  no_endpoint: Tidak ada endpoint yang dikonfigurasi untuk penyedia ini.
+  endpoint_v1_valid: Endpoint di {baseUrl}/v1 valid.
+  server_reachable: Server {name} di {baseUrl} dapat dijangkau.
+  unknown_provider: 'Penyedia tidak dikenal: {provider}'
+  connection_failed: 'Koneksi gagal: {msg}'
+  responded_with_status: '{name} merespons dengan status {status}'
+  endpoint_valid: Endpoint di {baseUrl} valid.
+visualization_instances:
+  invalid_viz_type: Jenis visualisasi tidak valid
+  invalid_instance_id: ID instance tidak valid
+  unauthorized: Tidak diizinkan
+  instance_not_found: Instance tidak ditemukan
+  viz_type_not_found: Jenis visualisasi tidak ditemukan
+  viz_type_id_required: visualizationTypeId diperlukan
+  no_rendered_output: Tidak ada output yang dirender tersedia
+  internal_error: Kesalahan server internal
+ai_providers:
+  provider_not_found: Penyedia tidak ditemukan
+  missing_provider_id: ID penyedia tidak ada
+  failed_to_update_provider: Gagal memperbarui penyedia
+  unauthorized: Tidak diizinkan
+  internal_error: Kesalahan server internal
+  missing_id_or_enabled: ID atau flag enabled tidak ada
+  forbidden: Dilarang
+  failed_to_delete_provider: Gagal menghapus penyedia
+  invalid_provider_id: ID penyedia tidak valid
+visualization_types:
+  slug_already_exists: Slug sudah ada
+  internal_error: Kesalahan server internal
+  forbidden: Dilarang
+  type_not_found: Jenis visualisasi tidak ditemukan
+  name_and_slug_required: Nama dan slug diperlukan
+ai:
+  database:
+    email_sent: Laporan berhasil dikirim melalui email
+invalid_target_type: 'target_type tidak valid: {target_type}. Harus salah satu dari: {types}'
+filter_operator_required: Operasi filter memerlukan operator
+invalid_encoding: 'Encoding tidak valid: {encoding}. Harus salah satu dari: {types}'
+rename_new_name_required: Operasi ganti nama kolom memerlukan nama baru
+filter_value_required: Operasi filter memerlukan nilai
+invalid_operation_type: 'Tipe operasi tidak valid: {type}. Harus salah satu dari: {types}'
+encode_column_required: Operasi encode memerlukan kolom
+invalid_fill_method: 'Metode fill_missing tidak valid: {method}. Harus salah satu dari: {methods}'
+columns_required: Operasi '{type}' memerlukan field columns
+column_required: Operasi '{type}' memerlukan kolom
+dataclean_chat:
+  message_required: Pesan wajib diisi
+  dataset_id_required: datasetId wajib diisi
+  create_error: Gagal membuat sesi pembersihan data
+  empty_response: Saya tidak dapat menghasilkan respons. Silakan coba lagi.
+  chat_session_not_found: Sesi chat pembersihan data tidak ditemukan
+dataclean_tools:
+  no_rules_to_apply: Tidak ada aturan untuk diterapkan
+  no_rules_to_preview: Tidak ada aturan untuk dipratinjau

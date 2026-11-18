@@ -1,0 +1,1019 @@
+access:
+  connected_in_ms: منسلک ہونے میں {elapsed}ms لگے
+  connection_deleted: کنکشن حذف کر دیا گیا
+  connection_exists: کنکشن '{name}' پہلے سے موجود ہے
+  connection_failed: کنکشن ناکام ہو گیا
+  connection_failed_detail: 'کنکشن ناکام: {detail}'
+  connection_not_found: کنکشن نہیں ملا
+  connection_saved: کنکشن محفوظ ہو گیا
+  db_pool_not_initialized: ڈیٹا بیس پول شروع نہیں کیا گیا
+  encryption_error: 'خفیہ کاری میں خرابی: {error}'
+  file_path_required: file_path درکار ہے
+  licence_required: Access ڈیٹا بیس کنکشنز کے لیے کارپوریٹ لائسنس درکار ہے
+  name_and_path_required: name اور file_path درکار ہیں
+  connection_unavailable: 'ایکسیس ڈیٹا بیس سے رابطہ نہیں ہو سکا: {error}'
+  invalid_port: پورٹ ایک عدد صحیح ہونا چاہیے
+  table_not_found: 'ٹیبل ''{table}'' نہیں ملا: {error}'
+  connection_params_required: ہوسٹ، پورٹ، صارف اور پاس ورڈ درکار ہیں
+admin:
+  already_full_admin: صارف پہلے سے مکمل ایڈمن ہے
+  already_group_admin: صارف پہلے سے گروپ ایڈمن ہے
+  cannot_delete_self: آپ اپنا اکاؤنٹ حذف نہیں کر سکتے
+  cannot_demote_full_admin: مکمل ایڈمن کو تنزلی نہیں دی جا سکتی
+  cannot_demote_self: آپ خود کو تنزلی نہیں دے سکتے
+  cannot_promote_example: مثال صارف کو ترقی نہیں دی جا سکتی
+  delete_error: صارف کو حذف کرنے میں ناکامی
+  demote_error: صارف کو تنزلی دینے میں ناکامی
+  description_required: تفصیل خالی نہیں ہو سکتی
+  example_blocked: مثال صارفین ایڈمن کارروائیاں انجام نہیں دے سکتے
+  group_not_found: گروپ نہیں ملا
+  group_users_load_error: گروپ صارفین کو لوڈ کرنے میں ناکامی
+  groups_load_error: گروپس لوڈ کرنے میں ناکامی
+  groups_stats_error: گروپ شماریات لوڈ کرنے میں ناکامی
+  insufficient_permissions: اس کارروائی کے لیے ناکافی اجازت
+  invalid_group_id: غلط group_id۔ 00-99 ہونا چاہیے
+  invalid_id: غلط id
+  invalid_upload_count: maxUploadCount ایک غیر منفی عدد ہونا چاہیے (0 لامحدود کے لیے)۔
+  invalid_upload_size: maxUploadSizeMB ایک غیر منفی عدد ہونا چاہیے (0 لامحدود کے لیے)۔
+  missing_fields: مطلوبہ خانے غائب ہیں
+  missing_group_id: گروپ ID غائب ہے
+  missing_id: id غائب ہے
+  missing_model_id: ماڈل id غائب ہے
+  missing_provider_code: providerCode پیرامیٹر غائب ہے
+  missing_user_id: userId غائب ہے
+  model_update_error: ماڈل اپ ڈیٹ کرنے میں ناکامی
+  models_load_error: ماڈلز لوڈ کرنے میں ناکامی
+  no_fields: اپ ڈیٹ کرنے کے لیے کوئی درست خانے موجود نہیں
+  no_group: صارف کو کوئی گروپ تفویض نہیں کیا گیا
+  not_group_admin: صارف گروپ ایڈمن نہیں ہے
+  only_full_admin: یہ کارروائی صرف مکمل ایڈمن انجام دے سکتے ہیں
+  promote_error: صارف کو ترقی دینے میں ناکامی
+  provider_delete_error: فراہم کنندہ حذف کرنے میں ناکامی
+  provider_not_found: فراہم کنندہ نہیں ملا
+  provider_update_error: فراہم کنندہ اپ ڈیٹ کرنے میں ناکامی
+  providers_load_error: فراہم کنندگان لوڈ کرنے میں ناکامی
+  slug_exists: سلگ پہلے سے موجود ہے
+  update_error: صارف اپ ڈیٹ کرنے میں ناکامی
+  user_load_error: صارف لوڈ کرنے میں ناکامی
+  user_not_found: صارف نہیں ملا
+  users_load_error: صارفین لوڈ کرنے میں ناکامی
+  viz_type_create_error: ویژولائزیشن قسم بنانے میں ناکامی
+  viz_type_delete_error: ویژولائزیشن قسم حذف کرنے میں ناکامی
+  viz_type_update_error: ویژولائزیشن قسم اپ ڈیٹ کرنے میں ناکامی
+  viz_types_load_error: ویژولائزیشن اقسام لوڈ کرنے میں ناکامی
+ai_recipe:
+  llm_error: 'AI سروس میں خرابی: {error}'
+  message_required: پیغام درکار ہے
+  session_name_required: نام درکار ہے
+  invalid_decision: غلط فیصلہ
+api:
+  user:
+    connection_not_found: کنکشن نہیں ملا
+    example_blocked: مثال کے صارفین یہ کارروائی نہیں کر سکتے
+    invalid_name: نام ایک اسٹرنگ ہونا چاہیے
+    example_create_ai: مثال کے صارفین AI کنکشنز نہیں بنا سکتے
+    connection_name_exists: اس نام سے ایک کنکشن پہلے سے موجود ہے
+    missing_fields: مطلوبہ فیلڈز غائب ہیں
+    example_update_ai: مثال کے صارفین AI کنکشنز اپ ڈیٹ نہیں کر سکتے
+    connection_id_required: کنکشن آئی ڈی درکار ہے
+    user_not_found: صارف نہیں ملا
+    invalid_connection_id: غلط کنکشن آئی ڈی
+    example_delete_ai: مثال کے صارفین AI کنکشنز حذف نہیں کر سکتے
+    invalid_current_password: موجودہ پاس ورڈ غلط ہے
+    invalid_port: پورٹ ایک عدد صحیح ہونا چاہیے
+    provider_not_found: فراہم کنندہ "{provider}" نہیں ملا
+    api_key_required: اس فراہم کنندہ کے لیے API کلید درکار ہے
+    internal_error: اندرونی سرور کی خرابی
+    tuning_nothing_to_update: temperature، maxTokens یا timeoutSeconds میں سے کم از کم ایک فراہم کریں
+    test_connect_timeout: اینڈ پوائنٹ نے بروقت کنکشن قبول نہیں کیا۔ میزبان بند ہو سکتا ہے، یا فائر وال درخواست کو ڈراپ کر رہا ہو سکتا ہے۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ ناکام ہونے میں جو وقت لگا
+      وہ درج کیا گیا۔
+    test_read_timeout: ماڈل نے درخواست قبول کی لیکن بروقت جواب نہیں دیا۔ یہ اس میزبان کے لیے بہت سست ہو سکتا ہے — CPU پر ایک بڑا ماڈل کئی منٹ لے سکتا ہے۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ ناکام ہونے
+      میں جو وقت لگا وہ درج کیا گیا۔
+    test_tls_failure: محفوظ کنکشن قائم نہیں ہو سکا — اینڈ پوائنٹ شاید سادہ http ہے جہاں https متوقع تھا، یا اس کا سرٹیفکیٹ معیاد ختم ہو چکا ہے۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ ناکام ہونے میں جو وقت
+      لگا وہ درج کیا گیا۔
+    test_reason_required: ٹیسٹ کے نتیجے میں ایک وجہ درج ہونی چاہیے
+    tuning_malformed_body: درخواست کا باڈی درست JSON نہیں ہے
+    test_connect_refused: اس پتے پر کچھ بھی سن نہیں رہا — سرور قابلِ رسائی ہے لیکن کسی سروس نے جواب نہیں دیا۔ پورٹ چیک کریں اور یہ کہ AI سرور چل رہا ہے۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ ناکام ہونے
+      میں جو وقت لگا وہ درج کیا گیا۔
+    invalid_probe_timeout: ٹیسٹ ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ {ceiling}
+    unknown_test_id: 'نامعلوم ٹیسٹ "{test}"۔ رجسٹرڈ ٹیسٹ: {known}'
+    connect_timeout_exceeds_probe: کنکٹ ٹائم آؤٹ ({connect} سیکنڈ) ٹیسٹ ٹائم آؤٹ ({probe} سیکنڈ) سے زیادہ نہیں ہو سکتا — کنکشن کو قائم ہونے میں پورے ٹیسٹ کے چلنے کی مدت سے زیادہ وقت لینے کی اجازت نہیں دی
+      جا سکتی
+    test_budget_exhausted: ماڈل نے کچھ بھی واپس نہیں کیا کیونکہ اس نے جواب تک پہنچنے سے پہلے اپنا پورا آؤٹ پٹ بجٹ استعمال کر لیا۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ دورانیہ درج کیا گیا۔
+    invalid_connect_timeout: کنکٹ ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ {ceiling}
+    tuning_model_not_found: ایسا کوئی ماڈل نہیں
+    test_dns_failure: اینڈ پوائنٹ کا میزبان نام حل نہیں ہو سکا۔ پتے میں ٹائپو چیک کریں، یا ایسا نام چیک کریں جسے صرف یہ نیٹ ورک حل کر سکتا ہے۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ ناکام ہونے میں جو وقت
+      لگا وہ درج کیا گیا۔
+    tuning_invalid_max_tokens: آؤٹ پٹ کی حد ٹوکنز میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+    discovery_complete: '{seen} ماڈلز دریافت ہوئے: {created} یہاں نئے بنائے گئے، {refreshed} پہلے سے معلوم تھے اور تازہ کیے گئے، {pruned} اب پیش نہیں کیے جا رہے۔'
+    model_not_found: فراہم کنندہ "{provider}" کے لیے ماڈل "{model}" نہیں ملا
+    test_http_status: 'فراہم کنندہ نے جواب دیا، اور اس کا جواب ایک خرابی تھی: {detail}۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا؛ فراہم کنندہ کے جواب کو ظاہر کیا گیا ہے تاکہ وجہ واضح ہو۔'
+    test_attribution_required: ٹیسٹ کے نتیجے میں یہ درج ہونا چاہیے کہ اسے کس نے چلایا
+    tuning_invalid_temperature: ٹمپریچر 0 اور 2 کے درمیان ایک نمبر ہونا چاہیے
+    tuning_invalid_ai_timeout: AI وقت کی حد سیکنڈوں میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+    test_not_implemented: ٹیسٹ "{test}" رجسٹرڈ ہے لیکن اس کا ابھی تک کوئی پروب نہیں ہے
+    tuning_connection_not_found: ایسا کوئی AI کنکشن نہیں
+    invalid_test_state: 'غلط ٹیسٹ نتیجہ "{state}"۔ اجازت شدہ: {allowed}'
+    test_other_failure: 'ماڈل تک رسائی نہیں ہو سکی، اور وجہ ایسی نہیں تھی جسے یہ نظام پہچانتا ہو۔ قابلیت کا کوئی فیصلہ درج نہیں کیا گیا: {detail}'
+    model_not_served_by_connection: یہ کنکشن "{model}" پیش نہیں کرتا۔ اس کے ماڈلز تبدیل ہو چکے ہو سکتے ہیں — کنکشن ریفریش کریں، یا کوئی اور ماڈل منتخب کریں۔
+  admin:
+    missing_group_id: گروپ ID غائب ہے
+    settings_invalid_email_timeout: ای میل تصدیق کی معیاد مثبت عدد ہونی چاہیے (گھنٹے)
+    model_update_error: ماڈل اپ ڈیٹ کرنے میں ناکام
+    missing_model_id: ماڈل id غائب ہے
+    providers_load_error: فراہم کنندگان لوڈ کرنے میں ناکام
+    no_group: صارف کو کوئی گروپ تفویض نہیں کیا گیا
+    not_group_admin: صارف گروپ ایڈمن نہیں ہے
+    settings_view_forbidden: صرف مکمل ایڈمن عالمی ترتیبات دیکھ سکتے ہیں
+    invalid_group_id: غلط group_id۔ 00-99 ہونا ضروری ہے
+    missing_user_id: userId غائب ہے
+    user_load_error: صارف لوڈ کرنے میں ناکام
+    already_group_admin: صارف پہلے سے گروپ ایڈمن ہے
+    groups_stats_error: گروپ کے اعداد و شمار لوڈ کرنے میں ناکام
+    settings_modify_forbidden: صرف مکمل ایڈمن عالمی ترتیبات میں ترمیم کر سکتے ہیں
+    settings_invalid_upload_size: طے شدہ زیادہ سے زیادہ اپ لوڈ سائز غیر منفی عدد ہونا چاہیے (0 لامحدود کے لیے)۔
+    settings_invalid_upload_count: طے شدہ زیادہ سے زیادہ اپ لوڈ تعداد غیر منفی عدد ہونی چاہیے (0 لامحدود کے لیے)۔
+    invalid_upload_count: maxUploadCount غیر منفی عدد ہونا چاہیے (0 لامحدود کے لیے)۔
+    demote_error: صارف کو تنزلی دینے میں ناکام
+    groups_load_error: گروپس لوڈ کرنے میں ناکام
+    update_error: صارف اپ ڈیٹ کرنے میں ناکام
+    settings_load_error: عالمی ترتیبات لوڈ کرنے میں ناکام
+    delete_error: صارف حذف کرنے میں ناکام
+    no_fields: اپ ڈیٹ کے لیے کوئی درست خانے نہیں
+    settings_invalid_email_sender: بھیجنے والے کے ای میل ایڈریس کا فارمیٹ غلط ہے
+    settings_invalid_max_registrations: زیادہ سے زیادہ رجسٹریشن مثبت عدد یا لامحدود ہونی چاہیے
+    settings_save_error: عالمی ترتیبات محفوظ کرنے میں ناکام
+    promote_error: صارف کو ترقی دینے میں ناکام
+    provider_delete_error: فراہم کنندہ حذف کرنے میں ناکام
+    cannot_promote_example: مثال کے صارف کو ترقی نہیں دے سکتے
+    missing_id: id غائب ہے
+    settings_invalid_public_url: عوامی URL فارمیٹ غلط ہے
+    cannot_demote_full_admin: مکمل ایڈمن کو تنزلی نہیں دے سکتے
+    provider_update_error: فراہم کنندہ اپ ڈیٹ کرنے میں ناکام
+    settings_invalid_grace_period: رجسٹریشن کی مہلت مثبت عدد ہونی چاہیے (گھنٹے)
+    invalid_upload_size: maxUploadSizeMB غیر منفی عدد ہونا چاہیے (0 لامحدود کے لیے)۔
+    description_required: تفصیل خالی نہیں ہو سکتی
+    only_full_admin: صرف مکمل ایڈمن یہ کارروائی کر سکتے ہیں
+    already_full_admin: صارف پہلے سے مکمل ایڈمن ہے
+    example_blocked: مثال کے صارفین ایڈمن کارروائیاں نہیں کر سکتے
+    cannot_delete_self: آپ اپنا اکاؤنٹ حذف نہیں کر سکتے
+    provider_not_found: فراہم کنندہ نہیں ملا
+    cannot_demote_self: آپ خود کو تنزلی نہیں دے سکتے
+    missing_fields: مطلوبہ فیلڈز غائب ہیں
+    models_load_error: ماڈلز لوڈ کرنے میں ناکام
+    insufficient_permissions: اس کارروائی کے لیے ناکافی اجازت
+    group_users_load_error: گروپ صارفین کو لوڈ کرنے میں ناکام
+    invalid_viz_type_field: ویژولائزیشن کی قسم کے فیلڈ کی قدر غلط ہے
+    user_not_found: صارف نہیں ملا
+    viz_type_not_found: ویژولائزیشن کی قسم نہیں ملی
+    model_not_found: ماڈل نہیں ملا
+    promote_success: صارف {name} کو گروپ ایڈمن بنا دیا گیا ہے۔
+    settings_invalid_platform_upload_size: پلیٹ فارم کی زیادہ سے زیادہ اپ لوڈ سائز غیر منفی عدد ہونی چاہیے (0 کا مطلب لامحدود ہے)۔
+    invalid_id: غلط آئی ڈی
+    demote_success: صارف {name} کو گروپ ایڈمن کے عہدے سے تنزلی کر دی گئی ہے۔
+    users_load_error: صارفین کو لوڈ کرنے میں ناکامی
+    slug_exists: سلگ پہلے سے موجود ہے
+    instance_exists: قسم حذف نہیں کی جا سکتی کیونکہ اس کے ساتھ {count} منسلک مثالیں ہیں۔
+    viz_type_create_error: ویژولائزیشن قسم بنانے میں ناکامی
+    viz_type_update_error: ویژولائزیشن قسم اپ ڈیٹ کرنے میں ناکامی
+    viz_types_load_error: ویژولائزیشن اقسام لوڈ کرنے میں ناکامی
+    viz_type_delete_error: ویژولائزیشن قسم حذف کرنے میں ناکامی
+    instance_in_use: قسم کو حذف نہیں کیا جا سکتا کیونکہ اس سے وابستہ مثالیں موجود ہیں۔
+    settings_demo_mode_requires_licence: ڈیمو موڈ کو بغیر درست لائسنس کے غیر فعال نہیں کیا جا سکتا۔
+    email_exists: ای میل پہلے سے موجود ہے
+    invalid_email: ای میل کا فارمیٹ غلط ہے
+    settings_not_found: عالمی ترتیبات نہیں ملیں
+    settings_invalid_registration_mode: رجسٹریشن موڈ 0، 1، 2، یا 4 میں سے ایک ہونا چاہیے۔
+    create_user_error: صارف بنانے میں ناکامی ہوئی
+    users_demo_upload_size_limit: ڈیمو موڈ میں، صارف کے لیے زیادہ سے زیادہ اپ لوڈ سائز 1 سے 5 ایم بی کے درمیان ہونا ضروری ہے۔
+    settings_demo_upload_count_limit: ڈیمو موڈ میں، ڈیفالٹ زیادہ سے زیادہ اپ لوڈ تعداد 1 سے 5 کے درمیان ہونی ضروری ہے۔
+    settings_demo_upload_size_limit: ڈیمو موڈ میں، ڈیفالٹ زیادہ سے زیادہ اپ لوڈ سائز 1 سے 5 ایم بی کے درمیان ہونا ضروری ہے۔
+    users_demo_upload_count_limit: ڈیمو موڈ میں، صارف کے لیے زیادہ سے زیادہ اپ لوڈ تعداد 1 سے 5 کے درمیان ہونی ضروری ہے۔
+    example_user_password_blocked: مثال کے صارفین کے پاس ورڈز ایڈمنسٹریٹر کے ذریعے سیٹ نہیں کیے جا سکتے
+    invalid_admin_password: ایڈمن پاس ورڈ غلط ہے
+    settings_invalid_probe_timeout: طے شدہ ٹیسٹ ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ {ceiling}
+    tuning_reset_error: AI ٹیوننگ کی پہلے سے طے شدہ اقدار دوبارہ سیٹ نہیں کی جا سکیں
+    settings_invalid_max_tokens: آؤٹ پٹ کی حد ٹوکنز میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+    settings_invalid_temperature: ٹمپریچر 0 اور 2 کے درمیان ایک نمبر ہونا چاہیے
+    settings_invalid_connect_timeout: طے شدہ کنکٹ ٹائم آؤٹ سیکنڈوں میں ایک مکمل عدد ہونا چاہیے، کم از کم 1 اور زیادہ سے زیادہ {ceiling}
+    field_not_owned: 'اس صفحے پر یہ فیلڈ سیٹ نہیں ہے۔ {endpoint}۔ قابلِ اعتراض: {fields}'
+    settings_invalid_slow_threshold: سست ماڈل کی حد سیکنڈوں میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+    settings_invalid_ai_timeout: AI وقت کی حد سیکنڈوں میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+  auth:
+    email_already_verified: ای میل پہلے سے تصدیق شدہ ہے
+    invalid_token: ٹوکن غلط یا معیاد ختم ہے
+    token_expired: ٹوکن کی معیاد ختم ہو چکی ہے
+    user_not_found: صارف نہیں ملا
+    example_user_reset_blocked: مثال کے صارفین کے لیے پاس ورڈ ری سیٹ غیر فعال ہے
+    missing_fields: خانے غائب ہیں
+    unauthorized: غیر مجاز
+    example_user_forgot_blocked: مثال کے صارفین کے لیے پاس ورڈ ری سیٹ غیر فعال ہے
+    missing_email: ای میل درکار ہے
+    invalid_current_password: موجودہ پاس ورڈ غلط ہے
+    internal_error: اندرونی سرور کی خرابی
+    example_user_blocked: مثال کے صارفین کے لیے پاس ورڈ تبدیل کرنا غیر فعال ہے
+    not_authenticated: تصدیق شدہ نہیں
+  register:
+    email_exists: ای میل پہلے سے موجود ہے
+    internal_error: اندرونی سرور خرابی
+    missing_fields: خانے غائب ہیں
+    invalid_email: ای میل فارمیٹ غلط ہے
+    settings_not_found: عالمی ترتیبات نہیں ملیں
+    limit_reached: رجسٹریشن کی حد پوری ہو گئی (زیادہ سے زیادہ {max_reg} صارفین)۔
+    registration_disabled: خود رجسٹریشن غیر فعال ہے۔ براہ کرم منتظم سے رابطہ کریں۔
+  settings:
+    save_failed: ترتیبات محفوظ کرنے میں ناکامی
+    user_not_found: صارف نہیں ملا
+    example_blocked: مثال کے صارفین ترتیبات میں ترمیم نہیں کر سکتے
+    invalid_default_ai_connection: غلط ڈیفالٹ AI کنکشن
+    load_failed: ترتیبات لوڈ کرنے میں ناکامی
+    invalid_slow_threshold: سست ماڈل کی حد سیکنڈوں میں ایک مکمل عدد ہونی چاہیے، کم از کم 1
+  profile:
+    invalid_name: نام ایک اسٹرنگ ہونا چاہیے
+    fetch_failed: پروفائل حاصل کرنے میں ناکامی
+    update_failed: پروفائل اپ ڈیٹ کرنے میں ناکامی
+    name_required: نام درکار ہے
+  global_settings_load_error: اندرونی سرور کی خرابی
+  languages_load_error: زبانیں لوڈ کرنے میں ناکامی
+  translations_load_error: ترجمے لوڈ کرنے میں ناکامی
+audio_presets:
+  invalid_chat_type: 'غلط چیٹ قسم: {chat_type}۔ ان میں سے ایک ہونا چاہیے: {valid_types}'
+auth:
+  account_deleted: یہ اکاؤنٹ حذف کر دیا گیا ہے۔
+  email_not_verified: ای میل تصدیق شدہ نہیں ہے۔ براہ کرم اپنا ان باکس اور اسپام فولڈر دیکھیں۔
+  example_user_blocked: مثال صارفین کے لیے پاس ورڈ کے افعال غیر فعال ہیں
+  example_user_forgot_blocked: مثال صارفین کے لیے پاس ورڈ دوبارہ ترتیب دینا غیر فعال ہے
+  example_user_reset_blocked: مثال صارفین کے لیے پاس ورڈ دوبارہ ترتیب دینا غیر فعال ہے
+  internal_error: داخلی سرور خرابی
+  invalid_credentials: غلط اسناد
+  invalid_current_password: موجودہ پاس ورڈ درست نہیں ہے
+  invalid_token: غلط یا میعاد ختم شدہ ٹوکن
+  invalid_token_error: 'غلط ٹوکن: {error}'
+  invalid_token_missing_user_id: 'غلط ٹوکن: صارف id غائب ہے'
+  missing_email: ای میل درکار ہے
+  missing_fields: خانے غائب ہیں
+  password_changed: پاس ورڈ کامیابی سے تبدیل ہو گیا
+  password_validation_failed: پاس ورڈ کی تصدیق ناکام ہو گئی
+  reset_email_sent: پاس ورڈ دوبارہ ترتیب دینے کی ای میل بھیج دی گئی
+  token_expired: ٹوکن کی میعاد ختم ہو چکی ہے
+  unauthorized: غیر مجاز
+  user_not_found: صارف نہیں ملا
+  login_invalid_credentials: غلط ای میل یا پاس ورڈ۔
+chat:
+  ai_provider_error: 'AI فراہم کنندہ خرابی: {error}'
+  connection_error: 'کنکشن میں خرابی: {error}'
+  connection_not_found: AI کنکشن نہیں ملا یا قابل رسائی نہیں
+  delete_failed: 'چیٹ حذف کرنے میں ناکامی: {error}'
+  deleted: چیٹ '{id}' کامیابی سے حذف ہو گئی
+  generate_title_failed: 'عنوان بنانے میں ناکامی: {error}'
+  get_failed: 'چیٹ حاصل کرنے میں ناکامی: {error}'
+  internal_error: 'داخلی سرور خرابی: {error}'
+  list_failed: 'چیٹس کی فہرست لوڈ کرنے میں ناکامی: {error}'
+  not_found: چیٹ '{id}' نہیں ملی
+  not_found_or_not_owned: چیٹ '{id}' نہیں ملی یا آپ اس کے مالک نہیں ہیں
+  send_failed: 'پیغام بھیجنے میں ناکامی: {error}'
+  title_updated: چیٹ کا عنوان کامیابی سے اپ ڈیٹ ہو گیا
+  update_failed: 'چیٹ اپ ڈیٹ کرنے میں ناکامی: {error}'
+  ai_timeout: AI ماڈل کو جواب دینے میں بہت دیر ہو رہی ہے۔ براہ کرم دوبارہ کوشش کریں۔
+  ai_service_failed: AI سروس جواب دینے میں ناکام رہی۔ براہ کرم دوبارہ کوشش کریں۔
+  ai_repeat_loop: AI ماڈل اٹک گیا اور جواب مکمل نہیں کر سکا۔ براہ کرم دوبارہ کوشش کریں۔
+  timeout_out_of_range: AI وقت کی حد 1 اور {max_seconds} سیکنڈ کے درمیان ہونی چاہیے
+common:
+  back: واپس
+  cancel: منسوخ کریں
+  cannot_undo: یہ عمل واپس نہیں کیا جا سکتا۔
+  clear: صاف کریں
+  copy: نقل کریں
+  delete: حذف کریں
+  deleting: حذف ہو رہا ہے...
+  dismiss: مسترد کریں
+  edit: ترمیم کریں
+  generating: تخلیق ہو رہا ہے...
+  loading: لوڈ ہو رہا ہے...
+  next: اگلا
+  restoring: بحال ہو رہا ہے...
+  save: محفوظ کریں
+  saving: محفوظ ہو رہا ہے...
+  sending: بھیجا جا رہا ہے...
+  testing: جانچ ہو رہی ہے...
+  unknown: نامعلوم
+  uploading: اپ لوڈ ہو رہا ہے...
+  verifying: تصدیق ہو رہی ہے...
+  view: دیکھیں
+database:
+  connection_failed: 'ڈیٹا بیس سے منسلک ہونے میں ناکامی: {error}'
+  connection_not_found: ڈیٹا بیس کنکشن نہیں ملا یا قابل رسائی نہیں
+  decryption_failed: 'کنکشن پاس ورڈ ڈکرپٹ کرنے میں ناکامی: {error}'
+  insert_failed: 'ڈیٹا بیس خرابی: {error}'
+  pool_not_initialized: ڈیٹا بیس پول شروع نہیں کیا گیا
+  query_failed: 'ڈیٹا بیس استفسار ناکام: {error}'
+  type_not_supported: ڈیٹا بیس قسم '{type}' ابھی معاونت یافتہ نہیں ہے
+  feature_required: یہ ڈیٹا بیس قسم آپ کے لائسنس میں فعال نہیں ہے۔
+datasets:
+  auto_create:
+    connection_id_required: connectionId درکار ہے
+    connection_not_found: کنکشن نہیں ملا
+    created: ڈیٹا سیٹس بنائے گئے
+    no_tables_discovered: کوئی ٹیبل یا ویو دریافت نہیں ہوا۔ چیک کریں کہ ڈیٹا بیس سرور چل رہا ہے اور قابل رسائی ہے۔
+  browse:
+    columns_failed: 'کالم حاصل کرنے میں ناکامی: {error}'
+    discover_failed: 'جدولیں دریافت کرنے میں ناکامی: {error}'
+    preview_failed: 'جدول کا پیش نظارہ کرنے میں ناکامی: {error}'
+  define:
+    connection_details_not_found: کنکشن کی تفصیلات نہیں ملیں
+    connection_not_found: ڈیٹا بیس کنکشن نہیں ملا یا قابل رسائی نہیں
+    connection_required: connectionId درکار ہے
+    connection_test_failed: ڈیٹا بیس کنکشن ٹیسٹ ناکام ہو گیا
+    database_connection_failed: 'ڈیٹا بیس سے منسلک ہونے میں ناکامی: {error}'
+    dataset_created: ڈیٹا سیٹ '{name}' کامیابی سے متعین ہو گیا
+    invalid_source_type: sourceType کا 'table' یا 'view' ہونا ضروری ہے
+    name_required: ڈیٹا سیٹ کا نام درکار ہے
+    permission_denied: 'اجازت مسترد: صارف ''{user}'' کو جدول ''{table}'' تک رسائی نہیں ہے۔ براہ کرم SELECT کی اجازت دیں۔'
+    preview_failed: 'جدول ''{table}'' سے ڈیٹا پڑھنے میں ناکامی: {error}'
+    table_access_failed: 'جدول ''{table}'' تک رسائی میں ناکامی: {error}'
+    table_name_required: tableName درکار ہے
+    table_not_found: جدول/ویو '{table}' ڈیٹا بیس '{database}' میں نہیں ملا
+    verification_failed: 'جدول/ویو کی تصدیق میں ناکامی: {error}'
+    connection_missing_db_note: 'نوٹ: PostgreSQL یہ خرابی غیر موجود ڈیٹا بیسز اور ناکافی اجازتوں کے لیے دیتا ہے۔ اگر ڈیٹا بیس موجود ہے تو چیک کریں کہ صارف کو ڈیٹا بیس پر CONNECT کی اجازت حاصل ہے۔'
+    connection_successful: کنکشن کامیاب رہا
+    connection_timed_out: 15 سیکنڈ کے بعد کنکشن ٹائم آؤٹ ہو گیا
+  delete:
+    success: ڈیٹا سیٹ '{id}' کامیابی سے حذف ہو گیا
+  describe:
+    ai_connection_error: 'AI کنکشن خرابی: {error}'
+    description_generated: '''{name}'' کے لیے تفصیل کامیابی سے تخلیق ہو گئی'
+    empty_description: تخلیق شدہ تفصیل خالی ہے۔ براہ کرم AI فراہم کنندہ کی ترتیب چیک کریں۔
+    generation_failed: 'تفصیل تخلیق کرنے میں ناکامی: {error}'
+    timeout_out_of_range: AI وقت کی حد 1 اور {max_seconds} سیکنڈ کے درمیان ہونی چاہیے
+  example_blocked:
+    create: مثال صارفین ڈیٹا سیٹ نہیں بنا سکتے
+    delete: مثال صارفین ڈیٹا سیٹ حذف نہیں کر سکتے
+    update: مثال صارفین ڈیٹا سیٹ اپ ڈیٹ نہیں کر سکتے
+  list_error: ڈیٹا سیٹ لوڈ کرنے میں ناکامی
+  not_found: ڈیٹا سیٹ '{id}' نہیں ملا یا قابل رسائی نہیں
+  not_found_2: ڈیٹا سیٹ نہیں ملا
+  not_owned: ڈیٹا سیٹ '{id}' نہیں ملا یا آپ اس کے مالک نہیں ہیں
+  not_owner: آپ صرف اپنے ڈیٹا سیٹ میں ترمیم کر سکتے ہیں
+  preparation:
+    duplicate_name: اس ڈیٹا سیٹ کے لیے اس نام سے ایک تیاری کا اصول پہلے سے موجود ہے
+    no_updates: اپ ڈیٹ کرنے کے لیے کوئی فیلڈ نہیں
+    preview_failed: 'اصول کا پیش نظارہ کرنے میں ناکامی: {error}'
+    rule_created: تیاری کا اصول '{name}' کامیابی سے تخلیق ہو گیا
+    rule_deleted: تیاری کا اصول کامیابی سے حذف ہو گیا
+    rule_in_use: 'یہ تیاری کا اصول {count} ترکیب(وں) میں استعمال ہو رہا ہے: {names}۔ پہلے ترکیبیں حذف کریں۔'
+    rule_not_found: اس ڈیٹا سیٹ کے لیے تیاری کا اصول '{id}' نہیں ملا
+    rule_not_found_or_not_owned: تیاری کا اصول نہیں ملا یا آپ اس کے مالک نہیں ہیں
+    rule_updated: تیاری کا اصول کامیابی سے اپ ڈیٹ ہو گیا
+    schema_failed: 'ڈیٹا سیٹ اسکیما پڑھنے میں ناکامی: {error}'
+    already_exists: ان عملیات کے ساتھ ایک تیاری کا اصول پہلے سے موجود ہے ('{name}')
+  schema:
+    external_failed: 'بیرونی ڈیٹا بیس سے اسکیما حاصل کرنے میں ناکامی: {error}'
+    from_preview: اسکیما پیش نظارہ ڈیٹا سے اخذ کیا گیا (پہلی 10 قطاریں)
+    load_error: 'اسکیما لوڈ نہیں ہو سکا: {error}'
+    not_implemented: اس ڈیٹا سیٹ قسم '{type}' کے لیے اسکیما دریافت ابھی لاگو نہیں کی گئی
+    table_missing: ٹیبل اب موجود نہیں ہے۔ براہ کرم ڈیٹا سیٹ دوبارہ اپ لوڈ کریں۔
+    row_count_not_computed: ورچوئل ڈیٹا سیٹ کے لیے جوائن چلائے بغیر قطاروں کی تعداد شمار نہیں کی جاتی۔
+    connection_unreachable: 'کنکشن {connection_id} ناقابلِ رسائی ہے: {error}'
+  share:
+    error: اشتراک اپ ڈیٹ کرنے میں ناکامی
+    toggled: ڈیٹا سیٹ '{id}' کا اشتراک کامیابی سے اپ ڈیٹ ہو گیا
+  transforms:
+    clone_forbidden: آپ کو اس ٹرانسفارم کو کلون کرنے کی رسائی نہیں ہے
+    cloned: ٹرانسفارم '{name}' کے نام سے کلون ہو گیا
+    created: ٹرانسفارم '{name}' کامیابی سے تخلیق ہو گیا
+    deleted: ٹرانسفارم کامیابی سے حذف ہو گیا
+    duplicate_name: اس ڈیٹا سیٹ کے لیے اسی نام سے پہلے ہی ایک ٹرانسفارم موجود ہے
+    in_use: 'یہ ٹرانسفارم {count} ریسیپی(ز) میں استعمال ہو رہا ہے: {names}۔ پہلے ریسیپیز حذف کریں۔'
+    no_updates: اپ ڈیٹ کرنے کے لیے کوئی فیلڈز نہیں ہیں
+    not_accessible: ڈیٹا سیٹ '{id}' نہیں ملا یا قابل رسائی نہیں ہے
+    not_found: اس ڈیٹا سیٹ کے لیے ٹرانسفارم '{id}' نہیں ملا
+    not_found_or_not_owned: ٹرانسفارم نہیں ملا یا آپ اس کے مالک نہیں ہیں
+    not_owned: ڈیٹا سیٹ '{id}' نہیں ملا یا آپ اس کے مالک نہیں ہیں
+    updated: ٹرانسفارم کامیابی سے اپ ڈیٹ ہو گیا
+    already_exists: ان عملیات کے ساتھ ایک ٹرانسفارم پہلے سے موجود ہے ('{name}')
+  unknown_source: 'نامعلوم ماخذ قسم: {source_type}'
+  upload:
+    error: ڈیٹا سیٹ اپ لوڈ کرنے میں ناکامی ہوئی
+    file_processing_failed: 'فائل پر کارروائی میں ناکامی: {error}'
+    limit_reached_count: اپ لوڈ کی حد تک پہنچ گئے۔ زیادہ سے زیادہ {count} ڈیٹا سیٹس کی اجازت ہے۔
+    limit_reached_size: اپ لوڈ سائز کی حد سے تجاوز ہو گیا۔ زیادہ سے زیادہ کل اسٹوریج {size} MB ہے۔
+    success: ڈیٹا سیٹ '{name}' کامیابی سے اپ لوڈ ہو گیا
+    unsupported_file: 'فائل کی غیر تعاون یافتہ قسم۔ براہ کرم درج ذیل میں سے کوئی ایک اپ لوڈ کریں: {extensions}'
+    user_not_found: صارف نہیں ملا
+    dbf_memo_unsupported: اس .dbf فائل میں میمو فیلڈز شامل ہیں۔ ان کی قدریں ایک علیحدہ فائل میں محفوظ ہوتی ہیں، جسے سنگل فائل اپ لوڈ میں شامل نہیں کیا جا سکتا۔
+    dbf_field_unsupported: 'اس .dbf فائل میں فیلڈ کی ایسی اقسام کا اعلان کیا گیا ہے جنہیں پڑھا نہیں جا سکتا: {types}'
+  unread:
+    unreachable: اس ذریعہ تک رسائی نہیں ہو سکی۔ میزبان اور پورٹ چیک کریں، پھر دوبارہ کوشش کریں۔
+    definition_incomplete: یہ ذریعہ نہ کسی ڈیٹا سیٹ کا نام بتاتا ہے اور نہ ہی کسی کنکشن ٹیبل کا۔
+    incomplete: جانچ مقررہ وقت میں مکمل نہیں ہوئی۔ دوبارہ کوشش کریں، یا کنکشن ٹائم آؤٹ بڑھا دیں۔
+    no_permission: یہ اکاؤنٹ اس ذریعہ کو نہیں پڑھ سکتا۔
+    schema_error: ذریعہ نے جواب دیا، لیکن اس کے کالم پڑھے نہیں جا سکے۔
+    auth_failed: ڈیٹا بیس نے اس اکاؤنٹ کی اسناد مسترد کر دیں۔
+    no_database: وہ ڈیٹا بیس سرور پر موجود نہیں ہے۔
+    definition_too_deep: یہ ڈیٹا سیٹ پانچ سے زیادہ سطحوں کی گہرائی میں خود کا حوالہ دیتا ہے۔
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: '''{column}'' کے لیے CHECK constraint شامل کریں یا محدود درست اقدار کے لیے ENUM قسم استعمال کریں'
+      add_not_null: '''{column}'' میں NOT NULL constraint شامل کریں'
+      allows_null: کالم '{column}' NULL کی اجازت دیتا ہے — NOT NULL رکاوٹ پر غور کریں
+      set_max_length: بڑے ڈیٹا کو روکنے کے لیے '{column}' کے لیے زیادہ سے زیادہ لمبائی مقرر کرنے پر غور کریں
+      short_text_enum: ٹیکسٹ کالم '{column}' کی زیادہ سے زیادہ لمبائی {max_len} ہے — ENUM یا CHECK رکاوٹ استعمال کرنے پر غور کریں
+      unbounded_varchar: غیر محدود VARCHAR کالم '{column}'
+    indexing:
+      missing_fk_index: فارن کی کالم '{column}' پر کوئی انڈیکس نہیں ہے
+    naming:
+      mixed_case_column: کالم '{column}' مخلوط حروف کا استعمال کرتا ہے — snake_case تجویز کیا جاتا ہے
+      mixed_case_table: ٹیبل کے نام '{table}' میں مخلوط حروف استعمال ہوئے ہیں — snake_case تجویز کیا جاتا ہے
+      rename_column_reserved: SQL محفوظ الفاظ کے تصادم سے بچنے کے لیے کالم '{column}' کا نام تبدیل کریں
+      rename_column_snake_case: مستقل مزاجی کے لیے کالم کا نام lowercase snake_case میں تبدیل کریں
+      rename_table_reserved: SQL محفوظ الفاظ کے تصادم سے بچنے کے لیے ٹیبل '{table}' کا نام تبدیل کریں
+      rename_table_snake_case: مستقل مزاجی کے لیے ٹیبل کا نام lowercase snake_case میں تبدیل کریں
+      reserved_keyword_column: کالم '{column}' ایک محفوظ SQL کلیدی لفظ ہے
+      reserved_keyword_table: ٹیبل کا نام '{table}' ایک محفوظ SQL کلیدی لفظ ہے
+    normalisation:
+      create_separate_table: '''{base}'' اقدار کے لیے ایک الگ ٹیبل بنائیں جس میں {table} کی طرف FK ہو'
+      multiple_address: متعدد پتے سے متعلق کالم ({count}) پائے گئے
+      repeating_group: 'دہرایا جانے والا گروپ پایا گیا: {columns}'
+      separate_address_table: '{table} کی طرف FK کے ساتھ ایک الگ پتہ ٹیبل بنانے پر غور کریں'
+    relationships:
+      add_fk: اگر '{column}' کسی دوسرے ٹیبل کا حوالہ دیتا ہے تو FK constraint شامل کرنے پر غور کریں
+      missing_fk: کالم '{column}' فارن کی کی طرح لگتا ہے لیکن اس پر FK constraint نہیں ہے
+    semistructured:
+      controlled_vocab: کالم {column} میں {count} الگ الگ اقدار کی ایک کنٹرولڈ ووکیبلری موجود ہے
+      create_ref_table: ٹیبل {table} کو نارملائز کرنے کے لیے {column} اقدار کے لیے ایک حوالہ ٹیبل بنائیں
+  analyze_error: 'ڈیٹا بیس کا تجزیہ کرنے میں ناکامی: {error}'
+  connection_error: 'ڈیٹا بیس سے رابطہ کرنے میں ناکامی: {error}'
+  description: AI کا استعمال کرتے ہوئے اپنے ڈیٹا بیس ڈیزائن کا تجزیہ کریں اور بہتر بنائیں۔
+  invalid_token: غلط ٹوکن
+  no_connection: کوئی ڈیٹا بیس کنکشن دستیاب نہیں ہے۔ براہ کرم پہلے ڈیٹا بیس سے جڑیں۔
+  not_implemented: یہ فیچر جلد آ رہا ہے۔
+  pdf:
+    ai_disclaimer: AI سے تیار کردہ تجزیہ — پروڈکشن میں لاگو کرنے سے پہلے جائزہ لیں۔
+    categories: زمرہ جات
+    code_systems: کوڈ سسٹمز
+    code_systems_label: پائے گئے کوڈ سسٹمز
+    col_default: طے شدہ
+    col_name: کالم
+    col_nullable: NULL قابل
+    col_pk: PK
+    col_type: قسم
+    column_meanings_label: کالم کے معانی
+    columns: کالمز
+    confidence: اعتماد
+    confidence_label: اعتماد
+    domain_label: ISIC ڈومین درجہ بندیاں
+    evidence_label: ثبوت
+    header: ڈیٹا بیس ڈیزائن تجزیہ رپورٹ
+    health_score_label: 'ڈیٹا بیس صحت اسکور: {score}/100'
+    health_score_subtitle: Schema AI کے ذریعے مجموعی ڈیٹا بیس صحت کا جائزہ۔ 0 = سنگین ساختی مسائل، 100 = پروڈکشن کے لیے تیار۔
+    health_score_title: صحت اسکور
+    high: بلند
+    implicit_relationships_label: مضمر تعلقات
+    integration_subtitle: Integration AI کے ذریعے پائے گئے مضمر تعلقات، تحقیقی صلاحیتیں، اور غیر موجود جہتیں۔
+    integration_title: AI انضمام کے نتائج
+    issues_count: مسائل ({count})
+    issues_found: پائے گئے مسائل
+    low: کم
+    medium: درمیانہ
+    missing_dimensions_label: غیر موجود جہتیں
+    'no': نہیں
+    none: کوئی نہیں
+    normalisation_title: نارملائزیشن تجاویز ({count})
+    page: صفحہ {current}/{total}
+    partial_label: جزوی
+    pk: PK
+    proposed_ddl_label: مجوزہ DDL
+    proposed_table: مجوزہ جدول
+    rationale_label: جواز
+    relationship_label: تعلق
+    research_capabilities_label: تحقیقی صلاحیتیں
+    risk_breakdown: خطرے کی تقسیم
+    rows: قطاریں
+    schema_title: اسکیما ({count} جدولیں)
+    semantic_subtitle: AI سے اخذ کردہ کالم کے معانی، ISIC ڈومین درجہ بندیاں، اور کوڈ نظام کی شناخت۔
+    semantic_title: AI معنوی تجزیہ
+    semi_structured_title: نیم ساختی ڈیٹا تجزیہ ({count} کالم)
+    subtitle: 'ڈیٹابیس: {db_name} ({db_type}) | کنکشن: {conn_name} (ID: {conn_id})'
+    summary: خلاصہ
+    supported_label: معاونت یافتہ
+    table_purposes_label: جدول کے مقاصد
+    tables: جدولیں
+    title: ڈیٹابیس ڈیزائن تجزیہ
+    top_actions_label: اولین ترجیحی اقدامات
+    top_keywords: سرفہرست کلیدی الفاظ
+    top_recommendations: اولین سفارشات
+    unsupported_label: غیر معاونت یافتہ
+    value: قدر
+    'yes': ہاں
+    ai_skipped_warning: AI تجزیہ چھوڑ دیا گیا
+  pdf_error: 'PDF تیار کرنے میں ناکامی: {error}'
+  question_required: سوال درکار ہے
+  rag_error: 'RAG استفسار ناکام: {error}'
+  rag_not_available: RAG تلاش صرف PostgreSQL ڈیٹابیسز کے لیے دستیاب ہے۔ MySQL ٹیکسٹ تلاش مستقبل کی ریلیز کے لیے منصوبہ بند ہے۔
+  report_data_required: رپورٹ ڈیٹا درکار ہے
+  schema_error: 'اسکیما اخذ کرنے میں ناکامی: {error}'
+  schema_error_2: 'ڈیٹابیس پاس ورڈ ڈی کرپٹ کرنے میں ناکامی: {error}'
+  title: ڈیٹابیس ڈیزائن معاون
+  unsupported_type: صرف PostgreSQL، MySQL، MS SQL سرور، اور Microsoft Access ڈیٹابیسز معاونت یافتہ ہیں
+  unsupported_type_2: صرف PostgreSQL، MySQL، اور MS SQL سرور ڈیٹابیسز معاونت یافتہ ہیں
+  email_pdf:
+    invalid_body: درخواست کا باڈی غلط ہے
+    no_email: آپ کے اکاؤنٹ کے لیے کوئی ای میل پتہ نہیں ملا
+    send_failed: رپورٹ ای میل کرنے میں ناکامی ہوئی۔ براہ کرم دوبارہ کوشش کریں۔
+  llm:
+    no_ai_provider: کوئی AI فراہم کنندہ ترتیب نہیں دیا گیا۔ سیٹنگز → AI کنکشنز میں AI فراہم کنندہ منسلک کریں۔
+    unknown_error: نامعلوم LLM خرابی
+    empty_content: LLM نے خالی مواد واپس کیا
+    timeout: LLM درخواست کا وقت {timeout_seconds} سیکنڈ کے بعد ختم ہو گیا
+    http_error: LLM نے HTTP {status_code} واپس کیا
+    no_model: کوئی AI ماڈل کنفیگر نہیں ہے۔ AI کنکشن پر ڈیفالٹ ماڈل سیٹ کریں یا کوئی واضح ماڈل پاس کریں۔
+  stream_connecting: ڈیٹا بیس سے منسلک ہو رہا ہے...
+  ai_skipped_reason: 'اس رپورٹ میں صرف مکینیکل تجزیہ شامل ہے۔ AI سے افزودہ تجزیہ چھوڑ دیا گیا کیونکہ ڈیٹا بیس نے {count} مسائل پیدا کیے (حد: {limit})۔ نیچے دیے گئے مکینیکل نتائج کا جائزہ لیں، ڈیٹا بیس کو
+    صاف کریں، پھر سیاق و سباق سے آگاہ وضاحتوں، معنوی بصیرتوں اور نارملائزیشن تجاویز کے لیے AI کے ساتھ دوبارہ چلائیں۔'
+  stream_ai_schema_start: 'اسکیما AI: {tables} ٹیبلز کا تجزیہ کر رہا ہے...'
+  stream_ai_done: 'AI تجزیہ مکمل ہوا — اسٹیٹس: {status}'
+  ai_skipped_message: 'AI تجزیہ چھوڑ دیا گیا — {count} مسائل ملے (حد: {limit})۔ نیچے دیے گئے مشینی نتائج کا جائزہ لیں، ڈیٹا بیس صاف کریں، پھر AI کے ساتھ دوبارہ چلائیں۔'
+  stream_ai_integration_done: 'انٹیگریشن AI: {relationships} روابط، {capabilities} صلاحیتیں'
+  stream_normalisation_timeout: 'نارملائزیشن: 90 سیکنڈ کے بعد ٹائم آؤٹ'
+  stream_ai_semantic_done: 'سیمنٹک AI: {columns} کالم معانی، {domains} ISIC ڈومینز'
+  stream_ai_schema_done: 'اسکیما AI: صحت اسکور {score}/100'
+  stream_ai_semantic_start: 'سیمنٹک AI: {tables} ٹیبلز کا تجزیہ کر رہا ہے...'
+  stream_normalisation_done: 'نارملائزیشن: {count} تجاویز'
+  stream_analysis_failed: 'تجزیہ ناکام رہا: {error}'
+  stream_ai_integration_start: 'انٹیگریشن AI: روابط کی نشاندہی کی جا رہی ہے...'
+  analysis_cancelled: تجزیہ سلسلہ منسوخ کر دیا گیا (کلائنٹ منقطع ہو گیا)
+  stream_semistructured_start: نیم ساختی کالموں کا تجزیہ کیا جا رہا ہے...
+  stream_schema_done: 'اسکیما اخذ کیا گیا: {tables} ٹیبلز، {columns} کالم'
+  stream_mechanical_start: مکینیکل تجزیہ چل رہا ہے...
+  stream_normalisation_start: نارملائزیشن تجاویز تیار کی جا رہی ہیں...
+  stream_connected: '{db_type} سے منسلک: {db_name}'
+  stream_unsupported_type: 'غیر معاون ڈیٹا بیس قسم: {db_type}'
+  stream_extracting_schema: '{db_type} سے اسکیما اخذ کیا جا رہا ہے...'
+  stream_normalisation_skipped: 'نارملائزیشن: چھوڑ دی گئی ({error})'
+  stream_mechanical_done: 'مکینیکل تجزیہ: {count} مسائل ملے'
+  analysis_complete: تجزیہ مکمل
+  stream_ai_start: AI تجزیہ شروع ہو رہا ہے — 3 ماہرین متوازی طور پر...
+error:
+  ai:
+    call_failed: 'AI کال ناکام: {error}'
+  connection:
+    connect_failed: 'MySQL کنکشن ناکام: {error}'
+    decryption_failed: 'کنکشن پاس ورڈ ڈی کرپٹ کرنے میں ناکامی: {error}'
+    failed: 'ڈیٹابیس سے منسلک ہونے میں ناکامی: {error}'
+    query_failed: 'جدول/ویو ''{table}'' سے استفسار کرنے میں ناکامی: {error}'
+    query_failed_2: 'مرتب شدہ SQL چلانے میں ناکامی ہوئی: {error}'
+    query_failed_3: 'PostgreSQL استفسار ناکام: {error}'
+    query_failed_4: 'MySQL استفسار ناکام: {error}'
+    query_failed_5: 'MSSQL استفسار ناکام: {error}'
+    query_failed_6: 'Access استفسار ناکام: {error}'
+    query_failed_7: 'ڈیٹابیس استفسار ناکام: {error}'
+    type_not_supported: ڈیٹابیس قسم '{type}' ابھی تک معاونت یافتہ نہیں ہے
+    type_not_supported_2: ڈیٹابیس قسم '{type}' اسکیما دریافت کے لیے ابھی تک معاونت یافتہ نہیں ہے
+    type_not_supported_3: 'غیر معاونت یافتہ ڈیٹابیس قسم: {type}'
+  database:
+    insert_failed: 'ڈیٹابیس خرابی: {error}'
+    pool_not_initialized: ڈیٹابیس پول شروع نہیں کیا گیا
+  dataset:
+    delete_failed_2: 'ڈیٹا سیٹ حذف کرنے میں ناکامی ہوئی: {error}'
+    load_failed: 'ڈیٹاسیٹ لوڈ کرنے میں ناکامی: {error}'
+    load_failed_2: 'ڈیٹا لوڈ کرنے میں ناکامی ہوئی: {error}'
+    load_failed_3: ورچوئل ڈیٹاسیٹ '{id}' کی کوئی SQL تعریف نہیں ہے
+    load_failed_4: 'ورچوئل ڈیٹاسیٹ ''{id}'' لوڈ کرنے میں ناکامی: {error}'
+    not_found: ڈیٹاسیٹ '{id}' نہیں ملا یا قابل رسائی نہیں ہے
+    not_found_2: ڈیٹاسیٹ '{id}' نہیں ملا
+    not_found_3: 'ڈیٹاسیٹ نہیں ملا یا قابل رسائی نہیں: {error}'
+    not_found_4: ڈیٹاسیٹ '{id}' نہیں ملا یا قابل رسائی نہیں
+    not_found_5: ڈیٹاسیٹ '{id}' نہیں ملا
+    not_found_or_not_owned: ڈیٹاسیٹ '{id}' نہیں ملا یا آپ اس کے مالک نہیں ہیں
+    table_missing: ٹیبل '{table}' موجود نہیں ہے
+    unknown_source: 'نامعلوم ماخذ قسم: {source_type}'
+  define:
+    connection_not_found: ڈیٹابیس کنکشن نہیں ملا یا قابل رسائی نہیں
+    connection_not_found_2: کنکشن نہیں ملا یا قابل رسائی نہیں
+    dataset_creation_failed: 'ڈیٹاسیٹ ریکارڈ بنانے میں ناکامی: {error}'
+  describe:
+    ai_connection_error: 'AI کنکشن خرابی: کوئی کنکشن دستیاب نہیں'
+    ai_connection_error_2: 'AI کنکشن خرابی: API کلید ڈی کرپٹ کرنے میں ناکامی'
+  execution:
+    cannot_cancel: ایسا عملدرآمد منسوخ نہیں کیا جا سکتا جو پہلے سے {status} ہو
+  groups:
+    invalid_group_id: غلط group_id۔ یہ 00-99 ہونا چاہیے
+  preparation:
+    rule_not_found: اس ڈیٹاسیٹ کے لیے تیاری کا قاعدہ '{id}' نہیں ملا
+    rule_not_found_2: تیاری کا قاعدہ '{id}' نہیں ملا
+execution:
+  executing_stage: 'مرحلہ چلایا جا رہا ہے: {stage}'
+  loaded_rows: '{rows} قطاریں، {columns} کالم لوڈ ہو گئے'
+  loading_dataset: ڈیٹاسیٹ لوڈ ہو رہا ہے...
+  not_found: عملدرآمد نہیں ملا
+  starting_analysis: تجزیہ کے مراحل شروع ہو رہے ہیں...
+groups:
+  admin_required: ایڈمن رسائی درکار ہے
+  cannot_delete_self: آپ اپنا اکاؤنٹ حذف نہیں کر سکتے
+  description_required: تفصیل خالی نہیں ہو سکتی
+  insufficient_permissions: گروپوں کا انتظام کرنے کے لیے اجازت ناکافی ہے
+  invalid_group_id: غلط user_group۔ یہ 00-99 ہونا چاہیے
+  not_authorized: اس صارف کا گروپ دیکھنے کی اجازت نہیں ہے
+  not_found: گروپ '{id}' نہیں ملا
+  update_failed: گروپ اپ ڈیٹ کرنے میں ناکامی
+  update_success: گروپ '{id}' کی تفصیل اپ ڈیٹ ہو گئی
+  user_not_found: صارف نہیں ملا
+  user_updated: صارف کا گروپ کامیابی سے اپ ڈیٹ ہو گیا
+  resource_not_found: ریسورس نہیں ملا
+  missing_id: ریسورس آئی ڈی موجود نہیں
+licence:
+  delete_failed: 'لائسنس فائل حذف کرنے میں ناکامی: {error}'
+  missing_content: '''content'' فیلڈ غائب ہے'
+  write_failed: 'لائسنس فائل لکھنے میں ناکامی: {error}'
+  delete_success: لائسنس ہٹا دیا گیا۔ اوپن سورس موڈ میں چل رہا ہے۔
+  install_success: لائسنس کامیابی سے انسٹال ہو گیا۔
+  no_file_to_delete: حذف کرنے کے لیے کوئی لائسنس فائل نہیں — پہلے ہی اوپن سورس موڈ میں ہے۔
+notebooks:
+  delete_error: 'امپورٹ حذف کرنے میں ناکامی: {error}'
+  example_blocked: مثال صارفین نوٹ بک درآمد نہیں کر سکتے۔
+  example_blocked_2: مثال صارفین نوٹ بک کی اشتراک میں ترمیم نہیں کر سکتے۔
+  example_blocked_3: مثال صارفین نوٹ بک حذف نہیں کر سکتے۔
+  file_too_large: نوٹ بک فائل بہت بڑی ہے۔ زیادہ سے زیادہ سائز {max_size} MB ہے۔
+  import_failed: 'نوٹ بک درآمد ناکام: {error}'
+  import_failed_2: 'درآمدات فہرست کرنے میں ناکام: {error}'
+  import_failed_3: درآمد نہیں ملی
+  import_failed_4: 'درآمد حاصل کرنے میں ناکام: {error}'
+  invalid_format_2: نوٹ بک کی شکل درست نہیں۔ صرف .ipynb فائلیں قبول کی جاتی ہیں۔
+  no_connection: براہ کرم ڈیٹا بیس کنکشن منتخب کریں۔
+  no_dataframes: اس نوٹ بک میں کوئی ڈیٹا فریمز نہیں ملے
+  no_db_rights: اس کنکشن کو ڈیٹا بیس بنانے کے حقوق حاصل نہیں ہیں۔
+  no_table_rights: یہ کنکشن ٹیبلز نہیں بنا سکتا — درآمد مسترد کر دی گئی۔
+  share_error: صرف مالک اشتراک کی ترتیبات تبدیل کر سکتا ہے۔
+  share_error_2: 'اشتراک اپ ڈیٹ کرنے میں ناکام: {error}'
+  system_db_blocked: سسٹم ڈیٹا بیس '{db}' میں درآمد نہیں کر سکتے۔ براہ کرم کوئی اور ڈیٹا بیس استعمال کریں یا نیا بنائیں۔
+  unknown_error: نامعلوم خرابی
+  untitled: بلا عنوان
+  cells_not_list: 'نوٹ بک فارمیٹ غلط ہے: ''cells'' ایک فہرست نہیں ہے'
+  missing_cells: 'نوٹ بک فارمیٹ غلط ہے: ''cells'' کی کلید غائب ہے'
+  too_many_cells: 'بہت زیادہ سیلز ({count})۔ زیادہ سے زیادہ: {max_cells}'
+  invalid_json: 'غلط JSON: {error}'
+notebooks_storage:
+  failed_create_table: 'ٹیبل {table} بنانے میں ناکام: {error}'
+  failed_create_table_mssql: 'ٹیبل بنانے میں ناکام: {error}'
+  no_connection_details: کنکشن کی تفصیلات فراہم نہیں کی گئیں
+  no_connection_details_short: کنکشن کی تفصیلات نہیں
+  unsupported_storage_type: 'غیر تعاون یافتہ اسٹوریج قسم: {type}'
+  no_data_pool: ڈیٹا ڈیٹا بیس پول شروع نہیں کیا گیا
+rag:
+  ai_provider_error: 'AI فراہم کنندہ کی خرابی: {error}'
+  no_ai_provider: '{count} مماثل ریکارڈز ملے۔ (قدرتی زبان کے جوابات کے لیے کوئی AI فراہم کنندہ ترتیب نہیں دیا گیا۔)'
+  no_matches: آپ کے سوال کے لیے ڈیٹا بیس میں کوئی مماثل متن نہیں ملا۔ اپنے الفاظ بدل کر دوبارہ کوشش کریں یا کوئی اور ڈیٹا ذریعہ منتخب کریں۔
+  no_tables: تلاش کے لیے اسکیما میں کوئی ٹیبل نہیں ملا۔
+recipes:
+  ai_session:
+    create_error: AI ریسیپی سیشن بنانے میں ناکام
+    delete_error: AI ریسیپی سیشن حذف کرنے میں ناکام
+    load_error: AI ریسیپی سیشن لوڈ کرنے میں ناکام
+    not_found: AI ریسیپی سیشن نہیں ملا
+    save_error: AI سیشن سے ریسیپی محفوظ کرنے میں ناکام
+    unauthorized: آپ کو اس AI ریسیپی سیشن تک رسائی نہیں ہے
+  column_type:
+    categorical: زمرہ وار
+    numeric: عددی
+  columns_required: براہ کرم کم از کم ایک کالم منتخب کریں
+  create_success: ریسیپی '{name}' کامیابی سے بنائی گئی
+  data_selection_error: 'ڈیٹا کا انتخاب ناکام: {error}'
+  dataset_not_found: ڈیٹا سیٹ نہیں ملا
+  dataset_required: براہ کرم ایک ڈیٹا سیٹ منتخب کریں
+  delete_error: 'ریسیپی حذف کرنے میں ناکام: {error}'
+  delete_success: ریسیپی '{id}' کامیابی سے حذف ہو گئی
+  execute_error: 'ریسیپی پر عمل کرنے میں ناکام: {error}'
+  execution:
+    error: 'ریسیپی پر عمل درآمد میں خرابی: {error}'
+    preparation_error: 'تیاری کا مرحلہ ناکام: {error}'
+    preparation_failed: تیاری کا مرحلہ ناکام ہوا
+    unknown_stage: 'نامعلوم مرحلے کی قسم: {stage_type}'
+  execution_completed: عمل درآمد کامیابی سے مکمل ہوا
+  execution_failed: عمل درآمد ناکام ہوا
+  execution_load_error: 'عمل درآمد لوڈ کرنے میں ناکام: {error}'
+  execution_not_found: عمل درآمد '{id}' نہیں ملا
+  executions_load_error: 'عمل درآمدات لوڈ کرنے میں ناکام: {error}'
+  field_label:
+    categoryColumn: زمرہ کالم (لیبلز)
+    dependentColumn: منحصر / نتیجہ کالم
+    factorColumn: فیکٹر کالم (گروہ بندی متغیر)
+    independentColumns: آزاد / پیش گو کالمز
+    responseColumn: جوابی کالم (عددی پیمائش)
+    responseColumn2: دوسرا جوابی کالم (جوڑی پیمائش)
+    xColumn: X-محور کالم
+    yColumn: Y-محور کالم
+    factorColumn2: دوسرا فیکٹر کالم (گروہ بندی متغیر)
+    columns: کالم
+  invalid_stage: ریسیپی کے لیے مرحلہ درست نہیں
+  invalid_stage_type: 'مرحلے کی قسم درست نہیں: {type}۔ ان میں سے ایک ہونا چاہیے: {types}'
+  load_datasets_error: 'ڈیٹا سیٹس لوڈ کرنے میں ناکام: {error}'
+  load_error: 'ریسیپیز لوڈ کرنے میں ناکام: {error}'
+  name_required: ترکیب کا نام درکار ہے
+  no_columns_exist: منتخب کالموں میں سے کوئی بھی ڈیٹا سیٹ میں موجود نہیں
+  no_dataset: اس ریسیپی کے ساتھ کوئی ڈیٹا سیٹ وابستہ نہیں
+  no_stages: ریسیپی میں کم از کم ایک مرحلہ ہونا ضروری ہے
+  no_updates: اپ ڈیٹ کرنے کے لیے کوئی فیلڈ نہیں
+  not_found: ریسیپی '{id}' نہیں ملی
+  not_owned: ریسیپی '{id}' نہیں ملی یا آپ اس کے مالک نہیں ہیں
+  preparation:
+    all_rules_failed: 'تمام قواعد ناکام: {errors}'
+    no_db_pool: تیاری کے مرحلے کے لیے ڈیٹا بیس پول دستیاب نہیں
+    rule_failed: 'قاعدہ ''{rule_id}'': {error}'
+    rule_not_found: قاعدہ '{rule_id}' نہیں ملا
+    rules_applied: '{count} تیاری کے قواعد لاگو کیے گئے'
+  requirement:
+    anova_one_way: 1 زمرہ وار کالم (فیکٹر) اور 1 عددی کالم (جوابی)
+    anova_two_way: 2 زمرہ دار کالم (دو عوامل) اور 1 عددی کالم (جوابی)
+    bar: 1 زمرہ دار کالم (ایکس محور) اور 1 عددی کالم (وائی محور)
+    chi_square: 2 زمرہ دار کالم
+    correlation: کم از کم 2 عددی کالم
+    descriptive: کم از کم 1 عددی کالم
+    distribution: 1 عددی کالم
+    histogram: 1 عددی کالم (ایکس محور)
+    line: 2 عددی کالم (ایکس اور وائی)
+    linear_regression: کم از کم 2 عددی کالم (پیش گو اور نتیجہ)
+    none: کوئی آؤٹ پٹ درکار نہیں
+    pie: 1 زمرہ دار کالم (لیبل)
+    scatter: 2 عددی کالم (ایکس اور وائی)
+    t_test_independent: 1 زمرہ دار کالم (گروہوں کے لیے) اور 1 عددی کالم (موازنے کے لیے)
+    t_test_paired: 2 عددی کالم (جوڑا دار پیمائشیں)
+    table: کوئی بھی کالم
+    area: 2 عددی کالم (x اور y)
+    donut: 1 زمرہ دار کالم (لیبلز)
+    hbar: 1 زمرہ دار کالم (y-محور) اور 1 عددی کالم (x-محور)
+  result_type:
+    numeric: عددی
+    tabular: جدولی
+  scatter_two_columns: سکیٹر پلاٹ کے لیے کم از کم دو کالم درکار ہیں
+  scatter_two_numeric: سکیٹر پلاٹ کے لیے دو عددی کالم درکار ہیں
+  schema_error: 'کالم اسکیما لوڈ کرنے میں ناکام: {error}'
+  share:
+    disabled: ریسیپی اب نجی ہے
+    enabled: ریسیپی کامیابی سے شیئر ہوئی
+  transforms:
+    connect_success: ٹرانسفارم ریسیپی سے منسلک ہو گیا
+    dataset_mismatch: ٹرانسفارم '{id}' کا تعلق ڈیٹا سیٹ '{dataset_id}' سے نہیں ہے
+    disconnect_success: ٹرانسفارم ریسیپی سے منقطع ہو گیا
+    load_error: منسلک ٹرانسفارمز لوڈ کرنے میں ناکام
+    not_found: ٹرانسفارم '{id}' نہیں ملا یا اس ریسیپی کے ڈیٹا سیٹ سے تعلق نہیں رکھتا
+  unknown_stage: 'نامعلوم مرحلے کی قسم: {stage_type}'
+  unsupported_chart_type: 'غیر معاون چارٹ قسم: {chart_type}'
+  update_error: 'ریسیپی اپ ڈیٹ کرنے میں ناکام: {error}'
+  update_success: ریسیپی '{id}' کامیابی سے اپ ڈیٹ ہوئی
+  validation:
+    failed: 'ریسیپی کی توثیق ناکام ہوئی: {errors}'
+    incompatible_algo_output: 'تجزیہ ''{algo}'' {result_type} نتائج پیدا کرتا ہے اور اسے ''{output}'' چارٹ کے طور پر نہیں دکھایا جا سکتا۔ آؤٹ پٹ قسم کو ''{algo}'' کے ساتھ مطابقت رکھنے والی ایک قسم میں تبدیل
+      کریں: {options}۔'
+    insufficient_columns_algo: 'اس ڈیٹا سیٹ میں ''{algo}'' کے لیے درست کالم کی اقسام نہیں ہیں ({requirement})۔ ڈیٹا سیٹ میں ہیں: {columns}۔ {requirement} والا ڈیٹا سیٹ منتخب کریں، یا ان پر سوئچ کریں: {options}۔'
+    insufficient_columns_output: 'اس ڈیٹا سیٹ میں ''{output}'' کے لیے درست کالم کی اقسام نہیں ہیں ({requirement})۔ ڈیٹا سیٹ میں ہیں: {columns}۔ {requirement} والا ڈیٹا سیٹ منتخب کریں، یا ان پر سوئچ کریں:
+      {options}۔'
+    missing_algo_field: تجزیہ '{algo}' کی '{field}' ترتیب ({label}) غائب ہے۔ تجزیہ پینل میں '{field}' کے لیے کالم منتخب کریں۔
+    missing_output_field: آؤٹ پٹ '{output}' کی '{field}' ترتیب ({label}) غائب ہے۔ آؤٹ پٹ پینل میں '{field}' کے لیے کالم منتخب کریں۔
+    unknown_algorithm: '''{type}'' ایک تسلیم شدہ تجزیہ طریقہ نہیں ہے۔ ان میں سے ایک منتخب کریں: {options}۔'
+    unknown_columns: '{stage} مرحلہ اس ڈیٹا سیٹ میں موجود نہ ہونے والے کالم (کالموں) ''{columns}'' کا حوالہ دیتا ہے۔ دستیاب کالم: {available}۔ دستیاب کالموں میں سے انتخاب کریں۔'
+    unknown_output: '''{type}'' ایک تسلیم شدہ آؤٹ پٹ قسم نہیں ہے۔ ان میں سے ایک منتخب کریں: {options}۔'
+    wrong_column_type: کالم '{column}' کو '{field}' ({label}) کے لیے {expected} ہونا ضروری ہے۔
+    algorithm_required: تجزیہ کا کوئی طریقہ منتخب نہیں ہے۔ تجزیہ پینل میں ایک منتخب کریں — ایک ریسیپی کو الگورتھم کے ساتھ ایک شماریاتی مرحلے کی ضرورت ہوتی ہے۔
+    unknown_field: '''{field}'' ''{type}'' کے لیے ایک تسلیم شدہ ترتیب نہیں ہے۔ تسلیم شدہ ترتیبات: {options}۔'
+  visualisation_columns_required: تصور کاری کے لیے کم از کم ایک کالم درکار ہے
+  visualisation_error: 'تصور کاری ناکام: {error}'
+  visualisation_generated: تصور کاری کامیابی سے تیار ہوئی
+  technique_anova_one_way: یک طرفہ ANOVA
+  technique_chi_square: کائی اسکوائر ٹیسٹ
+  technique_t_test_independent: آزاد ٹی-ٹیسٹ
+  technique_correlation: ارتباط میٹرکس
+  technique_linear_regression: خطی رجعت
+  technique_t_test_paired: جوڑا دار ٹی-ٹیسٹ
+  technique_anova_two_way: دو طرفہ ANOVA
+  technique_descriptive: وضاحتی شماریات
+  distribution_no_columns: ڈسٹری بیوشن چارٹ کے لیے کم از کم ایک کالم درکار ہے
+  histogram_numeric: ہسٹوگرام کے لیے عددی کالم درکار ہے
+  histogram_no_columns: ہسٹوگرام کے لیے کم از کم ایک کالم درکار ہے
+  stage_not_implemented: '{stage_type} مرحلہ جلد آرہا ہے'
+  scoreboard:
+    technique:
+      what: تجزیہ کا طریقہ منتخب کریں
+    dataset:
+      what: ڈیٹا سیٹ منتخب کریں
+    output_incompatible:
+      what: مطابقت پذیر آؤٹ پٹ قسم منتخب کریں
+    output_fields:
+      what: آؤٹ پٹ کالم منتخب کریں
+    technique_fields:
+      what: مطلوبہ کالم منتخب کریں
+    name:
+      what: نسخے کا نام دیں
+    technique_unknown:
+      what: معروف تجزیہ کا طریقہ منتخب کریں
+    output_unknown:
+      what: معروف آؤٹ پٹ قسم منتخب کریں
+    output:
+      what: آؤٹ پٹ قسم منتخب کریں
+  chip:
+    heading:
+      columns: کون سے کالم؟
+      technique: کون سا تجزیہ کا طریقہ؟
+      output: کون سا آؤٹ پٹ؟
+schema:
+  connection_and_table_required: PostgreSQL/MySQL ذرائع کے لیے connection_id اور table_name درکار ہیں
+  connection_not_found: ڈیٹا بیس کنکشن نہیں ملا یا رسائی مسترد ہے
+  dataset_id_required: source_type=dataset کے لیے dataset_id درکار ہے
+  dataset_not_found: ڈیٹا سیٹ نہیں ملا یا رسائی مسترد ہے
+  introspect_mysql_failed: 'MySQL کا معائنہ کرنے میں ناکام: {error}'
+  introspect_postgresql_failed: 'PostgreSQL کا معائنہ کرنے میں ناکام: {error}'
+  no_table_name: ڈیٹا سیٹ کا کوئی ٹیبل نام نہیں ہے (ابھی شامل نہیں کیا گیا)
+  unsupported_source_type: 'غیر معاون source_type: {source_type}۔ dataset، postgresql یا mysql استعمال کریں۔'
+statistics:
+  anova_computation_failed: 'دو طرفہ ANOVA کا حساب ناکام: {error}'
+  anova_needs_three_groups: یک طرفہ ANOVA کے لیے 3 یا زیادہ گروہ درکار ہیں ({n} ملے)۔ 2 گروہوں کے لیے آزاد ٹی-ٹیسٹ استعمال کریں۔
+  cache_cleared: کیش کلید '{key}' صاف ہو گئی
+  cache_not_found: کیش کلید '{key}' نہیں ملی
+  column_must_be_numeric: کالم '{col}' عددی ہونا چاہیے
+  column_not_found: کالم '{col}' نہیں ملا
+  computation_failed: 'شماریات کا حساب ناکام: {error}'
+  compute_failed: 'شماریات شمار کرنے میں ناکام: {error}'
+  each_group_two_observations: ہر گروہ میں کم از کم 2 مشاہدات ہونے چاہئیں
+  factor_column_not_found: فیکٹر {factor} کالم '{col}' نہیں ملا
+  group_column_required_anova: یک طرفہ ANOVA کے لیے 3 یا زیادہ سطحوں والا زمرہ دار گروہ کالم درکار ہے
+  group_column_required_ttest: آزاد ٹی-ٹیسٹ کے لیے بالکل دو سطحوں والا زمرہ دار گروہ کالم درکار ہے
+  group_fewer_than_two: گروہ '{group}' میں 2 سے کم مشاہدات ہیں
+  group_must_have_two_levels: گروہ کالم '{group}' میں بالکل 2 سطحیں ہونی چاہئیں ({n} ملیں)
+  need_five_observations_chi: کم از کم 5 مکمل مشاہدات درکار ہیں
+  need_observations_regression: کم از کم {n} مکمل مشاہدات درکار ہیں
+  need_ten_observations_anova: دو طرفہ ANOVA کے لیے کم از کم 10 مکمل مشاہدات درکار ہیں
+  need_three_pairs: جوڑا دار ٹی-ٹیسٹ کے لیے کم از کم 3 مکمل جوڑے درکار ہیں
+  need_two_categories_chi: دونوں کالموں میں کم از کم 2 زمرے درکار ہیں
+  need_two_numeric_correlation: ارتباط کے لیے کم از کم 2 عددی کالم درکار ہیں
+  need_two_valid_numeric: کم از کم 2 درست عددی کالم درکار ہیں
+  no_valid_data_after_dropna: NaN خارج کرنے کے بعد کوئی درست ڈیٹا نہیں
+  no_valid_numeric: کوئی درست عددی کالم فراہم نہیں کیا گیا
+  non_numeric_column: غیر عددی کالم
+  not_computed: شمار نہیں کیا گیا
+  select_dependent_independent: 'کم از کم 2 عددی کالم منتخب کریں: پہلا = منحصر، باقی = آزاد'
+  select_dependent_var: ایک عددی منحصر متغیر کالم منتخب کریں
+  select_one_numeric_ttest: آزاد ٹی-ٹیسٹ کے لیے ایک عددی کالم منتخب کریں
+  select_two_categorical_chi: بالکل دو زمرہ دار کالم منتخب کریں
+  select_two_numeric_paired: جوڑا دار ٹی-ٹیسٹ کے لیے بالکل دو عددی کالم منتخب کریں
+  two_factors_required: دو طرفہ ANOVA کے لیے دو عوامل درکار ہیں
+system:
+  cache_cleanup_completed: 'کیش صفائی مکمل: {removed} اندراجات ہٹا دیے گئے'
+  hello_world: ہیلو، ورلڈ!
+user:
+  api_key_required: اس فراہم کنندہ کے لیے API کلید درکار ہے
+  connection_name_exists: اس نام سے کنکشن پہلے سے موجود ہے
+  connection_not_found: کنکشن نہیں ملا
+  example_blocked: نمونہ صارفین یہ کارروائی نہیں کر سکتے
+  internal_error: داخلی سرور خرابی
+  missing_fields: مطلوبہ فیلڈز غائب ہیں
+  provider_not_found: فراہم کنندہ نہیں ملا
+  user_not_found: صارف نہیں ملا
+  auto_create_default_detail: ڈیٹاسیٹ خودکار تخلیق ناکام رہی۔ ڈیٹا بیس سرور شاید قابل رسائی نہیں ہے۔
+  connection_timeout_local: کنکشن کی معیاد ختم۔ کیا {code} {baseUrl} پر چل رہا ہے؟
+  no_endpoint: اس فراہم کنندہ کے لیے کوئی اینڈ پوائنٹ ترتیب نہیں دیا گیا۔
+  example_delete_db: مثال کے صارفین ڈیٹا بیس کنکشن حذف نہیں کر سکتے
+  provider_returned: 'فراہم کنندہ نے واپس کیا {status}: {text}'
+  fetch_failed: فیچ ناکام
+  unknown_provider: 'نامعلوم فراہم کنندہ: {code}'
+  example_create_db: مثال کے صارفین ڈیٹا بیس کنکشن نہیں بنا سکتے
+  connection_timeout_remote: '{code} کے لیے {baseUrl} پر کنکشن کی معیاد ختم'
+  example_update_db: مثالی صارفین ڈیٹا بیس کنکشنز اپ ڈیٹ نہیں کر سکتے
+  api_key_required_fetch: اس فراہم کنندہ کے لیے API کلید درکار ہے۔
+  no_models_returned: فراہم کنندہ نے کوئی ماڈل واپس نہیں کیا؛ کچھ بھی تبدیل نہیں ہوا
+validation:
+  error: 'تصدیقی خرابی: {count} مسائل پائے گئے'
+  password:
+    require_special: پاس ورڈ میں کم از کم ایک خاص حرف ہونا ضروری ہے۔
+    require_digit: پاس ورڈ میں کم از کم ایک ہندسہ ہونا ضروری ہے۔
+    too_weak: پاس ورڈ بہت کمزور ہے۔ براہ کرم مضبوط پاس ورڈ منتخب کریں۔
+    min_length: پاس ورڈ کم از کم {min} حروف لمبا ہونا ضروری ہے۔
+    require_uppercase: پاس ورڈ میں کم از کم ایک بڑا حرف ہونا ضروری ہے۔
+    require_lowercase: پاس ورڈ میں کم از کم ایک چھوٹا حرف ہونا ضروری ہے۔
+virtual:
+  execute_failed: 'اجرا ناکام: {error}'
+  no_credentials_mysql: MySQL کنکشن {conn_id} کے لیے اسناد نہیں ملیں
+  no_credentials_postgresql: PostgreSQL کنکشن {conn_id} کے لیے اسناد نہیں ملیں
+  preview_failed: 'پیش منظر ناکام: {error}'
+  validate:
+    dataset_not_found: 'ماخذ ''{alias}'': ڈیٹا سیٹ {dataset_id} نہیں ملا یا رسائی مسترد کر دی گئی'
+    join_right_source_not_found: 'جوائن {j_idx}: دایاں ماخذ ''{right_alias}'' نہیں ملا'
+    connection_not_found: 'ماخذ ''{alias}'': کنکشن {conn_id} نہیں ملا یا رسائی مسترد کر دی گئی'
+    connection_id_required: 'ماخذ ''{alias}'': {storage_type} ماخذ کے لیے connectionId درکار ہے'
+    join_left_source_not_found: 'جوائن {j_idx}: بایاں ماخذ ''{left_alias}'' نہیں ملا'
+    dataset_id_required: 'ماخذ ''{alias}'': ڈیٹا سیٹ ماخذ کے لیے datasetId درکار ہے'
+    column_source_not_found: 'کالم {c_idx}: ماخذ ''{src_alias}'' نہیں ملا'
+    no_sources: کوئی ماخذ متعین نہیں ہے
+    output_column_not_found: 'کالم {c_idx}: ماخذ ''{src_alias}'' میں کالم ''{column}'' موجود نہیں ہے'
+    join_column_not_found: 'جوائن {j_idx}: ماخذ ''{alias}'' میں کالم ''{column}'' موجود نہیں ہے'
+  scoreboard:
+    columns:
+      needs_failed: '''{source}'' کے کالم پڑھے نہیں جا سکے۔'
+      what: '''{source}'' کے اندر کیا ہے؟'
+      needs_empty: '''{source}'' میں انتخاب کے لیے کوئی کالم نہیں ہے۔'
+    joins:
+      what: مآخذ کو کیسے جوڑا جائے؟
+      needs: دو یا زیادہ مآخذ، جن کے کالم پڑھ لیے گئے ہوں۔
+    name:
+      what: اس ڈیٹا سیٹ کو کیا نام دیا جائے؟
+    output_columns:
+      needs: ایک ماخذ، جس کے کالم پڑھ لیے گئے ہوں۔
+      what: نتیجے میں کون سے کالم شامل ہونے چاہئیں؟
+    sources:
+      what: اس ڈیٹا سیٹ کو کس ٹیبل سے بنایا جائے؟
+    storage:
+      what: کیا یہ لائیو ویو ہونا چاہیے، یا محفوظ شدہ ٹیبل؟
+      live: لائیو ویو
+      table: محفوظ شدہ ٹیبل
+  join_suggestions:
+    invalid_sources: جوائن کی تجاویز کو مآخذ کی ایک فہرست درکار ہے، ہر ایک کے ساتھ ایک عرفی نام اور ایک نام ({error})۔
+  panel:
+    collapsed_required: پینل کی فولڈ شدہ حالت درست یا غلط ہونی چاہیے۔
+  decision:
+    invalid_value: '''{piece}'' فیصلہ لاگو نہیں کیا جا سکا: {error}'
+    missing_value: '''{piece}'' فیصلے کے لیے ایک قدر درکار ہے۔'
+    unknown_piece: '''{piece}'' ایسا فیصلہ نہیں ہے جو اس اینڈ پوائنٹ پر لاگو کیا جا سکے۔'
+    model_failed: 'آپ کا انتخاب محفوظ کر لیا گیا۔ اسسٹنٹ جواب نہیں دے سکا: {error}'
+    no_connection: آپ کا انتخاب محفوظ کر لیا گیا۔ اسسٹنٹ جواب نہیں دے سکا کیونکہ کوئی AI کنکشن دستیاب نہیں ہے۔
+    no_reply: آپ کا انتخاب محفوظ کر لیا گیا۔ اسسٹنٹ بغیر کوئی جواب دیے اپنے کام کے راؤنڈز ختم کر چکا ہے — اسے جاری رکھنے کو کہیں، یا درخت میں موجود مسودہ دیکھیں۔
+    applied: اوپر دیے گئے انتخاب کو استعمال کریں۔
+  column:
+    unknown_action: '''{action}'' کالم ایکشن نہیں ہے۔ tick یا untick استعمال کریں۔'
+    missing_source: 'ایک کالم کو اپنا ماخذ درکار ہے: ڈیٹا سیٹ آئی ڈی، یا کنکشن اور ٹیبل کا نام۔'
+    missing_column: کسی کالم کا نام نہیں دیا گیا۔
+  save:
+    invalid_definition: 'اس ڈیٹا سیٹ کو محفوظ نہیں کیا جا سکتا: {errors}'
+  tool:
+    no_source: '''{alias}'' نام کا کوئی ماخذ نہیں ہے۔ اس مسودے کے ماخذ: {aliases}۔'
+    no_sources_yet: '''{alias}'' نام کا کوئی ماخذ نہیں ہے — مسودے کے پاس ابھی کوئی ماخذ نہیں ہیں۔ پہلے add_source کال کریں۔'
+virtual_chat:
+  chat_session_not_found: چیٹ سیشن نہیں ملا
+  connection_not_found: ڈیٹا بیس کنکشن نہیں ملا یا رسائی سے انکار کیا گیا
+  introspection_failed: 'انٹروسپیکشن ناکام ہوا: {error}'
+  llm_call_failed: 'ایل ایل ایم کال ناکام ہوئی: {error}'
+  llm_returned_error: ایل ایل ایم نے HTTP {status_code} واپس کیا
+  save_draft_success: '✅ ورچوئل ڈیٹاسیٹ بطور مسودہ محفوظ ہو گیا: **{name}**۔ آپ اسے ڈیٹاسیٹس صفحے پر دیکھ اور ترمیم کر سکتے ہیں۔ SQL، جوائنز اور آؤٹ پٹ کالموں کو بہتر بنانے کے لیے Define ٹیب استعمال کریں۔'
+  save_no_sources: '⚠️ محفوظ نہیں کیا جا سکا: کسی ڈیٹا سورس کا جائزہ نہیں لیا گیا۔ اپنے پچھلے پیغامات میں ''products'' یا ''orders'' جیسے ٹیبل ناموں کا ذکر کرنے کی کوشش کریں۔'
+  save_success: ✅ ڈیٹا سیٹ **{name}** کامیابی سے محفوظ ہو گیا۔ آپ اسے موجودہ ڈیٹا سیٹس کی فہرست میں دیکھ سکتے ہیں۔ اسے بہتر بنانے کے لیے ترمیم کا آپشن استعمال کریں یا مختلف ورژن بنانے کے لیے کلون کا آپشن
+    استعمال کریں۔
+  empty_response: مجھے نہیں معلوم کہ اس کا جواب کیسے دوں۔ کیا آپ اسے دوسرے الفاظ میں بیان کر سکتے ہیں یا مزید تفصیل فراہم کر سکتے ہیں؟
+  save_failed: '⚠️ محفوظ کرنا ناکام رہا: {error}'
+  save_parse_error: '⚠️ ڈیٹا سیٹ محفوظ نہیں کیا جا سکا: {error}'
+visualization_instances:
+  viz_type_id_required: visualizationTypeId درکار ہے
+  unauthorized: غیر مجاز
+  invalid_viz_type: غلط تصوراتی قسم
+  instance_not_found: مثال نہیں ملی
+  internal_error: اندرونی سرور خرابی
+  invalid_instance_id: مثال id غلط ہے
+  no_rendered_output: کوئی رینڈر شدہ آؤٹ پٹ دستیاب نہیں ہے
+  viz_type_not_found: ویژولائزیشن کی قسم نہیں ملی
+ai_providers:
+  missing_id_or_enabled: id یا enabled فلیگ غائب ہے
+  provider_not_found: فراہم کنندہ نہیں ملا
+  forbidden: ممنوعہ
+  missing_provider_id: فراہم کنندہ id غائب ہے
+  failed_to_delete_provider: فراہم کنندہ حذف کرنے میں ناکام
+  internal_error: اندرونی سرور خرابی
+  failed_to_update_provider: فراہم کنندہ کو اپ ڈیٹ کرنے میں ناکام
+  unauthorized: غیر مجاز
+  invalid_provider_id: غلط فراہم کنندہ آئی ڈی
+test_ai:
+  fetch_failed: فیچ ناکام
+  server_reachable: '{name} سرور {baseUrl} پر قابل رسائی ہے۔'
+  no_endpoint: اس فراہم کنندہ کے لیے کوئی اینڈ پوائنٹ ترتیب نہیں دیا گیا۔
+  connection_failed: 'کنکشن ناکام: {msg}'
+  internal_error: اندرونی سرور خرابی
+  api_key_required: '{name} کے لیے API کلید درکار ہے۔'
+  unknown_provider: 'نامعلوم فراہم کنندہ: {provider}'
+  responded_with_status: '{name} نے حالت {status} کے ساتھ جواب دیا'
+  endpoint_valid: '{baseUrl} پر اینڈ پوائنٹ درست ہے۔'
+  connection_timeout_local: کنکشن کی معیاد ختم۔ کیا {name} {baseUrl} پر چل رہا ہے؟
+  endpoint_v1_valid: '{baseUrl}/v1 پر اینڈ پوائنٹ درست ہے۔'
+ai:
+  database:
+    email_sent: رپورٹ ای میل کامیابی سے بھیج دی گئی
+visualization_types:
+  name_and_slug_required: نام اور slug درکار ہیں
+  internal_error: اندرونی سرور خرابی
+  type_not_found: تصوراتی قسم نہیں ملی
+  slug_already_exists: slug پہلے سے موجود ہے
+  forbidden: ممنوعہ
+column_required: آپریشن '{type}' کے لیے ایک کالم درکار ہے
+invalid_operation_type: 'غلط آپریشن قسم: {type}۔ ان میں سے ایک ہونی چاہیے: {types}'
+encode_column_required: انکوڈ آپریشن کے لیے ایک کالم درکار ہے
+columns_required: آپریشن '{type}' کے لیے کالمز فیلڈ درکار ہے
+rename_new_name_required: کالم کا نام تبدیل کرنے کے آپریشن کے لیے نیا نام درکار ہے
+invalid_fill_method: 'غلط fill_missing طریقہ: {method}۔ ان میں سے ایک ہونا چاہیے: {methods}'
+filter_operator_required: فلٹر آپریشن کے لیے ایک آپریٹر درکار ہے
+invalid_encoding: 'غلط انکوڈنگ: {encoding}۔ ان میں سے ایک ہونی چاہیے: {types}'
+invalid_target_type: 'غلط target_type: {target_type}۔ ان میں سے ایک ہونا چاہیے: {types}'
+filter_value_required: فلٹر آپریشن کے لیے ایک قدر درکار ہے
+dataclean_chat:
+  empty_response: میں جواب تیار نہیں کر سکا۔ براہ کرم دوبارہ کوشش کریں۔
+  dataset_id_required: datasetId درکار ہے
+  message_required: پیغام درکار ہے
+  chat_session_not_found: ڈیٹا کلیننگ چیٹ سیشن نہیں ملا
+  create_error: ڈیٹا کلیننگ سیشن بنانے میں ناکامی ہوئی
+dataclean_tools:
+  no_rules_to_preview: پیش نظارہ کے لیے کوئی اصول نہیں ہیں
+  no_rules_to_apply: لاگو کرنے کے لیے کوئی اصول نہیں ہیں

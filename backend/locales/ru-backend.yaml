@@ -1,0 +1,1018 @@
+admin:
+  already_full_admin: Пользователь уже является полным администратором
+  already_group_admin: Пользователь уже является администратором группы
+  cannot_delete_self: Невозможно удалить собственный аккаунт
+  cannot_demote_full_admin: Невозможно понизить полного администратора
+  cannot_demote_self: Вы не можете понизить сами себя
+  cannot_promote_example: Невозможно повысить примерного пользователя
+  delete_error: Не удалось удалить пользователя
+  demote_error: Не удалось понизить пользователя
+  description_required: Описание не может быть пустым
+  example_blocked: Примерные пользователи не могут выполнять административные действия
+  group_not_found: Группа не найдена
+  group_users_load_error: Не удалось загрузить пользователей группы
+  groups_load_error: Не удалось загрузить группы
+  groups_stats_error: Не удалось загрузить статистику группы
+  insufficient_permissions: Недостаточно прав для выполнения этого действия
+  invalid_group_id: Недопустимый group_id. Должен быть от 00 до 99
+  invalid_id: Недопустимый id
+  invalid_upload_count: maxUploadCount должен быть неотрицательным целым числом (0 — без ограничений)
+  invalid_upload_size: maxUploadSizeMB должен быть неотрицательным целым числом (0 — без ограничений)
+  missing_fields: Отсутствуют обязательные поля
+  missing_group_id: Отсутствует идентификатор группы
+  missing_id: Отсутствует id
+  missing_model_id: Отсутствует идентификатор модели
+  missing_provider_code: Отсутствует параметр providerCode
+  missing_user_id: Отсутствует userId
+  model_update_error: Не удалось обновить модель
+  models_load_error: Не удалось загрузить модели
+  no_fields: Нет допустимых полей для обновления
+  no_group: Пользователю не назначена группа
+  not_group_admin: Пользователь не является администратором группы
+  only_full_admin: Только полные администраторы могут выполнять это действие
+  promote_error: Не удалось повысить пользователя
+  provider_delete_error: Не удалось удалить провайдера
+  provider_not_found: Провайдер не найден
+  provider_update_error: Не удалось обновить провайдера
+  providers_load_error: Не удалось загрузить провайдеров
+  slug_exists: Slug уже существует
+  update_error: Не удалось обновить пользователя
+  user_load_error: Не удалось загрузить пользователя
+  user_not_found: Пользователь не найден
+  users_load_error: Не удалось загрузить пользователей
+  viz_type_create_error: Не удалось создать тип визуализации
+  viz_type_delete_error: Не удалось удалить тип визуализации
+  viz_type_update_error: Не удалось обновить тип визуализации
+  viz_types_load_error: Не удалось загрузить типы визуализации
+api:
+  user:
+    connection_not_found: Соединение не найдено
+    invalid_port: Порт должен быть целым числом
+    invalid_name: Имя должно быть строкой
+    example_create_ai: Демо-пользователи не могут создавать ИИ-подключения
+    internal_error: Внутренняя ошибка сервера
+    invalid_connection_id: Неверный идентификатор подключения
+    example_blocked: Демо-пользователи не могут выполнять это действие
+    connection_name_exists: Подключение с таким именем уже существует
+    connection_id_required: Требуется идентификатор подключения
+    missing_fields: Отсутствуют обязательные поля
+    example_update_ai: Демо-пользователи не могут обновлять ИИ-подключения
+    invalid_current_password: Текущий пароль неверен
+    provider_not_found: Провайдер «{provider}» не найден
+    api_key_required: Для этого провайдера требуется API-ключ
+    example_delete_ai: Демо-пользователи не могут удалять ИИ-подключения
+    user_not_found: Пользователь не найден
+    invalid_connect_timeout: Таймаут подключения должен быть целым числом секунд, не менее 1 и не более {ceiling}
+    test_budget_exhausted: Модель ничего не вернула, так как израсходовала весь бюджет вывода, не дойдя до ответа. Вердикт о возможностях не зафиксирован; зафиксирована только длительность.
+    test_tls_failure: Безопасное соединение не удалось установить — возможно, конечная точка использует обычный http, хотя ожидался https, или срок действия её сертификата истёк. Вердикт о возможностях
+      не зафиксирован; зафиксировано только время до сбоя.
+    tuning_model_not_found: Нет такой модели
+    connect_timeout_exceeds_probe: Таймаут подключения ({connect} с) не может быть больше таймаута теста ({probe} с) — соединению нельзя позволить устанавливаться дольше, чем может выполняться весь тест.
+    test_dns_failure: Не удалось разрешить имя хоста конечной точки. Проверьте адрес на опечатку или на имя, которое может разрешаться только в этой сети. Вердикт о возможностях не зафиксирован; зафиксировано
+      только время до сбоя.
+    model_not_found: Модель «{model}» не найдена для провайдера «{provider}»
+    tuning_malformed_body: Тело запроса не является допустимым JSON
+    unknown_test_id: 'Неизвестный тест «{test}». Зарегистрированные тесты: {known}'
+    test_attribution_required: Результат теста должен фиксировать, кто его выполнил
+    discovery_complete: 'Обнаружено моделей: {seen}: новых — {created}, уже известных — {refreshed}, больше не обслуживается — {pruned}.'
+    tuning_invalid_temperature: Температура должна быть числом от 0 до 2
+    test_connect_refused: По этому адресу никто не слушает — сервер доступен, но ни одна служба не ответила. Проверьте порт и что ИИ-сервер запущен. Вердикт о возможностях не зафиксирован; зафиксировано
+      только время до сбоя.
+    invalid_probe_timeout: Таймаут теста должен быть целым числом секунд, не менее 1 и не более {ceiling}
+    tuning_invalid_max_tokens: Лимит вывода должен быть целым числом токенов, не менее 1
+    test_other_failure: 'Модель недоступна, и причина не распознана этой системой. Вердикт о возможностях не зафиксирован: {detail}'
+    tuning_invalid_ai_timeout: Лимит времени ИИ должен быть целым числом секунд, не менее 1
+    test_read_timeout: Модель приняла запрос, но не ответила вовремя. Возможно, она слишком медленная для этого хоста — большая модель на CPU может работать несколько минут. Вердикт о возможностях не зафиксирован;
+      зафиксировано только время до сбоя.
+    test_not_implemented: Тест «{test}» зарегистрирован, но для него ещё нет пробы.
+    tuning_connection_not_found: Нет такого ИИ-подключения
+    tuning_nothing_to_update: 'Укажите хотя бы одно из: temperature, maxTokens или timeoutSeconds'
+    test_connect_timeout: Конечная точка не приняла подключение вовремя. Возможно, хост недоступен или брандмауэр отбрасывает запрос. Вердикт о возможностях не зафиксирован; зафиксировано только время до
+      сбоя.
+    test_reason_required: Результат теста должен фиксировать причину
+    test_http_status: 'Провайдер ответил, и его ответ содержал ошибку: {detail}. Вердикт о возможностях не зафиксирован; сказанное провайдером показано, чтобы причина была ясна.'
+    invalid_test_state: 'Недопустимый результат теста «{state}». Допустимые: {allowed}'
+    model_not_served_by_connection: Это подключение не обслуживает модель «{model}». Возможно, его модели изменились — обновите подключение или выберите другую модель.
+  auth:
+    email_already_verified: Электронная почта уже подтверждена
+    unauthorized: Не авторизован
+    missing_email: Требуется электронная почта
+    example_user_forgot_blocked: Сброс пароля отключён для демонстрационных пользователей
+    missing_fields: Отсутствуют поля
+    invalid_token: Недействительный или просроченный токен
+    user_not_found: Пользователь не найден
+    token_expired: Срок действия токена истёк
+    example_user_reset_blocked: Сброс пароля отключён для демонстрационных пользователей
+    internal_error: Внутренняя ошибка сервера
+    example_user_blocked: Смена пароля отключена для демо-пользователей
+    invalid_current_password: Текущий пароль неверен
+    not_authenticated: Не аутентифицирован
+  admin:
+    already_group_admin: Пользователь уже является администратором группы
+    missing_fields: Отсутствуют обязательные поля
+    group_users_load_error: Не удалось загрузить пользователей группы
+    user_load_error: Не удалось загрузить пользователя
+    missing_group_id: Отсутствует идентификатор группы
+    missing_model_id: Отсутствует идентификатор модели
+    providers_load_error: Не удалось загрузить провайдеров
+    invalid_upload_count: maxUploadCount должно быть неотрицательным целым числом (0 — без ограничений)
+    demote_error: Не удалось понизить пользователя в правах
+    only_full_admin: Это действие могут выполнять только полные администраторы
+    settings_invalid_grace_period: Льготный период регистрации должен быть положительным числом (в часах)
+    settings_invalid_email_sender: Неверный формат адреса электронной почты отправителя
+    delete_error: Не удалось удалить пользователя
+    not_group_admin: Пользователь не является администратором группы
+    no_group: Пользователю не назначена группа
+    no_fields: Нет допустимых полей для обновления
+    settings_invalid_email_timeout: Тайм-аут подтверждения электронной почты должен быть положительным числом (в часах)
+    missing_user_id: Отсутствует userId
+    settings_save_error: Не удалось сохранить глобальные настройки
+    provider_delete_error: Не удалось удалить провайдера
+    example_blocked: Демонстрационные пользователи не могут выполнять административные действия
+    provider_update_error: Не удалось обновить провайдера
+    description_required: Описание не может быть пустым
+    insufficient_permissions: Недостаточно прав для выполнения этого действия
+    missing_id: Отсутствует id
+    settings_load_error: Не удалось загрузить глобальные настройки
+    cannot_delete_self: Нельзя удалить собственную учётную запись
+    settings_view_forbidden: Только полные администраторы могут просматривать глобальные настройки
+    cannot_demote_full_admin: Нельзя понизить полного администратора
+    settings_invalid_upload_size: Максимальный размер загрузки по умолчанию должен быть неотрицательным целым числом (0 — без ограничений)
+    settings_invalid_max_registrations: Максимальное количество регистраций должно быть положительным числом или без ограничений
+    settings_invalid_upload_count: Максимальное количество загрузок по умолчанию должно быть неотрицательным целым числом (0 — без ограничений)
+    cannot_promote_example: Нельзя повысить демонстрационного пользователя
+    invalid_group_id: Неверный group_id. Должен быть от 00 до 99
+    groups_stats_error: Не удалось загрузить статистику группы
+    update_error: Не удалось обновить пользователя
+    groups_load_error: Не удалось загрузить группы
+    model_update_error: Не удалось обновить модель
+    settings_modify_forbidden: Только полные администраторы могут изменять глобальные настройки
+    settings_invalid_public_url: Неверный формат публичного URL
+    already_full_admin: Пользователь уже является полным администратором
+    promote_error: Не удалось повысить пользователя
+    provider_not_found: Провайдер не найден
+    models_load_error: Не удалось загрузить модели
+    cannot_demote_self: Вы не можете понизить себя
+    invalid_upload_size: maxUploadSizeMB должен быть неотрицательным целым числом (0 — без ограничений)
+    model_not_found: Модель не найдена
+    invalid_viz_type_field: Неверное значение поля типа визуализации
+    viz_type_not_found: Тип визуализации не найден
+    user_not_found: Пользователь не найден
+    promote_success: Пользователь {name} назначен администратором группы
+    invalid_id: Неверный идентификатор
+    settings_invalid_platform_upload_size: Максимальный размер загрузки на платформе должен быть неотрицательным целым числом (0 — без ограничений).
+    demote_success: Пользователь {name} снят с роли администратора группы
+    instance_exists: Невозможно удалить тип, так как с ним связано {count} экземпляр(ов).
+    users_load_error: Не удалось загрузить пользователей
+    viz_type_update_error: Не удалось обновить тип визуализации
+    slug_exists: Slug уже существует
+    viz_type_delete_error: Не удалось удалить тип визуализации
+    viz_types_load_error: Не удалось загрузить типы визуализации
+    viz_type_create_error: Не удалось создать тип визуализации
+    instance_in_use: Нельзя удалить тип, так как у него есть связанные экземпляры.
+    settings_demo_mode_requires_licence: Демонстрационный режим нельзя отключить без действующей лицензии.
+    invalid_email: Неверный формат электронной почты
+    settings_invalid_registration_mode: 'Режим регистрации должен быть одним из: 0, 1, 2 или 4.'
+    email_exists: Электронная почта уже существует
+    create_user_error: Не удалось создать пользователя
+    settings_not_found: Глобальные настройки не найдены
+    users_demo_upload_size_limit: В демо-режиме максимальный размер загрузки для пользователя должен быть от 1 до 5 МБ.
+    settings_demo_upload_count_limit: В демо-режиме максимальное количество загрузок по умолчанию должно быть от 1 до 5.
+    settings_demo_upload_size_limit: В демо-режиме максимальный размер загрузки по умолчанию должен быть от 1 до 5 МБ.
+    users_demo_upload_count_limit: В демо-режиме максимальное количество загрузок для пользователя должно быть от 1 до 5.
+    invalid_admin_password: Неверный пароль администратора.
+    example_user_password_blocked: Пароли пользователей-примеров не могут быть установлены администратором.
+    settings_invalid_temperature: Температура должна быть числом от 0 до 2
+    field_not_owned: 'Это поле не задано на этой странице. {endpoint}. Проблемные поля: {fields}'
+    settings_invalid_max_tokens: Лимит вывода должен быть целым числом токенов, не менее 1
+    settings_invalid_slow_threshold: Лимит медленной модели должен быть целым числом секунд, не менее 1
+    settings_invalid_probe_timeout: Таймаут теста по умолчанию должен быть целым числом секунд, не менее 1 и не более {ceiling}
+    tuning_reset_error: Не удалось сбросить настройки ИИ по умолчанию
+    settings_invalid_connect_timeout: Таймаут подключения по умолчанию должен быть целым числом секунд, не менее 1 и не более {ceiling}
+    settings_invalid_ai_timeout: Лимит времени ИИ должен быть целым числом секунд, не менее 1
+  register:
+    invalid_email: Неверный формат электронной почты
+    settings_not_found: Глобальные настройки не найдены
+    missing_fields: Отсутствуют поля
+    internal_error: Внутренняя ошибка сервера
+    email_exists: Email уже существует
+    limit_reached: Достигнут лимит регистраций (максимум {max_reg} пользователей).
+    registration_disabled: Самостоятельная регистрация отключена. Пожалуйста, обратитесь к администратору.
+  settings:
+    load_failed: Не удалось загрузить настройки
+    save_failed: Не удалось сохранить настройки
+    example_blocked: Демо-пользователи не могут изменять настройки
+    invalid_default_ai_connection: Неверное ИИ-подключение по умолчанию
+    user_not_found: Пользователь не найден
+    invalid_slow_threshold: Лимит медленной модели должен быть целым числом секунд, не менее 1
+  profile:
+    update_failed: Не удалось обновить профиль
+    name_required: Имя обязательно
+    invalid_name: Имя должно быть строкой
+    fetch_failed: Не удалось получить профиль
+  global_settings_load_error: Внутренняя ошибка сервера
+  languages_load_error: Не удалось загрузить языки
+  translations_load_error: Не удалось загрузить переводы
+auth:
+  account_deleted: Этот аккаунт был удален.
+  email_not_verified: Электронная почта не подтверждена. Проверьте папку «Входящие» и «Спам».
+  example_user_blocked: Функции пароля отключены для примерных пользователей
+  example_user_forgot_blocked: Сброс пароля отключен для примерных пользователей
+  example_user_reset_blocked: Сброс пароля отключен для примерных пользователей
+  internal_error: Внутренняя ошибка сервера
+  invalid_credentials: Неверные учетные данные
+  invalid_current_password: Текущий пароль неверен
+  invalid_token: Недействительный или истекший токен
+  invalid_token_error: 'Недействительный токен: {error}'
+  invalid_token_missing_user_id: 'Недействительный токен: отсутствует идентификатор пользователя'
+  missing_email: Требуется адрес электронной почты
+  missing_fields: Отсутствуют поля
+  password_changed: Пароль успешно изменен
+  password_validation_failed: Ошибка проверки пароля
+  reset_email_sent: Письмо для сброса пароля отправлено
+  token_expired: Срок действия токена истек
+  unauthorized: Не авторизован
+  user_not_found: Пользователь не найден
+  login_invalid_credentials: Неверная электронная почта или пароль
+chat:
+  ai_provider_error: 'Ошибка AI-провайдера: {error}'
+  connection_error: 'Ошибка соединения: {error}'
+  connection_not_found: AI-соединение не найдено или недоступно
+  delete_failed: 'Не удалось удалить чат: {error}'
+  generate_title_failed: 'Не удалось сгенерировать заголовок: {error}'
+  get_failed: 'Не удалось получить чат: {error}'
+  internal_error: 'Внутренняя ошибка сервера: {error}'
+  list_failed: 'Не удалось получить список чатов: {error}'
+  send_failed: 'Не удалось отправить сообщение: {error}'
+  title_updated: Заголовок чата успешно обновлен
+  update_failed: 'Не удалось обновить чат: {error}'
+  not_found: Чат '{id}' не найден
+  not_found_or_not_owned: Чат '{id}' не найден, или вы не являетесь его владельцем
+  deleted: Чат '{id}' успешно удалён
+  ai_service_failed: Сервис ИИ не смог ответить. Пожалуйста, попробуйте ещё раз.
+  ai_timeout: ИИ-модель слишком долго отвечает. Пожалуйста, попробуйте ещё раз.
+  ai_repeat_loop: ИИ-модель зависла и не смогла завершить ответ. Пожалуйста, попробуйте ещё раз.
+  timeout_out_of_range: Лимит времени ИИ должен быть от 1 до {max_seconds} секунд
+common:
+  back: Назад
+  cancel: Отмена
+  cannot_undo: Это действие нельзя отменить.
+  clear: Очистить
+  copy: Копировать
+  delete: Удалить
+  deleting: Удаление...
+  dismiss: Закрыть
+  edit: Редактировать
+  generating: Генерация...
+  loading: Загрузка...
+  next: Далее
+  restoring: Восстановление...
+  save: Сохранить
+  saving: Сохранение...
+  sending: Отправка...
+  testing: Тестирование...
+  unknown: Неизвестно
+  uploading: Загрузка...
+  verifying: Проверка...
+  view: Просмотр
+database:
+  connection_failed: 'Не удалось подключиться к базе данных: {error}'
+  decryption_failed: 'Не удалось расшифровать пароль подключения: {error}'
+  insert_failed: 'Ошибка базы данных: {error}'
+  pool_not_initialized: Пул базы данных не инициализирован
+  query_failed: 'Не удалось выполнить запрос к базе данных: {error}'
+  type_not_supported: 'Неподдерживаемый тип базы данных: {type}'
+  connection_not_found: Подключение к базе данных не найдено или недоступно
+  feature_required: Этот тип базы данных не поддерживается вашей лицензией.
+datasets:
+  define:
+    connection_details_not_found: Сведения о подключении не найдены
+    connection_not_found: Подключение к базе данных не найдено или недоступно
+    connection_required: Требуется connectionId
+    connection_test_failed: Проверка подключения к базе данных не удалась
+    database_connection_failed: 'Не удалось подключиться к базе данных: {error}'
+    name_required: Требуется имя набора данных
+    table_name_required: Требуется tableName
+    verification_failed: 'Не удалось проверить таблицу/представление: {error}'
+    preview_failed: 'Не удалось прочитать данные из таблицы ''{table}'': {error}'
+    table_not_found: Таблица или представление '{table}' не найдено в базе данных '{database}'
+    invalid_source_type: sourceType должен иметь значение 'table' или 'view'
+    table_access_failed: 'Не удалось получить доступ к таблице ''{table}'': {error}'
+    dataset_created: Набор данных '{name}' успешно определён
+    permission_denied: 'Доступ запрещён: пользователь ''{user}'' не имеет доступа к таблице ''{table}''. Предоставьте разрешение SELECT.'
+    connection_successful: Подключение успешно.
+    connection_timed_out: Превышено время ожидания подключения (15 секунд).
+    connection_missing_db_note: 'Примечание: PostgreSQL возвращает эту ошибку как для отсутствующих баз данных, так и при недостаточных правах доступа. Если база данных существует, проверьте, что у пользователя
+      есть право CONNECT на эту базу данных.'
+  delete:
+    success: Набор данных '{id}' успешно удалён
+  describe:
+    ai_connection_error: 'Ошибка подключения к ИИ: {error}'
+    empty_description: Сгенерированное описание пусто. Проверьте конфигурацию провайдера ИИ.
+    generation_failed: 'Сбой генерации описания: {error}'
+    description_generated: Описание для '{name}' успешно сгенерировано
+    timeout_out_of_range: Лимит времени ИИ должен быть от 1 до {max_seconds} секунд
+  example_blocked:
+    create: Пользователи-примеры не могут создавать наборы данных
+    delete: Пользователи-примеры не могут удалять наборы данных
+    update: Пользователи-примеры не могут обновлять наборы данных
+  list_error: Не удалось загрузить наборы данных
+  not_found: Набор данных не найден
+  not_owner: Вы можете редактировать только свои наборы данных
+  preparation:
+    duplicate_name: Правило подготовки с таким именем уже существует для этого набора данных
+    no_updates: Нет полей для обновления
+    preview_failed: 'Не удалось предварительно просмотреть правило: {error}'
+    rule_deleted: Правило подготовки успешно удалено
+    rule_in_use: 'Это правило подготовки используется в {count} рецепте(ах): {names}. Сначала удалите рецепты.'
+    rule_not_found_or_not_owned: Правило подготовки не найдено или у вас нет прав на него
+    rule_updated: Правило подготовки успешно обновлено
+    schema_failed: 'Не удалось прочитать схему набора данных: {error}'
+    rule_not_found: Правило подготовки '{id}' не найдено для этого набора данных
+    rule_created: Правило подготовки '{name}' успешно создано
+    already_exists: Правило подготовки с такими операциями уже существует ('{name}').
+  schema:
+    external_failed: 'Не удалось получить схему из внешней базы данных: {error}'
+    from_preview: Схема получена из предпросмотра данных (первые 10 строк)
+    load_error: 'Не удалось загрузить схему: {error}'
+    table_missing: Таблица больше не существует. Пожалуйста, загрузите набор данных повторно.
+    not_implemented: Обнаружение схемы для этого типа набора данных '{type}' ещё не реализовано
+    connection_unreachable: 'Соединение {connection_id} недоступно: {error}'
+    row_count_not_computed: Количество строк не вычисляется для виртуального набора данных без выполнения соединения.
+  share:
+    error: Не удалось обновить параметры общего доступа
+    toggled: Общий доступ для набора данных '{id}' успешно обновлён
+  unknown_source: 'Неизвестный тип источника: {source_type}'
+  upload:
+    error: Не удалось загрузить набор данных
+    file_processing_failed: 'Не удалось обработать файл: {error}'
+    limit_reached_count: Достигнут лимит загрузок. Разрешено не более {count} наборов данных.
+    limit_reached_size: Превышен лимит размера загрузки. Максимальный общий объем хранилища {size} МБ.
+    unsupported_file: 'Неподдерживаемый тип файла. Пожалуйста, загрузите файл одного из следующих типов: {extensions}'
+    user_not_found: Пользователь не найден
+    success: Набор данных '{name}' успешно загружен
+    dbf_memo_unsupported: Этот .dbf-файл содержит memo-поля. Их значения хранятся в отдельном файле, который невозможно передать при загрузке одного файла.
+    dbf_field_unsupported: 'Этот .dbf-файл объявляет типы полей, которые невозможно прочитать: {types}'
+  transforms:
+    in_use: 'Этот трансформатор используется в рецептах ({count}): {names}. Сначала удалите рецепты.'
+    clone_forbidden: У вас нет доступа для клонирования этого трансформатора
+    no_updates: Нет полей для обновления
+    duplicate_name: Трансформатор с таким именем уже существует для этого набора данных
+    updated: Трансформатор успешно обновлён
+    deleted: Трансформатор успешно удалён
+    not_found_or_not_owned: Трансформатор не найден или вы не являетесь его владельцем
+    cloned: Преобразование склонировано как '{name}'
+    not_accessible: Набор данных '{id}' не найден или недоступен
+    created: Преобразование '{name}' успешно создано
+    not_owned: Набор данных '{id}' не найден или вы не являетесь его владельцем
+    not_found: Преобразование '{id}' не найдено для этого набора данных
+    already_exists: Преобразование с такими операциями уже существует ('{name}').
+  not_owned: Набор данных '{id}' не найден или вы не являетесь его владельцем.
+  auto_create:
+    connection_id_required: Требуется connectionId
+    connection_not_found: Подключение не найдено
+    no_tables_discovered: Таблицы или представления не обнаружены. Проверьте, что сервер базы данных запущен и доступен.
+    created: Наборы данных созданы
+  browse:
+    columns_failed: 'Не удалось получить столбцы: {error}'
+    discover_failed: 'Не удалось обнаружить таблицы: {error}'
+    preview_failed: 'Не удалось выполнить предпросмотр таблицы: {error}'
+  not_found_2: Набор данных не найден
+  unread:
+    auth_failed: База данных отклонила учётные данные этой учётной записи.
+    unreachable: Не удалось подключиться к этому источнику. Проверьте хост и порт, затем повторите попытку.
+    incomplete: Проверка не завершилась вовремя. Повторите попытку или увеличьте тайм-аут подключения.
+    definition_too_deep: Этот набор данных ссылается на себя более чем на пять уровней вложенности.
+    no_permission: Эта учётная запись не может читать этот источник.
+    no_database: Эта база данных не существует на сервере.
+    definition_incomplete: В этом источнике не указаны ни набор данных, ни таблица подключения.
+    schema_error: Источник ответил, но его столбцы не удалось прочитать.
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: Переименуйте столбец в snake_case строчными буквами для единообразия
+      rename_table_snake_case: Переименуйте таблицу в snake_case строчными буквами для единообразия
+      mixed_case_table: Имя таблицы '{table}' использует смешанный регистр — рекомендуется snake_case
+      rename_table_reserved: Переименуйте таблицу '{table}', чтобы избежать конфликтов с зарезервированными словами SQL
+      rename_column_reserved: Переименуйте столбец '{column}', чтобы избежать конфликтов с зарезервированными словами SQL
+      reserved_keyword_column: Столбец '{column}' является зарезервированным ключевым словом SQL
+      reserved_keyword_table: Имя таблицы '{table}' является зарезервированным ключевым словом SQL
+      mixed_case_column: Столбец '{column}' использует смешанный регистр — рекомендуется snake_case
+    normalisation:
+      multiple_address: Обнаружено несколько столбцов, связанных с адресом ({count})
+      repeating_group: 'Обнаружена повторяющаяся группа: {columns}'
+      separate_address_table: Рассмотрите создание отдельной таблицы адресов с внешним ключом к {table}
+      create_separate_table: Создайте отдельную таблицу для значений '{base}' с внешним ключом к {table}
+    semistructured:
+      controlled_vocab: Столбец {column} содержит контролируемый словарь из {count} уникальных значений
+      create_ref_table: Создайте справочную таблицу для значений {column}, чтобы нормализовать таблицу {table}
+    data_types:
+      unbounded_varchar: Столбец VARCHAR '{column}' без ограничения длины
+      add_not_null: Добавить ограничение NOT NULL для '{column}'
+      set_max_length: Рекомендуется задать максимальную длину для '{column}', чтобы предотвратить появление слишком больших значений
+      allows_null: Столбец '{column}' допускает NULL — рассмотрите ограничение NOT NULL
+      add_check_constraint: Добавьте ограничение CHECK или используйте тип ENUM для '{column}' с ограниченным набором допустимых значений
+      short_text_enum: Текстовый столбец '{column}' имеет максимальную длину {max_len} — рассмотрите использование ENUM или ограничения CHECK
+    indexing:
+      missing_fk_index: Столбец внешнего ключа '{column}' не имеет индекса
+    relationships:
+      missing_fk: Столбец '{column}' похож на внешний ключ, но не имеет ограничения внешнего ключа
+      add_fk: Рассмотрите возможность добавления внешнего ключа, если '{column}' ссылается на другую таблицу
+  analyze_error: 'Не удалось проанализировать базу данных: {error}'
+  connection_error: 'Не удалось подключиться к базе данных: {error}'
+  description: Проанализируйте и улучшите дизайн вашей базы данных с помощью ИИ.
+  no_connection: Нет доступного подключения к базе данных. Сначала подключитесь к базе данных.
+  not_implemented: Эта функция появится в ближайшее время.
+  pdf:
+    categories: Категории
+    code_systems: Системы кодирования
+    col_default: По умолчанию
+    col_name: Столбец
+    col_nullable: Допускает NULL
+    col_pk: PK
+    col_type: Тип
+    columns: Столбцы
+    confidence: Уверенность
+    header: Отчет об анализе дизайна базы данных
+    high: Высокий
+    issues_count: Проблемы ({count})
+    issues_found: Найдены проблемы
+    low: Низкий
+    medium: Средний
+    'no': НЕТ
+    none: Нет
+    normalisation_title: Подсказки по нормализации ({count})
+    page: Страница {current}/{total}
+    pk: Первичный ключ
+    proposed_table: Предлагаемая таблица
+    risk_breakdown: Разбивка рисков
+    rows: Строки
+    schema_title: Схема ({count} таблиц)
+    semi_structured_title: Анализ полуструктурированных данных ({count} столбцов)
+    subtitle: 'База данных: {db_name} ({db_type}) | Подключение: {conn_name} (ID: {conn_id})'
+    summary: Сводка
+    tables: Таблицы
+    title: Анализ проектирования базы данных
+    top_keywords: Топ ключевых слов
+    top_recommendations: Топ рекомендаций
+    value: Значение
+    'yes': ДА
+    health_score_title: Показатель здоровья
+    research_capabilities_label: Исследовательские возможности
+    unsupported_label: Не поддерживается
+    integration_title: Результаты интеграции AI
+    missing_dimensions_label: Отсутствующие измерения
+    partial_label: Частичный
+    rationale_label: Обоснование
+    supported_label: Поддерживается
+    implicit_relationships_label: Неявные связи
+    evidence_label: Доказательства
+    domain_label: Классификации доменов ISIC
+    confidence_label: Уверенность
+    relationship_label: Связь
+    semantic_title: Семантический анализ AI
+    code_systems_label: Обнаруженные системы кодирования
+    integration_subtitle: Неявные связи, исследовательские возможности и отсутствующие измерения, обнаруженные ИИ интеграции.
+    semantic_subtitle: Смыслы столбцов, выведенные AI, классификации доменов ISIC и обнаружения систем кодирования.
+    top_actions_label: Первоочередные действия
+    proposed_ddl_label: Предлагаемый DDL
+    column_meanings_label: Смыслы столбцов
+    health_score_label: 'Оценка здоровья базы данных: {score}/100'
+    health_score_subtitle: Общее состояние базы данных, оценённое с помощью Schema AI. 0 = критические структурные проблемы, 100 = готовность к производственной эксплуатации.
+    ai_disclaimer: Анализ, созданный AI — просмотрите перед применением в производственной среде.
+    table_purposes_label: Назначения таблиц
+    ai_skipped_warning: ИИ-анализ пропущен
+  question_required: Вопрос обязателен
+  report_data_required: Данные отчета обязательны
+  schema_error: 'Не удалось извлечь схему: {error}'
+  title: Помощник по проектированию базы данных
+  unsupported_type: Поддерживаются только базы данных PostgreSQL и MySQL
+  pdf_error: 'Не удалось сгенерировать PDF: {error}'
+  schema_error_2: 'Не удалось расшифровать пароль базы данных: {error}'
+  rag_error: 'Не удалось выполнить RAG-запрос: {error}'
+  rag_not_available: RAG-поиск доступен только для баз данных PostgreSQL. Полнотекстовый поиск в MySQL запланирован в будущих версиях.
+  unsupported_type_2: Поддерживаются только базы данных PostgreSQL, MySQL и MS SQL Server
+  invalid_token: Недействительный токен
+  email_pdf:
+    no_email: Для вашей учётной записи не найден адрес электронной почты
+    invalid_body: Некорректное тело запроса
+    send_failed: Не удалось отправить отчет по электронной почте. Попробуйте еще раз.
+  llm:
+    unknown_error: Неизвестная ошибка LLM
+    timeout: Запрос к LLM превысил время ожидания через {timeout_seconds} с
+    http_error: LLM вернул HTTP {status_code}
+    empty_content: LLM вернул пустое содержимое
+    no_ai_provider: Не настроен ИИ-провайдер. Подключите ИИ-провайдера в разделе «Настройки» → «Подключения ИИ».
+    no_model: Модель ИИ не настроена. Задайте модель по умолчанию в подключении ИИ или явно укажите модель.
+  analysis_cancelled: Поток анализа отменён (клиент отключился)
+  stream_ai_done: 'ИИ-анализ завершён — статус: {status}'
+  stream_semistructured_start: Анализ полуструктурированных столбцов...
+  stream_ai_semantic_done: 'Семантический ИИ: {columns} смысловых значений столбцов, {domains} доменов ISIC'
+  stream_schema_done: 'Схема извлечена: {tables} таблиц, {columns} столбцов'
+  ai_skipped_reason: 'Этот отчёт содержит только механический анализ. ИИ-расширенный анализ был пропущен, поскольку в базе данных обнаружено {count} проблем (лимит: {limit}). Просмотрите результаты механического
+    анализа ниже, очистите базу данных, затем повторно запустите анализ с ИИ для получения контекстных объяснений, семантических выводов и предложений по нормализации.'
+  stream_extracting_schema: Извлечение схемы из {db_type}...
+  stream_ai_integration_done: 'Интеграционный ИИ: {relationships} связей, {capabilities} возможностей'
+  stream_normalisation_done: 'Нормализация: {count} предложений'
+  stream_normalisation_start: Генерация предложений по нормализации...
+  stream_ai_schema_done: 'ИИ схемы: показатель здоровья {score}/100'
+  stream_normalisation_skipped: 'Нормализация: пропущена ({error})'
+  stream_normalisation_timeout: 'Нормализация: тайм-аут после 90 с'
+  stream_unsupported_type: 'Неподдерживаемый тип базы данных: {db_type}'
+  stream_connecting: Подключение к базе данных...
+  stream_ai_start: Запуск ИИ-анализа — 3 специалиста параллельно...
+  stream_ai_schema_start: 'ИИ схемы: анализ {tables} таблиц...'
+  stream_connected: 'Подключено к {db_type}: {db_name}'
+  analysis_complete: Анализ завершён
+  stream_mechanical_done: 'Механический анализ: найдено {count} проблем'
+  stream_mechanical_start: Выполнение механического анализа...
+  stream_ai_semantic_start: 'Семантический ИИ: анализ {tables} таблиц...'
+  ai_skipped_message: 'ИИ-анализ пропущен — найдено проблем: {count} (лимит: {limit}). Просмотрите результаты механических проверок ниже, очистите базу данных, затем перезапустите с ИИ.'
+  stream_ai_integration_start: 'Интеграционный ИИ: обнаружение связей...'
+  stream_analysis_failed: 'Ошибка анализа: {error}'
+groups:
+  admin_required: Требуется доступ администратора
+  cannot_delete_self: Нельзя удалить собственную учетную запись
+  description_required: Описание не может быть пустым
+  insufficient_permissions: Недостаточно прав для управления группами
+  invalid_group_id: Недопустимая пользовательская группа. Должна быть от 00 до 99
+  update_failed: Не удалось обновить группу
+  user_not_found: Пользователь не найден
+  not_authorized: Нет разрешения на просмотр группы этого пользователя
+  update_success: Описание группы '{id}' обновлено
+  user_updated: Группа пользователя успешно обновлена
+  not_found: Группа '{id}' не найдена
+  resource_not_found: Ресурс не найден
+  missing_id: Отсутствует идентификатор ресурса
+recipes:
+  columns_required: Пожалуйста, выберите хотя бы один столбец
+  data_selection_error: 'Не удалось выбрать данные: {error}'
+  dataset_not_found: Набор данных не найден
+  dataset_required: Пожалуйста, выберите набор данных
+  delete_error: 'Не удалось удалить рецепт: {error}'
+  execute_error: 'Не удалось выполнить рецепт: {error}'
+  execution_completed: Выполнение успешно завершено
+  execution_failed: Выполнение не удалось
+  execution_load_error: 'Не удалось загрузить выполнение: {error}'
+  executions_load_error: 'Не удалось загрузить выполнения: {error}'
+  invalid_stage: Недопустимый этап для рецепта
+  invalid_stage_type: 'Недопустимый тип этапа: {type}. Должен быть одним из: {types}'
+  load_datasets_error: 'Не удалось загрузить наборы данных: {error}'
+  load_error: 'Не удалось загрузить рецепты: {error}'
+  name_required: Необходимо указать название рецепта
+  no_columns_exist: Ни один из выбранных столбцов не существует в наборе данных
+  no_dataset: С этим рецептом не связан ни один набор данных
+  no_stages: Рецепт должен содержать хотя бы один этап
+  no_updates: Нет полей для обновления
+  preparation:
+    no_db_pool: Пул базы данных недоступен для этапа подготовки
+    all_rules_failed: 'Все правила не выполнены: {errors}'
+    rules_applied: 'Применено правил подготовки: {count}'
+    rule_not_found: Правило '{rule_id}' не найдено
+    rule_failed: 'Правило ''{rule_id}'': {error}'
+  scatter_two_columns: Для точечной диаграммы требуется не менее двух столбцов
+  scatter_two_numeric: Для точечной диаграммы требуются два числовых столбца
+  schema_error: 'Не удалось загрузить схему столбцов: {error}'
+  unknown_stage: 'Неизвестный тип этапа: {stage_type}'
+  unsupported_chart_type: 'Неподдерживаемый тип диаграммы: {chart_type}'
+  update_error: 'Не удалось обновить рецепт: {error}'
+  visualisation_columns_required: Для визуализации требуется хотя бы один столбец
+  visualisation_error: 'Визуализация не удалась: {error}'
+  visualisation_generated: Визуализация успешно создана
+  requirement:
+    anova_one_way: 1 категориальный столбец (фактор) и 1 числовой столбец (отклик)
+    distribution: 1 числовой столбец
+    line: 2 числовых столбца (x и y)
+    anova_two_way: 2 категориальных столбца (два фактора) и 1 числовой столбец (отклик)
+    bar: 1 категориальный столбец (ось x) и 1 числовой столбец (ось y)
+    t_test_paired: 2 числовых столбца (парные измерения)
+    histogram: 1 числовой столбец (ось x)
+    table: любые столбцы
+    scatter: 2 числовых столбца (x и y)
+    none: вывод не требуется
+    t_test_independent: 1 категориальный столбец (для групп) и 1 числовой столбец (для сравнения)
+    correlation: как минимум 2 числовых столбца
+    pie: 1 категориальный столбец (метки)
+    linear_regression: как минимум 2 числовых столбца (предикторы и целевая переменная)
+    descriptive: как минимум 1 числовой столбец
+    chi_square: 2 категориальных столбца
+    hbar: 1 категориальный столбец (ось Y) и 1 числовой столбец (ось X)
+    donut: 1 категориальный столбец (метки)
+    area: 2 числовых столбца (X и Y)
+  execution:
+    error: 'Ошибка выполнения рецепта: {error}'
+    preparation_error: 'Этап подготовки не удался: {error}'
+    unknown_stage: 'Неизвестный тип этапа: {stage_type}'
+    preparation_failed: Этап подготовки не удался
+  transforms:
+    connect_success: Трансформатор подключён к рецепту
+    load_error: Не удалось загрузить подключённые трансформаторы
+    disconnect_success: Трансформатор отключён от рецепта
+    dataset_mismatch: Преобразование '{id}' не принадлежит набору данных '{dataset_id}'
+    not_found: Преобразование '{id}' не найдено или не принадлежит набору данных этого рецепта
+  field_label:
+    responseColumn: Столбец отклика (числовое измерение)
+    responseColumn2: Второй столбец отклика (парное измерение)
+    categoryColumn: Столбец категорий (метки)
+    independentColumns: Независимые / предикторные столбцы
+    yColumn: Столбец оси Y
+    xColumn: Столбец оси X
+    factorColumn: Факторный столбец (группирующая переменная)
+    dependentColumn: Зависимый / целевой столбец
+    columns: Столбцы.
+    factorColumn2: Столбец второго фактора (группирующая переменная).
+  column_type:
+    numeric: числовой
+    categorical: категориальный
+  result_type:
+    numeric: числовой
+    tabular: табличный
+  validation:
+    failed: 'Проверка рецепта не удалась:'
+    unknown_output: '''{type}'' не является распознанным типом вывода. Выберите один из: {options}.'
+    missing_algo_field: В анализе '{algo}' отсутствует настройка '{field}' ({label}). Выберите столбец для '{field}' на панели анализа.
+    unknown_columns: 'Этап {stage} ссылается на столбцы ''{columns}'', которые отсутствуют в этом наборе данных. Доступные столбцы: {available}. Выберите из доступных.'
+    missing_output_field: В выводе '{output}' отсутствует настройка '{field}' ({label}). Выберите столбец для '{field}' на панели вывода.
+    insufficient_columns_algo: 'Этот набор данных не содержит подходящих типов столбцов для ''{algo}'' ({requirement}). В наборе данных: {columns}. Выберите набор данных с {requirement} или переключитесь
+      на: {options}.'
+    incompatible_algo_output: 'Анализ ''{algo}'' даёт результаты типа {result_type} и не может быть отображён в виде диаграммы ''{output}''. Измените тип вывода на совместимый с ''{algo}'': {options}.'
+    insufficient_columns_output: 'В этом наборе данных нет подходящих типов столбцов для ''{output}'' ({requirement}). Набор данных содержит: {columns}. Выберите набор данных с {requirement} или переключитесь
+      на: {options}.'
+    unknown_algorithm: '''{type}'' не является распознанным методом анализа. Выберите один из вариантов: {options}.'
+    wrong_column_type: Столбец '{column}' должен быть {expected} для '{field}' ({label}).
+    algorithm_required: Метод анализа не выбран. Выберите его на панели анализа — рецепту нужен этап статистики с алгоритмом.
+    unknown_field: '«{field}» не является допустимой настройкой для «{type}». Допустимые настройки: {options}.'
+  execution_not_found: Выполнение '{id}' не найдено
+  ai_session:
+    delete_error: Не удалось удалить сессию AI-рецепта
+    create_error: Не удалось создать сессию ИИ-рецепта
+    unauthorized: У вас нет доступа к этой сессии ИИ-рецепта
+    load_error: Не удалось загрузить сессию ИИ-рецепта
+    save_error: Не удалось сохранить рецепт из сеанса ИИ
+    not_found: Сеанс ИИ-рецепта не найден
+  create_success: Рецепт '{name}' успешно создан
+  not_owned: Рецепт '{id}' не найден или вы не являетесь его владельцем
+  share:
+    disabled: Рецепт теперь приватный
+    enabled: Рецепт успешно опубликован
+  not_found: Рецепт '{id}' не найден
+  delete_success: Рецепт '{id}' успешно удалён
+  update_success: Рецепт '{id}' успешно обновлён
+  technique_chi_square: Критерий хи-квадрат.
+  technique_linear_regression: Линейная регрессия.
+  technique_t_test_independent: t-критерий для независимых выборок.
+  technique_descriptive: Описательная статистика.
+  technique_anova_two_way: Двухфакторный дисперсионный анализ.
+  technique_anova_one_way: Однофакторный дисперсионный анализ.
+  technique_correlation: Корреляционная матрица.
+  technique_t_test_paired: t-критерий для парных выборок.
+  histogram_numeric: Для гистограммы требуется числовой столбец.
+  distribution_no_columns: Для диаграммы распределения требуется хотя бы один столбец.
+  histogram_no_columns: Для гистограммы требуется хотя бы один столбец.
+  stage_not_implemented: Этап «{stage_type}» скоро появится
+  chip:
+    heading:
+      technique: Какой метод анализа?
+      output: Какой результат?
+      columns: Какие столбцы?
+  scoreboard:
+    dataset:
+      what: Выберите набор данных
+    output_unknown:
+      what: Выберите известный тип выходных данных
+    technique_unknown:
+      what: Выберите известный метод анализа
+    output:
+      what: Выберите тип выходных данных
+    output_incompatible:
+      what: Выберите совместимый тип выходных данных
+    output_fields:
+      what: Выберите выходные столбцы
+    technique_fields:
+      what: Выберите необходимые столбцы
+    technique:
+      what: Выберите метод анализа
+    name:
+      what: Назовите рецепт
+statistics:
+  anova_computation_failed: 'Вычисление двухфакторного дисперсионного анализа не удалось: {error}'
+  anova_needs_three_groups: Однофакторный дисперсионный анализ требует 3 или более групп (обнаружено {n}). Для 2 групп используйте независимый t-критерий.
+  compute_failed: 'Не удалось вычислить статистику: {error}'
+  each_group_two_observations: Каждая группа должна содержать не менее 2 наблюдений
+  group_column_required_anova: Для однофакторного дисперсионного анализа требуется категориальный столбец групп с 3 или более уровнями
+  group_column_required_ttest: Для независимого t-критерия требуется категориальный столбец групп ровно с двумя уровнями
+  need_five_observations_chi: Требуется не менее 5 полных наблюдений
+  need_observations_regression: Требуется не менее {n} полных наблюдений
+  need_ten_observations_anova: Для двухфакторного дисперсионного анализа требуется не менее 10 полных наблюдений
+  need_three_pairs: Для парного t-критерия требуется не менее 3 полных пар
+  need_two_categories_chi: Оба столбца должны содержать не менее 2 категорий
+  need_two_numeric_correlation: Для корреляции требуется не менее 2 числовых столбцов
+  need_two_valid_numeric: Требуется не менее 2 допустимых числовых столбцов
+  no_valid_data_after_dropna: Нет допустимых данных после удаления NaN
+  no_valid_numeric: Не предоставлено допустимых числовых столбцов
+  non_numeric_column: Нечисловой столбец
+  not_computed: Не вычислено
+  select_dependent_independent: 'Выберите не менее 2 числовых столбцов: первый — зависимая переменная, остальные — независимые'
+  select_dependent_var: Выберите один числовой столбец зависимой переменной
+  select_one_numeric_ttest: Выберите один числовой столбец для независимого t-критерия
+  select_two_categorical_chi: Выберите ровно два категориальных столбца
+  select_two_numeric_paired: Выберите ровно два числовых столбца для парного t-критерия
+  two_factors_required: Для двухфакторного дисперсионного анализа требуются два фактора
+  group_must_have_two_levels: 'Столбец группировки ''{group}'' должен иметь ровно 2 уровня (найдено: {n})'
+  factor_column_not_found: Столбец '{col}' фактора {factor} не найден
+  computation_failed: 'Не удалось вычислить статистику: {error}'
+  column_must_be_numeric: Столбец '{col}' должен быть числовым
+  group_fewer_than_two: В группе '{group}' меньше 2 наблюдений
+  cache_not_found: Ключ кэша '{key}' не найден
+  cache_cleared: Ключ кэша '{key}' очищен
+  column_not_found: Столбец '{col}' не найден
+user:
+  api_key_required: Для этого провайдера требуется API-ключ
+  connection_name_exists: Подключение с таким именем уже существует
+  connection_not_found: Подключение не найдено
+  example_blocked: Демонстрационные пользователи не могут выполнить это действие
+  internal_error: Внутренняя ошибка сервера
+  missing_fields: Отсутствуют обязательные поля
+  provider_not_found: Провайдер не найден
+  user_not_found: Пользователь не найден
+  api_key_required_fetch: Для этого провайдера требуется API-ключ
+  unknown_provider: 'Неизвестный провайдер: {code}'
+  auto_create_default_detail: Не удалось автоматически создать набор данных. Сервер базы данных может быть недоступен
+  no_endpoint: Для этого провайдера не настроена конечная точка
+  example_create_db: Демонстрационные пользователи не могут создавать подключения к базе данных
+  provider_returned: 'Провайдер вернул {status}: {text}'
+  fetch_failed: Не удалось выполнить запрос
+  connection_timeout_remote: Тайм-аут подключения для {code} по адресу {baseUrl}
+  example_delete_db: Демонстрационные пользователи не могут удалять подключения к базе данных
+  connection_timeout_local: Тайм-аут подключения. Запущен ли {code} по адресу {baseUrl}?
+  example_update_db: Демонстрационные пользователи не могут обновлять подключения к базе данных
+  no_models_returned: Провайдер не вернул ни одной модели; ничего не изменилось.
+validation:
+  error: 'Ошибка валидации: обнаружено {count} проблем(ы)'
+  password:
+    require_digit: Пароль должен содержать хотя бы одну цифру.
+    require_uppercase: Пароль должен содержать хотя бы одну заглавную букву.
+    require_special: Пароль должен содержать хотя бы один специальный символ.
+    require_lowercase: Пароль должен содержать хотя бы одну строчную букву.
+    min_length: Пароль должен содержать не менее {min} символов.
+    too_weak: Пароль слишком слабый. Пожалуйста, выберите более надежный пароль.
+notebooks:
+  share_error: Только владелец может изменять настройки общего доступа.
+  import_failed_4: 'Не удалось получить импорт: {error}'
+  no_table_rights: Это подключение не может создавать таблицы — импорт запрещён.
+  import_failed: 'Импорт блокнота не удался: {error}'
+  system_db_blocked: Нельзя импортировать в системную базу данных '{db}'. Пожалуйста, используйте другую базу данных или создайте новую.
+  import_failed_3: Импорт не найден
+  no_dataframes: В этом ноутбуке не найдены DataFrame
+  invalid_format_2: Неверный формат блокнота. Принимаются только файлы .ipynb.
+  delete_error: 'Не удалось удалить импорт: {error}'
+  example_blocked_2: Демонстрационные пользователи не могут изменять настройки общего доступа к блокноту
+  example_blocked: Демонстрационные пользователи не могут импортировать блокноты.
+  import_failed_2: 'Не удалось получить список импортов: {error}'
+  file_too_large: Файл блокнота слишком большой. Максимальный размер — {max_size} МБ.
+  share_error_2: 'Не удалось обновить общий доступ: {error}'
+  example_blocked_3: Демонстрационные пользователи не могут удалять блокноты.
+  no_db_rights: Это подключение не имеет прав на создание базы данных
+  no_connection: Пожалуйста, выберите подключение к базе данных.
+  cells_not_list: 'Неверный формат записной книжки: «cells» не является списком'
+  untitled: Без названия
+  invalid_json: 'Неверный JSON: {error}'
+  unknown_error: Неизвестная ошибка
+  missing_cells: 'Неверный формат записной книжки: отсутствует ключ «cells»'
+  too_many_cells: 'Слишком много ячеек ({count}). Максимум: {max_cells}'
+error:
+  connection:
+    query_failed: 'Не удалось выполнить запрос к таблице/представлению ''{table}'': {error}'
+    query_failed_4: 'Не удалось выполнить запрос MySQL: {error}'
+    connect_failed: 'Сбой подключения MySQL: {error}'
+    type_not_supported: Тип базы данных '{type}' пока не поддерживается
+    failed: 'Не удалось подключиться к базе данных: {error}'
+    query_failed_2: 'Не удалось выполнить скомпилированный SQL: {error}.'
+    query_failed_6: 'Не удалось выполнить запрос Access: {error}'
+    query_failed_7: 'Не удалось выполнить запрос к базе данных: {error}'
+    type_not_supported_2: Тип базы данных '{type}' пока не поддерживается для обнаружения схемы
+    query_failed_5: 'Не удалось выполнить запрос MSSQL: {error}'
+    type_not_supported_3: 'Неподдерживаемый тип базы данных: {type}'
+    decryption_failed: 'Не удалось расшифровать пароль подключения: {error}'
+    query_failed_3: 'Не удалось выполнить запрос PostgreSQL: {error}'
+  dataset:
+    not_found_5: Набор данных '{id}' не найден
+    unknown_source: 'Неизвестный тип источника: {source_type}'
+    load_failed: 'Не удалось загрузить набор данных: {error}'
+    delete_failed_2: 'Не удалось удалить набор данных: {error}.'
+    not_found: Набор данных '{id}' не найден или недоступен
+    not_found_2: Набор данных '{id}' не найден
+    not_found_3: 'Набор данных не найден или недоступен: {error}'
+    load_failed_3: Виртуальный набор данных '{id}' не содержит SQL-определения
+    not_found_or_not_owned: Набор данных '{id}' не найден, или вы не являетесь его владельцем
+    load_failed_2: 'Не удалось загрузить данные: {error}.'
+    not_found_4: Набор данных '{id}' не найден или недоступен
+    table_missing: Таблица '{table}' не существует.
+    load_failed_4: 'Не удалось загрузить виртуальный набор данных ''{id}'': {error}'
+  describe:
+    ai_connection_error: 'Ошибка подключения AI: нет доступного подключения'
+    ai_connection_error_2: 'Ошибка подключения к ИИ: не удалось расшифровать ключ API'
+  ai:
+    call_failed: 'Не удалось выполнить вызов AI: {error}'
+  execution:
+    cannot_cancel: Нельзя отменить выполнение, которое уже находится в статусе {status}
+  define:
+    dataset_creation_failed: 'Не удалось создать запись набора данных: {error}'
+    connection_not_found_2: Подключение не найдено или недоступно
+    connection_not_found: Подключение к базе данных не найдено или недоступно
+  preparation:
+    rule_not_found_2: Правило подготовки '{id}' не найдено
+    rule_not_found: Правило подготовки '{id}' не найдено для этого набора данных
+  database:
+    pool_not_initialized: Пул баз данных не инициализирован
+    insert_failed: 'Ошибка базы данных: {error}'
+  groups:
+    invalid_group_id: Недопустимый group_id. Должен быть от 00 до 99
+virtual_chat:
+  introspection_failed: 'Не удалось выполнить интроспекцию: {error}'
+  llm_call_failed: 'Не удалось выполнить вызов LLM: {error}'
+  llm_returned_error: LLM вернула HTTP {status_code}
+  connection_not_found: Подключение к базе данных не найдено или доступ запрещён
+  chat_session_not_found: Сессия чата не найдена
+  save_failed: '⚠️ Не удалось сохранить: {error}'
+  save_draft_success: '✅ Виртуальный набор данных сохранён как черновик: **{name}**.'
+  save_success: ✅ Набор данных **{name}** успешно сохранён. Вы можете найти его в списке существующих наборов данных. Используйте «Редактировать», чтобы уточнить его, или «Клонировать», чтобы создать вариант.
+  save_no_sources: '⚠️ Не удалось сохранить: не было проанализировано ни одного источника данных. Попробуйте упомянуть названия таблиц, например «products» или «orders», в предыдущих сообщениях.'
+  save_parse_error: '⚠️ Не удалось сохранить набор данных: {error}'
+  empty_response: Я не уверен(а), как на это ответить. Не могли бы вы переформулировать или предоставить больше деталей?
+schema:
+  connection_not_found: Подключение к базе данных не найдено или доступ запрещён.
+  no_table_name: У набора данных нет имени таблицы (данные ещё не импортированы)
+  dataset_id_required: Для source_type=dataset требуется dataset_id
+  introspect_mysql_failed: 'Не удалось выполнить интроспекцию MySQL: {error}'
+  dataset_not_found: Набор данных не найден или доступ запрещён
+  unsupported_source_type: 'Неподдерживаемый source_type: {source_type}. Используйте dataset, postgresql или mysql.'
+  connection_and_table_required: Для источников PostgreSQL/MySQL необходимо указать connection_id и table_name.
+  introspect_postgresql_failed: 'Не удалось выполнить интроспекцию PostgreSQL: {error}'
+licence:
+  missing_content: Отсутствует поле 'content'
+  delete_failed: 'Не удалось удалить файл лицензии: {error}'
+  write_failed: 'Не удалось записать файл лицензии: {error}'
+  no_file_to_delete: Нет файла лицензии для удаления — уже используется режим с открытым исходным кодом.
+  install_success: Лицензия успешно установлена.
+  delete_success: Лицензия удалена. Работа в режиме с открытым исходным кодом.
+notebooks_storage:
+  failed_create_table: 'Не удалось создать таблицу {table}: {error}'
+  no_connection_details_short: Нет данных о подключении
+  no_connection_details: Не указаны параметры подключения
+  unsupported_storage_type: 'Неподдерживаемый тип хранилища: {type}'
+  failed_create_table_mssql: 'Не удалось создать таблицу: {error}'
+  no_data_pool: Пул базы данных Data не инициализирован.
+audio_presets:
+  invalid_chat_type: 'Неверный тип чата: {chat_type}. Должен быть одним из: {valid_types}'
+rag:
+  ai_provider_error: 'Ошибка AI-провайдера: {error}'
+  no_tables: В схеме не найдено таблиц для поиска.
+  no_ai_provider: 'Найдено совпадающих записей: {count}. (Поставщик ИИ для ответов на естественном языке не настроен.)'
+  no_matches: По вашему вопросу в базе данных не найдено подходящего текста. Попробуйте переформулировать запрос или выбрать другой источник данных.
+virtual:
+  preview_failed: 'Не удалось выполнить предпросмотр: {error}'
+  no_credentials_mysql: Учётные данные для подключения MySQL {conn_id} не найдены
+  no_credentials_postgresql: Учётные данные для подключения PostgreSQL {conn_id} не найдены
+  execute_failed: 'Ошибка выполнения: {error}'
+  validate:
+    dataset_not_found: 'Источник ''{alias}'': набор данных {dataset_id} не найден или доступ запрещён.'
+    connection_id_required: 'Источник ''{alias}'': для источника {storage_type} требуется connectionId.'
+    column_source_not_found: 'Столбец {c_idx}: источник ''{src_alias}'' не найден.'
+    connection_not_found: 'Источник ''{alias}'': подключение {conn_id} не найдено или доступ запрещён.'
+    dataset_id_required: 'Источник ''{alias}'': для источника набора данных требуется datasetId.'
+    join_right_source_not_found: 'Объединение {j_idx}: правый источник ''{right_alias}'' не найден.'
+    join_left_source_not_found: 'Объединение {j_idx}: левый источник ''{left_alias}'' не найден.'
+    no_sources: Источники не определены.
+    join_column_not_found: 'Соединение {j_idx}: в источнике ''{alias}'' нет столбца ''{column}'''
+    output_column_not_found: 'Столбец {c_idx}: в источнике ''{src_alias}'' нет столбца ''{column}'''
+  scoreboard:
+    columns:
+      what: Что находится внутри '{source}'?
+      needs_failed: Не удалось прочитать столбцы источника '{source}'.
+      needs_empty: У источника '{source}' нет столбцов для выбора.
+    output_columns:
+      needs: Один источник, его столбцы прочитаны.
+      what: Какие столбцы должен содержать результат?
+    sources:
+      what: Из какой таблицы следует построить этот набор данных?
+    joins:
+      what: Как следует соединить источники?
+      needs: Два или более источников, их столбцы прочитаны.
+    name:
+      what: Как следует назвать этот набор данных?
+    storage:
+      table: Сохранённая таблица
+      live: Живое представление
+      what: Должно ли это быть живым представлением или сохранённой таблицей?
+  decision:
+    invalid_value: 'Решение ''{piece}'' не удалось применить: {error}'
+    missing_value: Решение '{piece}' требует значения.
+    no_connection: Ваш выбор сохранён. Ассистент не смог ответить, так как нет доступного подключения к ИИ.
+    model_failed: 'Ваш выбор сохранён. Ассистент не смог ответить: {error}'
+    unknown_piece: '''{piece}'' не является решением, которое может применить этот эндпоинт.'
+    applied: Используйте выделенное выше.
+    no_reply: Ваш выбор сохранён. Ассистент исчерпал свои рабочие раунды, не дав ответа — попросите его продолжить или проверьте черновик в дереве.
+  save:
+    invalid_definition: 'Этот набор данных не может быть сохранён: {errors}'
+  column:
+    missing_column: Ни один столбец не был назван.
+    unknown_action: '''{action}'' не является действием над столбцом. Используйте «отметить» или «снять отметку».'
+    missing_source: 'Для столбца нужен источник: идентификатор набора данных или подключение и имя таблицы.'
+  join_suggestions:
+    invalid_sources: Для предложений по соединению требуется список источников, каждый из которых имеет псевдоним и имя ({error}).
+  panel:
+    collapsed_required: Свёрнутое состояние панели должно быть true или false.
+  tool:
+    no_source: 'Источник с именем «{alias}» не найден. Источники этого черновика: {aliases}.'
+    no_sources_yet: Источник с именем «{alias}» отсутствует — в черновике пока нет источников. Сначала вызовите add_source.
+execution:
+  not_found: Выполнение не найдено
+  executing_stage: 'Выполнение этапа: {stage}'
+  starting_analysis: Запуск этапов анализа...
+  loading_dataset: Загрузка набора данных...
+  loaded_rows: 'Загружено: {rows} строк, {columns} столбцов'
+access:
+  file_path_required: Требуется file_path
+  connected_in_ms: Подключение установлено за {elapsed} мс
+  connection_failed_detail: 'Сбой подключения: {detail}'
+  connection_not_found: Подключение не найдено
+  encryption_error: 'Ошибка шифрования: {error}'
+  licence_required: Подключения к базам данных Access требуют корпоративной лицензии
+  connection_saved: Подключение сохранено
+  db_pool_not_initialized: Пул баз данных не инициализирован
+  connection_deleted: Подключение удалено
+  connection_exists: Подключение '{name}' уже существует
+  name_and_path_required: Необходимо указать name и file_path
+  connection_failed: Не удалось подключиться
+  invalid_port: Порт должен быть целым числом
+  connection_unavailable: 'Не удалось подключиться к базе данных Access: {error}'
+  connection_params_required: Требуются хост, порт, пользователь и пароль
+  table_not_found: 'Таблица «{table}» не найдена: {error}'
+system:
+  cache_cleanup_completed: 'Очистка кэша завершена: удалено {removed} записей'
+  hello_world: Привет, мир!
+ai_recipe:
+  message_required: Требуется сообщение
+  llm_error: 'Ошибка сервиса ИИ: {error}'
+  session_name_required: Необходимо указать имя
+  invalid_decision: Недействительное решение.
+test_ai:
+  fetch_failed: Не удалось выполнить запрос
+  no_endpoint: Для этого провайдера не настроена конечная точка
+  unknown_provider: 'Неизвестный провайдер: {provider}'
+  internal_error: Внутренняя ошибка сервера
+  endpoint_v1_valid: Конечная точка {baseUrl}/v1 действительна
+  connection_timeout_local: Тайм-аут подключения. Запущен ли {name} по адресу {baseUrl}?
+  server_reachable: Сервер {name} по адресу {baseUrl} доступен
+  connection_failed: 'Ошибка подключения: {msg}'
+  responded_with_status: '{name} ответил со статусом {status}'
+  api_key_required: Для {name} требуется API-ключ
+  endpoint_valid: Эндпоинт по адресу {baseUrl} действителен
+visualization_instances:
+  viz_type_id_required: Требуется visualizationTypeId
+  invalid_instance_id: Неверный идентификатор экземпляра
+  instance_not_found: Экземпляр не найден
+  unauthorized: Не авторизован
+  no_rendered_output: Нет доступного результата для отображения
+  internal_error: Внутренняя ошибка сервера
+  invalid_viz_type: Неверный тип визуализации
+  viz_type_not_found: Тип визуализации не найден
+ai_providers:
+  missing_provider_id: Отсутствует идентификатор провайдера
+  failed_to_delete_provider: Не удалось удалить провайдера
+  missing_id_or_enabled: Отсутствует id или флаг enabled
+  unauthorized: Не авторизован
+  provider_not_found: Провайдер не найден
+  internal_error: Внутренняя ошибка сервера
+  forbidden: Запрещено
+  failed_to_update_provider: Не удалось обновить провайдера
+  invalid_provider_id: Неверный идентификатор провайдера
+visualization_types:
+  type_not_found: Тип визуализации не найден
+  internal_error: Внутренняя ошибка сервера
+  slug_already_exists: Slug уже существует
+  name_and_slug_required: Требуются имя и slug
+  forbidden: Доступ запрещён
+ai:
+  database:
+    email_sent: Отчёт успешно отправлен по электронной почте
+invalid_encoding: 'Неверная кодировка: {encoding}. Допустимые значения: {types}'
+invalid_target_type: 'Неверный target_type: {target_type}. Допустимые значения: {types}'
+column_required: Операция «{type}» требует столбец
+invalid_operation_type: 'Неверный тип операции: {type}. Допустимые значения: {types}'
+filter_value_required: Операция фильтрации требует значение
+columns_required: Операция «{type}» требует поле columns
+encode_column_required: Операция кодирования требует столбец
+rename_new_name_required: Операция переименования столбца требует новое имя
+filter_operator_required: Операция фильтрации требует оператор
+invalid_fill_method: 'Неверный метод fill_missing: {method}. Допустимые значения: {methods}'
+dataclean_chat:
+  create_error: Не удалось создать сеанс очистки данных.
+  empty_response: Не удалось сгенерировать ответ. Пожалуйста, попробуйте ещё раз.
+  dataset_id_required: Требуется datasetId.
+  message_required: Требуется сообщение.
+  chat_session_not_found: Сеанс чата для очистки данных не найден.
+dataclean_tools:
+  no_rules_to_preview: Нет правил для предварительного просмотра.
+  no_rules_to_apply: Нет правил для применения.

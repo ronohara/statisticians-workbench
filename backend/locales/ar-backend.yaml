@@ -1,0 +1,1016 @@
+access:
+  connected_in_ms: تم الاتصال خلال {elapsed} مللي ثانية
+  connection_deleted: تم حذف الاتصال
+  connection_exists: الاتصال '{name}' موجود بالفعل
+  connection_failed: فشل الاتصال
+  connection_failed_detail: 'فشل الاتصال: {detail}'
+  connection_not_found: الاتصال غير موجود
+  connection_saved: تم حفظ الاتصال
+  db_pool_not_initialized: لم تتم تهيئة تجمع قاعدة البيانات
+  encryption_error: 'خطأ في التشفير: {error}'
+  file_path_required: حقل file_path مطلوب
+  licence_required: اتصالات قاعدة بيانات Access تتطلب ترخيصًا مؤسسيًا
+  name_and_path_required: الاسم وfile_path مطلوبان
+  connection_params_required: المضيف والمنفذ والمستخدم وكلمة المرور مطلوبة
+  invalid_port: يجب أن يكون المنفذ عددًا صحيحًا
+  connection_unavailable: 'تعذر الاتصال بقاعدة بيانات Access: {error}'
+  table_not_found: 'الجدول ''{table}'' غير موجود: {error}'
+admin:
+  already_full_admin: المستخدم مسؤول كامل بالفعل
+  already_group_admin: المستخدم مسؤول مجموعة بالفعل
+  cannot_delete_self: لا يمكنك حذف حسابك الخاص
+  cannot_demote_full_admin: لا يمكن خفض رتبة مسؤول كامل
+  cannot_demote_self: لا يمكنك خفض رتبتك
+  cannot_promote_example: لا يمكن ترقية مستخدم تجريبي
+  delete_error: فشل حذف المستخدم
+  demote_error: فشل خفض رتبة المستخدم
+  description_required: لا يمكن أن يكون الوصف فارغًا
+  example_blocked: لا يمكن للمستخدمين التجريبيين تنفيذ إجراءات إدارية
+  group_not_found: المجموعة غير موجودة
+  group_users_load_error: فشل تحميل مستخدمي المجموعة
+  groups_load_error: فشل تحميل المجموعات
+  groups_stats_error: فشل تحميل إحصائيات المجموعة
+  insufficient_permissions: أذونات غير كافية لهذا الإجراء
+  invalid_group_id: معرف المجموعة غير صالح. يجب أن يكون من 00 إلى 99
+  invalid_id: معرف غير صالح
+  invalid_upload_count: يجب أن يكون maxUploadCount عددًا صحيحًا غير سالب (0 لغير محدود).
+  invalid_upload_size: يجب أن يكون maxUploadSizeMB عددًا صحيحًا غير سالب (0 لغير محدود).
+  missing_fields: حقول مطلوبة مفقودة
+  missing_group_id: معرف المجموعة مفقود
+  missing_id: المعرف مفقود
+  missing_model_id: معرف النموذج مفقود
+  missing_provider_code: المعلمة providerCode مفقودة
+  missing_user_id: معرف المستخدم مفقود
+  model_update_error: فشل تحديث النموذج
+  models_load_error: فشل تحميل النماذج
+  no_fields: لا توجد حقول صالحة للتحديث
+  no_group: لا توجد مجموعة معينة للمستخدم
+  not_group_admin: المستخدم ليس مسؤول مجموعة
+  only_full_admin: يمكن للمسؤولين الكاملين فقط تنفيذ هذا الإجراء
+  promote_error: فشل ترقية المستخدم
+  provider_delete_error: فشل حذف المزوّد
+  provider_not_found: المزوّد غير موجود
+  provider_update_error: فشل تحديث المزوّد
+  providers_load_error: فشل تحميل المزوّدين
+  slug_exists: المعرف النصي موجود بالفعل
+  update_error: فشل تحديث المستخدم
+  user_load_error: فشل تحميل المستخدم
+  user_not_found: المستخدم غير موجود
+  users_load_error: فشل تحميل المستخدمين
+  viz_type_create_error: فشل إنشاء نوع العرض المرئي
+  viz_type_delete_error: فشل حذف نوع العرض المرئي
+  viz_type_update_error: فشل تحديث نوع العرض المرئي
+  viz_types_load_error: فشل تحميل أنواع العرض المرئي
+ai_recipe:
+  llm_error: 'خطأ في خدمة الذكاء الاصطناعي: {error}'
+  message_required: الرسالة مطلوبة
+  session_name_required: الاسم مطلوب
+  invalid_decision: قرار غير صالح.
+api:
+  user:
+    connection_not_found: الاتصال غير موجود
+    example_blocked: لا يمكن للمستخدمين التجريبيين تنفيذ هذا الإجراء
+    example_create_ai: لا يمكن للمستخدمين التجريبيين إنشاء اتصالات الذكاء الاصطناعي
+    invalid_current_password: كلمة المرور الحالية غير صحيحة
+    missing_fields: الحقول المطلوبة مفقودة
+    invalid_name: يجب أن يكون الاسم سلسلة نصية
+    internal_error: خطأ داخلي في الخادم
+    user_not_found: المستخدم غير موجود
+    example_delete_ai: لا يمكن للمستخدمين التجريبيين حذف اتصالات الذكاء الاصطناعي
+    connection_name_exists: يوجد اتصال بهذا الاسم بالفعل
+    invalid_connection_id: معرف الاتصال غير صالح
+    invalid_port: يجب أن يكون المنفذ عددًا صحيحًا
+    example_update_ai: لا يمكن للمستخدمين التجريبيين تحديث اتصالات الذكاء الاصطناعي
+    connection_id_required: معرف الاتصال مطلوب
+    api_key_required: مفتاح API مطلوب لهذا المزوّد
+    provider_not_found: المزوّد "{provider}" غير موجود
+    model_not_found: النموذج "{model}" غير موجود للمزوّد "{provider}"
+    test_attribution_required: يجب أن تسجّل نتيجة الاختبار اسم من أجراه
+    test_other_failure: 'تعذّر الوصول إلى النموذج، ولم يكن السبب من الأسباب التي يتعرّف عليها هذا النظام. لم يُسجَّل أي حكم بشأن القدرة: {detail}'
+    test_connect_refused: لا توجد أي خدمة تستمع على هذا العنوان — الخادم يمكن الوصول إليه ولكن لم تُجب أي خدمة. تحقق من المنفذ ومن أن خادم الذكاء الاصطناعي يعمل. لم يُسجَّل أي حكم بشأن القدرة؛ ما سُجِّل
+      هو المدة التي استغرقها الفشل
+    tuning_malformed_body: جسم الطلب ليس JSON صالحًا
+    test_not_implemented: الاختبار "{test}" مسجّل لكن لا يوجد له مسبار بعد
+    tuning_model_not_found: لا يوجد مثل هذا النموذج
+    tuning_invalid_ai_timeout: يجب أن يكون الحد الزمني للذكاء الاصطناعي عددًا صحيحًا من الثواني، على الأقل 1
+    invalid_probe_timeout: يجب أن تكون مهلة الاختبار عددًا صحيحًا من الثواني، على الأقل 1 وعلى الأكثر {ceiling}
+    invalid_connect_timeout: يجب أن تكون مهلة الاتصال عددًا صحيحًا من الثواني، على الأقل 1 وعلى الأكثر {ceiling}
+    tuning_invalid_max_tokens: يجب أن يكون حد الإخراج عددًا صحيحًا من الرموز، على الأقل 1
+    invalid_test_state: 'نتيجة اختبار غير صالحة "{state}". المسموح: {allowed}'
+    tuning_invalid_temperature: يجب أن تكون درجة الحرارة رقمًا بين 0 و2
+    test_tls_failure: تعذّر إنشاء الاتصال الآمن — قد تكون نقطة النهاية http عادية بينما كان متوقعًا https، أو قد تكون شهادتها منتهية الصلاحية. لم يُسجَّل أي حكم بشأن القدرة؛ ما سُجِّل هو المدة التي استغرقها
+      الفشل
+    test_connect_timeout: لم تقبل نقطة النهاية الاتصال في الوقت المناسب. قد يكون المضيف متوقفًا، أو قد يُسقط جدار الحماية الطلب. لم يُسجَّل أي حكم بشأن القدرة؛ ما سُجِّل هو المدة التي استغرقها الفشل
+    test_http_status: 'أجاب المزوّد، وكانت إجابته خطأ: {detail}. لم يُسجَّل أي حكم بشأن القدرة؛ ما قاله المزوّد معروض حتى يتضح السبب'
+    model_not_served_by_connection: هذا الاتصال لا يقدّم "{model}". ربما تغيّرت نماذجه — حدّث الاتصال أو اختر نموذجًا آخر
+    tuning_nothing_to_update: 'أدخل واحدًا على الأقل من: temperature أو maxTokens أو timeoutSeconds'
+    unknown_test_id: 'اختبار غير معروف "{test}". الاختبارات المسجّلة: {known}'
+    tuning_connection_not_found: لا يوجد اتصال ذكاء اصطناعي كهذا
+    test_budget_exhausted: لم يُعد النموذج شيئًا لأنه استنفد كامل ميزانية الإخراج قبل الوصول إلى إجابة. لم يُسجَّل أي حكم بشأن القدرة؛ سُجِّلت المدة
+    test_reason_required: يجب أن تسجّل نتيجة الاختبار سببًا
+    test_dns_failure: تعذّر تحليل اسم مضيف نقطة النهاية. تحقق من العنوان بحثًا عن خطأ كتابي، أو من اسم لا يستطيع تحليله إلا هذه الشبكة. لم يُسجَّل أي حكم بشأن القدرة؛ ما سُجِّل هو المدة التي استغرقها الفشل
+    discovery_complete: 'عدد النماذج المكتشفة: {seen} — {created} جديد هنا، {refreshed} معروف بالفعل، {pruned} لم يعد يُقدَّم'
+    connect_timeout_exceeds_probe: لا يمكن أن تكون مهلة الاتصال ({connect} ث) أطول من مهلة الاختبار ({probe} ث) — لا يمكن السماح بأن يستغرق إنشاء الاتصال وقتًا أطول من مدة الاختبار بأكملها
+    test_read_timeout: قبل النموذج الطلب لكنه لم يُجب في الوقت المناسب. قد يكون بطيئًا جدًا على هذا المضيف — فقد يستغرق نموذج كبير على وحدة معالجة مركزية عدة دقائق. لم يُسجَّل أي حكم بشأن القدرة؛ ما سُجِّل
+      هو المدة التي استغرقها الفشل
+  admin:
+    provider_not_found: المزوّد غير موجود
+    groups_stats_error: فشل تحميل إحصائيات المجموعة
+    example_blocked: لا يمكن للمستخدمين التجريبيين تنفيذ إجراءات المشرف
+    groups_load_error: فشل تحميل المجموعات
+    already_group_admin: المستخدم مشرف مجموعة بالفعل
+    settings_invalid_public_url: صيغة الرابط العام غير صالحة
+    invalid_upload_count: يجب أن يكون الحد الأقصى لعدد الرفع عددًا صحيحًا غير سالب (0 لغير محدود).
+    not_group_admin: المستخدم ليس مشرف مجموعة
+    settings_invalid_grace_period: يجب أن تكون فترة السماح بالتسجيل عددًا موجبًا (بالساعات)
+    group_users_load_error: فشل تحميل مستخدمي المجموعة
+    missing_fields: حقول مطلوبة مفقودة
+    cannot_demote_self: لا يمكنك خفض رتبتك بنفسك
+    settings_modify_forbidden: يمكن فقط للمشرفين الكاملين تعديل الإعدادات العامة
+    settings_invalid_email_timeout: يجب أن تكون مهلة توثيق البريد الإلكتروني عددًا موجبًا (بالساعات)
+    provider_delete_error: فشل حذف المزوّد
+    settings_invalid_upload_count: يجب أن يكون الحد الأقصى الافتراضي لعدد الرفع عددًا صحيحًا غير سالب (0 لغير محدود).
+    settings_invalid_max_registrations: يجب أن يكون الحد الأقصى للتسجيلات عددًا موجبًا أو غير محدود
+    no_group: المستخدم ليس لديه مجموعة معيّنة
+    settings_invalid_upload_size: يجب أن يكون الحجم الأقصى الافتراضي للرفع عددًا صحيحًا غير سالب (0 لغير محدود).
+    cannot_delete_self: لا يمكنك حذف حسابك الخاص
+    provider_update_error: فشل تحديث المزوّد
+    already_full_admin: المستخدم مشرف كامل بالفعل
+    providers_load_error: فشل تحميل المزوّدين
+    insufficient_permissions: أذونات غير كافية لهذا الإجراء
+    missing_group_id: معرف المجموعة مفقود
+    only_full_admin: يمكن فقط للمشرفين الكاملين تنفيذ هذا الإجراء
+    cannot_promote_example: لا يمكن ترقية مستخدم تجريبي
+    model_update_error: فشل تحديث النموذج
+    delete_error: فشل حذف المستخدم
+    missing_model_id: معرف النموذج مفقود
+    models_load_error: فشل تحميل النماذج
+    description_required: لا يمكن أن يكون الوصف فارغًا
+    cannot_demote_full_admin: لا يمكن خفض رتبة مشرف كامل
+    settings_invalid_email_sender: صيغة عنوان البريد الإلكتروني للمرسل غير صالحة
+    update_error: فشل تحديث المستخدم
+    settings_save_error: فشل حفظ الإعدادات العامة
+    no_fields: لا توجد حقول صالحة للتحديث
+    settings_load_error: فشل تحميل الإعدادات العامة
+    missing_id: المعرف مفقود
+    invalid_upload_size: يجب أن يكون الحد الأقصى لحجم الرفع بالميغابايت عددًا صحيحًا غير سالب (0 لغير محدود).
+    demote_error: فشل خفض رتبة المستخدم
+    promote_error: فشل ترقية المستخدم
+    user_load_error: فشل تحميل المستخدم
+    missing_user_id: معرف المستخدم مفقود
+    settings_view_forbidden: يمكن للمسؤولين الكاملين فقط عرض الإعدادات العامة
+    invalid_group_id: معرف المجموعة غير صالح. يجب أن يكون من 00 إلى 99
+    invalid_viz_type_field: قيمة حقل نوع العرض المرئي غير صالحة
+    user_not_found: المستخدم غير موجود
+    viz_type_not_found: نوع العرض المرئي غير موجود
+    model_not_found: النموذج غير موجود
+    invalid_id: معرّف غير صالح
+    promote_success: تمت ترقية المستخدم {name} إلى مدير المجموعة
+    demote_success: تمت تنزيل رتبة المستخدم {name} من مدير المجموعة
+    settings_invalid_platform_upload_size: يجب أن يكون الحد الأقصى لحجم الرفع في المنصة عددًا صحيحًا غير سالب (0 يعني غير محدود).
+    slug_exists: المعرّف النصي موجود بالفعل.
+    viz_type_update_error: فشل تحديث نوع العرض المرئي.
+    viz_types_load_error: فشل تحميل أنواع العروض المرئية.
+    instance_exists: لا يمكن حذف النوع لأنه يحتوي على {count} مثيل(ات) مرتبط(ة).
+    viz_type_delete_error: فشل حذف نوع العرض المرئي.
+    users_load_error: فشل تحميل المستخدمين.
+    viz_type_create_error: فشل إنشاء نوع العرض المرئي.
+    instance_in_use: لا يمكن حذف النوع لوجود مثيلات مرتبطة به.
+    settings_demo_mode_requires_licence: لا يمكن تعطيل الوضع التجريبي بدون ترخيص صالح.
+    email_exists: البريد الإلكتروني موجود بالفعل
+    create_user_error: فشل إنشاء المستخدم
+    settings_not_found: لم يتم العثور على الإعدادات العامة
+    invalid_email: تنسيق البريد الإلكتروني غير صالح
+    settings_invalid_registration_mode: يجب أن يكون وضع التسجيل أحد القيم 0 أو 1 أو 2 أو 4.
+    users_demo_upload_count_limit: في الوضع التجريبي، يجب أن يكون الحد الأقصى لعدد مرات الرفع للمستخدم بين 1 و5.
+    settings_demo_upload_size_limit: في الوضع التجريبي، يجب أن يكون الحجم الأقصى الافتراضي للرفع بين 1 و5 ميغابايت.
+    settings_demo_upload_count_limit: في الوضع التجريبي، يجب أن يكون الحد الأقصى الافتراضي لعدد مرات الرفع بين 1 و5.
+    users_demo_upload_size_limit: في الوضع التجريبي، يجب أن يكون الحد الأقصى لحجم الرفع للمستخدم بين 1 و5 ميغابايت.
+    example_user_password_blocked: لا يمكن للمسؤول تعيين كلمات مرور المستخدمين النموذجيين
+    invalid_admin_password: كلمة مرور المسؤول غير صحيحة
+    settings_invalid_temperature: يجب أن تكون درجة الحرارة رقمًا بين 0 و2
+    settings_invalid_ai_timeout: يجب أن يكون الحد الزمني للذكاء الاصطناعي عددًا صحيحًا من الثواني، على الأقل 1
+    settings_invalid_connect_timeout: يجب أن تكون مهلة الاتصال الافتراضية عددًا صحيحًا من الثواني، على الأقل 1 وعلى الأكثر {ceiling}
+    tuning_reset_error: تعذّرت إعادة تعيين الإعدادات الافتراضية لضبط الذكاء الاصطناعي
+    settings_invalid_slow_threshold: يجب أن يكون حد النموذج البطيء عددًا صحيحًا من الثواني، على الأقل 1
+    settings_invalid_max_tokens: يجب أن يكون حد الإخراج عددًا صحيحًا من الرموز، على الأقل 1
+    settings_invalid_probe_timeout: يجب أن تكون مهلة الاختبار الافتراضية عددًا صحيحًا من الثواني، على الأقل 1 وعلى الأكثر {ceiling}
+    field_not_owned: 'هذا الحقل غير مضبوط في هذه الصفحة. {endpoint}. الحقول المخالفة: {fields}'
+  auth:
+    email_already_verified: البريد الإلكتروني موثّق بالفعل
+    missing_fields: حقول مفقودة
+    token_expired: انتهت صلاحية الرمز
+    example_user_forgot_blocked: إعادة تعيين كلمة المرور معطّلة للمستخدمين التجريبيين
+    user_not_found: المستخدم غير موجود
+    invalid_token: الرمز غير صالح أو منتهي الصلاحية
+    example_user_reset_blocked: إعادة تعيين كلمة المرور معطلة للمستخدمين التجريبيين
+    unauthorized: غير مصرح
+    missing_email: البريد الإلكتروني مطلوب
+    example_user_blocked: تغييرات كلمة المرور معطلة للمستخدمين التجريبيين
+    internal_error: خطأ داخلي في الخادم
+    invalid_current_password: كلمة المرور الحالية غير صحيحة
+    not_authenticated: غير مصادق عليه.
+  register:
+    invalid_email: صيغة البريد الإلكتروني غير صالحة
+    internal_error: خطأ داخلي في الخادم
+    missing_fields: حقول مفقودة
+    email_exists: البريد الإلكتروني موجود بالفعل
+    settings_not_found: لم يتم العثور على الإعدادات العامة
+    limit_reached: تم الوصول إلى حد التسجيل (الحد الأقصى {max_reg} مستخدم).
+    registration_disabled: التسجيل الذاتي معطّل. يرجى التواصل مع المسؤول.
+  settings:
+    user_not_found: المستخدم غير موجود
+    load_failed: فشل تحميل الإعدادات
+    invalid_default_ai_connection: اتصال الذكاء الاصطناعي الافتراضي غير صالح
+    save_failed: فشل حفظ الإعدادات
+    example_blocked: لا يمكن للمستخدمين التجريبيين تعديل الإعدادات
+    invalid_slow_threshold: يجب أن يكون حد النموذج البطيء عددًا صحيحًا من الثواني، على الأقل 1
+  profile:
+    invalid_name: يجب أن يكون الاسم سلسلة نصية
+    fetch_failed: فشل جلب الملف الشخصي
+    update_failed: فشل تحديث الملف الشخصي
+    name_required: الاسم مطلوب
+  global_settings_load_error: خطأ داخلي في الخادم
+  translations_load_error: فشل تحميل الترجمات.
+  languages_load_error: فشل تحميل اللغات.
+audio_presets:
+  invalid_chat_type: 'نوع الدردشة غير صالح: {chat_type}. يجب أن يكون أحد: {valid_types}'
+auth:
+  account_deleted: تم حذف هذا الحساب.
+  email_not_verified: البريد الإلكتروني غير موثق. يرجى التحقق من صندوق الوارد ومجلد الرسائل غير المرغوب فيها.
+  example_user_blocked: وظائف كلمة المرور معطلة للمستخدمين التجريبيين
+  example_user_forgot_blocked: إعادة تعيين كلمة المرور معطلة للمستخدمين التجريبيين
+  example_user_reset_blocked: إعادة تعيين كلمة المرور معطلة للمستخدمين التجريبيين
+  internal_error: خطأ داخلي في الخادم
+  invalid_credentials: بيانات الاعتماد غير صالحة
+  invalid_current_password: كلمة المرور الحالية غير صحيحة
+  invalid_token: رمز غير صالح أو منتهي الصلاحية
+  invalid_token_error: 'رمز غير صالح: {error}'
+  invalid_token_missing_user_id: 'رمز غير صالح: معرف المستخدم مفقود'
+  missing_email: البريد الإلكتروني مطلوب
+  missing_fields: حقول مفقودة
+  password_changed: تم تغيير كلمة المرور بنجاح
+  password_validation_failed: فشل التحقق من صحة كلمة المرور
+  reset_email_sent: تم إرسال بريد إعادة تعيين كلمة المرور
+  token_expired: انتهت صلاحية الرمز
+  unauthorized: غير مصرح
+  user_not_found: المستخدم غير موجود
+  login_invalid_credentials: البريد الإلكتروني أو كلمة المرور غير صحيحة
+chat:
+  ai_provider_error: 'خطأ في مزوّد الذكاء الاصطناعي: {error}'
+  connection_error: 'خطأ في الاتصال: {error}'
+  connection_not_found: اتصال الذكاء الاصطناعي غير موجود أو لا يمكن الوصول إليه
+  delete_failed: 'فشل حذف الدردشة: {error}'
+  deleted: تم حذف الدردشة '{id}' بنجاح
+  generate_title_failed: 'فشل إنشاء العنوان: {error}'
+  get_failed: 'فشل الحصول على الدردشة: {error}'
+  internal_error: 'خطأ داخلي في الخادم: {error}'
+  list_failed: 'فشل عرض قائمة الدردشات: {error}'
+  not_found: الدردشة '{id}' غير موجودة
+  not_found_or_not_owned: الدردشة '{id}' غير موجودة أو لا تملكها
+  send_failed: 'فشل إرسال الرسالة: {error}'
+  title_updated: تم تحديث عنوان المحادثة بنجاح
+  update_failed: 'فشل تحديث المحادثة: {error}'
+  ai_timeout: يستغرق نموذج الذكاء الاصطناعي وقتًا طويلاً في الاستجابة. يرجى المحاولة مرة أخرى.
+  ai_repeat_loop: علق نموذج الذكاء الاصطناعي وتعذّر عليه إنهاء الاستجابة. يرجى المحاولة مرة أخرى.
+  ai_service_failed: فشلت خدمة الذكاء الاصطناعي في الاستجابة. يرجى المحاولة مرة أخرى.
+  timeout_out_of_range: يجب أن يكون الحد الزمني للذكاء الاصطناعي بين 1 و{max_seconds} ثانية
+common:
+  back: رجوع
+  cancel: إلغاء
+  cannot_undo: لا يمكن التراجع عن هذا الإجراء.
+  clear: مسح
+  copy: نسخ
+  delete: حذف
+  deleting: جارٍ الحذف...
+  dismiss: تجاهل
+  edit: تعديل
+  generating: جارٍ التوليد...
+  loading: جارٍ التحميل...
+  next: التالي
+  restoring: جارٍ الاستعادة...
+  save: حفظ
+  saving: جارٍ الحفظ...
+  sending: جارٍ الإرسال...
+  testing: جارٍ الاختبار...
+  unknown: غير معروف
+  uploading: جارٍ الرفع...
+  verifying: جارٍ التحقق...
+  view: عرض
+database:
+  connection_failed: 'فشل الاتصال بقاعدة البيانات: {error}'
+  connection_not_found: اتصال قاعدة البيانات غير موجود أو لا يمكن الوصول إليه
+  decryption_failed: 'فشل فك تشفير كلمة مرور الاتصال: {error}'
+  insert_failed: 'خطأ في قاعدة البيانات: {error}'
+  pool_not_initialized: لم تتم تهيئة مجمّع اتصالات قاعدة البيانات
+  query_failed: 'فشل استعلام قاعدة البيانات: {error}'
+  type_not_supported: نوع قاعدة البيانات '{type}' غير مدعوم بعد
+  feature_required: هذا النوع من قاعدة البيانات غير مفعّل بموجب ترخيصك.
+datasets:
+  auto_create:
+    connection_id_required: معرف الاتصال مطلوب
+    connection_not_found: الاتصال غير موجود
+    no_tables_discovered: لم يتم اكتشاف أي جداول أو طرق عرض. تحقق من أن خادم قاعدة البيانات يعمل ويمكن الوصول إليه.
+    created: تم إنشاء مجموعات البيانات.
+  browse:
+    columns_failed: 'فشل الحصول على الأعمدة: {error}'
+    discover_failed: 'فشل اكتشاف الجداول: {error}'
+    preview_failed: 'فشل معاينة الجدول: {error}'
+  define:
+    connection_details_not_found: تفاصيل الاتصال غير موجودة
+    connection_not_found: اتصال قاعدة البيانات غير موجود أو لا يمكن الوصول إليه
+    connection_required: معرف الاتصال مطلوب
+    connection_test_failed: فشل اختبار اتصال قاعدة البيانات
+    database_connection_failed: 'فشل الاتصال بقاعدة البيانات: {error}'
+    dataset_created: تم تعريف مجموعة البيانات '{name}' بنجاح
+    invalid_source_type: يجب أن يكون sourceType إما 'table' أو 'view'
+    name_required: اسم مجموعة البيانات مطلوب
+    permission_denied: 'تم رفض الإذن: المستخدم ''{user}'' لا يملك صلاحية الوصول إلى الجدول ''{table}''. يرجى منح إذن SELECT.'
+    preview_failed: 'فشل قراءة البيانات من الجدول ''{table}'': {error}'
+    table_access_failed: 'فشل الوصول إلى الجدول ''{table}'': {error}'
+    table_name_required: اسم الجدول مطلوب
+    table_not_found: الجدول/العرض '{table}' غير موجود في قاعدة البيانات '{database}'
+    verification_failed: 'فشل التحقق من الجدول/العرض: {error}'
+    connection_successful: تم الاتصال بنجاح
+    connection_missing_db_note: 'ملاحظة: يعيد PostgreSQL هذا الخطأ في حالة قواعد البيانات المفقودة وأيضًا في حالة الأذونات غير الكافية. إذا كانت قاعدة البيانات موجودة، تحقق من أن المستخدم لديه إذن CONNECT
+      على قاعدة البيانات.'
+    connection_timed_out: انتهت مهلة الاتصال بعد 15 ثانية
+  delete:
+    success: تم حذف مجموعة البيانات '{id}' بنجاح
+  describe:
+    ai_connection_error: 'خطأ في اتصال الذكاء الاصطناعي: {error}'
+    description_generated: تم توليد الوصف بنجاح لـ '{name}'
+    empty_description: الوصف المُولّد فارغ. يرجى التحقق من إعدادات مزوّد الذكاء الاصطناعي.
+    generation_failed: 'فشل توليد الوصف: {error}'
+    timeout_out_of_range: يجب أن يكون الحد الزمني للذكاء الاصطناعي بين 1 و{max_seconds} ثانية
+  example_blocked:
+    create: لا يمكن للمستخدمين التجريبيين إنشاء مجموعات بيانات
+    delete: لا يمكن للمستخدمين التجريبيين حذف مجموعات بيانات
+    update: لا يمكن للمستخدمين التجريبيين تحديث مجموعات بيانات
+  list_error: فشل تحميل مجموعات البيانات
+  not_found: مجموعة البيانات '{id}' غير موجودة أو لا يمكن الوصول إليها
+  not_found_2: مجموعة البيانات غير موجودة
+  not_owned: مجموعة البيانات '{id}' غير موجودة أو أنك لا تملكها
+  not_owner: يمكنك تعديل مجموعات البيانات التي تملكها فقط
+  preparation:
+    duplicate_name: توجد بالفعل قاعدة تحضير بهذا الاسم لمجموعة البيانات هذه
+    no_updates: لا توجد حقول للتحديث
+    preview_failed: 'فشل معاينة القاعدة: {error}'
+    rule_created: تم إنشاء قاعدة التحضير '{name}' بنجاح
+    rule_deleted: تم حذف قاعدة التحضير بنجاح
+    rule_in_use: 'تُستخدم قاعدة التحضير هذه بواسطة {count} وصفة/وصفات: {names}. احذف الوصفات أولاً.'
+    rule_not_found: قاعدة التحضير '{id}' غير موجودة لمجموعة البيانات هذه
+    rule_not_found_or_not_owned: قاعدة التحضير غير موجودة أو أنك لا تملكها
+    rule_updated: تم تحديث قاعدة التحضير بنجاح
+    schema_failed: 'فشل قراءة مخطط مجموعة البيانات: {error}'
+    already_exists: توجد بالفعل قاعدة تحضير بهذه العمليات ('{name}')
+  schema:
+    external_failed: 'فشل الحصول على المخطط من قاعدة البيانات الخارجية: {error}'
+    from_preview: تم استنتاج المخطط من بيانات المعاينة (أول 10 صفوف)
+    load_error: 'تعذر تحميل المخطط: {error}'
+    not_implemented: اكتشاف المخطط لنوع مجموعة البيانات '{type}' غير مُنفذ بعد
+    table_missing: لم يعد الجدول موجودًا. يرجى إعادة رفع مجموعة البيانات.
+    connection_unreachable: 'يتعذر الوصول إلى الاتصال {connection_id}: {error}'
+    row_count_not_computed: لا يُحتسب عدد الصفوف لمجموعة بيانات افتراضية دون تنفيذ الربط.
+  share:
+    error: فشل تحديث المشاركة
+    toggled: تم تحديث المشاركة لمجموعة البيانات '{id}' بنجاح
+  transforms:
+    clone_forbidden: ليست لديك صلاحية استنساخ هذا التحويل
+    cloned: تم استنساخ التحويل باسم '{name}'
+    created: تم إنشاء التحويل '{name}' بنجاح
+    deleted: تم حذف التحويل بنجاح
+    duplicate_name: يوجد تحويل بهذا الاسم بالفعل لمجموعة البيانات هذه
+    in_use: 'هذا التحويل مستخدم من قبل {count} وصفة/وصفات: {names}. احذف الوصفات أولًا.'
+    no_updates: لا توجد حقول للتحديث
+    not_accessible: مجموعة البيانات '{id}' غير موجودة أو لا يمكن الوصول إليها
+    not_found: التحويل '{id}' غير موجود لمجموعة البيانات هذه
+    not_found_or_not_owned: التحويل غير موجود أو لا تملكه
+    not_owned: مجموعة البيانات '{id}' غير موجودة أو لا تملكها
+    updated: تم تحديث التحويل بنجاح
+    already_exists: يوجد بالفعل تحويل بهذه العمليات ('{name}')
+  unknown_source: 'نوع المصدر غير معروف: {source_type}'
+  upload:
+    error: فشل رفع مجموعة البيانات
+    file_processing_failed: 'فشلت معالجة الملف: {error}'
+    limit_reached_count: تم الوصول إلى حد الرفع. الحد الأقصى المسموح به هو {count} مجموعة بيانات.
+    limit_reached_size: تم تجاوز حد حجم الرفع. الحد الأقصى للتخزين الإجمالي {size} ميغابايت.
+    success: تم رفع مجموعة البيانات '{name}' بنجاح
+    unsupported_file: 'نوع الملف غير مدعوم. يرجى رفع ملف بأحد الامتدادات التالية: {extensions}'
+    user_not_found: المستخدم غير موجود
+    dbf_memo_unsupported: يحتوي ملف .dbf هذا على حقول مذكرة (memo). تُخزَّن قيمها في ملف منفصل، ولا يمكن لرفع ملف واحد أن يتضمنها.
+    dbf_field_unsupported: 'يعلن ملف .dbf هذا عن أنواع حقول لا يمكن قراءتها: {types}'
+  unread:
+    schema_error: استجاب المصدر، لكن تعذّرت قراءة أعمدته.
+    definition_too_deep: تشير مجموعة البيانات هذه إلى نفسها لأكثر من خمسة مستويات عمقًا.
+    incomplete: لم ينتهِ الفحص في الوقت المحدد. حاول مجددًا أو قم بزيادة مهلة الاتصال.
+    no_permission: لا يمكن لهذا الحساب قراءة ذلك المصدر.
+    no_database: قاعدة البيانات تلك غير موجودة على الخادم.
+    unreachable: تعذّر الوصول إلى هذا المصدر. تحقق من المضيف والمنفذ ثم حاول مجددًا.
+    definition_incomplete: لا يسمي هذا المصدر مجموعة بيانات ولا جدول اتصال.
+    auth_failed: رفضت قاعدة البيانات بيانات اعتماد هذا الحساب.
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: أضف قيد CHECK أو استخدم نوع ENUM للعمود '{column}' ذي القيم الصالحة المحدودة
+      add_not_null: أضف قيد NOT NULL إلى '{column}'
+      allows_null: العمود '{column}' يسمح بقيمة NULL — يُنصح باستخدام قيد NOT NULL
+      set_max_length: يُنصح بتعيين حد أقصى للطول للعمود '{column}' لمنع البيانات كبيرة الحجم
+      short_text_enum: العمود النصي '{column}' يبلغ الحد الأقصى لطوله {max_len} — يُنصح باستخدام قيد ENUM أو CHECK
+      unbounded_varchar: عمود VARCHAR غير محدود الطول '{column}'
+    indexing:
+      missing_fk_index: عمود المفتاح الخارجي '{column}' ليس له فهرس
+    naming:
+      mixed_case_column: العمود '{column}' يستخدم حالة مختلطة — يُوصى باستخدام snake_case
+      mixed_case_table: اسم الجدول '{table}' يستخدم حالة مختلطة — يُوصى باستخدام snake_case
+      rename_column_reserved: أعد تسمية العمود '{column}' لتجنب التعارض مع كلمات SQL المحجوزة
+      rename_column_snake_case: أعد تسمية العمود إلى snake_case بأحرف صغيرة للاتساق
+      rename_table_reserved: أعد تسمية الجدول '{table}' لتجنب التعارض مع كلمات SQL المحجوزة
+      rename_table_snake_case: أعد تسمية الجدول إلى snake_case بأحرف صغيرة للاتساق
+      reserved_keyword_column: العمود '{column}' كلمة محجوزة في SQL
+      reserved_keyword_table: اسم الجدول '{table}' كلمة محجوزة في SQL
+    normalisation:
+      create_separate_table: أنشئ جدولًا منفصلًا لقيم '{base}' مع مفتاح خارجي إلى {table}
+      multiple_address: تم رصد عدة أعمدة متعلقة بالعنوان ({count})
+      repeating_group: 'تم رصد مجموعة متكررة: {columns}'
+      separate_address_table: يُنصح بإنشاء جدول عناوين منفصل مع مفتاح خارجي إلى {table}
+    relationships:
+      add_fk: يُنصح بإضافة قيد مفتاح خارجي إذا كان '{column}' يشير إلى جدول آخر
+      missing_fk: العمود '{column}' يبدو مفتاحًا خارجيًا لكنه لا يحتوي على قيد مفتاح خارجي
+    semistructured:
+      controlled_vocab: العمود {column} يحتوي على مفردات مضبوطة مكونة من {count} قيمة مميزة
+      create_ref_table: أنشئ جدولًا مرجعيًا لقيم {column} لتطبيع جدول {table}
+  analyze_error: 'فشل تحليل قاعدة البيانات: {error}'
+  connection_error: 'فشل الاتصال بقاعدة البيانات: {error}'
+  description: حلّل تصميم قاعدة بياناتك وحسّنه باستخدام الذكاء الاصطناعي.
+  invalid_token: رمز غير صالح
+  no_connection: لا يتوفر اتصال بقاعدة البيانات. يرجى الاتصال بقاعدة بيانات أولًا.
+  not_implemented: هذه الميزة قادمة قريبًا.
+  pdf:
+    ai_disclaimer: تحليل مُولَّد بالذكاء الاصطناعي — راجعه قبل التطبيق في بيئة الإنتاج.
+    categories: الفئات
+    code_systems: أنظمة الترميز
+    code_systems_label: أنظمة الترميز المكتشفة
+    col_default: افتراضي
+    col_name: عمود
+    col_nullable: يسمح بقيم NULL
+    col_pk: مفتاح أساسي
+    col_type: النوع
+    column_meanings_label: معاني الأعمدة
+    columns: الأعمدة
+    confidence: الثقة
+    confidence_label: الثقة
+    domain_label: تصنيفات ISIC للمجالات
+    evidence_label: الأدلة
+    header: تقرير تحليل تصميم قاعدة البيانات
+    health_score_label: 'درجة سلامة قاعدة البيانات: {score}/100'
+    health_score_subtitle: السلامة العامة لقاعدة البيانات وفق تقييم Schema AI. 0 = مشكلات هيكلية حرجة، 100 = جاهزة للإنتاج.
+    health_score_title: درجة السلامة
+    high: مرتفع
+    implicit_relationships_label: العلاقات الضمنية
+    integration_subtitle: العلاقات الضمنية وإمكانات البحث والأبعاد الناقصة التي رصدها Integration AI.
+    integration_title: نتائج تكامل الذكاء الاصطناعي
+    issues_count: المشكلات ({count})
+    issues_found: المشكلات المكتشفة
+    low: منخفض
+    medium: متوسط
+    missing_dimensions_label: الأبعاد الناقصة
+    'no': لا
+    none: لا شيء
+    normalisation_title: اقتراحات التطبيع ({count})
+    page: صفحة {current}/{total}
+    partial_label: جزئي
+    pk: مفتاح أساسي
+    proposed_ddl_label: DDL المقترح
+    proposed_table: الجدول المقترح
+    rationale_label: المبرر
+    relationship_label: العلاقة
+    research_capabilities_label: قدرات البحث
+    risk_breakdown: توزيع المخاطر
+    rows: الصفوف
+    schema_title: المخطط ({count} جداول)
+    semantic_subtitle: معاني الأعمدة المستنتجة بالذكاء الاصطناعي، وتصنيفات مجالات ISIC، واكتشافات أنظمة الترميز.
+    semantic_title: التحليل الدلالي بالذكاء الاصطناعي
+    semi_structured_title: تحليل البيانات شبه المنظمة ({count} أعمدة)
+    subtitle: 'قاعدة البيانات: {db_name} ({db_type}) | الاتصال: {conn_name} (المعرف: {conn_id})'
+    summary: الملخص
+    supported_label: مدعوم
+    table_purposes_label: أغراض الجداول
+    tables: الجداول
+    title: تحليل تصميم قاعدة البيانات
+    top_actions_label: الإجراءات ذات الأولوية القصوى
+    top_keywords: أهم الكلمات المفتاحية
+    top_recommendations: أهم التوصيات
+    unsupported_label: غير مدعوم
+    value: القيمة
+    'yes': نعم
+    ai_skipped_warning: تم تخطي تحليل الذكاء الاصطناعي
+  pdf_error: 'فشل إنشاء PDF: {error}'
+  question_required: السؤال مطلوب
+  rag_error: 'فشل استعلام RAG: {error}'
+  rag_not_available: بحث RAG متاح فقط لقواعد بيانات PostgreSQL. البحث النصي في MySQL مخطط له في إصدار مستقبلي.
+  report_data_required: بيانات التقرير مطلوبة
+  schema_error: 'فشل استخراج المخطط: {error}'
+  schema_error_2: 'فشل فك تشفير كلمة مرور قاعدة البيانات: {error}'
+  title: مساعد تصميم قاعدة البيانات
+  unsupported_type: فقط قواعد بيانات PostgreSQL وMySQL وMS SQL Server وMicrosoft Access مدعومة.
+  unsupported_type_2: فقط قواعد بيانات PostgreSQL وMySQL وMS SQL Server مدعومة.
+  email_pdf:
+    no_email: لم يتم العثور على عنوان بريد إلكتروني لحسابك
+    invalid_body: نص الطلب غير صالح
+    send_failed: فشل إرسال التقرير بالبريد الإلكتروني. يرجى المحاولة مرة أخرى.
+  llm:
+    no_ai_provider: لم يتم إعداد أي موفّر ذكاء اصطناعي. اربط موفّر ذكاء اصطناعي في الإعدادات ← اتصالات الذكاء الاصطناعي.
+    timeout: انتهت مهلة طلب نموذج اللغة الكبير بعد {timeout_seconds} ثانية.
+    http_error: أعاد نموذج اللغة الكبير رمز HTTP {status_code}.
+    unknown_error: خطأ غير معروف في نموذج اللغة الكبير.
+    empty_content: أعاد نموذج اللغة الكبير محتوى فارغًا.
+    no_model: لم يتم تكوين أي نموذج ذكاء اصطناعي. عيّن نموذجًا افتراضيًا على اتصال الذكاء الاصطناعي أو مرر نموذجًا صريحًا.
+  stream_schema_done: 'تم استخراج المخطط: {tables} جداول، {columns} أعمدة'
+  stream_normalisation_timeout: 'التطبيع: انتهت المهلة بعد 90 ثانية'
+  stream_mechanical_done: 'التحليل الميكانيكي: تم العثور على {count} مشكلة'
+  stream_ai_integration_start: 'الذكاء الاصطناعي للتكامل: جارٍ اكتشاف العلاقات...'
+  stream_ai_done: 'اكتمل تحليل الذكاء الاصطناعي — الحالة: {status}'
+  stream_normalisation_done: 'التطبيع: {count} اقتراحات'
+  stream_connected: 'تم الاتصال بـ {db_type}: {db_name}'
+  analysis_complete: اكتمل التحليل
+  ai_skipped_reason: 'يحتوي هذا التقرير على التحليل الميكانيكي فقط. تم تخطي التحليل المعزز بالذكاء الاصطناعي لأن قاعدة البيانات ولّدت {count} مشكلة (الحد: {limit}). راجع النتائج الميكانيكية أدناه، ونظّف
+    قاعدة البيانات، ثم أعد التشغيل مع الذكاء الاصطناعي للحصول على تفسيرات تراعي السياق، ورؤى دلالية، واقتراحات للتطبيع.'
+  ai_skipped_message: 'تم تخطي تحليل الذكاء الاصطناعي — تم العثور على {count} مشكلة (الحد: {limit}). راجع النتائج الآلية أدناه، ونظّف قاعدة البيانات، ثم أعد التشغيل باستخدام الذكاء الاصطناعي.'
+  stream_normalisation_skipped: 'التطبيع: تم التخطي ({error})'
+  stream_mechanical_start: جارٍ تشغيل التحليل الميكانيكي...
+  stream_ai_start: بدء تحليل الذكاء الاصطناعي — 3 متخصصين بالتوازي...
+  stream_ai_integration_done: 'الذكاء الاصطناعي للتكامل: {relationships} علاقات، {capabilities} قدرات'
+  stream_analysis_failed: 'فشل التحليل: {error}'
+  stream_unsupported_type: 'نوع قاعدة بيانات غير مدعوم: {db_type}'
+  stream_ai_schema_start: 'الذكاء الاصطناعي للمخطط: جارٍ تحليل {tables} جداول...'
+  analysis_cancelled: تم إلغاء دفق التحليل (انقطع اتصال العميل)
+  stream_semistructured_start: جارٍ تحليل الأعمدة شبه المنظمة...
+  stream_connecting: جارٍ الاتصال بقاعدة البيانات...
+  stream_ai_schema_done: 'الذكاء الاصطناعي للمخطط: درجة الصحة {score}/100'
+  stream_extracting_schema: جارٍ استخراج المخطط من {db_type}...
+  stream_ai_semantic_start: 'الذكاء الاصطناعي الدلالي: جارٍ تحليل {tables} جداول...'
+  stream_normalisation_start: جارٍ إنشاء اقتراحات التطبيع...
+  stream_ai_semantic_done: 'الذكاء الاصطناعي الدلالي: {columns} معانٍ للأعمدة، {domains} مجالات ISIC'
+error:
+  ai:
+    call_failed: 'فشل استدعاء الذكاء الاصطناعي: {error}'
+  connection:
+    connect_failed: 'فشل الاتصال بـ MySQL: {error}'
+    decryption_failed: 'فشل فك تشفير كلمة مرور الاتصال: {error}'
+    failed: 'فشل الاتصال بقاعدة البيانات: {error}'
+    query_failed: 'فشل الاستعلام عن الجدول/العرض ''{table}'': {error}'
+    query_failed_2: 'فشل في تنفيذ SQL المُترجَم: {error}'
+    query_failed_3: 'فشل استعلام PostgreSQL: {error}'
+    query_failed_4: 'فشل استعلام MySQL: {error}'
+    query_failed_5: 'فشل استعلام MSSQL: {error}'
+    query_failed_6: 'فشل استعلام Access: {error}'
+    query_failed_7: 'فشل استعلام قاعدة البيانات: {error}'
+    type_not_supported: نوع قاعدة البيانات '{type}' غير مدعوم بعد
+    type_not_supported_2: نوع قاعدة البيانات '{type}' غير مدعوم بعد لاكتشاف المخطط
+    type_not_supported_3: 'نوع قاعدة بيانات غير مدعوم: {type}'
+  database:
+    insert_failed: 'خطأ في قاعدة البيانات: {error}'
+    pool_not_initialized: لم تتم تهيئة مجمع قاعدة البيانات
+  dataset:
+    delete_failed_2: 'فشل في حذف مجموعة البيانات: {error}'
+    load_failed: 'فشل تحميل مجموعة البيانات: {error}'
+    load_failed_2: 'فشل في تحميل البيانات: {error}'
+    load_failed_3: مجموعة البيانات الافتراضية '{id}' ليس لها تعريف SQL
+    load_failed_4: 'فشل تحميل مجموعة البيانات الافتراضية ''{id}'': {error}'
+    not_found: مجموعة البيانات '{id}' غير موجودة أو لا يمكن الوصول إليها
+    not_found_2: مجموعة البيانات '{id}' غير موجودة
+    not_found_3: 'مجموعة البيانات غير موجودة أو لا يمكن الوصول إليها: {error}'
+    not_found_4: مجموعة البيانات '{id}' غير موجودة أو لا يمكن الوصول إليها
+    not_found_5: مجموعة البيانات '{id}' غير موجودة
+    not_found_or_not_owned: مجموعة البيانات '{id}' غير موجودة أو لا تملكها
+    table_missing: الجدول '{table}' غير موجود
+    unknown_source: 'نوع مصدر غير معروف: {source_type}'
+  define:
+    connection_not_found: اتصال قاعدة البيانات غير موجود أو لا يمكن الوصول إليه
+    connection_not_found_2: الاتصال غير موجود أو لا يمكن الوصول إليه
+    dataset_creation_failed: 'فشل إنشاء سجل مجموعة البيانات: {error}'
+  describe:
+    ai_connection_error: 'خطأ في اتصال الذكاء الاصطناعي: لا يوجد اتصال متاح'
+    ai_connection_error_2: 'خطأ في اتصال الذكاء الاصطناعي: فشل فك تشفير مفتاح API'
+  execution:
+    cannot_cancel: لا يمكن إلغاء تنفيذ حالته بالفعل {status}
+  groups:
+    invalid_group_id: معرف مجموعة غير صالح. يجب أن يكون من 00 إلى 99
+  preparation:
+    rule_not_found: قاعدة التحضير '{id}' غير موجودة لمجموعة البيانات هذه
+    rule_not_found_2: قاعدة التحضير '{id}' غير موجودة
+execution:
+  executing_stage: 'تنفيذ المرحلة: {stage}'
+  loaded_rows: تم تحميل {rows} من الصفوف و{columns} من الأعمدة
+  loading_dataset: جارٍ تحميل مجموعة البيانات...
+  not_found: التنفيذ غير موجود
+  starting_analysis: بدء مراحل التحليل...
+groups:
+  admin_required: يتطلب وصول المسؤول
+  cannot_delete_self: لا يمكنك حذف حسابك الخاص
+  description_required: لا يمكن أن يكون الوصف فارغًا
+  insufficient_permissions: صلاحيات غير كافية لإدارة المجموعات
+  invalid_group_id: مجموعة مستخدم غير صالحة. يجب أن تكون من 00 إلى 99
+  not_authorized: غير مخوّل بعرض مجموعة هذا المستخدم
+  not_found: المجموعة '{id}' غير موجودة
+  update_failed: فشل تحديث المجموعة
+  update_success: تم تحديث وصف المجموعة '{id}'
+  user_not_found: المستخدم غير موجود
+  user_updated: تم تحديث مجموعة المستخدم بنجاح
+  resource_not_found: المورد غير موجود.
+  missing_id: معرّف المورد مفقود.
+licence:
+  delete_failed: 'فشل حذف ملف الترخيص: {error}'
+  missing_content: الحقل 'content' مفقود
+  write_failed: 'فشل كتابة ملف الترخيص: {error}'
+  delete_success: تمت إزالة الترخيص. يتم التشغيل في الوضع مفتوح المصدر.
+  install_success: تم تثبيت الترخيص بنجاح.
+  no_file_to_delete: لا يوجد ملف ترخيص لحذفه — النظام بالفعل في الوضع مفتوح المصدر.
+notebooks:
+  delete_error: 'فشل حذف الاستيراد: {error}'
+  example_blocked: لا يمكن للمستخدمين التجريبيين استيراد الدفاتر.
+  example_blocked_2: لا يمكن للمستخدمين التجريبيين تعديل مشاركة الدفاتر.
+  example_blocked_3: لا يمكن للمستخدمين التجريبيين حذف الدفاتر.
+  file_too_large: ملف الدفتر كبير جدًا. الحد الأقصى للحجم هو {max_size} ميغابايت.
+  import_failed: 'فشل استيراد الدفتر: {error}'
+  import_failed_2: 'فشل سرد عمليات الاستيراد: {error}'
+  import_failed_3: لم يتم العثور على عملية الاستيراد
+  import_failed_4: 'فشل جلب عملية الاستيراد: {error}'
+  invalid_format_2: تنسيق دفتر غير صالح. تُقبل ملفات .ipynb فقط.
+  no_connection: يرجى تحديد اتصال قاعدة بيانات.
+  no_dataframes: لا توجد DataFrames في هذه المفكرة
+  no_db_rights: لا يمتلك هذا الاتصال صلاحيات إنشاء قاعدة البيانات.
+  no_table_rights: لا يمكن لهذا الاتصال إنشاء جداول — تم رفض الاستيراد.
+  share_error: يمكن للمالك فقط تغيير إعدادات المشاركة.
+  share_error_2: 'فشل تحديث المشاركة: {error}'
+  system_db_blocked: لا يمكن الاستيراد إلى قاعدة بيانات النظام '{db}'. يرجى استخدام قاعدة بيانات مختلفة أو إنشاء قاعدة جديدة.
+  missing_cells: 'تنسيق دفتر الملاحظات غير صالح: المفتاح ''cells'' مفقود'
+  untitled: بلا عنوان
+  unknown_error: خطأ غير معروف
+  too_many_cells: 'عدد الخلايا كبير جدًا ({count}). الحد الأقصى: {max_cells}'
+  invalid_json: 'JSON غير صالح: {error}'
+  cells_not_list: 'تنسيق دفتر الملاحظات غير صالح: ''cells'' ليس قائمة'
+notebooks_storage:
+  failed_create_table: 'فشل إنشاء الجدول {table}: {error}'
+  failed_create_table_mssql: 'فشل إنشاء الجدول: {error}'
+  no_connection_details: لم يتم توفير تفاصيل الاتصال
+  no_connection_details_short: لا توجد تفاصيل اتصال
+  unsupported_storage_type: 'نوع تخزين غير مدعوم: {type}'
+  no_data_pool: لم تتم تهيئة تجمّع قاعدة البيانات
+rag:
+  ai_provider_error: 'خطأ مزود الذكاء الاصطناعي: {error}'
+  no_ai_provider: تم العثور على {count} سجلات مطابقة. (لا يوجد مزود ذكاء اصطناعي مُهيأ للإجابات باللغة الطبيعية.)
+  no_matches: لم يتم العثور على نص مطابق في قاعدة البيانات لسؤالك. حاول إعادة الصياغة أو اختيار مصدر بيانات مختلف.
+  no_tables: لم يتم العثور على جداول في المخطط للبحث.
+recipes:
+  ai_session:
+    create_error: فشل إنشاء جلسة وصفة الذكاء الاصطناعي
+    delete_error: فشل حذف جلسة وصفة الذكاء الاصطناعي
+    load_error: فشل تحميل جلسة وصفة الذكاء الاصطناعي
+    not_found: لم يتم العثور على جلسة وصفة الذكاء الاصطناعي
+    save_error: فشل حفظ الوصفة من جلسة الذكاء الاصطناعي
+    unauthorized: ليس لديك حق الوصول إلى جلسة وصفة الذكاء الاصطناعي هذه
+  column_type:
+    categorical: فئوي
+    numeric: رقمي
+  columns_required: يرجى تحديد عمود واحد على الأقل
+  create_success: تم إنشاء الوصفة '{name}' بنجاح
+  data_selection_error: 'فشل تحديد البيانات: {error}'
+  dataset_not_found: لم يتم العثور على مجموعة البيانات
+  dataset_required: يرجى تحديد مجموعة بيانات
+  delete_error: 'فشل حذف الوصفة: {error}'
+  delete_success: تم حذف الوصفة '{id}' بنجاح
+  execute_error: 'فشل تنفيذ الوصفة: {error}'
+  execution:
+    error: 'خطأ في تنفيذ الوصفة: {error}'
+    preparation_error: 'فشلت مرحلة التحضير: {error}'
+    preparation_failed: فشلت مرحلة التحضير
+    unknown_stage: 'نوع مرحلة غير معروف: {stage_type}'
+  execution_completed: اكتمل التنفيذ بنجاح
+  execution_failed: فشل التنفيذ
+  execution_load_error: 'فشل تحميل التنفيذ: {error}'
+  execution_not_found: لم يتم العثور على التنفيذ '{id}'
+  executions_load_error: 'فشل تحميل عمليات التنفيذ: {error}'
+  field_label:
+    categoryColumn: عمود الفئة (التسميات)
+    dependentColumn: عمود المتغير التابع / النتيجة
+    factorColumn: عمود العامل (متغير التجميع)
+    independentColumns: أعمدة المتغيرات المستقلة / المتنبئات
+    responseColumn: عمود الاستجابة (قياس رقمي)
+    responseColumn2: عمود الاستجابة الثاني (قياس مقترن)
+    xColumn: عمود المحور السيني
+    yColumn: عمود المحور الصادي
+    columns: الأعمدة
+    factorColumn2: عمود العامل الثاني (متغير التجميع)
+  invalid_stage: مرحلة غير صالحة للوصفة
+  invalid_stage_type: 'نوع مرحلة غير صالح: {type}. يجب أن يكون أحد الأنواع: {types}'
+  load_datasets_error: 'فشل تحميل مجموعات البيانات: {error}'
+  load_error: 'فشل تحميل الوصفات: {error}'
+  name_required: اسم الوصفة مطلوب
+  no_columns_exist: لا يوجد أي من الأعمدة المحددة في مجموعة البيانات
+  no_dataset: لا توجد مجموعة بيانات مرتبطة بهذه الوصفة
+  no_stages: يجب أن تحتوي الوصفة على مرحلة واحدة على الأقل
+  no_updates: لا توجد حقول للتحديث
+  not_found: لم يتم العثور على الوصفة '{id}'
+  not_owned: لم يتم العثور على الوصفة '{id}' أو أنك لا تملكها
+  preparation:
+    all_rules_failed: 'فشلت جميع القواعد: {errors}'
+    no_db_pool: مجمع قاعدة البيانات غير متاح لمرحلة التحضير
+    rule_failed: 'القاعدة ''{rule_id}'': {error}'
+    rule_not_found: لم يتم العثور على القاعدة '{rule_id}'
+    rules_applied: تم تطبيق {count} قواعد تحضير
+  requirement:
+    anova_one_way: عمود فئوي واحد (عامل) وعمود رقمي واحد (استجابة)
+    anova_two_way: عمودان فئويان (عاملان) وعمود رقمي واحد (الاستجابة)
+    bar: عمود فئوي واحد (المحور السيني) وعمود رقمي واحد (المحور الصادي)
+    chi_square: عمودان فئويان
+    correlation: عمودان رقميان على الأقل
+    descriptive: عمود رقمي واحد على الأقل
+    distribution: عمود رقمي واحد
+    histogram: عمود رقمي واحد (المحور السيني)
+    line: عمودان رقميان (x و y)
+    linear_regression: عمودان رقميان على الأقل (المتنبئات والنتيجة)
+    none: لا يُطلب أي مخرج
+    pie: عمود فئوي واحد (تسميات)
+    scatter: عمودان رقميان (x و y)
+    t_test_independent: عمود فئوي واحد (للمجموعات) وعمود رقمي واحد (للمقارنة)
+    t_test_paired: عمودان رقميان (قياسات مزدوجة)
+    table: أي أعمدة
+    area: عمودان رقميان (x و y)
+    hbar: عمود فئوي واحد (محور y) وعمود رقمي واحد (محور x)
+    donut: عمود فئوي واحد (تسميات)
+  result_type:
+    numeric: رقمي
+    tabular: جدولي
+  scatter_two_columns: يتطلب مخطط التشتت عمودين على الأقل
+  scatter_two_numeric: يتطلب مخطط التشتت عمودين رقميين
+  schema_error: 'فشل تحميل مخطط الأعمدة: {error}'
+  share:
+    disabled: أصبحت الوصفة خاصة الآن
+    enabled: تمت مشاركة الوصفة بنجاح
+  transforms:
+    connect_success: تم توصيل التحويل بالوصفة
+    dataset_mismatch: التحويل '{id}' لا ينتمي إلى مجموعة البيانات '{dataset_id}'
+    disconnect_success: تم فصل التحويل عن الوصفة
+    load_error: فشل تحميل التحويلات المتصلة
+    not_found: التحويل '{id}' غير موجود أو لا ينتمي إلى مجموعة بيانات هذه الوصفة
+  unknown_stage: 'نوع مرحلة غير معروف: {stage_type}'
+  unsupported_chart_type: 'نوع مخطط غير مدعوم: {chart_type}'
+  update_error: 'فشل تحديث الوصفة: {error}'
+  update_success: تم تحديث الوصفة '{id}' بنجاح
+  validation:
+    failed: 'فشل التحقق من صحة الوصفة:'
+    incompatible_algo_output: 'ينتج التحليل ''{algo}'' نتائج من نوع {result_type} ولا يمكن عرضه كمخطط ''{output}''. غيّر نوع المخرج إلى نوع متوافق مع ''{algo}'': {options}.'
+    insufficient_columns_algo: 'لا تحتوي مجموعة البيانات هذه على أنواع الأعمدة الصحيحة لـ ''{algo}'' ({requirement}). تحتوي مجموعة البيانات على: {columns}. اختر مجموعة بيانات تحتوي على {requirement}، أو
+      بدّل إلى: {options}.'
+    insufficient_columns_output: 'لا تحتوي مجموعة البيانات هذه على أنواع الأعمدة الصحيحة لـ ''{output}'' ({requirement}). تحتوي مجموعة البيانات على: {columns}. اختر مجموعة بيانات تحتوي على {requirement}،
+      أو بدّل إلى: {options}.'
+    missing_algo_field: ينقص التحليل '{algo}' إعداد الحقل '{field}' ({label}). حدد عمودًا للحقل '{field}' في لوحة التحليل.
+    missing_output_field: ينقص المخرج '{output}' إعداد الحقل '{field}' ({label}). حدد عمودًا للحقل '{field}' في لوحة المخرجات.
+    unknown_algorithm: '''{type}'' ليس طريقة تحليل معروفة. اختر واحدًا من: {options}.'
+    unknown_columns: 'تشير مرحلة {stage} إلى العمود/الأعمدة ''{columns}'' التي لا توجد في مجموعة البيانات هذه. الأعمدة المتاحة: {available}. حدد من بينها.'
+    unknown_output: '''{type}'' ليس نوع مخرج معروفًا. اختر واحدًا من: {options}.'
+    wrong_column_type: يجب أن يكون العمود '{column}' {expected} للحقل '{field}' ({label}).
+    algorithm_required: لم يتم تحديد طريقة التحليل. اختر واحدة في لوحة التحليل — تحتاج الوصفة إلى مرحلة إحصائية مع خوارزمية.
+    unknown_field: '''{field}'' ليس إعدادًا معروفًا لـ ''{type}''. الإعدادات المعروفة: {options}.'
+  visualisation_columns_required: مطلوب عمود واحد على الأقل للعرض المرئي
+  visualisation_error: 'فشل العرض المرئي: {error}'
+  visualisation_generated: تم إنشاء العرض المرئي بنجاح
+  technique_descriptive: إحصائيات وصفية
+  technique_t_test_paired: اختبار t للعينات المزدوجة
+  technique_linear_regression: الانحدار الخطي
+  technique_chi_square: اختبار كاي تربيع
+  technique_anova_two_way: تحليل التباين ثنائي الاتجاه
+  technique_t_test_independent: اختبار t للعينات المستقلة
+  technique_anova_one_way: تحليل التباين أحادي الاتجاه
+  technique_correlation: مصفوفة الارتباط
+  histogram_numeric: يتطلب المدرج التكراري عمودًا رقميًا
+  histogram_no_columns: يتطلب المدرج التكراري عمودًا واحدًا على الأقل
+  distribution_no_columns: يتطلب مخطط التوزيع عمودًا واحدًا على الأقل
+  stage_not_implemented: مرحلة {stage_type} قادمة قريبًا
+  scoreboard:
+    output_fields:
+      what: اختر أعمدة الإخراج
+    dataset:
+      what: حدد مجموعة بيانات
+    name:
+      what: سمِّ الوصفة
+    output_unknown:
+      what: اختر نوع مخرجات معروف
+    technique_fields:
+      what: اختر الأعمدة المطلوبة
+    technique_unknown:
+      what: اختر طريقة تحليل معروفة
+    output:
+      what: اختر نوع مخرجات
+    technique:
+      what: اختر طريقة تحليل
+    output_incompatible:
+      what: اختر نوع مخرجات متوافق
+  chip:
+    heading:
+      output: أي المخرجات؟
+      columns: أي الأعمدة؟
+      technique: ما طريقة التحليل؟
+schema:
+  connection_and_table_required: مطلوب connection_id و table_name لمصادر PostgreSQL/MySQL
+  connection_not_found: لم يتم العثور على اتصال قاعدة البيانات أو تم رفض الوصول
+  dataset_id_required: مطلوب dataset_id عندما يكون source_type=dataset
+  dataset_not_found: لم يتم العثور على مجموعة البيانات أو تم رفض الوصول
+  introspect_mysql_failed: 'فشل استكشاف MySQL: {error}'
+  introspect_postgresql_failed: 'فشل استكشاف PostgreSQL: {error}'
+  no_table_name: لا تحتوي مجموعة البيانات على اسم جدول (لم يتم استيعابها بعد)
+  unsupported_source_type: 'source_type غير مدعوم: {source_type}. استخدم dataset أو postgresql أو mysql.'
+statistics:
+  anova_computation_failed: 'فشل حساب تحليل التباين الثنائي: {error}'
+  anova_needs_three_groups: يتطلب تحليل التباين الأحادي 3 مجموعات أو أكثر (تم العثور على {n}). لمجموعتين، استخدم اختبار t المستقل.
+  cache_cleared: تم مسح مفتاح ذاكرة التخزين المؤقت '{key}'
+  cache_not_found: مفتاح ذاكرة التخزين المؤقت '{key}' غير موجود
+  column_must_be_numeric: يجب أن يكون العمود '{col}' رقميًا
+  column_not_found: العمود '{col}' غير موجود
+  computation_failed: 'فشل حساب الإحصائيات: {error}'
+  compute_failed: 'فشل حساب الإحصائيات: {error}'
+  each_group_two_observations: يجب أن تحتوي كل مجموعة على ملاحظتين على الأقل
+  factor_column_not_found: عمود العامل {factor} '{col}' غير موجود
+  group_column_required_anova: مطلوب عمود مجموعة فئوي يحتوي على 3 مستويات أو أكثر لتحليل التباين الأحادي
+  group_column_required_ttest: مطلوب عمود مجموعة فئوي يحتوي على مستويين بالضبط لاختبار t المستقل
+  group_fewer_than_two: المجموعة '{group}' تحتوي على أقل من ملاحظتين
+  group_must_have_two_levels: يجب أن يحتوي عمود المجموعة '{group}' على مستويين بالضبط (تم العثور على {n})
+  need_five_observations_chi: يلزم 5 ملاحظات كاملة على الأقل
+  need_observations_regression: يلزم {n} ملاحظات كاملة على الأقل
+  need_ten_observations_anova: يلزم 10 ملاحظات كاملة على الأقل لتحليل التباين الثنائي
+  need_three_pairs: يلزم 3 أزواج كاملة على الأقل لاختبار t المزدوج
+  need_two_categories_chi: يحتاج كلا العمودين إلى فئتين على الأقل
+  need_two_numeric_correlation: يلزم عمودان رقميان على الأقل للارتباط
+  need_two_valid_numeric: يلزم عمودان رقميان صالحان على الأقل
+  no_valid_data_after_dropna: لا توجد بيانات صالحة بعد إسقاط NaN
+  no_valid_numeric: لم يتم توفير أعمدة رقمية صالحة
+  non_numeric_column: عمود غير رقمي
+  not_computed: غير محسوب
+  select_dependent_independent: 'حدد عمودين رقميين على الأقل: الأول = تابع، والباقي = مستقل'
+  select_dependent_var: حدد عمود متغير تابع رقمي واحد
+  select_one_numeric_ttest: حدد عمودًا رقميًا واحدًا لاختبار t المستقل
+  select_two_categorical_chi: حدد عمودين فئويين بالضبط
+  select_two_numeric_paired: حدد عمودين رقميين بالضبط لاختبار t المزدوج
+  two_factors_required: مطلوب عاملان لتحليل التباين الثنائي
+system:
+  cache_cleanup_completed: 'اكتمل تنظيف ذاكرة التخزين المؤقت: تمت إزالة {removed} عنصرًا'
+  hello_world: مرحبًا بالعالم!
+user:
+  api_key_required: مطلوب مفتاح API لهذا المزود
+  connection_name_exists: يوجد اتصال بهذا الاسم بالفعل
+  connection_not_found: الاتصال غير موجود
+  example_blocked: لا يمكن للمستخدمين التجريبيين تنفيذ هذا الإجراء
+  internal_error: خطأ داخلي في الخادم
+  missing_fields: حقول مطلوبة مفقودة
+  provider_not_found: المزود غير موجود
+  user_not_found: المستخدم غير موجود
+  no_endpoint: لا توجد نقطة نهاية مُهيأة لهذا المزوّد.
+  unknown_provider: 'مزوّد غير معروف: {code}'
+  auto_create_default_detail: فشل الإنشاء التلقائي لمجموعة البيانات. قد يكون خادم قاعدة البيانات غير قابل للوصول.
+  provider_returned: 'أعاد المزوّد {status}: {text}'
+  example_update_db: لا يمكن للمستخدمين التجريبيين تحديث اتصالات قاعدة البيانات
+  example_create_db: لا يمكن للمستخدمين التجريبيين إنشاء اتصالات قاعدة البيانات
+  example_delete_db: لا يمكن للمستخدمين التجريبيين حذف اتصالات قاعدة البيانات
+  connection_timeout_remote: انتهت مهلة الاتصال لـ {code} على {baseUrl}
+  api_key_required_fetch: مفتاح API مطلوب لهذا المزوّد.
+  fetch_failed: فشل الجلب
+  connection_timeout_local: انتهت مهلة الاتصال. هل {code} يعمل على {baseUrl}؟
+  no_models_returned: لم يُعد المزوّد أي نماذج؛ لم يتغير شيء
+validation:
+  error: 'خطأ في التحقق: تم العثور على {count} مشكلة/مشكلات'
+  password:
+    require_digit: يجب أن تحتوي كلمة المرور على رقم واحد على الأقل.
+    too_weak: كلمة المرور ضعيفة جدًا. يُرجى اختيار كلمة مرور أقوى.
+    require_lowercase: يجب أن تحتوي كلمة المرور على حرف صغير واحد على الأقل.
+    require_uppercase: يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل.
+    require_special: يجب أن تحتوي كلمة المرور على حرف خاص واحد على الأقل.
+    min_length: يجب ألا يقل طول كلمة المرور عن {min} أحرف.
+virtual:
+  execute_failed: 'فشل التنفيذ: {error}'
+  no_credentials_mysql: لم يتم العثور على بيانات اعتماد لاتصال MySQL {conn_id}
+  no_credentials_postgresql: لم يتم العثور على بيانات اعتماد لاتصال PostgreSQL {conn_id}
+  preview_failed: 'فشلت المعاينة: {error}'
+  validate:
+    no_sources: لم يتم تعريف أي مصادر.
+    join_left_source_not_found: 'الربط {j_idx}: المصدر الأيسر ''{left_alias}'' غير موجود'
+    join_right_source_not_found: 'الربط {j_idx}: المصدر الأيمن ''{right_alias}'' غير موجود'
+    dataset_not_found: 'المصدر ''{alias}'': مجموعة البيانات {dataset_id} غير موجودة أو الوصول مرفوض'
+    dataset_id_required: 'المصدر ''{alias}'': معرف مجموعة البيانات (datasetId) مطلوب لمصدر مجموعة البيانات'
+    column_source_not_found: 'العمود {c_idx}: المصدر ''{src_alias}'' غير موجود'
+    connection_id_required: 'المصدر ''{alias}'': معرف الاتصال (connectionId) مطلوب لمصدر {storage_type}'
+    connection_not_found: 'المصدر ''{alias}'': الاتصال {conn_id} غير موجود أو الوصول مرفوض'
+    join_column_not_found: 'الربط {j_idx}: المصدر ''{alias}'' لا يحتوي على عمود ''{column}'''
+    output_column_not_found: 'العمود {c_idx}: المصدر ''{src_alias}'' لا يحتوي على عمود ''{column}'''
+  scoreboard:
+    output_columns:
+      needs: مصدر واحد، مع قراءة أعمدته.
+      what: ما الأعمدة التي يجب أن تتضمنها النتيجة؟
+    columns:
+      needs_failed: تعذّرت قراءة أعمدة '{source}'.
+      what: ماذا يوجد داخل '{source}'؟
+      needs_empty: '''{source}'' لا يحتوي على أعمدة للاختيار منها.'
+    name:
+      what: ما الاسم الذي يجب إطلاقه على مجموعة البيانات هذه؟
+    joins:
+      what: كيف يجب ربط المصادر؟
+      needs: مصدران أو أكثر، مع قراءة أعمدتها.
+    sources:
+      what: ما الجدول الذي ينبغي بناء مجموعة البيانات هذه منه؟
+    storage:
+      table: جدول محفوظ
+      live: عرض مباشر
+      what: هل يجب أن يكون هذا عرضًا مباشرًا أم جدولًا محفوظًا؟
+  save:
+    invalid_definition: 'لا يمكن حفظ مجموعة البيانات هذه: {errors}'
+  column:
+    missing_column: لم تتم تسمية أي عمود.
+    missing_source: 'يحتاج العمود إلى مصدره: معرّف مجموعة بيانات، أو اتصال واسم جدول.'
+    unknown_action: '''{action}'' ليس إجراءً من إجراءات العمود. استخدم تحديد أو إلغاء التحديد.'
+  decision:
+    missing_value: يحتاج قرار '{piece}' إلى قيمة.
+    invalid_value: 'تعذّر تطبيق قرار ''{piece}'': {error}'
+    model_failed: 'تم حفظ اختيارك. تعذّر على المساعد الاستجابة: {error}'
+    unknown_piece: '''{piece}'' ليس قرارًا يمكن لنقطة النهاية هذه تطبيقه.'
+    no_connection: Your choice was saved. The assistant could not respond because no AI connection is available.
+    no_reply: تم حفظ اختيارك. استنفد المساعد جولات العمل الخاصة به دون إصدار رد — اطلب منه المتابعة، أو تحقق من المسودة في الشجرة.
+    applied: استخدم التحديد أعلاه.
+  join_suggestions:
+    invalid_sources: تحتاج اقتراحات الربط إلى قائمة مصادر، لكل منها اسم مستعار واسم ({error}).
+  panel:
+    collapsed_required: يجب أن تكون حالة طي اللوحة إما true أو false.
+  tool:
+    no_source: 'لا يوجد مصدر باسم ''{alias}''. مصادر هذه المسودة: {aliases}.'
+    no_sources_yet: لا يوجد مصدر باسم '{alias}' — لا توجد مصادر في المسودة بعد. استدعِ add_source أولاً.
+virtual_chat:
+  chat_session_not_found: جلسة الدردشة غير موجودة
+  connection_not_found: تعذر العثور على اتصال قاعدة البيانات أو تم رفض الوصول
+  introspection_failed: 'فشل الاستبطان: {error}'
+  llm_call_failed: 'فشل استدعاء نموذج اللغة الكبير: {error}'
+  llm_returned_error: أعاد نموذج اللغة الكبير رمز حالة HTTP {status_code}
+  save_success: ✅ تم حفظ مجموعة البيانات **{name}** بنجاح. يمكنك العثور عليها في قائمة مجموعات البيانات الموجودة. استخدم خيار تحرير لتحسينها أو استنساخ لإنشاء نسخة معدلة.
+  save_draft_success: '✅ تم حفظ مجموعة البيانات الافتراضية كمسودة: **{name}**. يمكنك عرضها وتحريرها في صفحة مجموعات البيانات. استخدم تبويب التعريف لتحسين SQL والصلات وأعمدة الإخراج.'
+  empty_response: لست متأكدًا من كيفية الرد على ذلك. هل يمكنك إعادة الصياغة أو تقديم مزيد من التفاصيل؟
+  save_no_sources: '⚠️ تعذر الحفظ: لم يتم استكشاف أي مصادر بيانات. حاول ذكر أسماء جداول مثل "products" أو "orders" في رسائلك السابقة.'
+  save_parse_error: '⚠️ تعذر حفظ مجموعة البيانات: {error}'
+  save_failed: '⚠️ فشل الحفظ: {error}'
+visualization_instances:
+  viz_type_id_required: معرف نوع العرض المرئي مطلوب
+  invalid_instance_id: معرف المثيل غير صالح
+  no_rendered_output: لا توجد مخرجات مُصيَّرة متاحة
+  internal_error: خطأ داخلي في الخادم
+  invalid_viz_type: نوع عرض مرئي غير صالح
+  viz_type_not_found: نوع العرض المرئي غير موجود
+  instance_not_found: المثيل غير موجود
+  unauthorized: غير مصرح
+visualization_types:
+  type_not_found: نوع العرض المرئي غير موجود
+  slug_already_exists: المعرّف النصي موجود بالفعل
+  name_and_slug_required: الاسم والمعرّف النصي مطلوبان
+  internal_error: خطأ داخلي في الخادم
+  forbidden: محظور
+test_ai:
+  endpoint_valid: نقطة النهاية على {baseUrl} صالحة.
+  internal_error: خطأ داخلي في الخادم
+  connection_timeout_local: انتهت مهلة الاتصال. هل {name} يعمل على {baseUrl}؟
+  unknown_provider: 'مزوّد غير معروف: {provider}'
+  responded_with_status: استجاب {name} بالحالة {status}
+  endpoint_v1_valid: نقطة النهاية على {baseUrl}/v1 صالحة.
+  no_endpoint: لا توجد نقطة نهاية مُهيأة لهذا المزوّد.
+  api_key_required: مفتاح API مطلوب لـ {name}.
+  connection_failed: 'فشل الاتصال: {msg}'
+  server_reachable: يمكن الوصول إلى خادم {name} على {baseUrl}.
+  fetch_failed: فشل الجلب
+ai_providers:
+  failed_to_update_provider: فشل تحديث المزوّد
+  failed_to_delete_provider: فشل حذف المزوّد
+  internal_error: خطأ داخلي في الخادم
+  forbidden: محظور
+  provider_not_found: المزوّد غير موجود
+  missing_id_or_enabled: المعرف أو علامة التفعيل مفقودة
+  missing_provider_id: معرف المزوّد مفقود
+  unauthorized: غير مصرح
+  invalid_provider_id: معرّف موفّر غير صالح.
+ai:
+  database:
+    email_sent: تم إرسال التقرير بالبريد الإلكتروني بنجاح
+filter_value_required: عملية التصفية تتطلب قيمة.
+invalid_encoding: 'ترميز غير صالح: {encoding}. يجب أن يكون أحد: {types}'
+column_required: العملية '{type}' تتطلب عمودًا.
+rename_new_name_required: عملية إعادة تسمية العمود تتطلب اسمًا جديدًا.
+filter_operator_required: عملية التصفية تتطلب معاملًا.
+invalid_target_type: 'نوع هدف غير صالح: {target_type}. يجب أن يكون أحد: {types}'
+encode_column_required: عملية الترميز تتطلب عمودًا.
+invalid_operation_type: 'نوع عملية غير صالح: {type}. يجب أن يكون أحد: {types}'
+invalid_fill_method: 'طريقة تعبئة القيم المفقودة غير صالحة: {method}. يجب أن تكون إحدى: {methods}'
+columns_required: العملية '{type}' تتطلب حقل أعمدة.
+dataclean_chat:
+  create_error: فشل في إنشاء جلسة تنظيف البيانات
+  chat_session_not_found: جلسة محادثة تنظيف البيانات غير موجودة
+  message_required: الرسالة مطلوبة
+  dataset_id_required: معرف مجموعة البيانات (datasetId) مطلوب
+  empty_response: تعذر عليّ إنشاء رد. يرجى المحاولة مرة أخرى.
+dataclean_tools:
+  no_rules_to_preview: لا توجد قواعد للمعاينة
+  no_rules_to_apply: لا توجد قواعد للتطبيق

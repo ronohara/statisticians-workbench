@@ -1,0 +1,1021 @@
+admin:
+  already_full_admin: Gebruiker is al een Volledige beheerder
+  already_group_admin: Gebruiker is al een Groepsbeheerder
+  cannot_delete_self: Kan uw eigen account niet verwijderen
+  cannot_demote_full_admin: Kan een Volledige beheerder niet degraderen
+  cannot_demote_self: U kunt uzelf niet degraderen
+  cannot_promote_example: Kan een Voorbeeldgebruiker niet promoveren
+  delete_error: Verwijderen van gebruiker mislukt
+  demote_error: Degraderen van gebruiker mislukt
+  description_required: Beschrijving mag niet leeg zijn
+  example_blocked: Voorbeeldgebruikers kunnen geen beheerdersacties uitvoeren
+  group_not_found: Groep niet gevonden
+  group_users_load_error: Laden van groepsgebruikers mislukt
+  groups_load_error: Laden van groepen mislukt
+  groups_stats_error: Laden van groepsstatistieken mislukt
+  insufficient_permissions: Onvoldoende rechten voor deze actie
+  invalid_group_id: Ongeldige group_id. Moet 00-99 zijn
+  invalid_id: Ongeldige id
+  invalid_upload_count: maxUploadCount moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+  invalid_upload_size: maxUploadSizeMB moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+  missing_fields: Vereiste velden ontbreken
+  missing_group_id: Groeps-ID ontbreekt
+  missing_id: Id ontbreekt
+  missing_model_id: Model-id ontbreekt
+  missing_provider_code: providerCode parameter ontbreekt
+  missing_user_id: userId ontbreekt
+  model_update_error: Bijwerken van model mislukt
+  models_load_error: Laden van modellen mislukt
+  no_fields: Geen geldige velden om bij te werken
+  no_group: Gebruiker heeft geen groep toegewezen
+  not_group_admin: Gebruiker is geen Groepsbeheerder
+  only_full_admin: Alleen Volledige beheerders kunnen deze actie uitvoeren
+  promote_error: Promoveren van gebruiker mislukt
+  provider_delete_error: Verwijderen van provider mislukt
+  provider_not_found: Provider niet gevonden
+  provider_update_error: Bijwerken van provider mislukt
+  providers_load_error: Laden van providers mislukt
+  slug_exists: Slug bestaat al
+  update_error: Bijwerken van gebruiker mislukt
+  user_load_error: Laden van gebruiker mislukt
+  user_not_found: Gebruiker niet gevonden
+  users_load_error: Laden van gebruikers mislukt
+  viz_type_create_error: Aanmaken van visualisatietype mislukt
+  viz_type_delete_error: Verwijderen van visualisatietype mislukt
+  viz_type_update_error: Bijwerken van visualisatietype mislukt
+  viz_types_load_error: Laden van visualisatietypen mislukt
+api:
+  user:
+    connection_not_found: Verbinding niet gevonden
+    example_update_ai: Voorbeeldgebruikers kunnen AI-verbindingen niet bijwerken
+    invalid_port: Poort moet een geheel getal zijn
+    internal_error: Interne serverfout
+    invalid_connection_id: Ongeldige verbindings-ID
+    example_blocked: Voorbeeldgebruikers kunnen deze actie niet uitvoeren
+    api_key_required: API-sleutel is vereist voor deze provider
+    example_create_ai: Voorbeeldgebruikers kunnen geen AI-verbindingen maken
+    invalid_current_password: Huidig wachtwoord is onjuist
+    connection_id_required: Verbindings-ID is vereist
+    user_not_found: Gebruiker niet gevonden
+    provider_not_found: Provider "{provider}" niet gevonden
+    connection_name_exists: Er bestaat al een verbinding met deze naam
+    missing_fields: Verplichte velden ontbreken
+    invalid_name: Naam moet een tekenreeks zijn
+    example_delete_ai: Voorbeeldgebruikers kunnen geen AI-verbindingen verwijderen
+    tuning_malformed_body: De body van het verzoek is geen geldige JSON.
+    tuning_invalid_max_tokens: De uitvoerlimiet moet een geheel aantal tokens zijn, minimaal 1.
+    tuning_invalid_temperature: De temperatuur moet een getal tussen 0 en 2 zijn.
+    tuning_connection_not_found: Onbekende AI-verbinding.
+    test_dns_failure: De hostnaam van het endpoint kon niet worden omgezet. Controleer het adres op een typefout of op een naam die alleen dit netwerk kan omzetten. Er is geen capaciteitsoordeel vastgelegd;
+      wel is vastgelegd hoe lang het duurde voordat het mislukte.
+    invalid_connect_timeout: De standaard connectietime-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal {ceiling}.
+    tuning_model_not_found: Onbekend model.
+    test_other_failure: 'Het model kon niet worden bereikt en de oorzaak werd niet herkend door dit systeem. Er is geen capaciteitsoordeel vastgelegd: {detail}'
+    test_http_status: 'De provider heeft geantwoord, maar het antwoord was een fout: {detail}. Er is geen capaciteitsoordeel vastgelegd; wat de provider zei, wordt weergegeven zodat de oorzaak duidelijk
+      is.'
+    test_connect_refused: Er luistert niets op dat adres — de server is bereikbaar, maar er antwoordde geen dienst. Controleer de poort en of de AI-server draait. Er is geen capaciteitsoordeel vastgelegd;
+      wel is vastgelegd hoe lang het duurde voordat het mislukte.
+    connect_timeout_exceeds_probe: De connectietime-out ({connect}s) mag niet langer zijn dan de testtime-out ({probe}s) — een verbinding mag er niet langer over doen om tot stand te komen dan de hele test
+      mag duren.
+    tuning_nothing_to_update: Geef ten minste één van temperature, maxTokens of timeoutSeconds op.
+    invalid_test_state: 'Ongeldig testresultaat "{state}". Toegestaan: {allowed}'
+    test_not_implemented: De test "{test}" is geregistreerd, maar heeft nog geen probe.
+    test_attribution_required: In een testresultaat moet worden vastgelegd wie de test heeft uitgevoerd.
+    test_read_timeout: Het model accepteerde het verzoek, maar antwoordde niet op tijd. Het model is mogelijk te traag voor deze host — een groot model op een CPU kan enkele minuten duren. Er is geen capaciteitsoordeel
+      vastgelegd; wel is vastgelegd hoe lang het duurde voordat het mislukte.
+    test_connect_timeout: Het endpoint heeft niet op tijd een verbinding geaccepteerd. De host is mogelijk offline, of een firewall laat het verzoek mogelijk vallen. Er is geen capaciteitsoordeel vastgelegd;
+      wel is vastgelegd hoe lang het duurde voordat het mislukte.
+    model_not_found: Model "{model}" niet gevonden voor provider "{provider}".
+    model_not_served_by_connection: Deze verbinding biedt "{model}" niet aan. De modellen ervan zijn mogelijk gewijzigd — vernieuw de verbinding of kies een ander model.
+    unknown_test_id: 'Onbekende test "{test}". Geregistreerde tests: {known}'
+    test_tls_failure: De beveiligde verbinding kon niet tot stand worden gebracht — het endpoint is mogelijk gewoon http terwijl https werd verwacht, of het certificaat ervan is mogelijk verlopen. Er is
+      geen capaciteitsoordeel vastgelegd; wel is vastgelegd hoe lang het duurde voordat het mislukte.
+    tuning_invalid_ai_timeout: De AI-tijdslimiet moet een geheel aantal seconden zijn, minimaal 1.
+    discovery_complete: 'Ontdekt {seen} model(len): {created} nieuw hier, {refreshed} al bekend, {pruned} niet meer aangeboden.'
+    test_budget_exhausted: Het model heeft niets geretourneerd omdat het zijn volledige uitvoerbudget heeft verbruikt voordat het tot een antwoord kwam. Er is geen capaciteitsoordeel vastgelegd; de duur
+      is wel vastgelegd.
+    test_reason_required: In een testresultaat moet een reden worden vastgelegd.
+    invalid_probe_timeout: De testtime-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal {ceiling}.
+  admin:
+    cannot_delete_self: Kan je eigen account niet verwijderen
+    not_group_admin: Gebruiker is geen groepsbeheerder
+    only_full_admin: Alleen volledige beheerders kunnen deze actie uitvoeren
+    settings_invalid_upload_count: Standaard maximaal aantal uploads moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    provider_delete_error: Verwijderen van provider mislukt
+    demote_error: Degraderen van gebruiker mislukt
+    cannot_demote_full_admin: Kan een volledige beheerder niet degraderen
+    settings_invalid_upload_size: Standaard maximale uploadgrootte moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    missing_user_id: Ontbrekende userId
+    already_group_admin: Gebruiker is al groepsbeheerder
+    groups_stats_error: Laden van groepsstatistieken mislukt
+    missing_model_id: Ontbrekend model-id
+    no_fields: Geen geldige velden om bij te werken
+    user_load_error: Laden van gebruiker mislukt
+    insufficient_permissions: Onvoldoende rechten voor deze actie
+    update_error: Bijwerken van gebruiker mislukt
+    missing_group_id: Ontbrekende groep-ID
+    providers_load_error: Laden van providers mislukt
+    settings_view_forbidden: Alleen volledige beheerders kunnen algemene instellingen bekijken
+    models_load_error: Laden van modellen mislukt
+    cannot_demote_self: Je kunt jezelf niet degraderen
+    invalid_group_id: Ongeldige group_id. Moet 00-99 zijn
+    already_full_admin: Gebruiker is al volledige beheerder
+    no_group: Gebruiker heeft geen groep toegewezen
+    settings_invalid_grace_period: Registratie-gratieperiode moet een positief getal zijn (uren)
+    missing_id: Ontbrekende id
+    settings_invalid_email_timeout: Time-out voor e-mailverificatie moet een positief getal zijn (uren)
+    promote_error: Promoveren van gebruiker mislukt
+    groups_load_error: Laden van groepen mislukt
+    model_update_error: Bijwerken van model mislukt
+    settings_modify_forbidden: Alleen volledige beheerders kunnen algemene instellingen wijzigen
+    example_blocked: Voorbeeldgebruikers kunnen geen beheerdersacties uitvoeren
+    settings_load_error: Laden van algemene instellingen mislukt
+    settings_invalid_max_registrations: Maximale registraties moet een positief getal of onbeperkt zijn
+    description_required: Beschrijving mag niet leeg zijn
+    group_users_load_error: Laden van groepsgebruikers mislukt
+    cannot_promote_example: Kan een voorbeeldgebruiker niet promoveren
+    invalid_upload_size: maxUploadSizeMB moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    invalid_upload_count: maxUploadCount moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    settings_save_error: Opslaan van algemene instellingen mislukt
+    settings_invalid_public_url: Ongeldig openbaar URL-formaat
+    provider_not_found: Provider niet gevonden
+    missing_fields: Ontbrekende verplichte velden
+    settings_invalid_email_sender: Ongeldig e-mailadresformaat van afzender
+    delete_error: Gebruiker verwijderen mislukt
+    provider_update_error: Provider bijwerken mislukt
+    user_not_found: Gebruiker niet gevonden
+    model_not_found: Model niet gevonden
+    viz_type_not_found: Visualisatietype niet gevonden
+    invalid_viz_type_field: Ongeldige waarde voor veld visualisatietype
+    demote_success: Gebruiker {name} is gedegradeerd van Groepsbeheerder
+    promote_success: Gebruiker {name} is gepromoveerd tot Groepsbeheerder
+    invalid_id: Ongeldige id
+    settings_invalid_platform_upload_size: De maximale uploadgrootte van het platform moet een niet-negatief geheel getal zijn (0 voor onbeperkt).
+    users_load_error: Gebruikers laden mislukt.
+    viz_type_create_error: Visualisatietype aanmaken mislukt.
+    viz_type_update_error: Visualisatietype bijwerken mislukt.
+    slug_exists: Slug bestaat al.
+    instance_exists: Type kan niet worden verwijderd omdat er {count} gekoppelde instantie(s) zijn.
+    viz_type_delete_error: Visualisatietype verwijderen mislukt.
+    viz_types_load_error: Visualisatietypen laden mislukt.
+    instance_in_use: Kan type niet verwijderen omdat het gekoppelde instanties heeft.
+    settings_demo_mode_requires_licence: Demomodus kan niet worden uitgeschakeld zonder een geldige licentie.
+    settings_invalid_registration_mode: Registratiemodus moet een van 0, 1, 2 of 4 zijn.
+    invalid_email: Ongeldig e-mailadresformaat.
+    settings_not_found: Algemene instellingen niet gevonden.
+    create_user_error: Gebruiker aanmaken mislukt.
+    email_exists: E-mailadres bestaat al.
+    users_demo_upload_count_limit: In demomodus moet het maximale aantal uploads voor een gebruiker tussen 1 en 5 liggen.
+    settings_demo_upload_count_limit: In demomodus moet het standaard maximale aantal uploads tussen 1 en 5 liggen.
+    users_demo_upload_size_limit: In demomodus moet de maximale uploadgrootte voor een gebruiker tussen 1 en 5 MB liggen.
+    settings_demo_upload_size_limit: In demomodus moet de standaard maximale uploadgrootte tussen 1 en 5 MB liggen.
+    example_user_password_blocked: Wachtwoorden van voorbeeldgebruikers kunnen niet door een beheerder worden ingesteld.
+    invalid_admin_password: Het beheerderswachtwoord is onjuist.
+    settings_invalid_probe_timeout: De standaard testtime-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal {ceiling}.
+    tuning_reset_error: De standaardwaarden voor AI-tuning konden niet worden gereset.
+    settings_invalid_ai_timeout: De AI-tijdslimiet moet een geheel aantal seconden zijn, minimaal 1.
+    settings_invalid_temperature: De temperatuur moet een getal tussen 0 en 2 zijn.
+    settings_invalid_slow_threshold: De limiet voor trage modellen moet een geheel aantal seconden zijn, minimaal 1.
+    settings_invalid_connect_timeout: De standaard connectietime-out moet een geheel aantal seconden zijn, minimaal 1 en maximaal {ceiling}.
+    field_not_owned: 'Dit veld is niet ingesteld op deze pagina. {endpoint}. Overtredende velden: {fields}'
+    settings_invalid_max_tokens: De uitvoerlimiet moet een geheel aantal tokens zijn, minimaal 1.
+  auth:
+    example_user_reset_blocked: Wachtwoordreset is uitgeschakeld voor voorbeeldgebruikers
+    missing_email: E-mailadres vereist
+    user_not_found: Gebruiker niet gevonden
+    missing_fields: Ontbrekende velden
+    example_user_forgot_blocked: Wachtwoordreset is uitgeschakeld voor voorbeeldgebruikers
+    token_expired: Token is verlopen
+    invalid_token: Ongeldig of verlopen token
+    email_already_verified: E-mailadres al geverifieerd
+    unauthorized: Niet geautoriseerd
+    internal_error: Interne serverfout
+    invalid_current_password: Huidig wachtwoord is onjuist
+    example_user_blocked: Wachtwoordwijzigingen zijn uitgeschakeld voor voorbeeldgebruikers
+    not_authenticated: Niet geauthenticeerd.
+  register:
+    settings_not_found: Algemene instellingen niet gevonden
+    email_exists: E-mailadres bestaat al
+    missing_fields: Ontbrekende velden
+    internal_error: Interne serverfout
+    invalid_email: Ongeldig e-mailformaat
+    limit_reached: Registratielimiet bereikt (maximaal {max_reg} gebruikers).
+    registration_disabled: Zelfregistratie is uitgeschakeld. Neem contact op met een beheerder.
+  settings:
+    example_blocked: Voorbeeldgebruikers kunnen instellingen niet bewerken
+    save_failed: Opslaan van instellingen mislukt
+    load_failed: Laden van instellingen mislukt
+    user_not_found: Gebruiker niet gevonden
+    invalid_default_ai_connection: Ongeldige standaard AI-verbinding
+    invalid_slow_threshold: De limiet voor trage modellen moet een geheel aantal seconden zijn, minimaal 1.
+  profile:
+    name_required: Naam is verplicht
+    invalid_name: Naam moet een tekenreeks zijn
+    fetch_failed: Ophalen van profiel mislukt
+    update_failed: Bijwerken van profiel mislukt
+  global_settings_load_error: Interne serverfout
+  languages_load_error: Talen laden mislukt.
+  translations_load_error: Vertalingen laden mislukt.
+auth:
+  account_deleted: Dit account is verwijderd.
+  email_not_verified: E-mailadres niet geverifieerd. Controleer uw inbox en SPAM-map.
+  example_user_blocked: Wachtwoordfuncties zijn uitgeschakeld voor voorbeeldgebruikers
+  example_user_forgot_blocked: Wachtwoordreset is uitgeschakeld voor voorbeeldgebruikers
+  example_user_reset_blocked: Wachtwoordreset is uitgeschakeld voor voorbeeldgebruikers
+  internal_error: Interne serverfout
+  invalid_credentials: Ongeldige inloggegevens
+  invalid_current_password: Huidig wachtwoord is onjuist
+  invalid_token: Ongeldig of verlopen token
+  invalid_token_error: 'Ongeldig token: {error}'
+  invalid_token_missing_user_id: 'Ongeldig token: gebruikers-ID ontbreekt'
+  missing_email: E-mailadres vereist
+  missing_fields: Velden ontbreken
+  password_changed: Wachtwoord succesvol gewijzigd
+  password_validation_failed: Wachtwoordvalidatie mislukt
+  reset_email_sent: E-mail voor wachtwoordreset verzonden
+  token_expired: Token is verlopen
+  unauthorized: Ongeautoriseerd
+  user_not_found: Gebruiker niet gevonden
+  login_invalid_credentials: Ongeldig e-mailadres of wachtwoord.
+chat:
+  ai_provider_error: 'AI-providerfout: {error}'
+  connection_error: 'Verbindingsfout: {error}'
+  connection_not_found: AI-verbinding niet gevonden of niet toegankelijk
+  delete_failed: 'Verwijderen van chat mislukt: {error}'
+  generate_title_failed: 'Genereren van titel mislukt: {error}'
+  get_failed: 'Ophalen van chat mislukt: {error}'
+  internal_error: 'Interne serverfout: {error}'
+  list_failed: 'Lijsten van chats mislukt: {error}'
+  send_failed: 'Verzenden van bericht mislukt: {error}'
+  title_updated: Chattitel succesvol bijgewerkt
+  update_failed: 'Bijwerken van chat mislukt: {error}'
+  not_found: Chat '{id}' niet gevonden
+  not_found_or_not_owned: Chat '{id}' niet gevonden of je bent niet de eigenaar
+  deleted: Chat '{id}' succesvol verwijderd
+  ai_repeat_loop: Het AI-model liep vast en kon het antwoord niet afmaken. Probeer het opnieuw.
+  ai_timeout: Het AI-model doet er te lang over om te reageren. Probeer het opnieuw.
+  ai_service_failed: De AI-service reageerde niet. Probeer het opnieuw.
+  timeout_out_of_range: De AI-tijdslimiet moet tussen 1 en {max_seconds} seconden liggen.
+common:
+  back: Terug
+  cancel: Annuleren
+  cannot_undo: Deze actie kan niet ongedaan worden gemaakt.
+  clear: Wissen
+  copy: Kopiëren
+  delete: Verwijderen
+  deleting: Verwijderen...
+  dismiss: Sluiten
+  edit: Bewerken
+  generating: Genereren...
+  loading: Laden...
+  next: Volgende
+  restoring: Herstellen...
+  save: Opslaan
+  saving: Opslaan...
+  sending: Verzenden...
+  testing: Testen...
+  unknown: Onbekend
+  uploading: Uploaden...
+  verifying: Verifiëren...
+  view: Weergeven
+database:
+  connection_failed: 'Verbinding met database mislukt: {error}'
+  decryption_failed: 'Ontsleutelen van verbindingswachtwoord mislukt: {error}'
+  insert_failed: 'Databasefout: {error}'
+  pool_not_initialized: Databasepool niet geïnitialiseerd
+  query_failed: 'Databasequery mislukt: {error}'
+  type_not_supported: 'Niet-ondersteund databasetype: {type}'
+  connection_not_found: Databaseverbinding niet gevonden of niet toegankelijk
+  feature_required: Dit databasetype is niet ingeschakeld door uw licentie.
+datasets:
+  define:
+    connection_details_not_found: Verbindingsgegevens niet gevonden
+    connection_not_found: Databaseverbinding niet gevonden of niet toegankelijk
+    connection_required: connectionId is vereist
+    connection_test_failed: Test van databaseverbinding mislukt
+    database_connection_failed: 'Verbinding met database mislukt: {error}'
+    name_required: Datasetnaam is vereist
+    table_name_required: tableName is vereist
+    verification_failed: 'Verifiëren van tabel/view mislukt: {error}'
+    invalid_source_type: sourceType moet 'table' of 'view' zijn
+    table_access_failed: 'Toegang tot tabel ''{table}'' mislukt: {error}'
+    preview_failed: 'Lezen van gegevens uit tabel ''{table}'' mislukt: {error}'
+    dataset_created: Dataset '{name}' succesvol gedefinieerd
+    permission_denied: 'Toestemming geweigerd: gebruiker ''{user}'' heeft geen toegang tot tabel ''{table}''. Verleen SELECT-rechten.'
+    table_not_found: Tabel/view '{table}' niet gevonden in database '{database}'
+    connection_timed_out: Verbinding verlopen na 15 seconden
+    connection_successful: Verbinding geslaagd
+    connection_missing_db_note: 'Let op: PostgreSQL retourneert deze fout voor ontbrekende databases EN voor onvoldoende rechten. Als de database bestaat, controleer dan of de gebruiker CONNECT-recht op
+      de database heeft.'
+  delete:
+    success: Dataset '{id}' succesvol verwijderd
+  describe:
+    ai_connection_error: 'AI-verbindingsfout: {error}'
+    empty_description: Gegenereerde beschrijving is leeg. Controleer de configuratie van de AI-provider.
+    generation_failed: 'Genereren van beschrijving mislukt: {error}'
+    description_generated: Beschrijving succesvol gegenereerd voor '{name}'
+    timeout_out_of_range: De AI-tijdslimiet moet tussen 1 en {max_seconds} seconden liggen.
+  example_blocked:
+    create: Voorbeeldgebruikers kunnen geen datasets aanmaken
+    delete: Voorbeeldgebruikers kunnen geen datasets verwijderen
+    update: Voorbeeldgebruikers kunnen geen datasets bijwerken
+  list_error: Laden van datasets mislukt
+  not_found: Dataset niet gevonden
+  not_owner: U kunt alleen uw eigen datasets bewerken
+  preparation:
+    duplicate_name: Een voorbereidingsregel met deze naam bestaat al voor deze dataset
+    no_updates: Geen velden om bij te werken
+    preview_failed: 'Voorbeeldweergave van regel mislukt: {error}'
+    rule_deleted: Voorbereidingsregel succesvol verwijderd
+    rule_in_use: 'Deze voorbereidingsregel wordt gebruikt door {count} recept(en): {names}. Verwijder eerst de recepten.'
+    rule_not_found_or_not_owned: Voorbereidingsregel niet gevonden of u bezit deze niet
+    rule_updated: Voorbereidingsregel succesvol bijgewerkt
+    schema_failed: 'Lezen van datasetschema mislukt: {error}'
+    rule_not_found: Voorbereidingsregel '{id}' niet gevonden voor deze dataset
+    rule_created: Voorbereidingsregel '{name}' succesvol aangemaakt
+    already_exists: Er bestaat al een voorbereidingsregel met deze bewerkingen ('{name}')
+  schema:
+    external_failed: 'Ophalen van schema uit externe database mislukt: {error}'
+    from_preview: Schema afgeleid van voorbeeldgegevens (eerste 10 rijen)
+    load_error: 'Schema kon niet worden geladen: {error}'
+    table_missing: Tabel bestaat niet meer. Upload de dataset opnieuw.
+    not_implemented: Schema-ontdekking voor dit datasettype '{type}' is nog niet geïmplementeerd
+    connection_unreachable: 'Verbinding {connection_id} is onbereikbaar: {error}'
+    row_count_not_computed: Het aantal rijen wordt niet berekend voor een virtuele dataset zonder de join uit te voeren.
+  share:
+    error: Bijwerken van delen mislukt
+    toggled: Delen voor dataset '{id}' succesvol bijgewerkt
+  unknown_source: 'Onbekend brontype: {source_type}'
+  upload:
+    error: Uploaden van dataset mislukt
+    file_processing_failed: 'Verwerken van bestand mislukt: {error}'
+    limit_reached_count: Uploadlimiet bereikt. Maximaal {count} datasets toegestaan.
+    limit_reached_size: Uploadlimiet voor grootte overschreden. Maximaal {size} MB totale opslag.
+    unsupported_file: 'Niet-ondersteund bestandstype. Upload alstublieft een van de volgende: {extensions}'
+    user_not_found: Gebruiker niet gevonden
+    success: Dataset '{name}' succesvol geüpload
+    dbf_field_unsupported: 'Dit .dbf-bestand declareert veldtypen die niet kunnen worden gelezen: {types}'
+    dbf_memo_unsupported: Dit .dbf-bestand bevat memovelden. Hun waarden worden opgeslagen in een apart bestand, dat niet kan worden meegenomen bij het uploaden van één enkel bestand.
+  transforms:
+    in_use: 'Deze transformatie wordt gebruikt door {count} recept(en): {names}. Verwijder eerst de recepten.'
+    not_found_or_not_owned: Transformatie niet gevonden of u bent niet de eigenaar
+    clone_forbidden: U hebt geen toegang om deze transformatie te klonen
+    updated: Transformatie succesvol bijgewerkt
+    duplicate_name: Er bestaat al een transformatie met deze naam voor deze dataset
+    no_updates: Geen velden om bij te werken
+    deleted: Transformatie succesvol verwijderd
+    not_accessible: Dataset '{id}' niet gevonden of niet toegankelijk
+    not_found: Transformatie '{id}' niet gevonden voor deze dataset
+    cloned: Transformatie gekloond als '{name}'
+    created: Transformatie '{name}' succesvol aangemaakt
+    not_owned: Dataset '{id}' niet gevonden of u bent niet de eigenaar
+    already_exists: Er bestaat al een transformatie met deze bewerkingen ('{name}')
+  browse:
+    preview_failed: 'Voorbeeldweergave van tabel mislukt: {error}'
+    discover_failed: 'Tabellen ontdekken mislukt: {error}'
+    columns_failed: 'Ophalen van kolommen mislukt: {error}'
+  auto_create:
+    connection_id_required: connectionId is vereist
+    connection_not_found: Verbinding niet gevonden
+    no_tables_discovered: Geen tabellen of views gevonden. Controleer of de databaseserver actief en toegankelijk is.
+    created: Datasets aangemaakt.
+  not_owned: Dataset '{id}' niet gevonden of je bent niet de eigenaar
+  not_found_2: Dataset niet gevonden
+  unread:
+    definition_too_deep: Deze dataset verwijst meer dan vijf niveaus diep naar zichzelf.
+    unreachable: Kan deze bron niet bereiken. Controleer de host en poort en probeer het opnieuw.
+    schema_error: De bron heeft geantwoord, maar de kolommen konden niet worden gelezen.
+    no_permission: Dit account kan die bron niet lezen.
+    definition_incomplete: Deze bron vermeldt noch een dataset noch een verbindingstabel.
+    incomplete: De controle is niet op tijd voltooid. Probeer het opnieuw of verhoog de verbindingstime-out.
+    no_database: Die database bestaat niet op de server.
+    auth_failed: De database weigerde de aanmeldgegevens van dit account.
+dbdesign:
+  analysis:
+    naming:
+      rename_column_snake_case: Hernoem kolom naar kleine letters met underscores voor consistentie
+      rename_table_snake_case: Hernoem tabel naar kleine letters met underscores voor consistentie
+      reserved_keyword_column: Kolom '{column}' is een gereserveerd SQL-sleutelwoord
+      mixed_case_column: Kolom '{column}' gebruikt gemengde hoofd- en kleine letters — snake_case aanbevolen
+      reserved_keyword_table: Tabelnaam '{table}' is een gereserveerd SQL-trefwoord
+      rename_table_reserved: Hernoem tabel '{table}' om conflicten met gereserveerde SQL-woorden te voorkomen
+      mixed_case_table: Tabelnaam '{table}' gebruikt gemengde hoofd- en kleine letters — snake_case aanbevolen
+      rename_column_reserved: Hernoem kolom '{column}' om conflicten met gereserveerde SQL-woorden te voorkomen
+    normalisation:
+      multiple_address: Meerdere adresgerelateerde kolommen ({count}) gedetecteerd
+      repeating_group: 'Herhalende groep gedetecteerd: {columns}'
+      separate_address_table: Overweeg een aparte adrestabel aan te maken met FK naar {table}
+      create_separate_table: Maak een aparte tabel voor '{base}'-waarden met een FK naar {table}
+    semistructured:
+      controlled_vocab: Kolom {column} bevat een gecontroleerde woordenlijst van {count} verschillende waarden
+      create_ref_table: Maak een referentietabel voor waarden in {column} om de tabel {table} te normaliseren
+    data_types:
+      add_not_null: Voeg een NOT NULL-beperking toe aan '{column}'
+      add_check_constraint: Voeg een CHECK-beperking toe of gebruik een ENUM-type voor '{column}' met beperkte geldige waarden
+      set_max_length: Overweeg een maximale lengte in te stellen voor '{column}' om te grote gegevens te voorkomen
+      short_text_enum: Tekstkolom '{column}' heeft een maximale lengte van {max_len} — overweeg een ENUM- of CHECK-beperking
+      unbounded_varchar: Onbegrensde VARCHAR-kolom '{column}'
+      allows_null: Kolom '{column}' laat NULL toe — overweeg een NOT NULL-beperking
+    indexing:
+      missing_fk_index: Foreign key-kolom '{column}' heeft geen index
+    relationships:
+      missing_fk: Kolom '{column}' ziet eruit als een foreign key maar heeft geen FK-beperking
+      add_fk: Overweeg een FK-beperking toe te voegen als '{column}' naar een andere tabel verwijst
+  analyze_error: 'Analyseren van database mislukt: {error}'
+  connection_error: 'Verbinding met database mislukt: {error}'
+  description: Analyseer en verbeter uw databaseontwerp met AI.
+  no_connection: Geen databaseverbinding beschikbaar. Maak eerst verbinding met een database.
+  not_implemented: Deze functie komt binnenkort.
+  pdf:
+    categories: Categorieën
+    code_systems: Codesystemen
+    col_default: Standaard
+    col_name: Kolom
+    col_nullable: Nullable
+    col_pk: PK
+    col_type: Type
+    columns: Kolommen
+    confidence: Betrouwbaarheid
+    header: Rapport Databaseontwerpanalyse
+    high: Hoog
+    issues_count: Problemen ({count})
+    issues_found: Problemen gevonden
+    low: Laag
+    medium: Gemiddeld
+    'no': NEE
+    none: Geen
+    normalisation_title: Normalisatiesuggesties ({count})
+    page: Pagina {current}/{total}
+    pk: PK
+    proposed_table: Voorgestelde tabel
+    risk_breakdown: Risicoverdeling
+    rows: Rijen
+    schema_title: Schema ({count} tabellen)
+    semi_structured_title: Analyse van semi-gestructureerde gegevens ({count} kolommen)
+    subtitle: 'Database: {db_name} ({db_type}) | Verbinding: {conn_name} (ID: {conn_id})'
+    summary: Samenvatting
+    tables: Tabellen
+    title: Databaseontwerpanalyse
+    top_keywords: Top trefwoorden
+    top_recommendations: Top aanbevelingen
+    value: Waarde
+    'yes': JA
+    domain_label: ISIC-domeinclassificaties
+    integration_title: AI-integratiebevindingen
+    unsupported_label: Niet ondersteund
+    implicit_relationships_label: Impliciete relaties
+    proposed_ddl_label: Voorgestelde DDL
+    missing_dimensions_label: Ontbrekende dimensies
+    evidence_label: Bewijs
+    column_meanings_label: Kolombetekenissen
+    partial_label: Gedeeltelijk
+    rationale_label: Onderbouwing
+    code_systems_label: Gedetecteerde codesystemen
+    top_actions_label: Topprioriteitsacties
+    supported_label: Ondersteund
+    semantic_subtitle: Door AI afgeleide kolombetekenissen, ISIC-domeinclassificaties en detecties van codesystemen.
+    research_capabilities_label: Onderzoeksmogelijkheden
+    confidence_label: Betrouwbaarheid
+    health_score_title: Gezondheidsscore
+    relationship_label: Relatie
+    health_score_subtitle: Algehele databasegezondheid beoordeeld door Schema AI. 0 = kritieke structurele problemen, 100 = productieklaar.
+    semantic_title: AI-semantische analyse
+    integration_subtitle: Impliciete relaties, onderzoeksmogelijkheden en ontbrekende dimensies gedetecteerd door Integration AI.
+    health_score_label: 'Databasegezondheidsscore: {score}/100'
+    ai_disclaimer: Door AI gegenereerde analyse — beoordeel voordat u deze in productie toepast.
+    table_purposes_label: Tabeldoelen
+    ai_skipped_warning: AI-analyse overgeslagen
+  question_required: Vraag is verplicht
+  report_data_required: Rapportgegevens zijn verplicht
+  schema_error: 'Schema-extractie mislukt: {error}'
+  title: Databaseontwerpassistent
+  unsupported_type: Alleen PostgreSQL- en MySQL-databases worden ondersteund
+  invalid_token: Ongeldig token
+  pdf_error: 'Genereren van PDF mislukt: {error}'
+  schema_error_2: 'Decoderen van databasewachtwoord mislukt: {error}'
+  rag_error: 'RAG-query mislukt: {error}'
+  rag_not_available: RAG-zoekopdracht is alleen beschikbaar voor PostgreSQL-databases. MySQL-tekstzoekopdracht is gepland voor een toekomstige release.
+  unsupported_type_2: Alleen PostgreSQL-, MySQL- en MS SQL Server-databases worden ondersteund
+  email_pdf:
+    no_email: Geen e-mailadres gevonden voor je account
+    invalid_body: Ongeldige verzoekbody
+    send_failed: Het is niet gelukt om het rapport te e-mailen. Probeer het opnieuw.
+  llm:
+    timeout: LLM-verzoek is verlopen na {timeout_seconds} s.
+    http_error: LLM retourneerde HTTP {status_code}.
+    unknown_error: Onbekende LLM-fout.
+    no_ai_provider: Er is geen AI-provider geconfigureerd. Verbind een AI-provider via Instellingen → AI-verbindingen.
+    empty_content: LLM retourneerde lege inhoud.
+    no_model: Geen AI-model geconfigureerd. Stel een standaardmodel in op de AI-verbinding of geef een expliciet model op.
+  stream_schema_done: 'Schema geëxtraheerd: {tables} tabellen, {columns} kolommen'
+  stream_normalisation_start: Normalisatiesuggesties genereren...
+  stream_ai_schema_start: 'Schema-AI: {tables} tabellen analyseren...'
+  stream_normalisation_timeout: 'Normalisatie: time-out na 90 seconden'
+  analysis_cancelled: Analysestream geannuleerd (client verbroken)
+  ai_skipped_reason: 'Dit rapport bevat alleen mechanische analyse. De AI-ondersteunde analyse is overgeslagen omdat de database {count} problemen heeft opgeleverd (limiet: {limit}). Bekijk de mechanische
+    bevindingen hieronder, ruim de database op en voer de analyse opnieuw uit met AI voor contextbewuste uitleg, semantische inzichten en normalisatiesuggesties.'
+  ai_skipped_message: 'AI-analyse overgeslagen — {count} problemen gevonden (limiet: {limit}). Bekijk de mechanische bevindingen hieronder, maak de database schoon en voer daarna opnieuw uit met AI.'
+  stream_connected: 'Verbonden met {db_type}: {db_name}'
+  stream_normalisation_done: 'Normalisatie: {count} suggesties'
+  stream_ai_semantic_done: 'Semantische AI: {columns} kolombetekenissen, {domains} ISIC-domeinen'
+  analysis_complete: Analyse voltooid
+  stream_unsupported_type: 'Niet-ondersteund databasetype: {db_type}'
+  stream_ai_schema_done: 'Schema-AI: gezondheidsscore {score}/100'
+  stream_ai_integration_done: 'Integratie-AI: {relationships} relaties, {capabilities} mogelijkheden'
+  stream_mechanical_done: 'Mechanische analyse: {count} problemen gevonden'
+  stream_ai_done: 'AI-analyse voltooid — status: {status}'
+  stream_semistructured_start: Semi-gestructureerde kolommen analyseren...
+  stream_ai_semantic_start: 'Semantische AI: {tables} tabellen analyseren...'
+  stream_ai_integration_start: 'Integratie-AI: relaties detecteren...'
+  stream_connecting: Verbinding maken met database...
+  stream_ai_start: AI-analyse starten — 3 specialisten parallel...
+  stream_mechanical_start: Mechanische analyse uitvoeren...
+  stream_analysis_failed: 'Analyse mislukt: {error}'
+  stream_extracting_schema: Schema extraheren uit {db_type}...
+  stream_normalisation_skipped: 'Normalisatie: overgeslagen ({error})'
+groups:
+  admin_required: Beheerderstoegang vereist
+  cannot_delete_self: Kan eigen account niet verwijderen
+  description_required: Beschrijving mag niet leeg zijn
+  insufficient_permissions: Onvoldoende rechten om groepen te beheren
+  invalid_group_id: Ongeldige user_group. Moet 00-99 zijn
+  update_failed: Groep bijwerken mislukt
+  user_not_found: Gebruiker niet gevonden
+  not_found: Groep '{id}' niet gevonden
+  update_success: Beschrijving van groep '{id}' bijgewerkt
+  not_authorized: Niet gemachtigd om de groep van deze gebruiker te bekijken
+  user_updated: Groep van gebruiker succesvol bijgewerkt
+  resource_not_found: Resource niet gevonden.
+  missing_id: Ontbrekende resource-id.
+recipes:
+  columns_required: Selecteer ten minste één kolom
+  data_selection_error: 'Gegevensselectie mislukt: {error}'
+  dataset_not_found: Dataset niet gevonden
+  dataset_required: Selecteer een dataset
+  delete_error: 'Verwijderen van recept mislukt: {error}'
+  execute_error: 'Uitvoeren van recept mislukt: {error}'
+  execution_completed: Uitvoering succesvol voltooid
+  execution_failed: Uitvoering mislukt
+  execution_load_error: 'Laden van uitvoering mislukt: {error}'
+  executions_load_error: 'Laden van uitvoeringen mislukt: {error}'
+  invalid_stage: Ongeldige fase voor recept
+  invalid_stage_type: 'Ongeldig fasetype: {type}. Moet een van de volgende zijn: {types}'
+  load_datasets_error: 'Laden van datasets mislukt: {error}'
+  load_error: 'Laden van recepten mislukt: {error}'
+  name_required: Receptnaam is verplicht
+  no_columns_exist: Geen van de geselecteerde kolommen bestaan in de dataset
+  no_dataset: Geen dataset gekoppeld aan dit recept
+  no_stages: Recept moet minstens één fase hebben
+  no_updates: Geen velden om bij te werken
+  preparation:
+    no_db_pool: Databasepool niet beschikbaar voor voorbereidingsfase
+    all_rules_failed: 'Alle regels mislukt: {errors}'
+    rules_applied: '{count} voorbereidingsregels toegepast'
+    rule_failed: 'Regel ''{rule_id}'': {error}'
+    rule_not_found: Regel '{rule_id}' niet gevonden
+  scatter_two_columns: Spreidingsdiagram vereist minstens twee kolommen
+  scatter_two_numeric: Spreidingsdiagram vereist twee numerieke kolommen
+  schema_error: 'Laden van kolomschema mislukt: {error}'
+  unknown_stage: 'Onbekend fasetype: {stage_type}'
+  unsupported_chart_type: 'Niet-ondersteund grafiektype: {chart_type}'
+  update_error: 'Bijwerken van recept mislukt: {error}'
+  visualisation_columns_required: Ten minste één kolom is vereist voor visualisatie
+  visualisation_error: 'Visualisatie mislukt: {error}'
+  visualisation_generated: Visualisatie succesvol gegenereerd
+  execution:
+    error: 'Fout bij uitvoeren van recept: {error}'
+    unknown_stage: 'Onbekend stadiumtype: {stage_type}'
+    preparation_failed: Voorbereidingsfase mislukt
+    preparation_error: 'Voorbereidingsfase mislukt: {error}'
+  transforms:
+    disconnect_success: Transformatie losgekoppeld van recept
+    load_error: Laden van gekoppelde transformaties mislukt
+    connect_success: Transformatie gekoppeld aan recept
+    not_found: Transformatie '{id}' niet gevonden of behoort niet tot de dataset van dit recept
+    dataset_mismatch: Transformatie '{id}' behoort niet tot dataset '{dataset_id}'
+  field_label:
+    dependentColumn: Afhankelijke / uitkomstkolom
+    xColumn: X-as kolom
+    yColumn: Y-as kolom
+    responseColumn: Responskolom (numerieke meting)
+    independentColumns: Onafhankelijke / voorspellerkolommen
+    factorColumn: Factorkolom (groepeervariabele)
+    responseColumn2: Tweede responskolom (gepaarde meting)
+    categoryColumn: Categoriekolom (labels)
+    factorColumn2: Tweede factorkolom (groepeervariabele)
+    columns: Kolommen
+  requirement:
+    descriptive: ten minste 1 numerieke kolom
+    anova_one_way: 1 categorische kolom (factor) en 1 numerieke kolom (respons)
+    correlation: ten minste 2 numerieke kolommen
+    line: 2 numerieke kolommen (x en y)
+    t_test_paired: 2 numerieke kolommen (gepaarde metingen)
+    pie: 1 categorische kolom (labels)
+    scatter: 2 numerieke kolommen (x en y)
+    linear_regression: ten minste 2 numerieke kolommen (voorspellers en uitkomst)
+    table: willekeurige kolommen
+    none: geen uitvoer vereist
+    anova_two_way: 2 categorische kolommen (twee factoren) en 1 numerieke kolom (respons)
+    histogram: 1 numerieke kolom (x-as)
+    chi_square: 2 categorische kolommen
+    t_test_independent: 1 categorische kolom (voor groepen) en 1 numerieke kolom (om te vergelijken)
+    distribution: 1 numerieke kolom
+    bar: 1 categorische kolom (x-as) en 1 numerieke kolom (y-as)
+    hbar: 1 categorische kolom (y-as) en 1 numerieke kolom (x-as)
+    area: 2 numerieke kolommen (x en y)
+    donut: 1 categorische kolom (labels)
+  column_type:
+    numeric: numeriek
+    categorical: categorisch
+  result_type:
+    tabular: tabellarisch
+    numeric: numeriek
+  validation:
+    failed: 'Receptvalidatie mislukt: {errors}'
+    insufficient_columns_output: 'Deze dataset heeft niet de juiste kolomtypen voor ''{output}'' ({requirement}). Dataset heeft: {columns}. Kies een dataset met {requirement} of schakel over naar: {options}.'
+    missing_algo_field: Bij analyse '{algo}' ontbreekt de instelling '{field}' ({label}). Selecteer een kolom voor '{field}' in het analysepaneel.
+    missing_output_field: Bij uitvoer '{output}' ontbreekt de instelling '{field}' ({label}). Selecteer een kolom voor '{field}' in het uitvoerpaneel.
+    incompatible_algo_output: 'Analyse ''{algo}'' produceert {result_type}-resultaten en kan niet worden weergegeven als een ''{output}''-grafiek. Wijzig het uitvoertype naar een type dat compatibel is
+      met ''{algo}'': {options}.'
+    insufficient_columns_algo: 'Deze dataset heeft niet de juiste kolomtypen voor ''{algo}'' ({requirement}). Dataset heeft: {columns}. Kies een dataset met {requirement}, of schakel over naar: {options}.'
+    unknown_columns: 'De fase {stage} verwijst naar kolom(men) ''{columns}'' die niet bestaan in deze dataset. Beschikbare kolommen: {available}. Selecteer uit de beschikbare kolommen.'
+    unknown_algorithm: '''{type}'' is geen erkende analysemethode. Kies een van: {options}.'
+    unknown_output: '''{type}'' is geen erkend uitvoertype. Kies een van: {options}.'
+    wrong_column_type: Kolom '{column}' moet {expected} zijn voor '{field}' ({label}).
+    algorithm_required: Er is geen analysemethode geselecteerd. Kies er een in het analysepaneel — een recept heeft een statistiekfase met een algoritme nodig.
+    unknown_field: '''{field}'' is geen herkende instelling voor ''{type}''. Herkende instellingen: {options}.'
+  ai_session:
+    load_error: Laden van AI-receptsessie mislukt
+    delete_error: Verwijderen van AI-receptsessie mislukt
+    not_found: AI-receptsessie niet gevonden
+    unauthorized: U hebt geen toegang tot deze AI-receptsessie
+    create_error: Aanmaken van AI-receptsessie mislukt
+    save_error: Opslaan van recept uit AI-sessie mislukt
+  not_found: Recept '{id}' niet gevonden
+  share:
+    enabled: Recept succesvol gedeeld
+    disabled: Recept is nu privé
+  execution_not_found: Uitvoering '{id}' niet gevonden
+  not_owned: Recept '{id}' niet gevonden of je bent niet de eigenaar
+  update_success: Recept '{id}' succesvol bijgewerkt
+  delete_success: Recept '{id}' succesvol verwijderd
+  create_success: Recept '{name}' succesvol aangemaakt
+  technique_linear_regression: Lineaire regressie
+  technique_anova_two_way: Tweeweg-ANOVA
+  technique_chi_square: Chi-kwadraattoets
+  technique_anova_one_way: Eenweg-ANOVA
+  technique_t_test_independent: Onafhankelijke t-toets
+  technique_correlation: Correlatiematrix
+  technique_t_test_paired: Gepaarde t-toets
+  technique_descriptive: Beschrijvende statistiek
+  histogram_numeric: Histogram vereist een numerieke kolom
+  histogram_no_columns: Histogram vereist ten minste één kolom
+  distribution_no_columns: Distributiediagram vereist ten minste één kolom
+  stage_not_implemented: '{stage_type} fase binnenkort'
+  scoreboard:
+    technique_unknown:
+      what: Kies een bekende analysemethode
+    output_unknown:
+      what: Kies een bekend uitvoertype
+    technique_fields:
+      what: Kies de vereiste kolommen
+    output:
+      what: Kies een uitvoertype
+    output_fields:
+      what: Kies de uitvoerkolommen
+    name:
+      what: Geef het recept een naam
+    dataset:
+      what: Selecteer een dataset
+    output_incompatible:
+      what: Kies een compatibel uitvoertype
+    technique:
+      what: Kies een analysemethode
+  chip:
+    heading:
+      output: Welke uitvoer?
+      columns: Welke kolommen?
+      technique: Welke analysemethode?
+statistics:
+  anova_computation_failed: 'Tweeweg-ANOVA-berekening mislukt: {error}'
+  anova_needs_three_groups: Eenweg-ANOVA vereist 3 of meer groepen ({n} gevonden). Gebruik voor 2 groepen de onafhankelijke t-toets.
+  compute_failed: 'Berekening van statistieken mislukt: {error}'
+  each_group_two_observations: Elke groep moet minstens 2 waarnemingen hebben
+  group_column_required_anova: Een categorische groepkolom met 3 of meer niveaus is vereist voor eenweg-ANOVA
+  group_column_required_ttest: Een categorische groepkolom met precies twee niveaus is vereist voor de onafhankelijke t-toets
+  need_five_observations_chi: Minstens 5 volledige waarnemingen nodig
+  need_observations_regression: Minstens {n} volledige waarnemingen nodig
+  need_ten_observations_anova: Minstens 10 volledige waarnemingen nodig voor tweeweg-ANOVA
+  need_three_pairs: Minstens 3 volledige paren nodig voor gepaarde t-toets
+  need_two_categories_chi: Beide kolommen hebben minstens 2 categorieën nodig
+  need_two_numeric_correlation: Minstens 2 numerieke kolommen nodig voor correlatie
+  need_two_valid_numeric: Minstens 2 geldige numerieke kolommen nodig
+  no_valid_data_after_dropna: Geen geldige gegevens na verwijderen van NaN
+  no_valid_numeric: Geen geldige numerieke kolommen opgegeven
+  non_numeric_column: Niet-numerieke kolom
+  not_computed: Niet berekend
+  select_dependent_independent: 'Selecteer minstens 2 numerieke kolommen: eerste = afhankelijk, overige = onafhankelijk'
+  select_dependent_var: Selecteer één numerieke afhankelijke variabelekolom
+  select_one_numeric_ttest: Selecteer één numerieke kolom voor de onafhankelijke t-toets
+  select_two_categorical_chi: Selecteer precies twee categorische kolommen
+  select_two_numeric_paired: Selecteer precies twee numerieke kolommen voor de gepaarde t-toets
+  two_factors_required: Twee factoren zijn vereist voor tweeweg-ANOVA
+  group_must_have_two_levels: Groepeerkolom '{group}' moet precies 2 niveaus hebben ({n} gevonden)
+  group_fewer_than_two: Groep '{group}' heeft minder dan 2 observaties
+  column_must_be_numeric: Kolom '{col}' moet numeriek zijn
+  factor_column_not_found: Factor {factor} kolom '{col}' niet gevonden
+  cache_not_found: Cache-sleutel '{key}' niet gevonden
+  column_not_found: Kolom '{col}' niet gevonden
+  computation_failed: 'Berekening van statistieken mislukt: {error}'
+  cache_cleared: Cache-sleutel '{key}' gewist
+user:
+  api_key_required: API-sleutel is vereist voor deze provider
+  connection_name_exists: Er bestaat al een verbinding met deze naam
+  connection_not_found: Verbinding niet gevonden
+  example_blocked: Voorbeeldgebruikers kunnen deze actie niet uitvoeren
+  internal_error: Interne serverfout
+  missing_fields: Vereiste velden ontbreken
+  provider_not_found: Provider niet gevonden
+  user_not_found: Gebruiker niet gevonden
+  no_endpoint: Geen endpoint geconfigureerd voor deze provider.
+  unknown_provider: 'Onbekende provider: {code}'
+  provider_returned: 'Provider retourneerde {status}: {text}'
+  example_update_db: Voorbeeldgebruikers kunnen databaseverbindingen niet bijwerken
+  connection_timeout_remote: Verbindingstime-out voor {code} op {baseUrl}
+  example_create_db: Voorbeeldgebruikers kunnen geen databaseverbindingen maken
+  api_key_required_fetch: API-sleutel is vereist voor deze provider.
+  fetch_failed: Ophalen mislukt
+  example_delete_db: Voorbeeldgebruikers kunnen geen databaseverbindingen verwijderen
+  connection_timeout_local: Time-out bij verbinding. Draait {code} op {baseUrl}?
+  auto_create_default_detail: Automatische aanmaak van dataset mislukt. De databaseserver is mogelijk niet bereikbaar.
+  no_models_returned: De provider retourneerde geen modellen; er is niets gewijzigd.
+validation:
+  error: 'Validatiefout: {count} proble(e)m(en) gevonden'
+  password:
+    require_special: Wachtwoord moet ten minste één speciaal teken bevatten.
+    require_uppercase: Wachtwoord moet ten minste één hoofdletter bevatten.
+    too_weak: Wachtwoord is te zwak. Kies een sterker wachtwoord.
+    min_length: Wachtwoord moet ten minste {min} tekens lang zijn.
+    require_lowercase: Wachtwoord moet ten minste één kleine letter bevatten.
+    require_digit: Wachtwoord moet ten minste één cijfer bevatten.
+execution:
+  loading_dataset: Dataset laden...
+  not_found: Uitvoering niet gevonden
+  loaded_rows: '{rows} rijen, {columns} kolommen geladen'
+  starting_analysis: Analysestadia starten...
+  executing_stage: 'Fase uitvoeren: {stage}'
+error:
+  dataset:
+    delete_failed_2: 'Kan dataset niet verwijderen: {error}'
+    load_failed_2: 'Kan gegevens niet laden: {error}'
+    not_found_or_not_owned: Dataset '{id}' niet gevonden of je bent niet de eigenaar
+    not_found_2: Dataset '{id}' niet gevonden
+    load_failed_3: Virtuele dataset '{id}' heeft geen SQL-definitie
+    not_found_3: 'Dataset niet gevonden of niet toegankelijk: {error}'
+    not_found_5: Dataset '{id}' niet gevonden
+    load_failed: 'Laden van dataset mislukt: {error}'
+    unknown_source: 'Onbekend brontype: {source_type}'
+    not_found_4: Dataset '{id}' niet gevonden of niet toegankelijk
+    table_missing: Tabel '{table}' bestaat niet
+    not_found: Dataset '{id}' niet gevonden of niet toegankelijk
+    load_failed_4: 'Laden van virtuele dataset ''{id}'' mislukt: {error}'
+  preparation:
+    rule_not_found_2: Voorbereidingsregel '{id}' niet gevonden
+    rule_not_found: Voorbereidingsregel '{id}' niet gevonden voor deze dataset
+  define:
+    connection_not_found: Databaseverbinding niet gevonden of niet toegankelijk
+    dataset_creation_failed: 'Aanmaken van datasetrecord mislukt: {error}'
+    connection_not_found_2: Verbinding niet gevonden of niet toegankelijk
+  connection:
+    type_not_supported: Databasetype '{type}' wordt nog niet ondersteund
+    query_failed_2: 'Kan gecompileerde SQL niet uitvoeren: {error}'
+    query_failed: 'Opvragen van tabel/view ''{table}'' mislukt: {error}'
+    type_not_supported_2: Databasetype '{type}' wordt nog niet ondersteund voor schemadetectie
+    query_failed_7: 'Databasequery mislukt: {error}'
+    query_failed_4: 'MySQL-query mislukt: {error}'
+    query_failed_5: 'MSSQL-query mislukt: {error}'
+    connect_failed: 'MySQL-verbinding mislukt: {error}'
+    failed: 'Verbinding maken met database mislukt: {error}'
+    decryption_failed: 'Decoderen van verbindingswachtwoord mislukt: {error}'
+    query_failed_6: 'Access-query mislukt: {error}'
+    type_not_supported_3: 'Niet-ondersteund databasetype: {type}'
+    query_failed_3: 'PostgreSQL-query mislukt: {error}'
+  execution:
+    cannot_cancel: Kan een uitvoering die al {status} is niet annuleren
+  ai:
+    call_failed: 'AI-aanroep mislukt: {error}'
+  groups:
+    invalid_group_id: Ongeldige group_id. Moet 00-99 zijn
+  database:
+    pool_not_initialized: Databasepool niet geïnitialiseerd
+    insert_failed: 'Databasefout: {error}'
+  describe:
+    ai_connection_error_2: 'AI-verbindingsfout: decoderen van API-sleutel mislukt'
+    ai_connection_error: 'AI-verbindingsfout: Geen verbinding beschikbaar'
+notebooks:
+  no_db_rights: Deze verbinding heeft geen rechten om databases te maken.
+  invalid_format_2: Ongeldig notebookformaat. Alleen .ipynb-bestanden worden geaccepteerd.
+  example_blocked: Voorbeeldgebruikers kunnen geen notebooks importeren.
+  system_db_blocked: Kan niet importeren in systeemdatabase '{db}'. Gebruik een andere database of maak een nieuwe aan.
+  example_blocked_3: Voorbeeldgebruikers kunnen geen notebooks verwijderen.
+  no_connection: Selecteer een databaseverbinding.
+  share_error: Alleen de eigenaar kan de deelinstellingen wijzigen.
+  example_blocked_2: Voorbeeldgebruikers kunnen het delen van notebooks niet wijzigen.
+  no_table_rights: Deze verbinding kan geen tabellen aanmaken — import geweigerd.
+  import_failed_3: Import niet gevonden
+  file_too_large: Notebookbestand is te groot. Maximale grootte is {max_size} MB.
+  import_failed_4: 'Ophalen van import mislukt: {error}'
+  no_dataframes: Geen DataFrames gevonden in deze notebook
+  import_failed: 'Notebookimport mislukt: {error}'
+  delete_error: 'Verwijderen van import mislukt: {error}'
+  share_error_2: 'Bijwerken van delen mislukt: {error}'
+  import_failed_2: 'Ophalen van importlijst mislukt: {error}'
+  unknown_error: Onbekende fout
+  cells_not_list: 'Ongeldige notebookindeling: ''cells'' is geen lijst'
+  invalid_json: 'Ongeldige JSON: {error}'
+  untitled: Naamloos
+  missing_cells: 'Ongeldige notebookindeling: sleutel ''cells'' ontbreekt'
+  too_many_cells: 'Te veel cellen ({count}). Max: {max_cells}'
+access:
+  connection_failed: Verbinding mislukt
+  encryption_error: 'Versleutelingsfout: {error}'
+  connection_deleted: Verbinding verwijderd
+  connection_exists: Verbinding '{name}' bestaat al
+  connection_not_found: Verbinding niet gevonden
+  db_pool_not_initialized: Databasepool niet geïnitialiseerd
+  connection_failed_detail: 'Verbinding mislukt: {detail}'
+  licence_required: Access-databaseverbindingen vereisen een bedrijfslicentie
+  connected_in_ms: Verbonden in {elapsed} ms
+  file_path_required: file_path is verplicht
+  connection_saved: Verbinding opgeslagen
+  name_and_path_required: naam en file_path zijn verplicht
+  connection_unavailable: 'Kan geen verbinding maken met de Access-database: {error}'
+  connection_params_required: host, poort, gebruiker en wachtwoord zijn verplicht
+  table_not_found: 'Tabel ''{table}'' niet gevonden: {error}'
+  invalid_port: Poort moet een geheel getal zijn
+system:
+  cache_cleanup_completed: 'Cache-opschoning voltooid: {removed} items verwijderd'
+  hello_world: Hallo, wereld!
+virtual:
+  no_credentials_postgresql: Geen inloggegevens gevonden voor PostgreSQL-verbinding {conn_id}
+  preview_failed: 'Voorbeeldweergave mislukt: {error}'
+  execute_failed: 'Uitvoering mislukt: {error}'
+  no_credentials_mysql: Geen referenties gevonden voor MySQL-verbinding {conn_id}
+  validate:
+    join_right_source_not_found: 'Join {j_idx}: rechterbron ''{right_alias}'' niet gevonden'
+    dataset_not_found: 'Bron ''{alias}'': dataset {dataset_id} niet gevonden of toegang geweigerd'
+    no_sources: Geen bronnen gedefinieerd
+    connection_id_required: 'Bron ''{alias}'': connectionId vereist voor {storage_type}-bron'
+    column_source_not_found: 'Kolom {c_idx}: bron ''{src_alias}'' niet gevonden'
+    connection_not_found: 'Bron ''{alias}'': verbinding {conn_id} niet gevonden of toegang geweigerd'
+    dataset_id_required: 'Bron ''{alias}'': datasetId vereist voor datasetbron'
+    join_left_source_not_found: 'Join {j_idx}: linkerbron ''{left_alias}'' niet gevonden'
+    join_column_not_found: 'Join {j_idx}: bron ''{alias}'' heeft geen kolom ''{column}'''
+    output_column_not_found: 'Kolom {c_idx}: bron ''{src_alias}'' heeft geen kolom ''{column}'''
+  column:
+    missing_column: Er is geen kolom benoemd.
+    missing_source: 'Een kolom heeft een bron nodig: een dataset-id of een verbinding en een tabelnaam.'
+    unknown_action: '''{action}'' is geen kolomactie. Gebruik aanvinken of uitvinken.'
+  decision:
+    no_connection: Uw keuze is opgeslagen. De assistent kon niet reageren omdat er geen AI-verbinding beschikbaar is.
+    invalid_value: 'De beslissing ''{piece}'' kon niet worden toegepast: {error}'
+    model_failed: 'Uw keuze is opgeslagen. De assistent kon niet reageren: {error}'
+    unknown_piece: '''{piece}'' is geen beslissing die dit eindpunt kan toepassen.'
+    missing_value: De beslissing '{piece}' heeft een waarde nodig.
+    no_reply: Uw keuze is opgeslagen. De assistent heeft alle werkronden opgebruikt zonder een antwoord te geven — vraag de assistent om verder te gaan, of controleer het concept in de boomstructuur.
+    applied: Gebruik de selectie hierboven.
+  panel:
+    collapsed_required: De ingeklapte toestand van het paneel moet waar of onwaar zijn.
+  scoreboard:
+    output_columns:
+      needs: Eén bron, waarvan de kolommen zijn gelezen.
+      what: Welke kolommen moet het resultaat bevatten?
+    columns:
+      needs_empty: '''{source}'' heeft geen kolommen om uit te kiezen.'
+      what: Wat staat er in '{source}'?
+      needs_failed: De kolommen van '{source}' konden niet worden gelezen.
+    joins:
+      what: Hoe moeten de bronnen worden samengevoegd?
+      needs: Twee of meer bronnen, waarvan de kolommen zijn gelezen.
+    sources:
+      what: Uit welke tabel moet deze dataset worden opgebouwd?
+    name:
+      what: Hoe moet deze dataset heten?
+    storage:
+      what: Moet dit een liveweergave of een opgeslagen tabel zijn?
+      live: Liveweergave
+      table: Opgeslagen tabel
+  join_suggestions:
+    invalid_sources: Join-suggesties hebben een lijst met bronnen nodig, elk met een alias en een naam ({error}).
+  save:
+    invalid_definition: 'Deze dataset kan niet worden opgeslagen: {errors}'
+  tool:
+    no_source: 'Er bestaat geen bron met de naam ''{alias}''. Bronnen van dit concept: {aliases}.'
+    no_sources_yet: Er is geen bron met de naam '{alias}' — het concept heeft nog geen bronnen. Roep eerst add_source aan.
+schema:
+  introspect_postgresql_failed: 'Introspectie van PostgreSQL mislukt: {error}'
+  unsupported_source_type: 'Niet-ondersteund source_type: {source_type}. Gebruik dataset, postgresql of mysql.'
+  dataset_id_required: dataset_id is vereist voor source_type=dataset
+  introspect_mysql_failed: 'Introspectie van MySQL mislukt: {error}'
+  connection_not_found: Databaseverbinding niet gevonden of toegang geweigerd
+  no_table_name: Dataset heeft geen tabelnaam (nog niet opgenomen)
+  connection_and_table_required: connection_id en table_name zijn vereist voor PostgreSQL/MySQL-bronnen
+  dataset_not_found: Dataset niet gevonden of toegang geweigerd
+virtual_chat:
+  introspection_failed: 'Introspectie mislukt: {error}'
+  llm_returned_error: LLM retourneerde HTTP {status_code}
+  chat_session_not_found: Chatsessie niet gevonden
+  llm_call_failed: 'LLM-aanroep mislukt: {error}'
+  connection_not_found: Databaseverbinding niet gevonden of toegang geweigerd
+  save_success: ✅ Dataset **{name}** is succesvol opgeslagen. Je kunt deze vinden in de lijst Bestaande datasets. Gebruik Bewerken om deze te verfijnen of Klonen om een variant te maken.
+  save_failed: '⚠️ Opslaan mislukt: {error}'
+  save_draft_success: '✅ Virtuele dataset opgeslagen als concept: **{name}**. Je kunt deze bekijken en bewerken op de Datasets-pagina. Gebruik het tabblad Definiëren om de SQL, joins en uitvoerkolommen
+    te verfijnen.'
+  empty_response: Ik weet niet goed hoe ik daarop moet reageren. Kun je het anders formuleren of meer details geven?
+  save_no_sources: '⚠️ Kan niet opslaan: er zijn geen databronnen geïntrospecteerd. Probeer in je eerdere berichten tabelnamen zoals ''products'' of ''orders'' te noemen.'
+  save_parse_error: '⚠️ De dataset kon niet worden opgeslagen: {error}'
+ai_recipe:
+  llm_error: 'AI-servicefout: {error}'
+  message_required: Een bericht is verplicht
+  session_name_required: Een naam is vereist
+  invalid_decision: Ongeldige beslissing.
+licence:
+  delete_failed: 'Verwijderen van licentiebestand mislukt: {error}'
+  missing_content: Ontbrekend veld 'content'
+  write_failed: 'Schrijven van licentiebestand mislukt: {error}'
+  delete_success: Licentie verwijderd. Wordt uitgevoerd in open-sourcemodus.
+  install_success: Licentie succesvol geïnstalleerd.
+  no_file_to_delete: Geen licentiebestand om te verwijderen — al in open-sourcemodus.
+notebooks_storage:
+  unsupported_storage_type: 'Niet-ondersteund opslagtype: {type}'
+  failed_create_table: 'Aanmaken van tabel {table} mislukt: {error}'
+  no_connection_details_short: Geen verbindingsgegevens
+  failed_create_table_mssql: 'Aanmaken van tabel mislukt: {error}'
+  no_connection_details: Geen verbindingsgegevens opgegeven
+  no_data_pool: Datadatabasepool is niet geïnitialiseerd
+rag:
+  ai_provider_error: 'AI-providerfout: {error}'
+  no_matches: Geen overeenkomende tekst gevonden in de database voor uw vraag. Probeer de vraag anders te formuleren of een andere gegevensbron te selecteren.
+  no_tables: Geen tabellen gevonden in het schema om te doorzoeken.
+  no_ai_provider: '{count} overeenkomende records gevonden. (Geen AI-provider geconfigureerd voor antwoorden in natuurlijke taal.)'
+audio_presets:
+  invalid_chat_type: 'Ongeldig chattype: {chat_type}. Moet een van de volgende zijn: {valid_types}'
+test_ai:
+  fetch_failed: Ophalen mislukt
+  endpoint_v1_valid: Endpoint op {baseUrl}/v1 is geldig.
+  connection_failed: 'Verbinding mislukt: {msg}'
+  server_reachable: '{name}-server op {baseUrl} is bereikbaar.'
+  endpoint_valid: Endpoint op {baseUrl} is geldig.
+  api_key_required: API-sleutel is vereist voor {name}.
+  responded_with_status: '{name} antwoordde met status {status}'
+  no_endpoint: Geen endpoint geconfigureerd voor deze provider.
+  internal_error: Interne serverfout
+  unknown_provider: 'Onbekende provider: {provider}'
+  connection_timeout_local: Time-out bij verbinding. Draait {name} op {baseUrl}?
+visualization_instances:
+  internal_error: Interne serverfout
+  invalid_instance_id: Ongeldig instance-id
+  viz_type_id_required: visualizationTypeId vereist
+  invalid_viz_type: Ongeldig visualisatietype
+  instance_not_found: Instantie niet gevonden
+  unauthorized: Niet geautoriseerd
+  no_rendered_output: Geen gerenderde uitvoer beschikbaar
+  viz_type_not_found: Visualisatietype niet gevonden
+ai_providers:
+  failed_to_delete_provider: Verwijderen van provider mislukt
+  forbidden: Verboden
+  missing_provider_id: Ontbrekende provider-id
+  internal_error: Interne serverfout
+  provider_not_found: Provider niet gevonden
+  missing_id_or_enabled: Ontbrekende id of enabled-vlag
+  failed_to_update_provider: Provider bijwerken mislukt
+  unauthorized: Niet geautoriseerd
+  invalid_provider_id: Ongeldige provider-id.
+visualization_types:
+  forbidden: Verboden
+  internal_error: Interne serverfout
+  name_and_slug_required: Naam en slug zijn vereist
+  slug_already_exists: Slug bestaat al
+  type_not_found: Visualisatietype niet gevonden
+ai:
+  database:
+    email_sent: Rapport succesvol gemaild
+column_required: Bewerking '{type}' vereist een kolom.
+filter_operator_required: Filterbewerking vereist een operator.
+rename_new_name_required: Bewerking 'kolom hernoemen' vereist een nieuwe naam.
+invalid_target_type: 'Ongeldig target_type: {target_type}. Moet een van de volgende zijn: {types}'
+encode_column_required: Codeerbewerking vereist een kolom.
+invalid_fill_method: 'Ongeldige fill_missing-methode: {method}. Moet een van de volgende zijn: {methods}'
+columns_required: Bewerking '{type}' vereist een 'columns'-veld.
+invalid_encoding: 'Ongeldige codering: {encoding}. Moet een van de volgende zijn: {types}'
+filter_value_required: Filterbewerking vereist een waarde.
+invalid_operation_type: 'Ongeldig bewerkingstype: {type}. Moet een van de volgende zijn: {types}'
+dataclean_tools:
+  no_rules_to_apply: Geen regels om toe te passen
+  no_rules_to_preview: Geen regels om te bekijken
+dataclean_chat:
+  create_error: Kan gegevensopschoningssessie niet aanmaken
+  dataset_id_required: datasetId is verplicht
+  message_required: Bericht is verplicht
+  empty_response: Ik kon geen antwoord genereren. Probeer het opnieuw.
+  chat_session_not_found: Chatsessie voor gegevensopschoning niet gevonden

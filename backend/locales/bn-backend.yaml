@@ -1,0 +1,1018 @@
+access:
+  connected_in_ms: '{elapsed}ms-এ সংযুক্ত হয়েছে'
+  connection_deleted: সংযোগ মুছে ফেলা হয়েছে
+  connection_exists: '''{name}'' নামের সংযোগ ইতিমধ্যে বিদ্যমান'
+  connection_failed: সংযোগ ব্যর্থ হয়েছে
+  connection_failed_detail: 'সংযোগ ব্যর্থ হয়েছে: {detail}'
+  connection_not_found: সংযোগ পাওয়া যায়নি
+  connection_saved: সংযোগ সংরক্ষণ করা হয়েছে
+  db_pool_not_initialized: ডেটাবেস পুল ইনিশিয়ালাইজ করা হয়নি
+  encryption_error: 'এনক্রিপশন ত্রুটি: {error}'
+  file_path_required: file_path আবশ্যক
+  licence_required: Access ডেটাবেস সংযোগের জন্য কর্পোরেট লাইসেন্স প্রয়োজন
+  name_and_path_required: name এবং file_path আবশ্যক
+  table_not_found: 'টেবিল ''{table}'' পাওয়া যায়নি: {error}'
+  connection_unavailable: 'অ্যাক্সেস ডাটাবেসে সংযোগ করা যায়নি: {error}'
+  connection_params_required: হোস্ট, পোর্ট, ব্যবহারকারী এবং পাসওয়ার্ড প্রয়োজন
+  invalid_port: পোর্ট অবশ্যই একটি পূর্ণসংখ্যা হতে হবে
+admin:
+  already_full_admin: ব্যবহারকারী ইতিমধ্যে একজন পূর্ণ অ্যাডমিন
+  already_group_admin: ব্যবহারকারী ইতিমধ্যে একজন গ্রুপ অ্যাডমিন
+  cannot_delete_self: আপনি নিজের অ্যাকাউন্ট মুছে ফেলতে পারবেন না
+  cannot_demote_full_admin: পূর্ণ অ্যাডমিনকে ডিমোট করা যাবে না
+  cannot_demote_self: আপনি নিজেকে ডিমোট করতে পারবেন না
+  cannot_promote_example: উদাহরণ ব্যবহারকারীকে প্রমোট করা যাবে না
+  delete_error: ব্যবহারকারী মুছে ফেলতে ব্যর্থ হয়েছে
+  demote_error: ব্যবহারকারীকে ডিমোট করতে ব্যর্থ হয়েছে
+  description_required: বিবরণ খালি রাখা যাবে না
+  example_blocked: উদাহরণ ব্যবহারকারীরা অ্যাডমিন কাজ করতে পারে না
+  group_not_found: গ্রুপ পাওয়া যায়নি
+  group_users_load_error: গ্রুপ ব্যবহারকারীদের লোড করতে ব্যর্থ হয়েছে
+  groups_load_error: গ্রুপগুলো লোড করতে ব্যর্থ হয়েছে
+  groups_stats_error: গ্রুপ পরিসংখ্যান লোড করতে ব্যর্থ হয়েছে
+  insufficient_permissions: এই কাজের জন্য পর্যাপ্ত অনুমতি নেই
+  invalid_group_id: অবৈধ group_id। অবশ্যই 00-99 হতে হবে
+  invalid_id: অবৈধ আইডি
+  invalid_upload_count: maxUploadCount অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+  invalid_upload_size: maxUploadSizeMB অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+  missing_fields: প্রয়োজনীয় ক্ষেত্রগুলো অনুপস্থিত
+  missing_group_id: গ্রুপ আইডি অনুপস্থিত
+  missing_id: আইডি অনুপস্থিত
+  missing_model_id: মডেল আইডি অনুপস্থিত
+  missing_provider_code: providerCode প্যারামিটার অনুপস্থিত
+  missing_user_id: userId অনুপস্থিত
+  model_update_error: মডেল আপডেট করতে ব্যর্থ হয়েছে
+  models_load_error: মডেলগুলো লোড করতে ব্যর্থ হয়েছে
+  no_fields: আপডেট করার মতো কোনো বৈধ ক্ষেত্র নেই
+  no_group: ব্যবহারকারীর কোনো গ্রুপ বরাদ্দ নেই
+  not_group_admin: ব্যবহারকারী গ্রুপ অ্যাডমিন নন
+  only_full_admin: শুধুমাত্র পূর্ণ অ্যাডমিনরা এই কাজ করতে পারেন
+  promote_error: ব্যবহারকারীকে প্রমোট করতে ব্যর্থ হয়েছে
+  provider_delete_error: প্রোভাইডার মুছে ফেলতে ব্যর্থ হয়েছে
+  provider_not_found: প্রোভাইডার পাওয়া যায়নি
+  provider_update_error: প্রোভাইডার আপডেট করতে ব্যর্থ হয়েছে
+  providers_load_error: প্রোভাইডারগুলো লোড করতে ব্যর্থ হয়েছে
+  slug_exists: স্লাগ ইতিমধ্যে বিদ্যমান
+  update_error: ব্যবহারকারী আপডেট করতে ব্যর্থ হয়েছে
+  user_load_error: ব্যবহারকারী লোড করতে ব্যর্থ হয়েছে
+  user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  users_load_error: ব্যবহারকারীদের লোড করতে ব্যর্থ হয়েছে
+  viz_type_create_error: ভিজ্যুয়ালাইজেশন টাইপ তৈরি করতে ব্যর্থ হয়েছে
+  viz_type_delete_error: ভিজ্যুয়ালাইজেশন টাইপ মুছে ফেলতে ব্যর্থ হয়েছে
+  viz_type_update_error: ভিজ্যুয়ালাইজেশন টাইপ আপডেট করতে ব্যর্থ হয়েছে
+  viz_types_load_error: ভিজ্যুয়ালাইজেশন টাইপগুলো লোড করতে ব্যর্থ হয়েছে
+ai_recipe:
+  llm_error: 'AI পরিষেবা ত্রুটি: {error}'
+  message_required: একটি বার্তা আবশ্যক
+  session_name_required: একটি নাম আবশ্যক
+  invalid_decision: অবৈধ সিদ্ধান্ত।
+api:
+  user:
+    connection_not_found: সংযোগ পাওয়া যায়নি
+    invalid_current_password: বর্তমান পাসওয়ার্ডটি ভুল
+    example_delete_ai: উদাহরণ ব্যবহারকারীরা AI সংযোগ মুছতে পারে না
+    internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    example_blocked: উদাহরণ ব্যবহারকারীরা এই কাজটি করতে পারে না
+    connection_id_required: সংযোগ আইডি প্রয়োজন
+    api_key_required: এই প্রদানকারীর জন্য API কী প্রয়োজন
+    invalid_connection_id: অবৈধ সংযোগ আইডি
+    example_create_ai: উদাহরণ ব্যবহারকারীরা AI সংযোগ তৈরি করতে পারে না
+    invalid_port: পোর্ট অবশ্যই একটি পূর্ণসংখ্যা হতে হবে
+    invalid_name: নাম অবশ্যই একটি স্ট্রিং হতে হবে
+    example_update_ai: উদাহরণ ব্যবহারকারীরা AI সংযোগ আপডেট করতে পারে না
+    missing_fields: প্রয়োজনীয় ক্ষেত্রসমূহ অনুপস্থিত
+    provider_not_found: প্রদানকারী "{provider}" পাওয়া যায়নি
+    connection_name_exists: এই নামের একটি সংযোগ ইতিমধ্যে বিদ্যমান
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+    tuning_model_not_found: এমন কোনো মডেল নেই
+    test_connect_refused: ওই ঠিকানায় কিছুই লিসেন করছে না — সার্ভারে পৌঁছানো যাচ্ছে কিন্তু কোনো সার্ভিস সাড়া দেয়নি। পোর্ট এবং AI সার্ভার চলছে কিনা তা পরীক্ষা করুন। কোনো সক্ষমতার রায় রেকর্ড করা হয়নি;
+      ব্যর্থ হতে কত সময় লেগেছিল তা রেকর্ড করা হয়েছে।
+    connect_timeout_exceeds_probe: সংযোগ টাইমআউট ({connect} সেকেন্ড) পরীক্ষার টাইমআউট ({probe} সেকেন্ড)-এর চেয়ে বেশি হতে পারবে না — পুরো পরীক্ষা যতক্ষণ চলতে পারে, একটি সংযোগ স্থাপনে তার চেয়ে বেশি সময়
+      নেওয়ার অনুমতি দেওয়া যায় না।
+    test_attribution_required: একটি পরীক্ষার ফলাফলে কে এটি চালিয়েছে তা অবশ্যই রেকর্ড করতে হবে।
+    tuning_malformed_body: অনুরোধের বডি বৈধ JSON নয়।
+    unknown_test_id: 'অজানা পরীক্ষা "{test}"। নিবন্ধিত পরীক্ষাগুলো: {known}'
+    model_not_found: প্রদানকারী "{provider}"-এর জন্য মডেল "{model}" পাওয়া যায়নি।
+    test_dns_failure: এন্ডপয়েন্টের হোস্টনেম রেজলভ করা যায়নি। ঠিকানায় কোনো টাইপো আছে কিনা, বা এটি এমন কোনো নাম কিনা যা শুধুমাত্র এই নেটওয়ার্ক রেজলভ করতে পারে, তা পরীক্ষা করুন। কোনো সক্ষমতার রায় রেকর্ড
+      করা হয়নি; ব্যর্থ হতে কত সময় লেগেছিল তা রেকর্ড করা হয়েছে।
+    test_connect_timeout: এন্ডপয়েন্ট সময়মতো সংযোগ গ্রহণ করেনি। হোস্টটি ডাউন থাকতে পারে, অথবা কোনো ফায়ারওয়াল অনুরোধটি বাদ দিচ্ছে। কোনো সক্ষমতার রায় রেকর্ড করা হয়নি; ব্যর্থ হতে কত সময় লেগেছিল তা রেকর্ড
+      করা হয়েছে।
+    tuning_invalid_temperature: টেম্পারেচার অবশ্যই ০ থেকে ২-এর মধ্যে একটি সংখ্যা হতে হবে।
+    invalid_test_state: 'অবৈধ পরীক্ষার ফলাফল "{state}"। অনুমোদিত: {allowed}'
+    test_reason_required: একটি পরীক্ষার ফলাফলে একটি কারণ অবশ্যই রেকর্ড করতে হবে।
+    test_http_status: 'প্রদানকারী উত্তর দিয়েছে, এবং তার উত্তরটি ছিল একটি ত্রুটি: {detail}। কোনো সক্ষমতার রায় রেকর্ড করা হয়নি; কারণটি স্পষ্ট করার জন্য প্রদানকারী যা বলেছে তা দেখানো হয়েছে।'
+    tuning_invalid_ai_timeout: AI সময়সীমা অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১।
+    test_read_timeout: মডেলটি অনুরোধ গ্রহণ করেছিল কিন্তু সময়মতো উত্তর দেয়নি। এটি এই হোস্টের জন্য খুব ধীর হতে পারে — CPU-তে একটি বড় মডেল কয়েক মিনিট নিতে পারে। কোনো সক্ষমতার রায় রেকর্ড করা হয়নি; ব্যর্থ
+      হতে কত সময় লেগেছিল তা রেকর্ড করা হয়েছে।
+    test_budget_exhausted: মডেলটি কিছুই ফেরত দেয়নি কারণ এটি উত্তরে পৌঁছানোর আগেই তার পুরো আউটপুট বাজেট ব্যবহার করে ফেলেছিল। কোনো সক্ষমতার রায় রেকর্ড করা হয়নি; সময়কাল রেকর্ড করা হয়েছিল।
+    tuning_connection_not_found: এমন কোনো AI সংযোগ নেই।
+    model_not_served_by_connection: এই সংযোগটি "{model}" মডেলটি পরিবেশন করে না। এর মডেলগুলো পরিবর্তিত হয়ে থাকতে পারে — সংযোগটি রিফ্রেশ করুন, অথবা অন্য একটি মডেল বেছে নিন।
+    invalid_connect_timeout: সংযোগ টাইমআউট অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ {ceiling}।
+    tuning_nothing_to_update: temperature, maxTokens অথবা timeoutSeconds-এর মধ্যে কমপক্ষে একটি সরবরাহ করুন।
+    test_tls_failure: নিরাপদ সংযোগ স্থাপন করা যায়নি — এন্ডপয়েন্টটি হয়তো যেখানে https প্রত্যাশিত ছিল সেখানে সাধারণ http, অথবা এর সার্টিফিকেটের মেয়াদ শেষ হয়ে থাকতে পারে। কোনো সক্ষমতার রায় রেকর্ড করা
+      হয়নি; ব্যর্থ হতে কত সময় লেগেছিল তা রেকর্ড করা হয়েছে।
+    test_not_implemented: পরীক্ষা "{test}" নিবন্ধিত কিন্তু এখনও কোনো প্রোব নেই।
+    tuning_invalid_max_tokens: আউটপুট সীমা অবশ্যই পূর্ণসংখ্যার টোকেন হতে হবে, কমপক্ষে ১।
+    discovery_complete: 'মোট {seen}টি মডেল পাওয়া গেছে: {created}টি এখানে নতুন, {refreshed}টি ইতিমধ্যে পরিচিত, {pruned}টি আর পরিবেশন করা হয় না।'
+    test_other_failure: 'মডেলটিতে পৌঁছানো যায়নি, এবং কারণটি এই সিস্টেমের স্বীকৃত কোনো কারণ নয়। কোনো সক্ষমতার রায় রেকর্ড করা হয়নি: {detail}'
+    invalid_probe_timeout: পরীক্ষার টাইমআউট অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ {ceiling}।
+  admin:
+    insufficient_permissions: এই কাজের জন্য পর্যাপ্ত অনুমতি নেই।
+    missing_id: আইডি অনুপস্থিত
+    cannot_demote_full_admin: একজন ফুল অ্যাডমিনকে ডিমোট করা যাবে না।
+    demote_error: ব্যবহারকারীকে ডিমোট করতে ব্যর্থ হয়েছে।
+    example_blocked: উদাহরণ ব্যবহারকারীরা অ্যাডমিন কার্যক্রম সম্পাদন করতে পারে না।
+    cannot_demote_self: আপনি নিজেকে ডিমোট করতে পারবেন না।
+    cannot_delete_self: আপনি নিজের অ্যাকাউন্ট মুছতে পারবেন না।
+    invalid_upload_size: maxUploadSizeMB অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+    settings_invalid_email_sender: প্রেরকের ইমেইল ঠিকানার বিন্যাস সঠিক নয়।
+    delete_error: ব্যবহারকারী মুছতে ব্যর্থ হয়েছে।
+    model_update_error: মডেল আপডেট করতে ব্যর্থ হয়েছে।
+    settings_modify_forbidden: শুধুমাত্র ফুল অ্যাডমিনরা গ্লোবাল সেটিংস পরিবর্তন করতে পারবেন।
+    models_load_error: মডেল লোড করতে ব্যর্থ হয়েছে।
+    no_fields: আপডেট করার মতো কোনো বৈধ ক্ষেত্র নেই
+    settings_view_forbidden: শুধুমাত্র ফুল অ্যাডমিনরা গ্লোবাল সেটিংস দেখতে পারবেন।
+    description_required: বিবরণ খালি রাখা যাবে না।
+    groups_load_error: গ্রুপ লোড করতে ব্যর্থ হয়েছে।
+    cannot_promote_example: একজন উদাহরণ ব্যবহারকারীকে প্রমোট করা যাবে না।
+    missing_model_id: মডেল আইডি অনুপস্থিত
+    settings_invalid_upload_size: ডিফল্ট সর্বোচ্চ আপলোড সাইজ অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+    provider_delete_error: প্রদানকারী মুছতে ব্যর্থ হয়েছে।
+    group_users_load_error: গ্রুপ ব্যবহারকারীদের লোড করতে ব্যর্থ হয়েছে।
+    missing_fields: প্রয়োজনীয় ক্ষেত্র অনুপস্থিত
+    providers_load_error: প্রদানকারী লোড করতে ব্যর্থ হয়েছে।
+    settings_invalid_upload_count: ডিফল্ট সর্বোচ্চ আপলোড সংখ্যা অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+    already_full_admin: ব্যবহারকারী ইতিমধ্যে একজন ফুল অ্যাডমিন।
+    settings_invalid_email_timeout: ইমেইল যাচাইয়ের সময়সীমা অবশ্যই একটি ধনাত্মক সংখ্যা হতে হবে (ঘণ্টা)।
+    invalid_upload_count: maxUploadCount অবশ্যই একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীনের জন্য 0)।
+    groups_stats_error: গ্রুপ পরিসংখ্যান লোড করতে ব্যর্থ হয়েছে।
+    update_error: ব্যবহারকারী আপডেট করতে ব্যর্থ হয়েছে।
+    settings_invalid_public_url: পাবলিক URL-এর বিন্যাস সঠিক নয়।
+    invalid_group_id: অবৈধ group_id। অবশ্যই 00-99 হতে হবে।
+    user_load_error: ব্যবহারকারী লোড করতে ব্যর্থ হয়েছে।
+    only_full_admin: শুধুমাত্র ফুল অ্যাডমিনরা এই কাজটি সম্পাদন করতে পারবেন।
+    settings_invalid_max_registrations: সর্বোচ্চ নিবন্ধন অবশ্যই একটি ধনাত্মক সংখ্যা বা সীমাহীন হতে হবে।
+    settings_invalid_grace_period: নিবন্ধনের গ্রেস পিরিয়ড অবশ্যই একটি ধনাত্মক সংখ্যা হতে হবে (ঘণ্টা)।
+    provider_update_error: প্রদানকারী আপডেট করতে ব্যর্থ হয়েছে।
+    not_group_admin: ব্যবহারকারী একজন গ্রুপ অ্যাডমিন নন।
+    provider_not_found: প্রদানকারী পাওয়া যায়নি।
+    already_group_admin: ব্যবহারকারী ইতিমধ্যে একজন গ্রুপ অ্যাডমিন
+    missing_user_id: userId অনুপস্থিত
+    missing_group_id: গ্রুপ আইডি অনুপস্থিত
+    promote_error: ব্যবহারকারীকে উন্নীত করতে ব্যর্থ হয়েছে
+    no_group: ব্যবহারকারীর কোনো গ্রুপ বরাদ্দ নেই
+    settings_save_error: গ্লোবাল সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে
+    settings_load_error: গ্লোবাল সেটিংস লোড করতে ব্যর্থ হয়েছে
+    viz_type_not_found: ভিজ্যুয়ালাইজেশন টাইপ পাওয়া যায়নি
+    model_not_found: মডেল পাওয়া যায়নি
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+    invalid_viz_type_field: অবৈধ ভিজ্যুয়ালাইজেশন টাইপ ফিল্ডের মান
+    promote_success: ব্যবহারকারী {name} গ্রুপ অ্যাডমিন হিসেবে উন্নীত হয়েছেন।
+    invalid_id: অবৈধ আইডি
+    demote_success: ব্যবহারকারী {name} গ্রুপ অ্যাডমিন পদ থেকে পদাবনত হয়েছেন।
+    settings_invalid_platform_upload_size: প্ল্যাটফর্মের সর্বোচ্চ আপলোড আকার একটি অ-ঋণাত্মক পূর্ণসংখ্যা হতে হবে (সীমাহীন জন্য 0)।
+    instance_exists: টাইপটি মুছে ফেলা যাবে না কারণ এর সাথে {count}টি সম্পর্কিত ইনস্ট্যান্স রয়েছে।
+    viz_types_load_error: ভিজ্যুয়ালাইজেশন টাইপগুলো লোড করা যায়নি
+    viz_type_update_error: ভিজ্যুয়ালাইজেশন টাইপ আপডেট করা যায়নি
+    slug_exists: স্লাগ ইতিমধ্যে বিদ্যমান
+    viz_type_create_error: ভিজ্যুয়ালাইজেশন টাইপ তৈরি করা যায়নি
+    viz_type_delete_error: ভিজ্যুয়ালাইজেশন টাইপ মুছে ফেলা যায়নি
+    users_load_error: ব্যবহারকারীদের লোড করা যায়নি
+    instance_in_use: ধরনটি মুছে ফেলা যাবে না কারণ এর সাথে সংশ্লিষ্ট ইনস্ট্যান্স রয়েছে।
+    settings_demo_mode_requires_licence: বৈধ লাইসেন্স ছাড়া ডেমো মোড নিষ্ক্রিয় করা যাবে না।
+    create_user_error: ব্যবহারকারী তৈরি করা যায়নি
+    settings_not_found: গ্লোবাল সেটিংস পাওয়া যায়নি
+    invalid_email: অবৈধ ইমেইল ফরম্যাট
+    email_exists: ইমেইলটি ইতিমধ্যে বিদ্যমান
+    settings_invalid_registration_mode: নিবন্ধন মোড অবশ্যই 0, 1, 2, বা 4-এর মধ্যে একটি হতে হবে।
+    settings_demo_upload_size_limit: ডেমো মোডে, ডিফল্ট সর্বোচ্চ আপলোড সাইজ অবশ্যই ১ থেকে ৫ মেগাবাইটের মধ্যে হতে হবে।
+    users_demo_upload_count_limit: ডেমো মোডে, একজন ব্যবহারকারীর জন্য সর্বোচ্চ আপলোড সংখ্যা অবশ্যই ১ থেকে ৫-এর মধ্যে হতে হবে।
+    users_demo_upload_size_limit: ডেমো মোডে, একজন ব্যবহারকারীর জন্য সর্বোচ্চ আপলোড সাইজ অবশ্যই ১ থেকে ৫ মেগাবাইটের মধ্যে হতে হবে।
+    settings_demo_upload_count_limit: ডেমো মোডে, ডিফল্ট সর্বোচ্চ আপলোড সংখ্যা অবশ্যই ১ থেকে ৫-এর মধ্যে হতে হবে।
+    invalid_admin_password: অ্যাডমিন পাসওয়ার্ডটি ভুল
+    example_user_password_blocked: উদাহরণ ব্যবহারকারীদের পাসওয়ার্ড একজন অ্যাডমিন দ্বারা সেট করা যায় না
+    settings_invalid_probe_timeout: ডিফল্ট পরীক্ষার টাইমআউট অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ {ceiling}।
+    settings_invalid_max_tokens: আউটপুট সীমা অবশ্যই পূর্ণসংখ্যার টোকেন হতে হবে, কমপক্ষে ১।
+    settings_invalid_connect_timeout: ডিফল্ট সংযোগ টাইমআউট অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১ এবং সর্বোচ্চ {ceiling}।
+    settings_invalid_ai_timeout: AI সময়সীমা অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১।
+    field_not_owned: 'এই পৃষ্ঠায় এই ফিল্ডটি সেট করা নেই। {endpoint}। সমস্যাযুক্ত ফিল্ড: {fields}'
+    settings_invalid_temperature: টেম্পারেচার অবশ্যই ০ থেকে ২-এর মধ্যে একটি সংখ্যা হতে হবে।
+    settings_invalid_slow_threshold: স্লো-মডেল সীমা অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১।
+    tuning_reset_error: AI টিউনিং ডিফল্টগুলো রিসেট করা যায়নি।
+  auth:
+    token_expired: টোকেনের মেয়াদ শেষ হয়ে গেছে।
+    unauthorized: অননুমোদিত
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি।
+    missing_email: ইমেইল প্রয়োজন
+    example_user_reset_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড রিসেট নিষ্ক্রিয়।
+    invalid_token: অবৈধ বা মেয়াদোত্তীর্ণ টোকেন
+    email_already_verified: ইমেইল ইতিমধ্যে যাচাই করা হয়েছে।
+    missing_fields: ক্ষেত্র অনুপস্থিত
+    example_user_forgot_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড রিসেট নিষ্ক্রিয়।
+    example_user_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড পরিবর্তন নিষ্ক্রিয়
+    invalid_current_password: বর্তমান পাসওয়ার্ডটি ভুল
+    internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    not_authenticated: প্রমাণীকরণ করা হয়নি
+  register:
+    settings_not_found: গ্লোবাল সেটিংস পাওয়া যায়নি।
+    invalid_email: ইমেইলের বিন্যাস সঠিক নয়।
+    missing_fields: ক্ষেত্র অনুপস্থিত
+    internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+    email_exists: ইমেইল ইতিমধ্যে বিদ্যমান
+    limit_reached: নিবন্ধন সীমায় পৌঁছেছে (সর্বাধিক {max_reg} জন ব্যবহারকারী)।
+    registration_disabled: স্ব-নিবন্ধন নিষ্ক্রিয় করা আছে। অনুগ্রহ করে একজন প্রশাসকের সাথে যোগাযোগ করুন।
+  settings:
+    load_failed: সেটিংস লোড করতে ব্যর্থ হয়েছে
+    save_failed: সেটিংস সংরক্ষণ করতে ব্যর্থ হয়েছে
+    invalid_default_ai_connection: অবৈধ ডিফল্ট AI সংযোগ
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি
+    example_blocked: উদাহরণ ব্যবহারকারীরা সেটিংস সম্পাদনা করতে পারে না
+    invalid_slow_threshold: স্লো-মডেল সীমা অবশ্যই পূর্ণসংখ্যার সেকেন্ড হতে হবে, কমপক্ষে ১।
+  profile:
+    fetch_failed: প্রোফাইল আনতে ব্যর্থ হয়েছে
+    invalid_name: নাম অবশ্যই একটি স্ট্রিং হতে হবে
+    update_failed: প্রোফাইল আপডেট করতে ব্যর্থ হয়েছে
+    name_required: নাম প্রয়োজন
+  global_settings_load_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  translations_load_error: অনুবাদগুলো লোড করা যায়নি
+  languages_load_error: ভাষাগুলো লোড করা যায়নি
+audio_presets:
+  invalid_chat_type: 'অবৈধ চ্যাট ধরন: {chat_type}। অবশ্যই এর মধ্যে একটি হতে হবে: {valid_types}'
+auth:
+  account_deleted: এই অ্যাকাউন্টটি মুছে ফেলা হয়েছে।
+  email_not_verified: ইমেইল যাচাই করা হয়নি। অনুগ্রহ করে আপনার ইনবক্স এবং স্প্যাম ফোল্ডার পরীক্ষা করুন।
+  example_user_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড ফাংশন নিষ্ক্রিয়
+  example_user_forgot_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড রিসেট নিষ্ক্রিয়
+  example_user_reset_blocked: উদাহরণ ব্যবহারকারীদের জন্য পাসওয়ার্ড রিসেট নিষ্ক্রিয়
+  internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  invalid_credentials: অবৈধ শংসাপত্র
+  invalid_current_password: বর্তমান পাসওয়ার্ড সঠিক নয়
+  invalid_token: অবৈধ বা মেয়াদোত্তীর্ণ টোকেন
+  invalid_token_error: 'অবৈধ টোকেন: {error}'
+  invalid_token_missing_user_id: 'অবৈধ টোকেন: ব্যবহারকারী আইডি অনুপস্থিত'
+  missing_email: ইমেইল আবশ্যক
+  missing_fields: ক্ষেত্রগুলো অনুপস্থিত
+  password_changed: পাসওয়ার্ড সফলভাবে পরিবর্তন করা হয়েছে
+  password_validation_failed: পাসওয়ার্ড যাচাই ব্যর্থ হয়েছে
+  reset_email_sent: পাসওয়ার্ড রিসেট ইমেইল পাঠানো হয়েছে
+  token_expired: টোকেনের মেয়াদ শেষ হয়েছে
+  unauthorized: অননুমোদিত
+  user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  login_invalid_credentials: ইমেইল বা পাসওয়ার্ড সঠিক নয়।
+chat:
+  ai_provider_error: 'AI প্রোভাইডার ত্রুটি: {error}'
+  connection_error: 'সংযোগ ত্রুটি: {error}'
+  connection_not_found: AI সংযোগ পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+  delete_failed: 'চ্যাট মুছে ফেলতে ব্যর্থ হয়েছে: {error}'
+  deleted: চ্যাট '{id}' সফলভাবে মুছে ফেলা হয়েছে
+  generate_title_failed: 'শিরোনাম তৈরি করতে ব্যর্থ হয়েছে: {error}'
+  get_failed: 'চ্যাট পেতে ব্যর্থ হয়েছে: {error}'
+  internal_error: 'অভ্যন্তরীণ সার্ভার ত্রুটি: {error}'
+  list_failed: 'চ্যাট তালিকা করতে ব্যর্থ হয়েছে: {error}'
+  not_found: চ্যাট '{id}' পাওয়া যায়নি
+  not_found_or_not_owned: চ্যাট '{id}' পাওয়া যায়নি বা এটি আপনার মালিকানাধীন নয়
+  send_failed: 'বার্তা পাঠানো ব্যর্থ হয়েছে: {error}'
+  title_updated: চ্যাটের শিরোনাম সফলভাবে আপডেট হয়েছে
+  update_failed: 'চ্যাট আপডেট করা ব্যর্থ হয়েছে: {error}'
+  ai_timeout: এআই মডেলটি সাড়া দিতে খুব বেশি সময় নিচ্ছে। অনুগ্রহ করে আবার চেষ্টা করুন।
+  ai_service_failed: এআই পরিষেবাটি সাড়া দিতে ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।
+  ai_repeat_loop: এআই মডেলটি আটকে গেছে এবং উত্তর দেওয়া শেষ করতে পারেনি। অনুগ্রহ করে আবার চেষ্টা করুন।
+  timeout_out_of_range: AI সময়সীমা অবশ্যই ১ থেকে {max_seconds} সেকেন্ডের মধ্যে হতে হবে।
+common:
+  back: পিছনে
+  cancel: বাতিল
+  cannot_undo: এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।
+  clear: পরিষ্কার করুন
+  copy: অনুলিপি
+  delete: মুছুন
+  deleting: মুছে ফেলা হচ্ছে...
+  dismiss: খারিজ করুন
+  edit: সম্পাদনা
+  generating: তৈরি করা হচ্ছে...
+  loading: লোড হচ্ছে...
+  next: পরবর্তী
+  restoring: পুনরুদ্ধার করা হচ্ছে...
+  save: সংরক্ষণ করুন
+  saving: সংরক্ষণ করা হচ্ছে...
+  sending: পাঠানো হচ্ছে...
+  testing: পরীক্ষা করা হচ্ছে...
+  unknown: অজানা
+  uploading: আপলোড করা হচ্ছে...
+  verifying: যাচাই করা হচ্ছে...
+  view: দেখুন
+database:
+  connection_failed: 'ডাটাবেসে সংযোগ করা ব্যর্থ হয়েছে: {error}'
+  connection_not_found: ডাটাবেস সংযোগ পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+  decryption_failed: 'সংযোগের পাসওয়ার্ড ডিক্রিপ্ট করা ব্যর্থ হয়েছে: {error}'
+  insert_failed: 'ডাটাবেস ত্রুটি: {error}'
+  pool_not_initialized: ডাটাবেস পুল শুরু করা হয়নি
+  query_failed: 'ডাটাবেস ক্যোয়ারী ব্যর্থ হয়েছে: {error}'
+  type_not_supported: ডাটাবেস ধরন '{type}' এখনও সমর্থিত নয়
+  feature_required: এই ডেটাবেস টাইপটি আপনার লাইসেন্স দ্বারা সক্রিয় নয়।
+datasets:
+  auto_create:
+    connection_id_required: connectionId প্রয়োজন
+    connection_not_found: সংযোগ পাওয়া যায়নি
+    no_tables_discovered: কোনো টেবিল বা ভিউ পাওয়া যায়নি। ডেটাবেস সার্ভার চলছে এবং অ্যাক্সেসযোগ্য কিনা তা পরীক্ষা করুন।
+    created: ডেটাসেট তৈরি হয়েছে
+  browse:
+    columns_failed: 'কলাম পাওয়া ব্যর্থ হয়েছে: {error}'
+    discover_failed: 'টেবিল আবিষ্কার করা ব্যর্থ হয়েছে: {error}'
+    preview_failed: 'টেবিল প্রিভিউ করা ব্যর্থ হয়েছে: {error}'
+  define:
+    connection_details_not_found: সংযোগের বিবরণ পাওয়া যায়নি
+    connection_not_found: ডাটাবেস সংযোগ পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+    connection_required: connectionId প্রয়োজন
+    connection_test_failed: ডাটাবেস সংযোগ পরীক্ষা ব্যর্থ হয়েছে
+    database_connection_failed: 'ডাটাবেসে সংযোগ করা ব্যর্থ হয়েছে: {error}'
+    dataset_created: ডেটাসেট '{name}' সফলভাবে সংজ্ঞায়িত হয়েছে
+    invalid_source_type: sourceType অবশ্যই 'table' বা 'view' হতে হবে
+    name_required: ডেটাসেটের নাম প্রয়োজন
+    permission_denied: 'অনুমতি প্রত্যাখ্যাত: ব্যবহারকারী ''{user}''-এর টেবিল ''{table}''-এ অ্যাক্সেস নেই। অনুগ্রহ করে SELECT অনুমতি দিন।'
+    preview_failed: 'টেবিল ''{table}'' থেকে ডেটা পড়া ব্যর্থ হয়েছে: {error}'
+    table_access_failed: 'টেবিল ''{table}''-এ অ্যাক্সেস করা ব্যর্থ হয়েছে: {error}'
+    table_name_required: tableName প্রয়োজন
+    table_not_found: ডাটাবেস '{database}'-এ টেবিল/ভিউ '{table}' পাওয়া যায়নি
+    verification_failed: 'টেবিল/ভিউ যাচাই করা ব্যর্থ হয়েছে: {error}'
+    connection_timed_out: ১৫ সেকেন্ড পরে সংযোগের সময়সীমা শেষ হয়েছে।
+    connection_successful: সংযোগ সফল হয়েছে।
+    connection_missing_db_note: 'দ্রষ্টব্য: ডেটাবেস অনুপস্থিত থাকলে এবং অনুমতি অপর্যাপ্ত হলে PostgreSQL এই ত্রুটি দেখায়। ডেটাবেসটি বিদ্যমান থাকলে পরীক্ষা করুন যে ব্যবহারকারীর ডেটাবেসে CONNECT অনুমতি আছে
+      কি না।'
+  delete:
+    success: ডেটাসেট '{id}' সফলভাবে মুছে ফেলা হয়েছে
+  describe:
+    ai_connection_error: 'AI সংযোগ ত্রুটি: {error}'
+    description_generated: '''{name}''-এর জন্য বিবরণ সফলভাবে তৈরি হয়েছে'
+    empty_description: তৈরি করা বিবরণ খালি। অনুগ্রহ করে AI প্রদানকারীর কনফিগারেশন পরীক্ষা করুন।
+    generation_failed: 'বিবরণ তৈরি করা ব্যর্থ হয়েছে: {error}'
+    timeout_out_of_range: AI সময়সীমা অবশ্যই ১ থেকে {max_seconds} সেকেন্ডের মধ্যে হতে হবে।
+  example_blocked:
+    create: উদাহরণ ব্যবহারকারীরা ডেটাসেট তৈরি করতে পারে না
+    delete: উদাহরণ ব্যবহারকারীরা ডেটাসেট মুছে ফেলতে পারে না
+    update: উদাহরণ ব্যবহারকারীরা ডেটাসেট আপডেট করতে পারে না
+  list_error: ডেটাসেট লোড করা ব্যর্থ হয়েছে
+  not_found: ডেটাসেট '{id}' পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+  not_found_2: ডেটাসেট পাওয়া যায়নি
+  not_owned: ডেটাসেট '{id}' পাওয়া যায়নি বা আপনি এর মালিক নন
+  not_owner: আপনি কেবল আপনার নিজের ডেটাসেট সম্পাদনা করতে পারবেন
+  preparation:
+    duplicate_name: এই নামে একটি প্রস্তুতি নিয়ম এই ডেটাসেটের জন্য ইতিমধ্যে বিদ্যমান
+    no_updates: আপডেট করার জন্য কোনো ফিল্ড নেই
+    preview_failed: 'নিয়ম প্রিভিউ করা ব্যর্থ হয়েছে: {error}'
+    rule_created: প্রস্তুতি নিয়ম '{name}' সফলভাবে তৈরি হয়েছে
+    rule_deleted: প্রস্তুতি নিয়ম সফলভাবে মুছে ফেলা হয়েছে
+    rule_in_use: 'এই প্রস্তুতি নিয়মটি {count}টি রেসিপিতে ব্যবহৃত হয়: {names}। প্রথমে রেসিপিগুলো মুছে ফেলুন।'
+    rule_not_found: এই ডেটাসেটের জন্য প্রস্তুতি নিয়ম '{id}' পাওয়া যায়নি
+    rule_not_found_or_not_owned: প্রস্তুতি নিয়ম পাওয়া যায়নি বা আপনি এর মালিক নন
+    rule_updated: প্রস্তুতি নিয়ম সফলভাবে আপডেট হয়েছে
+    schema_failed: 'ডেটাসেট স্কিমা পড়া ব্যর্থ হয়েছে: {error}'
+    already_exists: এই অপারেশনগুলির সাথে একটি প্রস্তুতি নিয়ম ইতিমধ্যে বিদ্যমান ('{name}')।
+  schema:
+    external_failed: 'বাহ্যিক ডাটাবেস থেকে স্কিমা পাওয়া ব্যর্থ হয়েছে: {error}'
+    from_preview: প্রিভিউ ডেটা (প্রথম ১০টি সারি) থেকে স্কিমা নির্ধারিত হয়েছে
+    load_error: 'স্কিমা লোড করা যায়নি: {error}'
+    not_implemented: এই ডেটাসেট ধরন '{type}'-এর জন্য স্কিমা আবিষ্কার এখনও বাস্তবায়িত হয়নি
+    table_missing: টেবিলটি আর বিদ্যমান নেই। অনুগ্রহ করে ডেটাসেটটি পুনরায় আপলোড করুন।
+    row_count_not_computed: জয়েন চালানো ছাড়া একটি ভার্চুয়াল ডেটাসেটের জন্য সারির সংখ্যা গণনা করা হয় না।
+    connection_unreachable: 'সংযোগ {connection_id} অ্যাক্সেসযোগ্য নয়: {error}'
+  share:
+    error: শেয়ারিং আপডেট করা ব্যর্থ হয়েছে
+    toggled: ডেটাসেট '{id}'-এর শেয়ারিং সফলভাবে আপডেট হয়েছে
+  transforms:
+    clone_forbidden: এই ট্রান্সফর্মটি ক্লোন করার অনুমতি আপনার নেই।
+    cloned: ট্রান্সফর্মটি '{name}' হিসেবে ক্লোন করা হয়েছে।
+    created: ট্রান্সফর্ম '{name}' সফলভাবে তৈরি হয়েছে।
+    deleted: ট্রান্সফর্ম সফলভাবে মুছে ফেলা হয়েছে।
+    duplicate_name: এই ডেটাসেটের জন্য এই নামে একটি ট্রান্সফর্ম ইতিমধ্যেই বিদ্যমান।
+    in_use: 'এই ট্রান্সফর্মটি {count}টি রেসিপিতে ব্যবহৃত হয়েছে: {names}। আগে রেসিপিগুলি মুছে ফেলুন।'
+    no_updates: আপডেট করার মতো কোনো ফিল্ড নেই।
+    not_accessible: ডেটাসেট '{id}' পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়।
+    not_found: এই ডেটাসেটের জন্য ট্রান্সফর্ম '{id}' পাওয়া যায়নি।
+    not_found_or_not_owned: ট্রান্সফর্ম পাওয়া যায়নি অথবা আপনি এর মালিক নন।
+    not_owned: ডেটাসেট '{id}' পাওয়া যায়নি অথবা আপনি এর মালিক নন।
+    updated: ট্রান্সফর্ম সফলভাবে আপডেট হয়েছে।
+    already_exists: এই অপারেশনগুলির সাথে একটি ট্রান্সফর্ম ইতিমধ্যে বিদ্যমান ('{name}')।
+  unknown_source: 'অজানা উৎসের ধরন: {source_type}'
+  upload:
+    error: ডেটাসেট আপলোড করতে ব্যর্থ হয়েছে।
+    file_processing_failed: 'ফাইল প্রক্রিয়া করতে ব্যর্থ হয়েছে: {error}'
+    limit_reached_count: আপলোডের সীমায় পৌঁছেছে। সর্বোচ্চ {count}টি ডেটাসেট অনুমোদিত।
+    limit_reached_size: আপলোডের আকারের সীমা অতিক্রম করেছে। সর্বোচ্চ মোট স্টোরেজ {size} MB।
+    success: ডেটাসেট '{name}' সফলভাবে আপলোড হয়েছে।
+    unsupported_file: 'অসমর্থিত ফাইল টাইপ। অনুগ্রহ করে নিচের যেকোনো একটি আপলোড করুন: {extensions}'
+    user_not_found: ব্যবহারকারী পাওয়া যায়নি।
+    dbf_memo_unsupported: এই .dbf ফাইলে মেমো ফিল্ড রয়েছে। এগুলোর মান একটি আলাদা ফাইলে সংরক্ষিত থাকে, যা একক ফাইল আপলোডের মাধ্যমে আনা সম্ভব নয়।
+    dbf_field_unsupported: 'এই .dbf ফাইল এমন ফিল্ড টাইপ ঘোষণা করে যা পড়া যায় না: {types}'
+  unread:
+    schema_error: উৎসটি সাড়া দিয়েছে, কিন্তু এর কলামগুলো পড়া যায়নি।
+    incomplete: চেকটি সময়মতো শেষ হয়নি। আবার চেষ্টা করুন, অথবা সংযোগের টাইমআউট বাড়ান।
+    auth_failed: ডাটাবেসটি এই অ্যাকাউন্টের শংসাপত্র প্রত্যাখ্যান করেছে।
+    no_database: সেই ডাটাবেসটি সার্ভারে বিদ্যমান নেই।
+    unreachable: এই উৎসে পৌঁছানো যায়নি। হোস্ট এবং পোর্ট পরীক্ষা করুন, তারপর আবার চেষ্টা করুন।
+    definition_too_deep: এই ডেটাসেটটি পাঁচ স্তরেরও বেশি গভীরে নিজেকে নির্দেশ করে।
+    no_permission: এই অ্যাকাউন্টটি সেই উৎসটি পড়তে পারে না।
+    definition_incomplete: এই উৎসটি কোনো ডেটাসেট বা সংযোগ টেবিলের নাম উল্লেখ করে না।
+dbdesign:
+  analysis:
+    data_types:
+      add_check_constraint: '''{column}''-এর জন্য একটি CHECK কনস্ট্রেইন্ট যোগ করুন অথবা সীমিত বৈধ মানের জন্য ENUM টাইপ ব্যবহার করুন।'
+      add_not_null: '''{column}''-এ NOT NULL কনস্ট্রেইন্ট যোগ করুন।'
+      allows_null: কলাম '{column}' NULL মান গ্রহণ করে — NOT NULL সীমাবদ্ধতা বিবেচনা করুন
+      set_max_length: অতিরিক্ত বড় ডেটা প্রতিরোধ করতে '{column}'-এর জন্য সর্বোচ্চ দৈর্ঘ্য নির্ধারণের কথা বিবেচনা করুন।
+      short_text_enum: টেক্সট কলাম '{column}'-এর সর্বোচ্চ দৈর্ঘ্য {max_len} — ENUM বা CHECK সীমাবদ্ধতা ব্যবহারের কথা বিবেচনা করুন
+      unbounded_varchar: সীমাহীন VARCHAR কলাম '{column}'
+    indexing:
+      missing_fk_index: ফরেন কি কলাম '{column}'-এর কোনো ইনডেক্স নেই।
+    naming:
+      mixed_case_column: কলাম '{column}' বড় ও ছোট হাতের অক্ষরের মিশ্রণ ব্যবহার করে — snake_case সুপারিশ করা হয়েছে
+      mixed_case_table: টেবিলের নাম '{table}' বড় ও ছোট হাতের অক্ষরের মিশ্রণ ব্যবহার করে — snake_case সুপারিশ করা হয়েছে
+      rename_column_reserved: SQL সংরক্ষিত শব্দের দ্বন্দ্ব এড়াতে কলাম '{column}' পুনঃনামকরণ করুন।
+      rename_column_snake_case: সামঞ্জস্যের জন্য কলামকে lowercase snake_case-এ পুনঃনামকরণ করুন।
+      rename_table_reserved: SQL সংরক্ষিত শব্দের দ্বন্দ্ব এড়াতে টেবিল '{table}' পুনঃনামকরণ করুন।
+      rename_table_snake_case: সামঞ্জস্যের জন্য টেবিলকে lowercase snake_case-এ পুনঃনামকরণ করুন।
+      reserved_keyword_column: কলাম '{column}' একটি সংরক্ষিত SQL কীওয়ার্ড।
+      reserved_keyword_table: টেবিলের নাম '{table}' একটি সংরক্ষিত SQL কীওয়ার্ড।
+    normalisation:
+      create_separate_table: '{table}-এ FK সহ ''{base}'' মানগুলির জন্য একটি পৃথক টেবিল তৈরি করুন।'
+      multiple_address: একাধিক ঠিকানা-সম্পর্কিত কলাম ({count}) সনাক্ত হয়েছে।
+      repeating_group: 'পুনরাবৃত্ত গ্রুপ সনাক্ত হয়েছে: {columns}'
+      separate_address_table: '{table}-এ FK সহ একটি পৃথক ঠিকানা টেবিল তৈরির কথা বিবেচনা করুন।'
+    relationships:
+      add_fk: যদি '{column}' অন্য কোনো টেবিলকে নির্দেশ করে, তাহলে একটি FK কনস্ট্রেইন্ট যোগ করার কথা বিবেচনা করুন।
+      missing_fk: কলাম '{column}' দেখতে একটি ফরেন কি-এর মতো কিন্তু এর কোনো FK কনস্ট্রেইন্ট নেই।
+    semistructured:
+      controlled_vocab: কলাম {column}-এ {count}টি স্বতন্ত্র মানের একটি নিয়ন্ত্রিত শব্দভাণ্ডার রয়েছে।
+      create_ref_table: '{table} টেবিল স্বাভাবিকীকরণ করতে {column} মানগুলির জন্য একটি রেফারেন্স টেবিল তৈরি করুন।'
+  analyze_error: 'ডেটাবেস বিশ্লেষণ করতে ব্যর্থ হয়েছে: {error}'
+  connection_error: 'ডেটাবেসে সংযোগ করতে ব্যর্থ হয়েছে: {error}'
+  description: AI ব্যবহার করে আপনার ডেটাবেস ডিজাইন বিশ্লেষণ ও উন্নত করুন।
+  invalid_token: অবৈধ টোকেন
+  no_connection: কোনো ডেটাবেস সংযোগ উপলব্ধ নেই। অনুগ্রহ করে প্রথমে একটি ডেটাবেসে সংযোগ করুন।
+  not_implemented: এই ফিচারটি শীঘ্রই আসছে।
+  pdf:
+    ai_disclaimer: AI-উত্পাদিত বিশ্লেষণ — প্রোডাকশনে প্রয়োগের আগে পর্যালোচনা করুন।
+    categories: ক্যাটাগরি
+    code_systems: কোড সিস্টেম
+    code_systems_label: সনাক্তকৃত কোড সিস্টেম
+    col_default: ডিফল্ট
+    col_name: কলাম
+    col_nullable: নালযোগ্য
+    col_pk: PK
+    col_type: ধরন
+    column_meanings_label: কলামের অর্থ
+    columns: কলামসমূহ
+    confidence: কনফিডেন্স
+    confidence_label: কনফিডেন্স
+    domain_label: ISIC ডোমেইন শ্রেণিবিন্যাস
+    evidence_label: প্রমাণ
+    header: ডেটাবেস ডিজাইন বিশ্লেষণ প্রতিবেদন
+    health_score_label: 'ডেটাবেস স্বাস্থ্য স্কোর: {score}/100'
+    health_score_subtitle: Schema AI দ্বারা মূল্যায়িত সামগ্রিক ডেটাবেস স্বাস্থ্য। 0 = গুরুতর কাঠামোগত সমস্যা, 100 = প্রোডাকশন-প্রস্তুত।
+    health_score_title: স্বাস্থ্য স্কোর
+    high: উচ্চ
+    implicit_relationships_label: অন্তর্নিহিত সম্পর্ক
+    integration_subtitle: Integration AI দ্বারা সনাক্তকৃত অন্তর্নিহিত সম্পর্ক, গবেষণা সক্ষমতা এবং অনুপস্থিত মাত্রা।
+    integration_title: AI ইন্টিগ্রেশন ফলাফল
+    issues_count: সমস্যা ({count})
+    issues_found: প্রাপ্ত সমস্যা
+    low: নিম্ন
+    medium: মাঝারি
+    missing_dimensions_label: অনুপস্থিত মাত্রা
+    'no': না
+    none: কোনোটিই নয়
+    normalisation_title: স্বাভাবিকীকরণ পরামর্শ ({count})
+    page: পৃষ্ঠা {current}/{total}
+    partial_label: আংশিক
+    pk: প্রাথমিক কী (PK)
+    proposed_ddl_label: প্রস্তাবিত DDL
+    proposed_table: প্রস্তাবিত টেবিল
+    rationale_label: যৌক্তিকতা
+    relationship_label: সম্পর্ক
+    research_capabilities_label: গবেষণা সক্ষমতা
+    risk_breakdown: ঝুঁকি বিভাজন
+    rows: সারি
+    schema_title: স্কিমা ({count}টি টেবিল)
+    semantic_subtitle: AI-অনুমিত কলামের অর্থ, ISIC ডোমেইন শ্রেণিবিন্যাস এবং কোড সিস্টেম সনাক্তকরণ।
+    semantic_title: AI শব্দার্থিক বিশ্লেষণ
+    semi_structured_title: আধা-কাঠামোবদ্ধ ডেটা বিশ্লেষণ ({count}টি কলাম)
+    subtitle: 'ডেটাবেস: {db_name} ({db_type}) | সংযোগ: {conn_name} (আইডি: {conn_id})'
+    summary: সারসংক্ষেপ
+    supported_label: সমর্থিত
+    table_purposes_label: টেবিলের উদ্দেশ্য
+    tables: টেবিল
+    title: ডেটাবেস ডিজাইন বিশ্লেষণ
+    top_actions_label: শীর্ষ অগ্রাধিকার পদক্ষেপ
+    top_keywords: শীর্ষ কীওয়ার্ড
+    top_recommendations: শীর্ষ সুপারিশ
+    unsupported_label: সমর্থিত নয়
+    value: মান
+    'yes': হ্যাঁ
+    ai_skipped_warning: AI বিশ্লেষণ বাদ দেওয়া হয়েছে
+  pdf_error: 'PDF তৈরিতে ব্যর্থ: {error}'
+  question_required: প্রশ্ন আবশ্যক
+  rag_error: 'RAG কোয়েরি ব্যর্থ হয়েছে: {error}'
+  rag_not_available: RAG অনুসন্ধান শুধুমাত্র PostgreSQL ডেটাবেসের জন্য উপলব্ধ। MySQL টেক্সট অনুসন্ধান ভবিষ্যতের রিলিজের জন্য পরিকল্পিত।
+  report_data_required: প্রতিবেদনের ডেটা আবশ্যক
+  schema_error: 'স্কিমা বের করতে ব্যর্থ: {error}'
+  schema_error_2: 'ডেটাবেস পাসওয়ার্ড ডিক্রিপ্ট করতে ব্যর্থ: {error}'
+  title: ডেটাবেস ডিজাইন সহকারী
+  unsupported_type: শুধুমাত্র PostgreSQL, MySQL, MS SQL Server এবং Microsoft Access ডেটাবেস সমর্থিত
+  unsupported_type_2: শুধুমাত্র PostgreSQL, MySQL এবং MS SQL Server ডেটাবেস সমর্থিত
+  email_pdf:
+    no_email: আপনার অ্যাকাউন্টের জন্য কোনো ইমেইল ঠিকানা পাওয়া যায়নি।
+    invalid_body: অবৈধ অনুরোধ বডি
+    send_failed: রিপোর্ট ইমেইল করতে ব্যর্থ হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।
+  llm:
+    http_error: LLM HTTP {status_code} ফেরত দিয়েছে
+    unknown_error: অজানা LLM ত্রুটি
+    empty_content: LLM খালি কনটেন্ট ফেরত দিয়েছে
+    no_ai_provider: কোনো AI প্রোভাইডার কনফিগার করা নেই। Settings → AI Connections-এ একটি AI প্রোভাইডার সংযুক্ত করুন।
+    timeout: LLM অনুরোধ {timeout_seconds} সেকেন্ড পর সময় শেষ হয়েছে।
+    no_model: কোনো AI মডেল কনফিগার করা নেই। AI সংযোগে একটি ডিফল্ট মডেল সেট করুন অথবা একটি সুনির্দিষ্ট মডেল পাস করুন।
+  analysis_complete: বিশ্লেষণ সম্পন্ন
+  stream_ai_integration_done: 'ইন্টিগ্রেশন AI: {relationships} সম্পর্ক, {capabilities} সক্ষমতা'
+  stream_mechanical_start: যান্ত্রিক বিশ্লেষণ চলছে...
+  ai_skipped_message: 'AI বিশ্লেষণ বাদ দেওয়া হয়েছে — {count}টি সমস্যা পাওয়া গেছে (সীমা: {limit})। নিচের যান্ত্রিক ফলাফলগুলো পর্যালোচনা করুন, ডেটাবেস পরিষ্কার করুন, তারপর AI দিয়ে পুনরায় চালান।'
+  stream_ai_done: 'AI বিশ্লেষণ সম্পন্ন — অবস্থা: {status}'
+  stream_extracting_schema: '{db_type} থেকে স্কিমা নিষ্কাশন করা হচ্ছে...'
+  stream_mechanical_done: 'যান্ত্রিক বিশ্লেষণ: {count}টি সমস্যা পাওয়া গেছে'
+  stream_semistructured_start: সেমি-স্ট্রাকচার্ড কলাম বিশ্লেষণ করা হচ্ছে...
+  stream_ai_semantic_start: 'সেমান্টিক AI: {tables}টি টেবিল বিশ্লেষণ করা হচ্ছে...'
+  ai_skipped_reason: 'এই প্রতিবেদনে কেবল যান্ত্রিক বিশ্লেষণ রয়েছে। AI-সমৃদ্ধ বিশ্লেষণ বাদ দেওয়া হয়েছে কারণ ডাটাবেস {count}টি সমস্যা তৈরি করেছে (সীমা: {limit})। নিচের যান্ত্রিক ফলাফল পর্যালোচনা করুন,
+    ডাটাবেস পরিষ্কার করুন, তারপর প্রসঙ্গ-সচেতন ব্যাখ্যা, সেমান্টিক অন্তর্দৃষ্টি এবং নরমালাইজেশন পরামর্শের জন্য AI দিয়ে পুনরায় চালান।'
+  stream_ai_schema_start: 'স্কিমা AI: {tables}টি টেবিল বিশ্লেষণ করা হচ্ছে...'
+  stream_normalisation_skipped: 'নরমালাইজেশন: বাদ দেওয়া হয়েছে ({error})'
+  stream_ai_schema_done: 'স্কিমা AI: স্বাস্থ্য স্কোর {score}/100'
+  stream_connecting: ডাটাবেসে সংযোগ করা হচ্ছে...
+  stream_connected: '{db_type} এ সংযুক্ত: {db_name}'
+  stream_normalisation_done: 'নরমালাইজেশন: {count}টি পরামর্শ'
+  stream_ai_integration_start: 'ইন্টিগ্রেশন AI: সম্পর্ক সনাক্ত করা হচ্ছে...'
+  stream_normalisation_start: নরমালাইজেশন পরামর্শ তৈরি করা হচ্ছে...
+  stream_ai_semantic_done: 'সেমান্টিক AI: {columns}টি কলামের অর্থ, {domains}টি ISIC ডোমেইন'
+  stream_ai_start: AI বিশ্লেষণ শুরু হচ্ছে — ৩ জন বিশেষজ্ঞ সমান্তরালে...
+  stream_analysis_failed: 'বিশ্লেষণ ব্যর্থ হয়েছে: {error}'
+  stream_normalisation_timeout: 'নরমালাইজেশন: ৯০ সেকেন্ড পরে সময় শেষ হয়েছে'
+  stream_unsupported_type: 'অসমর্থিত ডাটাবেস ধরন: {db_type}'
+  analysis_cancelled: বিশ্লেষণ স্ট্রিম বাতিল করা হয়েছে (ক্লায়েন্ট সংযোগ বিচ্ছিন্ন হয়েছে)
+  stream_schema_done: 'স্কিমা নিষ্কাশন সম্পন্ন: {tables}টি টেবিল, {columns}টি কলাম'
+error:
+  ai:
+    call_failed: 'AI কল ব্যর্থ হয়েছে: {error}'
+  connection:
+    connect_failed: 'MySQL সংযোগ ব্যর্থ হয়েছে: {error}'
+    decryption_failed: 'সংযোগের পাসওয়ার্ড ডিক্রিপ্ট করতে ব্যর্থ: {error}'
+    failed: 'ডেটাবেসে সংযোগ করতে ব্যর্থ: {error}'
+    query_failed: 'টেবিল/ভিউ ''{table}'' কোয়েরি করতে ব্যর্থ: {error}'
+    query_failed_2: 'সংকলিত SQL কার্যকর করা যায়নি: {error}'
+    query_failed_3: 'PostgreSQL কোয়েরি ব্যর্থ হয়েছে: {error}'
+    query_failed_4: 'MySQL কোয়েরি ব্যর্থ হয়েছে: {error}'
+    query_failed_5: 'MSSQL কোয়েরি ব্যর্থ হয়েছে: {error}'
+    query_failed_6: 'Access কোয়েরি ব্যর্থ হয়েছে: {error}'
+    query_failed_7: 'ডেটাবেস কোয়েরি ব্যর্থ হয়েছে: {error}'
+    type_not_supported: ডেটাবেস ধরন '{type}' এখনও সমর্থিত নয়
+    type_not_supported_2: ডেটাবেস ধরন '{type}' স্কিমা আবিষ্কারের জন্য এখনও সমর্থিত নয়
+    type_not_supported_3: 'অসমর্থিত ডেটাবেস ধরন: {type}'
+  database:
+    insert_failed: 'ডেটাবেস ত্রুটি: {error}'
+    pool_not_initialized: ডেটাবেস পুল আরম্ভ করা হয়নি
+  dataset:
+    delete_failed_2: 'ডেটাসেট মুছে ফেলা যায়নি: {error}'
+    load_failed: 'ডেটাসেট লোড করতে ব্যর্থ: {error}'
+    load_failed_2: 'ডেটা লোড করা যায়নি: {error}'
+    load_failed_3: ভার্চুয়াল ডেটাসেট '{id}'-এর কোনো SQL সংজ্ঞা নেই
+    load_failed_4: 'ভার্চুয়াল ডেটাসেট ''{id}'' লোড করতে ব্যর্থ: {error}'
+    not_found: ডেটাসেট '{id}' পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+    not_found_2: ডেটাসেট '{id}' পাওয়া যায়নি
+    not_found_3: 'ডেটাসেট পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়: {error}'
+    not_found_4: ডেটাসেট '{id}' পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+    not_found_5: ডেটাসেট '{id}' পাওয়া যায়নি
+    not_found_or_not_owned: ডেটাসেট '{id}' পাওয়া যায়নি অথবা আপনি এর মালিক নন
+    table_missing: টেবিল '{table}' বিদ্যমান নেই।
+    unknown_source: 'অজানা উৎসের ধরন: {source_type}'
+  define:
+    connection_not_found: ডেটাবেস সংযোগ পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+    connection_not_found_2: সংযোগ পাওয়া যায়নি বা অ্যাক্সেসযোগ্য নয়
+    dataset_creation_failed: 'ডেটাসেট রেকর্ড তৈরি করতে ব্যর্থ: {error}'
+  describe:
+    ai_connection_error: 'AI সংযোগ ত্রুটি: কোনো সংযোগ উপলব্ধ নেই'
+    ai_connection_error_2: 'AI সংযোগ ত্রুটি: API কী ডিক্রিপ্ট করতে ব্যর্থ'
+  execution:
+    cannot_cancel: ইতিমধ্যে {status} অবস্থায় থাকা নির্বাহ বাতিল করা যাবে না
+  groups:
+    invalid_group_id: অবৈধ group_id। অবশ্যই 00-99 হতে হবে
+  preparation:
+    rule_not_found: এই ডেটাসেটের জন্য প্রস্তুতি নিয়ম '{id}' পাওয়া যায়নি
+    rule_not_found_2: প্রস্তুতি নিয়ম '{id}' পাওয়া যায়নি
+execution:
+  executing_stage: 'ধাপ নির্বাহ করা হচ্ছে: {stage}'
+  loaded_rows: লোড হয়েছে {rows}টি সারি, {columns}টি কলাম
+  loading_dataset: ডেটাসেট লোড হচ্ছে...
+  not_found: নির্বাহ পাওয়া যায়নি
+  starting_analysis: বিশ্লেষণের ধাপ শুরু হচ্ছে...
+groups:
+  admin_required: অ্যাডমিন অ্যাক্সেস প্রয়োজন
+  cannot_delete_self: আপনি নিজের অ্যাকাউন্ট মুছতে পারবেন না
+  description_required: বিবরণ খালি রাখা যাবে না
+  insufficient_permissions: গ্রুপ পরিচালনা করার পর্যাপ্ত অনুমতি নেই
+  invalid_group_id: অবৈধ user_group। অবশ্যই 00-99 হতে হবে
+  not_authorized: এই ব্যবহারকারীর গ্রুপ দেখার অনুমতি নেই
+  not_found: গ্রুপ '{id}' পাওয়া যায়নি
+  update_failed: গ্রুপ আপডেট করতে ব্যর্থ
+  update_success: গ্রুপ '{id}'-এর বিবরণ আপডেট হয়েছে
+  user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  user_updated: ব্যবহারকারীর গ্রুপ সফলভাবে আপডেট হয়েছে
+  resource_not_found: রিসোর্স পাওয়া যায়নি
+  missing_id: রিসোর্স আইডি অনুপস্থিত
+licence:
+  delete_failed: 'লাইসেন্স ফাইল মুছতে ব্যর্থ: {error}'
+  missing_content: '''content'' ক্ষেত্র অনুপস্থিত'
+  write_failed: 'লাইসেন্স ফাইল লিখতে ব্যর্থ: {error}'
+  install_success: লাইসেন্স সফলভাবে ইনস্টল করা হয়েছে।
+  no_file_to_delete: মুছে ফেলার জন্য কোনো লাইসেন্স ফাইল নেই — ইতিমধ্যে ওপেন-সোর্স মোডে রয়েছে।
+  delete_success: লাইসেন্স সরানো হয়েছে। ওপেন-সোর্স মোডে চলছে।
+notebooks:
+  delete_error: 'ইম্পোর্ট মুছতে ব্যর্থ: {error}'
+  example_blocked: উদাহরণ ব্যবহারকারীরা নোটবুক ইমপোর্ট করতে পারে না।
+  example_blocked_2: উদাহরণ ব্যবহারকারীরা নোটবুক শেয়ারিং পরিবর্তন করতে পারে না।
+  example_blocked_3: উদাহরণ ব্যবহারকারীরা নোটবুক মুছতে পারে না।
+  file_too_large: নোটবুক ফাইলটি খুব বড়। সর্বোচ্চ আকার {max_size} MB।
+  import_failed: 'নোটবুক ইমপোর্ট ব্যর্থ হয়েছে: {error}'
+  import_failed_2: 'ইমপোর্ট তালিকা করতে ব্যর্থ হয়েছে: {error}'
+  import_failed_3: ইমপোর্ট পাওয়া যায়নি
+  import_failed_4: 'ইমপোর্ট আনতে ব্যর্থ হয়েছে: {error}'
+  invalid_format_2: অবৈধ নোটবুক ফরম্যাট। শুধুমাত্র .ipynb ফাইল গ্রহণ করা হয়।
+  no_connection: অনুগ্রহ করে একটি ডেটাবেস সংযোগ নির্বাচন করুন।
+  no_dataframes: এই নোটবুকে কোনো ডেটাফ্রেম পাওয়া যায়নি
+  no_db_rights: এই সংযোগের ডেটাবেস তৈরির অধিকার নেই।
+  no_table_rights: এই সংযোগ দিয়ে টেবিল তৈরি করা যায় না — ইমপোর্ট প্রত্যাখ্যাত হয়েছে।
+  share_error: শুধুমাত্র মালিক শেয়ারিং সেটিংস পরিবর্তন করতে পারবেন।
+  share_error_2: 'শেয়ারিং আপডেট করতে ব্যর্থ হয়েছে: {error}'
+  system_db_blocked: সিস্টেম ডেটাবেস '{db}'-এ ইমপোর্ট করা যাবে না। অনুগ্রহ করে ভিন্ন ডেটাবেস ব্যবহার করুন বা একটি নতুন তৈরি করুন।
+  untitled: শিরোনামহীন
+  unknown_error: অজানা ত্রুটি
+  invalid_json: 'অবৈধ JSON: {error}'
+  cells_not_list: 'অবৈধ নোটবুক ফরম্যাট: ''cells'' একটি তালিকা নয়'
+  too_many_cells: 'অত্যধিক সেল ({count})। সর্বোচ্চ: {max_cells}'
+  missing_cells: 'অবৈধ নোটবুক ফরম্যাট: ''cells'' কী অনুপস্থিত'
+notebooks_storage:
+  failed_create_table: 'টেবিল {table} তৈরি করতে ব্যর্থ হয়েছে: {error}'
+  failed_create_table_mssql: 'টেবিল তৈরি করতে ব্যর্থ হয়েছে: {error}'
+  no_connection_details: কোনো সংযোগের বিবরণ দেওয়া হয়নি
+  no_connection_details_short: কোনো সংযোগের বিবরণ নেই
+  unsupported_storage_type: 'অসমর্থিত স্টোরেজ ধরন: {type}'
+  no_data_pool: ডেটা ডেটাবেস পুল ইনিশিয়ালাইজ করা হয়নি।
+rag:
+  ai_provider_error: 'AI প্রদানকারী ত্রুটি: {error}'
+  no_ai_provider: '{count}টি মিলে যাওয়া রেকর্ড পাওয়া গেছে। (প্রাকৃতিক ভাষার উত্তরের জন্য কোনো AI প্রদানকারী কনফিগার করা নেই।)'
+  no_matches: আপনার প্রশ্নের জন্য ডেটাবেসে কোনো মিলে যাওয়া টেক্সট পাওয়া যায়নি। ভিন্নভাবে লিখে চেষ্টা করুন বা অন্য ডেটা সোর্স নির্বাচন করুন।
+  no_tables: অনুসন্ধানের জন্য স্কিমায় কোনো টেবিল পাওয়া যায়নি।
+recipes:
+  ai_session:
+    create_error: AI রেসিপি সেশন তৈরি করতে ব্যর্থ হয়েছে
+    delete_error: AI রেসিপি সেশন মুছতে ব্যর্থ হয়েছে
+    load_error: AI রেসিপি সেশন লোড করতে ব্যর্থ হয়েছে
+    not_found: AI রেসিপি সেশন পাওয়া যায়নি
+    save_error: AI সেশন থেকে রেসিপি সংরক্ষণ করতে ব্যর্থ হয়েছে
+    unauthorized: এই AI রেসিপি সেশনে আপনার অ্যাক্সেস নেই
+  column_type:
+    categorical: ক্যাটাগরিকাল
+    numeric: সংখ্যাসূচক
+  columns_required: অনুগ্রহ করে অন্তত একটি কলাম নির্বাচন করুন
+  create_success: রেসিপি '{name}' সফলভাবে তৈরি হয়েছে
+  data_selection_error: 'ডেটা নির্বাচন ব্যর্থ হয়েছে: {error}'
+  dataset_not_found: ডেটাসেট পাওয়া যায়নি
+  dataset_required: অনুগ্রহ করে একটি ডেটাসেট নির্বাচন করুন
+  delete_error: 'রেসিপি মুছতে ব্যর্থ হয়েছে: {error}'
+  delete_success: রেসিপি '{id}' সফলভাবে মুছে ফেলা হয়েছে
+  execute_error: 'রেসিপি নির্বাহ করতে ব্যর্থ হয়েছে: {error}'
+  execution:
+    error: 'রেসিপি নির্বাহের ত্রুটি: {error}'
+    preparation_error: 'প্রস্তুতি পর্যায় ব্যর্থ হয়েছে: {error}'
+    preparation_failed: প্রস্তুতি পর্যায় ব্যর্থ হয়েছে
+    unknown_stage: 'অজানা পর্যায়ের ধরন: {stage_type}'
+  execution_completed: নির্বাহ সফলভাবে সম্পন্ন হয়েছে
+  execution_failed: নির্বাহ ব্যর্থ হয়েছে
+  execution_load_error: 'নির্বাহ লোড করতে ব্যর্থ হয়েছে: {error}'
+  execution_not_found: নির্বাহ '{id}' পাওয়া যায়নি
+  executions_load_error: 'নির্বাহগুলো লোড করতে ব্যর্থ হয়েছে: {error}'
+  field_label:
+    categoryColumn: ক্যাটাগরি কলাম (লেবেল)
+    dependentColumn: নির্ভরশীল / ফলাফল কলাম
+    factorColumn: ফ্যাক্টর কলাম (গ্রুপিং চলক)
+    independentColumns: স্বাধীন / পূর্বাভাসক কলাম
+    responseColumn: রেসপন্স কলাম (সংখ্যাসূচক পরিমাপ)
+    responseColumn2: দ্বিতীয় রেসপন্স কলাম (জোড়া পরিমাপ)
+    xColumn: X-অক্ষের কলাম
+    yColumn: Y-অক্ষের কলাম
+    columns: কলামসমূহ
+    factorColumn2: দ্বিতীয় ফ্যাক্টর কলাম (গ্রুপিং ভেরিয়েবল)
+  invalid_stage: রেসিপির জন্য অবৈধ পর্যায়
+  invalid_stage_type: 'অবৈধ পর্যায়ের ধরন: {type}। অবশ্যই এইগুলোর একটি হতে হবে: {types}'
+  load_datasets_error: 'ডেটাসেটগুলো লোড করতে ব্যর্থ হয়েছে: {error}'
+  load_error: 'রেসিপিগুলো লোড করতে ব্যর্থ হয়েছে: {error}'
+  name_required: রেসিপির নাম প্রয়োজন
+  no_columns_exist: নির্বাচিত কলামগুলোর কোনোটি ডেটাসেটে নেই
+  no_dataset: এই রেসিপির সাথে কোনো ডেটাসেট যুক্ত নেই
+  no_stages: রেসিপিতে কমপক্ষে একটি পর্যায় থাকতে হবে
+  no_updates: আপডেট করার মতো কোনো ফিল্ড নেই
+  not_found: রেসিপি '{id}' পাওয়া যায়নি
+  not_owned: রেসিপি '{id}' পাওয়া যায়নি অথবা আপনি এর মালিক নন
+  preparation:
+    all_rules_failed: 'সব নিয়ম ব্যর্থ হয়েছে: {errors}'
+    no_db_pool: প্রস্তুতি পর্যায়ের জন্য ডেটাবেস পুল উপলব্ধ নেই
+    rule_failed: 'নিয়ম ''{rule_id}'': {error}'
+    rule_not_found: নিয়ম '{rule_id}' পাওয়া যায়নি
+    rules_applied: '{count}টি প্রস্তুতি নিয়ম প্রয়োগ করা হয়েছে'
+  requirement:
+    anova_one_way: ১টি ক্যাটাগরিকাল কলাম (ফ্যাক্টর) এবং ১টি সংখ্যাসূচক কলাম (রেসপন্স)
+    anova_two_way: 2টি শ্রেণিবদ্ধ কলাম (দুটি ফ্যাক্টর) এবং 1টি সংখ্যাসূচক কলাম (প্রতিক্রিয়া)
+    bar: 1টি শ্রেণিবদ্ধ কলাম (x-অক্ষ) এবং 1টি সংখ্যাসূচক কলাম (y-অক্ষ)
+    chi_square: 2টি শ্রেণিবদ্ধ কলাম
+    correlation: কমপক্ষে 2টি সংখ্যাসূচক কলাম
+    descriptive: কমপক্ষে 1টি সংখ্যাসূচক কলাম
+    distribution: 1টি সংখ্যাসূচক কলাম
+    histogram: 1টি সংখ্যাসূচক কলাম (x-অক্ষ)
+    line: 2টি সংখ্যাসূচক কলাম (x এবং y)
+    linear_regression: কমপক্ষে 2টি সংখ্যাসূচক কলাম (পূর্বাভাসক এবং ফলাফল)
+    none: কোনো আউটপুট প্রয়োজন নেই
+    pie: 1টি শ্রেণিবদ্ধ কলাম (লেবেল)
+    scatter: 2টি সংখ্যাসূচক কলাম (x এবং y)
+    t_test_independent: 1টি শ্রেণিবদ্ধ কলাম (গ্রুপের জন্য) এবং 1টি সংখ্যাসূচক কলাম (তুলনার জন্য)
+    t_test_paired: 2টি সংখ্যাসূচক কলাম (জোড়া পরিমাপ)
+    table: যেকোনো কলাম
+    area: ২টি সংখ্যাসূচক কলাম (x এবং y)
+    hbar: ১টি শ্রেণিবদ্ধ কলাম (y-অক্ষ) এবং ১টি সংখ্যাসূচক কলাম (x-অক্ষ)
+    donut: ১টি শ্রেণিবদ্ধ কলাম (লেবেল)
+  result_type:
+    numeric: সংখ্যাসূচক
+    tabular: ট্যাবুলার
+  scatter_two_columns: স্ক্যাটার প্লটের জন্য কমপক্ষে দুটি কলাম প্রয়োজন
+  scatter_two_numeric: স্ক্যাটার প্লটের জন্য দুটি সংখ্যাসূচক কলাম প্রয়োজন
+  schema_error: 'কলাম স্কিমা লোড করতে ব্যর্থ হয়েছে: {error}'
+  share:
+    disabled: রেসিপিটি এখন প্রাইভেট
+    enabled: রেসিপি সফলভাবে শেয়ার করা হয়েছে
+  transforms:
+    connect_success: ট্রান্সফর্ম রেসিপির সাথে সংযুক্ত হয়েছে
+    dataset_mismatch: ট্রান্সফর্ম '{id}' ডেটাসেট '{dataset_id}'-এর অন্তর্গত নয়
+    disconnect_success: ট্রান্সফর্ম রেসিপি থেকে বিচ্ছিন্ন হয়েছে
+    load_error: সংযুক্ত ট্রান্সফর্মগুলো লোড করতে ব্যর্থ হয়েছে
+    not_found: ট্রান্সফর্ম '{id}' পাওয়া যায়নি বা এটি এই রেসিপির ডেটাসেটের অন্তর্গত নয়
+  unknown_stage: 'অজানা পর্যায়ের ধরন: {stage_type}'
+  unsupported_chart_type: 'অসমর্থিত চার্টের ধরন: {chart_type}'
+  update_error: 'রেসিপি আপডেট করতে ব্যর্থ হয়েছে: {error}'
+  update_success: রেসিপি '{id}' সফলভাবে আপডেট হয়েছে
+  validation:
+    failed: 'রেসিপি যাচাইকরণ ব্যর্থ হয়েছে:'
+    incompatible_algo_output: 'বিশ্লেষণ ''{algo}'' {result_type} ফলাফল তৈরি করে এবং ''{output}'' চার্ট হিসেবে প্রদর্শন করা যায় না। আউটপুটের ধরন ''{algo}''-এর সাথে সামঞ্জস্যপূর্ণ কোনো একটি ধরনে পরিবর্তন
+      করুন: {options}।'
+    insufficient_columns_algo: 'এই ডেটাসেটে ''{algo}''-এর জন্য সঠিক কলামের ধরন নেই ({requirement})। ডেটাসেটে রয়েছে: {columns}। {requirement} সহ একটি ডেটাসেট বেছে নিন, অথবা এতে পরিবর্তন করুন: {options}।'
+    insufficient_columns_output: 'এই ডেটাসেটে ''{output}''-এর জন্য সঠিক কলামের ধরন নেই ({requirement})। ডেটাসেটে রয়েছে: {columns}। {requirement} সহ একটি ডেটাসেট বেছে নিন, অথবা এতে পরিবর্তন করুন: {options}।'
+    missing_algo_field: বিশ্লেষণ '{algo}'-এর '{field}' সেটিং ({label}) অনুপস্থিত। বিশ্লেষণ প্যানেলে '{field}'-এর জন্য একটি কলাম নির্বাচন করুন।
+    missing_output_field: আউটপুট '{output}'-এর '{field}' সেটিং ({label}) অনুপস্থিত। আউটপুট প্যানেলে '{field}'-এর জন্য একটি কলাম নির্বাচন করুন।
+    unknown_algorithm: '''{type}'' কোনো স্বীকৃত বিশ্লেষণ পদ্ধতি নয়। এগুলোর মধ্যে একটি বেছে নিন: {options}।'
+    unknown_columns: '{stage} পর্যায়টি ''{columns}'' কলাম(গুলো) নির্দেশ করছে, যা এই ডেটাসেটে নেই। উপলব্ধ কলাম: {available}। উপলব্ধ কলামগুলো থেকে নির্বাচন করুন।'
+    unknown_output: '''{type}'' কোনো স্বীকৃত আউটপুট ধরন নয়। এগুলোর মধ্যে একটি বেছে নিন: {options}।'
+    wrong_column_type: কলাম '{column}' অবশ্যই '{field}' ({label}) এর জন্য {expected} হতে হবে।
+    algorithm_required: কোনো বিশ্লেষণ পদ্ধতি নির্বাচন করা হয়নি। বিশ্লেষণ প্যানেলে একটি নির্বাচন করুন — একটি রেসিপির জন্য অ্যালগরিদমসহ একটি পরিসংখ্যান পর্যায় প্রয়োজন।
+    unknown_field: '''{field}'' ''{type}''-এর জন্য কোনো স্বীকৃত সেটিং নয়। স্বীকৃত সেটিংস: {options}।'
+  visualisation_columns_required: ভিজ্যুয়ালাইজেশনের জন্য কমপক্ষে একটি কলাম প্রয়োজন
+  visualisation_error: 'ভিজ্যুয়ালাইজেশন ব্যর্থ হয়েছে: {error}'
+  visualisation_generated: ভিজ্যুয়ালাইজেশন সফলভাবে তৈরি হয়েছে
+  technique_anova_two_way: দ্বিমুখী ANOVA
+  technique_linear_regression: রৈখিক রিগ্রেশন
+  technique_t_test_independent: স্বাধীন টি-টেস্ট
+  technique_correlation: পারস্পরিক সম্পর্ক ম্যাট্রিক্স
+  technique_anova_one_way: একমুখী ANOVA
+  technique_t_test_paired: জোড়যুক্ত টি-টেস্ট
+  technique_chi_square: চি-স্কয়ার টেস্ট
+  technique_descriptive: বর্ণনামূলক পরিসংখ্যান
+  distribution_no_columns: ডিস্ট্রিবিউশন চার্টের জন্য কমপক্ষে একটি কলাম প্রয়োজন।
+  histogram_no_columns: হিস্টোগ্রামের জন্য কমপক্ষে একটি কলাম প্রয়োজন।
+  histogram_numeric: হিস্টোগ্রামের জন্য একটি সংখ্যাসূচক কলাম প্রয়োজন।
+  stage_not_implemented: '{stage_type} পর্যায় শীঘ্রই আসছে'
+  scoreboard:
+    technique:
+      what: একটি বিশ্লেষণ পদ্ধতি নির্বাচন করুন
+    technique_unknown:
+      what: একটি পরিচিত বিশ্লেষণ পদ্ধতি নির্বাচন করুন
+    output:
+      what: একটি আউটপুট ধরন নির্বাচন করুন
+    output_fields:
+      what: আউটপুট কলামগুলো নির্বাচন করুন
+    dataset:
+      what: একটি ডেটাসেট নির্বাচন করুন
+    output_incompatible:
+      what: একটি সামঞ্জস্যপূর্ণ আউটপুট ধরন নির্বাচন করুন
+    output_unknown:
+      what: একটি পরিচিত আউটপুট ধরন নির্বাচন করুন
+    technique_fields:
+      what: প্রয়োজনীয় কলামগুলো নির্বাচন করুন
+    name:
+      what: রেসিপিটির নাম দিন
+  chip:
+    heading:
+      columns: কোন কলামগুলো?
+      output: কোন আউটপুট?
+      technique: কোন বিশ্লেষণ পদ্ধতি?
+schema:
+  connection_and_table_required: PostgreSQL/MySQL উৎসের জন্য connection_id এবং table_name প্রয়োজন
+  connection_not_found: ডেটাবেস সংযোগ পাওয়া যায়নি বা অ্যাক্সেস অনুমোদিত নয়
+  dataset_id_required: source_type=dataset-এর জন্য dataset_id প্রয়োজন
+  dataset_not_found: ডেটাসেট পাওয়া যায়নি বা অ্যাক্সেস অনুমোদিত নয়
+  introspect_mysql_failed: 'MySQL ইন্ট্রোস্পেক্ট করতে ব্যর্থ হয়েছে: {error}'
+  introspect_postgresql_failed: 'PostgreSQL ইন্ট্রোস্পেক্ট করতে ব্যর্থ হয়েছে: {error}'
+  no_table_name: ডেটাসেটের কোনো টেবিল নাম নেই (এখনও ইনজেস্ট করা হয়নি)
+  unsupported_source_type: 'অসমর্থিত source_type: {source_type}। dataset, postgresql বা mysql ব্যবহার করুন।'
+statistics:
+  anova_computation_failed: 'দ্বিমুখী অ্যানোভা গণনা ব্যর্থ হয়েছে: {error}'
+  anova_needs_three_groups: একমুখী অ্যানোভার জন্য 3 বা তার বেশি গ্রুপ প্রয়োজন (পাওয়া গেছে {n})। 2 গ্রুপের জন্য স্বাধীন টি-টেস্ট ব্যবহার করুন।
+  cache_cleared: ক্যাশ কী '{key}' পরিষ্কার করা হয়েছে
+  cache_not_found: ক্যাশ কী '{key}' পাওয়া যায়নি
+  column_must_be_numeric: কলাম '{col}' অবশ্যই সংখ্যাসূচক হতে হবে
+  column_not_found: কলাম '{col}' পাওয়া যায়নি
+  computation_failed: 'পরিসংখ্যান গণনা ব্যর্থ হয়েছে: {error}'
+  compute_failed: 'পরিসংখ্যান গণনা করতে ব্যর্থ হয়েছে: {error}'
+  each_group_two_observations: প্রতিটি গ্রুপে কমপক্ষে 2টি পর্যবেক্ষণ থাকতে হবে
+  factor_column_not_found: ফ্যাক্টর {factor} কলাম '{col}' পাওয়া যায়নি
+  group_column_required_anova: একমুখী অ্যানোভার জন্য 3 বা তার বেশি স্তরবিশিষ্ট একটি শ্রেণিবদ্ধ গ্রুপ কলাম প্রয়োজন
+  group_column_required_ttest: স্বাধীন টি-টেস্টের জন্য ঠিক দুটি স্তরবিশিষ্ট একটি শ্রেণিবদ্ধ গ্রুপ কলাম প্রয়োজন
+  group_fewer_than_two: গ্রুপ '{group}'-এ 2টির কম পর্যবেক্ষণ রয়েছে
+  group_must_have_two_levels: গ্রুপ কলাম '{group}'-এ ঠিক 2টি স্তর থাকতে হবে (পাওয়া গেছে {n})
+  need_five_observations_chi: কমপক্ষে 5টি সম্পূর্ণ পর্যবেক্ষণ প্রয়োজন
+  need_observations_regression: কমপক্ষে {n}টি সম্পূর্ণ পর্যবেক্ষণ প্রয়োজন
+  need_ten_observations_anova: দ্বিমুখী অ্যানোভার জন্য কমপক্ষে 10টি সম্পূর্ণ পর্যবেক্ষণ প্রয়োজন
+  need_three_pairs: পেয়ারড টি-টেস্টের জন্য কমপক্ষে 3টি সম্পূর্ণ জোড়া প্রয়োজন
+  need_two_categories_chi: উভয় কলামে কমপক্ষে 2টি বিভাগ থাকতে হবে
+  need_two_numeric_correlation: সহসম্পর্কের জন্য কমপক্ষে 2টি সংখ্যাসূচক কলাম প্রয়োজন
+  need_two_valid_numeric: কমপক্ষে 2টি বৈধ সংখ্যাসূচক কলাম প্রয়োজন
+  no_valid_data_after_dropna: NaN বাদ দেওয়ার পর কোনো বৈধ ডেটা নেই
+  no_valid_numeric: কোনো বৈধ সংখ্যাসূচক কলাম দেওয়া হয়নি
+  non_numeric_column: অ-সংখ্যাসূচক কলাম
+  not_computed: গণনা করা হয়নি
+  select_dependent_independent: 'কমপক্ষে 2টি সংখ্যাসূচক কলাম নির্বাচন করুন: প্রথম = নির্ভরশীল, বাকিগুলো = স্বাধীন'
+  select_dependent_var: একটি সংখ্যাসূচক নির্ভরশীল চলকের কলাম নির্বাচন করুন
+  select_one_numeric_ttest: স্বাধীন টি-টেস্টের জন্য একটি সংখ্যাসূচক কলাম নির্বাচন করুন
+  select_two_categorical_chi: ঠিক দুটি শ্রেণিবদ্ধ কলাম নির্বাচন করুন
+  select_two_numeric_paired: পেয়ারড টি-টেস্টের জন্য ঠিক দুটি সংখ্যাসূচক কলাম নির্বাচন করুন
+  two_factors_required: দ্বিমুখী অ্যানোভার জন্য দুটি ফ্যাক্টর প্রয়োজন
+system:
+  cache_cleanup_completed: 'ক্যাশ পরিষ্কার সম্পন্ন হয়েছে: {removed}টি এন্ট্রি সরানো হয়েছে'
+  hello_world: হ্যালো, ওয়ার্ল্ড!
+user:
+  api_key_required: এই প্রদানকারীর জন্য API কী প্রয়োজন
+  connection_name_exists: এই নামে একটি সংযোগ ইতিমধ্যে বিদ্যমান
+  connection_not_found: সংযোগ পাওয়া যায়নি
+  example_blocked: উদাহরণ ব্যবহারকারীরা এই কাজটি করতে পারে না
+  internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  missing_fields: প্রয়োজনীয় ক্ষেত্রসমূহ অনুপস্থিত
+  provider_not_found: প্রদানকারী পাওয়া যায়নি
+  user_not_found: ব্যবহারকারী পাওয়া যায়নি
+  connection_timeout_remote: '{baseUrl}-এ {code}-এর জন্য সংযোগের সময়সীমা শেষ হয়েছে'
+  api_key_required_fetch: এই প্রদানকারীর জন্য API কী প্রয়োজন।
+  connection_timeout_local: সংযোগের সময়সীমা শেষ হয়েছে। {code} কি {baseUrl}-এ চলছে?
+  unknown_provider: 'অজানা প্রদানকারী: {code}'
+  example_update_db: উদাহরণ ব্যবহারকারীরা ডাটাবেস সংযোগ আপডেট করতে পারে না।
+  example_create_db: উদাহরণ ব্যবহারকারীরা ডাটাবেস সংযোগ তৈরি করতে পারে না।
+  example_delete_db: উদাহরণ ব্যবহারকারীরা ডাটাবেস সংযোগ মুছতে পারে না।
+  no_endpoint: এই প্রদানকারীর জন্য কোনো এন্ডপয়েন্ট কনফিগার করা নেই।
+  fetch_failed: ফেচ ব্যর্থ হয়েছে।
+  auto_create_default_detail: ডেটাসেট স্বয়ংক্রিয়ভাবে তৈরি করা ব্যর্থ হয়েছে। ডেটাবেস সার্ভারটি সম্ভবত পৌঁছানো যাচ্ছে না।
+  provider_returned: 'প্রোভাইডার {status} ফেরত দিয়েছে: {text}'
+  no_models_returned: প্রদানকারী কোনো মডেল ফেরত দেয়নি; কিছুই পরিবর্তন করা হয়নি।
+validation:
+  error: 'যাচাইকরণ ত্রুটি: {count}টি সমস্যা পাওয়া গেছে'
+  password:
+    require_digit: পাসওয়ার্ডে অন্তত একটি সংখ্যা থাকতে হবে।
+    require_uppercase: পাসওয়ার্ডে অন্তত একটি বড় হাতের অক্ষর থাকতে হবে।
+    require_lowercase: পাসওয়ার্ডে অন্তত একটি ছোট হাতের অক্ষর থাকতে হবে।
+    min_length: পাসওয়ার্ড কমপক্ষে {min} অক্ষরের হতে হবে।
+    require_special: পাসওয়ার্ডে অন্তত একটি বিশেষ অক্ষর থাকতে হবে।
+    too_weak: পাসওয়ার্ডটি খুবই দুর্বল। অনুগ্রহ করে আরও শক্তিশালী পাসওয়ার্ড বেছে নিন।
+virtual:
+  execute_failed: 'নির্বাহ ব্যর্থ হয়েছে: {error}'
+  no_credentials_mysql: MySQL সংযোগ {conn_id}-এর জন্য কোনো শংসাপত্র পাওয়া যায়নি
+  no_credentials_postgresql: PostgreSQL সংযোগ {conn_id}-এর জন্য কোনো শংসাপত্র পাওয়া যায়নি
+  preview_failed: 'প্রিভিউ ব্যর্থ হয়েছে: {error}'
+  validate:
+    join_right_source_not_found: 'জয়েন {j_idx}: ডান উৎস ''{right_alias}'' পাওয়া যায়নি।'
+    join_left_source_not_found: 'জয়েন {j_idx}: বাম উৎস ''{left_alias}'' পাওয়া যায়নি।'
+    connection_id_required: 'উৎস ''{alias}'': {storage_type} উৎসের জন্য connectionId প্রয়োজন।'
+    dataset_id_required: 'উৎস ''{alias}'': ডেটাসেট উৎসের জন্য datasetId প্রয়োজন।'
+    dataset_not_found: 'উৎস ''{alias}'': ডেটাসেট {dataset_id} পাওয়া যায়নি বা অ্যাক্সেস অনুমোদিত নয়।'
+    column_source_not_found: 'কলাম {c_idx}: উৎস ''{src_alias}'' পাওয়া যায়নি।'
+    connection_not_found: 'উৎস ''{alias}'': সংযোগ {conn_id} পাওয়া যায়নি বা অ্যাক্সেস অনুমোদিত নয়।'
+    no_sources: কোনো উৎস সংজ্ঞায়িত করা হয়নি।
+    join_column_not_found: 'জয়েন {j_idx}: ''{alias}'' উৎসে ''{column}'' কলাম নেই।'
+    output_column_not_found: 'কলাম {c_idx}: ''{src_alias}'' উৎসে ''{column}'' কলাম নেই।'
+  scoreboard:
+    joins:
+      what: উৎসগুলো কীভাবে যুক্ত করা উচিত?
+      needs: দুই বা ততোধিক উৎস, তাদের কলাম পড়া হয়েছে।
+    sources:
+      what: এই ডেটাসেটটি কোন টেবিল থেকে তৈরি করা উচিত?
+    columns:
+      needs_failed: '''{source}'' উৎসের কলামগুলো পড়া যায়নি।'
+      what: '''{source}''-এর ভেতরে কী আছে?'
+      needs_empty: '''{source}'' উৎসে বেছে নেওয়ার মতো কোনো কলাম নেই।'
+    name:
+      what: এই ডেটাসেটটির নাম কী রাখা উচিত?
+    output_columns:
+      needs: একটি উৎস, তার কলাম পড়া হয়েছে।
+      what: ফলাফলে কোন কলামগুলো থাকা উচিত?
+    storage:
+      what: এটি কি একটি লাইভ ভিউ হবে, নাকি একটি সংরক্ষিত টেবিল?
+      live: লাইভ ভিউ
+      table: সংরক্ষিত টেবিল
+  column:
+    missing_source: 'একটি কলামের উৎস প্রয়োজন: একটি ডেটাসেট আইডি, অথবা একটি সংযোগ এবং একটি টেবিলের নাম।'
+    unknown_action: '''{action}'' কোনো কলাম অ্যাকশন নয়। টিক দিন বা টিক তুলে দিন।'
+    missing_column: কোনো কলামের নাম দেওয়া হয়নি।
+  decision:
+    model_failed: 'আপনার পছন্দ সংরক্ষণ করা হয়েছে। সহকারী সাড়া দিতে পারেনি: {error}'
+    unknown_piece: '''{piece}'' এমন কোনো সিদ্ধান্ত নয় যা এই এন্ডপয়েন্ট প্রয়োগ করতে পারে।'
+    missing_value: '''{piece}'' সিদ্ধান্তের একটি মান প্রয়োজন।'
+    no_connection: আপনার পছন্দ সংরক্ষণ করা হয়েছে। কোনো AI সংযোগ উপলব্ধ না থাকায় সহকারী সাড়া দিতে পারেনি।
+    invalid_value: '''{piece}'' সিদ্ধান্ত প্রয়োগ করা যায়নি: {error}'
+    applied: উপরের নির্বাচনটি ব্যবহার করুন।
+    no_reply: আপনার পছন্দ সংরক্ষণ করা হয়েছে। সহকারী কোনো উত্তর তৈরি না করেই তার কাজের রাউন্ড শেষ করে ফেলেছে — চালিয়ে যেতে বলুন, অথবা ট্রিতে খসড়াটি দেখুন।
+  save:
+    invalid_definition: 'এই ডেটাসেটটি সংরক্ষণ করা যাচ্ছে না: {errors}'
+  join_suggestions:
+    invalid_sources: জয়েন পরামর্শের জন্য উৎসের একটি তালিকা প্রয়োজন, যেখানে প্রতিটি উৎসের একটি অ্যালিয়াস ও একটি নাম থাকতে হবে ({error})।
+  panel:
+    collapsed_required: প্যানেলের ভাঁজ করা অবস্থা অবশ্যই সত্য বা মিথ্যা হতে হবে।
+  tool:
+    no_source: '''{alias}'' নামে কোনো উৎস নেই। এই খসড়ার উৎসসমূহ: {aliases}।'
+    no_sources_yet: '''{alias}'' নামে কোনো উৎস নেই — খসড়াটির এখনো কোনো উৎস নেই। প্রথমে add_source কল করুন।'
+virtual_chat:
+  chat_session_not_found: চ্যাট সেশন পাওয়া যায়নি
+  connection_not_found: ডাটাবেস সংযোগ পাওয়া যায়নি বা অ্যাক্সেস অস্বীকৃত
+  introspection_failed: 'ইন্ট্রোস্পেকশন ব্যর্থ হয়েছে: {error}'
+  llm_call_failed: 'LLM কল ব্যর্থ হয়েছে: {error}'
+  llm_returned_error: LLM HTTP {status_code} ফেরত দিয়েছে
+  save_parse_error: '⚠️ ডেটাসেট সংরক্ষণ করা যায়নি: {error}'
+  save_success: ✅ ডেটাসেট **{name}** সফলভাবে সংরক্ষিত হয়েছে। আপনি এটি বিদ্যমান ডেটাসেট তালিকায় পাবেন। এটি পরিমার্জন করতে Edit ব্যবহার করুন বা একটি ভিন্ন সংস্করণ তৈরি করতে Clone করুন।
+  save_failed: '⚠️ সংরক্ষণ ব্যর্থ হয়েছে: {error}'
+  save_no_sources: '⚠️ সংরক্ষণ করা যাচ্ছে না: কোনো ডেটা সোর্স বিশ্লেষণ করা হয়নি। আপনার আগের বার্তাগুলোতে ''products'' বা ''orders''-এর মতো টেবিলের নাম উল্লেখ করার চেষ্টা করুন।'
+  empty_response: আমি নিশ্চিত নই কীভাবে এর উত্তর দেব। আপনি কি একটু ভিন্নভাবে বলতে পারেন বা আরও বিস্তারিত দিতে পারেন?
+  save_draft_success: '✅ ভার্চুয়াল ডেটাসেট খসড়া হিসেবে সংরক্ষিত হয়েছে: **{name}**। আপনি ডেটাসেট পেজে এটি দেখতে ও সম্পাদনা করতে পারবেন। SQL, জয়েন এবং আউটপুট কলাম পরিমার্জন করতে Define ট্যাব ব্যবহার করুন।'
+test_ai:
+  internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  server_reachable: '{baseUrl}-এ {name} সার্ভার অ্যাক্সেসযোগ্য।'
+  endpoint_v1_valid: '{baseUrl}/v1-এ এন্ডপয়েন্টটি বৈধ।'
+  no_endpoint: এই প্রদানকারীর জন্য কোনো এন্ডপয়েন্ট কনফিগার করা নেই।
+  endpoint_valid: '{baseUrl}-এ এন্ডপয়েন্টটি বৈধ।'
+  fetch_failed: ফেচ ব্যর্থ হয়েছে।
+  unknown_provider: 'অজানা প্রদানকারী: {provider}'
+  api_key_required: '{name}-এর জন্য API কী প্রয়োজন।'
+  connection_failed: 'সংযোগ ব্যর্থ হয়েছে: {msg}'
+  connection_timeout_local: সংযোগ টাইমআউট। {name} কি {baseUrl}-এ চলছে?
+  responded_with_status: '{name} {status} স্ট্যাটাস সহ সাড়া দিয়েছে'
+visualization_types:
+  slug_already_exists: স্লাগ ইতিমধ্যে বিদ্যমান।
+  forbidden: নিষিদ্ধ
+  type_not_found: ভিজ্যুয়ালাইজেশন ধরন পাওয়া যায়নি।
+  internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  name_and_slug_required: নাম এবং স্লাগ আবশ্যক
+ai_providers:
+  failed_to_update_provider: প্রদানকারী আপডেট করতে ব্যর্থ হয়েছে।
+  forbidden: নিষিদ্ধ
+  internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  failed_to_delete_provider: প্রদানকারী মুছতে ব্যর্থ হয়েছে।
+  missing_provider_id: প্রদানকারী আইডি অনুপস্থিত
+  missing_id_or_enabled: আইডি বা enabled ফ্ল্যাগ অনুপস্থিত
+  provider_not_found: প্রদানকারী পাওয়া যায়নি।
+  unauthorized: অননুমোদিত
+  invalid_provider_id: অবৈধ প্রোভাইডার আইডি
+visualization_instances:
+  invalid_instance_id: অবৈধ ইনস্ট্যান্স আইডি
+  unauthorized: অননুমোদিত
+  viz_type_not_found: ভিজ্যুয়ালাইজেশন ধরন পাওয়া যায়নি।
+  invalid_viz_type: অবৈধ ভিজ্যুয়ালাইজেশন ধরন
+  viz_type_id_required: visualizationTypeId প্রয়োজন
+  instance_not_found: ইনস্ট্যান্স পাওয়া যায়নি।
+  internal_error: অভ্যন্তরীণ সার্ভার ত্রুটি
+  no_rendered_output: কোনো রেন্ডার করা আউটপুট উপলব্ধ নেই
+ai:
+  database:
+    email_sent: রিপোর্ট সফলভাবে ইমেইল করা হয়েছে।
+columns_required: অপারেশন '{type}'-এর জন্য একটি columns ফিল্ড প্রয়োজন।
+rename_new_name_required: কলাম পুনঃনামকরণ অপারেশনে নতুন নাম প্রয়োজন।
+invalid_fill_method: 'অবৈধ fill_missing পদ্ধতি: {method}। এটি অবশ্যই {methods}-এর মধ্যে একটি হতে হবে।'
+filter_value_required: ফিল্টার অপারেশনের জন্য একটি মান প্রয়োজন।
+column_required: অপারেশন '{type}'-এর জন্য একটি কলাম প্রয়োজন।
+invalid_operation_type: 'অবৈধ অপারেশন টাইপ: {type}। এটি অবশ্যই {types}-এর মধ্যে একটি হতে হবে।'
+invalid_target_type: 'অবৈধ target_type: {target_type}। এটি অবশ্যই {types}-এর মধ্যে একটি হতে হবে।'
+invalid_encoding: 'অবৈধ এনকোডিং: {encoding}। এটি অবশ্যই {types}-এর মধ্যে একটি হতে হবে।'
+filter_operator_required: ফিল্টার অপারেশনের জন্য একটি অপারেটর প্রয়োজন।
+encode_column_required: এনকোড অপারেশনের জন্য একটি কলাম প্রয়োজন।
+dataclean_chat:
+  empty_response: আমি একটি উত্তর তৈরি করতে পারিনি। অনুগ্রহ করে আবার চেষ্টা করুন।
+  dataset_id_required: datasetId প্রয়োজন।
+  create_error: ডেটা ক্লিনিং সেশন তৈরি করা যায়নি।
+  message_required: বার্তা প্রয়োজন।
+  chat_session_not_found: ডেটা ক্লিনিং চ্যাট সেশন পাওয়া যায়নি।
+dataclean_tools:
+  no_rules_to_apply: প্রয়োগ করার জন্য কোনো নিয়ম নেই।
+  no_rules_to_preview: প্রিভিউ করার জন্য কোনো নিয়ম নেই।
