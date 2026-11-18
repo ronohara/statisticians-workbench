@@ -11,6 +11,8 @@ the ones expected to need revision.
 - Step 1, prerequisites — **[PROVEN]** 2026-11-18
 - Step 3, private cluster, role and databases — rewritten 2026-11-18 to the
   private-cluster model (port 9431); **not yet run**
+- Step 5, environment files — now runs `scripts/generate-env-files.sh`, revised
+  for the private cluster; **not yet run**
 - Step 6, schema — now one file (`db/baseline`, re-dumped at HEAD 2026-11-18);
   `db/migrations/` is history and is not applied. **Not yet run**
 - Step 7, seed — now runs `scripts/workbench-seed.py`, the Python port of
@@ -298,52 +300,32 @@ package failed here rather than working around it.
 Two `.env` files are needed: one for the backend, one for the frontend. **Neither
 is in the repository** — they are gitignored, because they hold secrets.
 
-Generate two secrets first:
+**Run the generator:**
 
 ```bash
-openssl rand -base64 32      # NEXTAUTH_SECRET  — copy this value
-openssl rand -hex 32         # ENCRYPTION_KEY   — must be exactly 64 hex characters
+cd ~/statisticians-workbench
+./scripts/generate-env-files.sh
 ```
 
-### 5a. `backend/.env`
+It writes both files, generates both secrets, and prints the SQL that creates the
+role with the password it just wrote — so `Installing.md` step 3b and the `.env`
+file cannot disagree. It takes no input, so it works unattended.
 
-```bash
-cat > ~/statisticians-workbench/backend/.env <<'ENV'
-DATABASE_URL=postgresql://workbench:change-this-password@127.0.0.1:9431/workbench
-NEXTAUTH_SECRET=<paste the base64 value>
-ENCRYPTION_KEY=<paste the 64-character hex value>
-ALLOWED_ORIGINS=http://localhost:3000
-ENVIRONMENT=development
-ENV
-```
+What it will and will not do, because the old version of this script did the
+opposite and broke running installations:
 
-What each does, and what breaks without it:
-
-- `DATABASE_URL` — required. The backend refuses to start without it
-  (`backend/main.py`, raises `RuntimeError("DATABASE_URL environment variable not set")`).
-  **The port is 9431**, the private cluster from §3 — never 5432, which belongs to
-  the machine's own PostgreSQL. `workbench_data` is derived from this URL by
-  swapping the database name, so this one line points both pools at the cluster.
-- `ENCRYPTION_KEY` — required, and **must be exactly 64 hexadecimal characters**.
-  The backend raises at import time otherwise (`backend/src/utils/encryption.py`).
-  It encrypts stored connection passwords; if it changes later, previously saved
-  credentials can no longer be decrypted.
-- `NEXTAUTH_SECRET` — signs the session token. The **frontend must use the same
-  value**, because the frontend mints the token and the backend verifies it.
-- `ALLOWED_ORIGINS` — CORS for the browser calling the API.
-- `ENVIRONMENT` — `development` enables the rotated log file
-  (`logs/backend.log`); production logs to the supervisor instead.
-
-### 5b. `frontend/.env`
-
-```bash
-cat > ~/statisticians-workbench/frontend/.env <<'ENV'
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=<the same value as backend/.env>
-BACKEND_URL=http://127.0.0.1:8000
-NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
-ENV
-```
+- **It never rotates a database password.** If the `workbench` role already
+  exists and the password is not supplied, it refuses and says so. Pass
+  `WORKBENCH_DB_PASSWORD='…'` to reuse the existing one, or
+  `--rotate-db-password` to generate a new one deliberately — which prints the
+  `ALTER ROLE` to run and warns that every running backend must be restarted,
+  because each keeps the old password in memory.
+- **It creates no Linux user and changes no ownership.** The checkout stays owned
+  by whoever cloned it.
+- **It will not overwrite existing files** without `--force`, and `--force` keeps
+  a timestamped copy of each first. Overwriting matters: a new `ENCRYPTION_KEY`
+  makes every stored connection password undecryptable.
+- `--dry-run` prints the files (secrets redacted) and writes nothing.
 
 **Check:**
 
@@ -358,13 +340,86 @@ print('NEXTAUTH_SECRET set:', bool(os.getenv('NEXTAUTH_SECRET')))
 "
 ```
 
-All three lines must be true and the length must read 64.
+All three lines must be true and the length must read 64. If the role and the
+cluster were both in place when the script ran, it also reported
+`Verified: the credential in backend/.env authenticates`; if it did not, run it
+again after step 3b and it will check.
 
-> **Outstanding:** there is no longer a script that generates these files. The
-> old `scripts/generate-env-files.sh` was withdrawn (it targeted a database
-> arrangement that no longer exists, and rotated the application role's
-> password). A replacement that writes both files and generates both secrets
-> safely is still to be written — see §11.
+### What the variables do
+
+`backend/.env`:
+
+- `DATABASE_URL` — required. The backend refuses to start without it
+  (`backend/main.py`, raises `RuntimeError("DATABASE_URL environment variable not set")`).
+  **The port is 9431**, the private cluster from §3 — never 5432, which belongs to
+  the machine's own PostgreSQL. `workbench_data` is derived from this URL by
+  swapping the database name, so this one line points both pools at the cluster.
+- `ENCRYPTION_KEY` — required, and **must be exactly 64 hexadecimal characters**.
+  The backend raises at import time otherwise (`backend/src/utils/encryption.py`).
+  It encrypts stored connection passwords; if it changes later, previously saved
+  credentials can no longer be decrypted.
+- `NEXTAUTH_SECRET` — signs the session token. The **frontend must use the same
+  value**, because the frontend mints the token and the backend verifies it.
+- `ALLOWED_ORIGINS` — CORS for the browser calling the API.
+
+`ENVIRONMENT` is **not** written, and that is deliberate. It is a real setting —
+`main.py:105` and `Logger.__init__` both read it — and it controls one thing:
+whether the backend also writes `logs/backend.log` (10 MB, three backups) on top
+of stderr. But `development` is its default on both sides, so a line setting it to
+`development` changes no behaviour. Set it only to leave development:
+
+```bash
+ENVIRONMENT=production   # file logging off; stderr only
+```
+
+`frontend/.env`:
+
+- `NEXTAUTH_URL` — where the frontend is served; the callback URL NextAuth uses.
+- `NEXTAUTH_SECRET` — the same value as the backend, for the reason above.
+- `ENCRYPTION_KEY` — the same value as the backend. `frontend/lib/encryption.ts`
+  reads it, and an earlier version of this section omitted it.
+- `BACKEND_URL` — where the frontend's server-side code reaches the API;
+  defaults to `http://127.0.0.1:8000` when unset.
+- `NEXT_PUBLIC_BACKEND_URL` — the same address, baked into the client bundle at
+  build time. Changing it means rebuilding (§9).
+
+### Writing them by hand, if you prefer
+
+The script is a convenience, not a requirement. Generate both secrets once, into
+shell variables, so the two files carry the same values:
+
+```bash
+SECRET="$(openssl rand -base64 32)"
+KEY="$(openssl rand -hex 32)"
+
+mkdir -p ~/statisticians-workbench/backend ~/statisticians-workbench/frontend
+
+cat > ~/statisticians-workbench/backend/.env <<ENV
+DATABASE_URL=postgresql://workbench:change-this-password@127.0.0.1:9431/workbench
+NEXTAUTH_SECRET=$SECRET
+ENCRYPTION_KEY=$KEY
+ALLOWED_ORIGINS=http://localhost:3000
+ENV
+
+cat > ~/statisticians-workbench/frontend/.env <<ENV
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=$SECRET
+ENCRYPTION_KEY=$KEY
+BACKEND_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_BACKEND_URL=http://127.0.0.1:8000
+ENV
+
+chmod 600 ~/statisticians-workbench/backend/.env ~/statisticians-workbench/frontend/.env
+```
+
+The heredoc delimiters are unquoted (`<<ENV`, not `<<'ENV'`) so `$SECRET` and
+`$KEY` expand — that is what makes the two files agree. `chmod 600` matters:
+these files hold the two secrets, and the repository's `.gitignore` keeps them
+out of git but does nothing about other local users.
+
+The password in `DATABASE_URL` must be the one the role actually has — the
+`CREATE ROLE` in step 3b sets it, and the two must match or the backend fails with
+28P01.
 
 ---
 
@@ -589,12 +644,14 @@ psql -c 'UPDATE "User" SET "isAdmin" = true WHERE email = '\''you@example.com'\'
 
 These are the parts this document cannot yet describe honestly.
 
-**(a) The `.env` creation process needs rebuilding.** The old
-`generate-env-files.sh` was withdrawn — it targeted the pre-0.12 database
-arrangement, rotated the application role's password (breaking every running
-backend), and `chown -R`ed the whole checkout to another user. A replacement
-must write both files, generate `NEXTAUTH_SECRET` and a 64-character
-`ENCRYPTION_KEY`, and never overwrite an existing `.env` without saying so.
+**(a) The `.env` generator is new and unproven.** `scripts/generate-env-files.sh`
+replaces the withdrawn one — see step 5 — and its logic was exercised against
+stubbed `psql`/`sudo` for every branch (role absent, role present, password
+supplied, password rotated, credential rejected), but it has not been run against
+a real cluster. Step 5 on `mint22open` is where that happens. Its refusal to
+guess an existing role's password is the one behaviour worth watching: on a
+machine where `sudo` needs a password it cannot ask, so it reports `role
+unknown` and relies on `WORKBENCH_DB_PASSWORD` being set.
 
 **(b) The seed program is unproven.** `scripts/workbench-seed.py` is a port of
 `workbench-go/cmd/workbench-seed`, and its data was compared against the Go

@@ -96,7 +96,13 @@ class Logger:
 
 def log_time(func):
     def wrapper(*args, **kwargs):
-        if os.getenv("ENV", "development") != "development":
+        # `ENVIRONMENT`, not `ENV`: this read `ENV` until 2026-11-18, a name nothing
+        # in the tree sets, so it was always absent and always resolved to the
+        # default — meaning the timing ran in every environment, including
+        # production, while reading as though it were gated. It is the same
+        # predicate `main.py:105` and `Logger.__init__` use, so there is one
+        # definition of "development" rather than three.
+        if os.getenv("ENVIRONMENT", "development") != "development":
             return func(*args, **kwargs)
         start_time = time.time()
         result = func(*args, **kwargs)
