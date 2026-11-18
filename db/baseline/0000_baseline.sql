@@ -2,8 +2,20 @@
 -- PostgreSQL database dump
 --
 
+
 -- Dumped from database version 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)
--- Dumped by pg_dump version 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)
+-- Dumped by pg_dump version 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
 
 --
 -- Name: StorageType; Type: TYPE; Schema: public; Owner: -
@@ -18,6 +30,10 @@ CREATE TYPE public."StorageType" AS ENUM (
 );
 
 
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
 --
 -- Name: AIProvider; Type: TABLE; Schema: public; Owner: -
 --
@@ -30,8 +46,8 @@ CREATE TABLE public."AIProvider" (
     "requiresApiKey" boolean DEFAULT true NOT NULL,
     "defaultEndpoint" text,
     enabled boolean DEFAULT true NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -68,8 +84,8 @@ CREATE TABLE public."AIRecipeSession" (
     messages jsonb DEFAULT '[]'::jsonb NOT NULL,
     state jsonb DEFAULT '{}'::jsonb NOT NULL,
     "schemaSnapshot" jsonb,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -90,8 +106,8 @@ CREATE TABLE public."Account" (
     scope text,
     id_token text,
     session_state text,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -103,8 +119,8 @@ CREATE TABLE public."Chat" (
     id integer NOT NULL,
     "userId" text NOT NULL,
     title character varying(255),
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -129,6 +145,24 @@ ALTER SEQUENCE public."Chat_id_seq" OWNED BY public."Chat".id;
 
 
 --
+-- Name: ConnectionModelIntersect; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public."ConnectionModelIntersect" (
+    "connectionId" integer NOT NULL,
+    "modelId" text NOT NULL,
+    "connectionTestResults" jsonb,
+    "lastSeenAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    temperature double precision,
+    "maxTokens" integer,
+    "timeoutSeconds" integer,
+    CONSTRAINT "ConnectionModelIntersect_maxTokens_positive" CHECK ((("maxTokens" IS NULL) OR ("maxTokens" > 0))),
+    CONSTRAINT "ConnectionModelIntersect_temperature_range" CHECK (((temperature IS NULL) OR ((temperature >= (0)::double precision) AND (temperature <= (2)::double precision)))),
+    CONSTRAINT "ConnectionModelIntersect_timeoutSeconds_positive" CHECK ((("timeoutSeconds" IS NULL) OR ("timeoutSeconds" > 0)))
+);
+
+
+--
 -- Name: DataCleanChat; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -139,8 +173,21 @@ CREATE TABLE public."DataCleanChat" (
     "contextData" jsonb DEFAULT '{}'::jsonb NOT NULL,
     messages jsonb DEFAULT '[]'::jsonb NOT NULL,
     status text DEFAULT 'active'::text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+--
+-- Name: DataCleanupManifest; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public."DataCleanupManifest" (
+    id text DEFAULT gen_random_uuid() NOT NULL,
+    "userId" text NOT NULL,
+    "objectKind" text NOT NULL,
+    "objectName" text NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -155,8 +202,8 @@ CREATE TABLE public."DataPreparationRule" (
     name text NOT NULL,
     description text,
     operations jsonb NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "ruleGroup" text DEFAULT '00'::text NOT NULL,
     "isShared" boolean DEFAULT false NOT NULL
 );
@@ -170,11 +217,11 @@ CREATE TABLE public."DatasetDescription" (
     id text DEFAULT gen_random_uuid() NOT NULL,
     "datasetId" text NOT NULL,
     description text NOT NULL,
-    "generatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "generatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "usedModel" text,
     "userId" text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -195,9 +242,39 @@ CREATE TABLE public."GlobalSettings" (
     "passwordPolicyCustom" jsonb,
     "defaultMaxUploadSizeMB" integer DEFAULT 0 NOT NULL,
     "defaultMaxUploadCount" integer DEFAULT 0 NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "platformMaxUploadSizeMB" integer DEFAULT 10 NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "registrationMode" integer DEFAULT 0 NOT NULL,
+    "defaultModelTestSeconds" integer DEFAULT 30 NOT NULL,
+    temperature double precision DEFAULT 0.7 NOT NULL,
+    "maxTokens" integer DEFAULT 4000 NOT NULL,
+    "timeoutSeconds" integer DEFAULT 120 NOT NULL,
+    "defaultConnectTimeoutSeconds" integer DEFAULT 10 NOT NULL,
+    "defaultProbeTimeoutSeconds" integer DEFAULT 300 NOT NULL,
+    CONSTRAINT "GlobalSettings_defaultConnectTimeoutSeconds_positive" CHECK (("defaultConnectTimeoutSeconds" > 0)),
+    CONSTRAINT "GlobalSettings_defaultProbeTimeoutSeconds_positive" CHECK (("defaultProbeTimeoutSeconds" > 0)),
+    CONSTRAINT "GlobalSettings_maxTokens_positive" CHECK (("maxTokens" > 0)),
+    CONSTRAINT "GlobalSettings_single_row" CHECK ((id = 1)),
+    CONSTRAINT "GlobalSettings_temperature_range" CHECK (((temperature >= (0)::double precision) AND (temperature <= (2)::double precision))),
+    CONSTRAINT "GlobalSettings_timeoutSeconds_positive" CHECK (("timeoutSeconds" > 0))
+);
+
+
+--
+-- Name: LLMModel; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public."LLMModel" (
+    id text DEFAULT gen_random_uuid() NOT NULL,
+    "modelName" text NOT NULL,
+    enabled boolean DEFAULT true NOT NULL,
+    preferred boolean DEFAULT false NOT NULL,
+    comment text,
+    "modelTestResults" jsonb,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    CONSTRAINT "LLMModel_modelTestResults_object_check" CHECK ((("modelTestResults" IS NULL) OR (jsonb_typeof("modelTestResults") = 'object'::text)))
 );
 
 
@@ -210,8 +287,8 @@ CREATE TABLE public."Message" (
     "chatId" integer NOT NULL,
     role character varying(20) NOT NULL,
     content text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -244,7 +321,7 @@ CREATE TABLE public."NotebookImport" (
     "userId" text NOT NULL,
     "notebookName" text NOT NULL,
     "notebookContent" jsonb DEFAULT '{}'::jsonb NOT NULL,
-    "importedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "importedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     status text DEFAULT 'pending'::text NOT NULL,
     "tablesCreated" text[],
     "storageType" text DEFAULT 'duckdb'::text NOT NULL,
@@ -255,8 +332,8 @@ CREATE TABLE public."NotebookImport" (
     "connectionId" integer,
     "createDatabase" boolean DEFAULT false NOT NULL,
     "isShared" boolean DEFAULT false NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -268,46 +345,21 @@ CREATE TABLE public."PasswordResetToken" (
     id text DEFAULT gen_random_uuid() NOT NULL,
     token text NOT NULL,
     "userId" text NOT NULL,
-    "expiresAt" timestamp(3) without time zone NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "expiresAt" timestamp with time zone NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
 --
--- Name: ProviderModel; Type: TABLE; Schema: public; Owner: -
+-- Name: ProviderModelIntersect; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public."ProviderModel" (
-    id integer NOT NULL,
+CREATE TABLE public."ProviderModelIntersect" (
     "providerCode" text NOT NULL,
-    "modelName" text NOT NULL,
-    enabled boolean DEFAULT true NOT NULL,
-    preferred boolean DEFAULT false NOT NULL,
-    comment text,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "modelId" text NOT NULL,
+    "firstSeenAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
-
-
---
--- Name: ProviderModel_id_seq; Type: SEQUENCE; Schema: public; Owner: -
---
-
-CREATE SEQUENCE public."ProviderModel_id_seq"
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
---
--- Name: ProviderModel_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
---
-
-ALTER SEQUENCE public."ProviderModel_id_seq" OWNED BY public."ProviderModel".id;
 
 
 --
@@ -321,8 +373,8 @@ CREATE TABLE public."Recipe" (
     description text,
     "datasetId" text,
     stages jsonb NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "recipeGroup" text DEFAULT '00'::text NOT NULL,
     "isShared" boolean DEFAULT false NOT NULL,
     "forkedFrom" text,
@@ -343,10 +395,10 @@ CREATE TABLE public."RecipeExecution" (
     progress integer DEFAULT 0 NOT NULL,
     result jsonb,
     error text,
-    "startedAt" timestamp(3) without time zone,
-    "completedAt" timestamp(3) without time zone,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "startedAt" timestamp with time zone,
+    "completedAt" timestamp with time zone,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -359,8 +411,8 @@ CREATE TABLE public."RecipePreparationRule" (
     "recipeId" text NOT NULL,
     "ruleId" text NOT NULL,
     "order" integer NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -372,9 +424,9 @@ CREATE TABLE public."Session" (
     id text DEFAULT gen_random_uuid() NOT NULL,
     "sessionToken" text NOT NULL,
     "userId" text NOT NULL,
-    expires timestamp(3) without time zone NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    expires timestamp with time zone NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -387,8 +439,10 @@ CREATE TABLE public."Translation" (
     key text NOT NULL,
     language text NOT NULL,
     value text NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "keyOrigin" text DEFAULT 'X'::text NOT NULL,
+    CONSTRAINT "Translation_keyOrigin_check" CHECK (("keyOrigin" = ANY (ARRAY['F'::text, 'P'::text, 'G'::text, 'X'::text])))
 );
 
 
@@ -422,11 +476,11 @@ CREATE TABLE public."User" (
     password text NOT NULL,
     name text,
     "isAdmin" boolean DEFAULT false NOT NULL,
-    "emailVerified" timestamp(3) without time zone,
+    "emailVerified" timestamp with time zone,
     "bccRegistrations" boolean DEFAULT false NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "deletedAt" timestamp(3) without time zone,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "deletedAt" timestamp with time zone,
     "maxUploadSizeMB" integer DEFAULT 0 NOT NULL,
     "maxUploadCount" integer DEFAULT 0 NOT NULL,
     "userGroup" text DEFAULT '00'::text NOT NULL,
@@ -435,7 +489,8 @@ CREATE TABLE public."User" (
     language text DEFAULT 'en'::text NOT NULL,
     "defaultAIConnectionId" integer,
     "isExampleUser" boolean DEFAULT false NOT NULL,
-    "isGroupAdmin" boolean DEFAULT false NOT NULL
+    "isGroupAdmin" boolean DEFAULT false NOT NULL,
+    "modelSlowThresholdSeconds" integer
 );
 
 
@@ -451,10 +506,14 @@ CREATE TABLE public."UserAIConnection" (
     "apiKey" text,
     endpoint text,
     "defaultModel" text,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "aiConnectionGroup" text DEFAULT '00'::text NOT NULL,
-    "isShared" boolean DEFAULT false NOT NULL
+    "isShared" boolean DEFAULT false NOT NULL,
+    "connectTimeoutSeconds" integer,
+    "probeTimeoutSeconds" integer,
+    CONSTRAINT "UserAIConnection_connectTimeoutSeconds_positive" CHECK ((("connectTimeoutSeconds" IS NULL) OR ("connectTimeoutSeconds" > 0))),
+    CONSTRAINT "UserAIConnection_probeTimeoutSeconds_positive" CHECK ((("probeTimeoutSeconds" IS NULL) OR ("probeTimeoutSeconds" > 0)))
 );
 
 
@@ -492,12 +551,19 @@ CREATE TABLE public."UserDatabaseConnection" (
     database text NOT NULL,
     username text NOT NULL,
     password text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     "dbConnectionGroup" text DEFAULT '00'::text NOT NULL,
     "canCreateDatabase" boolean DEFAULT false NOT NULL,
     "canCreateTables" boolean DEFAULT false NOT NULL,
-    "isShared" boolean DEFAULT false NOT NULL
+    "isShared" boolean DEFAULT false NOT NULL,
+    "probeState" text,
+    "probeDetail" text,
+    "probedAt" timestamp with time zone,
+    "probeSuccessAt" timestamp with time zone,
+    CONSTRAINT "UserDatabaseConnection_probeState_known" CHECK ((("probeState" IS NULL) OR ("probeState" = ANY (ARRAY['reachable'::text, 'unreachable'::text, 'auth_failed'::text, 'no_database'::text, 'no_permission'::text, 'incomplete'::text, 'schema_error'::text])))),
+    CONSTRAINT "UserDatabaseConnection_probeSuccessAt_needs_probe" CHECK ((("probeSuccessAt" IS NULL) OR (("probedAt" IS NOT NULL) AND ("probeSuccessAt" <= "probedAt")))),
+    CONSTRAINT "UserDatabaseConnection_probe_timestamped" CHECK ((("probeState" IS NULL) = ("probedAt" IS NULL)))
 );
 
 
@@ -541,8 +607,8 @@ CREATE TABLE public."UserDataset" (
     "dataSnapshot" jsonb,
     "isView" boolean DEFAULT false,
     "datasetGroup" text DEFAULT '00'::text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     materialized boolean DEFAULT false NOT NULL,
     "outputSchema" jsonb,
     "sourceConnectionIds" jsonb,
@@ -552,7 +618,10 @@ CREATE TABLE public."UserDataset" (
     "isShared" boolean DEFAULT false NOT NULL,
     "notebookImportId" text,
     "sourceOrigin" text,
-    "sourceDatasetId" text
+    "sourceDatasetId" text,
+    "materializedAt" timestamp with time zone,
+    "materializeError" text,
+    CONSTRAINT "UserDataset_materializeError_implies_choice" CHECK ((("materializeError" IS NULL) OR materialized))
 );
 
 
@@ -564,8 +633,8 @@ CREATE TABLE public."UserGroup" (
     id text DEFAULT gen_random_uuid() NOT NULL,
     "groupId" character varying(2) NOT NULL,
     "groupDescription" text DEFAULT 'Default'::text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -577,9 +646,9 @@ CREATE TABLE public."VerificationToken" (
     id text DEFAULT gen_random_uuid() NOT NULL,
     token text NOT NULL,
     "userId" text NOT NULL,
-    "expiresAt" timestamp(3) without time zone NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "expiresAt" timestamp with time zone NOT NULL,
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -595,8 +664,8 @@ CREATE TABLE public."VirtualDatasetChat" (
     "contextData" jsonb DEFAULT '{}'::jsonb NOT NULL,
     messages jsonb DEFAULT '[]'::jsonb NOT NULL,
     status text DEFAULT 'active'::text NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -612,8 +681,8 @@ CREATE TABLE public."VisualizationInstance" (
     parameters jsonb NOT NULL,
     "dataSnapshot" jsonb,
     "generatedImageUrl" text,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -651,8 +720,8 @@ CREATE TABLE public."VisualizationType" (
     "defaultParameters" jsonb NOT NULL,
     renderer text DEFAULT 'client'::text NOT NULL,
     enabled boolean DEFAULT true NOT NULL,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -687,12 +756,12 @@ CREATE TABLE public.user_audio_presets (
     "voiceName" text,
     speed double precision DEFAULT 1.0 NOT NULL,
     pitch double precision DEFAULT 1.0 NOT NULL,
-    "updatedAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    "updatedAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     volume double precision DEFAULT 1.0,
     "micVolume" double precision DEFAULT 1.0,
     "micMuted" boolean DEFAULT false,
     "speakerMuted" boolean DEFAULT false,
-    "createdAt" timestamp(3) without time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
+    "createdAt" timestamp with time zone DEFAULT CURRENT_TIMESTAMP NOT NULL
 );
 
 
@@ -735,13 +804,6 @@ ALTER TABLE ONLY public."Chat" ALTER COLUMN id SET DEFAULT nextval('public."Chat
 --
 
 ALTER TABLE ONLY public."Message" ALTER COLUMN id SET DEFAULT nextval('public."Message_id_seq"'::regclass);
-
-
---
--- Name: ProviderModel id; Type: DEFAULT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public."ProviderModel" ALTER COLUMN id SET DEFAULT nextval('public."ProviderModel_id_seq"'::regclass);
 
 
 --
@@ -819,11 +881,27 @@ ALTER TABLE ONLY public."Chat"
 
 
 --
+-- Name: ConnectionModelIntersect ConnectionModelIntersect_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."ConnectionModelIntersect"
+    ADD CONSTRAINT "ConnectionModelIntersect_pkey" PRIMARY KEY ("connectionId", "modelId");
+
+
+--
 -- Name: DataCleanChat DataCleanChat_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public."DataCleanChat"
     ADD CONSTRAINT "DataCleanChat_pkey" PRIMARY KEY (id);
+
+
+--
+-- Name: DataCleanupManifest DataCleanupManifest_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."DataCleanupManifest"
+    ADD CONSTRAINT "DataCleanupManifest_pkey" PRIMARY KEY (id);
 
 
 --
@@ -851,6 +929,14 @@ ALTER TABLE ONLY public."GlobalSettings"
 
 
 --
+-- Name: LLMModel LLMModel_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."LLMModel"
+    ADD CONSTRAINT "LLMModel_pkey" PRIMARY KEY (id);
+
+
+--
 -- Name: Message Message_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -875,11 +961,11 @@ ALTER TABLE ONLY public."PasswordResetToken"
 
 
 --
--- Name: ProviderModel ProviderModel_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: ProviderModelIntersect ProviderModelIntersect_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public."ProviderModel"
-    ADD CONSTRAINT "ProviderModel_pkey" PRIMARY KEY (id);
+ALTER TABLE ONLY public."ProviderModelIntersect"
+    ADD CONSTRAINT "ProviderModelIntersect_pkey" PRIMARY KEY ("providerCode", "modelId");
 
 
 --
@@ -1080,6 +1166,13 @@ CREATE INDEX "DataCleanChat_userId_idx" ON public."DataCleanChat" USING btree ("
 
 
 --
+-- Name: DataCleanupManifest_userId_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "DataCleanupManifest_userId_idx" ON public."DataCleanupManifest" USING btree ("userId");
+
+
+--
 -- Name: DataPreparationRule_datasetId_idx; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -1112,6 +1205,13 @@ CREATE INDEX "DatasetDescription_datasetId_idx" ON public."DatasetDescription" U
 --
 
 CREATE INDEX "DatasetDescription_userId_idx" ON public."DatasetDescription" USING btree ("userId");
+
+
+--
+-- Name: LLMModel_modelName_key; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX "LLMModel_modelName_key" ON public."LLMModel" USING btree ("modelName");
 
 
 --
@@ -1182,20 +1282,6 @@ CREATE UNIQUE INDEX "PasswordResetToken_token_key" ON public."PasswordResetToken
 --
 
 CREATE INDEX "PasswordResetToken_userId_idx" ON public."PasswordResetToken" USING btree ("userId");
-
-
---
--- Name: ProviderModel_providerCode_idx; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE INDEX "ProviderModel_providerCode_idx" ON public."ProviderModel" USING btree ("providerCode");
-
-
---
--- Name: ProviderModel_providerCode_modelName_key; Type: INDEX; Schema: public; Owner: -
---
-
-CREATE UNIQUE INDEX "ProviderModel_providerCode_modelName_key" ON public."ProviderModel" USING btree ("providerCode", "modelName");
 
 
 --
@@ -1374,6 +1460,13 @@ CREATE INDEX "UserDataset_datasetGroup_idx" ON public."UserDataset" USING btree 
 
 
 --
+-- Name: UserDataset_materialize_attention; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "UserDataset_materialize_attention" ON public."UserDataset" USING btree ("userId") WHERE (materialized AND ("materializedAt" IS NULL));
+
+
+--
 -- Name: UserDataset_notebookImportId_idx; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -1545,6 +1638,22 @@ ALTER TABLE ONLY public."Chat"
 
 
 --
+-- Name: ConnectionModelIntersect ConnectionModelIntersect_connectionId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."ConnectionModelIntersect"
+    ADD CONSTRAINT "ConnectionModelIntersect_connectionId_fkey" FOREIGN KEY ("connectionId") REFERENCES public."UserAIConnection"("connectionId") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: ConnectionModelIntersect ConnectionModelIntersect_modelId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."ConnectionModelIntersect"
+    ADD CONSTRAINT "ConnectionModelIntersect_modelId_fkey" FOREIGN KEY ("modelId") REFERENCES public."LLMModel"(id) ON UPDATE CASCADE ON DELETE RESTRICT;
+
+
+--
 -- Name: DataCleanChat DataCleanChat_datasetId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1609,6 +1718,22 @@ ALTER TABLE ONLY public."PasswordResetToken"
 
 
 --
+-- Name: ProviderModelIntersect ProviderModelIntersect_modelId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."ProviderModelIntersect"
+    ADD CONSTRAINT "ProviderModelIntersect_modelId_fkey" FOREIGN KEY ("modelId") REFERENCES public."LLMModel"(id) ON UPDATE CASCADE ON DELETE RESTRICT;
+
+
+--
+-- Name: ProviderModelIntersect ProviderModelIntersect_providerCode_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."ProviderModelIntersect"
+    ADD CONSTRAINT "ProviderModelIntersect_providerCode_fkey" FOREIGN KEY ("providerCode") REFERENCES public."AIProvider"(code) ON UPDATE CASCADE;
+
+
+--
 -- Name: RecipeExecution RecipeExecution_recipeId_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -1662,6 +1787,14 @@ ALTER TABLE ONLY public."Recipe"
 
 ALTER TABLE ONLY public."Session"
     ADD CONSTRAINT "Session_userId_fkey" FOREIGN KEY ("userId") REFERENCES public."User"(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+--
+-- Name: UserAIConnection UserAIConnection_provider_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public."UserAIConnection"
+    ADD CONSTRAINT "UserAIConnection_provider_fkey" FOREIGN KEY (provider) REFERENCES public."AIProvider"(code) ON UPDATE CASCADE;
 
 
 --
@@ -1754,4 +1887,6 @@ ALTER TABLE ONLY public.user_audio_presets
 
 --
 -- PostgreSQL database dump complete
+--
+
 
