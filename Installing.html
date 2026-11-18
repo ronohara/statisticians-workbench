@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="document-style" content="nakula">
+<title>Installing the Statisticians Workbench — Open Source Edition</title>
+<meta name="date" content="Installation guide · 18 November 2026">
+<style type="text/css">
+
+/* ==========================================================================
+   VERBATIM — the style block from lvl-docs/guide-for-lucas.html, unchanged.
+   This is the style. Everything after the second banner is an addition and
+   is listed in section 17.
+   ========================================================================== */
+
+:root{
+--ink:#16181d; --soft:#484f5a; --paper:#fdfcf9; --panel:#ffffff;
+--accent:#17457e; --accent-lit:#2f6bb5; --rule:#d9d5cc;
+--note-bg:#fff6e5; --note-edge:#b8760a;
+--quote-bg:#eef3f9; --quote-edge:#17457e;
+--code-bg:#ece9e1; --code-ink:#3a2b16;
+}
+html{font-size:24px;}
+body{
+margin:0 auto; padding:2.4rem 1.5rem 6rem; max-width:44rem;
+background:var(--paper); color:var(--ink);
+font-family:Verdana,"DejaVu Sans",Tahoma,Geneva,sans-serif;
+line-height:1.8;
+-webkit-font-smoothing:antialiased;
+}
+
+img.header-image{
+display:block; margin:0 auto 1.5rem;
+max-height:12rem; max-width:100%; width:auto; height:auto;
+border-radius:8px;
+}
+
+img.header-image.banner{
+width:100%; max-height:none; object-fit:cover; object-position:center 25%;
+}
+
+header.title-block{
+border-bottom:5px solid var(--accent);
+padding-bottom:1.5rem; margin-bottom:2.4rem;
+}
+header.title-block h1.title{
+font-size:2rem; line-height:1.26; margin:0 0 .8rem;
+color:var(--accent); letter-spacing:-.015em; font-weight:700;
+}
+header.title-block p.subtitle{
+font-size:1.02rem; color:var(--soft); margin:0 0 .9rem; line-height:1.6;
+}
+header.title-block p.author,
+header.title-block p.date{
+font-size:.8rem; color:var(--soft); margin:0; letter-spacing:.03em;
+}
+
+h1,h2,h3,h4,h5,h6{line-height:1.34; font-weight:700;}
+h2{
+font-size:1.45rem; color:var(--accent);
+margin:2.9rem 0 1rem; padding-bottom:.45rem;
+border-bottom:2px solid var(--rule);
+break-after:avoid;
+}
+h3{font-size:1.12rem; margin:2.1rem 0 .7rem; color:var(--ink); break-after:avoid;}
+h4{font-size:1rem; margin:1.6rem 0 .5rem; color:var(--accent); break-after:avoid;}
+
+p{margin:0 0 1.15rem;}
+strong{font-weight:700; color:#0a0d12;}
+em{font-style:italic;}
+a{color:var(--accent); text-decoration:underline;
+text-decoration-thickness:2px; text-underline-offset:3px; word-break:break-word;}
+a:hover{color:var(--accent-lit);}
+a:focus-visible{outline:4px solid var(--accent-lit); outline-offset:3px; border-radius:3px;}
+code{
+font-family:"DejaVu Sans Mono",Menlo,Consolas,monospace; font-size:.86em;
+background:var(--code-bg); color:var(--code-ink);
+padding:.1em .36em; border-radius:4px; word-break:break-word;
+}
+pre{
+background:#23262d; color:#f5f2e8; border-radius:6px;
+padding:.9rem 1.1rem; overflow-x:auto; line-height:1.6;
+margin:.8rem 0 1.3rem;
+}
+pre code{background:none; color:inherit; padding:0; font-size:.86rem;}
+
+ul,ol{margin:0 0 1.3rem; padding-left:1.7rem;}
+li{margin-bottom:.55rem;}
+li>ul,li>ol{margin-top:.55rem; margin-bottom:.3rem;}
+
+dl{margin:0 0 1.5rem;}
+dt{font-weight:700; color:var(--accent); margin-top:.9rem;}
+dt:first-child{margin-top:0;}
+dd{margin:.25rem 0 0 .2rem;}
+
+table{
+border-collapse:collapse; width:100%; margin:1.5rem 0 1.9rem;
+font-size:.94rem; background:var(--panel); break-inside:avoid;
+}
+caption{caption-side:top; text-align:left; font-size:.82rem;
+color:var(--soft); padding-bottom:.6rem;}
+th,td{
+text-align:left; padding:.7rem .8rem;
+border-bottom:2px solid var(--rule); vertical-align:top;
+}
+th{background:#eef1f6; color:var(--accent); font-size:.9rem;}
+
+colgroup col{width:auto !important;}
+table{table-layout:auto;}
+td:first-child code{white-space:nowrap;}
+
+
+blockquote{
+margin:1.6rem 0; padding:1.15rem 1.4rem .9rem;
+background:var(--note-bg); border-left:7px solid var(--note-edge);
+border-radius:0 6px 6px 0; font-size:.97rem;
+}
+blockquote p:last-child{margin-bottom:0;}
+blockquote blockquote{background:var(--quote-bg); border-left-color:var(--quote-edge);}
+
+.step{
+background:var(--panel); border:2px solid var(--rule); border-radius:8px;
+padding:1.2rem 1.5rem .6rem; margin:1.5rem 0 1.9rem; break-inside:avoid;
+}
+.step>h3,.step>h4{margin-top:0; color:var(--accent);}
+.box{
+border-radius:6px; border:2px solid; padding:1.1rem 1.35rem .85rem;
+margin:1.5rem 0; break-inside:avoid;
+}
+.box>p:last-child,.box>ul:last-child,.box>ol:last-child{margin-bottom:0;}
+.box>p:first-child>strong:first-child{display:block; margin-bottom:.5rem;}
+.box.good{background:#eef7ee; border-color:#2f6b35;}
+.box.warn{background:#fff6e2; border-color:#a86f0d;}
+.box.info{background:#edf3fa; border-color:#17457e;}
+.box.stop{background:#fdeeec; border-color:#a33227;}
+
+hr{border:0; border-top:2px solid var(--rule); margin:2.4rem 0;}
+.footnotes{font-size:.86rem; color:var(--soft); border-top:2px solid var(--rule);
+margin-top:3rem; padding-top:1.2rem;}
+.footnotes ol{padding-left:1.4rem;}
+
+img{max-width:100%; height:auto;}
+
+/* ---------- figures (screenshots from the running install) ---------- */
+
+figure{margin:1.8rem 0 2.1rem; padding:0; break-inside:avoid;}
+figure>img,figure>a>img{
+  display:block; width:100%; height:auto;
+  border:1px solid var(--rule); border-radius:4px;
+}
+figcaption{
+  font-size:.78rem; line-height:1.55; color:var(--soft);
+  margin-top:.7rem; padding-left:.75rem;
+  border-left:3px solid var(--accent-lit);
+}
+figcaption code{font-size:.95em;}
+
+nav#TOC{
+background:var(--panel); border:2px solid var(--rule);
+border-left:8px solid var(--accent); border-radius:6px;
+padding:1.3rem 1.6rem 1rem; margin:0 0 2.4rem;
+}
+nav#TOC>ul{list-style:none; margin:0; padding:0; font-size:1rem;}
+nav#TOC ul ul{list-style:none; padding-left:1.2rem; font-size:.94rem; margin:.3rem 0;}
+nav#TOC li{margin-bottom:.45rem;}
+nav#TOC a{text-decoration:none; color:var(--ink);}
+nav#TOC a:hover{text-decoration:underline; color:var(--accent);}
+
+@media (max-width:38rem){
+html{font-size:20px;}
+body{padding:1.4rem 1rem 3rem;}
+header.title-block h1.title{font-size:1.6rem;}
+h2{font-size:1.28rem;}
+}
+@media print{
+html{font-size:12.5pt;}
+body{background:#fff; padding:0; max-width:none;}
+img.header-image{max-height:8rem; break-inside:avoid;}
+
+header.title-block img.header-image{width:6rem; height:6rem; max-height:none;}
+pre{background:#f0f0f0; color:#000; border:1px solid #999;}
+h2,h3,h4{break-after:avoid;}
+table,blockquote,pre,.box,.step{break-inside:avoid;}
+a{color:#000; text-decoration:none;}
+nav#TOC{break-inside:avoid;}
+}
+
+header.title-block{
+display:grid;
+grid-template-columns:auto 1fr;
+grid-template-areas:"img title" "img sub" "img date";
+column-gap:1.6rem;
+align-items:start;
+padding-bottom:1.6rem;
+}
+header.title-block img.header-image{
+grid-area:img;
+width:7.5rem; height:7.5rem; max-height:none;
+border-radius:50%; object-fit:cover;
+margin:0; align-self:center;
+border:3px solid var(--rule);
+filter:grayscale(1) contrast(1.08);
+}
+header.title-block h1.title{grid-area:title; margin-top:.2rem}
+header.title-block p.subtitle{grid-area:sub}
+header.title-block p.date{grid-area:date}
+@media (max-width:38rem){
+header.title-block{grid-template-columns:1fr; grid-template-areas:"img" "title" "sub" "date"}
+header.title-block img.header-image{width:5rem; height:5rem}
+}
+</style>
+</head>
+<body>
+
+<header class="title-block no-mark">
+  <h1 class="title">Installing the Statisticians Workbench</h1>
+  <p class="subtitle">Getting the open source edition running from source on Linux — fourteen steps from a clone to a working administrator, with the check that proves each one before the next.</p>
+  <p class="date">Installation guide · 18 November 2026 · generated from <code>Installing.md</code></p>
+</header>
+
+<nav id="TOC" role="doc-toc">
+<ul>
+  <li><a href="#status">How far these steps are proven</a></li>
+  <li><a href="#s0">0. What is being installed</a></li>
+  <li><a href="#s1">1. Prerequisites</a></li>
+  <li><a href="#s2">2. Clone the repository</a></li>
+  <li><a href="#s3">3. The private cluster, its role and both databases</a></li>
+  <li><a href="#s4">4. The Python virtual environment</a></li>
+  <li><a href="#s5">5. The environment files</a></li>
+  <li><a href="#s6">6. The schema</a></li>
+  <li><a href="#s7">7. Seed the database</a></li>
+  <li><a href="#s8">8. Start the backend</a></li>
+  <li><a href="#s9">9. Build and start the frontend</a></li>
+  <li><a href="#s10">10. Log in as the administrator</a></li>
+  <li><a href="#s11">11. Known gaps, and one deferral</a></li>
+  <li><a href="#s12">12. Verification checklist</a></li>
+  <li><a href="#s13">13. Starting over</a></li>
+</ul>
+</nav>
+
+<h2 id="status">How far these steps are proven</h2>
+
+<p><strong>These instructions are being proven one step at a time</strong>, worked through on the <code>mint22open</code> test bed (Mint 22.3). Each is corrected as it is proven. A step marked <strong>proven</strong> has been executed on that machine and its checks passed; a step marked <strong>not yet run</strong> has not, and is the one expected to need revision.</p>
+
+<table>
+<caption>What has been run, and on what evidence.</caption>
+<colgroup><col style="width: 16%"><col style="width: 54%"><col style="width: 30%"></colgroup>
+<thead>
+<tr><th>Step</th><th>What it does</th><th>State</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Prerequisites: the apt packages, Node, npm and pnpm</td><td><strong>Proven</strong> 2026-11-18</td></tr>
+<tr><td>3</td><td>Private cluster on 9431, the role, and both databases</td><td><strong>Not yet run</strong></td></tr>
+<tr><td>6</td><td>Schema, now one file — <code>db/baseline</code>, re-dumped at HEAD</td><td><strong>Not yet run</strong></td></tr>
+<tr><td>7</td><td>Seed, via <code>scripts/workbench-seed.py</code></td><td><strong>Not yet run</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box info">
+<p><strong>Do not skip the check under each step.</strong></p>
+<p>Every step states how to confirm it worked. A later step failing usually means an earlier one silently did not do what it claimed, and the check is what tells the two apart.</p>
+</div>
+
+<h2 id="s0">0. What is being installed</h2>
+
+<p>Three pieces, two of which you start yourself.</p>
+
+<table>
+<caption>The three parts, where each lives, and what it serves.</caption>
+<colgroup><col style="width: 26%"><col style="width: 20%"><col style="width: 20%"><col style="width: 34%"></colgroup>
+<thead>
+<tr><th>Piece</th><th>Directory</th><th>Runs on</th><th>Serves</th></tr>
+</thead>
+<tbody>
+<tr><td>Backend (Python / FastAPI)</td><td><code>backend/</code></td><td>port 8000</td><td><code>/api/*</code></td></tr>
+<tr><td>Frontend (Next.js)</td><td><code>frontend/</code></td><td>port 3000</td><td>the web UI</td></tr>
+<tr><td>Database (PostgreSQL)</td><td><code>db/</code> holds the schema</td><td>private cluster on <strong>9431</strong></td><td>both of the above</td></tr>
+</tbody>
+</table>
+
+<p>The frontend proxies <code>/api/*</code> calls to the backend on <code>127.0.0.1:8000</code> (<code>frontend/next.config.mjs</code>), so both must be running for the UI to work.</p>
+
+<h2 id="s1">1. Prerequisites</h2>
+
+<pre><code>sudo apt update
+sudo apt install -y git python3 python3-venv python3-dev \
+                    postgresql postgresql-client \
+                    build-essential libpq-dev</code></pre>
+
+<p>Node.js, npm and pnpm:</p>
+
+<pre><code>sudo apt install -y nodejs npm
+npm install -g pnpm</code></pre>
+
+<p><strong>Check.</strong> Every line below must print a version; the two <code>echo</code> checks must print <code>ok</code>.</p>
+
+<pre><code>git --version
+python3 --version
+python3 -c 'import venv; print("venv ok")'
+gcc --version | head -1
+make --version | head -1
+test -f /usr/include/postgresql/libpq-fe.h &amp;&amp; echo 'libpq-dev ok'
+node --version
+npm --version
+pnpm --version</code></pre>
+
+<h3>On the Node version</h3>
+
+<p><strong>The archive's Node 18.19.1 is what this install uses, and it works.</strong> Measured on <code>mint22open</code> 2026-11-18: <code>node v18.19.1</code>, <code>npm 9.2.0</code>, and <code>pnpm 12.21.0</code> installed by <code>npm install -g pnpm</code> — the whole chain from Mint's own archive, with no third-party repository.</p>
+
+<div class="box warn">
+<p><strong>This is a fact about the test bed, not a recommendation.</strong></p>
+<p>Mint 22.3 is a deployment target, and the point of testing there is to prove the product works on the Node a stock Mint user actually has. Node 18 is end-of-life upstream and no longer receives security fixes, so a production deployment should use a supported Node — and moving to one is a packaging decision for the commercial side.</p>
+<p>An earlier draft of this document required Node 20 or newer and sent the reader to NodeSource. That was an inference from Next.js's stated support matrix, not a measurement, and it was wrong for this tree. It is recorded here so the requirement is not reintroduced without evidence.</p>
+</div>
+
+<h3>PostgreSQL is installed here, and set up later</h3>
+
+<p><code>postgresql</code> is in the list above because it is a prerequisite, but the install itself only creates the machine's default cluster, <code>16/main</code> on 5432. The Workbench does <strong>not</strong> use that cluster. It gets one of its own, <code>16/workbench</code> on <strong>9431</strong>, created in <strong>step 3</strong>; applying the schema is <strong>step 6</strong>. Installing the package now is what supplies the binaries both clusters run from.</p>
+
+<p>If the machine previously had PostgreSQL that must not be reused — a rebuilt test bed, say — purge it first, then install:</p>
+
+<pre><code>sudo pg_dropcluster --stop 16 main
+sudo apt-get purge -y postgresql-16 postgresql-client-16 \
+                      postgresql-common postgresql-client-common
+sudo apt-get autoremove --purge -y
+sudo rm -rf /etc/postgresql /var/lib/postgresql /var/log/postgresql \
+            /var/cache/postgresql
+sudo deluser --system postgres</code></pre>
+
+<p><code>apt-get autoremove --purge</code> can take unrelated orphaned packages with it — on <code>mint22open</code> it removed <code>sysstat</code> and <code>node-xtend</code>. Reinstall anything wanted back with <code>apt-get install -y &lt;name&gt;</code>.</p>
+
+<h2 id="s2">2. Clone the repository</h2>
+
+<pre><code>cd ~
+git clone https://github.com/ronohara/statisticians-workbench.git
+cd statisticians-workbench</code></pre>
+
+<p><strong>Check.</strong> <code>ls</code> shows <code>backend/</code>, <code>db/</code>, <code>frontend/</code>, <code>scripts/</code>.</p>
+
+<h2 id="s3">3. The private cluster, its role and both databases</h2>
+
+<p><strong>The Workbench runs on a PostgreSQL cluster of its own, on port 9431 — not on the machine's default cluster on 5432.</strong> This is the private-cluster model described in <code>workbench-documents/workbench-using-private-cluster-plan.html</code>, and it is the arrangement every supported installation uses.</p>
+
+<p>The reason is boundary, not preference. The private cluster holds the product's internal state and the upload repository, and nothing else. The distro's own cluster on 5432 may hold your databases; the Workbench never starts, stops, configures or connects to it. Port 9431 is also adjacent to 9432, which <code>msaccess-endpoint-ng</code> uses for its bundled cluster, so the two cannot collide.</p>
+
+<div class="box info">
+<p><strong>This source install writes no ownership marker.</strong></p>
+<p><code>16/workbench/.workbench-managed</code> exists so a <code>.deb</code>'s <code>postrm</code> can prove the cluster is ours before dropping it on purge. Nothing packaged is installed here, so there is no <code>postrm</code> and no marker. Teardown is by hand — step 13.</p>
+</div>
+
+<div class="step">
+<h3>3a. Create the cluster</h3>
+<p>Mint's <code>postgresql</code> package creates <code>16/main</code> on 5432. Leave it alone; add ours beside it.</p>
+
+<pre><code>sudo pg_lsclusters                      # expect 16/main on 5432, online
+sudo pg_createcluster 16 workbench --port 9431 \
+     --locale=en_US.UTF-8 --encoding=UTF8</code></pre>
+
+<p><strong>Check.</strong></p>
+
+<pre><code>pg_lsclusters                           # now two rows: 16/main 5432, 16/workbench 9431
+pg_isready -p 9431                      # "accepting connections"</code></pre>
+
+<p>If <code>pg_isready</code> says no response, the cluster was created stopped. Start it through its unit rather than with <code>--start</code>, so an administrator's <code>policy-rc.d</code> is respected:</p>
+
+<pre><code>sudo systemctl start postgresql@16-workbench
+pg_isready -p 9431 -t 30</code></pre>
+
+<p>Re-running <code>pg_createcluster</code> on an existing cluster refuses. That is the guard, not a fault — check <code>pg_lsclusters</code> before concluding anything.</p>
+</div>
+
+<div class="step">
+<h3>3b. Create the role and both databases</h3>
+
+<p><strong>Both databases are created here, and the role needs no <code>CREATEDB</code>.</strong> At startup the backend calls <code>ensure_data_database</code>, which returns immediately when <code>workbench_data</code> already exists (<code>backend/src/postgres_data_manager.py</code>); creating it now is what removes the privilege, rather than granting a wider one than the install needs.</p>
+
+<p><strong>Both databases are pinned to UTC here, and this is not optional.</strong> A PostgreSQL database inherits the cluster's timezone at creation, and the cluster inherited whatever the installing machine was set to. The application pins its own pooled connections (<code>_init_connection</code> in <code>backend/main.py</code>), so the application would be unaffected either way — but every <em>other</em> consumer would not: a <code>psql</code> session, an operator's query, the packaging importer. The packaged build carries this as migration <code>0026_database_timezone_utc.sql</code>; this install applies no migrations, so it is done explicitly below instead.</p>
+
+<p><code>psql</code> runs as <code>postgres</code> over peer auth on the socket, so no password is consulted and none crosses the wire.</p>
+
+<pre><code>sudo -u postgres psql -p 9431 &lt;&lt;'SQL'
+CREATE ROLE workbench WITH LOGIN PASSWORD 'change-this-password';
+ALTER ROLE workbench NOSUPERUSER NOCREATEDB NOCREATEROLE;
+CREATE DATABASE workbench      OWNER workbench;
+CREATE DATABASE workbench_data OWNER workbench;
+ALTER DATABASE workbench      SET timezone = 'UTC';
+ALTER DATABASE workbench_data SET timezone = 'UTC';
+SQL</code></pre>
+
+<p><strong>Check — the role exists with the right attributes.</strong> Expect <code>workbench | f | f | f | t</code>. A <code>t</code> in any of the first three is a widened grant that the application does not need.</p>
+
+<pre><code>sudo -u postgres psql -p 9431 -c \
+  "SELECT rolname, rolsuper, rolcreatedb, rolcreaterole, rolcanlogin \
+   FROM pg_roles WHERE rolname='workbench';"</code></pre>
+
+<p><strong>Check — both databases exist and are owned by the role.</strong> Expect two rows, both owned by <code>workbench</code>.</p>
+
+<pre><code>sudo -u postgres psql -p 9431 -c \
+  "SELECT datname, pg_get_userbyid(datdba) AS owner \
+   FROM pg_database WHERE datname LIKE 'workbench%';"</code></pre>
+
+<p><strong>Check — both databases default to UTC.</strong> Expect <code>{TimeZone=UTC}</code> on both rows. An empty result means the <code>ALTER DATABASE</code> statements did not run — worth fixing now, because the difference only shows up later, in a psql session that reports a different time from the application.</p>
+
+<pre><code>sudo -u postgres psql -p 9431 -c \
+  "SELECT d.datname, s.setconfig FROM pg_db_role_setting s \
+   JOIN pg_database d ON d.oid = s.setdatabase ORDER BY 1;"</code></pre>
+
+<p><strong>Check — the credential authenticates over TCP.</strong> One row, <code>workbench | workbench</code>. A <code>no password supplied</code> here means <code>pg_hba.conf</code> on the new cluster was not generated as expected — that is a finding to record, not to work around.</p>
+
+<pre><code>PGPASSWORD='change-this-password' psql -h 127.0.0.1 -p 9431 \
+  -U workbench -d workbench -c 'SELECT current_user, current_database();'</code></pre>
+</div>
+
+<div class="step">
+<h3>3c. Confirm 5432 was not touched</h3>
+
+<p>The default cluster must still be exactly as it was.</p>
+
+<pre><code>pg_lsclusters                          # 16/main still online on 5432
+sudo -u postgres psql -p 5432 -tAc \
+  "SELECT count(*) FROM pg_database WHERE datname LIKE 'workbench%';"</code></pre>
+
+<p>The count must be <strong>0</strong>. If the role or either database appears on 5432, the commands above ran against the wrong cluster — stop and drop them there before continuing, rather than leaving a second copy the application will never use.</p>
+</div>
+
+<h2 id="s4">4. The Python virtual environment</h2>
+
+<pre><code>cd ~/statisticians-workbench/backend
+python3 -m venv venv
+./venv/bin/pip install --upgrade pip
+./venv/bin/pip install -r requirements.txt</code></pre>
+
+<p><code>requirements.txt</code> is the runtime subset — the packages the backend actually imports, not the development and test stack. It pins versions that are known to work together.</p>
+
+<p><strong>Check.</strong> Prints <code>ok</code>.</p>
+
+<p><code>./venv/bin/python -c "import fastapi, asyncpg, pandas, uvicorn; print('ok')"</code></p>
+
+<p>If <code>psycopg2</code> or <code>pymssql</code> fail to build, the build headers from step 1 are missing, or no wheel exists for this Python version — record which package failed here rather than working around it.</p>
+
+<p><code>pymssql</code> is only needed for Microsoft SQL Server connections; <code>pymssql</code> and <code>psycopg2-binary</code> both normally install as prebuilt wheels.</p>
+
+<h2 id="s5">5. The environment files</h2>
+
+<p>Two <code>.env</code> files are needed: one for the backend, one for the frontend. <strong>Neither is in the repository</strong> — they are gitignored, because they hold secrets.</p>
+
+<p>Generate two secrets first:</p>
+
+<pre><code>openssl rand -base64 32      # NEXTAUTH_SECRET  — copy this value
+openssl rand -hex 32         # ENCRYPTION_KEY   — must be exactly 64 hex characters</code></pre>
+
+<div class="step">
+<h3>5a. <code>backend/.env</code></h3>
+
+<pre><code>cat &gt; ~/statisticians-workbench/backend/.env &lt;&lt;'ENV'
+DATABASE_URL=postgresql://workbench:change-this-password@127.0.0.1:9431/workbench
+NEXTAUTH_SECRET=&lt;paste the base64 value&gt;
+ENCRYPTION_KEY=&lt;paste the 64-character hex value&gt;
+ALLOWED_ORIGINS=http://localhost:3000
+ENVIRONMENT=development
+ENV</code></pre>
+
+<p>What each does, and what breaks without it:</p>
+
+<dl>
+<dt>DATABASE_URL</dt>
+<dd>Required. The backend refuses to start without it (<code>backend/main.py</code>, raises <code>RuntimeError("DATABASE_URL environment variable not set")</code>). <strong>The port is 9431</strong>, the private cluster from step 3 — never 5432, which belongs to the machine's own PostgreSQL. <code>workbench_data</code> is derived from this URL by swapping the database name, so this one line points both pools at the cluster.</dd>
+<dt>ENCRYPTION_KEY</dt>
+<dd>Required, and <strong>must be exactly 64 hexadecimal characters</strong>. The backend raises at import time otherwise (<code>backend/src/utils/encryption.py</code>). It encrypts stored connection passwords; if it changes later, previously saved credentials can no longer be decrypted.</dd>
+<dt>NEXTAUTH_SECRET</dt>
+<dd>Signs the session token. The <strong>frontend must use the same value</strong>, because the frontend mints the token and the backend verifies it.</dd>
+<dt>ALLOWED_ORIGINS</dt>
+<dd>CORS for the browser calling the API.</dd>
+<dt>ENVIRONMENT</dt>
+<dd><code>development</code> enables the rotated log file (<code>logs/backend.log</code>); production logs to the supervisor instead.</dd>
+</dl>
+</div>
+
+<div class="step">
+<h3>5b. <code>frontend/.env</code></h3>
+
+<pre><code>cat &gt; ~/statisticians-workbench/frontend/.env &lt;&lt;'ENV'
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=&lt;the same value as backend/.env&gt;
+BACKEND_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+ENV</code></pre>
+
+<p><strong>Check.</strong> All three lines must be true and the length must read 64.</p>
+
+<pre><code>cd ~/statisticians-workbench/backend
+./venv/bin/python -c "
+import os; from dotenv import load_dotenv; load_dotenv()
+k = os.getenv('ENCRYPTION_KEY')
+print('DATABASE_URL set:', bool(os.getenv('DATABASE_URL')))
+print('ENCRYPTION_KEY length:', len(k or ''), '(must be 64)')
+print('NEXTAUTH_SECRET set:', bool(os.getenv('NEXTAUTH_SECRET')))
+"</code></pre>
+
+<blockquote>
+<p><strong>Outstanding.</strong> There is no longer a script that generates these files. The old <code>scripts/generate-env-files.sh</code> was withdrawn — it targeted a database arrangement that no longer exists, and rotated the application role's password. A replacement that writes both files and generates both secrets safely is still to be written; see step 11.</p>
+</blockquote>
+</div>
+
+<h2 id="s6">6. The schema</h2>
+
+<p><strong>One file, one command.</strong> <code>db/baseline/0000_baseline.sql</code> is a schema-only dump of the current database — every table, column, index, constraint and sequence at this release. Nothing else has to be applied.</p>
+
+<p>Apply it to <strong><code>workbench</code> on the private cluster, port 9431</strong> — the database created in step 3. <code>workbench_data</code> is already there and empty; it is plain storage and needs no schema.</p>
+
+<pre><code>cd ~/statisticians-workbench
+export PGPASSWORD='change-this-password'
+export PGHOST=127.0.0.1 PGPORT=9431 PGUSER=workbench PGDATABASE=workbench</code></pre>
+
+<p><strong>Check the target before applying anything.</strong> Step 3c tested for the role and databases, not for tables, so it would not catch a schema applied to the wrong cluster. Expect <code>workbench|9431</code>.</p>
+
+<p>Run <code>psql -tAc 'SELECT current_database(), inet_server_port();'</code>.</p>
+
+<p>Only then apply the baseline:</p>
+
+<p><code>psql -v ON_ERROR_STOP=1 -f db/baseline/0000_baseline.sql</code></p>
+
+<p><strong>Check.</strong> The command exits 0 and prints no <code>ERROR:</code> lines. Then:</p>
+
+<pre><code>psql -c '\dt' | wc -l
+psql -c '\d "GlobalSettings"'</code></pre>
+
+<p>The first prints a table count — <strong>30</strong> tables plus the header lines <code>wc</code> counts. The second must show <code>registrationMode</code>, and <code>\d "UserDataset"</code> must show <code>materializedAt</code> and <code>materializeError</code>. Those three columns are the quick proof that this is the current schema rather than an older snapshot.</p>
+
+<h3><code>db/migrations/</code> is history, not an install step</h3>
+
+<div class="box info">
+<p><strong>The numbered files are not applied during an install.</strong></p>
+<p>They record how the schema reached its present shape, and several cannot be replayed: <code>0001</code> issues plain <code>CREATE TABLE</code> for tables the baseline already contains, so replaying them from the start fails on the first file.</p>
+<p>They remain in the repository because they document the changes, and because the Go backend's <code>sawhorse</code> lineage mirrors them. A reader comparing the two should treat <code>db/baseline</code> as the schema and <code>db/migrations</code> as the record of how it got there.</p>
+</div>
+
+<p><code>db/migrations/0006_reconcile_timestamps.py</code> is a Python data-reconciliation script, not SQL. It is only relevant to a database that predates the timestamp work, and never runs during a fresh install.</p>
+
+<h2 id="s7">7. Seed the database</h2>
+
+<p>The schema is empty. <code>db/baseline</code> contains no <code>INSERT</code> statements, and the application needs a good deal more than an empty schema before it can be used: without the <code>GlobalSettings</code> row, registration fails with a 500 (<code>api.register.settings_not_found</code>), and there is no administrator account.</p>
+
+<p>Run the seed program:</p>
+
+<pre><code>cd ~/statisticians-workbench
+backend/venv/bin/python scripts/workbench-seed.py</code></pre>
+
+<p>It reads <code>DATABASE_URL</code> from the environment, or from <code>backend/.env</code>, so no argument is needed. It runs in <strong>one transaction</strong> and is <strong>idempotent</strong> — a second run changes nothing.</p>
+
+<p>What it creates:</p>
+
+<ul>
+<li><code>GlobalSettings</code> — the single row (id = 1), with the welcome message</li>
+<li><code>UserGroup</code> — 100 groups, <code>00</code> (Default) through <code>99</code></li>
+<li><code>User</code> — <code>admin@example.com</code> / <code>admin123</code> (administrator) and <code>exampleuser@example.com</code> / <code>User1234#</code></li>
+<li><code>AIProvider</code> — DeepSeek, OpenRouter, Ollama local and remote, all enabled</li>
+<li><code>VisualizationType</code> — the ten built-in chart types</li>
+</ul>
+
+<p><strong>Check.</strong> Expected: one settings row with <code>registrationMode = 0</code>; <strong>100</strong> groups; two users, with <code>admin@example.com</code> marked <code>t</code>; four providers; <strong>10</strong> visualization types.</p>
+
+<pre><code>psql -c 'SELECT id, "registrationMode", "passwordPolicy", "emailSender", "publicUrl" FROM "GlobalSettings";'
+psql -c 'SELECT count(*) FROM "UserGroup";'
+psql -c 'SELECT email, "isAdmin" FROM "User" ORDER BY email;'
+psql -c 'SELECT code FROM "AIProvider" ORDER BY code;'
+psql -c 'SELECT count(*) FROM "VisualizationType";'</code></pre>
+
+<p>Re-run the same command and confirm the counts are unchanged — that is the idempotency check, and it exercises every <code>ON CONFLICT</code> clause.</p>
+
+<h3>If the seed program is unavailable</h3>
+
+<p>The minimum the application needs is the settings row; everything else can be created through the UI once an administrator exists. This is enough to register a user, but <strong>not</strong> enough to have an administrator:</p>
+
+<p><code>psql -c 'INSERT INTO "GlobalSettings" (id) VALUES (1) ON CONFLICT (id) DO NOTHING;'</code></p>
+
+<h3>Two placeholder values</h3>
+
+<p><code>emailSender</code> and <code>publicUrl</code> default to placeholders and should be changed before the installation is used for anything real. Both are editable from the admin pages once an administrator exists.</p>
+
+<table>
+<caption>The two values that must change before real use.</caption>
+<colgroup><col style="width: 22%"><col style="width: 78%"></colgroup>
+<thead>
+<tr><th>Setting</th><th>Default</th></tr>
+</thead>
+<tbody>
+<tr><td><code>emailSender</code></td><td><code>no-reply@replace-with-your-domain</code></td></tr>
+<tr><td><code>publicUrl</code></td><td><code>https://replace-with-your-external-host-name</code></td></tr>
+</tbody>
+</table>
+
+<h2 id="s8">8. Start the backend</h2>
+
+<pre><code>cd ~/statisticians-workbench
+./scripts/start-backend.sh</code></pre>
+
+<p>That script activates <code>backend/venv</code>, loads <code>backend/.env</code>, and runs <code>python main.py</code>, which starts uvicorn on <code>0.0.0.0:8000</code> with <code>reload=True</code>.</p>
+
+<p>On first start the backend creates <code>workbench_data</code> if it is absent. Expect log lines naming the database cluster, the pool, and the data database.</p>
+
+<p><strong>Check</strong> — in a second terminal:</p>
+
+<p><code>curl -s http://localhost:8000/api/health</code></p>
+
+<p>Expected, in substance:</p>
+
+<pre><code>{"status":"healthy","version":"0.12.2","backend":"python",
+ "database":{"pool_initialized":true,"host":"127.0.0.1","port":9431}}</code></pre>
+
+<p><code>"backend":"python"</code> confirms it is this backend and not the Go one; <code>pool_initialized:true</code> confirms the database connection. If the port or host look wrong, <code>DATABASE_URL</code> is wrong — the health body reports the cluster it parsed from it, deliberately, so the answer is available even when the database is unreachable.</p>
+
+<p>Leave this running. <code>logs/backend.log</code> in the repository root carries the same lines with timestamps, which is easier to read than a terminal.</p>
+
+<h2 id="s9">9. Build and start the frontend</h2>
+
+<pre><code>cd ~/statisticians-workbench/frontend
+pnpm install
+pnpm build
+pnpm start</code></pre>
+
+<p><code>pnpm start</code> serves the production build on port 3000. This project does <strong>not</strong> use <code>pnpm dev</code> for verification — it misses build errors.</p>
+
+<p>If <code>pnpm install</code> reports build-script warnings, run <code>pnpm approve-builds</code> and select all packages, then re-run.</p>
+
+<p><strong>Check.</strong> Expect a redirect code (<code>307</code>) for an unauthenticated request — that is the login redirect, not an error.</p>
+
+<p><code>curl -s -o /dev/null -w '%{http_code}\n' http://localhost:3000/</code></p>
+
+<p>Then open <code>http://localhost:3000</code> in a browser: the login page should render.</p>
+
+<h2 id="s10">10. Log in as the administrator</h2>
+
+<p>The seed in step 7 created <code>admin@example.com</code> with the password <code>admin123</code> and <code>isAdmin = true</code>, so there is nothing to promote.</p>
+
+<ol>
+<li>Open <code>http://localhost:3000/login</code> and sign in as <code>admin@example.com</code> / <code>admin123</code>.</li>
+<li><strong>Change that password immediately</strong> — it is published in this document. Use the profile page, or the admin user page.</li>
+<li>Set a real email address for the administrator and verify it, so password reset and notification email have somewhere to go.</li>
+</ol>
+
+<div class="box stop">
+<p><strong><code>admin123</code> is a published password.</strong></p>
+<p>It is in this document, in the seed program, and in every copy of this repository. An installation reachable from anywhere other than your own machine is compromised until that password is changed.</p>
+</div>
+
+<p><strong>Check.</strong> The sidebar shows the admin entries (<code>/admin/users</code>, <code>/admin/setup/options</code>), and <code>/admin/users</code> lists both seeded accounts.</p>
+
+<h3>If you did not run the seed program</h3>
+
+<p>A user registered at <code>/register</code> is <strong>not</strong> an administrator: <code>User.isAdmin</code> defaults to <code>false</code> and no code path promotes the first registration. Promote it by hand, then log out and back in — the session token carries the flag, so a stale session will not show the admin pages:</p>
+
+<p><code>psql -c 'UPDATE "User" SET "isAdmin" = true WHERE email = '\''you@example.com'\'';'</code></p>
+
+<h2 id="s11">11. Known gaps, and one deferral</h2>
+
+<p>These are the parts this document cannot yet describe honestly.</p>
+
+<h3>Gaps</h3>
+
+<dl>
+<dt>(a) The <code>.env</code> creation process needs rebuilding</dt>
+<dd>The old <code>generate-env-files.sh</code> was withdrawn — it targeted the pre-0.12 database arrangement, rotated the application role's password (breaking every running backend), and <code>chown -R</code>ed the whole checkout to another user. A replacement must write both files, generate <code>NEXTAUTH_SECRET</code> and a 64-character <code>ENCRYPTION_KEY</code>, and never overwrite an existing <code>.env</code> without saying so.</dd>
+<dt>(b) The seed program is unproven</dt>
+<dd><code>scripts/workbench-seed.py</code> is a port of <code>workbench-go/cmd/workbench-seed</code>, and its data was compared against the Go source field by field — but it has not been run against a database yet. Step 7 is the first place that will show whether it works. If it fails, the manual <code>INSERT</code> in step 7 and the promotion in step 10 still get an installation to a working administrator.</dd>
+<dt>(c) Translations are not yet shipped</dt>
+<dd><code>backend/locales/</code> and the import script are not in this repository, so the interface runs English-only. Shipping them is a later step, together with the extract → translate → import pipeline.</dd>
+<dt>(d) Platform support is Linux only</dt>
+<dd>This repository is scoped to Linux. Windows and macOS packaging belong to the commercial side.</dd>
+</dl>
+
+<h3>Deferred: upgrading an existing source installation</h3>
+
+<p><strong>Not covered, and deliberately not built yet.</strong> A reader who pulls new commits over an existing installation has a database one release behind its code, and this document says nothing about how to move it forward.</p>
+
+<p>That is a <strong>record</strong> problem — knowing which of the numbered files in <code>db/migrations/</code> have already been applied — not a migration-engine problem. When the first second release exists, this document gains a procedure, and <code>db/migrations/</code> becomes the input to it rather than history.</p>
+
+<div class="box info">
+<p><strong>Why no runner is being written now.</strong></p>
+<p><code>sawhorse</code> is not a migration engine: <code>workbench-go/sawhorse/migrations/migrations.go</code> is a 17-line <code>//go:embed</code>, and the runner behind it is the third-party library <code>pressly/goose</code>, invoked from 116 lines in <code>sawhorse/internal/core/create_database.go</code>. Its machinery — an applied-version table, advisory locking, per-migration transactions — exists to make an <strong>unattended deployment upgrade</strong> safe. The open source edition is not a deployment: it is installed once, from source, by the person running it. Goose's job belongs to the packaged product, and reproducing it here would be building for a workflow that does not yet exist.</p>
+</div>
+
+<h2 id="s12">12. Verification checklist</h2>
+
+<p>Run top to bottom after a fresh install. Every line should succeed.</p>
+
+<pre><code># backend health, and which backend answered
+curl -s http://localhost:8000/api/health
+
+# frontend answers (307 = login redirect)
+curl -s -o /dev/null -w '%{http_code}\n' http://localhost:3000/
+
+# schema present: 30 tables from the baseline (plus wc's header lines),
+# and the columns that prove it is current
+psql -c '\dt' | wc -l
+psql -c '\d "GlobalSettings"' | grep registrationMode
+psql -c '\d "UserDataset"' | grep materialize
+
+# the seed landed: one settings row, 100 groups, 2 users, 4 providers, 10 types
+psql -c 'SELECT count(*) FROM "GlobalSettings";'
+psql -c 'SELECT count(*) FROM "UserGroup";'
+psql -c 'SELECT count(*) FROM "User";'
+psql -c 'SELECT count(*) FROM "AIProvider";'
+psql -c 'SELECT count(*) FROM "VisualizationType";'
+
+# an administrator exists
+psql -c 'SELECT email FROM "User" WHERE "isAdmin" = true;'</code></pre>
+
+<p>Then, in the browser: log in as <code>admin@example.com</code> / <code>admin123</code>, change that password, and open <code>/admin/users</code> — a page that needs administrator rights — and confirm no error banner appears.</p>
+
+<h2 id="s13">13. Starting over</h2>
+
+<div class="step">
+<h3>13a. Clear the data and start again</h3>
+
+<p>To discard both databases and re-create them, leaving the cluster in place:</p>
+
+<pre><code>sudo -u postgres psql -p 9431 &lt;&lt;'SQL'
+DROP DATABASE IF EXISTS workbench_data;
+DROP DATABASE IF EXISTS workbench;
+DROP ROLE IF EXISTS workbench;
+SQL</code></pre>
+
+<p>Then repeat from step 3b. The cluster, the Python virtual environment and <code>node_modules</code> do not need rebuilding unless <code>requirements.txt</code> or <code>package.json</code> changed.</p>
+</div>
+
+<div class="step">
+<h3>13b. Remove the cluster entirely</h3>
+
+<p>Only when the whole installation is being abandoned. <strong>The cluster name <code>workbench</code> in this command is what protects anything else</strong> — it names ours specifically, so <code>16/main</code> and every database in it are untouched.</p>
+
+<pre><code>pg_lsclusters                                    # confirm 16/workbench on 9431
+sudo pg_dropcluster --stop 16 workbench
+pg_lsclusters                                    # 16/workbench gone; 16/main still online</code></pre>
+
+<p>Then remove the <code>DATABASE_URL</code> line's credentials from <code>backend/.env</code>, or the file entirely — the next install generates fresh ones.</p>
+</div>
+
+<div class="box stop">
+<p><strong>Do not run <code>apt-get purge postgresql-*</code> to tidy up.</strong></p>
+<p>That removes the distro's package and <code>16/main</code> with it, taking any database that is not ours. Step 1 carries the full purge sequence, and it is only for a machine being rebuilt.</p>
+</div>
+
+<div class="footnotes">
+<hr>
+<ol>
+<li>The step 11 gaps and the deferral are the document's own statement of what it cannot yet say; they are carried here unchanged rather than summarised.</li>
+<li>Every count in this guide — 30 tables, 100 groups, 10 visualization types — was measured from the artefact it describes, not carried from an earlier draft.</li>
+<li>This page is generated from <code>Installing.md</code>. Where the two disagree, the Markdown is the source and this file is the rendering.</li>
+</ol>
+</div>
+
+</body>
+</html>
