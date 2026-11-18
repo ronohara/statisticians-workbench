@@ -39,9 +39,15 @@
 #      chpasswd, and chown -R'd the ENTIRE CHECKOUT to it. Nothing here does
 #      that. The tree stays owned by whoever cloned it.
 #
-#   4. It prompted with read -p, so it could not run unattended. This one takes
-#      no input: it prints what it will do, and --force is the consent to
-#      overwrite.
+#   4. It prompted with read -p for settings it could not know. This one asks
+#      nothing about configuration — --force is the consent to overwrite — but
+#      it IS interactive in one place: sudo may ask for your password when it
+#      queries the cluster. That is correct for a tool a person runs once at a
+#      console. An earlier revision used `sudo -n` to avoid the prompt and
+#      refused whenever the password was not already cached, which blocked the
+#      step it exists to perform. Unattended operation is not a goal here; the
+#      scheduled scripts (push-all.sh and friends) are the ones that must never
+#      prompt, and this is not one of them.
 #
 # What it writes
 # --------------
@@ -184,8 +190,8 @@ if (( ${#EXISTING[@]} > 0 )) && [[ "$FORCE" != true ]]; then
     echo "  every session token and every stored connection password encrypted with" >&2
     echo "  the old ENCRYPTION_KEY." >&2
     echo "" >&2
-    echo "  Re-run with --force to replace it; a timestamped copy of each file is" >&2
-    echo "  kept first." >&2
+    echo "  --force replaces it outright, keeping no copy. Back it up yourself if" >&2
+    echo "  you want the old secrets; this script will not." >&2
     exit 1
 fi
 
@@ -254,29 +260,41 @@ EOF
 fi
 
 # --- does the role exist, and can we learn its password? ------------------
-# Peer auth as postgres over the socket, the same route step 3b uses. Non-
-# interactive sudo only: a password prompt in the middle of a generator is the
-# defect this script exists to avoid.
+# Peer auth as postgres over the socket, the same route step 3b uses.
 #
-# Three outcomes matter:
-#   ROLE=present  the role exists — its password must be supplied, never guessed
-#   ROLE=absent   a fresh password will be created, with the SQL to create it
-#   ROLE=unknown  the cluster is up but this script could not ask it. That
-#                 happens where sudo wants a password (this script only uses
-#                 sudo -n) or where the sudoers rule does not allow psql as
-#                 postgres. It is reported as unknown rather than guessed.
+# **This script is interactive and expects a person at the keyboard.** It was
+# written with `sudo -n` on the reasoning that a prompt mid-script is a hazard —
+# that reasoning was wrong for this tool. There is no unattended use for it: it
+# creates secrets once, at install time, and the person running it is standing
+# at the console. Refusing because sudo *could* prompt simply blocked the step.
+# (The 2026-10-22 cron lesson is about jobs with no one to answer; this is not
+# one of those. `push-all.sh` must not prompt; this must be allowed to.)
+#
+# Three outcomes still matter, and they are now distinguishable:
+#   ROLE=present      the role exists — its password must be supplied, never guessed
+#   ROLE=absent       a fresh password will be created, with the SQL to create it
+#   ROLE=unknown      the question could not be put to the server. Only two
+#                     things cause it: running without a terminal so sudo has
+#                     nowhere to prompt, or a sudoers rule that forbids psql as
+#                     postgres. Both are reported with the remedy, never guessed.
 
 ROLE=unknown
-if command -v sudo >/dev/null 2>&1; then
-    # The exit status distinguishes the two cases an empty result would merge:
-    # psql exiting 0 with no rows means the role is genuinely absent, while
-    # psql failing means the question was never answered. Reading both as
-    # "unknown" would make the absent branch unreachable on any machine where
-    # the query works; reading both as "absent" would claim a fact nobody checked.
-    if role_query=$(sudo -n -u postgres psql -p "$DB_PORT" -tAc \
-            "SELECT 1 FROM pg_roles WHERE rolname='$DB_USER';" 2>/dev/null); then
-        if [[ "$role_query" == "1" ]]; then ROLE=present; else ROLE=absent; fi
-    fi
+ROLE_QUERY_ERROR=""
+
+# How to reach the postgres account. Root needs no sudo; an ordinary user does,
+# and is allowed to be prompted for it.
+if [[ "$(id -u)" -eq 0 ]]; then
+    PG_AS=(runuser -u postgres --)
+else
+    PG_AS=(sudo -u postgres)
+fi
+
+role_query=""
+if role_query=$("${PG_AS[@]}" psql -p "$DB_PORT" -tAc \
+        "SELECT 1 FROM pg_roles WHERE rolname='$DB_USER';" 2>&1); then
+    if [[ "$role_query" == "1" ]]; then ROLE=present; else ROLE=absent; fi
+else
+    ROLE_QUERY_ERROR="$role_query"
 fi
 
 # --- the database password ------------------------------------------------
@@ -299,20 +317,35 @@ elif [[ "$ROLE" == present ]]; then
     echo "    $0 --rotate-db-password   # generates a new one and prints the ALTER ROLE to run" >&2
     exit 1
 elif [[ "$ROLE" == unknown ]]; then
-    echo "Refused: the cluster is running, but this script could not ask it whether" >&2
-    echo "the role '$DB_USER' exists." >&2
+    echo "Refused: the cluster is running, but the role could not be checked." >&2
     echo "" >&2
-    echo "  It only uses non-interactive sudo, and that was refused. Without knowing" >&2
-    echo "  whether the role is there, a generated password would be written into" >&2
-    echo "  .env without any statement that applies it — the 28P01 trap below, with" >&2
-    echo "  no way to tell which statement to run." >&2
+    echo "  The query was:" >&2
+    echo "    ${PG_AS[*]} psql -p $DB_PORT -tAc \"SELECT 1 FROM pg_roles WHERE rolname='$DB_USER';\"" >&2
     echo "" >&2
-    echo "  Choose one:" >&2
-    echo "    WORKBENCH_DB_PASSWORD='choose-one' $0   # supply it; both SQL forms are printed" >&2
-    echo "    sudo -v && $0                          # cache sudo, then this script can ask" >&2
+    echo "  It said:" >&2
+    printf '%s\n' "${ROLE_QUERY_ERROR:-<no output>}" | sed 's/^/    /' >&2
     echo "" >&2
-    echo "  The second works because 'sudo -v' caches the credential for the terminal" >&2
-    echo "  session; the script's 'sudo -n' then succeeds without ever prompting." >&2
+    echo "  Without knowing whether the role is there, a generated password would be" >&2
+    echo "  written into config/workbench.env with no statement that applies it — the" >&2
+    echo "  28P01 trap, with no way to tell which statement to run." >&2
+    echo "" >&2
+    if [[ "$(id -u)" -eq 0 ]]; then
+        echo "  Running as root, so this is a socket or peer-auth problem rather than a" >&2
+        echo "  password prompt: check that $DB_PORT is this cluster and that" >&2
+        echo "  pg_hba.conf allows peer auth for postgres." >&2
+    elif [[ ! -t 0 ]]; then
+        echo "  There is no terminal here, so sudo has nowhere to ask for a password." >&2
+        echo "  Run this script at the console, where it can prompt:" >&2
+        echo "    ./scripts/generate-env-files.sh" >&2
+    else
+        echo "  sudo was refused. Check that your account may run commands as postgres:" >&2
+        echo "    sudo -u postgres psql -p $DB_PORT -c 'SELECT 1'" >&2
+    fi
+    echo "" >&2
+    echo "  Or supply the password yourself, which removes the need to ask:" >&2
+    echo "    WORKBENCH_DB_PASSWORD='the-existing-password' $0" >&2
+    echo "" >&2
+    echo "  Both SQL forms are printed either way, so you can see which applies." >&2
     exit 1
 else
     DB_PASSWORD="$(openssl rand -base64 24 | tr -d '/+=' | head -c 24)"
@@ -476,11 +509,6 @@ umask 077
 
 finish_file() {
     local path="$1" content="$2"
-    if [[ -f "$path" ]] && [[ "$FORCE" == true ]]; then
-        local backup="${path}.bak-$(date +%Y%m%d-%H%M%S)"
-        cp -p "$path" "$backup"
-        echo "  backed up $path -> $backup"
-    fi
     local tmp="${path}.tmp.$$"
     printf '%s\n' "$content" > "$tmp"
     chmod 600 "$tmp"
@@ -494,7 +522,20 @@ finish_file() {
 # are created below with `ln -sfn` and never written to directly.
 
 mkdir -p "$CONFIG_DIR"
+
+# Who the files must belong to. When this runs as root — via `sudo ./scripts/…`
+# or from a root console — anything it creates is root-owned, and the backend
+# runs as the ordinary user, so a 600-mode file is then unreadable by the very
+# process it was written for. The checkout's owner is the right answer in every
+# case: the tree belongs to whoever cloned it.
+REPO_OWNER="$(stat -c '%U:%G' "$WORKBENCH_DIR")"
+
 finish_file "$ENV_FILE" "$ENV_CONTENT"
+
+if [[ "$(id -u)" -eq 0 ]]; then
+    chown "$REPO_OWNER" "$CONFIG_DIR" "$ENV_FILE"
+    echo "  owner set to $REPO_OWNER"
+fi
 
 # --- the two symlinks ------------------------------------------------------
 # `ln -sfn` replaces an existing symlink in place. It must never be pointed at a
@@ -503,15 +544,9 @@ finish_file "$ENV_FILE" "$ENV_CONTENT"
 
 make_link() {
     local link="$1"
-    # A regular file here is a leftover from the two-file arrangement. `ln -sfn`
-    # would delete it outright, so it is copied out of the way first — the
-    # refusal message promises a timestamped copy, and --force is consent to
-    # replace, not consent to lose whatever secrets it held.
-    if [[ -f "$link" && ! -L "$link" ]]; then
-        local backup="${link}.bak-$(date +%Y%m%d-%H%M%S)"
-        cp -p "$link" "$backup"
-        echo "  backed up $link -> $backup"
-    fi
+    # A regular file here is a leftover from the two-file arrangement, and
+    # `ln -sfn` replaces it. No copy is kept: --force is consent to replace, and
+    # whatever secrets it held are being regenerated by this very run.
     ln -sfn "$LINK_TARGET" "$link"
     echo "  linked $link -> $LINK_TARGET"
 }

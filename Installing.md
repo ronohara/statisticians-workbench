@@ -1,44 +1,38 @@
 # Installing the Statisticians Workbench — Open Source Edition
 
-Instructions for getting the open source version running from source on Linux.
+A step-by-step guide to running the open source edition from source on Linux.
 
-**Status: being proven step by step, 2026-11-18.** These steps are worked
-through one at a time on the `mint22open` test bed (Mint 22.3), and each is
-corrected as it is proven. Steps marked **[PROVEN]** have been executed on that
-machine and their checks passed; steps marked **[UNPROVEN]** have not, and are
-the ones expected to need revision.
+## Before you start
 
-- Step 1, prerequisites — **[PROVEN]** 2026-11-18
-- Step 3, private cluster, role and databases — rewritten 2026-11-18 to the
-  private-cluster model (port 9431); **not yet run**
-- Step 5, environment files — now runs `scripts/generate-env-files.sh`, revised
-  for the private cluster; **not yet run**
-- Step 6, schema — now one file (`db/baseline`, re-dumped at HEAD 2026-11-18);
-  `db/migrations/` is history and is not applied. **Not yet run**
-- Step 7, seed — now runs `scripts/workbench-seed.py`, the Python port of
-  `workbench-go/cmd/workbench-seed`; **not yet run**
+**Supported systems:** Ubuntu 24.04 LTS and derivatives. The reference system is
+Linux Mint 22.3, which is built on the Ubuntu 24.04 base.
 
-Each step states how to check that it worked. Do not skip the check — a later
-step failing usually means an earlier one silently did not do what it claimed.
+| | |
+|---|---|
+| Distribution | Linux Mint 22.3 (or Ubuntu 24.04 and derivatives) |
+| Architecture | x86_64 |
+| PostgreSQL | 16, from the distribution archive |
+| Node.js | **22 LTS** — the archive's 18.x is too old to build the frontend; step 1 replaces it |
 
----
+You will need `sudo`, an internet connection, and about 1 GB of free disk space.
 
-## 0. What is being installed
+The Workbench is three pieces:
 
-Three pieces:
-
-| Piece | Directory | Runs on | Serves |
+| Piece | Directory | Port | Serves |
 |---|---|---|---|
-| Backend (Python / FastAPI) | `backend/` | port 8000 | `/api/*` |
-| Frontend (Next.js) | `frontend/` | port 3000 | the web UI |
-| Database (PostgreSQL) | `db/` holds the schema | private cluster on **9431** | both of the above |
+| Backend (Python / FastAPI) | `backend/` | 8000 | `/api/*` |
+| Frontend (Next.js) | `frontend/` | 3000 | the web interface |
+| Database (PostgreSQL) | `db/` holds the schema | **9431** | both of the above |
 
-The frontend proxies `/api/*` calls to the backend on `127.0.0.1:8000`
-(`frontend/next.config.mjs`), so both must be running for the UI to work.
+The frontend proxies `/api/*` to the backend on `127.0.0.1:8000`, so both must be
+running for the interface to work.
+
+Each step below ends with a **check**. Do not skip one: when a later step fails,
+the cause is almost always an earlier step that did not do what it claimed.
 
 ---
 
-## 1. Prerequisites
+## 1. Install the prerequisites
 
 ```bash
 sudo apt update
@@ -47,14 +41,38 @@ sudo apt install -y git python3 python3-venv python3-dev \
                     build-essential libpq-dev
 ```
 
-Node.js, npm and pnpm:
+### Node.js
+
+The frontend is built with Next.js 16, which requires **Node 20.9 or newer**.
+The version in the Ubuntu and Mint archives is 18.x, and it cannot build this
+project — the build stops immediately with an error naming the required version.
+
+Install Node 22 LTS from NodeSource:
 
 ```bash
-sudo apt install -y nodejs npm
-npm install -g pnpm
+sudo apt-get install -y ca-certificates curl gnupg
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
-**Check:**
+NodeSource's script writes its own repository configuration and replaces the
+distribution's `nodejs` package. If the machine already has NodeSource packages
+for an older major version, remove them first so the new repository is
+unambiguous:
+
+```bash
+sudo apt-get purge -y nodejs
+sudo rm -f /etc/apt/sources.list.d/nodesource.list
+sudo rm -f /etc/apt/sources.list.d/nodesource.sources
+```
+
+Then install pnpm:
+
+```bash
+sudo npm install -g pnpm
+```
+
+### Check
 
 ```bash
 git --version
@@ -63,56 +81,22 @@ python3 -c 'import venv; print("venv ok")'
 gcc --version | head -1
 make --version | head -1
 test -f /usr/include/postgresql/libpq-fe.h && echo 'libpq-dev ok'
-node --version
 npm --version
 pnpm --version
 ```
 
-Every line must print a version; the two `echo` checks must print `ok`.
+Every line prints a version; the two `echo` checks print `ok`.
 
-### On the Node version
-
-**The archive's Node 18.19.1 is what this install uses, and it works.** Measured
-on `mint22open` 2026-11-18: `node v18.19.1`, `npm 9.2.0`, and `pnpm 12.21.0`
-installed by `npm install -g pnpm` — the whole chain from Mint's own archive,
-with no third-party repository.
-
-That is deliberate, not a compromise. Mint 22.3 is a deployment target, and the
-point of testing there is to prove the product works on the Node a stock Mint
-user actually has. Node 18 is end-of-life upstream and no longer receives
-security fixes, so this is a fact about the test bed rather than a
-recommendation: a production deployment should use a supported Node, and moving
-to one is a packaging decision for the commercial side.
-
-An earlier draft of this file required Node 20 or newer and sent the reader to
-NodeSource. That was an inference from Next.js's stated support matrix, not a
-measurement, and it was wrong for this tree — recorded here so the requirement
-is not reintroduced without evidence.
-
-### PostgreSQL is installed here, and set up later
-
-`postgresql` is in the list above because it is a prerequisite, but the install
-itself only creates the machine's default cluster, `16/main` on 5432. The
-Workbench does **not** use that cluster. It gets one of its own, `16/workbench`
-on **9431**, created in **step 3**; applying the schema is **step 6**. Installing
-the package now is what supplies the binaries both clusters run from.
-
-If the machine previously had PostgreSQL that must not be reused — a rebuilt
-test bed, say — purge it first, then install:
+Then confirm Node is new enough — this line exits with an error if it is not:
 
 ```bash
-sudo pg_dropcluster --stop 16 main
-sudo apt-get purge -y postgresql-16 postgresql-client-16 \
-                      postgresql-common postgresql-client-common
-sudo apt-get autoremove --purge -y
-sudo rm -rf /etc/postgresql /var/lib/postgresql /var/log/postgresql \
-            /var/cache/postgresql
-sudo deluser --system postgres
+node -e 'const [a,b]=process.versions.node.split(".").map(Number);
+         if (a < 20 || (a === 20 && b < 9)) {
+           console.error("Node " + process.versions.node + " is below 20.9.0 — the frontend cannot be built");
+           process.exit(1);
+         }
+         console.log("Node " + process.versions.node + " — new enough");'
 ```
-
-`apt-get autoremove --purge` can take unrelated orphaned packages with it — on
-`mint22open` it removed `sysstat` and `node-xtend`. Reinstall anything wanted
-back with `apt-get install -y <name>`.
 
 ---
 
@@ -128,31 +112,20 @@ cd statisticians-workbench
 
 ---
 
-## 3. Create the private cluster, its role and both databases
+## 3. Create the database
 
-**The Workbench runs on a PostgreSQL cluster of its own, on port 9431 — not on
-the machine's default cluster on 5432.** This is the private-cluster model
-described in `workbench-documents/workbench-using-private-cluster-plan.html`,
-and it is the arrangement every supported installation uses.
+The Workbench runs on **a PostgreSQL cluster of its own, on port 9431**. It never
+uses the machine's default cluster on 5432 — that one may hold your own
+databases, and this installation leaves it untouched.
 
-The reason is boundary, not preference. The private cluster holds the product's
-internal state and the upload repository, and nothing else. The distro's own
-cluster on 5432 may hold your databases; the Workbench never starts, stops,
-configures or connects to it. Port 9431 is also adjacent to 9432, which
-`msaccess-endpoint-ng` uses for its bundled cluster, so the two cannot collide.
-
-> **This source install does not write the package's ownership marker.**
-> `16/workbench/.workbench-managed` exists so a `.deb`'s `postrm` can prove the
-> cluster is ours before dropping it on purge. Nothing packaged is installed
-> here, so there is no `postrm` and no marker. Teardown is by hand — §13.
+The application role needs no `CREATEDB`, because both databases are created here
+rather than at runtime. Both are pinned to UTC, so timestamps read the same from
+`psql` as they do in the application.
 
 ### 3a. Create the cluster
 
-Mint's `postgresql` package creates `16/main` on 5432. Leave it alone; add ours
-beside it.
-
 ```bash
-sudo pg_lsclusters                      # expect 16/main on 5432, online
+sudo pg_lsclusters                      # the default cluster, 16/main on 5432
 sudo pg_createcluster 16 workbench --port 9431 \
      --locale=en_US.UTF-8 --encoding=UTF8
 ```
@@ -160,41 +133,28 @@ sudo pg_createcluster 16 workbench --port 9431 \
 **Check:**
 
 ```bash
-pg_lsclusters                          # now two rows: 16/main 5432, 16/workbench 9431
-pg_isready -p 9431                      # "accepting connections"
+pg_lsclusters                          # two rows: 16/main on 5432, 16/workbench on 9431
+pg_isready -p 9431                     # "accepting connections"
 ```
 
-If `pg_isready` says no response, the cluster was created stopped. Start it
-through its unit rather than with `--start`, so an administrator's `policy-rc.d`
-is respected:
+The new cluster is created stopped. If `pg_isready` reports no response, start it
+through its systemd unit:
 
 ```bash
 sudo systemctl start postgresql@16-workbench
 pg_isready -p 9431 -t 30
 ```
 
-Re-running `pg_createcluster` on an existing cluster refuses. That is the guard,
-not a fault — check `pg_lsclusters` before concluding anything.
+Running `pg_createcluster` again on an existing cluster refuses with
+`cluster configuration already exists`. That is the guard working, not a fault.
 
 ### 3b. Create the role and both databases
 
-**Both databases are created here, and the role needs no `CREATEDB`.** At
-startup the backend calls `ensure_data_database`, which returns immediately when
-`workbench_data` already exists (`backend/src/postgres_data_manager.py`);
-creating it now is what removes the privilege, rather than granting a wider one
-than the install needs.
+`psql` runs as the `postgres` system user over peer authentication, so no
+password is consulted.
 
-**Both databases are pinned to UTC here, and this is not optional.** A PostgreSQL
-database inherits the cluster's timezone at creation, and the cluster inherited
-whatever the installing machine was set to. The application pins its own pooled
-connections (`_init_connection` in `backend/main.py`), so the application would
-be unaffected either way — but every *other* consumer would not: a `psql`
-session, an operator's query, the packaging importer. The packaged build carries
-this as migration `0026_database_timezone_utc.sql`; this install applies no
-migrations, so it is done explicitly below instead.
-
-`psql` runs as `postgres` over peer auth on the socket, so no password is
-consulted and none crosses the wire.
+**Change the password below to one of your own before running it**, and use the
+same value in step 5.
 
 ```bash
 sudo -u postgres psql -p 9431 <<'SQL'
@@ -207,7 +167,7 @@ ALTER DATABASE workbench_data SET timezone = 'UTC';
 SQL
 ```
 
-**Check — the role exists with the right attributes:**
+**Check — the role has the right attributes.** Expect `workbench | f | f | f | t`:
 
 ```bash
 sudo -u postgres psql -p 9431 -c \
@@ -215,10 +175,7 @@ sudo -u postgres psql -p 9431 -c \
    FROM pg_roles WHERE rolname='workbench';"
 ```
 
-Expect `workbench | f | f | f | t`. A `t` in any of the first three is a widened
-grant that the application does not need.
-
-**Check — both databases exist and are owned by the role:**
+**Check — both databases exist and are owned by the role.** Expect two rows:
 
 ```bash
 sudo -u postgres psql -p 9431 -c \
@@ -226,9 +183,7 @@ sudo -u postgres psql -p 9431 -c \
    FROM pg_database WHERE datname LIKE 'workbench%';"
 ```
 
-Expect two rows, both owned by `workbench`.
-
-**Check — both databases default to UTC:**
+**Check — both default to UTC.** Expect `{TimeZone=UTC}` on both rows:
 
 ```bash
 sudo -u postgres psql -p 9431 -c \
@@ -236,24 +191,14 @@ sudo -u postgres psql -p 9431 -c \
    JOIN pg_database d ON d.oid = s.setdatabase ORDER BY 1;"
 ```
 
-Expect `{TimeZone=UTC}` on both rows. An empty result means the `ALTER DATABASE`
-statements did not run — worth fixing now, because the difference only shows up
-later, in a psql session that reports a different time from the application.
-
-**Check — the credential authenticates over TCP:**
+**Check — the credential works over TCP.** Expect one row, `workbench | workbench`:
 
 ```bash
 PGPASSWORD='change-this-password' psql -h 127.0.0.1 -p 9431 \
   -U workbench -d workbench -c 'SELECT current_user, current_database();'
 ```
 
-One row, `workbench | workbench`. A `no password supplied` here means
-`pg_hba.conf` on the new cluster was not generated as expected — that is a
-finding to record, not to work around.
-
-### 3c. Confirm 5432 was not touched
-
-The default cluster must still be exactly as it was:
+### 3c. Confirm the default cluster was not touched
 
 ```bash
 pg_lsclusters                          # 16/main still online on 5432
@@ -261,13 +206,11 @@ sudo -u postgres psql -p 5432 -tAc \
   "SELECT count(*) FROM pg_database WHERE datname LIKE 'workbench%';"
 ```
 
-The count must be **0**. If the role or either database appears on 5432, the
-commands above ran against the wrong cluster — stop and drop them there before
-continuing, rather than leaving a second copy the application will never use.
+The count must be **0**.
 
 ---
 
-## 4. Create the Python virtual environment
+## 4. Create the Python environment
 
 ```bash
 cd ~/statisticians-workbench/backend
@@ -276,56 +219,82 @@ python3 -m venv venv
 ./venv/bin/pip install -r requirements.txt
 ```
 
-`requirements.txt` is the runtime subset — the packages the backend actually
-imports, not the development and test stack. It pins versions that are known to
-work together.
+`requirements.txt` pins the runtime dependencies — the packages the backend
+imports, not the development and test tooling. They all install as prebuilt
+wheels; no compiler is needed beyond what step 1 installed. The environment is
+about 300 MB.
 
-**Check:**
+**If `backend/venv` already exists, delete it first.** A virtual environment
+cannot be moved: every script inside it records an absolute path to its own
+interpreter, so a moved or relocated environment breaks in a confusing way —
+`pip` fails saying a file is missing that is plainly there.
+
+```bash
+rm -rf ~/statisticians-workbench/backend/venv
+```
+
+**Check — the environment knows where it is.** This must print the path of the
+`backend/venv` you are standing in:
+
+```bash
+./venv/bin/python -c 'import sys; print(sys.prefix)'
+```
+
+**Check — the dependencies load:**
 
 ```bash
 ./venv/bin/python -c "import fastapi, asyncpg, pandas, uvicorn; print('ok')"
 ```
 
-Prints `ok`. If `psycopg2` or `pymssql` fail to build, the build headers from
-step 1 are missing, or no wheel exists for this Python version — record which
-package failed here rather than working around it.
-
-`pymssql` is only needed for Microsoft SQL Server connections; `pymssql` and
-`psycopg2-binary` both normally install as prebuilt wheels.
+Prints `ok`.
 
 ---
 
-## 5. Create the environment files
+## 5. Create the configuration
 
-Two `.env` files are needed: one for the backend, one for the frontend. **Neither
-is in the repository** — they are gitignored, because they hold secrets.
+One file holds the configuration, and both halves of the application read it
+through a symbolic link:
 
-**Run the generator:**
+```
+config/workbench.env            the configuration
+backend/.env   -> ../config/workbench.env
+frontend/.env  -> ../config/workbench.env
+```
+
+This is the same arrangement the packaged product uses, and it exists for one
+reason: `NEXTAUTH_SECRET` and `ENCRYPTION_KEY` must be identical in both halves —
+the frontend mints the session token and the backend verifies it. One file makes
+that a fact rather than two copies that have to be kept in agreement.
+
+Run the generator, passing **the database password you chose in step 3b** — it
+must use the password the role already has, and it will not guess one:
 
 ```bash
 cd ~/statisticians-workbench
-./scripts/generate-env-files.sh
+WORKBENCH_DB_PASSWORD='change-this-password' ./scripts/generate-env-files.sh
 ```
 
-It writes both files, generates both secrets, and prints the SQL that creates the
-role with the password it just wrote — so `Installing.md` step 3b and the `.env`
-file cannot disagree. It takes no input, so it works unattended.
+It writes the configuration, generates both secrets, creates both links and
+verifies them, then confirms the database credential actually authenticates.
 
-What it will and will not do, because the old version of this script did the
-opposite and broke running installations:
+If the role does not exist yet — because you have not done step 3b — run
+`./scripts/generate-env-files.sh` without the variable. It will generate a
+password and print the SQL that creates the role with it, which you then run.
 
-- **It never rotates a database password.** If the `workbench` role already
-  exists and the password is not supplied, it refuses and says so. Pass
-  `WORKBENCH_DB_PASSWORD='…'` to reuse the existing one, or
-  `--rotate-db-password` to generate a new one deliberately — which prints the
-  `ALTER ROLE` to run and warns that every running backend must be restarted,
-  because each keeps the old password in memory.
-- **It creates no Linux user and changes no ownership.** The checkout stays owned
-  by whoever cloned it.
-- **It will not overwrite existing files** without `--force`, and `--force` keeps
-  a timestamped copy of each first. Overwriting matters: a new `ENCRYPTION_KEY`
-  makes every stored connection password undecryptable.
-- `--dry-run` prints the files (secrets redacted) and writes nothing.
+Notes on how it behaves:
+
+- **It requires the database cluster to be running** (step 3). If it is not, the
+  script stops without writing anything — a config written against a cluster
+  that does not exist fails much later, at step 8.
+- **It will not overwrite an existing configuration** unless you pass `--force`,
+  and `--force` replaces it outright without keeping a copy. Back the file up
+  yourself if you want the old secrets: a new `ENCRYPTION_KEY` makes every stored
+  connection password undecryptable, and a new `NEXTAUTH_SECRET` logs everyone
+  out.
+- **Run it at a console as your own user.** It may ask for your `sudo` password
+  when it checks whether the database role exists.
+- `--dry-run` prints the file it would write, with secrets redacted, and changes
+  nothing.
 
 **Check:**
 
@@ -340,98 +309,46 @@ print('NEXTAUTH_SECRET set:', bool(os.getenv('NEXTAUTH_SECRET')))
 "
 ```
 
-All three lines must be true and the length must read 64. If the role and the
-cluster were both in place when the script ran, it also reported
-`Verified: the credential in backend/.env authenticates`; if it did not, run it
-again after step 3b and it will check.
+All three must be true and the length must read 64.
 
-### What the variables do
+### The settings in the file
 
-`backend/.env`:
-
-- `DATABASE_URL` — required. The backend refuses to start without it
-  (`backend/main.py`, raises `RuntimeError("DATABASE_URL environment variable not set")`).
-  **The port is 9431**, the private cluster from §3 — never 5432, which belongs to
-  the machine's own PostgreSQL. `workbench_data` is derived from this URL by
-  swapping the database name, so this one line points both pools at the cluster.
-- `ENCRYPTION_KEY` — required, and **must be exactly 64 hexadecimal characters**.
-  The backend raises at import time otherwise (`backend/src/utils/encryption.py`).
-  It encrypts stored connection passwords; if it changes later, previously saved
+- `DATABASE_URL` — required. Points at the private cluster on **9431**, and the
+  second database (`workbench_data`) is derived from it by changing the database
+  name.
+- `ENCRYPTION_KEY` — required, and must be exactly 64 hexadecimal characters. It
+  encrypts stored connection passwords; if it changes, previously saved
   credentials can no longer be decrypted.
-- `NEXTAUTH_SECRET` — signs the session token. The **frontend must use the same
-  value**, because the frontend mints the token and the backend verifies it.
-- `ALLOWED_ORIGINS` — CORS for the browser calling the API.
+- `NEXTAUTH_SECRET` — signs the session token. Read by both halves.
+- `NEXTAUTH_URL` — the address the frontend is served on.
+- `ALLOWED_ORIGINS` — the origins allowed to call the API from a browser.
 
-`ENVIRONMENT` is **not** written, and that is deliberate. It is a real setting —
-`main.py:105` and `Logger.__init__` both read it — and it controls one thing:
-whether the backend also writes `logs/backend.log` (10 MB, three backups) on top
-of stderr. But `development` is its default on both sides, so a line setting it to
-`development` changes no behaviour. Set it only to leave development:
+Two settings are deliberately **not** written:
 
-```bash
-ENVIRONMENT=production   # file logging off; stderr only
-```
+- **`ENVIRONMENT`** — controls whether the backend also writes
+  `logs/backend.log` (rotated at 10 MB, three backups) alongside its normal
+  output. `development` is the default, so the file log is on unless you set it.
+  Set it only to turn that off:
 
-`frontend/.env`:
+  ```bash
+  ENVIRONMENT=production   # stderr only, no log file
+  ```
 
-- `NEXTAUTH_URL` — where the frontend is served; the callback URL NextAuth uses.
-- `NEXTAUTH_SECRET` — the same value as the backend, for the reason above.
-- `ENCRYPTION_KEY` — the same value as the backend. `frontend/lib/encryption.ts`
-  reads it, and an earlier version of this section omitted it.
-- `BACKEND_URL` — where the frontend's server-side code reaches the API;
-  defaults to `http://127.0.0.1:8000` when unset.
-- `NEXT_PUBLIC_BACKEND_URL` — the same address, baked into the client bundle at
-  build time. Changing it means rebuilding (§9).
+- **`BACKEND_URL`** — the frontend's server-side code defaults to
+  `http://127.0.0.1:8000`, which is correct whenever the backend is on the same
+  machine. Set it only if your backend runs elsewhere.
 
-### Writing them by hand, if you prefer
-
-The script is a convenience, not a requirement. Generate both secrets once, into
-shell variables, so the two files carry the same values:
-
-```bash
-SECRET="$(openssl rand -base64 32)"
-KEY="$(openssl rand -hex 32)"
-
-mkdir -p ~/statisticians-workbench/backend ~/statisticians-workbench/frontend
-
-cat > ~/statisticians-workbench/backend/.env <<ENV
-DATABASE_URL=postgresql://workbench:change-this-password@127.0.0.1:9431/workbench
-NEXTAUTH_SECRET=$SECRET
-ENCRYPTION_KEY=$KEY
-ALLOWED_ORIGINS=http://localhost:3000
-ENV
-
-cat > ~/statisticians-workbench/frontend/.env <<ENV
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=$SECRET
-ENCRYPTION_KEY=$KEY
-BACKEND_URL=http://127.0.0.1:8000
-NEXT_PUBLIC_BACKEND_URL=http://127.0.0.1:8000
-ENV
-
-chmod 600 ~/statisticians-workbench/backend/.env ~/statisticians-workbench/frontend/.env
-```
-
-The heredoc delimiters are unquoted (`<<ENV`, not `<<'ENV'`) so `$SECRET` and
-`$KEY` expand — that is what makes the two files agree. `chmod 600` matters:
-these files hold the two secrets, and the repository's `.gitignore` keeps them
-out of git but does nothing about other local users.
-
-The password in `DATABASE_URL` must be the one the role actually has — the
-`CREATE ROLE` in step 3b sets it, and the two must match or the backend fails with
-28P01.
+> **Edit `config/workbench.env`, never the two links.** An editor that saves by
+> renaming replaces a link with a copy of the file, and the two then drift apart
+> with nothing reporting it. Re-running the generator repairs the links.
 
 ---
 
 ## 6. Create the schema
 
-**One file, one command.** `db/baseline/0000_baseline.sql` is a schema-only dump
-of the current database — every table, column, index, constraint and sequence at
-this release. Nothing else has to be applied.
-
-Apply it to **`workbench` on the private cluster, port 9431** — the database
-created in §3. `workbench_data` is already there and empty; it is plain storage
-and needs no schema.
+`db/baseline/0000_baseline.sql` is a schema-only dump: every table, column,
+index, constraint and sequence the application expects. It is the only file you
+apply.
 
 ```bash
 cd ~/statisticians-workbench
@@ -439,15 +356,13 @@ export PGPASSWORD='change-this-password'
 export PGHOST=127.0.0.1 PGPORT=9431 PGUSER=workbench PGDATABASE=workbench
 ```
 
-**Check the target before applying anything.** 3c tested for the role and
-databases, not for tables, so it would not catch a schema applied to the wrong
-cluster:
+**Confirm the target before applying anything** — expect `workbench|9431`:
 
 ```bash
 psql -tAc 'SELECT current_database(), inet_server_port();'
 ```
 
-Expect `workbench|9431`. Only then:
+Then:
 
 ```bash
 psql -v ON_ERROR_STOP=1 -f db/baseline/0000_baseline.sql
@@ -457,58 +372,51 @@ psql -v ON_ERROR_STOP=1 -f db/baseline/0000_baseline.sql
 
 ```bash
 psql -c '\dt' | wc -l
-psql -c '\d "GlobalSettings"'
+psql -c '\d "GlobalSettings"' | grep registrationMode
+psql -c '\d "UserDataset"' | grep materialize
 ```
 
-The first prints a table count — **30** tables plus the header lines `wc` counts.
-The second must show `registrationMode`, and `\d "UserDataset"` must show
-`materializedAt` and `materializeError`. Those three columns are the quick proof
-that this is the current schema rather than an older snapshot.
+The first prints **35**: 30 tables plus `psql`'s own header, footer and a blank
+line. For the table count itself:
 
-### `db/migrations/` is history, not an install step
+```bash
+psql -tAc "SELECT count(*) FROM pg_tables WHERE schemaname='public';"
+```
 
-The numbered files record how the schema reached its present shape. They are
-**not** applied during an install, and several cannot be: `0001` issues plain
-`CREATE TABLE` for tables the baseline already contains, so replaying them from
-the start fails on the first file.
+which prints **30**. The other two checks confirm the schema is current — they
+look for `registrationMode`, and for `materializedAt` and `materializeError`.
 
-They remain in the repository because they document the changes, and because
-the Go backend's `sawhorse` lineage mirrors them. A reader comparing the two
-should treat `db/baseline` as the schema and `db/migrations` as the record of
-how it got there.
+### About `db/migrations/`
 
-`db/migrations/0006_reconcile_timestamps.py` is a Python data-reconciliation
-script, not SQL. It is only relevant to a database that predates the timestamp
-work, and never runs during a fresh install.
+The numbered files in `db/migrations/` are the history of how the schema reached
+its present shape. **They are not applied during an installation**, and they
+cannot be: the earliest ones create tables the baseline already contains. The
+baseline is the schema; `db/migrations/` is the record of how it got there.
 
 ---
 
 ## 7. Seed the database
 
-The schema is empty. `db/baseline` contains no `INSERT` statements, and the
-application needs a good deal more than an empty schema before it can be used:
-without the `GlobalSettings` row, registration fails with a 500
-(`api.register.settings_not_found`), and there is no administrator account.
-
-Run the seed program:
+The schema is empty. The application needs a first settings row and an
+administrator account before it can be used — without the settings row,
+registration fails.
 
 ```bash
 cd ~/statisticians-workbench
 backend/venv/bin/python scripts/workbench-seed.py
 ```
 
-It reads `DATABASE_URL` from the environment, or from `backend/.env`, so no
-argument is needed. It runs in **one transaction** and is **idempotent** — a
-second run changes nothing.
+It reads the database connection from the configuration, runs in a single
+transaction, and is safe to run more than once: a second run changes nothing.
 
-What it creates:
+It creates:
 
-- `GlobalSettings` — the single row (id = 1), with the welcome message
-- `UserGroup` — 100 groups, `00` (Default) through `99`
-- `User` — `admin@example.com` / `admin123` (administrator) and
-  `exampleuser@example.com` / `User1234#`
-- `AIProvider` — DeepSeek, OpenRouter, Ollama local and remote, all enabled
-- `VisualizationType` — the ten built-in chart types
+- the single settings row, with the welcome message
+- 100 user groups, `00` (Default) through `99`
+- two accounts — `admin@example.com` (administrator) and
+  `exampleuser@example.com`
+- four AI providers — DeepSeek, OpenRouter, and Ollama local and remote
+- the ten built-in visualization types
 
 **Check:**
 
@@ -520,31 +428,13 @@ psql -c 'SELECT code FROM "AIProvider" ORDER BY code;'
 psql -c 'SELECT count(*) FROM "VisualizationType";'
 ```
 
-Expected: one settings row with `registrationMode = 0`; **100** groups; two users,
-with `admin@example.com` marked `t`; four providers; **10** visualization types.
+Expect one settings row with `registrationMode` 0; **100** groups; two users,
+with `admin@example.com` marked as an administrator; four providers; **10**
+visualization types.
 
-Re-run the same command and confirm the counts are unchanged — that is the
-idempotency check, and it exercises every `ON CONFLICT` clause.
-
-### If the seed program is unavailable
-
-The minimum the application needs is the settings row; everything else can be
-created through the UI once an administrator exists. This is enough to register a
-user, but **not** enough to have an administrator:
-
-```bash
-psql -c 'INSERT INTO "GlobalSettings" (id) VALUES (1) ON CONFLICT (id) DO NOTHING;'
-```
-
-### Two placeholder values
-
-`emailSender` and `publicUrl` default to placeholders and should be changed
-before the installation is used for anything real:
-
-- `emailSender` — `no-reply@replace-with-your-domain`
-- `publicUrl` — `https://replace-with-your-external-host-name`
-
-Both are editable from the admin pages once an administrator exists.
+The seeded passwords are `admin123` for the administrator and `User1234#` for
+the example user. **Change the administrator password at first login** — it is
+published here and in the seed script.
 
 ---
 
@@ -555,11 +445,27 @@ cd ~/statisticians-workbench
 ./scripts/start-backend.sh
 ```
 
-That script activates `backend/venv`, loads `backend/.env`, and runs
-`python main.py`, which starts uvicorn on `0.0.0.0:8000` with `reload=True`.
+The script activates the Python environment, loads the configuration, and starts
+the API server on port 8000. A normal start prints:
 
-On first start the backend creates `workbench_data` if it is absent. Expect log
-lines naming the database cluster, the pool, and the data database.
+```
+Uvicorn running on http://0.0.0.0:8000
+Started reloader process [...] using WatchFiles
+Started server process [...]
+No licence file found at .../backend/licence.json — running in open-source mode
+Features enabled: access_db, mssql_db, mysql_db, postgres_db
+Workbench database cluster: 127.0.0.1:9431 (database 'workbench')
+Database pool initialized.
+Data database pool initialized (workbench_data).
+Application startup complete.
+```
+
+The licence line is expected: this edition has no licence file, and the
+application falls back to the open-source feature set — the four database
+drivers it lists.
+
+Leave this terminal running. The same lines are written to `logs/backend.log` in
+the repository root, with timestamps.
 
 **Check** — in a second terminal:
 
@@ -567,21 +473,24 @@ lines naming the database cluster, the pool, and the data database.
 curl -s http://localhost:8000/api/health
 ```
 
-Expected, in substance:
+Expect:
 
 ```json
 {"status":"healthy","version":"0.12.2","backend":"python",
  "database":{"pool_initialized":true,"host":"127.0.0.1","port":9431}}
 ```
 
-`"backend":"python"` confirms it is this backend and not the Go one;
-`pool_initialized:true` confirms the database connection. If the port or host
-look wrong, `DATABASE_URL` is wrong — the health body reports the cluster it
-parsed from it, deliberately, so the answer is available even when the database
-is unreachable.
+`"backend":"python"` confirms which backend answered; `pool_initialized:true`
+confirms the database connection; the port confirms it is the private cluster.
 
-Leave this running. `logs/backend.log` in the repository root carries the same
-lines with timestamps, which is easier to read than a terminal.
+Then confirm it can read the data, which the health check does not prove:
+
+```bash
+curl -s http://localhost:8000/api/public-settings
+```
+
+This returns the settings row you seeded in step 7 — `registrationMode`,
+`passwordPolicy`, `demoMode` and the welcome text.
 
 ---
 
@@ -594,11 +503,40 @@ pnpm build
 pnpm start
 ```
 
-`pnpm start` serves the production build on port 3000. This project does **not**
-use `pnpm dev` for verification — it misses build errors.
+`pnpm install` downloads around 1,200 packages and takes several minutes on a
+cold cache; it prints warnings about engine versions on some dependencies, which
+are harmless. If it reports that build scripts were blocked, run
+`pnpm approve-builds`, select all packages, and re-run.
 
-If `pnpm install` reports build-script warnings, run `pnpm approve-builds` and
-select all packages, then re-run.
+> **If `node_modules` was ever installed under an older Node, delete it and
+> install again.** Several dependencies ship platform-specific native binaries as
+> *optional* dependencies, and each declares its own minimum Node version. Under a
+> Node below that minimum, `pnpm` skips them — **silently**, because they are
+> optional — and reports a successful install. The packages are then missing, and
+> the build fails much later with a message that points away from the cause:
+>
+> ```
+> ./app/globals.css
+> Error: Cannot find module '@tailwindcss/oxide-linux-x64-gnu'
+> ```
+>
+> The fix is to remove the tree and reinstall, which costs a couple of minutes
+> because the package store already holds the downloaded packages:
+>
+> ```bash
+> rm -rf node_modules
+> pnpm install
+> ```
+>
+> `pnpm install` alone will **not** repair it: with the lockfile satisfied it
+> reports `Already up to date` in seconds and relinks nothing. So install the
+> correct Node version (step 1) *before* the first `pnpm install`, and if you
+> change Node later, clear `node_modules` afterwards.
+
+`pnpm build` compiles the production build. This project does not use a dev
+server — the build is also the check that the frontend is sound.
+
+`pnpm start` serves that build on port 3000.
 
 **Check:**
 
@@ -606,129 +544,65 @@ select all packages, then re-run.
 curl -s -o /dev/null -w '%{http_code}\n' http://localhost:3000/
 ```
 
-Expect a redirect code (`307`) for an unauthenticated request — that is the
-login redirect, not an error. Then open `http://localhost:3000` in a browser:
-the login page should render.
+Expect **307** — the redirect to the login page for an unauthenticated request.
+Then open `http://localhost:3000` in a browser: the login page should appear.
 
 ---
 
-## 10. Log in as the administrator
+## 10. Sign in
 
-The seed in step 7 created `admin@example.com` with the password `admin123` and
-`isAdmin = true`, so there is nothing to promote.
-
-1. Open `http://localhost:3000/login` and sign in as `admin@example.com` /
-   `admin123`.
-2. **Change that password immediately** — it is published in this document. Use
-   the profile page, or the admin user page.
+1. Open `http://localhost:3000/login` and sign in as `admin@example.com` with
+   the password `admin123`.
+2. **Change that password immediately**, from the profile page or the admin user
+   page.
 3. Set a real email address for the administrator and verify it, so password
    reset and notification email have somewhere to go.
 
 **Check:** the sidebar shows the admin entries (`/admin/users`,
 `/admin/setup/options`), and `/admin/users` lists both seeded accounts.
 
-### If you did not run the seed program
+---
 
-A user registered at `/register` is **not** an administrator: `User.isAdmin`
-defaults to `false` and no code path promotes the first registration. Promote it
-by hand, then log out and back in — the session token carries the flag, so a stale
-session will not show the admin pages:
+## 11. Verify the installation
+
+Run these after a fresh install. Set the database connection first — it reads
+the password out of the configuration rather than asking you to retype it:
 
 ```bash
-psql -c 'UPDATE "User" SET "isAdmin" = true WHERE email = '\''you@example.com'\'';'
+cd ~/statisticians-workbench
+PW=$(sed -n 's|^DATABASE_URL=postgresql://[^:]*:\([^@]*\)@.*|\1|p' config/workbench.env)
+export PGPASSWORD="$PW" PGHOST=127.0.0.1 PGPORT=9431 PGUSER=workbench PGDATABASE=workbench
 ```
 
----
-
-## 11. Known gaps, and one deferral
-
-These are the parts this document cannot yet describe honestly.
-
-**(a) The `.env` generator is new and unproven.** `scripts/generate-env-files.sh`
-replaces the withdrawn one — see step 5 — and its logic was exercised against
-stubbed `psql`/`sudo` for every branch (role absent, role present, password
-supplied, password rotated, credential rejected), but it has not been run against
-a real cluster. Step 5 on `mint22open` is where that happens. Its refusal to
-guess an existing role's password is the one behaviour worth watching: on a
-machine where `sudo` needs a password it cannot ask, so it reports `role
-unknown` and relies on `WORKBENCH_DB_PASSWORD` being set.
-
-**(b) The seed program is unproven.** `scripts/workbench-seed.py` is a port of
-`workbench-go/cmd/workbench-seed`, and its data was compared against the Go
-source field by field — but it has not been run against a database yet. Step 7
-is the first place that will show whether it works. If it fails, the manual
-`INSERT` in step 7 and the promotion in step 10 still get an installation to a
-working administrator.
-
-**(c) Translations are not yet shipped.** `backend/locales/` and the import
-script are not in this repository, so the interface runs English-only. Shipping
-them is a later step, together with the extract → translate → import pipeline.
-
-**(d) Platform support is Linux only.** This repository is scoped to Linux.
-Windows and macOS packaging belong to the commercial side.
-
-### Deferred: upgrading an existing source installation
-
-**Not covered, and deliberately not built yet.** A reader who pulls new commits
-over an existing installation has a database one release behind its code, and
-this document says nothing about how to move it forward.
-
-That is a **record** problem — knowing which of the numbered files in
-`db/migrations/` have already been applied — not a migration-engine problem.
-When the first second release exists, this document gains a procedure, and
-`db/migrations/` becomes the input to it rather than history.
-
-**Why no runner is being written now.** `sawhorse` is not a migration engine:
-`workbench-go/sawhorse/migrations/migrations.go` is a 17-line `//go:embed`, and
-the runner behind it is the third-party library `pressly/goose`, invoked from
-116 lines in `sawhorse/internal/core/create_database.go`. Its machinery — an
-applied-version table, advisory locking, per-migration transactions — exists to
-make an **unattended deployment upgrade** safe. The open source edition is not a
-deployment: it is installed once, from source, by the person running it. Goose's
-job belongs to the packaged product, and reproducing it here would be building
-for a workflow that does not yet exist.
-
----
-
-## 12. Verification checklist
-
-Run top to bottom after a fresh install. Every line should succeed.
-
 ```bash
-# backend health, and which backend answered
+# the API is up, and which backend answered
 curl -s http://localhost:8000/api/health
 
-# frontend answers (307 = login redirect)
+# the API can read the database
+curl -s http://localhost:8000/api/public-settings
+
+# the frontend is up (307 = the login redirect)
 curl -s -o /dev/null -w '%{http_code}\n' http://localhost:3000/
 
-# schema present: 30 tables from the baseline (plus wc's header lines),
-# and the columns that prove it is current
-psql -c '\dt' | wc -l
-psql -c '\d "GlobalSettings"' | grep registrationMode
-psql -c '\d "UserDataset"' | grep materialize
+# the schema is present
+psql -tAc "SELECT count(*) FROM pg_tables WHERE schemaname='public';"
 
-# the seed landed: one settings row, 100 groups, 2 users, 4 providers, 10 types
-psql -c 'SELECT count(*) FROM "GlobalSettings";'
-psql -c 'SELECT count(*) FROM "UserGroup";'
-psql -c 'SELECT count(*) FROM "User";'
-psql -c 'SELECT count(*) FROM "AIProvider";'
-psql -c 'SELECT count(*) FROM "VisualizationType";'
+# the seed landed
+psql -tAc 'SELECT (SELECT count(*) FROM "UserGroup"), (SELECT count(*) FROM "User"),
+                  (SELECT count(*) FROM "AIProvider"), (SELECT count(*) FROM "VisualizationType");'
 
 # an administrator exists
-psql -c 'SELECT email FROM "User" WHERE "isAdmin" = true;'
+psql -tAc 'SELECT email FROM "User" WHERE "isAdmin" = true;'
 ```
 
-Then, in the browser: log in as `admin@example.com` / `admin123`, change that
-password, and open `/admin/users` — a page that needs administrator rights — and
-confirm no error banner appears.
+Expect 30 tables, `100|2|4|10`, and `admin@example.com`. Then sign in and open
+a page that needs administrator rights, and confirm no error appears.
 
 ---
 
-## 13. Starting over
+## 12. Starting over
 
-### 13a. Clear the data and start again
-
-To discard both databases and re-create them, leaving the cluster in place:
+### Reset the data, keeping the cluster
 
 ```bash
 sudo -u postgres psql -p 9431 <<'SQL'
@@ -738,25 +612,34 @@ DROP ROLE IF EXISTS workbench;
 SQL
 ```
 
-Then repeat from step 3b. The cluster, the Python virtual environment and
-`node_modules` do not need rebuilding unless `requirements.txt` or
-`package.json` changed.
+Then repeat from step 3b. The Python environment and `node_modules` do not need
+rebuilding unless `requirements.txt` or `package.json` changed.
 
-### 13b. Remove the cluster entirely
+### Remove the cluster entirely
 
-Only when the whole installation is being abandoned. **The cluster name
-`workbench` in this command is what protects anything else** — it names ours
-specifically, so `16/main` and every database in it are untouched.
+Only when abandoning the installation. The cluster name in the command is what
+protects everything else — it names this cluster specifically, so the machine's
+default cluster and every database in it are untouched.
 
 ```bash
 pg_lsclusters                                    # confirm 16/workbench on 9431
 sudo pg_dropcluster --stop 16 workbench
-pg_lsclusters                                    # 16/workbench gone; 16/main still online
+pg_lsclusters                                    # gone; 16/main still online
 ```
 
-Then remove the `DATABASE_URL` line's credentials from `backend/.env`, or the
-file entirely — the next install generates fresh ones.
+Then delete `config/workbench.env`, or the `DATABASE_URL` line within it.
 
-**Do not run `apt-get purge postgresql-*` to tidy up.** That removes the distro's
-package and `16/main` with it, taking any database that is not ours. §1 carries
-the full purge sequence, and it is only for a machine being rebuilt.
+> **Do not remove PostgreSQL itself to tidy up.** `apt-get purge postgresql-*`
+> removes the distribution's package and the default cluster with it, taking any
+> database that is not this application's.
+
+---
+
+## Notes
+
+- **This edition is Linux only.** The open source repository is scoped to Linux;
+  Windows and macOS are served by the commercial product.
+- **The interface is English only** until the translation files are shipped.
+- **The frontend must be rebuilt** after a change to `frontend/`, and the server
+  restarted — a running process serves the build it started with. The backend
+  reloads itself when its source changes.

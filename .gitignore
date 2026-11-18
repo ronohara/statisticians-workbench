@@ -230,12 +230,11 @@ out/
 !.env.example
 
 # The one config file both halves read, and the two symlinks that point at it.
-# `.env*` above already covers the symlinks; these lines cover the file itself
-# and the timestamped copies `--force` leaves behind — every one of them holds
-# both secrets, so a rule naming only the exact path would leave the backups
-# untracked but committable.
+# `.env*` above already covers the symlinks; this covers the file itself, which
+# holds both secrets. There is deliberately no `.bak-*` rule: the generator keeps
+# no copies, so a pattern for them would be a rule for a file that never exists
+# and an invitation to keep them.
 config/workbench.env
-config/workbench.env.bak-*
 
 # test / type artifacts
 coverage/
