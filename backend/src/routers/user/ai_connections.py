@@ -71,6 +71,7 @@ from src.utils.connection_timeouts import (
 from src.utils.translation import t
 from src.chat import test_registry
 from src.chat import model_probe
+from src.chat.connection import get_connection_details
 from src.routers.user.model_results import record_result, ResultWriteRefused
 
 logger = logging.getLogger(__name__)
@@ -837,23 +838,32 @@ async def test_connection_model(
                 test=test_id, known=", ".join(test_registry.all_ids()),
             )
 
-        async with _db_pool.acquire() as conn:
-            user = await conn.fetchrow(
-                'SELECT "userGroup" FROM "User" WHERE id = $1', uid
-            )
-            user_group = (user["userGroup"] if user else None) or "00"
-
-            connection = await conn.fetchrow(
-                'SELECT provider, "apiKey", endpoint FROM "UserAIConnection" '
-                'WHERE "connectionId" = $1 AND ("userId" = $2 OR '
-                '("isShared" = true AND "aiConnectionGroup" = $3))',
-                parsed_id, uid, user_group,
-            )
-        if connection is None:
+        # THE CONNECTION IS RESOLVED THROUGH THE SHARED RESOLVER, NOT READ RAW.
+        #
+        # This route used to select `provider, "apiKey", endpoint` itself and pass the
+        # column straight through. `endpoint` is nullable by design — NULL means "inherit
+        # my provider's AIProvider.defaultEndpoint" — so a connection that stores no
+        # endpoint of its own arrived here with a null and the provider refused it with
+        # OPENAI_ENDPOINT_REQUIRED. Chat worked on the same connection because it goes
+        # through this resolver, which applies the provider default; discovery worked
+        # because it applies the same rule internally. Measured 2026-11-19: the AI-testing
+        # page could not test `sample-bikestore-AI` (connection 310, deepseek, endpoint
+        # NULL) while chat on it answered normally.
+        #
+        # The rule now lives in ONE place. This route also no longer spells out the
+        # ownership/sharing predicate or the key decryption a second time: the resolver
+        # owns all three, so a later change to any of them cannot reach chat and miss the
+        # tests page.
+        try:
+            details = await get_connection_details(_db_pool, parsed_id, uid)
+        except ValueError:
+            # Not found, not visible to this caller, or a stored key that will not
+            # decrypt. Same 404 and same key as before, so the contract is unchanged.
             return await _t_error(404, "api.user.connection_not_found", language)
 
-        provider_code = connection["provider"]
-        endpoint = connection["endpoint"]
+        provider_code = details["provider"]
+        endpoint = details["endpoint"]
+        api_key = details["apiKey"]
 
         # Does THIS CONNECTION serve that model? The question is a
         # ConnectionModelIntersect row, not a provider catalogue: two connections
@@ -887,8 +897,6 @@ async def test_connection_model(
             return await _t_error(
                 400, "api.user.test_not_implemented", language, test=test_id,
             )
-
-        api_key = decrypt_field_or_null(connection["apiKey"])
 
         # The two budgets in force for THIS connection (plan Item 4a). Resolved here
         # because the route already holds the pool, and passed explicitly because a

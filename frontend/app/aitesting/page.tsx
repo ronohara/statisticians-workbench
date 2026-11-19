@@ -19,6 +19,7 @@ import { Check, Loader2, Play, RefreshCw, Square, X } from "lucide-react";
 import { toast } from "sonner";
 import { TestStateBadge, type TestState } from "@/components/test-state-badge";
 import { apiFetch } from "@/lib/api";
+import { useAI } from "@/lib/ai-context";
 import { useTranslation } from "@/lib/translation-context";
 import {
     useTranslate,
@@ -101,6 +102,11 @@ function AITestingContent() {
     const translate = useTranslate();
     const translateWithParams = useTranslateWithParams();
     const router = useRouter();
+    // The user's default AI connection, resolved once by the context from
+    // `/api/user-settings`. Read from the context rather than fetched here: the
+    // settings page writes it, the context is what every other page reads it
+    // through, and a second fetch would be a second definition of "the default".
+    const { defaultConnectionId } = useAI();
 
     const [connections, setConnections] = useState<AvailableConnection[]>([]);
     const [tests, setTests] = useState<RegisteredTest[]>([]);
@@ -171,9 +177,7 @@ function AITestingContent() {
                 }
                 const data = await res.json();
                 if (cancelled) return;
-                const list: AvailableConnection[] = data.connections || [];
-                setConnections(list);
-                if (list.length > 0) setSelectedId(list[0].id);
+                setConnections(data.connections || []);
             } catch (error) {
                 if (cancelled) return;
                 setLoadError(
@@ -236,6 +240,35 @@ function AITestingContent() {
         // refetch every time the language changed.
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
+    /**
+     * WHICH connection opens selected.
+     *
+     * The default is selected, not the first row: `/available` returns connections
+     * in creation order, so `connections[0]` is the OLDEST one — the least likely
+     * to be the one in use. Measured 2026-11-19: the admin's default was connection
+     * 4 and this page opened on connection 3.
+     *
+     * A separate effect rather than part of the loader, because the default arrives
+     * from its own request inside the AI context and may land after the connections
+     * do. As a loader dependency it would re-fetch the list and the slow limit for a
+     * value that only decides a `useState`; here it costs one render.
+     *
+     * `prev ?? choice` is what stops a slow settings response from overwriting a
+     * connection the user has already picked. And the default must also BE in this
+     * list — the context reads `/api/user-ai-connections` while this page reads
+     * `/available`, and those sets differ — because a selected value with no matching
+     * option renders a blank trigger, which is a worse fault than opening on the
+     * first row. A default that is absent therefore falls back rather than being set.
+     */
+    useEffect(() => {
+        if (connections.length === 0) return;
+        const byDefault = defaultConnectionId
+            ? connections.find(c => c.id === String(defaultConnectionId))
+            : undefined;
+        const choice = byDefault ?? connections[0];
+        setSelectedId(prev => prev ?? choice?.id ?? null);
+    }, [connections, defaultConnectionId]);
 
     // The model rows and the registered tests come from one response: the
     // page needs both, and a second request for a list that never changes
