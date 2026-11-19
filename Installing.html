@@ -512,7 +512,9 @@ print('NEXTAUTH_SECRET set:', bool(os.getenv('NEXTAUTH_SECRET')))
 
 <h2 id="s6">6. Create the schema</h2>
 
-<p><code>db/baseline/0000_baseline.sql</code> is a schema-only dump: every table, column, index, constraint and sequence the application expects. It is the only file you apply.</p>
+<p><code>db/baseline/0000_baseline.sql</code> is a schema-only dump: every table, column, index, constraint and sequence the application expected when it was taken. It is <strong>a floor, not the whole schema</strong> &mdash; the numbered files in <code>db/migrations/</code> carry every change made since, and an installation applies both, in that order.</p>
+
+<p><strong>The baseline is never edited.</strong> It is a snapshot of one moment and stays one; a schema change is a new file in <code>db/migrations/</code> and nothing else. This is the same arrangement the development tree uses, so its baseline and this one are the same file.</p>
 
 <pre><code>cd ~/statisticians-workbench
 export PGPASSWORD='change-this-password'
@@ -522,23 +524,40 @@ export PGHOST=127.0.0.1 PGPORT=9431 PGUSER=workbench PGDATABASE=workbench</code>
 
 <p>Then apply the baseline: <code>psql -v ON_ERROR_STOP=1 -f db/baseline/0000_baseline.sql</code></p>
 
-<p><strong>Check:</strong> the command exits 0 and prints no <code>ERROR:</code> lines. Then:</p>
-
-<pre><code>psql -c '\dt' | wc -l
-psql -c '\d "GlobalSettings"' | grep registrationMode
-psql -c '\d "UserDataset"' | grep materialize</code></pre>
-
-<p>The first prints <strong>35</strong>: 30 tables plus <code>psql</code>'s own header, footer and a blank line. For the table count itself:</p>
+<p><strong>Check:</strong> the command exits 0 and prints no <code>ERROR:</code> lines, and the tables it declares are present:</p>
 
 <p><code>psql -tAc "SELECT count(*) FROM pg_tables WHERE schemaname='public';"</code></p>
 
-<p>which prints <strong>30</strong>. The other two checks confirm the schema is current — they look for <code>registrationMode</code>, and for <code>materializedAt</code> and <code>materializeError</code>.</p>
+<p>which prints <strong>27</strong> &mdash; the baseline as it stands, before any migration. The schema is not yet complete: everything added since the baseline was taken is still to be applied, in 6b.</p>
+
+<h3 id="s6b">6b. Apply the migrations made since the baseline</h3>
+
+<p>Every change made after the baseline is a numbered file in <code>db/migrations/</code>, and nothing else creates them. <strong>The baseline already contains <code>0001</code> to <code>0006</code></strong> &mdash; it was taken after them &mdash; so the first file to apply is <code>0007</code>. Applying <code>0001</code> would fail on its first <code>CREATE TABLE</code>, because the table is already there.</p>
+
+<p>Apply every migration above the floor, in order, stopping at the first error:</p>
+
+<pre><code>for f in $(ls db/migrations/*.sql | sort); do
+    n=${f##*/}; n=${n%%_*}
+    [ $((10#$n)) -gt 6 ] || continue
+    echo "applying $f"
+    psql -v ON_ERROR_STOP=1 -q -f "$f" || { echo "FAILED: $f"; break; }
+done</code></pre>
+
+<p><code>10#$n</code> forces base ten: <code>0008</code> read as octal is invalid, and a bare <code>008</code> would fail the comparison rather than the arithmetic.</p>
+
+<p><strong>Check:</strong> the loop runs to the last file with no <code>FAILED:</code> line, and then:</p>
+
+<pre><code>psql -tAc "SELECT count(*) FROM pg_tables WHERE schemaname='public';"
+psql -c '\d "GlobalSettings"' | grep registrationMode
+psql -c '\d "UserDataset"' | grep materialize</code></pre>
+
+<p>The first prints <strong>30</strong> &mdash; the complete schema, three more tables than the baseline alone: <code>0012</code> adds one, <code>0015</code> adds three, and <code>0019</code> drops the one the baseline still carries. The other two confirm that changes made after the baseline have landed: <code>registrationMode</code> arrives with migration <code>0010</code>, and <code>materializedAt</code> and <code>materializeError</code> with <code>0022</code>. If either grep prints nothing, the loop stopped early &mdash; read which file it named.</p>
 
 <h3>About <code>db/migrations/</code></h3>
 
 <div class="box info">
-<p><strong>The numbered files in <code>db/migrations/</code> are the history of how the schema reached its present shape.</strong></p>
-<p><strong>They are not applied during an installation</strong>, and they cannot be: the earliest ones create tables the baseline already contains. The baseline is the schema; <code>db/migrations/</code> is the record of how it got there.</p>
+<p><strong>The numbered files record every schema change, in order, and they are part of the installation.</strong></p>
+<p>The baseline is a snapshot; the migrations are everything that happened after it, and an installation that skips them has a schema from the past &mdash; one the application will not run against. The development tree works the same way, which is what keeps the two schemas identical.</p>
 </div>
 
 <h2 id="s7">7. Seed the database</h2>

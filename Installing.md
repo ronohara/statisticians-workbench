@@ -347,8 +347,14 @@ Two settings are deliberately **not** written:
 ## 6. Create the schema
 
 `db/baseline/0000_baseline.sql` is a schema-only dump: every table, column,
-index, constraint and sequence the application expects. It is the only file you
-apply.
+index, constraint and sequence the application expected when it was taken. It is
+**a floor, not the whole schema** — the numbered files in `db/migrations/` carry
+every change made since, and an installation applies both, in that order.
+
+**The baseline is never edited.** It is a snapshot of one moment and stays one;
+a schema change is a new file in `db/migrations/` and nothing else. This is the
+same arrangement the development tree uses, so its baseline and this one are the
+same file.
 
 ```bash
 cd ~/statisticians-workbench
@@ -368,30 +374,60 @@ Then:
 psql -v ON_ERROR_STOP=1 -f db/baseline/0000_baseline.sql
 ```
 
-**Check:** the command exits 0 and prints no `ERROR:` lines. Then:
-
-```bash
-psql -c '\dt' | wc -l
-psql -c '\d "GlobalSettings"' | grep registrationMode
-psql -c '\d "UserDataset"' | grep materialize
-```
-
-The first prints **35**: 30 tables plus `psql`'s own header, footer and a blank
-line. For the table count itself:
+**Check:** the command exits 0 and prints no `ERROR:` lines, and the tables it
+declares are present:
 
 ```bash
 psql -tAc "SELECT count(*) FROM pg_tables WHERE schemaname='public';"
 ```
 
-which prints **30**. The other two checks confirm the schema is current — they
-look for `registrationMode`, and for `materializedAt` and `materializeError`.
+which prints **27** — the baseline as it stands, before any migration. The
+schema is not yet complete: everything added since the baseline was taken is
+still to be applied, in 6b.
+
+### 6b. Apply the migrations made since the baseline
+
+Every change made after the baseline is a numbered file in `db/migrations/`, and
+nothing else creates them. **The baseline already contains `0001` to `0006`** — it
+was taken after them — so the first file to apply is `0007`. Applying `0001`
+would fail on its first `CREATE TABLE`, because the table is already there.
+
+Apply every migration above the floor, in order, stopping at the first error:
+
+```bash
+for f in $(ls db/migrations/*.sql | sort); do
+    n=${f##*/}; n=${n%%_*}
+    [ $((10#$n)) -gt 6 ] || continue
+    echo "applying $f"
+    psql -v ON_ERROR_STOP=1 -q -f "$f" || { echo "FAILED: $f"; break; }
+done
+```
+
+`10#$n` forces base ten: `0008` read as octal is invalid, and a bare `008` would
+fail the comparison rather than the arithmetic.
+
+**Check:** the loop runs to the last file with no `FAILED:` line, and then:
+
+```bash
+psql -tAc "SELECT count(*) FROM pg_tables WHERE schemaname='public';"
+psql -c '\d "GlobalSettings"' | grep registrationMode
+psql -c '\d "UserDataset"' | grep materialize
+```
+
+The first prints **30** — the complete schema, three more tables than the
+baseline alone: `0012` adds one, `0015` adds three, and `0019` drops the one the
+baseline still carries. The other two confirm that changes made after the baseline have
+landed: `registrationMode` arrives with migration `0010`, and `materializedAt`
+and `materializeError` with `0022`. If either grep prints nothing, the loop
+stopped early — read which file it named.
 
 ### About `db/migrations/`
 
-The numbered files in `db/migrations/` are the history of how the schema reached
-its present shape. **They are not applied during an installation**, and they
-cannot be: the earliest ones create tables the baseline already contains. The
-baseline is the schema; `db/migrations/` is the record of how it got there.
+The numbered files record every schema change, in order, and **they are part of
+the installation**. The baseline is a snapshot; the migrations are everything
+that happened after it, and an installation that skips them has a schema from
+the past — one the application will not run against. The development tree works
+the same way, which is what keeps the two schemas identical.
 
 ---
 
