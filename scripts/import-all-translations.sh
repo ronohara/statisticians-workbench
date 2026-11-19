@@ -104,6 +104,7 @@ else
     echo "Backend files:  (none found)"
 fi
 echo ""
-echo -e "${YELLOW}💡 Note: The frontend translations are now generated from module-level"
-echo "   translation files (translations.ts) via the extract-translations.ts script."
-echo "   The en.yaml file is the merged output of all module translations.${NC}"
+echo -e "${YELLOW}💡 Note: The frontend translations are generated from module-level"
+echo "   translation files (translations.ts), extracted in the development tree."
+echo "   The en.yaml files shipped here are the merged output of those modules, so"
+echo "   this script imports them as they are — there is no extractor in this repo.${NC}"
