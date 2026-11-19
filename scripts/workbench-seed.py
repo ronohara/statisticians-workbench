@@ -470,10 +470,14 @@ def seed_users(cur) -> None:
     uses (``bcrypt.gensalt(rounds=10)``), so they verify against the algorithm
     the login handler actually checks.
 
-    The admin's ``ON CONFLICT`` clause pins ``userGroup`` back to ``"00"`` on a
-    re-run rather than doing nothing: an admin moved out of the Default group
-    would otherwise stay out of it, which is not what a re-seed should leave
-    behind. The example user is left entirely alone once present.
+    Both accounts are created if missing and left entirely alone once present.
+
+    The admin's ``ON CONFLICT`` clause used to pin ``userGroup`` back to ``"00"``
+    on every re-run, on the reasoning that a re-seed should leave the admin in
+    the Default group. That is wrong for a seeder the package runs from postinst
+    on every upgrade: an administrator deliberately moved to another group was
+    silently moved back, and nothing reported it. A seeder creates what is
+    missing; it does not overrule a decision somebody made about an existing row.
     """
     import bcrypt
 
@@ -490,7 +494,7 @@ def seed_users(cur) -> None:
             %s, %s, %s, %s, true, false, false, NOW(), 0, 0, '00',
             'en', false, false, NOW()
         )
-        ON CONFLICT (email) DO UPDATE SET "userGroup" = '00'
+        ON CONFLICT (email) DO NOTHING
         """,
         (str(uuid.uuid4()), "admin@example.com", admin_hash, "Admin User"),
     )
