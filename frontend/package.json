@@ -1,6 +1,7 @@
 {
   "name": "statisticians-workbench",
   "version": "0.12.2",
+  "packageManager": "pnpm@12.21.0",
   "type": "module",
   "private": true,
   "scripts": {
